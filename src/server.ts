@@ -1,0 +1,1140 @@
+// https://www.terraform.io/docs/providers/upcloud/r/server
+// generated from terraform resource schema
+
+import { Construct } from 'constructs';
+import * as cdktf from 'cdktf';
+
+// Configuration
+
+export interface ServerConfig extends cdktf.TerraformMetaArguments {
+  /**
+  * The number of CPU for the server
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/upcloud/r/server#cpu Server#cpu}
+  */
+  readonly cpu?: number;
+  /**
+  * Are firewall rules active for the server
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/upcloud/r/server#firewall Server#firewall}
+  */
+  readonly firewall?: boolean | cdktf.IResolvable;
+  /**
+  * Use this to start the VM on a specific host. Refers to value from host -attribute. Only available for private cloud hosts
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/upcloud/r/server#host Server#host}
+  */
+  readonly host?: number;
+  /**
+  * A valid domain name
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/upcloud/r/server#hostname Server#hostname}
+  */
+  readonly hostname: string;
+  /**
+  * The size of memory for the server (in megabytes)
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/upcloud/r/server#mem Server#mem}
+  */
+  readonly mem?: number;
+  /**
+  * Is the metadata service active for the server
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/upcloud/r/server#metadata Server#metadata}
+  */
+  readonly metadata?: boolean | cdktf.IResolvable;
+  /**
+  * The pricing plan used for the server
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/upcloud/r/server#plan Server#plan}
+  */
+  readonly plan?: string;
+  /**
+  * The server related tags
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/upcloud/r/server#tags Server#tags}
+  */
+  readonly tags?: string[];
+  /**
+  * A short, informational description
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/upcloud/r/server#title Server#title}
+  */
+  readonly title?: string;
+  /**
+  * Defines URL for a server setup script, or the script body itself
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/upcloud/r/server#user_data Server#user_data}
+  */
+  readonly userData?: string;
+  /**
+  * The zone in which the server will be hosted
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/upcloud/r/server#zone Server#zone}
+  */
+  readonly zone: string;
+  /**
+  * login block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/upcloud/r/server#login Server#login}
+  */
+  readonly login?: ServerLogin;
+  /**
+  * network_interface block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/upcloud/r/server#network_interface Server#network_interface}
+  */
+  readonly networkInterface: ServerNetworkInterface[] | cdktf.IResolvable;
+  /**
+  * simple_backup block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/upcloud/r/server#simple_backup Server#simple_backup}
+  */
+  readonly simpleBackup?: ServerSimpleBackup;
+  /**
+  * storage_devices block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/upcloud/r/server#storage_devices Server#storage_devices}
+  */
+  readonly storageDevices?: ServerStorageDevices[] | cdktf.IResolvable;
+  /**
+  * template block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/upcloud/r/server#template Server#template}
+  */
+  readonly template?: ServerTemplate;
+}
+export interface ServerLogin {
+  /**
+  * Indicates a password should be create to allow access
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/upcloud/r/server#create_password Server#create_password}
+  */
+  readonly createPassword?: boolean | cdktf.IResolvable;
+  /**
+  * A list of ssh keys to access the server
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/upcloud/r/server#keys Server#keys}
+  */
+  readonly keys?: string[];
+  /**
+  * The delivery method for the server’s root password
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/upcloud/r/server#password_delivery Server#password_delivery}
+  */
+  readonly passwordDelivery?: string;
+  /**
+  * Username to be create to access the server
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/upcloud/r/server#user Server#user}
+  */
+  readonly user?: string;
+}
+
+export function serverLoginToTerraform(struct?: ServerLoginOutputReference | ServerLogin): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    create_password: cdktf.booleanToTerraform(struct!.createPassword),
+    keys: cdktf.listMapper(cdktf.stringToTerraform)(struct!.keys),
+    password_delivery: cdktf.stringToTerraform(struct!.passwordDelivery),
+    user: cdktf.stringToTerraform(struct!.user),
+  }
+}
+
+export class ServerLoginOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): ServerLogin | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._createPassword !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.createPassword = this._createPassword;
+    }
+    if (this._keys !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.keys = this._keys;
+    }
+    if (this._passwordDelivery !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.passwordDelivery = this._passwordDelivery;
+    }
+    if (this._user !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.user = this._user;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: ServerLogin | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._createPassword = undefined;
+      this._keys = undefined;
+      this._passwordDelivery = undefined;
+      this._user = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._createPassword = value.createPassword;
+      this._keys = value.keys;
+      this._passwordDelivery = value.passwordDelivery;
+      this._user = value.user;
+    }
+  }
+
+  // create_password - computed: false, optional: true, required: false
+  private _createPassword?: boolean | cdktf.IResolvable; 
+  public get createPassword() {
+    return this.getBooleanAttribute('create_password');
+  }
+  public set createPassword(value: boolean | cdktf.IResolvable) {
+    this._createPassword = value;
+  }
+  public resetCreatePassword() {
+    this._createPassword = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get createPasswordInput() {
+    return this._createPassword;
+  }
+
+  // keys - computed: false, optional: true, required: false
+  private _keys?: string[]; 
+  public get keys() {
+    return this.getListAttribute('keys');
+  }
+  public set keys(value: string[]) {
+    this._keys = value;
+  }
+  public resetKeys() {
+    this._keys = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get keysInput() {
+    return this._keys;
+  }
+
+  // password_delivery - computed: false, optional: true, required: false
+  private _passwordDelivery?: string; 
+  public get passwordDelivery() {
+    return this.getStringAttribute('password_delivery');
+  }
+  public set passwordDelivery(value: string) {
+    this._passwordDelivery = value;
+  }
+  public resetPasswordDelivery() {
+    this._passwordDelivery = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get passwordDeliveryInput() {
+    return this._passwordDelivery;
+  }
+
+  // user - computed: false, optional: true, required: false
+  private _user?: string; 
+  public get user() {
+    return this.getStringAttribute('user');
+  }
+  public set user(value: string) {
+    this._user = value;
+  }
+  public resetUser() {
+    this._user = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get userInput() {
+    return this._user;
+  }
+}
+export interface ServerNetworkInterface {
+  /**
+  * `true` if this interface should be used for network booting.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/upcloud/r/server#bootable Server#bootable}
+  */
+  readonly bootable?: boolean | cdktf.IResolvable;
+  /**
+  * The assigned IP address.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/upcloud/r/server#ip_address Server#ip_address}
+  */
+  readonly ipAddress?: string;
+  /**
+  * The IP address type of this interface (one of `IPv4` or `IPv6`).
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/upcloud/r/server#ip_address_family Server#ip_address_family}
+  */
+  readonly ipAddressFamily?: string;
+  /**
+  * The unique ID of a network to attach this network to.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/upcloud/r/server#network Server#network}
+  */
+  readonly network?: string;
+  /**
+  * `true` if source IP should be filtered.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/upcloud/r/server#source_ip_filtering Server#source_ip_filtering}
+  */
+  readonly sourceIpFiltering?: boolean | cdktf.IResolvable;
+  /**
+  * Network interface type. For private network interfaces, a network must be specified with an existing network id.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/upcloud/r/server#type Server#type}
+  */
+  readonly type: string;
+}
+
+export function serverNetworkInterfaceToTerraform(struct?: ServerNetworkInterface | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    bootable: cdktf.booleanToTerraform(struct!.bootable),
+    ip_address: cdktf.stringToTerraform(struct!.ipAddress),
+    ip_address_family: cdktf.stringToTerraform(struct!.ipAddressFamily),
+    network: cdktf.stringToTerraform(struct!.network),
+    source_ip_filtering: cdktf.booleanToTerraform(struct!.sourceIpFiltering),
+    type: cdktf.stringToTerraform(struct!.type),
+  }
+}
+
+export interface ServerSimpleBackup {
+  /**
+  * Simple backup plan. Accepted values: dailies, weeklies, monthlies.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/upcloud/r/server#plan Server#plan}
+  */
+  readonly plan: string;
+  /**
+  * Time of the day at which backup will be taken. Should be provided in a hhmm format (e.g. 2230).
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/upcloud/r/server#time Server#time}
+  */
+  readonly time: string;
+}
+
+export function serverSimpleBackupToTerraform(struct?: ServerSimpleBackupOutputReference | ServerSimpleBackup): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    plan: cdktf.stringToTerraform(struct!.plan),
+    time: cdktf.stringToTerraform(struct!.time),
+  }
+}
+
+export class ServerSimpleBackupOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): ServerSimpleBackup | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._plan !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.plan = this._plan;
+    }
+    if (this._time !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.time = this._time;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: ServerSimpleBackup | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._plan = undefined;
+      this._time = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._plan = value.plan;
+      this._time = value.time;
+    }
+  }
+
+  // plan - computed: false, optional: false, required: true
+  private _plan?: string; 
+  public get plan() {
+    return this.getStringAttribute('plan');
+  }
+  public set plan(value: string) {
+    this._plan = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get planInput() {
+    return this._plan;
+  }
+
+  // time - computed: false, optional: false, required: true
+  private _time?: string; 
+  public get time() {
+    return this.getStringAttribute('time');
+  }
+  public set time(value: string) {
+    this._time = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get timeInput() {
+    return this._time;
+  }
+}
+export interface ServerStorageDevices {
+  /**
+  * The device address the storage will be attached to. Specify only the bus name (ide/scsi/virtio) to auto-select next available address from that bus.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/upcloud/r/server#address Server#address}
+  */
+  readonly address?: string;
+  /**
+  * A valid storage UUID
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/upcloud/r/server#storage Server#storage}
+  */
+  readonly storage: string;
+  /**
+  * The device type the storage will be attached as
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/upcloud/r/server#type Server#type}
+  */
+  readonly type?: string;
+}
+
+export function serverStorageDevicesToTerraform(struct?: ServerStorageDevices | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    address: cdktf.stringToTerraform(struct!.address),
+    storage: cdktf.stringToTerraform(struct!.storage),
+    type: cdktf.stringToTerraform(struct!.type),
+  }
+}
+
+export interface ServerTemplateBackupRule {
+  /**
+  * The weekday when the backup is created
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/upcloud/r/server#interval Server#interval}
+  */
+  readonly interval: string;
+  /**
+  * The number of days before a backup is automatically deleted
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/upcloud/r/server#retention Server#retention}
+  */
+  readonly retention: number;
+  /**
+  * The time of day when the backup is created
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/upcloud/r/server#time Server#time}
+  */
+  readonly time: string;
+}
+
+export function serverTemplateBackupRuleToTerraform(struct?: ServerTemplateBackupRuleOutputReference | ServerTemplateBackupRule): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    interval: cdktf.stringToTerraform(struct!.interval),
+    retention: cdktf.numberToTerraform(struct!.retention),
+    time: cdktf.stringToTerraform(struct!.time),
+  }
+}
+
+export class ServerTemplateBackupRuleOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): ServerTemplateBackupRule | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._interval !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.interval = this._interval;
+    }
+    if (this._retention !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.retention = this._retention;
+    }
+    if (this._time !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.time = this._time;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: ServerTemplateBackupRule | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._interval = undefined;
+      this._retention = undefined;
+      this._time = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._interval = value.interval;
+      this._retention = value.retention;
+      this._time = value.time;
+    }
+  }
+
+  // interval - computed: false, optional: false, required: true
+  private _interval?: string; 
+  public get interval() {
+    return this.getStringAttribute('interval');
+  }
+  public set interval(value: string) {
+    this._interval = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get intervalInput() {
+    return this._interval;
+  }
+
+  // retention - computed: false, optional: false, required: true
+  private _retention?: number; 
+  public get retention() {
+    return this.getNumberAttribute('retention');
+  }
+  public set retention(value: number) {
+    this._retention = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get retentionInput() {
+    return this._retention;
+  }
+
+  // time - computed: false, optional: false, required: true
+  private _time?: string; 
+  public get time() {
+    return this.getStringAttribute('time');
+  }
+  public set time(value: string) {
+    this._time = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get timeInput() {
+    return this._time;
+  }
+}
+export interface ServerTemplate {
+  /**
+  * The device address the storage will be attached to. Specify only the bus name (ide/scsi/virtio) to auto-select next available address from that bus.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/upcloud/r/server#address Server#address}
+  */
+  readonly address?: string;
+  /**
+  * If set to true, the backup taken before the partition and filesystem resize attempt will be deleted immediately after success.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/upcloud/r/server#delete_autoresize_backup Server#delete_autoresize_backup}
+  */
+  readonly deleteAutoresizeBackup?: boolean | cdktf.IResolvable;
+  /**
+  * If set to true, provider will attempt to resize partition and filesystem when the size of template storage changes.
+							Please note that before the resize attempt is made, backup of the storage will be taken. If the resize attempt fails, the backup will be used
+							to restore the storage and then deleted. If the resize attempt succeeds, backup will be kept (unless delete_autoresize_backup option is set to true).
+							Taking and keeping backups incure costs.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/upcloud/r/server#filesystem_autoresize Server#filesystem_autoresize}
+  */
+  readonly filesystemAutoresize?: boolean | cdktf.IResolvable;
+  /**
+  * The size of the storage in gigabytes
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/upcloud/r/server#size Server#size}
+  */
+  readonly size?: number;
+  /**
+  * A valid storage UUID or template name
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/upcloud/r/server#storage Server#storage}
+  */
+  readonly storage: string;
+  /**
+  * A short, informative description
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/upcloud/r/server#title Server#title}
+  */
+  readonly title?: string;
+  /**
+  * backup_rule block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/upcloud/r/server#backup_rule Server#backup_rule}
+  */
+  readonly backupRule?: ServerTemplateBackupRule;
+}
+
+export function serverTemplateToTerraform(struct?: ServerTemplateOutputReference | ServerTemplate): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    address: cdktf.stringToTerraform(struct!.address),
+    delete_autoresize_backup: cdktf.booleanToTerraform(struct!.deleteAutoresizeBackup),
+    filesystem_autoresize: cdktf.booleanToTerraform(struct!.filesystemAutoresize),
+    size: cdktf.numberToTerraform(struct!.size),
+    storage: cdktf.stringToTerraform(struct!.storage),
+    title: cdktf.stringToTerraform(struct!.title),
+    backup_rule: serverTemplateBackupRuleToTerraform(struct!.backupRule),
+  }
+}
+
+export class ServerTemplateOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): ServerTemplate | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._address !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.address = this._address;
+    }
+    if (this._deleteAutoresizeBackup !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.deleteAutoresizeBackup = this._deleteAutoresizeBackup;
+    }
+    if (this._filesystemAutoresize !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.filesystemAutoresize = this._filesystemAutoresize;
+    }
+    if (this._size !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.size = this._size;
+    }
+    if (this._storage !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.storage = this._storage;
+    }
+    if (this._title !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.title = this._title;
+    }
+    if (this._backupRule?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.backupRule = this._backupRule?.internalValue;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: ServerTemplate | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._address = undefined;
+      this._deleteAutoresizeBackup = undefined;
+      this._filesystemAutoresize = undefined;
+      this._size = undefined;
+      this._storage = undefined;
+      this._title = undefined;
+      this._backupRule.internalValue = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._address = value.address;
+      this._deleteAutoresizeBackup = value.deleteAutoresizeBackup;
+      this._filesystemAutoresize = value.filesystemAutoresize;
+      this._size = value.size;
+      this._storage = value.storage;
+      this._title = value.title;
+      this._backupRule.internalValue = value.backupRule;
+    }
+  }
+
+  // address - computed: true, optional: true, required: false
+  private _address?: string; 
+  public get address() {
+    return this.getStringAttribute('address');
+  }
+  public set address(value: string) {
+    this._address = value;
+  }
+  public resetAddress() {
+    this._address = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get addressInput() {
+    return this._address;
+  }
+
+  // delete_autoresize_backup - computed: false, optional: true, required: false
+  private _deleteAutoresizeBackup?: boolean | cdktf.IResolvable; 
+  public get deleteAutoresizeBackup() {
+    return this.getBooleanAttribute('delete_autoresize_backup');
+  }
+  public set deleteAutoresizeBackup(value: boolean | cdktf.IResolvable) {
+    this._deleteAutoresizeBackup = value;
+  }
+  public resetDeleteAutoresizeBackup() {
+    this._deleteAutoresizeBackup = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get deleteAutoresizeBackupInput() {
+    return this._deleteAutoresizeBackup;
+  }
+
+  // filesystem_autoresize - computed: false, optional: true, required: false
+  private _filesystemAutoresize?: boolean | cdktf.IResolvable; 
+  public get filesystemAutoresize() {
+    return this.getBooleanAttribute('filesystem_autoresize');
+  }
+  public set filesystemAutoresize(value: boolean | cdktf.IResolvable) {
+    this._filesystemAutoresize = value;
+  }
+  public resetFilesystemAutoresize() {
+    this._filesystemAutoresize = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get filesystemAutoresizeInput() {
+    return this._filesystemAutoresize;
+  }
+
+  // id - computed: true, optional: false, required: false
+  public get id() {
+    return this.getStringAttribute('id');
+  }
+
+  // size - computed: true, optional: true, required: false
+  private _size?: number; 
+  public get size() {
+    return this.getNumberAttribute('size');
+  }
+  public set size(value: number) {
+    this._size = value;
+  }
+  public resetSize() {
+    this._size = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get sizeInput() {
+    return this._size;
+  }
+
+  // storage - computed: false, optional: false, required: true
+  private _storage?: string; 
+  public get storage() {
+    return this.getStringAttribute('storage');
+  }
+  public set storage(value: string) {
+    this._storage = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get storageInput() {
+    return this._storage;
+  }
+
+  // tier - computed: true, optional: false, required: false
+  public get tier() {
+    return this.getStringAttribute('tier');
+  }
+
+  // title - computed: true, optional: true, required: false
+  private _title?: string; 
+  public get title() {
+    return this.getStringAttribute('title');
+  }
+  public set title(value: string) {
+    this._title = value;
+  }
+  public resetTitle() {
+    this._title = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get titleInput() {
+    return this._title;
+  }
+
+  // backup_rule - computed: false, optional: true, required: false
+  private _backupRule = new ServerTemplateBackupRuleOutputReference(this, "backup_rule");
+  public get backupRule() {
+    return this._backupRule;
+  }
+  public putBackupRule(value: ServerTemplateBackupRule) {
+    this._backupRule.internalValue = value;
+  }
+  public resetBackupRule() {
+    this._backupRule.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get backupRuleInput() {
+    return this._backupRule.internalValue;
+  }
+}
+
+/**
+* Represents a {@link https://www.terraform.io/docs/providers/upcloud/r/server upcloud_server}
+*/
+export class Server extends cdktf.TerraformResource {
+
+  // =================
+  // STATIC PROPERTIES
+  // =================
+  public static readonly tfResourceType = "upcloud_server";
+
+  // ===========
+  // INITIALIZER
+  // ===========
+
+  /**
+  * Create a new {@link https://www.terraform.io/docs/providers/upcloud/r/server upcloud_server} Resource
+  *
+  * @param scope The scope in which to define this construct
+  * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
+  * @param options ServerConfig
+  */
+  public constructor(scope: Construct, id: string, config: ServerConfig) {
+    super(scope, id, {
+      terraformResourceType: 'upcloud_server',
+      terraformGeneratorMetadata: {
+        providerName: 'upcloud',
+        providerVersion: '2.4.2',
+        providerVersionConstraint: '~> 2.4'
+      },
+      provider: config.provider,
+      dependsOn: config.dependsOn,
+      count: config.count,
+      lifecycle: config.lifecycle
+    });
+    this._cpu = config.cpu;
+    this._firewall = config.firewall;
+    this._host = config.host;
+    this._hostname = config.hostname;
+    this._mem = config.mem;
+    this._metadata = config.metadata;
+    this._plan = config.plan;
+    this._tags = config.tags;
+    this._title = config.title;
+    this._userData = config.userData;
+    this._zone = config.zone;
+    this._login.internalValue = config.login;
+    this._networkInterface = config.networkInterface;
+    this._simpleBackup.internalValue = config.simpleBackup;
+    this._storageDevices = config.storageDevices;
+    this._template.internalValue = config.template;
+  }
+
+  // ==========
+  // ATTRIBUTES
+  // ==========
+
+  // cpu - computed: true, optional: true, required: false
+  private _cpu?: number; 
+  public get cpu() {
+    return this.getNumberAttribute('cpu');
+  }
+  public set cpu(value: number) {
+    this._cpu = value;
+  }
+  public resetCpu() {
+    this._cpu = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get cpuInput() {
+    return this._cpu;
+  }
+
+  // firewall - computed: false, optional: true, required: false
+  private _firewall?: boolean | cdktf.IResolvable; 
+  public get firewall() {
+    return this.getBooleanAttribute('firewall');
+  }
+  public set firewall(value: boolean | cdktf.IResolvable) {
+    this._firewall = value;
+  }
+  public resetFirewall() {
+    this._firewall = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get firewallInput() {
+    return this._firewall;
+  }
+
+  // host - computed: false, optional: true, required: false
+  private _host?: number; 
+  public get host() {
+    return this.getNumberAttribute('host');
+  }
+  public set host(value: number) {
+    this._host = value;
+  }
+  public resetHost() {
+    this._host = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get hostInput() {
+    return this._host;
+  }
+
+  // hostname - computed: false, optional: false, required: true
+  private _hostname?: string; 
+  public get hostname() {
+    return this.getStringAttribute('hostname');
+  }
+  public set hostname(value: string) {
+    this._hostname = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get hostnameInput() {
+    return this._hostname;
+  }
+
+  // id - computed: true, optional: true, required: false
+  public get id() {
+    return this.getStringAttribute('id');
+  }
+
+  // mem - computed: true, optional: true, required: false
+  private _mem?: number; 
+  public get mem() {
+    return this.getNumberAttribute('mem');
+  }
+  public set mem(value: number) {
+    this._mem = value;
+  }
+  public resetMem() {
+    this._mem = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get memInput() {
+    return this._mem;
+  }
+
+  // metadata - computed: false, optional: true, required: false
+  private _metadata?: boolean | cdktf.IResolvable; 
+  public get metadata() {
+    return this.getBooleanAttribute('metadata');
+  }
+  public set metadata(value: boolean | cdktf.IResolvable) {
+    this._metadata = value;
+  }
+  public resetMetadata() {
+    this._metadata = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get metadataInput() {
+    return this._metadata;
+  }
+
+  // plan - computed: true, optional: true, required: false
+  private _plan?: string; 
+  public get plan() {
+    return this.getStringAttribute('plan');
+  }
+  public set plan(value: string) {
+    this._plan = value;
+  }
+  public resetPlan() {
+    this._plan = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get planInput() {
+    return this._plan;
+  }
+
+  // tags - computed: false, optional: true, required: false
+  private _tags?: string[]; 
+  public get tags() {
+    return this.getListAttribute('tags');
+  }
+  public set tags(value: string[]) {
+    this._tags = value;
+  }
+  public resetTags() {
+    this._tags = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get tagsInput() {
+    return this._tags;
+  }
+
+  // title - computed: false, optional: true, required: false
+  private _title?: string; 
+  public get title() {
+    return this.getStringAttribute('title');
+  }
+  public set title(value: string) {
+    this._title = value;
+  }
+  public resetTitle() {
+    this._title = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get titleInput() {
+    return this._title;
+  }
+
+  // user_data - computed: false, optional: true, required: false
+  private _userData?: string; 
+  public get userData() {
+    return this.getStringAttribute('user_data');
+  }
+  public set userData(value: string) {
+    this._userData = value;
+  }
+  public resetUserData() {
+    this._userData = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get userDataInput() {
+    return this._userData;
+  }
+
+  // zone - computed: false, optional: false, required: true
+  private _zone?: string; 
+  public get zone() {
+    return this.getStringAttribute('zone');
+  }
+  public set zone(value: string) {
+    this._zone = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get zoneInput() {
+    return this._zone;
+  }
+
+  // login - computed: false, optional: true, required: false
+  private _login = new ServerLoginOutputReference(this, "login");
+  public get login() {
+    return this._login;
+  }
+  public putLogin(value: ServerLogin) {
+    this._login.internalValue = value;
+  }
+  public resetLogin() {
+    this._login.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get loginInput() {
+    return this._login.internalValue;
+  }
+
+  // network_interface - computed: false, optional: false, required: true
+  private _networkInterface?: ServerNetworkInterface[] | cdktf.IResolvable; 
+  public get networkInterface() {
+    // Getting the computed value is not yet implemented
+    return this.interpolationForAttribute('network_interface');
+  }
+  public set networkInterface(value: ServerNetworkInterface[] | cdktf.IResolvable) {
+    this._networkInterface = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get networkInterfaceInput() {
+    return this._networkInterface;
+  }
+
+  // simple_backup - computed: false, optional: true, required: false
+  private _simpleBackup = new ServerSimpleBackupOutputReference(this, "simple_backup");
+  public get simpleBackup() {
+    return this._simpleBackup;
+  }
+  public putSimpleBackup(value: ServerSimpleBackup) {
+    this._simpleBackup.internalValue = value;
+  }
+  public resetSimpleBackup() {
+    this._simpleBackup.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get simpleBackupInput() {
+    return this._simpleBackup.internalValue;
+  }
+
+  // storage_devices - computed: false, optional: true, required: false
+  private _storageDevices?: ServerStorageDevices[] | cdktf.IResolvable; 
+  public get storageDevices() {
+    // Getting the computed value is not yet implemented
+    return cdktf.Token.asAny(cdktf.Fn.tolist(this.interpolationForAttribute('storage_devices')));
+  }
+  public set storageDevices(value: ServerStorageDevices[] | cdktf.IResolvable) {
+    this._storageDevices = value;
+  }
+  public resetStorageDevices() {
+    this._storageDevices = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get storageDevicesInput() {
+    return this._storageDevices;
+  }
+
+  // template - computed: false, optional: true, required: false
+  private _template = new ServerTemplateOutputReference(this, "template");
+  public get template() {
+    return this._template;
+  }
+  public putTemplate(value: ServerTemplate) {
+    this._template.internalValue = value;
+  }
+  public resetTemplate() {
+    this._template.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get templateInput() {
+    return this._template.internalValue;
+  }
+
+  // =========
+  // SYNTHESIS
+  // =========
+
+  protected synthesizeAttributes(): { [name: string]: any } {
+    return {
+      cpu: cdktf.numberToTerraform(this._cpu),
+      firewall: cdktf.booleanToTerraform(this._firewall),
+      host: cdktf.numberToTerraform(this._host),
+      hostname: cdktf.stringToTerraform(this._hostname),
+      mem: cdktf.numberToTerraform(this._mem),
+      metadata: cdktf.booleanToTerraform(this._metadata),
+      plan: cdktf.stringToTerraform(this._plan),
+      tags: cdktf.listMapper(cdktf.stringToTerraform)(this._tags),
+      title: cdktf.stringToTerraform(this._title),
+      user_data: cdktf.stringToTerraform(this._userData),
+      zone: cdktf.stringToTerraform(this._zone),
+      login: serverLoginToTerraform(this._login.internalValue),
+      network_interface: cdktf.listMapper(serverNetworkInterfaceToTerraform)(this._networkInterface),
+      simple_backup: serverSimpleBackupToTerraform(this._simpleBackup.internalValue),
+      storage_devices: cdktf.listMapper(serverStorageDevicesToTerraform)(this._storageDevices),
+      template: serverTemplateToTerraform(this._template.internalValue),
+    };
+  }
+}

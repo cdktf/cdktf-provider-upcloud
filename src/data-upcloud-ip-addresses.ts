@@ -1,0 +1,175 @@
+// https://www.terraform.io/docs/providers/upcloud/d/ip_addresses
+// generated from terraform resource schema
+
+import { Construct } from 'constructs';
+import * as cdktf from 'cdktf';
+
+// Configuration
+
+export interface DataUpcloudIpAddressesConfig extends cdktf.TerraformMetaArguments {
+}
+export interface DataUpcloudIpAddressesAddresses {
+}
+
+export function dataUpcloudIpAddressesAddressesToTerraform(struct?: DataUpcloudIpAddressesAddresses): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+  }
+}
+
+export class DataUpcloudIpAddressesAddressesOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): DataUpcloudIpAddressesAddresses | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: DataUpcloudIpAddressesAddresses | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+    }
+  }
+
+  // access - computed: true, optional: false, required: false
+  public get access() {
+    return this.getStringAttribute('access');
+  }
+
+  // address - computed: true, optional: false, required: false
+  public get address() {
+    return this.getStringAttribute('address');
+  }
+
+  // family - computed: true, optional: false, required: false
+  public get family() {
+    return this.getStringAttribute('family');
+  }
+
+  // floating - computed: true, optional: false, required: false
+  public get floating() {
+    return this.getBooleanAttribute('floating');
+  }
+
+  // mac - computed: true, optional: false, required: false
+  public get mac() {
+    return this.getStringAttribute('mac');
+  }
+
+  // part_of_plan - computed: true, optional: false, required: false
+  public get partOfPlan() {
+    return this.getBooleanAttribute('part_of_plan');
+  }
+
+  // ptr_record - computed: true, optional: false, required: false
+  public get ptrRecord() {
+    return this.getStringAttribute('ptr_record');
+  }
+
+  // server - computed: true, optional: false, required: false
+  public get server() {
+    return this.getStringAttribute('server');
+  }
+
+  // zone - computed: true, optional: false, required: false
+  public get zone() {
+    return this.getStringAttribute('zone');
+  }
+}
+
+export class DataUpcloudIpAddressesAddressesList extends cdktf.ComplexList {
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): DataUpcloudIpAddressesAddressesOutputReference {
+    return new DataUpcloudIpAddressesAddressesOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
+
+/**
+* Represents a {@link https://www.terraform.io/docs/providers/upcloud/d/ip_addresses upcloud_ip_addresses}
+*/
+export class DataUpcloudIpAddresses extends cdktf.TerraformDataSource {
+
+  // =================
+  // STATIC PROPERTIES
+  // =================
+  public static readonly tfResourceType = "upcloud_ip_addresses";
+
+  // ===========
+  // INITIALIZER
+  // ===========
+
+  /**
+  * Create a new {@link https://www.terraform.io/docs/providers/upcloud/d/ip_addresses upcloud_ip_addresses} Data Source
+  *
+  * @param scope The scope in which to define this construct
+  * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
+  * @param options DataUpcloudIpAddressesConfig = {}
+  */
+  public constructor(scope: Construct, id: string, config: DataUpcloudIpAddressesConfig = {}) {
+    super(scope, id, {
+      terraformResourceType: 'upcloud_ip_addresses',
+      terraformGeneratorMetadata: {
+        providerName: 'upcloud',
+        providerVersion: '2.4.2',
+        providerVersionConstraint: '~> 2.4'
+      },
+      provider: config.provider,
+      dependsOn: config.dependsOn,
+      count: config.count,
+      lifecycle: config.lifecycle
+    });
+  }
+
+  // ==========
+  // ATTRIBUTES
+  // ==========
+
+  // addresses - computed: true, optional: false, required: false
+  private _addresses = new DataUpcloudIpAddressesAddressesList(this, "addresses", true);
+  public get addresses() {
+    return this._addresses;
+  }
+
+  // id - computed: true, optional: true, required: false
+  public get id() {
+    return this.getStringAttribute('id');
+  }
+
+  // =========
+  // SYNTHESIS
+  // =========
+
+  protected synthesizeAttributes(): { [name: string]: any } {
+    return {
+    };
+  }
+}
