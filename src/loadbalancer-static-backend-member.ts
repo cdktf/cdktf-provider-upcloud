@@ -20,6 +20,13 @@ export interface LoadbalancerStaticBackendMemberConfig extends cdktf.TerraformMe
   */
   readonly enabled?: boolean | cdktf.IResolvable;
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/upcloud/r/loadbalancer_static_backend_member#id LoadbalancerStaticBackendMember#id}
+  *
+  * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
+  * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+  */
+  readonly id?: string;
+  /**
   * Server IP address in the customer private network.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/upcloud/r/loadbalancer_static_backend_member#ip LoadbalancerStaticBackendMember#ip}
@@ -89,6 +96,7 @@ export class LoadbalancerStaticBackendMember extends cdktf.TerraformResource {
     });
     this._backend = config.backend;
     this._enabled = config.enabled;
+    this._id = config.id;
     this._ip = config.ip;
     this._maxSessions = config.maxSessions;
     this._name = config.name;
@@ -130,8 +138,19 @@ export class LoadbalancerStaticBackendMember extends cdktf.TerraformResource {
   }
 
   // id - computed: true, optional: true, required: false
+  private _id?: string; 
   public get id() {
     return this.getStringAttribute('id');
+  }
+  public set id(value: string) {
+    this._id = value;
+  }
+  public resetId() {
+    this._id = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get idInput() {
+    return this._id;
   }
 
   // ip - computed: false, optional: false, required: true
@@ -207,6 +226,7 @@ export class LoadbalancerStaticBackendMember extends cdktf.TerraformResource {
     return {
       backend: cdktf.stringToTerraform(this._backend),
       enabled: cdktf.booleanToTerraform(this._enabled),
+      id: cdktf.stringToTerraform(this._id),
       ip: cdktf.stringToTerraform(this._ip),
       max_sessions: cdktf.numberToTerraform(this._maxSessions),
       name: cdktf.stringToTerraform(this._name),

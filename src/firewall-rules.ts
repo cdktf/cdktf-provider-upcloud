@@ -8,6 +8,13 @@ import * as cdktf from 'cdktf';
 
 export interface FirewallRulesConfig extends cdktf.TerraformMetaArguments {
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/upcloud/r/firewall_rules#id FirewallRules#id}
+  *
+  * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
+  * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+  */
+  readonly id?: string;
+  /**
   * The unique id of the server to be protected the firewall rules
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/upcloud/r/firewall_rules#server_id FirewallRules#server_id}
@@ -130,6 +137,363 @@ export function firewallRulesFirewallRuleToTerraform(struct?: FirewallRulesFirew
   }
 }
 
+export class FirewallRulesFirewallRuleOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): FirewallRulesFirewallRule | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._action !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.action = this._action;
+    }
+    if (this._comment !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.comment = this._comment;
+    }
+    if (this._destinationAddressEnd !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.destinationAddressEnd = this._destinationAddressEnd;
+    }
+    if (this._destinationAddressStart !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.destinationAddressStart = this._destinationAddressStart;
+    }
+    if (this._destinationPortEnd !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.destinationPortEnd = this._destinationPortEnd;
+    }
+    if (this._destinationPortStart !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.destinationPortStart = this._destinationPortStart;
+    }
+    if (this._direction !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.direction = this._direction;
+    }
+    if (this._family !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.family = this._family;
+    }
+    if (this._icmpType !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.icmpType = this._icmpType;
+    }
+    if (this._protocol !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.protocol = this._protocol;
+    }
+    if (this._sourceAddressEnd !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.sourceAddressEnd = this._sourceAddressEnd;
+    }
+    if (this._sourceAddressStart !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.sourceAddressStart = this._sourceAddressStart;
+    }
+    if (this._sourcePortEnd !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.sourcePortEnd = this._sourcePortEnd;
+    }
+    if (this._sourcePortStart !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.sourcePortStart = this._sourcePortStart;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: FirewallRulesFirewallRule | cdktf.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._action = undefined;
+      this._comment = undefined;
+      this._destinationAddressEnd = undefined;
+      this._destinationAddressStart = undefined;
+      this._destinationPortEnd = undefined;
+      this._destinationPortStart = undefined;
+      this._direction = undefined;
+      this._family = undefined;
+      this._icmpType = undefined;
+      this._protocol = undefined;
+      this._sourceAddressEnd = undefined;
+      this._sourceAddressStart = undefined;
+      this._sourcePortEnd = undefined;
+      this._sourcePortStart = undefined;
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._action = value.action;
+      this._comment = value.comment;
+      this._destinationAddressEnd = value.destinationAddressEnd;
+      this._destinationAddressStart = value.destinationAddressStart;
+      this._destinationPortEnd = value.destinationPortEnd;
+      this._destinationPortStart = value.destinationPortStart;
+      this._direction = value.direction;
+      this._family = value.family;
+      this._icmpType = value.icmpType;
+      this._protocol = value.protocol;
+      this._sourceAddressEnd = value.sourceAddressEnd;
+      this._sourceAddressStart = value.sourceAddressStart;
+      this._sourcePortEnd = value.sourcePortEnd;
+      this._sourcePortStart = value.sourcePortStart;
+    }
+  }
+
+  // action - computed: false, optional: false, required: true
+  private _action?: string; 
+  public get action() {
+    return this.getStringAttribute('action');
+  }
+  public set action(value: string) {
+    this._action = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get actionInput() {
+    return this._action;
+  }
+
+  // comment - computed: false, optional: true, required: false
+  private _comment?: string; 
+  public get comment() {
+    return this.getStringAttribute('comment');
+  }
+  public set comment(value: string) {
+    this._comment = value;
+  }
+  public resetComment() {
+    this._comment = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get commentInput() {
+    return this._comment;
+  }
+
+  // destination_address_end - computed: false, optional: true, required: false
+  private _destinationAddressEnd?: string; 
+  public get destinationAddressEnd() {
+    return this.getStringAttribute('destination_address_end');
+  }
+  public set destinationAddressEnd(value: string) {
+    this._destinationAddressEnd = value;
+  }
+  public resetDestinationAddressEnd() {
+    this._destinationAddressEnd = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get destinationAddressEndInput() {
+    return this._destinationAddressEnd;
+  }
+
+  // destination_address_start - computed: false, optional: true, required: false
+  private _destinationAddressStart?: string; 
+  public get destinationAddressStart() {
+    return this.getStringAttribute('destination_address_start');
+  }
+  public set destinationAddressStart(value: string) {
+    this._destinationAddressStart = value;
+  }
+  public resetDestinationAddressStart() {
+    this._destinationAddressStart = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get destinationAddressStartInput() {
+    return this._destinationAddressStart;
+  }
+
+  // destination_port_end - computed: false, optional: true, required: false
+  private _destinationPortEnd?: string; 
+  public get destinationPortEnd() {
+    return this.getStringAttribute('destination_port_end');
+  }
+  public set destinationPortEnd(value: string) {
+    this._destinationPortEnd = value;
+  }
+  public resetDestinationPortEnd() {
+    this._destinationPortEnd = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get destinationPortEndInput() {
+    return this._destinationPortEnd;
+  }
+
+  // destination_port_start - computed: false, optional: true, required: false
+  private _destinationPortStart?: string; 
+  public get destinationPortStart() {
+    return this.getStringAttribute('destination_port_start');
+  }
+  public set destinationPortStart(value: string) {
+    this._destinationPortStart = value;
+  }
+  public resetDestinationPortStart() {
+    this._destinationPortStart = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get destinationPortStartInput() {
+    return this._destinationPortStart;
+  }
+
+  // direction - computed: false, optional: false, required: true
+  private _direction?: string; 
+  public get direction() {
+    return this.getStringAttribute('direction');
+  }
+  public set direction(value: string) {
+    this._direction = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get directionInput() {
+    return this._direction;
+  }
+
+  // family - computed: false, optional: false, required: true
+  private _family?: string; 
+  public get family() {
+    return this.getStringAttribute('family');
+  }
+  public set family(value: string) {
+    this._family = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get familyInput() {
+    return this._family;
+  }
+
+  // icmp_type - computed: false, optional: true, required: false
+  private _icmpType?: string; 
+  public get icmpType() {
+    return this.getStringAttribute('icmp_type');
+  }
+  public set icmpType(value: string) {
+    this._icmpType = value;
+  }
+  public resetIcmpType() {
+    this._icmpType = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get icmpTypeInput() {
+    return this._icmpType;
+  }
+
+  // protocol - computed: false, optional: true, required: false
+  private _protocol?: string; 
+  public get protocol() {
+    return this.getStringAttribute('protocol');
+  }
+  public set protocol(value: string) {
+    this._protocol = value;
+  }
+  public resetProtocol() {
+    this._protocol = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get protocolInput() {
+    return this._protocol;
+  }
+
+  // source_address_end - computed: false, optional: true, required: false
+  private _sourceAddressEnd?: string; 
+  public get sourceAddressEnd() {
+    return this.getStringAttribute('source_address_end');
+  }
+  public set sourceAddressEnd(value: string) {
+    this._sourceAddressEnd = value;
+  }
+  public resetSourceAddressEnd() {
+    this._sourceAddressEnd = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get sourceAddressEndInput() {
+    return this._sourceAddressEnd;
+  }
+
+  // source_address_start - computed: false, optional: true, required: false
+  private _sourceAddressStart?: string; 
+  public get sourceAddressStart() {
+    return this.getStringAttribute('source_address_start');
+  }
+  public set sourceAddressStart(value: string) {
+    this._sourceAddressStart = value;
+  }
+  public resetSourceAddressStart() {
+    this._sourceAddressStart = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get sourceAddressStartInput() {
+    return this._sourceAddressStart;
+  }
+
+  // source_port_end - computed: false, optional: true, required: false
+  private _sourcePortEnd?: string; 
+  public get sourcePortEnd() {
+    return this.getStringAttribute('source_port_end');
+  }
+  public set sourcePortEnd(value: string) {
+    this._sourcePortEnd = value;
+  }
+  public resetSourcePortEnd() {
+    this._sourcePortEnd = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get sourcePortEndInput() {
+    return this._sourcePortEnd;
+  }
+
+  // source_port_start - computed: false, optional: true, required: false
+  private _sourcePortStart?: string; 
+  public get sourcePortStart() {
+    return this.getStringAttribute('source_port_start');
+  }
+  public set sourcePortStart(value: string) {
+    this._sourcePortStart = value;
+  }
+  public resetSourcePortStart() {
+    this._sourcePortStart = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get sourcePortStartInput() {
+    return this._sourcePortStart;
+  }
+}
+
+export class FirewallRulesFirewallRuleList extends cdktf.ComplexList {
+  public internalValue? : FirewallRulesFirewallRule[] | cdktf.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): FirewallRulesFirewallRuleOutputReference {
+    return new FirewallRulesFirewallRuleOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
 
 /**
 * Represents a {@link https://www.terraform.io/docs/providers/upcloud/r/firewall_rules upcloud_firewall_rules}
@@ -165,8 +529,9 @@ export class FirewallRules extends cdktf.TerraformResource {
       count: config.count,
       lifecycle: config.lifecycle
     });
+    this._id = config.id;
     this._serverId = config.serverId;
-    this._firewallRule = config.firewallRule;
+    this._firewallRule.internalValue = config.firewallRule;
   }
 
   // ==========
@@ -174,8 +539,19 @@ export class FirewallRules extends cdktf.TerraformResource {
   // ==========
 
   // id - computed: true, optional: true, required: false
+  private _id?: string; 
   public get id() {
     return this.getStringAttribute('id');
+  }
+  public set id(value: string) {
+    this._id = value;
+  }
+  public resetId() {
+    this._id = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get idInput() {
+    return this._id;
   }
 
   // server_id - computed: false, optional: false, required: true
@@ -192,17 +568,16 @@ export class FirewallRules extends cdktf.TerraformResource {
   }
 
   // firewall_rule - computed: false, optional: false, required: true
-  private _firewallRule?: FirewallRulesFirewallRule[] | cdktf.IResolvable; 
+  private _firewallRule = new FirewallRulesFirewallRuleList(this, "firewall_rule", false);
   public get firewallRule() {
-    // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('firewall_rule');
+    return this._firewallRule;
   }
-  public set firewallRule(value: FirewallRulesFirewallRule[] | cdktf.IResolvable) {
-    this._firewallRule = value;
+  public putFirewallRule(value: FirewallRulesFirewallRule[] | cdktf.IResolvable) {
+    this._firewallRule.internalValue = value;
   }
   // Temporarily expose input value. Use with caution.
   public get firewallRuleInput() {
-    return this._firewallRule;
+    return this._firewallRule.internalValue;
   }
 
   // =========
@@ -211,8 +586,9 @@ export class FirewallRules extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
+      id: cdktf.stringToTerraform(this._id),
       server_id: cdktf.stringToTerraform(this._serverId),
-      firewall_rule: cdktf.listMapper(firewallRulesFirewallRuleToTerraform)(this._firewallRule),
+      firewall_rule: cdktf.listMapper(firewallRulesFirewallRuleToTerraform)(this._firewallRule.internalValue),
     };
   }
 }

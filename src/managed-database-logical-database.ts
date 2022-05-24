@@ -20,6 +20,13 @@ export interface ManagedDatabaseLogicalDatabaseConfig extends cdktf.TerraformMet
   */
   readonly collation?: string;
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/upcloud/r/managed_database_logical_database#id ManagedDatabaseLogicalDatabase#id}
+  *
+  * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
+  * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+  */
+  readonly id?: string;
+  /**
   * Name of the logical database
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/upcloud/r/managed_database_logical_database#name ManagedDatabaseLogicalDatabase#name}
@@ -69,6 +76,7 @@ export class ManagedDatabaseLogicalDatabase extends cdktf.TerraformResource {
     });
     this._characterSet = config.characterSet;
     this._collation = config.collation;
+    this._id = config.id;
     this._name = config.name;
     this._service = config.service;
   }
@@ -110,8 +118,19 @@ export class ManagedDatabaseLogicalDatabase extends cdktf.TerraformResource {
   }
 
   // id - computed: true, optional: true, required: false
+  private _id?: string; 
   public get id() {
     return this.getStringAttribute('id');
+  }
+  public set id(value: string) {
+    this._id = value;
+  }
+  public resetId() {
+    this._id = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get idInput() {
+    return this._id;
   }
 
   // name - computed: false, optional: false, required: true
@@ -148,6 +167,7 @@ export class ManagedDatabaseLogicalDatabase extends cdktf.TerraformResource {
     return {
       character_set: cdktf.stringToTerraform(this._characterSet),
       collation: cdktf.stringToTerraform(this._collation),
+      id: cdktf.stringToTerraform(this._id),
       name: cdktf.stringToTerraform(this._name),
       service: cdktf.stringToTerraform(this._service),
     };

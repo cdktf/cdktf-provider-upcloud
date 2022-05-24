@@ -14,6 +14,13 @@ export interface LoadbalancerFrontendRuleConfig extends cdktf.TerraformMetaArgum
   */
   readonly frontend: string;
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/upcloud/r/loadbalancer_frontend_rule#id LoadbalancerFrontendRule#id}
+  *
+  * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
+  * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+  */
+  readonly id?: string;
+  /**
   * The name of the frontend rule must be unique within the load balancer service.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/upcloud/r/loadbalancer_frontend_rule#name LoadbalancerFrontendRule#name}
@@ -57,6 +64,83 @@ export function loadbalancerFrontendRuleActionsHttpRedirectToTerraform(struct?: 
   }
 }
 
+export class LoadbalancerFrontendRuleActionsHttpRedirectOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): LoadbalancerFrontendRuleActionsHttpRedirect | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._location !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.location = this._location;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: LoadbalancerFrontendRuleActionsHttpRedirect | cdktf.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._location = undefined;
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._location = value.location;
+    }
+  }
+
+  // location - computed: false, optional: false, required: true
+  private _location?: string; 
+  public get location() {
+    return this.getStringAttribute('location');
+  }
+  public set location(value: string) {
+    this._location = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get locationInput() {
+    return this._location;
+  }
+}
+
+export class LoadbalancerFrontendRuleActionsHttpRedirectList extends cdktf.ComplexList {
+  public internalValue? : LoadbalancerFrontendRuleActionsHttpRedirect[] | cdktf.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): LoadbalancerFrontendRuleActionsHttpRedirectOutputReference {
+    return new LoadbalancerFrontendRuleActionsHttpRedirectOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
 export interface LoadbalancerFrontendRuleActionsHttpReturn {
   /**
   * Content type.
@@ -90,6 +174,121 @@ export function loadbalancerFrontendRuleActionsHttpReturnToTerraform(struct?: Lo
   }
 }
 
+export class LoadbalancerFrontendRuleActionsHttpReturnOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): LoadbalancerFrontendRuleActionsHttpReturn | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._contentType !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.contentType = this._contentType;
+    }
+    if (this._payload !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.payload = this._payload;
+    }
+    if (this._status !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.status = this._status;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: LoadbalancerFrontendRuleActionsHttpReturn | cdktf.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._contentType = undefined;
+      this._payload = undefined;
+      this._status = undefined;
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._contentType = value.contentType;
+      this._payload = value.payload;
+      this._status = value.status;
+    }
+  }
+
+  // content_type - computed: false, optional: false, required: true
+  private _contentType?: string; 
+  public get contentType() {
+    return this.getStringAttribute('content_type');
+  }
+  public set contentType(value: string) {
+    this._contentType = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get contentTypeInput() {
+    return this._contentType;
+  }
+
+  // payload - computed: false, optional: false, required: true
+  private _payload?: string; 
+  public get payload() {
+    return this.getStringAttribute('payload');
+  }
+  public set payload(value: string) {
+    this._payload = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get payloadInput() {
+    return this._payload;
+  }
+
+  // status - computed: false, optional: false, required: true
+  private _status?: number; 
+  public get status() {
+    return this.getNumberAttribute('status');
+  }
+  public set status(value: number) {
+    this._status = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get statusInput() {
+    return this._status;
+  }
+}
+
+export class LoadbalancerFrontendRuleActionsHttpReturnList extends cdktf.ComplexList {
+  public internalValue? : LoadbalancerFrontendRuleActionsHttpReturn[] | cdktf.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): LoadbalancerFrontendRuleActionsHttpReturnOutputReference {
+    return new LoadbalancerFrontendRuleActionsHttpReturnOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
 export interface LoadbalancerFrontendRuleActionsTcpReject {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/upcloud/r/loadbalancer_frontend_rule#active LoadbalancerFrontendRule#active}
@@ -107,6 +306,86 @@ export function loadbalancerFrontendRuleActionsTcpRejectToTerraform(struct?: Loa
   }
 }
 
+export class LoadbalancerFrontendRuleActionsTcpRejectOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): LoadbalancerFrontendRuleActionsTcpReject | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._active !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.active = this._active;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: LoadbalancerFrontendRuleActionsTcpReject | cdktf.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._active = undefined;
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._active = value.active;
+    }
+  }
+
+  // active - computed: false, optional: true, required: false
+  private _active?: boolean | cdktf.IResolvable; 
+  public get active() {
+    return this.getBooleanAttribute('active');
+  }
+  public set active(value: boolean | cdktf.IResolvable) {
+    this._active = value;
+  }
+  public resetActive() {
+    this._active = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get activeInput() {
+    return this._active;
+  }
+}
+
+export class LoadbalancerFrontendRuleActionsTcpRejectList extends cdktf.ComplexList {
+  public internalValue? : LoadbalancerFrontendRuleActionsTcpReject[] | cdktf.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): LoadbalancerFrontendRuleActionsTcpRejectOutputReference {
+    return new LoadbalancerFrontendRuleActionsTcpRejectOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
 export interface LoadbalancerFrontendRuleActionsUseBackend {
   /**
   * The name of the backend where traffic will be routed.
@@ -126,6 +405,83 @@ export function loadbalancerFrontendRuleActionsUseBackendToTerraform(struct?: Lo
   }
 }
 
+export class LoadbalancerFrontendRuleActionsUseBackendOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): LoadbalancerFrontendRuleActionsUseBackend | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._backendName !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.backendName = this._backendName;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: LoadbalancerFrontendRuleActionsUseBackend | cdktf.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._backendName = undefined;
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._backendName = value.backendName;
+    }
+  }
+
+  // backend_name - computed: false, optional: false, required: true
+  private _backendName?: string; 
+  public get backendName() {
+    return this.getStringAttribute('backend_name');
+  }
+  public set backendName(value: string) {
+    this._backendName = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get backendNameInput() {
+    return this._backendName;
+  }
+}
+
+export class LoadbalancerFrontendRuleActionsUseBackendList extends cdktf.ComplexList {
+  public internalValue? : LoadbalancerFrontendRuleActionsUseBackend[] | cdktf.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): LoadbalancerFrontendRuleActionsUseBackendOutputReference {
+    return new LoadbalancerFrontendRuleActionsUseBackendOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
 export interface LoadbalancerFrontendRuleActions {
   /**
   * http_redirect block
@@ -180,21 +536,21 @@ export class LoadbalancerFrontendRuleActionsOutputReference extends cdktf.Comple
   public get internalValue(): LoadbalancerFrontendRuleActions | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._httpRedirect !== undefined) {
+    if (this._httpRedirect?.internalValue !== undefined) {
       hasAnyValues = true;
-      internalValueResult.httpRedirect = this._httpRedirect;
+      internalValueResult.httpRedirect = this._httpRedirect?.internalValue;
     }
-    if (this._httpReturn !== undefined) {
+    if (this._httpReturn?.internalValue !== undefined) {
       hasAnyValues = true;
-      internalValueResult.httpReturn = this._httpReturn;
+      internalValueResult.httpReturn = this._httpReturn?.internalValue;
     }
-    if (this._tcpReject !== undefined) {
+    if (this._tcpReject?.internalValue !== undefined) {
       hasAnyValues = true;
-      internalValueResult.tcpReject = this._tcpReject;
+      internalValueResult.tcpReject = this._tcpReject?.internalValue;
     }
-    if (this._useBackend !== undefined) {
+    if (this._useBackend?.internalValue !== undefined) {
       hasAnyValues = true;
-      internalValueResult.useBackend = this._useBackend;
+      internalValueResult.useBackend = this._useBackend?.internalValue;
     }
     return hasAnyValues ? internalValueResult : undefined;
   }
@@ -202,86 +558,82 @@ export class LoadbalancerFrontendRuleActionsOutputReference extends cdktf.Comple
   public set internalValue(value: LoadbalancerFrontendRuleActions | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
-      this._httpRedirect = undefined;
-      this._httpReturn = undefined;
-      this._tcpReject = undefined;
-      this._useBackend = undefined;
+      this._httpRedirect.internalValue = undefined;
+      this._httpReturn.internalValue = undefined;
+      this._tcpReject.internalValue = undefined;
+      this._useBackend.internalValue = undefined;
     }
     else {
       this.isEmptyObject = Object.keys(value).length === 0;
-      this._httpRedirect = value.httpRedirect;
-      this._httpReturn = value.httpReturn;
-      this._tcpReject = value.tcpReject;
-      this._useBackend = value.useBackend;
+      this._httpRedirect.internalValue = value.httpRedirect;
+      this._httpReturn.internalValue = value.httpReturn;
+      this._tcpReject.internalValue = value.tcpReject;
+      this._useBackend.internalValue = value.useBackend;
     }
   }
 
   // http_redirect - computed: false, optional: true, required: false
-  private _httpRedirect?: LoadbalancerFrontendRuleActionsHttpRedirect[] | cdktf.IResolvable; 
+  private _httpRedirect = new LoadbalancerFrontendRuleActionsHttpRedirectList(this, "http_redirect", false);
   public get httpRedirect() {
-    // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('http_redirect');
+    return this._httpRedirect;
   }
-  public set httpRedirect(value: LoadbalancerFrontendRuleActionsHttpRedirect[] | cdktf.IResolvable) {
-    this._httpRedirect = value;
+  public putHttpRedirect(value: LoadbalancerFrontendRuleActionsHttpRedirect[] | cdktf.IResolvable) {
+    this._httpRedirect.internalValue = value;
   }
   public resetHttpRedirect() {
-    this._httpRedirect = undefined;
+    this._httpRedirect.internalValue = undefined;
   }
   // Temporarily expose input value. Use with caution.
   public get httpRedirectInput() {
-    return this._httpRedirect;
+    return this._httpRedirect.internalValue;
   }
 
   // http_return - computed: false, optional: true, required: false
-  private _httpReturn?: LoadbalancerFrontendRuleActionsHttpReturn[] | cdktf.IResolvable; 
+  private _httpReturn = new LoadbalancerFrontendRuleActionsHttpReturnList(this, "http_return", false);
   public get httpReturn() {
-    // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('http_return');
+    return this._httpReturn;
   }
-  public set httpReturn(value: LoadbalancerFrontendRuleActionsHttpReturn[] | cdktf.IResolvable) {
-    this._httpReturn = value;
+  public putHttpReturn(value: LoadbalancerFrontendRuleActionsHttpReturn[] | cdktf.IResolvable) {
+    this._httpReturn.internalValue = value;
   }
   public resetHttpReturn() {
-    this._httpReturn = undefined;
+    this._httpReturn.internalValue = undefined;
   }
   // Temporarily expose input value. Use with caution.
   public get httpReturnInput() {
-    return this._httpReturn;
+    return this._httpReturn.internalValue;
   }
 
   // tcp_reject - computed: false, optional: true, required: false
-  private _tcpReject?: LoadbalancerFrontendRuleActionsTcpReject[] | cdktf.IResolvable; 
+  private _tcpReject = new LoadbalancerFrontendRuleActionsTcpRejectList(this, "tcp_reject", false);
   public get tcpReject() {
-    // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('tcp_reject');
+    return this._tcpReject;
   }
-  public set tcpReject(value: LoadbalancerFrontendRuleActionsTcpReject[] | cdktf.IResolvable) {
-    this._tcpReject = value;
+  public putTcpReject(value: LoadbalancerFrontendRuleActionsTcpReject[] | cdktf.IResolvable) {
+    this._tcpReject.internalValue = value;
   }
   public resetTcpReject() {
-    this._tcpReject = undefined;
+    this._tcpReject.internalValue = undefined;
   }
   // Temporarily expose input value. Use with caution.
   public get tcpRejectInput() {
-    return this._tcpReject;
+    return this._tcpReject.internalValue;
   }
 
   // use_backend - computed: false, optional: true, required: false
-  private _useBackend?: LoadbalancerFrontendRuleActionsUseBackend[] | cdktf.IResolvable; 
+  private _useBackend = new LoadbalancerFrontendRuleActionsUseBackendList(this, "use_backend", false);
   public get useBackend() {
-    // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('use_backend');
+    return this._useBackend;
   }
-  public set useBackend(value: LoadbalancerFrontendRuleActionsUseBackend[] | cdktf.IResolvable) {
-    this._useBackend = value;
+  public putUseBackend(value: LoadbalancerFrontendRuleActionsUseBackend[] | cdktf.IResolvable) {
+    this._useBackend.internalValue = value;
   }
   public resetUseBackend() {
-    this._useBackend = undefined;
+    this._useBackend.internalValue = undefined;
   }
   // Temporarily expose input value. Use with caution.
   public get useBackendInput() {
-    return this._useBackend;
+    return this._useBackend.internalValue;
   }
 }
 export interface LoadbalancerFrontendRuleMatchersBodySize {
@@ -310,6 +662,102 @@ export function loadbalancerFrontendRuleMatchersBodySizeToTerraform(struct?: Loa
   }
 }
 
+export class LoadbalancerFrontendRuleMatchersBodySizeOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): LoadbalancerFrontendRuleMatchersBodySize | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._method !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.method = this._method;
+    }
+    if (this._value !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.value = this._value;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: LoadbalancerFrontendRuleMatchersBodySize | cdktf.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._method = undefined;
+      this._value = undefined;
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._method = value.method;
+      this._value = value.value;
+    }
+  }
+
+  // method - computed: false, optional: false, required: true
+  private _method?: string; 
+  public get method() {
+    return this.getStringAttribute('method');
+  }
+  public set method(value: string) {
+    this._method = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get methodInput() {
+    return this._method;
+  }
+
+  // value - computed: false, optional: false, required: true
+  private _value?: number; 
+  public get value() {
+    return this.getNumberAttribute('value');
+  }
+  public set value(value: number) {
+    this._value = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get valueInput() {
+    return this._value;
+  }
+}
+
+export class LoadbalancerFrontendRuleMatchersBodySizeList extends cdktf.ComplexList {
+  public internalValue? : LoadbalancerFrontendRuleMatchersBodySize[] | cdktf.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): LoadbalancerFrontendRuleMatchersBodySizeOutputReference {
+    return new LoadbalancerFrontendRuleMatchersBodySizeOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
 export interface LoadbalancerFrontendRuleMatchersBodySizeRange {
   /**
   * Integer value.
@@ -336,6 +784,102 @@ export function loadbalancerFrontendRuleMatchersBodySizeRangeToTerraform(struct?
   }
 }
 
+export class LoadbalancerFrontendRuleMatchersBodySizeRangeOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): LoadbalancerFrontendRuleMatchersBodySizeRange | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._rangeEnd !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.rangeEnd = this._rangeEnd;
+    }
+    if (this._rangeStart !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.rangeStart = this._rangeStart;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: LoadbalancerFrontendRuleMatchersBodySizeRange | cdktf.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._rangeEnd = undefined;
+      this._rangeStart = undefined;
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._rangeEnd = value.rangeEnd;
+      this._rangeStart = value.rangeStart;
+    }
+  }
+
+  // range_end - computed: false, optional: false, required: true
+  private _rangeEnd?: number; 
+  public get rangeEnd() {
+    return this.getNumberAttribute('range_end');
+  }
+  public set rangeEnd(value: number) {
+    this._rangeEnd = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get rangeEndInput() {
+    return this._rangeEnd;
+  }
+
+  // range_start - computed: false, optional: false, required: true
+  private _rangeStart?: number; 
+  public get rangeStart() {
+    return this.getNumberAttribute('range_start');
+  }
+  public set rangeStart(value: number) {
+    this._rangeStart = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get rangeStartInput() {
+    return this._rangeStart;
+  }
+}
+
+export class LoadbalancerFrontendRuleMatchersBodySizeRangeList extends cdktf.ComplexList {
+  public internalValue? : LoadbalancerFrontendRuleMatchersBodySizeRange[] | cdktf.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): LoadbalancerFrontendRuleMatchersBodySizeRangeOutputReference {
+    return new LoadbalancerFrontendRuleMatchersBodySizeRangeOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
 export interface LoadbalancerFrontendRuleMatchersCookie {
   /**
   * Ignore case, default `false`.
@@ -376,6 +920,146 @@ export function loadbalancerFrontendRuleMatchersCookieToTerraform(struct?: Loadb
   }
 }
 
+export class LoadbalancerFrontendRuleMatchersCookieOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): LoadbalancerFrontendRuleMatchersCookie | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._ignoreCase !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.ignoreCase = this._ignoreCase;
+    }
+    if (this._method !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.method = this._method;
+    }
+    if (this._name !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.name = this._name;
+    }
+    if (this._value !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.value = this._value;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: LoadbalancerFrontendRuleMatchersCookie | cdktf.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._ignoreCase = undefined;
+      this._method = undefined;
+      this._name = undefined;
+      this._value = undefined;
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._ignoreCase = value.ignoreCase;
+      this._method = value.method;
+      this._name = value.name;
+      this._value = value.value;
+    }
+  }
+
+  // ignore_case - computed: false, optional: true, required: false
+  private _ignoreCase?: boolean | cdktf.IResolvable; 
+  public get ignoreCase() {
+    return this.getBooleanAttribute('ignore_case');
+  }
+  public set ignoreCase(value: boolean | cdktf.IResolvable) {
+    this._ignoreCase = value;
+  }
+  public resetIgnoreCase() {
+    this._ignoreCase = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get ignoreCaseInput() {
+    return this._ignoreCase;
+  }
+
+  // method - computed: false, optional: false, required: true
+  private _method?: string; 
+  public get method() {
+    return this.getStringAttribute('method');
+  }
+  public set method(value: string) {
+    this._method = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get methodInput() {
+    return this._method;
+  }
+
+  // name - computed: false, optional: false, required: true
+  private _name?: string; 
+  public get name() {
+    return this.getStringAttribute('name');
+  }
+  public set name(value: string) {
+    this._name = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get nameInput() {
+    return this._name;
+  }
+
+  // value - computed: false, optional: true, required: false
+  private _value?: string; 
+  public get value() {
+    return this.getStringAttribute('value');
+  }
+  public set value(value: string) {
+    this._value = value;
+  }
+  public resetValue() {
+    this._value = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get valueInput() {
+    return this._value;
+  }
+}
+
+export class LoadbalancerFrontendRuleMatchersCookieList extends cdktf.ComplexList {
+  public internalValue? : LoadbalancerFrontendRuleMatchersCookie[] | cdktf.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): LoadbalancerFrontendRuleMatchersCookieOutputReference {
+    return new LoadbalancerFrontendRuleMatchersCookieOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
 export interface LoadbalancerFrontendRuleMatchersHeader {
   /**
   * Ignore case, default `false`.
@@ -416,6 +1100,146 @@ export function loadbalancerFrontendRuleMatchersHeaderToTerraform(struct?: Loadb
   }
 }
 
+export class LoadbalancerFrontendRuleMatchersHeaderOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): LoadbalancerFrontendRuleMatchersHeader | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._ignoreCase !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.ignoreCase = this._ignoreCase;
+    }
+    if (this._method !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.method = this._method;
+    }
+    if (this._name !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.name = this._name;
+    }
+    if (this._value !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.value = this._value;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: LoadbalancerFrontendRuleMatchersHeader | cdktf.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._ignoreCase = undefined;
+      this._method = undefined;
+      this._name = undefined;
+      this._value = undefined;
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._ignoreCase = value.ignoreCase;
+      this._method = value.method;
+      this._name = value.name;
+      this._value = value.value;
+    }
+  }
+
+  // ignore_case - computed: false, optional: true, required: false
+  private _ignoreCase?: boolean | cdktf.IResolvable; 
+  public get ignoreCase() {
+    return this.getBooleanAttribute('ignore_case');
+  }
+  public set ignoreCase(value: boolean | cdktf.IResolvable) {
+    this._ignoreCase = value;
+  }
+  public resetIgnoreCase() {
+    this._ignoreCase = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get ignoreCaseInput() {
+    return this._ignoreCase;
+  }
+
+  // method - computed: false, optional: false, required: true
+  private _method?: string; 
+  public get method() {
+    return this.getStringAttribute('method');
+  }
+  public set method(value: string) {
+    this._method = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get methodInput() {
+    return this._method;
+  }
+
+  // name - computed: false, optional: false, required: true
+  private _name?: string; 
+  public get name() {
+    return this.getStringAttribute('name');
+  }
+  public set name(value: string) {
+    this._name = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get nameInput() {
+    return this._name;
+  }
+
+  // value - computed: false, optional: true, required: false
+  private _value?: string; 
+  public get value() {
+    return this.getStringAttribute('value');
+  }
+  public set value(value: string) {
+    this._value = value;
+  }
+  public resetValue() {
+    this._value = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get valueInput() {
+    return this._value;
+  }
+}
+
+export class LoadbalancerFrontendRuleMatchersHeaderList extends cdktf.ComplexList {
+  public internalValue? : LoadbalancerFrontendRuleMatchersHeader[] | cdktf.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): LoadbalancerFrontendRuleMatchersHeaderOutputReference {
+    return new LoadbalancerFrontendRuleMatchersHeaderOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
 export interface LoadbalancerFrontendRuleMatchersHost {
   /**
   * String value.
@@ -435,6 +1259,83 @@ export function loadbalancerFrontendRuleMatchersHostToTerraform(struct?: Loadbal
   }
 }
 
+export class LoadbalancerFrontendRuleMatchersHostOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): LoadbalancerFrontendRuleMatchersHost | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._value !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.value = this._value;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: LoadbalancerFrontendRuleMatchersHost | cdktf.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._value = undefined;
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._value = value.value;
+    }
+  }
+
+  // value - computed: false, optional: false, required: true
+  private _value?: string; 
+  public get value() {
+    return this.getStringAttribute('value');
+  }
+  public set value(value: string) {
+    this._value = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get valueInput() {
+    return this._value;
+  }
+}
+
+export class LoadbalancerFrontendRuleMatchersHostList extends cdktf.ComplexList {
+  public internalValue? : LoadbalancerFrontendRuleMatchersHost[] | cdktf.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): LoadbalancerFrontendRuleMatchersHostOutputReference {
+    return new LoadbalancerFrontendRuleMatchersHostOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
 export interface LoadbalancerFrontendRuleMatchersHttpMethod {
   /**
   * String value (`GET`, `HEAD`, `POST`, `PUT`, `PATCH`, `DELETE`, `CONNECT`, `OPTIONS`, `TRACE`).
@@ -454,6 +1355,83 @@ export function loadbalancerFrontendRuleMatchersHttpMethodToTerraform(struct?: L
   }
 }
 
+export class LoadbalancerFrontendRuleMatchersHttpMethodOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): LoadbalancerFrontendRuleMatchersHttpMethod | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._value !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.value = this._value;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: LoadbalancerFrontendRuleMatchersHttpMethod | cdktf.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._value = undefined;
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._value = value.value;
+    }
+  }
+
+  // value - computed: false, optional: false, required: true
+  private _value?: string; 
+  public get value() {
+    return this.getStringAttribute('value');
+  }
+  public set value(value: string) {
+    this._value = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get valueInput() {
+    return this._value;
+  }
+}
+
+export class LoadbalancerFrontendRuleMatchersHttpMethodList extends cdktf.ComplexList {
+  public internalValue? : LoadbalancerFrontendRuleMatchersHttpMethod[] | cdktf.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): LoadbalancerFrontendRuleMatchersHttpMethodOutputReference {
+    return new LoadbalancerFrontendRuleMatchersHttpMethodOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
 export interface LoadbalancerFrontendRuleMatchersNumMembersUp {
   /**
   * The name of the `backend` which members will be monitored.
@@ -487,6 +1465,121 @@ export function loadbalancerFrontendRuleMatchersNumMembersUpToTerraform(struct?:
   }
 }
 
+export class LoadbalancerFrontendRuleMatchersNumMembersUpOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): LoadbalancerFrontendRuleMatchersNumMembersUp | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._backendName !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.backendName = this._backendName;
+    }
+    if (this._method !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.method = this._method;
+    }
+    if (this._value !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.value = this._value;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: LoadbalancerFrontendRuleMatchersNumMembersUp | cdktf.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._backendName = undefined;
+      this._method = undefined;
+      this._value = undefined;
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._backendName = value.backendName;
+      this._method = value.method;
+      this._value = value.value;
+    }
+  }
+
+  // backend_name - computed: false, optional: false, required: true
+  private _backendName?: string; 
+  public get backendName() {
+    return this.getStringAttribute('backend_name');
+  }
+  public set backendName(value: string) {
+    this._backendName = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get backendNameInput() {
+    return this._backendName;
+  }
+
+  // method - computed: false, optional: false, required: true
+  private _method?: string; 
+  public get method() {
+    return this.getStringAttribute('method');
+  }
+  public set method(value: string) {
+    this._method = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get methodInput() {
+    return this._method;
+  }
+
+  // value - computed: false, optional: false, required: true
+  private _value?: number; 
+  public get value() {
+    return this.getNumberAttribute('value');
+  }
+  public set value(value: number) {
+    this._value = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get valueInput() {
+    return this._value;
+  }
+}
+
+export class LoadbalancerFrontendRuleMatchersNumMembersUpList extends cdktf.ComplexList {
+  public internalValue? : LoadbalancerFrontendRuleMatchersNumMembersUp[] | cdktf.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): LoadbalancerFrontendRuleMatchersNumMembersUpOutputReference {
+    return new LoadbalancerFrontendRuleMatchersNumMembersUpOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
 export interface LoadbalancerFrontendRuleMatchersPath {
   /**
   * Ignore case, default `false`.
@@ -520,6 +1613,127 @@ export function loadbalancerFrontendRuleMatchersPathToTerraform(struct?: Loadbal
   }
 }
 
+export class LoadbalancerFrontendRuleMatchersPathOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): LoadbalancerFrontendRuleMatchersPath | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._ignoreCase !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.ignoreCase = this._ignoreCase;
+    }
+    if (this._method !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.method = this._method;
+    }
+    if (this._value !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.value = this._value;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: LoadbalancerFrontendRuleMatchersPath | cdktf.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._ignoreCase = undefined;
+      this._method = undefined;
+      this._value = undefined;
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._ignoreCase = value.ignoreCase;
+      this._method = value.method;
+      this._value = value.value;
+    }
+  }
+
+  // ignore_case - computed: false, optional: true, required: false
+  private _ignoreCase?: boolean | cdktf.IResolvable; 
+  public get ignoreCase() {
+    return this.getBooleanAttribute('ignore_case');
+  }
+  public set ignoreCase(value: boolean | cdktf.IResolvable) {
+    this._ignoreCase = value;
+  }
+  public resetIgnoreCase() {
+    this._ignoreCase = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get ignoreCaseInput() {
+    return this._ignoreCase;
+  }
+
+  // method - computed: false, optional: false, required: true
+  private _method?: string; 
+  public get method() {
+    return this.getStringAttribute('method');
+  }
+  public set method(value: string) {
+    this._method = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get methodInput() {
+    return this._method;
+  }
+
+  // value - computed: false, optional: true, required: false
+  private _value?: string; 
+  public get value() {
+    return this.getStringAttribute('value');
+  }
+  public set value(value: string) {
+    this._value = value;
+  }
+  public resetValue() {
+    this._value = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get valueInput() {
+    return this._value;
+  }
+}
+
+export class LoadbalancerFrontendRuleMatchersPathList extends cdktf.ComplexList {
+  public internalValue? : LoadbalancerFrontendRuleMatchersPath[] | cdktf.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): LoadbalancerFrontendRuleMatchersPathOutputReference {
+    return new LoadbalancerFrontendRuleMatchersPathOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
 export interface LoadbalancerFrontendRuleMatchersSrcIp {
   /**
   * IP address. CIDR masks are supported, e.g. `192.168.0.0/24`.
@@ -539,6 +1753,83 @@ export function loadbalancerFrontendRuleMatchersSrcIpToTerraform(struct?: Loadba
   }
 }
 
+export class LoadbalancerFrontendRuleMatchersSrcIpOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): LoadbalancerFrontendRuleMatchersSrcIp | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._value !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.value = this._value;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: LoadbalancerFrontendRuleMatchersSrcIp | cdktf.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._value = undefined;
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._value = value.value;
+    }
+  }
+
+  // value - computed: false, optional: false, required: true
+  private _value?: string; 
+  public get value() {
+    return this.getStringAttribute('value');
+  }
+  public set value(value: string) {
+    this._value = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get valueInput() {
+    return this._value;
+  }
+}
+
+export class LoadbalancerFrontendRuleMatchersSrcIpList extends cdktf.ComplexList {
+  public internalValue? : LoadbalancerFrontendRuleMatchersSrcIp[] | cdktf.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): LoadbalancerFrontendRuleMatchersSrcIpOutputReference {
+    return new LoadbalancerFrontendRuleMatchersSrcIpOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
 export interface LoadbalancerFrontendRuleMatchersSrcPort {
   /**
   * Match method (`equal`, `greater`, `greater_or_equal`, `less`, `less_or_equal`).
@@ -565,6 +1856,102 @@ export function loadbalancerFrontendRuleMatchersSrcPortToTerraform(struct?: Load
   }
 }
 
+export class LoadbalancerFrontendRuleMatchersSrcPortOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): LoadbalancerFrontendRuleMatchersSrcPort | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._method !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.method = this._method;
+    }
+    if (this._value !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.value = this._value;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: LoadbalancerFrontendRuleMatchersSrcPort | cdktf.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._method = undefined;
+      this._value = undefined;
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._method = value.method;
+      this._value = value.value;
+    }
+  }
+
+  // method - computed: false, optional: false, required: true
+  private _method?: string; 
+  public get method() {
+    return this.getStringAttribute('method');
+  }
+  public set method(value: string) {
+    this._method = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get methodInput() {
+    return this._method;
+  }
+
+  // value - computed: false, optional: false, required: true
+  private _value?: number; 
+  public get value() {
+    return this.getNumberAttribute('value');
+  }
+  public set value(value: number) {
+    this._value = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get valueInput() {
+    return this._value;
+  }
+}
+
+export class LoadbalancerFrontendRuleMatchersSrcPortList extends cdktf.ComplexList {
+  public internalValue? : LoadbalancerFrontendRuleMatchersSrcPort[] | cdktf.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): LoadbalancerFrontendRuleMatchersSrcPortOutputReference {
+    return new LoadbalancerFrontendRuleMatchersSrcPortOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
 export interface LoadbalancerFrontendRuleMatchersSrcPortRange {
   /**
   * Integer value.
@@ -591,6 +1978,102 @@ export function loadbalancerFrontendRuleMatchersSrcPortRangeToTerraform(struct?:
   }
 }
 
+export class LoadbalancerFrontendRuleMatchersSrcPortRangeOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): LoadbalancerFrontendRuleMatchersSrcPortRange | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._rangeEnd !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.rangeEnd = this._rangeEnd;
+    }
+    if (this._rangeStart !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.rangeStart = this._rangeStart;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: LoadbalancerFrontendRuleMatchersSrcPortRange | cdktf.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._rangeEnd = undefined;
+      this._rangeStart = undefined;
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._rangeEnd = value.rangeEnd;
+      this._rangeStart = value.rangeStart;
+    }
+  }
+
+  // range_end - computed: false, optional: false, required: true
+  private _rangeEnd?: number; 
+  public get rangeEnd() {
+    return this.getNumberAttribute('range_end');
+  }
+  public set rangeEnd(value: number) {
+    this._rangeEnd = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get rangeEndInput() {
+    return this._rangeEnd;
+  }
+
+  // range_start - computed: false, optional: false, required: true
+  private _rangeStart?: number; 
+  public get rangeStart() {
+    return this.getNumberAttribute('range_start');
+  }
+  public set rangeStart(value: number) {
+    this._rangeStart = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get rangeStartInput() {
+    return this._rangeStart;
+  }
+}
+
+export class LoadbalancerFrontendRuleMatchersSrcPortRangeList extends cdktf.ComplexList {
+  public internalValue? : LoadbalancerFrontendRuleMatchersSrcPortRange[] | cdktf.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): LoadbalancerFrontendRuleMatchersSrcPortRangeOutputReference {
+    return new LoadbalancerFrontendRuleMatchersSrcPortRangeOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
 export interface LoadbalancerFrontendRuleMatchersUrl {
   /**
   * Ignore case, default `false`.
@@ -624,6 +2107,127 @@ export function loadbalancerFrontendRuleMatchersUrlToTerraform(struct?: Loadbala
   }
 }
 
+export class LoadbalancerFrontendRuleMatchersUrlOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): LoadbalancerFrontendRuleMatchersUrl | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._ignoreCase !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.ignoreCase = this._ignoreCase;
+    }
+    if (this._method !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.method = this._method;
+    }
+    if (this._value !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.value = this._value;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: LoadbalancerFrontendRuleMatchersUrl | cdktf.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._ignoreCase = undefined;
+      this._method = undefined;
+      this._value = undefined;
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._ignoreCase = value.ignoreCase;
+      this._method = value.method;
+      this._value = value.value;
+    }
+  }
+
+  // ignore_case - computed: false, optional: true, required: false
+  private _ignoreCase?: boolean | cdktf.IResolvable; 
+  public get ignoreCase() {
+    return this.getBooleanAttribute('ignore_case');
+  }
+  public set ignoreCase(value: boolean | cdktf.IResolvable) {
+    this._ignoreCase = value;
+  }
+  public resetIgnoreCase() {
+    this._ignoreCase = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get ignoreCaseInput() {
+    return this._ignoreCase;
+  }
+
+  // method - computed: false, optional: false, required: true
+  private _method?: string; 
+  public get method() {
+    return this.getStringAttribute('method');
+  }
+  public set method(value: string) {
+    this._method = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get methodInput() {
+    return this._method;
+  }
+
+  // value - computed: false, optional: true, required: false
+  private _value?: string; 
+  public get value() {
+    return this.getStringAttribute('value');
+  }
+  public set value(value: string) {
+    this._value = value;
+  }
+  public resetValue() {
+    this._value = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get valueInput() {
+    return this._value;
+  }
+}
+
+export class LoadbalancerFrontendRuleMatchersUrlList extends cdktf.ComplexList {
+  public internalValue? : LoadbalancerFrontendRuleMatchersUrl[] | cdktf.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): LoadbalancerFrontendRuleMatchersUrlOutputReference {
+    return new LoadbalancerFrontendRuleMatchersUrlOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
 export interface LoadbalancerFrontendRuleMatchersUrlParam {
   /**
   * Ignore case, default `false`.
@@ -664,6 +2268,146 @@ export function loadbalancerFrontendRuleMatchersUrlParamToTerraform(struct?: Loa
   }
 }
 
+export class LoadbalancerFrontendRuleMatchersUrlParamOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): LoadbalancerFrontendRuleMatchersUrlParam | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._ignoreCase !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.ignoreCase = this._ignoreCase;
+    }
+    if (this._method !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.method = this._method;
+    }
+    if (this._name !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.name = this._name;
+    }
+    if (this._value !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.value = this._value;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: LoadbalancerFrontendRuleMatchersUrlParam | cdktf.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._ignoreCase = undefined;
+      this._method = undefined;
+      this._name = undefined;
+      this._value = undefined;
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._ignoreCase = value.ignoreCase;
+      this._method = value.method;
+      this._name = value.name;
+      this._value = value.value;
+    }
+  }
+
+  // ignore_case - computed: false, optional: true, required: false
+  private _ignoreCase?: boolean | cdktf.IResolvable; 
+  public get ignoreCase() {
+    return this.getBooleanAttribute('ignore_case');
+  }
+  public set ignoreCase(value: boolean | cdktf.IResolvable) {
+    this._ignoreCase = value;
+  }
+  public resetIgnoreCase() {
+    this._ignoreCase = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get ignoreCaseInput() {
+    return this._ignoreCase;
+  }
+
+  // method - computed: false, optional: false, required: true
+  private _method?: string; 
+  public get method() {
+    return this.getStringAttribute('method');
+  }
+  public set method(value: string) {
+    this._method = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get methodInput() {
+    return this._method;
+  }
+
+  // name - computed: false, optional: false, required: true
+  private _name?: string; 
+  public get name() {
+    return this.getStringAttribute('name');
+  }
+  public set name(value: string) {
+    this._name = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get nameInput() {
+    return this._name;
+  }
+
+  // value - computed: false, optional: true, required: false
+  private _value?: string; 
+  public get value() {
+    return this.getStringAttribute('value');
+  }
+  public set value(value: string) {
+    this._value = value;
+  }
+  public resetValue() {
+    this._value = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get valueInput() {
+    return this._value;
+  }
+}
+
+export class LoadbalancerFrontendRuleMatchersUrlParamList extends cdktf.ComplexList {
+  public internalValue? : LoadbalancerFrontendRuleMatchersUrlParam[] | cdktf.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): LoadbalancerFrontendRuleMatchersUrlParamOutputReference {
+    return new LoadbalancerFrontendRuleMatchersUrlParamOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
 export interface LoadbalancerFrontendRuleMatchersUrlQuery {
   /**
   * Ignore case, default `false`.
@@ -697,6 +2441,127 @@ export function loadbalancerFrontendRuleMatchersUrlQueryToTerraform(struct?: Loa
   }
 }
 
+export class LoadbalancerFrontendRuleMatchersUrlQueryOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): LoadbalancerFrontendRuleMatchersUrlQuery | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._ignoreCase !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.ignoreCase = this._ignoreCase;
+    }
+    if (this._method !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.method = this._method;
+    }
+    if (this._value !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.value = this._value;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: LoadbalancerFrontendRuleMatchersUrlQuery | cdktf.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._ignoreCase = undefined;
+      this._method = undefined;
+      this._value = undefined;
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._ignoreCase = value.ignoreCase;
+      this._method = value.method;
+      this._value = value.value;
+    }
+  }
+
+  // ignore_case - computed: false, optional: true, required: false
+  private _ignoreCase?: boolean | cdktf.IResolvable; 
+  public get ignoreCase() {
+    return this.getBooleanAttribute('ignore_case');
+  }
+  public set ignoreCase(value: boolean | cdktf.IResolvable) {
+    this._ignoreCase = value;
+  }
+  public resetIgnoreCase() {
+    this._ignoreCase = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get ignoreCaseInput() {
+    return this._ignoreCase;
+  }
+
+  // method - computed: false, optional: false, required: true
+  private _method?: string; 
+  public get method() {
+    return this.getStringAttribute('method');
+  }
+  public set method(value: string) {
+    this._method = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get methodInput() {
+    return this._method;
+  }
+
+  // value - computed: false, optional: true, required: false
+  private _value?: string; 
+  public get value() {
+    return this.getStringAttribute('value');
+  }
+  public set value(value: string) {
+    this._value = value;
+  }
+  public resetValue() {
+    this._value = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get valueInput() {
+    return this._value;
+  }
+}
+
+export class LoadbalancerFrontendRuleMatchersUrlQueryList extends cdktf.ComplexList {
+  public internalValue? : LoadbalancerFrontendRuleMatchersUrlQuery[] | cdktf.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): LoadbalancerFrontendRuleMatchersUrlQueryOutputReference {
+    return new LoadbalancerFrontendRuleMatchersUrlQueryOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
 export interface LoadbalancerFrontendRuleMatchers {
   /**
   * body_size block
@@ -821,61 +2686,61 @@ export class LoadbalancerFrontendRuleMatchersOutputReference extends cdktf.Compl
   public get internalValue(): LoadbalancerFrontendRuleMatchers | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._bodySize !== undefined) {
+    if (this._bodySize?.internalValue !== undefined) {
       hasAnyValues = true;
-      internalValueResult.bodySize = this._bodySize;
+      internalValueResult.bodySize = this._bodySize?.internalValue;
     }
-    if (this._bodySizeRange !== undefined) {
+    if (this._bodySizeRange?.internalValue !== undefined) {
       hasAnyValues = true;
-      internalValueResult.bodySizeRange = this._bodySizeRange;
+      internalValueResult.bodySizeRange = this._bodySizeRange?.internalValue;
     }
-    if (this._cookie !== undefined) {
+    if (this._cookie?.internalValue !== undefined) {
       hasAnyValues = true;
-      internalValueResult.cookie = this._cookie;
+      internalValueResult.cookie = this._cookie?.internalValue;
     }
-    if (this._header !== undefined) {
+    if (this._header?.internalValue !== undefined) {
       hasAnyValues = true;
-      internalValueResult.header = this._header;
+      internalValueResult.header = this._header?.internalValue;
     }
-    if (this._host !== undefined) {
+    if (this._host?.internalValue !== undefined) {
       hasAnyValues = true;
-      internalValueResult.host = this._host;
+      internalValueResult.host = this._host?.internalValue;
     }
-    if (this._httpMethod !== undefined) {
+    if (this._httpMethod?.internalValue !== undefined) {
       hasAnyValues = true;
-      internalValueResult.httpMethod = this._httpMethod;
+      internalValueResult.httpMethod = this._httpMethod?.internalValue;
     }
-    if (this._numMembersUp !== undefined) {
+    if (this._numMembersUp?.internalValue !== undefined) {
       hasAnyValues = true;
-      internalValueResult.numMembersUp = this._numMembersUp;
+      internalValueResult.numMembersUp = this._numMembersUp?.internalValue;
     }
-    if (this._path !== undefined) {
+    if (this._path?.internalValue !== undefined) {
       hasAnyValues = true;
-      internalValueResult.path = this._path;
+      internalValueResult.path = this._path?.internalValue;
     }
-    if (this._srcIp !== undefined) {
+    if (this._srcIp?.internalValue !== undefined) {
       hasAnyValues = true;
-      internalValueResult.srcIp = this._srcIp;
+      internalValueResult.srcIp = this._srcIp?.internalValue;
     }
-    if (this._srcPort !== undefined) {
+    if (this._srcPort?.internalValue !== undefined) {
       hasAnyValues = true;
-      internalValueResult.srcPort = this._srcPort;
+      internalValueResult.srcPort = this._srcPort?.internalValue;
     }
-    if (this._srcPortRange !== undefined) {
+    if (this._srcPortRange?.internalValue !== undefined) {
       hasAnyValues = true;
-      internalValueResult.srcPortRange = this._srcPortRange;
+      internalValueResult.srcPortRange = this._srcPortRange?.internalValue;
     }
-    if (this._url !== undefined) {
+    if (this._url?.internalValue !== undefined) {
       hasAnyValues = true;
-      internalValueResult.url = this._url;
+      internalValueResult.url = this._url?.internalValue;
     }
-    if (this._urlParam !== undefined) {
+    if (this._urlParam?.internalValue !== undefined) {
       hasAnyValues = true;
-      internalValueResult.urlParam = this._urlParam;
+      internalValueResult.urlParam = this._urlParam?.internalValue;
     }
-    if (this._urlQuery !== undefined) {
+    if (this._urlQuery?.internalValue !== undefined) {
       hasAnyValues = true;
-      internalValueResult.urlQuery = this._urlQuery;
+      internalValueResult.urlQuery = this._urlQuery?.internalValue;
     }
     return hasAnyValues ? internalValueResult : undefined;
   }
@@ -883,276 +2748,262 @@ export class LoadbalancerFrontendRuleMatchersOutputReference extends cdktf.Compl
   public set internalValue(value: LoadbalancerFrontendRuleMatchers | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
-      this._bodySize = undefined;
-      this._bodySizeRange = undefined;
-      this._cookie = undefined;
-      this._header = undefined;
-      this._host = undefined;
-      this._httpMethod = undefined;
-      this._numMembersUp = undefined;
-      this._path = undefined;
-      this._srcIp = undefined;
-      this._srcPort = undefined;
-      this._srcPortRange = undefined;
-      this._url = undefined;
-      this._urlParam = undefined;
-      this._urlQuery = undefined;
+      this._bodySize.internalValue = undefined;
+      this._bodySizeRange.internalValue = undefined;
+      this._cookie.internalValue = undefined;
+      this._header.internalValue = undefined;
+      this._host.internalValue = undefined;
+      this._httpMethod.internalValue = undefined;
+      this._numMembersUp.internalValue = undefined;
+      this._path.internalValue = undefined;
+      this._srcIp.internalValue = undefined;
+      this._srcPort.internalValue = undefined;
+      this._srcPortRange.internalValue = undefined;
+      this._url.internalValue = undefined;
+      this._urlParam.internalValue = undefined;
+      this._urlQuery.internalValue = undefined;
     }
     else {
       this.isEmptyObject = Object.keys(value).length === 0;
-      this._bodySize = value.bodySize;
-      this._bodySizeRange = value.bodySizeRange;
-      this._cookie = value.cookie;
-      this._header = value.header;
-      this._host = value.host;
-      this._httpMethod = value.httpMethod;
-      this._numMembersUp = value.numMembersUp;
-      this._path = value.path;
-      this._srcIp = value.srcIp;
-      this._srcPort = value.srcPort;
-      this._srcPortRange = value.srcPortRange;
-      this._url = value.url;
-      this._urlParam = value.urlParam;
-      this._urlQuery = value.urlQuery;
+      this._bodySize.internalValue = value.bodySize;
+      this._bodySizeRange.internalValue = value.bodySizeRange;
+      this._cookie.internalValue = value.cookie;
+      this._header.internalValue = value.header;
+      this._host.internalValue = value.host;
+      this._httpMethod.internalValue = value.httpMethod;
+      this._numMembersUp.internalValue = value.numMembersUp;
+      this._path.internalValue = value.path;
+      this._srcIp.internalValue = value.srcIp;
+      this._srcPort.internalValue = value.srcPort;
+      this._srcPortRange.internalValue = value.srcPortRange;
+      this._url.internalValue = value.url;
+      this._urlParam.internalValue = value.urlParam;
+      this._urlQuery.internalValue = value.urlQuery;
     }
   }
 
   // body_size - computed: false, optional: true, required: false
-  private _bodySize?: LoadbalancerFrontendRuleMatchersBodySize[] | cdktf.IResolvable; 
+  private _bodySize = new LoadbalancerFrontendRuleMatchersBodySizeList(this, "body_size", false);
   public get bodySize() {
-    // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('body_size');
+    return this._bodySize;
   }
-  public set bodySize(value: LoadbalancerFrontendRuleMatchersBodySize[] | cdktf.IResolvable) {
-    this._bodySize = value;
+  public putBodySize(value: LoadbalancerFrontendRuleMatchersBodySize[] | cdktf.IResolvable) {
+    this._bodySize.internalValue = value;
   }
   public resetBodySize() {
-    this._bodySize = undefined;
+    this._bodySize.internalValue = undefined;
   }
   // Temporarily expose input value. Use with caution.
   public get bodySizeInput() {
-    return this._bodySize;
+    return this._bodySize.internalValue;
   }
 
   // body_size_range - computed: false, optional: true, required: false
-  private _bodySizeRange?: LoadbalancerFrontendRuleMatchersBodySizeRange[] | cdktf.IResolvable; 
+  private _bodySizeRange = new LoadbalancerFrontendRuleMatchersBodySizeRangeList(this, "body_size_range", false);
   public get bodySizeRange() {
-    // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('body_size_range');
+    return this._bodySizeRange;
   }
-  public set bodySizeRange(value: LoadbalancerFrontendRuleMatchersBodySizeRange[] | cdktf.IResolvable) {
-    this._bodySizeRange = value;
+  public putBodySizeRange(value: LoadbalancerFrontendRuleMatchersBodySizeRange[] | cdktf.IResolvable) {
+    this._bodySizeRange.internalValue = value;
   }
   public resetBodySizeRange() {
-    this._bodySizeRange = undefined;
+    this._bodySizeRange.internalValue = undefined;
   }
   // Temporarily expose input value. Use with caution.
   public get bodySizeRangeInput() {
-    return this._bodySizeRange;
+    return this._bodySizeRange.internalValue;
   }
 
   // cookie - computed: false, optional: true, required: false
-  private _cookie?: LoadbalancerFrontendRuleMatchersCookie[] | cdktf.IResolvable; 
+  private _cookie = new LoadbalancerFrontendRuleMatchersCookieList(this, "cookie", false);
   public get cookie() {
-    // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('cookie');
+    return this._cookie;
   }
-  public set cookie(value: LoadbalancerFrontendRuleMatchersCookie[] | cdktf.IResolvable) {
-    this._cookie = value;
+  public putCookie(value: LoadbalancerFrontendRuleMatchersCookie[] | cdktf.IResolvable) {
+    this._cookie.internalValue = value;
   }
   public resetCookie() {
-    this._cookie = undefined;
+    this._cookie.internalValue = undefined;
   }
   // Temporarily expose input value. Use with caution.
   public get cookieInput() {
-    return this._cookie;
+    return this._cookie.internalValue;
   }
 
   // header - computed: false, optional: true, required: false
-  private _header?: LoadbalancerFrontendRuleMatchersHeader[] | cdktf.IResolvable; 
+  private _header = new LoadbalancerFrontendRuleMatchersHeaderList(this, "header", false);
   public get header() {
-    // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('header');
+    return this._header;
   }
-  public set header(value: LoadbalancerFrontendRuleMatchersHeader[] | cdktf.IResolvable) {
-    this._header = value;
+  public putHeader(value: LoadbalancerFrontendRuleMatchersHeader[] | cdktf.IResolvable) {
+    this._header.internalValue = value;
   }
   public resetHeader() {
-    this._header = undefined;
+    this._header.internalValue = undefined;
   }
   // Temporarily expose input value. Use with caution.
   public get headerInput() {
-    return this._header;
+    return this._header.internalValue;
   }
 
   // host - computed: false, optional: true, required: false
-  private _host?: LoadbalancerFrontendRuleMatchersHost[] | cdktf.IResolvable; 
+  private _host = new LoadbalancerFrontendRuleMatchersHostList(this, "host", false);
   public get host() {
-    // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('host');
+    return this._host;
   }
-  public set host(value: LoadbalancerFrontendRuleMatchersHost[] | cdktf.IResolvable) {
-    this._host = value;
+  public putHost(value: LoadbalancerFrontendRuleMatchersHost[] | cdktf.IResolvable) {
+    this._host.internalValue = value;
   }
   public resetHost() {
-    this._host = undefined;
+    this._host.internalValue = undefined;
   }
   // Temporarily expose input value. Use with caution.
   public get hostInput() {
-    return this._host;
+    return this._host.internalValue;
   }
 
   // http_method - computed: false, optional: true, required: false
-  private _httpMethod?: LoadbalancerFrontendRuleMatchersHttpMethod[] | cdktf.IResolvable; 
+  private _httpMethod = new LoadbalancerFrontendRuleMatchersHttpMethodList(this, "http_method", false);
   public get httpMethod() {
-    // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('http_method');
+    return this._httpMethod;
   }
-  public set httpMethod(value: LoadbalancerFrontendRuleMatchersHttpMethod[] | cdktf.IResolvable) {
-    this._httpMethod = value;
+  public putHttpMethod(value: LoadbalancerFrontendRuleMatchersHttpMethod[] | cdktf.IResolvable) {
+    this._httpMethod.internalValue = value;
   }
   public resetHttpMethod() {
-    this._httpMethod = undefined;
+    this._httpMethod.internalValue = undefined;
   }
   // Temporarily expose input value. Use with caution.
   public get httpMethodInput() {
-    return this._httpMethod;
+    return this._httpMethod.internalValue;
   }
 
   // num_members_up - computed: false, optional: true, required: false
-  private _numMembersUp?: LoadbalancerFrontendRuleMatchersNumMembersUp[] | cdktf.IResolvable; 
+  private _numMembersUp = new LoadbalancerFrontendRuleMatchersNumMembersUpList(this, "num_members_up", false);
   public get numMembersUp() {
-    // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('num_members_up');
+    return this._numMembersUp;
   }
-  public set numMembersUp(value: LoadbalancerFrontendRuleMatchersNumMembersUp[] | cdktf.IResolvable) {
-    this._numMembersUp = value;
+  public putNumMembersUp(value: LoadbalancerFrontendRuleMatchersNumMembersUp[] | cdktf.IResolvable) {
+    this._numMembersUp.internalValue = value;
   }
   public resetNumMembersUp() {
-    this._numMembersUp = undefined;
+    this._numMembersUp.internalValue = undefined;
   }
   // Temporarily expose input value. Use with caution.
   public get numMembersUpInput() {
-    return this._numMembersUp;
+    return this._numMembersUp.internalValue;
   }
 
   // path - computed: false, optional: true, required: false
-  private _path?: LoadbalancerFrontendRuleMatchersPath[] | cdktf.IResolvable; 
+  private _path = new LoadbalancerFrontendRuleMatchersPathList(this, "path", false);
   public get path() {
-    // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('path');
+    return this._path;
   }
-  public set path(value: LoadbalancerFrontendRuleMatchersPath[] | cdktf.IResolvable) {
-    this._path = value;
+  public putPath(value: LoadbalancerFrontendRuleMatchersPath[] | cdktf.IResolvable) {
+    this._path.internalValue = value;
   }
   public resetPath() {
-    this._path = undefined;
+    this._path.internalValue = undefined;
   }
   // Temporarily expose input value. Use with caution.
   public get pathInput() {
-    return this._path;
+    return this._path.internalValue;
   }
 
   // src_ip - computed: false, optional: true, required: false
-  private _srcIp?: LoadbalancerFrontendRuleMatchersSrcIp[] | cdktf.IResolvable; 
+  private _srcIp = new LoadbalancerFrontendRuleMatchersSrcIpList(this, "src_ip", false);
   public get srcIp() {
-    // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('src_ip');
+    return this._srcIp;
   }
-  public set srcIp(value: LoadbalancerFrontendRuleMatchersSrcIp[] | cdktf.IResolvable) {
-    this._srcIp = value;
+  public putSrcIp(value: LoadbalancerFrontendRuleMatchersSrcIp[] | cdktf.IResolvable) {
+    this._srcIp.internalValue = value;
   }
   public resetSrcIp() {
-    this._srcIp = undefined;
+    this._srcIp.internalValue = undefined;
   }
   // Temporarily expose input value. Use with caution.
   public get srcIpInput() {
-    return this._srcIp;
+    return this._srcIp.internalValue;
   }
 
   // src_port - computed: false, optional: true, required: false
-  private _srcPort?: LoadbalancerFrontendRuleMatchersSrcPort[] | cdktf.IResolvable; 
+  private _srcPort = new LoadbalancerFrontendRuleMatchersSrcPortList(this, "src_port", false);
   public get srcPort() {
-    // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('src_port');
+    return this._srcPort;
   }
-  public set srcPort(value: LoadbalancerFrontendRuleMatchersSrcPort[] | cdktf.IResolvable) {
-    this._srcPort = value;
+  public putSrcPort(value: LoadbalancerFrontendRuleMatchersSrcPort[] | cdktf.IResolvable) {
+    this._srcPort.internalValue = value;
   }
   public resetSrcPort() {
-    this._srcPort = undefined;
+    this._srcPort.internalValue = undefined;
   }
   // Temporarily expose input value. Use with caution.
   public get srcPortInput() {
-    return this._srcPort;
+    return this._srcPort.internalValue;
   }
 
   // src_port_range - computed: false, optional: true, required: false
-  private _srcPortRange?: LoadbalancerFrontendRuleMatchersSrcPortRange[] | cdktf.IResolvable; 
+  private _srcPortRange = new LoadbalancerFrontendRuleMatchersSrcPortRangeList(this, "src_port_range", false);
   public get srcPortRange() {
-    // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('src_port_range');
+    return this._srcPortRange;
   }
-  public set srcPortRange(value: LoadbalancerFrontendRuleMatchersSrcPortRange[] | cdktf.IResolvable) {
-    this._srcPortRange = value;
+  public putSrcPortRange(value: LoadbalancerFrontendRuleMatchersSrcPortRange[] | cdktf.IResolvable) {
+    this._srcPortRange.internalValue = value;
   }
   public resetSrcPortRange() {
-    this._srcPortRange = undefined;
+    this._srcPortRange.internalValue = undefined;
   }
   // Temporarily expose input value. Use with caution.
   public get srcPortRangeInput() {
-    return this._srcPortRange;
+    return this._srcPortRange.internalValue;
   }
 
   // url - computed: false, optional: true, required: false
-  private _url?: LoadbalancerFrontendRuleMatchersUrl[] | cdktf.IResolvable; 
+  private _url = new LoadbalancerFrontendRuleMatchersUrlList(this, "url", false);
   public get url() {
-    // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('url');
+    return this._url;
   }
-  public set url(value: LoadbalancerFrontendRuleMatchersUrl[] | cdktf.IResolvable) {
-    this._url = value;
+  public putUrl(value: LoadbalancerFrontendRuleMatchersUrl[] | cdktf.IResolvable) {
+    this._url.internalValue = value;
   }
   public resetUrl() {
-    this._url = undefined;
+    this._url.internalValue = undefined;
   }
   // Temporarily expose input value. Use with caution.
   public get urlInput() {
-    return this._url;
+    return this._url.internalValue;
   }
 
   // url_param - computed: false, optional: true, required: false
-  private _urlParam?: LoadbalancerFrontendRuleMatchersUrlParam[] | cdktf.IResolvable; 
+  private _urlParam = new LoadbalancerFrontendRuleMatchersUrlParamList(this, "url_param", false);
   public get urlParam() {
-    // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('url_param');
+    return this._urlParam;
   }
-  public set urlParam(value: LoadbalancerFrontendRuleMatchersUrlParam[] | cdktf.IResolvable) {
-    this._urlParam = value;
+  public putUrlParam(value: LoadbalancerFrontendRuleMatchersUrlParam[] | cdktf.IResolvable) {
+    this._urlParam.internalValue = value;
   }
   public resetUrlParam() {
-    this._urlParam = undefined;
+    this._urlParam.internalValue = undefined;
   }
   // Temporarily expose input value. Use with caution.
   public get urlParamInput() {
-    return this._urlParam;
+    return this._urlParam.internalValue;
   }
 
   // url_query - computed: false, optional: true, required: false
-  private _urlQuery?: LoadbalancerFrontendRuleMatchersUrlQuery[] | cdktf.IResolvable; 
+  private _urlQuery = new LoadbalancerFrontendRuleMatchersUrlQueryList(this, "url_query", false);
   public get urlQuery() {
-    // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('url_query');
+    return this._urlQuery;
   }
-  public set urlQuery(value: LoadbalancerFrontendRuleMatchersUrlQuery[] | cdktf.IResolvable) {
-    this._urlQuery = value;
+  public putUrlQuery(value: LoadbalancerFrontendRuleMatchersUrlQuery[] | cdktf.IResolvable) {
+    this._urlQuery.internalValue = value;
   }
   public resetUrlQuery() {
-    this._urlQuery = undefined;
+    this._urlQuery.internalValue = undefined;
   }
   // Temporarily expose input value. Use with caution.
   public get urlQueryInput() {
-    return this._urlQuery;
+    return this._urlQuery.internalValue;
   }
 }
 
@@ -1191,6 +3042,7 @@ export class LoadbalancerFrontendRule extends cdktf.TerraformResource {
       lifecycle: config.lifecycle
     });
     this._frontend = config.frontend;
+    this._id = config.id;
     this._name = config.name;
     this._priority = config.priority;
     this._actions.internalValue = config.actions;
@@ -1215,8 +3067,19 @@ export class LoadbalancerFrontendRule extends cdktf.TerraformResource {
   }
 
   // id - computed: true, optional: true, required: false
+  private _id?: string; 
   public get id() {
     return this.getStringAttribute('id');
+  }
+  public set id(value: string) {
+    this._id = value;
+  }
+  public resetId() {
+    this._id = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get idInput() {
+    return this._id;
   }
 
   // name - computed: false, optional: false, required: true
@@ -1284,6 +3147,7 @@ export class LoadbalancerFrontendRule extends cdktf.TerraformResource {
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
       frontend: cdktf.stringToTerraform(this._frontend),
+      id: cdktf.stringToTerraform(this._id),
       name: cdktf.stringToTerraform(this._name),
       priority: cdktf.numberToTerraform(this._priority),
       actions: loadbalancerFrontendRuleActionsToTerraform(this._actions.internalValue),

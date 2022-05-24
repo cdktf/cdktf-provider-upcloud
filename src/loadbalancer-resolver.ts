@@ -20,6 +20,13 @@ export interface LoadbalancerResolverConfig extends cdktf.TerraformMetaArguments
   */
   readonly cacheValid: number;
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/upcloud/r/loadbalancer_resolver#id LoadbalancerResolver#id}
+  *
+  * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
+  * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+  */
+  readonly id?: string;
+  /**
   * ID of the load balancer to which the resolver is connected.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/upcloud/r/loadbalancer_resolver#loadbalancer LoadbalancerResolver#loadbalancer}
@@ -94,6 +101,7 @@ export class LoadbalancerResolver extends cdktf.TerraformResource {
     });
     this._cacheInvalid = config.cacheInvalid;
     this._cacheValid = config.cacheValid;
+    this._id = config.id;
     this._loadbalancer = config.loadbalancer;
     this._name = config.name;
     this._nameservers = config.nameservers;
@@ -133,8 +141,19 @@ export class LoadbalancerResolver extends cdktf.TerraformResource {
   }
 
   // id - computed: true, optional: true, required: false
+  private _id?: string; 
   public get id() {
     return this.getStringAttribute('id');
+  }
+  public set id(value: string) {
+    this._id = value;
+  }
+  public resetId() {
+    this._id = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get idInput() {
+    return this._id;
   }
 
   // loadbalancer - computed: false, optional: false, required: true
@@ -223,6 +242,7 @@ export class LoadbalancerResolver extends cdktf.TerraformResource {
     return {
       cache_invalid: cdktf.numberToTerraform(this._cacheInvalid),
       cache_valid: cdktf.numberToTerraform(this._cacheValid),
+      id: cdktf.stringToTerraform(this._id),
       loadbalancer: cdktf.stringToTerraform(this._loadbalancer),
       name: cdktf.stringToTerraform(this._name),
       nameservers: cdktf.listMapper(cdktf.stringToTerraform)(this._nameservers),

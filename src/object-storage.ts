@@ -25,6 +25,13 @@ export interface ObjectStorageConfig extends cdktf.TerraformMetaArguments {
   */
   readonly description?: string;
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/upcloud/r/object_storage#id ObjectStorage#id}
+  *
+  * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
+  * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+  */
+  readonly id?: string;
+  /**
   * The name of the object storage instance to be created
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/upcloud/r/object_storage#name ObjectStorage#name}
@@ -79,6 +86,83 @@ export function objectStorageBucketToTerraform(struct?: ObjectStorageBucket | cd
   }
 }
 
+export class ObjectStorageBucketOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): ObjectStorageBucket | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._name !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.name = this._name;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: ObjectStorageBucket | cdktf.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._name = undefined;
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._name = value.name;
+    }
+  }
+
+  // name - computed: false, optional: false, required: true
+  private _name?: string; 
+  public get name() {
+    return this.getStringAttribute('name');
+  }
+  public set name(value: string) {
+    this._name = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get nameInput() {
+    return this._name;
+  }
+}
+
+export class ObjectStorageBucketList extends cdktf.ComplexList {
+  public internalValue? : ObjectStorageBucket[] | cdktf.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): ObjectStorageBucketOutputReference {
+    return new ObjectStorageBucketOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
 
 /**
 * Represents a {@link https://www.terraform.io/docs/providers/upcloud/r/object_storage upcloud_object_storage}
@@ -116,11 +200,12 @@ export class ObjectStorage extends cdktf.TerraformResource {
     });
     this._accessKey = config.accessKey;
     this._description = config.description;
+    this._id = config.id;
     this._name = config.name;
     this._secretKey = config.secretKey;
     this._size = config.size;
     this._zone = config.zone;
-    this._bucket = config.bucket;
+    this._bucket.internalValue = config.bucket;
   }
 
   // ==========
@@ -162,8 +247,19 @@ export class ObjectStorage extends cdktf.TerraformResource {
   }
 
   // id - computed: true, optional: true, required: false
+  private _id?: string; 
   public get id() {
     return this.getStringAttribute('id');
+  }
+  public set id(value: string) {
+    this._id = value;
+  }
+  public resetId() {
+    this._id = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get idInput() {
+    return this._id;
   }
 
   // name - computed: false, optional: false, required: true
@@ -234,20 +330,19 @@ export class ObjectStorage extends cdktf.TerraformResource {
   }
 
   // bucket - computed: false, optional: true, required: false
-  private _bucket?: ObjectStorageBucket[] | cdktf.IResolvable; 
+  private _bucket = new ObjectStorageBucketList(this, "bucket", true);
   public get bucket() {
-    // Getting the computed value is not yet implemented
-    return cdktf.Token.asAny(cdktf.Fn.tolist(this.interpolationForAttribute('bucket')));
+    return this._bucket;
   }
-  public set bucket(value: ObjectStorageBucket[] | cdktf.IResolvable) {
-    this._bucket = value;
+  public putBucket(value: ObjectStorageBucket[] | cdktf.IResolvable) {
+    this._bucket.internalValue = value;
   }
   public resetBucket() {
-    this._bucket = undefined;
+    this._bucket.internalValue = undefined;
   }
   // Temporarily expose input value. Use with caution.
   public get bucketInput() {
-    return this._bucket;
+    return this._bucket.internalValue;
   }
 
   // =========
@@ -258,11 +353,12 @@ export class ObjectStorage extends cdktf.TerraformResource {
     return {
       access_key: cdktf.stringToTerraform(this._accessKey),
       description: cdktf.stringToTerraform(this._description),
+      id: cdktf.stringToTerraform(this._id),
       name: cdktf.stringToTerraform(this._name),
       secret_key: cdktf.stringToTerraform(this._secretKey),
       size: cdktf.numberToTerraform(this._size),
       zone: cdktf.stringToTerraform(this._zone),
-      bucket: cdktf.listMapper(objectStorageBucketToTerraform)(this._bucket),
+      bucket: cdktf.listMapper(objectStorageBucketToTerraform)(this._bucket.internalValue),
     };
   }
 }

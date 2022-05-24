@@ -32,6 +32,13 @@ export interface ServerConfig extends cdktf.TerraformMetaArguments {
   */
   readonly hostname: string;
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/upcloud/r/server#id Server#id}
+  *
+  * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
+  * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+  */
+  readonly id?: string;
+  /**
   * The size of memory for the server (in megabytes)
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/upcloud/r/server#mem Server#mem}
@@ -312,6 +319,203 @@ export function serverNetworkInterfaceToTerraform(struct?: ServerNetworkInterfac
   }
 }
 
+export class ServerNetworkInterfaceOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): ServerNetworkInterface | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._bootable !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.bootable = this._bootable;
+    }
+    if (this._ipAddress !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.ipAddress = this._ipAddress;
+    }
+    if (this._ipAddressFamily !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.ipAddressFamily = this._ipAddressFamily;
+    }
+    if (this._network !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.network = this._network;
+    }
+    if (this._sourceIpFiltering !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.sourceIpFiltering = this._sourceIpFiltering;
+    }
+    if (this._type !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.type = this._type;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: ServerNetworkInterface | cdktf.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._bootable = undefined;
+      this._ipAddress = undefined;
+      this._ipAddressFamily = undefined;
+      this._network = undefined;
+      this._sourceIpFiltering = undefined;
+      this._type = undefined;
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._bootable = value.bootable;
+      this._ipAddress = value.ipAddress;
+      this._ipAddressFamily = value.ipAddressFamily;
+      this._network = value.network;
+      this._sourceIpFiltering = value.sourceIpFiltering;
+      this._type = value.type;
+    }
+  }
+
+  // bootable - computed: false, optional: true, required: false
+  private _bootable?: boolean | cdktf.IResolvable; 
+  public get bootable() {
+    return this.getBooleanAttribute('bootable');
+  }
+  public set bootable(value: boolean | cdktf.IResolvable) {
+    this._bootable = value;
+  }
+  public resetBootable() {
+    this._bootable = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get bootableInput() {
+    return this._bootable;
+  }
+
+  // ip_address - computed: true, optional: true, required: false
+  private _ipAddress?: string; 
+  public get ipAddress() {
+    return this.getStringAttribute('ip_address');
+  }
+  public set ipAddress(value: string) {
+    this._ipAddress = value;
+  }
+  public resetIpAddress() {
+    this._ipAddress = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get ipAddressInput() {
+    return this._ipAddress;
+  }
+
+  // ip_address_family - computed: false, optional: true, required: false
+  private _ipAddressFamily?: string; 
+  public get ipAddressFamily() {
+    return this.getStringAttribute('ip_address_family');
+  }
+  public set ipAddressFamily(value: string) {
+    this._ipAddressFamily = value;
+  }
+  public resetIpAddressFamily() {
+    this._ipAddressFamily = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get ipAddressFamilyInput() {
+    return this._ipAddressFamily;
+  }
+
+  // ip_address_floating - computed: true, optional: false, required: false
+  public get ipAddressFloating() {
+    return this.getBooleanAttribute('ip_address_floating');
+  }
+
+  // mac_address - computed: true, optional: false, required: false
+  public get macAddress() {
+    return this.getStringAttribute('mac_address');
+  }
+
+  // network - computed: true, optional: true, required: false
+  private _network?: string; 
+  public get network() {
+    return this.getStringAttribute('network');
+  }
+  public set network(value: string) {
+    this._network = value;
+  }
+  public resetNetwork() {
+    this._network = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get networkInput() {
+    return this._network;
+  }
+
+  // source_ip_filtering - computed: false, optional: true, required: false
+  private _sourceIpFiltering?: boolean | cdktf.IResolvable; 
+  public get sourceIpFiltering() {
+    return this.getBooleanAttribute('source_ip_filtering');
+  }
+  public set sourceIpFiltering(value: boolean | cdktf.IResolvable) {
+    this._sourceIpFiltering = value;
+  }
+  public resetSourceIpFiltering() {
+    this._sourceIpFiltering = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get sourceIpFilteringInput() {
+    return this._sourceIpFiltering;
+  }
+
+  // type - computed: false, optional: false, required: true
+  private _type?: string; 
+  public get type() {
+    return this.getStringAttribute('type');
+  }
+  public set type(value: string) {
+    this._type = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get typeInput() {
+    return this._type;
+  }
+}
+
+export class ServerNetworkInterfaceList extends cdktf.ComplexList {
+  public internalValue? : ServerNetworkInterface[] | cdktf.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): ServerNetworkInterfaceOutputReference {
+    return new ServerNetworkInterfaceOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
 export interface ServerSimpleBackup {
   /**
   * Simple backup plan. Accepted values: dailies, weeklies, monthlies.
@@ -435,6 +639,127 @@ export function serverStorageDevicesToTerraform(struct?: ServerStorageDevices | 
   }
 }
 
+export class ServerStorageDevicesOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): ServerStorageDevices | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._address !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.address = this._address;
+    }
+    if (this._storage !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.storage = this._storage;
+    }
+    if (this._type !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.type = this._type;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: ServerStorageDevices | cdktf.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._address = undefined;
+      this._storage = undefined;
+      this._type = undefined;
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._address = value.address;
+      this._storage = value.storage;
+      this._type = value.type;
+    }
+  }
+
+  // address - computed: true, optional: true, required: false
+  private _address?: string; 
+  public get address() {
+    return this.getStringAttribute('address');
+  }
+  public set address(value: string) {
+    this._address = value;
+  }
+  public resetAddress() {
+    this._address = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get addressInput() {
+    return this._address;
+  }
+
+  // storage - computed: false, optional: false, required: true
+  private _storage?: string; 
+  public get storage() {
+    return this.getStringAttribute('storage');
+  }
+  public set storage(value: string) {
+    this._storage = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get storageInput() {
+    return this._storage;
+  }
+
+  // type - computed: true, optional: true, required: false
+  private _type?: string; 
+  public get type() {
+    return this.getStringAttribute('type');
+  }
+  public set type(value: string) {
+    this._type = value;
+  }
+  public resetType() {
+    this._type = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get typeInput() {
+    return this._type;
+  }
+}
+
+export class ServerStorageDevicesList extends cdktf.ComplexList {
+  public internalValue? : ServerStorageDevices[] | cdktf.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): ServerStorageDevicesOutputReference {
+    return new ServerStorageDevicesOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
 export interface ServerTemplateBackupRule {
   /**
   * The weekday when the backup is created
@@ -841,6 +1166,7 @@ export class Server extends cdktf.TerraformResource {
     this._firewall = config.firewall;
     this._host = config.host;
     this._hostname = config.hostname;
+    this._id = config.id;
     this._mem = config.mem;
     this._metadata = config.metadata;
     this._plan = config.plan;
@@ -849,9 +1175,9 @@ export class Server extends cdktf.TerraformResource {
     this._userData = config.userData;
     this._zone = config.zone;
     this._login.internalValue = config.login;
-    this._networkInterface = config.networkInterface;
+    this._networkInterface.internalValue = config.networkInterface;
     this._simpleBackup.internalValue = config.simpleBackup;
-    this._storageDevices = config.storageDevices;
+    this._storageDevices.internalValue = config.storageDevices;
     this._template.internalValue = config.template;
   }
 
@@ -921,8 +1247,19 @@ export class Server extends cdktf.TerraformResource {
   }
 
   // id - computed: true, optional: true, required: false
+  private _id?: string; 
   public get id() {
     return this.getStringAttribute('id');
+  }
+  public set id(value: string) {
+    this._id = value;
+  }
+  public resetId() {
+    this._id = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get idInput() {
+    return this._id;
   }
 
   // mem - computed: true, optional: true, required: false
@@ -1051,17 +1388,16 @@ export class Server extends cdktf.TerraformResource {
   }
 
   // network_interface - computed: false, optional: false, required: true
-  private _networkInterface?: ServerNetworkInterface[] | cdktf.IResolvable; 
+  private _networkInterface = new ServerNetworkInterfaceList(this, "network_interface", false);
   public get networkInterface() {
-    // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('network_interface');
+    return this._networkInterface;
   }
-  public set networkInterface(value: ServerNetworkInterface[] | cdktf.IResolvable) {
-    this._networkInterface = value;
+  public putNetworkInterface(value: ServerNetworkInterface[] | cdktf.IResolvable) {
+    this._networkInterface.internalValue = value;
   }
   // Temporarily expose input value. Use with caution.
   public get networkInterfaceInput() {
-    return this._networkInterface;
+    return this._networkInterface.internalValue;
   }
 
   // simple_backup - computed: false, optional: true, required: false
@@ -1081,20 +1417,19 @@ export class Server extends cdktf.TerraformResource {
   }
 
   // storage_devices - computed: false, optional: true, required: false
-  private _storageDevices?: ServerStorageDevices[] | cdktf.IResolvable; 
+  private _storageDevices = new ServerStorageDevicesList(this, "storage_devices", true);
   public get storageDevices() {
-    // Getting the computed value is not yet implemented
-    return cdktf.Token.asAny(cdktf.Fn.tolist(this.interpolationForAttribute('storage_devices')));
+    return this._storageDevices;
   }
-  public set storageDevices(value: ServerStorageDevices[] | cdktf.IResolvable) {
-    this._storageDevices = value;
+  public putStorageDevices(value: ServerStorageDevices[] | cdktf.IResolvable) {
+    this._storageDevices.internalValue = value;
   }
   public resetStorageDevices() {
-    this._storageDevices = undefined;
+    this._storageDevices.internalValue = undefined;
   }
   // Temporarily expose input value. Use with caution.
   public get storageDevicesInput() {
-    return this._storageDevices;
+    return this._storageDevices.internalValue;
   }
 
   // template - computed: false, optional: true, required: false
@@ -1123,6 +1458,7 @@ export class Server extends cdktf.TerraformResource {
       firewall: cdktf.booleanToTerraform(this._firewall),
       host: cdktf.numberToTerraform(this._host),
       hostname: cdktf.stringToTerraform(this._hostname),
+      id: cdktf.stringToTerraform(this._id),
       mem: cdktf.numberToTerraform(this._mem),
       metadata: cdktf.booleanToTerraform(this._metadata),
       plan: cdktf.stringToTerraform(this._plan),
@@ -1131,9 +1467,9 @@ export class Server extends cdktf.TerraformResource {
       user_data: cdktf.stringToTerraform(this._userData),
       zone: cdktf.stringToTerraform(this._zone),
       login: serverLoginToTerraform(this._login.internalValue),
-      network_interface: cdktf.listMapper(serverNetworkInterfaceToTerraform)(this._networkInterface),
+      network_interface: cdktf.listMapper(serverNetworkInterfaceToTerraform)(this._networkInterface.internalValue),
       simple_backup: serverSimpleBackupToTerraform(this._simpleBackup.internalValue),
-      storage_devices: cdktf.listMapper(serverStorageDevicesToTerraform)(this._storageDevices),
+      storage_devices: cdktf.listMapper(serverStorageDevicesToTerraform)(this._storageDevices.internalValue),
       template: serverTemplateToTerraform(this._template.internalValue),
     };
   }

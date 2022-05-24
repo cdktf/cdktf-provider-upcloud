@@ -23,6 +23,13 @@ export interface StorageConfig extends cdktf.TerraformMetaArguments {
   */
   readonly filesystemAutoresize?: boolean | cdktf.IResolvable;
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/upcloud/r/storage#id Storage#id}
+  *
+  * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
+  * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+  */
+  readonly id?: string;
+  /**
   * The size of the storage in gigabytes
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/upcloud/r/storage#size Storage#size}
@@ -186,6 +193,9 @@ export interface StorageClone {
   * The unique identifier of the storage/template to clone
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/upcloud/r/storage#id Storage#id}
+  *
+  * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
+  * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id: string;
 }
@@ -411,6 +421,7 @@ export class Storage extends cdktf.TerraformResource {
     });
     this._deleteAutoresizeBackup = config.deleteAutoresizeBackup;
     this._filesystemAutoresize = config.filesystemAutoresize;
+    this._id = config.id;
     this._size = config.size;
     this._tier = config.tier;
     this._title = config.title;
@@ -457,8 +468,19 @@ export class Storage extends cdktf.TerraformResource {
   }
 
   // id - computed: true, optional: true, required: false
+  private _id?: string; 
   public get id() {
     return this.getStringAttribute('id');
+  }
+  public set id(value: string) {
+    this._id = value;
+  }
+  public resetId() {
+    this._id = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get idInput() {
+    return this._id;
   }
 
   // size - computed: false, optional: false, required: true
@@ -572,6 +594,7 @@ export class Storage extends cdktf.TerraformResource {
     return {
       delete_autoresize_backup: cdktf.booleanToTerraform(this._deleteAutoresizeBackup),
       filesystem_autoresize: cdktf.booleanToTerraform(this._filesystemAutoresize),
+      id: cdktf.stringToTerraform(this._id),
       size: cdktf.numberToTerraform(this._size),
       tier: cdktf.stringToTerraform(this._tier),
       title: cdktf.stringToTerraform(this._title),
