@@ -14,6 +14,13 @@ export interface DataUpcloudNetworksConfig extends cdktf.TerraformMetaArguments 
   */
   readonly filterName?: string;
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/upcloud/d/networks#id DataUpcloudNetworks#id}
+  *
+  * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
+  * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+  */
+  readonly id?: string;
+  /**
   * If specified, this data source will return only networks from this zone
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/upcloud/d/networks#zone DataUpcloudNetworks#zone}
@@ -305,6 +312,7 @@ export class DataUpcloudNetworks extends cdktf.TerraformDataSource {
       lifecycle: config.lifecycle
     });
     this._filterName = config.filterName;
+    this._id = config.id;
     this._zone = config.zone;
   }
 
@@ -329,8 +337,19 @@ export class DataUpcloudNetworks extends cdktf.TerraformDataSource {
   }
 
   // id - computed: true, optional: true, required: false
+  private _id?: string; 
   public get id() {
     return this.getStringAttribute('id');
+  }
+  public set id(value: string) {
+    this._id = value;
+  }
+  public resetId() {
+    this._id = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get idInput() {
+    return this._id;
   }
 
   // networks - computed: true, optional: false, required: false
@@ -362,6 +381,7 @@ export class DataUpcloudNetworks extends cdktf.TerraformDataSource {
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
       filter_name: cdktf.stringToTerraform(this._filterName),
+      id: cdktf.stringToTerraform(this._id),
       zone: cdktf.stringToTerraform(this._zone),
     };
   }

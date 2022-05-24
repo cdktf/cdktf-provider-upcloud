@@ -14,6 +14,13 @@ export interface LoadbalancerManualCertificateBundleConfig extends cdktf.Terrafo
   */
   readonly certificate: string;
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/upcloud/r/loadbalancer_manual_certificate_bundle#id LoadbalancerManualCertificateBundle#id}
+  *
+  * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
+  * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+  */
+  readonly id?: string;
+  /**
   * Intermediate certificates within base64 string must be in PEM format.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/upcloud/r/loadbalancer_manual_certificate_bundle#intermediates LoadbalancerManualCertificateBundle#intermediates}
@@ -68,6 +75,7 @@ export class LoadbalancerManualCertificateBundle extends cdktf.TerraformResource
       lifecycle: config.lifecycle
     });
     this._certificate = config.certificate;
+    this._id = config.id;
     this._intermediates = config.intermediates;
     this._name = config.name;
     this._privateKey = config.privateKey;
@@ -91,8 +99,19 @@ export class LoadbalancerManualCertificateBundle extends cdktf.TerraformResource
   }
 
   // id - computed: true, optional: true, required: false
+  private _id?: string; 
   public get id() {
     return this.getStringAttribute('id');
+  }
+  public set id(value: string) {
+    this._id = value;
+  }
+  public resetId() {
+    this._id = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get idInput() {
+    return this._id;
   }
 
   // intermediates - computed: false, optional: true, required: false
@@ -159,6 +178,7 @@ export class LoadbalancerManualCertificateBundle extends cdktf.TerraformResource
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
       certificate: cdktf.stringToTerraform(this._certificate),
+      id: cdktf.stringToTerraform(this._id),
       intermediates: cdktf.stringToTerraform(this._intermediates),
       name: cdktf.stringToTerraform(this._name),
       private_key: cdktf.stringToTerraform(this._privateKey),

@@ -14,6 +14,13 @@ export interface LoadbalancerConfig extends cdktf.TerraformMetaArguments {
   */
   readonly configuredStatus?: string;
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/upcloud/r/loadbalancer#id Loadbalancer#id}
+  *
+  * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
+  * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+  */
+  readonly id?: string;
+  /**
   * The name of the service must be unique within customer account.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/upcloud/r/loadbalancer#name Loadbalancer#name}
@@ -74,6 +81,7 @@ export class Loadbalancer extends cdktf.TerraformResource {
       lifecycle: config.lifecycle
     });
     this._configuredStatus = config.configuredStatus;
+    this._id = config.id;
     this._name = config.name;
     this._network = config.network;
     this._plan = config.plan;
@@ -116,8 +124,19 @@ export class Loadbalancer extends cdktf.TerraformResource {
   }
 
   // id - computed: true, optional: true, required: false
+  private _id?: string; 
   public get id() {
     return this.getStringAttribute('id');
+  }
+  public set id(value: string) {
+    this._id = value;
+  }
+  public resetId() {
+    this._id = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get idInput() {
+    return this._id;
   }
 
   // name - computed: false, optional: false, required: true
@@ -189,6 +208,7 @@ export class Loadbalancer extends cdktf.TerraformResource {
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
       configured_status: cdktf.stringToTerraform(this._configuredStatus),
+      id: cdktf.stringToTerraform(this._id),
       name: cdktf.stringToTerraform(this._name),
       network: cdktf.stringToTerraform(this._network),
       plan: cdktf.stringToTerraform(this._plan),

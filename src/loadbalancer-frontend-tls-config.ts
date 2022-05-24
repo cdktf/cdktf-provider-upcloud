@@ -20,6 +20,13 @@ export interface LoadbalancerFrontendTlsConfigConfig extends cdktf.TerraformMeta
   */
   readonly frontend: string;
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/upcloud/r/loadbalancer_frontend_tls_config#id LoadbalancerFrontendTlsConfig#id}
+  *
+  * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
+  * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+  */
+  readonly id?: string;
+  /**
   * The name of the TLS config must be unique within service frontend.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/upcloud/r/loadbalancer_frontend_tls_config#name LoadbalancerFrontendTlsConfig#name}
@@ -63,6 +70,7 @@ export class LoadbalancerFrontendTlsConfig extends cdktf.TerraformResource {
     });
     this._certificateBundle = config.certificateBundle;
     this._frontend = config.frontend;
+    this._id = config.id;
     this._name = config.name;
   }
 
@@ -97,8 +105,19 @@ export class LoadbalancerFrontendTlsConfig extends cdktf.TerraformResource {
   }
 
   // id - computed: true, optional: true, required: false
+  private _id?: string; 
   public get id() {
     return this.getStringAttribute('id');
+  }
+  public set id(value: string) {
+    this._id = value;
+  }
+  public resetId() {
+    this._id = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get idInput() {
+    return this._id;
   }
 
   // name - computed: false, optional: false, required: true
@@ -122,6 +141,7 @@ export class LoadbalancerFrontendTlsConfig extends cdktf.TerraformResource {
     return {
       certificate_bundle: cdktf.stringToTerraform(this._certificateBundle),
       frontend: cdktf.stringToTerraform(this._frontend),
+      id: cdktf.stringToTerraform(this._id),
       name: cdktf.stringToTerraform(this._name),
     };
   }
