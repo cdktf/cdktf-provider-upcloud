@@ -5499,7 +5499,9 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-upcloud.LoadbalancerBackend.getStringAttribute">getStringAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.LoadbalancerBackend.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.LoadbalancerBackend.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-upcloud.LoadbalancerBackend.putProperties">putProperties</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.LoadbalancerBackend.resetId">resetId</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-upcloud.LoadbalancerBackend.resetProperties">resetProperties</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.LoadbalancerBackend.resetResolverName">resetResolverName</a></code> | *No description.* |
 
 ---
@@ -5688,10 +5690,28 @@ public interpolationForAttribute(terraformAttribute: string): IResolvable
 
 ---
 
+##### `putProperties` <a name="putProperties" id="@cdktf/provider-upcloud.LoadbalancerBackend.putProperties"></a>
+
+```typescript
+public putProperties(value: LoadbalancerBackendProperties): void
+```
+
+###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-upcloud.LoadbalancerBackend.putProperties.parameter.value"></a>
+
+- *Type:* <a href="#@cdktf/provider-upcloud.LoadbalancerBackendProperties">LoadbalancerBackendProperties</a>
+
+---
+
 ##### `resetId` <a name="resetId" id="@cdktf/provider-upcloud.LoadbalancerBackend.resetId"></a>
 
 ```typescript
 public resetId(): void
+```
+
+##### `resetProperties` <a name="resetProperties" id="@cdktf/provider-upcloud.LoadbalancerBackend.resetProperties"></a>
+
+```typescript
+public resetProperties(): void
 ```
 
 ##### `resetResolverName` <a name="resetResolverName" id="@cdktf/provider-upcloud.LoadbalancerBackend.resetResolverName"></a>
@@ -5756,9 +5776,11 @@ Any object.
 | <code><a href="#@cdktf/provider-upcloud.LoadbalancerBackend.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.LoadbalancerBackend.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.LoadbalancerBackend.property.members">members</a></code> | <code>string[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-upcloud.LoadbalancerBackend.property.properties">properties</a></code> | <code><a href="#@cdktf/provider-upcloud.LoadbalancerBackendPropertiesOutputReference">LoadbalancerBackendPropertiesOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.LoadbalancerBackend.property.idInput">idInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.LoadbalancerBackend.property.loadbalancerInput">loadbalancerInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.LoadbalancerBackend.property.nameInput">nameInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-upcloud.LoadbalancerBackend.property.propertiesInput">propertiesInput</a></code> | <code><a href="#@cdktf/provider-upcloud.LoadbalancerBackendProperties">LoadbalancerBackendProperties</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.LoadbalancerBackend.property.resolverNameInput">resolverNameInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.LoadbalancerBackend.property.id">id</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.LoadbalancerBackend.property.loadbalancer">loadbalancer</a></code> | <code>string</code> | *No description.* |
@@ -5889,6 +5911,16 @@ public readonly members: string[];
 
 ---
 
+##### `properties`<sup>Required</sup> <a name="properties" id="@cdktf/provider-upcloud.LoadbalancerBackend.property.properties"></a>
+
+```typescript
+public readonly properties: LoadbalancerBackendPropertiesOutputReference;
+```
+
+- *Type:* <a href="#@cdktf/provider-upcloud.LoadbalancerBackendPropertiesOutputReference">LoadbalancerBackendPropertiesOutputReference</a>
+
+---
+
 ##### `idInput`<sup>Optional</sup> <a name="idInput" id="@cdktf/provider-upcloud.LoadbalancerBackend.property.idInput"></a>
 
 ```typescript
@@ -5916,6 +5948,16 @@ public readonly nameInput: string;
 ```
 
 - *Type:* string
+
+---
+
+##### `propertiesInput`<sup>Optional</sup> <a name="propertiesInput" id="@cdktf/provider-upcloud.LoadbalancerBackend.property.propertiesInput"></a>
+
+```typescript
+public readonly propertiesInput: LoadbalancerBackendProperties;
+```
+
+- *Type:* <a href="#@cdktf/provider-upcloud.LoadbalancerBackendProperties">LoadbalancerBackendProperties</a>
 
 ---
 
@@ -7261,7 +7303,9 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-upcloud.LoadbalancerFrontend.getStringAttribute">getStringAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.LoadbalancerFrontend.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.LoadbalancerFrontend.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-upcloud.LoadbalancerFrontend.putProperties">putProperties</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.LoadbalancerFrontend.resetId">resetId</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-upcloud.LoadbalancerFrontend.resetProperties">resetProperties</a></code> | *No description.* |
 
 ---
 
@@ -7449,10 +7493,28 @@ public interpolationForAttribute(terraformAttribute: string): IResolvable
 
 ---
 
+##### `putProperties` <a name="putProperties" id="@cdktf/provider-upcloud.LoadbalancerFrontend.putProperties"></a>
+
+```typescript
+public putProperties(value: LoadbalancerFrontendProperties): void
+```
+
+###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-upcloud.LoadbalancerFrontend.putProperties.parameter.value"></a>
+
+- *Type:* <a href="#@cdktf/provider-upcloud.LoadbalancerFrontendProperties">LoadbalancerFrontendProperties</a>
+
+---
+
 ##### `resetId` <a name="resetId" id="@cdktf/provider-upcloud.LoadbalancerFrontend.resetId"></a>
 
 ```typescript
 public resetId(): void
+```
+
+##### `resetProperties` <a name="resetProperties" id="@cdktf/provider-upcloud.LoadbalancerFrontend.resetProperties"></a>
+
+```typescript
+public resetProperties(): void
 ```
 
 #### Static Functions <a name="Static Functions" id="Static Functions"></a>
@@ -7510,6 +7572,7 @@ Any object.
 | <code><a href="#@cdktf/provider-upcloud.LoadbalancerFrontend.property.dependsOn">dependsOn</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.LoadbalancerFrontend.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.LoadbalancerFrontend.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
+| <code><a href="#@cdktf/provider-upcloud.LoadbalancerFrontend.property.properties">properties</a></code> | <code><a href="#@cdktf/provider-upcloud.LoadbalancerFrontendPropertiesOutputReference">LoadbalancerFrontendPropertiesOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.LoadbalancerFrontend.property.rules">rules</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.LoadbalancerFrontend.property.tlsConfigs">tlsConfigs</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.LoadbalancerFrontend.property.defaultBackendNameInput">defaultBackendNameInput</a></code> | <code>string</code> | *No description.* |
@@ -7518,6 +7581,7 @@ Any object.
 | <code><a href="#@cdktf/provider-upcloud.LoadbalancerFrontend.property.modeInput">modeInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.LoadbalancerFrontend.property.nameInput">nameInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.LoadbalancerFrontend.property.portInput">portInput</a></code> | <code>number</code> | *No description.* |
+| <code><a href="#@cdktf/provider-upcloud.LoadbalancerFrontend.property.propertiesInput">propertiesInput</a></code> | <code><a href="#@cdktf/provider-upcloud.LoadbalancerFrontendProperties">LoadbalancerFrontendProperties</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.LoadbalancerFrontend.property.defaultBackendName">defaultBackendName</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.LoadbalancerFrontend.property.id">id</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.LoadbalancerFrontend.property.loadbalancer">loadbalancer</a></code> | <code>string</code> | *No description.* |
@@ -7639,6 +7703,16 @@ public readonly provider: TerraformProvider;
 
 ---
 
+##### `properties`<sup>Required</sup> <a name="properties" id="@cdktf/provider-upcloud.LoadbalancerFrontend.property.properties"></a>
+
+```typescript
+public readonly properties: LoadbalancerFrontendPropertiesOutputReference;
+```
+
+- *Type:* <a href="#@cdktf/provider-upcloud.LoadbalancerFrontendPropertiesOutputReference">LoadbalancerFrontendPropertiesOutputReference</a>
+
+---
+
 ##### `rules`<sup>Required</sup> <a name="rules" id="@cdktf/provider-upcloud.LoadbalancerFrontend.property.rules"></a>
 
 ```typescript
@@ -7716,6 +7790,16 @@ public readonly portInput: number;
 ```
 
 - *Type:* number
+
+---
+
+##### `propertiesInput`<sup>Optional</sup> <a name="propertiesInput" id="@cdktf/provider-upcloud.LoadbalancerFrontend.property.propertiesInput"></a>
+
+```typescript
+public readonly propertiesInput: LoadbalancerFrontendProperties;
+```
+
+- *Type:* <a href="#@cdktf/provider-upcloud.LoadbalancerFrontendProperties">LoadbalancerFrontendProperties</a>
 
 ---
 
@@ -18934,12 +19018,12 @@ const firewallRulesFirewallRule: FirewallRulesFirewallRule = { ... }
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-upcloud.FirewallRulesFirewallRule.property.action">action</a></code> | <code>string</code> | Action to take if the rule conditions are met. |
 | <code><a href="#@cdktf/provider-upcloud.FirewallRulesFirewallRule.property.direction">direction</a></code> | <code>string</code> | The direction of network traffic this rule will be applied to. |
-| <code><a href="#@cdktf/provider-upcloud.FirewallRulesFirewallRule.property.family">family</a></code> | <code>string</code> | The address family of new firewall rule. |
 | <code><a href="#@cdktf/provider-upcloud.FirewallRulesFirewallRule.property.comment">comment</a></code> | <code>string</code> | Freeform comment string for the rule. |
 | <code><a href="#@cdktf/provider-upcloud.FirewallRulesFirewallRule.property.destinationAddressEnd">destinationAddressEnd</a></code> | <code>string</code> | The destination address range ends from this address. |
 | <code><a href="#@cdktf/provider-upcloud.FirewallRulesFirewallRule.property.destinationAddressStart">destinationAddressStart</a></code> | <code>string</code> | The destination address range starts from this address. |
 | <code><a href="#@cdktf/provider-upcloud.FirewallRulesFirewallRule.property.destinationPortEnd">destinationPortEnd</a></code> | <code>string</code> | The destination port range ends from this port number. |
 | <code><a href="#@cdktf/provider-upcloud.FirewallRulesFirewallRule.property.destinationPortStart">destinationPortStart</a></code> | <code>string</code> | The destination port range starts from this port number. |
+| <code><a href="#@cdktf/provider-upcloud.FirewallRulesFirewallRule.property.family">family</a></code> | <code>string</code> | The address family of new firewall rule. |
 | <code><a href="#@cdktf/provider-upcloud.FirewallRulesFirewallRule.property.icmpType">icmpType</a></code> | <code>string</code> | The ICMP type. |
 | <code><a href="#@cdktf/provider-upcloud.FirewallRulesFirewallRule.property.protocol">protocol</a></code> | <code>string</code> | The protocol this rule will be applied to. |
 | <code><a href="#@cdktf/provider-upcloud.FirewallRulesFirewallRule.property.sourceAddressEnd">sourceAddressEnd</a></code> | <code>string</code> | The source address range ends from this address. |
@@ -18974,20 +19058,6 @@ public readonly direction: string;
 The direction of network traffic this rule will be applied to.
 
 Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/upcloud/r/firewall_rules#direction FirewallRules#direction}
-
----
-
-##### `family`<sup>Required</sup> <a name="family" id="@cdktf/provider-upcloud.FirewallRulesFirewallRule.property.family"></a>
-
-```typescript
-public readonly family: string;
-```
-
-- *Type:* string
-
-The address family of new firewall rule.
-
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/upcloud/r/firewall_rules#family FirewallRules#family}
 
 ---
 
@@ -19058,6 +19128,20 @@ public readonly destinationPortStart: string;
 The destination port range starts from this port number.
 
 Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/upcloud/r/firewall_rules#destination_port_start FirewallRules#destination_port_start}
+
+---
+
+##### `family`<sup>Optional</sup> <a name="family" id="@cdktf/provider-upcloud.FirewallRulesFirewallRule.property.family"></a>
+
+```typescript
+public readonly family: string;
+```
+
+- *Type:* string
+
+The address family of new firewall rule.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/upcloud/r/firewall_rules#family FirewallRules#family}
 
 ---
 
@@ -19303,6 +19387,7 @@ const loadbalancerBackendConfig: LoadbalancerBackendConfig = { ... }
 | <code><a href="#@cdktf/provider-upcloud.LoadbalancerBackendConfig.property.loadbalancer">loadbalancer</a></code> | <code>string</code> | ID of the load balancer to which the backend is connected. |
 | <code><a href="#@cdktf/provider-upcloud.LoadbalancerBackendConfig.property.name">name</a></code> | <code>string</code> | The name of the backend must be unique within the load balancer service. |
 | <code><a href="#@cdktf/provider-upcloud.LoadbalancerBackendConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/upcloud/r/loadbalancer_backend#id LoadbalancerBackend#id}. |
+| <code><a href="#@cdktf/provider-upcloud.LoadbalancerBackendConfig.property.properties">properties</a></code> | <code><a href="#@cdktf/provider-upcloud.LoadbalancerBackendProperties">LoadbalancerBackendProperties</a></code> | properties block. |
 | <code><a href="#@cdktf/provider-upcloud.LoadbalancerBackendConfig.property.resolverName">resolverName</a></code> | <code>string</code> | Domain Name Resolver used with dynamic type members. |
 
 ---
@@ -19390,6 +19475,20 @@ If you experience problems setting this value it might not be settable. Please t
 
 ---
 
+##### `properties`<sup>Optional</sup> <a name="properties" id="@cdktf/provider-upcloud.LoadbalancerBackendConfig.property.properties"></a>
+
+```typescript
+public readonly properties: LoadbalancerBackendProperties;
+```
+
+- *Type:* <a href="#@cdktf/provider-upcloud.LoadbalancerBackendProperties">LoadbalancerBackendProperties</a>
+
+properties block.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/upcloud/r/loadbalancer_backend#properties LoadbalancerBackend#properties}
+
+---
+
 ##### `resolverName`<sup>Optional</sup> <a name="resolverName" id="@cdktf/provider-upcloud.LoadbalancerBackendConfig.property.resolverName"></a>
 
 ```typescript
@@ -19401,6 +19500,173 @@ public readonly resolverName: string;
 Domain Name Resolver used with dynamic type members.
 
 Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/upcloud/r/loadbalancer_backend#resolver_name LoadbalancerBackend#resolver_name}
+
+---
+
+### LoadbalancerBackendProperties <a name="LoadbalancerBackendProperties" id="@cdktf/provider-upcloud.LoadbalancerBackendProperties"></a>
+
+#### Initializer <a name="Initializer" id="@cdktf/provider-upcloud.LoadbalancerBackendProperties.Initializer"></a>
+
+```typescript
+import { LoadbalancerBackendProperties } from '@cdktf/provider-upcloud'
+
+const loadbalancerBackendProperties: LoadbalancerBackendProperties = { ... }
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-upcloud.LoadbalancerBackendProperties.property.healthCheckExpectedStatus">healthCheckExpectedStatus</a></code> | <code>number</code> | Expected HTTP status code returned by the customer application to mark server as healthy. Ignored for tcp type. |
+| <code><a href="#@cdktf/provider-upcloud.LoadbalancerBackendProperties.property.healthCheckFall">healthCheckFall</a></code> | <code>number</code> | Sets how many failed health checks are allowed until the backend member is taken off from the rotation. |
+| <code><a href="#@cdktf/provider-upcloud.LoadbalancerBackendProperties.property.healthCheckInterval">healthCheckInterval</a></code> | <code>number</code> | Interval between health checks. |
+| <code><a href="#@cdktf/provider-upcloud.LoadbalancerBackendProperties.property.healthCheckRise">healthCheckRise</a></code> | <code>number</code> | Sets how many passing checks there must be before returning the backend member to the rotation. |
+| <code><a href="#@cdktf/provider-upcloud.LoadbalancerBackendProperties.property.healthCheckType">healthCheckType</a></code> | <code>string</code> | Health check type. |
+| <code><a href="#@cdktf/provider-upcloud.LoadbalancerBackendProperties.property.healthCheckUrl">healthCheckUrl</a></code> | <code>string</code> | Target path for health check HTTP GET requests. Ignored for tcp type. |
+| <code><a href="#@cdktf/provider-upcloud.LoadbalancerBackendProperties.property.outboundProxyProtocol">outboundProxyProtocol</a></code> | <code>string</code> | Enable outbound proxy protocol by setting the desired version. Empty string disables proxy protocol. |
+| <code><a href="#@cdktf/provider-upcloud.LoadbalancerBackendProperties.property.stickySessionCookieName">stickySessionCookieName</a></code> | <code>string</code> | Sets sticky session cookie name. Empty string disables sticky session. |
+| <code><a href="#@cdktf/provider-upcloud.LoadbalancerBackendProperties.property.timeoutServer">timeoutServer</a></code> | <code>number</code> | Backend server timeout in seconds. |
+| <code><a href="#@cdktf/provider-upcloud.LoadbalancerBackendProperties.property.timeoutTunnel">timeoutTunnel</a></code> | <code>number</code> | Maximum inactivity time on the client and server side for tunnels in seconds. |
+
+---
+
+##### `healthCheckExpectedStatus`<sup>Optional</sup> <a name="healthCheckExpectedStatus" id="@cdktf/provider-upcloud.LoadbalancerBackendProperties.property.healthCheckExpectedStatus"></a>
+
+```typescript
+public readonly healthCheckExpectedStatus: number;
+```
+
+- *Type:* number
+
+Expected HTTP status code returned by the customer application to mark server as healthy. Ignored for tcp type.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/upcloud/r/loadbalancer_backend#health_check_expected_status LoadbalancerBackend#health_check_expected_status}
+
+---
+
+##### `healthCheckFall`<sup>Optional</sup> <a name="healthCheckFall" id="@cdktf/provider-upcloud.LoadbalancerBackendProperties.property.healthCheckFall"></a>
+
+```typescript
+public readonly healthCheckFall: number;
+```
+
+- *Type:* number
+
+Sets how many failed health checks are allowed until the backend member is taken off from the rotation.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/upcloud/r/loadbalancer_backend#health_check_fall LoadbalancerBackend#health_check_fall}
+
+---
+
+##### `healthCheckInterval`<sup>Optional</sup> <a name="healthCheckInterval" id="@cdktf/provider-upcloud.LoadbalancerBackendProperties.property.healthCheckInterval"></a>
+
+```typescript
+public readonly healthCheckInterval: number;
+```
+
+- *Type:* number
+
+Interval between health checks.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/upcloud/r/loadbalancer_backend#health_check_interval LoadbalancerBackend#health_check_interval}
+
+---
+
+##### `healthCheckRise`<sup>Optional</sup> <a name="healthCheckRise" id="@cdktf/provider-upcloud.LoadbalancerBackendProperties.property.healthCheckRise"></a>
+
+```typescript
+public readonly healthCheckRise: number;
+```
+
+- *Type:* number
+
+Sets how many passing checks there must be before returning the backend member to the rotation.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/upcloud/r/loadbalancer_backend#health_check_rise LoadbalancerBackend#health_check_rise}
+
+---
+
+##### `healthCheckType`<sup>Optional</sup> <a name="healthCheckType" id="@cdktf/provider-upcloud.LoadbalancerBackendProperties.property.healthCheckType"></a>
+
+```typescript
+public readonly healthCheckType: string;
+```
+
+- *Type:* string
+
+Health check type.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/upcloud/r/loadbalancer_backend#health_check_type LoadbalancerBackend#health_check_type}
+
+---
+
+##### `healthCheckUrl`<sup>Optional</sup> <a name="healthCheckUrl" id="@cdktf/provider-upcloud.LoadbalancerBackendProperties.property.healthCheckUrl"></a>
+
+```typescript
+public readonly healthCheckUrl: string;
+```
+
+- *Type:* string
+
+Target path for health check HTTP GET requests. Ignored for tcp type.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/upcloud/r/loadbalancer_backend#health_check_url LoadbalancerBackend#health_check_url}
+
+---
+
+##### `outboundProxyProtocol`<sup>Optional</sup> <a name="outboundProxyProtocol" id="@cdktf/provider-upcloud.LoadbalancerBackendProperties.property.outboundProxyProtocol"></a>
+
+```typescript
+public readonly outboundProxyProtocol: string;
+```
+
+- *Type:* string
+
+Enable outbound proxy protocol by setting the desired version. Empty string disables proxy protocol.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/upcloud/r/loadbalancer_backend#outbound_proxy_protocol LoadbalancerBackend#outbound_proxy_protocol}
+
+---
+
+##### `stickySessionCookieName`<sup>Optional</sup> <a name="stickySessionCookieName" id="@cdktf/provider-upcloud.LoadbalancerBackendProperties.property.stickySessionCookieName"></a>
+
+```typescript
+public readonly stickySessionCookieName: string;
+```
+
+- *Type:* string
+
+Sets sticky session cookie name. Empty string disables sticky session.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/upcloud/r/loadbalancer_backend#sticky_session_cookie_name LoadbalancerBackend#sticky_session_cookie_name}
+
+---
+
+##### `timeoutServer`<sup>Optional</sup> <a name="timeoutServer" id="@cdktf/provider-upcloud.LoadbalancerBackendProperties.property.timeoutServer"></a>
+
+```typescript
+public readonly timeoutServer: number;
+```
+
+- *Type:* number
+
+Backend server timeout in seconds.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/upcloud/r/loadbalancer_backend#timeout_server LoadbalancerBackend#timeout_server}
+
+---
+
+##### `timeoutTunnel`<sup>Optional</sup> <a name="timeoutTunnel" id="@cdktf/provider-upcloud.LoadbalancerBackendProperties.property.timeoutTunnel"></a>
+
+```typescript
+public readonly timeoutTunnel: number;
+```
+
+- *Type:* number
+
+Maximum inactivity time on the client and server side for tunnels in seconds.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/upcloud/r/loadbalancer_backend#timeout_tunnel LoadbalancerBackend#timeout_tunnel}
 
 ---
 
@@ -19887,6 +20153,7 @@ const loadbalancerFrontendConfig: LoadbalancerFrontendConfig = { ... }
 | <code><a href="#@cdktf/provider-upcloud.LoadbalancerFrontendConfig.property.name">name</a></code> | <code>string</code> | The name of the frontend must be unique within the load balancer service. |
 | <code><a href="#@cdktf/provider-upcloud.LoadbalancerFrontendConfig.property.port">port</a></code> | <code>number</code> | Port to listen incoming requests. |
 | <code><a href="#@cdktf/provider-upcloud.LoadbalancerFrontendConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/upcloud/r/loadbalancer_frontend#id LoadbalancerFrontend#id}. |
+| <code><a href="#@cdktf/provider-upcloud.LoadbalancerFrontendConfig.property.properties">properties</a></code> | <code><a href="#@cdktf/provider-upcloud.LoadbalancerFrontendProperties">LoadbalancerFrontendProperties</a></code> | properties block. |
 
 ---
 
@@ -20019,6 +20286,67 @@ If you experience problems setting this value it might not be settable. Please t
 
 ---
 
+##### `properties`<sup>Optional</sup> <a name="properties" id="@cdktf/provider-upcloud.LoadbalancerFrontendConfig.property.properties"></a>
+
+```typescript
+public readonly properties: LoadbalancerFrontendProperties;
+```
+
+- *Type:* <a href="#@cdktf/provider-upcloud.LoadbalancerFrontendProperties">LoadbalancerFrontendProperties</a>
+
+properties block.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/upcloud/r/loadbalancer_frontend#properties LoadbalancerFrontend#properties}
+
+---
+
+### LoadbalancerFrontendProperties <a name="LoadbalancerFrontendProperties" id="@cdktf/provider-upcloud.LoadbalancerFrontendProperties"></a>
+
+#### Initializer <a name="Initializer" id="@cdktf/provider-upcloud.LoadbalancerFrontendProperties.Initializer"></a>
+
+```typescript
+import { LoadbalancerFrontendProperties } from '@cdktf/provider-upcloud'
+
+const loadbalancerFrontendProperties: LoadbalancerFrontendProperties = { ... }
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-upcloud.LoadbalancerFrontendProperties.property.inboundProxyProtocol">inboundProxyProtocol</a></code> | <code>boolean \| cdktf.IResolvable</code> | Enable or disable inbound proxy protocol support. |
+| <code><a href="#@cdktf/provider-upcloud.LoadbalancerFrontendProperties.property.timeoutClient">timeoutClient</a></code> | <code>number</code> | Client request timeout in seconds. |
+
+---
+
+##### `inboundProxyProtocol`<sup>Optional</sup> <a name="inboundProxyProtocol" id="@cdktf/provider-upcloud.LoadbalancerFrontendProperties.property.inboundProxyProtocol"></a>
+
+```typescript
+public readonly inboundProxyProtocol: boolean | IResolvable;
+```
+
+- *Type:* boolean | cdktf.IResolvable
+
+Enable or disable inbound proxy protocol support.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/upcloud/r/loadbalancer_frontend#inbound_proxy_protocol LoadbalancerFrontend#inbound_proxy_protocol}
+
+---
+
+##### `timeoutClient`<sup>Optional</sup> <a name="timeoutClient" id="@cdktf/provider-upcloud.LoadbalancerFrontendProperties.property.timeoutClient"></a>
+
+```typescript
+public readonly timeoutClient: number;
+```
+
+- *Type:* number
+
+Client request timeout in seconds.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/upcloud/r/loadbalancer_frontend#timeout_client LoadbalancerFrontend#timeout_client}
+
+---
+
 ### LoadbalancerFrontendRuleActions <a name="LoadbalancerFrontendRuleActions" id="@cdktf/provider-upcloud.LoadbalancerFrontendRuleActions"></a>
 
 #### Initializer <a name="Initializer" id="@cdktf/provider-upcloud.LoadbalancerFrontendRuleActions.Initializer"></a>
@@ -20035,6 +20363,7 @@ const loadbalancerFrontendRuleActions: LoadbalancerFrontendRuleActions = { ... }
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-upcloud.LoadbalancerFrontendRuleActions.property.httpRedirect">httpRedirect</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-upcloud.LoadbalancerFrontendRuleActionsHttpRedirect">LoadbalancerFrontendRuleActionsHttpRedirect</a>[]</code> | http_redirect block. |
 | <code><a href="#@cdktf/provider-upcloud.LoadbalancerFrontendRuleActions.property.httpReturn">httpReturn</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-upcloud.LoadbalancerFrontendRuleActionsHttpReturn">LoadbalancerFrontendRuleActionsHttpReturn</a>[]</code> | http_return block. |
+| <code><a href="#@cdktf/provider-upcloud.LoadbalancerFrontendRuleActions.property.setForwardedHeaders">setForwardedHeaders</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-upcloud.LoadbalancerFrontendRuleActionsSetForwardedHeaders">LoadbalancerFrontendRuleActionsSetForwardedHeaders</a>[]</code> | set_forwarded_headers block. |
 | <code><a href="#@cdktf/provider-upcloud.LoadbalancerFrontendRuleActions.property.tcpReject">tcpReject</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-upcloud.LoadbalancerFrontendRuleActionsTcpReject">LoadbalancerFrontendRuleActionsTcpReject</a>[]</code> | tcp_reject block. |
 | <code><a href="#@cdktf/provider-upcloud.LoadbalancerFrontendRuleActions.property.useBackend">useBackend</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-upcloud.LoadbalancerFrontendRuleActionsUseBackend">LoadbalancerFrontendRuleActionsUseBackend</a>[]</code> | use_backend block. |
 
@@ -20065,6 +20394,20 @@ public readonly httpReturn: IResolvable | LoadbalancerFrontendRuleActionsHttpRet
 http_return block.
 
 Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/upcloud/r/loadbalancer_frontend_rule#http_return LoadbalancerFrontendRule#http_return}
+
+---
+
+##### `setForwardedHeaders`<sup>Optional</sup> <a name="setForwardedHeaders" id="@cdktf/provider-upcloud.LoadbalancerFrontendRuleActions.property.setForwardedHeaders"></a>
+
+```typescript
+public readonly setForwardedHeaders: IResolvable | LoadbalancerFrontendRuleActionsSetForwardedHeaders[];
+```
+
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-upcloud.LoadbalancerFrontendRuleActionsSetForwardedHeaders">LoadbalancerFrontendRuleActionsSetForwardedHeaders</a>[]
+
+set_forwarded_headers block.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/upcloud/r/loadbalancer_frontend_rule#set_forwarded_headers LoadbalancerFrontendRule#set_forwarded_headers}
 
 ---
 
@@ -20187,6 +20530,36 @@ public readonly status: number;
 HTTP status code.
 
 Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/upcloud/r/loadbalancer_frontend_rule#status LoadbalancerFrontendRule#status}
+
+---
+
+### LoadbalancerFrontendRuleActionsSetForwardedHeaders <a name="LoadbalancerFrontendRuleActionsSetForwardedHeaders" id="@cdktf/provider-upcloud.LoadbalancerFrontendRuleActionsSetForwardedHeaders"></a>
+
+#### Initializer <a name="Initializer" id="@cdktf/provider-upcloud.LoadbalancerFrontendRuleActionsSetForwardedHeaders.Initializer"></a>
+
+```typescript
+import { LoadbalancerFrontendRuleActionsSetForwardedHeaders } from '@cdktf/provider-upcloud'
+
+const loadbalancerFrontendRuleActionsSetForwardedHeaders: LoadbalancerFrontendRuleActionsSetForwardedHeaders = { ... }
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-upcloud.LoadbalancerFrontendRuleActionsSetForwardedHeaders.property.active">active</a></code> | <code>boolean \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/upcloud/r/loadbalancer_frontend_rule#active LoadbalancerFrontendRule#active}. |
+
+---
+
+##### `active`<sup>Optional</sup> <a name="active" id="@cdktf/provider-upcloud.LoadbalancerFrontendRuleActionsSetForwardedHeaders.property.active"></a>
+
+```typescript
+public readonly active: boolean | IResolvable;
+```
+
+- *Type:* boolean | cdktf.IResolvable
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/upcloud/r/loadbalancer_frontend_rule#active LoadbalancerFrontendRule#active}.
 
 ---
 
@@ -29610,6 +29983,7 @@ whether the list is wrapping a set (will add tolist() to be able to access an it
 | <code><a href="#@cdktf/provider-upcloud.FirewallRulesFirewallRuleOutputReference.resetDestinationAddressStart">resetDestinationAddressStart</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.FirewallRulesFirewallRuleOutputReference.resetDestinationPortEnd">resetDestinationPortEnd</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.FirewallRulesFirewallRuleOutputReference.resetDestinationPortStart">resetDestinationPortStart</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-upcloud.FirewallRulesFirewallRuleOutputReference.resetFamily">resetFamily</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.FirewallRulesFirewallRuleOutputReference.resetIcmpType">resetIcmpType</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.FirewallRulesFirewallRuleOutputReference.resetProtocol">resetProtocol</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.FirewallRulesFirewallRuleOutputReference.resetSourceAddressEnd">resetSourceAddressEnd</a></code> | *No description.* |
@@ -29797,6 +30171,12 @@ public resetDestinationPortEnd(): void
 
 ```typescript
 public resetDestinationPortStart(): void
+```
+
+##### `resetFamily` <a name="resetFamily" id="@cdktf/provider-upcloud.FirewallRulesFirewallRuleOutputReference.resetFamily"></a>
+
+```typescript
+public resetFamily(): void
 ```
 
 ##### `resetIcmpType` <a name="resetIcmpType" id="@cdktf/provider-upcloud.FirewallRulesFirewallRuleOutputReference.resetIcmpType"></a>
@@ -30185,6 +30565,852 @@ public readonly internalValue: FirewallRulesFirewallRule | IResolvable;
 ```
 
 - *Type:* <a href="#@cdktf/provider-upcloud.FirewallRulesFirewallRule">FirewallRulesFirewallRule</a> | cdktf.IResolvable
+
+---
+
+
+### LoadbalancerBackendPropertiesOutputReference <a name="LoadbalancerBackendPropertiesOutputReference" id="@cdktf/provider-upcloud.LoadbalancerBackendPropertiesOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktf/provider-upcloud.LoadbalancerBackendPropertiesOutputReference.Initializer"></a>
+
+```typescript
+import { LoadbalancerBackendPropertiesOutputReference } from '@cdktf/provider-upcloud'
+
+new LoadbalancerBackendPropertiesOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-upcloud.LoadbalancerBackendPropertiesOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktf/provider-upcloud.LoadbalancerBackendPropertiesOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktf/provider-upcloud.LoadbalancerBackendPropertiesOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* cdktf.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-upcloud.LoadbalancerBackendPropertiesOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktf/provider-upcloud.LoadbalancerBackendPropertiesOutputReference.computeFqn">computeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-upcloud.LoadbalancerBackendPropertiesOutputReference.getAnyMapAttribute">getAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-upcloud.LoadbalancerBackendPropertiesOutputReference.getBooleanAttribute">getBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-upcloud.LoadbalancerBackendPropertiesOutputReference.getBooleanMapAttribute">getBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-upcloud.LoadbalancerBackendPropertiesOutputReference.getListAttribute">getListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-upcloud.LoadbalancerBackendPropertiesOutputReference.getNumberAttribute">getNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-upcloud.LoadbalancerBackendPropertiesOutputReference.getNumberListAttribute">getNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-upcloud.LoadbalancerBackendPropertiesOutputReference.getNumberMapAttribute">getNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-upcloud.LoadbalancerBackendPropertiesOutputReference.getStringAttribute">getStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-upcloud.LoadbalancerBackendPropertiesOutputReference.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-upcloud.LoadbalancerBackendPropertiesOutputReference.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-upcloud.LoadbalancerBackendPropertiesOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktf/provider-upcloud.LoadbalancerBackendPropertiesOutputReference.toString">toString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktf/provider-upcloud.LoadbalancerBackendPropertiesOutputReference.resetHealthCheckExpectedStatus">resetHealthCheckExpectedStatus</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-upcloud.LoadbalancerBackendPropertiesOutputReference.resetHealthCheckFall">resetHealthCheckFall</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-upcloud.LoadbalancerBackendPropertiesOutputReference.resetHealthCheckInterval">resetHealthCheckInterval</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-upcloud.LoadbalancerBackendPropertiesOutputReference.resetHealthCheckRise">resetHealthCheckRise</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-upcloud.LoadbalancerBackendPropertiesOutputReference.resetHealthCheckType">resetHealthCheckType</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-upcloud.LoadbalancerBackendPropertiesOutputReference.resetHealthCheckUrl">resetHealthCheckUrl</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-upcloud.LoadbalancerBackendPropertiesOutputReference.resetOutboundProxyProtocol">resetOutboundProxyProtocol</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-upcloud.LoadbalancerBackendPropertiesOutputReference.resetStickySessionCookieName">resetStickySessionCookieName</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-upcloud.LoadbalancerBackendPropertiesOutputReference.resetTimeoutServer">resetTimeoutServer</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-upcloud.LoadbalancerBackendPropertiesOutputReference.resetTimeoutTunnel">resetTimeoutTunnel</a></code> | *No description.* |
+
+---
+
+##### `computeFqn` <a name="computeFqn" id="@cdktf/provider-upcloud.LoadbalancerBackendPropertiesOutputReference.computeFqn"></a>
+
+```typescript
+public computeFqn(): string
+```
+
+##### `getAnyMapAttribute` <a name="getAnyMapAttribute" id="@cdktf/provider-upcloud.LoadbalancerBackendPropertiesOutputReference.getAnyMapAttribute"></a>
+
+```typescript
+public getAnyMapAttribute(terraformAttribute: string): {[ key: string ]: any}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-upcloud.LoadbalancerBackendPropertiesOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getBooleanAttribute` <a name="getBooleanAttribute" id="@cdktf/provider-upcloud.LoadbalancerBackendPropertiesOutputReference.getBooleanAttribute"></a>
+
+```typescript
+public getBooleanAttribute(terraformAttribute: string): IResolvable
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-upcloud.LoadbalancerBackendPropertiesOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getBooleanMapAttribute` <a name="getBooleanMapAttribute" id="@cdktf/provider-upcloud.LoadbalancerBackendPropertiesOutputReference.getBooleanMapAttribute"></a>
+
+```typescript
+public getBooleanMapAttribute(terraformAttribute: string): {[ key: string ]: boolean}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-upcloud.LoadbalancerBackendPropertiesOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getListAttribute` <a name="getListAttribute" id="@cdktf/provider-upcloud.LoadbalancerBackendPropertiesOutputReference.getListAttribute"></a>
+
+```typescript
+public getListAttribute(terraformAttribute: string): string[]
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-upcloud.LoadbalancerBackendPropertiesOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getNumberAttribute` <a name="getNumberAttribute" id="@cdktf/provider-upcloud.LoadbalancerBackendPropertiesOutputReference.getNumberAttribute"></a>
+
+```typescript
+public getNumberAttribute(terraformAttribute: string): number
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-upcloud.LoadbalancerBackendPropertiesOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getNumberListAttribute` <a name="getNumberListAttribute" id="@cdktf/provider-upcloud.LoadbalancerBackendPropertiesOutputReference.getNumberListAttribute"></a>
+
+```typescript
+public getNumberListAttribute(terraformAttribute: string): number[]
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-upcloud.LoadbalancerBackendPropertiesOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getNumberMapAttribute` <a name="getNumberMapAttribute" id="@cdktf/provider-upcloud.LoadbalancerBackendPropertiesOutputReference.getNumberMapAttribute"></a>
+
+```typescript
+public getNumberMapAttribute(terraformAttribute: string): {[ key: string ]: number}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-upcloud.LoadbalancerBackendPropertiesOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getStringAttribute` <a name="getStringAttribute" id="@cdktf/provider-upcloud.LoadbalancerBackendPropertiesOutputReference.getStringAttribute"></a>
+
+```typescript
+public getStringAttribute(terraformAttribute: string): string
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-upcloud.LoadbalancerBackendPropertiesOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getStringMapAttribute` <a name="getStringMapAttribute" id="@cdktf/provider-upcloud.LoadbalancerBackendPropertiesOutputReference.getStringMapAttribute"></a>
+
+```typescript
+public getStringMapAttribute(terraformAttribute: string): {[ key: string ]: string}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-upcloud.LoadbalancerBackendPropertiesOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `interpolationForAttribute` <a name="interpolationForAttribute" id="@cdktf/provider-upcloud.LoadbalancerBackendPropertiesOutputReference.interpolationForAttribute"></a>
+
+```typescript
+public interpolationForAttribute(property: string): IResolvable
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktf/provider-upcloud.LoadbalancerBackendPropertiesOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* string
+
+---
+
+##### `resolve` <a name="resolve" id="@cdktf/provider-upcloud.LoadbalancerBackendPropertiesOutputReference.resolve"></a>
+
+```typescript
+public resolve(_context: IResolveContext): any
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktf/provider-upcloud.LoadbalancerBackendPropertiesOutputReference.resolve.parameter._context"></a>
+
+- *Type:* cdktf.IResolveContext
+
+---
+
+##### `toString` <a name="toString" id="@cdktf/provider-upcloud.LoadbalancerBackendPropertiesOutputReference.toString"></a>
+
+```typescript
+public toString(): string
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `resetHealthCheckExpectedStatus` <a name="resetHealthCheckExpectedStatus" id="@cdktf/provider-upcloud.LoadbalancerBackendPropertiesOutputReference.resetHealthCheckExpectedStatus"></a>
+
+```typescript
+public resetHealthCheckExpectedStatus(): void
+```
+
+##### `resetHealthCheckFall` <a name="resetHealthCheckFall" id="@cdktf/provider-upcloud.LoadbalancerBackendPropertiesOutputReference.resetHealthCheckFall"></a>
+
+```typescript
+public resetHealthCheckFall(): void
+```
+
+##### `resetHealthCheckInterval` <a name="resetHealthCheckInterval" id="@cdktf/provider-upcloud.LoadbalancerBackendPropertiesOutputReference.resetHealthCheckInterval"></a>
+
+```typescript
+public resetHealthCheckInterval(): void
+```
+
+##### `resetHealthCheckRise` <a name="resetHealthCheckRise" id="@cdktf/provider-upcloud.LoadbalancerBackendPropertiesOutputReference.resetHealthCheckRise"></a>
+
+```typescript
+public resetHealthCheckRise(): void
+```
+
+##### `resetHealthCheckType` <a name="resetHealthCheckType" id="@cdktf/provider-upcloud.LoadbalancerBackendPropertiesOutputReference.resetHealthCheckType"></a>
+
+```typescript
+public resetHealthCheckType(): void
+```
+
+##### `resetHealthCheckUrl` <a name="resetHealthCheckUrl" id="@cdktf/provider-upcloud.LoadbalancerBackendPropertiesOutputReference.resetHealthCheckUrl"></a>
+
+```typescript
+public resetHealthCheckUrl(): void
+```
+
+##### `resetOutboundProxyProtocol` <a name="resetOutboundProxyProtocol" id="@cdktf/provider-upcloud.LoadbalancerBackendPropertiesOutputReference.resetOutboundProxyProtocol"></a>
+
+```typescript
+public resetOutboundProxyProtocol(): void
+```
+
+##### `resetStickySessionCookieName` <a name="resetStickySessionCookieName" id="@cdktf/provider-upcloud.LoadbalancerBackendPropertiesOutputReference.resetStickySessionCookieName"></a>
+
+```typescript
+public resetStickySessionCookieName(): void
+```
+
+##### `resetTimeoutServer` <a name="resetTimeoutServer" id="@cdktf/provider-upcloud.LoadbalancerBackendPropertiesOutputReference.resetTimeoutServer"></a>
+
+```typescript
+public resetTimeoutServer(): void
+```
+
+##### `resetTimeoutTunnel` <a name="resetTimeoutTunnel" id="@cdktf/provider-upcloud.LoadbalancerBackendPropertiesOutputReference.resetTimeoutTunnel"></a>
+
+```typescript
+public resetTimeoutTunnel(): void
+```
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-upcloud.LoadbalancerBackendPropertiesOutputReference.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktf/provider-upcloud.LoadbalancerBackendPropertiesOutputReference.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-upcloud.LoadbalancerBackendPropertiesOutputReference.property.healthCheckExpectedStatusInput">healthCheckExpectedStatusInput</a></code> | <code>number</code> | *No description.* |
+| <code><a href="#@cdktf/provider-upcloud.LoadbalancerBackendPropertiesOutputReference.property.healthCheckFallInput">healthCheckFallInput</a></code> | <code>number</code> | *No description.* |
+| <code><a href="#@cdktf/provider-upcloud.LoadbalancerBackendPropertiesOutputReference.property.healthCheckIntervalInput">healthCheckIntervalInput</a></code> | <code>number</code> | *No description.* |
+| <code><a href="#@cdktf/provider-upcloud.LoadbalancerBackendPropertiesOutputReference.property.healthCheckRiseInput">healthCheckRiseInput</a></code> | <code>number</code> | *No description.* |
+| <code><a href="#@cdktf/provider-upcloud.LoadbalancerBackendPropertiesOutputReference.property.healthCheckTypeInput">healthCheckTypeInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-upcloud.LoadbalancerBackendPropertiesOutputReference.property.healthCheckUrlInput">healthCheckUrlInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-upcloud.LoadbalancerBackendPropertiesOutputReference.property.outboundProxyProtocolInput">outboundProxyProtocolInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-upcloud.LoadbalancerBackendPropertiesOutputReference.property.stickySessionCookieNameInput">stickySessionCookieNameInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-upcloud.LoadbalancerBackendPropertiesOutputReference.property.timeoutServerInput">timeoutServerInput</a></code> | <code>number</code> | *No description.* |
+| <code><a href="#@cdktf/provider-upcloud.LoadbalancerBackendPropertiesOutputReference.property.timeoutTunnelInput">timeoutTunnelInput</a></code> | <code>number</code> | *No description.* |
+| <code><a href="#@cdktf/provider-upcloud.LoadbalancerBackendPropertiesOutputReference.property.healthCheckExpectedStatus">healthCheckExpectedStatus</a></code> | <code>number</code> | *No description.* |
+| <code><a href="#@cdktf/provider-upcloud.LoadbalancerBackendPropertiesOutputReference.property.healthCheckFall">healthCheckFall</a></code> | <code>number</code> | *No description.* |
+| <code><a href="#@cdktf/provider-upcloud.LoadbalancerBackendPropertiesOutputReference.property.healthCheckInterval">healthCheckInterval</a></code> | <code>number</code> | *No description.* |
+| <code><a href="#@cdktf/provider-upcloud.LoadbalancerBackendPropertiesOutputReference.property.healthCheckRise">healthCheckRise</a></code> | <code>number</code> | *No description.* |
+| <code><a href="#@cdktf/provider-upcloud.LoadbalancerBackendPropertiesOutputReference.property.healthCheckType">healthCheckType</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-upcloud.LoadbalancerBackendPropertiesOutputReference.property.healthCheckUrl">healthCheckUrl</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-upcloud.LoadbalancerBackendPropertiesOutputReference.property.outboundProxyProtocol">outboundProxyProtocol</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-upcloud.LoadbalancerBackendPropertiesOutputReference.property.stickySessionCookieName">stickySessionCookieName</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-upcloud.LoadbalancerBackendPropertiesOutputReference.property.timeoutServer">timeoutServer</a></code> | <code>number</code> | *No description.* |
+| <code><a href="#@cdktf/provider-upcloud.LoadbalancerBackendPropertiesOutputReference.property.timeoutTunnel">timeoutTunnel</a></code> | <code>number</code> | *No description.* |
+| <code><a href="#@cdktf/provider-upcloud.LoadbalancerBackendPropertiesOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktf/provider-upcloud.LoadbalancerBackendProperties">LoadbalancerBackendProperties</a></code> | *No description.* |
+
+---
+
+##### `creationStack`<sup>Required</sup> <a name="creationStack" id="@cdktf/provider-upcloud.LoadbalancerBackendPropertiesOutputReference.property.creationStack"></a>
+
+```typescript
+public readonly creationStack: string[];
+```
+
+- *Type:* string[]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktf/provider-upcloud.LoadbalancerBackendPropertiesOutputReference.property.fqn"></a>
+
+```typescript
+public readonly fqn: string;
+```
+
+- *Type:* string
+
+---
+
+##### `healthCheckExpectedStatusInput`<sup>Optional</sup> <a name="healthCheckExpectedStatusInput" id="@cdktf/provider-upcloud.LoadbalancerBackendPropertiesOutputReference.property.healthCheckExpectedStatusInput"></a>
+
+```typescript
+public readonly healthCheckExpectedStatusInput: number;
+```
+
+- *Type:* number
+
+---
+
+##### `healthCheckFallInput`<sup>Optional</sup> <a name="healthCheckFallInput" id="@cdktf/provider-upcloud.LoadbalancerBackendPropertiesOutputReference.property.healthCheckFallInput"></a>
+
+```typescript
+public readonly healthCheckFallInput: number;
+```
+
+- *Type:* number
+
+---
+
+##### `healthCheckIntervalInput`<sup>Optional</sup> <a name="healthCheckIntervalInput" id="@cdktf/provider-upcloud.LoadbalancerBackendPropertiesOutputReference.property.healthCheckIntervalInput"></a>
+
+```typescript
+public readonly healthCheckIntervalInput: number;
+```
+
+- *Type:* number
+
+---
+
+##### `healthCheckRiseInput`<sup>Optional</sup> <a name="healthCheckRiseInput" id="@cdktf/provider-upcloud.LoadbalancerBackendPropertiesOutputReference.property.healthCheckRiseInput"></a>
+
+```typescript
+public readonly healthCheckRiseInput: number;
+```
+
+- *Type:* number
+
+---
+
+##### `healthCheckTypeInput`<sup>Optional</sup> <a name="healthCheckTypeInput" id="@cdktf/provider-upcloud.LoadbalancerBackendPropertiesOutputReference.property.healthCheckTypeInput"></a>
+
+```typescript
+public readonly healthCheckTypeInput: string;
+```
+
+- *Type:* string
+
+---
+
+##### `healthCheckUrlInput`<sup>Optional</sup> <a name="healthCheckUrlInput" id="@cdktf/provider-upcloud.LoadbalancerBackendPropertiesOutputReference.property.healthCheckUrlInput"></a>
+
+```typescript
+public readonly healthCheckUrlInput: string;
+```
+
+- *Type:* string
+
+---
+
+##### `outboundProxyProtocolInput`<sup>Optional</sup> <a name="outboundProxyProtocolInput" id="@cdktf/provider-upcloud.LoadbalancerBackendPropertiesOutputReference.property.outboundProxyProtocolInput"></a>
+
+```typescript
+public readonly outboundProxyProtocolInput: string;
+```
+
+- *Type:* string
+
+---
+
+##### `stickySessionCookieNameInput`<sup>Optional</sup> <a name="stickySessionCookieNameInput" id="@cdktf/provider-upcloud.LoadbalancerBackendPropertiesOutputReference.property.stickySessionCookieNameInput"></a>
+
+```typescript
+public readonly stickySessionCookieNameInput: string;
+```
+
+- *Type:* string
+
+---
+
+##### `timeoutServerInput`<sup>Optional</sup> <a name="timeoutServerInput" id="@cdktf/provider-upcloud.LoadbalancerBackendPropertiesOutputReference.property.timeoutServerInput"></a>
+
+```typescript
+public readonly timeoutServerInput: number;
+```
+
+- *Type:* number
+
+---
+
+##### `timeoutTunnelInput`<sup>Optional</sup> <a name="timeoutTunnelInput" id="@cdktf/provider-upcloud.LoadbalancerBackendPropertiesOutputReference.property.timeoutTunnelInput"></a>
+
+```typescript
+public readonly timeoutTunnelInput: number;
+```
+
+- *Type:* number
+
+---
+
+##### `healthCheckExpectedStatus`<sup>Required</sup> <a name="healthCheckExpectedStatus" id="@cdktf/provider-upcloud.LoadbalancerBackendPropertiesOutputReference.property.healthCheckExpectedStatus"></a>
+
+```typescript
+public readonly healthCheckExpectedStatus: number;
+```
+
+- *Type:* number
+
+---
+
+##### `healthCheckFall`<sup>Required</sup> <a name="healthCheckFall" id="@cdktf/provider-upcloud.LoadbalancerBackendPropertiesOutputReference.property.healthCheckFall"></a>
+
+```typescript
+public readonly healthCheckFall: number;
+```
+
+- *Type:* number
+
+---
+
+##### `healthCheckInterval`<sup>Required</sup> <a name="healthCheckInterval" id="@cdktf/provider-upcloud.LoadbalancerBackendPropertiesOutputReference.property.healthCheckInterval"></a>
+
+```typescript
+public readonly healthCheckInterval: number;
+```
+
+- *Type:* number
+
+---
+
+##### `healthCheckRise`<sup>Required</sup> <a name="healthCheckRise" id="@cdktf/provider-upcloud.LoadbalancerBackendPropertiesOutputReference.property.healthCheckRise"></a>
+
+```typescript
+public readonly healthCheckRise: number;
+```
+
+- *Type:* number
+
+---
+
+##### `healthCheckType`<sup>Required</sup> <a name="healthCheckType" id="@cdktf/provider-upcloud.LoadbalancerBackendPropertiesOutputReference.property.healthCheckType"></a>
+
+```typescript
+public readonly healthCheckType: string;
+```
+
+- *Type:* string
+
+---
+
+##### `healthCheckUrl`<sup>Required</sup> <a name="healthCheckUrl" id="@cdktf/provider-upcloud.LoadbalancerBackendPropertiesOutputReference.property.healthCheckUrl"></a>
+
+```typescript
+public readonly healthCheckUrl: string;
+```
+
+- *Type:* string
+
+---
+
+##### `outboundProxyProtocol`<sup>Required</sup> <a name="outboundProxyProtocol" id="@cdktf/provider-upcloud.LoadbalancerBackendPropertiesOutputReference.property.outboundProxyProtocol"></a>
+
+```typescript
+public readonly outboundProxyProtocol: string;
+```
+
+- *Type:* string
+
+---
+
+##### `stickySessionCookieName`<sup>Required</sup> <a name="stickySessionCookieName" id="@cdktf/provider-upcloud.LoadbalancerBackendPropertiesOutputReference.property.stickySessionCookieName"></a>
+
+```typescript
+public readonly stickySessionCookieName: string;
+```
+
+- *Type:* string
+
+---
+
+##### `timeoutServer`<sup>Required</sup> <a name="timeoutServer" id="@cdktf/provider-upcloud.LoadbalancerBackendPropertiesOutputReference.property.timeoutServer"></a>
+
+```typescript
+public readonly timeoutServer: number;
+```
+
+- *Type:* number
+
+---
+
+##### `timeoutTunnel`<sup>Required</sup> <a name="timeoutTunnel" id="@cdktf/provider-upcloud.LoadbalancerBackendPropertiesOutputReference.property.timeoutTunnel"></a>
+
+```typescript
+public readonly timeoutTunnel: number;
+```
+
+- *Type:* number
+
+---
+
+##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-upcloud.LoadbalancerBackendPropertiesOutputReference.property.internalValue"></a>
+
+```typescript
+public readonly internalValue: LoadbalancerBackendProperties;
+```
+
+- *Type:* <a href="#@cdktf/provider-upcloud.LoadbalancerBackendProperties">LoadbalancerBackendProperties</a>
+
+---
+
+
+### LoadbalancerFrontendPropertiesOutputReference <a name="LoadbalancerFrontendPropertiesOutputReference" id="@cdktf/provider-upcloud.LoadbalancerFrontendPropertiesOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktf/provider-upcloud.LoadbalancerFrontendPropertiesOutputReference.Initializer"></a>
+
+```typescript
+import { LoadbalancerFrontendPropertiesOutputReference } from '@cdktf/provider-upcloud'
+
+new LoadbalancerFrontendPropertiesOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-upcloud.LoadbalancerFrontendPropertiesOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktf/provider-upcloud.LoadbalancerFrontendPropertiesOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktf/provider-upcloud.LoadbalancerFrontendPropertiesOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* cdktf.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-upcloud.LoadbalancerFrontendPropertiesOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktf/provider-upcloud.LoadbalancerFrontendPropertiesOutputReference.computeFqn">computeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-upcloud.LoadbalancerFrontendPropertiesOutputReference.getAnyMapAttribute">getAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-upcloud.LoadbalancerFrontendPropertiesOutputReference.getBooleanAttribute">getBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-upcloud.LoadbalancerFrontendPropertiesOutputReference.getBooleanMapAttribute">getBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-upcloud.LoadbalancerFrontendPropertiesOutputReference.getListAttribute">getListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-upcloud.LoadbalancerFrontendPropertiesOutputReference.getNumberAttribute">getNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-upcloud.LoadbalancerFrontendPropertiesOutputReference.getNumberListAttribute">getNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-upcloud.LoadbalancerFrontendPropertiesOutputReference.getNumberMapAttribute">getNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-upcloud.LoadbalancerFrontendPropertiesOutputReference.getStringAttribute">getStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-upcloud.LoadbalancerFrontendPropertiesOutputReference.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-upcloud.LoadbalancerFrontendPropertiesOutputReference.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-upcloud.LoadbalancerFrontendPropertiesOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktf/provider-upcloud.LoadbalancerFrontendPropertiesOutputReference.toString">toString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktf/provider-upcloud.LoadbalancerFrontendPropertiesOutputReference.resetInboundProxyProtocol">resetInboundProxyProtocol</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-upcloud.LoadbalancerFrontendPropertiesOutputReference.resetTimeoutClient">resetTimeoutClient</a></code> | *No description.* |
+
+---
+
+##### `computeFqn` <a name="computeFqn" id="@cdktf/provider-upcloud.LoadbalancerFrontendPropertiesOutputReference.computeFqn"></a>
+
+```typescript
+public computeFqn(): string
+```
+
+##### `getAnyMapAttribute` <a name="getAnyMapAttribute" id="@cdktf/provider-upcloud.LoadbalancerFrontendPropertiesOutputReference.getAnyMapAttribute"></a>
+
+```typescript
+public getAnyMapAttribute(terraformAttribute: string): {[ key: string ]: any}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-upcloud.LoadbalancerFrontendPropertiesOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getBooleanAttribute` <a name="getBooleanAttribute" id="@cdktf/provider-upcloud.LoadbalancerFrontendPropertiesOutputReference.getBooleanAttribute"></a>
+
+```typescript
+public getBooleanAttribute(terraformAttribute: string): IResolvable
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-upcloud.LoadbalancerFrontendPropertiesOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getBooleanMapAttribute` <a name="getBooleanMapAttribute" id="@cdktf/provider-upcloud.LoadbalancerFrontendPropertiesOutputReference.getBooleanMapAttribute"></a>
+
+```typescript
+public getBooleanMapAttribute(terraformAttribute: string): {[ key: string ]: boolean}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-upcloud.LoadbalancerFrontendPropertiesOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getListAttribute` <a name="getListAttribute" id="@cdktf/provider-upcloud.LoadbalancerFrontendPropertiesOutputReference.getListAttribute"></a>
+
+```typescript
+public getListAttribute(terraformAttribute: string): string[]
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-upcloud.LoadbalancerFrontendPropertiesOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getNumberAttribute` <a name="getNumberAttribute" id="@cdktf/provider-upcloud.LoadbalancerFrontendPropertiesOutputReference.getNumberAttribute"></a>
+
+```typescript
+public getNumberAttribute(terraformAttribute: string): number
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-upcloud.LoadbalancerFrontendPropertiesOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getNumberListAttribute` <a name="getNumberListAttribute" id="@cdktf/provider-upcloud.LoadbalancerFrontendPropertiesOutputReference.getNumberListAttribute"></a>
+
+```typescript
+public getNumberListAttribute(terraformAttribute: string): number[]
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-upcloud.LoadbalancerFrontendPropertiesOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getNumberMapAttribute` <a name="getNumberMapAttribute" id="@cdktf/provider-upcloud.LoadbalancerFrontendPropertiesOutputReference.getNumberMapAttribute"></a>
+
+```typescript
+public getNumberMapAttribute(terraformAttribute: string): {[ key: string ]: number}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-upcloud.LoadbalancerFrontendPropertiesOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getStringAttribute` <a name="getStringAttribute" id="@cdktf/provider-upcloud.LoadbalancerFrontendPropertiesOutputReference.getStringAttribute"></a>
+
+```typescript
+public getStringAttribute(terraformAttribute: string): string
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-upcloud.LoadbalancerFrontendPropertiesOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getStringMapAttribute` <a name="getStringMapAttribute" id="@cdktf/provider-upcloud.LoadbalancerFrontendPropertiesOutputReference.getStringMapAttribute"></a>
+
+```typescript
+public getStringMapAttribute(terraformAttribute: string): {[ key: string ]: string}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-upcloud.LoadbalancerFrontendPropertiesOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `interpolationForAttribute` <a name="interpolationForAttribute" id="@cdktf/provider-upcloud.LoadbalancerFrontendPropertiesOutputReference.interpolationForAttribute"></a>
+
+```typescript
+public interpolationForAttribute(property: string): IResolvable
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktf/provider-upcloud.LoadbalancerFrontendPropertiesOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* string
+
+---
+
+##### `resolve` <a name="resolve" id="@cdktf/provider-upcloud.LoadbalancerFrontendPropertiesOutputReference.resolve"></a>
+
+```typescript
+public resolve(_context: IResolveContext): any
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktf/provider-upcloud.LoadbalancerFrontendPropertiesOutputReference.resolve.parameter._context"></a>
+
+- *Type:* cdktf.IResolveContext
+
+---
+
+##### `toString` <a name="toString" id="@cdktf/provider-upcloud.LoadbalancerFrontendPropertiesOutputReference.toString"></a>
+
+```typescript
+public toString(): string
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `resetInboundProxyProtocol` <a name="resetInboundProxyProtocol" id="@cdktf/provider-upcloud.LoadbalancerFrontendPropertiesOutputReference.resetInboundProxyProtocol"></a>
+
+```typescript
+public resetInboundProxyProtocol(): void
+```
+
+##### `resetTimeoutClient` <a name="resetTimeoutClient" id="@cdktf/provider-upcloud.LoadbalancerFrontendPropertiesOutputReference.resetTimeoutClient"></a>
+
+```typescript
+public resetTimeoutClient(): void
+```
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-upcloud.LoadbalancerFrontendPropertiesOutputReference.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktf/provider-upcloud.LoadbalancerFrontendPropertiesOutputReference.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-upcloud.LoadbalancerFrontendPropertiesOutputReference.property.inboundProxyProtocolInput">inboundProxyProtocolInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-upcloud.LoadbalancerFrontendPropertiesOutputReference.property.timeoutClientInput">timeoutClientInput</a></code> | <code>number</code> | *No description.* |
+| <code><a href="#@cdktf/provider-upcloud.LoadbalancerFrontendPropertiesOutputReference.property.inboundProxyProtocol">inboundProxyProtocol</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-upcloud.LoadbalancerFrontendPropertiesOutputReference.property.timeoutClient">timeoutClient</a></code> | <code>number</code> | *No description.* |
+| <code><a href="#@cdktf/provider-upcloud.LoadbalancerFrontendPropertiesOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktf/provider-upcloud.LoadbalancerFrontendProperties">LoadbalancerFrontendProperties</a></code> | *No description.* |
+
+---
+
+##### `creationStack`<sup>Required</sup> <a name="creationStack" id="@cdktf/provider-upcloud.LoadbalancerFrontendPropertiesOutputReference.property.creationStack"></a>
+
+```typescript
+public readonly creationStack: string[];
+```
+
+- *Type:* string[]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktf/provider-upcloud.LoadbalancerFrontendPropertiesOutputReference.property.fqn"></a>
+
+```typescript
+public readonly fqn: string;
+```
+
+- *Type:* string
+
+---
+
+##### `inboundProxyProtocolInput`<sup>Optional</sup> <a name="inboundProxyProtocolInput" id="@cdktf/provider-upcloud.LoadbalancerFrontendPropertiesOutputReference.property.inboundProxyProtocolInput"></a>
+
+```typescript
+public readonly inboundProxyProtocolInput: boolean | IResolvable;
+```
+
+- *Type:* boolean | cdktf.IResolvable
+
+---
+
+##### `timeoutClientInput`<sup>Optional</sup> <a name="timeoutClientInput" id="@cdktf/provider-upcloud.LoadbalancerFrontendPropertiesOutputReference.property.timeoutClientInput"></a>
+
+```typescript
+public readonly timeoutClientInput: number;
+```
+
+- *Type:* number
+
+---
+
+##### `inboundProxyProtocol`<sup>Required</sup> <a name="inboundProxyProtocol" id="@cdktf/provider-upcloud.LoadbalancerFrontendPropertiesOutputReference.property.inboundProxyProtocol"></a>
+
+```typescript
+public readonly inboundProxyProtocol: boolean | IResolvable;
+```
+
+- *Type:* boolean | cdktf.IResolvable
+
+---
+
+##### `timeoutClient`<sup>Required</sup> <a name="timeoutClient" id="@cdktf/provider-upcloud.LoadbalancerFrontendPropertiesOutputReference.property.timeoutClient"></a>
+
+```typescript
+public readonly timeoutClient: number;
+```
+
+- *Type:* number
+
+---
+
+##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-upcloud.LoadbalancerFrontendPropertiesOutputReference.property.internalValue"></a>
+
+```typescript
+public readonly internalValue: LoadbalancerFrontendProperties;
+```
+
+- *Type:* <a href="#@cdktf/provider-upcloud.LoadbalancerFrontendProperties">LoadbalancerFrontendProperties</a>
 
 ---
 
@@ -31149,10 +32375,12 @@ The attribute on the parent resource this class is referencing.
 | <code><a href="#@cdktf/provider-upcloud.LoadbalancerFrontendRuleActionsOutputReference.toString">toString</a></code> | Return a string representation of this resolvable object. |
 | <code><a href="#@cdktf/provider-upcloud.LoadbalancerFrontendRuleActionsOutputReference.putHttpRedirect">putHttpRedirect</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.LoadbalancerFrontendRuleActionsOutputReference.putHttpReturn">putHttpReturn</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-upcloud.LoadbalancerFrontendRuleActionsOutputReference.putSetForwardedHeaders">putSetForwardedHeaders</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.LoadbalancerFrontendRuleActionsOutputReference.putTcpReject">putTcpReject</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.LoadbalancerFrontendRuleActionsOutputReference.putUseBackend">putUseBackend</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.LoadbalancerFrontendRuleActionsOutputReference.resetHttpRedirect">resetHttpRedirect</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.LoadbalancerFrontendRuleActionsOutputReference.resetHttpReturn">resetHttpReturn</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-upcloud.LoadbalancerFrontendRuleActionsOutputReference.resetSetForwardedHeaders">resetSetForwardedHeaders</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.LoadbalancerFrontendRuleActionsOutputReference.resetTcpReject">resetTcpReject</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.LoadbalancerFrontendRuleActionsOutputReference.resetUseBackend">resetUseBackend</a></code> | *No description.* |
 
@@ -31332,6 +32560,18 @@ public putHttpReturn(value: IResolvable | LoadbalancerFrontendRuleActionsHttpRet
 
 ---
 
+##### `putSetForwardedHeaders` <a name="putSetForwardedHeaders" id="@cdktf/provider-upcloud.LoadbalancerFrontendRuleActionsOutputReference.putSetForwardedHeaders"></a>
+
+```typescript
+public putSetForwardedHeaders(value: IResolvable | LoadbalancerFrontendRuleActionsSetForwardedHeaders[]): void
+```
+
+###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-upcloud.LoadbalancerFrontendRuleActionsOutputReference.putSetForwardedHeaders.parameter.value"></a>
+
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-upcloud.LoadbalancerFrontendRuleActionsSetForwardedHeaders">LoadbalancerFrontendRuleActionsSetForwardedHeaders</a>[]
+
+---
+
 ##### `putTcpReject` <a name="putTcpReject" id="@cdktf/provider-upcloud.LoadbalancerFrontendRuleActionsOutputReference.putTcpReject"></a>
 
 ```typescript
@@ -31368,6 +32608,12 @@ public resetHttpRedirect(): void
 public resetHttpReturn(): void
 ```
 
+##### `resetSetForwardedHeaders` <a name="resetSetForwardedHeaders" id="@cdktf/provider-upcloud.LoadbalancerFrontendRuleActionsOutputReference.resetSetForwardedHeaders"></a>
+
+```typescript
+public resetSetForwardedHeaders(): void
+```
+
 ##### `resetTcpReject` <a name="resetTcpReject" id="@cdktf/provider-upcloud.LoadbalancerFrontendRuleActionsOutputReference.resetTcpReject"></a>
 
 ```typescript
@@ -31389,10 +32635,12 @@ public resetUseBackend(): void
 | <code><a href="#@cdktf/provider-upcloud.LoadbalancerFrontendRuleActionsOutputReference.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.LoadbalancerFrontendRuleActionsOutputReference.property.httpRedirect">httpRedirect</a></code> | <code><a href="#@cdktf/provider-upcloud.LoadbalancerFrontendRuleActionsHttpRedirectList">LoadbalancerFrontendRuleActionsHttpRedirectList</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.LoadbalancerFrontendRuleActionsOutputReference.property.httpReturn">httpReturn</a></code> | <code><a href="#@cdktf/provider-upcloud.LoadbalancerFrontendRuleActionsHttpReturnList">LoadbalancerFrontendRuleActionsHttpReturnList</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-upcloud.LoadbalancerFrontendRuleActionsOutputReference.property.setForwardedHeaders">setForwardedHeaders</a></code> | <code><a href="#@cdktf/provider-upcloud.LoadbalancerFrontendRuleActionsSetForwardedHeadersList">LoadbalancerFrontendRuleActionsSetForwardedHeadersList</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.LoadbalancerFrontendRuleActionsOutputReference.property.tcpReject">tcpReject</a></code> | <code><a href="#@cdktf/provider-upcloud.LoadbalancerFrontendRuleActionsTcpRejectList">LoadbalancerFrontendRuleActionsTcpRejectList</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.LoadbalancerFrontendRuleActionsOutputReference.property.useBackend">useBackend</a></code> | <code><a href="#@cdktf/provider-upcloud.LoadbalancerFrontendRuleActionsUseBackendList">LoadbalancerFrontendRuleActionsUseBackendList</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.LoadbalancerFrontendRuleActionsOutputReference.property.httpRedirectInput">httpRedirectInput</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-upcloud.LoadbalancerFrontendRuleActionsHttpRedirect">LoadbalancerFrontendRuleActionsHttpRedirect</a>[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.LoadbalancerFrontendRuleActionsOutputReference.property.httpReturnInput">httpReturnInput</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-upcloud.LoadbalancerFrontendRuleActionsHttpReturn">LoadbalancerFrontendRuleActionsHttpReturn</a>[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-upcloud.LoadbalancerFrontendRuleActionsOutputReference.property.setForwardedHeadersInput">setForwardedHeadersInput</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-upcloud.LoadbalancerFrontendRuleActionsSetForwardedHeaders">LoadbalancerFrontendRuleActionsSetForwardedHeaders</a>[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.LoadbalancerFrontendRuleActionsOutputReference.property.tcpRejectInput">tcpRejectInput</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-upcloud.LoadbalancerFrontendRuleActionsTcpReject">LoadbalancerFrontendRuleActionsTcpReject</a>[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.LoadbalancerFrontendRuleActionsOutputReference.property.useBackendInput">useBackendInput</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-upcloud.LoadbalancerFrontendRuleActionsUseBackend">LoadbalancerFrontendRuleActionsUseBackend</a>[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.LoadbalancerFrontendRuleActionsOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktf/provider-upcloud.LoadbalancerFrontendRuleActions">LoadbalancerFrontendRuleActions</a></code> | *No description.* |
@@ -31443,6 +32691,16 @@ public readonly httpReturn: LoadbalancerFrontendRuleActionsHttpReturnList;
 
 ---
 
+##### `setForwardedHeaders`<sup>Required</sup> <a name="setForwardedHeaders" id="@cdktf/provider-upcloud.LoadbalancerFrontendRuleActionsOutputReference.property.setForwardedHeaders"></a>
+
+```typescript
+public readonly setForwardedHeaders: LoadbalancerFrontendRuleActionsSetForwardedHeadersList;
+```
+
+- *Type:* <a href="#@cdktf/provider-upcloud.LoadbalancerFrontendRuleActionsSetForwardedHeadersList">LoadbalancerFrontendRuleActionsSetForwardedHeadersList</a>
+
+---
+
 ##### `tcpReject`<sup>Required</sup> <a name="tcpReject" id="@cdktf/provider-upcloud.LoadbalancerFrontendRuleActionsOutputReference.property.tcpReject"></a>
 
 ```typescript
@@ -31483,6 +32741,16 @@ public readonly httpReturnInput: IResolvable | LoadbalancerFrontendRuleActionsHt
 
 ---
 
+##### `setForwardedHeadersInput`<sup>Optional</sup> <a name="setForwardedHeadersInput" id="@cdktf/provider-upcloud.LoadbalancerFrontendRuleActionsOutputReference.property.setForwardedHeadersInput"></a>
+
+```typescript
+public readonly setForwardedHeadersInput: IResolvable | LoadbalancerFrontendRuleActionsSetForwardedHeaders[];
+```
+
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-upcloud.LoadbalancerFrontendRuleActionsSetForwardedHeaders">LoadbalancerFrontendRuleActionsSetForwardedHeaders</a>[]
+
+---
+
 ##### `tcpRejectInput`<sup>Optional</sup> <a name="tcpRejectInput" id="@cdktf/provider-upcloud.LoadbalancerFrontendRuleActionsOutputReference.property.tcpRejectInput"></a>
 
 ```typescript
@@ -31510,6 +32778,445 @@ public readonly internalValue: LoadbalancerFrontendRuleActions;
 ```
 
 - *Type:* <a href="#@cdktf/provider-upcloud.LoadbalancerFrontendRuleActions">LoadbalancerFrontendRuleActions</a>
+
+---
+
+
+### LoadbalancerFrontendRuleActionsSetForwardedHeadersList <a name="LoadbalancerFrontendRuleActionsSetForwardedHeadersList" id="@cdktf/provider-upcloud.LoadbalancerFrontendRuleActionsSetForwardedHeadersList"></a>
+
+#### Initializers <a name="Initializers" id="@cdktf/provider-upcloud.LoadbalancerFrontendRuleActionsSetForwardedHeadersList.Initializer"></a>
+
+```typescript
+import { LoadbalancerFrontendRuleActionsSetForwardedHeadersList } from '@cdktf/provider-upcloud'
+
+new LoadbalancerFrontendRuleActionsSetForwardedHeadersList(terraformResource: IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-upcloud.LoadbalancerFrontendRuleActionsSetForwardedHeadersList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktf/provider-upcloud.LoadbalancerFrontendRuleActionsSetForwardedHeadersList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktf/provider-upcloud.LoadbalancerFrontendRuleActionsSetForwardedHeadersList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktf/provider-upcloud.LoadbalancerFrontendRuleActionsSetForwardedHeadersList.Initializer.parameter.terraformResource"></a>
+
+- *Type:* cdktf.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-upcloud.LoadbalancerFrontendRuleActionsSetForwardedHeadersList.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `wrapsSet`<sup>Required</sup> <a name="wrapsSet" id="@cdktf/provider-upcloud.LoadbalancerFrontendRuleActionsSetForwardedHeadersList.Initializer.parameter.wrapsSet"></a>
+
+- *Type:* boolean
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktf/provider-upcloud.LoadbalancerFrontendRuleActionsSetForwardedHeadersList.computeFqn">computeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-upcloud.LoadbalancerFrontendRuleActionsSetForwardedHeadersList.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktf/provider-upcloud.LoadbalancerFrontendRuleActionsSetForwardedHeadersList.toString">toString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktf/provider-upcloud.LoadbalancerFrontendRuleActionsSetForwardedHeadersList.get">get</a></code> | *No description.* |
+
+---
+
+##### `computeFqn` <a name="computeFqn" id="@cdktf/provider-upcloud.LoadbalancerFrontendRuleActionsSetForwardedHeadersList.computeFqn"></a>
+
+```typescript
+public computeFqn(): string
+```
+
+##### `resolve` <a name="resolve" id="@cdktf/provider-upcloud.LoadbalancerFrontendRuleActionsSetForwardedHeadersList.resolve"></a>
+
+```typescript
+public resolve(_context: IResolveContext): any
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktf/provider-upcloud.LoadbalancerFrontendRuleActionsSetForwardedHeadersList.resolve.parameter._context"></a>
+
+- *Type:* cdktf.IResolveContext
+
+---
+
+##### `toString` <a name="toString" id="@cdktf/provider-upcloud.LoadbalancerFrontendRuleActionsSetForwardedHeadersList.toString"></a>
+
+```typescript
+public toString(): string
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `get` <a name="get" id="@cdktf/provider-upcloud.LoadbalancerFrontendRuleActionsSetForwardedHeadersList.get"></a>
+
+```typescript
+public get(index: number): LoadbalancerFrontendRuleActionsSetForwardedHeadersOutputReference
+```
+
+###### `index`<sup>Required</sup> <a name="index" id="@cdktf/provider-upcloud.LoadbalancerFrontendRuleActionsSetForwardedHeadersList.get.parameter.index"></a>
+
+- *Type:* number
+
+the index of the item to return.
+
+---
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-upcloud.LoadbalancerFrontendRuleActionsSetForwardedHeadersList.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktf/provider-upcloud.LoadbalancerFrontendRuleActionsSetForwardedHeadersList.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-upcloud.LoadbalancerFrontendRuleActionsSetForwardedHeadersList.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-upcloud.LoadbalancerFrontendRuleActionsSetForwardedHeaders">LoadbalancerFrontendRuleActionsSetForwardedHeaders</a>[]</code> | *No description.* |
+
+---
+
+##### `creationStack`<sup>Required</sup> <a name="creationStack" id="@cdktf/provider-upcloud.LoadbalancerFrontendRuleActionsSetForwardedHeadersList.property.creationStack"></a>
+
+```typescript
+public readonly creationStack: string[];
+```
+
+- *Type:* string[]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktf/provider-upcloud.LoadbalancerFrontendRuleActionsSetForwardedHeadersList.property.fqn"></a>
+
+```typescript
+public readonly fqn: string;
+```
+
+- *Type:* string
+
+---
+
+##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-upcloud.LoadbalancerFrontendRuleActionsSetForwardedHeadersList.property.internalValue"></a>
+
+```typescript
+public readonly internalValue: IResolvable | LoadbalancerFrontendRuleActionsSetForwardedHeaders[];
+```
+
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-upcloud.LoadbalancerFrontendRuleActionsSetForwardedHeaders">LoadbalancerFrontendRuleActionsSetForwardedHeaders</a>[]
+
+---
+
+
+### LoadbalancerFrontendRuleActionsSetForwardedHeadersOutputReference <a name="LoadbalancerFrontendRuleActionsSetForwardedHeadersOutputReference" id="@cdktf/provider-upcloud.LoadbalancerFrontendRuleActionsSetForwardedHeadersOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktf/provider-upcloud.LoadbalancerFrontendRuleActionsSetForwardedHeadersOutputReference.Initializer"></a>
+
+```typescript
+import { LoadbalancerFrontendRuleActionsSetForwardedHeadersOutputReference } from '@cdktf/provider-upcloud'
+
+new LoadbalancerFrontendRuleActionsSetForwardedHeadersOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-upcloud.LoadbalancerFrontendRuleActionsSetForwardedHeadersOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktf/provider-upcloud.LoadbalancerFrontendRuleActionsSetForwardedHeadersOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktf/provider-upcloud.LoadbalancerFrontendRuleActionsSetForwardedHeadersOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>number</code> | the index of this item in the list. |
+| <code><a href="#@cdktf/provider-upcloud.LoadbalancerFrontendRuleActionsSetForwardedHeadersOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktf/provider-upcloud.LoadbalancerFrontendRuleActionsSetForwardedHeadersOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* cdktf.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-upcloud.LoadbalancerFrontendRuleActionsSetForwardedHeadersOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `complexObjectIndex`<sup>Required</sup> <a name="complexObjectIndex" id="@cdktf/provider-upcloud.LoadbalancerFrontendRuleActionsSetForwardedHeadersOutputReference.Initializer.parameter.complexObjectIndex"></a>
+
+- *Type:* number
+
+the index of this item in the list.
+
+---
+
+##### `complexObjectIsFromSet`<sup>Required</sup> <a name="complexObjectIsFromSet" id="@cdktf/provider-upcloud.LoadbalancerFrontendRuleActionsSetForwardedHeadersOutputReference.Initializer.parameter.complexObjectIsFromSet"></a>
+
+- *Type:* boolean
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktf/provider-upcloud.LoadbalancerFrontendRuleActionsSetForwardedHeadersOutputReference.computeFqn">computeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-upcloud.LoadbalancerFrontendRuleActionsSetForwardedHeadersOutputReference.getAnyMapAttribute">getAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-upcloud.LoadbalancerFrontendRuleActionsSetForwardedHeadersOutputReference.getBooleanAttribute">getBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-upcloud.LoadbalancerFrontendRuleActionsSetForwardedHeadersOutputReference.getBooleanMapAttribute">getBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-upcloud.LoadbalancerFrontendRuleActionsSetForwardedHeadersOutputReference.getListAttribute">getListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-upcloud.LoadbalancerFrontendRuleActionsSetForwardedHeadersOutputReference.getNumberAttribute">getNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-upcloud.LoadbalancerFrontendRuleActionsSetForwardedHeadersOutputReference.getNumberListAttribute">getNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-upcloud.LoadbalancerFrontendRuleActionsSetForwardedHeadersOutputReference.getNumberMapAttribute">getNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-upcloud.LoadbalancerFrontendRuleActionsSetForwardedHeadersOutputReference.getStringAttribute">getStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-upcloud.LoadbalancerFrontendRuleActionsSetForwardedHeadersOutputReference.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-upcloud.LoadbalancerFrontendRuleActionsSetForwardedHeadersOutputReference.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-upcloud.LoadbalancerFrontendRuleActionsSetForwardedHeadersOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktf/provider-upcloud.LoadbalancerFrontendRuleActionsSetForwardedHeadersOutputReference.toString">toString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktf/provider-upcloud.LoadbalancerFrontendRuleActionsSetForwardedHeadersOutputReference.resetActive">resetActive</a></code> | *No description.* |
+
+---
+
+##### `computeFqn` <a name="computeFqn" id="@cdktf/provider-upcloud.LoadbalancerFrontendRuleActionsSetForwardedHeadersOutputReference.computeFqn"></a>
+
+```typescript
+public computeFqn(): string
+```
+
+##### `getAnyMapAttribute` <a name="getAnyMapAttribute" id="@cdktf/provider-upcloud.LoadbalancerFrontendRuleActionsSetForwardedHeadersOutputReference.getAnyMapAttribute"></a>
+
+```typescript
+public getAnyMapAttribute(terraformAttribute: string): {[ key: string ]: any}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-upcloud.LoadbalancerFrontendRuleActionsSetForwardedHeadersOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getBooleanAttribute` <a name="getBooleanAttribute" id="@cdktf/provider-upcloud.LoadbalancerFrontendRuleActionsSetForwardedHeadersOutputReference.getBooleanAttribute"></a>
+
+```typescript
+public getBooleanAttribute(terraformAttribute: string): IResolvable
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-upcloud.LoadbalancerFrontendRuleActionsSetForwardedHeadersOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getBooleanMapAttribute` <a name="getBooleanMapAttribute" id="@cdktf/provider-upcloud.LoadbalancerFrontendRuleActionsSetForwardedHeadersOutputReference.getBooleanMapAttribute"></a>
+
+```typescript
+public getBooleanMapAttribute(terraformAttribute: string): {[ key: string ]: boolean}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-upcloud.LoadbalancerFrontendRuleActionsSetForwardedHeadersOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getListAttribute` <a name="getListAttribute" id="@cdktf/provider-upcloud.LoadbalancerFrontendRuleActionsSetForwardedHeadersOutputReference.getListAttribute"></a>
+
+```typescript
+public getListAttribute(terraformAttribute: string): string[]
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-upcloud.LoadbalancerFrontendRuleActionsSetForwardedHeadersOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getNumberAttribute` <a name="getNumberAttribute" id="@cdktf/provider-upcloud.LoadbalancerFrontendRuleActionsSetForwardedHeadersOutputReference.getNumberAttribute"></a>
+
+```typescript
+public getNumberAttribute(terraformAttribute: string): number
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-upcloud.LoadbalancerFrontendRuleActionsSetForwardedHeadersOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getNumberListAttribute` <a name="getNumberListAttribute" id="@cdktf/provider-upcloud.LoadbalancerFrontendRuleActionsSetForwardedHeadersOutputReference.getNumberListAttribute"></a>
+
+```typescript
+public getNumberListAttribute(terraformAttribute: string): number[]
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-upcloud.LoadbalancerFrontendRuleActionsSetForwardedHeadersOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getNumberMapAttribute` <a name="getNumberMapAttribute" id="@cdktf/provider-upcloud.LoadbalancerFrontendRuleActionsSetForwardedHeadersOutputReference.getNumberMapAttribute"></a>
+
+```typescript
+public getNumberMapAttribute(terraformAttribute: string): {[ key: string ]: number}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-upcloud.LoadbalancerFrontendRuleActionsSetForwardedHeadersOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getStringAttribute` <a name="getStringAttribute" id="@cdktf/provider-upcloud.LoadbalancerFrontendRuleActionsSetForwardedHeadersOutputReference.getStringAttribute"></a>
+
+```typescript
+public getStringAttribute(terraformAttribute: string): string
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-upcloud.LoadbalancerFrontendRuleActionsSetForwardedHeadersOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getStringMapAttribute` <a name="getStringMapAttribute" id="@cdktf/provider-upcloud.LoadbalancerFrontendRuleActionsSetForwardedHeadersOutputReference.getStringMapAttribute"></a>
+
+```typescript
+public getStringMapAttribute(terraformAttribute: string): {[ key: string ]: string}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-upcloud.LoadbalancerFrontendRuleActionsSetForwardedHeadersOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `interpolationForAttribute` <a name="interpolationForAttribute" id="@cdktf/provider-upcloud.LoadbalancerFrontendRuleActionsSetForwardedHeadersOutputReference.interpolationForAttribute"></a>
+
+```typescript
+public interpolationForAttribute(property: string): IResolvable
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktf/provider-upcloud.LoadbalancerFrontendRuleActionsSetForwardedHeadersOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* string
+
+---
+
+##### `resolve` <a name="resolve" id="@cdktf/provider-upcloud.LoadbalancerFrontendRuleActionsSetForwardedHeadersOutputReference.resolve"></a>
+
+```typescript
+public resolve(_context: IResolveContext): any
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktf/provider-upcloud.LoadbalancerFrontendRuleActionsSetForwardedHeadersOutputReference.resolve.parameter._context"></a>
+
+- *Type:* cdktf.IResolveContext
+
+---
+
+##### `toString` <a name="toString" id="@cdktf/provider-upcloud.LoadbalancerFrontendRuleActionsSetForwardedHeadersOutputReference.toString"></a>
+
+```typescript
+public toString(): string
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `resetActive` <a name="resetActive" id="@cdktf/provider-upcloud.LoadbalancerFrontendRuleActionsSetForwardedHeadersOutputReference.resetActive"></a>
+
+```typescript
+public resetActive(): void
+```
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-upcloud.LoadbalancerFrontendRuleActionsSetForwardedHeadersOutputReference.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktf/provider-upcloud.LoadbalancerFrontendRuleActionsSetForwardedHeadersOutputReference.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-upcloud.LoadbalancerFrontendRuleActionsSetForwardedHeadersOutputReference.property.activeInput">activeInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-upcloud.LoadbalancerFrontendRuleActionsSetForwardedHeadersOutputReference.property.active">active</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-upcloud.LoadbalancerFrontendRuleActionsSetForwardedHeadersOutputReference.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-upcloud.LoadbalancerFrontendRuleActionsSetForwardedHeaders">LoadbalancerFrontendRuleActionsSetForwardedHeaders</a></code> | *No description.* |
+
+---
+
+##### `creationStack`<sup>Required</sup> <a name="creationStack" id="@cdktf/provider-upcloud.LoadbalancerFrontendRuleActionsSetForwardedHeadersOutputReference.property.creationStack"></a>
+
+```typescript
+public readonly creationStack: string[];
+```
+
+- *Type:* string[]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktf/provider-upcloud.LoadbalancerFrontendRuleActionsSetForwardedHeadersOutputReference.property.fqn"></a>
+
+```typescript
+public readonly fqn: string;
+```
+
+- *Type:* string
+
+---
+
+##### `activeInput`<sup>Optional</sup> <a name="activeInput" id="@cdktf/provider-upcloud.LoadbalancerFrontendRuleActionsSetForwardedHeadersOutputReference.property.activeInput"></a>
+
+```typescript
+public readonly activeInput: boolean | IResolvable;
+```
+
+- *Type:* boolean | cdktf.IResolvable
+
+---
+
+##### `active`<sup>Required</sup> <a name="active" id="@cdktf/provider-upcloud.LoadbalancerFrontendRuleActionsSetForwardedHeadersOutputReference.property.active"></a>
+
+```typescript
+public readonly active: boolean | IResolvable;
+```
+
+- *Type:* boolean | cdktf.IResolvable
+
+---
+
+##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-upcloud.LoadbalancerFrontendRuleActionsSetForwardedHeadersOutputReference.property.internalValue"></a>
+
+```typescript
+public readonly internalValue: IResolvable | LoadbalancerFrontendRuleActionsSetForwardedHeaders;
+```
+
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-upcloud.LoadbalancerFrontendRuleActionsSetForwardedHeaders">LoadbalancerFrontendRuleActionsSetForwardedHeaders</a>
 
 ---
 

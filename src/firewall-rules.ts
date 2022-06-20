@@ -75,7 +75,7 @@ export interface FirewallRulesFirewallRule {
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/upcloud/r/firewall_rules#family FirewallRules#family}
   */
-  readonly family: string;
+  readonly family?: string;
   /**
   * The ICMP type
   * 
@@ -365,13 +365,16 @@ export class FirewallRulesFirewallRuleOutputReference extends cdktf.ComplexObjec
     return this._direction;
   }
 
-  // family - computed: false, optional: false, required: true
+  // family - computed: false, optional: true, required: false
   private _family?: string; 
   public get family() {
     return this.getStringAttribute('family');
   }
   public set family(value: string) {
     this._family = value;
+  }
+  public resetFamily() {
+    this._family = undefined;
   }
   // Temporarily expose input value. Use with caution.
   public get familyInput() {
@@ -521,7 +524,7 @@ export class FirewallRules extends cdktf.TerraformResource {
       terraformResourceType: 'upcloud_firewall_rules',
       terraformGeneratorMetadata: {
         providerName: 'upcloud',
-        providerVersion: '2.4.2',
+        providerVersion: '2.5.0',
         providerVersionConstraint: '~> 2.4'
       },
       provider: config.provider,

@@ -289,6 +289,103 @@ export class LoadbalancerFrontendRuleActionsHttpReturnList extends cdktf.Complex
     return new LoadbalancerFrontendRuleActionsHttpReturnOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
   }
 }
+export interface LoadbalancerFrontendRuleActionsSetForwardedHeaders {
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/upcloud/r/loadbalancer_frontend_rule#active LoadbalancerFrontendRule#active}
+  */
+  readonly active?: boolean | cdktf.IResolvable;
+}
+
+export function loadbalancerFrontendRuleActionsSetForwardedHeadersToTerraform(struct?: LoadbalancerFrontendRuleActionsSetForwardedHeaders | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    active: cdktf.booleanToTerraform(struct!.active),
+  }
+}
+
+export class LoadbalancerFrontendRuleActionsSetForwardedHeadersOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): LoadbalancerFrontendRuleActionsSetForwardedHeaders | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._active !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.active = this._active;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: LoadbalancerFrontendRuleActionsSetForwardedHeaders | cdktf.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._active = undefined;
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._active = value.active;
+    }
+  }
+
+  // active - computed: false, optional: true, required: false
+  private _active?: boolean | cdktf.IResolvable; 
+  public get active() {
+    return this.getBooleanAttribute('active');
+  }
+  public set active(value: boolean | cdktf.IResolvable) {
+    this._active = value;
+  }
+  public resetActive() {
+    this._active = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get activeInput() {
+    return this._active;
+  }
+}
+
+export class LoadbalancerFrontendRuleActionsSetForwardedHeadersList extends cdktf.ComplexList {
+  public internalValue? : LoadbalancerFrontendRuleActionsSetForwardedHeaders[] | cdktf.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): LoadbalancerFrontendRuleActionsSetForwardedHeadersOutputReference {
+    return new LoadbalancerFrontendRuleActionsSetForwardedHeadersOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
 export interface LoadbalancerFrontendRuleActionsTcpReject {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/upcloud/r/loadbalancer_frontend_rule#active LoadbalancerFrontendRule#active}
@@ -496,6 +593,12 @@ export interface LoadbalancerFrontendRuleActions {
   */
   readonly httpReturn?: LoadbalancerFrontendRuleActionsHttpReturn[] | cdktf.IResolvable;
   /**
+  * set_forwarded_headers block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/upcloud/r/loadbalancer_frontend_rule#set_forwarded_headers LoadbalancerFrontendRule#set_forwarded_headers}
+  */
+  readonly setForwardedHeaders?: LoadbalancerFrontendRuleActionsSetForwardedHeaders[] | cdktf.IResolvable;
+  /**
   * tcp_reject block
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/upcloud/r/loadbalancer_frontend_rule#tcp_reject LoadbalancerFrontendRule#tcp_reject}
@@ -517,6 +620,7 @@ export function loadbalancerFrontendRuleActionsToTerraform(struct?: Loadbalancer
   return {
     http_redirect: cdktf.listMapper(loadbalancerFrontendRuleActionsHttpRedirectToTerraform)(struct!.httpRedirect),
     http_return: cdktf.listMapper(loadbalancerFrontendRuleActionsHttpReturnToTerraform)(struct!.httpReturn),
+    set_forwarded_headers: cdktf.listMapper(loadbalancerFrontendRuleActionsSetForwardedHeadersToTerraform)(struct!.setForwardedHeaders),
     tcp_reject: cdktf.listMapper(loadbalancerFrontendRuleActionsTcpRejectToTerraform)(struct!.tcpReject),
     use_backend: cdktf.listMapper(loadbalancerFrontendRuleActionsUseBackendToTerraform)(struct!.useBackend),
   }
@@ -544,6 +648,10 @@ export class LoadbalancerFrontendRuleActionsOutputReference extends cdktf.Comple
       hasAnyValues = true;
       internalValueResult.httpReturn = this._httpReturn?.internalValue;
     }
+    if (this._setForwardedHeaders?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.setForwardedHeaders = this._setForwardedHeaders?.internalValue;
+    }
     if (this._tcpReject?.internalValue !== undefined) {
       hasAnyValues = true;
       internalValueResult.tcpReject = this._tcpReject?.internalValue;
@@ -560,6 +668,7 @@ export class LoadbalancerFrontendRuleActionsOutputReference extends cdktf.Comple
       this.isEmptyObject = false;
       this._httpRedirect.internalValue = undefined;
       this._httpReturn.internalValue = undefined;
+      this._setForwardedHeaders.internalValue = undefined;
       this._tcpReject.internalValue = undefined;
       this._useBackend.internalValue = undefined;
     }
@@ -567,6 +676,7 @@ export class LoadbalancerFrontendRuleActionsOutputReference extends cdktf.Comple
       this.isEmptyObject = Object.keys(value).length === 0;
       this._httpRedirect.internalValue = value.httpRedirect;
       this._httpReturn.internalValue = value.httpReturn;
+      this._setForwardedHeaders.internalValue = value.setForwardedHeaders;
       this._tcpReject.internalValue = value.tcpReject;
       this._useBackend.internalValue = value.useBackend;
     }
@@ -602,6 +712,22 @@ export class LoadbalancerFrontendRuleActionsOutputReference extends cdktf.Comple
   // Temporarily expose input value. Use with caution.
   public get httpReturnInput() {
     return this._httpReturn.internalValue;
+  }
+
+  // set_forwarded_headers - computed: false, optional: true, required: false
+  private _setForwardedHeaders = new LoadbalancerFrontendRuleActionsSetForwardedHeadersList(this, "set_forwarded_headers", false);
+  public get setForwardedHeaders() {
+    return this._setForwardedHeaders;
+  }
+  public putSetForwardedHeaders(value: LoadbalancerFrontendRuleActionsSetForwardedHeaders[] | cdktf.IResolvable) {
+    this._setForwardedHeaders.internalValue = value;
+  }
+  public resetSetForwardedHeaders() {
+    this._setForwardedHeaders.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get setForwardedHeadersInput() {
+    return this._setForwardedHeaders.internalValue;
   }
 
   // tcp_reject - computed: false, optional: true, required: false
@@ -3033,7 +3159,7 @@ export class LoadbalancerFrontendRule extends cdktf.TerraformResource {
       terraformResourceType: 'upcloud_loadbalancer_frontend_rule',
       terraformGeneratorMetadata: {
         providerName: 'upcloud',
-        providerVersion: '2.4.2',
+        providerVersion: '2.5.0',
         providerVersionConstraint: '~> 2.4'
       },
       provider: config.provider,

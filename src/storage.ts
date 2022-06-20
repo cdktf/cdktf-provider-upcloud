@@ -411,7 +411,7 @@ export class Storage extends cdktf.TerraformResource {
       terraformResourceType: 'upcloud_storage',
       terraformGeneratorMetadata: {
         providerName: 'upcloud',
-        providerVersion: '2.4.2',
+        providerVersion: '2.5.0',
         providerVersionConstraint: '~> 2.4'
       },
       provider: config.provider,
