@@ -44,6 +44,108 @@ export interface LoadbalancerFrontendConfig extends cdktf.TerraformMetaArguments
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/upcloud/r/loadbalancer_frontend#port LoadbalancerFrontend#port}
   */
   readonly port: number;
+  /**
+  * properties block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/upcloud/r/loadbalancer_frontend#properties LoadbalancerFrontend#properties}
+  */
+  readonly properties?: LoadbalancerFrontendProperties;
+}
+export interface LoadbalancerFrontendProperties {
+  /**
+  * Enable or disable inbound proxy protocol support.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/upcloud/r/loadbalancer_frontend#inbound_proxy_protocol LoadbalancerFrontend#inbound_proxy_protocol}
+  */
+  readonly inboundProxyProtocol?: boolean | cdktf.IResolvable;
+  /**
+  * Client request timeout in seconds.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/upcloud/r/loadbalancer_frontend#timeout_client LoadbalancerFrontend#timeout_client}
+  */
+  readonly timeoutClient?: number;
+}
+
+export function loadbalancerFrontendPropertiesToTerraform(struct?: LoadbalancerFrontendPropertiesOutputReference | LoadbalancerFrontendProperties): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    inbound_proxy_protocol: cdktf.booleanToTerraform(struct!.inboundProxyProtocol),
+    timeout_client: cdktf.numberToTerraform(struct!.timeoutClient),
+  }
+}
+
+export class LoadbalancerFrontendPropertiesOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): LoadbalancerFrontendProperties | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._inboundProxyProtocol !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.inboundProxyProtocol = this._inboundProxyProtocol;
+    }
+    if (this._timeoutClient !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.timeoutClient = this._timeoutClient;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: LoadbalancerFrontendProperties | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._inboundProxyProtocol = undefined;
+      this._timeoutClient = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._inboundProxyProtocol = value.inboundProxyProtocol;
+      this._timeoutClient = value.timeoutClient;
+    }
+  }
+
+  // inbound_proxy_protocol - computed: false, optional: true, required: false
+  private _inboundProxyProtocol?: boolean | cdktf.IResolvable; 
+  public get inboundProxyProtocol() {
+    return this.getBooleanAttribute('inbound_proxy_protocol');
+  }
+  public set inboundProxyProtocol(value: boolean | cdktf.IResolvable) {
+    this._inboundProxyProtocol = value;
+  }
+  public resetInboundProxyProtocol() {
+    this._inboundProxyProtocol = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get inboundProxyProtocolInput() {
+    return this._inboundProxyProtocol;
+  }
+
+  // timeout_client - computed: false, optional: true, required: false
+  private _timeoutClient?: number; 
+  public get timeoutClient() {
+    return this.getNumberAttribute('timeout_client');
+  }
+  public set timeoutClient(value: number) {
+    this._timeoutClient = value;
+  }
+  public resetTimeoutClient() {
+    this._timeoutClient = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get timeoutClientInput() {
+    return this._timeoutClient;
+  }
 }
 
 /**
@@ -72,7 +174,7 @@ export class LoadbalancerFrontend extends cdktf.TerraformResource {
       terraformResourceType: 'upcloud_loadbalancer_frontend',
       terraformGeneratorMetadata: {
         providerName: 'upcloud',
-        providerVersion: '2.4.2',
+        providerVersion: '2.5.0',
         providerVersionConstraint: '~> 2.4'
       },
       provider: config.provider,
@@ -86,6 +188,7 @@ export class LoadbalancerFrontend extends cdktf.TerraformResource {
     this._mode = config.mode;
     this._name = config.name;
     this._port = config.port;
+    this._properties.internalValue = config.properties;
   }
 
   // ==========
@@ -183,6 +286,22 @@ export class LoadbalancerFrontend extends cdktf.TerraformResource {
     return this.getListAttribute('tls_configs');
   }
 
+  // properties - computed: false, optional: true, required: false
+  private _properties = new LoadbalancerFrontendPropertiesOutputReference(this, "properties");
+  public get properties() {
+    return this._properties;
+  }
+  public putProperties(value: LoadbalancerFrontendProperties) {
+    this._properties.internalValue = value;
+  }
+  public resetProperties() {
+    this._properties.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get propertiesInput() {
+    return this._properties.internalValue;
+  }
+
   // =========
   // SYNTHESIS
   // =========
@@ -195,6 +314,7 @@ export class LoadbalancerFrontend extends cdktf.TerraformResource {
       mode: cdktf.stringToTerraform(this._mode),
       name: cdktf.stringToTerraform(this._name),
       port: cdktf.numberToTerraform(this._port),
+      properties: loadbalancerFrontendPropertiesToTerraform(this._properties.internalValue),
     };
   }
 }

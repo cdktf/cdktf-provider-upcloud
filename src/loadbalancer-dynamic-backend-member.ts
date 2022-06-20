@@ -86,7 +86,7 @@ export class LoadbalancerDynamicBackendMember extends cdktf.TerraformResource {
       terraformResourceType: 'upcloud_loadbalancer_dynamic_backend_member',
       terraformGeneratorMetadata: {
         providerName: 'upcloud',
-        providerVersion: '2.4.2',
+        providerVersion: '2.5.0',
         providerVersionConstraint: '~> 2.4'
       },
       provider: config.provider,
