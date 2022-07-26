@@ -87,7 +87,7 @@ export function networkIpNetworkToTerraform(struct?: NetworkIpNetworkOutputRefer
     address: cdktf.stringToTerraform(struct!.address),
     dhcp: cdktf.booleanToTerraform(struct!.dhcp),
     dhcp_default_route: cdktf.booleanToTerraform(struct!.dhcpDefaultRoute),
-    dhcp_dns: cdktf.listMapper(cdktf.stringToTerraform)(struct!.dhcpDns),
+    dhcp_dns: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.dhcpDns),
     family: cdktf.stringToTerraform(struct!.family),
     gateway: cdktf.stringToTerraform(struct!.gateway),
   }
@@ -275,7 +275,10 @@ export class Network extends cdktf.TerraformResource {
       provider: config.provider,
       dependsOn: config.dependsOn,
       count: config.count,
-      lifecycle: config.lifecycle
+      lifecycle: config.lifecycle,
+      provisioners: config.provisioners,
+      connection: config.connection,
+      forEach: config.forEach
     });
     this._id = config.id;
     this._name = config.name;

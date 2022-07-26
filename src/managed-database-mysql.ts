@@ -694,7 +694,7 @@ export function managedDatabaseMysqlPropertiesToTerraform(struct?: ManagedDataba
     innodb_rollback_on_timeout: cdktf.booleanToTerraform(struct!.innodbRollbackOnTimeout),
     interactive_timeout: cdktf.numberToTerraform(struct!.interactiveTimeout),
     internal_tmp_mem_storage_engine: cdktf.stringToTerraform(struct!.internalTmpMemStorageEngine),
-    ip_filter: cdktf.listMapper(cdktf.stringToTerraform)(struct!.ipFilter),
+    ip_filter: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.ipFilter),
     long_query_time: cdktf.numberToTerraform(struct!.longQueryTime),
     max_allowed_packet: cdktf.numberToTerraform(struct!.maxAllowedPacket),
     max_heap_table_size: cdktf.numberToTerraform(struct!.maxHeapTableSize),
@@ -1519,7 +1519,10 @@ export class ManagedDatabaseMysql extends cdktf.TerraformResource {
       provider: config.provider,
       dependsOn: config.dependsOn,
       count: config.count,
-      lifecycle: config.lifecycle
+      lifecycle: config.lifecycle,
+      provisioners: config.provisioners,
+      connection: config.connection,
+      forEach: config.forEach
     });
     this._id = config.id;
     this._maintenanceWindowDow = config.maintenanceWindowDow;

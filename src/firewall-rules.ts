@@ -530,7 +530,10 @@ export class FirewallRules extends cdktf.TerraformResource {
       provider: config.provider,
       dependsOn: config.dependsOn,
       count: config.count,
-      lifecycle: config.lifecycle
+      lifecycle: config.lifecycle,
+      provisioners: config.provisioners,
+      connection: config.connection,
+      forEach: config.forEach
     });
     this._id = config.id;
     this._serverId = config.serverId;
@@ -591,7 +594,7 @@ export class FirewallRules extends cdktf.TerraformResource {
     return {
       id: cdktf.stringToTerraform(this._id),
       server_id: cdktf.stringToTerraform(this._serverId),
-      firewall_rule: cdktf.listMapper(firewallRulesFirewallRuleToTerraform)(this._firewallRule.internalValue),
+      firewall_rule: cdktf.listMapper(firewallRulesFirewallRuleToTerraform, true)(this._firewallRule.internalValue),
     };
   }
 }

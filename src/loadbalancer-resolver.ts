@@ -97,7 +97,10 @@ export class LoadbalancerResolver extends cdktf.TerraformResource {
       provider: config.provider,
       dependsOn: config.dependsOn,
       count: config.count,
-      lifecycle: config.lifecycle
+      lifecycle: config.lifecycle,
+      provisioners: config.provisioners,
+      connection: config.connection,
+      forEach: config.forEach
     });
     this._cacheInvalid = config.cacheInvalid;
     this._cacheValid = config.cacheValid;
@@ -245,7 +248,7 @@ export class LoadbalancerResolver extends cdktf.TerraformResource {
       id: cdktf.stringToTerraform(this._id),
       loadbalancer: cdktf.stringToTerraform(this._loadbalancer),
       name: cdktf.stringToTerraform(this._name),
-      nameservers: cdktf.listMapper(cdktf.stringToTerraform)(this._nameservers),
+      nameservers: cdktf.listMapper(cdktf.stringToTerraform, false)(this._nameservers),
       retries: cdktf.numberToTerraform(this._retries),
       timeout: cdktf.numberToTerraform(this._timeout),
       timeout_retry: cdktf.numberToTerraform(this._timeoutRetry),

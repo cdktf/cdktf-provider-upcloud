@@ -66,7 +66,10 @@ export class LoadbalancerDynamicCertificateBundle extends cdktf.TerraformResourc
       provider: config.provider,
       dependsOn: config.dependsOn,
       count: config.count,
-      lifecycle: config.lifecycle
+      lifecycle: config.lifecycle,
+      provisioners: config.provisioners,
+      connection: config.connection,
+      forEach: config.forEach
     });
     this._hostnames = config.hostnames;
     this._id = config.id;
@@ -154,7 +157,7 @@ export class LoadbalancerDynamicCertificateBundle extends cdktf.TerraformResourc
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      hostnames: cdktf.listMapper(cdktf.stringToTerraform)(this._hostnames),
+      hostnames: cdktf.listMapper(cdktf.stringToTerraform, false)(this._hostnames),
       id: cdktf.stringToTerraform(this._id),
       key_type: cdktf.stringToTerraform(this._keyType),
       name: cdktf.stringToTerraform(this._name),

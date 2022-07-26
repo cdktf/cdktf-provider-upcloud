@@ -618,11 +618,11 @@ export function loadbalancerFrontendRuleActionsToTerraform(struct?: Loadbalancer
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    http_redirect: cdktf.listMapper(loadbalancerFrontendRuleActionsHttpRedirectToTerraform)(struct!.httpRedirect),
-    http_return: cdktf.listMapper(loadbalancerFrontendRuleActionsHttpReturnToTerraform)(struct!.httpReturn),
-    set_forwarded_headers: cdktf.listMapper(loadbalancerFrontendRuleActionsSetForwardedHeadersToTerraform)(struct!.setForwardedHeaders),
-    tcp_reject: cdktf.listMapper(loadbalancerFrontendRuleActionsTcpRejectToTerraform)(struct!.tcpReject),
-    use_backend: cdktf.listMapper(loadbalancerFrontendRuleActionsUseBackendToTerraform)(struct!.useBackend),
+    http_redirect: cdktf.listMapper(loadbalancerFrontendRuleActionsHttpRedirectToTerraform, true)(struct!.httpRedirect),
+    http_return: cdktf.listMapper(loadbalancerFrontendRuleActionsHttpReturnToTerraform, true)(struct!.httpReturn),
+    set_forwarded_headers: cdktf.listMapper(loadbalancerFrontendRuleActionsSetForwardedHeadersToTerraform, true)(struct!.setForwardedHeaders),
+    tcp_reject: cdktf.listMapper(loadbalancerFrontendRuleActionsTcpRejectToTerraform, true)(struct!.tcpReject),
+    use_backend: cdktf.listMapper(loadbalancerFrontendRuleActionsUseBackendToTerraform, true)(struct!.useBackend),
   }
 }
 
@@ -2781,20 +2781,20 @@ export function loadbalancerFrontendRuleMatchersToTerraform(struct?: Loadbalance
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    body_size: cdktf.listMapper(loadbalancerFrontendRuleMatchersBodySizeToTerraform)(struct!.bodySize),
-    body_size_range: cdktf.listMapper(loadbalancerFrontendRuleMatchersBodySizeRangeToTerraform)(struct!.bodySizeRange),
-    cookie: cdktf.listMapper(loadbalancerFrontendRuleMatchersCookieToTerraform)(struct!.cookie),
-    header: cdktf.listMapper(loadbalancerFrontendRuleMatchersHeaderToTerraform)(struct!.header),
-    host: cdktf.listMapper(loadbalancerFrontendRuleMatchersHostToTerraform)(struct!.host),
-    http_method: cdktf.listMapper(loadbalancerFrontendRuleMatchersHttpMethodToTerraform)(struct!.httpMethod),
-    num_members_up: cdktf.listMapper(loadbalancerFrontendRuleMatchersNumMembersUpToTerraform)(struct!.numMembersUp),
-    path: cdktf.listMapper(loadbalancerFrontendRuleMatchersPathToTerraform)(struct!.path),
-    src_ip: cdktf.listMapper(loadbalancerFrontendRuleMatchersSrcIpToTerraform)(struct!.srcIp),
-    src_port: cdktf.listMapper(loadbalancerFrontendRuleMatchersSrcPortToTerraform)(struct!.srcPort),
-    src_port_range: cdktf.listMapper(loadbalancerFrontendRuleMatchersSrcPortRangeToTerraform)(struct!.srcPortRange),
-    url: cdktf.listMapper(loadbalancerFrontendRuleMatchersUrlToTerraform)(struct!.url),
-    url_param: cdktf.listMapper(loadbalancerFrontendRuleMatchersUrlParamToTerraform)(struct!.urlParam),
-    url_query: cdktf.listMapper(loadbalancerFrontendRuleMatchersUrlQueryToTerraform)(struct!.urlQuery),
+    body_size: cdktf.listMapper(loadbalancerFrontendRuleMatchersBodySizeToTerraform, true)(struct!.bodySize),
+    body_size_range: cdktf.listMapper(loadbalancerFrontendRuleMatchersBodySizeRangeToTerraform, true)(struct!.bodySizeRange),
+    cookie: cdktf.listMapper(loadbalancerFrontendRuleMatchersCookieToTerraform, true)(struct!.cookie),
+    header: cdktf.listMapper(loadbalancerFrontendRuleMatchersHeaderToTerraform, true)(struct!.header),
+    host: cdktf.listMapper(loadbalancerFrontendRuleMatchersHostToTerraform, true)(struct!.host),
+    http_method: cdktf.listMapper(loadbalancerFrontendRuleMatchersHttpMethodToTerraform, true)(struct!.httpMethod),
+    num_members_up: cdktf.listMapper(loadbalancerFrontendRuleMatchersNumMembersUpToTerraform, true)(struct!.numMembersUp),
+    path: cdktf.listMapper(loadbalancerFrontendRuleMatchersPathToTerraform, true)(struct!.path),
+    src_ip: cdktf.listMapper(loadbalancerFrontendRuleMatchersSrcIpToTerraform, true)(struct!.srcIp),
+    src_port: cdktf.listMapper(loadbalancerFrontendRuleMatchersSrcPortToTerraform, true)(struct!.srcPort),
+    src_port_range: cdktf.listMapper(loadbalancerFrontendRuleMatchersSrcPortRangeToTerraform, true)(struct!.srcPortRange),
+    url: cdktf.listMapper(loadbalancerFrontendRuleMatchersUrlToTerraform, true)(struct!.url),
+    url_param: cdktf.listMapper(loadbalancerFrontendRuleMatchersUrlParamToTerraform, true)(struct!.urlParam),
+    url_query: cdktf.listMapper(loadbalancerFrontendRuleMatchersUrlQueryToTerraform, true)(struct!.urlQuery),
   }
 }
 
@@ -3165,7 +3165,10 @@ export class LoadbalancerFrontendRule extends cdktf.TerraformResource {
       provider: config.provider,
       dependsOn: config.dependsOn,
       count: config.count,
-      lifecycle: config.lifecycle
+      lifecycle: config.lifecycle,
+      provisioners: config.provisioners,
+      connection: config.connection,
+      forEach: config.forEach
     });
     this._frontend = config.frontend;
     this._id = config.id;

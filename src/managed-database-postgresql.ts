@@ -529,7 +529,7 @@ export function managedDatabasePostgresqlPropertiesPgbouncerToTerraform(struct?:
     autodb_max_db_connections: cdktf.numberToTerraform(struct!.autodbMaxDbConnections),
     autodb_pool_mode: cdktf.stringToTerraform(struct!.autodbPoolMode),
     autodb_pool_size: cdktf.numberToTerraform(struct!.autodbPoolSize),
-    ignore_startup_parameters: cdktf.listMapper(cdktf.stringToTerraform)(struct!.ignoreStartupParameters),
+    ignore_startup_parameters: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.ignoreStartupParameters),
     min_pool_size: cdktf.numberToTerraform(struct!.minPoolSize),
     server_idle_timeout: cdktf.numberToTerraform(struct!.serverIdleTimeout),
     server_lifetime: cdktf.numberToTerraform(struct!.serverLifetime),
@@ -1296,7 +1296,7 @@ export function managedDatabasePostgresqlPropertiesToTerraform(struct?: ManagedD
     bgwriter_lru_multiplier: cdktf.numberToTerraform(struct!.bgwriterLruMultiplier),
     deadlock_timeout: cdktf.numberToTerraform(struct!.deadlockTimeout),
     idle_in_transaction_session_timeout: cdktf.numberToTerraform(struct!.idleInTransactionSessionTimeout),
-    ip_filter: cdktf.listMapper(cdktf.stringToTerraform)(struct!.ipFilter),
+    ip_filter: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.ipFilter),
     jit: cdktf.booleanToTerraform(struct!.jit),
     log_autovacuum_min_duration: cdktf.numberToTerraform(struct!.logAutovacuumMinDuration),
     log_error_verbosity: cdktf.stringToTerraform(struct!.logErrorVerbosity),
@@ -2764,7 +2764,10 @@ export class ManagedDatabasePostgresql extends cdktf.TerraformResource {
       provider: config.provider,
       dependsOn: config.dependsOn,
       count: config.count,
-      lifecycle: config.lifecycle
+      lifecycle: config.lifecycle,
+      provisioners: config.provisioners,
+      connection: config.connection,
+      forEach: config.forEach
     });
     this._id = config.id;
     this._maintenanceWindowDow = config.maintenanceWindowDow;

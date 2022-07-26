@@ -66,7 +66,10 @@ export class Tag extends cdktf.TerraformResource {
       provider: config.provider,
       dependsOn: config.dependsOn,
       count: config.count,
-      lifecycle: config.lifecycle
+      lifecycle: config.lifecycle,
+      provisioners: config.provisioners,
+      connection: config.connection,
+      forEach: config.forEach
     });
     this._description = config.description;
     this._id = config.id;
@@ -148,7 +151,7 @@ export class Tag extends cdktf.TerraformResource {
       description: cdktf.stringToTerraform(this._description),
       id: cdktf.stringToTerraform(this._id),
       name: cdktf.stringToTerraform(this._name),
-      servers: cdktf.listMapper(cdktf.stringToTerraform)(this._servers),
+      servers: cdktf.listMapper(cdktf.stringToTerraform, false)(this._servers),
     };
   }
 }
