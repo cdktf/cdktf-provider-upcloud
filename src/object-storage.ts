@@ -196,7 +196,10 @@ export class ObjectStorage extends cdktf.TerraformResource {
       provider: config.provider,
       dependsOn: config.dependsOn,
       count: config.count,
-      lifecycle: config.lifecycle
+      lifecycle: config.lifecycle,
+      provisioners: config.provisioners,
+      connection: config.connection,
+      forEach: config.forEach
     });
     this._accessKey = config.accessKey;
     this._description = config.description;
@@ -358,7 +361,7 @@ export class ObjectStorage extends cdktf.TerraformResource {
       secret_key: cdktf.stringToTerraform(this._secretKey),
       size: cdktf.numberToTerraform(this._size),
       zone: cdktf.stringToTerraform(this._zone),
-      bucket: cdktf.listMapper(objectStorageBucketToTerraform)(this._bucket.internalValue),
+      bucket: cdktf.listMapper(objectStorageBucketToTerraform, true)(this._bucket.internalValue),
     };
   }
 }

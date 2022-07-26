@@ -145,7 +145,7 @@ export function serverLoginToTerraform(struct?: ServerLoginOutputReference | Ser
   }
   return {
     create_password: cdktf.booleanToTerraform(struct!.createPassword),
-    keys: cdktf.listMapper(cdktf.stringToTerraform)(struct!.keys),
+    keys: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.keys),
     password_delivery: cdktf.stringToTerraform(struct!.passwordDelivery),
     user: cdktf.stringToTerraform(struct!.user),
   }
@@ -1160,7 +1160,10 @@ export class Server extends cdktf.TerraformResource {
       provider: config.provider,
       dependsOn: config.dependsOn,
       count: config.count,
-      lifecycle: config.lifecycle
+      lifecycle: config.lifecycle,
+      provisioners: config.provisioners,
+      connection: config.connection,
+      forEach: config.forEach
     });
     this._cpu = config.cpu;
     this._firewall = config.firewall;
@@ -1462,14 +1465,14 @@ export class Server extends cdktf.TerraformResource {
       mem: cdktf.numberToTerraform(this._mem),
       metadata: cdktf.booleanToTerraform(this._metadata),
       plan: cdktf.stringToTerraform(this._plan),
-      tags: cdktf.listMapper(cdktf.stringToTerraform)(this._tags),
+      tags: cdktf.listMapper(cdktf.stringToTerraform, false)(this._tags),
       title: cdktf.stringToTerraform(this._title),
       user_data: cdktf.stringToTerraform(this._userData),
       zone: cdktf.stringToTerraform(this._zone),
       login: serverLoginToTerraform(this._login.internalValue),
-      network_interface: cdktf.listMapper(serverNetworkInterfaceToTerraform)(this._networkInterface.internalValue),
+      network_interface: cdktf.listMapper(serverNetworkInterfaceToTerraform, true)(this._networkInterface.internalValue),
       simple_backup: serverSimpleBackupToTerraform(this._simpleBackup.internalValue),
-      storage_devices: cdktf.listMapper(serverStorageDevicesToTerraform)(this._storageDevices.internalValue),
+      storage_devices: cdktf.listMapper(serverStorageDevicesToTerraform, true)(this._storageDevices.internalValue),
       template: serverTemplateToTerraform(this._template.internalValue),
     };
   }

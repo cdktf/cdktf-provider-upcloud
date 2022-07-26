@@ -313,6 +313,7 @@ Any object.
 | <code><a href="#@cdktf/provider-upcloud.DataUpcloudHosts.property.terraformGeneratorMetadata">terraformGeneratorMetadata</a></code> | <code>cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.DataUpcloudHosts.property.count">count</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.DataUpcloudHosts.property.dependsOn">dependsOn</a></code> | <code>string[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-upcloud.DataUpcloudHosts.property.forEach">forEach</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.DataUpcloudHosts.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.DataUpcloudHosts.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.DataUpcloudHosts.property.hosts">hosts</a></code> | <code><a href="#@cdktf/provider-upcloud.DataUpcloudHostsHostsList">DataUpcloudHostsHostsList</a></code> | *No description.* |
@@ -410,6 +411,16 @@ public readonly dependsOn: string[];
 ```
 
 - *Type:* string[]
+
+---
+
+##### `forEach`<sup>Optional</sup> <a name="forEach" id="@cdktf/provider-upcloud.DataUpcloudHosts.property.forEach"></a>
+
+```typescript
+public readonly forEach: ITerraformIterator;
+```
+
+- *Type:* cdktf.ITerraformIterator
 
 ---
 
@@ -792,6 +803,7 @@ Any object.
 | <code><a href="#@cdktf/provider-upcloud.DataUpcloudIpAddresses.property.terraformGeneratorMetadata">terraformGeneratorMetadata</a></code> | <code>cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.DataUpcloudIpAddresses.property.count">count</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.DataUpcloudIpAddresses.property.dependsOn">dependsOn</a></code> | <code>string[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-upcloud.DataUpcloudIpAddresses.property.forEach">forEach</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.DataUpcloudIpAddresses.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.DataUpcloudIpAddresses.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.DataUpcloudIpAddresses.property.addresses">addresses</a></code> | <code><a href="#@cdktf/provider-upcloud.DataUpcloudIpAddressesAddressesList">DataUpcloudIpAddressesAddressesList</a></code> | *No description.* |
@@ -889,6 +901,16 @@ public readonly dependsOn: string[];
 ```
 
 - *Type:* string[]
+
+---
+
+##### `forEach`<sup>Optional</sup> <a name="forEach" id="@cdktf/provider-upcloud.DataUpcloudIpAddresses.property.forEach"></a>
+
+```typescript
+public readonly forEach: ITerraformIterator;
+```
+
+- *Type:* cdktf.ITerraformIterator
 
 ---
 
@@ -1285,6 +1307,7 @@ Any object.
 | <code><a href="#@cdktf/provider-upcloud.DataUpcloudNetworks.property.terraformGeneratorMetadata">terraformGeneratorMetadata</a></code> | <code>cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.DataUpcloudNetworks.property.count">count</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.DataUpcloudNetworks.property.dependsOn">dependsOn</a></code> | <code>string[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-upcloud.DataUpcloudNetworks.property.forEach">forEach</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.DataUpcloudNetworks.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.DataUpcloudNetworks.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.DataUpcloudNetworks.property.networks">networks</a></code> | <code><a href="#@cdktf/provider-upcloud.DataUpcloudNetworksNetworksList">DataUpcloudNetworksNetworksList</a></code> | *No description.* |
@@ -1386,6 +1409,16 @@ public readonly dependsOn: string[];
 ```
 
 - *Type:* string[]
+
+---
+
+##### `forEach`<sup>Optional</sup> <a name="forEach" id="@cdktf/provider-upcloud.DataUpcloudNetworks.property.forEach"></a>
+
+```typescript
+public readonly forEach: ITerraformIterator;
+```
+
+- *Type:* cdktf.ITerraformIterator
 
 ---
 
@@ -1843,6 +1876,7 @@ Any object.
 | <code><a href="#@cdktf/provider-upcloud.DataUpcloudStorage.property.terraformGeneratorMetadata">terraformGeneratorMetadata</a></code> | <code>cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.DataUpcloudStorage.property.count">count</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.DataUpcloudStorage.property.dependsOn">dependsOn</a></code> | <code>string[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-upcloud.DataUpcloudStorage.property.forEach">forEach</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.DataUpcloudStorage.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.DataUpcloudStorage.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.DataUpcloudStorage.property.size">size</a></code> | <code>number</code> | *No description.* |
@@ -1955,6 +1989,16 @@ public readonly dependsOn: string[];
 ```
 
 - *Type:* string[]
+
+---
+
+##### `forEach`<sup>Optional</sup> <a name="forEach" id="@cdktf/provider-upcloud.DataUpcloudStorage.property.forEach"></a>
+
+```typescript
+public readonly forEach: ITerraformIterator;
+```
+
+- *Type:* cdktf.ITerraformIterator
 
 ---
 
@@ -2487,6 +2531,7 @@ Any object.
 | <code><a href="#@cdktf/provider-upcloud.DataUpcloudTags.property.terraformGeneratorMetadata">terraformGeneratorMetadata</a></code> | <code>cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.DataUpcloudTags.property.count">count</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.DataUpcloudTags.property.dependsOn">dependsOn</a></code> | <code>string[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-upcloud.DataUpcloudTags.property.forEach">forEach</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.DataUpcloudTags.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.DataUpcloudTags.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.DataUpcloudTags.property.tags">tags</a></code> | <code><a href="#@cdktf/provider-upcloud.DataUpcloudTagsTagsList">DataUpcloudTagsTagsList</a></code> | *No description.* |
@@ -2584,6 +2629,16 @@ public readonly dependsOn: string[];
 ```
 
 - *Type:* string[]
+
+---
+
+##### `forEach`<sup>Optional</sup> <a name="forEach" id="@cdktf/provider-upcloud.DataUpcloudTags.property.forEach"></a>
+
+```typescript
+public readonly forEach: ITerraformIterator;
+```
+
+- *Type:* cdktf.ITerraformIterator
 
 ---
 
@@ -2966,6 +3021,7 @@ Any object.
 | <code><a href="#@cdktf/provider-upcloud.DataUpcloudZone.property.terraformGeneratorMetadata">terraformGeneratorMetadata</a></code> | <code>cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.DataUpcloudZone.property.count">count</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.DataUpcloudZone.property.dependsOn">dependsOn</a></code> | <code>string[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-upcloud.DataUpcloudZone.property.forEach">forEach</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.DataUpcloudZone.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.DataUpcloudZone.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.DataUpcloudZone.property.description">description</a></code> | <code>string</code> | *No description.* |
@@ -3066,6 +3122,16 @@ public readonly dependsOn: string[];
 ```
 
 - *Type:* string[]
+
+---
+
+##### `forEach`<sup>Optional</sup> <a name="forEach" id="@cdktf/provider-upcloud.DataUpcloudZone.property.forEach"></a>
+
+```typescript
+public readonly forEach: ITerraformIterator;
+```
+
+- *Type:* cdktf.ITerraformIterator
 
 ---
 
@@ -3485,6 +3551,7 @@ Any object.
 | <code><a href="#@cdktf/provider-upcloud.DataUpcloudZones.property.terraformGeneratorMetadata">terraformGeneratorMetadata</a></code> | <code>cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.DataUpcloudZones.property.count">count</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.DataUpcloudZones.property.dependsOn">dependsOn</a></code> | <code>string[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-upcloud.DataUpcloudZones.property.forEach">forEach</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.DataUpcloudZones.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.DataUpcloudZones.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.DataUpcloudZones.property.zoneIds">zoneIds</a></code> | <code>string[]</code> | *No description.* |
@@ -3584,6 +3651,16 @@ public readonly dependsOn: string[];
 ```
 
 - *Type:* string[]
+
+---
+
+##### `forEach`<sup>Optional</sup> <a name="forEach" id="@cdktf/provider-upcloud.DataUpcloudZones.property.forEach"></a>
+
+```typescript
+public readonly forEach: ITerraformIterator;
+```
+
+- *Type:* cdktf.ITerraformIterator
 
 ---
 
@@ -3997,10 +4074,13 @@ Any object.
 | <code><a href="#@cdktf/provider-upcloud.FirewallRules.property.terraformMetaArguments">terraformMetaArguments</a></code> | <code>{[ key: string ]: any}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.FirewallRules.property.terraformResourceType">terraformResourceType</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.FirewallRules.property.terraformGeneratorMetadata">terraformGeneratorMetadata</a></code> | <code>cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
+| <code><a href="#@cdktf/provider-upcloud.FirewallRules.property.connection">connection</a></code> | <code>cdktf.ISSHProvisionerConnection \| cdktf.IWinrmProvisionerConnection</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.FirewallRules.property.count">count</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.FirewallRules.property.dependsOn">dependsOn</a></code> | <code>string[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-upcloud.FirewallRules.property.forEach">forEach</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.FirewallRules.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.FirewallRules.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
+| <code><a href="#@cdktf/provider-upcloud.FirewallRules.property.provisioners">provisioners</a></code> | <code>cdktf.IFileProvisioner \| cdktf.ILocalExecProvisioner \| cdktf.IRemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.FirewallRules.property.firewallRule">firewallRule</a></code> | <code><a href="#@cdktf/provider-upcloud.FirewallRulesFirewallRuleList">FirewallRulesFirewallRuleList</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.FirewallRules.property.firewallRuleInput">firewallRuleInput</a></code> | <code><a href="#@cdktf/provider-upcloud.FirewallRulesFirewallRule">FirewallRulesFirewallRule</a>[] \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.FirewallRules.property.idInput">idInput</a></code> | <code>string</code> | *No description.* |
@@ -4082,6 +4162,16 @@ public readonly terraformGeneratorMetadata: TerraformProviderGeneratorMetadata;
 
 ---
 
+##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-upcloud.FirewallRules.property.connection"></a>
+
+```typescript
+public readonly connection: ISSHProvisionerConnection | IWinrmProvisionerConnection;
+```
+
+- *Type:* cdktf.ISSHProvisionerConnection | cdktf.IWinrmProvisionerConnection
+
+---
+
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-upcloud.FirewallRules.property.count"></a>
 
 ```typescript
@@ -4102,6 +4192,16 @@ public readonly dependsOn: string[];
 
 ---
 
+##### `forEach`<sup>Optional</sup> <a name="forEach" id="@cdktf/provider-upcloud.FirewallRules.property.forEach"></a>
+
+```typescript
+public readonly forEach: ITerraformIterator;
+```
+
+- *Type:* cdktf.ITerraformIterator
+
+---
+
 ##### `lifecycle`<sup>Optional</sup> <a name="lifecycle" id="@cdktf/provider-upcloud.FirewallRules.property.lifecycle"></a>
 
 ```typescript
@@ -4119,6 +4219,16 @@ public readonly provider: TerraformProvider;
 ```
 
 - *Type:* cdktf.TerraformProvider
+
+---
+
+##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-upcloud.FirewallRules.property.provisioners"></a>
+
+```typescript
+public readonly provisioners: IFileProvisioner | ILocalExecProvisioner | IRemoteExecProvisioner[];
+```
+
+- *Type:* cdktf.IFileProvisioner | cdktf.ILocalExecProvisioner | cdktf.IRemoteExecProvisioner[]
 
 ---
 
@@ -4537,10 +4647,13 @@ Any object.
 | <code><a href="#@cdktf/provider-upcloud.FloatingIpAddress.property.terraformMetaArguments">terraformMetaArguments</a></code> | <code>{[ key: string ]: any}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.FloatingIpAddress.property.terraformResourceType">terraformResourceType</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.FloatingIpAddress.property.terraformGeneratorMetadata">terraformGeneratorMetadata</a></code> | <code>cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
+| <code><a href="#@cdktf/provider-upcloud.FloatingIpAddress.property.connection">connection</a></code> | <code>cdktf.ISSHProvisionerConnection \| cdktf.IWinrmProvisionerConnection</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.FloatingIpAddress.property.count">count</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.FloatingIpAddress.property.dependsOn">dependsOn</a></code> | <code>string[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-upcloud.FloatingIpAddress.property.forEach">forEach</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.FloatingIpAddress.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.FloatingIpAddress.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
+| <code><a href="#@cdktf/provider-upcloud.FloatingIpAddress.property.provisioners">provisioners</a></code> | <code>cdktf.IFileProvisioner \| cdktf.ILocalExecProvisioner \| cdktf.IRemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.FloatingIpAddress.property.ipAddress">ipAddress</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.FloatingIpAddress.property.accessInput">accessInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.FloatingIpAddress.property.familyInput">familyInput</a></code> | <code>string</code> | *No description.* |
@@ -4627,6 +4740,16 @@ public readonly terraformGeneratorMetadata: TerraformProviderGeneratorMetadata;
 
 ---
 
+##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-upcloud.FloatingIpAddress.property.connection"></a>
+
+```typescript
+public readonly connection: ISSHProvisionerConnection | IWinrmProvisionerConnection;
+```
+
+- *Type:* cdktf.ISSHProvisionerConnection | cdktf.IWinrmProvisionerConnection
+
+---
+
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-upcloud.FloatingIpAddress.property.count"></a>
 
 ```typescript
@@ -4647,6 +4770,16 @@ public readonly dependsOn: string[];
 
 ---
 
+##### `forEach`<sup>Optional</sup> <a name="forEach" id="@cdktf/provider-upcloud.FloatingIpAddress.property.forEach"></a>
+
+```typescript
+public readonly forEach: ITerraformIterator;
+```
+
+- *Type:* cdktf.ITerraformIterator
+
+---
+
 ##### `lifecycle`<sup>Optional</sup> <a name="lifecycle" id="@cdktf/provider-upcloud.FloatingIpAddress.property.lifecycle"></a>
 
 ```typescript
@@ -4664,6 +4797,16 @@ public readonly provider: TerraformProvider;
 ```
 
 - *Type:* cdktf.TerraformProvider
+
+---
+
+##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-upcloud.FloatingIpAddress.property.provisioners"></a>
+
+```typescript
+public readonly provisioners: IFileProvisioner | ILocalExecProvisioner | IRemoteExecProvisioner[];
+```
+
+- *Type:* cdktf.IFileProvisioner | cdktf.ILocalExecProvisioner | cdktf.IRemoteExecProvisioner[]
 
 ---
 
@@ -5111,10 +5254,13 @@ Any object.
 | <code><a href="#@cdktf/provider-upcloud.Loadbalancer.property.terraformMetaArguments">terraformMetaArguments</a></code> | <code>{[ key: string ]: any}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.Loadbalancer.property.terraformResourceType">terraformResourceType</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.Loadbalancer.property.terraformGeneratorMetadata">terraformGeneratorMetadata</a></code> | <code>cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
+| <code><a href="#@cdktf/provider-upcloud.Loadbalancer.property.connection">connection</a></code> | <code>cdktf.ISSHProvisionerConnection \| cdktf.IWinrmProvisionerConnection</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.Loadbalancer.property.count">count</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.Loadbalancer.property.dependsOn">dependsOn</a></code> | <code>string[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-upcloud.Loadbalancer.property.forEach">forEach</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.Loadbalancer.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.Loadbalancer.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
+| <code><a href="#@cdktf/provider-upcloud.Loadbalancer.property.provisioners">provisioners</a></code> | <code>cdktf.IFileProvisioner \| cdktf.ILocalExecProvisioner \| cdktf.IRemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.Loadbalancer.property.backends">backends</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.Loadbalancer.property.dnsName">dnsName</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.Loadbalancer.property.frontends">frontends</a></code> | <code>string[]</code> | *No description.* |
@@ -5207,6 +5353,16 @@ public readonly terraformGeneratorMetadata: TerraformProviderGeneratorMetadata;
 
 ---
 
+##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-upcloud.Loadbalancer.property.connection"></a>
+
+```typescript
+public readonly connection: ISSHProvisionerConnection | IWinrmProvisionerConnection;
+```
+
+- *Type:* cdktf.ISSHProvisionerConnection | cdktf.IWinrmProvisionerConnection
+
+---
+
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-upcloud.Loadbalancer.property.count"></a>
 
 ```typescript
@@ -5227,6 +5383,16 @@ public readonly dependsOn: string[];
 
 ---
 
+##### `forEach`<sup>Optional</sup> <a name="forEach" id="@cdktf/provider-upcloud.Loadbalancer.property.forEach"></a>
+
+```typescript
+public readonly forEach: ITerraformIterator;
+```
+
+- *Type:* cdktf.ITerraformIterator
+
+---
+
 ##### `lifecycle`<sup>Optional</sup> <a name="lifecycle" id="@cdktf/provider-upcloud.Loadbalancer.property.lifecycle"></a>
 
 ```typescript
@@ -5244,6 +5410,16 @@ public readonly provider: TerraformProvider;
 ```
 
 - *Type:* cdktf.TerraformProvider
+
+---
+
+##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-upcloud.Loadbalancer.property.provisioners"></a>
+
+```typescript
+public readonly provisioners: IFileProvisioner | ILocalExecProvisioner | IRemoteExecProvisioner[];
+```
+
+- *Type:* cdktf.IFileProvisioner | cdktf.ILocalExecProvisioner | cdktf.IRemoteExecProvisioner[]
 
 ---
 
@@ -5771,10 +5947,13 @@ Any object.
 | <code><a href="#@cdktf/provider-upcloud.LoadbalancerBackend.property.terraformMetaArguments">terraformMetaArguments</a></code> | <code>{[ key: string ]: any}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.LoadbalancerBackend.property.terraformResourceType">terraformResourceType</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.LoadbalancerBackend.property.terraformGeneratorMetadata">terraformGeneratorMetadata</a></code> | <code>cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
+| <code><a href="#@cdktf/provider-upcloud.LoadbalancerBackend.property.connection">connection</a></code> | <code>cdktf.ISSHProvisionerConnection \| cdktf.IWinrmProvisionerConnection</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.LoadbalancerBackend.property.count">count</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.LoadbalancerBackend.property.dependsOn">dependsOn</a></code> | <code>string[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-upcloud.LoadbalancerBackend.property.forEach">forEach</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.LoadbalancerBackend.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.LoadbalancerBackend.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
+| <code><a href="#@cdktf/provider-upcloud.LoadbalancerBackend.property.provisioners">provisioners</a></code> | <code>cdktf.IFileProvisioner \| cdktf.ILocalExecProvisioner \| cdktf.IRemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.LoadbalancerBackend.property.members">members</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.LoadbalancerBackend.property.properties">properties</a></code> | <code><a href="#@cdktf/provider-upcloud.LoadbalancerBackendPropertiesOutputReference">LoadbalancerBackendPropertiesOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.LoadbalancerBackend.property.idInput">idInput</a></code> | <code>string</code> | *No description.* |
@@ -5861,6 +6040,16 @@ public readonly terraformGeneratorMetadata: TerraformProviderGeneratorMetadata;
 
 ---
 
+##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-upcloud.LoadbalancerBackend.property.connection"></a>
+
+```typescript
+public readonly connection: ISSHProvisionerConnection | IWinrmProvisionerConnection;
+```
+
+- *Type:* cdktf.ISSHProvisionerConnection | cdktf.IWinrmProvisionerConnection
+
+---
+
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-upcloud.LoadbalancerBackend.property.count"></a>
 
 ```typescript
@@ -5881,6 +6070,16 @@ public readonly dependsOn: string[];
 
 ---
 
+##### `forEach`<sup>Optional</sup> <a name="forEach" id="@cdktf/provider-upcloud.LoadbalancerBackend.property.forEach"></a>
+
+```typescript
+public readonly forEach: ITerraformIterator;
+```
+
+- *Type:* cdktf.ITerraformIterator
+
+---
+
 ##### `lifecycle`<sup>Optional</sup> <a name="lifecycle" id="@cdktf/provider-upcloud.LoadbalancerBackend.property.lifecycle"></a>
 
 ```typescript
@@ -5898,6 +6097,16 @@ public readonly provider: TerraformProvider;
 ```
 
 - *Type:* cdktf.TerraformProvider
+
+---
+
+##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-upcloud.LoadbalancerBackend.property.provisioners"></a>
+
+```typescript
+public readonly provisioners: IFileProvisioner | ILocalExecProvisioner | IRemoteExecProvisioner[];
+```
+
+- *Type:* cdktf.IFileProvisioner | cdktf.ILocalExecProvisioner | cdktf.IRemoteExecProvisioner[]
 
 ---
 
@@ -6359,10 +6568,13 @@ Any object.
 | <code><a href="#@cdktf/provider-upcloud.LoadbalancerDynamicBackendMember.property.terraformMetaArguments">terraformMetaArguments</a></code> | <code>{[ key: string ]: any}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.LoadbalancerDynamicBackendMember.property.terraformResourceType">terraformResourceType</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.LoadbalancerDynamicBackendMember.property.terraformGeneratorMetadata">terraformGeneratorMetadata</a></code> | <code>cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
+| <code><a href="#@cdktf/provider-upcloud.LoadbalancerDynamicBackendMember.property.connection">connection</a></code> | <code>cdktf.ISSHProvisionerConnection \| cdktf.IWinrmProvisionerConnection</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.LoadbalancerDynamicBackendMember.property.count">count</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.LoadbalancerDynamicBackendMember.property.dependsOn">dependsOn</a></code> | <code>string[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-upcloud.LoadbalancerDynamicBackendMember.property.forEach">forEach</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.LoadbalancerDynamicBackendMember.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.LoadbalancerDynamicBackendMember.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
+| <code><a href="#@cdktf/provider-upcloud.LoadbalancerDynamicBackendMember.property.provisioners">provisioners</a></code> | <code>cdktf.IFileProvisioner \| cdktf.ILocalExecProvisioner \| cdktf.IRemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.LoadbalancerDynamicBackendMember.property.backendInput">backendInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.LoadbalancerDynamicBackendMember.property.enabledInput">enabledInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.LoadbalancerDynamicBackendMember.property.idInput">idInput</a></code> | <code>string</code> | *No description.* |
@@ -6454,6 +6666,16 @@ public readonly terraformGeneratorMetadata: TerraformProviderGeneratorMetadata;
 
 ---
 
+##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-upcloud.LoadbalancerDynamicBackendMember.property.connection"></a>
+
+```typescript
+public readonly connection: ISSHProvisionerConnection | IWinrmProvisionerConnection;
+```
+
+- *Type:* cdktf.ISSHProvisionerConnection | cdktf.IWinrmProvisionerConnection
+
+---
+
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-upcloud.LoadbalancerDynamicBackendMember.property.count"></a>
 
 ```typescript
@@ -6474,6 +6696,16 @@ public readonly dependsOn: string[];
 
 ---
 
+##### `forEach`<sup>Optional</sup> <a name="forEach" id="@cdktf/provider-upcloud.LoadbalancerDynamicBackendMember.property.forEach"></a>
+
+```typescript
+public readonly forEach: ITerraformIterator;
+```
+
+- *Type:* cdktf.ITerraformIterator
+
+---
+
 ##### `lifecycle`<sup>Optional</sup> <a name="lifecycle" id="@cdktf/provider-upcloud.LoadbalancerDynamicBackendMember.property.lifecycle"></a>
 
 ```typescript
@@ -6491,6 +6723,16 @@ public readonly provider: TerraformProvider;
 ```
 
 - *Type:* cdktf.TerraformProvider
+
+---
+
+##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-upcloud.LoadbalancerDynamicBackendMember.property.provisioners"></a>
+
+```typescript
+public readonly provisioners: IFileProvisioner | ILocalExecProvisioner | IRemoteExecProvisioner[];
+```
+
+- *Type:* cdktf.IFileProvisioner | cdktf.ILocalExecProvisioner | cdktf.IRemoteExecProvisioner[]
 
 ---
 
@@ -6981,10 +7223,13 @@ Any object.
 | <code><a href="#@cdktf/provider-upcloud.LoadbalancerDynamicCertificateBundle.property.terraformMetaArguments">terraformMetaArguments</a></code> | <code>{[ key: string ]: any}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.LoadbalancerDynamicCertificateBundle.property.terraformResourceType">terraformResourceType</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.LoadbalancerDynamicCertificateBundle.property.terraformGeneratorMetadata">terraformGeneratorMetadata</a></code> | <code>cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
+| <code><a href="#@cdktf/provider-upcloud.LoadbalancerDynamicCertificateBundle.property.connection">connection</a></code> | <code>cdktf.ISSHProvisionerConnection \| cdktf.IWinrmProvisionerConnection</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.LoadbalancerDynamicCertificateBundle.property.count">count</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.LoadbalancerDynamicCertificateBundle.property.dependsOn">dependsOn</a></code> | <code>string[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-upcloud.LoadbalancerDynamicCertificateBundle.property.forEach">forEach</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.LoadbalancerDynamicCertificateBundle.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.LoadbalancerDynamicCertificateBundle.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
+| <code><a href="#@cdktf/provider-upcloud.LoadbalancerDynamicCertificateBundle.property.provisioners">provisioners</a></code> | <code>cdktf.IFileProvisioner \| cdktf.ILocalExecProvisioner \| cdktf.IRemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.LoadbalancerDynamicCertificateBundle.property.notAfter">notAfter</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.LoadbalancerDynamicCertificateBundle.property.notBefore">notBefore</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.LoadbalancerDynamicCertificateBundle.property.operationalState">operationalState</a></code> | <code>string</code> | *No description.* |
@@ -7071,6 +7316,16 @@ public readonly terraformGeneratorMetadata: TerraformProviderGeneratorMetadata;
 
 ---
 
+##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-upcloud.LoadbalancerDynamicCertificateBundle.property.connection"></a>
+
+```typescript
+public readonly connection: ISSHProvisionerConnection | IWinrmProvisionerConnection;
+```
+
+- *Type:* cdktf.ISSHProvisionerConnection | cdktf.IWinrmProvisionerConnection
+
+---
+
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-upcloud.LoadbalancerDynamicCertificateBundle.property.count"></a>
 
 ```typescript
@@ -7091,6 +7346,16 @@ public readonly dependsOn: string[];
 
 ---
 
+##### `forEach`<sup>Optional</sup> <a name="forEach" id="@cdktf/provider-upcloud.LoadbalancerDynamicCertificateBundle.property.forEach"></a>
+
+```typescript
+public readonly forEach: ITerraformIterator;
+```
+
+- *Type:* cdktf.ITerraformIterator
+
+---
+
 ##### `lifecycle`<sup>Optional</sup> <a name="lifecycle" id="@cdktf/provider-upcloud.LoadbalancerDynamicCertificateBundle.property.lifecycle"></a>
 
 ```typescript
@@ -7108,6 +7373,16 @@ public readonly provider: TerraformProvider;
 ```
 
 - *Type:* cdktf.TerraformProvider
+
+---
+
+##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-upcloud.LoadbalancerDynamicCertificateBundle.property.provisioners"></a>
+
+```typescript
+public readonly provisioners: IFileProvisioner | ILocalExecProvisioner | IRemoteExecProvisioner[];
+```
+
+- *Type:* cdktf.IFileProvisioner | cdktf.ILocalExecProvisioner | cdktf.IRemoteExecProvisioner[]
 
 ---
 
@@ -7568,10 +7843,13 @@ Any object.
 | <code><a href="#@cdktf/provider-upcloud.LoadbalancerFrontend.property.terraformMetaArguments">terraformMetaArguments</a></code> | <code>{[ key: string ]: any}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.LoadbalancerFrontend.property.terraformResourceType">terraformResourceType</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.LoadbalancerFrontend.property.terraformGeneratorMetadata">terraformGeneratorMetadata</a></code> | <code>cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
+| <code><a href="#@cdktf/provider-upcloud.LoadbalancerFrontend.property.connection">connection</a></code> | <code>cdktf.ISSHProvisionerConnection \| cdktf.IWinrmProvisionerConnection</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.LoadbalancerFrontend.property.count">count</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.LoadbalancerFrontend.property.dependsOn">dependsOn</a></code> | <code>string[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-upcloud.LoadbalancerFrontend.property.forEach">forEach</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.LoadbalancerFrontend.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.LoadbalancerFrontend.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
+| <code><a href="#@cdktf/provider-upcloud.LoadbalancerFrontend.property.provisioners">provisioners</a></code> | <code>cdktf.IFileProvisioner \| cdktf.ILocalExecProvisioner \| cdktf.IRemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.LoadbalancerFrontend.property.properties">properties</a></code> | <code><a href="#@cdktf/provider-upcloud.LoadbalancerFrontendPropertiesOutputReference">LoadbalancerFrontendPropertiesOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.LoadbalancerFrontend.property.rules">rules</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.LoadbalancerFrontend.property.tlsConfigs">tlsConfigs</a></code> | <code>string[]</code> | *No description.* |
@@ -7663,6 +7941,16 @@ public readonly terraformGeneratorMetadata: TerraformProviderGeneratorMetadata;
 
 ---
 
+##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-upcloud.LoadbalancerFrontend.property.connection"></a>
+
+```typescript
+public readonly connection: ISSHProvisionerConnection | IWinrmProvisionerConnection;
+```
+
+- *Type:* cdktf.ISSHProvisionerConnection | cdktf.IWinrmProvisionerConnection
+
+---
+
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-upcloud.LoadbalancerFrontend.property.count"></a>
 
 ```typescript
@@ -7683,6 +7971,16 @@ public readonly dependsOn: string[];
 
 ---
 
+##### `forEach`<sup>Optional</sup> <a name="forEach" id="@cdktf/provider-upcloud.LoadbalancerFrontend.property.forEach"></a>
+
+```typescript
+public readonly forEach: ITerraformIterator;
+```
+
+- *Type:* cdktf.ITerraformIterator
+
+---
+
 ##### `lifecycle`<sup>Optional</sup> <a name="lifecycle" id="@cdktf/provider-upcloud.LoadbalancerFrontend.property.lifecycle"></a>
 
 ```typescript
@@ -7700,6 +7998,16 @@ public readonly provider: TerraformProvider;
 ```
 
 - *Type:* cdktf.TerraformProvider
+
+---
+
+##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-upcloud.LoadbalancerFrontend.property.provisioners"></a>
+
+```typescript
+public readonly provisioners: IFileProvisioner | ILocalExecProvisioner | IRemoteExecProvisioner[];
+```
+
+- *Type:* cdktf.IFileProvisioner | cdktf.ILocalExecProvisioner | cdktf.IRemoteExecProvisioner[]
 
 ---
 
@@ -8230,10 +8538,13 @@ Any object.
 | <code><a href="#@cdktf/provider-upcloud.LoadbalancerFrontendRule.property.terraformMetaArguments">terraformMetaArguments</a></code> | <code>{[ key: string ]: any}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.LoadbalancerFrontendRule.property.terraformResourceType">terraformResourceType</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.LoadbalancerFrontendRule.property.terraformGeneratorMetadata">terraformGeneratorMetadata</a></code> | <code>cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
+| <code><a href="#@cdktf/provider-upcloud.LoadbalancerFrontendRule.property.connection">connection</a></code> | <code>cdktf.ISSHProvisionerConnection \| cdktf.IWinrmProvisionerConnection</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.LoadbalancerFrontendRule.property.count">count</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.LoadbalancerFrontendRule.property.dependsOn">dependsOn</a></code> | <code>string[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-upcloud.LoadbalancerFrontendRule.property.forEach">forEach</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.LoadbalancerFrontendRule.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.LoadbalancerFrontendRule.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
+| <code><a href="#@cdktf/provider-upcloud.LoadbalancerFrontendRule.property.provisioners">provisioners</a></code> | <code>cdktf.IFileProvisioner \| cdktf.ILocalExecProvisioner \| cdktf.IRemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.LoadbalancerFrontendRule.property.actions">actions</a></code> | <code><a href="#@cdktf/provider-upcloud.LoadbalancerFrontendRuleActionsOutputReference">LoadbalancerFrontendRuleActionsOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.LoadbalancerFrontendRule.property.matchers">matchers</a></code> | <code><a href="#@cdktf/provider-upcloud.LoadbalancerFrontendRuleMatchersOutputReference">LoadbalancerFrontendRuleMatchersOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.LoadbalancerFrontendRule.property.actionsInput">actionsInput</a></code> | <code><a href="#@cdktf/provider-upcloud.LoadbalancerFrontendRuleActions">LoadbalancerFrontendRuleActions</a></code> | *No description.* |
@@ -8321,6 +8632,16 @@ public readonly terraformGeneratorMetadata: TerraformProviderGeneratorMetadata;
 
 ---
 
+##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-upcloud.LoadbalancerFrontendRule.property.connection"></a>
+
+```typescript
+public readonly connection: ISSHProvisionerConnection | IWinrmProvisionerConnection;
+```
+
+- *Type:* cdktf.ISSHProvisionerConnection | cdktf.IWinrmProvisionerConnection
+
+---
+
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-upcloud.LoadbalancerFrontendRule.property.count"></a>
 
 ```typescript
@@ -8341,6 +8662,16 @@ public readonly dependsOn: string[];
 
 ---
 
+##### `forEach`<sup>Optional</sup> <a name="forEach" id="@cdktf/provider-upcloud.LoadbalancerFrontendRule.property.forEach"></a>
+
+```typescript
+public readonly forEach: ITerraformIterator;
+```
+
+- *Type:* cdktf.ITerraformIterator
+
+---
+
 ##### `lifecycle`<sup>Optional</sup> <a name="lifecycle" id="@cdktf/provider-upcloud.LoadbalancerFrontendRule.property.lifecycle"></a>
 
 ```typescript
@@ -8358,6 +8689,16 @@ public readonly provider: TerraformProvider;
 ```
 
 - *Type:* cdktf.TerraformProvider
+
+---
+
+##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-upcloud.LoadbalancerFrontendRule.property.provisioners"></a>
+
+```typescript
+public readonly provisioners: IFileProvisioner | ILocalExecProvisioner | IRemoteExecProvisioner[];
+```
+
+- *Type:* cdktf.IFileProvisioner | cdktf.ILocalExecProvisioner | cdktf.IRemoteExecProvisioner[]
 
 ---
 
@@ -8808,10 +9149,13 @@ Any object.
 | <code><a href="#@cdktf/provider-upcloud.LoadbalancerFrontendTlsConfig.property.terraformMetaArguments">terraformMetaArguments</a></code> | <code>{[ key: string ]: any}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.LoadbalancerFrontendTlsConfig.property.terraformResourceType">terraformResourceType</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.LoadbalancerFrontendTlsConfig.property.terraformGeneratorMetadata">terraformGeneratorMetadata</a></code> | <code>cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
+| <code><a href="#@cdktf/provider-upcloud.LoadbalancerFrontendTlsConfig.property.connection">connection</a></code> | <code>cdktf.ISSHProvisionerConnection \| cdktf.IWinrmProvisionerConnection</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.LoadbalancerFrontendTlsConfig.property.count">count</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.LoadbalancerFrontendTlsConfig.property.dependsOn">dependsOn</a></code> | <code>string[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-upcloud.LoadbalancerFrontendTlsConfig.property.forEach">forEach</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.LoadbalancerFrontendTlsConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.LoadbalancerFrontendTlsConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
+| <code><a href="#@cdktf/provider-upcloud.LoadbalancerFrontendTlsConfig.property.provisioners">provisioners</a></code> | <code>cdktf.IFileProvisioner \| cdktf.ILocalExecProvisioner \| cdktf.IRemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.LoadbalancerFrontendTlsConfig.property.certificateBundleInput">certificateBundleInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.LoadbalancerFrontendTlsConfig.property.frontendInput">frontendInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.LoadbalancerFrontendTlsConfig.property.idInput">idInput</a></code> | <code>string</code> | *No description.* |
@@ -8895,6 +9239,16 @@ public readonly terraformGeneratorMetadata: TerraformProviderGeneratorMetadata;
 
 ---
 
+##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-upcloud.LoadbalancerFrontendTlsConfig.property.connection"></a>
+
+```typescript
+public readonly connection: ISSHProvisionerConnection | IWinrmProvisionerConnection;
+```
+
+- *Type:* cdktf.ISSHProvisionerConnection | cdktf.IWinrmProvisionerConnection
+
+---
+
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-upcloud.LoadbalancerFrontendTlsConfig.property.count"></a>
 
 ```typescript
@@ -8915,6 +9269,16 @@ public readonly dependsOn: string[];
 
 ---
 
+##### `forEach`<sup>Optional</sup> <a name="forEach" id="@cdktf/provider-upcloud.LoadbalancerFrontendTlsConfig.property.forEach"></a>
+
+```typescript
+public readonly forEach: ITerraformIterator;
+```
+
+- *Type:* cdktf.ITerraformIterator
+
+---
+
 ##### `lifecycle`<sup>Optional</sup> <a name="lifecycle" id="@cdktf/provider-upcloud.LoadbalancerFrontendTlsConfig.property.lifecycle"></a>
 
 ```typescript
@@ -8932,6 +9296,16 @@ public readonly provider: TerraformProvider;
 ```
 
 - *Type:* cdktf.TerraformProvider
+
+---
+
+##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-upcloud.LoadbalancerFrontendTlsConfig.property.provisioners"></a>
+
+```typescript
+public readonly provisioners: IFileProvisioner | ILocalExecProvisioner | IRemoteExecProvisioner[];
+```
+
+- *Type:* cdktf.IFileProvisioner | cdktf.ILocalExecProvisioner | cdktf.IRemoteExecProvisioner[]
 
 ---
 
@@ -9349,10 +9723,13 @@ Any object.
 | <code><a href="#@cdktf/provider-upcloud.LoadbalancerManualCertificateBundle.property.terraformMetaArguments">terraformMetaArguments</a></code> | <code>{[ key: string ]: any}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.LoadbalancerManualCertificateBundle.property.terraformResourceType">terraformResourceType</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.LoadbalancerManualCertificateBundle.property.terraformGeneratorMetadata">terraformGeneratorMetadata</a></code> | <code>cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
+| <code><a href="#@cdktf/provider-upcloud.LoadbalancerManualCertificateBundle.property.connection">connection</a></code> | <code>cdktf.ISSHProvisionerConnection \| cdktf.IWinrmProvisionerConnection</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.LoadbalancerManualCertificateBundle.property.count">count</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.LoadbalancerManualCertificateBundle.property.dependsOn">dependsOn</a></code> | <code>string[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-upcloud.LoadbalancerManualCertificateBundle.property.forEach">forEach</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.LoadbalancerManualCertificateBundle.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.LoadbalancerManualCertificateBundle.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
+| <code><a href="#@cdktf/provider-upcloud.LoadbalancerManualCertificateBundle.property.provisioners">provisioners</a></code> | <code>cdktf.IFileProvisioner \| cdktf.ILocalExecProvisioner \| cdktf.IRemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.LoadbalancerManualCertificateBundle.property.notAfter">notAfter</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.LoadbalancerManualCertificateBundle.property.notBefore">notBefore</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.LoadbalancerManualCertificateBundle.property.operationalState">operationalState</a></code> | <code>string</code> | *No description.* |
@@ -9441,6 +9818,16 @@ public readonly terraformGeneratorMetadata: TerraformProviderGeneratorMetadata;
 
 ---
 
+##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-upcloud.LoadbalancerManualCertificateBundle.property.connection"></a>
+
+```typescript
+public readonly connection: ISSHProvisionerConnection | IWinrmProvisionerConnection;
+```
+
+- *Type:* cdktf.ISSHProvisionerConnection | cdktf.IWinrmProvisionerConnection
+
+---
+
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-upcloud.LoadbalancerManualCertificateBundle.property.count"></a>
 
 ```typescript
@@ -9461,6 +9848,16 @@ public readonly dependsOn: string[];
 
 ---
 
+##### `forEach`<sup>Optional</sup> <a name="forEach" id="@cdktf/provider-upcloud.LoadbalancerManualCertificateBundle.property.forEach"></a>
+
+```typescript
+public readonly forEach: ITerraformIterator;
+```
+
+- *Type:* cdktf.ITerraformIterator
+
+---
+
 ##### `lifecycle`<sup>Optional</sup> <a name="lifecycle" id="@cdktf/provider-upcloud.LoadbalancerManualCertificateBundle.property.lifecycle"></a>
 
 ```typescript
@@ -9478,6 +9875,16 @@ public readonly provider: TerraformProvider;
 ```
 
 - *Type:* cdktf.TerraformProvider
+
+---
+
+##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-upcloud.LoadbalancerManualCertificateBundle.property.provisioners"></a>
+
+```typescript
+public readonly provisioners: IFileProvisioner | ILocalExecProvisioner | IRemoteExecProvisioner[];
+```
+
+- *Type:* cdktf.IFileProvisioner | cdktf.ILocalExecProvisioner | cdktf.IRemoteExecProvisioner[]
 
 ---
 
@@ -9938,10 +10345,13 @@ Any object.
 | <code><a href="#@cdktf/provider-upcloud.LoadbalancerResolver.property.terraformMetaArguments">terraformMetaArguments</a></code> | <code>{[ key: string ]: any}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.LoadbalancerResolver.property.terraformResourceType">terraformResourceType</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.LoadbalancerResolver.property.terraformGeneratorMetadata">terraformGeneratorMetadata</a></code> | <code>cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
+| <code><a href="#@cdktf/provider-upcloud.LoadbalancerResolver.property.connection">connection</a></code> | <code>cdktf.ISSHProvisionerConnection \| cdktf.IWinrmProvisionerConnection</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.LoadbalancerResolver.property.count">count</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.LoadbalancerResolver.property.dependsOn">dependsOn</a></code> | <code>string[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-upcloud.LoadbalancerResolver.property.forEach">forEach</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.LoadbalancerResolver.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.LoadbalancerResolver.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
+| <code><a href="#@cdktf/provider-upcloud.LoadbalancerResolver.property.provisioners">provisioners</a></code> | <code>cdktf.IFileProvisioner \| cdktf.ILocalExecProvisioner \| cdktf.IRemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.LoadbalancerResolver.property.cacheInvalidInput">cacheInvalidInput</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.LoadbalancerResolver.property.cacheValidInput">cacheValidInput</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.LoadbalancerResolver.property.idInput">idInput</a></code> | <code>string</code> | *No description.* |
@@ -10035,6 +10445,16 @@ public readonly terraformGeneratorMetadata: TerraformProviderGeneratorMetadata;
 
 ---
 
+##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-upcloud.LoadbalancerResolver.property.connection"></a>
+
+```typescript
+public readonly connection: ISSHProvisionerConnection | IWinrmProvisionerConnection;
+```
+
+- *Type:* cdktf.ISSHProvisionerConnection | cdktf.IWinrmProvisionerConnection
+
+---
+
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-upcloud.LoadbalancerResolver.property.count"></a>
 
 ```typescript
@@ -10055,6 +10475,16 @@ public readonly dependsOn: string[];
 
 ---
 
+##### `forEach`<sup>Optional</sup> <a name="forEach" id="@cdktf/provider-upcloud.LoadbalancerResolver.property.forEach"></a>
+
+```typescript
+public readonly forEach: ITerraformIterator;
+```
+
+- *Type:* cdktf.ITerraformIterator
+
+---
+
 ##### `lifecycle`<sup>Optional</sup> <a name="lifecycle" id="@cdktf/provider-upcloud.LoadbalancerResolver.property.lifecycle"></a>
 
 ```typescript
@@ -10072,6 +10502,16 @@ public readonly provider: TerraformProvider;
 ```
 
 - *Type:* cdktf.TerraformProvider
+
+---
+
+##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-upcloud.LoadbalancerResolver.property.provisioners"></a>
+
+```typescript
+public readonly provisioners: IFileProvisioner | ILocalExecProvisioner | IRemoteExecProvisioner[];
+```
+
+- *Type:* cdktf.IFileProvisioner | cdktf.ILocalExecProvisioner | cdktf.IRemoteExecProvisioner[]
 
 ---
 
@@ -10589,10 +11029,13 @@ Any object.
 | <code><a href="#@cdktf/provider-upcloud.LoadbalancerStaticBackendMember.property.terraformMetaArguments">terraformMetaArguments</a></code> | <code>{[ key: string ]: any}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.LoadbalancerStaticBackendMember.property.terraformResourceType">terraformResourceType</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.LoadbalancerStaticBackendMember.property.terraformGeneratorMetadata">terraformGeneratorMetadata</a></code> | <code>cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
+| <code><a href="#@cdktf/provider-upcloud.LoadbalancerStaticBackendMember.property.connection">connection</a></code> | <code>cdktf.ISSHProvisionerConnection \| cdktf.IWinrmProvisionerConnection</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.LoadbalancerStaticBackendMember.property.count">count</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.LoadbalancerStaticBackendMember.property.dependsOn">dependsOn</a></code> | <code>string[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-upcloud.LoadbalancerStaticBackendMember.property.forEach">forEach</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.LoadbalancerStaticBackendMember.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.LoadbalancerStaticBackendMember.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
+| <code><a href="#@cdktf/provider-upcloud.LoadbalancerStaticBackendMember.property.provisioners">provisioners</a></code> | <code>cdktf.IFileProvisioner \| cdktf.ILocalExecProvisioner \| cdktf.IRemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.LoadbalancerStaticBackendMember.property.backendInput">backendInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.LoadbalancerStaticBackendMember.property.enabledInput">enabledInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.LoadbalancerStaticBackendMember.property.idInput">idInput</a></code> | <code>string</code> | *No description.* |
@@ -10684,6 +11127,16 @@ public readonly terraformGeneratorMetadata: TerraformProviderGeneratorMetadata;
 
 ---
 
+##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-upcloud.LoadbalancerStaticBackendMember.property.connection"></a>
+
+```typescript
+public readonly connection: ISSHProvisionerConnection | IWinrmProvisionerConnection;
+```
+
+- *Type:* cdktf.ISSHProvisionerConnection | cdktf.IWinrmProvisionerConnection
+
+---
+
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-upcloud.LoadbalancerStaticBackendMember.property.count"></a>
 
 ```typescript
@@ -10704,6 +11157,16 @@ public readonly dependsOn: string[];
 
 ---
 
+##### `forEach`<sup>Optional</sup> <a name="forEach" id="@cdktf/provider-upcloud.LoadbalancerStaticBackendMember.property.forEach"></a>
+
+```typescript
+public readonly forEach: ITerraformIterator;
+```
+
+- *Type:* cdktf.ITerraformIterator
+
+---
+
 ##### `lifecycle`<sup>Optional</sup> <a name="lifecycle" id="@cdktf/provider-upcloud.LoadbalancerStaticBackendMember.property.lifecycle"></a>
 
 ```typescript
@@ -10721,6 +11184,16 @@ public readonly provider: TerraformProvider;
 ```
 
 - *Type:* cdktf.TerraformProvider
+
+---
+
+##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-upcloud.LoadbalancerStaticBackendMember.property.provisioners"></a>
+
+```typescript
+public readonly provisioners: IFileProvisioner | ILocalExecProvisioner | IRemoteExecProvisioner[];
+```
+
+- *Type:* cdktf.IFileProvisioner | cdktf.ILocalExecProvisioner | cdktf.IRemoteExecProvisioner[]
 
 ---
 
@@ -11225,10 +11698,13 @@ Any object.
 | <code><a href="#@cdktf/provider-upcloud.ManagedDatabaseLogicalDatabase.property.terraformMetaArguments">terraformMetaArguments</a></code> | <code>{[ key: string ]: any}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.ManagedDatabaseLogicalDatabase.property.terraformResourceType">terraformResourceType</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.ManagedDatabaseLogicalDatabase.property.terraformGeneratorMetadata">terraformGeneratorMetadata</a></code> | <code>cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
+| <code><a href="#@cdktf/provider-upcloud.ManagedDatabaseLogicalDatabase.property.connection">connection</a></code> | <code>cdktf.ISSHProvisionerConnection \| cdktf.IWinrmProvisionerConnection</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.ManagedDatabaseLogicalDatabase.property.count">count</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.ManagedDatabaseLogicalDatabase.property.dependsOn">dependsOn</a></code> | <code>string[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-upcloud.ManagedDatabaseLogicalDatabase.property.forEach">forEach</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.ManagedDatabaseLogicalDatabase.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.ManagedDatabaseLogicalDatabase.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
+| <code><a href="#@cdktf/provider-upcloud.ManagedDatabaseLogicalDatabase.property.provisioners">provisioners</a></code> | <code>cdktf.IFileProvisioner \| cdktf.ILocalExecProvisioner \| cdktf.IRemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.ManagedDatabaseLogicalDatabase.property.characterSetInput">characterSetInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.ManagedDatabaseLogicalDatabase.property.collationInput">collationInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.ManagedDatabaseLogicalDatabase.property.idInput">idInput</a></code> | <code>string</code> | *No description.* |
@@ -11314,6 +11790,16 @@ public readonly terraformGeneratorMetadata: TerraformProviderGeneratorMetadata;
 
 ---
 
+##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-upcloud.ManagedDatabaseLogicalDatabase.property.connection"></a>
+
+```typescript
+public readonly connection: ISSHProvisionerConnection | IWinrmProvisionerConnection;
+```
+
+- *Type:* cdktf.ISSHProvisionerConnection | cdktf.IWinrmProvisionerConnection
+
+---
+
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-upcloud.ManagedDatabaseLogicalDatabase.property.count"></a>
 
 ```typescript
@@ -11334,6 +11820,16 @@ public readonly dependsOn: string[];
 
 ---
 
+##### `forEach`<sup>Optional</sup> <a name="forEach" id="@cdktf/provider-upcloud.ManagedDatabaseLogicalDatabase.property.forEach"></a>
+
+```typescript
+public readonly forEach: ITerraformIterator;
+```
+
+- *Type:* cdktf.ITerraformIterator
+
+---
+
 ##### `lifecycle`<sup>Optional</sup> <a name="lifecycle" id="@cdktf/provider-upcloud.ManagedDatabaseLogicalDatabase.property.lifecycle"></a>
 
 ```typescript
@@ -11351,6 +11847,16 @@ public readonly provider: TerraformProvider;
 ```
 
 - *Type:* cdktf.TerraformProvider
+
+---
+
+##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-upcloud.ManagedDatabaseLogicalDatabase.property.provisioners"></a>
+
+```typescript
+public readonly provisioners: IFileProvisioner | ILocalExecProvisioner | IRemoteExecProvisioner[];
+```
+
+- *Type:* cdktf.IFileProvisioner | cdktf.ILocalExecProvisioner | cdktf.IRemoteExecProvisioner[]
 
 ---
 
@@ -11829,10 +12335,13 @@ Any object.
 | <code><a href="#@cdktf/provider-upcloud.ManagedDatabaseMysql.property.terraformMetaArguments">terraformMetaArguments</a></code> | <code>{[ key: string ]: any}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.ManagedDatabaseMysql.property.terraformResourceType">terraformResourceType</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.ManagedDatabaseMysql.property.terraformGeneratorMetadata">terraformGeneratorMetadata</a></code> | <code>cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
+| <code><a href="#@cdktf/provider-upcloud.ManagedDatabaseMysql.property.connection">connection</a></code> | <code>cdktf.ISSHProvisionerConnection \| cdktf.IWinrmProvisionerConnection</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.ManagedDatabaseMysql.property.count">count</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.ManagedDatabaseMysql.property.dependsOn">dependsOn</a></code> | <code>string[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-upcloud.ManagedDatabaseMysql.property.forEach">forEach</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.ManagedDatabaseMysql.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.ManagedDatabaseMysql.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
+| <code><a href="#@cdktf/provider-upcloud.ManagedDatabaseMysql.property.provisioners">provisioners</a></code> | <code>cdktf.IFileProvisioner \| cdktf.ILocalExecProvisioner \| cdktf.IRemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.ManagedDatabaseMysql.property.components">components</a></code> | <code><a href="#@cdktf/provider-upcloud.ManagedDatabaseMysqlComponentsList">ManagedDatabaseMysqlComponentsList</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.ManagedDatabaseMysql.property.nodeStates">nodeStates</a></code> | <code><a href="#@cdktf/provider-upcloud.ManagedDatabaseMysqlNodeStatesList">ManagedDatabaseMysqlNodeStatesList</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.ManagedDatabaseMysql.property.primaryDatabase">primaryDatabase</a></code> | <code>string</code> | *No description.* |
@@ -11936,6 +12445,16 @@ public readonly terraformGeneratorMetadata: TerraformProviderGeneratorMetadata;
 
 ---
 
+##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-upcloud.ManagedDatabaseMysql.property.connection"></a>
+
+```typescript
+public readonly connection: ISSHProvisionerConnection | IWinrmProvisionerConnection;
+```
+
+- *Type:* cdktf.ISSHProvisionerConnection | cdktf.IWinrmProvisionerConnection
+
+---
+
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-upcloud.ManagedDatabaseMysql.property.count"></a>
 
 ```typescript
@@ -11956,6 +12475,16 @@ public readonly dependsOn: string[];
 
 ---
 
+##### `forEach`<sup>Optional</sup> <a name="forEach" id="@cdktf/provider-upcloud.ManagedDatabaseMysql.property.forEach"></a>
+
+```typescript
+public readonly forEach: ITerraformIterator;
+```
+
+- *Type:* cdktf.ITerraformIterator
+
+---
+
 ##### `lifecycle`<sup>Optional</sup> <a name="lifecycle" id="@cdktf/provider-upcloud.ManagedDatabaseMysql.property.lifecycle"></a>
 
 ```typescript
@@ -11973,6 +12502,16 @@ public readonly provider: TerraformProvider;
 ```
 
 - *Type:* cdktf.TerraformProvider
+
+---
+
+##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-upcloud.ManagedDatabaseMysql.property.provisioners"></a>
+
+```typescript
+public readonly provisioners: IFileProvisioner | ILocalExecProvisioner | IRemoteExecProvisioner[];
+```
+
+- *Type:* cdktf.IFileProvisioner | cdktf.ILocalExecProvisioner | cdktf.IRemoteExecProvisioner[]
 
 ---
 
@@ -12631,10 +13170,13 @@ Any object.
 | <code><a href="#@cdktf/provider-upcloud.ManagedDatabasePostgresql.property.terraformMetaArguments">terraformMetaArguments</a></code> | <code>{[ key: string ]: any}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.ManagedDatabasePostgresql.property.terraformResourceType">terraformResourceType</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.ManagedDatabasePostgresql.property.terraformGeneratorMetadata">terraformGeneratorMetadata</a></code> | <code>cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
+| <code><a href="#@cdktf/provider-upcloud.ManagedDatabasePostgresql.property.connection">connection</a></code> | <code>cdktf.ISSHProvisionerConnection \| cdktf.IWinrmProvisionerConnection</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.ManagedDatabasePostgresql.property.count">count</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.ManagedDatabasePostgresql.property.dependsOn">dependsOn</a></code> | <code>string[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-upcloud.ManagedDatabasePostgresql.property.forEach">forEach</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.ManagedDatabasePostgresql.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.ManagedDatabasePostgresql.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
+| <code><a href="#@cdktf/provider-upcloud.ManagedDatabasePostgresql.property.provisioners">provisioners</a></code> | <code>cdktf.IFileProvisioner \| cdktf.ILocalExecProvisioner \| cdktf.IRemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.ManagedDatabasePostgresql.property.components">components</a></code> | <code><a href="#@cdktf/provider-upcloud.ManagedDatabasePostgresqlComponentsList">ManagedDatabasePostgresqlComponentsList</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.ManagedDatabasePostgresql.property.nodeStates">nodeStates</a></code> | <code><a href="#@cdktf/provider-upcloud.ManagedDatabasePostgresqlNodeStatesList">ManagedDatabasePostgresqlNodeStatesList</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.ManagedDatabasePostgresql.property.primaryDatabase">primaryDatabase</a></code> | <code>string</code> | *No description.* |
@@ -12739,6 +13281,16 @@ public readonly terraformGeneratorMetadata: TerraformProviderGeneratorMetadata;
 
 ---
 
+##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-upcloud.ManagedDatabasePostgresql.property.connection"></a>
+
+```typescript
+public readonly connection: ISSHProvisionerConnection | IWinrmProvisionerConnection;
+```
+
+- *Type:* cdktf.ISSHProvisionerConnection | cdktf.IWinrmProvisionerConnection
+
+---
+
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-upcloud.ManagedDatabasePostgresql.property.count"></a>
 
 ```typescript
@@ -12759,6 +13311,16 @@ public readonly dependsOn: string[];
 
 ---
 
+##### `forEach`<sup>Optional</sup> <a name="forEach" id="@cdktf/provider-upcloud.ManagedDatabasePostgresql.property.forEach"></a>
+
+```typescript
+public readonly forEach: ITerraformIterator;
+```
+
+- *Type:* cdktf.ITerraformIterator
+
+---
+
 ##### `lifecycle`<sup>Optional</sup> <a name="lifecycle" id="@cdktf/provider-upcloud.ManagedDatabasePostgresql.property.lifecycle"></a>
 
 ```typescript
@@ -12776,6 +13338,16 @@ public readonly provider: TerraformProvider;
 ```
 
 - *Type:* cdktf.TerraformProvider
+
+---
+
+##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-upcloud.ManagedDatabasePostgresql.property.provisioners"></a>
+
+```typescript
+public readonly provisioners: IFileProvisioner | ILocalExecProvisioner | IRemoteExecProvisioner[];
+```
+
+- *Type:* cdktf.IFileProvisioner | cdktf.ILocalExecProvisioner | cdktf.IRemoteExecProvisioner[]
 
 ---
 
@@ -13403,10 +13975,13 @@ Any object.
 | <code><a href="#@cdktf/provider-upcloud.ManagedDatabaseUser.property.terraformMetaArguments">terraformMetaArguments</a></code> | <code>{[ key: string ]: any}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.ManagedDatabaseUser.property.terraformResourceType">terraformResourceType</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.ManagedDatabaseUser.property.terraformGeneratorMetadata">terraformGeneratorMetadata</a></code> | <code>cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
+| <code><a href="#@cdktf/provider-upcloud.ManagedDatabaseUser.property.connection">connection</a></code> | <code>cdktf.ISSHProvisionerConnection \| cdktf.IWinrmProvisionerConnection</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.ManagedDatabaseUser.property.count">count</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.ManagedDatabaseUser.property.dependsOn">dependsOn</a></code> | <code>string[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-upcloud.ManagedDatabaseUser.property.forEach">forEach</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.ManagedDatabaseUser.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.ManagedDatabaseUser.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
+| <code><a href="#@cdktf/provider-upcloud.ManagedDatabaseUser.property.provisioners">provisioners</a></code> | <code>cdktf.IFileProvisioner \| cdktf.ILocalExecProvisioner \| cdktf.IRemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.ManagedDatabaseUser.property.type">type</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.ManagedDatabaseUser.property.idInput">idInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.ManagedDatabaseUser.property.passwordInput">passwordInput</a></code> | <code>string</code> | *No description.* |
@@ -13491,6 +14066,16 @@ public readonly terraformGeneratorMetadata: TerraformProviderGeneratorMetadata;
 
 ---
 
+##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-upcloud.ManagedDatabaseUser.property.connection"></a>
+
+```typescript
+public readonly connection: ISSHProvisionerConnection | IWinrmProvisionerConnection;
+```
+
+- *Type:* cdktf.ISSHProvisionerConnection | cdktf.IWinrmProvisionerConnection
+
+---
+
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-upcloud.ManagedDatabaseUser.property.count"></a>
 
 ```typescript
@@ -13511,6 +14096,16 @@ public readonly dependsOn: string[];
 
 ---
 
+##### `forEach`<sup>Optional</sup> <a name="forEach" id="@cdktf/provider-upcloud.ManagedDatabaseUser.property.forEach"></a>
+
+```typescript
+public readonly forEach: ITerraformIterator;
+```
+
+- *Type:* cdktf.ITerraformIterator
+
+---
+
 ##### `lifecycle`<sup>Optional</sup> <a name="lifecycle" id="@cdktf/provider-upcloud.ManagedDatabaseUser.property.lifecycle"></a>
 
 ```typescript
@@ -13528,6 +14123,16 @@ public readonly provider: TerraformProvider;
 ```
 
 - *Type:* cdktf.TerraformProvider
+
+---
+
+##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-upcloud.ManagedDatabaseUser.property.provisioners"></a>
+
+```typescript
+public readonly provisioners: IFileProvisioner | ILocalExecProvisioner | IRemoteExecProvisioner[];
+```
+
+- *Type:* cdktf.IFileProvisioner | cdktf.ILocalExecProvisioner | cdktf.IRemoteExecProvisioner[]
 
 ---
 
@@ -13968,10 +14573,13 @@ Any object.
 | <code><a href="#@cdktf/provider-upcloud.Network.property.terraformMetaArguments">terraformMetaArguments</a></code> | <code>{[ key: string ]: any}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.Network.property.terraformResourceType">terraformResourceType</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.Network.property.terraformGeneratorMetadata">terraformGeneratorMetadata</a></code> | <code>cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
+| <code><a href="#@cdktf/provider-upcloud.Network.property.connection">connection</a></code> | <code>cdktf.ISSHProvisionerConnection \| cdktf.IWinrmProvisionerConnection</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.Network.property.count">count</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.Network.property.dependsOn">dependsOn</a></code> | <code>string[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-upcloud.Network.property.forEach">forEach</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.Network.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.Network.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
+| <code><a href="#@cdktf/provider-upcloud.Network.property.provisioners">provisioners</a></code> | <code>cdktf.IFileProvisioner \| cdktf.ILocalExecProvisioner \| cdktf.IRemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.Network.property.ipNetwork">ipNetwork</a></code> | <code><a href="#@cdktf/provider-upcloud.NetworkIpNetworkOutputReference">NetworkIpNetworkOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.Network.property.type">type</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.Network.property.idInput">idInput</a></code> | <code>string</code> | *No description.* |
@@ -14058,6 +14666,16 @@ public readonly terraformGeneratorMetadata: TerraformProviderGeneratorMetadata;
 
 ---
 
+##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-upcloud.Network.property.connection"></a>
+
+```typescript
+public readonly connection: ISSHProvisionerConnection | IWinrmProvisionerConnection;
+```
+
+- *Type:* cdktf.ISSHProvisionerConnection | cdktf.IWinrmProvisionerConnection
+
+---
+
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-upcloud.Network.property.count"></a>
 
 ```typescript
@@ -14078,6 +14696,16 @@ public readonly dependsOn: string[];
 
 ---
 
+##### `forEach`<sup>Optional</sup> <a name="forEach" id="@cdktf/provider-upcloud.Network.property.forEach"></a>
+
+```typescript
+public readonly forEach: ITerraformIterator;
+```
+
+- *Type:* cdktf.ITerraformIterator
+
+---
+
 ##### `lifecycle`<sup>Optional</sup> <a name="lifecycle" id="@cdktf/provider-upcloud.Network.property.lifecycle"></a>
 
 ```typescript
@@ -14095,6 +14723,16 @@ public readonly provider: TerraformProvider;
 ```
 
 - *Type:* cdktf.TerraformProvider
+
+---
+
+##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-upcloud.Network.property.provisioners"></a>
+
+```typescript
+public readonly provisioners: IFileProvisioner | ILocalExecProvisioner | IRemoteExecProvisioner[];
+```
+
+- *Type:* cdktf.IFileProvisioner | cdktf.ILocalExecProvisioner | cdktf.IRemoteExecProvisioner[]
 
 ---
 
@@ -14562,10 +15200,13 @@ Any object.
 | <code><a href="#@cdktf/provider-upcloud.ObjectStorage.property.terraformMetaArguments">terraformMetaArguments</a></code> | <code>{[ key: string ]: any}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.ObjectStorage.property.terraformResourceType">terraformResourceType</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.ObjectStorage.property.terraformGeneratorMetadata">terraformGeneratorMetadata</a></code> | <code>cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
+| <code><a href="#@cdktf/provider-upcloud.ObjectStorage.property.connection">connection</a></code> | <code>cdktf.ISSHProvisionerConnection \| cdktf.IWinrmProvisionerConnection</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.ObjectStorage.property.count">count</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.ObjectStorage.property.dependsOn">dependsOn</a></code> | <code>string[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-upcloud.ObjectStorage.property.forEach">forEach</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.ObjectStorage.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.ObjectStorage.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
+| <code><a href="#@cdktf/provider-upcloud.ObjectStorage.property.provisioners">provisioners</a></code> | <code>cdktf.IFileProvisioner \| cdktf.ILocalExecProvisioner \| cdktf.IRemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.ObjectStorage.property.bucket">bucket</a></code> | <code><a href="#@cdktf/provider-upcloud.ObjectStorageBucketList">ObjectStorageBucketList</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.ObjectStorage.property.created">created</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.ObjectStorage.property.state">state</a></code> | <code>string</code> | *No description.* |
@@ -14661,6 +15302,16 @@ public readonly terraformGeneratorMetadata: TerraformProviderGeneratorMetadata;
 
 ---
 
+##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-upcloud.ObjectStorage.property.connection"></a>
+
+```typescript
+public readonly connection: ISSHProvisionerConnection | IWinrmProvisionerConnection;
+```
+
+- *Type:* cdktf.ISSHProvisionerConnection | cdktf.IWinrmProvisionerConnection
+
+---
+
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-upcloud.ObjectStorage.property.count"></a>
 
 ```typescript
@@ -14681,6 +15332,16 @@ public readonly dependsOn: string[];
 
 ---
 
+##### `forEach`<sup>Optional</sup> <a name="forEach" id="@cdktf/provider-upcloud.ObjectStorage.property.forEach"></a>
+
+```typescript
+public readonly forEach: ITerraformIterator;
+```
+
+- *Type:* cdktf.ITerraformIterator
+
+---
+
 ##### `lifecycle`<sup>Optional</sup> <a name="lifecycle" id="@cdktf/provider-upcloud.ObjectStorage.property.lifecycle"></a>
 
 ```typescript
@@ -14698,6 +15359,16 @@ public readonly provider: TerraformProvider;
 ```
 
 - *Type:* cdktf.TerraformProvider
+
+---
+
+##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-upcloud.ObjectStorage.property.provisioners"></a>
+
+```typescript
+public readonly provisioners: IFileProvisioner | ILocalExecProvisioner | IRemoteExecProvisioner[];
+```
+
+- *Type:* cdktf.IFileProvisioner | cdktf.ILocalExecProvisioner | cdktf.IRemoteExecProvisioner[]
 
 ---
 
@@ -15228,10 +15899,13 @@ Any object.
 | <code><a href="#@cdktf/provider-upcloud.Router.property.terraformMetaArguments">terraformMetaArguments</a></code> | <code>{[ key: string ]: any}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.Router.property.terraformResourceType">terraformResourceType</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.Router.property.terraformGeneratorMetadata">terraformGeneratorMetadata</a></code> | <code>cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
+| <code><a href="#@cdktf/provider-upcloud.Router.property.connection">connection</a></code> | <code>cdktf.ISSHProvisionerConnection \| cdktf.IWinrmProvisionerConnection</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.Router.property.count">count</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.Router.property.dependsOn">dependsOn</a></code> | <code>string[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-upcloud.Router.property.forEach">forEach</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.Router.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.Router.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
+| <code><a href="#@cdktf/provider-upcloud.Router.property.provisioners">provisioners</a></code> | <code>cdktf.IFileProvisioner \| cdktf.ILocalExecProvisioner \| cdktf.IRemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.Router.property.attachedNetworks">attachedNetworks</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.Router.property.type">type</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.Router.property.idInput">idInput</a></code> | <code>string</code> | *No description.* |
@@ -15313,6 +15987,16 @@ public readonly terraformGeneratorMetadata: TerraformProviderGeneratorMetadata;
 
 ---
 
+##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-upcloud.Router.property.connection"></a>
+
+```typescript
+public readonly connection: ISSHProvisionerConnection | IWinrmProvisionerConnection;
+```
+
+- *Type:* cdktf.ISSHProvisionerConnection | cdktf.IWinrmProvisionerConnection
+
+---
+
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-upcloud.Router.property.count"></a>
 
 ```typescript
@@ -15333,6 +16017,16 @@ public readonly dependsOn: string[];
 
 ---
 
+##### `forEach`<sup>Optional</sup> <a name="forEach" id="@cdktf/provider-upcloud.Router.property.forEach"></a>
+
+```typescript
+public readonly forEach: ITerraformIterator;
+```
+
+- *Type:* cdktf.ITerraformIterator
+
+---
+
 ##### `lifecycle`<sup>Optional</sup> <a name="lifecycle" id="@cdktf/provider-upcloud.Router.property.lifecycle"></a>
 
 ```typescript
@@ -15350,6 +16044,16 @@ public readonly provider: TerraformProvider;
 ```
 
 - *Type:* cdktf.TerraformProvider
+
+---
+
+##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-upcloud.Router.property.provisioners"></a>
+
+```typescript
+public readonly provisioners: IFileProvisioner | ILocalExecProvisioner | IRemoteExecProvisioner[];
+```
+
+- *Type:* cdktf.IFileProvisioner | cdktf.ILocalExecProvisioner | cdktf.IRemoteExecProvisioner[]
 
 ---
 
@@ -15896,10 +16600,13 @@ Any object.
 | <code><a href="#@cdktf/provider-upcloud.Server.property.terraformMetaArguments">terraformMetaArguments</a></code> | <code>{[ key: string ]: any}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.Server.property.terraformResourceType">terraformResourceType</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.Server.property.terraformGeneratorMetadata">terraformGeneratorMetadata</a></code> | <code>cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
+| <code><a href="#@cdktf/provider-upcloud.Server.property.connection">connection</a></code> | <code>cdktf.ISSHProvisionerConnection \| cdktf.IWinrmProvisionerConnection</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.Server.property.count">count</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.Server.property.dependsOn">dependsOn</a></code> | <code>string[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-upcloud.Server.property.forEach">forEach</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.Server.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.Server.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
+| <code><a href="#@cdktf/provider-upcloud.Server.property.provisioners">provisioners</a></code> | <code>cdktf.IFileProvisioner \| cdktf.ILocalExecProvisioner \| cdktf.IRemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.Server.property.login">login</a></code> | <code><a href="#@cdktf/provider-upcloud.ServerLoginOutputReference">ServerLoginOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.Server.property.networkInterface">networkInterface</a></code> | <code><a href="#@cdktf/provider-upcloud.ServerNetworkInterfaceList">ServerNetworkInterfaceList</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.Server.property.simpleBackup">simpleBackup</a></code> | <code><a href="#@cdktf/provider-upcloud.ServerSimpleBackupOutputReference">ServerSimpleBackupOutputReference</a></code> | *No description.* |
@@ -16009,6 +16716,16 @@ public readonly terraformGeneratorMetadata: TerraformProviderGeneratorMetadata;
 
 ---
 
+##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-upcloud.Server.property.connection"></a>
+
+```typescript
+public readonly connection: ISSHProvisionerConnection | IWinrmProvisionerConnection;
+```
+
+- *Type:* cdktf.ISSHProvisionerConnection | cdktf.IWinrmProvisionerConnection
+
+---
+
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-upcloud.Server.property.count"></a>
 
 ```typescript
@@ -16029,6 +16746,16 @@ public readonly dependsOn: string[];
 
 ---
 
+##### `forEach`<sup>Optional</sup> <a name="forEach" id="@cdktf/provider-upcloud.Server.property.forEach"></a>
+
+```typescript
+public readonly forEach: ITerraformIterator;
+```
+
+- *Type:* cdktf.ITerraformIterator
+
+---
+
 ##### `lifecycle`<sup>Optional</sup> <a name="lifecycle" id="@cdktf/provider-upcloud.Server.property.lifecycle"></a>
 
 ```typescript
@@ -16046,6 +16773,16 @@ public readonly provider: TerraformProvider;
 ```
 
 - *Type:* cdktf.TerraformProvider
+
+---
+
+##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-upcloud.Server.property.provisioners"></a>
+
+```typescript
+public readonly provisioners: IFileProvisioner | ILocalExecProvisioner | IRemoteExecProvisioner[];
+```
+
+- *Type:* cdktf.IFileProvisioner | cdktf.ILocalExecProvisioner | cdktf.IRemoteExecProvisioner[]
 
 ---
 
@@ -16797,10 +17534,13 @@ Any object.
 | <code><a href="#@cdktf/provider-upcloud.Storage.property.terraformMetaArguments">terraformMetaArguments</a></code> | <code>{[ key: string ]: any}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.Storage.property.terraformResourceType">terraformResourceType</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.Storage.property.terraformGeneratorMetadata">terraformGeneratorMetadata</a></code> | <code>cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
+| <code><a href="#@cdktf/provider-upcloud.Storage.property.connection">connection</a></code> | <code>cdktf.ISSHProvisionerConnection \| cdktf.IWinrmProvisionerConnection</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.Storage.property.count">count</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.Storage.property.dependsOn">dependsOn</a></code> | <code>string[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-upcloud.Storage.property.forEach">forEach</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.Storage.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.Storage.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
+| <code><a href="#@cdktf/provider-upcloud.Storage.property.provisioners">provisioners</a></code> | <code>cdktf.IFileProvisioner \| cdktf.ILocalExecProvisioner \| cdktf.IRemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.Storage.property.backupRule">backupRule</a></code> | <code><a href="#@cdktf/provider-upcloud.StorageBackupRuleOutputReference">StorageBackupRuleOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.Storage.property.clone">clone</a></code> | <code><a href="#@cdktf/provider-upcloud.StorageCloneOutputReference">StorageCloneOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.Storage.property.import">import</a></code> | <code><a href="#@cdktf/provider-upcloud.StorageImportOutputReference">StorageImportOutputReference</a></code> | *No description.* |
@@ -16896,6 +17636,16 @@ public readonly terraformGeneratorMetadata: TerraformProviderGeneratorMetadata;
 
 ---
 
+##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-upcloud.Storage.property.connection"></a>
+
+```typescript
+public readonly connection: ISSHProvisionerConnection | IWinrmProvisionerConnection;
+```
+
+- *Type:* cdktf.ISSHProvisionerConnection | cdktf.IWinrmProvisionerConnection
+
+---
+
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-upcloud.Storage.property.count"></a>
 
 ```typescript
@@ -16916,6 +17666,16 @@ public readonly dependsOn: string[];
 
 ---
 
+##### `forEach`<sup>Optional</sup> <a name="forEach" id="@cdktf/provider-upcloud.Storage.property.forEach"></a>
+
+```typescript
+public readonly forEach: ITerraformIterator;
+```
+
+- *Type:* cdktf.ITerraformIterator
+
+---
+
 ##### `lifecycle`<sup>Optional</sup> <a name="lifecycle" id="@cdktf/provider-upcloud.Storage.property.lifecycle"></a>
 
 ```typescript
@@ -16933,6 +17693,16 @@ public readonly provider: TerraformProvider;
 ```
 
 - *Type:* cdktf.TerraformProvider
+
+---
+
+##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-upcloud.Storage.property.provisioners"></a>
+
+```typescript
+public readonly provisioners: IFileProvisioner | ILocalExecProvisioner | IRemoteExecProvisioner[];
+```
+
+- *Type:* cdktf.IFileProvisioner | cdktf.ILocalExecProvisioner | cdktf.IRemoteExecProvisioner[]
 
 ---
 
@@ -17477,10 +18247,13 @@ Any object.
 | <code><a href="#@cdktf/provider-upcloud.Tag.property.terraformMetaArguments">terraformMetaArguments</a></code> | <code>{[ key: string ]: any}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.Tag.property.terraformResourceType">terraformResourceType</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.Tag.property.terraformGeneratorMetadata">terraformGeneratorMetadata</a></code> | <code>cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
+| <code><a href="#@cdktf/provider-upcloud.Tag.property.connection">connection</a></code> | <code>cdktf.ISSHProvisionerConnection \| cdktf.IWinrmProvisionerConnection</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.Tag.property.count">count</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.Tag.property.dependsOn">dependsOn</a></code> | <code>string[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-upcloud.Tag.property.forEach">forEach</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.Tag.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.Tag.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
+| <code><a href="#@cdktf/provider-upcloud.Tag.property.provisioners">provisioners</a></code> | <code>cdktf.IFileProvisioner \| cdktf.ILocalExecProvisioner \| cdktf.IRemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.Tag.property.descriptionInput">descriptionInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.Tag.property.idInput">idInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.Tag.property.nameInput">nameInput</a></code> | <code>string</code> | *No description.* |
@@ -17564,6 +18337,16 @@ public readonly terraformGeneratorMetadata: TerraformProviderGeneratorMetadata;
 
 ---
 
+##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-upcloud.Tag.property.connection"></a>
+
+```typescript
+public readonly connection: ISSHProvisionerConnection | IWinrmProvisionerConnection;
+```
+
+- *Type:* cdktf.ISSHProvisionerConnection | cdktf.IWinrmProvisionerConnection
+
+---
+
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-upcloud.Tag.property.count"></a>
 
 ```typescript
@@ -17584,6 +18367,16 @@ public readonly dependsOn: string[];
 
 ---
 
+##### `forEach`<sup>Optional</sup> <a name="forEach" id="@cdktf/provider-upcloud.Tag.property.forEach"></a>
+
+```typescript
+public readonly forEach: ITerraformIterator;
+```
+
+- *Type:* cdktf.ITerraformIterator
+
+---
+
 ##### `lifecycle`<sup>Optional</sup> <a name="lifecycle" id="@cdktf/provider-upcloud.Tag.property.lifecycle"></a>
 
 ```typescript
@@ -17601,6 +18394,16 @@ public readonly provider: TerraformProvider;
 ```
 
 - *Type:* cdktf.TerraformProvider
+
+---
+
+##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-upcloud.Tag.property.provisioners"></a>
+
+```typescript
+public readonly provisioners: IFileProvisioner | ILocalExecProvisioner | IRemoteExecProvisioner[];
+```
+
+- *Type:* cdktf.IFileProvisioner | cdktf.ILocalExecProvisioner | cdktf.IRemoteExecProvisioner[]
 
 ---
 
@@ -18154,11 +18957,24 @@ const dataUpcloudHostsConfig: DataUpcloudHostsConfig = { ... }
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
+| <code><a href="#@cdktf/provider-upcloud.DataUpcloudHostsConfig.property.connection">connection</a></code> | <code>cdktf.ISSHProvisionerConnection \| cdktf.IWinrmProvisionerConnection</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.DataUpcloudHostsConfig.property.count">count</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.DataUpcloudHostsConfig.property.dependsOn">dependsOn</a></code> | <code>cdktf.ITerraformDependable[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-upcloud.DataUpcloudHostsConfig.property.forEach">forEach</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.DataUpcloudHostsConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.DataUpcloudHostsConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
+| <code><a href="#@cdktf/provider-upcloud.DataUpcloudHostsConfig.property.provisioners">provisioners</a></code> | <code>cdktf.IFileProvisioner \| cdktf.ILocalExecProvisioner \| cdktf.IRemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.DataUpcloudHostsConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/upcloud/d/hosts#id DataUpcloudHosts#id}. |
+
+---
+
+##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-upcloud.DataUpcloudHostsConfig.property.connection"></a>
+
+```typescript
+public readonly connection: ISSHProvisionerConnection | IWinrmProvisionerConnection;
+```
+
+- *Type:* cdktf.ISSHProvisionerConnection | cdktf.IWinrmProvisionerConnection
 
 ---
 
@@ -18182,6 +18998,16 @@ public readonly dependsOn: ITerraformDependable[];
 
 ---
 
+##### `forEach`<sup>Optional</sup> <a name="forEach" id="@cdktf/provider-upcloud.DataUpcloudHostsConfig.property.forEach"></a>
+
+```typescript
+public readonly forEach: ITerraformIterator;
+```
+
+- *Type:* cdktf.ITerraformIterator
+
+---
+
 ##### `lifecycle`<sup>Optional</sup> <a name="lifecycle" id="@cdktf/provider-upcloud.DataUpcloudHostsConfig.property.lifecycle"></a>
 
 ```typescript
@@ -18199,6 +19025,16 @@ public readonly provider: TerraformProvider;
 ```
 
 - *Type:* cdktf.TerraformProvider
+
+---
+
+##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-upcloud.DataUpcloudHostsConfig.property.provisioners"></a>
+
+```typescript
+public readonly provisioners: IFileProvisioner | ILocalExecProvisioner | IRemoteExecProvisioner[];
+```
+
+- *Type:* cdktf.IFileProvisioner | cdktf.ILocalExecProvisioner | cdktf.IRemoteExecProvisioner[]
 
 ---
 
@@ -18253,11 +19089,24 @@ const dataUpcloudIpAddressesConfig: DataUpcloudIpAddressesConfig = { ... }
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
+| <code><a href="#@cdktf/provider-upcloud.DataUpcloudIpAddressesConfig.property.connection">connection</a></code> | <code>cdktf.ISSHProvisionerConnection \| cdktf.IWinrmProvisionerConnection</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.DataUpcloudIpAddressesConfig.property.count">count</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.DataUpcloudIpAddressesConfig.property.dependsOn">dependsOn</a></code> | <code>cdktf.ITerraformDependable[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-upcloud.DataUpcloudIpAddressesConfig.property.forEach">forEach</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.DataUpcloudIpAddressesConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.DataUpcloudIpAddressesConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
+| <code><a href="#@cdktf/provider-upcloud.DataUpcloudIpAddressesConfig.property.provisioners">provisioners</a></code> | <code>cdktf.IFileProvisioner \| cdktf.ILocalExecProvisioner \| cdktf.IRemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.DataUpcloudIpAddressesConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/upcloud/d/ip_addresses#id DataUpcloudIpAddresses#id}. |
+
+---
+
+##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-upcloud.DataUpcloudIpAddressesConfig.property.connection"></a>
+
+```typescript
+public readonly connection: ISSHProvisionerConnection | IWinrmProvisionerConnection;
+```
+
+- *Type:* cdktf.ISSHProvisionerConnection | cdktf.IWinrmProvisionerConnection
 
 ---
 
@@ -18281,6 +19130,16 @@ public readonly dependsOn: ITerraformDependable[];
 
 ---
 
+##### `forEach`<sup>Optional</sup> <a name="forEach" id="@cdktf/provider-upcloud.DataUpcloudIpAddressesConfig.property.forEach"></a>
+
+```typescript
+public readonly forEach: ITerraformIterator;
+```
+
+- *Type:* cdktf.ITerraformIterator
+
+---
+
 ##### `lifecycle`<sup>Optional</sup> <a name="lifecycle" id="@cdktf/provider-upcloud.DataUpcloudIpAddressesConfig.property.lifecycle"></a>
 
 ```typescript
@@ -18298,6 +19157,16 @@ public readonly provider: TerraformProvider;
 ```
 
 - *Type:* cdktf.TerraformProvider
+
+---
+
+##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-upcloud.DataUpcloudIpAddressesConfig.property.provisioners"></a>
+
+```typescript
+public readonly provisioners: IFileProvisioner | ILocalExecProvisioner | IRemoteExecProvisioner[];
+```
+
+- *Type:* cdktf.IFileProvisioner | cdktf.ILocalExecProvisioner | cdktf.IRemoteExecProvisioner[]
 
 ---
 
@@ -18330,13 +19199,26 @@ const dataUpcloudNetworksConfig: DataUpcloudNetworksConfig = { ... }
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
+| <code><a href="#@cdktf/provider-upcloud.DataUpcloudNetworksConfig.property.connection">connection</a></code> | <code>cdktf.ISSHProvisionerConnection \| cdktf.IWinrmProvisionerConnection</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.DataUpcloudNetworksConfig.property.count">count</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.DataUpcloudNetworksConfig.property.dependsOn">dependsOn</a></code> | <code>cdktf.ITerraformDependable[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-upcloud.DataUpcloudNetworksConfig.property.forEach">forEach</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.DataUpcloudNetworksConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.DataUpcloudNetworksConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
+| <code><a href="#@cdktf/provider-upcloud.DataUpcloudNetworksConfig.property.provisioners">provisioners</a></code> | <code>cdktf.IFileProvisioner \| cdktf.ILocalExecProvisioner \| cdktf.IRemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.DataUpcloudNetworksConfig.property.filterName">filterName</a></code> | <code>string</code> | If specified, results will be filtered to match name using a regular expression. |
 | <code><a href="#@cdktf/provider-upcloud.DataUpcloudNetworksConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/upcloud/d/networks#id DataUpcloudNetworks#id}. |
 | <code><a href="#@cdktf/provider-upcloud.DataUpcloudNetworksConfig.property.zone">zone</a></code> | <code>string</code> | If specified, this data source will return only networks from this zone. |
+
+---
+
+##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-upcloud.DataUpcloudNetworksConfig.property.connection"></a>
+
+```typescript
+public readonly connection: ISSHProvisionerConnection | IWinrmProvisionerConnection;
+```
+
+- *Type:* cdktf.ISSHProvisionerConnection | cdktf.IWinrmProvisionerConnection
 
 ---
 
@@ -18360,6 +19242,16 @@ public readonly dependsOn: ITerraformDependable[];
 
 ---
 
+##### `forEach`<sup>Optional</sup> <a name="forEach" id="@cdktf/provider-upcloud.DataUpcloudNetworksConfig.property.forEach"></a>
+
+```typescript
+public readonly forEach: ITerraformIterator;
+```
+
+- *Type:* cdktf.ITerraformIterator
+
+---
+
 ##### `lifecycle`<sup>Optional</sup> <a name="lifecycle" id="@cdktf/provider-upcloud.DataUpcloudNetworksConfig.property.lifecycle"></a>
 
 ```typescript
@@ -18377,6 +19269,16 @@ public readonly provider: TerraformProvider;
 ```
 
 - *Type:* cdktf.TerraformProvider
+
+---
+
+##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-upcloud.DataUpcloudNetworksConfig.property.provisioners"></a>
+
+```typescript
+public readonly provisioners: IFileProvisioner | ILocalExecProvisioner | IRemoteExecProvisioner[];
+```
+
+- *Type:* cdktf.IFileProvisioner | cdktf.ILocalExecProvisioner | cdktf.IRemoteExecProvisioner[]
 
 ---
 
@@ -18470,10 +19372,13 @@ const dataUpcloudStorageConfig: DataUpcloudStorageConfig = { ... }
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
+| <code><a href="#@cdktf/provider-upcloud.DataUpcloudStorageConfig.property.connection">connection</a></code> | <code>cdktf.ISSHProvisionerConnection \| cdktf.IWinrmProvisionerConnection</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.DataUpcloudStorageConfig.property.count">count</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.DataUpcloudStorageConfig.property.dependsOn">dependsOn</a></code> | <code>cdktf.ITerraformDependable[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-upcloud.DataUpcloudStorageConfig.property.forEach">forEach</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.DataUpcloudStorageConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.DataUpcloudStorageConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
+| <code><a href="#@cdktf/provider-upcloud.DataUpcloudStorageConfig.property.provisioners">provisioners</a></code> | <code>cdktf.IFileProvisioner \| cdktf.ILocalExecProvisioner \| cdktf.IRemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.DataUpcloudStorageConfig.property.type">type</a></code> | <code>string</code> | Storage type (normal, backup, cdrom, template). Use 'favorite' as type to filter storages on the list of favorites. |
 | <code><a href="#@cdktf/provider-upcloud.DataUpcloudStorageConfig.property.accessType">accessType</a></code> | <code>string</code> | Storage access type (public, private). |
 | <code><a href="#@cdktf/provider-upcloud.DataUpcloudStorageConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/upcloud/d/storage#id DataUpcloudStorage#id}. |
@@ -18481,6 +19386,16 @@ const dataUpcloudStorageConfig: DataUpcloudStorageConfig = { ... }
 | <code><a href="#@cdktf/provider-upcloud.DataUpcloudStorageConfig.property.name">name</a></code> | <code>string</code> | Exact name of the storage (same as title). |
 | <code><a href="#@cdktf/provider-upcloud.DataUpcloudStorageConfig.property.nameRegex">nameRegex</a></code> | <code>string</code> | Use regular expression to match storage name. |
 | <code><a href="#@cdktf/provider-upcloud.DataUpcloudStorageConfig.property.zone">zone</a></code> | <code>string</code> | The zone in which the storage resides. |
+
+---
+
+##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-upcloud.DataUpcloudStorageConfig.property.connection"></a>
+
+```typescript
+public readonly connection: ISSHProvisionerConnection | IWinrmProvisionerConnection;
+```
+
+- *Type:* cdktf.ISSHProvisionerConnection | cdktf.IWinrmProvisionerConnection
 
 ---
 
@@ -18504,6 +19419,16 @@ public readonly dependsOn: ITerraformDependable[];
 
 ---
 
+##### `forEach`<sup>Optional</sup> <a name="forEach" id="@cdktf/provider-upcloud.DataUpcloudStorageConfig.property.forEach"></a>
+
+```typescript
+public readonly forEach: ITerraformIterator;
+```
+
+- *Type:* cdktf.ITerraformIterator
+
+---
+
 ##### `lifecycle`<sup>Optional</sup> <a name="lifecycle" id="@cdktf/provider-upcloud.DataUpcloudStorageConfig.property.lifecycle"></a>
 
 ```typescript
@@ -18521,6 +19446,16 @@ public readonly provider: TerraformProvider;
 ```
 
 - *Type:* cdktf.TerraformProvider
+
+---
+
+##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-upcloud.DataUpcloudStorageConfig.property.provisioners"></a>
+
+```typescript
+public readonly provisioners: IFileProvisioner | ILocalExecProvisioner | IRemoteExecProvisioner[];
+```
+
+- *Type:* cdktf.IFileProvisioner | cdktf.ILocalExecProvisioner | cdktf.IRemoteExecProvisioner[]
 
 ---
 
@@ -18639,11 +19574,24 @@ const dataUpcloudTagsConfig: DataUpcloudTagsConfig = { ... }
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
+| <code><a href="#@cdktf/provider-upcloud.DataUpcloudTagsConfig.property.connection">connection</a></code> | <code>cdktf.ISSHProvisionerConnection \| cdktf.IWinrmProvisionerConnection</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.DataUpcloudTagsConfig.property.count">count</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.DataUpcloudTagsConfig.property.dependsOn">dependsOn</a></code> | <code>cdktf.ITerraformDependable[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-upcloud.DataUpcloudTagsConfig.property.forEach">forEach</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.DataUpcloudTagsConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.DataUpcloudTagsConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
+| <code><a href="#@cdktf/provider-upcloud.DataUpcloudTagsConfig.property.provisioners">provisioners</a></code> | <code>cdktf.IFileProvisioner \| cdktf.ILocalExecProvisioner \| cdktf.IRemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.DataUpcloudTagsConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/upcloud/d/tags#id DataUpcloudTags#id}. |
+
+---
+
+##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-upcloud.DataUpcloudTagsConfig.property.connection"></a>
+
+```typescript
+public readonly connection: ISSHProvisionerConnection | IWinrmProvisionerConnection;
+```
+
+- *Type:* cdktf.ISSHProvisionerConnection | cdktf.IWinrmProvisionerConnection
 
 ---
 
@@ -18667,6 +19615,16 @@ public readonly dependsOn: ITerraformDependable[];
 
 ---
 
+##### `forEach`<sup>Optional</sup> <a name="forEach" id="@cdktf/provider-upcloud.DataUpcloudTagsConfig.property.forEach"></a>
+
+```typescript
+public readonly forEach: ITerraformIterator;
+```
+
+- *Type:* cdktf.ITerraformIterator
+
+---
+
 ##### `lifecycle`<sup>Optional</sup> <a name="lifecycle" id="@cdktf/provider-upcloud.DataUpcloudTagsConfig.property.lifecycle"></a>
 
 ```typescript
@@ -18684,6 +19642,16 @@ public readonly provider: TerraformProvider;
 ```
 
 - *Type:* cdktf.TerraformProvider
+
+---
+
+##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-upcloud.DataUpcloudTagsConfig.property.provisioners"></a>
+
+```typescript
+public readonly provisioners: IFileProvisioner | ILocalExecProvisioner | IRemoteExecProvisioner[];
+```
+
+- *Type:* cdktf.IFileProvisioner | cdktf.ILocalExecProvisioner | cdktf.IRemoteExecProvisioner[]
 
 ---
 
@@ -18727,12 +19695,25 @@ const dataUpcloudZoneConfig: DataUpcloudZoneConfig = { ... }
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
+| <code><a href="#@cdktf/provider-upcloud.DataUpcloudZoneConfig.property.connection">connection</a></code> | <code>cdktf.ISSHProvisionerConnection \| cdktf.IWinrmProvisionerConnection</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.DataUpcloudZoneConfig.property.count">count</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.DataUpcloudZoneConfig.property.dependsOn">dependsOn</a></code> | <code>cdktf.ITerraformDependable[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-upcloud.DataUpcloudZoneConfig.property.forEach">forEach</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.DataUpcloudZoneConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.DataUpcloudZoneConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
+| <code><a href="#@cdktf/provider-upcloud.DataUpcloudZoneConfig.property.provisioners">provisioners</a></code> | <code>cdktf.IFileProvisioner \| cdktf.ILocalExecProvisioner \| cdktf.IRemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.DataUpcloudZoneConfig.property.name">name</a></code> | <code>string</code> | Unique lablel for the zone. |
 | <code><a href="#@cdktf/provider-upcloud.DataUpcloudZoneConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/upcloud/d/zone#id DataUpcloudZone#id}. |
+
+---
+
+##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-upcloud.DataUpcloudZoneConfig.property.connection"></a>
+
+```typescript
+public readonly connection: ISSHProvisionerConnection | IWinrmProvisionerConnection;
+```
+
+- *Type:* cdktf.ISSHProvisionerConnection | cdktf.IWinrmProvisionerConnection
 
 ---
 
@@ -18756,6 +19737,16 @@ public readonly dependsOn: ITerraformDependable[];
 
 ---
 
+##### `forEach`<sup>Optional</sup> <a name="forEach" id="@cdktf/provider-upcloud.DataUpcloudZoneConfig.property.forEach"></a>
+
+```typescript
+public readonly forEach: ITerraformIterator;
+```
+
+- *Type:* cdktf.ITerraformIterator
+
+---
+
 ##### `lifecycle`<sup>Optional</sup> <a name="lifecycle" id="@cdktf/provider-upcloud.DataUpcloudZoneConfig.property.lifecycle"></a>
 
 ```typescript
@@ -18773,6 +19764,16 @@ public readonly provider: TerraformProvider;
 ```
 
 - *Type:* cdktf.TerraformProvider
+
+---
+
+##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-upcloud.DataUpcloudZoneConfig.property.provisioners"></a>
+
+```typescript
+public readonly provisioners: IFileProvisioner | ILocalExecProvisioner | IRemoteExecProvisioner[];
+```
+
+- *Type:* cdktf.IFileProvisioner | cdktf.ILocalExecProvisioner | cdktf.IRemoteExecProvisioner[]
 
 ---
 
@@ -18819,12 +19820,25 @@ const dataUpcloudZonesConfig: DataUpcloudZonesConfig = { ... }
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
+| <code><a href="#@cdktf/provider-upcloud.DataUpcloudZonesConfig.property.connection">connection</a></code> | <code>cdktf.ISSHProvisionerConnection \| cdktf.IWinrmProvisionerConnection</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.DataUpcloudZonesConfig.property.count">count</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.DataUpcloudZonesConfig.property.dependsOn">dependsOn</a></code> | <code>cdktf.ITerraformDependable[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-upcloud.DataUpcloudZonesConfig.property.forEach">forEach</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.DataUpcloudZonesConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.DataUpcloudZonesConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
+| <code><a href="#@cdktf/provider-upcloud.DataUpcloudZonesConfig.property.provisioners">provisioners</a></code> | <code>cdktf.IFileProvisioner \| cdktf.ILocalExecProvisioner \| cdktf.IRemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.DataUpcloudZonesConfig.property.filterType">filterType</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/upcloud/d/zones#filter_type DataUpcloudZones#filter_type}. |
 | <code><a href="#@cdktf/provider-upcloud.DataUpcloudZonesConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/upcloud/d/zones#id DataUpcloudZones#id}. |
+
+---
+
+##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-upcloud.DataUpcloudZonesConfig.property.connection"></a>
+
+```typescript
+public readonly connection: ISSHProvisionerConnection | IWinrmProvisionerConnection;
+```
+
+- *Type:* cdktf.ISSHProvisionerConnection | cdktf.IWinrmProvisionerConnection
 
 ---
 
@@ -18848,6 +19862,16 @@ public readonly dependsOn: ITerraformDependable[];
 
 ---
 
+##### `forEach`<sup>Optional</sup> <a name="forEach" id="@cdktf/provider-upcloud.DataUpcloudZonesConfig.property.forEach"></a>
+
+```typescript
+public readonly forEach: ITerraformIterator;
+```
+
+- *Type:* cdktf.ITerraformIterator
+
+---
+
 ##### `lifecycle`<sup>Optional</sup> <a name="lifecycle" id="@cdktf/provider-upcloud.DataUpcloudZonesConfig.property.lifecycle"></a>
 
 ```typescript
@@ -18865,6 +19889,16 @@ public readonly provider: TerraformProvider;
 ```
 
 - *Type:* cdktf.TerraformProvider
+
+---
+
+##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-upcloud.DataUpcloudZonesConfig.property.provisioners"></a>
+
+```typescript
+public readonly provisioners: IFileProvisioner | ILocalExecProvisioner | IRemoteExecProvisioner[];
+```
+
+- *Type:* cdktf.IFileProvisioner | cdktf.ILocalExecProvisioner | cdktf.IRemoteExecProvisioner[]
 
 ---
 
@@ -18909,13 +19943,26 @@ const firewallRulesConfig: FirewallRulesConfig = { ... }
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
+| <code><a href="#@cdktf/provider-upcloud.FirewallRulesConfig.property.connection">connection</a></code> | <code>cdktf.ISSHProvisionerConnection \| cdktf.IWinrmProvisionerConnection</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.FirewallRulesConfig.property.count">count</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.FirewallRulesConfig.property.dependsOn">dependsOn</a></code> | <code>cdktf.ITerraformDependable[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-upcloud.FirewallRulesConfig.property.forEach">forEach</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.FirewallRulesConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.FirewallRulesConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
+| <code><a href="#@cdktf/provider-upcloud.FirewallRulesConfig.property.provisioners">provisioners</a></code> | <code>cdktf.IFileProvisioner \| cdktf.ILocalExecProvisioner \| cdktf.IRemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.FirewallRulesConfig.property.firewallRule">firewallRule</a></code> | <code><a href="#@cdktf/provider-upcloud.FirewallRulesFirewallRule">FirewallRulesFirewallRule</a>[] \| cdktf.IResolvable</code> | firewall_rule block. |
 | <code><a href="#@cdktf/provider-upcloud.FirewallRulesConfig.property.serverId">serverId</a></code> | <code>string</code> | The unique id of the server to be protected the firewall rules. |
 | <code><a href="#@cdktf/provider-upcloud.FirewallRulesConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/upcloud/r/firewall_rules#id FirewallRules#id}. |
+
+---
+
+##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-upcloud.FirewallRulesConfig.property.connection"></a>
+
+```typescript
+public readonly connection: ISSHProvisionerConnection | IWinrmProvisionerConnection;
+```
+
+- *Type:* cdktf.ISSHProvisionerConnection | cdktf.IWinrmProvisionerConnection
 
 ---
 
@@ -18939,6 +19986,16 @@ public readonly dependsOn: ITerraformDependable[];
 
 ---
 
+##### `forEach`<sup>Optional</sup> <a name="forEach" id="@cdktf/provider-upcloud.FirewallRulesConfig.property.forEach"></a>
+
+```typescript
+public readonly forEach: ITerraformIterator;
+```
+
+- *Type:* cdktf.ITerraformIterator
+
+---
+
 ##### `lifecycle`<sup>Optional</sup> <a name="lifecycle" id="@cdktf/provider-upcloud.FirewallRulesConfig.property.lifecycle"></a>
 
 ```typescript
@@ -18956,6 +20013,16 @@ public readonly provider: TerraformProvider;
 ```
 
 - *Type:* cdktf.TerraformProvider
+
+---
+
+##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-upcloud.FirewallRulesConfig.property.provisioners"></a>
+
+```typescript
+public readonly provisioners: IFileProvisioner | ILocalExecProvisioner | IRemoteExecProvisioner[];
+```
+
+- *Type:* cdktf.IFileProvisioner | cdktf.ILocalExecProvisioner | cdktf.IRemoteExecProvisioner[]
 
 ---
 
@@ -19243,15 +20310,28 @@ const floatingIpAddressConfig: FloatingIpAddressConfig = { ... }
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
+| <code><a href="#@cdktf/provider-upcloud.FloatingIpAddressConfig.property.connection">connection</a></code> | <code>cdktf.ISSHProvisionerConnection \| cdktf.IWinrmProvisionerConnection</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.FloatingIpAddressConfig.property.count">count</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.FloatingIpAddressConfig.property.dependsOn">dependsOn</a></code> | <code>cdktf.ITerraformDependable[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-upcloud.FloatingIpAddressConfig.property.forEach">forEach</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.FloatingIpAddressConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.FloatingIpAddressConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
+| <code><a href="#@cdktf/provider-upcloud.FloatingIpAddressConfig.property.provisioners">provisioners</a></code> | <code>cdktf.IFileProvisioner \| cdktf.ILocalExecProvisioner \| cdktf.IRemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.FloatingIpAddressConfig.property.access">access</a></code> | <code>string</code> | Is address for utility or public network. |
 | <code><a href="#@cdktf/provider-upcloud.FloatingIpAddressConfig.property.family">family</a></code> | <code>string</code> | The address family of new IP address. |
 | <code><a href="#@cdktf/provider-upcloud.FloatingIpAddressConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/upcloud/r/floating_ip_address#id FloatingIpAddress#id}. |
 | <code><a href="#@cdktf/provider-upcloud.FloatingIpAddressConfig.property.macAddress">macAddress</a></code> | <code>string</code> | MAC address of server interface to assign address to. |
 | <code><a href="#@cdktf/provider-upcloud.FloatingIpAddressConfig.property.zone">zone</a></code> | <code>string</code> | Zone of address, required when assigning a detached floating IP address. |
+
+---
+
+##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-upcloud.FloatingIpAddressConfig.property.connection"></a>
+
+```typescript
+public readonly connection: ISSHProvisionerConnection | IWinrmProvisionerConnection;
+```
+
+- *Type:* cdktf.ISSHProvisionerConnection | cdktf.IWinrmProvisionerConnection
 
 ---
 
@@ -19275,6 +20355,16 @@ public readonly dependsOn: ITerraformDependable[];
 
 ---
 
+##### `forEach`<sup>Optional</sup> <a name="forEach" id="@cdktf/provider-upcloud.FloatingIpAddressConfig.property.forEach"></a>
+
+```typescript
+public readonly forEach: ITerraformIterator;
+```
+
+- *Type:* cdktf.ITerraformIterator
+
+---
+
 ##### `lifecycle`<sup>Optional</sup> <a name="lifecycle" id="@cdktf/provider-upcloud.FloatingIpAddressConfig.property.lifecycle"></a>
 
 ```typescript
@@ -19292,6 +20382,16 @@ public readonly provider: TerraformProvider;
 ```
 
 - *Type:* cdktf.TerraformProvider
+
+---
+
+##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-upcloud.FloatingIpAddressConfig.property.provisioners"></a>
+
+```typescript
+public readonly provisioners: IFileProvisioner | ILocalExecProvisioner | IRemoteExecProvisioner[];
+```
+
+- *Type:* cdktf.IFileProvisioner | cdktf.ILocalExecProvisioner | cdktf.IRemoteExecProvisioner[]
 
 ---
 
@@ -19380,15 +20480,28 @@ const loadbalancerBackendConfig: LoadbalancerBackendConfig = { ... }
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
+| <code><a href="#@cdktf/provider-upcloud.LoadbalancerBackendConfig.property.connection">connection</a></code> | <code>cdktf.ISSHProvisionerConnection \| cdktf.IWinrmProvisionerConnection</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.LoadbalancerBackendConfig.property.count">count</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.LoadbalancerBackendConfig.property.dependsOn">dependsOn</a></code> | <code>cdktf.ITerraformDependable[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-upcloud.LoadbalancerBackendConfig.property.forEach">forEach</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.LoadbalancerBackendConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.LoadbalancerBackendConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
+| <code><a href="#@cdktf/provider-upcloud.LoadbalancerBackendConfig.property.provisioners">provisioners</a></code> | <code>cdktf.IFileProvisioner \| cdktf.ILocalExecProvisioner \| cdktf.IRemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.LoadbalancerBackendConfig.property.loadbalancer">loadbalancer</a></code> | <code>string</code> | ID of the load balancer to which the backend is connected. |
 | <code><a href="#@cdktf/provider-upcloud.LoadbalancerBackendConfig.property.name">name</a></code> | <code>string</code> | The name of the backend must be unique within the load balancer service. |
 | <code><a href="#@cdktf/provider-upcloud.LoadbalancerBackendConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/upcloud/r/loadbalancer_backend#id LoadbalancerBackend#id}. |
 | <code><a href="#@cdktf/provider-upcloud.LoadbalancerBackendConfig.property.properties">properties</a></code> | <code><a href="#@cdktf/provider-upcloud.LoadbalancerBackendProperties">LoadbalancerBackendProperties</a></code> | properties block. |
 | <code><a href="#@cdktf/provider-upcloud.LoadbalancerBackendConfig.property.resolverName">resolverName</a></code> | <code>string</code> | Domain Name Resolver used with dynamic type members. |
+
+---
+
+##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-upcloud.LoadbalancerBackendConfig.property.connection"></a>
+
+```typescript
+public readonly connection: ISSHProvisionerConnection | IWinrmProvisionerConnection;
+```
+
+- *Type:* cdktf.ISSHProvisionerConnection | cdktf.IWinrmProvisionerConnection
 
 ---
 
@@ -19412,6 +20525,16 @@ public readonly dependsOn: ITerraformDependable[];
 
 ---
 
+##### `forEach`<sup>Optional</sup> <a name="forEach" id="@cdktf/provider-upcloud.LoadbalancerBackendConfig.property.forEach"></a>
+
+```typescript
+public readonly forEach: ITerraformIterator;
+```
+
+- *Type:* cdktf.ITerraformIterator
+
+---
+
 ##### `lifecycle`<sup>Optional</sup> <a name="lifecycle" id="@cdktf/provider-upcloud.LoadbalancerBackendConfig.property.lifecycle"></a>
 
 ```typescript
@@ -19429,6 +20552,16 @@ public readonly provider: TerraformProvider;
 ```
 
 - *Type:* cdktf.TerraformProvider
+
+---
+
+##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-upcloud.LoadbalancerBackendConfig.property.provisioners"></a>
+
+```typescript
+public readonly provisioners: IFileProvisioner | ILocalExecProvisioner | IRemoteExecProvisioner[];
+```
+
+- *Type:* cdktf.IFileProvisioner | cdktf.ILocalExecProvisioner | cdktf.IRemoteExecProvisioner[]
 
 ---
 
@@ -19684,16 +20817,29 @@ const loadbalancerConfig: LoadbalancerConfig = { ... }
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
+| <code><a href="#@cdktf/provider-upcloud.LoadbalancerConfig.property.connection">connection</a></code> | <code>cdktf.ISSHProvisionerConnection \| cdktf.IWinrmProvisionerConnection</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.LoadbalancerConfig.property.count">count</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.LoadbalancerConfig.property.dependsOn">dependsOn</a></code> | <code>cdktf.ITerraformDependable[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-upcloud.LoadbalancerConfig.property.forEach">forEach</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.LoadbalancerConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.LoadbalancerConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
+| <code><a href="#@cdktf/provider-upcloud.LoadbalancerConfig.property.provisioners">provisioners</a></code> | <code>cdktf.IFileProvisioner \| cdktf.ILocalExecProvisioner \| cdktf.IRemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.LoadbalancerConfig.property.name">name</a></code> | <code>string</code> | The name of the service must be unique within customer account. |
 | <code><a href="#@cdktf/provider-upcloud.LoadbalancerConfig.property.network">network</a></code> | <code>string</code> | Private network UUID where traffic will be routed. Must reside in load balancer zone. |
 | <code><a href="#@cdktf/provider-upcloud.LoadbalancerConfig.property.plan">plan</a></code> | <code>string</code> | Plan which the service will have. |
 | <code><a href="#@cdktf/provider-upcloud.LoadbalancerConfig.property.zone">zone</a></code> | <code>string</code> | Zone in which the service will be hosted, e.g. `fi-hel1`. |
 | <code><a href="#@cdktf/provider-upcloud.LoadbalancerConfig.property.configuredStatus">configuredStatus</a></code> | <code>string</code> | The service configured status indicates the service's current intended status. Managed by the customer. |
 | <code><a href="#@cdktf/provider-upcloud.LoadbalancerConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/upcloud/r/loadbalancer#id Loadbalancer#id}. |
+
+---
+
+##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-upcloud.LoadbalancerConfig.property.connection"></a>
+
+```typescript
+public readonly connection: ISSHProvisionerConnection | IWinrmProvisionerConnection;
+```
+
+- *Type:* cdktf.ISSHProvisionerConnection | cdktf.IWinrmProvisionerConnection
 
 ---
 
@@ -19717,6 +20863,16 @@ public readonly dependsOn: ITerraformDependable[];
 
 ---
 
+##### `forEach`<sup>Optional</sup> <a name="forEach" id="@cdktf/provider-upcloud.LoadbalancerConfig.property.forEach"></a>
+
+```typescript
+public readonly forEach: ITerraformIterator;
+```
+
+- *Type:* cdktf.ITerraformIterator
+
+---
+
 ##### `lifecycle`<sup>Optional</sup> <a name="lifecycle" id="@cdktf/provider-upcloud.LoadbalancerConfig.property.lifecycle"></a>
 
 ```typescript
@@ -19734,6 +20890,16 @@ public readonly provider: TerraformProvider;
 ```
 
 - *Type:* cdktf.TerraformProvider
+
+---
+
+##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-upcloud.LoadbalancerConfig.property.provisioners"></a>
+
+```typescript
+public readonly provisioners: IFileProvisioner | ILocalExecProvisioner | IRemoteExecProvisioner[];
+```
+
+- *Type:* cdktf.IFileProvisioner | cdktf.ILocalExecProvisioner | cdktf.IRemoteExecProvisioner[]
 
 ---
 
@@ -19836,10 +21002,13 @@ const loadbalancerDynamicBackendMemberConfig: LoadbalancerDynamicBackendMemberCo
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
+| <code><a href="#@cdktf/provider-upcloud.LoadbalancerDynamicBackendMemberConfig.property.connection">connection</a></code> | <code>cdktf.ISSHProvisionerConnection \| cdktf.IWinrmProvisionerConnection</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.LoadbalancerDynamicBackendMemberConfig.property.count">count</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.LoadbalancerDynamicBackendMemberConfig.property.dependsOn">dependsOn</a></code> | <code>cdktf.ITerraformDependable[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-upcloud.LoadbalancerDynamicBackendMemberConfig.property.forEach">forEach</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.LoadbalancerDynamicBackendMemberConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.LoadbalancerDynamicBackendMemberConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
+| <code><a href="#@cdktf/provider-upcloud.LoadbalancerDynamicBackendMemberConfig.property.provisioners">provisioners</a></code> | <code>cdktf.IFileProvisioner \| cdktf.ILocalExecProvisioner \| cdktf.IRemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.LoadbalancerDynamicBackendMemberConfig.property.backend">backend</a></code> | <code>string</code> | ID of the load balancer backend to which the member is connected. |
 | <code><a href="#@cdktf/provider-upcloud.LoadbalancerDynamicBackendMemberConfig.property.maxSessions">maxSessions</a></code> | <code>number</code> | Maximum number of sessions before queueing. |
 | <code><a href="#@cdktf/provider-upcloud.LoadbalancerDynamicBackendMemberConfig.property.name">name</a></code> | <code>string</code> | The name of the member must be unique within the load balancer backend service. |
@@ -19848,6 +21017,16 @@ const loadbalancerDynamicBackendMemberConfig: LoadbalancerDynamicBackendMemberCo
 | <code><a href="#@cdktf/provider-upcloud.LoadbalancerDynamicBackendMemberConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/upcloud/r/loadbalancer_dynamic_backend_member#id LoadbalancerDynamicBackendMember#id}. |
 | <code><a href="#@cdktf/provider-upcloud.LoadbalancerDynamicBackendMemberConfig.property.ip">ip</a></code> | <code>string</code> | Optional fallback IP address in case of failure on DNS resolving. |
 | <code><a href="#@cdktf/provider-upcloud.LoadbalancerDynamicBackendMemberConfig.property.port">port</a></code> | <code>number</code> | Server port. Port is optional and can be specified in DNS SRV record. |
+
+---
+
+##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-upcloud.LoadbalancerDynamicBackendMemberConfig.property.connection"></a>
+
+```typescript
+public readonly connection: ISSHProvisionerConnection | IWinrmProvisionerConnection;
+```
+
+- *Type:* cdktf.ISSHProvisionerConnection | cdktf.IWinrmProvisionerConnection
 
 ---
 
@@ -19871,6 +21050,16 @@ public readonly dependsOn: ITerraformDependable[];
 
 ---
 
+##### `forEach`<sup>Optional</sup> <a name="forEach" id="@cdktf/provider-upcloud.LoadbalancerDynamicBackendMemberConfig.property.forEach"></a>
+
+```typescript
+public readonly forEach: ITerraformIterator;
+```
+
+- *Type:* cdktf.ITerraformIterator
+
+---
+
 ##### `lifecycle`<sup>Optional</sup> <a name="lifecycle" id="@cdktf/provider-upcloud.LoadbalancerDynamicBackendMemberConfig.property.lifecycle"></a>
 
 ```typescript
@@ -19888,6 +21077,16 @@ public readonly provider: TerraformProvider;
 ```
 
 - *Type:* cdktf.TerraformProvider
+
+---
+
+##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-upcloud.LoadbalancerDynamicBackendMemberConfig.property.provisioners"></a>
+
+```typescript
+public readonly provisioners: IFileProvisioner | ILocalExecProvisioner | IRemoteExecProvisioner[];
+```
+
+- *Type:* cdktf.IFileProvisioner | cdktf.ILocalExecProvisioner | cdktf.IRemoteExecProvisioner[]
 
 ---
 
@@ -20021,14 +21220,27 @@ const loadbalancerDynamicCertificateBundleConfig: LoadbalancerDynamicCertificate
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
+| <code><a href="#@cdktf/provider-upcloud.LoadbalancerDynamicCertificateBundleConfig.property.connection">connection</a></code> | <code>cdktf.ISSHProvisionerConnection \| cdktf.IWinrmProvisionerConnection</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.LoadbalancerDynamicCertificateBundleConfig.property.count">count</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.LoadbalancerDynamicCertificateBundleConfig.property.dependsOn">dependsOn</a></code> | <code>cdktf.ITerraformDependable[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-upcloud.LoadbalancerDynamicCertificateBundleConfig.property.forEach">forEach</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.LoadbalancerDynamicCertificateBundleConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.LoadbalancerDynamicCertificateBundleConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
+| <code><a href="#@cdktf/provider-upcloud.LoadbalancerDynamicCertificateBundleConfig.property.provisioners">provisioners</a></code> | <code>cdktf.IFileProvisioner \| cdktf.ILocalExecProvisioner \| cdktf.IRemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.LoadbalancerDynamicCertificateBundleConfig.property.hostnames">hostnames</a></code> | <code>string[]</code> | Certificate hostnames. |
 | <code><a href="#@cdktf/provider-upcloud.LoadbalancerDynamicCertificateBundleConfig.property.keyType">keyType</a></code> | <code>string</code> | Private key type (`rsa` / `ecdsa`). |
 | <code><a href="#@cdktf/provider-upcloud.LoadbalancerDynamicCertificateBundleConfig.property.name">name</a></code> | <code>string</code> | The name of the bundle must be unique within customer account. |
 | <code><a href="#@cdktf/provider-upcloud.LoadbalancerDynamicCertificateBundleConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/upcloud/r/loadbalancer_dynamic_certificate_bundle#id LoadbalancerDynamicCertificateBundle#id}. |
+
+---
+
+##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-upcloud.LoadbalancerDynamicCertificateBundleConfig.property.connection"></a>
+
+```typescript
+public readonly connection: ISSHProvisionerConnection | IWinrmProvisionerConnection;
+```
+
+- *Type:* cdktf.ISSHProvisionerConnection | cdktf.IWinrmProvisionerConnection
 
 ---
 
@@ -20052,6 +21264,16 @@ public readonly dependsOn: ITerraformDependable[];
 
 ---
 
+##### `forEach`<sup>Optional</sup> <a name="forEach" id="@cdktf/provider-upcloud.LoadbalancerDynamicCertificateBundleConfig.property.forEach"></a>
+
+```typescript
+public readonly forEach: ITerraformIterator;
+```
+
+- *Type:* cdktf.ITerraformIterator
+
+---
+
 ##### `lifecycle`<sup>Optional</sup> <a name="lifecycle" id="@cdktf/provider-upcloud.LoadbalancerDynamicCertificateBundleConfig.property.lifecycle"></a>
 
 ```typescript
@@ -20069,6 +21291,16 @@ public readonly provider: TerraformProvider;
 ```
 
 - *Type:* cdktf.TerraformProvider
+
+---
+
+##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-upcloud.LoadbalancerDynamicCertificateBundleConfig.property.provisioners"></a>
+
+```typescript
+public readonly provisioners: IFileProvisioner | ILocalExecProvisioner | IRemoteExecProvisioner[];
+```
+
+- *Type:* cdktf.IFileProvisioner | cdktf.ILocalExecProvisioner | cdktf.IRemoteExecProvisioner[]
 
 ---
 
@@ -20143,10 +21375,13 @@ const loadbalancerFrontendConfig: LoadbalancerFrontendConfig = { ... }
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
+| <code><a href="#@cdktf/provider-upcloud.LoadbalancerFrontendConfig.property.connection">connection</a></code> | <code>cdktf.ISSHProvisionerConnection \| cdktf.IWinrmProvisionerConnection</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.LoadbalancerFrontendConfig.property.count">count</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.LoadbalancerFrontendConfig.property.dependsOn">dependsOn</a></code> | <code>cdktf.ITerraformDependable[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-upcloud.LoadbalancerFrontendConfig.property.forEach">forEach</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.LoadbalancerFrontendConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.LoadbalancerFrontendConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
+| <code><a href="#@cdktf/provider-upcloud.LoadbalancerFrontendConfig.property.provisioners">provisioners</a></code> | <code>cdktf.IFileProvisioner \| cdktf.ILocalExecProvisioner \| cdktf.IRemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.LoadbalancerFrontendConfig.property.defaultBackendName">defaultBackendName</a></code> | <code>string</code> | The name of the default backend where traffic will be routed. |
 | <code><a href="#@cdktf/provider-upcloud.LoadbalancerFrontendConfig.property.loadbalancer">loadbalancer</a></code> | <code>string</code> | ID of the load balancer to which the frontend is connected. |
 | <code><a href="#@cdktf/provider-upcloud.LoadbalancerFrontendConfig.property.mode">mode</a></code> | <code>string</code> | When load balancer operating in `tcp` mode it acts as a layer 4 proxy. |
@@ -20154,6 +21389,16 @@ const loadbalancerFrontendConfig: LoadbalancerFrontendConfig = { ... }
 | <code><a href="#@cdktf/provider-upcloud.LoadbalancerFrontendConfig.property.port">port</a></code> | <code>number</code> | Port to listen incoming requests. |
 | <code><a href="#@cdktf/provider-upcloud.LoadbalancerFrontendConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/upcloud/r/loadbalancer_frontend#id LoadbalancerFrontend#id}. |
 | <code><a href="#@cdktf/provider-upcloud.LoadbalancerFrontendConfig.property.properties">properties</a></code> | <code><a href="#@cdktf/provider-upcloud.LoadbalancerFrontendProperties">LoadbalancerFrontendProperties</a></code> | properties block. |
+
+---
+
+##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-upcloud.LoadbalancerFrontendConfig.property.connection"></a>
+
+```typescript
+public readonly connection: ISSHProvisionerConnection | IWinrmProvisionerConnection;
+```
+
+- *Type:* cdktf.ISSHProvisionerConnection | cdktf.IWinrmProvisionerConnection
 
 ---
 
@@ -20177,6 +21422,16 @@ public readonly dependsOn: ITerraformDependable[];
 
 ---
 
+##### `forEach`<sup>Optional</sup> <a name="forEach" id="@cdktf/provider-upcloud.LoadbalancerFrontendConfig.property.forEach"></a>
+
+```typescript
+public readonly forEach: ITerraformIterator;
+```
+
+- *Type:* cdktf.ITerraformIterator
+
+---
+
 ##### `lifecycle`<sup>Optional</sup> <a name="lifecycle" id="@cdktf/provider-upcloud.LoadbalancerFrontendConfig.property.lifecycle"></a>
 
 ```typescript
@@ -20194,6 +21449,16 @@ public readonly provider: TerraformProvider;
 ```
 
 - *Type:* cdktf.TerraformProvider
+
+---
+
+##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-upcloud.LoadbalancerFrontendConfig.property.provisioners"></a>
+
+```typescript
+public readonly provisioners: IFileProvisioner | ILocalExecProvisioner | IRemoteExecProvisioner[];
+```
+
+- *Type:* cdktf.IFileProvisioner | cdktf.ILocalExecProvisioner | cdktf.IRemoteExecProvisioner[]
 
 ---
 
@@ -20639,16 +21904,29 @@ const loadbalancerFrontendRuleConfig: LoadbalancerFrontendRuleConfig = { ... }
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
+| <code><a href="#@cdktf/provider-upcloud.LoadbalancerFrontendRuleConfig.property.connection">connection</a></code> | <code>cdktf.ISSHProvisionerConnection \| cdktf.IWinrmProvisionerConnection</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.LoadbalancerFrontendRuleConfig.property.count">count</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.LoadbalancerFrontendRuleConfig.property.dependsOn">dependsOn</a></code> | <code>cdktf.ITerraformDependable[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-upcloud.LoadbalancerFrontendRuleConfig.property.forEach">forEach</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.LoadbalancerFrontendRuleConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.LoadbalancerFrontendRuleConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
+| <code><a href="#@cdktf/provider-upcloud.LoadbalancerFrontendRuleConfig.property.provisioners">provisioners</a></code> | <code>cdktf.IFileProvisioner \| cdktf.ILocalExecProvisioner \| cdktf.IRemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.LoadbalancerFrontendRuleConfig.property.frontend">frontend</a></code> | <code>string</code> | ID of the load balancer frontend to which the rule is connected. |
 | <code><a href="#@cdktf/provider-upcloud.LoadbalancerFrontendRuleConfig.property.name">name</a></code> | <code>string</code> | The name of the frontend rule must be unique within the load balancer service. |
 | <code><a href="#@cdktf/provider-upcloud.LoadbalancerFrontendRuleConfig.property.priority">priority</a></code> | <code>number</code> | Rule with the higher priority goes first. Rules with the same priority processed in alphabetical order. |
 | <code><a href="#@cdktf/provider-upcloud.LoadbalancerFrontendRuleConfig.property.actions">actions</a></code> | <code><a href="#@cdktf/provider-upcloud.LoadbalancerFrontendRuleActions">LoadbalancerFrontendRuleActions</a></code> | actions block. |
 | <code><a href="#@cdktf/provider-upcloud.LoadbalancerFrontendRuleConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/upcloud/r/loadbalancer_frontend_rule#id LoadbalancerFrontendRule#id}. |
 | <code><a href="#@cdktf/provider-upcloud.LoadbalancerFrontendRuleConfig.property.matchers">matchers</a></code> | <code><a href="#@cdktf/provider-upcloud.LoadbalancerFrontendRuleMatchers">LoadbalancerFrontendRuleMatchers</a></code> | matchers block. |
+
+---
+
+##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-upcloud.LoadbalancerFrontendRuleConfig.property.connection"></a>
+
+```typescript
+public readonly connection: ISSHProvisionerConnection | IWinrmProvisionerConnection;
+```
+
+- *Type:* cdktf.ISSHProvisionerConnection | cdktf.IWinrmProvisionerConnection
 
 ---
 
@@ -20672,6 +21950,16 @@ public readonly dependsOn: ITerraformDependable[];
 
 ---
 
+##### `forEach`<sup>Optional</sup> <a name="forEach" id="@cdktf/provider-upcloud.LoadbalancerFrontendRuleConfig.property.forEach"></a>
+
+```typescript
+public readonly forEach: ITerraformIterator;
+```
+
+- *Type:* cdktf.ITerraformIterator
+
+---
+
 ##### `lifecycle`<sup>Optional</sup> <a name="lifecycle" id="@cdktf/provider-upcloud.LoadbalancerFrontendRuleConfig.property.lifecycle"></a>
 
 ```typescript
@@ -20689,6 +21977,16 @@ public readonly provider: TerraformProvider;
 ```
 
 - *Type:* cdktf.TerraformProvider
+
+---
+
+##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-upcloud.LoadbalancerFrontendRuleConfig.property.provisioners"></a>
+
+```typescript
+public readonly provisioners: IFileProvisioner | ILocalExecProvisioner | IRemoteExecProvisioner[];
+```
+
+- *Type:* cdktf.IFileProvisioner | cdktf.ILocalExecProvisioner | cdktf.IRemoteExecProvisioner[]
 
 ---
 
@@ -21793,14 +23091,27 @@ const loadbalancerFrontendTlsConfigConfig: LoadbalancerFrontendTlsConfigConfig =
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
+| <code><a href="#@cdktf/provider-upcloud.LoadbalancerFrontendTlsConfigConfig.property.connection">connection</a></code> | <code>cdktf.ISSHProvisionerConnection \| cdktf.IWinrmProvisionerConnection</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.LoadbalancerFrontendTlsConfigConfig.property.count">count</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.LoadbalancerFrontendTlsConfigConfig.property.dependsOn">dependsOn</a></code> | <code>cdktf.ITerraformDependable[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-upcloud.LoadbalancerFrontendTlsConfigConfig.property.forEach">forEach</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.LoadbalancerFrontendTlsConfigConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.LoadbalancerFrontendTlsConfigConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
+| <code><a href="#@cdktf/provider-upcloud.LoadbalancerFrontendTlsConfigConfig.property.provisioners">provisioners</a></code> | <code>cdktf.IFileProvisioner \| cdktf.ILocalExecProvisioner \| cdktf.IRemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.LoadbalancerFrontendTlsConfigConfig.property.certificateBundle">certificateBundle</a></code> | <code>string</code> | Reference to certificate bundle ID. |
 | <code><a href="#@cdktf/provider-upcloud.LoadbalancerFrontendTlsConfigConfig.property.frontend">frontend</a></code> | <code>string</code> | ID of the load balancer frontend to which the TLS config is connected. |
 | <code><a href="#@cdktf/provider-upcloud.LoadbalancerFrontendTlsConfigConfig.property.name">name</a></code> | <code>string</code> | The name of the TLS config must be unique within service frontend. |
 | <code><a href="#@cdktf/provider-upcloud.LoadbalancerFrontendTlsConfigConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/upcloud/r/loadbalancer_frontend_tls_config#id LoadbalancerFrontendTlsConfig#id}. |
+
+---
+
+##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-upcloud.LoadbalancerFrontendTlsConfigConfig.property.connection"></a>
+
+```typescript
+public readonly connection: ISSHProvisionerConnection | IWinrmProvisionerConnection;
+```
+
+- *Type:* cdktf.ISSHProvisionerConnection | cdktf.IWinrmProvisionerConnection
 
 ---
 
@@ -21824,6 +23135,16 @@ public readonly dependsOn: ITerraformDependable[];
 
 ---
 
+##### `forEach`<sup>Optional</sup> <a name="forEach" id="@cdktf/provider-upcloud.LoadbalancerFrontendTlsConfigConfig.property.forEach"></a>
+
+```typescript
+public readonly forEach: ITerraformIterator;
+```
+
+- *Type:* cdktf.ITerraformIterator
+
+---
+
 ##### `lifecycle`<sup>Optional</sup> <a name="lifecycle" id="@cdktf/provider-upcloud.LoadbalancerFrontendTlsConfigConfig.property.lifecycle"></a>
 
 ```typescript
@@ -21841,6 +23162,16 @@ public readonly provider: TerraformProvider;
 ```
 
 - *Type:* cdktf.TerraformProvider
+
+---
+
+##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-upcloud.LoadbalancerFrontendTlsConfigConfig.property.provisioners"></a>
+
+```typescript
+public readonly provisioners: IFileProvisioner | ILocalExecProvisioner | IRemoteExecProvisioner[];
+```
+
+- *Type:* cdktf.IFileProvisioner | cdktf.ILocalExecProvisioner | cdktf.IRemoteExecProvisioner[]
 
 ---
 
@@ -21915,15 +23246,28 @@ const loadbalancerManualCertificateBundleConfig: LoadbalancerManualCertificateBu
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
+| <code><a href="#@cdktf/provider-upcloud.LoadbalancerManualCertificateBundleConfig.property.connection">connection</a></code> | <code>cdktf.ISSHProvisionerConnection \| cdktf.IWinrmProvisionerConnection</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.LoadbalancerManualCertificateBundleConfig.property.count">count</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.LoadbalancerManualCertificateBundleConfig.property.dependsOn">dependsOn</a></code> | <code>cdktf.ITerraformDependable[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-upcloud.LoadbalancerManualCertificateBundleConfig.property.forEach">forEach</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.LoadbalancerManualCertificateBundleConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.LoadbalancerManualCertificateBundleConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
+| <code><a href="#@cdktf/provider-upcloud.LoadbalancerManualCertificateBundleConfig.property.provisioners">provisioners</a></code> | <code>cdktf.IFileProvisioner \| cdktf.ILocalExecProvisioner \| cdktf.IRemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.LoadbalancerManualCertificateBundleConfig.property.certificate">certificate</a></code> | <code>string</code> | Certificate within base64 string must be in PEM format. |
 | <code><a href="#@cdktf/provider-upcloud.LoadbalancerManualCertificateBundleConfig.property.name">name</a></code> | <code>string</code> | The name of the bundle must be unique within customer account. |
 | <code><a href="#@cdktf/provider-upcloud.LoadbalancerManualCertificateBundleConfig.property.privateKey">privateKey</a></code> | <code>string</code> | Private key within base64 string must be in PEM format. |
 | <code><a href="#@cdktf/provider-upcloud.LoadbalancerManualCertificateBundleConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/upcloud/r/loadbalancer_manual_certificate_bundle#id LoadbalancerManualCertificateBundle#id}. |
 | <code><a href="#@cdktf/provider-upcloud.LoadbalancerManualCertificateBundleConfig.property.intermediates">intermediates</a></code> | <code>string</code> | Intermediate certificates within base64 string must be in PEM format. |
+
+---
+
+##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-upcloud.LoadbalancerManualCertificateBundleConfig.property.connection"></a>
+
+```typescript
+public readonly connection: ISSHProvisionerConnection | IWinrmProvisionerConnection;
+```
+
+- *Type:* cdktf.ISSHProvisionerConnection | cdktf.IWinrmProvisionerConnection
 
 ---
 
@@ -21947,6 +23291,16 @@ public readonly dependsOn: ITerraformDependable[];
 
 ---
 
+##### `forEach`<sup>Optional</sup> <a name="forEach" id="@cdktf/provider-upcloud.LoadbalancerManualCertificateBundleConfig.property.forEach"></a>
+
+```typescript
+public readonly forEach: ITerraformIterator;
+```
+
+- *Type:* cdktf.ITerraformIterator
+
+---
+
 ##### `lifecycle`<sup>Optional</sup> <a name="lifecycle" id="@cdktf/provider-upcloud.LoadbalancerManualCertificateBundleConfig.property.lifecycle"></a>
 
 ```typescript
@@ -21964,6 +23318,16 @@ public readonly provider: TerraformProvider;
 ```
 
 - *Type:* cdktf.TerraformProvider
+
+---
+
+##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-upcloud.LoadbalancerManualCertificateBundleConfig.property.provisioners"></a>
+
+```typescript
+public readonly provisioners: IFileProvisioner | ILocalExecProvisioner | IRemoteExecProvisioner[];
+```
+
+- *Type:* cdktf.IFileProvisioner | cdktf.ILocalExecProvisioner | cdktf.IRemoteExecProvisioner[]
 
 ---
 
@@ -22052,10 +23416,13 @@ const loadbalancerResolverConfig: LoadbalancerResolverConfig = { ... }
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
+| <code><a href="#@cdktf/provider-upcloud.LoadbalancerResolverConfig.property.connection">connection</a></code> | <code>cdktf.ISSHProvisionerConnection \| cdktf.IWinrmProvisionerConnection</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.LoadbalancerResolverConfig.property.count">count</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.LoadbalancerResolverConfig.property.dependsOn">dependsOn</a></code> | <code>cdktf.ITerraformDependable[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-upcloud.LoadbalancerResolverConfig.property.forEach">forEach</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.LoadbalancerResolverConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.LoadbalancerResolverConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
+| <code><a href="#@cdktf/provider-upcloud.LoadbalancerResolverConfig.property.provisioners">provisioners</a></code> | <code>cdktf.IFileProvisioner \| cdktf.ILocalExecProvisioner \| cdktf.IRemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.LoadbalancerResolverConfig.property.cacheInvalid">cacheInvalid</a></code> | <code>number</code> | Time in seconds to cache invalid results. |
 | <code><a href="#@cdktf/provider-upcloud.LoadbalancerResolverConfig.property.cacheValid">cacheValid</a></code> | <code>number</code> | Time in seconds to cache valid results. |
 | <code><a href="#@cdktf/provider-upcloud.LoadbalancerResolverConfig.property.loadbalancer">loadbalancer</a></code> | <code>string</code> | ID of the load balancer to which the resolver is connected. |
@@ -22065,6 +23432,16 @@ const loadbalancerResolverConfig: LoadbalancerResolverConfig = { ... }
 | <code><a href="#@cdktf/provider-upcloud.LoadbalancerResolverConfig.property.timeout">timeout</a></code> | <code>number</code> | Timeout for the query in seconds. |
 | <code><a href="#@cdktf/provider-upcloud.LoadbalancerResolverConfig.property.timeoutRetry">timeoutRetry</a></code> | <code>number</code> | Timeout for the query retries in seconds. |
 | <code><a href="#@cdktf/provider-upcloud.LoadbalancerResolverConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/upcloud/r/loadbalancer_resolver#id LoadbalancerResolver#id}. |
+
+---
+
+##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-upcloud.LoadbalancerResolverConfig.property.connection"></a>
+
+```typescript
+public readonly connection: ISSHProvisionerConnection | IWinrmProvisionerConnection;
+```
+
+- *Type:* cdktf.ISSHProvisionerConnection | cdktf.IWinrmProvisionerConnection
 
 ---
 
@@ -22088,6 +23465,16 @@ public readonly dependsOn: ITerraformDependable[];
 
 ---
 
+##### `forEach`<sup>Optional</sup> <a name="forEach" id="@cdktf/provider-upcloud.LoadbalancerResolverConfig.property.forEach"></a>
+
+```typescript
+public readonly forEach: ITerraformIterator;
+```
+
+- *Type:* cdktf.ITerraformIterator
+
+---
+
 ##### `lifecycle`<sup>Optional</sup> <a name="lifecycle" id="@cdktf/provider-upcloud.LoadbalancerResolverConfig.property.lifecycle"></a>
 
 ```typescript
@@ -22105,6 +23492,16 @@ public readonly provider: TerraformProvider;
 ```
 
 - *Type:* cdktf.TerraformProvider
+
+---
+
+##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-upcloud.LoadbalancerResolverConfig.property.provisioners"></a>
+
+```typescript
+public readonly provisioners: IFileProvisioner | ILocalExecProvisioner | IRemoteExecProvisioner[];
+```
+
+- *Type:* cdktf.IFileProvisioner | cdktf.ILocalExecProvisioner | cdktf.IRemoteExecProvisioner[]
 
 ---
 
@@ -22252,10 +23649,13 @@ const loadbalancerStaticBackendMemberConfig: LoadbalancerStaticBackendMemberConf
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
+| <code><a href="#@cdktf/provider-upcloud.LoadbalancerStaticBackendMemberConfig.property.connection">connection</a></code> | <code>cdktf.ISSHProvisionerConnection \| cdktf.IWinrmProvisionerConnection</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.LoadbalancerStaticBackendMemberConfig.property.count">count</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.LoadbalancerStaticBackendMemberConfig.property.dependsOn">dependsOn</a></code> | <code>cdktf.ITerraformDependable[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-upcloud.LoadbalancerStaticBackendMemberConfig.property.forEach">forEach</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.LoadbalancerStaticBackendMemberConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.LoadbalancerStaticBackendMemberConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
+| <code><a href="#@cdktf/provider-upcloud.LoadbalancerStaticBackendMemberConfig.property.provisioners">provisioners</a></code> | <code>cdktf.IFileProvisioner \| cdktf.ILocalExecProvisioner \| cdktf.IRemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.LoadbalancerStaticBackendMemberConfig.property.backend">backend</a></code> | <code>string</code> | ID of the load balancer backend to which the member is connected. |
 | <code><a href="#@cdktf/provider-upcloud.LoadbalancerStaticBackendMemberConfig.property.ip">ip</a></code> | <code>string</code> | Server IP address in the customer private network. |
 | <code><a href="#@cdktf/provider-upcloud.LoadbalancerStaticBackendMemberConfig.property.maxSessions">maxSessions</a></code> | <code>number</code> | Maximum number of sessions before queueing. |
@@ -22264,6 +23664,16 @@ const loadbalancerStaticBackendMemberConfig: LoadbalancerStaticBackendMemberConf
 | <code><a href="#@cdktf/provider-upcloud.LoadbalancerStaticBackendMemberConfig.property.weight">weight</a></code> | <code>number</code> | Used to adjust the server's weight relative to other servers. |
 | <code><a href="#@cdktf/provider-upcloud.LoadbalancerStaticBackendMemberConfig.property.enabled">enabled</a></code> | <code>boolean \| cdktf.IResolvable</code> | Indicates if the member is enabled. Disabled members are excluded from load balancing. |
 | <code><a href="#@cdktf/provider-upcloud.LoadbalancerStaticBackendMemberConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/upcloud/r/loadbalancer_static_backend_member#id LoadbalancerStaticBackendMember#id}. |
+
+---
+
+##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-upcloud.LoadbalancerStaticBackendMemberConfig.property.connection"></a>
+
+```typescript
+public readonly connection: ISSHProvisionerConnection | IWinrmProvisionerConnection;
+```
+
+- *Type:* cdktf.ISSHProvisionerConnection | cdktf.IWinrmProvisionerConnection
 
 ---
 
@@ -22287,6 +23697,16 @@ public readonly dependsOn: ITerraformDependable[];
 
 ---
 
+##### `forEach`<sup>Optional</sup> <a name="forEach" id="@cdktf/provider-upcloud.LoadbalancerStaticBackendMemberConfig.property.forEach"></a>
+
+```typescript
+public readonly forEach: ITerraformIterator;
+```
+
+- *Type:* cdktf.ITerraformIterator
+
+---
+
 ##### `lifecycle`<sup>Optional</sup> <a name="lifecycle" id="@cdktf/provider-upcloud.LoadbalancerStaticBackendMemberConfig.property.lifecycle"></a>
 
 ```typescript
@@ -22304,6 +23724,16 @@ public readonly provider: TerraformProvider;
 ```
 
 - *Type:* cdktf.TerraformProvider
+
+---
+
+##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-upcloud.LoadbalancerStaticBackendMemberConfig.property.provisioners"></a>
+
+```typescript
+public readonly provisioners: IFileProvisioner | ILocalExecProvisioner | IRemoteExecProvisioner[];
+```
+
+- *Type:* cdktf.IFileProvisioner | cdktf.ILocalExecProvisioner | cdktf.IRemoteExecProvisioner[]
 
 ---
 
@@ -22437,15 +23867,28 @@ const managedDatabaseLogicalDatabaseConfig: ManagedDatabaseLogicalDatabaseConfig
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
+| <code><a href="#@cdktf/provider-upcloud.ManagedDatabaseLogicalDatabaseConfig.property.connection">connection</a></code> | <code>cdktf.ISSHProvisionerConnection \| cdktf.IWinrmProvisionerConnection</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.ManagedDatabaseLogicalDatabaseConfig.property.count">count</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.ManagedDatabaseLogicalDatabaseConfig.property.dependsOn">dependsOn</a></code> | <code>cdktf.ITerraformDependable[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-upcloud.ManagedDatabaseLogicalDatabaseConfig.property.forEach">forEach</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.ManagedDatabaseLogicalDatabaseConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.ManagedDatabaseLogicalDatabaseConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
+| <code><a href="#@cdktf/provider-upcloud.ManagedDatabaseLogicalDatabaseConfig.property.provisioners">provisioners</a></code> | <code>cdktf.IFileProvisioner \| cdktf.ILocalExecProvisioner \| cdktf.IRemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.ManagedDatabaseLogicalDatabaseConfig.property.name">name</a></code> | <code>string</code> | Name of the logical database. |
 | <code><a href="#@cdktf/provider-upcloud.ManagedDatabaseLogicalDatabaseConfig.property.service">service</a></code> | <code>string</code> | Service's UUID for which this user belongs to. |
 | <code><a href="#@cdktf/provider-upcloud.ManagedDatabaseLogicalDatabaseConfig.property.characterSet">characterSet</a></code> | <code>string</code> | Default character set for the database (LC_CTYPE). |
 | <code><a href="#@cdktf/provider-upcloud.ManagedDatabaseLogicalDatabaseConfig.property.collation">collation</a></code> | <code>string</code> | Default collation for the database (LC_COLLATE). |
 | <code><a href="#@cdktf/provider-upcloud.ManagedDatabaseLogicalDatabaseConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/upcloud/r/managed_database_logical_database#id ManagedDatabaseLogicalDatabase#id}. |
+
+---
+
+##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-upcloud.ManagedDatabaseLogicalDatabaseConfig.property.connection"></a>
+
+```typescript
+public readonly connection: ISSHProvisionerConnection | IWinrmProvisionerConnection;
+```
+
+- *Type:* cdktf.ISSHProvisionerConnection | cdktf.IWinrmProvisionerConnection
 
 ---
 
@@ -22469,6 +23912,16 @@ public readonly dependsOn: ITerraformDependable[];
 
 ---
 
+##### `forEach`<sup>Optional</sup> <a name="forEach" id="@cdktf/provider-upcloud.ManagedDatabaseLogicalDatabaseConfig.property.forEach"></a>
+
+```typescript
+public readonly forEach: ITerraformIterator;
+```
+
+- *Type:* cdktf.ITerraformIterator
+
+---
+
 ##### `lifecycle`<sup>Optional</sup> <a name="lifecycle" id="@cdktf/provider-upcloud.ManagedDatabaseLogicalDatabaseConfig.property.lifecycle"></a>
 
 ```typescript
@@ -22486,6 +23939,16 @@ public readonly provider: TerraformProvider;
 ```
 
 - *Type:* cdktf.TerraformProvider
+
+---
+
+##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-upcloud.ManagedDatabaseLogicalDatabaseConfig.property.provisioners"></a>
+
+```typescript
+public readonly provisioners: IFileProvisioner | ILocalExecProvisioner | IRemoteExecProvisioner[];
+```
+
+- *Type:* cdktf.IFileProvisioner | cdktf.ILocalExecProvisioner | cdktf.IRemoteExecProvisioner[]
 
 ---
 
@@ -22585,10 +24048,13 @@ const managedDatabaseMysqlConfig: ManagedDatabaseMysqlConfig = { ... }
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
+| <code><a href="#@cdktf/provider-upcloud.ManagedDatabaseMysqlConfig.property.connection">connection</a></code> | <code>cdktf.ISSHProvisionerConnection \| cdktf.IWinrmProvisionerConnection</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.ManagedDatabaseMysqlConfig.property.count">count</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.ManagedDatabaseMysqlConfig.property.dependsOn">dependsOn</a></code> | <code>cdktf.ITerraformDependable[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-upcloud.ManagedDatabaseMysqlConfig.property.forEach">forEach</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.ManagedDatabaseMysqlConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.ManagedDatabaseMysqlConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
+| <code><a href="#@cdktf/provider-upcloud.ManagedDatabaseMysqlConfig.property.provisioners">provisioners</a></code> | <code>cdktf.IFileProvisioner \| cdktf.ILocalExecProvisioner \| cdktf.IRemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.ManagedDatabaseMysqlConfig.property.name">name</a></code> | <code>string</code> | Name of the service. |
 | <code><a href="#@cdktf/provider-upcloud.ManagedDatabaseMysqlConfig.property.plan">plan</a></code> | <code>string</code> | Service plan to use. This determines how much resources the instance will have. |
 | <code><a href="#@cdktf/provider-upcloud.ManagedDatabaseMysqlConfig.property.zone">zone</a></code> | <code>string</code> | Zone where the instance resides. |
@@ -22598,6 +24064,16 @@ const managedDatabaseMysqlConfig: ManagedDatabaseMysqlConfig = { ... }
 | <code><a href="#@cdktf/provider-upcloud.ManagedDatabaseMysqlConfig.property.powered">powered</a></code> | <code>boolean \| cdktf.IResolvable</code> | The administrative power state of the service. |
 | <code><a href="#@cdktf/provider-upcloud.ManagedDatabaseMysqlConfig.property.properties">properties</a></code> | <code><a href="#@cdktf/provider-upcloud.ManagedDatabaseMysqlProperties">ManagedDatabaseMysqlProperties</a></code> | properties block. |
 | <code><a href="#@cdktf/provider-upcloud.ManagedDatabaseMysqlConfig.property.title">title</a></code> | <code>string</code> | Title of a managed database instance. |
+
+---
+
+##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-upcloud.ManagedDatabaseMysqlConfig.property.connection"></a>
+
+```typescript
+public readonly connection: ISSHProvisionerConnection | IWinrmProvisionerConnection;
+```
+
+- *Type:* cdktf.ISSHProvisionerConnection | cdktf.IWinrmProvisionerConnection
 
 ---
 
@@ -22621,6 +24097,16 @@ public readonly dependsOn: ITerraformDependable[];
 
 ---
 
+##### `forEach`<sup>Optional</sup> <a name="forEach" id="@cdktf/provider-upcloud.ManagedDatabaseMysqlConfig.property.forEach"></a>
+
+```typescript
+public readonly forEach: ITerraformIterator;
+```
+
+- *Type:* cdktf.ITerraformIterator
+
+---
+
 ##### `lifecycle`<sup>Optional</sup> <a name="lifecycle" id="@cdktf/provider-upcloud.ManagedDatabaseMysqlConfig.property.lifecycle"></a>
 
 ```typescript
@@ -22638,6 +24124,16 @@ public readonly provider: TerraformProvider;
 ```
 
 - *Type:* cdktf.TerraformProvider
+
+---
+
+##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-upcloud.ManagedDatabaseMysqlConfig.property.provisioners"></a>
+
+```typescript
+public readonly provisioners: IFileProvisioner | ILocalExecProvisioner | IRemoteExecProvisioner[];
+```
+
+- *Type:* cdktf.IFileProvisioner | cdktf.ILocalExecProvisioner | cdktf.IRemoteExecProvisioner[]
 
 ---
 
@@ -23463,10 +24959,13 @@ const managedDatabasePostgresqlConfig: ManagedDatabasePostgresqlConfig = { ... }
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
+| <code><a href="#@cdktf/provider-upcloud.ManagedDatabasePostgresqlConfig.property.connection">connection</a></code> | <code>cdktf.ISSHProvisionerConnection \| cdktf.IWinrmProvisionerConnection</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.ManagedDatabasePostgresqlConfig.property.count">count</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.ManagedDatabasePostgresqlConfig.property.dependsOn">dependsOn</a></code> | <code>cdktf.ITerraformDependable[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-upcloud.ManagedDatabasePostgresqlConfig.property.forEach">forEach</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.ManagedDatabasePostgresqlConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.ManagedDatabasePostgresqlConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
+| <code><a href="#@cdktf/provider-upcloud.ManagedDatabasePostgresqlConfig.property.provisioners">provisioners</a></code> | <code>cdktf.IFileProvisioner \| cdktf.ILocalExecProvisioner \| cdktf.IRemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.ManagedDatabasePostgresqlConfig.property.name">name</a></code> | <code>string</code> | Name of the service. |
 | <code><a href="#@cdktf/provider-upcloud.ManagedDatabasePostgresqlConfig.property.plan">plan</a></code> | <code>string</code> | Service plan to use. This determines how much resources the instance will have. |
 | <code><a href="#@cdktf/provider-upcloud.ManagedDatabasePostgresqlConfig.property.zone">zone</a></code> | <code>string</code> | Zone where the instance resides. |
@@ -23476,6 +24975,16 @@ const managedDatabasePostgresqlConfig: ManagedDatabasePostgresqlConfig = { ... }
 | <code><a href="#@cdktf/provider-upcloud.ManagedDatabasePostgresqlConfig.property.powered">powered</a></code> | <code>boolean \| cdktf.IResolvable</code> | The administrative power state of the service. |
 | <code><a href="#@cdktf/provider-upcloud.ManagedDatabasePostgresqlConfig.property.properties">properties</a></code> | <code><a href="#@cdktf/provider-upcloud.ManagedDatabasePostgresqlProperties">ManagedDatabasePostgresqlProperties</a></code> | properties block. |
 | <code><a href="#@cdktf/provider-upcloud.ManagedDatabasePostgresqlConfig.property.title">title</a></code> | <code>string</code> | Title of a managed database instance. |
+
+---
+
+##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-upcloud.ManagedDatabasePostgresqlConfig.property.connection"></a>
+
+```typescript
+public readonly connection: ISSHProvisionerConnection | IWinrmProvisionerConnection;
+```
+
+- *Type:* cdktf.ISSHProvisionerConnection | cdktf.IWinrmProvisionerConnection
 
 ---
 
@@ -23499,6 +25008,16 @@ public readonly dependsOn: ITerraformDependable[];
 
 ---
 
+##### `forEach`<sup>Optional</sup> <a name="forEach" id="@cdktf/provider-upcloud.ManagedDatabasePostgresqlConfig.property.forEach"></a>
+
+```typescript
+public readonly forEach: ITerraformIterator;
+```
+
+- *Type:* cdktf.ITerraformIterator
+
+---
+
 ##### `lifecycle`<sup>Optional</sup> <a name="lifecycle" id="@cdktf/provider-upcloud.ManagedDatabasePostgresqlConfig.property.lifecycle"></a>
 
 ```typescript
@@ -23516,6 +25035,16 @@ public readonly provider: TerraformProvider;
 ```
 
 - *Type:* cdktf.TerraformProvider
+
+---
+
+##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-upcloud.ManagedDatabasePostgresqlConfig.property.provisioners"></a>
+
+```typescript
+public readonly provisioners: IFileProvisioner | ILocalExecProvisioner | IRemoteExecProvisioner[];
+```
+
+- *Type:* cdktf.IFileProvisioner | cdktf.ILocalExecProvisioner | cdktf.IRemoteExecProvisioner[]
 
 ---
 
@@ -24974,14 +26503,27 @@ const managedDatabaseUserConfig: ManagedDatabaseUserConfig = { ... }
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
+| <code><a href="#@cdktf/provider-upcloud.ManagedDatabaseUserConfig.property.connection">connection</a></code> | <code>cdktf.ISSHProvisionerConnection \| cdktf.IWinrmProvisionerConnection</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.ManagedDatabaseUserConfig.property.count">count</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.ManagedDatabaseUserConfig.property.dependsOn">dependsOn</a></code> | <code>cdktf.ITerraformDependable[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-upcloud.ManagedDatabaseUserConfig.property.forEach">forEach</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.ManagedDatabaseUserConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.ManagedDatabaseUserConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
+| <code><a href="#@cdktf/provider-upcloud.ManagedDatabaseUserConfig.property.provisioners">provisioners</a></code> | <code>cdktf.IFileProvisioner \| cdktf.ILocalExecProvisioner \| cdktf.IRemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.ManagedDatabaseUserConfig.property.service">service</a></code> | <code>string</code> | Service's UUID for which this user belongs to. |
 | <code><a href="#@cdktf/provider-upcloud.ManagedDatabaseUserConfig.property.username">username</a></code> | <code>string</code> | Name of the database user. |
 | <code><a href="#@cdktf/provider-upcloud.ManagedDatabaseUserConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/upcloud/r/managed_database_user#id ManagedDatabaseUser#id}. |
 | <code><a href="#@cdktf/provider-upcloud.ManagedDatabaseUserConfig.property.password">password</a></code> | <code>string</code> | Password for the database user. Defaults to a random value. |
+
+---
+
+##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-upcloud.ManagedDatabaseUserConfig.property.connection"></a>
+
+```typescript
+public readonly connection: ISSHProvisionerConnection | IWinrmProvisionerConnection;
+```
+
+- *Type:* cdktf.ISSHProvisionerConnection | cdktf.IWinrmProvisionerConnection
 
 ---
 
@@ -25005,6 +26547,16 @@ public readonly dependsOn: ITerraformDependable[];
 
 ---
 
+##### `forEach`<sup>Optional</sup> <a name="forEach" id="@cdktf/provider-upcloud.ManagedDatabaseUserConfig.property.forEach"></a>
+
+```typescript
+public readonly forEach: ITerraformIterator;
+```
+
+- *Type:* cdktf.ITerraformIterator
+
+---
+
 ##### `lifecycle`<sup>Optional</sup> <a name="lifecycle" id="@cdktf/provider-upcloud.ManagedDatabaseUserConfig.property.lifecycle"></a>
 
 ```typescript
@@ -25022,6 +26574,16 @@ public readonly provider: TerraformProvider;
 ```
 
 - *Type:* cdktf.TerraformProvider
+
+---
+
+##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-upcloud.ManagedDatabaseUserConfig.property.provisioners"></a>
+
+```typescript
+public readonly provisioners: IFileProvisioner | ILocalExecProvisioner | IRemoteExecProvisioner[];
+```
+
+- *Type:* cdktf.IFileProvisioner | cdktf.ILocalExecProvisioner | cdktf.IRemoteExecProvisioner[]
 
 ---
 
@@ -25096,15 +26658,28 @@ const networkConfig: NetworkConfig = { ... }
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
+| <code><a href="#@cdktf/provider-upcloud.NetworkConfig.property.connection">connection</a></code> | <code>cdktf.ISSHProvisionerConnection \| cdktf.IWinrmProvisionerConnection</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.NetworkConfig.property.count">count</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.NetworkConfig.property.dependsOn">dependsOn</a></code> | <code>cdktf.ITerraformDependable[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-upcloud.NetworkConfig.property.forEach">forEach</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.NetworkConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.NetworkConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
+| <code><a href="#@cdktf/provider-upcloud.NetworkConfig.property.provisioners">provisioners</a></code> | <code>cdktf.IFileProvisioner \| cdktf.ILocalExecProvisioner \| cdktf.IRemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.NetworkConfig.property.ipNetwork">ipNetwork</a></code> | <code><a href="#@cdktf/provider-upcloud.NetworkIpNetwork">NetworkIpNetwork</a></code> | ip_network block. |
 | <code><a href="#@cdktf/provider-upcloud.NetworkConfig.property.name">name</a></code> | <code>string</code> | A valid name for the network. |
 | <code><a href="#@cdktf/provider-upcloud.NetworkConfig.property.zone">zone</a></code> | <code>string</code> | The zone the network is in. |
 | <code><a href="#@cdktf/provider-upcloud.NetworkConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/upcloud/r/network#id Network#id}. |
 | <code><a href="#@cdktf/provider-upcloud.NetworkConfig.property.router">router</a></code> | <code>string</code> | The UUID of a router. |
+
+---
+
+##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-upcloud.NetworkConfig.property.connection"></a>
+
+```typescript
+public readonly connection: ISSHProvisionerConnection | IWinrmProvisionerConnection;
+```
+
+- *Type:* cdktf.ISSHProvisionerConnection | cdktf.IWinrmProvisionerConnection
 
 ---
 
@@ -25128,6 +26703,16 @@ public readonly dependsOn: ITerraformDependable[];
 
 ---
 
+##### `forEach`<sup>Optional</sup> <a name="forEach" id="@cdktf/provider-upcloud.NetworkConfig.property.forEach"></a>
+
+```typescript
+public readonly forEach: ITerraformIterator;
+```
+
+- *Type:* cdktf.ITerraformIterator
+
+---
+
 ##### `lifecycle`<sup>Optional</sup> <a name="lifecycle" id="@cdktf/provider-upcloud.NetworkConfig.property.lifecycle"></a>
 
 ```typescript
@@ -25145,6 +26730,16 @@ public readonly provider: TerraformProvider;
 ```
 
 - *Type:* cdktf.TerraformProvider
+
+---
+
+##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-upcloud.NetworkConfig.property.provisioners"></a>
+
+```typescript
+public readonly provisioners: IFileProvisioner | ILocalExecProvisioner | IRemoteExecProvisioner[];
+```
+
+- *Type:* cdktf.IFileProvisioner | cdktf.ILocalExecProvisioner | cdktf.IRemoteExecProvisioner[]
 
 ---
 
@@ -25372,10 +26967,13 @@ const objectStorageConfig: ObjectStorageConfig = { ... }
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
+| <code><a href="#@cdktf/provider-upcloud.ObjectStorageConfig.property.connection">connection</a></code> | <code>cdktf.ISSHProvisionerConnection \| cdktf.IWinrmProvisionerConnection</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.ObjectStorageConfig.property.count">count</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.ObjectStorageConfig.property.dependsOn">dependsOn</a></code> | <code>cdktf.ITerraformDependable[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-upcloud.ObjectStorageConfig.property.forEach">forEach</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.ObjectStorageConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.ObjectStorageConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
+| <code><a href="#@cdktf/provider-upcloud.ObjectStorageConfig.property.provisioners">provisioners</a></code> | <code>cdktf.IFileProvisioner \| cdktf.ILocalExecProvisioner \| cdktf.IRemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.ObjectStorageConfig.property.accessKey">accessKey</a></code> | <code>string</code> | The access key used to identify user. |
 | <code><a href="#@cdktf/provider-upcloud.ObjectStorageConfig.property.name">name</a></code> | <code>string</code> | The name of the object storage instance to be created. |
 | <code><a href="#@cdktf/provider-upcloud.ObjectStorageConfig.property.secretKey">secretKey</a></code> | <code>string</code> | The secret key used to authenticate user. |
@@ -25384,6 +26982,16 @@ const objectStorageConfig: ObjectStorageConfig = { ... }
 | <code><a href="#@cdktf/provider-upcloud.ObjectStorageConfig.property.bucket">bucket</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-upcloud.ObjectStorageBucket">ObjectStorageBucket</a>[]</code> | bucket block. |
 | <code><a href="#@cdktf/provider-upcloud.ObjectStorageConfig.property.description">description</a></code> | <code>string</code> | The description of the object storage instance to be created. |
 | <code><a href="#@cdktf/provider-upcloud.ObjectStorageConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/upcloud/r/object_storage#id ObjectStorage#id}. |
+
+---
+
+##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-upcloud.ObjectStorageConfig.property.connection"></a>
+
+```typescript
+public readonly connection: ISSHProvisionerConnection | IWinrmProvisionerConnection;
+```
+
+- *Type:* cdktf.ISSHProvisionerConnection | cdktf.IWinrmProvisionerConnection
 
 ---
 
@@ -25407,6 +27015,16 @@ public readonly dependsOn: ITerraformDependable[];
 
 ---
 
+##### `forEach`<sup>Optional</sup> <a name="forEach" id="@cdktf/provider-upcloud.ObjectStorageConfig.property.forEach"></a>
+
+```typescript
+public readonly forEach: ITerraformIterator;
+```
+
+- *Type:* cdktf.ITerraformIterator
+
+---
+
 ##### `lifecycle`<sup>Optional</sup> <a name="lifecycle" id="@cdktf/provider-upcloud.ObjectStorageConfig.property.lifecycle"></a>
 
 ```typescript
@@ -25424,6 +27042,16 @@ public readonly provider: TerraformProvider;
 ```
 
 - *Type:* cdktf.TerraformProvider
+
+---
+
+##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-upcloud.ObjectStorageConfig.property.provisioners"></a>
+
+```typescript
+public readonly provisioners: IFileProvisioner | ILocalExecProvisioner | IRemoteExecProvisioner[];
+```
+
+- *Type:* cdktf.IFileProvisioner | cdktf.ILocalExecProvisioner | cdktf.IRemoteExecProvisioner[]
 
 ---
 
@@ -25566,12 +27194,25 @@ const routerConfig: RouterConfig = { ... }
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
+| <code><a href="#@cdktf/provider-upcloud.RouterConfig.property.connection">connection</a></code> | <code>cdktf.ISSHProvisionerConnection \| cdktf.IWinrmProvisionerConnection</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.RouterConfig.property.count">count</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.RouterConfig.property.dependsOn">dependsOn</a></code> | <code>cdktf.ITerraformDependable[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-upcloud.RouterConfig.property.forEach">forEach</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.RouterConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.RouterConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
+| <code><a href="#@cdktf/provider-upcloud.RouterConfig.property.provisioners">provisioners</a></code> | <code>cdktf.IFileProvisioner \| cdktf.ILocalExecProvisioner \| cdktf.IRemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.RouterConfig.property.name">name</a></code> | <code>string</code> | Name of the router. |
 | <code><a href="#@cdktf/provider-upcloud.RouterConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/upcloud/r/router#id Router#id}. |
+
+---
+
+##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-upcloud.RouterConfig.property.connection"></a>
+
+```typescript
+public readonly connection: ISSHProvisionerConnection | IWinrmProvisionerConnection;
+```
+
+- *Type:* cdktf.ISSHProvisionerConnection | cdktf.IWinrmProvisionerConnection
 
 ---
 
@@ -25595,6 +27236,16 @@ public readonly dependsOn: ITerraformDependable[];
 
 ---
 
+##### `forEach`<sup>Optional</sup> <a name="forEach" id="@cdktf/provider-upcloud.RouterConfig.property.forEach"></a>
+
+```typescript
+public readonly forEach: ITerraformIterator;
+```
+
+- *Type:* cdktf.ITerraformIterator
+
+---
+
 ##### `lifecycle`<sup>Optional</sup> <a name="lifecycle" id="@cdktf/provider-upcloud.RouterConfig.property.lifecycle"></a>
 
 ```typescript
@@ -25612,6 +27263,16 @@ public readonly provider: TerraformProvider;
 ```
 
 - *Type:* cdktf.TerraformProvider
+
+---
+
+##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-upcloud.RouterConfig.property.provisioners"></a>
+
+```typescript
+public readonly provisioners: IFileProvisioner | ILocalExecProvisioner | IRemoteExecProvisioner[];
+```
+
+- *Type:* cdktf.IFileProvisioner | cdktf.ILocalExecProvisioner | cdktf.IRemoteExecProvisioner[]
 
 ---
 
@@ -25658,10 +27319,13 @@ const serverConfig: ServerConfig = { ... }
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
+| <code><a href="#@cdktf/provider-upcloud.ServerConfig.property.connection">connection</a></code> | <code>cdktf.ISSHProvisionerConnection \| cdktf.IWinrmProvisionerConnection</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.ServerConfig.property.count">count</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.ServerConfig.property.dependsOn">dependsOn</a></code> | <code>cdktf.ITerraformDependable[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-upcloud.ServerConfig.property.forEach">forEach</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.ServerConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.ServerConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
+| <code><a href="#@cdktf/provider-upcloud.ServerConfig.property.provisioners">provisioners</a></code> | <code>cdktf.IFileProvisioner \| cdktf.ILocalExecProvisioner \| cdktf.IRemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.ServerConfig.property.hostname">hostname</a></code> | <code>string</code> | A valid domain name. |
 | <code><a href="#@cdktf/provider-upcloud.ServerConfig.property.networkInterface">networkInterface</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-upcloud.ServerNetworkInterface">ServerNetworkInterface</a>[]</code> | network_interface block. |
 | <code><a href="#@cdktf/provider-upcloud.ServerConfig.property.zone">zone</a></code> | <code>string</code> | The zone in which the server will be hosted. |
@@ -25679,6 +27343,16 @@ const serverConfig: ServerConfig = { ... }
 | <code><a href="#@cdktf/provider-upcloud.ServerConfig.property.template">template</a></code> | <code><a href="#@cdktf/provider-upcloud.ServerTemplate">ServerTemplate</a></code> | template block. |
 | <code><a href="#@cdktf/provider-upcloud.ServerConfig.property.title">title</a></code> | <code>string</code> | A short, informational description. |
 | <code><a href="#@cdktf/provider-upcloud.ServerConfig.property.userData">userData</a></code> | <code>string</code> | Defines URL for a server setup script, or the script body itself. |
+
+---
+
+##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-upcloud.ServerConfig.property.connection"></a>
+
+```typescript
+public readonly connection: ISSHProvisionerConnection | IWinrmProvisionerConnection;
+```
+
+- *Type:* cdktf.ISSHProvisionerConnection | cdktf.IWinrmProvisionerConnection
 
 ---
 
@@ -25702,6 +27376,16 @@ public readonly dependsOn: ITerraformDependable[];
 
 ---
 
+##### `forEach`<sup>Optional</sup> <a name="forEach" id="@cdktf/provider-upcloud.ServerConfig.property.forEach"></a>
+
+```typescript
+public readonly forEach: ITerraformIterator;
+```
+
+- *Type:* cdktf.ITerraformIterator
+
+---
+
 ##### `lifecycle`<sup>Optional</sup> <a name="lifecycle" id="@cdktf/provider-upcloud.ServerConfig.property.lifecycle"></a>
 
 ```typescript
@@ -25719,6 +27403,16 @@ public readonly provider: TerraformProvider;
 ```
 
 - *Type:* cdktf.TerraformProvider
+
+---
+
+##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-upcloud.ServerConfig.property.provisioners"></a>
+
+```typescript
+public readonly provisioners: IFileProvisioner | ILocalExecProvisioner | IRemoteExecProvisioner[];
+```
+
+- *Type:* cdktf.IFileProvisioner | cdktf.ILocalExecProvisioner | cdktf.IRemoteExecProvisioner[]
 
 ---
 
@@ -26559,10 +28253,13 @@ const storageConfig: StorageConfig = { ... }
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
+| <code><a href="#@cdktf/provider-upcloud.StorageConfig.property.connection">connection</a></code> | <code>cdktf.ISSHProvisionerConnection \| cdktf.IWinrmProvisionerConnection</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.StorageConfig.property.count">count</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.StorageConfig.property.dependsOn">dependsOn</a></code> | <code>cdktf.ITerraformDependable[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-upcloud.StorageConfig.property.forEach">forEach</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.StorageConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.StorageConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
+| <code><a href="#@cdktf/provider-upcloud.StorageConfig.property.provisioners">provisioners</a></code> | <code>cdktf.IFileProvisioner \| cdktf.ILocalExecProvisioner \| cdktf.IRemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.StorageConfig.property.size">size</a></code> | <code>number</code> | The size of the storage in gigabytes. |
 | <code><a href="#@cdktf/provider-upcloud.StorageConfig.property.title">title</a></code> | <code>string</code> | A short, informative description. |
 | <code><a href="#@cdktf/provider-upcloud.StorageConfig.property.zone">zone</a></code> | <code>string</code> | The zone in which the storage will be created. |
@@ -26573,6 +28270,16 @@ const storageConfig: StorageConfig = { ... }
 | <code><a href="#@cdktf/provider-upcloud.StorageConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/upcloud/r/storage#id Storage#id}. |
 | <code><a href="#@cdktf/provider-upcloud.StorageConfig.property.import">import</a></code> | <code><a href="#@cdktf/provider-upcloud.StorageImport">StorageImport</a></code> | import block. |
 | <code><a href="#@cdktf/provider-upcloud.StorageConfig.property.tier">tier</a></code> | <code>string</code> | The storage tier to use. |
+
+---
+
+##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-upcloud.StorageConfig.property.connection"></a>
+
+```typescript
+public readonly connection: ISSHProvisionerConnection | IWinrmProvisionerConnection;
+```
+
+- *Type:* cdktf.ISSHProvisionerConnection | cdktf.IWinrmProvisionerConnection
 
 ---
 
@@ -26596,6 +28303,16 @@ public readonly dependsOn: ITerraformDependable[];
 
 ---
 
+##### `forEach`<sup>Optional</sup> <a name="forEach" id="@cdktf/provider-upcloud.StorageConfig.property.forEach"></a>
+
+```typescript
+public readonly forEach: ITerraformIterator;
+```
+
+- *Type:* cdktf.ITerraformIterator
+
+---
+
 ##### `lifecycle`<sup>Optional</sup> <a name="lifecycle" id="@cdktf/provider-upcloud.StorageConfig.property.lifecycle"></a>
 
 ```typescript
@@ -26613,6 +28330,16 @@ public readonly provider: TerraformProvider;
 ```
 
 - *Type:* cdktf.TerraformProvider
+
+---
+
+##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-upcloud.StorageConfig.property.provisioners"></a>
+
+```typescript
+public readonly provisioners: IFileProvisioner | ILocalExecProvisioner | IRemoteExecProvisioner[];
+```
+
+- *Type:* cdktf.IFileProvisioner | cdktf.ILocalExecProvisioner | cdktf.IRemoteExecProvisioner[]
 
 ---
 
@@ -26837,14 +28564,27 @@ const tagConfig: TagConfig = { ... }
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
+| <code><a href="#@cdktf/provider-upcloud.TagConfig.property.connection">connection</a></code> | <code>cdktf.ISSHProvisionerConnection \| cdktf.IWinrmProvisionerConnection</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.TagConfig.property.count">count</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.TagConfig.property.dependsOn">dependsOn</a></code> | <code>cdktf.ITerraformDependable[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-upcloud.TagConfig.property.forEach">forEach</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.TagConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.TagConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
+| <code><a href="#@cdktf/provider-upcloud.TagConfig.property.provisioners">provisioners</a></code> | <code>cdktf.IFileProvisioner \| cdktf.ILocalExecProvisioner \| cdktf.IRemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.TagConfig.property.name">name</a></code> | <code>string</code> | The value representing the tag. |
 | <code><a href="#@cdktf/provider-upcloud.TagConfig.property.description">description</a></code> | <code>string</code> | Free form text representing the meaning of the tag. |
 | <code><a href="#@cdktf/provider-upcloud.TagConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/upcloud/r/tag#id Tag#id}. |
 | <code><a href="#@cdktf/provider-upcloud.TagConfig.property.servers">servers</a></code> | <code>string[]</code> | A collection of servers that have been assigned the tag. |
+
+---
+
+##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-upcloud.TagConfig.property.connection"></a>
+
+```typescript
+public readonly connection: ISSHProvisionerConnection | IWinrmProvisionerConnection;
+```
+
+- *Type:* cdktf.ISSHProvisionerConnection | cdktf.IWinrmProvisionerConnection
 
 ---
 
@@ -26868,6 +28608,16 @@ public readonly dependsOn: ITerraformDependable[];
 
 ---
 
+##### `forEach`<sup>Optional</sup> <a name="forEach" id="@cdktf/provider-upcloud.TagConfig.property.forEach"></a>
+
+```typescript
+public readonly forEach: ITerraformIterator;
+```
+
+- *Type:* cdktf.ITerraformIterator
+
+---
+
 ##### `lifecycle`<sup>Optional</sup> <a name="lifecycle" id="@cdktf/provider-upcloud.TagConfig.property.lifecycle"></a>
 
 ```typescript
@@ -26885,6 +28635,16 @@ public readonly provider: TerraformProvider;
 ```
 
 - *Type:* cdktf.TerraformProvider
+
+---
+
+##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-upcloud.TagConfig.property.provisioners"></a>
+
+```typescript
+public readonly provisioners: IFileProvisioner | ILocalExecProvisioner | IRemoteExecProvisioner[];
+```
+
+- *Type:* cdktf.IFileProvisioner | cdktf.ILocalExecProvisioner | cdktf.IRemoteExecProvisioner[]
 
 ---
 
