@@ -8,11 +8,11 @@ import * as cdktf from 'cdktf';
 
 export interface UpcloudProviderConfig {
   /**
-  * Password for UpCloud API user
+  * Password for UpCloud API user. Can also be configured using the `UPCLOUD_PASSWORD` environment variable.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/upcloud#password UpcloudProvider#password}
   */
-  readonly password: string;
+  readonly password?: string;
   /**
   * Maximum number of retries
   * 
@@ -32,11 +32,11 @@ export interface UpcloudProviderConfig {
   */
   readonly retryWaitMinSec?: number;
   /**
-  * UpCloud username with API access
+  * UpCloud username with API access. Can also be configured using the `UPCLOUD_USERNAME` environment variable.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/upcloud#username UpcloudProvider#username}
   */
-  readonly username: string;
+  readonly username?: string;
   /**
   * Alias name
   * 
@@ -64,14 +64,14 @@ export class UpcloudProvider extends cdktf.TerraformProvider {
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
-  * @param options UpcloudProviderConfig
+  * @param options UpcloudProviderConfig = {}
   */
-  public constructor(scope: Construct, id: string, config: UpcloudProviderConfig) {
+  public constructor(scope: Construct, id: string, config: UpcloudProviderConfig = {}) {
     super(scope, id, {
       terraformResourceType: 'upcloud',
       terraformGeneratorMetadata: {
         providerName: 'upcloud',
-        providerVersion: '2.5.0',
+        providerVersion: '2.6.1',
         providerVersionConstraint: '~> 2.4'
       },
       terraformProviderSource: 'UpCloudLtd/upcloud'
@@ -88,13 +88,16 @@ export class UpcloudProvider extends cdktf.TerraformProvider {
   // ATTRIBUTES
   // ==========
 
-  // password - computed: false, optional: false, required: true
+  // password - computed: false, optional: true, required: false
   private _password?: string; 
   public get password() {
     return this._password;
   }
   public set password(value: string | undefined) {
     this._password = value;
+  }
+  public resetPassword() {
+    this._password = undefined;
   }
   // Temporarily expose input value. Use with caution.
   public get passwordInput() {
@@ -149,13 +152,16 @@ export class UpcloudProvider extends cdktf.TerraformProvider {
     return this._retryWaitMinSec;
   }
 
-  // username - computed: false, optional: false, required: true
+  // username - computed: false, optional: true, required: false
   private _username?: string; 
   public get username() {
     return this._username;
   }
   public set username(value: string | undefined) {
     this._username = value;
+  }
+  public resetUsername() {
+    this._username = undefined;
   }
   // Temporarily expose input value. Use with caution.
   public get usernameInput() {

@@ -60,7 +60,7 @@ export class ManagedDatabaseUser extends cdktf.TerraformResource {
       terraformResourceType: 'upcloud_managed_database_user',
       terraformGeneratorMetadata: {
         providerName: 'upcloud',
-        providerVersion: '2.5.0',
+        providerVersion: '2.6.1',
         providerVersionConstraint: '~> 2.4'
       },
       provider: config.provider,

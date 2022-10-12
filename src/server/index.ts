@@ -39,6 +39,12 @@ export interface ServerConfig extends cdktf.TerraformMetaArguments {
   */
   readonly id?: string;
   /**
+  * Labels contain key-value pairs to classify the server
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/upcloud/r/server#labels Server#labels}
+  */
+  readonly labels?: { [key: string]: string };
+  /**
   * The size of memory for the server (in megabytes)
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/upcloud/r/server#mem Server#mem}
@@ -125,7 +131,7 @@ export interface ServerLogin {
   */
   readonly keys?: string[];
   /**
-  * The delivery method for the server’s root password
+  * The delivery method for the server's root password (one of `none`, `email` or `sms`)
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/upcloud/r/server#password_delivery Server#password_delivery}
   */
@@ -1154,7 +1160,7 @@ export class Server extends cdktf.TerraformResource {
       terraformResourceType: 'upcloud_server',
       terraformGeneratorMetadata: {
         providerName: 'upcloud',
-        providerVersion: '2.5.0',
+        providerVersion: '2.6.1',
         providerVersionConstraint: '~> 2.4'
       },
       provider: config.provider,
@@ -1170,6 +1176,7 @@ export class Server extends cdktf.TerraformResource {
     this._host = config.host;
     this._hostname = config.hostname;
     this._id = config.id;
+    this._labels = config.labels;
     this._mem = config.mem;
     this._metadata = config.metadata;
     this._plan = config.plan;
@@ -1263,6 +1270,22 @@ export class Server extends cdktf.TerraformResource {
   // Temporarily expose input value. Use with caution.
   public get idInput() {
     return this._id;
+  }
+
+  // labels - computed: false, optional: true, required: false
+  private _labels?: { [key: string]: string }; 
+  public get labels() {
+    return this.getStringMapAttribute('labels');
+  }
+  public set labels(value: { [key: string]: string }) {
+    this._labels = value;
+  }
+  public resetLabels() {
+    this._labels = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get labelsInput() {
+    return this._labels;
   }
 
   // mem - computed: true, optional: true, required: false
@@ -1462,6 +1485,7 @@ export class Server extends cdktf.TerraformResource {
       host: cdktf.numberToTerraform(this._host),
       hostname: cdktf.stringToTerraform(this._hostname),
       id: cdktf.stringToTerraform(this._id),
+      labels: cdktf.hashMapper(cdktf.stringToTerraform)(this._labels),
       mem: cdktf.numberToTerraform(this._mem),
       metadata: cdktf.booleanToTerraform(this._metadata),
       plan: cdktf.stringToTerraform(this._plan),
