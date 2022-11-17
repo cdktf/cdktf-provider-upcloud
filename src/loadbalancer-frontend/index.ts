@@ -45,11 +45,113 @@ export interface LoadbalancerFrontendConfig extends cdktf.TerraformMetaArguments
   */
   readonly port: number;
   /**
+  * networks block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/upcloud/r/loadbalancer_frontend#networks LoadbalancerFrontend#networks}
+  */
+  readonly networks?: LoadbalancerFrontendNetworks[] | cdktf.IResolvable;
+  /**
   * properties block
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/upcloud/r/loadbalancer_frontend#properties LoadbalancerFrontend#properties}
   */
   readonly properties?: LoadbalancerFrontendProperties;
+}
+export interface LoadbalancerFrontendNetworks {
+  /**
+  * Name of the load balancer network
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/upcloud/r/loadbalancer_frontend#name LoadbalancerFrontend#name}
+  */
+  readonly name: string;
+}
+
+export function loadbalancerFrontendNetworksToTerraform(struct?: LoadbalancerFrontendNetworks | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    name: cdktf.stringToTerraform(struct!.name),
+  }
+}
+
+export class LoadbalancerFrontendNetworksOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): LoadbalancerFrontendNetworks | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._name !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.name = this._name;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: LoadbalancerFrontendNetworks | cdktf.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._name = undefined;
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._name = value.name;
+    }
+  }
+
+  // name - computed: false, optional: false, required: true
+  private _name?: string; 
+  public get name() {
+    return this.getStringAttribute('name');
+  }
+  public set name(value: string) {
+    this._name = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get nameInput() {
+    return this._name;
+  }
+}
+
+export class LoadbalancerFrontendNetworksList extends cdktf.ComplexList {
+  public internalValue? : LoadbalancerFrontendNetworks[] | cdktf.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): LoadbalancerFrontendNetworksOutputReference {
+    return new LoadbalancerFrontendNetworksOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
 }
 export interface LoadbalancerFrontendProperties {
   /**
@@ -174,7 +276,7 @@ export class LoadbalancerFrontend extends cdktf.TerraformResource {
       terraformResourceType: 'upcloud_loadbalancer_frontend',
       terraformGeneratorMetadata: {
         providerName: 'upcloud',
-        providerVersion: '2.6.1',
+        providerVersion: '2.7.0',
         providerVersionConstraint: '~> 2.4'
       },
       provider: config.provider,
@@ -191,6 +293,7 @@ export class LoadbalancerFrontend extends cdktf.TerraformResource {
     this._mode = config.mode;
     this._name = config.name;
     this._port = config.port;
+    this._networks.internalValue = config.networks;
     this._properties.internalValue = config.properties;
   }
 
@@ -289,6 +392,22 @@ export class LoadbalancerFrontend extends cdktf.TerraformResource {
     return this.getListAttribute('tls_configs');
   }
 
+  // networks - computed: false, optional: true, required: false
+  private _networks = new LoadbalancerFrontendNetworksList(this, "networks", false);
+  public get networks() {
+    return this._networks;
+  }
+  public putNetworks(value: LoadbalancerFrontendNetworks[] | cdktf.IResolvable) {
+    this._networks.internalValue = value;
+  }
+  public resetNetworks() {
+    this._networks.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get networksInput() {
+    return this._networks.internalValue;
+  }
+
   // properties - computed: false, optional: true, required: false
   private _properties = new LoadbalancerFrontendPropertiesOutputReference(this, "properties");
   public get properties() {
@@ -317,6 +436,7 @@ export class LoadbalancerFrontend extends cdktf.TerraformResource {
       mode: cdktf.stringToTerraform(this._mode),
       name: cdktf.stringToTerraform(this._name),
       port: cdktf.numberToTerraform(this._port),
+      networks: cdktf.listMapper(loadbalancerFrontendNetworksToTerraform, true)(this._networks.internalValue),
       properties: loadbalancerFrontendPropertiesToTerraform(this._properties.internalValue),
     };
   }
