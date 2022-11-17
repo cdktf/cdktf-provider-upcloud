@@ -149,7 +149,7 @@
   "cdktf": {
     "provider": {
       "name": "registry.terraform.io/upcloudltd/upcloud",
-      "version": "2.6.1"
+      "version": "2.7.0"
     }
   },
   "resolutions": {

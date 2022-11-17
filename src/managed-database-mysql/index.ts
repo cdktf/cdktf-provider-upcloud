@@ -1515,7 +1515,7 @@ export class ManagedDatabaseMysql extends cdktf.TerraformResource {
       terraformResourceType: 'upcloud_managed_database_mysql',
       terraformGeneratorMetadata: {
         providerName: 'upcloud',
-        providerVersion: '2.6.1',
+        providerVersion: '2.7.0',
         providerVersionConstraint: '~> 2.4'
       },
       provider: config.provider,
