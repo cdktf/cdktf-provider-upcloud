@@ -57,7 +57,7 @@ export interface ServerConfig extends cdktf.TerraformMetaArguments {
   */
   readonly metadata?: boolean | cdktf.IResolvable;
   /**
-  * The pricing plan used for the server
+  * The pricing plan used for the server. You can list available server plans with `upctl server plans`
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/upcloud/r/server#plan Server#plan}
   */
@@ -911,7 +911,7 @@ export interface ServerTemplate {
   */
   readonly size?: number;
   /**
-  * A valid storage UUID or template name
+  * A valid storage UUID or template name. You can list available public templates with `upctl storage list --public --template` and available private templates with `upctl storage list --template`.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/upcloud/r/server#storage Server#storage}
   */
@@ -1160,7 +1160,7 @@ export class Server extends cdktf.TerraformResource {
       terraformResourceType: 'upcloud_server',
       terraformGeneratorMetadata: {
         providerName: 'upcloud',
-        providerVersion: '2.6.1',
+        providerVersion: '2.7.0',
         providerVersionConstraint: '~> 2.4'
       },
       provider: config.provider,
