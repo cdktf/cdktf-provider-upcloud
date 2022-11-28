@@ -31,7 +31,7 @@ export interface LoadbalancerConfig extends cdktf.TerraformMetaArguments {
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/upcloud/r/loadbalancer#network Loadbalancer#network}
   */
-  readonly network: string;
+  readonly network?: string;
   /**
   * Plan which the service will have
   * 
@@ -44,6 +44,413 @@ export interface LoadbalancerConfig extends cdktf.TerraformMetaArguments {
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/upcloud/r/loadbalancer#zone Loadbalancer#zone}
   */
   readonly zone: string;
+  /**
+  * networks block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/upcloud/r/loadbalancer#networks Loadbalancer#networks}
+  */
+  readonly networks?: LoadbalancerNetworks[] | cdktf.IResolvable;
+}
+export interface LoadbalancerNodesNetworksIpAddresses {
+}
+
+export function loadbalancerNodesNetworksIpAddressesToTerraform(struct?: LoadbalancerNodesNetworksIpAddresses): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+  }
+}
+
+export class LoadbalancerNodesNetworksIpAddressesOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): LoadbalancerNodesNetworksIpAddresses | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: LoadbalancerNodesNetworksIpAddresses | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+    }
+  }
+
+  // address - computed: true, optional: false, required: false
+  public get address() {
+    return this.getStringAttribute('address');
+  }
+
+  // listen - computed: true, optional: false, required: false
+  public get listen() {
+    return this.getBooleanAttribute('listen');
+  }
+}
+
+export class LoadbalancerNodesNetworksIpAddressesList extends cdktf.ComplexList {
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): LoadbalancerNodesNetworksIpAddressesOutputReference {
+    return new LoadbalancerNodesNetworksIpAddressesOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
+export interface LoadbalancerNodesNetworks {
+}
+
+export function loadbalancerNodesNetworksToTerraform(struct?: LoadbalancerNodesNetworks): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+  }
+}
+
+export class LoadbalancerNodesNetworksOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): LoadbalancerNodesNetworks | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: LoadbalancerNodesNetworks | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+    }
+  }
+
+  // ip_addresses - computed: true, optional: false, required: false
+  private _ipAddresses = new LoadbalancerNodesNetworksIpAddressesList(this, "ip_addresses", false);
+  public get ipAddresses() {
+    return this._ipAddresses;
+  }
+
+  // name - computed: true, optional: false, required: false
+  public get name() {
+    return this.getStringAttribute('name');
+  }
+
+  // type - computed: true, optional: false, required: false
+  public get type() {
+    return this.getStringAttribute('type');
+  }
+}
+
+export class LoadbalancerNodesNetworksList extends cdktf.ComplexList {
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): LoadbalancerNodesNetworksOutputReference {
+    return new LoadbalancerNodesNetworksOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
+export interface LoadbalancerNodes {
+}
+
+export function loadbalancerNodesToTerraform(struct?: LoadbalancerNodes): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+  }
+}
+
+export class LoadbalancerNodesOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): LoadbalancerNodes | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: LoadbalancerNodes | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+    }
+  }
+
+  // networks - computed: true, optional: false, required: false
+  private _networks = new LoadbalancerNodesNetworksList(this, "networks", false);
+  public get networks() {
+    return this._networks;
+  }
+
+  // operational_state - computed: true, optional: false, required: false
+  public get operationalState() {
+    return this.getStringAttribute('operational_state');
+  }
+}
+
+export class LoadbalancerNodesList extends cdktf.ComplexList {
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): LoadbalancerNodesOutputReference {
+    return new LoadbalancerNodesOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
+export interface LoadbalancerNetworks {
+  /**
+  * Network family. Currently only `IPv4` is supported.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/upcloud/r/loadbalancer#family Loadbalancer#family}
+  */
+  readonly family: string;
+  /**
+  * The name of the network must be unique within the service.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/upcloud/r/loadbalancer#name Loadbalancer#name}
+  */
+  readonly name: string;
+  /**
+  * Private network UUID. Required for private networks and must reside in loadbalancer zone. For public network the field should be omitted.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/upcloud/r/loadbalancer#network Loadbalancer#network}
+  */
+  readonly network?: string;
+  /**
+  * The type of the network. Only one public network can be attached and at least one private network must be attached.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/upcloud/r/loadbalancer#type Loadbalancer#type}
+  */
+  readonly type: string;
+}
+
+export function loadbalancerNetworksToTerraform(struct?: LoadbalancerNetworks | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    family: cdktf.stringToTerraform(struct!.family),
+    name: cdktf.stringToTerraform(struct!.name),
+    network: cdktf.stringToTerraform(struct!.network),
+    type: cdktf.stringToTerraform(struct!.type),
+  }
+}
+
+export class LoadbalancerNetworksOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): LoadbalancerNetworks | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._family !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.family = this._family;
+    }
+    if (this._name !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.name = this._name;
+    }
+    if (this._network !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.network = this._network;
+    }
+    if (this._type !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.type = this._type;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: LoadbalancerNetworks | cdktf.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._family = undefined;
+      this._name = undefined;
+      this._network = undefined;
+      this._type = undefined;
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._family = value.family;
+      this._name = value.name;
+      this._network = value.network;
+      this._type = value.type;
+    }
+  }
+
+  // dns_name - computed: true, optional: false, required: false
+  public get dnsName() {
+    return this.getStringAttribute('dns_name');
+  }
+
+  // family - computed: false, optional: false, required: true
+  private _family?: string; 
+  public get family() {
+    return this.getStringAttribute('family');
+  }
+  public set family(value: string) {
+    this._family = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get familyInput() {
+    return this._family;
+  }
+
+  // id - computed: true, optional: false, required: false
+  public get id() {
+    return this.getStringAttribute('id');
+  }
+
+  // name - computed: false, optional: false, required: true
+  private _name?: string; 
+  public get name() {
+    return this.getStringAttribute('name');
+  }
+  public set name(value: string) {
+    this._name = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get nameInput() {
+    return this._name;
+  }
+
+  // network - computed: false, optional: true, required: false
+  private _network?: string; 
+  public get network() {
+    return this.getStringAttribute('network');
+  }
+  public set network(value: string) {
+    this._network = value;
+  }
+  public resetNetwork() {
+    this._network = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get networkInput() {
+    return this._network;
+  }
+
+  // type - computed: false, optional: false, required: true
+  private _type?: string; 
+  public get type() {
+    return this.getStringAttribute('type');
+  }
+  public set type(value: string) {
+    this._type = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get typeInput() {
+    return this._type;
+  }
+}
+
+export class LoadbalancerNetworksList extends cdktf.ComplexList {
+  public internalValue? : LoadbalancerNetworks[] | cdktf.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): LoadbalancerNetworksOutputReference {
+    return new LoadbalancerNetworksOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
 }
 
 /**
@@ -72,7 +479,7 @@ export class Loadbalancer extends cdktf.TerraformResource {
       terraformResourceType: 'upcloud_loadbalancer',
       terraformGeneratorMetadata: {
         providerName: 'upcloud',
-        providerVersion: '2.6.1',
+        providerVersion: '2.7.0',
         providerVersionConstraint: '~> 2.4'
       },
       provider: config.provider,
@@ -89,6 +496,7 @@ export class Loadbalancer extends cdktf.TerraformResource {
     this._network = config.network;
     this._plan = config.plan;
     this._zone = config.zone;
+    this._networks.internalValue = config.networks;
   }
 
   // ==========
@@ -155,7 +563,7 @@ export class Loadbalancer extends cdktf.TerraformResource {
     return this._name;
   }
 
-  // network - computed: false, optional: false, required: true
+  // network - computed: false, optional: true, required: false
   private _network?: string; 
   public get network() {
     return this.getStringAttribute('network');
@@ -163,9 +571,18 @@ export class Loadbalancer extends cdktf.TerraformResource {
   public set network(value: string) {
     this._network = value;
   }
+  public resetNetwork() {
+    this._network = undefined;
+  }
   // Temporarily expose input value. Use with caution.
   public get networkInput() {
     return this._network;
+  }
+
+  // nodes - computed: true, optional: false, required: false
+  private _nodes = new LoadbalancerNodesList(this, "nodes", false);
+  public get nodes() {
+    return this._nodes;
   }
 
   // operational_state - computed: true, optional: false, required: false
@@ -204,6 +621,22 @@ export class Loadbalancer extends cdktf.TerraformResource {
     return this._zone;
   }
 
+  // networks - computed: false, optional: true, required: false
+  private _networks = new LoadbalancerNetworksList(this, "networks", false);
+  public get networks() {
+    return this._networks;
+  }
+  public putNetworks(value: LoadbalancerNetworks[] | cdktf.IResolvable) {
+    this._networks.internalValue = value;
+  }
+  public resetNetworks() {
+    this._networks.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get networksInput() {
+    return this._networks.internalValue;
+  }
+
   // =========
   // SYNTHESIS
   // =========
@@ -216,6 +649,7 @@ export class Loadbalancer extends cdktf.TerraformResource {
       network: cdktf.stringToTerraform(this._network),
       plan: cdktf.stringToTerraform(this._plan),
       zone: cdktf.stringToTerraform(this._zone),
+      networks: cdktf.listMapper(loadbalancerNetworksToTerraform, true)(this._networks.internalValue),
     };
   }
 }
