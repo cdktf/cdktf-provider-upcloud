@@ -303,7 +303,7 @@ export class DataUpcloudNetworks extends cdktf.TerraformDataSource {
       terraformResourceType: 'upcloud_networks',
       terraformGeneratorMetadata: {
         providerName: 'upcloud',
-        providerVersion: '2.7.0',
+        providerVersion: '2.7.1',
         providerVersionConstraint: '~> 2.4'
       },
       provider: config.provider,
