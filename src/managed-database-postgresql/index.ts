@@ -1062,6 +1062,12 @@ export interface ManagedDatabasePostgresqlProperties {
   */
   readonly logMinDurationStatement?: number;
   /**
+  * Log statements for each temporary file created larger than this number of kilobytes, -1 disables
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/upcloud/r/managed_database_postgresql#log_temp_files ManagedDatabasePostgresql#log_temp_files}
+  */
+  readonly logTempFiles?: number;
+  /**
   * PostgreSQL maximum number of files that can be open per process.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/upcloud/r/managed_database_postgresql#max_files_per_process ManagedDatabasePostgresql#max_files_per_process}
@@ -1169,6 +1175,24 @@ export interface ManagedDatabasePostgresqlProperties {
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/upcloud/r/managed_database_postgresql#pg_service_to_fork_from ManagedDatabasePostgresql#pg_service_to_fork_from}
   */
   readonly pgServiceToForkFrom?: string;
+  /**
+  * Enable the pg_stat_monitor extension. Enabling this extension will cause the cluster to be restarted.When this extension is enabled, pg_stat_statements results for utility commands are unreliable
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/upcloud/r/managed_database_postgresql#pg_stat_monitor_enable ManagedDatabasePostgresql#pg_stat_monitor_enable}
+  */
+  readonly pgStatMonitorEnable?: boolean | cdktf.IResolvable;
+  /**
+  * Enables or disables query plan monitoring
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/upcloud/r/managed_database_postgresql#pg_stat_monitor_pgsm_enable_query_plan ManagedDatabasePostgresql#pg_stat_monitor_pgsm_enable_query_plan}
+  */
+  readonly pgStatMonitorPgsmEnableQueryPlan?: boolean | cdktf.IResolvable;
+  /**
+  * Sets the maximum number of buckets 
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/upcloud/r/managed_database_postgresql#pg_stat_monitor_pgsm_max_buckets ManagedDatabasePostgresql#pg_stat_monitor_pgsm_max_buckets}
+  */
+  readonly pgStatMonitorPgsmMaxBuckets?: number;
   /**
   * Controls which statements are counted. 
 			Specify top to track top-level statements (those issued directly by clients), all to also track nested statements (such as statements invoked within functions), 
@@ -1323,6 +1347,7 @@ export function managedDatabasePostgresqlPropertiesToTerraform(struct?: ManagedD
     log_error_verbosity: cdktf.stringToTerraform(struct!.logErrorVerbosity),
     log_line_prefix: cdktf.stringToTerraform(struct!.logLinePrefix),
     log_min_duration_statement: cdktf.numberToTerraform(struct!.logMinDurationStatement),
+    log_temp_files: cdktf.numberToTerraform(struct!.logTempFiles),
     max_files_per_process: cdktf.numberToTerraform(struct!.maxFilesPerProcess),
     max_locks_per_transaction: cdktf.numberToTerraform(struct!.maxLocksPerTransaction),
     max_logical_replication_workers: cdktf.numberToTerraform(struct!.maxLogicalReplicationWorkers),
@@ -1341,6 +1366,9 @@ export function managedDatabasePostgresqlPropertiesToTerraform(struct?: ManagedD
     pg_partman_bgw_role: cdktf.stringToTerraform(struct!.pgPartmanBgwRole),
     pg_read_replica: cdktf.booleanToTerraform(struct!.pgReadReplica),
     pg_service_to_fork_from: cdktf.stringToTerraform(struct!.pgServiceToForkFrom),
+    pg_stat_monitor_enable: cdktf.booleanToTerraform(struct!.pgStatMonitorEnable),
+    pg_stat_monitor_pgsm_enable_query_plan: cdktf.booleanToTerraform(struct!.pgStatMonitorPgsmEnableQueryPlan),
+    pg_stat_monitor_pgsm_max_buckets: cdktf.numberToTerraform(struct!.pgStatMonitorPgsmMaxBuckets),
     pg_stat_statements_track: cdktf.stringToTerraform(struct!.pgStatStatementsTrack),
     public_access: cdktf.booleanToTerraform(struct!.publicAccess),
     shared_buffers_percentage: cdktf.numberToTerraform(struct!.sharedBuffersPercentage),
@@ -1485,6 +1513,10 @@ export class ManagedDatabasePostgresqlPropertiesOutputReference extends cdktf.Co
       hasAnyValues = true;
       internalValueResult.logMinDurationStatement = this._logMinDurationStatement;
     }
+    if (this._logTempFiles !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.logTempFiles = this._logTempFiles;
+    }
     if (this._maxFilesPerProcess !== undefined) {
       hasAnyValues = true;
       internalValueResult.maxFilesPerProcess = this._maxFilesPerProcess;
@@ -1556,6 +1588,18 @@ export class ManagedDatabasePostgresqlPropertiesOutputReference extends cdktf.Co
     if (this._pgServiceToForkFrom !== undefined) {
       hasAnyValues = true;
       internalValueResult.pgServiceToForkFrom = this._pgServiceToForkFrom;
+    }
+    if (this._pgStatMonitorEnable !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.pgStatMonitorEnable = this._pgStatMonitorEnable;
+    }
+    if (this._pgStatMonitorPgsmEnableQueryPlan !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.pgStatMonitorPgsmEnableQueryPlan = this._pgStatMonitorPgsmEnableQueryPlan;
+    }
+    if (this._pgStatMonitorPgsmMaxBuckets !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.pgStatMonitorPgsmMaxBuckets = this._pgStatMonitorPgsmMaxBuckets;
     }
     if (this._pgStatStatementsTrack !== undefined) {
       hasAnyValues = true;
@@ -1666,6 +1710,7 @@ export class ManagedDatabasePostgresqlPropertiesOutputReference extends cdktf.Co
       this._logErrorVerbosity = undefined;
       this._logLinePrefix = undefined;
       this._logMinDurationStatement = undefined;
+      this._logTempFiles = undefined;
       this._maxFilesPerProcess = undefined;
       this._maxLocksPerTransaction = undefined;
       this._maxLogicalReplicationWorkers = undefined;
@@ -1684,6 +1729,9 @@ export class ManagedDatabasePostgresqlPropertiesOutputReference extends cdktf.Co
       this._pgPartmanBgwRole = undefined;
       this._pgReadReplica = undefined;
       this._pgServiceToForkFrom = undefined;
+      this._pgStatMonitorEnable = undefined;
+      this._pgStatMonitorPgsmEnableQueryPlan = undefined;
+      this._pgStatMonitorPgsmMaxBuckets = undefined;
       this._pgStatStatementsTrack = undefined;
       this._publicAccess = undefined;
       this._sharedBuffersPercentage = undefined;
@@ -1733,6 +1781,7 @@ export class ManagedDatabasePostgresqlPropertiesOutputReference extends cdktf.Co
       this._logErrorVerbosity = value.logErrorVerbosity;
       this._logLinePrefix = value.logLinePrefix;
       this._logMinDurationStatement = value.logMinDurationStatement;
+      this._logTempFiles = value.logTempFiles;
       this._maxFilesPerProcess = value.maxFilesPerProcess;
       this._maxLocksPerTransaction = value.maxLocksPerTransaction;
       this._maxLogicalReplicationWorkers = value.maxLogicalReplicationWorkers;
@@ -1751,6 +1800,9 @@ export class ManagedDatabasePostgresqlPropertiesOutputReference extends cdktf.Co
       this._pgPartmanBgwRole = value.pgPartmanBgwRole;
       this._pgReadReplica = value.pgReadReplica;
       this._pgServiceToForkFrom = value.pgServiceToForkFrom;
+      this._pgStatMonitorEnable = value.pgStatMonitorEnable;
+      this._pgStatMonitorPgsmEnableQueryPlan = value.pgStatMonitorPgsmEnableQueryPlan;
+      this._pgStatMonitorPgsmMaxBuckets = value.pgStatMonitorPgsmMaxBuckets;
       this._pgStatStatementsTrack = value.pgStatStatementsTrack;
       this._publicAccess = value.publicAccess;
       this._sharedBuffersPercentage = value.sharedBuffersPercentage;
@@ -1771,6 +1823,11 @@ export class ManagedDatabasePostgresqlPropertiesOutputReference extends cdktf.Co
       this._pglookout.internalValue = value.pglookout;
       this._timescaledb.internalValue = value.timescaledb;
     }
+  }
+
+  // additional_backup_regions - computed: true, optional: false, required: false
+  public get additionalBackupRegions() {
+    return this.getListAttribute('additional_backup_regions');
   }
 
   // admin_password - computed: true, optional: true, required: false
@@ -2093,6 +2150,11 @@ export class ManagedDatabasePostgresqlPropertiesOutputReference extends cdktf.Co
     return this._defaultToastCompression;
   }
 
+  // enable_ipv6 - computed: true, optional: false, required: false
+  public get enableIpv6() {
+    return this.getBooleanAttribute('enable_ipv6');
+  }
+
   // idle_in_transaction_session_timeout - computed: true, optional: true, required: false
   private _idleInTransactionSessionTimeout?: number; 
   public get idleInTransactionSessionTimeout() {
@@ -2203,6 +2265,22 @@ export class ManagedDatabasePostgresqlPropertiesOutputReference extends cdktf.Co
   // Temporarily expose input value. Use with caution.
   public get logMinDurationStatementInput() {
     return this._logMinDurationStatement;
+  }
+
+  // log_temp_files - computed: true, optional: true, required: false
+  private _logTempFiles?: number; 
+  public get logTempFiles() {
+    return this.getNumberAttribute('log_temp_files');
+  }
+  public set logTempFiles(value: number) {
+    this._logTempFiles = value;
+  }
+  public resetLogTempFiles() {
+    this._logTempFiles = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get logTempFilesInput() {
+    return this._logTempFiles;
   }
 
   // max_files_per_process - computed: true, optional: true, required: false
@@ -2491,6 +2569,54 @@ export class ManagedDatabasePostgresqlPropertiesOutputReference extends cdktf.Co
   // Temporarily expose input value. Use with caution.
   public get pgServiceToForkFromInput() {
     return this._pgServiceToForkFrom;
+  }
+
+  // pg_stat_monitor_enable - computed: true, optional: true, required: false
+  private _pgStatMonitorEnable?: boolean | cdktf.IResolvable; 
+  public get pgStatMonitorEnable() {
+    return this.getBooleanAttribute('pg_stat_monitor_enable');
+  }
+  public set pgStatMonitorEnable(value: boolean | cdktf.IResolvable) {
+    this._pgStatMonitorEnable = value;
+  }
+  public resetPgStatMonitorEnable() {
+    this._pgStatMonitorEnable = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get pgStatMonitorEnableInput() {
+    return this._pgStatMonitorEnable;
+  }
+
+  // pg_stat_monitor_pgsm_enable_query_plan - computed: true, optional: true, required: false
+  private _pgStatMonitorPgsmEnableQueryPlan?: boolean | cdktf.IResolvable; 
+  public get pgStatMonitorPgsmEnableQueryPlan() {
+    return this.getBooleanAttribute('pg_stat_monitor_pgsm_enable_query_plan');
+  }
+  public set pgStatMonitorPgsmEnableQueryPlan(value: boolean | cdktf.IResolvable) {
+    this._pgStatMonitorPgsmEnableQueryPlan = value;
+  }
+  public resetPgStatMonitorPgsmEnableQueryPlan() {
+    this._pgStatMonitorPgsmEnableQueryPlan = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get pgStatMonitorPgsmEnableQueryPlanInput() {
+    return this._pgStatMonitorPgsmEnableQueryPlan;
+  }
+
+  // pg_stat_monitor_pgsm_max_buckets - computed: true, optional: true, required: false
+  private _pgStatMonitorPgsmMaxBuckets?: number; 
+  public get pgStatMonitorPgsmMaxBuckets() {
+    return this.getNumberAttribute('pg_stat_monitor_pgsm_max_buckets');
+  }
+  public set pgStatMonitorPgsmMaxBuckets(value: number) {
+    this._pgStatMonitorPgsmMaxBuckets = value;
+  }
+  public resetPgStatMonitorPgsmMaxBuckets() {
+    this._pgStatMonitorPgsmMaxBuckets = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get pgStatMonitorPgsmMaxBucketsInput() {
+    return this._pgStatMonitorPgsmMaxBuckets;
   }
 
   // pg_stat_statements_track - computed: true, optional: true, required: false
@@ -2824,7 +2950,7 @@ export class ManagedDatabasePostgresql extends cdktf.TerraformResource {
       terraformResourceType: 'upcloud_managed_database_postgresql',
       terraformGeneratorMetadata: {
         providerName: 'upcloud',
-        providerVersion: '2.7.0',
+        providerVersion: '2.7.1',
         providerVersionConstraint: '~> 2.4'
       },
       provider: config.provider,

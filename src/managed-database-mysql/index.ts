@@ -524,6 +524,18 @@ export interface ManagedDatabaseMysqlProperties {
   */
   readonly informationSchemaStatsExpiry?: number;
   /**
+  * Maximum size for the InnoDB change buffer, as a percentage of the total size of the buffer pool. Default is 25
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/upcloud/r/managed_database_mysql#innodb_change_buffer_max_size ManagedDatabaseMysql#innodb_change_buffer_max_size}
+  */
+  readonly innodbChangeBufferMaxSize?: number;
+  /**
+  * Specifies whether flushing a page from the InnoDB buffer pool also flushes other dirty pages in the same extent (default is 1): 0 - dirty pages in the same extent are not flushed,  1 - flush contiguous dirty pages in the same extent,  2 - flush dirty pages in the same extent
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/upcloud/r/managed_database_mysql#innodb_flush_neighbors ManagedDatabaseMysql#innodb_flush_neighbors}
+  */
+  readonly innodbFlushNeighbors?: number;
+  /**
   * Minimum length of words that are stored in an InnoDB `FULLTEXT` index.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/upcloud/r/managed_database_mysql#innodb_ft_min_token_size ManagedDatabaseMysql#innodb_ft_min_token_size}
@@ -560,11 +572,29 @@ export interface ManagedDatabaseMysqlProperties {
   */
   readonly innodbPrintAllDeadlocks?: boolean | cdktf.IResolvable;
   /**
+  * The number of I/O threads for read operations in InnoDB. Default is 4. Changing this parameter will lead to a restart of the MySQL service.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/upcloud/r/managed_database_mysql#innodb_read_io_threads ManagedDatabaseMysql#innodb_read_io_threads}
+  */
+  readonly innodbReadIoThreads?: number;
+  /**
   * When enabled a transaction timeout causes InnoDB to abort and roll back the entire transaction.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/upcloud/r/managed_database_mysql#innodb_rollback_on_timeout ManagedDatabaseMysql#innodb_rollback_on_timeout}
   */
   readonly innodbRollbackOnTimeout?: boolean | cdktf.IResolvable;
+  /**
+  * Defines the maximum number of threads permitted inside of InnoDB. Default is 0 (infinite concurrency - no limit)
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/upcloud/r/managed_database_mysql#innodb_thread_concurrency ManagedDatabaseMysql#innodb_thread_concurrency}
+  */
+  readonly innodbThreadConcurrency?: number;
+  /**
+  * The number of I/O threads for write operations in InnoDB. Default is 4. Changing this parameter will lead to a restart of the MySQL service.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/upcloud/r/managed_database_mysql#innodb_write_io_threads ManagedDatabaseMysql#innodb_write_io_threads}
+  */
+  readonly innodbWriteIoThreads?: number;
   /**
   * The number of seconds the server waits for activity on an interactive connection before closing it.
   * 
@@ -601,6 +631,12 @@ export interface ManagedDatabaseMysqlProperties {
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/upcloud/r/managed_database_mysql#max_heap_table_size ManagedDatabaseMysql#max_heap_table_size}
   */
   readonly maxHeapTableSize?: number;
+  /**
+  * Start sizes of connection buffer and result buffer. Default is 16384 (16K). Changing this parameter will lead to a restart of the MySQL service.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/upcloud/r/managed_database_mysql#net_buffer_length ManagedDatabaseMysql#net_buffer_length}
+  */
+  readonly netBufferLength?: number;
   /**
   * The number of seconds to wait for more data from a connection before aborting the read.
   * 
@@ -687,19 +723,25 @@ export function managedDatabaseMysqlPropertiesToTerraform(struct?: ManagedDataba
     default_time_zone: cdktf.stringToTerraform(struct!.defaultTimeZone),
     group_concat_max_len: cdktf.numberToTerraform(struct!.groupConcatMaxLen),
     information_schema_stats_expiry: cdktf.numberToTerraform(struct!.informationSchemaStatsExpiry),
+    innodb_change_buffer_max_size: cdktf.numberToTerraform(struct!.innodbChangeBufferMaxSize),
+    innodb_flush_neighbors: cdktf.numberToTerraform(struct!.innodbFlushNeighbors),
     innodb_ft_min_token_size: cdktf.numberToTerraform(struct!.innodbFtMinTokenSize),
     innodb_ft_server_stopword_table: cdktf.stringToTerraform(struct!.innodbFtServerStopwordTable),
     innodb_lock_wait_timeout: cdktf.numberToTerraform(struct!.innodbLockWaitTimeout),
     innodb_log_buffer_size: cdktf.numberToTerraform(struct!.innodbLogBufferSize),
     innodb_online_alter_log_max_size: cdktf.numberToTerraform(struct!.innodbOnlineAlterLogMaxSize),
     innodb_print_all_deadlocks: cdktf.booleanToTerraform(struct!.innodbPrintAllDeadlocks),
+    innodb_read_io_threads: cdktf.numberToTerraform(struct!.innodbReadIoThreads),
     innodb_rollback_on_timeout: cdktf.booleanToTerraform(struct!.innodbRollbackOnTimeout),
+    innodb_thread_concurrency: cdktf.numberToTerraform(struct!.innodbThreadConcurrency),
+    innodb_write_io_threads: cdktf.numberToTerraform(struct!.innodbWriteIoThreads),
     interactive_timeout: cdktf.numberToTerraform(struct!.interactiveTimeout),
     internal_tmp_mem_storage_engine: cdktf.stringToTerraform(struct!.internalTmpMemStorageEngine),
     ip_filter: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.ipFilter),
     long_query_time: cdktf.numberToTerraform(struct!.longQueryTime),
     max_allowed_packet: cdktf.numberToTerraform(struct!.maxAllowedPacket),
     max_heap_table_size: cdktf.numberToTerraform(struct!.maxHeapTableSize),
+    net_buffer_length: cdktf.numberToTerraform(struct!.netBufferLength),
     net_read_timeout: cdktf.numberToTerraform(struct!.netReadTimeout),
     net_write_timeout: cdktf.numberToTerraform(struct!.netWriteTimeout),
     public_access: cdktf.booleanToTerraform(struct!.publicAccess),
@@ -768,6 +810,14 @@ export class ManagedDatabaseMysqlPropertiesOutputReference extends cdktf.Complex
       hasAnyValues = true;
       internalValueResult.informationSchemaStatsExpiry = this._informationSchemaStatsExpiry;
     }
+    if (this._innodbChangeBufferMaxSize !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.innodbChangeBufferMaxSize = this._innodbChangeBufferMaxSize;
+    }
+    if (this._innodbFlushNeighbors !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.innodbFlushNeighbors = this._innodbFlushNeighbors;
+    }
     if (this._innodbFtMinTokenSize !== undefined) {
       hasAnyValues = true;
       internalValueResult.innodbFtMinTokenSize = this._innodbFtMinTokenSize;
@@ -792,9 +842,21 @@ export class ManagedDatabaseMysqlPropertiesOutputReference extends cdktf.Complex
       hasAnyValues = true;
       internalValueResult.innodbPrintAllDeadlocks = this._innodbPrintAllDeadlocks;
     }
+    if (this._innodbReadIoThreads !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.innodbReadIoThreads = this._innodbReadIoThreads;
+    }
     if (this._innodbRollbackOnTimeout !== undefined) {
       hasAnyValues = true;
       internalValueResult.innodbRollbackOnTimeout = this._innodbRollbackOnTimeout;
+    }
+    if (this._innodbThreadConcurrency !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.innodbThreadConcurrency = this._innodbThreadConcurrency;
+    }
+    if (this._innodbWriteIoThreads !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.innodbWriteIoThreads = this._innodbWriteIoThreads;
     }
     if (this._interactiveTimeout !== undefined) {
       hasAnyValues = true;
@@ -819,6 +881,10 @@ export class ManagedDatabaseMysqlPropertiesOutputReference extends cdktf.Complex
     if (this._maxHeapTableSize !== undefined) {
       hasAnyValues = true;
       internalValueResult.maxHeapTableSize = this._maxHeapTableSize;
+    }
+    if (this._netBufferLength !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.netBufferLength = this._netBufferLength;
     }
     if (this._netReadTimeout !== undefined) {
       hasAnyValues = true;
@@ -880,19 +946,25 @@ export class ManagedDatabaseMysqlPropertiesOutputReference extends cdktf.Complex
       this._defaultTimeZone = undefined;
       this._groupConcatMaxLen = undefined;
       this._informationSchemaStatsExpiry = undefined;
+      this._innodbChangeBufferMaxSize = undefined;
+      this._innodbFlushNeighbors = undefined;
       this._innodbFtMinTokenSize = undefined;
       this._innodbFtServerStopwordTable = undefined;
       this._innodbLockWaitTimeout = undefined;
       this._innodbLogBufferSize = undefined;
       this._innodbOnlineAlterLogMaxSize = undefined;
       this._innodbPrintAllDeadlocks = undefined;
+      this._innodbReadIoThreads = undefined;
       this._innodbRollbackOnTimeout = undefined;
+      this._innodbThreadConcurrency = undefined;
+      this._innodbWriteIoThreads = undefined;
       this._interactiveTimeout = undefined;
       this._internalTmpMemStorageEngine = undefined;
       this._ipFilter = undefined;
       this._longQueryTime = undefined;
       this._maxAllowedPacket = undefined;
       this._maxHeapTableSize = undefined;
+      this._netBufferLength = undefined;
       this._netReadTimeout = undefined;
       this._netWriteTimeout = undefined;
       this._publicAccess = undefined;
@@ -917,19 +989,25 @@ export class ManagedDatabaseMysqlPropertiesOutputReference extends cdktf.Complex
       this._defaultTimeZone = value.defaultTimeZone;
       this._groupConcatMaxLen = value.groupConcatMaxLen;
       this._informationSchemaStatsExpiry = value.informationSchemaStatsExpiry;
+      this._innodbChangeBufferMaxSize = value.innodbChangeBufferMaxSize;
+      this._innodbFlushNeighbors = value.innodbFlushNeighbors;
       this._innodbFtMinTokenSize = value.innodbFtMinTokenSize;
       this._innodbFtServerStopwordTable = value.innodbFtServerStopwordTable;
       this._innodbLockWaitTimeout = value.innodbLockWaitTimeout;
       this._innodbLogBufferSize = value.innodbLogBufferSize;
       this._innodbOnlineAlterLogMaxSize = value.innodbOnlineAlterLogMaxSize;
       this._innodbPrintAllDeadlocks = value.innodbPrintAllDeadlocks;
+      this._innodbReadIoThreads = value.innodbReadIoThreads;
       this._innodbRollbackOnTimeout = value.innodbRollbackOnTimeout;
+      this._innodbThreadConcurrency = value.innodbThreadConcurrency;
+      this._innodbWriteIoThreads = value.innodbWriteIoThreads;
       this._interactiveTimeout = value.interactiveTimeout;
       this._internalTmpMemStorageEngine = value.internalTmpMemStorageEngine;
       this._ipFilter = value.ipFilter;
       this._longQueryTime = value.longQueryTime;
       this._maxAllowedPacket = value.maxAllowedPacket;
       this._maxHeapTableSize = value.maxHeapTableSize;
+      this._netBufferLength = value.netBufferLength;
       this._netReadTimeout = value.netReadTimeout;
       this._netWriteTimeout = value.netWriteTimeout;
       this._publicAccess = value.publicAccess;
@@ -942,6 +1020,11 @@ export class ManagedDatabaseMysqlPropertiesOutputReference extends cdktf.Complex
       this._waitTimeout = value.waitTimeout;
       this._migration.internalValue = value.migration;
     }
+  }
+
+  // additional_backup_regions - computed: true, optional: false, required: false
+  public get additionalBackupRegions() {
+    return this.getListAttribute('additional_backup_regions');
   }
 
   // admin_password - computed: true, optional: true, required: false
@@ -1104,6 +1187,38 @@ export class ManagedDatabaseMysqlPropertiesOutputReference extends cdktf.Complex
     return this._informationSchemaStatsExpiry;
   }
 
+  // innodb_change_buffer_max_size - computed: true, optional: true, required: false
+  private _innodbChangeBufferMaxSize?: number; 
+  public get innodbChangeBufferMaxSize() {
+    return this.getNumberAttribute('innodb_change_buffer_max_size');
+  }
+  public set innodbChangeBufferMaxSize(value: number) {
+    this._innodbChangeBufferMaxSize = value;
+  }
+  public resetInnodbChangeBufferMaxSize() {
+    this._innodbChangeBufferMaxSize = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get innodbChangeBufferMaxSizeInput() {
+    return this._innodbChangeBufferMaxSize;
+  }
+
+  // innodb_flush_neighbors - computed: true, optional: true, required: false
+  private _innodbFlushNeighbors?: number; 
+  public get innodbFlushNeighbors() {
+    return this.getNumberAttribute('innodb_flush_neighbors');
+  }
+  public set innodbFlushNeighbors(value: number) {
+    this._innodbFlushNeighbors = value;
+  }
+  public resetInnodbFlushNeighbors() {
+    this._innodbFlushNeighbors = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get innodbFlushNeighborsInput() {
+    return this._innodbFlushNeighbors;
+  }
+
   // innodb_ft_min_token_size - computed: true, optional: true, required: false
   private _innodbFtMinTokenSize?: number; 
   public get innodbFtMinTokenSize() {
@@ -1200,6 +1315,22 @@ export class ManagedDatabaseMysqlPropertiesOutputReference extends cdktf.Complex
     return this._innodbPrintAllDeadlocks;
   }
 
+  // innodb_read_io_threads - computed: true, optional: true, required: false
+  private _innodbReadIoThreads?: number; 
+  public get innodbReadIoThreads() {
+    return this.getNumberAttribute('innodb_read_io_threads');
+  }
+  public set innodbReadIoThreads(value: number) {
+    this._innodbReadIoThreads = value;
+  }
+  public resetInnodbReadIoThreads() {
+    this._innodbReadIoThreads = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get innodbReadIoThreadsInput() {
+    return this._innodbReadIoThreads;
+  }
+
   // innodb_rollback_on_timeout - computed: true, optional: true, required: false
   private _innodbRollbackOnTimeout?: boolean | cdktf.IResolvable; 
   public get innodbRollbackOnTimeout() {
@@ -1214,6 +1345,38 @@ export class ManagedDatabaseMysqlPropertiesOutputReference extends cdktf.Complex
   // Temporarily expose input value. Use with caution.
   public get innodbRollbackOnTimeoutInput() {
     return this._innodbRollbackOnTimeout;
+  }
+
+  // innodb_thread_concurrency - computed: true, optional: true, required: false
+  private _innodbThreadConcurrency?: number; 
+  public get innodbThreadConcurrency() {
+    return this.getNumberAttribute('innodb_thread_concurrency');
+  }
+  public set innodbThreadConcurrency(value: number) {
+    this._innodbThreadConcurrency = value;
+  }
+  public resetInnodbThreadConcurrency() {
+    this._innodbThreadConcurrency = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get innodbThreadConcurrencyInput() {
+    return this._innodbThreadConcurrency;
+  }
+
+  // innodb_write_io_threads - computed: true, optional: true, required: false
+  private _innodbWriteIoThreads?: number; 
+  public get innodbWriteIoThreads() {
+    return this.getNumberAttribute('innodb_write_io_threads');
+  }
+  public set innodbWriteIoThreads(value: number) {
+    this._innodbWriteIoThreads = value;
+  }
+  public resetInnodbWriteIoThreads() {
+    this._innodbWriteIoThreads = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get innodbWriteIoThreadsInput() {
+    return this._innodbWriteIoThreads;
   }
 
   // interactive_timeout - computed: true, optional: true, required: false
@@ -1310,6 +1473,22 @@ export class ManagedDatabaseMysqlPropertiesOutputReference extends cdktf.Complex
   // Temporarily expose input value. Use with caution.
   public get maxHeapTableSizeInput() {
     return this._maxHeapTableSize;
+  }
+
+  // net_buffer_length - computed: true, optional: true, required: false
+  private _netBufferLength?: number; 
+  public get netBufferLength() {
+    return this.getNumberAttribute('net_buffer_length');
+  }
+  public set netBufferLength(value: number) {
+    this._netBufferLength = value;
+  }
+  public resetNetBufferLength() {
+    this._netBufferLength = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get netBufferLengthInput() {
+    return this._netBufferLength;
   }
 
   // net_read_timeout - computed: true, optional: true, required: false
@@ -1515,7 +1694,7 @@ export class ManagedDatabaseMysql extends cdktf.TerraformResource {
       terraformResourceType: 'upcloud_managed_database_mysql',
       terraformGeneratorMetadata: {
         providerName: 'upcloud',
-        providerVersion: '2.7.0',
+        providerVersion: '2.7.1',
         providerVersionConstraint: '~> 2.4'
       },
       provider: config.provider,

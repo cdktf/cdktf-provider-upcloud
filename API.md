@@ -27854,13 +27854,18 @@ const managedDatabaseMysqlProperties: managedDatabaseMysql.ManagedDatabaseMysqlP
 | <code><a href="#@cdktf/provider-upcloud.managedDatabaseMysql.ManagedDatabaseMysqlProperties.property.defaultTimeZone">defaultTimeZone</a></code> | <code>string</code> | Default server time zone as an offset from UTC (from -12:00 to +12:00), a time zone name, or `SYSTEM` to use the MySQL server default. |
 | <code><a href="#@cdktf/provider-upcloud.managedDatabaseMysql.ManagedDatabaseMysqlProperties.property.groupConcatMaxLen">groupConcatMaxLen</a></code> | <code>number</code> | The maximum permitted result length in bytes for the `GROUP_CONCAT()` function. |
 | <code><a href="#@cdktf/provider-upcloud.managedDatabaseMysql.ManagedDatabaseMysqlProperties.property.informationSchemaStatsExpiry">informationSchemaStatsExpiry</a></code> | <code>number</code> | The time, in seconds, before cached statistics expire. |
+| <code><a href="#@cdktf/provider-upcloud.managedDatabaseMysql.ManagedDatabaseMysqlProperties.property.innodbChangeBufferMaxSize">innodbChangeBufferMaxSize</a></code> | <code>number</code> | Maximum size for the InnoDB change buffer, as a percentage of the total size of the buffer pool. |
+| <code><a href="#@cdktf/provider-upcloud.managedDatabaseMysql.ManagedDatabaseMysqlProperties.property.innodbFlushNeighbors">innodbFlushNeighbors</a></code> | <code>number</code> | Specifies whether flushing a page from the InnoDB buffer pool also flushes other dirty pages in the same extent (default is 1): 0 - dirty pages in the same extent are not flushed,  1 - flush contiguous dirty pages in the same extent,  2 - flush dirty pages in the same extent. |
 | <code><a href="#@cdktf/provider-upcloud.managedDatabaseMysql.ManagedDatabaseMysqlProperties.property.innodbFtMinTokenSize">innodbFtMinTokenSize</a></code> | <code>number</code> | Minimum length of words that are stored in an InnoDB `FULLTEXT` index. |
 | <code><a href="#@cdktf/provider-upcloud.managedDatabaseMysql.ManagedDatabaseMysqlProperties.property.innodbFtServerStopwordTable">innodbFtServerStopwordTable</a></code> | <code>string</code> | This option is used to specify your own InnoDB `FULLTEXT` index stopword list for all InnoDB tables. |
 | <code><a href="#@cdktf/provider-upcloud.managedDatabaseMysql.ManagedDatabaseMysqlProperties.property.innodbLockWaitTimeout">innodbLockWaitTimeout</a></code> | <code>number</code> | The length of time in seconds an InnoDB transaction waits for a row lock before giving up. |
 | <code><a href="#@cdktf/provider-upcloud.managedDatabaseMysql.ManagedDatabaseMysqlProperties.property.innodbLogBufferSize">innodbLogBufferSize</a></code> | <code>number</code> | The size in bytes of the buffer that InnoDB uses to write to the log files on disk. |
 | <code><a href="#@cdktf/provider-upcloud.managedDatabaseMysql.ManagedDatabaseMysqlProperties.property.innodbOnlineAlterLogMaxSize">innodbOnlineAlterLogMaxSize</a></code> | <code>number</code> | The upper limit in bytes on the size of the temporary log files used during online DDL operations for InnoDB tables. |
 | <code><a href="#@cdktf/provider-upcloud.managedDatabaseMysql.ManagedDatabaseMysqlProperties.property.innodbPrintAllDeadlocks">innodbPrintAllDeadlocks</a></code> | <code>boolean \| cdktf.IResolvable</code> | When enabled, information about all deadlocks in InnoDB user transactions is recorded in the error log. Disabled by default. |
+| <code><a href="#@cdktf/provider-upcloud.managedDatabaseMysql.ManagedDatabaseMysqlProperties.property.innodbReadIoThreads">innodbReadIoThreads</a></code> | <code>number</code> | The number of I/O threads for read operations in InnoDB. |
 | <code><a href="#@cdktf/provider-upcloud.managedDatabaseMysql.ManagedDatabaseMysqlProperties.property.innodbRollbackOnTimeout">innodbRollbackOnTimeout</a></code> | <code>boolean \| cdktf.IResolvable</code> | When enabled a transaction timeout causes InnoDB to abort and roll back the entire transaction. |
+| <code><a href="#@cdktf/provider-upcloud.managedDatabaseMysql.ManagedDatabaseMysqlProperties.property.innodbThreadConcurrency">innodbThreadConcurrency</a></code> | <code>number</code> | Defines the maximum number of threads permitted inside of InnoDB. Default is 0 (infinite concurrency - no limit). |
+| <code><a href="#@cdktf/provider-upcloud.managedDatabaseMysql.ManagedDatabaseMysqlProperties.property.innodbWriteIoThreads">innodbWriteIoThreads</a></code> | <code>number</code> | The number of I/O threads for write operations in InnoDB. |
 | <code><a href="#@cdktf/provider-upcloud.managedDatabaseMysql.ManagedDatabaseMysqlProperties.property.interactiveTimeout">interactiveTimeout</a></code> | <code>number</code> | The number of seconds the server waits for activity on an interactive connection before closing it. |
 | <code><a href="#@cdktf/provider-upcloud.managedDatabaseMysql.ManagedDatabaseMysqlProperties.property.internalTmpMemStorageEngine">internalTmpMemStorageEngine</a></code> | <code>string</code> | The storage engine for in-memory internal temporary tables. |
 | <code><a href="#@cdktf/provider-upcloud.managedDatabaseMysql.ManagedDatabaseMysqlProperties.property.ipFilter">ipFilter</a></code> | <code>string[]</code> | IP filter. |
@@ -27868,6 +27873,7 @@ const managedDatabaseMysqlProperties: managedDatabaseMysql.ManagedDatabaseMysqlP
 | <code><a href="#@cdktf/provider-upcloud.managedDatabaseMysql.ManagedDatabaseMysqlProperties.property.maxAllowedPacket">maxAllowedPacket</a></code> | <code>number</code> | Size of the largest message in bytes that can be received by the server. Default is `67108864` (64M). |
 | <code><a href="#@cdktf/provider-upcloud.managedDatabaseMysql.ManagedDatabaseMysqlProperties.property.maxHeapTableSize">maxHeapTableSize</a></code> | <code>number</code> | Limits the size of internal in-memory tables. Also set `tmp_table_size`. Default is `16777216` (16M). |
 | <code><a href="#@cdktf/provider-upcloud.managedDatabaseMysql.ManagedDatabaseMysqlProperties.property.migration">migration</a></code> | <code>@cdktf/provider-upcloud.managedDatabaseMysql.ManagedDatabaseMysqlPropertiesMigration</code> | migration block. |
+| <code><a href="#@cdktf/provider-upcloud.managedDatabaseMysql.ManagedDatabaseMysqlProperties.property.netBufferLength">netBufferLength</a></code> | <code>number</code> | Start sizes of connection buffer and result buffer. |
 | <code><a href="#@cdktf/provider-upcloud.managedDatabaseMysql.ManagedDatabaseMysqlProperties.property.netReadTimeout">netReadTimeout</a></code> | <code>number</code> | The number of seconds to wait for more data from a connection before aborting the read. |
 | <code><a href="#@cdktf/provider-upcloud.managedDatabaseMysql.ManagedDatabaseMysqlProperties.property.netWriteTimeout">netWriteTimeout</a></code> | <code>number</code> | The number of seconds to wait for a block to be written to a connection before aborting the write. |
 | <code><a href="#@cdktf/provider-upcloud.managedDatabaseMysql.ManagedDatabaseMysqlProperties.property.publicAccess">publicAccess</a></code> | <code>boolean \| cdktf.IResolvable</code> | Public access allows connections to your Managed Database services via the public internet. |
@@ -28029,6 +28035,36 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/upclo
 
 ---
 
+##### `innodbChangeBufferMaxSize`<sup>Optional</sup> <a name="innodbChangeBufferMaxSize" id="@cdktf/provider-upcloud.managedDatabaseMysql.ManagedDatabaseMysqlProperties.property.innodbChangeBufferMaxSize"></a>
+
+```typescript
+public readonly innodbChangeBufferMaxSize: number;
+```
+
+- *Type:* number
+
+Maximum size for the InnoDB change buffer, as a percentage of the total size of the buffer pool.
+
+Default is 25
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/upcloud/r/managed_database_mysql#innodb_change_buffer_max_size ManagedDatabaseMysql#innodb_change_buffer_max_size}
+
+---
+
+##### `innodbFlushNeighbors`<sup>Optional</sup> <a name="innodbFlushNeighbors" id="@cdktf/provider-upcloud.managedDatabaseMysql.ManagedDatabaseMysqlProperties.property.innodbFlushNeighbors"></a>
+
+```typescript
+public readonly innodbFlushNeighbors: number;
+```
+
+- *Type:* number
+
+Specifies whether flushing a page from the InnoDB buffer pool also flushes other dirty pages in the same extent (default is 1): 0 - dirty pages in the same extent are not flushed,  1 - flush contiguous dirty pages in the same extent,  2 - flush dirty pages in the same extent.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/upcloud/r/managed_database_mysql#innodb_flush_neighbors ManagedDatabaseMysql#innodb_flush_neighbors}
+
+---
+
 ##### `innodbFtMinTokenSize`<sup>Optional</sup> <a name="innodbFtMinTokenSize" id="@cdktf/provider-upcloud.managedDatabaseMysql.ManagedDatabaseMysqlProperties.property.innodbFtMinTokenSize"></a>
 
 ```typescript
@@ -28113,6 +28149,22 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/upclo
 
 ---
 
+##### `innodbReadIoThreads`<sup>Optional</sup> <a name="innodbReadIoThreads" id="@cdktf/provider-upcloud.managedDatabaseMysql.ManagedDatabaseMysqlProperties.property.innodbReadIoThreads"></a>
+
+```typescript
+public readonly innodbReadIoThreads: number;
+```
+
+- *Type:* number
+
+The number of I/O threads for read operations in InnoDB.
+
+Default is 4. Changing this parameter will lead to a restart of the MySQL service.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/upcloud/r/managed_database_mysql#innodb_read_io_threads ManagedDatabaseMysql#innodb_read_io_threads}
+
+---
+
 ##### `innodbRollbackOnTimeout`<sup>Optional</sup> <a name="innodbRollbackOnTimeout" id="@cdktf/provider-upcloud.managedDatabaseMysql.ManagedDatabaseMysqlProperties.property.innodbRollbackOnTimeout"></a>
 
 ```typescript
@@ -28124,6 +28176,36 @@ public readonly innodbRollbackOnTimeout: boolean | IResolvable;
 When enabled a transaction timeout causes InnoDB to abort and roll back the entire transaction.
 
 Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/upcloud/r/managed_database_mysql#innodb_rollback_on_timeout ManagedDatabaseMysql#innodb_rollback_on_timeout}
+
+---
+
+##### `innodbThreadConcurrency`<sup>Optional</sup> <a name="innodbThreadConcurrency" id="@cdktf/provider-upcloud.managedDatabaseMysql.ManagedDatabaseMysqlProperties.property.innodbThreadConcurrency"></a>
+
+```typescript
+public readonly innodbThreadConcurrency: number;
+```
+
+- *Type:* number
+
+Defines the maximum number of threads permitted inside of InnoDB. Default is 0 (infinite concurrency - no limit).
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/upcloud/r/managed_database_mysql#innodb_thread_concurrency ManagedDatabaseMysql#innodb_thread_concurrency}
+
+---
+
+##### `innodbWriteIoThreads`<sup>Optional</sup> <a name="innodbWriteIoThreads" id="@cdktf/provider-upcloud.managedDatabaseMysql.ManagedDatabaseMysqlProperties.property.innodbWriteIoThreads"></a>
+
+```typescript
+public readonly innodbWriteIoThreads: number;
+```
+
+- *Type:* number
+
+The number of I/O threads for write operations in InnoDB.
+
+Default is 4. Changing this parameter will lead to a restart of the MySQL service.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/upcloud/r/managed_database_mysql#innodb_write_io_threads ManagedDatabaseMysql#innodb_write_io_threads}
 
 ---
 
@@ -28222,6 +28304,22 @@ public readonly migration: ManagedDatabaseMysqlPropertiesMigration;
 migration block.
 
 Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/upcloud/r/managed_database_mysql#migration ManagedDatabaseMysql#migration}
+
+---
+
+##### `netBufferLength`<sup>Optional</sup> <a name="netBufferLength" id="@cdktf/provider-upcloud.managedDatabaseMysql.ManagedDatabaseMysqlProperties.property.netBufferLength"></a>
+
+```typescript
+public readonly netBufferLength: number;
+```
+
+- *Type:* number
+
+Start sizes of connection buffer and result buffer.
+
+Default is 16384 (16K). Changing this parameter will lead to a restart of the MySQL service.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/upcloud/r/managed_database_mysql#net_buffer_length ManagedDatabaseMysql#net_buffer_length}
 
 ---
 
@@ -28789,6 +28887,7 @@ const managedDatabasePostgresqlProperties: managedDatabasePostgresql.ManagedData
 | <code><a href="#@cdktf/provider-upcloud.managedDatabasePostgresql.ManagedDatabasePostgresqlProperties.property.logErrorVerbosity">logErrorVerbosity</a></code> | <code>string</code> | Controls the amount of detail written in the server log for each message that is logged. |
 | <code><a href="#@cdktf/provider-upcloud.managedDatabasePostgresql.ManagedDatabasePostgresqlProperties.property.logLinePrefix">logLinePrefix</a></code> | <code>string</code> | Choose from one of the available log-formats. These can support popular log analyzers like pgbadger, pganalyze etc. |
 | <code><a href="#@cdktf/provider-upcloud.managedDatabasePostgresql.ManagedDatabasePostgresqlProperties.property.logMinDurationStatement">logMinDurationStatement</a></code> | <code>number</code> | Log statements that take more than this number of milliseconds to run, `-1` disables. |
+| <code><a href="#@cdktf/provider-upcloud.managedDatabasePostgresql.ManagedDatabasePostgresqlProperties.property.logTempFiles">logTempFiles</a></code> | <code>number</code> | Log statements for each temporary file created larger than this number of kilobytes, -1 disables. |
 | <code><a href="#@cdktf/provider-upcloud.managedDatabasePostgresql.ManagedDatabasePostgresqlProperties.property.maxFilesPerProcess">maxFilesPerProcess</a></code> | <code>number</code> | PostgreSQL maximum number of files that can be open per process. |
 | <code><a href="#@cdktf/provider-upcloud.managedDatabasePostgresql.ManagedDatabasePostgresqlProperties.property.maxLocksPerTransaction">maxLocksPerTransaction</a></code> | <code>number</code> | PostgreSQL maximum locks per transaction. |
 | <code><a href="#@cdktf/provider-upcloud.managedDatabasePostgresql.ManagedDatabasePostgresqlProperties.property.maxLogicalReplicationWorkers">maxLogicalReplicationWorkers</a></code> | <code>number</code> | PostgreSQL maximum logical replication workers (taken from the pool of `max_parallel_workers`). |
@@ -28810,6 +28909,9 @@ const managedDatabasePostgresqlProperties: managedDatabasePostgresql.ManagedData
 | <code><a href="#@cdktf/provider-upcloud.managedDatabasePostgresql.ManagedDatabasePostgresqlProperties.property.pgPartmanBgwRole">pgPartmanBgwRole</a></code> | <code>string</code> | Controls which role to use for pg_partman's scheduled background tasks. |
 | <code><a href="#@cdktf/provider-upcloud.managedDatabasePostgresql.ManagedDatabasePostgresqlProperties.property.pgReadReplica">pgReadReplica</a></code> | <code>boolean \| cdktf.IResolvable</code> | Should the service which is being forked be a read replica (deprecated, use read_replica service integration instead). |
 | <code><a href="#@cdktf/provider-upcloud.managedDatabasePostgresql.ManagedDatabasePostgresqlProperties.property.pgServiceToForkFrom">pgServiceToForkFrom</a></code> | <code>string</code> | Name of the PG Service from which to fork (deprecated, use service_to_fork_from). |
+| <code><a href="#@cdktf/provider-upcloud.managedDatabasePostgresql.ManagedDatabasePostgresqlProperties.property.pgStatMonitorEnable">pgStatMonitorEnable</a></code> | <code>boolean \| cdktf.IResolvable</code> | Enable the pg_stat_monitor extension. |
+| <code><a href="#@cdktf/provider-upcloud.managedDatabasePostgresql.ManagedDatabasePostgresqlProperties.property.pgStatMonitorPgsmEnableQueryPlan">pgStatMonitorPgsmEnableQueryPlan</a></code> | <code>boolean \| cdktf.IResolvable</code> | Enables or disables query plan monitoring. |
+| <code><a href="#@cdktf/provider-upcloud.managedDatabasePostgresql.ManagedDatabasePostgresqlProperties.property.pgStatMonitorPgsmMaxBuckets">pgStatMonitorPgsmMaxBuckets</a></code> | <code>number</code> | Sets the maximum number of buckets. |
 | <code><a href="#@cdktf/provider-upcloud.managedDatabasePostgresql.ManagedDatabasePostgresqlProperties.property.pgStatStatementsTrack">pgStatStatementsTrack</a></code> | <code>string</code> | Controls which statements are counted. |
 | <code><a href="#@cdktf/provider-upcloud.managedDatabasePostgresql.ManagedDatabasePostgresqlProperties.property.publicAccess">publicAccess</a></code> | <code>boolean \| cdktf.IResolvable</code> | Public access allows connections to your Managed Database services via the public internet. |
 | <code><a href="#@cdktf/provider-upcloud.managedDatabasePostgresql.ManagedDatabasePostgresqlProperties.property.sharedBuffersPercentage">sharedBuffersPercentage</a></code> | <code>number</code> | Percentage of total RAM that the database server uses for shared memory buffers. |
@@ -29237,6 +29339,20 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/upclo
 
 ---
 
+##### `logTempFiles`<sup>Optional</sup> <a name="logTempFiles" id="@cdktf/provider-upcloud.managedDatabasePostgresql.ManagedDatabasePostgresqlProperties.property.logTempFiles"></a>
+
+```typescript
+public readonly logTempFiles: number;
+```
+
+- *Type:* number
+
+Log statements for each temporary file created larger than this number of kilobytes, -1 disables.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/upcloud/r/managed_database_postgresql#log_temp_files ManagedDatabasePostgresql#log_temp_files}
+
+---
+
 ##### `maxFilesPerProcess`<sup>Optional</sup> <a name="maxFilesPerProcess" id="@cdktf/provider-upcloud.managedDatabasePostgresql.ManagedDatabasePostgresqlProperties.property.maxFilesPerProcess"></a>
 
 ```typescript
@@ -29532,6 +29648,50 @@ Name of the PG Service from which to fork (deprecated, use service_to_fork_from)
 This has effect only when a new service is being created.
 
 Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/upcloud/r/managed_database_postgresql#pg_service_to_fork_from ManagedDatabasePostgresql#pg_service_to_fork_from}
+
+---
+
+##### `pgStatMonitorEnable`<sup>Optional</sup> <a name="pgStatMonitorEnable" id="@cdktf/provider-upcloud.managedDatabasePostgresql.ManagedDatabasePostgresqlProperties.property.pgStatMonitorEnable"></a>
+
+```typescript
+public readonly pgStatMonitorEnable: boolean | IResolvable;
+```
+
+- *Type:* boolean | cdktf.IResolvable
+
+Enable the pg_stat_monitor extension.
+
+Enabling this extension will cause the cluster to be restarted.When this extension is enabled, pg_stat_statements results for utility commands are unreliable
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/upcloud/r/managed_database_postgresql#pg_stat_monitor_enable ManagedDatabasePostgresql#pg_stat_monitor_enable}
+
+---
+
+##### `pgStatMonitorPgsmEnableQueryPlan`<sup>Optional</sup> <a name="pgStatMonitorPgsmEnableQueryPlan" id="@cdktf/provider-upcloud.managedDatabasePostgresql.ManagedDatabasePostgresqlProperties.property.pgStatMonitorPgsmEnableQueryPlan"></a>
+
+```typescript
+public readonly pgStatMonitorPgsmEnableQueryPlan: boolean | IResolvable;
+```
+
+- *Type:* boolean | cdktf.IResolvable
+
+Enables or disables query plan monitoring.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/upcloud/r/managed_database_postgresql#pg_stat_monitor_pgsm_enable_query_plan ManagedDatabasePostgresql#pg_stat_monitor_pgsm_enable_query_plan}
+
+---
+
+##### `pgStatMonitorPgsmMaxBuckets`<sup>Optional</sup> <a name="pgStatMonitorPgsmMaxBuckets" id="@cdktf/provider-upcloud.managedDatabasePostgresql.ManagedDatabasePostgresqlProperties.property.pgStatMonitorPgsmMaxBuckets"></a>
+
+```typescript
+public readonly pgStatMonitorPgsmMaxBuckets: number;
+```
+
+- *Type:* number
+
+Sets the maximum number of buckets.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/upcloud/r/managed_database_postgresql#pg_stat_monitor_pgsm_max_buckets ManagedDatabasePostgresql#pg_stat_monitor_pgsm_max_buckets}
 
 ---
 
@@ -51837,13 +51997,18 @@ The attribute on the parent resource this class is referencing.
 | <code><a href="#@cdktf/provider-upcloud.managedDatabaseMysql.ManagedDatabaseMysqlPropertiesOutputReference.resetDefaultTimeZone">resetDefaultTimeZone</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.managedDatabaseMysql.ManagedDatabaseMysqlPropertiesOutputReference.resetGroupConcatMaxLen">resetGroupConcatMaxLen</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.managedDatabaseMysql.ManagedDatabaseMysqlPropertiesOutputReference.resetInformationSchemaStatsExpiry">resetInformationSchemaStatsExpiry</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-upcloud.managedDatabaseMysql.ManagedDatabaseMysqlPropertiesOutputReference.resetInnodbChangeBufferMaxSize">resetInnodbChangeBufferMaxSize</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-upcloud.managedDatabaseMysql.ManagedDatabaseMysqlPropertiesOutputReference.resetInnodbFlushNeighbors">resetInnodbFlushNeighbors</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.managedDatabaseMysql.ManagedDatabaseMysqlPropertiesOutputReference.resetInnodbFtMinTokenSize">resetInnodbFtMinTokenSize</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.managedDatabaseMysql.ManagedDatabaseMysqlPropertiesOutputReference.resetInnodbFtServerStopwordTable">resetInnodbFtServerStopwordTable</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.managedDatabaseMysql.ManagedDatabaseMysqlPropertiesOutputReference.resetInnodbLockWaitTimeout">resetInnodbLockWaitTimeout</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.managedDatabaseMysql.ManagedDatabaseMysqlPropertiesOutputReference.resetInnodbLogBufferSize">resetInnodbLogBufferSize</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.managedDatabaseMysql.ManagedDatabaseMysqlPropertiesOutputReference.resetInnodbOnlineAlterLogMaxSize">resetInnodbOnlineAlterLogMaxSize</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.managedDatabaseMysql.ManagedDatabaseMysqlPropertiesOutputReference.resetInnodbPrintAllDeadlocks">resetInnodbPrintAllDeadlocks</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-upcloud.managedDatabaseMysql.ManagedDatabaseMysqlPropertiesOutputReference.resetInnodbReadIoThreads">resetInnodbReadIoThreads</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.managedDatabaseMysql.ManagedDatabaseMysqlPropertiesOutputReference.resetInnodbRollbackOnTimeout">resetInnodbRollbackOnTimeout</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-upcloud.managedDatabaseMysql.ManagedDatabaseMysqlPropertiesOutputReference.resetInnodbThreadConcurrency">resetInnodbThreadConcurrency</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-upcloud.managedDatabaseMysql.ManagedDatabaseMysqlPropertiesOutputReference.resetInnodbWriteIoThreads">resetInnodbWriteIoThreads</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.managedDatabaseMysql.ManagedDatabaseMysqlPropertiesOutputReference.resetInteractiveTimeout">resetInteractiveTimeout</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.managedDatabaseMysql.ManagedDatabaseMysqlPropertiesOutputReference.resetInternalTmpMemStorageEngine">resetInternalTmpMemStorageEngine</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.managedDatabaseMysql.ManagedDatabaseMysqlPropertiesOutputReference.resetIpFilter">resetIpFilter</a></code> | *No description.* |
@@ -51851,6 +52016,7 @@ The attribute on the parent resource this class is referencing.
 | <code><a href="#@cdktf/provider-upcloud.managedDatabaseMysql.ManagedDatabaseMysqlPropertiesOutputReference.resetMaxAllowedPacket">resetMaxAllowedPacket</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.managedDatabaseMysql.ManagedDatabaseMysqlPropertiesOutputReference.resetMaxHeapTableSize">resetMaxHeapTableSize</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.managedDatabaseMysql.ManagedDatabaseMysqlPropertiesOutputReference.resetMigration">resetMigration</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-upcloud.managedDatabaseMysql.ManagedDatabaseMysqlPropertiesOutputReference.resetNetBufferLength">resetNetBufferLength</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.managedDatabaseMysql.ManagedDatabaseMysqlPropertiesOutputReference.resetNetReadTimeout">resetNetReadTimeout</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.managedDatabaseMysql.ManagedDatabaseMysqlPropertiesOutputReference.resetNetWriteTimeout">resetNetWriteTimeout</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.managedDatabaseMysql.ManagedDatabaseMysqlPropertiesOutputReference.resetPublicAccess">resetPublicAccess</a></code> | *No description.* |
@@ -52086,6 +52252,18 @@ public resetGroupConcatMaxLen(): void
 public resetInformationSchemaStatsExpiry(): void
 ```
 
+##### `resetInnodbChangeBufferMaxSize` <a name="resetInnodbChangeBufferMaxSize" id="@cdktf/provider-upcloud.managedDatabaseMysql.ManagedDatabaseMysqlPropertiesOutputReference.resetInnodbChangeBufferMaxSize"></a>
+
+```typescript
+public resetInnodbChangeBufferMaxSize(): void
+```
+
+##### `resetInnodbFlushNeighbors` <a name="resetInnodbFlushNeighbors" id="@cdktf/provider-upcloud.managedDatabaseMysql.ManagedDatabaseMysqlPropertiesOutputReference.resetInnodbFlushNeighbors"></a>
+
+```typescript
+public resetInnodbFlushNeighbors(): void
+```
+
 ##### `resetInnodbFtMinTokenSize` <a name="resetInnodbFtMinTokenSize" id="@cdktf/provider-upcloud.managedDatabaseMysql.ManagedDatabaseMysqlPropertiesOutputReference.resetInnodbFtMinTokenSize"></a>
 
 ```typescript
@@ -52122,10 +52300,28 @@ public resetInnodbOnlineAlterLogMaxSize(): void
 public resetInnodbPrintAllDeadlocks(): void
 ```
 
+##### `resetInnodbReadIoThreads` <a name="resetInnodbReadIoThreads" id="@cdktf/provider-upcloud.managedDatabaseMysql.ManagedDatabaseMysqlPropertiesOutputReference.resetInnodbReadIoThreads"></a>
+
+```typescript
+public resetInnodbReadIoThreads(): void
+```
+
 ##### `resetInnodbRollbackOnTimeout` <a name="resetInnodbRollbackOnTimeout" id="@cdktf/provider-upcloud.managedDatabaseMysql.ManagedDatabaseMysqlPropertiesOutputReference.resetInnodbRollbackOnTimeout"></a>
 
 ```typescript
 public resetInnodbRollbackOnTimeout(): void
+```
+
+##### `resetInnodbThreadConcurrency` <a name="resetInnodbThreadConcurrency" id="@cdktf/provider-upcloud.managedDatabaseMysql.ManagedDatabaseMysqlPropertiesOutputReference.resetInnodbThreadConcurrency"></a>
+
+```typescript
+public resetInnodbThreadConcurrency(): void
+```
+
+##### `resetInnodbWriteIoThreads` <a name="resetInnodbWriteIoThreads" id="@cdktf/provider-upcloud.managedDatabaseMysql.ManagedDatabaseMysqlPropertiesOutputReference.resetInnodbWriteIoThreads"></a>
+
+```typescript
+public resetInnodbWriteIoThreads(): void
 ```
 
 ##### `resetInteractiveTimeout` <a name="resetInteractiveTimeout" id="@cdktf/provider-upcloud.managedDatabaseMysql.ManagedDatabaseMysqlPropertiesOutputReference.resetInteractiveTimeout"></a>
@@ -52168,6 +52364,12 @@ public resetMaxHeapTableSize(): void
 
 ```typescript
 public resetMigration(): void
+```
+
+##### `resetNetBufferLength` <a name="resetNetBufferLength" id="@cdktf/provider-upcloud.managedDatabaseMysql.ManagedDatabaseMysqlPropertiesOutputReference.resetNetBufferLength"></a>
+
+```typescript
+public resetNetBufferLength(): void
 ```
 
 ##### `resetNetReadTimeout` <a name="resetNetReadTimeout" id="@cdktf/provider-upcloud.managedDatabaseMysql.ManagedDatabaseMysqlPropertiesOutputReference.resetNetReadTimeout"></a>
@@ -52237,6 +52439,7 @@ public resetWaitTimeout(): void
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-upcloud.managedDatabaseMysql.ManagedDatabaseMysqlPropertiesOutputReference.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-upcloud.managedDatabaseMysql.ManagedDatabaseMysqlPropertiesOutputReference.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-upcloud.managedDatabaseMysql.ManagedDatabaseMysqlPropertiesOutputReference.property.additionalBackupRegions">additionalBackupRegions</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.managedDatabaseMysql.ManagedDatabaseMysqlPropertiesOutputReference.property.migration">migration</a></code> | <code>@cdktf/provider-upcloud.managedDatabaseMysql.ManagedDatabaseMysqlPropertiesMigrationOutputReference</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.managedDatabaseMysql.ManagedDatabaseMysqlPropertiesOutputReference.property.adminPasswordInput">adminPasswordInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.managedDatabaseMysql.ManagedDatabaseMysqlPropertiesOutputReference.property.adminUsernameInput">adminUsernameInput</a></code> | <code>string</code> | *No description.* |
@@ -52248,13 +52451,18 @@ public resetWaitTimeout(): void
 | <code><a href="#@cdktf/provider-upcloud.managedDatabaseMysql.ManagedDatabaseMysqlPropertiesOutputReference.property.defaultTimeZoneInput">defaultTimeZoneInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.managedDatabaseMysql.ManagedDatabaseMysqlPropertiesOutputReference.property.groupConcatMaxLenInput">groupConcatMaxLenInput</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.managedDatabaseMysql.ManagedDatabaseMysqlPropertiesOutputReference.property.informationSchemaStatsExpiryInput">informationSchemaStatsExpiryInput</a></code> | <code>number</code> | *No description.* |
+| <code><a href="#@cdktf/provider-upcloud.managedDatabaseMysql.ManagedDatabaseMysqlPropertiesOutputReference.property.innodbChangeBufferMaxSizeInput">innodbChangeBufferMaxSizeInput</a></code> | <code>number</code> | *No description.* |
+| <code><a href="#@cdktf/provider-upcloud.managedDatabaseMysql.ManagedDatabaseMysqlPropertiesOutputReference.property.innodbFlushNeighborsInput">innodbFlushNeighborsInput</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.managedDatabaseMysql.ManagedDatabaseMysqlPropertiesOutputReference.property.innodbFtMinTokenSizeInput">innodbFtMinTokenSizeInput</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.managedDatabaseMysql.ManagedDatabaseMysqlPropertiesOutputReference.property.innodbFtServerStopwordTableInput">innodbFtServerStopwordTableInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.managedDatabaseMysql.ManagedDatabaseMysqlPropertiesOutputReference.property.innodbLockWaitTimeoutInput">innodbLockWaitTimeoutInput</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.managedDatabaseMysql.ManagedDatabaseMysqlPropertiesOutputReference.property.innodbLogBufferSizeInput">innodbLogBufferSizeInput</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.managedDatabaseMysql.ManagedDatabaseMysqlPropertiesOutputReference.property.innodbOnlineAlterLogMaxSizeInput">innodbOnlineAlterLogMaxSizeInput</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.managedDatabaseMysql.ManagedDatabaseMysqlPropertiesOutputReference.property.innodbPrintAllDeadlocksInput">innodbPrintAllDeadlocksInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-upcloud.managedDatabaseMysql.ManagedDatabaseMysqlPropertiesOutputReference.property.innodbReadIoThreadsInput">innodbReadIoThreadsInput</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.managedDatabaseMysql.ManagedDatabaseMysqlPropertiesOutputReference.property.innodbRollbackOnTimeoutInput">innodbRollbackOnTimeoutInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-upcloud.managedDatabaseMysql.ManagedDatabaseMysqlPropertiesOutputReference.property.innodbThreadConcurrencyInput">innodbThreadConcurrencyInput</a></code> | <code>number</code> | *No description.* |
+| <code><a href="#@cdktf/provider-upcloud.managedDatabaseMysql.ManagedDatabaseMysqlPropertiesOutputReference.property.innodbWriteIoThreadsInput">innodbWriteIoThreadsInput</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.managedDatabaseMysql.ManagedDatabaseMysqlPropertiesOutputReference.property.interactiveTimeoutInput">interactiveTimeoutInput</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.managedDatabaseMysql.ManagedDatabaseMysqlPropertiesOutputReference.property.internalTmpMemStorageEngineInput">internalTmpMemStorageEngineInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.managedDatabaseMysql.ManagedDatabaseMysqlPropertiesOutputReference.property.ipFilterInput">ipFilterInput</a></code> | <code>string[]</code> | *No description.* |
@@ -52262,6 +52470,7 @@ public resetWaitTimeout(): void
 | <code><a href="#@cdktf/provider-upcloud.managedDatabaseMysql.ManagedDatabaseMysqlPropertiesOutputReference.property.maxAllowedPacketInput">maxAllowedPacketInput</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.managedDatabaseMysql.ManagedDatabaseMysqlPropertiesOutputReference.property.maxHeapTableSizeInput">maxHeapTableSizeInput</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.managedDatabaseMysql.ManagedDatabaseMysqlPropertiesOutputReference.property.migrationInput">migrationInput</a></code> | <code>@cdktf/provider-upcloud.managedDatabaseMysql.ManagedDatabaseMysqlPropertiesMigration</code> | *No description.* |
+| <code><a href="#@cdktf/provider-upcloud.managedDatabaseMysql.ManagedDatabaseMysqlPropertiesOutputReference.property.netBufferLengthInput">netBufferLengthInput</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.managedDatabaseMysql.ManagedDatabaseMysqlPropertiesOutputReference.property.netReadTimeoutInput">netReadTimeoutInput</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.managedDatabaseMysql.ManagedDatabaseMysqlPropertiesOutputReference.property.netWriteTimeoutInput">netWriteTimeoutInput</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.managedDatabaseMysql.ManagedDatabaseMysqlPropertiesOutputReference.property.publicAccessInput">publicAccessInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
@@ -52282,19 +52491,25 @@ public resetWaitTimeout(): void
 | <code><a href="#@cdktf/provider-upcloud.managedDatabaseMysql.ManagedDatabaseMysqlPropertiesOutputReference.property.defaultTimeZone">defaultTimeZone</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.managedDatabaseMysql.ManagedDatabaseMysqlPropertiesOutputReference.property.groupConcatMaxLen">groupConcatMaxLen</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.managedDatabaseMysql.ManagedDatabaseMysqlPropertiesOutputReference.property.informationSchemaStatsExpiry">informationSchemaStatsExpiry</a></code> | <code>number</code> | *No description.* |
+| <code><a href="#@cdktf/provider-upcloud.managedDatabaseMysql.ManagedDatabaseMysqlPropertiesOutputReference.property.innodbChangeBufferMaxSize">innodbChangeBufferMaxSize</a></code> | <code>number</code> | *No description.* |
+| <code><a href="#@cdktf/provider-upcloud.managedDatabaseMysql.ManagedDatabaseMysqlPropertiesOutputReference.property.innodbFlushNeighbors">innodbFlushNeighbors</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.managedDatabaseMysql.ManagedDatabaseMysqlPropertiesOutputReference.property.innodbFtMinTokenSize">innodbFtMinTokenSize</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.managedDatabaseMysql.ManagedDatabaseMysqlPropertiesOutputReference.property.innodbFtServerStopwordTable">innodbFtServerStopwordTable</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.managedDatabaseMysql.ManagedDatabaseMysqlPropertiesOutputReference.property.innodbLockWaitTimeout">innodbLockWaitTimeout</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.managedDatabaseMysql.ManagedDatabaseMysqlPropertiesOutputReference.property.innodbLogBufferSize">innodbLogBufferSize</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.managedDatabaseMysql.ManagedDatabaseMysqlPropertiesOutputReference.property.innodbOnlineAlterLogMaxSize">innodbOnlineAlterLogMaxSize</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.managedDatabaseMysql.ManagedDatabaseMysqlPropertiesOutputReference.property.innodbPrintAllDeadlocks">innodbPrintAllDeadlocks</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-upcloud.managedDatabaseMysql.ManagedDatabaseMysqlPropertiesOutputReference.property.innodbReadIoThreads">innodbReadIoThreads</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.managedDatabaseMysql.ManagedDatabaseMysqlPropertiesOutputReference.property.innodbRollbackOnTimeout">innodbRollbackOnTimeout</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-upcloud.managedDatabaseMysql.ManagedDatabaseMysqlPropertiesOutputReference.property.innodbThreadConcurrency">innodbThreadConcurrency</a></code> | <code>number</code> | *No description.* |
+| <code><a href="#@cdktf/provider-upcloud.managedDatabaseMysql.ManagedDatabaseMysqlPropertiesOutputReference.property.innodbWriteIoThreads">innodbWriteIoThreads</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.managedDatabaseMysql.ManagedDatabaseMysqlPropertiesOutputReference.property.interactiveTimeout">interactiveTimeout</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.managedDatabaseMysql.ManagedDatabaseMysqlPropertiesOutputReference.property.internalTmpMemStorageEngine">internalTmpMemStorageEngine</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.managedDatabaseMysql.ManagedDatabaseMysqlPropertiesOutputReference.property.ipFilter">ipFilter</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.managedDatabaseMysql.ManagedDatabaseMysqlPropertiesOutputReference.property.longQueryTime">longQueryTime</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.managedDatabaseMysql.ManagedDatabaseMysqlPropertiesOutputReference.property.maxAllowedPacket">maxAllowedPacket</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.managedDatabaseMysql.ManagedDatabaseMysqlPropertiesOutputReference.property.maxHeapTableSize">maxHeapTableSize</a></code> | <code>number</code> | *No description.* |
+| <code><a href="#@cdktf/provider-upcloud.managedDatabaseMysql.ManagedDatabaseMysqlPropertiesOutputReference.property.netBufferLength">netBufferLength</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.managedDatabaseMysql.ManagedDatabaseMysqlPropertiesOutputReference.property.netReadTimeout">netReadTimeout</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.managedDatabaseMysql.ManagedDatabaseMysqlPropertiesOutputReference.property.netWriteTimeout">netWriteTimeout</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.managedDatabaseMysql.ManagedDatabaseMysqlPropertiesOutputReference.property.publicAccess">publicAccess</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
@@ -52330,6 +52545,16 @@ public readonly fqn: string;
 ```
 
 - *Type:* string
+
+---
+
+##### `additionalBackupRegions`<sup>Required</sup> <a name="additionalBackupRegions" id="@cdktf/provider-upcloud.managedDatabaseMysql.ManagedDatabaseMysqlPropertiesOutputReference.property.additionalBackupRegions"></a>
+
+```typescript
+public readonly additionalBackupRegions: string[];
+```
+
+- *Type:* string[]
 
 ---
 
@@ -52443,6 +52668,26 @@ public readonly informationSchemaStatsExpiryInput: number;
 
 ---
 
+##### `innodbChangeBufferMaxSizeInput`<sup>Optional</sup> <a name="innodbChangeBufferMaxSizeInput" id="@cdktf/provider-upcloud.managedDatabaseMysql.ManagedDatabaseMysqlPropertiesOutputReference.property.innodbChangeBufferMaxSizeInput"></a>
+
+```typescript
+public readonly innodbChangeBufferMaxSizeInput: number;
+```
+
+- *Type:* number
+
+---
+
+##### `innodbFlushNeighborsInput`<sup>Optional</sup> <a name="innodbFlushNeighborsInput" id="@cdktf/provider-upcloud.managedDatabaseMysql.ManagedDatabaseMysqlPropertiesOutputReference.property.innodbFlushNeighborsInput"></a>
+
+```typescript
+public readonly innodbFlushNeighborsInput: number;
+```
+
+- *Type:* number
+
+---
+
 ##### `innodbFtMinTokenSizeInput`<sup>Optional</sup> <a name="innodbFtMinTokenSizeInput" id="@cdktf/provider-upcloud.managedDatabaseMysql.ManagedDatabaseMysqlPropertiesOutputReference.property.innodbFtMinTokenSizeInput"></a>
 
 ```typescript
@@ -52503,6 +52748,16 @@ public readonly innodbPrintAllDeadlocksInput: boolean | IResolvable;
 
 ---
 
+##### `innodbReadIoThreadsInput`<sup>Optional</sup> <a name="innodbReadIoThreadsInput" id="@cdktf/provider-upcloud.managedDatabaseMysql.ManagedDatabaseMysqlPropertiesOutputReference.property.innodbReadIoThreadsInput"></a>
+
+```typescript
+public readonly innodbReadIoThreadsInput: number;
+```
+
+- *Type:* number
+
+---
+
 ##### `innodbRollbackOnTimeoutInput`<sup>Optional</sup> <a name="innodbRollbackOnTimeoutInput" id="@cdktf/provider-upcloud.managedDatabaseMysql.ManagedDatabaseMysqlPropertiesOutputReference.property.innodbRollbackOnTimeoutInput"></a>
 
 ```typescript
@@ -52510,6 +52765,26 @@ public readonly innodbRollbackOnTimeoutInput: boolean | IResolvable;
 ```
 
 - *Type:* boolean | cdktf.IResolvable
+
+---
+
+##### `innodbThreadConcurrencyInput`<sup>Optional</sup> <a name="innodbThreadConcurrencyInput" id="@cdktf/provider-upcloud.managedDatabaseMysql.ManagedDatabaseMysqlPropertiesOutputReference.property.innodbThreadConcurrencyInput"></a>
+
+```typescript
+public readonly innodbThreadConcurrencyInput: number;
+```
+
+- *Type:* number
+
+---
+
+##### `innodbWriteIoThreadsInput`<sup>Optional</sup> <a name="innodbWriteIoThreadsInput" id="@cdktf/provider-upcloud.managedDatabaseMysql.ManagedDatabaseMysqlPropertiesOutputReference.property.innodbWriteIoThreadsInput"></a>
+
+```typescript
+public readonly innodbWriteIoThreadsInput: number;
+```
+
+- *Type:* number
 
 ---
 
@@ -52580,6 +52855,16 @@ public readonly migrationInput: ManagedDatabaseMysqlPropertiesMigration;
 ```
 
 - *Type:* @cdktf/provider-upcloud.managedDatabaseMysql.ManagedDatabaseMysqlPropertiesMigration
+
+---
+
+##### `netBufferLengthInput`<sup>Optional</sup> <a name="netBufferLengthInput" id="@cdktf/provider-upcloud.managedDatabaseMysql.ManagedDatabaseMysqlPropertiesOutputReference.property.netBufferLengthInput"></a>
+
+```typescript
+public readonly netBufferLengthInput: number;
+```
+
+- *Type:* number
 
 ---
 
@@ -52783,6 +53068,26 @@ public readonly informationSchemaStatsExpiry: number;
 
 ---
 
+##### `innodbChangeBufferMaxSize`<sup>Required</sup> <a name="innodbChangeBufferMaxSize" id="@cdktf/provider-upcloud.managedDatabaseMysql.ManagedDatabaseMysqlPropertiesOutputReference.property.innodbChangeBufferMaxSize"></a>
+
+```typescript
+public readonly innodbChangeBufferMaxSize: number;
+```
+
+- *Type:* number
+
+---
+
+##### `innodbFlushNeighbors`<sup>Required</sup> <a name="innodbFlushNeighbors" id="@cdktf/provider-upcloud.managedDatabaseMysql.ManagedDatabaseMysqlPropertiesOutputReference.property.innodbFlushNeighbors"></a>
+
+```typescript
+public readonly innodbFlushNeighbors: number;
+```
+
+- *Type:* number
+
+---
+
 ##### `innodbFtMinTokenSize`<sup>Required</sup> <a name="innodbFtMinTokenSize" id="@cdktf/provider-upcloud.managedDatabaseMysql.ManagedDatabaseMysqlPropertiesOutputReference.property.innodbFtMinTokenSize"></a>
 
 ```typescript
@@ -52843,6 +53148,16 @@ public readonly innodbPrintAllDeadlocks: boolean | IResolvable;
 
 ---
 
+##### `innodbReadIoThreads`<sup>Required</sup> <a name="innodbReadIoThreads" id="@cdktf/provider-upcloud.managedDatabaseMysql.ManagedDatabaseMysqlPropertiesOutputReference.property.innodbReadIoThreads"></a>
+
+```typescript
+public readonly innodbReadIoThreads: number;
+```
+
+- *Type:* number
+
+---
+
 ##### `innodbRollbackOnTimeout`<sup>Required</sup> <a name="innodbRollbackOnTimeout" id="@cdktf/provider-upcloud.managedDatabaseMysql.ManagedDatabaseMysqlPropertiesOutputReference.property.innodbRollbackOnTimeout"></a>
 
 ```typescript
@@ -52850,6 +53165,26 @@ public readonly innodbRollbackOnTimeout: boolean | IResolvable;
 ```
 
 - *Type:* boolean | cdktf.IResolvable
+
+---
+
+##### `innodbThreadConcurrency`<sup>Required</sup> <a name="innodbThreadConcurrency" id="@cdktf/provider-upcloud.managedDatabaseMysql.ManagedDatabaseMysqlPropertiesOutputReference.property.innodbThreadConcurrency"></a>
+
+```typescript
+public readonly innodbThreadConcurrency: number;
+```
+
+- *Type:* number
+
+---
+
+##### `innodbWriteIoThreads`<sup>Required</sup> <a name="innodbWriteIoThreads" id="@cdktf/provider-upcloud.managedDatabaseMysql.ManagedDatabaseMysqlPropertiesOutputReference.property.innodbWriteIoThreads"></a>
+
+```typescript
+public readonly innodbWriteIoThreads: number;
+```
+
+- *Type:* number
 
 ---
 
@@ -52907,6 +53242,16 @@ public readonly maxAllowedPacket: number;
 
 ```typescript
 public readonly maxHeapTableSize: number;
+```
+
+- *Type:* number
+
+---
+
+##### `netBufferLength`<sup>Required</sup> <a name="netBufferLength" id="@cdktf/provider-upcloud.managedDatabaseMysql.ManagedDatabaseMysqlPropertiesOutputReference.property.netBufferLength"></a>
+
+```typescript
+public readonly netBufferLength: number;
 ```
 
 - *Type:* number
@@ -54443,6 +54788,7 @@ The attribute on the parent resource this class is referencing.
 | <code><a href="#@cdktf/provider-upcloud.managedDatabasePostgresql.ManagedDatabasePostgresqlPropertiesOutputReference.resetLogErrorVerbosity">resetLogErrorVerbosity</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.managedDatabasePostgresql.ManagedDatabasePostgresqlPropertiesOutputReference.resetLogLinePrefix">resetLogLinePrefix</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.managedDatabasePostgresql.ManagedDatabasePostgresqlPropertiesOutputReference.resetLogMinDurationStatement">resetLogMinDurationStatement</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-upcloud.managedDatabasePostgresql.ManagedDatabasePostgresqlPropertiesOutputReference.resetLogTempFiles">resetLogTempFiles</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.managedDatabasePostgresql.ManagedDatabasePostgresqlPropertiesOutputReference.resetMaxFilesPerProcess">resetMaxFilesPerProcess</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.managedDatabasePostgresql.ManagedDatabasePostgresqlPropertiesOutputReference.resetMaxLocksPerTransaction">resetMaxLocksPerTransaction</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.managedDatabasePostgresql.ManagedDatabasePostgresqlPropertiesOutputReference.resetMaxLogicalReplicationWorkers">resetMaxLogicalReplicationWorkers</a></code> | *No description.* |
@@ -54464,6 +54810,9 @@ The attribute on the parent resource this class is referencing.
 | <code><a href="#@cdktf/provider-upcloud.managedDatabasePostgresql.ManagedDatabasePostgresqlPropertiesOutputReference.resetPgPartmanBgwRole">resetPgPartmanBgwRole</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.managedDatabasePostgresql.ManagedDatabasePostgresqlPropertiesOutputReference.resetPgReadReplica">resetPgReadReplica</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.managedDatabasePostgresql.ManagedDatabasePostgresqlPropertiesOutputReference.resetPgServiceToForkFrom">resetPgServiceToForkFrom</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-upcloud.managedDatabasePostgresql.ManagedDatabasePostgresqlPropertiesOutputReference.resetPgStatMonitorEnable">resetPgStatMonitorEnable</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-upcloud.managedDatabasePostgresql.ManagedDatabasePostgresqlPropertiesOutputReference.resetPgStatMonitorPgsmEnableQueryPlan">resetPgStatMonitorPgsmEnableQueryPlan</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-upcloud.managedDatabasePostgresql.ManagedDatabasePostgresqlPropertiesOutputReference.resetPgStatMonitorPgsmMaxBuckets">resetPgStatMonitorPgsmMaxBuckets</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.managedDatabasePostgresql.ManagedDatabasePostgresqlPropertiesOutputReference.resetPgStatStatementsTrack">resetPgStatStatementsTrack</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.managedDatabasePostgresql.ManagedDatabasePostgresqlPropertiesOutputReference.resetPublicAccess">resetPublicAccess</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.managedDatabasePostgresql.ManagedDatabasePostgresqlPropertiesOutputReference.resetSharedBuffersPercentage">resetSharedBuffersPercentage</a></code> | *No description.* |
@@ -54843,6 +55192,12 @@ public resetLogLinePrefix(): void
 public resetLogMinDurationStatement(): void
 ```
 
+##### `resetLogTempFiles` <a name="resetLogTempFiles" id="@cdktf/provider-upcloud.managedDatabasePostgresql.ManagedDatabasePostgresqlPropertiesOutputReference.resetLogTempFiles"></a>
+
+```typescript
+public resetLogTempFiles(): void
+```
+
 ##### `resetMaxFilesPerProcess` <a name="resetMaxFilesPerProcess" id="@cdktf/provider-upcloud.managedDatabasePostgresql.ManagedDatabasePostgresqlPropertiesOutputReference.resetMaxFilesPerProcess"></a>
 
 ```typescript
@@ -54969,6 +55324,24 @@ public resetPgReadReplica(): void
 public resetPgServiceToForkFrom(): void
 ```
 
+##### `resetPgStatMonitorEnable` <a name="resetPgStatMonitorEnable" id="@cdktf/provider-upcloud.managedDatabasePostgresql.ManagedDatabasePostgresqlPropertiesOutputReference.resetPgStatMonitorEnable"></a>
+
+```typescript
+public resetPgStatMonitorEnable(): void
+```
+
+##### `resetPgStatMonitorPgsmEnableQueryPlan` <a name="resetPgStatMonitorPgsmEnableQueryPlan" id="@cdktf/provider-upcloud.managedDatabasePostgresql.ManagedDatabasePostgresqlPropertiesOutputReference.resetPgStatMonitorPgsmEnableQueryPlan"></a>
+
+```typescript
+public resetPgStatMonitorPgsmEnableQueryPlan(): void
+```
+
+##### `resetPgStatMonitorPgsmMaxBuckets` <a name="resetPgStatMonitorPgsmMaxBuckets" id="@cdktf/provider-upcloud.managedDatabasePostgresql.ManagedDatabasePostgresqlPropertiesOutputReference.resetPgStatMonitorPgsmMaxBuckets"></a>
+
+```typescript
+public resetPgStatMonitorPgsmMaxBuckets(): void
+```
+
 ##### `resetPgStatStatementsTrack` <a name="resetPgStatStatementsTrack" id="@cdktf/provider-upcloud.managedDatabasePostgresql.ManagedDatabasePostgresqlPropertiesOutputReference.resetPgStatStatementsTrack"></a>
 
 ```typescript
@@ -55072,6 +55445,8 @@ public resetWorkMem(): void
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-upcloud.managedDatabasePostgresql.ManagedDatabasePostgresqlPropertiesOutputReference.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-upcloud.managedDatabasePostgresql.ManagedDatabasePostgresqlPropertiesOutputReference.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-upcloud.managedDatabasePostgresql.ManagedDatabasePostgresqlPropertiesOutputReference.property.additionalBackupRegions">additionalBackupRegions</a></code> | <code>string[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-upcloud.managedDatabasePostgresql.ManagedDatabasePostgresqlPropertiesOutputReference.property.enableIpv6">enableIpv6</a></code> | <code>cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.managedDatabasePostgresql.ManagedDatabasePostgresqlPropertiesOutputReference.property.migration">migration</a></code> | <code>@cdktf/provider-upcloud.managedDatabasePostgresql.ManagedDatabasePostgresqlPropertiesMigrationOutputReference</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.managedDatabasePostgresql.ManagedDatabasePostgresqlPropertiesOutputReference.property.pgbouncer">pgbouncer</a></code> | <code>@cdktf/provider-upcloud.managedDatabasePostgresql.ManagedDatabasePostgresqlPropertiesPgbouncerOutputReference</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.managedDatabasePostgresql.ManagedDatabasePostgresqlPropertiesOutputReference.property.pglookout">pglookout</a></code> | <code>@cdktf/provider-upcloud.managedDatabasePostgresql.ManagedDatabasePostgresqlPropertiesPglookoutOutputReference</code> | *No description.* |
@@ -55103,6 +55478,7 @@ public resetWorkMem(): void
 | <code><a href="#@cdktf/provider-upcloud.managedDatabasePostgresql.ManagedDatabasePostgresqlPropertiesOutputReference.property.logErrorVerbosityInput">logErrorVerbosityInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.managedDatabasePostgresql.ManagedDatabasePostgresqlPropertiesOutputReference.property.logLinePrefixInput">logLinePrefixInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.managedDatabasePostgresql.ManagedDatabasePostgresqlPropertiesOutputReference.property.logMinDurationStatementInput">logMinDurationStatementInput</a></code> | <code>number</code> | *No description.* |
+| <code><a href="#@cdktf/provider-upcloud.managedDatabasePostgresql.ManagedDatabasePostgresqlPropertiesOutputReference.property.logTempFilesInput">logTempFilesInput</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.managedDatabasePostgresql.ManagedDatabasePostgresqlPropertiesOutputReference.property.maxFilesPerProcessInput">maxFilesPerProcessInput</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.managedDatabasePostgresql.ManagedDatabasePostgresqlPropertiesOutputReference.property.maxLocksPerTransactionInput">maxLocksPerTransactionInput</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.managedDatabasePostgresql.ManagedDatabasePostgresqlPropertiesOutputReference.property.maxLogicalReplicationWorkersInput">maxLogicalReplicationWorkersInput</a></code> | <code>number</code> | *No description.* |
@@ -55124,6 +55500,9 @@ public resetWorkMem(): void
 | <code><a href="#@cdktf/provider-upcloud.managedDatabasePostgresql.ManagedDatabasePostgresqlPropertiesOutputReference.property.pgPartmanBgwRoleInput">pgPartmanBgwRoleInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.managedDatabasePostgresql.ManagedDatabasePostgresqlPropertiesOutputReference.property.pgReadReplicaInput">pgReadReplicaInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.managedDatabasePostgresql.ManagedDatabasePostgresqlPropertiesOutputReference.property.pgServiceToForkFromInput">pgServiceToForkFromInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-upcloud.managedDatabasePostgresql.ManagedDatabasePostgresqlPropertiesOutputReference.property.pgStatMonitorEnableInput">pgStatMonitorEnableInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-upcloud.managedDatabasePostgresql.ManagedDatabasePostgresqlPropertiesOutputReference.property.pgStatMonitorPgsmEnableQueryPlanInput">pgStatMonitorPgsmEnableQueryPlanInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-upcloud.managedDatabasePostgresql.ManagedDatabasePostgresqlPropertiesOutputReference.property.pgStatMonitorPgsmMaxBucketsInput">pgStatMonitorPgsmMaxBucketsInput</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.managedDatabasePostgresql.ManagedDatabasePostgresqlPropertiesOutputReference.property.pgStatStatementsTrackInput">pgStatStatementsTrackInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.managedDatabasePostgresql.ManagedDatabasePostgresqlPropertiesOutputReference.property.publicAccessInput">publicAccessInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.managedDatabasePostgresql.ManagedDatabasePostgresqlPropertiesOutputReference.property.sharedBuffersPercentageInput">sharedBuffersPercentageInput</a></code> | <code>number</code> | *No description.* |
@@ -55167,6 +55546,7 @@ public resetWorkMem(): void
 | <code><a href="#@cdktf/provider-upcloud.managedDatabasePostgresql.ManagedDatabasePostgresqlPropertiesOutputReference.property.logErrorVerbosity">logErrorVerbosity</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.managedDatabasePostgresql.ManagedDatabasePostgresqlPropertiesOutputReference.property.logLinePrefix">logLinePrefix</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.managedDatabasePostgresql.ManagedDatabasePostgresqlPropertiesOutputReference.property.logMinDurationStatement">logMinDurationStatement</a></code> | <code>number</code> | *No description.* |
+| <code><a href="#@cdktf/provider-upcloud.managedDatabasePostgresql.ManagedDatabasePostgresqlPropertiesOutputReference.property.logTempFiles">logTempFiles</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.managedDatabasePostgresql.ManagedDatabasePostgresqlPropertiesOutputReference.property.maxFilesPerProcess">maxFilesPerProcess</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.managedDatabasePostgresql.ManagedDatabasePostgresqlPropertiesOutputReference.property.maxLocksPerTransaction">maxLocksPerTransaction</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.managedDatabasePostgresql.ManagedDatabasePostgresqlPropertiesOutputReference.property.maxLogicalReplicationWorkers">maxLogicalReplicationWorkers</a></code> | <code>number</code> | *No description.* |
@@ -55185,6 +55565,9 @@ public resetWorkMem(): void
 | <code><a href="#@cdktf/provider-upcloud.managedDatabasePostgresql.ManagedDatabasePostgresqlPropertiesOutputReference.property.pgPartmanBgwRole">pgPartmanBgwRole</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.managedDatabasePostgresql.ManagedDatabasePostgresqlPropertiesOutputReference.property.pgReadReplica">pgReadReplica</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.managedDatabasePostgresql.ManagedDatabasePostgresqlPropertiesOutputReference.property.pgServiceToForkFrom">pgServiceToForkFrom</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-upcloud.managedDatabasePostgresql.ManagedDatabasePostgresqlPropertiesOutputReference.property.pgStatMonitorEnable">pgStatMonitorEnable</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-upcloud.managedDatabasePostgresql.ManagedDatabasePostgresqlPropertiesOutputReference.property.pgStatMonitorPgsmEnableQueryPlan">pgStatMonitorPgsmEnableQueryPlan</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-upcloud.managedDatabasePostgresql.ManagedDatabasePostgresqlPropertiesOutputReference.property.pgStatMonitorPgsmMaxBuckets">pgStatMonitorPgsmMaxBuckets</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.managedDatabasePostgresql.ManagedDatabasePostgresqlPropertiesOutputReference.property.pgStatStatementsTrack">pgStatStatementsTrack</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.managedDatabasePostgresql.ManagedDatabasePostgresqlPropertiesOutputReference.property.publicAccess">publicAccess</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.managedDatabasePostgresql.ManagedDatabasePostgresqlPropertiesOutputReference.property.sharedBuffersPercentage">sharedBuffersPercentage</a></code> | <code>number</code> | *No description.* |
@@ -55225,6 +55608,26 @@ public readonly fqn: string;
 ```
 
 - *Type:* string
+
+---
+
+##### `additionalBackupRegions`<sup>Required</sup> <a name="additionalBackupRegions" id="@cdktf/provider-upcloud.managedDatabasePostgresql.ManagedDatabasePostgresqlPropertiesOutputReference.property.additionalBackupRegions"></a>
+
+```typescript
+public readonly additionalBackupRegions: string[];
+```
+
+- *Type:* string[]
+
+---
+
+##### `enableIpv6`<sup>Required</sup> <a name="enableIpv6" id="@cdktf/provider-upcloud.managedDatabasePostgresql.ManagedDatabasePostgresqlPropertiesOutputReference.property.enableIpv6"></a>
+
+```typescript
+public readonly enableIpv6: IResolvable;
+```
+
+- *Type:* cdktf.IResolvable
 
 ---
 
@@ -55538,6 +55941,16 @@ public readonly logMinDurationStatementInput: number;
 
 ---
 
+##### `logTempFilesInput`<sup>Optional</sup> <a name="logTempFilesInput" id="@cdktf/provider-upcloud.managedDatabasePostgresql.ManagedDatabasePostgresqlPropertiesOutputReference.property.logTempFilesInput"></a>
+
+```typescript
+public readonly logTempFilesInput: number;
+```
+
+- *Type:* number
+
+---
+
 ##### `maxFilesPerProcessInput`<sup>Optional</sup> <a name="maxFilesPerProcessInput" id="@cdktf/provider-upcloud.managedDatabasePostgresql.ManagedDatabasePostgresqlPropertiesOutputReference.property.maxFilesPerProcessInput"></a>
 
 ```typescript
@@ -55745,6 +56158,36 @@ public readonly pgServiceToForkFromInput: string;
 ```
 
 - *Type:* string
+
+---
+
+##### `pgStatMonitorEnableInput`<sup>Optional</sup> <a name="pgStatMonitorEnableInput" id="@cdktf/provider-upcloud.managedDatabasePostgresql.ManagedDatabasePostgresqlPropertiesOutputReference.property.pgStatMonitorEnableInput"></a>
+
+```typescript
+public readonly pgStatMonitorEnableInput: boolean | IResolvable;
+```
+
+- *Type:* boolean | cdktf.IResolvable
+
+---
+
+##### `pgStatMonitorPgsmEnableQueryPlanInput`<sup>Optional</sup> <a name="pgStatMonitorPgsmEnableQueryPlanInput" id="@cdktf/provider-upcloud.managedDatabasePostgresql.ManagedDatabasePostgresqlPropertiesOutputReference.property.pgStatMonitorPgsmEnableQueryPlanInput"></a>
+
+```typescript
+public readonly pgStatMonitorPgsmEnableQueryPlanInput: boolean | IResolvable;
+```
+
+- *Type:* boolean | cdktf.IResolvable
+
+---
+
+##### `pgStatMonitorPgsmMaxBucketsInput`<sup>Optional</sup> <a name="pgStatMonitorPgsmMaxBucketsInput" id="@cdktf/provider-upcloud.managedDatabasePostgresql.ManagedDatabasePostgresqlPropertiesOutputReference.property.pgStatMonitorPgsmMaxBucketsInput"></a>
+
+```typescript
+public readonly pgStatMonitorPgsmMaxBucketsInput: number;
+```
+
+- *Type:* number
 
 ---
 
@@ -56178,6 +56621,16 @@ public readonly logMinDurationStatement: number;
 
 ---
 
+##### `logTempFiles`<sup>Required</sup> <a name="logTempFiles" id="@cdktf/provider-upcloud.managedDatabasePostgresql.ManagedDatabasePostgresqlPropertiesOutputReference.property.logTempFiles"></a>
+
+```typescript
+public readonly logTempFiles: number;
+```
+
+- *Type:* number
+
+---
+
 ##### `maxFilesPerProcess`<sup>Required</sup> <a name="maxFilesPerProcess" id="@cdktf/provider-upcloud.managedDatabasePostgresql.ManagedDatabasePostgresqlPropertiesOutputReference.property.maxFilesPerProcess"></a>
 
 ```typescript
@@ -56355,6 +56808,36 @@ public readonly pgServiceToForkFrom: string;
 ```
 
 - *Type:* string
+
+---
+
+##### `pgStatMonitorEnable`<sup>Required</sup> <a name="pgStatMonitorEnable" id="@cdktf/provider-upcloud.managedDatabasePostgresql.ManagedDatabasePostgresqlPropertiesOutputReference.property.pgStatMonitorEnable"></a>
+
+```typescript
+public readonly pgStatMonitorEnable: boolean | IResolvable;
+```
+
+- *Type:* boolean | cdktf.IResolvable
+
+---
+
+##### `pgStatMonitorPgsmEnableQueryPlan`<sup>Required</sup> <a name="pgStatMonitorPgsmEnableQueryPlan" id="@cdktf/provider-upcloud.managedDatabasePostgresql.ManagedDatabasePostgresqlPropertiesOutputReference.property.pgStatMonitorPgsmEnableQueryPlan"></a>
+
+```typescript
+public readonly pgStatMonitorPgsmEnableQueryPlan: boolean | IResolvable;
+```
+
+- *Type:* boolean | cdktf.IResolvable
+
+---
+
+##### `pgStatMonitorPgsmMaxBuckets`<sup>Required</sup> <a name="pgStatMonitorPgsmMaxBuckets" id="@cdktf/provider-upcloud.managedDatabasePostgresql.ManagedDatabasePostgresqlPropertiesOutputReference.property.pgStatMonitorPgsmMaxBuckets"></a>
+
+```typescript
+public readonly pgStatMonitorPgsmMaxBuckets: number;
+```
+
+- *Type:* number
 
 ---
 
