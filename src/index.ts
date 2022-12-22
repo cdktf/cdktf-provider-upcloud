@@ -15,6 +15,7 @@ export * as loadbalancerStaticBackendMember from './loadbalancer-static-backend-
 export * as managedDatabaseLogicalDatabase from './managed-database-logical-database';
 export * as managedDatabaseMysql from './managed-database-mysql';
 export * as managedDatabasePostgresql from './managed-database-postgresql';
+export * as managedDatabaseRedis from './managed-database-redis';
 export * as managedDatabaseUser from './managed-database-user';
 export * as network from './network';
 export * as objectStorage from './object-storage';

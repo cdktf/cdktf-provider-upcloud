@@ -51,7 +51,13 @@ export interface LoadbalancerFrontendRuleActionsHttpRedirect {
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/upcloud/r/loadbalancer_frontend_rule#location LoadbalancerFrontendRule#location}
   */
-  readonly location: string;
+  readonly location?: string;
+  /**
+  * Target scheme.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/upcloud/r/loadbalancer_frontend_rule#scheme LoadbalancerFrontendRule#scheme}
+  */
+  readonly scheme?: string;
 }
 
 export function loadbalancerFrontendRuleActionsHttpRedirectToTerraform(struct?: LoadbalancerFrontendRuleActionsHttpRedirect | cdktf.IResolvable): any {
@@ -61,6 +67,7 @@ export function loadbalancerFrontendRuleActionsHttpRedirectToTerraform(struct?: 
   }
   return {
     location: cdktf.stringToTerraform(struct!.location),
+    scheme: cdktf.stringToTerraform(struct!.scheme),
   }
 }
 
@@ -88,6 +95,10 @@ export class LoadbalancerFrontendRuleActionsHttpRedirectOutputReference extends 
       hasAnyValues = true;
       internalValueResult.location = this._location;
     }
+    if (this._scheme !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.scheme = this._scheme;
+    }
     return hasAnyValues ? internalValueResult : undefined;
   }
 
@@ -96,6 +107,7 @@ export class LoadbalancerFrontendRuleActionsHttpRedirectOutputReference extends 
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._location = undefined;
+      this._scheme = undefined;
     }
     else if (cdktf.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
@@ -105,10 +117,11 @@ export class LoadbalancerFrontendRuleActionsHttpRedirectOutputReference extends 
       this.isEmptyObject = Object.keys(value).length === 0;
       this.resolvableValue = undefined;
       this._location = value.location;
+      this._scheme = value.scheme;
     }
   }
 
-  // location - computed: false, optional: false, required: true
+  // location - computed: false, optional: true, required: false
   private _location?: string; 
   public get location() {
     return this.getStringAttribute('location');
@@ -116,9 +129,28 @@ export class LoadbalancerFrontendRuleActionsHttpRedirectOutputReference extends 
   public set location(value: string) {
     this._location = value;
   }
+  public resetLocation() {
+    this._location = undefined;
+  }
   // Temporarily expose input value. Use with caution.
   public get locationInput() {
     return this._location;
+  }
+
+  // scheme - computed: false, optional: true, required: false
+  private _scheme?: string; 
+  public get scheme() {
+    return this.getStringAttribute('scheme');
+  }
+  public set scheme(value: string) {
+    this._scheme = value;
+  }
+  public resetScheme() {
+    this._scheme = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get schemeInput() {
+    return this._scheme;
   }
 }
 
@@ -3159,7 +3191,7 @@ export class LoadbalancerFrontendRule extends cdktf.TerraformResource {
       terraformResourceType: 'upcloud_loadbalancer_frontend_rule',
       terraformGeneratorMetadata: {
         providerName: 'upcloud',
-        providerVersion: '2.7.1',
+        providerVersion: '2.8.0',
         providerVersionConstraint: '~> 2.4'
       },
       provider: config.provider,

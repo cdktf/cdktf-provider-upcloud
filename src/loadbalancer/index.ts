@@ -33,7 +33,7 @@ export interface LoadbalancerConfig extends cdktf.TerraformMetaArguments {
   */
   readonly network?: string;
   /**
-  * Plan which the service will have
+  * Plan which the service will have. You can list available loadbalancer plans with `upctl loadbalancer plans`
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/upcloud/r/loadbalancer#plan Loadbalancer#plan}
   */
@@ -479,7 +479,7 @@ export class Loadbalancer extends cdktf.TerraformResource {
       terraformResourceType: 'upcloud_loadbalancer',
       terraformGeneratorMetadata: {
         providerName: 'upcloud',
-        providerVersion: '2.7.1',
+        providerVersion: '2.8.0',
         providerVersionConstraint: '~> 2.4'
       },
       provider: config.provider,
