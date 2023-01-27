@@ -482,12 +482,6 @@ export interface ManagedDatabaseRedisProperties {
   */
   readonly publicAccess?: boolean | cdktf.IResolvable;
   /**
-  * Name of the basebackup to restore in forked service.
-  * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/upcloud/r/managed_database_redis#recovery_basebackup_name ManagedDatabaseRedis#recovery_basebackup_name}
-  */
-  readonly recoveryBasebackupName?: string;
-  /**
   * Default ACL for pub/sub channels used when Redis user is created. Determines default pub/sub channels' ACL for new users if ACL is not supplied. When this option is not defined, all_channels is assumed to keep backward compatibility. This option doesn't affect Redis configuration acl-pubsub-default.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/upcloud/r/managed_database_redis#redis_acl_channels_default ManagedDatabaseRedis#redis_acl_channels_default}
@@ -570,7 +564,6 @@ export function managedDatabaseRedisPropertiesToTerraform(struct?: ManagedDataba
     automatic_utility_network_ip_filter: cdktf.booleanToTerraform(struct!.automaticUtilityNetworkIpFilter),
     ip_filter: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.ipFilter),
     public_access: cdktf.booleanToTerraform(struct!.publicAccess),
-    recovery_basebackup_name: cdktf.stringToTerraform(struct!.recoveryBasebackupName),
     redis_acl_channels_default: cdktf.stringToTerraform(struct!.redisAclChannelsDefault),
     redis_io_threads: cdktf.numberToTerraform(struct!.redisIoThreads),
     redis_lfu_decay_time: cdktf.numberToTerraform(struct!.redisLfuDecayTime),
@@ -611,10 +604,6 @@ export class ManagedDatabaseRedisPropertiesOutputReference extends cdktf.Complex
     if (this._publicAccess !== undefined) {
       hasAnyValues = true;
       internalValueResult.publicAccess = this._publicAccess;
-    }
-    if (this._recoveryBasebackupName !== undefined) {
-      hasAnyValues = true;
-      internalValueResult.recoveryBasebackupName = this._recoveryBasebackupName;
     }
     if (this._redisAclChannelsDefault !== undefined) {
       hasAnyValues = true;
@@ -673,7 +662,6 @@ export class ManagedDatabaseRedisPropertiesOutputReference extends cdktf.Complex
       this._automaticUtilityNetworkIpFilter = undefined;
       this._ipFilter = undefined;
       this._publicAccess = undefined;
-      this._recoveryBasebackupName = undefined;
       this._redisAclChannelsDefault = undefined;
       this._redisIoThreads = undefined;
       this._redisLfuDecayTime = undefined;
@@ -692,7 +680,6 @@ export class ManagedDatabaseRedisPropertiesOutputReference extends cdktf.Complex
       this._automaticUtilityNetworkIpFilter = value.automaticUtilityNetworkIpFilter;
       this._ipFilter = value.ipFilter;
       this._publicAccess = value.publicAccess;
-      this._recoveryBasebackupName = value.recoveryBasebackupName;
       this._redisAclChannelsDefault = value.redisAclChannelsDefault;
       this._redisIoThreads = value.redisIoThreads;
       this._redisLfuDecayTime = value.redisLfuDecayTime;
@@ -706,11 +693,6 @@ export class ManagedDatabaseRedisPropertiesOutputReference extends cdktf.Complex
       this._redisTimeout = value.redisTimeout;
       this._migration.internalValue = value.migration;
     }
-  }
-
-  // additional_backup_regions - computed: true, optional: false, required: false
-  public get additionalBackupRegions() {
-    return this.getListAttribute('additional_backup_regions');
   }
 
   // automatic_utility_network_ip_filter - computed: false, optional: true, required: false
@@ -759,22 +741,6 @@ export class ManagedDatabaseRedisPropertiesOutputReference extends cdktf.Complex
   // Temporarily expose input value. Use with caution.
   public get publicAccessInput() {
     return this._publicAccess;
-  }
-
-  // recovery_basebackup_name - computed: true, optional: true, required: false
-  private _recoveryBasebackupName?: string; 
-  public get recoveryBasebackupName() {
-    return this.getStringAttribute('recovery_basebackup_name');
-  }
-  public set recoveryBasebackupName(value: string) {
-    this._recoveryBasebackupName = value;
-  }
-  public resetRecoveryBasebackupName() {
-    this._recoveryBasebackupName = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get recoveryBasebackupNameInput() {
-    return this._recoveryBasebackupName;
   }
 
   // redis_acl_channels_default - computed: true, optional: true, required: false
@@ -996,7 +962,7 @@ export class ManagedDatabaseRedis extends cdktf.TerraformResource {
       terraformResourceType: 'upcloud_managed_database_redis',
       terraformGeneratorMetadata: {
         providerName: 'upcloud',
-        providerVersion: '2.8.0',
+        providerVersion: '2.8.1',
         providerVersionConstraint: '~> 2.4'
       },
       provider: config.provider,
