@@ -46,7 +46,7 @@ export class DataUpcloudZones extends cdktf.TerraformDataSource {
       terraformResourceType: 'upcloud_zones',
       terraformGeneratorMetadata: {
         providerName: 'upcloud',
-        providerVersion: '2.8.0',
+        providerVersion: '2.8.1',
         providerVersionConstraint: '~> 2.4'
       },
       provider: config.provider,

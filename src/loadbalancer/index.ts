@@ -479,7 +479,7 @@ export class Loadbalancer extends cdktf.TerraformResource {
       terraformResourceType: 'upcloud_loadbalancer',
       terraformGeneratorMetadata: {
         providerName: 'upcloud',
-        providerVersion: '2.8.0',
+        providerVersion: '2.8.1',
         providerVersionConstraint: '~> 2.4'
       },
       provider: config.provider,

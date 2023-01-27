@@ -1825,11 +1825,6 @@ export class ManagedDatabasePostgresqlPropertiesOutputReference extends cdktf.Co
     }
   }
 
-  // additional_backup_regions - computed: true, optional: false, required: false
-  public get additionalBackupRegions() {
-    return this.getListAttribute('additional_backup_regions');
-  }
-
   // admin_password - computed: true, optional: true, required: false
   private _adminPassword?: string; 
   public get adminPassword() {
@@ -2148,11 +2143,6 @@ export class ManagedDatabasePostgresqlPropertiesOutputReference extends cdktf.Co
   // Temporarily expose input value. Use with caution.
   public get defaultToastCompressionInput() {
     return this._defaultToastCompression;
-  }
-
-  // enable_ipv6 - computed: true, optional: false, required: false
-  public get enableIpv6() {
-    return this.getBooleanAttribute('enable_ipv6');
   }
 
   // idle_in_transaction_session_timeout - computed: true, optional: true, required: false
@@ -2950,7 +2940,7 @@ export class ManagedDatabasePostgresql extends cdktf.TerraformResource {
       terraformResourceType: 'upcloud_managed_database_postgresql',
       terraformGeneratorMetadata: {
         providerName: 'upcloud',
-        providerVersion: '2.8.0',
+        providerVersion: '2.8.1',
         providerVersionConstraint: '~> 2.4'
       },
       provider: config.provider,

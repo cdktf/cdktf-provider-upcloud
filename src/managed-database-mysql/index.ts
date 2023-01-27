@@ -1022,11 +1022,6 @@ export class ManagedDatabaseMysqlPropertiesOutputReference extends cdktf.Complex
     }
   }
 
-  // additional_backup_regions - computed: true, optional: false, required: false
-  public get additionalBackupRegions() {
-    return this.getListAttribute('additional_backup_regions');
-  }
-
   // admin_password - computed: true, optional: true, required: false
   private _adminPassword?: string; 
   public get adminPassword() {
@@ -1694,7 +1689,7 @@ export class ManagedDatabaseMysql extends cdktf.TerraformResource {
       terraformResourceType: 'upcloud_managed_database_mysql',
       terraformGeneratorMetadata: {
         providerName: 'upcloud',
-        providerVersion: '2.8.0',
+        providerVersion: '2.8.1',
         providerVersionConstraint: '~> 2.4'
       },
       provider: config.provider,
