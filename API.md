@@ -34486,7 +34486,7 @@ const serverSimpleBackup: server.ServerSimpleBackup = { ... }
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-upcloud.server.ServerSimpleBackup.property.plan">plan</a></code> | <code>string</code> | Simple backup plan. Accepted values: dailies, weeklies, monthlies. |
+| <code><a href="#@cdktf/provider-upcloud.server.ServerSimpleBackup.property.plan">plan</a></code> | <code>string</code> | Simple backup plan. Accepted values: daily, dailies, weeklies, monthlies. |
 | <code><a href="#@cdktf/provider-upcloud.server.ServerSimpleBackup.property.time">time</a></code> | <code>string</code> | Time of the day at which backup will be taken. Should be provided in a hhmm format (e.g. 2230). |
 
 ---
@@ -34499,7 +34499,7 @@ public readonly plan: string;
 
 - *Type:* string
 
-Simple backup plan. Accepted values: dailies, weeklies, monthlies.
+Simple backup plan. Accepted values: daily, dailies, weeklies, monthlies.
 
 Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/upcloud/r/server#plan Server#plan}
 

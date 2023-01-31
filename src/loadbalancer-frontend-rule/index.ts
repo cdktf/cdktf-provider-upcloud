@@ -3191,7 +3191,7 @@ export class LoadbalancerFrontendRule extends cdktf.TerraformResource {
       terraformResourceType: 'upcloud_loadbalancer_frontend_rule',
       terraformGeneratorMetadata: {
         providerName: 'upcloud',
-        providerVersion: '2.8.1',
+        providerVersion: '2.8.2',
         providerVersionConstraint: '~> 2.4'
       },
       provider: config.provider,
