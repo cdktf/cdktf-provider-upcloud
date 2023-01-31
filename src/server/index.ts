@@ -524,7 +524,7 @@ export class ServerNetworkInterfaceList extends cdktf.ComplexList {
 }
 export interface ServerSimpleBackup {
   /**
-  * Simple backup plan. Accepted values: dailies, weeklies, monthlies.
+  * Simple backup plan. Accepted values: daily, dailies, weeklies, monthlies.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/upcloud/r/server#plan Server#plan}
   */
@@ -1160,7 +1160,7 @@ export class Server extends cdktf.TerraformResource {
       terraformResourceType: 'upcloud_server',
       terraformGeneratorMetadata: {
         providerName: 'upcloud',
-        providerVersion: '2.8.1',
+        providerVersion: '2.8.2',
         providerVersionConstraint: '~> 2.4'
       },
       provider: config.provider,
