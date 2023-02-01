@@ -8,6 +8,13 @@ import * as cdktf from 'cdktf';
 
 export interface KubernetesNodeGroupConfig extends cdktf.TerraformMetaArguments {
   /**
+  * If set to true, nodes in this group will be placed on separate compute hosts.
+				Please note that anti-affinity policy is considered "best effort" and enabling it does not fully guarantee that the nodes will end up on different hardware.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/upcloud/r/kubernetes_node_group#anti_affinity KubernetesNodeGroup#anti_affinity}
+  */
+  readonly antiAffinity?: boolean | cdktf.IResolvable;
+  /**
   * Cluster ID.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/upcloud/r/kubernetes_node_group#cluster KubernetesNodeGroup#cluster}
@@ -360,7 +367,7 @@ export class KubernetesNodeGroup extends cdktf.TerraformResource {
       terraformResourceType: 'upcloud_kubernetes_node_group',
       terraformGeneratorMetadata: {
         providerName: 'upcloud',
-        providerVersion: '2.8.2',
+        providerVersion: '2.8.3',
         providerVersionConstraint: '~> 2.4'
       },
       provider: config.provider,
@@ -371,6 +378,7 @@ export class KubernetesNodeGroup extends cdktf.TerraformResource {
       connection: config.connection,
       forEach: config.forEach
     });
+    this._antiAffinity = config.antiAffinity;
     this._cluster = config.cluster;
     this._id = config.id;
     this._labels = config.labels;
@@ -385,6 +393,22 @@ export class KubernetesNodeGroup extends cdktf.TerraformResource {
   // ==========
   // ATTRIBUTES
   // ==========
+
+  // anti_affinity - computed: false, optional: true, required: false
+  private _antiAffinity?: boolean | cdktf.IResolvable; 
+  public get antiAffinity() {
+    return this.getBooleanAttribute('anti_affinity');
+  }
+  public set antiAffinity(value: boolean | cdktf.IResolvable) {
+    this._antiAffinity = value;
+  }
+  public resetAntiAffinity() {
+    this._antiAffinity = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get antiAffinityInput() {
+    return this._antiAffinity;
+  }
 
   // cluster - computed: false, optional: false, required: true
   private _cluster?: string; 
@@ -524,6 +548,7 @@ export class KubernetesNodeGroup extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
+      anti_affinity: cdktf.booleanToTerraform(this._antiAffinity),
       cluster: cdktf.stringToTerraform(this._cluster),
       id: cdktf.stringToTerraform(this._id),
       labels: cdktf.hashMapper(cdktf.stringToTerraform)(this._labels),
