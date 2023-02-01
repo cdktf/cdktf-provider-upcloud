@@ -269,7 +269,7 @@ export class Network extends cdktf.TerraformResource {
       terraformResourceType: 'upcloud_network',
       terraformGeneratorMetadata: {
         providerName: 'upcloud',
-        providerVersion: '2.8.2',
+        providerVersion: '2.8.3',
         providerVersionConstraint: '~> 2.4'
       },
       provider: config.provider,
