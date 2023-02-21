@@ -60,7 +60,7 @@ export class KubernetesCluster extends cdktf.TerraformResource {
       terraformResourceType: 'upcloud_kubernetes_cluster',
       terraformGeneratorMetadata: {
         providerName: 'upcloud',
-        providerVersion: '2.8.3',
+        providerVersion: '2.8.4',
         providerVersionConstraint: '~> 2.4'
       },
       provider: config.provider,
