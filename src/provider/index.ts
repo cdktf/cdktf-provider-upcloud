@@ -71,7 +71,7 @@ export class UpcloudProvider extends cdktf.TerraformProvider {
       terraformResourceType: 'upcloud',
       terraformGeneratorMetadata: {
         providerName: 'upcloud',
-        providerVersion: '2.8.3',
+        providerVersion: '2.8.4',
         providerVersionConstraint: '~> 2.4'
       },
       terraformProviderSource: 'UpCloudLtd/upcloud'

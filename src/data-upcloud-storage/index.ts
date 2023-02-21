@@ -78,7 +78,7 @@ export class DataUpcloudStorage extends cdktf.TerraformDataSource {
       terraformResourceType: 'upcloud_storage',
       terraformGeneratorMetadata: {
         providerName: 'upcloud',
-        providerVersion: '2.8.3',
+        providerVersion: '2.8.4',
         providerVersionConstraint: '~> 2.4'
       },
       provider: config.provider,
