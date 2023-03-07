@@ -9,7 +9,7 @@ Represents a {@link https://www.terraform.io/docs/providers/upcloud upcloud}.
 #### Initializers <a name="Initializers" id="@cdktf/provider-upcloud.provider.UpcloudProvider.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/provider"
+import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v5/provider"
 
 provider.NewUpcloudProvider(scope Construct, id *string, config UpcloudProviderConfig) UpcloudProvider
 ```
@@ -178,7 +178,7 @@ func ResetUsername()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-upcloud.provider.UpcloudProvider.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/provider"
+import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v5/provider"
 
 provider.UpcloudProvider_IsConstruct(x interface{}) *bool
 ```
@@ -210,7 +210,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-upcloud.provider.UpcloudProvider.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/provider"
+import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v5/provider"
 
 provider.UpcloudProvider_IsTerraformElement(x interface{}) *bool
 ```
@@ -224,7 +224,7 @@ provider.UpcloudProvider_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformProvider` <a name="IsTerraformProvider" id="@cdktf/provider-upcloud.provider.UpcloudProvider.isTerraformProvider"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/provider"
+import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v5/provider"
 
 provider.UpcloudProvider_IsTerraformProvider(x interface{}) *bool
 ```
@@ -489,7 +489,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-upcloud.provider.UpcloudProviderConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/provider"
+import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v5/provider"
 
 &provider.UpcloudProviderConfig {
 	Alias: *string,
