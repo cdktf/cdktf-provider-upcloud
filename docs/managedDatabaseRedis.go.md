@@ -9,7 +9,7 @@ Represents a {@link https://www.terraform.io/docs/providers/upcloud/r/managed_da
 #### Initializers <a name="Initializers" id="@cdktf/provider-upcloud.managedDatabaseRedis.ManagedDatabaseRedis.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v5/manageddatabaseredis"
+import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/manageddatabaseredis"
 
 manageddatabaseredis.NewManagedDatabaseRedis(scope Construct, id *string, config ManagedDatabaseRedisConfig) ManagedDatabaseRedis
 ```
@@ -321,7 +321,7 @@ func ResetTitle()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-upcloud.managedDatabaseRedis.ManagedDatabaseRedis.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v5/manageddatabaseredis"
+import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/manageddatabaseredis"
 
 manageddatabaseredis.ManagedDatabaseRedis_IsConstruct(x interface{}) *bool
 ```
@@ -353,7 +353,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-upcloud.managedDatabaseRedis.ManagedDatabaseRedis.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v5/manageddatabaseredis"
+import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/manageddatabaseredis"
 
 manageddatabaseredis.ManagedDatabaseRedis_IsTerraformElement(x interface{}) *bool
 ```
@@ -367,7 +367,7 @@ manageddatabaseredis.ManagedDatabaseRedis_IsTerraformElement(x interface{}) *boo
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-upcloud.managedDatabaseRedis.ManagedDatabaseRedis.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v5/manageddatabaseredis"
+import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/manageddatabaseredis"
 
 manageddatabaseredis.ManagedDatabaseRedis_IsTerraformResource(x interface{}) *bool
 ```
@@ -874,7 +874,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-upcloud.managedDatabaseRedis.ManagedDatabaseRedisComponents.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v5/manageddatabaseredis"
+import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/manageddatabaseredis"
 
 &manageddatabaseredis.ManagedDatabaseRedisComponents {
 
@@ -887,7 +887,7 @@ import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v5/manageddatabasered
 #### Initializer <a name="Initializer" id="@cdktf/provider-upcloud.managedDatabaseRedis.ManagedDatabaseRedisConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v5/manageddatabaseredis"
+import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/manageddatabaseredis"
 
 &manageddatabaseredis.ManagedDatabaseRedisConfig {
 	Connection: interface{},
@@ -904,7 +904,7 @@ import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v5/manageddatabasered
 	MaintenanceWindowDow: *string,
 	MaintenanceWindowTime: *string,
 	Powered: interface{},
-	Properties: github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v5.managedDatabaseRedis.ManagedDatabaseRedisProperties,
+	Properties: github.com/cdktf/cdktf-provider-upcloud-go/upcloud.managedDatabaseRedis.ManagedDatabaseRedisProperties,
 	Title: *string,
 }
 ```
@@ -1136,7 +1136,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/upclo
 #### Initializer <a name="Initializer" id="@cdktf/provider-upcloud.managedDatabaseRedis.ManagedDatabaseRedisNodeStates.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v5/manageddatabaseredis"
+import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/manageddatabaseredis"
 
 &manageddatabaseredis.ManagedDatabaseRedisNodeStates {
 
@@ -1149,12 +1149,12 @@ import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v5/manageddatabasered
 #### Initializer <a name="Initializer" id="@cdktf/provider-upcloud.managedDatabaseRedis.ManagedDatabaseRedisProperties.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v5/manageddatabaseredis"
+import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/manageddatabaseredis"
 
 &manageddatabaseredis.ManagedDatabaseRedisProperties {
 	AutomaticUtilityNetworkIpFilter: interface{},
 	IpFilter: *[]*string,
-	Migration: github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v5.managedDatabaseRedis.ManagedDatabaseRedisPropertiesMigration,
+	Migration: github.com/cdktf/cdktf-provider-upcloud-go/upcloud.managedDatabaseRedis.ManagedDatabaseRedisPropertiesMigration,
 	PublicAccess: interface{},
 	RedisAclChannelsDefault: *string,
 	RedisIoThreads: *f64,
@@ -1413,7 +1413,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/upclo
 #### Initializer <a name="Initializer" id="@cdktf/provider-upcloud.managedDatabaseRedis.ManagedDatabaseRedisPropertiesMigration.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v5/manageddatabaseredis"
+import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/manageddatabaseredis"
 
 &manageddatabaseredis.ManagedDatabaseRedisPropertiesMigration {
 	Dbname: *string,
@@ -1545,7 +1545,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/upclo
 #### Initializers <a name="Initializers" id="@cdktf/provider-upcloud.managedDatabaseRedis.ManagedDatabaseRedisComponentsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v5/manageddatabaseredis"
+import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/manageddatabaseredis"
 
 manageddatabaseredis.NewManagedDatabaseRedisComponentsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ManagedDatabaseRedisComponentsList
 ```
@@ -1677,7 +1677,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-upcloud.managedDatabaseRedis.ManagedDatabaseRedisComponentsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v5/manageddatabaseredis"
+import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/manageddatabaseredis"
 
 manageddatabaseredis.NewManagedDatabaseRedisComponentsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ManagedDatabaseRedisComponentsOutputReference
 ```
@@ -1999,7 +1999,7 @@ func InternalValue() ManagedDatabaseRedisComponents
 #### Initializers <a name="Initializers" id="@cdktf/provider-upcloud.managedDatabaseRedis.ManagedDatabaseRedisNodeStatesList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v5/manageddatabaseredis"
+import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/manageddatabaseredis"
 
 manageddatabaseredis.NewManagedDatabaseRedisNodeStatesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ManagedDatabaseRedisNodeStatesList
 ```
@@ -2131,7 +2131,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-upcloud.managedDatabaseRedis.ManagedDatabaseRedisNodeStatesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v5/manageddatabaseredis"
+import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/manageddatabaseredis"
 
 manageddatabaseredis.NewManagedDatabaseRedisNodeStatesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ManagedDatabaseRedisNodeStatesOutputReference
 ```
@@ -2431,7 +2431,7 @@ func InternalValue() ManagedDatabaseRedisNodeStates
 #### Initializers <a name="Initializers" id="@cdktf/provider-upcloud.managedDatabaseRedis.ManagedDatabaseRedisPropertiesMigrationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v5/manageddatabaseredis"
+import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/manageddatabaseredis"
 
 manageddatabaseredis.NewManagedDatabaseRedisPropertiesMigrationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ManagedDatabaseRedisPropertiesMigrationOutputReference
 ```
@@ -2883,7 +2883,7 @@ func InternalValue() ManagedDatabaseRedisPropertiesMigration
 #### Initializers <a name="Initializers" id="@cdktf/provider-upcloud.managedDatabaseRedis.ManagedDatabaseRedisPropertiesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v5/manageddatabaseredis"
+import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/manageddatabaseredis"
 
 manageddatabaseredis.NewManagedDatabaseRedisPropertiesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ManagedDatabaseRedisPropertiesOutputReference
 ```
