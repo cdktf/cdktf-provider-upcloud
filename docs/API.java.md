@@ -11,6 +11,7 @@ The following submodules are available:
 - [dataUpcloudZones](./dataUpcloudZones.java.md)
 - [firewallRules](./firewallRules.java.md)
 - [floatingIpAddress](./floatingIpAddress.java.md)
+- [gateway](./gateway.java.md)
 - [kubernetesCluster](./kubernetesCluster.java.md)
 - [kubernetesNodeGroup](./kubernetesNodeGroup.java.md)
 - [loadbalancer](./loadbalancer.java.md)

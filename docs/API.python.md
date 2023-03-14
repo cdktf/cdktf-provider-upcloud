@@ -11,6 +11,7 @@ The following submodules are available:
 - [dataUpcloudZones](./dataUpcloudZones.python.md)
 - [firewallRules](./firewallRules.python.md)
 - [floatingIpAddress](./floatingIpAddress.python.md)
+- [gateway](./gateway.python.md)
 - [kubernetesCluster](./kubernetesCluster.python.md)
 - [kubernetesNodeGroup](./kubernetesNodeGroup.python.md)
 - [loadbalancer](./loadbalancer.python.md)
