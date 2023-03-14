@@ -11,6 +11,7 @@ The following submodules are available:
 - [dataUpcloudZones](./dataUpcloudZones.go.md)
 - [firewallRules](./firewallRules.go.md)
 - [floatingIpAddress](./floatingIpAddress.go.md)
+- [gateway](./gateway.go.md)
 - [kubernetesCluster](./kubernetesCluster.go.md)
 - [kubernetesNodeGroup](./kubernetesNodeGroup.go.md)
 - [loadbalancer](./loadbalancer.go.md)

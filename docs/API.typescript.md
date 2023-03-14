@@ -11,6 +11,7 @@ The following submodules are available:
 - [dataUpcloudZones](./dataUpcloudZones.typescript.md)
 - [firewallRules](./firewallRules.typescript.md)
 - [floatingIpAddress](./floatingIpAddress.typescript.md)
+- [gateway](./gateway.typescript.md)
 - [kubernetesCluster](./kubernetesCluster.typescript.md)
 - [kubernetesNodeGroup](./kubernetesNodeGroup.typescript.md)
 - [loadbalancer](./loadbalancer.typescript.md)

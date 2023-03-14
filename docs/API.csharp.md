@@ -11,6 +11,7 @@ The following submodules are available:
 - [dataUpcloudZones](./dataUpcloudZones.csharp.md)
 - [firewallRules](./firewallRules.csharp.md)
 - [floatingIpAddress](./floatingIpAddress.csharp.md)
+- [gateway](./gateway.csharp.md)
 - [kubernetesCluster](./kubernetesCluster.csharp.md)
 - [kubernetesNodeGroup](./kubernetesNodeGroup.csharp.md)
 - [loadbalancer](./loadbalancer.csharp.md)
