@@ -66,7 +66,7 @@ export class FloatingIpAddress extends cdktf.TerraformResource {
       terraformResourceType: 'upcloud_floating_ip_address',
       terraformGeneratorMetadata: {
         providerName: 'upcloud',
-        providerVersion: '2.9.0',
+        providerVersion: '2.9.1',
         providerVersionConstraint: '~> 2.4'
       },
       provider: config.provider,

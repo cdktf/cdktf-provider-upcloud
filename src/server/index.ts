@@ -39,7 +39,7 @@ export interface ServerConfig extends cdktf.TerraformMetaArguments {
   */
   readonly id?: string;
   /**
-  * Labels contain key-value pairs to classify the server
+  * Key-value pairs to classify the server.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/upcloud/r/server#labels Server#labels}
   */
@@ -1160,7 +1160,7 @@ export class Server extends cdktf.TerraformResource {
       terraformResourceType: 'upcloud_server',
       terraformGeneratorMetadata: {
         providerName: 'upcloud',
-        providerVersion: '2.9.0',
+        providerVersion: '2.9.1',
         providerVersionConstraint: '~> 2.4'
       },
       provider: config.provider,
