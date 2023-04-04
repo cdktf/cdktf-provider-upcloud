@@ -668,7 +668,7 @@ const serverGroupConfig: serverGroup.ServerGroupConfig = { ... }
 | <code><a href="#@cdktf/provider-upcloud.serverGroup.ServerGroupConfig.property.title">title</a></code> | <code>string</code> | Title of your server group. |
 | <code><a href="#@cdktf/provider-upcloud.serverGroup.ServerGroupConfig.property.antiAffinity">antiAffinity</a></code> | <code>boolean \| cdktf.IResolvable</code> | Is group an anti-affinity group. |
 | <code><a href="#@cdktf/provider-upcloud.serverGroup.ServerGroupConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/upcloud/r/server_group#id ServerGroup#id}. |
-| <code><a href="#@cdktf/provider-upcloud.serverGroup.ServerGroupConfig.property.labels">labels</a></code> | <code>{[ key: string ]: string}</code> | Labels for your server group. |
+| <code><a href="#@cdktf/provider-upcloud.serverGroup.ServerGroupConfig.property.labels">labels</a></code> | <code>{[ key: string ]: string}</code> | Key-value pairs to classify the server group. |
 | <code><a href="#@cdktf/provider-upcloud.serverGroup.ServerGroupConfig.property.members">members</a></code> | <code>string[]</code> | UUIDs of the servers that are members of this group. |
 
 ---
@@ -803,7 +803,7 @@ public readonly labels: {[ key: string ]: string};
 
 - *Type:* {[ key: string ]: string}
 
-Labels for your server group.
+Key-value pairs to classify the server group.
 
 Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/upcloud/r/server_group#labels ServerGroup#labels}
 

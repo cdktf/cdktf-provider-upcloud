@@ -69,6 +69,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-upcloud.loadbalancer.Loadbalancer.putNetworks">putNetworks</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.loadbalancer.Loadbalancer.resetConfiguredStatus">resetConfiguredStatus</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.loadbalancer.Loadbalancer.resetId">resetId</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-upcloud.loadbalancer.Loadbalancer.resetLabels">resetLabels</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.loadbalancer.Loadbalancer.resetNetwork">resetNetwork</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.loadbalancer.Loadbalancer.resetNetworks">resetNetworks</a></code> | *No description.* |
 
@@ -282,6 +283,12 @@ public resetConfiguredStatus(): void
 public resetId(): void
 ```
 
+##### `resetLabels` <a name="resetLabels" id="@cdktf/provider-upcloud.loadbalancer.Loadbalancer.resetLabels"></a>
+
+```typescript
+public resetLabels(): void
+```
+
 ##### `resetNetwork` <a name="resetNetwork" id="@cdktf/provider-upcloud.loadbalancer.Loadbalancer.resetNetwork"></a>
 
 ```typescript
@@ -391,6 +398,7 @@ loadbalancer.Loadbalancer.isTerraformResource(x: any)
 | <code><a href="#@cdktf/provider-upcloud.loadbalancer.Loadbalancer.property.resolvers">resolvers</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.loadbalancer.Loadbalancer.property.configuredStatusInput">configuredStatusInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.loadbalancer.Loadbalancer.property.idInput">idInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-upcloud.loadbalancer.Loadbalancer.property.labelsInput">labelsInput</a></code> | <code>{[ key: string ]: string}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.loadbalancer.Loadbalancer.property.nameInput">nameInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.loadbalancer.Loadbalancer.property.networkInput">networkInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.loadbalancer.Loadbalancer.property.networksInput">networksInput</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-upcloud.loadbalancer.LoadbalancerNetworks">LoadbalancerNetworks</a>[]</code> | *No description.* |
@@ -398,6 +406,7 @@ loadbalancer.Loadbalancer.isTerraformResource(x: any)
 | <code><a href="#@cdktf/provider-upcloud.loadbalancer.Loadbalancer.property.zoneInput">zoneInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.loadbalancer.Loadbalancer.property.configuredStatus">configuredStatus</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.loadbalancer.Loadbalancer.property.id">id</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-upcloud.loadbalancer.Loadbalancer.property.labels">labels</a></code> | <code>{[ key: string ]: string}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.loadbalancer.Loadbalancer.property.name">name</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.loadbalancer.Loadbalancer.property.network">network</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.loadbalancer.Loadbalancer.property.plan">plan</a></code> | <code>string</code> | *No description.* |
@@ -637,6 +646,16 @@ public readonly idInput: string;
 
 ---
 
+##### `labelsInput`<sup>Optional</sup> <a name="labelsInput" id="@cdktf/provider-upcloud.loadbalancer.Loadbalancer.property.labelsInput"></a>
+
+```typescript
+public readonly labelsInput: {[ key: string ]: string};
+```
+
+- *Type:* {[ key: string ]: string}
+
+---
+
 ##### `nameInput`<sup>Optional</sup> <a name="nameInput" id="@cdktf/provider-upcloud.loadbalancer.Loadbalancer.property.nameInput"></a>
 
 ```typescript
@@ -704,6 +723,16 @@ public readonly id: string;
 ```
 
 - *Type:* string
+
+---
+
+##### `labels`<sup>Required</sup> <a name="labels" id="@cdktf/provider-upcloud.loadbalancer.Loadbalancer.property.labels"></a>
+
+```typescript
+public readonly labels: {[ key: string ]: string};
+```
+
+- *Type:* {[ key: string ]: string}
 
 ---
 
@@ -793,6 +822,7 @@ const loadbalancerConfig: loadbalancer.LoadbalancerConfig = { ... }
 | <code><a href="#@cdktf/provider-upcloud.loadbalancer.LoadbalancerConfig.property.zone">zone</a></code> | <code>string</code> | Zone in which the service will be hosted, e.g. `fi-hel1`. |
 | <code><a href="#@cdktf/provider-upcloud.loadbalancer.LoadbalancerConfig.property.configuredStatus">configuredStatus</a></code> | <code>string</code> | The service configured status indicates the service's current intended status. Managed by the customer. |
 | <code><a href="#@cdktf/provider-upcloud.loadbalancer.LoadbalancerConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/upcloud/r/loadbalancer#id Loadbalancer#id}. |
+| <code><a href="#@cdktf/provider-upcloud.loadbalancer.LoadbalancerConfig.property.labels">labels</a></code> | <code>{[ key: string ]: string}</code> | Key-value pairs to classify the load balancer. |
 | <code><a href="#@cdktf/provider-upcloud.loadbalancer.LoadbalancerConfig.property.network">network</a></code> | <code>string</code> | Private network UUID where traffic will be routed. Must reside in load balancer zone. |
 | <code><a href="#@cdktf/provider-upcloud.loadbalancer.LoadbalancerConfig.property.networks">networks</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-upcloud.loadbalancer.LoadbalancerNetworks">LoadbalancerNetworks</a>[]</code> | networks block. |
 
@@ -936,6 +966,20 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/upclo
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+
+---
+
+##### `labels`<sup>Optional</sup> <a name="labels" id="@cdktf/provider-upcloud.loadbalancer.LoadbalancerConfig.property.labels"></a>
+
+```typescript
+public readonly labels: {[ key: string ]: string};
+```
+
+- *Type:* {[ key: string ]: string}
+
+Key-value pairs to classify the load balancer.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/upcloud/r/loadbalancer#labels Loadbalancer#labels}
 
 ---
 

@@ -65,7 +65,7 @@ Server.Builder.create(Construct scope, java.lang.String id)
 | <code><a href="#@cdktf/provider-upcloud.server.Server.Initializer.parameter.firewall">firewall</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Are firewall rules active for the server. |
 | <code><a href="#@cdktf/provider-upcloud.server.Server.Initializer.parameter.host">host</a></code> | <code>java.lang.Number</code> | Use this to start the VM on a specific host. |
 | <code><a href="#@cdktf/provider-upcloud.server.Server.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/upcloud/r/server#id Server#id}. |
-| <code><a href="#@cdktf/provider-upcloud.server.Server.Initializer.parameter.labels">labels</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | Labels contain key-value pairs to classify the server. |
+| <code><a href="#@cdktf/provider-upcloud.server.Server.Initializer.parameter.labels">labels</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | Key-value pairs to classify the server. |
 | <code><a href="#@cdktf/provider-upcloud.server.Server.Initializer.parameter.login">login</a></code> | <code><a href="#@cdktf/provider-upcloud.server.ServerLogin">ServerLogin</a></code> | login block. |
 | <code><a href="#@cdktf/provider-upcloud.server.Server.Initializer.parameter.mem">mem</a></code> | <code>java.lang.Number</code> | The size of memory for the server (in megabytes). |
 | <code><a href="#@cdktf/provider-upcloud.server.Server.Initializer.parameter.metadata">metadata</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Is the metadata service active for the server. |
@@ -216,7 +216,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 - *Type:* java.util.Map<java.lang.String, java.lang.String>
 
-Labels contain key-value pairs to classify the server.
+Key-value pairs to classify the server.
 
 Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/upcloud/r/server#labels Server#labels}
 
@@ -1409,7 +1409,7 @@ ServerConfig.builder()
 | <code><a href="#@cdktf/provider-upcloud.server.ServerConfig.property.firewall">firewall</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Are firewall rules active for the server. |
 | <code><a href="#@cdktf/provider-upcloud.server.ServerConfig.property.host">host</a></code> | <code>java.lang.Number</code> | Use this to start the VM on a specific host. |
 | <code><a href="#@cdktf/provider-upcloud.server.ServerConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/upcloud/r/server#id Server#id}. |
-| <code><a href="#@cdktf/provider-upcloud.server.ServerConfig.property.labels">labels</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | Labels contain key-value pairs to classify the server. |
+| <code><a href="#@cdktf/provider-upcloud.server.ServerConfig.property.labels">labels</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | Key-value pairs to classify the server. |
 | <code><a href="#@cdktf/provider-upcloud.server.ServerConfig.property.login">login</a></code> | <code><a href="#@cdktf/provider-upcloud.server.ServerLogin">ServerLogin</a></code> | login block. |
 | <code><a href="#@cdktf/provider-upcloud.server.ServerConfig.property.mem">mem</a></code> | <code>java.lang.Number</code> | The size of memory for the server (in megabytes). |
 | <code><a href="#@cdktf/provider-upcloud.server.ServerConfig.property.metadata">metadata</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Is the metadata service active for the server. |
@@ -1602,7 +1602,7 @@ public java.util.Map<java.lang.String, java.lang.String> getLabels();
 
 - *Type:* java.util.Map<java.lang.String, java.lang.String>
 
-Labels contain key-value pairs to classify the server.
+Key-value pairs to classify the server.
 
 Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/upcloud/r/server#labels Server#labels}
 

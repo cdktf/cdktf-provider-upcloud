@@ -26,6 +26,7 @@ loadbalancer.Loadbalancer(
   zone: str,
   configured_status: str = None,
   id: str = None,
+  labels: typing.Mapping[str] = None,
   network: str = None,
   networks: typing.Union[IResolvable, typing.List[LoadbalancerNetworks]] = None
 )
@@ -47,6 +48,7 @@ loadbalancer.Loadbalancer(
 | <code><a href="#@cdktf/provider-upcloud.loadbalancer.Loadbalancer.Initializer.parameter.zone">zone</a></code> | <code>str</code> | Zone in which the service will be hosted, e.g. `fi-hel1`. |
 | <code><a href="#@cdktf/provider-upcloud.loadbalancer.Loadbalancer.Initializer.parameter.configuredStatus">configured_status</a></code> | <code>str</code> | The service configured status indicates the service's current intended status. Managed by the customer. |
 | <code><a href="#@cdktf/provider-upcloud.loadbalancer.Loadbalancer.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/upcloud/r/loadbalancer#id Loadbalancer#id}. |
+| <code><a href="#@cdktf/provider-upcloud.loadbalancer.Loadbalancer.Initializer.parameter.labels">labels</a></code> | <code>typing.Mapping[str]</code> | Key-value pairs to classify the load balancer. |
 | <code><a href="#@cdktf/provider-upcloud.loadbalancer.Loadbalancer.Initializer.parameter.network">network</a></code> | <code>str</code> | Private network UUID where traffic will be routed. Must reside in load balancer zone. |
 | <code><a href="#@cdktf/provider-upcloud.loadbalancer.Loadbalancer.Initializer.parameter.networks">networks</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-upcloud.loadbalancer.LoadbalancerNetworks">LoadbalancerNetworks</a>]]</code> | networks block. |
 
@@ -163,6 +165,16 @@ If you experience problems setting this value it might not be settable. Please t
 
 ---
 
+##### `labels`<sup>Optional</sup> <a name="labels" id="@cdktf/provider-upcloud.loadbalancer.Loadbalancer.Initializer.parameter.labels"></a>
+
+- *Type:* typing.Mapping[str]
+
+Key-value pairs to classify the load balancer.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/upcloud/r/loadbalancer#labels Loadbalancer#labels}
+
+---
+
 ##### `network`<sup>Optional</sup> <a name="network" id="@cdktf/provider-upcloud.loadbalancer.Loadbalancer.Initializer.parameter.network"></a>
 
 - *Type:* str
@@ -206,6 +218,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/upclo
 | <code><a href="#@cdktf/provider-upcloud.loadbalancer.Loadbalancer.putNetworks">put_networks</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.loadbalancer.Loadbalancer.resetConfiguredStatus">reset_configured_status</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.loadbalancer.Loadbalancer.resetId">reset_id</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-upcloud.loadbalancer.Loadbalancer.resetLabels">reset_labels</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.loadbalancer.Loadbalancer.resetNetwork">reset_network</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.loadbalancer.Loadbalancer.resetNetworks">reset_networks</a></code> | *No description.* |
 
@@ -446,6 +459,12 @@ def reset_configured_status() -> None
 def reset_id() -> None
 ```
 
+##### `reset_labels` <a name="reset_labels" id="@cdktf/provider-upcloud.loadbalancer.Loadbalancer.resetLabels"></a>
+
+```python
+def reset_labels() -> None
+```
+
 ##### `reset_network` <a name="reset_network" id="@cdktf/provider-upcloud.loadbalancer.Loadbalancer.resetNetwork"></a>
 
 ```python
@@ -561,6 +580,7 @@ loadbalancer.Loadbalancer.is_terraform_resource(
 | <code><a href="#@cdktf/provider-upcloud.loadbalancer.Loadbalancer.property.resolvers">resolvers</a></code> | <code>typing.List[str]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.loadbalancer.Loadbalancer.property.configuredStatusInput">configured_status_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.loadbalancer.Loadbalancer.property.idInput">id_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-upcloud.loadbalancer.Loadbalancer.property.labelsInput">labels_input</a></code> | <code>typing.Mapping[str]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.loadbalancer.Loadbalancer.property.nameInput">name_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.loadbalancer.Loadbalancer.property.networkInput">network_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.loadbalancer.Loadbalancer.property.networksInput">networks_input</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-upcloud.loadbalancer.LoadbalancerNetworks">LoadbalancerNetworks</a>]]</code> | *No description.* |
@@ -568,6 +588,7 @@ loadbalancer.Loadbalancer.is_terraform_resource(
 | <code><a href="#@cdktf/provider-upcloud.loadbalancer.Loadbalancer.property.zoneInput">zone_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.loadbalancer.Loadbalancer.property.configuredStatus">configured_status</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.loadbalancer.Loadbalancer.property.id">id</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-upcloud.loadbalancer.Loadbalancer.property.labels">labels</a></code> | <code>typing.Mapping[str]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.loadbalancer.Loadbalancer.property.name">name</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.loadbalancer.Loadbalancer.property.network">network</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.loadbalancer.Loadbalancer.property.plan">plan</a></code> | <code>str</code> | *No description.* |
@@ -807,6 +828,16 @@ id_input: str
 
 ---
 
+##### `labels_input`<sup>Optional</sup> <a name="labels_input" id="@cdktf/provider-upcloud.loadbalancer.Loadbalancer.property.labelsInput"></a>
+
+```python
+labels_input: typing.Mapping[str]
+```
+
+- *Type:* typing.Mapping[str]
+
+---
+
 ##### `name_input`<sup>Optional</sup> <a name="name_input" id="@cdktf/provider-upcloud.loadbalancer.Loadbalancer.property.nameInput"></a>
 
 ```python
@@ -874,6 +905,16 @@ id: str
 ```
 
 - *Type:* str
+
+---
+
+##### `labels`<sup>Required</sup> <a name="labels" id="@cdktf/provider-upcloud.loadbalancer.Loadbalancer.property.labels"></a>
+
+```python
+labels: typing.Mapping[str]
+```
+
+- *Type:* typing.Mapping[str]
 
 ---
 
@@ -957,6 +998,7 @@ loadbalancer.LoadbalancerConfig(
   zone: str,
   configured_status: str = None,
   id: str = None,
+  labels: typing.Mapping[str] = None,
   network: str = None,
   networks: typing.Union[IResolvable, typing.List[LoadbalancerNetworks]] = None
 )
@@ -978,6 +1020,7 @@ loadbalancer.LoadbalancerConfig(
 | <code><a href="#@cdktf/provider-upcloud.loadbalancer.LoadbalancerConfig.property.zone">zone</a></code> | <code>str</code> | Zone in which the service will be hosted, e.g. `fi-hel1`. |
 | <code><a href="#@cdktf/provider-upcloud.loadbalancer.LoadbalancerConfig.property.configuredStatus">configured_status</a></code> | <code>str</code> | The service configured status indicates the service's current intended status. Managed by the customer. |
 | <code><a href="#@cdktf/provider-upcloud.loadbalancer.LoadbalancerConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/upcloud/r/loadbalancer#id Loadbalancer#id}. |
+| <code><a href="#@cdktf/provider-upcloud.loadbalancer.LoadbalancerConfig.property.labels">labels</a></code> | <code>typing.Mapping[str]</code> | Key-value pairs to classify the load balancer. |
 | <code><a href="#@cdktf/provider-upcloud.loadbalancer.LoadbalancerConfig.property.network">network</a></code> | <code>str</code> | Private network UUID where traffic will be routed. Must reside in load balancer zone. |
 | <code><a href="#@cdktf/provider-upcloud.loadbalancer.LoadbalancerConfig.property.networks">networks</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-upcloud.loadbalancer.LoadbalancerNetworks">LoadbalancerNetworks</a>]]</code> | networks block. |
 
@@ -1121,6 +1164,20 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/upclo
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+
+---
+
+##### `labels`<sup>Optional</sup> <a name="labels" id="@cdktf/provider-upcloud.loadbalancer.LoadbalancerConfig.property.labels"></a>
+
+```python
+labels: typing.Mapping[str]
+```
+
+- *Type:* typing.Mapping[str]
+
+Key-value pairs to classify the load balancer.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/upcloud/r/loadbalancer#labels Loadbalancer#labels}
 
 ---
 

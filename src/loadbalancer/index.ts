@@ -21,6 +21,12 @@ export interface LoadbalancerConfig extends cdktf.TerraformMetaArguments {
   */
   readonly id?: string;
   /**
+  * Key-value pairs to classify the load balancer.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/upcloud/r/loadbalancer#labels Loadbalancer#labels}
+  */
+  readonly labels?: { [key: string]: string };
+  /**
   * The name of the service must be unique within customer account.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/upcloud/r/loadbalancer#name Loadbalancer#name}
@@ -479,7 +485,7 @@ export class Loadbalancer extends cdktf.TerraformResource {
       terraformResourceType: 'upcloud_loadbalancer',
       terraformGeneratorMetadata: {
         providerName: 'upcloud',
-        providerVersion: '2.9.0',
+        providerVersion: '2.9.1',
         providerVersionConstraint: '~> 2.4'
       },
       provider: config.provider,
@@ -492,6 +498,7 @@ export class Loadbalancer extends cdktf.TerraformResource {
     });
     this._configuredStatus = config.configuredStatus;
     this._id = config.id;
+    this._labels = config.labels;
     this._name = config.name;
     this._network = config.network;
     this._plan = config.plan;
@@ -548,6 +555,22 @@ export class Loadbalancer extends cdktf.TerraformResource {
   // Temporarily expose input value. Use with caution.
   public get idInput() {
     return this._id;
+  }
+
+  // labels - computed: false, optional: true, required: false
+  private _labels?: { [key: string]: string }; 
+  public get labels() {
+    return this.getStringMapAttribute('labels');
+  }
+  public set labels(value: { [key: string]: string }) {
+    this._labels = value;
+  }
+  public resetLabels() {
+    this._labels = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get labelsInput() {
+    return this._labels;
   }
 
   // name - computed: false, optional: false, required: true
@@ -645,6 +668,7 @@ export class Loadbalancer extends cdktf.TerraformResource {
     return {
       configured_status: cdktf.stringToTerraform(this._configuredStatus),
       id: cdktf.stringToTerraform(this._id),
+      labels: cdktf.hashMapper(cdktf.stringToTerraform)(this._labels),
       name: cdktf.stringToTerraform(this._name),
       network: cdktf.stringToTerraform(this._network),
       plan: cdktf.stringToTerraform(this._plan),

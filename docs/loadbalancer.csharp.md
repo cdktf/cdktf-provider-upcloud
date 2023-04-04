@@ -69,6 +69,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-upcloud.loadbalancer.Loadbalancer.putNetworks">PutNetworks</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.loadbalancer.Loadbalancer.resetConfiguredStatus">ResetConfiguredStatus</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.loadbalancer.Loadbalancer.resetId">ResetId</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-upcloud.loadbalancer.Loadbalancer.resetLabels">ResetLabels</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.loadbalancer.Loadbalancer.resetNetwork">ResetNetwork</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.loadbalancer.Loadbalancer.resetNetworks">ResetNetworks</a></code> | *No description.* |
 
@@ -282,6 +283,12 @@ private void ResetConfiguredStatus()
 private void ResetId()
 ```
 
+##### `ResetLabels` <a name="ResetLabels" id="@cdktf/provider-upcloud.loadbalancer.Loadbalancer.resetLabels"></a>
+
+```csharp
+private void ResetLabels()
+```
+
 ##### `ResetNetwork` <a name="ResetNetwork" id="@cdktf/provider-upcloud.loadbalancer.Loadbalancer.resetNetwork"></a>
 
 ```csharp
@@ -391,6 +398,7 @@ Loadbalancer.IsTerraformResource(object X);
 | <code><a href="#@cdktf/provider-upcloud.loadbalancer.Loadbalancer.property.resolvers">Resolvers</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.loadbalancer.Loadbalancer.property.configuredStatusInput">ConfiguredStatusInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.loadbalancer.Loadbalancer.property.idInput">IdInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-upcloud.loadbalancer.Loadbalancer.property.labelsInput">LabelsInput</a></code> | <code>System.Collections.Generic.IDictionary<string, string></code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.loadbalancer.Loadbalancer.property.nameInput">NameInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.loadbalancer.Loadbalancer.property.networkInput">NetworkInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.loadbalancer.Loadbalancer.property.networksInput">NetworksInput</a></code> | <code>object</code> | *No description.* |
@@ -398,6 +406,7 @@ Loadbalancer.IsTerraformResource(object X);
 | <code><a href="#@cdktf/provider-upcloud.loadbalancer.Loadbalancer.property.zoneInput">ZoneInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.loadbalancer.Loadbalancer.property.configuredStatus">ConfiguredStatus</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.loadbalancer.Loadbalancer.property.id">Id</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-upcloud.loadbalancer.Loadbalancer.property.labels">Labels</a></code> | <code>System.Collections.Generic.IDictionary<string, string></code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.loadbalancer.Loadbalancer.property.name">Name</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.loadbalancer.Loadbalancer.property.network">Network</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.loadbalancer.Loadbalancer.property.plan">Plan</a></code> | <code>string</code> | *No description.* |
@@ -637,6 +646,16 @@ public string IdInput { get; }
 
 ---
 
+##### `LabelsInput`<sup>Optional</sup> <a name="LabelsInput" id="@cdktf/provider-upcloud.loadbalancer.Loadbalancer.property.labelsInput"></a>
+
+```csharp
+public System.Collections.Generic.IDictionary<string, string> LabelsInput { get; }
+```
+
+- *Type:* System.Collections.Generic.IDictionary<string, string>
+
+---
+
 ##### `NameInput`<sup>Optional</sup> <a name="NameInput" id="@cdktf/provider-upcloud.loadbalancer.Loadbalancer.property.nameInput"></a>
 
 ```csharp
@@ -704,6 +723,16 @@ public string Id { get; }
 ```
 
 - *Type:* string
+
+---
+
+##### `Labels`<sup>Required</sup> <a name="Labels" id="@cdktf/provider-upcloud.loadbalancer.Loadbalancer.property.labels"></a>
+
+```csharp
+public System.Collections.Generic.IDictionary<string, string> Labels { get; }
+```
+
+- *Type:* System.Collections.Generic.IDictionary<string, string>
 
 ---
 
@@ -787,6 +816,7 @@ new LoadbalancerConfig {
     string Zone,
     string ConfiguredStatus = null,
     string Id = null,
+    System.Collections.Generic.IDictionary<string, string> Labels = null,
     string Network = null,
     object Networks = null
 };
@@ -808,6 +838,7 @@ new LoadbalancerConfig {
 | <code><a href="#@cdktf/provider-upcloud.loadbalancer.LoadbalancerConfig.property.zone">Zone</a></code> | <code>string</code> | Zone in which the service will be hosted, e.g. `fi-hel1`. |
 | <code><a href="#@cdktf/provider-upcloud.loadbalancer.LoadbalancerConfig.property.configuredStatus">ConfiguredStatus</a></code> | <code>string</code> | The service configured status indicates the service's current intended status. Managed by the customer. |
 | <code><a href="#@cdktf/provider-upcloud.loadbalancer.LoadbalancerConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/upcloud/r/loadbalancer#id Loadbalancer#id}. |
+| <code><a href="#@cdktf/provider-upcloud.loadbalancer.LoadbalancerConfig.property.labels">Labels</a></code> | <code>System.Collections.Generic.IDictionary<string, string></code> | Key-value pairs to classify the load balancer. |
 | <code><a href="#@cdktf/provider-upcloud.loadbalancer.LoadbalancerConfig.property.network">Network</a></code> | <code>string</code> | Private network UUID where traffic will be routed. Must reside in load balancer zone. |
 | <code><a href="#@cdktf/provider-upcloud.loadbalancer.LoadbalancerConfig.property.networks">Networks</a></code> | <code>object</code> | networks block. |
 
@@ -951,6 +982,20 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/upclo
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+
+---
+
+##### `Labels`<sup>Optional</sup> <a name="Labels" id="@cdktf/provider-upcloud.loadbalancer.LoadbalancerConfig.property.labels"></a>
+
+```csharp
+public System.Collections.Generic.IDictionary<string, string> Labels { get; set; }
+```
+
+- *Type:* System.Collections.Generic.IDictionary<string, string>
+
+Key-value pairs to classify the load balancer.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/upcloud/r/loadbalancer#labels Loadbalancer#labels}
 
 ---
 
