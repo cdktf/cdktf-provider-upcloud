@@ -9,7 +9,7 @@ Represents a {@link https://www.terraform.io/docs/providers/upcloud/d/kubernetes
 #### Initializers <a name="Initializers" id="@cdktf/provider-upcloud.dataUpcloudKubernetesCluster.DataUpcloudKubernetesCluster.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v5/dataupcloudkubernetescluster"
+import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v6/dataupcloudkubernetescluster"
 
 dataupcloudkubernetescluster.NewDataUpcloudKubernetesCluster(scope Construct, id *string, config DataUpcloudKubernetesClusterConfig) DataUpcloudKubernetesCluster
 ```
@@ -266,7 +266,7 @@ func InterpolationForAttribute(terraformAttribute *string) IResolvable
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-upcloud.dataUpcloudKubernetesCluster.DataUpcloudKubernetesCluster.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v5/dataupcloudkubernetescluster"
+import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v6/dataupcloudkubernetescluster"
 
 dataupcloudkubernetescluster.DataUpcloudKubernetesCluster_IsConstruct(x interface{}) *bool
 ```
@@ -298,7 +298,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-upcloud.dataUpcloudKubernetesCluster.DataUpcloudKubernetesCluster.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v5/dataupcloudkubernetescluster"
+import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v6/dataupcloudkubernetescluster"
 
 dataupcloudkubernetescluster.DataUpcloudKubernetesCluster_IsTerraformElement(x interface{}) *bool
 ```
@@ -312,7 +312,7 @@ dataupcloudkubernetescluster.DataUpcloudKubernetesCluster_IsTerraformElement(x i
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-upcloud.dataUpcloudKubernetesCluster.DataUpcloudKubernetesCluster.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v5/dataupcloudkubernetescluster"
+import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v6/dataupcloudkubernetescluster"
 
 dataupcloudkubernetescluster.DataUpcloudKubernetesCluster_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -577,7 +577,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-upcloud.dataUpcloudKubernetesCluster.DataUpcloudKubernetesClusterConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v5/dataupcloudkubernetescluster"
+import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v6/dataupcloudkubernetescluster"
 
 &dataupcloudkubernetescluster.DataUpcloudKubernetesClusterConfig {
 	Connection: interface{},
