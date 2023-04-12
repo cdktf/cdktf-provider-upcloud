@@ -9,7 +9,7 @@ Represents a {@link https://www.terraform.io/docs/providers/upcloud/d/ip_address
 #### Initializers <a name="Initializers" id="@cdktf/provider-upcloud.dataUpcloudIpAddresses.DataUpcloudIpAddresses.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v6/dataupcloudipaddresses"
+import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/dataupcloudipaddresses"
 
 dataupcloudipaddresses.NewDataUpcloudIpAddresses(scope Construct, id *string, config DataUpcloudIpAddressesConfig) DataUpcloudIpAddresses
 ```
@@ -273,7 +273,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-upcloud.dataUpcloudIpAddresses.DataUpcloudIpAddresses.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v6/dataupcloudipaddresses"
+import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/dataupcloudipaddresses"
 
 dataupcloudipaddresses.DataUpcloudIpAddresses_IsConstruct(x interface{}) *bool
 ```
@@ -305,7 +305,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-upcloud.dataUpcloudIpAddresses.DataUpcloudIpAddresses.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v6/dataupcloudipaddresses"
+import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/dataupcloudipaddresses"
 
 dataupcloudipaddresses.DataUpcloudIpAddresses_IsTerraformElement(x interface{}) *bool
 ```
@@ -319,7 +319,7 @@ dataupcloudipaddresses.DataUpcloudIpAddresses_IsTerraformElement(x interface{}) 
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-upcloud.dataUpcloudIpAddresses.DataUpcloudIpAddresses.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v6/dataupcloudipaddresses"
+import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/dataupcloudipaddresses"
 
 dataupcloudipaddresses.DataUpcloudIpAddresses_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -529,7 +529,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-upcloud.dataUpcloudIpAddresses.DataUpcloudIpAddressesAddresses.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v6/dataupcloudipaddresses"
+import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/dataupcloudipaddresses"
 
 &dataupcloudipaddresses.DataUpcloudIpAddressesAddresses {
 
@@ -542,7 +542,7 @@ import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v6/dataupcloudipaddre
 #### Initializer <a name="Initializer" id="@cdktf/provider-upcloud.dataUpcloudIpAddresses.DataUpcloudIpAddressesConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v6/dataupcloudipaddresses"
+import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/dataupcloudipaddresses"
 
 &dataupcloudipaddresses.DataUpcloudIpAddressesConfig {
 	Connection: interface{},
@@ -663,7 +663,7 @@ If you experience problems setting this value it might not be settable. Please t
 #### Initializers <a name="Initializers" id="@cdktf/provider-upcloud.dataUpcloudIpAddresses.DataUpcloudIpAddressesAddressesList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v6/dataupcloudipaddresses"
+import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/dataupcloudipaddresses"
 
 dataupcloudipaddresses.NewDataUpcloudIpAddressesAddressesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataUpcloudIpAddressesAddressesList
 ```
@@ -795,7 +795,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-upcloud.dataUpcloudIpAddresses.DataUpcloudIpAddressesAddressesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v6/dataupcloudipaddresses"
+import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/dataupcloudipaddresses"
 
 dataupcloudipaddresses.NewDataUpcloudIpAddressesAddressesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataUpcloudIpAddressesAddressesOutputReference
 ```

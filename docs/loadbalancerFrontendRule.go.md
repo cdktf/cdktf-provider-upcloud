@@ -9,7 +9,7 @@ Represents a {@link https://www.terraform.io/docs/providers/upcloud/r/loadbalanc
 #### Initializers <a name="Initializers" id="@cdktf/provider-upcloud.loadbalancerFrontendRule.LoadbalancerFrontendRule.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v6/loadbalancerfrontendrule"
+import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/loadbalancerfrontendrule"
 
 loadbalancerfrontendrule.NewLoadbalancerFrontendRule(scope Construct, id *string, config LoadbalancerFrontendRuleConfig) LoadbalancerFrontendRule
 ```
@@ -313,7 +313,7 @@ func ResetMatchers()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-upcloud.loadbalancerFrontendRule.LoadbalancerFrontendRule.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v6/loadbalancerfrontendrule"
+import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/loadbalancerfrontendrule"
 
 loadbalancerfrontendrule.LoadbalancerFrontendRule_IsConstruct(x interface{}) *bool
 ```
@@ -345,7 +345,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-upcloud.loadbalancerFrontendRule.LoadbalancerFrontendRule.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v6/loadbalancerfrontendrule"
+import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/loadbalancerfrontendrule"
 
 loadbalancerfrontendrule.LoadbalancerFrontendRule_IsTerraformElement(x interface{}) *bool
 ```
@@ -359,7 +359,7 @@ loadbalancerfrontendrule.LoadbalancerFrontendRule_IsTerraformElement(x interface
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-upcloud.loadbalancerFrontendRule.LoadbalancerFrontendRule.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v6/loadbalancerfrontendrule"
+import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/loadbalancerfrontendrule"
 
 loadbalancerfrontendrule.LoadbalancerFrontendRule_IsTerraformResource(x interface{}) *bool
 ```
@@ -690,7 +690,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-upcloud.loadbalancerFrontendRule.LoadbalancerFrontendRuleActions.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v6/loadbalancerfrontendrule"
+import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/loadbalancerfrontendrule"
 
 &loadbalancerfrontendrule.LoadbalancerFrontendRuleActions {
 	HttpRedirect: interface{},
@@ -788,7 +788,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/upclo
 #### Initializer <a name="Initializer" id="@cdktf/provider-upcloud.loadbalancerFrontendRule.LoadbalancerFrontendRuleActionsHttpRedirect.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v6/loadbalancerfrontendrule"
+import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/loadbalancerfrontendrule"
 
 &loadbalancerfrontendrule.LoadbalancerFrontendRuleActionsHttpRedirect {
 	Location: *string,
@@ -838,7 +838,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/upclo
 #### Initializer <a name="Initializer" id="@cdktf/provider-upcloud.loadbalancerFrontendRule.LoadbalancerFrontendRuleActionsHttpReturn.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v6/loadbalancerfrontendrule"
+import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/loadbalancerfrontendrule"
 
 &loadbalancerfrontendrule.LoadbalancerFrontendRuleActionsHttpReturn {
 	ContentType: *string,
@@ -904,7 +904,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/upclo
 #### Initializer <a name="Initializer" id="@cdktf/provider-upcloud.loadbalancerFrontendRule.LoadbalancerFrontendRuleActionsSetForwardedHeaders.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v6/loadbalancerfrontendrule"
+import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/loadbalancerfrontendrule"
 
 &loadbalancerfrontendrule.LoadbalancerFrontendRuleActionsSetForwardedHeaders {
 	Active: interface{},
@@ -936,7 +936,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/upclo
 #### Initializer <a name="Initializer" id="@cdktf/provider-upcloud.loadbalancerFrontendRule.LoadbalancerFrontendRuleActionsTcpReject.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v6/loadbalancerfrontendrule"
+import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/loadbalancerfrontendrule"
 
 &loadbalancerfrontendrule.LoadbalancerFrontendRuleActionsTcpReject {
 	Active: interface{},
@@ -968,7 +968,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/upclo
 #### Initializer <a name="Initializer" id="@cdktf/provider-upcloud.loadbalancerFrontendRule.LoadbalancerFrontendRuleActionsUseBackend.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v6/loadbalancerfrontendrule"
+import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/loadbalancerfrontendrule"
 
 &loadbalancerfrontendrule.LoadbalancerFrontendRuleActionsUseBackend {
 	BackendName: *string,
@@ -1002,7 +1002,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/upclo
 #### Initializer <a name="Initializer" id="@cdktf/provider-upcloud.loadbalancerFrontendRule.LoadbalancerFrontendRuleConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v6/loadbalancerfrontendrule"
+import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/loadbalancerfrontendrule"
 
 &loadbalancerfrontendrule.LoadbalancerFrontendRuleConfig {
 	Connection: interface{},
@@ -1015,9 +1015,9 @@ import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v6/loadbalancerfronte
 	Frontend: *string,
 	Name: *string,
 	Priority: *f64,
-	Actions: github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v6.loadbalancerFrontendRule.LoadbalancerFrontendRuleActions,
+	Actions: github.com/cdktf/cdktf-provider-upcloud-go/upcloud.loadbalancerFrontendRule.LoadbalancerFrontendRuleActions,
 	Id: *string,
-	Matchers: github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v6.loadbalancerFrontendRule.LoadbalancerFrontendRuleMatchers,
+	Matchers: github.com/cdktf/cdktf-provider-upcloud-go/upcloud.loadbalancerFrontendRule.LoadbalancerFrontendRuleMatchers,
 }
 ```
 
@@ -1201,7 +1201,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/upclo
 #### Initializer <a name="Initializer" id="@cdktf/provider-upcloud.loadbalancerFrontendRule.LoadbalancerFrontendRuleMatchers.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v6/loadbalancerfrontendrule"
+import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/loadbalancerfrontendrule"
 
 &loadbalancerfrontendrule.LoadbalancerFrontendRuleMatchers {
 	BodySize: interface{},
@@ -1443,7 +1443,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/upclo
 #### Initializer <a name="Initializer" id="@cdktf/provider-upcloud.loadbalancerFrontendRule.LoadbalancerFrontendRuleMatchersBodySize.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v6/loadbalancerfrontendrule"
+import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/loadbalancerfrontendrule"
 
 &loadbalancerfrontendrule.LoadbalancerFrontendRuleMatchersBodySize {
 	Method: *string,
@@ -1493,7 +1493,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/upclo
 #### Initializer <a name="Initializer" id="@cdktf/provider-upcloud.loadbalancerFrontendRule.LoadbalancerFrontendRuleMatchersBodySizeRange.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v6/loadbalancerfrontendrule"
+import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/loadbalancerfrontendrule"
 
 &loadbalancerfrontendrule.LoadbalancerFrontendRuleMatchersBodySizeRange {
 	RangeEnd: *f64,
@@ -1543,7 +1543,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/upclo
 #### Initializer <a name="Initializer" id="@cdktf/provider-upcloud.loadbalancerFrontendRule.LoadbalancerFrontendRuleMatchersCookie.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v6/loadbalancerfrontendrule"
+import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/loadbalancerfrontendrule"
 
 &loadbalancerfrontendrule.LoadbalancerFrontendRuleMatchersCookie {
 	Method: *string,
@@ -1627,7 +1627,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/upclo
 #### Initializer <a name="Initializer" id="@cdktf/provider-upcloud.loadbalancerFrontendRule.LoadbalancerFrontendRuleMatchersHeader.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v6/loadbalancerfrontendrule"
+import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/loadbalancerfrontendrule"
 
 &loadbalancerfrontendrule.LoadbalancerFrontendRuleMatchersHeader {
 	Method: *string,
@@ -1711,7 +1711,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/upclo
 #### Initializer <a name="Initializer" id="@cdktf/provider-upcloud.loadbalancerFrontendRule.LoadbalancerFrontendRuleMatchersHost.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v6/loadbalancerfrontendrule"
+import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/loadbalancerfrontendrule"
 
 &loadbalancerfrontendrule.LoadbalancerFrontendRuleMatchersHost {
 	Value: *string,
@@ -1745,7 +1745,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/upclo
 #### Initializer <a name="Initializer" id="@cdktf/provider-upcloud.loadbalancerFrontendRule.LoadbalancerFrontendRuleMatchersHttpMethod.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v6/loadbalancerfrontendrule"
+import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/loadbalancerfrontendrule"
 
 &loadbalancerfrontendrule.LoadbalancerFrontendRuleMatchersHttpMethod {
 	Value: *string,
@@ -1779,7 +1779,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/upclo
 #### Initializer <a name="Initializer" id="@cdktf/provider-upcloud.loadbalancerFrontendRule.LoadbalancerFrontendRuleMatchersNumMembersUp.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v6/loadbalancerfrontendrule"
+import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/loadbalancerfrontendrule"
 
 &loadbalancerfrontendrule.LoadbalancerFrontendRuleMatchersNumMembersUp {
 	BackendName: *string,
@@ -1845,7 +1845,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/upclo
 #### Initializer <a name="Initializer" id="@cdktf/provider-upcloud.loadbalancerFrontendRule.LoadbalancerFrontendRuleMatchersPath.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v6/loadbalancerfrontendrule"
+import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/loadbalancerfrontendrule"
 
 &loadbalancerfrontendrule.LoadbalancerFrontendRuleMatchersPath {
 	Method: *string,
@@ -1913,7 +1913,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/upclo
 #### Initializer <a name="Initializer" id="@cdktf/provider-upcloud.loadbalancerFrontendRule.LoadbalancerFrontendRuleMatchersSrcIp.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v6/loadbalancerfrontendrule"
+import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/loadbalancerfrontendrule"
 
 &loadbalancerfrontendrule.LoadbalancerFrontendRuleMatchersSrcIp {
 	Value: *string,
@@ -1947,7 +1947,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/upclo
 #### Initializer <a name="Initializer" id="@cdktf/provider-upcloud.loadbalancerFrontendRule.LoadbalancerFrontendRuleMatchersSrcPort.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v6/loadbalancerfrontendrule"
+import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/loadbalancerfrontendrule"
 
 &loadbalancerfrontendrule.LoadbalancerFrontendRuleMatchersSrcPort {
 	Method: *string,
@@ -1997,7 +1997,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/upclo
 #### Initializer <a name="Initializer" id="@cdktf/provider-upcloud.loadbalancerFrontendRule.LoadbalancerFrontendRuleMatchersSrcPortRange.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v6/loadbalancerfrontendrule"
+import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/loadbalancerfrontendrule"
 
 &loadbalancerfrontendrule.LoadbalancerFrontendRuleMatchersSrcPortRange {
 	RangeEnd: *f64,
@@ -2047,7 +2047,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/upclo
 #### Initializer <a name="Initializer" id="@cdktf/provider-upcloud.loadbalancerFrontendRule.LoadbalancerFrontendRuleMatchersUrl.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v6/loadbalancerfrontendrule"
+import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/loadbalancerfrontendrule"
 
 &loadbalancerfrontendrule.LoadbalancerFrontendRuleMatchersUrl {
 	Method: *string,
@@ -2115,7 +2115,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/upclo
 #### Initializer <a name="Initializer" id="@cdktf/provider-upcloud.loadbalancerFrontendRule.LoadbalancerFrontendRuleMatchersUrlParam.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v6/loadbalancerfrontendrule"
+import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/loadbalancerfrontendrule"
 
 &loadbalancerfrontendrule.LoadbalancerFrontendRuleMatchersUrlParam {
 	Method: *string,
@@ -2199,7 +2199,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/upclo
 #### Initializer <a name="Initializer" id="@cdktf/provider-upcloud.loadbalancerFrontendRule.LoadbalancerFrontendRuleMatchersUrlQuery.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v6/loadbalancerfrontendrule"
+import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/loadbalancerfrontendrule"
 
 &loadbalancerfrontendrule.LoadbalancerFrontendRuleMatchersUrlQuery {
 	Method: *string,
@@ -2269,7 +2269,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/upclo
 #### Initializers <a name="Initializers" id="@cdktf/provider-upcloud.loadbalancerFrontendRule.LoadbalancerFrontendRuleActionsHttpRedirectList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v6/loadbalancerfrontendrule"
+import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/loadbalancerfrontendrule"
 
 loadbalancerfrontendrule.NewLoadbalancerFrontendRuleActionsHttpRedirectList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) LoadbalancerFrontendRuleActionsHttpRedirectList
 ```
@@ -2412,7 +2412,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-upcloud.loadbalancerFrontendRule.LoadbalancerFrontendRuleActionsHttpRedirectOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v6/loadbalancerfrontendrule"
+import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/loadbalancerfrontendrule"
 
 loadbalancerfrontendrule.NewLoadbalancerFrontendRuleActionsHttpRedirectOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) LoadbalancerFrontendRuleActionsHttpRedirectOutputReference
 ```
@@ -2737,7 +2737,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-upcloud.loadbalancerFrontendRule.LoadbalancerFrontendRuleActionsHttpReturnList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v6/loadbalancerfrontendrule"
+import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/loadbalancerfrontendrule"
 
 loadbalancerfrontendrule.NewLoadbalancerFrontendRuleActionsHttpReturnList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) LoadbalancerFrontendRuleActionsHttpReturnList
 ```
@@ -2880,7 +2880,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-upcloud.loadbalancerFrontendRule.LoadbalancerFrontendRuleActionsHttpReturnOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v6/loadbalancerfrontendrule"
+import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/loadbalancerfrontendrule"
 
 loadbalancerfrontendrule.NewLoadbalancerFrontendRuleActionsHttpReturnOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) LoadbalancerFrontendRuleActionsHttpReturnOutputReference
 ```
@@ -3213,7 +3213,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-upcloud.loadbalancerFrontendRule.LoadbalancerFrontendRuleActionsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v6/loadbalancerfrontendrule"
+import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/loadbalancerfrontendrule"
 
 loadbalancerfrontendrule.NewLoadbalancerFrontendRuleActionsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) LoadbalancerFrontendRuleActionsOutputReference
 ```
@@ -3672,7 +3672,7 @@ func InternalValue() LoadbalancerFrontendRuleActions
 #### Initializers <a name="Initializers" id="@cdktf/provider-upcloud.loadbalancerFrontendRule.LoadbalancerFrontendRuleActionsSetForwardedHeadersList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v6/loadbalancerfrontendrule"
+import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/loadbalancerfrontendrule"
 
 loadbalancerfrontendrule.NewLoadbalancerFrontendRuleActionsSetForwardedHeadersList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) LoadbalancerFrontendRuleActionsSetForwardedHeadersList
 ```
@@ -3815,7 +3815,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-upcloud.loadbalancerFrontendRule.LoadbalancerFrontendRuleActionsSetForwardedHeadersOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v6/loadbalancerfrontendrule"
+import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/loadbalancerfrontendrule"
 
 loadbalancerfrontendrule.NewLoadbalancerFrontendRuleActionsSetForwardedHeadersOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) LoadbalancerFrontendRuleActionsSetForwardedHeadersOutputReference
 ```
@@ -4111,7 +4111,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-upcloud.loadbalancerFrontendRule.LoadbalancerFrontendRuleActionsTcpRejectList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v6/loadbalancerfrontendrule"
+import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/loadbalancerfrontendrule"
 
 loadbalancerfrontendrule.NewLoadbalancerFrontendRuleActionsTcpRejectList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) LoadbalancerFrontendRuleActionsTcpRejectList
 ```
@@ -4254,7 +4254,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-upcloud.loadbalancerFrontendRule.LoadbalancerFrontendRuleActionsTcpRejectOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v6/loadbalancerfrontendrule"
+import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/loadbalancerfrontendrule"
 
 loadbalancerfrontendrule.NewLoadbalancerFrontendRuleActionsTcpRejectOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) LoadbalancerFrontendRuleActionsTcpRejectOutputReference
 ```
@@ -4550,7 +4550,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-upcloud.loadbalancerFrontendRule.LoadbalancerFrontendRuleActionsUseBackendList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v6/loadbalancerfrontendrule"
+import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/loadbalancerfrontendrule"
 
 loadbalancerfrontendrule.NewLoadbalancerFrontendRuleActionsUseBackendList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) LoadbalancerFrontendRuleActionsUseBackendList
 ```
@@ -4693,7 +4693,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-upcloud.loadbalancerFrontendRule.LoadbalancerFrontendRuleActionsUseBackendOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v6/loadbalancerfrontendrule"
+import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/loadbalancerfrontendrule"
 
 loadbalancerfrontendrule.NewLoadbalancerFrontendRuleActionsUseBackendOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) LoadbalancerFrontendRuleActionsUseBackendOutputReference
 ```
@@ -4982,7 +4982,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-upcloud.loadbalancerFrontendRule.LoadbalancerFrontendRuleMatchersBodySizeList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v6/loadbalancerfrontendrule"
+import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/loadbalancerfrontendrule"
 
 loadbalancerfrontendrule.NewLoadbalancerFrontendRuleMatchersBodySizeList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) LoadbalancerFrontendRuleMatchersBodySizeList
 ```
@@ -5125,7 +5125,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-upcloud.loadbalancerFrontendRule.LoadbalancerFrontendRuleMatchersBodySizeOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v6/loadbalancerfrontendrule"
+import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/loadbalancerfrontendrule"
 
 loadbalancerfrontendrule.NewLoadbalancerFrontendRuleMatchersBodySizeOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) LoadbalancerFrontendRuleMatchersBodySizeOutputReference
 ```
@@ -5436,7 +5436,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-upcloud.loadbalancerFrontendRule.LoadbalancerFrontendRuleMatchersBodySizeRangeList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v6/loadbalancerfrontendrule"
+import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/loadbalancerfrontendrule"
 
 loadbalancerfrontendrule.NewLoadbalancerFrontendRuleMatchersBodySizeRangeList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) LoadbalancerFrontendRuleMatchersBodySizeRangeList
 ```
@@ -5579,7 +5579,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-upcloud.loadbalancerFrontendRule.LoadbalancerFrontendRuleMatchersBodySizeRangeOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v6/loadbalancerfrontendrule"
+import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/loadbalancerfrontendrule"
 
 loadbalancerfrontendrule.NewLoadbalancerFrontendRuleMatchersBodySizeRangeOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) LoadbalancerFrontendRuleMatchersBodySizeRangeOutputReference
 ```
@@ -5890,7 +5890,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-upcloud.loadbalancerFrontendRule.LoadbalancerFrontendRuleMatchersCookieList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v6/loadbalancerfrontendrule"
+import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/loadbalancerfrontendrule"
 
 loadbalancerfrontendrule.NewLoadbalancerFrontendRuleMatchersCookieList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) LoadbalancerFrontendRuleMatchersCookieList
 ```
@@ -6033,7 +6033,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-upcloud.loadbalancerFrontendRule.LoadbalancerFrontendRuleMatchersCookieOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v6/loadbalancerfrontendrule"
+import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/loadbalancerfrontendrule"
 
 loadbalancerfrontendrule.NewLoadbalancerFrontendRuleMatchersCookieOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) LoadbalancerFrontendRuleMatchersCookieOutputReference
 ```
@@ -6402,7 +6402,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-upcloud.loadbalancerFrontendRule.LoadbalancerFrontendRuleMatchersHeaderList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v6/loadbalancerfrontendrule"
+import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/loadbalancerfrontendrule"
 
 loadbalancerfrontendrule.NewLoadbalancerFrontendRuleMatchersHeaderList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) LoadbalancerFrontendRuleMatchersHeaderList
 ```
@@ -6545,7 +6545,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-upcloud.loadbalancerFrontendRule.LoadbalancerFrontendRuleMatchersHeaderOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v6/loadbalancerfrontendrule"
+import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/loadbalancerfrontendrule"
 
 loadbalancerfrontendrule.NewLoadbalancerFrontendRuleMatchersHeaderOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) LoadbalancerFrontendRuleMatchersHeaderOutputReference
 ```
@@ -6914,7 +6914,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-upcloud.loadbalancerFrontendRule.LoadbalancerFrontendRuleMatchersHostList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v6/loadbalancerfrontendrule"
+import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/loadbalancerfrontendrule"
 
 loadbalancerfrontendrule.NewLoadbalancerFrontendRuleMatchersHostList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) LoadbalancerFrontendRuleMatchersHostList
 ```
@@ -7057,7 +7057,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-upcloud.loadbalancerFrontendRule.LoadbalancerFrontendRuleMatchersHostOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v6/loadbalancerfrontendrule"
+import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/loadbalancerfrontendrule"
 
 loadbalancerfrontendrule.NewLoadbalancerFrontendRuleMatchersHostOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) LoadbalancerFrontendRuleMatchersHostOutputReference
 ```
@@ -7346,7 +7346,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-upcloud.loadbalancerFrontendRule.LoadbalancerFrontendRuleMatchersHttpMethodList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v6/loadbalancerfrontendrule"
+import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/loadbalancerfrontendrule"
 
 loadbalancerfrontendrule.NewLoadbalancerFrontendRuleMatchersHttpMethodList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) LoadbalancerFrontendRuleMatchersHttpMethodList
 ```
@@ -7489,7 +7489,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-upcloud.loadbalancerFrontendRule.LoadbalancerFrontendRuleMatchersHttpMethodOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v6/loadbalancerfrontendrule"
+import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/loadbalancerfrontendrule"
 
 loadbalancerfrontendrule.NewLoadbalancerFrontendRuleMatchersHttpMethodOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) LoadbalancerFrontendRuleMatchersHttpMethodOutputReference
 ```
@@ -7778,7 +7778,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-upcloud.loadbalancerFrontendRule.LoadbalancerFrontendRuleMatchersNumMembersUpList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v6/loadbalancerfrontendrule"
+import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/loadbalancerfrontendrule"
 
 loadbalancerfrontendrule.NewLoadbalancerFrontendRuleMatchersNumMembersUpList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) LoadbalancerFrontendRuleMatchersNumMembersUpList
 ```
@@ -7921,7 +7921,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-upcloud.loadbalancerFrontendRule.LoadbalancerFrontendRuleMatchersNumMembersUpOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v6/loadbalancerfrontendrule"
+import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/loadbalancerfrontendrule"
 
 loadbalancerfrontendrule.NewLoadbalancerFrontendRuleMatchersNumMembersUpOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) LoadbalancerFrontendRuleMatchersNumMembersUpOutputReference
 ```
@@ -8254,7 +8254,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-upcloud.loadbalancerFrontendRule.LoadbalancerFrontendRuleMatchersOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v6/loadbalancerfrontendrule"
+import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/loadbalancerfrontendrule"
 
 loadbalancerfrontendrule.NewLoadbalancerFrontendRuleMatchersOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) LoadbalancerFrontendRuleMatchersOutputReference
 ```
@@ -9091,7 +9091,7 @@ func InternalValue() LoadbalancerFrontendRuleMatchers
 #### Initializers <a name="Initializers" id="@cdktf/provider-upcloud.loadbalancerFrontendRule.LoadbalancerFrontendRuleMatchersPathList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v6/loadbalancerfrontendrule"
+import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/loadbalancerfrontendrule"
 
 loadbalancerfrontendrule.NewLoadbalancerFrontendRuleMatchersPathList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) LoadbalancerFrontendRuleMatchersPathList
 ```
@@ -9234,7 +9234,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-upcloud.loadbalancerFrontendRule.LoadbalancerFrontendRuleMatchersPathOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v6/loadbalancerfrontendrule"
+import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/loadbalancerfrontendrule"
 
 loadbalancerfrontendrule.NewLoadbalancerFrontendRuleMatchersPathOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) LoadbalancerFrontendRuleMatchersPathOutputReference
 ```
@@ -9581,7 +9581,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-upcloud.loadbalancerFrontendRule.LoadbalancerFrontendRuleMatchersSrcIpList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v6/loadbalancerfrontendrule"
+import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/loadbalancerfrontendrule"
 
 loadbalancerfrontendrule.NewLoadbalancerFrontendRuleMatchersSrcIpList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) LoadbalancerFrontendRuleMatchersSrcIpList
 ```
@@ -9724,7 +9724,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-upcloud.loadbalancerFrontendRule.LoadbalancerFrontendRuleMatchersSrcIpOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v6/loadbalancerfrontendrule"
+import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/loadbalancerfrontendrule"
 
 loadbalancerfrontendrule.NewLoadbalancerFrontendRuleMatchersSrcIpOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) LoadbalancerFrontendRuleMatchersSrcIpOutputReference
 ```
@@ -10013,7 +10013,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-upcloud.loadbalancerFrontendRule.LoadbalancerFrontendRuleMatchersSrcPortList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v6/loadbalancerfrontendrule"
+import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/loadbalancerfrontendrule"
 
 loadbalancerfrontendrule.NewLoadbalancerFrontendRuleMatchersSrcPortList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) LoadbalancerFrontendRuleMatchersSrcPortList
 ```
@@ -10156,7 +10156,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-upcloud.loadbalancerFrontendRule.LoadbalancerFrontendRuleMatchersSrcPortOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v6/loadbalancerfrontendrule"
+import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/loadbalancerfrontendrule"
 
 loadbalancerfrontendrule.NewLoadbalancerFrontendRuleMatchersSrcPortOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) LoadbalancerFrontendRuleMatchersSrcPortOutputReference
 ```
@@ -10467,7 +10467,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-upcloud.loadbalancerFrontendRule.LoadbalancerFrontendRuleMatchersSrcPortRangeList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v6/loadbalancerfrontendrule"
+import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/loadbalancerfrontendrule"
 
 loadbalancerfrontendrule.NewLoadbalancerFrontendRuleMatchersSrcPortRangeList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) LoadbalancerFrontendRuleMatchersSrcPortRangeList
 ```
@@ -10610,7 +10610,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-upcloud.loadbalancerFrontendRule.LoadbalancerFrontendRuleMatchersSrcPortRangeOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v6/loadbalancerfrontendrule"
+import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/loadbalancerfrontendrule"
 
 loadbalancerfrontendrule.NewLoadbalancerFrontendRuleMatchersSrcPortRangeOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) LoadbalancerFrontendRuleMatchersSrcPortRangeOutputReference
 ```
@@ -10921,7 +10921,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-upcloud.loadbalancerFrontendRule.LoadbalancerFrontendRuleMatchersUrlList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v6/loadbalancerfrontendrule"
+import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/loadbalancerfrontendrule"
 
 loadbalancerfrontendrule.NewLoadbalancerFrontendRuleMatchersUrlList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) LoadbalancerFrontendRuleMatchersUrlList
 ```
@@ -11064,7 +11064,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-upcloud.loadbalancerFrontendRule.LoadbalancerFrontendRuleMatchersUrlOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v6/loadbalancerfrontendrule"
+import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/loadbalancerfrontendrule"
 
 loadbalancerfrontendrule.NewLoadbalancerFrontendRuleMatchersUrlOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) LoadbalancerFrontendRuleMatchersUrlOutputReference
 ```
@@ -11411,7 +11411,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-upcloud.loadbalancerFrontendRule.LoadbalancerFrontendRuleMatchersUrlParamList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v6/loadbalancerfrontendrule"
+import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/loadbalancerfrontendrule"
 
 loadbalancerfrontendrule.NewLoadbalancerFrontendRuleMatchersUrlParamList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) LoadbalancerFrontendRuleMatchersUrlParamList
 ```
@@ -11554,7 +11554,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-upcloud.loadbalancerFrontendRule.LoadbalancerFrontendRuleMatchersUrlParamOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v6/loadbalancerfrontendrule"
+import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/loadbalancerfrontendrule"
 
 loadbalancerfrontendrule.NewLoadbalancerFrontendRuleMatchersUrlParamOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) LoadbalancerFrontendRuleMatchersUrlParamOutputReference
 ```
@@ -11923,7 +11923,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-upcloud.loadbalancerFrontendRule.LoadbalancerFrontendRuleMatchersUrlQueryList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v6/loadbalancerfrontendrule"
+import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/loadbalancerfrontendrule"
 
 loadbalancerfrontendrule.NewLoadbalancerFrontendRuleMatchersUrlQueryList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) LoadbalancerFrontendRuleMatchersUrlQueryList
 ```
@@ -12066,7 +12066,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-upcloud.loadbalancerFrontendRule.LoadbalancerFrontendRuleMatchersUrlQueryOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v6/loadbalancerfrontendrule"
+import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/loadbalancerfrontendrule"
 
 loadbalancerfrontendrule.NewLoadbalancerFrontendRuleMatchersUrlQueryOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) LoadbalancerFrontendRuleMatchersUrlQueryOutputReference
 ```
