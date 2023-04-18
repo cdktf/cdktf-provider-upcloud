@@ -1,4 +1,4 @@
-// https://www.terraform.io/docs/providers/upcloud/r/firewall_rules
+// https://registry.terraform.io/providers/upcloudltd/upcloud/2.9.1/docs/resources/firewall_rules
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -8,7 +8,7 @@ import * as cdktf from 'cdktf';
 
 export interface FirewallRulesConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/upcloud/r/firewall_rules#id FirewallRules#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/2.9.1/docs/resources/firewall_rules#id FirewallRules#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -17,13 +17,13 @@ export interface FirewallRulesConfig extends cdktf.TerraformMetaArguments {
   /**
   * The unique id of the server to be protected the firewall rules
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/upcloud/r/firewall_rules#server_id FirewallRules#server_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/2.9.1/docs/resources/firewall_rules#server_id FirewallRules#server_id}
   */
   readonly serverId: string;
   /**
   * firewall_rule block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/upcloud/r/firewall_rules#firewall_rule FirewallRules#firewall_rule}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/2.9.1/docs/resources/firewall_rules#firewall_rule FirewallRules#firewall_rule}
   */
   readonly firewallRule: FirewallRulesFirewallRule[] | cdktf.IResolvable;
 }
@@ -31,85 +31,85 @@ export interface FirewallRulesFirewallRule {
   /**
   * Action to take if the rule conditions are met
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/upcloud/r/firewall_rules#action FirewallRules#action}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/2.9.1/docs/resources/firewall_rules#action FirewallRules#action}
   */
   readonly action: string;
   /**
   * Freeform comment string for the rule
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/upcloud/r/firewall_rules#comment FirewallRules#comment}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/2.9.1/docs/resources/firewall_rules#comment FirewallRules#comment}
   */
   readonly comment?: string;
   /**
   * The destination address range ends from this address
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/upcloud/r/firewall_rules#destination_address_end FirewallRules#destination_address_end}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/2.9.1/docs/resources/firewall_rules#destination_address_end FirewallRules#destination_address_end}
   */
   readonly destinationAddressEnd?: string;
   /**
   * The destination address range starts from this address
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/upcloud/r/firewall_rules#destination_address_start FirewallRules#destination_address_start}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/2.9.1/docs/resources/firewall_rules#destination_address_start FirewallRules#destination_address_start}
   */
   readonly destinationAddressStart?: string;
   /**
   * The destination port range ends from this port number
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/upcloud/r/firewall_rules#destination_port_end FirewallRules#destination_port_end}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/2.9.1/docs/resources/firewall_rules#destination_port_end FirewallRules#destination_port_end}
   */
   readonly destinationPortEnd?: string;
   /**
   * The destination port range starts from this port number
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/upcloud/r/firewall_rules#destination_port_start FirewallRules#destination_port_start}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/2.9.1/docs/resources/firewall_rules#destination_port_start FirewallRules#destination_port_start}
   */
   readonly destinationPortStart?: string;
   /**
   * The direction of network traffic this rule will be applied to
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/upcloud/r/firewall_rules#direction FirewallRules#direction}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/2.9.1/docs/resources/firewall_rules#direction FirewallRules#direction}
   */
   readonly direction: string;
   /**
   * The address family of new firewall rule
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/upcloud/r/firewall_rules#family FirewallRules#family}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/2.9.1/docs/resources/firewall_rules#family FirewallRules#family}
   */
   readonly family?: string;
   /**
   * The ICMP type
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/upcloud/r/firewall_rules#icmp_type FirewallRules#icmp_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/2.9.1/docs/resources/firewall_rules#icmp_type FirewallRules#icmp_type}
   */
   readonly icmpType?: string;
   /**
   * The protocol this rule will be applied to
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/upcloud/r/firewall_rules#protocol FirewallRules#protocol}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/2.9.1/docs/resources/firewall_rules#protocol FirewallRules#protocol}
   */
   readonly protocol?: string;
   /**
   * The source address range ends from this address
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/upcloud/r/firewall_rules#source_address_end FirewallRules#source_address_end}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/2.9.1/docs/resources/firewall_rules#source_address_end FirewallRules#source_address_end}
   */
   readonly sourceAddressEnd?: string;
   /**
   * The source address range starts from this address
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/upcloud/r/firewall_rules#source_address_start FirewallRules#source_address_start}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/2.9.1/docs/resources/firewall_rules#source_address_start FirewallRules#source_address_start}
   */
   readonly sourceAddressStart?: string;
   /**
   * The source port range ends from this port number
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/upcloud/r/firewall_rules#source_port_end FirewallRules#source_port_end}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/2.9.1/docs/resources/firewall_rules#source_port_end FirewallRules#source_port_end}
   */
   readonly sourcePortEnd?: string;
   /**
   * The source port range starts from this port number
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/upcloud/r/firewall_rules#source_port_start FirewallRules#source_port_start}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/2.9.1/docs/resources/firewall_rules#source_port_start FirewallRules#source_port_start}
   */
   readonly sourcePortStart?: string;
 }
@@ -499,7 +499,7 @@ export class FirewallRulesFirewallRuleList extends cdktf.ComplexList {
 }
 
 /**
-* Represents a {@link https://www.terraform.io/docs/providers/upcloud/r/firewall_rules upcloud_firewall_rules}
+* Represents a {@link https://registry.terraform.io/providers/upcloudltd/upcloud/2.9.1/docs/resources/firewall_rules upcloud_firewall_rules}
 */
 export class FirewallRules extends cdktf.TerraformResource {
 
@@ -513,7 +513,7 @@ export class FirewallRules extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://www.terraform.io/docs/providers/upcloud/r/firewall_rules upcloud_firewall_rules} Resource
+  * Create a new {@link https://registry.terraform.io/providers/upcloudltd/upcloud/2.9.1/docs/resources/firewall_rules upcloud_firewall_rules} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope

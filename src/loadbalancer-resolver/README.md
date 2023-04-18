@@ -1,3 +1,3 @@
 # `upcloud_loadbalancer_resolver`
 
-Refer to the Terraform Registory for docs: [`upcloud_loadbalancer_resolver`](https://www.terraform.io/docs/providers/upcloud/r/loadbalancer_resolver).
+Refer to the Terraform Registory for docs: [`upcloud_loadbalancer_resolver`](https://registry.terraform.io/providers/upcloudltd/upcloud/2.9.1/docs/resources/loadbalancer_resolver).

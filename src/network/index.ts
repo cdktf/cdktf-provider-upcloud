@@ -1,4 +1,4 @@
-// https://www.terraform.io/docs/providers/upcloud/r/network
+// https://registry.terraform.io/providers/upcloudltd/upcloud/2.9.1/docs/resources/network
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -8,7 +8,7 @@ import * as cdktf from 'cdktf';
 
 export interface NetworkConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/upcloud/r/network#id Network#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/2.9.1/docs/resources/network#id Network#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -17,25 +17,25 @@ export interface NetworkConfig extends cdktf.TerraformMetaArguments {
   /**
   * A valid name for the network
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/upcloud/r/network#name Network#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/2.9.1/docs/resources/network#name Network#name}
   */
   readonly name: string;
   /**
   * The UUID of a router
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/upcloud/r/network#router Network#router}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/2.9.1/docs/resources/network#router Network#router}
   */
   readonly router?: string;
   /**
   * The zone the network is in
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/upcloud/r/network#zone Network#zone}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/2.9.1/docs/resources/network#zone Network#zone}
   */
   readonly zone: string;
   /**
   * ip_network block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/upcloud/r/network#ip_network Network#ip_network}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/2.9.1/docs/resources/network#ip_network Network#ip_network}
   */
   readonly ipNetwork: NetworkIpNetwork;
 }
@@ -43,37 +43,37 @@ export interface NetworkIpNetwork {
   /**
   * The CIDR range of the subnet
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/upcloud/r/network#address Network#address}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/2.9.1/docs/resources/network#address Network#address}
   */
   readonly address: string;
   /**
   * Is DHCP enabled?
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/upcloud/r/network#dhcp Network#dhcp}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/2.9.1/docs/resources/network#dhcp Network#dhcp}
   */
   readonly dhcp: boolean | cdktf.IResolvable;
   /**
   * Is the gateway the DHCP default route?
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/upcloud/r/network#dhcp_default_route Network#dhcp_default_route}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/2.9.1/docs/resources/network#dhcp_default_route Network#dhcp_default_route}
   */
   readonly dhcpDefaultRoute?: boolean | cdktf.IResolvable;
   /**
   * The DNS servers given by DHCP
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/upcloud/r/network#dhcp_dns Network#dhcp_dns}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/2.9.1/docs/resources/network#dhcp_dns Network#dhcp_dns}
   */
   readonly dhcpDns?: string[];
   /**
   * IP address family
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/upcloud/r/network#family Network#family}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/2.9.1/docs/resources/network#family Network#family}
   */
   readonly family: string;
   /**
   * Gateway address given by DHCP
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/upcloud/r/network#gateway Network#gateway}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/2.9.1/docs/resources/network#gateway Network#gateway}
   */
   readonly gateway?: string;
 }
@@ -244,7 +244,7 @@ export class NetworkIpNetworkOutputReference extends cdktf.ComplexObject {
 }
 
 /**
-* Represents a {@link https://www.terraform.io/docs/providers/upcloud/r/network upcloud_network}
+* Represents a {@link https://registry.terraform.io/providers/upcloudltd/upcloud/2.9.1/docs/resources/network upcloud_network}
 */
 export class Network extends cdktf.TerraformResource {
 
@@ -258,7 +258,7 @@ export class Network extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://www.terraform.io/docs/providers/upcloud/r/network upcloud_network} Resource
+  * Create a new {@link https://registry.terraform.io/providers/upcloudltd/upcloud/2.9.1/docs/resources/network upcloud_network} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope

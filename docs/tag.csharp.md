@@ -1,6 +1,6 @@
 # `upcloud_tag`
 
-Refer to the Terraform Registory for docs: [`upcloud_tag`](https://www.terraform.io/docs/providers/upcloud/r/tag).
+Refer to the Terraform Registory for docs: [`upcloud_tag`](https://registry.terraform.io/providers/upcloudltd/upcloud/2.9.1/docs/resources/tag).
 
 # `tag` Submodule <a name="`tag` Submodule" id="@cdktf/provider-upcloud.tag"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`upcloud_tag`](https://www.terraform
 
 ### Tag <a name="Tag" id="@cdktf/provider-upcloud.tag.Tag"></a>
 
-Represents a {@link https://www.terraform.io/docs/providers/upcloud/r/tag upcloud_tag}.
+Represents a {@link https://registry.terraform.io/providers/upcloudltd/upcloud/2.9.1/docs/resources/tag upcloud_tag}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-upcloud.tag.Tag.Initializer"></a>
 
@@ -360,7 +360,7 @@ Tag.IsTerraformResource(object X);
 | <code><a href="#@cdktf/provider-upcloud.tag.Tag.property.terraformResourceType">TerraformResourceType</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.tag.Tag.property.terraformGeneratorMetadata">TerraformGeneratorMetadata</a></code> | <code>HashiCorp.Cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.tag.Tag.property.connection">Connection</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-upcloud.tag.Tag.property.count">Count</a></code> | <code>double</code> | *No description.* |
+| <code><a href="#@cdktf/provider-upcloud.tag.Tag.property.count">Count</a></code> | <code>object</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.tag.Tag.property.dependsOn">DependsOn</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.tag.Tag.property.forEach">ForEach</a></code> | <code>HashiCorp.Cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.tag.Tag.property.lifecycle">Lifecycle</a></code> | <code>HashiCorp.Cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -462,10 +462,10 @@ public object Connection { get; }
 ##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktf/provider-upcloud.tag.Tag.property.count"></a>
 
 ```csharp
-public double Count { get; }
+public object Count { get; }
 ```
 
-- *Type:* double
+- *Type:* object
 
 ---
 
@@ -628,7 +628,7 @@ using HashiCorp.Cdktf.Providers.Upcloud;
 
 new TagConfig {
     object Connection = null,
-    double Count = null,
+    object Count = null,
     ITerraformDependable[] DependsOn = null,
     ITerraformIterator ForEach = null,
     TerraformResourceLifecycle Lifecycle = null,
@@ -646,7 +646,7 @@ new TagConfig {
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-upcloud.tag.TagConfig.property.connection">Connection</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-upcloud.tag.TagConfig.property.count">Count</a></code> | <code>double</code> | *No description.* |
+| <code><a href="#@cdktf/provider-upcloud.tag.TagConfig.property.count">Count</a></code> | <code>object</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.tag.TagConfig.property.dependsOn">DependsOn</a></code> | <code>HashiCorp.Cdktf.ITerraformDependable[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.tag.TagConfig.property.forEach">ForEach</a></code> | <code>HashiCorp.Cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.tag.TagConfig.property.lifecycle">Lifecycle</a></code> | <code>HashiCorp.Cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -654,7 +654,7 @@ new TagConfig {
 | <code><a href="#@cdktf/provider-upcloud.tag.TagConfig.property.provisioners">Provisioners</a></code> | <code>object[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.tag.TagConfig.property.name">Name</a></code> | <code>string</code> | The value representing the tag. |
 | <code><a href="#@cdktf/provider-upcloud.tag.TagConfig.property.description">Description</a></code> | <code>string</code> | Free form text representing the meaning of the tag. |
-| <code><a href="#@cdktf/provider-upcloud.tag.TagConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/upcloud/r/tag#id Tag#id}. |
+| <code><a href="#@cdktf/provider-upcloud.tag.TagConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/2.9.1/docs/resources/tag#id Tag#id}. |
 | <code><a href="#@cdktf/provider-upcloud.tag.TagConfig.property.servers">Servers</a></code> | <code>string[]</code> | A collection of servers that have been assigned the tag. |
 
 ---
@@ -672,10 +672,10 @@ public object Connection { get; set; }
 ##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktf/provider-upcloud.tag.TagConfig.property.count"></a>
 
 ```csharp
-public double Count { get; set; }
+public object Count { get; set; }
 ```
 
-- *Type:* double
+- *Type:* object
 
 ---
 
@@ -739,7 +739,7 @@ public string Name { get; set; }
 
 The value representing the tag.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/upcloud/r/tag#name Tag#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/2.9.1/docs/resources/tag#name Tag#name}
 
 ---
 
@@ -753,7 +753,7 @@ public string Description { get; set; }
 
 Free form text representing the meaning of the tag.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/upcloud/r/tag#description Tag#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/2.9.1/docs/resources/tag#description Tag#description}
 
 ---
 
@@ -765,7 +765,7 @@ public string Id { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/upcloud/r/tag#id Tag#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/2.9.1/docs/resources/tag#id Tag#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -782,7 +782,7 @@ public string[] Servers { get; set; }
 
 A collection of servers that have been assigned the tag.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/upcloud/r/tag#servers Tag#servers}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/2.9.1/docs/resources/tag#servers Tag#servers}
 
 ---
 

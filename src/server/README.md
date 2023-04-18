@@ -1,3 +1,3 @@
 # `upcloud_server`
 
-Refer to the Terraform Registory for docs: [`upcloud_server`](https://www.terraform.io/docs/providers/upcloud/r/server).
+Refer to the Terraform Registory for docs: [`upcloud_server`](https://registry.terraform.io/providers/upcloudltd/upcloud/2.9.1/docs/resources/server).
