@@ -1,6 +1,6 @@
 # `upcloud_network`
 
-Refer to the Terraform Registory for docs: [`upcloud_network`](https://www.terraform.io/docs/providers/upcloud/r/network).
+Refer to the Terraform Registory for docs: [`upcloud_network`](https://registry.terraform.io/providers/upcloudltd/upcloud/2.9.1/docs/resources/network).
 
 # `network` Submodule <a name="`network` Submodule" id="@cdktf/provider-upcloud.network"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`upcloud_network`](https://www.terra
 
 ### Network <a name="Network" id="@cdktf/provider-upcloud.network.Network"></a>
 
-Represents a {@link https://www.terraform.io/docs/providers/upcloud/r/network upcloud_network}.
+Represents a {@link https://registry.terraform.io/providers/upcloudltd/upcloud/2.9.1/docs/resources/network upcloud_network}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-upcloud.network.Network.Initializer"></a>
 
@@ -19,7 +19,7 @@ network.Network(
   scope: Construct,
   id: str,
   connection: typing.Union[SSHProvisionerConnection, WinrmProvisionerConnection] = None,
-  count: typing.Union[int, float] = None,
+  count: typing.Union[typing.Union[int, float], TerraformCount] = None,
   depends_on: typing.List[ITerraformDependable] = None,
   for_each: ITerraformIterator = None,
   lifecycle: TerraformResourceLifecycle = None,
@@ -38,7 +38,7 @@ network.Network(
 | <code><a href="#@cdktf/provider-upcloud.network.Network.Initializer.parameter.scope">scope</a></code> | <code>constructs.Construct</code> | The scope in which to define this construct. |
 | <code><a href="#@cdktf/provider-upcloud.network.Network.Initializer.parameter.id">id</a></code> | <code>str</code> | The scoped construct ID. |
 | <code><a href="#@cdktf/provider-upcloud.network.Network.Initializer.parameter.connection">connection</a></code> | <code>typing.Union[cdktf.SSHProvisionerConnection, cdktf.WinrmProvisionerConnection]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-upcloud.network.Network.Initializer.parameter.count">count</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-upcloud.network.Network.Initializer.parameter.count">count</a></code> | <code>typing.Union[typing.Union[int, float], cdktf.TerraformCount]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.network.Network.Initializer.parameter.dependsOn">depends_on</a></code> | <code>typing.List[cdktf.ITerraformDependable]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.network.Network.Initializer.parameter.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.network.Network.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -47,7 +47,7 @@ network.Network(
 | <code><a href="#@cdktf/provider-upcloud.network.Network.Initializer.parameter.ipNetwork">ip_network</a></code> | <code><a href="#@cdktf/provider-upcloud.network.NetworkIpNetwork">NetworkIpNetwork</a></code> | ip_network block. |
 | <code><a href="#@cdktf/provider-upcloud.network.Network.Initializer.parameter.name">name</a></code> | <code>str</code> | A valid name for the network. |
 | <code><a href="#@cdktf/provider-upcloud.network.Network.Initializer.parameter.zone">zone</a></code> | <code>str</code> | The zone the network is in. |
-| <code><a href="#@cdktf/provider-upcloud.network.Network.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/upcloud/r/network#id Network#id}. |
+| <code><a href="#@cdktf/provider-upcloud.network.Network.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/2.9.1/docs/resources/network#id Network#id}. |
 | <code><a href="#@cdktf/provider-upcloud.network.Network.Initializer.parameter.router">router</a></code> | <code>str</code> | The UUID of a router. |
 
 ---
@@ -78,7 +78,7 @@ Must be unique amongst siblings in the same scope
 
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-upcloud.network.Network.Initializer.parameter.count"></a>
 
-- *Type:* typing.Union[int, float]
+- *Type:* typing.Union[typing.Union[int, float], cdktf.TerraformCount]
 
 ---
 
@@ -118,7 +118,7 @@ Must be unique amongst siblings in the same scope
 
 ip_network block.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/upcloud/r/network#ip_network Network#ip_network}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/2.9.1/docs/resources/network#ip_network Network#ip_network}
 
 ---
 
@@ -128,7 +128,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/upclo
 
 A valid name for the network.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/upcloud/r/network#name Network#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/2.9.1/docs/resources/network#name Network#name}
 
 ---
 
@@ -138,7 +138,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/upclo
 
 The zone the network is in.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/upcloud/r/network#zone Network#zone}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/2.9.1/docs/resources/network#zone Network#zone}
 
 ---
 
@@ -146,7 +146,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/upclo
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/upcloud/r/network#id Network#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/2.9.1/docs/resources/network#id Network#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -159,7 +159,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 The UUID of a router.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/upcloud/r/network#router Network#router}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/2.9.1/docs/resources/network#router Network#router}
 
 ---
 
@@ -417,7 +417,7 @@ def put_ip_network(
 
 The CIDR range of the subnet.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/upcloud/r/network#address Network#address}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/2.9.1/docs/resources/network#address Network#address}
 
 ---
 
@@ -427,7 +427,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/upclo
 
 Is DHCP enabled?
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/upcloud/r/network#dhcp Network#dhcp}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/2.9.1/docs/resources/network#dhcp Network#dhcp}
 
 ---
 
@@ -437,7 +437,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/upclo
 
 IP address family.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/upcloud/r/network#family Network#family}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/2.9.1/docs/resources/network#family Network#family}
 
 ---
 
@@ -447,7 +447,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/upclo
 
 Is the gateway the DHCP default route?
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/upcloud/r/network#dhcp_default_route Network#dhcp_default_route}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/2.9.1/docs/resources/network#dhcp_default_route Network#dhcp_default_route}
 
 ---
 
@@ -457,7 +457,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/upclo
 
 The DNS servers given by DHCP.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/upcloud/r/network#dhcp_dns Network#dhcp_dns}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/2.9.1/docs/resources/network#dhcp_dns Network#dhcp_dns}
 
 ---
 
@@ -467,7 +467,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/upclo
 
 Gateway address given by DHCP.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/upcloud/r/network#gateway Network#gateway}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/2.9.1/docs/resources/network#gateway Network#gateway}
 
 ---
 
@@ -571,7 +571,7 @@ network.Network.is_terraform_resource(
 | <code><a href="#@cdktf/provider-upcloud.network.Network.property.terraformResourceType">terraform_resource_type</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.network.Network.property.terraformGeneratorMetadata">terraform_generator_metadata</a></code> | <code>cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.network.Network.property.connection">connection</a></code> | <code>typing.Union[cdktf.SSHProvisionerConnection, cdktf.WinrmProvisionerConnection]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-upcloud.network.Network.property.count">count</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-upcloud.network.Network.property.count">count</a></code> | <code>typing.Union[typing.Union[int, float], cdktf.TerraformCount]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.network.Network.property.dependsOn">depends_on</a></code> | <code>typing.List[str]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.network.Network.property.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.network.Network.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -676,10 +676,10 @@ connection: typing.Union[SSHProvisionerConnection, WinrmProvisionerConnection]
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-upcloud.network.Network.property.count"></a>
 
 ```python
-count: typing.Union[int, float]
+count: typing.Union[typing.Union[int, float], TerraformCount]
 ```
 
-- *Type:* typing.Union[int, float]
+- *Type:* typing.Union[typing.Union[int, float], cdktf.TerraformCount]
 
 ---
 
@@ -872,7 +872,7 @@ from cdktf_cdktf_provider_upcloud import network
 
 network.NetworkConfig(
   connection: typing.Union[SSHProvisionerConnection, WinrmProvisionerConnection] = None,
-  count: typing.Union[int, float] = None,
+  count: typing.Union[typing.Union[int, float], TerraformCount] = None,
   depends_on: typing.List[ITerraformDependable] = None,
   for_each: ITerraformIterator = None,
   lifecycle: TerraformResourceLifecycle = None,
@@ -891,7 +891,7 @@ network.NetworkConfig(
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-upcloud.network.NetworkConfig.property.connection">connection</a></code> | <code>typing.Union[cdktf.SSHProvisionerConnection, cdktf.WinrmProvisionerConnection]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-upcloud.network.NetworkConfig.property.count">count</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-upcloud.network.NetworkConfig.property.count">count</a></code> | <code>typing.Union[typing.Union[int, float], cdktf.TerraformCount]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.network.NetworkConfig.property.dependsOn">depends_on</a></code> | <code>typing.List[cdktf.ITerraformDependable]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.network.NetworkConfig.property.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.network.NetworkConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -900,7 +900,7 @@ network.NetworkConfig(
 | <code><a href="#@cdktf/provider-upcloud.network.NetworkConfig.property.ipNetwork">ip_network</a></code> | <code><a href="#@cdktf/provider-upcloud.network.NetworkIpNetwork">NetworkIpNetwork</a></code> | ip_network block. |
 | <code><a href="#@cdktf/provider-upcloud.network.NetworkConfig.property.name">name</a></code> | <code>str</code> | A valid name for the network. |
 | <code><a href="#@cdktf/provider-upcloud.network.NetworkConfig.property.zone">zone</a></code> | <code>str</code> | The zone the network is in. |
-| <code><a href="#@cdktf/provider-upcloud.network.NetworkConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/upcloud/r/network#id Network#id}. |
+| <code><a href="#@cdktf/provider-upcloud.network.NetworkConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/2.9.1/docs/resources/network#id Network#id}. |
 | <code><a href="#@cdktf/provider-upcloud.network.NetworkConfig.property.router">router</a></code> | <code>str</code> | The UUID of a router. |
 
 ---
@@ -918,10 +918,10 @@ connection: typing.Union[SSHProvisionerConnection, WinrmProvisionerConnection]
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-upcloud.network.NetworkConfig.property.count"></a>
 
 ```python
-count: typing.Union[int, float]
+count: typing.Union[typing.Union[int, float], TerraformCount]
 ```
 
-- *Type:* typing.Union[int, float]
+- *Type:* typing.Union[typing.Union[int, float], cdktf.TerraformCount]
 
 ---
 
@@ -985,7 +985,7 @@ ip_network: NetworkIpNetwork
 
 ip_network block.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/upcloud/r/network#ip_network Network#ip_network}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/2.9.1/docs/resources/network#ip_network Network#ip_network}
 
 ---
 
@@ -999,7 +999,7 @@ name: str
 
 A valid name for the network.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/upcloud/r/network#name Network#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/2.9.1/docs/resources/network#name Network#name}
 
 ---
 
@@ -1013,7 +1013,7 @@ zone: str
 
 The zone the network is in.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/upcloud/r/network#zone Network#zone}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/2.9.1/docs/resources/network#zone Network#zone}
 
 ---
 
@@ -1025,7 +1025,7 @@ id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/upcloud/r/network#id Network#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/2.9.1/docs/resources/network#id Network#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1042,7 +1042,7 @@ router: str
 
 The UUID of a router.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/upcloud/r/network#router Network#router}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/2.9.1/docs/resources/network#router Network#router}
 
 ---
 
@@ -1086,7 +1086,7 @@ address: str
 
 The CIDR range of the subnet.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/upcloud/r/network#address Network#address}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/2.9.1/docs/resources/network#address Network#address}
 
 ---
 
@@ -1100,7 +1100,7 @@ dhcp: typing.Union[bool, IResolvable]
 
 Is DHCP enabled?
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/upcloud/r/network#dhcp Network#dhcp}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/2.9.1/docs/resources/network#dhcp Network#dhcp}
 
 ---
 
@@ -1114,7 +1114,7 @@ family: str
 
 IP address family.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/upcloud/r/network#family Network#family}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/2.9.1/docs/resources/network#family Network#family}
 
 ---
 
@@ -1128,7 +1128,7 @@ dhcp_default_route: typing.Union[bool, IResolvable]
 
 Is the gateway the DHCP default route?
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/upcloud/r/network#dhcp_default_route Network#dhcp_default_route}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/2.9.1/docs/resources/network#dhcp_default_route Network#dhcp_default_route}
 
 ---
 
@@ -1142,7 +1142,7 @@ dhcp_dns: typing.List[str]
 
 The DNS servers given by DHCP.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/upcloud/r/network#dhcp_dns Network#dhcp_dns}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/2.9.1/docs/resources/network#dhcp_dns Network#dhcp_dns}
 
 ---
 
@@ -1156,7 +1156,7 @@ gateway: str
 
 Gateway address given by DHCP.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/upcloud/r/network#gateway Network#gateway}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/2.9.1/docs/resources/network#gateway Network#gateway}
 
 ---
 

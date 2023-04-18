@@ -1,6 +1,6 @@
 # `upcloud_object_storage`
 
-Refer to the Terraform Registory for docs: [`upcloud_object_storage`](https://www.terraform.io/docs/providers/upcloud/r/object_storage).
+Refer to the Terraform Registory for docs: [`upcloud_object_storage`](https://registry.terraform.io/providers/upcloudltd/upcloud/2.9.1/docs/resources/object_storage).
 
 # `objectStorage` Submodule <a name="`objectStorage` Submodule" id="@cdktf/provider-upcloud.objectStorage"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`upcloud_object_storage`](https://ww
 
 ### ObjectStorage <a name="ObjectStorage" id="@cdktf/provider-upcloud.objectStorage.ObjectStorage"></a>
 
-Represents a {@link https://www.terraform.io/docs/providers/upcloud/r/object_storage upcloud_object_storage}.
+Represents a {@link https://registry.terraform.io/providers/upcloudltd/upcloud/2.9.1/docs/resources/object_storage upcloud_object_storage}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-upcloud.objectStorage.ObjectStorage.Initializer"></a>
 
@@ -19,6 +19,7 @@ ObjectStorage.Builder.create(Construct scope, java.lang.String id)
 //  .connection(SSHProvisionerConnection)
 //  .connection(WinrmProvisionerConnection)
 //  .count(java.lang.Number)
+//  .count(TerraformCount)
 //  .dependsOn(java.util.List<ITerraformDependable>)
 //  .forEach(ITerraformIterator)
 //  .lifecycle(TerraformResourceLifecycle)
@@ -43,7 +44,7 @@ ObjectStorage.Builder.create(Construct scope, java.lang.String id)
 | <code><a href="#@cdktf/provider-upcloud.objectStorage.ObjectStorage.Initializer.parameter.scope">scope</a></code> | <code>software.constructs.Construct</code> | The scope in which to define this construct. |
 | <code><a href="#@cdktf/provider-upcloud.objectStorage.ObjectStorage.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | The scoped construct ID. |
 | <code><a href="#@cdktf/provider-upcloud.objectStorage.ObjectStorage.Initializer.parameter.connection">connection</a></code> | <code>com.hashicorp.cdktf.SSHProvisionerConnection OR com.hashicorp.cdktf.WinrmProvisionerConnection</code> | *No description.* |
-| <code><a href="#@cdktf/provider-upcloud.objectStorage.ObjectStorage.Initializer.parameter.count">count</a></code> | <code>java.lang.Number</code> | *No description.* |
+| <code><a href="#@cdktf/provider-upcloud.objectStorage.ObjectStorage.Initializer.parameter.count">count</a></code> | <code>java.lang.Number OR com.hashicorp.cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.objectStorage.ObjectStorage.Initializer.parameter.dependsOn">dependsOn</a></code> | <code>java.util.List<com.hashicorp.cdktf.ITerraformDependable></code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.objectStorage.ObjectStorage.Initializer.parameter.forEach">forEach</a></code> | <code>com.hashicorp.cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.objectStorage.ObjectStorage.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>com.hashicorp.cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -56,7 +57,7 @@ ObjectStorage.Builder.create(Construct scope, java.lang.String id)
 | <code><a href="#@cdktf/provider-upcloud.objectStorage.ObjectStorage.Initializer.parameter.zone">zone</a></code> | <code>java.lang.String</code> | The zone in which the object storage instance will be created. |
 | <code><a href="#@cdktf/provider-upcloud.objectStorage.ObjectStorage.Initializer.parameter.bucket">bucket</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-upcloud.objectStorage.ObjectStorageBucket">ObjectStorageBucket</a>></code> | bucket block. |
 | <code><a href="#@cdktf/provider-upcloud.objectStorage.ObjectStorage.Initializer.parameter.description">description</a></code> | <code>java.lang.String</code> | The description of the object storage instance to be created. |
-| <code><a href="#@cdktf/provider-upcloud.objectStorage.ObjectStorage.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/upcloud/r/object_storage#id ObjectStorage#id}. |
+| <code><a href="#@cdktf/provider-upcloud.objectStorage.ObjectStorage.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/2.9.1/docs/resources/object_storage#id ObjectStorage#id}. |
 
 ---
 
@@ -86,7 +87,7 @@ Must be unique amongst siblings in the same scope
 
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-upcloud.objectStorage.ObjectStorage.Initializer.parameter.count"></a>
 
-- *Type:* java.lang.Number
+- *Type:* java.lang.Number OR com.hashicorp.cdktf.TerraformCount
 
 ---
 
@@ -132,7 +133,7 @@ The environment variable should be "UPCLOUD_OBJECT_STORAGE_ACCESS_KEY_{name}".
 and all dashes (-) should be replaced with underscores (_). For example, object storage named "my-files" would
 use environment variable named "UPCLOUD_OBJECT_STORAGE_ACCESS_KEY_MY_FILES".
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/upcloud/r/object_storage#access_key ObjectStorage#access_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/2.9.1/docs/resources/object_storage#access_key ObjectStorage#access_key}
 
 ---
 
@@ -142,7 +143,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/upclo
 
 The name of the object storage instance to be created.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/upcloud/r/object_storage#name ObjectStorage#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/2.9.1/docs/resources/object_storage#name ObjectStorage#name}
 
 ---
 
@@ -158,7 +159,7 @@ The environment variable should be "UPCLOUD_OBJECT_STORAGE_SECRET_KEY_{name}".
 and all dashes (-) should be replaced with underscores (_). For example, object storage named "my-files" would
 use environment variable named "UPCLOUD_OBJECT_STORAGE_SECRET_KEY_MY_FILES".
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/upcloud/r/object_storage#secret_key ObjectStorage#secret_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/2.9.1/docs/resources/object_storage#secret_key ObjectStorage#secret_key}
 
 ---
 
@@ -168,7 +169,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/upclo
 
 The size of the object storage instance in gigabytes.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/upcloud/r/object_storage#size ObjectStorage#size}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/2.9.1/docs/resources/object_storage#size ObjectStorage#size}
 
 ---
 
@@ -178,7 +179,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/upclo
 
 The zone in which the object storage instance will be created.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/upcloud/r/object_storage#zone ObjectStorage#zone}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/2.9.1/docs/resources/object_storage#zone ObjectStorage#zone}
 
 ---
 
@@ -188,7 +189,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/upclo
 
 bucket block.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/upcloud/r/object_storage#bucket ObjectStorage#bucket}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/2.9.1/docs/resources/object_storage#bucket ObjectStorage#bucket}
 
 ---
 
@@ -198,7 +199,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/upclo
 
 The description of the object storage instance to be created.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/upcloud/r/object_storage#description ObjectStorage#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/2.9.1/docs/resources/object_storage#description ObjectStorage#description}
 
 ---
 
@@ -206,7 +207,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/upclo
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/upcloud/r/object_storage#id ObjectStorage#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/2.9.1/docs/resources/object_storage#id ObjectStorage#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -536,7 +537,7 @@ ObjectStorage.isTerraformResource(java.lang.Object x)
 | <code><a href="#@cdktf/provider-upcloud.objectStorage.ObjectStorage.property.terraformResourceType">terraformResourceType</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.objectStorage.ObjectStorage.property.terraformGeneratorMetadata">terraformGeneratorMetadata</a></code> | <code>com.hashicorp.cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.objectStorage.ObjectStorage.property.connection">connection</a></code> | <code>com.hashicorp.cdktf.SSHProvisionerConnection OR com.hashicorp.cdktf.WinrmProvisionerConnection</code> | *No description.* |
-| <code><a href="#@cdktf/provider-upcloud.objectStorage.ObjectStorage.property.count">count</a></code> | <code>java.lang.Number</code> | *No description.* |
+| <code><a href="#@cdktf/provider-upcloud.objectStorage.ObjectStorage.property.count">count</a></code> | <code>java.lang.Number OR com.hashicorp.cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.objectStorage.ObjectStorage.property.dependsOn">dependsOn</a></code> | <code>java.util.List<java.lang.String></code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.objectStorage.ObjectStorage.property.forEach">forEach</a></code> | <code>com.hashicorp.cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.objectStorage.ObjectStorage.property.lifecycle">lifecycle</a></code> | <code>com.hashicorp.cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -650,10 +651,10 @@ public java.lang.Object getConnection();
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-upcloud.objectStorage.ObjectStorage.property.count"></a>
 
 ```java
-public java.lang.Number getCount();
+public java.lang.Object getCount();
 ```
 
-- *Type:* java.lang.Number
+- *Type:* java.lang.Number OR com.hashicorp.cdktf.TerraformCount
 
 ---
 
@@ -957,7 +958,7 @@ public java.lang.String getName();
 
 The name of the bucket.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/upcloud/r/object_storage#name ObjectStorage#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/2.9.1/docs/resources/object_storage#name ObjectStorage#name}
 
 ---
 
@@ -972,6 +973,7 @@ ObjectStorageConfig.builder()
 //  .connection(SSHProvisionerConnection)
 //  .connection(WinrmProvisionerConnection)
 //  .count(java.lang.Number)
+//  .count(TerraformCount)
 //  .dependsOn(java.util.List<ITerraformDependable>)
 //  .forEach(ITerraformIterator)
 //  .lifecycle(TerraformResourceLifecycle)
@@ -996,7 +998,7 @@ ObjectStorageConfig.builder()
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-upcloud.objectStorage.ObjectStorageConfig.property.connection">connection</a></code> | <code>com.hashicorp.cdktf.SSHProvisionerConnection OR com.hashicorp.cdktf.WinrmProvisionerConnection</code> | *No description.* |
-| <code><a href="#@cdktf/provider-upcloud.objectStorage.ObjectStorageConfig.property.count">count</a></code> | <code>java.lang.Number</code> | *No description.* |
+| <code><a href="#@cdktf/provider-upcloud.objectStorage.ObjectStorageConfig.property.count">count</a></code> | <code>java.lang.Number OR com.hashicorp.cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.objectStorage.ObjectStorageConfig.property.dependsOn">dependsOn</a></code> | <code>java.util.List<com.hashicorp.cdktf.ITerraformDependable></code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.objectStorage.ObjectStorageConfig.property.forEach">forEach</a></code> | <code>com.hashicorp.cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.objectStorage.ObjectStorageConfig.property.lifecycle">lifecycle</a></code> | <code>com.hashicorp.cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -1009,7 +1011,7 @@ ObjectStorageConfig.builder()
 | <code><a href="#@cdktf/provider-upcloud.objectStorage.ObjectStorageConfig.property.zone">zone</a></code> | <code>java.lang.String</code> | The zone in which the object storage instance will be created. |
 | <code><a href="#@cdktf/provider-upcloud.objectStorage.ObjectStorageConfig.property.bucket">bucket</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-upcloud.objectStorage.ObjectStorageBucket">ObjectStorageBucket</a>></code> | bucket block. |
 | <code><a href="#@cdktf/provider-upcloud.objectStorage.ObjectStorageConfig.property.description">description</a></code> | <code>java.lang.String</code> | The description of the object storage instance to be created. |
-| <code><a href="#@cdktf/provider-upcloud.objectStorage.ObjectStorageConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/upcloud/r/object_storage#id ObjectStorage#id}. |
+| <code><a href="#@cdktf/provider-upcloud.objectStorage.ObjectStorageConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/2.9.1/docs/resources/object_storage#id ObjectStorage#id}. |
 
 ---
 
@@ -1026,10 +1028,10 @@ public java.lang.Object getConnection();
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-upcloud.objectStorage.ObjectStorageConfig.property.count"></a>
 
 ```java
-public java.lang.Number getCount();
+public java.lang.Object getCount();
 ```
 
-- *Type:* java.lang.Number
+- *Type:* java.lang.Number OR com.hashicorp.cdktf.TerraformCount
 
 ---
 
@@ -1099,7 +1101,7 @@ The environment variable should be "UPCLOUD_OBJECT_STORAGE_ACCESS_KEY_{name}".
 and all dashes (-) should be replaced with underscores (_). For example, object storage named "my-files" would
 use environment variable named "UPCLOUD_OBJECT_STORAGE_ACCESS_KEY_MY_FILES".
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/upcloud/r/object_storage#access_key ObjectStorage#access_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/2.9.1/docs/resources/object_storage#access_key ObjectStorage#access_key}
 
 ---
 
@@ -1113,7 +1115,7 @@ public java.lang.String getName();
 
 The name of the object storage instance to be created.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/upcloud/r/object_storage#name ObjectStorage#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/2.9.1/docs/resources/object_storage#name ObjectStorage#name}
 
 ---
 
@@ -1133,7 +1135,7 @@ The environment variable should be "UPCLOUD_OBJECT_STORAGE_SECRET_KEY_{name}".
 and all dashes (-) should be replaced with underscores (_). For example, object storage named "my-files" would
 use environment variable named "UPCLOUD_OBJECT_STORAGE_SECRET_KEY_MY_FILES".
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/upcloud/r/object_storage#secret_key ObjectStorage#secret_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/2.9.1/docs/resources/object_storage#secret_key ObjectStorage#secret_key}
 
 ---
 
@@ -1147,7 +1149,7 @@ public java.lang.Number getSize();
 
 The size of the object storage instance in gigabytes.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/upcloud/r/object_storage#size ObjectStorage#size}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/2.9.1/docs/resources/object_storage#size ObjectStorage#size}
 
 ---
 
@@ -1161,7 +1163,7 @@ public java.lang.String getZone();
 
 The zone in which the object storage instance will be created.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/upcloud/r/object_storage#zone ObjectStorage#zone}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/2.9.1/docs/resources/object_storage#zone ObjectStorage#zone}
 
 ---
 
@@ -1175,7 +1177,7 @@ public java.lang.Object getBucket();
 
 bucket block.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/upcloud/r/object_storage#bucket ObjectStorage#bucket}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/2.9.1/docs/resources/object_storage#bucket ObjectStorage#bucket}
 
 ---
 
@@ -1189,7 +1191,7 @@ public java.lang.String getDescription();
 
 The description of the object storage instance to be created.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/upcloud/r/object_storage#description ObjectStorage#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/2.9.1/docs/resources/object_storage#description ObjectStorage#description}
 
 ---
 
@@ -1201,7 +1203,7 @@ public java.lang.String getId();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/upcloud/r/object_storage#id ObjectStorage#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/2.9.1/docs/resources/object_storage#id ObjectStorage#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.

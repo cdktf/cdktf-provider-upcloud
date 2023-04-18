@@ -1,6 +1,6 @@
 # `provider`
 
-Refer to the Terraform Registory for docs: [`upcloud`](https://www.terraform.io/docs/providers/upcloud).
+Refer to the Terraform Registory for docs: [`upcloud`](https://registry.terraform.io/providers/upcloudltd/upcloud/2.9.1/docs).
 
 # `provider` Submodule <a name="`provider` Submodule" id="@cdktf/provider-upcloud.provider"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`upcloud`](https://www.terraform.io/
 
 ### UpcloudProvider <a name="UpcloudProvider" id="@cdktf/provider-upcloud.provider.UpcloudProvider"></a>
 
-Represents a {@link https://www.terraform.io/docs/providers/upcloud upcloud}.
+Represents a {@link https://registry.terraform.io/providers/upcloudltd/upcloud/2.9.1/docs upcloud}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-upcloud.provider.UpcloudProvider.Initializer"></a>
 
@@ -528,7 +528,7 @@ public string Alias { get; set; }
 
 Alias name.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/upcloud#alias UpcloudProvider#alias}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/2.9.1/docs#alias UpcloudProvider#alias}
 
 ---
 
@@ -542,7 +542,7 @@ public string Password { get; set; }
 
 Password for UpCloud API user. Can also be configured using the `UPCLOUD_PASSWORD` environment variable.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/upcloud#password UpcloudProvider#password}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/2.9.1/docs#password UpcloudProvider#password}
 
 ---
 
@@ -556,7 +556,7 @@ public double RetryMax { get; set; }
 
 Maximum number of retries.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/upcloud#retry_max UpcloudProvider#retry_max}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/2.9.1/docs#retry_max UpcloudProvider#retry_max}
 
 ---
 
@@ -570,7 +570,7 @@ public double RetryWaitMaxSec { get; set; }
 
 Maximum time to wait between retries.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/upcloud#retry_wait_max_sec UpcloudProvider#retry_wait_max_sec}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/2.9.1/docs#retry_wait_max_sec UpcloudProvider#retry_wait_max_sec}
 
 ---
 
@@ -584,7 +584,7 @@ public double RetryWaitMinSec { get; set; }
 
 Minimum time to wait between retries.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/upcloud#retry_wait_min_sec UpcloudProvider#retry_wait_min_sec}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/2.9.1/docs#retry_wait_min_sec UpcloudProvider#retry_wait_min_sec}
 
 ---
 
@@ -598,7 +598,7 @@ public string Username { get; set; }
 
 UpCloud username with API access. Can also be configured using the `UPCLOUD_USERNAME` environment variable.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/upcloud#username UpcloudProvider#username}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/2.9.1/docs#username UpcloudProvider#username}
 
 ---
 

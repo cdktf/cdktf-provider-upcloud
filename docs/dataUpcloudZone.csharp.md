@@ -1,6 +1,6 @@
 # `data_upcloud_zone`
 
-Refer to the Terraform Registory for docs: [`data_upcloud_zone`](https://www.terraform.io/docs/providers/upcloud/d/zone).
+Refer to the Terraform Registory for docs: [`data_upcloud_zone`](https://registry.terraform.io/providers/upcloudltd/upcloud/2.9.1/docs/data-sources/zone).
 
 # `dataUpcloudZone` Submodule <a name="`dataUpcloudZone` Submodule" id="@cdktf/provider-upcloud.dataUpcloudZone"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`data_upcloud_zone`](https://www.ter
 
 ### DataUpcloudZone <a name="DataUpcloudZone" id="@cdktf/provider-upcloud.dataUpcloudZone.DataUpcloudZone"></a>
 
-Represents a {@link https://www.terraform.io/docs/providers/upcloud/d/zone upcloud_zone}.
+Represents a {@link https://registry.terraform.io/providers/upcloudltd/upcloud/2.9.1/docs/data-sources/zone upcloud_zone}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-upcloud.dataUpcloudZone.DataUpcloudZone.Initializer"></a>
 
@@ -345,7 +345,7 @@ DataUpcloudZone.IsTerraformDataSource(object X);
 | <code><a href="#@cdktf/provider-upcloud.dataUpcloudZone.DataUpcloudZone.property.terraformMetaArguments">TerraformMetaArguments</a></code> | <code>System.Collections.Generic.IDictionary<string, object></code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.dataUpcloudZone.DataUpcloudZone.property.terraformResourceType">TerraformResourceType</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.dataUpcloudZone.DataUpcloudZone.property.terraformGeneratorMetadata">TerraformGeneratorMetadata</a></code> | <code>HashiCorp.Cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
-| <code><a href="#@cdktf/provider-upcloud.dataUpcloudZone.DataUpcloudZone.property.count">Count</a></code> | <code>double</code> | *No description.* |
+| <code><a href="#@cdktf/provider-upcloud.dataUpcloudZone.DataUpcloudZone.property.count">Count</a></code> | <code>object</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.dataUpcloudZone.DataUpcloudZone.property.dependsOn">DependsOn</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.dataUpcloudZone.DataUpcloudZone.property.forEach">ForEach</a></code> | <code>HashiCorp.Cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.dataUpcloudZone.DataUpcloudZone.property.lifecycle">Lifecycle</a></code> | <code>HashiCorp.Cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -434,10 +434,10 @@ public TerraformProviderGeneratorMetadata TerraformGeneratorMetadata { get; }
 ##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktf/provider-upcloud.dataUpcloudZone.DataUpcloudZone.property.count"></a>
 
 ```csharp
-public double Count { get; }
+public object Count { get; }
 ```
 
-- *Type:* double
+- *Type:* object
 
 ---
 
@@ -570,7 +570,7 @@ using HashiCorp.Cdktf.Providers.Upcloud;
 
 new DataUpcloudZoneConfig {
     object Connection = null,
-    double Count = null,
+    object Count = null,
     ITerraformDependable[] DependsOn = null,
     ITerraformIterator ForEach = null,
     TerraformResourceLifecycle Lifecycle = null,
@@ -586,14 +586,14 @@ new DataUpcloudZoneConfig {
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-upcloud.dataUpcloudZone.DataUpcloudZoneConfig.property.connection">Connection</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-upcloud.dataUpcloudZone.DataUpcloudZoneConfig.property.count">Count</a></code> | <code>double</code> | *No description.* |
+| <code><a href="#@cdktf/provider-upcloud.dataUpcloudZone.DataUpcloudZoneConfig.property.count">Count</a></code> | <code>object</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.dataUpcloudZone.DataUpcloudZoneConfig.property.dependsOn">DependsOn</a></code> | <code>HashiCorp.Cdktf.ITerraformDependable[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.dataUpcloudZone.DataUpcloudZoneConfig.property.forEach">ForEach</a></code> | <code>HashiCorp.Cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.dataUpcloudZone.DataUpcloudZoneConfig.property.lifecycle">Lifecycle</a></code> | <code>HashiCorp.Cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.dataUpcloudZone.DataUpcloudZoneConfig.property.provider">Provider</a></code> | <code>HashiCorp.Cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.dataUpcloudZone.DataUpcloudZoneConfig.property.provisioners">Provisioners</a></code> | <code>object[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.dataUpcloudZone.DataUpcloudZoneConfig.property.name">Name</a></code> | <code>string</code> | Unique lablel for the zone. |
-| <code><a href="#@cdktf/provider-upcloud.dataUpcloudZone.DataUpcloudZoneConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/upcloud/d/zone#id DataUpcloudZone#id}. |
+| <code><a href="#@cdktf/provider-upcloud.dataUpcloudZone.DataUpcloudZoneConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/2.9.1/docs/data-sources/zone#id DataUpcloudZone#id}. |
 
 ---
 
@@ -610,10 +610,10 @@ public object Connection { get; set; }
 ##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktf/provider-upcloud.dataUpcloudZone.DataUpcloudZoneConfig.property.count"></a>
 
 ```csharp
-public double Count { get; set; }
+public object Count { get; set; }
 ```
 
-- *Type:* double
+- *Type:* object
 
 ---
 
@@ -677,7 +677,7 @@ public string Name { get; set; }
 
 Unique lablel for the zone.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/upcloud/d/zone#name DataUpcloudZone#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/2.9.1/docs/data-sources/zone#name DataUpcloudZone#name}
 
 ---
 
@@ -689,7 +689,7 @@ public string Id { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/upcloud/d/zone#id DataUpcloudZone#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/2.9.1/docs/data-sources/zone#id DataUpcloudZone#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.

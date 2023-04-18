@@ -1,4 +1,4 @@
-// https://www.terraform.io/docs/providers/upcloud/r/managed_database_logical_database
+// https://registry.terraform.io/providers/upcloudltd/upcloud/2.9.1/docs/resources/managed_database_logical_database
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -10,17 +10,17 @@ export interface ManagedDatabaseLogicalDatabaseConfig extends cdktf.TerraformMet
   /**
   * Default character set for the database (LC_CTYPE)
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/upcloud/r/managed_database_logical_database#character_set ManagedDatabaseLogicalDatabase#character_set}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/2.9.1/docs/resources/managed_database_logical_database#character_set ManagedDatabaseLogicalDatabase#character_set}
   */
   readonly characterSet?: string;
   /**
   * Default collation for the database (LC_COLLATE)
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/upcloud/r/managed_database_logical_database#collation ManagedDatabaseLogicalDatabase#collation}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/2.9.1/docs/resources/managed_database_logical_database#collation ManagedDatabaseLogicalDatabase#collation}
   */
   readonly collation?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/upcloud/r/managed_database_logical_database#id ManagedDatabaseLogicalDatabase#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/2.9.1/docs/resources/managed_database_logical_database#id ManagedDatabaseLogicalDatabase#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -29,19 +29,19 @@ export interface ManagedDatabaseLogicalDatabaseConfig extends cdktf.TerraformMet
   /**
   * Name of the logical database
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/upcloud/r/managed_database_logical_database#name ManagedDatabaseLogicalDatabase#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/2.9.1/docs/resources/managed_database_logical_database#name ManagedDatabaseLogicalDatabase#name}
   */
   readonly name: string;
   /**
   * Service's UUID for which this user belongs to
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/upcloud/r/managed_database_logical_database#service ManagedDatabaseLogicalDatabase#service}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/2.9.1/docs/resources/managed_database_logical_database#service ManagedDatabaseLogicalDatabase#service}
   */
   readonly service: string;
 }
 
 /**
-* Represents a {@link https://www.terraform.io/docs/providers/upcloud/r/managed_database_logical_database upcloud_managed_database_logical_database}
+* Represents a {@link https://registry.terraform.io/providers/upcloudltd/upcloud/2.9.1/docs/resources/managed_database_logical_database upcloud_managed_database_logical_database}
 */
 export class ManagedDatabaseLogicalDatabase extends cdktf.TerraformResource {
 
@@ -55,7 +55,7 @@ export class ManagedDatabaseLogicalDatabase extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://www.terraform.io/docs/providers/upcloud/r/managed_database_logical_database upcloud_managed_database_logical_database} Resource
+  * Create a new {@link https://registry.terraform.io/providers/upcloudltd/upcloud/2.9.1/docs/resources/managed_database_logical_database upcloud_managed_database_logical_database} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope

@@ -1,4 +1,4 @@
-// https://www.terraform.io/docs/providers/upcloud/r/server_group
+// https://registry.terraform.io/providers/upcloudltd/upcloud/2.9.1/docs/resources/server_group
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -17,11 +17,11 @@ export interface ServerGroupConfig extends cdktf.TerraformMetaArguments {
 				policies in server group are not met, you need to manually restart the servers in said group,
 				for example via API, UpCloud Control Panel or upctl (UpCloud CLI)
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/upcloud/r/server_group#anti_affinity ServerGroup#anti_affinity}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/2.9.1/docs/resources/server_group#anti_affinity ServerGroup#anti_affinity}
   */
   readonly antiAffinity?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/upcloud/r/server_group#id ServerGroup#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/2.9.1/docs/resources/server_group#id ServerGroup#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -30,25 +30,25 @@ export interface ServerGroupConfig extends cdktf.TerraformMetaArguments {
   /**
   * Key-value pairs to classify the server group.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/upcloud/r/server_group#labels ServerGroup#labels}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/2.9.1/docs/resources/server_group#labels ServerGroup#labels}
   */
   readonly labels?: { [key: string]: string };
   /**
   * UUIDs of the servers that are members of this group
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/upcloud/r/server_group#members ServerGroup#members}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/2.9.1/docs/resources/server_group#members ServerGroup#members}
   */
   readonly members?: string[];
   /**
   * Title of your server group
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/upcloud/r/server_group#title ServerGroup#title}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/2.9.1/docs/resources/server_group#title ServerGroup#title}
   */
   readonly title: string;
 }
 
 /**
-* Represents a {@link https://www.terraform.io/docs/providers/upcloud/r/server_group upcloud_server_group}
+* Represents a {@link https://registry.terraform.io/providers/upcloudltd/upcloud/2.9.1/docs/resources/server_group upcloud_server_group}
 */
 export class ServerGroup extends cdktf.TerraformResource {
 
@@ -62,7 +62,7 @@ export class ServerGroup extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://www.terraform.io/docs/providers/upcloud/r/server_group upcloud_server_group} Resource
+  * Create a new {@link https://registry.terraform.io/providers/upcloudltd/upcloud/2.9.1/docs/resources/server_group upcloud_server_group} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
