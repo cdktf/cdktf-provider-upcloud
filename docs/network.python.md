@@ -1,3 +1,7 @@
+# `upcloud_network`
+
+Refer to the Terraform Registory for docs: [`upcloud_network`](https://www.terraform.io/docs/providers/upcloud/r/network).
+
 # `network` Submodule <a name="`network` Submodule" id="@cdktf/provider-upcloud.network"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

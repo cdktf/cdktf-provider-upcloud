@@ -1,3 +1,7 @@
+# `upcloud_managed_database_redis`
+
+Refer to the Terraform Registory for docs: [`upcloud_managed_database_redis`](https://www.terraform.io/docs/providers/upcloud/r/managed_database_redis).
+
 # `managedDatabaseRedis` Submodule <a name="`managedDatabaseRedis` Submodule" id="@cdktf/provider-upcloud.managedDatabaseRedis"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

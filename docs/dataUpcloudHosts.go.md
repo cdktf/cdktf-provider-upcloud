@@ -1,3 +1,7 @@
+# `data_upcloud_hosts`
+
+Refer to the Terraform Registory for docs: [`data_upcloud_hosts`](https://www.terraform.io/docs/providers/upcloud/d/hosts).
+
 # `dataUpcloudHosts` Submodule <a name="`dataUpcloudHosts` Submodule" id="@cdktf/provider-upcloud.dataUpcloudHosts"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

@@ -1,3 +1,7 @@
+# `data_upcloud_kubernetes_cluster`
+
+Refer to the Terraform Registory for docs: [`data_upcloud_kubernetes_cluster`](https://www.terraform.io/docs/providers/upcloud/d/kubernetes_cluster).
+
 # `dataUpcloudKubernetesCluster` Submodule <a name="`dataUpcloudKubernetesCluster` Submodule" id="@cdktf/provider-upcloud.dataUpcloudKubernetesCluster"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

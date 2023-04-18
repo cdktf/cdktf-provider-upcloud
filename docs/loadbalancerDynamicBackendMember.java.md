@@ -1,3 +1,7 @@
+# `upcloud_loadbalancer_dynamic_backend_member`
+
+Refer to the Terraform Registory for docs: [`upcloud_loadbalancer_dynamic_backend_member`](https://www.terraform.io/docs/providers/upcloud/r/loadbalancer_dynamic_backend_member).
+
 # `loadbalancerDynamicBackendMember` Submodule <a name="`loadbalancerDynamicBackendMember` Submodule" id="@cdktf/provider-upcloud.loadbalancerDynamicBackendMember"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

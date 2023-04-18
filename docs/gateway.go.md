@@ -1,3 +1,7 @@
+# `upcloud_gateway`
+
+Refer to the Terraform Registory for docs: [`upcloud_gateway`](https://www.terraform.io/docs/providers/upcloud/r/gateway).
+
 # `gateway` Submodule <a name="`gateway` Submodule" id="@cdktf/provider-upcloud.gateway"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>
