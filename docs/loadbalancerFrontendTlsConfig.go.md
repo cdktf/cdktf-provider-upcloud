@@ -1,3 +1,7 @@
+# `upcloud_loadbalancer_frontend_tls_config`
+
+Refer to the Terraform Registory for docs: [`upcloud_loadbalancer_frontend_tls_config`](https://www.terraform.io/docs/providers/upcloud/r/loadbalancer_frontend_tls_config).
+
 # `loadbalancerFrontendTlsConfig` Submodule <a name="`loadbalancerFrontendTlsConfig` Submodule" id="@cdktf/provider-upcloud.loadbalancerFrontendTlsConfig"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

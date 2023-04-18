@@ -1,3 +1,7 @@
+# `upcloud_firewall_rules`
+
+Refer to the Terraform Registory for docs: [`upcloud_firewall_rules`](https://www.terraform.io/docs/providers/upcloud/r/firewall_rules).
+
 # `firewallRules` Submodule <a name="`firewallRules` Submodule" id="@cdktf/provider-upcloud.firewallRules"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>
