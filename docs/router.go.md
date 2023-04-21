@@ -13,7 +13,7 @@ Represents a {@link https://registry.terraform.io/providers/upcloudltd/upcloud/2
 #### Initializers <a name="Initializers" id="@cdktf/provider-upcloud.router.Router.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/router"
+import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v6/router"
 
 router.NewRouter(scope Construct, id *string, config RouterConfig) Router
 ```
@@ -277,7 +277,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-upcloud.router.Router.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/router"
+import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v6/router"
 
 router.Router_IsConstruct(x interface{}) *bool
 ```
@@ -309,7 +309,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-upcloud.router.Router.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/router"
+import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v6/router"
 
 router.Router_IsTerraformElement(x interface{}) *bool
 ```
@@ -323,7 +323,7 @@ router.Router_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-upcloud.router.Router.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/router"
+import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v6/router"
 
 router.Router_IsTerraformResource(x interface{}) *bool
 ```
@@ -588,7 +588,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-upcloud.router.RouterConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/router"
+import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v6/router"
 
 &router.RouterConfig {
 	Connection: interface{},
