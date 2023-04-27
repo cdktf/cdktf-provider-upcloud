@@ -1,4 +1,4 @@
-// https://registry.terraform.io/providers/upcloudltd/upcloud/2.9.1/docs/resources/object_storage
+// https://registry.terraform.io/providers/upcloudltd/upcloud/2.10.0/docs/resources/object_storage
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,17 +15,17 @@ export interface ObjectStorageConfig extends cdktf.TerraformMetaArguments {
 				and all dashes (-) should be replaced with underscores (_). For example, object storage named "my-files" would
 				use environment variable named "UPCLOUD_OBJECT_STORAGE_ACCESS_KEY_MY_FILES".
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/2.9.1/docs/resources/object_storage#access_key ObjectStorage#access_key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/2.10.0/docs/resources/object_storage#access_key ObjectStorage#access_key}
   */
   readonly accessKey: string;
   /**
   * The description of the object storage instance to be created
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/2.9.1/docs/resources/object_storage#description ObjectStorage#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/2.10.0/docs/resources/object_storage#description ObjectStorage#description}
   */
   readonly description?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/2.9.1/docs/resources/object_storage#id ObjectStorage#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/2.10.0/docs/resources/object_storage#id ObjectStorage#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -34,7 +34,7 @@ export interface ObjectStorageConfig extends cdktf.TerraformMetaArguments {
   /**
   * The name of the object storage instance to be created
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/2.9.1/docs/resources/object_storage#name ObjectStorage#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/2.10.0/docs/resources/object_storage#name ObjectStorage#name}
   */
   readonly name: string;
   /**
@@ -45,25 +45,25 @@ export interface ObjectStorageConfig extends cdktf.TerraformMetaArguments {
 				and all dashes (-) should be replaced with underscores (_). For example, object storage named "my-files" would
 				use environment variable named "UPCLOUD_OBJECT_STORAGE_SECRET_KEY_MY_FILES".
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/2.9.1/docs/resources/object_storage#secret_key ObjectStorage#secret_key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/2.10.0/docs/resources/object_storage#secret_key ObjectStorage#secret_key}
   */
   readonly secretKey: string;
   /**
   * The size of the object storage instance in gigabytes
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/2.9.1/docs/resources/object_storage#size ObjectStorage#size}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/2.10.0/docs/resources/object_storage#size ObjectStorage#size}
   */
   readonly size: number;
   /**
   * The zone in which the object storage instance will be created
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/2.9.1/docs/resources/object_storage#zone ObjectStorage#zone}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/2.10.0/docs/resources/object_storage#zone ObjectStorage#zone}
   */
   readonly zone: string;
   /**
   * bucket block
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/2.9.1/docs/resources/object_storage#bucket ObjectStorage#bucket}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/2.10.0/docs/resources/object_storage#bucket ObjectStorage#bucket}
   */
   readonly bucket?: ObjectStorageBucket[] | cdktf.IResolvable;
 }
@@ -71,7 +71,7 @@ export interface ObjectStorageBucket {
   /**
   * The name of the bucket
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/2.9.1/docs/resources/object_storage#name ObjectStorage#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/2.10.0/docs/resources/object_storage#name ObjectStorage#name}
   */
   readonly name: string;
 }
@@ -165,7 +165,7 @@ export class ObjectStorageBucketList extends cdktf.ComplexList {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/upcloudltd/upcloud/2.9.1/docs/resources/object_storage upcloud_object_storage}
+* Represents a {@link https://registry.terraform.io/providers/upcloudltd/upcloud/2.10.0/docs/resources/object_storage upcloud_object_storage}
 */
 export class ObjectStorage extends cdktf.TerraformResource {
 
@@ -179,7 +179,7 @@ export class ObjectStorage extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/upcloudltd/upcloud/2.9.1/docs/resources/object_storage upcloud_object_storage} Resource
+  * Create a new {@link https://registry.terraform.io/providers/upcloudltd/upcloud/2.10.0/docs/resources/object_storage upcloud_object_storage} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -190,7 +190,7 @@ export class ObjectStorage extends cdktf.TerraformResource {
       terraformResourceType: 'upcloud_object_storage',
       terraformGeneratorMetadata: {
         providerName: 'upcloud',
-        providerVersion: '2.9.1',
+        providerVersion: '2.10.0',
         providerVersionConstraint: '~> 2.4'
       },
       provider: config.provider,

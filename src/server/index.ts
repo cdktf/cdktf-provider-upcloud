@@ -1,4 +1,4 @@
-// https://registry.terraform.io/providers/upcloudltd/upcloud/2.9.1/docs/resources/server
+// https://registry.terraform.io/providers/upcloudltd/upcloud/2.10.0/docs/resources/server
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -10,29 +10,29 @@ export interface ServerConfig extends cdktf.TerraformMetaArguments {
   /**
   * The number of CPU for the server
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/2.9.1/docs/resources/server#cpu Server#cpu}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/2.10.0/docs/resources/server#cpu Server#cpu}
   */
   readonly cpu?: number;
   /**
   * Are firewall rules active for the server
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/2.9.1/docs/resources/server#firewall Server#firewall}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/2.10.0/docs/resources/server#firewall Server#firewall}
   */
   readonly firewall?: boolean | cdktf.IResolvable;
   /**
   * Use this to start the VM on a specific host. Refers to value from host -attribute. Only available for private cloud hosts
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/2.9.1/docs/resources/server#host Server#host}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/2.10.0/docs/resources/server#host Server#host}
   */
   readonly host?: number;
   /**
   * A valid domain name
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/2.9.1/docs/resources/server#hostname Server#hostname}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/2.10.0/docs/resources/server#hostname Server#hostname}
   */
   readonly hostname: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/2.9.1/docs/resources/server#id Server#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/2.10.0/docs/resources/server#id Server#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -41,79 +41,79 @@ export interface ServerConfig extends cdktf.TerraformMetaArguments {
   /**
   * Key-value pairs to classify the server.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/2.9.1/docs/resources/server#labels Server#labels}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/2.10.0/docs/resources/server#labels Server#labels}
   */
   readonly labels?: { [key: string]: string };
   /**
   * The size of memory for the server (in megabytes)
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/2.9.1/docs/resources/server#mem Server#mem}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/2.10.0/docs/resources/server#mem Server#mem}
   */
   readonly mem?: number;
   /**
   * Is the metadata service active for the server
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/2.9.1/docs/resources/server#metadata Server#metadata}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/2.10.0/docs/resources/server#metadata Server#metadata}
   */
   readonly metadata?: boolean | cdktf.IResolvable;
   /**
   * The pricing plan used for the server. You can list available server plans with `upctl server plans`
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/2.9.1/docs/resources/server#plan Server#plan}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/2.10.0/docs/resources/server#plan Server#plan}
   */
   readonly plan?: string;
   /**
   * The server related tags
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/2.9.1/docs/resources/server#tags Server#tags}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/2.10.0/docs/resources/server#tags Server#tags}
   */
   readonly tags?: string[];
   /**
   * A short, informational description
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/2.9.1/docs/resources/server#title Server#title}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/2.10.0/docs/resources/server#title Server#title}
   */
   readonly title?: string;
   /**
   * Defines URL for a server setup script, or the script body itself
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/2.9.1/docs/resources/server#user_data Server#user_data}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/2.10.0/docs/resources/server#user_data Server#user_data}
   */
   readonly userData?: string;
   /**
   * The zone in which the server will be hosted
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/2.9.1/docs/resources/server#zone Server#zone}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/2.10.0/docs/resources/server#zone Server#zone}
   */
   readonly zone: string;
   /**
   * login block
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/2.9.1/docs/resources/server#login Server#login}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/2.10.0/docs/resources/server#login Server#login}
   */
   readonly login?: ServerLogin;
   /**
   * network_interface block
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/2.9.1/docs/resources/server#network_interface Server#network_interface}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/2.10.0/docs/resources/server#network_interface Server#network_interface}
   */
   readonly networkInterface: ServerNetworkInterface[] | cdktf.IResolvable;
   /**
   * simple_backup block
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/2.9.1/docs/resources/server#simple_backup Server#simple_backup}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/2.10.0/docs/resources/server#simple_backup Server#simple_backup}
   */
   readonly simpleBackup?: ServerSimpleBackup;
   /**
   * storage_devices block
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/2.9.1/docs/resources/server#storage_devices Server#storage_devices}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/2.10.0/docs/resources/server#storage_devices Server#storage_devices}
   */
   readonly storageDevices?: ServerStorageDevices[] | cdktf.IResolvable;
   /**
   * template block
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/2.9.1/docs/resources/server#template Server#template}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/2.10.0/docs/resources/server#template Server#template}
   */
   readonly template?: ServerTemplate;
 }
@@ -121,25 +121,25 @@ export interface ServerLogin {
   /**
   * Indicates a password should be create to allow access
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/2.9.1/docs/resources/server#create_password Server#create_password}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/2.10.0/docs/resources/server#create_password Server#create_password}
   */
   readonly createPassword?: boolean | cdktf.IResolvable;
   /**
   * A list of ssh keys to access the server
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/2.9.1/docs/resources/server#keys Server#keys}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/2.10.0/docs/resources/server#keys Server#keys}
   */
   readonly keys?: string[];
   /**
   * The delivery method for the server's root password (one of `none`, `email` or `sms`)
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/2.9.1/docs/resources/server#password_delivery Server#password_delivery}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/2.10.0/docs/resources/server#password_delivery Server#password_delivery}
   */
   readonly passwordDelivery?: string;
   /**
   * Username to be create to access the server
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/2.9.1/docs/resources/server#user Server#user}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/2.10.0/docs/resources/server#user Server#user}
   */
   readonly user?: string;
 }
@@ -275,37 +275,37 @@ export interface ServerNetworkInterface {
   /**
   * `true` if this interface should be used for network booting.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/2.9.1/docs/resources/server#bootable Server#bootable}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/2.10.0/docs/resources/server#bootable Server#bootable}
   */
   readonly bootable?: boolean | cdktf.IResolvable;
   /**
   * The assigned IP address.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/2.9.1/docs/resources/server#ip_address Server#ip_address}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/2.10.0/docs/resources/server#ip_address Server#ip_address}
   */
   readonly ipAddress?: string;
   /**
   * The IP address type of this interface (one of `IPv4` or `IPv6`).
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/2.9.1/docs/resources/server#ip_address_family Server#ip_address_family}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/2.10.0/docs/resources/server#ip_address_family Server#ip_address_family}
   */
   readonly ipAddressFamily?: string;
   /**
   * The unique ID of a network to attach this network to.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/2.9.1/docs/resources/server#network Server#network}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/2.10.0/docs/resources/server#network Server#network}
   */
   readonly network?: string;
   /**
   * `true` if source IP should be filtered.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/2.9.1/docs/resources/server#source_ip_filtering Server#source_ip_filtering}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/2.10.0/docs/resources/server#source_ip_filtering Server#source_ip_filtering}
   */
   readonly sourceIpFiltering?: boolean | cdktf.IResolvable;
   /**
   * Network interface type. For private network interfaces, a network must be specified with an existing network id.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/2.9.1/docs/resources/server#type Server#type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/2.10.0/docs/resources/server#type Server#type}
   */
   readonly type: string;
 }
@@ -526,13 +526,13 @@ export interface ServerSimpleBackup {
   /**
   * Simple backup plan. Accepted values: daily, dailies, weeklies, monthlies.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/2.9.1/docs/resources/server#plan Server#plan}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/2.10.0/docs/resources/server#plan Server#plan}
   */
   readonly plan: string;
   /**
   * Time of the day at which backup will be taken. Should be provided in a hhmm format (e.g. 2230).
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/2.9.1/docs/resources/server#time Server#time}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/2.10.0/docs/resources/server#time Server#time}
   */
   readonly time: string;
 }
@@ -616,19 +616,19 @@ export interface ServerStorageDevices {
   /**
   * The device address the storage will be attached to. Specify only the bus name (ide/scsi/virtio) to auto-select next available address from that bus.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/2.9.1/docs/resources/server#address Server#address}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/2.10.0/docs/resources/server#address Server#address}
   */
   readonly address?: string;
   /**
   * A valid storage UUID
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/2.9.1/docs/resources/server#storage Server#storage}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/2.10.0/docs/resources/server#storage Server#storage}
   */
   readonly storage: string;
   /**
   * The device type the storage will be attached as
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/2.9.1/docs/resources/server#type Server#type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/2.10.0/docs/resources/server#type Server#type}
   */
   readonly type?: string;
 }
@@ -770,19 +770,19 @@ export interface ServerTemplateBackupRule {
   /**
   * The weekday when the backup is created
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/2.9.1/docs/resources/server#interval Server#interval}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/2.10.0/docs/resources/server#interval Server#interval}
   */
   readonly interval: string;
   /**
   * The number of days before a backup is automatically deleted
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/2.9.1/docs/resources/server#retention Server#retention}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/2.10.0/docs/resources/server#retention Server#retention}
   */
   readonly retention: number;
   /**
   * The time of day when the backup is created
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/2.9.1/docs/resources/server#time Server#time}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/2.10.0/docs/resources/server#time Server#time}
   */
   readonly time: string;
 }
@@ -886,13 +886,13 @@ export interface ServerTemplate {
   /**
   * The device address the storage will be attached to. Specify only the bus name (ide/scsi/virtio) to auto-select next available address from that bus.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/2.9.1/docs/resources/server#address Server#address}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/2.10.0/docs/resources/server#address Server#address}
   */
   readonly address?: string;
   /**
   * If set to true, the backup taken before the partition and filesystem resize attempt will be deleted immediately after success.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/2.9.1/docs/resources/server#delete_autoresize_backup Server#delete_autoresize_backup}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/2.10.0/docs/resources/server#delete_autoresize_backup Server#delete_autoresize_backup}
   */
   readonly deleteAutoresizeBackup?: boolean | cdktf.IResolvable;
   /**
@@ -901,31 +901,31 @@ export interface ServerTemplate {
 							to restore the storage and then deleted. If the resize attempt succeeds, backup will be kept (unless delete_autoresize_backup option is set to true).
 							Taking and keeping backups incure costs.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/2.9.1/docs/resources/server#filesystem_autoresize Server#filesystem_autoresize}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/2.10.0/docs/resources/server#filesystem_autoresize Server#filesystem_autoresize}
   */
   readonly filesystemAutoresize?: boolean | cdktf.IResolvable;
   /**
   * The size of the storage in gigabytes
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/2.9.1/docs/resources/server#size Server#size}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/2.10.0/docs/resources/server#size Server#size}
   */
   readonly size?: number;
   /**
   * A valid storage UUID or template name. You can list available public templates with `upctl storage list --public --template` and available private templates with `upctl storage list --template`.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/2.9.1/docs/resources/server#storage Server#storage}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/2.10.0/docs/resources/server#storage Server#storage}
   */
   readonly storage: string;
   /**
   * A short, informative description
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/2.9.1/docs/resources/server#title Server#title}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/2.10.0/docs/resources/server#title Server#title}
   */
   readonly title?: string;
   /**
   * backup_rule block
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/2.9.1/docs/resources/server#backup_rule Server#backup_rule}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/2.10.0/docs/resources/server#backup_rule Server#backup_rule}
   */
   readonly backupRule?: ServerTemplateBackupRule;
 }
@@ -1135,7 +1135,7 @@ export class ServerTemplateOutputReference extends cdktf.ComplexObject {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/upcloudltd/upcloud/2.9.1/docs/resources/server upcloud_server}
+* Represents a {@link https://registry.terraform.io/providers/upcloudltd/upcloud/2.10.0/docs/resources/server upcloud_server}
 */
 export class Server extends cdktf.TerraformResource {
 
@@ -1149,7 +1149,7 @@ export class Server extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/upcloudltd/upcloud/2.9.1/docs/resources/server upcloud_server} Resource
+  * Create a new {@link https://registry.terraform.io/providers/upcloudltd/upcloud/2.10.0/docs/resources/server upcloud_server} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -1160,7 +1160,7 @@ export class Server extends cdktf.TerraformResource {
       terraformResourceType: 'upcloud_server',
       terraformGeneratorMetadata: {
         providerName: 'upcloud',
-        providerVersion: '2.9.1',
+        providerVersion: '2.10.0',
         providerVersionConstraint: '~> 2.4'
       },
       provider: config.provider,
