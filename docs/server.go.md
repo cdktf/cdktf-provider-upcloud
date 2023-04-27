@@ -13,7 +13,7 @@ Represents a {@link https://registry.terraform.io/providers/upcloudltd/upcloud/2
 #### Initializers <a name="Initializers" id="@cdktf/provider-upcloud.server.Server.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/server"
+import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v6/server"
 
 server.NewServer(scope Construct, id *string, config ServerConfig) Server
 ```
@@ -440,7 +440,7 @@ func ResetUserData()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-upcloud.server.Server.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/server"
+import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v6/server"
 
 server.Server_IsConstruct(x interface{}) *bool
 ```
@@ -472,7 +472,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-upcloud.server.Server.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/server"
+import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v6/server"
 
 server.Server_IsTerraformElement(x interface{}) *bool
 ```
@@ -486,7 +486,7 @@ server.Server_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-upcloud.server.Server.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/server"
+import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v6/server"
 
 server.Server_IsTerraformResource(x interface{}) *bool
 ```
@@ -1081,7 +1081,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-upcloud.server.ServerConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/server"
+import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v6/server"
 
 &server.ServerConfig {
 	Connection: interface{},
@@ -1099,14 +1099,14 @@ import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/server"
 	Host: *f64,
 	Id: *string,
 	Labels: *map[string]*string,
-	Login: github.com/cdktf/cdktf-provider-upcloud-go/upcloud.server.ServerLogin,
+	Login: github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v6.server.ServerLogin,
 	Mem: *f64,
 	Metadata: interface{},
 	Plan: *string,
-	SimpleBackup: github.com/cdktf/cdktf-provider-upcloud-go/upcloud.server.ServerSimpleBackup,
+	SimpleBackup: github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v6.server.ServerSimpleBackup,
 	StorageDevices: interface{},
 	Tags: *[]*string,
-	Template: github.com/cdktf/cdktf-provider-upcloud-go/upcloud.server.ServerTemplate,
+	Template: github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v6.server.ServerTemplate,
 	Title: *string,
 	UserData: *string,
 }
@@ -1474,7 +1474,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upclo
 #### Initializer <a name="Initializer" id="@cdktf/provider-upcloud.server.ServerLogin.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/server"
+import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v6/server"
 
 &server.ServerLogin {
 	CreatePassword: interface{},
@@ -1556,7 +1556,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upclo
 #### Initializer <a name="Initializer" id="@cdktf/provider-upcloud.server.ServerNetworkInterface.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/server"
+import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v6/server"
 
 &server.ServerNetworkInterface {
 	Type: *string,
@@ -1670,7 +1670,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upclo
 #### Initializer <a name="Initializer" id="@cdktf/provider-upcloud.server.ServerSimpleBackup.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/server"
+import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v6/server"
 
 &server.ServerSimpleBackup {
 	Plan: *string,
@@ -1720,7 +1720,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upclo
 #### Initializer <a name="Initializer" id="@cdktf/provider-upcloud.server.ServerStorageDevices.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/server"
+import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v6/server"
 
 &server.ServerStorageDevices {
 	Storage: *string,
@@ -1788,12 +1788,12 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upclo
 #### Initializer <a name="Initializer" id="@cdktf/provider-upcloud.server.ServerTemplate.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/server"
+import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v6/server"
 
 &server.ServerTemplate {
 	Storage: *string,
 	Address: *string,
-	BackupRule: github.com/cdktf/cdktf-provider-upcloud-go/upcloud.server.ServerTemplateBackupRule,
+	BackupRule: github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v6.server.ServerTemplateBackupRule,
 	DeleteAutoresizeBackup: interface{},
 	FilesystemAutoresize: interface{},
 	Size: *f64,
@@ -1926,7 +1926,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upclo
 #### Initializer <a name="Initializer" id="@cdktf/provider-upcloud.server.ServerTemplateBackupRule.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/server"
+import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v6/server"
 
 &server.ServerTemplateBackupRule {
 	Interval: *string,
@@ -1994,7 +1994,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upclo
 #### Initializers <a name="Initializers" id="@cdktf/provider-upcloud.server.ServerLoginOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/server"
+import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v6/server"
 
 server.NewServerLoginOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ServerLoginOutputReference
 ```
@@ -2359,7 +2359,7 @@ func InternalValue() ServerLogin
 #### Initializers <a name="Initializers" id="@cdktf/provider-upcloud.server.ServerNetworkInterfaceList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/server"
+import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v6/server"
 
 server.NewServerNetworkInterfaceList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ServerNetworkInterfaceList
 ```
@@ -2502,7 +2502,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-upcloud.server.ServerNetworkInterfaceOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/server"
+import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v6/server"
 
 server.NewServerNetworkInterfaceOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ServerNetworkInterfaceOutputReference
 ```
@@ -2958,7 +2958,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-upcloud.server.ServerSimpleBackupOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/server"
+import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v6/server"
 
 server.NewServerSimpleBackupOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ServerSimpleBackupOutputReference
 ```
@@ -3251,7 +3251,7 @@ func InternalValue() ServerSimpleBackup
 #### Initializers <a name="Initializers" id="@cdktf/provider-upcloud.server.ServerStorageDevicesList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/server"
+import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v6/server"
 
 server.NewServerStorageDevicesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ServerStorageDevicesList
 ```
@@ -3394,7 +3394,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-upcloud.server.ServerStorageDevicesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/server"
+import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v6/server"
 
 server.NewServerStorageDevicesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ServerStorageDevicesOutputReference
 ```
@@ -3741,7 +3741,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-upcloud.server.ServerTemplateBackupRuleOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/server"
+import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v6/server"
 
 server.NewServerTemplateBackupRuleOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ServerTemplateBackupRuleOutputReference
 ```
@@ -4056,7 +4056,7 @@ func InternalValue() ServerTemplateBackupRule
 #### Initializers <a name="Initializers" id="@cdktf/provider-upcloud.server.ServerTemplateOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/server"
+import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v6/server"
 
 server.NewServerTemplateOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ServerTemplateOutputReference
 ```
