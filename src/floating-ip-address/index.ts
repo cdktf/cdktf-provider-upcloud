@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/upcloudltd/upcloud/2.10.0/docs/resources/floating_ip_address
+// https://registry.terraform.io/providers/upcloudltd/upcloud/2.11.0/docs/resources/floating_ip_address
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,17 +15,17 @@ export interface FloatingIpAddressConfig extends cdktf.TerraformMetaArguments {
   /**
   * Is address for utility or public network
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/2.10.0/docs/resources/floating_ip_address#access FloatingIpAddress#access}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/2.11.0/docs/resources/floating_ip_address#access FloatingIpAddress#access}
   */
   readonly access?: string;
   /**
   * The address family of new IP address
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/2.10.0/docs/resources/floating_ip_address#family FloatingIpAddress#family}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/2.11.0/docs/resources/floating_ip_address#family FloatingIpAddress#family}
   */
   readonly family?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/2.10.0/docs/resources/floating_ip_address#id FloatingIpAddress#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/2.11.0/docs/resources/floating_ip_address#id FloatingIpAddress#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -34,19 +34,19 @@ export interface FloatingIpAddressConfig extends cdktf.TerraformMetaArguments {
   /**
   * MAC address of server interface to assign address to
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/2.10.0/docs/resources/floating_ip_address#mac_address FloatingIpAddress#mac_address}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/2.11.0/docs/resources/floating_ip_address#mac_address FloatingIpAddress#mac_address}
   */
   readonly macAddress?: string;
   /**
-  * Zone of address, required when assigning a detached floating IP address
+  * Zone of address, required when assigning a detached floating IP address, e.g. `de-fra1`. You can list available zones with `upctl zone list`.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/2.10.0/docs/resources/floating_ip_address#zone FloatingIpAddress#zone}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/2.11.0/docs/resources/floating_ip_address#zone FloatingIpAddress#zone}
   */
   readonly zone?: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/upcloudltd/upcloud/2.10.0/docs/resources/floating_ip_address upcloud_floating_ip_address}
+* Represents a {@link https://registry.terraform.io/providers/upcloudltd/upcloud/2.11.0/docs/resources/floating_ip_address upcloud_floating_ip_address}
 */
 export class FloatingIpAddress extends cdktf.TerraformResource {
 
@@ -60,7 +60,7 @@ export class FloatingIpAddress extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/upcloudltd/upcloud/2.10.0/docs/resources/floating_ip_address upcloud_floating_ip_address} Resource
+  * Create a new {@link https://registry.terraform.io/providers/upcloudltd/upcloud/2.11.0/docs/resources/floating_ip_address upcloud_floating_ip_address} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -71,7 +71,7 @@ export class FloatingIpAddress extends cdktf.TerraformResource {
       terraformResourceType: 'upcloud_floating_ip_address',
       terraformGeneratorMetadata: {
         providerName: 'upcloud',
-        providerVersion: '2.10.0',
+        providerVersion: '2.11.0',
         providerVersionConstraint: '~> 2.4'
       },
       provider: config.provider,

@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/upcloudltd/upcloud/2.10.0/docs/resources/server_group
+// https://registry.terraform.io/providers/upcloudltd/upcloud/2.11.0/docs/resources/server_group
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,20 +13,25 @@ import * as cdktf from 'cdktf';
 
 export interface ServerGroupConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Is group an anti-affinity group. Setting this to true will result in all servers in the group being placed on separate compute hosts.
-				NOTE: this is an experimental feature. The anti-affinity policy is "best-effort" and it is not
-				guaranteed that all the servers will end up on a separate compute hosts. You can verify if the
-				anti-affinity policies are met by requesting a server group details from API. For more information
-				please see UpCloud API documentation on server groups
+  * Defines if a server group is an anti-affinity group. Setting this to "strict" or yes" will
+				result in all servers in the group being placed on separate compute hosts. The value can be "strict", "yes" or "no".
+
+				* "strict" refers to strict policy doesn't allow servers in the same server group to be on the same host
+				* "yes" refers to best-effort policy and tries to put servers on different hosts, but this is not guaranteed
+				* "no" refers to having no policy and thus no affect server host affinity
+ 				
+				To verify if the anti-affinity policies are met by requesting a server group details from API. For more information
+				please see UpCloud API documentation on server groups.
+
 				Plese also note that anti-affinity policies are only applied on server start. This means that if anti-affinity
 				policies in server group are not met, you need to manually restart the servers in said group,
 				for example via API, UpCloud Control Panel or upctl (UpCloud CLI)
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/2.10.0/docs/resources/server_group#anti_affinity ServerGroup#anti_affinity}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/2.11.0/docs/resources/server_group#anti_affinity_policy ServerGroup#anti_affinity_policy}
   */
-  readonly antiAffinity?: boolean | cdktf.IResolvable;
+  readonly antiAffinityPolicy?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/2.10.0/docs/resources/server_group#id ServerGroup#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/2.11.0/docs/resources/server_group#id ServerGroup#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -35,25 +40,25 @@ export interface ServerGroupConfig extends cdktf.TerraformMetaArguments {
   /**
   * Key-value pairs to classify the server group.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/2.10.0/docs/resources/server_group#labels ServerGroup#labels}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/2.11.0/docs/resources/server_group#labels ServerGroup#labels}
   */
   readonly labels?: { [key: string]: string };
   /**
   * UUIDs of the servers that are members of this group
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/2.10.0/docs/resources/server_group#members ServerGroup#members}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/2.11.0/docs/resources/server_group#members ServerGroup#members}
   */
   readonly members?: string[];
   /**
   * Title of your server group
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/2.10.0/docs/resources/server_group#title ServerGroup#title}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/2.11.0/docs/resources/server_group#title ServerGroup#title}
   */
   readonly title: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/upcloudltd/upcloud/2.10.0/docs/resources/server_group upcloud_server_group}
+* Represents a {@link https://registry.terraform.io/providers/upcloudltd/upcloud/2.11.0/docs/resources/server_group upcloud_server_group}
 */
 export class ServerGroup extends cdktf.TerraformResource {
 
@@ -67,7 +72,7 @@ export class ServerGroup extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/upcloudltd/upcloud/2.10.0/docs/resources/server_group upcloud_server_group} Resource
+  * Create a new {@link https://registry.terraform.io/providers/upcloudltd/upcloud/2.11.0/docs/resources/server_group upcloud_server_group} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -78,7 +83,7 @@ export class ServerGroup extends cdktf.TerraformResource {
       terraformResourceType: 'upcloud_server_group',
       terraformGeneratorMetadata: {
         providerName: 'upcloud',
-        providerVersion: '2.10.0',
+        providerVersion: '2.11.0',
         providerVersionConstraint: '~> 2.4'
       },
       provider: config.provider,
@@ -89,7 +94,7 @@ export class ServerGroup extends cdktf.TerraformResource {
       connection: config.connection,
       forEach: config.forEach
     });
-    this._antiAffinity = config.antiAffinity;
+    this._antiAffinityPolicy = config.antiAffinityPolicy;
     this._id = config.id;
     this._labels = config.labels;
     this._members = config.members;
@@ -100,20 +105,20 @@ export class ServerGroup extends cdktf.TerraformResource {
   // ATTRIBUTES
   // ==========
 
-  // anti_affinity - computed: false, optional: true, required: false
-  private _antiAffinity?: boolean | cdktf.IResolvable; 
-  public get antiAffinity() {
-    return this.getBooleanAttribute('anti_affinity');
+  // anti_affinity_policy - computed: false, optional: true, required: false
+  private _antiAffinityPolicy?: string; 
+  public get antiAffinityPolicy() {
+    return this.getStringAttribute('anti_affinity_policy');
   }
-  public set antiAffinity(value: boolean | cdktf.IResolvable) {
-    this._antiAffinity = value;
+  public set antiAffinityPolicy(value: string) {
+    this._antiAffinityPolicy = value;
   }
-  public resetAntiAffinity() {
-    this._antiAffinity = undefined;
+  public resetAntiAffinityPolicy() {
+    this._antiAffinityPolicy = undefined;
   }
   // Temporarily expose input value. Use with caution.
-  public get antiAffinityInput() {
-    return this._antiAffinity;
+  public get antiAffinityPolicyInput() {
+    return this._antiAffinityPolicy;
   }
 
   // id - computed: true, optional: true, required: false
@@ -183,7 +188,7 @@ export class ServerGroup extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      anti_affinity: cdktf.booleanToTerraform(this._antiAffinity),
+      anti_affinity_policy: cdktf.stringToTerraform(this._antiAffinityPolicy),
       id: cdktf.stringToTerraform(this._id),
       labels: cdktf.hashMapper(cdktf.stringToTerraform)(this._labels),
       members: cdktf.listMapper(cdktf.stringToTerraform, false)(this._members),

@@ -1,6 +1,6 @@
 # `data_upcloud_zones`
 
-Refer to the Terraform Registory for docs: [`data_upcloud_zones`](https://registry.terraform.io/providers/upcloudltd/upcloud/2.10.0/docs/data-sources/zones).
+Refer to the Terraform Registory for docs: [`data_upcloud_zones`](https://registry.terraform.io/providers/upcloudltd/upcloud/2.11.0/docs/data-sources/zones).
 
 # `dataUpcloudZones` Submodule <a name="`dataUpcloudZones` Submodule" id="@cdktf/provider-upcloud.dataUpcloudZones"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`data_upcloud_zones`](https://regist
 
 ### DataUpcloudZones <a name="DataUpcloudZones" id="@cdktf/provider-upcloud.dataUpcloudZones.DataUpcloudZones"></a>
 
-Represents a {@link https://registry.terraform.io/providers/upcloudltd/upcloud/2.10.0/docs/data-sources/zones upcloud_zones}.
+Represents a {@link https://registry.terraform.io/providers/upcloudltd/upcloud/2.11.0/docs/data-sources/zones upcloud_zones}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-upcloud.dataUpcloudZones.DataUpcloudZones.Initializer"></a>
 
@@ -588,8 +588,8 @@ new DataUpcloudZonesConfig {
 | <code><a href="#@cdktf/provider-upcloud.dataUpcloudZones.DataUpcloudZonesConfig.property.lifecycle">Lifecycle</a></code> | <code>HashiCorp.Cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.dataUpcloudZones.DataUpcloudZonesConfig.property.provider">Provider</a></code> | <code>HashiCorp.Cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.dataUpcloudZones.DataUpcloudZonesConfig.property.provisioners">Provisioners</a></code> | <code>object[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-upcloud.dataUpcloudZones.DataUpcloudZonesConfig.property.filterType">FilterType</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/2.10.0/docs/data-sources/zones#filter_type DataUpcloudZones#filter_type}. |
-| <code><a href="#@cdktf/provider-upcloud.dataUpcloudZones.DataUpcloudZonesConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/2.10.0/docs/data-sources/zones#id DataUpcloudZones#id}. |
+| <code><a href="#@cdktf/provider-upcloud.dataUpcloudZones.DataUpcloudZonesConfig.property.filterType">FilterType</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/2.11.0/docs/data-sources/zones#filter_type DataUpcloudZones#filter_type}. |
+| <code><a href="#@cdktf/provider-upcloud.dataUpcloudZones.DataUpcloudZonesConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/2.11.0/docs/data-sources/zones#id DataUpcloudZones#id}. |
 
 ---
 
@@ -671,7 +671,7 @@ public string FilterType { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/2.10.0/docs/data-sources/zones#filter_type DataUpcloudZones#filter_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/2.11.0/docs/data-sources/zones#filter_type DataUpcloudZones#filter_type}.
 
 ---
 
@@ -683,7 +683,7 @@ public string Id { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/2.10.0/docs/data-sources/zones#id DataUpcloudZones#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/2.11.0/docs/data-sources/zones#id DataUpcloudZones#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.

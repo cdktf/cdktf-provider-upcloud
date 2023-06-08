@@ -1,6 +1,6 @@
 # `data_upcloud_storage`
 
-Refer to the Terraform Registory for docs: [`data_upcloud_storage`](https://registry.terraform.io/providers/upcloudltd/upcloud/2.10.0/docs/data-sources/storage).
+Refer to the Terraform Registory for docs: [`data_upcloud_storage`](https://registry.terraform.io/providers/upcloudltd/upcloud/2.11.0/docs/data-sources/storage).
 
 # `dataUpcloudStorage` Submodule <a name="`dataUpcloudStorage` Submodule" id="@cdktf/provider-upcloud.dataUpcloudStorage"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`data_upcloud_storage`](https://regi
 
 ### DataUpcloudStorage <a name="DataUpcloudStorage" id="@cdktf/provider-upcloud.dataUpcloudStorage.DataUpcloudStorage"></a>
 
-Represents a {@link https://registry.terraform.io/providers/upcloudltd/upcloud/2.10.0/docs/data-sources/storage upcloud_storage}.
+Represents a {@link https://registry.terraform.io/providers/upcloudltd/upcloud/2.11.0/docs/data-sources/storage upcloud_storage}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-upcloud.dataUpcloudStorage.DataUpcloudStorage.Initializer"></a>
 
@@ -751,11 +751,11 @@ const dataUpcloudStorageConfig: dataUpcloudStorage.DataUpcloudStorageConfig = { 
 | <code><a href="#@cdktf/provider-upcloud.dataUpcloudStorage.DataUpcloudStorageConfig.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.dataUpcloudStorage.DataUpcloudStorageConfig.property.type">type</a></code> | <code>string</code> | Storage type (normal, backup, cdrom, template). Use 'favorite' as type to filter storages on the list of favorites. |
 | <code><a href="#@cdktf/provider-upcloud.dataUpcloudStorage.DataUpcloudStorageConfig.property.accessType">accessType</a></code> | <code>string</code> | Storage access type (public, private). |
-| <code><a href="#@cdktf/provider-upcloud.dataUpcloudStorage.DataUpcloudStorageConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/2.10.0/docs/data-sources/storage#id DataUpcloudStorage#id}. |
+| <code><a href="#@cdktf/provider-upcloud.dataUpcloudStorage.DataUpcloudStorageConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/2.11.0/docs/data-sources/storage#id DataUpcloudStorage#id}. |
 | <code><a href="#@cdktf/provider-upcloud.dataUpcloudStorage.DataUpcloudStorageConfig.property.mostRecent">mostRecent</a></code> | <code>boolean \| cdktf.IResolvable</code> | If more than one result is returned, use the most recent storage. |
 | <code><a href="#@cdktf/provider-upcloud.dataUpcloudStorage.DataUpcloudStorageConfig.property.name">name</a></code> | <code>string</code> | Exact name of the storage (same as title). |
 | <code><a href="#@cdktf/provider-upcloud.dataUpcloudStorage.DataUpcloudStorageConfig.property.nameRegex">nameRegex</a></code> | <code>string</code> | Use regular expression to match storage name. |
-| <code><a href="#@cdktf/provider-upcloud.dataUpcloudStorage.DataUpcloudStorageConfig.property.zone">zone</a></code> | <code>string</code> | The zone in which the storage resides. |
+| <code><a href="#@cdktf/provider-upcloud.dataUpcloudStorage.DataUpcloudStorageConfig.property.zone">zone</a></code> | <code>string</code> | The zone in which the storage resides, e.g. `de-fra1`. You can list available zones with `upctl zone list`. |
 
 ---
 
@@ -839,7 +839,7 @@ public readonly type: string;
 
 Storage type (normal, backup, cdrom, template). Use 'favorite' as type to filter storages on the list of favorites.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/2.10.0/docs/data-sources/storage#type DataUpcloudStorage#type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/2.11.0/docs/data-sources/storage#type DataUpcloudStorage#type}
 
 ---
 
@@ -853,7 +853,7 @@ public readonly accessType: string;
 
 Storage access type (public, private).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/2.10.0/docs/data-sources/storage#access_type DataUpcloudStorage#access_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/2.11.0/docs/data-sources/storage#access_type DataUpcloudStorage#access_type}
 
 ---
 
@@ -865,7 +865,7 @@ public readonly id: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/2.10.0/docs/data-sources/storage#id DataUpcloudStorage#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/2.11.0/docs/data-sources/storage#id DataUpcloudStorage#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -884,7 +884,7 @@ If more than one result is returned, use the most recent storage.
 
 This is only useful with private storages. Public storages might give unpredictable results.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/2.10.0/docs/data-sources/storage#most_recent DataUpcloudStorage#most_recent}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/2.11.0/docs/data-sources/storage#most_recent DataUpcloudStorage#most_recent}
 
 ---
 
@@ -898,7 +898,7 @@ public readonly name: string;
 
 Exact name of the storage (same as title).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/2.10.0/docs/data-sources/storage#name DataUpcloudStorage#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/2.11.0/docs/data-sources/storage#name DataUpcloudStorage#name}
 
 ---
 
@@ -912,7 +912,7 @@ public readonly nameRegex: string;
 
 Use regular expression to match storage name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/2.10.0/docs/data-sources/storage#name_regex DataUpcloudStorage#name_regex}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/2.11.0/docs/data-sources/storage#name_regex DataUpcloudStorage#name_regex}
 
 ---
 
@@ -924,9 +924,9 @@ public readonly zone: string;
 
 - *Type:* string
 
-The zone in which the storage resides.
+The zone in which the storage resides, e.g. `de-fra1`. You can list available zones with `upctl zone list`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/2.10.0/docs/data-sources/storage#zone DataUpcloudStorage#zone}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/2.11.0/docs/data-sources/storage#zone DataUpcloudStorage#zone}
 
 ---
 

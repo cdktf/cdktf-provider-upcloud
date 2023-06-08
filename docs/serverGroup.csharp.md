@@ -1,6 +1,6 @@
 # `upcloud_server_group`
 
-Refer to the Terraform Registory for docs: [`upcloud_server_group`](https://registry.terraform.io/providers/upcloudltd/upcloud/2.10.0/docs/resources/server_group).
+Refer to the Terraform Registory for docs: [`upcloud_server_group`](https://registry.terraform.io/providers/upcloudltd/upcloud/2.11.0/docs/resources/server_group).
 
 # `serverGroup` Submodule <a name="`serverGroup` Submodule" id="@cdktf/provider-upcloud.serverGroup"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`upcloud_server_group`](https://regi
 
 ### ServerGroup <a name="ServerGroup" id="@cdktf/provider-upcloud.serverGroup.ServerGroup"></a>
 
-Represents a {@link https://registry.terraform.io/providers/upcloudltd/upcloud/2.10.0/docs/resources/server_group upcloud_server_group}.
+Represents a {@link https://registry.terraform.io/providers/upcloudltd/upcloud/2.11.0/docs/resources/server_group upcloud_server_group}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-upcloud.serverGroup.ServerGroup.Initializer"></a>
 
@@ -70,7 +70,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-upcloud.serverGroup.ServerGroup.getStringAttribute">GetStringAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.serverGroup.ServerGroup.getStringMapAttribute">GetStringMapAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.serverGroup.ServerGroup.interpolationForAttribute">InterpolationForAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-upcloud.serverGroup.ServerGroup.resetAntiAffinity">ResetAntiAffinity</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-upcloud.serverGroup.ServerGroup.resetAntiAffinityPolicy">ResetAntiAffinityPolicy</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.serverGroup.ServerGroup.resetId">ResetId</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.serverGroup.ServerGroup.resetLabels">ResetLabels</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.serverGroup.ServerGroup.resetMembers">ResetMembers</a></code> | *No description.* |
@@ -261,10 +261,10 @@ private IResolvable InterpolationForAttribute(string TerraformAttribute)
 
 ---
 
-##### `ResetAntiAffinity` <a name="ResetAntiAffinity" id="@cdktf/provider-upcloud.serverGroup.ServerGroup.resetAntiAffinity"></a>
+##### `ResetAntiAffinityPolicy` <a name="ResetAntiAffinityPolicy" id="@cdktf/provider-upcloud.serverGroup.ServerGroup.resetAntiAffinityPolicy"></a>
 
 ```csharp
-private void ResetAntiAffinity()
+private void ResetAntiAffinityPolicy()
 ```
 
 ##### `ResetId` <a name="ResetId" id="@cdktf/provider-upcloud.serverGroup.ServerGroup.resetId"></a>
@@ -373,12 +373,12 @@ ServerGroup.IsTerraformResource(object X);
 | <code><a href="#@cdktf/provider-upcloud.serverGroup.ServerGroup.property.lifecycle">Lifecycle</a></code> | <code>HashiCorp.Cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.serverGroup.ServerGroup.property.provider">Provider</a></code> | <code>HashiCorp.Cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.serverGroup.ServerGroup.property.provisioners">Provisioners</a></code> | <code>object[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-upcloud.serverGroup.ServerGroup.property.antiAffinityInput">AntiAffinityInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-upcloud.serverGroup.ServerGroup.property.antiAffinityPolicyInput">AntiAffinityPolicyInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.serverGroup.ServerGroup.property.idInput">IdInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.serverGroup.ServerGroup.property.labelsInput">LabelsInput</a></code> | <code>System.Collections.Generic.IDictionary<string, string></code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.serverGroup.ServerGroup.property.membersInput">MembersInput</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.serverGroup.ServerGroup.property.titleInput">TitleInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-upcloud.serverGroup.ServerGroup.property.antiAffinity">AntiAffinity</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-upcloud.serverGroup.ServerGroup.property.antiAffinityPolicy">AntiAffinityPolicy</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.serverGroup.ServerGroup.property.id">Id</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.serverGroup.ServerGroup.property.labels">Labels</a></code> | <code>System.Collections.Generic.IDictionary<string, string></code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.serverGroup.ServerGroup.property.members">Members</a></code> | <code>string[]</code> | *No description.* |
@@ -528,13 +528,13 @@ public object[] Provisioners { get; }
 
 ---
 
-##### `AntiAffinityInput`<sup>Optional</sup> <a name="AntiAffinityInput" id="@cdktf/provider-upcloud.serverGroup.ServerGroup.property.antiAffinityInput"></a>
+##### `AntiAffinityPolicyInput`<sup>Optional</sup> <a name="AntiAffinityPolicyInput" id="@cdktf/provider-upcloud.serverGroup.ServerGroup.property.antiAffinityPolicyInput"></a>
 
 ```csharp
-public object AntiAffinityInput { get; }
+public string AntiAffinityPolicyInput { get; }
 ```
 
-- *Type:* object
+- *Type:* string
 
 ---
 
@@ -578,13 +578,13 @@ public string TitleInput { get; }
 
 ---
 
-##### `AntiAffinity`<sup>Required</sup> <a name="AntiAffinity" id="@cdktf/provider-upcloud.serverGroup.ServerGroup.property.antiAffinity"></a>
+##### `AntiAffinityPolicy`<sup>Required</sup> <a name="AntiAffinityPolicy" id="@cdktf/provider-upcloud.serverGroup.ServerGroup.property.antiAffinityPolicy"></a>
 
 ```csharp
-public object AntiAffinity { get; }
+public string AntiAffinityPolicy { get; }
 ```
 
-- *Type:* object
+- *Type:* string
 
 ---
 
@@ -664,7 +664,7 @@ new ServerGroupConfig {
     TerraformProvider Provider = null,
     object[] Provisioners = null,
     string Title,
-    object AntiAffinity = null,
+    string AntiAffinityPolicy = null,
     string Id = null,
     System.Collections.Generic.IDictionary<string, string> Labels = null,
     string[] Members = null
@@ -683,8 +683,8 @@ new ServerGroupConfig {
 | <code><a href="#@cdktf/provider-upcloud.serverGroup.ServerGroupConfig.property.provider">Provider</a></code> | <code>HashiCorp.Cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.serverGroup.ServerGroupConfig.property.provisioners">Provisioners</a></code> | <code>object[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.serverGroup.ServerGroupConfig.property.title">Title</a></code> | <code>string</code> | Title of your server group. |
-| <code><a href="#@cdktf/provider-upcloud.serverGroup.ServerGroupConfig.property.antiAffinity">AntiAffinity</a></code> | <code>object</code> | Is group an anti-affinity group. |
-| <code><a href="#@cdktf/provider-upcloud.serverGroup.ServerGroupConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/2.10.0/docs/resources/server_group#id ServerGroup#id}. |
+| <code><a href="#@cdktf/provider-upcloud.serverGroup.ServerGroupConfig.property.antiAffinityPolicy">AntiAffinityPolicy</a></code> | <code>string</code> | Defines if a server group is an anti-affinity group. |
+| <code><a href="#@cdktf/provider-upcloud.serverGroup.ServerGroupConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/2.11.0/docs/resources/server_group#id ServerGroup#id}. |
 | <code><a href="#@cdktf/provider-upcloud.serverGroup.ServerGroupConfig.property.labels">Labels</a></code> | <code>System.Collections.Generic.IDictionary<string, string></code> | Key-value pairs to classify the server group. |
 | <code><a href="#@cdktf/provider-upcloud.serverGroup.ServerGroupConfig.property.members">Members</a></code> | <code>string[]</code> | UUIDs of the servers that are members of this group. |
 
@@ -770,30 +770,35 @@ public string Title { get; set; }
 
 Title of your server group.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/2.10.0/docs/resources/server_group#title ServerGroup#title}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/2.11.0/docs/resources/server_group#title ServerGroup#title}
 
 ---
 
-##### `AntiAffinity`<sup>Optional</sup> <a name="AntiAffinity" id="@cdktf/provider-upcloud.serverGroup.ServerGroupConfig.property.antiAffinity"></a>
+##### `AntiAffinityPolicy`<sup>Optional</sup> <a name="AntiAffinityPolicy" id="@cdktf/provider-upcloud.serverGroup.ServerGroupConfig.property.antiAffinityPolicy"></a>
 
 ```csharp
-public object AntiAffinity { get; set; }
+public string AntiAffinityPolicy { get; set; }
 ```
 
-- *Type:* object
+- *Type:* string
 
-Is group an anti-affinity group.
+Defines if a server group is an anti-affinity group.
 
-Setting this to true will result in all servers in the group being placed on separate compute hosts.
-NOTE: this is an experimental feature. The anti-affinity policy is "best-effort" and it is not
-guaranteed that all the servers will end up on a separate compute hosts. You can verify if the
-anti-affinity policies are met by requesting a server group details from API. For more information
-please see UpCloud API documentation on server groups
+Setting this to "strict" or yes" will
+result in all servers in the group being placed on separate compute hosts. The value can be "strict", "yes" or "no".
+
+"strict" refers to strict policy doesn't allow servers in the same server group to be on the same host
+"yes" refers to best-effort policy and tries to put servers on different hosts, but this is not guaranteed
+"no" refers to having no policy and thus no affect server host affinity
+
+To verify if the anti-affinity policies are met by requesting a server group details from API. For more information
+please see UpCloud API documentation on server groups.
+
 Plese also note that anti-affinity policies are only applied on server start. This means that if anti-affinity
 policies in server group are not met, you need to manually restart the servers in said group,
 for example via API, UpCloud Control Panel or upctl (UpCloud CLI)
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/2.10.0/docs/resources/server_group#anti_affinity ServerGroup#anti_affinity}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/2.11.0/docs/resources/server_group#anti_affinity_policy ServerGroup#anti_affinity_policy}
 
 ---
 
@@ -805,7 +810,7 @@ public string Id { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/2.10.0/docs/resources/server_group#id ServerGroup#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/2.11.0/docs/resources/server_group#id ServerGroup#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -822,7 +827,7 @@ public System.Collections.Generic.IDictionary<string, string> Labels { get; set;
 
 Key-value pairs to classify the server group.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/2.10.0/docs/resources/server_group#labels ServerGroup#labels}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/2.11.0/docs/resources/server_group#labels ServerGroup#labels}
 
 ---
 
@@ -836,7 +841,7 @@ public string[] Members { get; set; }
 
 UUIDs of the servers that are members of this group.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/2.10.0/docs/resources/server_group#members ServerGroup#members}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/2.11.0/docs/resources/server_group#members ServerGroup#members}
 
 ---
 

@@ -1,6 +1,6 @@
 # `upcloud_kubernetes_cluster`
 
-Refer to the Terraform Registory for docs: [`upcloud_kubernetes_cluster`](https://registry.terraform.io/providers/upcloudltd/upcloud/2.10.0/docs/resources/kubernetes_cluster).
+Refer to the Terraform Registory for docs: [`upcloud_kubernetes_cluster`](https://registry.terraform.io/providers/upcloudltd/upcloud/2.11.0/docs/resources/kubernetes_cluster).
 
 # `kubernetesCluster` Submodule <a name="`kubernetesCluster` Submodule" id="@cdktf/provider-upcloud.kubernetesCluster"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`upcloud_kubernetes_cluster`](https:
 
 ### KubernetesCluster <a name="KubernetesCluster" id="@cdktf/provider-upcloud.kubernetesCluster.KubernetesCluster"></a>
 
-Represents a {@link https://registry.terraform.io/providers/upcloudltd/upcloud/2.10.0/docs/resources/kubernetes_cluster upcloud_kubernetes_cluster}.
+Represents a {@link https://registry.terraform.io/providers/upcloudltd/upcloud/2.11.0/docs/resources/kubernetes_cluster upcloud_kubernetes_cluster}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-upcloud.kubernetesCluster.KubernetesCluster.Initializer"></a>
 
@@ -32,6 +32,8 @@ KubernetesCluster.Builder.create(Construct scope, java.lang.String id)
     .zone(java.lang.String)
 //  .id(java.lang.String)
 //  .plan(java.lang.String)
+//  .privateNodeGroups(java.lang.Boolean)
+//  .privateNodeGroups(IResolvable)
     .build();
 ```
 
@@ -48,9 +50,10 @@ KubernetesCluster.Builder.create(Construct scope, java.lang.String id)
 | <code><a href="#@cdktf/provider-upcloud.kubernetesCluster.KubernetesCluster.Initializer.parameter.provisioners">provisioners</a></code> | <code>java.util.List<com.hashicorp.cdktf.FileProvisioner OR com.hashicorp.cdktf.LocalExecProvisioner OR com.hashicorp.cdktf.RemoteExecProvisioner></code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.kubernetesCluster.KubernetesCluster.Initializer.parameter.name">name</a></code> | <code>java.lang.String</code> | Cluster name. Needs to be unique within the account. |
 | <code><a href="#@cdktf/provider-upcloud.kubernetesCluster.KubernetesCluster.Initializer.parameter.network">network</a></code> | <code>java.lang.String</code> | Network ID for the cluster to run in. |
-| <code><a href="#@cdktf/provider-upcloud.kubernetesCluster.KubernetesCluster.Initializer.parameter.zone">zone</a></code> | <code>java.lang.String</code> | Zone in which the Kubernetes cluster will be hosted, e.g. `de-fra1`. |
-| <code><a href="#@cdktf/provider-upcloud.kubernetesCluster.KubernetesCluster.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/2.10.0/docs/resources/kubernetes_cluster#id KubernetesCluster#id}. |
-| <code><a href="#@cdktf/provider-upcloud.kubernetesCluster.KubernetesCluster.Initializer.parameter.plan">plan</a></code> | <code>java.lang.String</code> | The pricing plan used for the cluster. Default plan is `development`. |
+| <code><a href="#@cdktf/provider-upcloud.kubernetesCluster.KubernetesCluster.Initializer.parameter.zone">zone</a></code> | <code>java.lang.String</code> | Zone in which the Kubernetes cluster will be hosted, e.g. `de-fra1`. You can list available zones with `upctl zone list`. |
+| <code><a href="#@cdktf/provider-upcloud.kubernetesCluster.KubernetesCluster.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/2.11.0/docs/resources/kubernetes_cluster#id KubernetesCluster#id}. |
+| <code><a href="#@cdktf/provider-upcloud.kubernetesCluster.KubernetesCluster.Initializer.parameter.plan">plan</a></code> | <code>java.lang.String</code> | The pricing plan used for the cluster. |
+| <code><a href="#@cdktf/provider-upcloud.kubernetesCluster.KubernetesCluster.Initializer.parameter.privateNodeGroups">privateNodeGroups</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Enable private node groups. Private node groups requires a network that is routed through NAT gateway. |
 
 ---
 
@@ -120,7 +123,7 @@ Must be unique amongst siblings in the same scope
 
 Cluster name. Needs to be unique within the account.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/2.10.0/docs/resources/kubernetes_cluster#name KubernetesCluster#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/2.11.0/docs/resources/kubernetes_cluster#name KubernetesCluster#name}
 
 ---
 
@@ -130,7 +133,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upclo
 
 Network ID for the cluster to run in.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/2.10.0/docs/resources/kubernetes_cluster#network KubernetesCluster#network}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/2.11.0/docs/resources/kubernetes_cluster#network KubernetesCluster#network}
 
 ---
 
@@ -138,9 +141,9 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upclo
 
 - *Type:* java.lang.String
 
-Zone in which the Kubernetes cluster will be hosted, e.g. `de-fra1`.
+Zone in which the Kubernetes cluster will be hosted, e.g. `de-fra1`. You can list available zones with `upctl zone list`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/2.10.0/docs/resources/kubernetes_cluster#zone KubernetesCluster#zone}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/2.11.0/docs/resources/kubernetes_cluster#zone KubernetesCluster#zone}
 
 ---
 
@@ -148,7 +151,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upclo
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/2.10.0/docs/resources/kubernetes_cluster#id KubernetesCluster#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/2.11.0/docs/resources/kubernetes_cluster#id KubernetesCluster#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -159,9 +162,21 @@ If you experience problems setting this value it might not be settable. Please t
 
 - *Type:* java.lang.String
 
-The pricing plan used for the cluster. Default plan is `development`.
+The pricing plan used for the cluster.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/2.10.0/docs/resources/kubernetes_cluster#plan KubernetesCluster#plan}
+Default plan is `development`. You can list available plans with `upctl kubernetes plans`.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/2.11.0/docs/resources/kubernetes_cluster#plan KubernetesCluster#plan}
+
+---
+
+##### `privateNodeGroups`<sup>Optional</sup> <a name="privateNodeGroups" id="@cdktf/provider-upcloud.kubernetesCluster.KubernetesCluster.Initializer.parameter.privateNodeGroups"></a>
+
+- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+
+Enable private node groups. Private node groups requires a network that is routed through NAT gateway.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/2.11.0/docs/resources/kubernetes_cluster#private_node_groups KubernetesCluster#private_node_groups}
 
 ---
 
@@ -187,6 +202,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upclo
 | <code><a href="#@cdktf/provider-upcloud.kubernetesCluster.KubernetesCluster.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.kubernetesCluster.KubernetesCluster.resetId">resetId</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.kubernetesCluster.KubernetesCluster.resetPlan">resetPlan</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-upcloud.kubernetesCluster.KubernetesCluster.resetPrivateNodeGroups">resetPrivateNodeGroups</a></code> | *No description.* |
 
 ---
 
@@ -386,6 +402,12 @@ public void resetId()
 public void resetPlan()
 ```
 
+##### `resetPrivateNodeGroups` <a name="resetPrivateNodeGroups" id="@cdktf/provider-upcloud.kubernetesCluster.KubernetesCluster.resetPrivateNodeGroups"></a>
+
+```java
+public void resetPrivateNodeGroups()
+```
+
 #### Static Functions <a name="Static Functions" id="Static Functions"></a>
 
 | **Name** | **Description** |
@@ -481,11 +503,13 @@ KubernetesCluster.isTerraformResource(java.lang.Object x)
 | <code><a href="#@cdktf/provider-upcloud.kubernetesCluster.KubernetesCluster.property.nameInput">nameInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.kubernetesCluster.KubernetesCluster.property.networkInput">networkInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.kubernetesCluster.KubernetesCluster.property.planInput">planInput</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktf/provider-upcloud.kubernetesCluster.KubernetesCluster.property.privateNodeGroupsInput">privateNodeGroupsInput</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.kubernetesCluster.KubernetesCluster.property.zoneInput">zoneInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.kubernetesCluster.KubernetesCluster.property.id">id</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.kubernetesCluster.KubernetesCluster.property.name">name</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.kubernetesCluster.KubernetesCluster.property.network">network</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.kubernetesCluster.KubernetesCluster.property.plan">plan</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktf/provider-upcloud.kubernetesCluster.KubernetesCluster.property.privateNodeGroups">privateNodeGroups</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.kubernetesCluster.KubernetesCluster.property.zone">zone</a></code> | <code>java.lang.String</code> | *No description.* |
 
 ---
@@ -702,6 +726,16 @@ public java.lang.String getPlanInput();
 
 ---
 
+##### `privateNodeGroupsInput`<sup>Optional</sup> <a name="privateNodeGroupsInput" id="@cdktf/provider-upcloud.kubernetesCluster.KubernetesCluster.property.privateNodeGroupsInput"></a>
+
+```java
+public java.lang.Object getPrivateNodeGroupsInput();
+```
+
+- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+
+---
+
 ##### `zoneInput`<sup>Optional</sup> <a name="zoneInput" id="@cdktf/provider-upcloud.kubernetesCluster.KubernetesCluster.property.zoneInput"></a>
 
 ```java
@@ -749,6 +783,16 @@ public java.lang.String getPlan();
 ```
 
 - *Type:* java.lang.String
+
+---
+
+##### `privateNodeGroups`<sup>Required</sup> <a name="privateNodeGroups" id="@cdktf/provider-upcloud.kubernetesCluster.KubernetesCluster.property.privateNodeGroups"></a>
+
+```java
+public java.lang.Object getPrivateNodeGroups();
+```
+
+- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
 
 ---
 
@@ -806,6 +850,8 @@ KubernetesClusterConfig.builder()
     .zone(java.lang.String)
 //  .id(java.lang.String)
 //  .plan(java.lang.String)
+//  .privateNodeGroups(java.lang.Boolean)
+//  .privateNodeGroups(IResolvable)
     .build();
 ```
 
@@ -822,9 +868,10 @@ KubernetesClusterConfig.builder()
 | <code><a href="#@cdktf/provider-upcloud.kubernetesCluster.KubernetesClusterConfig.property.provisioners">provisioners</a></code> | <code>java.util.List<com.hashicorp.cdktf.FileProvisioner OR com.hashicorp.cdktf.LocalExecProvisioner OR com.hashicorp.cdktf.RemoteExecProvisioner></code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.kubernetesCluster.KubernetesClusterConfig.property.name">name</a></code> | <code>java.lang.String</code> | Cluster name. Needs to be unique within the account. |
 | <code><a href="#@cdktf/provider-upcloud.kubernetesCluster.KubernetesClusterConfig.property.network">network</a></code> | <code>java.lang.String</code> | Network ID for the cluster to run in. |
-| <code><a href="#@cdktf/provider-upcloud.kubernetesCluster.KubernetesClusterConfig.property.zone">zone</a></code> | <code>java.lang.String</code> | Zone in which the Kubernetes cluster will be hosted, e.g. `de-fra1`. |
-| <code><a href="#@cdktf/provider-upcloud.kubernetesCluster.KubernetesClusterConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/2.10.0/docs/resources/kubernetes_cluster#id KubernetesCluster#id}. |
-| <code><a href="#@cdktf/provider-upcloud.kubernetesCluster.KubernetesClusterConfig.property.plan">plan</a></code> | <code>java.lang.String</code> | The pricing plan used for the cluster. Default plan is `development`. |
+| <code><a href="#@cdktf/provider-upcloud.kubernetesCluster.KubernetesClusterConfig.property.zone">zone</a></code> | <code>java.lang.String</code> | Zone in which the Kubernetes cluster will be hosted, e.g. `de-fra1`. You can list available zones with `upctl zone list`. |
+| <code><a href="#@cdktf/provider-upcloud.kubernetesCluster.KubernetesClusterConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/2.11.0/docs/resources/kubernetes_cluster#id KubernetesCluster#id}. |
+| <code><a href="#@cdktf/provider-upcloud.kubernetesCluster.KubernetesClusterConfig.property.plan">plan</a></code> | <code>java.lang.String</code> | The pricing plan used for the cluster. |
+| <code><a href="#@cdktf/provider-upcloud.kubernetesCluster.KubernetesClusterConfig.property.privateNodeGroups">privateNodeGroups</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Enable private node groups. Private node groups requires a network that is routed through NAT gateway. |
 
 ---
 
@@ -908,7 +955,7 @@ public java.lang.String getName();
 
 Cluster name. Needs to be unique within the account.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/2.10.0/docs/resources/kubernetes_cluster#name KubernetesCluster#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/2.11.0/docs/resources/kubernetes_cluster#name KubernetesCluster#name}
 
 ---
 
@@ -922,7 +969,7 @@ public java.lang.String getNetwork();
 
 Network ID for the cluster to run in.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/2.10.0/docs/resources/kubernetes_cluster#network KubernetesCluster#network}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/2.11.0/docs/resources/kubernetes_cluster#network KubernetesCluster#network}
 
 ---
 
@@ -934,9 +981,9 @@ public java.lang.String getZone();
 
 - *Type:* java.lang.String
 
-Zone in which the Kubernetes cluster will be hosted, e.g. `de-fra1`.
+Zone in which the Kubernetes cluster will be hosted, e.g. `de-fra1`. You can list available zones with `upctl zone list`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/2.10.0/docs/resources/kubernetes_cluster#zone KubernetesCluster#zone}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/2.11.0/docs/resources/kubernetes_cluster#zone KubernetesCluster#zone}
 
 ---
 
@@ -948,7 +995,7 @@ public java.lang.String getId();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/2.10.0/docs/resources/kubernetes_cluster#id KubernetesCluster#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/2.11.0/docs/resources/kubernetes_cluster#id KubernetesCluster#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -963,9 +1010,25 @@ public java.lang.String getPlan();
 
 - *Type:* java.lang.String
 
-The pricing plan used for the cluster. Default plan is `development`.
+The pricing plan used for the cluster.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/2.10.0/docs/resources/kubernetes_cluster#plan KubernetesCluster#plan}
+Default plan is `development`. You can list available plans with `upctl kubernetes plans`.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/2.11.0/docs/resources/kubernetes_cluster#plan KubernetesCluster#plan}
+
+---
+
+##### `privateNodeGroups`<sup>Optional</sup> <a name="privateNodeGroups" id="@cdktf/provider-upcloud.kubernetesCluster.KubernetesClusterConfig.property.privateNodeGroups"></a>
+
+```java
+public java.lang.Object getPrivateNodeGroups();
+```
+
+- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+
+Enable private node groups. Private node groups requires a network that is routed through NAT gateway.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/2.11.0/docs/resources/kubernetes_cluster#private_node_groups KubernetesCluster#private_node_groups}
 
 ---
 

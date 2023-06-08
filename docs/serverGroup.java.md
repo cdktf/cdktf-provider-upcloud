@@ -1,6 +1,6 @@
 # `upcloud_server_group`
 
-Refer to the Terraform Registory for docs: [`upcloud_server_group`](https://registry.terraform.io/providers/upcloudltd/upcloud/2.10.0/docs/resources/server_group).
+Refer to the Terraform Registory for docs: [`upcloud_server_group`](https://registry.terraform.io/providers/upcloudltd/upcloud/2.11.0/docs/resources/server_group).
 
 # `serverGroup` Submodule <a name="`serverGroup` Submodule" id="@cdktf/provider-upcloud.serverGroup"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`upcloud_server_group`](https://regi
 
 ### ServerGroup <a name="ServerGroup" id="@cdktf/provider-upcloud.serverGroup.ServerGroup"></a>
 
-Represents a {@link https://registry.terraform.io/providers/upcloudltd/upcloud/2.10.0/docs/resources/server_group upcloud_server_group}.
+Represents a {@link https://registry.terraform.io/providers/upcloudltd/upcloud/2.11.0/docs/resources/server_group upcloud_server_group}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-upcloud.serverGroup.ServerGroup.Initializer"></a>
 
@@ -28,8 +28,7 @@ ServerGroup.Builder.create(Construct scope, java.lang.String id)
 //  .provisioners(LocalExecProvisioner)
 //  .provisioners(RemoteExecProvisioner>)
     .title(java.lang.String)
-//  .antiAffinity(java.lang.Boolean)
-//  .antiAffinity(IResolvable)
+//  .antiAffinityPolicy(java.lang.String)
 //  .id(java.lang.String)
 //  .labels(java.util.Map<java.lang.String, java.lang.String>)
 //  .members(java.util.List<java.lang.String>)
@@ -48,8 +47,8 @@ ServerGroup.Builder.create(Construct scope, java.lang.String id)
 | <code><a href="#@cdktf/provider-upcloud.serverGroup.ServerGroup.Initializer.parameter.provider">provider</a></code> | <code>com.hashicorp.cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.serverGroup.ServerGroup.Initializer.parameter.provisioners">provisioners</a></code> | <code>java.util.List<com.hashicorp.cdktf.FileProvisioner OR com.hashicorp.cdktf.LocalExecProvisioner OR com.hashicorp.cdktf.RemoteExecProvisioner></code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.serverGroup.ServerGroup.Initializer.parameter.title">title</a></code> | <code>java.lang.String</code> | Title of your server group. |
-| <code><a href="#@cdktf/provider-upcloud.serverGroup.ServerGroup.Initializer.parameter.antiAffinity">antiAffinity</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Is group an anti-affinity group. |
-| <code><a href="#@cdktf/provider-upcloud.serverGroup.ServerGroup.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/2.10.0/docs/resources/server_group#id ServerGroup#id}. |
+| <code><a href="#@cdktf/provider-upcloud.serverGroup.ServerGroup.Initializer.parameter.antiAffinityPolicy">antiAffinityPolicy</a></code> | <code>java.lang.String</code> | Defines if a server group is an anti-affinity group. |
+| <code><a href="#@cdktf/provider-upcloud.serverGroup.ServerGroup.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/2.11.0/docs/resources/server_group#id ServerGroup#id}. |
 | <code><a href="#@cdktf/provider-upcloud.serverGroup.ServerGroup.Initializer.parameter.labels">labels</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | Key-value pairs to classify the server group. |
 | <code><a href="#@cdktf/provider-upcloud.serverGroup.ServerGroup.Initializer.parameter.members">members</a></code> | <code>java.util.List<java.lang.String></code> | UUIDs of the servers that are members of this group. |
 
@@ -121,26 +120,31 @@ Must be unique amongst siblings in the same scope
 
 Title of your server group.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/2.10.0/docs/resources/server_group#title ServerGroup#title}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/2.11.0/docs/resources/server_group#title ServerGroup#title}
 
 ---
 
-##### `antiAffinity`<sup>Optional</sup> <a name="antiAffinity" id="@cdktf/provider-upcloud.serverGroup.ServerGroup.Initializer.parameter.antiAffinity"></a>
+##### `antiAffinityPolicy`<sup>Optional</sup> <a name="antiAffinityPolicy" id="@cdktf/provider-upcloud.serverGroup.ServerGroup.Initializer.parameter.antiAffinityPolicy"></a>
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.String
 
-Is group an anti-affinity group.
+Defines if a server group is an anti-affinity group.
 
-Setting this to true will result in all servers in the group being placed on separate compute hosts.
-NOTE: this is an experimental feature. The anti-affinity policy is "best-effort" and it is not
-guaranteed that all the servers will end up on a separate compute hosts. You can verify if the
-anti-affinity policies are met by requesting a server group details from API. For more information
-please see UpCloud API documentation on server groups
+Setting this to "strict" or yes" will
+result in all servers in the group being placed on separate compute hosts. The value can be "strict", "yes" or "no".
+
+"strict" refers to strict policy doesn't allow servers in the same server group to be on the same host
+"yes" refers to best-effort policy and tries to put servers on different hosts, but this is not guaranteed
+"no" refers to having no policy and thus no affect server host affinity
+
+To verify if the anti-affinity policies are met by requesting a server group details from API. For more information
+please see UpCloud API documentation on server groups.
+
 Plese also note that anti-affinity policies are only applied on server start. This means that if anti-affinity
 policies in server group are not met, you need to manually restart the servers in said group,
 for example via API, UpCloud Control Panel or upctl (UpCloud CLI)
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/2.10.0/docs/resources/server_group#anti_affinity ServerGroup#anti_affinity}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/2.11.0/docs/resources/server_group#anti_affinity_policy ServerGroup#anti_affinity_policy}
 
 ---
 
@@ -148,7 +152,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upclo
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/2.10.0/docs/resources/server_group#id ServerGroup#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/2.11.0/docs/resources/server_group#id ServerGroup#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -161,7 +165,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 Key-value pairs to classify the server group.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/2.10.0/docs/resources/server_group#labels ServerGroup#labels}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/2.11.0/docs/resources/server_group#labels ServerGroup#labels}
 
 ---
 
@@ -171,7 +175,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upclo
 
 UUIDs of the servers that are members of this group.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/2.10.0/docs/resources/server_group#members ServerGroup#members}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/2.11.0/docs/resources/server_group#members ServerGroup#members}
 
 ---
 
@@ -195,7 +199,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upclo
 | <code><a href="#@cdktf/provider-upcloud.serverGroup.ServerGroup.getStringAttribute">getStringAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.serverGroup.ServerGroup.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.serverGroup.ServerGroup.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-upcloud.serverGroup.ServerGroup.resetAntiAffinity">resetAntiAffinity</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-upcloud.serverGroup.ServerGroup.resetAntiAffinityPolicy">resetAntiAffinityPolicy</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.serverGroup.ServerGroup.resetId">resetId</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.serverGroup.ServerGroup.resetLabels">resetLabels</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.serverGroup.ServerGroup.resetMembers">resetMembers</a></code> | *No description.* |
@@ -386,10 +390,10 @@ public IResolvable interpolationForAttribute(java.lang.String terraformAttribute
 
 ---
 
-##### `resetAntiAffinity` <a name="resetAntiAffinity" id="@cdktf/provider-upcloud.serverGroup.ServerGroup.resetAntiAffinity"></a>
+##### `resetAntiAffinityPolicy` <a name="resetAntiAffinityPolicy" id="@cdktf/provider-upcloud.serverGroup.ServerGroup.resetAntiAffinityPolicy"></a>
 
 ```java
-public void resetAntiAffinity()
+public void resetAntiAffinityPolicy()
 ```
 
 ##### `resetId` <a name="resetId" id="@cdktf/provider-upcloud.serverGroup.ServerGroup.resetId"></a>
@@ -498,12 +502,12 @@ ServerGroup.isTerraformResource(java.lang.Object x)
 | <code><a href="#@cdktf/provider-upcloud.serverGroup.ServerGroup.property.lifecycle">lifecycle</a></code> | <code>com.hashicorp.cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.serverGroup.ServerGroup.property.provider">provider</a></code> | <code>com.hashicorp.cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.serverGroup.ServerGroup.property.provisioners">provisioners</a></code> | <code>java.util.List<com.hashicorp.cdktf.FileProvisioner OR com.hashicorp.cdktf.LocalExecProvisioner OR com.hashicorp.cdktf.RemoteExecProvisioner></code> | *No description.* |
-| <code><a href="#@cdktf/provider-upcloud.serverGroup.ServerGroup.property.antiAffinityInput">antiAffinityInput</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-upcloud.serverGroup.ServerGroup.property.antiAffinityPolicyInput">antiAffinityPolicyInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.serverGroup.ServerGroup.property.idInput">idInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.serverGroup.ServerGroup.property.labelsInput">labelsInput</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.serverGroup.ServerGroup.property.membersInput">membersInput</a></code> | <code>java.util.List<java.lang.String></code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.serverGroup.ServerGroup.property.titleInput">titleInput</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-upcloud.serverGroup.ServerGroup.property.antiAffinity">antiAffinity</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-upcloud.serverGroup.ServerGroup.property.antiAffinityPolicy">antiAffinityPolicy</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.serverGroup.ServerGroup.property.id">id</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.serverGroup.ServerGroup.property.labels">labels</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.serverGroup.ServerGroup.property.members">members</a></code> | <code>java.util.List<java.lang.String></code> | *No description.* |
@@ -653,13 +657,13 @@ public java.lang.Object getProvisioners();
 
 ---
 
-##### `antiAffinityInput`<sup>Optional</sup> <a name="antiAffinityInput" id="@cdktf/provider-upcloud.serverGroup.ServerGroup.property.antiAffinityInput"></a>
+##### `antiAffinityPolicyInput`<sup>Optional</sup> <a name="antiAffinityPolicyInput" id="@cdktf/provider-upcloud.serverGroup.ServerGroup.property.antiAffinityPolicyInput"></a>
 
 ```java
-public java.lang.Object getAntiAffinityInput();
+public java.lang.String getAntiAffinityPolicyInput();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.String
 
 ---
 
@@ -703,13 +707,13 @@ public java.lang.String getTitleInput();
 
 ---
 
-##### `antiAffinity`<sup>Required</sup> <a name="antiAffinity" id="@cdktf/provider-upcloud.serverGroup.ServerGroup.property.antiAffinity"></a>
+##### `antiAffinityPolicy`<sup>Required</sup> <a name="antiAffinityPolicy" id="@cdktf/provider-upcloud.serverGroup.ServerGroup.property.antiAffinityPolicy"></a>
 
 ```java
-public java.lang.Object getAntiAffinity();
+public java.lang.String getAntiAffinityPolicy();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.String
 
 ---
 
@@ -793,8 +797,7 @@ ServerGroupConfig.builder()
 //  .provisioners(LocalExecProvisioner)
 //  .provisioners(RemoteExecProvisioner>)
     .title(java.lang.String)
-//  .antiAffinity(java.lang.Boolean)
-//  .antiAffinity(IResolvable)
+//  .antiAffinityPolicy(java.lang.String)
 //  .id(java.lang.String)
 //  .labels(java.util.Map<java.lang.String, java.lang.String>)
 //  .members(java.util.List<java.lang.String>)
@@ -813,8 +816,8 @@ ServerGroupConfig.builder()
 | <code><a href="#@cdktf/provider-upcloud.serverGroup.ServerGroupConfig.property.provider">provider</a></code> | <code>com.hashicorp.cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.serverGroup.ServerGroupConfig.property.provisioners">provisioners</a></code> | <code>java.util.List<com.hashicorp.cdktf.FileProvisioner OR com.hashicorp.cdktf.LocalExecProvisioner OR com.hashicorp.cdktf.RemoteExecProvisioner></code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.serverGroup.ServerGroupConfig.property.title">title</a></code> | <code>java.lang.String</code> | Title of your server group. |
-| <code><a href="#@cdktf/provider-upcloud.serverGroup.ServerGroupConfig.property.antiAffinity">antiAffinity</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Is group an anti-affinity group. |
-| <code><a href="#@cdktf/provider-upcloud.serverGroup.ServerGroupConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/2.10.0/docs/resources/server_group#id ServerGroup#id}. |
+| <code><a href="#@cdktf/provider-upcloud.serverGroup.ServerGroupConfig.property.antiAffinityPolicy">antiAffinityPolicy</a></code> | <code>java.lang.String</code> | Defines if a server group is an anti-affinity group. |
+| <code><a href="#@cdktf/provider-upcloud.serverGroup.ServerGroupConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/2.11.0/docs/resources/server_group#id ServerGroup#id}. |
 | <code><a href="#@cdktf/provider-upcloud.serverGroup.ServerGroupConfig.property.labels">labels</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | Key-value pairs to classify the server group. |
 | <code><a href="#@cdktf/provider-upcloud.serverGroup.ServerGroupConfig.property.members">members</a></code> | <code>java.util.List<java.lang.String></code> | UUIDs of the servers that are members of this group. |
 
@@ -900,30 +903,35 @@ public java.lang.String getTitle();
 
 Title of your server group.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/2.10.0/docs/resources/server_group#title ServerGroup#title}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/2.11.0/docs/resources/server_group#title ServerGroup#title}
 
 ---
 
-##### `antiAffinity`<sup>Optional</sup> <a name="antiAffinity" id="@cdktf/provider-upcloud.serverGroup.ServerGroupConfig.property.antiAffinity"></a>
+##### `antiAffinityPolicy`<sup>Optional</sup> <a name="antiAffinityPolicy" id="@cdktf/provider-upcloud.serverGroup.ServerGroupConfig.property.antiAffinityPolicy"></a>
 
 ```java
-public java.lang.Object getAntiAffinity();
+public java.lang.String getAntiAffinityPolicy();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.String
 
-Is group an anti-affinity group.
+Defines if a server group is an anti-affinity group.
 
-Setting this to true will result in all servers in the group being placed on separate compute hosts.
-NOTE: this is an experimental feature. The anti-affinity policy is "best-effort" and it is not
-guaranteed that all the servers will end up on a separate compute hosts. You can verify if the
-anti-affinity policies are met by requesting a server group details from API. For more information
-please see UpCloud API documentation on server groups
+Setting this to "strict" or yes" will
+result in all servers in the group being placed on separate compute hosts. The value can be "strict", "yes" or "no".
+
+"strict" refers to strict policy doesn't allow servers in the same server group to be on the same host
+"yes" refers to best-effort policy and tries to put servers on different hosts, but this is not guaranteed
+"no" refers to having no policy and thus no affect server host affinity
+
+To verify if the anti-affinity policies are met by requesting a server group details from API. For more information
+please see UpCloud API documentation on server groups.
+
 Plese also note that anti-affinity policies are only applied on server start. This means that if anti-affinity
 policies in server group are not met, you need to manually restart the servers in said group,
 for example via API, UpCloud Control Panel or upctl (UpCloud CLI)
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/2.10.0/docs/resources/server_group#anti_affinity ServerGroup#anti_affinity}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/2.11.0/docs/resources/server_group#anti_affinity_policy ServerGroup#anti_affinity_policy}
 
 ---
 
@@ -935,7 +943,7 @@ public java.lang.String getId();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/2.10.0/docs/resources/server_group#id ServerGroup#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/2.11.0/docs/resources/server_group#id ServerGroup#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -952,7 +960,7 @@ public java.util.Map<java.lang.String, java.lang.String> getLabels();
 
 Key-value pairs to classify the server group.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/2.10.0/docs/resources/server_group#labels ServerGroup#labels}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/2.11.0/docs/resources/server_group#labels ServerGroup#labels}
 
 ---
 
@@ -966,7 +974,7 @@ public java.util.List<java.lang.String> getMembers();
 
 UUIDs of the servers that are members of this group.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/2.10.0/docs/resources/server_group#members ServerGroup#members}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/2.11.0/docs/resources/server_group#members ServerGroup#members}
 
 ---
 

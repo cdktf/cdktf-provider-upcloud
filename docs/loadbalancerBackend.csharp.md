@@ -1,6 +1,6 @@
 # `upcloud_loadbalancer_backend`
 
-Refer to the Terraform Registory for docs: [`upcloud_loadbalancer_backend`](https://registry.terraform.io/providers/upcloudltd/upcloud/2.10.0/docs/resources/loadbalancer_backend).
+Refer to the Terraform Registory for docs: [`upcloud_loadbalancer_backend`](https://registry.terraform.io/providers/upcloudltd/upcloud/2.11.0/docs/resources/loadbalancer_backend).
 
 # `loadbalancerBackend` Submodule <a name="`loadbalancerBackend` Submodule" id="@cdktf/provider-upcloud.loadbalancerBackend"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`upcloud_loadbalancer_backend`](http
 
 ### LoadbalancerBackend <a name="LoadbalancerBackend" id="@cdktf/provider-upcloud.loadbalancerBackend.LoadbalancerBackend"></a>
 
-Represents a {@link https://registry.terraform.io/providers/upcloudltd/upcloud/2.10.0/docs/resources/loadbalancer_backend upcloud_loadbalancer_backend}.
+Represents a {@link https://registry.terraform.io/providers/upcloudltd/upcloud/2.11.0/docs/resources/loadbalancer_backend upcloud_loadbalancer_backend}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-upcloud.loadbalancerBackend.LoadbalancerBackend.Initializer"></a>
 
@@ -701,7 +701,7 @@ new LoadbalancerBackendConfig {
 | <code><a href="#@cdktf/provider-upcloud.loadbalancerBackend.LoadbalancerBackendConfig.property.provisioners">Provisioners</a></code> | <code>object[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.loadbalancerBackend.LoadbalancerBackendConfig.property.loadbalancer">Loadbalancer</a></code> | <code>string</code> | ID of the load balancer to which the backend is connected. |
 | <code><a href="#@cdktf/provider-upcloud.loadbalancerBackend.LoadbalancerBackendConfig.property.name">Name</a></code> | <code>string</code> | The name of the backend must be unique within the load balancer service. |
-| <code><a href="#@cdktf/provider-upcloud.loadbalancerBackend.LoadbalancerBackendConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/2.10.0/docs/resources/loadbalancer_backend#id LoadbalancerBackend#id}. |
+| <code><a href="#@cdktf/provider-upcloud.loadbalancerBackend.LoadbalancerBackendConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/2.11.0/docs/resources/loadbalancer_backend#id LoadbalancerBackend#id}. |
 | <code><a href="#@cdktf/provider-upcloud.loadbalancerBackend.LoadbalancerBackendConfig.property.properties">Properties</a></code> | <code><a href="#@cdktf/provider-upcloud.loadbalancerBackend.LoadbalancerBackendProperties">LoadbalancerBackendProperties</a></code> | properties block. |
 | <code><a href="#@cdktf/provider-upcloud.loadbalancerBackend.LoadbalancerBackendConfig.property.resolverName">ResolverName</a></code> | <code>string</code> | Domain Name Resolver used with dynamic type members. |
 
@@ -787,7 +787,7 @@ public string Loadbalancer { get; set; }
 
 ID of the load balancer to which the backend is connected.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/2.10.0/docs/resources/loadbalancer_backend#loadbalancer LoadbalancerBackend#loadbalancer}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/2.11.0/docs/resources/loadbalancer_backend#loadbalancer LoadbalancerBackend#loadbalancer}
 
 ---
 
@@ -801,7 +801,7 @@ public string Name { get; set; }
 
 The name of the backend must be unique within the load balancer service.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/2.10.0/docs/resources/loadbalancer_backend#name LoadbalancerBackend#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/2.11.0/docs/resources/loadbalancer_backend#name LoadbalancerBackend#name}
 
 ---
 
@@ -813,7 +813,7 @@ public string Id { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/2.10.0/docs/resources/loadbalancer_backend#id LoadbalancerBackend#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/2.11.0/docs/resources/loadbalancer_backend#id LoadbalancerBackend#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -830,7 +830,7 @@ public LoadbalancerBackendProperties Properties { get; set; }
 
 properties block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/2.10.0/docs/resources/loadbalancer_backend#properties LoadbalancerBackend#properties}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/2.11.0/docs/resources/loadbalancer_backend#properties LoadbalancerBackend#properties}
 
 ---
 
@@ -844,7 +844,7 @@ public string ResolverName { get; set; }
 
 Domain Name Resolver used with dynamic type members.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/2.10.0/docs/resources/loadbalancer_backend#resolver_name LoadbalancerBackend#resolver_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/2.11.0/docs/resources/loadbalancer_backend#resolver_name LoadbalancerBackend#resolver_name}
 
 ---
 
@@ -896,7 +896,7 @@ public double HealthCheckExpectedStatus { get; set; }
 
 Expected HTTP status code returned by the customer application to mark server as healthy. Ignored for tcp type.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/2.10.0/docs/resources/loadbalancer_backend#health_check_expected_status LoadbalancerBackend#health_check_expected_status}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/2.11.0/docs/resources/loadbalancer_backend#health_check_expected_status LoadbalancerBackend#health_check_expected_status}
 
 ---
 
@@ -910,7 +910,7 @@ public double HealthCheckFall { get; set; }
 
 Sets how many failed health checks are allowed until the backend member is taken off from the rotation.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/2.10.0/docs/resources/loadbalancer_backend#health_check_fall LoadbalancerBackend#health_check_fall}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/2.11.0/docs/resources/loadbalancer_backend#health_check_fall LoadbalancerBackend#health_check_fall}
 
 ---
 
@@ -924,7 +924,7 @@ public double HealthCheckInterval { get; set; }
 
 Interval between health checks.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/2.10.0/docs/resources/loadbalancer_backend#health_check_interval LoadbalancerBackend#health_check_interval}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/2.11.0/docs/resources/loadbalancer_backend#health_check_interval LoadbalancerBackend#health_check_interval}
 
 ---
 
@@ -938,7 +938,7 @@ public double HealthCheckRise { get; set; }
 
 Sets how many passing checks there must be before returning the backend member to the rotation.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/2.10.0/docs/resources/loadbalancer_backend#health_check_rise LoadbalancerBackend#health_check_rise}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/2.11.0/docs/resources/loadbalancer_backend#health_check_rise LoadbalancerBackend#health_check_rise}
 
 ---
 
@@ -952,7 +952,7 @@ public string HealthCheckType { get; set; }
 
 Health check type.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/2.10.0/docs/resources/loadbalancer_backend#health_check_type LoadbalancerBackend#health_check_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/2.11.0/docs/resources/loadbalancer_backend#health_check_type LoadbalancerBackend#health_check_type}
 
 ---
 
@@ -966,7 +966,7 @@ public string HealthCheckUrl { get; set; }
 
 Target path for health check HTTP GET requests. Ignored for tcp type.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/2.10.0/docs/resources/loadbalancer_backend#health_check_url LoadbalancerBackend#health_check_url}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/2.11.0/docs/resources/loadbalancer_backend#health_check_url LoadbalancerBackend#health_check_url}
 
 ---
 
@@ -980,7 +980,7 @@ public string OutboundProxyProtocol { get; set; }
 
 Enable outbound proxy protocol by setting the desired version. Empty string disables proxy protocol.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/2.10.0/docs/resources/loadbalancer_backend#outbound_proxy_protocol LoadbalancerBackend#outbound_proxy_protocol}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/2.11.0/docs/resources/loadbalancer_backend#outbound_proxy_protocol LoadbalancerBackend#outbound_proxy_protocol}
 
 ---
 
@@ -994,7 +994,7 @@ public string StickySessionCookieName { get; set; }
 
 Sets sticky session cookie name. Empty string disables sticky session.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/2.10.0/docs/resources/loadbalancer_backend#sticky_session_cookie_name LoadbalancerBackend#sticky_session_cookie_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/2.11.0/docs/resources/loadbalancer_backend#sticky_session_cookie_name LoadbalancerBackend#sticky_session_cookie_name}
 
 ---
 
@@ -1008,7 +1008,7 @@ public double TimeoutServer { get; set; }
 
 Backend server timeout in seconds.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/2.10.0/docs/resources/loadbalancer_backend#timeout_server LoadbalancerBackend#timeout_server}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/2.11.0/docs/resources/loadbalancer_backend#timeout_server LoadbalancerBackend#timeout_server}
 
 ---
 
@@ -1022,7 +1022,7 @@ public double TimeoutTunnel { get; set; }
 
 Maximum inactivity time on the client and server side for tunnels in seconds.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/2.10.0/docs/resources/loadbalancer_backend#timeout_tunnel LoadbalancerBackend#timeout_tunnel}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/2.11.0/docs/resources/loadbalancer_backend#timeout_tunnel LoadbalancerBackend#timeout_tunnel}
 
 ---
 
