@@ -25,7 +25,7 @@ firewallRules.FirewallRules(
   lifecycle: TerraformResourceLifecycle = None,
   provider: TerraformProvider = None,
   provisioners: typing.List[typing.Union[FileProvisioner, LocalExecProvisioner, RemoteExecProvisioner]] = None,
-  firewall_rule: typing.Union[typing.List[FirewallRulesFirewallRule], IResolvable],
+  firewall_rule: typing.Union[IResolvable, typing.List[FirewallRulesFirewallRule]],
   server_id: str,
   id: str = None
 )
@@ -42,7 +42,7 @@ firewallRules.FirewallRules(
 | <code><a href="#@cdktf/provider-upcloud.firewallRules.FirewallRules.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.firewallRules.FirewallRules.Initializer.parameter.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.firewallRules.FirewallRules.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-upcloud.firewallRules.FirewallRules.Initializer.parameter.firewallRule">firewall_rule</a></code> | <code>typing.Union[typing.List[<a href="#@cdktf/provider-upcloud.firewallRules.FirewallRulesFirewallRule">FirewallRulesFirewallRule</a>], cdktf.IResolvable]</code> | firewall_rule block. |
+| <code><a href="#@cdktf/provider-upcloud.firewallRules.FirewallRules.Initializer.parameter.firewallRule">firewall_rule</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-upcloud.firewallRules.FirewallRulesFirewallRule">FirewallRulesFirewallRule</a>]]</code> | firewall_rule block. |
 | <code><a href="#@cdktf/provider-upcloud.firewallRules.FirewallRules.Initializer.parameter.serverId">server_id</a></code> | <code>str</code> | The unique id of the server to be protected the firewall rules. |
 | <code><a href="#@cdktf/provider-upcloud.firewallRules.FirewallRules.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/2.11.0/docs/resources/firewall_rules#id FirewallRules#id}. |
 
@@ -110,7 +110,7 @@ Must be unique amongst siblings in the same scope
 
 ##### `firewall_rule`<sup>Required</sup> <a name="firewall_rule" id="@cdktf/provider-upcloud.firewallRules.FirewallRules.Initializer.parameter.firewallRule"></a>
 
-- *Type:* typing.Union[typing.List[<a href="#@cdktf/provider-upcloud.firewallRules.FirewallRulesFirewallRule">FirewallRulesFirewallRule</a>], cdktf.IResolvable]
+- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-upcloud.firewallRules.FirewallRulesFirewallRule">FirewallRulesFirewallRule</a>]]
 
 firewall_rule block.
 
@@ -377,13 +377,13 @@ def interpolation_for_attribute(
 
 ```python
 def put_firewall_rule(
-  value: typing.Union[typing.List[FirewallRulesFirewallRule], IResolvable]
+  value: typing.Union[IResolvable, typing.List[FirewallRulesFirewallRule]]
 ) -> None
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-upcloud.firewallRules.FirewallRules.putFirewallRule.parameter.value"></a>
 
-- *Type:* typing.Union[typing.List[<a href="#@cdktf/provider-upcloud.firewallRules.FirewallRulesFirewallRule">FirewallRulesFirewallRule</a>], cdktf.IResolvable]
+- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-upcloud.firewallRules.FirewallRulesFirewallRule">FirewallRulesFirewallRule</a>]]
 
 ---
 
@@ -488,7 +488,7 @@ firewallRules.FirewallRules.is_terraform_resource(
 | <code><a href="#@cdktf/provider-upcloud.firewallRules.FirewallRules.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.firewallRules.FirewallRules.property.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.firewallRules.FirewallRules.property.firewallRule">firewall_rule</a></code> | <code><a href="#@cdktf/provider-upcloud.firewallRules.FirewallRulesFirewallRuleList">FirewallRulesFirewallRuleList</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-upcloud.firewallRules.FirewallRules.property.firewallRuleInput">firewall_rule_input</a></code> | <code>typing.Union[typing.List[<a href="#@cdktf/provider-upcloud.firewallRules.FirewallRulesFirewallRule">FirewallRulesFirewallRule</a>], cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-upcloud.firewallRules.FirewallRules.property.firewallRuleInput">firewall_rule_input</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-upcloud.firewallRules.FirewallRulesFirewallRule">FirewallRulesFirewallRule</a>]]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.firewallRules.FirewallRules.property.idInput">id_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.firewallRules.FirewallRules.property.serverIdInput">server_id_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.firewallRules.FirewallRules.property.id">id</a></code> | <code>str</code> | *No description.* |
@@ -651,10 +651,10 @@ firewall_rule: FirewallRulesFirewallRuleList
 ##### `firewall_rule_input`<sup>Optional</sup> <a name="firewall_rule_input" id="@cdktf/provider-upcloud.firewallRules.FirewallRules.property.firewallRuleInput"></a>
 
 ```python
-firewall_rule_input: typing.Union[typing.List[FirewallRulesFirewallRule], IResolvable]
+firewall_rule_input: typing.Union[IResolvable, typing.List[FirewallRulesFirewallRule]]
 ```
 
-- *Type:* typing.Union[typing.List[<a href="#@cdktf/provider-upcloud.firewallRules.FirewallRulesFirewallRule">FirewallRulesFirewallRule</a>], cdktf.IResolvable]
+- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-upcloud.firewallRules.FirewallRulesFirewallRule">FirewallRulesFirewallRule</a>]]
 
 ---
 
@@ -733,7 +733,7 @@ firewallRules.FirewallRulesConfig(
   lifecycle: TerraformResourceLifecycle = None,
   provider: TerraformProvider = None,
   provisioners: typing.List[typing.Union[FileProvisioner, LocalExecProvisioner, RemoteExecProvisioner]] = None,
-  firewall_rule: typing.Union[typing.List[FirewallRulesFirewallRule], IResolvable],
+  firewall_rule: typing.Union[IResolvable, typing.List[FirewallRulesFirewallRule]],
   server_id: str,
   id: str = None
 )
@@ -750,7 +750,7 @@ firewallRules.FirewallRulesConfig(
 | <code><a href="#@cdktf/provider-upcloud.firewallRules.FirewallRulesConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.firewallRules.FirewallRulesConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.firewallRules.FirewallRulesConfig.property.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-upcloud.firewallRules.FirewallRulesConfig.property.firewallRule">firewall_rule</a></code> | <code>typing.Union[typing.List[<a href="#@cdktf/provider-upcloud.firewallRules.FirewallRulesFirewallRule">FirewallRulesFirewallRule</a>], cdktf.IResolvable]</code> | firewall_rule block. |
+| <code><a href="#@cdktf/provider-upcloud.firewallRules.FirewallRulesConfig.property.firewallRule">firewall_rule</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-upcloud.firewallRules.FirewallRulesFirewallRule">FirewallRulesFirewallRule</a>]]</code> | firewall_rule block. |
 | <code><a href="#@cdktf/provider-upcloud.firewallRules.FirewallRulesConfig.property.serverId">server_id</a></code> | <code>str</code> | The unique id of the server to be protected the firewall rules. |
 | <code><a href="#@cdktf/provider-upcloud.firewallRules.FirewallRulesConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/2.11.0/docs/resources/firewall_rules#id FirewallRules#id}. |
 
@@ -829,10 +829,10 @@ provisioners: typing.List[typing.Union[FileProvisioner, LocalExecProvisioner, Re
 ##### `firewall_rule`<sup>Required</sup> <a name="firewall_rule" id="@cdktf/provider-upcloud.firewallRules.FirewallRulesConfig.property.firewallRule"></a>
 
 ```python
-firewall_rule: typing.Union[typing.List[FirewallRulesFirewallRule], IResolvable]
+firewall_rule: typing.Union[IResolvable, typing.List[FirewallRulesFirewallRule]]
 ```
 
-- *Type:* typing.Union[typing.List[<a href="#@cdktf/provider-upcloud.firewallRules.FirewallRulesFirewallRule">FirewallRulesFirewallRule</a>], cdktf.IResolvable]
+- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-upcloud.firewallRules.FirewallRulesFirewallRule">FirewallRulesFirewallRule</a>]]
 
 firewall_rule block.
 
@@ -1225,7 +1225,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-upcloud.firewallRules.FirewallRulesFirewallRuleList.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-upcloud.firewallRules.FirewallRulesFirewallRuleList.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-upcloud.firewallRules.FirewallRulesFirewallRuleList.property.internalValue">internal_value</a></code> | <code>typing.Union[typing.List[<a href="#@cdktf/provider-upcloud.firewallRules.FirewallRulesFirewallRule">FirewallRulesFirewallRule</a>], cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-upcloud.firewallRules.FirewallRulesFirewallRuleList.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-upcloud.firewallRules.FirewallRulesFirewallRule">FirewallRulesFirewallRule</a>]]</code> | *No description.* |
 
 ---
 
@@ -1256,10 +1256,10 @@ fqn: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-upcloud.firewallRules.FirewallRulesFirewallRuleList.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[typing.List[FirewallRulesFirewallRule], IResolvable]
+internal_value: typing.Union[IResolvable, typing.List[FirewallRulesFirewallRule]]
 ```
 
-- *Type:* typing.Union[typing.List[<a href="#@cdktf/provider-upcloud.firewallRules.FirewallRulesFirewallRule">FirewallRulesFirewallRule</a>], cdktf.IResolvable]
+- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-upcloud.firewallRules.FirewallRulesFirewallRule">FirewallRulesFirewallRule</a>]]
 
 ---
 

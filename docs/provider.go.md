@@ -13,7 +13,7 @@ Represents a {@link https://registry.terraform.io/providers/upcloudltd/upcloud/2
 #### Initializers <a name="Initializers" id="@cdktf/provider-upcloud.provider.UpcloudProvider.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v7/provider"
+import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v8/provider"
 
 provider.NewUpcloudProvider(scope Construct, id *string, config UpcloudProviderConfig) UpcloudProvider
 ```
@@ -182,7 +182,7 @@ func ResetUsername()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-upcloud.provider.UpcloudProvider.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v7/provider"
+import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v8/provider"
 
 provider.UpcloudProvider_IsConstruct(x interface{}) *bool
 ```
@@ -214,7 +214,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-upcloud.provider.UpcloudProvider.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v7/provider"
+import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v8/provider"
 
 provider.UpcloudProvider_IsTerraformElement(x interface{}) *bool
 ```
@@ -228,7 +228,7 @@ provider.UpcloudProvider_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformProvider` <a name="IsTerraformProvider" id="@cdktf/provider-upcloud.provider.UpcloudProvider.isTerraformProvider"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v7/provider"
+import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v8/provider"
 
 provider.UpcloudProvider_IsTerraformProvider(x interface{}) *bool
 ```
@@ -493,7 +493,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-upcloud.provider.UpcloudProviderConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v7/provider"
+import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v8/provider"
 
 &provider.UpcloudProviderConfig {
 	Alias: *string,
