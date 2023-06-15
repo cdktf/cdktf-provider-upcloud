@@ -13,7 +13,7 @@ Represents a {@link https://registry.terraform.io/providers/upcloudltd/upcloud/2
 #### Initializers <a name="Initializers" id="@cdktf/provider-upcloud.dataUpcloudZones.DataUpcloudZones.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v6/dataupcloudzones"
+import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v7/dataupcloudzones"
 
 dataupcloudzones.NewDataUpcloudZones(scope Construct, id *string, config DataUpcloudZonesConfig) DataUpcloudZones
 ```
@@ -284,7 +284,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-upcloud.dataUpcloudZones.DataUpcloudZones.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v6/dataupcloudzones"
+import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v7/dataupcloudzones"
 
 dataupcloudzones.DataUpcloudZones_IsConstruct(x interface{}) *bool
 ```
@@ -316,7 +316,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-upcloud.dataUpcloudZones.DataUpcloudZones.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v6/dataupcloudzones"
+import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v7/dataupcloudzones"
 
 dataupcloudzones.DataUpcloudZones_IsTerraformElement(x interface{}) *bool
 ```
@@ -330,7 +330,7 @@ dataupcloudzones.DataUpcloudZones_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-upcloud.dataUpcloudZones.DataUpcloudZones.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v6/dataupcloudzones"
+import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v7/dataupcloudzones"
 
 dataupcloudzones.DataUpcloudZones_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -562,7 +562,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-upcloud.dataUpcloudZones.DataUpcloudZonesConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v6/dataupcloudzones"
+import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v7/dataupcloudzones"
 
 &dataupcloudzones.DataUpcloudZonesConfig {
 	Connection: interface{},
