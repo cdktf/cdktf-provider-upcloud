@@ -777,7 +777,7 @@ result in all servers in the group being placed on separate compute hosts. The v
  "strict" refers to strict policy doesn't allow servers in the same server group to be on the same host
  "yes" refers to best-effort policy and tries to put servers on different hosts, but this is not guaranteed
  "no" refers to having no policy and thus no affect server host affinity
-		
+	
 To verify if the anti-affinity policies are met by requesting a server group details from API. For more information
 please see UpCloud API documentation on server groups.
 
