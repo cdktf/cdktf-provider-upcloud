@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/upcloudltd/upcloud/2.11.0/docs/resources/kubernetes_cluster
+// https://registry.terraform.io/providers/upcloudltd/upcloud/2.12.0/docs/resources/kubernetes_cluster
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,7 +8,7 @@ import * as cdktf from 'cdktf';
 
 export interface KubernetesClusterConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/2.11.0/docs/resources/kubernetes_cluster#id KubernetesCluster#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/2.12.0/docs/resources/kubernetes_cluster#id KubernetesCluster#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -21,38 +16,38 @@ export interface KubernetesClusterConfig extends cdktf.TerraformMetaArguments {
   readonly id?: string;
   /**
   * Cluster name. Needs to be unique within the account.
-  * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/2.11.0/docs/resources/kubernetes_cluster#name KubernetesCluster#name}
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/2.12.0/docs/resources/kubernetes_cluster#name KubernetesCluster#name}
   */
   readonly name: string;
   /**
   * Network ID for the cluster to run in.
-  * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/2.11.0/docs/resources/kubernetes_cluster#network KubernetesCluster#network}
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/2.12.0/docs/resources/kubernetes_cluster#network KubernetesCluster#network}
   */
   readonly network: string;
   /**
   * The pricing plan used for the cluster. Default plan is `development`. You can list available plans with `upctl kubernetes plans`.
-  * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/2.11.0/docs/resources/kubernetes_cluster#plan KubernetesCluster#plan}
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/2.12.0/docs/resources/kubernetes_cluster#plan KubernetesCluster#plan}
   */
   readonly plan?: string;
   /**
   * Enable private node groups. Private node groups requires a network that is routed through NAT gateway.
-  * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/2.11.0/docs/resources/kubernetes_cluster#private_node_groups KubernetesCluster#private_node_groups}
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/2.12.0/docs/resources/kubernetes_cluster#private_node_groups KubernetesCluster#private_node_groups}
   */
   readonly privateNodeGroups?: boolean | cdktf.IResolvable;
   /**
   * Zone in which the Kubernetes cluster will be hosted, e.g. `de-fra1`. You can list available zones with `upctl zone list`.
-  * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/2.11.0/docs/resources/kubernetes_cluster#zone KubernetesCluster#zone}
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/2.12.0/docs/resources/kubernetes_cluster#zone KubernetesCluster#zone}
   */
   readonly zone: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/upcloudltd/upcloud/2.11.0/docs/resources/kubernetes_cluster upcloud_kubernetes_cluster}
+* Represents a {@link https://registry.terraform.io/providers/upcloudltd/upcloud/2.12.0/docs/resources/kubernetes_cluster upcloud_kubernetes_cluster}
 */
 export class KubernetesCluster extends cdktf.TerraformResource {
 
@@ -66,7 +61,7 @@ export class KubernetesCluster extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/upcloudltd/upcloud/2.11.0/docs/resources/kubernetes_cluster upcloud_kubernetes_cluster} Resource
+  * Create a new {@link https://registry.terraform.io/providers/upcloudltd/upcloud/2.12.0/docs/resources/kubernetes_cluster upcloud_kubernetes_cluster} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -77,7 +72,7 @@ export class KubernetesCluster extends cdktf.TerraformResource {
       terraformResourceType: 'upcloud_kubernetes_cluster',
       terraformGeneratorMetadata: {
         providerName: 'upcloud',
-        providerVersion: '2.11.0',
+        providerVersion: '2.12.0',
         providerVersionConstraint: '~> 2.4'
       },
       provider: config.provider,

@@ -1,6 +1,6 @@
 # `upcloud_managed_database_opensearch`
 
-Refer to the Terraform Registory for docs: [`upcloud_managed_database_opensearch`](https://registry.terraform.io/providers/upcloudltd/upcloud/2.11.0/docs/resources/managed_database_opensearch).
+Refer to the Terraform Registory for docs: [`upcloud_managed_database_opensearch`](https://registry.terraform.io/providers/upcloudltd/upcloud/2.12.0/docs/resources/managed_database_opensearch).
 
 # `managedDatabaseOpensearch` Submodule <a name="`managedDatabaseOpensearch` Submodule" id="@cdktf/provider-upcloud.managedDatabaseOpensearch"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`upcloud_managed_database_opensearch
 
 ### ManagedDatabaseOpensearch <a name="ManagedDatabaseOpensearch" id="@cdktf/provider-upcloud.managedDatabaseOpensearch.ManagedDatabaseOpensearch"></a>
 
-Represents a {@link https://registry.terraform.io/providers/upcloudltd/upcloud/2.11.0/docs/resources/managed_database_opensearch upcloud_managed_database_opensearch}.
+Represents a {@link https://registry.terraform.io/providers/upcloudltd/upcloud/2.12.0/docs/resources/managed_database_opensearch upcloud_managed_database_opensearch}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-upcloud.managedDatabaseOpensearch.ManagedDatabaseOpensearch.Initializer"></a>
 
@@ -55,7 +55,7 @@ managedDatabaseOpensearch.ManagedDatabaseOpensearch(
 | <code><a href="#@cdktf/provider-upcloud.managedDatabaseOpensearch.ManagedDatabaseOpensearch.Initializer.parameter.zone">zone</a></code> | <code>str</code> | Zone where the instance resides, e.g. `de-fra1`. You can list available zones with `upctl zone list`. |
 | <code><a href="#@cdktf/provider-upcloud.managedDatabaseOpensearch.ManagedDatabaseOpensearch.Initializer.parameter.accessControl">access_control</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Enables users access control for OpenSearch service. |
 | <code><a href="#@cdktf/provider-upcloud.managedDatabaseOpensearch.ManagedDatabaseOpensearch.Initializer.parameter.extendedAccessControl">extended_access_control</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Grant access to top-level `_mget`, `_msearch` and `_bulk` APIs. |
-| <code><a href="#@cdktf/provider-upcloud.managedDatabaseOpensearch.ManagedDatabaseOpensearch.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/2.11.0/docs/resources/managed_database_opensearch#id ManagedDatabaseOpensearch#id}. |
+| <code><a href="#@cdktf/provider-upcloud.managedDatabaseOpensearch.ManagedDatabaseOpensearch.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/2.12.0/docs/resources/managed_database_opensearch#id ManagedDatabaseOpensearch#id}. |
 | <code><a href="#@cdktf/provider-upcloud.managedDatabaseOpensearch.ManagedDatabaseOpensearch.Initializer.parameter.maintenanceWindowDow">maintenance_window_dow</a></code> | <code>str</code> | Maintenance window day of week. Lower case weekday name (monday, tuesday, ...). |
 | <code><a href="#@cdktf/provider-upcloud.managedDatabaseOpensearch.ManagedDatabaseOpensearch.Initializer.parameter.maintenanceWindowTime">maintenance_window_time</a></code> | <code>str</code> | Maintenance window UTC time in hh:mm:ss format. |
 | <code><a href="#@cdktf/provider-upcloud.managedDatabaseOpensearch.ManagedDatabaseOpensearch.Initializer.parameter.powered">powered</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | The administrative power state of the service. |
@@ -132,7 +132,7 @@ Name of the service.
 
 The name is used as a prefix for the logical hostname. Must be unique within an account
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/2.11.0/docs/resources/managed_database_opensearch#name ManagedDatabaseOpensearch#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/2.12.0/docs/resources/managed_database_opensearch#name ManagedDatabaseOpensearch#name}
 
 ---
 
@@ -144,7 +144,7 @@ Service plan to use.
 
 This determines how much resources the instance will have. You can list available plans with `upctl database plans <type>`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/2.11.0/docs/resources/managed_database_opensearch#plan ManagedDatabaseOpensearch#plan}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/2.12.0/docs/resources/managed_database_opensearch#plan ManagedDatabaseOpensearch#plan}
 
 ---
 
@@ -154,7 +154,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upclo
 
 Zone where the instance resides, e.g. `de-fra1`. You can list available zones with `upctl zone list`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/2.11.0/docs/resources/managed_database_opensearch#zone ManagedDatabaseOpensearch#zone}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/2.12.0/docs/resources/managed_database_opensearch#zone ManagedDatabaseOpensearch#zone}
 
 ---
 
@@ -166,7 +166,7 @@ Enables users access control for OpenSearch service.
 
 User access control rules will only be enforced if this attribute is enabled.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/2.11.0/docs/resources/managed_database_opensearch#access_control ManagedDatabaseOpensearch#access_control}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/2.12.0/docs/resources/managed_database_opensearch#access_control ManagedDatabaseOpensearch#access_control}
 
 ---
 
@@ -178,7 +178,7 @@ Grant access to top-level `_mget`, `_msearch` and `_bulk` APIs.
 
 Users are limited to perform operations on indices based on the user-specific access control rules.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/2.11.0/docs/resources/managed_database_opensearch#extended_access_control ManagedDatabaseOpensearch#extended_access_control}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/2.12.0/docs/resources/managed_database_opensearch#extended_access_control ManagedDatabaseOpensearch#extended_access_control}
 
 ---
 
@@ -186,7 +186,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upclo
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/2.11.0/docs/resources/managed_database_opensearch#id ManagedDatabaseOpensearch#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/2.12.0/docs/resources/managed_database_opensearch#id ManagedDatabaseOpensearch#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -199,7 +199,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 Maintenance window day of week. Lower case weekday name (monday, tuesday, ...).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/2.11.0/docs/resources/managed_database_opensearch#maintenance_window_dow ManagedDatabaseOpensearch#maintenance_window_dow}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/2.12.0/docs/resources/managed_database_opensearch#maintenance_window_dow ManagedDatabaseOpensearch#maintenance_window_dow}
 
 ---
 
@@ -209,7 +209,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upclo
 
 Maintenance window UTC time in hh:mm:ss format.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/2.11.0/docs/resources/managed_database_opensearch#maintenance_window_time ManagedDatabaseOpensearch#maintenance_window_time}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/2.12.0/docs/resources/managed_database_opensearch#maintenance_window_time ManagedDatabaseOpensearch#maintenance_window_time}
 
 ---
 
@@ -219,7 +219,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upclo
 
 The administrative power state of the service.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/2.11.0/docs/resources/managed_database_opensearch#powered ManagedDatabaseOpensearch#powered}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/2.12.0/docs/resources/managed_database_opensearch#powered ManagedDatabaseOpensearch#powered}
 
 ---
 
@@ -229,7 +229,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upclo
 
 properties block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/2.11.0/docs/resources/managed_database_opensearch#properties ManagedDatabaseOpensearch#properties}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/2.12.0/docs/resources/managed_database_opensearch#properties ManagedDatabaseOpensearch#properties}
 
 ---
 
@@ -239,7 +239,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upclo
 
 Title of a managed database instance.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/2.11.0/docs/resources/managed_database_opensearch#title ManagedDatabaseOpensearch#title}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/2.12.0/docs/resources/managed_database_opensearch#title ManagedDatabaseOpensearch#title}
 
 ---
 
@@ -502,7 +502,7 @@ def put_properties(
 
 Automatic utility network IP Filter.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/2.11.0/docs/resources/managed_database_opensearch#automatic_utility_network_ip_filter ManagedDatabaseOpensearch#automatic_utility_network_ip_filter}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/2.12.0/docs/resources/managed_database_opensearch#automatic_utility_network_ip_filter ManagedDatabaseOpensearch#automatic_utility_network_ip_filter}
 
 ---
 
@@ -512,7 +512,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upclo
 
 IP filter.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/2.11.0/docs/resources/managed_database_opensearch#ip_filter ManagedDatabaseOpensearch#ip_filter}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/2.12.0/docs/resources/managed_database_opensearch#ip_filter ManagedDatabaseOpensearch#ip_filter}
 
 ---
 
@@ -522,7 +522,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upclo
 
 migration block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/2.11.0/docs/resources/managed_database_opensearch#migration ManagedDatabaseOpensearch#migration}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/2.12.0/docs/resources/managed_database_opensearch#migration ManagedDatabaseOpensearch#migration}
 
 ---
 
@@ -532,7 +532,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upclo
 
 Public access allows connections to your Managed Database services via the public internet.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/2.11.0/docs/resources/managed_database_opensearch#public_access ManagedDatabaseOpensearch#public_access}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/2.12.0/docs/resources/managed_database_opensearch#public_access ManagedDatabaseOpensearch#public_access}
 
 ---
 
@@ -542,7 +542,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upclo
 
 OpenSearch major version.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/2.11.0/docs/resources/managed_database_opensearch#version ManagedDatabaseOpensearch#version}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/2.12.0/docs/resources/managed_database_opensearch#version ManagedDatabaseOpensearch#version}
 
 ---
 
@@ -1261,7 +1261,7 @@ managedDatabaseOpensearch.ManagedDatabaseOpensearchConfig(
 | <code><a href="#@cdktf/provider-upcloud.managedDatabaseOpensearch.ManagedDatabaseOpensearchConfig.property.zone">zone</a></code> | <code>str</code> | Zone where the instance resides, e.g. `de-fra1`. You can list available zones with `upctl zone list`. |
 | <code><a href="#@cdktf/provider-upcloud.managedDatabaseOpensearch.ManagedDatabaseOpensearchConfig.property.accessControl">access_control</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Enables users access control for OpenSearch service. |
 | <code><a href="#@cdktf/provider-upcloud.managedDatabaseOpensearch.ManagedDatabaseOpensearchConfig.property.extendedAccessControl">extended_access_control</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Grant access to top-level `_mget`, `_msearch` and `_bulk` APIs. |
-| <code><a href="#@cdktf/provider-upcloud.managedDatabaseOpensearch.ManagedDatabaseOpensearchConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/2.11.0/docs/resources/managed_database_opensearch#id ManagedDatabaseOpensearch#id}. |
+| <code><a href="#@cdktf/provider-upcloud.managedDatabaseOpensearch.ManagedDatabaseOpensearchConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/2.12.0/docs/resources/managed_database_opensearch#id ManagedDatabaseOpensearch#id}. |
 | <code><a href="#@cdktf/provider-upcloud.managedDatabaseOpensearch.ManagedDatabaseOpensearchConfig.property.maintenanceWindowDow">maintenance_window_dow</a></code> | <code>str</code> | Maintenance window day of week. Lower case weekday name (monday, tuesday, ...). |
 | <code><a href="#@cdktf/provider-upcloud.managedDatabaseOpensearch.ManagedDatabaseOpensearchConfig.property.maintenanceWindowTime">maintenance_window_time</a></code> | <code>str</code> | Maintenance window UTC time in hh:mm:ss format. |
 | <code><a href="#@cdktf/provider-upcloud.managedDatabaseOpensearch.ManagedDatabaseOpensearchConfig.property.powered">powered</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | The administrative power state of the service. |
@@ -1352,7 +1352,7 @@ Name of the service.
 
 The name is used as a prefix for the logical hostname. Must be unique within an account
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/2.11.0/docs/resources/managed_database_opensearch#name ManagedDatabaseOpensearch#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/2.12.0/docs/resources/managed_database_opensearch#name ManagedDatabaseOpensearch#name}
 
 ---
 
@@ -1368,7 +1368,7 @@ Service plan to use.
 
 This determines how much resources the instance will have. You can list available plans with `upctl database plans <type>`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/2.11.0/docs/resources/managed_database_opensearch#plan ManagedDatabaseOpensearch#plan}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/2.12.0/docs/resources/managed_database_opensearch#plan ManagedDatabaseOpensearch#plan}
 
 ---
 
@@ -1382,7 +1382,7 @@ zone: str
 
 Zone where the instance resides, e.g. `de-fra1`. You can list available zones with `upctl zone list`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/2.11.0/docs/resources/managed_database_opensearch#zone ManagedDatabaseOpensearch#zone}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/2.12.0/docs/resources/managed_database_opensearch#zone ManagedDatabaseOpensearch#zone}
 
 ---
 
@@ -1398,7 +1398,7 @@ Enables users access control for OpenSearch service.
 
 User access control rules will only be enforced if this attribute is enabled.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/2.11.0/docs/resources/managed_database_opensearch#access_control ManagedDatabaseOpensearch#access_control}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/2.12.0/docs/resources/managed_database_opensearch#access_control ManagedDatabaseOpensearch#access_control}
 
 ---
 
@@ -1414,7 +1414,7 @@ Grant access to top-level `_mget`, `_msearch` and `_bulk` APIs.
 
 Users are limited to perform operations on indices based on the user-specific access control rules.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/2.11.0/docs/resources/managed_database_opensearch#extended_access_control ManagedDatabaseOpensearch#extended_access_control}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/2.12.0/docs/resources/managed_database_opensearch#extended_access_control ManagedDatabaseOpensearch#extended_access_control}
 
 ---
 
@@ -1426,7 +1426,7 @@ id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/2.11.0/docs/resources/managed_database_opensearch#id ManagedDatabaseOpensearch#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/2.12.0/docs/resources/managed_database_opensearch#id ManagedDatabaseOpensearch#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1443,7 +1443,7 @@ maintenance_window_dow: str
 
 Maintenance window day of week. Lower case weekday name (monday, tuesday, ...).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/2.11.0/docs/resources/managed_database_opensearch#maintenance_window_dow ManagedDatabaseOpensearch#maintenance_window_dow}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/2.12.0/docs/resources/managed_database_opensearch#maintenance_window_dow ManagedDatabaseOpensearch#maintenance_window_dow}
 
 ---
 
@@ -1457,7 +1457,7 @@ maintenance_window_time: str
 
 Maintenance window UTC time in hh:mm:ss format.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/2.11.0/docs/resources/managed_database_opensearch#maintenance_window_time ManagedDatabaseOpensearch#maintenance_window_time}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/2.12.0/docs/resources/managed_database_opensearch#maintenance_window_time ManagedDatabaseOpensearch#maintenance_window_time}
 
 ---
 
@@ -1471,7 +1471,7 @@ powered: typing.Union[bool, IResolvable]
 
 The administrative power state of the service.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/2.11.0/docs/resources/managed_database_opensearch#powered ManagedDatabaseOpensearch#powered}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/2.12.0/docs/resources/managed_database_opensearch#powered ManagedDatabaseOpensearch#powered}
 
 ---
 
@@ -1485,7 +1485,7 @@ properties: ManagedDatabaseOpensearchProperties
 
 properties block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/2.11.0/docs/resources/managed_database_opensearch#properties ManagedDatabaseOpensearch#properties}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/2.12.0/docs/resources/managed_database_opensearch#properties ManagedDatabaseOpensearch#properties}
 
 ---
 
@@ -1499,7 +1499,7 @@ title: str
 
 Title of a managed database instance.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/2.11.0/docs/resources/managed_database_opensearch#title ManagedDatabaseOpensearch#title}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/2.12.0/docs/resources/managed_database_opensearch#title ManagedDatabaseOpensearch#title}
 
 ---
 
@@ -1552,7 +1552,7 @@ automatic_utility_network_ip_filter: typing.Union[bool, IResolvable]
 
 Automatic utility network IP Filter.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/2.11.0/docs/resources/managed_database_opensearch#automatic_utility_network_ip_filter ManagedDatabaseOpensearch#automatic_utility_network_ip_filter}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/2.12.0/docs/resources/managed_database_opensearch#automatic_utility_network_ip_filter ManagedDatabaseOpensearch#automatic_utility_network_ip_filter}
 
 ---
 
@@ -1566,7 +1566,7 @@ ip_filter: typing.List[str]
 
 IP filter.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/2.11.0/docs/resources/managed_database_opensearch#ip_filter ManagedDatabaseOpensearch#ip_filter}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/2.12.0/docs/resources/managed_database_opensearch#ip_filter ManagedDatabaseOpensearch#ip_filter}
 
 ---
 
@@ -1580,7 +1580,7 @@ migration: ManagedDatabaseOpensearchPropertiesMigration
 
 migration block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/2.11.0/docs/resources/managed_database_opensearch#migration ManagedDatabaseOpensearch#migration}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/2.12.0/docs/resources/managed_database_opensearch#migration ManagedDatabaseOpensearch#migration}
 
 ---
 
@@ -1594,7 +1594,7 @@ public_access: typing.Union[bool, IResolvable]
 
 Public access allows connections to your Managed Database services via the public internet.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/2.11.0/docs/resources/managed_database_opensearch#public_access ManagedDatabaseOpensearch#public_access}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/2.12.0/docs/resources/managed_database_opensearch#public_access ManagedDatabaseOpensearch#public_access}
 
 ---
 
@@ -1608,7 +1608,7 @@ version: str
 
 OpenSearch major version.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/2.11.0/docs/resources/managed_database_opensearch#version ManagedDatabaseOpensearch#version}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/2.12.0/docs/resources/managed_database_opensearch#version ManagedDatabaseOpensearch#version}
 
 ---
 
@@ -1654,7 +1654,7 @@ dbname: str
 
 Database name for bootstrapping the initial connection.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/2.11.0/docs/resources/managed_database_opensearch#dbname ManagedDatabaseOpensearch#dbname}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/2.12.0/docs/resources/managed_database_opensearch#dbname ManagedDatabaseOpensearch#dbname}
 
 ---
 
@@ -1668,7 +1668,7 @@ host: str
 
 Hostname or IP address of the server where to migrate data from.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/2.11.0/docs/resources/managed_database_opensearch#host ManagedDatabaseOpensearch#host}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/2.12.0/docs/resources/managed_database_opensearch#host ManagedDatabaseOpensearch#host}
 
 ---
 
@@ -1682,7 +1682,7 @@ ignore_dbs: str
 
 Comma-separated list of databases, which should be ignored during migration (supported by MySQL only at the moment).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/2.11.0/docs/resources/managed_database_opensearch#ignore_dbs ManagedDatabaseOpensearch#ignore_dbs}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/2.12.0/docs/resources/managed_database_opensearch#ignore_dbs ManagedDatabaseOpensearch#ignore_dbs}
 
 ---
 
@@ -1696,7 +1696,7 @@ password: str
 
 Password for authentication with the server where to migrate data from.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/2.11.0/docs/resources/managed_database_opensearch#password ManagedDatabaseOpensearch#password}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/2.12.0/docs/resources/managed_database_opensearch#password ManagedDatabaseOpensearch#password}
 
 ---
 
@@ -1710,7 +1710,7 @@ port: typing.Union[int, float]
 
 Port number of the server where to migrate data from.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/2.11.0/docs/resources/managed_database_opensearch#port ManagedDatabaseOpensearch#port}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/2.12.0/docs/resources/managed_database_opensearch#port ManagedDatabaseOpensearch#port}
 
 ---
 
@@ -1724,7 +1724,7 @@ ssl: typing.Union[bool, IResolvable]
 
 The server where to migrate data from is secured with SSL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/2.11.0/docs/resources/managed_database_opensearch#ssl ManagedDatabaseOpensearch#ssl}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/2.12.0/docs/resources/managed_database_opensearch#ssl ManagedDatabaseOpensearch#ssl}
 
 ---
 
@@ -1738,7 +1738,7 @@ username: str
 
 User name for authentication with the server where to migrate data from.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/2.11.0/docs/resources/managed_database_opensearch#username ManagedDatabaseOpensearch#username}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/2.12.0/docs/resources/managed_database_opensearch#username ManagedDatabaseOpensearch#username}
 
 ---
 
@@ -3431,7 +3431,7 @@ def put_migration(
 
 Database name for bootstrapping the initial connection.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/2.11.0/docs/resources/managed_database_opensearch#dbname ManagedDatabaseOpensearch#dbname}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/2.12.0/docs/resources/managed_database_opensearch#dbname ManagedDatabaseOpensearch#dbname}
 
 ---
 
@@ -3441,7 +3441,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upclo
 
 Hostname or IP address of the server where to migrate data from.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/2.11.0/docs/resources/managed_database_opensearch#host ManagedDatabaseOpensearch#host}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/2.12.0/docs/resources/managed_database_opensearch#host ManagedDatabaseOpensearch#host}
 
 ---
 
@@ -3451,7 +3451,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upclo
 
 Comma-separated list of databases, which should be ignored during migration (supported by MySQL only at the moment).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/2.11.0/docs/resources/managed_database_opensearch#ignore_dbs ManagedDatabaseOpensearch#ignore_dbs}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/2.12.0/docs/resources/managed_database_opensearch#ignore_dbs ManagedDatabaseOpensearch#ignore_dbs}
 
 ---
 
@@ -3461,7 +3461,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upclo
 
 Password for authentication with the server where to migrate data from.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/2.11.0/docs/resources/managed_database_opensearch#password ManagedDatabaseOpensearch#password}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/2.12.0/docs/resources/managed_database_opensearch#password ManagedDatabaseOpensearch#password}
 
 ---
 
@@ -3471,7 +3471,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upclo
 
 Port number of the server where to migrate data from.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/2.11.0/docs/resources/managed_database_opensearch#port ManagedDatabaseOpensearch#port}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/2.12.0/docs/resources/managed_database_opensearch#port ManagedDatabaseOpensearch#port}
 
 ---
 
@@ -3481,7 +3481,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upclo
 
 The server where to migrate data from is secured with SSL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/2.11.0/docs/resources/managed_database_opensearch#ssl ManagedDatabaseOpensearch#ssl}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/2.12.0/docs/resources/managed_database_opensearch#ssl ManagedDatabaseOpensearch#ssl}
 
 ---
 
@@ -3491,7 +3491,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upclo
 
 User name for authentication with the server where to migrate data from.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/2.11.0/docs/resources/managed_database_opensearch#username ManagedDatabaseOpensearch#username}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/2.12.0/docs/resources/managed_database_opensearch#username ManagedDatabaseOpensearch#username}
 
 ---
 

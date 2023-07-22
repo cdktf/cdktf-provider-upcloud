@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/upcloudltd/upcloud/2.11.0/docs/resources/loadbalancer
+// https://registry.terraform.io/providers/upcloudltd/upcloud/2.12.0/docs/resources/loadbalancer
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -14,12 +9,12 @@ import * as cdktf from 'cdktf';
 export interface LoadbalancerConfig extends cdktf.TerraformMetaArguments {
   /**
   * The service configured status indicates the service's current intended status. Managed by the customer.
-  * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/2.11.0/docs/resources/loadbalancer#configured_status Loadbalancer#configured_status}
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/2.12.0/docs/resources/loadbalancer#configured_status Loadbalancer#configured_status}
   */
   readonly configuredStatus?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/2.11.0/docs/resources/loadbalancer#id Loadbalancer#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/2.12.0/docs/resources/loadbalancer#id Loadbalancer#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -27,38 +22,38 @@ export interface LoadbalancerConfig extends cdktf.TerraformMetaArguments {
   readonly id?: string;
   /**
   * Key-value pairs to classify the load balancer.
-  * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/2.11.0/docs/resources/loadbalancer#labels Loadbalancer#labels}
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/2.12.0/docs/resources/loadbalancer#labels Loadbalancer#labels}
   */
   readonly labels?: { [key: string]: string };
   /**
   * The name of the service must be unique within customer account.
-  * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/2.11.0/docs/resources/loadbalancer#name Loadbalancer#name}
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/2.12.0/docs/resources/loadbalancer#name Loadbalancer#name}
   */
   readonly name: string;
   /**
   * Private network UUID where traffic will be routed. Must reside in load balancer zone.
-  * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/2.11.0/docs/resources/loadbalancer#network Loadbalancer#network}
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/2.12.0/docs/resources/loadbalancer#network Loadbalancer#network}
   */
   readonly network?: string;
   /**
   * Plan which the service will have. You can list available loadbalancer plans with `upctl loadbalancer plans`
-  * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/2.11.0/docs/resources/loadbalancer#plan Loadbalancer#plan}
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/2.12.0/docs/resources/loadbalancer#plan Loadbalancer#plan}
   */
   readonly plan: string;
   /**
   * Zone in which the service will be hosted, e.g. `fi-hel1`. You can list available zones with `upctl zone list`.
-  * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/2.11.0/docs/resources/loadbalancer#zone Loadbalancer#zone}
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/2.12.0/docs/resources/loadbalancer#zone Loadbalancer#zone}
   */
   readonly zone: string;
   /**
   * networks block
-  * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/2.11.0/docs/resources/loadbalancer#networks Loadbalancer#networks}
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/2.12.0/docs/resources/loadbalancer#networks Loadbalancer#networks}
   */
   readonly networks?: LoadbalancerNetworks[] | cdktf.IResolvable;
 }
@@ -279,26 +274,26 @@ export class LoadbalancerNodesList extends cdktf.ComplexList {
 export interface LoadbalancerNetworks {
   /**
   * Network family. Currently only `IPv4` is supported.
-  * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/2.11.0/docs/resources/loadbalancer#family Loadbalancer#family}
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/2.12.0/docs/resources/loadbalancer#family Loadbalancer#family}
   */
   readonly family: string;
   /**
   * The name of the network must be unique within the service.
-  * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/2.11.0/docs/resources/loadbalancer#name Loadbalancer#name}
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/2.12.0/docs/resources/loadbalancer#name Loadbalancer#name}
   */
   readonly name: string;
   /**
   * Private network UUID. Required for private networks and must reside in loadbalancer zone. For public network the field should be omitted.
-  * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/2.11.0/docs/resources/loadbalancer#network Loadbalancer#network}
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/2.12.0/docs/resources/loadbalancer#network Loadbalancer#network}
   */
   readonly network?: string;
   /**
   * The type of the network. Only one public network can be attached and at least one private network must be attached.
-  * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/2.11.0/docs/resources/loadbalancer#type Loadbalancer#type}
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/2.12.0/docs/resources/loadbalancer#type Loadbalancer#type}
   */
   readonly type: string;
 }
@@ -465,7 +460,7 @@ export class LoadbalancerNetworksList extends cdktf.ComplexList {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/upcloudltd/upcloud/2.11.0/docs/resources/loadbalancer upcloud_loadbalancer}
+* Represents a {@link https://registry.terraform.io/providers/upcloudltd/upcloud/2.12.0/docs/resources/loadbalancer upcloud_loadbalancer}
 */
 export class Loadbalancer extends cdktf.TerraformResource {
 
@@ -479,7 +474,7 @@ export class Loadbalancer extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/upcloudltd/upcloud/2.11.0/docs/resources/loadbalancer upcloud_loadbalancer} Resource
+  * Create a new {@link https://registry.terraform.io/providers/upcloudltd/upcloud/2.12.0/docs/resources/loadbalancer upcloud_loadbalancer} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -490,7 +485,7 @@ export class Loadbalancer extends cdktf.TerraformResource {
       terraformResourceType: 'upcloud_loadbalancer',
       terraformGeneratorMetadata: {
         providerName: 'upcloud',
-        providerVersion: '2.11.0',
+        providerVersion: '2.12.0',
         providerVersionConstraint: '~> 2.4'
       },
       provider: config.provider,

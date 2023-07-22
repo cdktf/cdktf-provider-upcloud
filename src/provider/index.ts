@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/upcloudltd/upcloud/2.11.0/docs
+// https://registry.terraform.io/providers/upcloudltd/upcloud/2.12.0/docs
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -14,44 +9,44 @@ import * as cdktf from 'cdktf';
 export interface UpcloudProviderConfig {
   /**
   * Password for UpCloud API user. Can also be configured using the `UPCLOUD_PASSWORD` environment variable.
-  * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/2.11.0/docs#password UpcloudProvider#password}
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/2.12.0/docs#password UpcloudProvider#password}
   */
   readonly password?: string;
   /**
   * Maximum number of retries
-  * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/2.11.0/docs#retry_max UpcloudProvider#retry_max}
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/2.12.0/docs#retry_max UpcloudProvider#retry_max}
   */
   readonly retryMax?: number;
   /**
   * Maximum time to wait between retries
-  * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/2.11.0/docs#retry_wait_max_sec UpcloudProvider#retry_wait_max_sec}
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/2.12.0/docs#retry_wait_max_sec UpcloudProvider#retry_wait_max_sec}
   */
   readonly retryWaitMaxSec?: number;
   /**
   * Minimum time to wait between retries
-  * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/2.11.0/docs#retry_wait_min_sec UpcloudProvider#retry_wait_min_sec}
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/2.12.0/docs#retry_wait_min_sec UpcloudProvider#retry_wait_min_sec}
   */
   readonly retryWaitMinSec?: number;
   /**
   * UpCloud username with API access. Can also be configured using the `UPCLOUD_USERNAME` environment variable.
-  * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/2.11.0/docs#username UpcloudProvider#username}
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/2.12.0/docs#username UpcloudProvider#username}
   */
   readonly username?: string;
   /**
   * Alias name
-  * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/2.11.0/docs#alias UpcloudProvider#alias}
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/2.12.0/docs#alias UpcloudProvider#alias}
   */
   readonly alias?: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/upcloudltd/upcloud/2.11.0/docs upcloud}
+* Represents a {@link https://registry.terraform.io/providers/upcloudltd/upcloud/2.12.0/docs upcloud}
 */
 export class UpcloudProvider extends cdktf.TerraformProvider {
 
@@ -65,7 +60,7 @@ export class UpcloudProvider extends cdktf.TerraformProvider {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/upcloudltd/upcloud/2.11.0/docs upcloud} Resource
+  * Create a new {@link https://registry.terraform.io/providers/upcloudltd/upcloud/2.12.0/docs upcloud} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -76,7 +71,7 @@ export class UpcloudProvider extends cdktf.TerraformProvider {
       terraformResourceType: 'upcloud',
       terraformGeneratorMetadata: {
         providerName: 'upcloud',
-        providerVersion: '2.11.0',
+        providerVersion: '2.12.0',
         providerVersionConstraint: '~> 2.4'
       },
       terraformProviderSource: 'UpCloudLtd/upcloud'
