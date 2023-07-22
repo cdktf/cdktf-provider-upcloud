@@ -1,6 +1,6 @@
 # `upcloud_router`
 
-Refer to the Terraform Registory for docs: [`upcloud_router`](https://registry.terraform.io/providers/upcloudltd/upcloud/2.11.0/docs/resources/router).
+Refer to the Terraform Registory for docs: [`upcloud_router`](https://registry.terraform.io/providers/upcloudltd/upcloud/2.12.0/docs/resources/router).
 
 # `router` Submodule <a name="`router` Submodule" id="@cdktf/provider-upcloud.router"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`upcloud_router`](https://registry.t
 
 ### Router <a name="Router" id="@cdktf/provider-upcloud.router.Router"></a>
 
-Represents a {@link https://registry.terraform.io/providers/upcloudltd/upcloud/2.11.0/docs/resources/router upcloud_router}.
+Represents a {@link https://registry.terraform.io/providers/upcloudltd/upcloud/2.12.0/docs/resources/router upcloud_router}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-upcloud.router.Router.Initializer"></a>
 
@@ -42,7 +42,7 @@ router.Router(
 | <code><a href="#@cdktf/provider-upcloud.router.Router.Initializer.parameter.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.router.Router.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.router.Router.Initializer.parameter.name">name</a></code> | <code>str</code> | Name of the router. |
-| <code><a href="#@cdktf/provider-upcloud.router.Router.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/2.11.0/docs/resources/router#id Router#id}. |
+| <code><a href="#@cdktf/provider-upcloud.router.Router.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/2.12.0/docs/resources/router#id Router#id}. |
 
 ---
 
@@ -112,7 +112,7 @@ Must be unique amongst siblings in the same scope
 
 Name of the router.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/2.11.0/docs/resources/router#name Router#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/2.12.0/docs/resources/router#name Router#name}
 
 ---
 
@@ -120,7 +120,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upclo
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/2.11.0/docs/resources/router#id Router#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/2.12.0/docs/resources/router#id Router#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -723,7 +723,7 @@ router.RouterConfig(
 | <code><a href="#@cdktf/provider-upcloud.router.RouterConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.router.RouterConfig.property.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.router.RouterConfig.property.name">name</a></code> | <code>str</code> | Name of the router. |
-| <code><a href="#@cdktf/provider-upcloud.router.RouterConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/2.11.0/docs/resources/router#id Router#id}. |
+| <code><a href="#@cdktf/provider-upcloud.router.RouterConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/2.12.0/docs/resources/router#id Router#id}. |
 
 ---
 
@@ -807,7 +807,7 @@ name: str
 
 Name of the router.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/2.11.0/docs/resources/router#name Router#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/2.12.0/docs/resources/router#name Router#name}
 
 ---
 
@@ -819,7 +819,7 @@ id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/2.11.0/docs/resources/router#id Router#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/2.12.0/docs/resources/router#id Router#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.

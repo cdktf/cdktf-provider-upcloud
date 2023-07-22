@@ -1,6 +1,6 @@
 # `data_upcloud_managed_database_opensearch_indices`
 
-Refer to the Terraform Registory for docs: [`data_upcloud_managed_database_opensearch_indices`](https://registry.terraform.io/providers/upcloudltd/upcloud/2.11.0/docs/data-sources/managed_database_opensearch_indices).
+Refer to the Terraform Registory for docs: [`data_upcloud_managed_database_opensearch_indices`](https://registry.terraform.io/providers/upcloudltd/upcloud/2.12.0/docs/data-sources/managed_database_opensearch_indices).
 
 # `dataUpcloudManagedDatabaseOpensearchIndices` Submodule <a name="`dataUpcloudManagedDatabaseOpensearchIndices` Submodule" id="@cdktf/provider-upcloud.dataUpcloudManagedDatabaseOpensearchIndices"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`data_upcloud_managed_database_opens
 
 ### DataUpcloudManagedDatabaseOpensearchIndices <a name="DataUpcloudManagedDatabaseOpensearchIndices" id="@cdktf/provider-upcloud.dataUpcloudManagedDatabaseOpensearchIndices.DataUpcloudManagedDatabaseOpensearchIndices"></a>
 
-Represents a {@link https://registry.terraform.io/providers/upcloudltd/upcloud/2.11.0/docs/data-sources/managed_database_opensearch_indices upcloud_managed_database_opensearch_indices}.
+Represents a {@link https://registry.terraform.io/providers/upcloudltd/upcloud/2.12.0/docs/data-sources/managed_database_opensearch_indices upcloud_managed_database_opensearch_indices}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-upcloud.dataUpcloudManagedDatabaseOpensearchIndices.DataUpcloudManagedDatabaseOpensearchIndices.Initializer"></a>
 
@@ -603,7 +603,7 @@ const dataUpcloudManagedDatabaseOpensearchIndicesConfig: dataUpcloudManagedDatab
 | <code><a href="#@cdktf/provider-upcloud.dataUpcloudManagedDatabaseOpensearchIndices.DataUpcloudManagedDatabaseOpensearchIndicesConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.dataUpcloudManagedDatabaseOpensearchIndices.DataUpcloudManagedDatabaseOpensearchIndicesConfig.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.dataUpcloudManagedDatabaseOpensearchIndices.DataUpcloudManagedDatabaseOpensearchIndicesConfig.property.service">service</a></code> | <code>string</code> | Service's UUID for which these indices belongs to. |
-| <code><a href="#@cdktf/provider-upcloud.dataUpcloudManagedDatabaseOpensearchIndices.DataUpcloudManagedDatabaseOpensearchIndicesConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/2.11.0/docs/data-sources/managed_database_opensearch_indices#id DataUpcloudManagedDatabaseOpensearchIndices#id}. |
+| <code><a href="#@cdktf/provider-upcloud.dataUpcloudManagedDatabaseOpensearchIndices.DataUpcloudManagedDatabaseOpensearchIndicesConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/2.12.0/docs/data-sources/managed_database_opensearch_indices#id DataUpcloudManagedDatabaseOpensearchIndices#id}. |
 | <code><a href="#@cdktf/provider-upcloud.dataUpcloudManagedDatabaseOpensearchIndices.DataUpcloudManagedDatabaseOpensearchIndicesConfig.property.indices">indices</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-upcloud.dataUpcloudManagedDatabaseOpensearchIndices.DataUpcloudManagedDatabaseOpensearchIndicesIndices">DataUpcloudManagedDatabaseOpensearchIndicesIndices</a>[]</code> | indices block. |
 
 ---
@@ -688,7 +688,7 @@ public readonly service: string;
 
 Service's UUID for which these indices belongs to.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/2.11.0/docs/data-sources/managed_database_opensearch_indices#service DataUpcloudManagedDatabaseOpensearchIndices#service}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/2.12.0/docs/data-sources/managed_database_opensearch_indices#service DataUpcloudManagedDatabaseOpensearchIndices#service}
 
 ---
 
@@ -700,7 +700,7 @@ public readonly id: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/2.11.0/docs/data-sources/managed_database_opensearch_indices#id DataUpcloudManagedDatabaseOpensearchIndices#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/2.12.0/docs/data-sources/managed_database_opensearch_indices#id DataUpcloudManagedDatabaseOpensearchIndices#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -717,7 +717,7 @@ public readonly indices: IResolvable | DataUpcloudManagedDatabaseOpensearchIndic
 
 indices block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/2.11.0/docs/data-sources/managed_database_opensearch_indices#indices DataUpcloudManagedDatabaseOpensearchIndices#indices}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/2.12.0/docs/data-sources/managed_database_opensearch_indices#indices DataUpcloudManagedDatabaseOpensearchIndices#indices}
 
 ---
 

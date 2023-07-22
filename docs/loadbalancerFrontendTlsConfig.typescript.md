@@ -1,6 +1,6 @@
 # `upcloud_loadbalancer_frontend_tls_config`
 
-Refer to the Terraform Registory for docs: [`upcloud_loadbalancer_frontend_tls_config`](https://registry.terraform.io/providers/upcloudltd/upcloud/2.11.0/docs/resources/loadbalancer_frontend_tls_config).
+Refer to the Terraform Registory for docs: [`upcloud_loadbalancer_frontend_tls_config`](https://registry.terraform.io/providers/upcloudltd/upcloud/2.12.0/docs/resources/loadbalancer_frontend_tls_config).
 
 # `loadbalancerFrontendTlsConfig` Submodule <a name="`loadbalancerFrontendTlsConfig` Submodule" id="@cdktf/provider-upcloud.loadbalancerFrontendTlsConfig"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`upcloud_loadbalancer_frontend_tls_c
 
 ### LoadbalancerFrontendTlsConfig <a name="LoadbalancerFrontendTlsConfig" id="@cdktf/provider-upcloud.loadbalancerFrontendTlsConfig.LoadbalancerFrontendTlsConfig"></a>
 
-Represents a {@link https://registry.terraform.io/providers/upcloudltd/upcloud/2.11.0/docs/resources/loadbalancer_frontend_tls_config upcloud_loadbalancer_frontend_tls_config}.
+Represents a {@link https://registry.terraform.io/providers/upcloudltd/upcloud/2.12.0/docs/resources/loadbalancer_frontend_tls_config upcloud_loadbalancer_frontend_tls_config}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-upcloud.loadbalancerFrontendTlsConfig.LoadbalancerFrontendTlsConfig.Initializer"></a>
 
@@ -629,7 +629,7 @@ const loadbalancerFrontendTlsConfigConfig: loadbalancerFrontendTlsConfig.Loadbal
 | <code><a href="#@cdktf/provider-upcloud.loadbalancerFrontendTlsConfig.LoadbalancerFrontendTlsConfigConfig.property.certificateBundle">certificateBundle</a></code> | <code>string</code> | Reference to certificate bundle ID. |
 | <code><a href="#@cdktf/provider-upcloud.loadbalancerFrontendTlsConfig.LoadbalancerFrontendTlsConfigConfig.property.frontend">frontend</a></code> | <code>string</code> | ID of the load balancer frontend to which the TLS config is connected. |
 | <code><a href="#@cdktf/provider-upcloud.loadbalancerFrontendTlsConfig.LoadbalancerFrontendTlsConfigConfig.property.name">name</a></code> | <code>string</code> | The name of the TLS config must be unique within service frontend. |
-| <code><a href="#@cdktf/provider-upcloud.loadbalancerFrontendTlsConfig.LoadbalancerFrontendTlsConfigConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/2.11.0/docs/resources/loadbalancer_frontend_tls_config#id LoadbalancerFrontendTlsConfig#id}. |
+| <code><a href="#@cdktf/provider-upcloud.loadbalancerFrontendTlsConfig.LoadbalancerFrontendTlsConfigConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/2.12.0/docs/resources/loadbalancer_frontend_tls_config#id LoadbalancerFrontendTlsConfig#id}. |
 
 ---
 
@@ -713,7 +713,7 @@ public readonly certificateBundle: string;
 
 Reference to certificate bundle ID.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/2.11.0/docs/resources/loadbalancer_frontend_tls_config#certificate_bundle LoadbalancerFrontendTlsConfig#certificate_bundle}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/2.12.0/docs/resources/loadbalancer_frontend_tls_config#certificate_bundle LoadbalancerFrontendTlsConfig#certificate_bundle}
 
 ---
 
@@ -727,7 +727,7 @@ public readonly frontend: string;
 
 ID of the load balancer frontend to which the TLS config is connected.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/2.11.0/docs/resources/loadbalancer_frontend_tls_config#frontend LoadbalancerFrontendTlsConfig#frontend}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/2.12.0/docs/resources/loadbalancer_frontend_tls_config#frontend LoadbalancerFrontendTlsConfig#frontend}
 
 ---
 
@@ -741,7 +741,7 @@ public readonly name: string;
 
 The name of the TLS config must be unique within service frontend.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/2.11.0/docs/resources/loadbalancer_frontend_tls_config#name LoadbalancerFrontendTlsConfig#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/2.12.0/docs/resources/loadbalancer_frontend_tls_config#name LoadbalancerFrontendTlsConfig#name}
 
 ---
 
@@ -753,7 +753,7 @@ public readonly id: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/2.11.0/docs/resources/loadbalancer_frontend_tls_config#id LoadbalancerFrontendTlsConfig#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/2.12.0/docs/resources/loadbalancer_frontend_tls_config#id LoadbalancerFrontendTlsConfig#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.

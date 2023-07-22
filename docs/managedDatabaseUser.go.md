@@ -1,6 +1,6 @@
 # `upcloud_managed_database_user`
 
-Refer to the Terraform Registory for docs: [`upcloud_managed_database_user`](https://registry.terraform.io/providers/upcloudltd/upcloud/2.11.0/docs/resources/managed_database_user).
+Refer to the Terraform Registory for docs: [`upcloud_managed_database_user`](https://registry.terraform.io/providers/upcloudltd/upcloud/2.12.0/docs/resources/managed_database_user).
 
 # `managedDatabaseUser` Submodule <a name="`managedDatabaseUser` Submodule" id="@cdktf/provider-upcloud.managedDatabaseUser"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`upcloud_managed_database_user`](htt
 
 ### ManagedDatabaseUser <a name="ManagedDatabaseUser" id="@cdktf/provider-upcloud.managedDatabaseUser.ManagedDatabaseUser"></a>
 
-Represents a {@link https://registry.terraform.io/providers/upcloudltd/upcloud/2.11.0/docs/resources/managed_database_user upcloud_managed_database_user}.
+Represents a {@link https://registry.terraform.io/providers/upcloudltd/upcloud/2.12.0/docs/resources/managed_database_user upcloud_managed_database_user}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-upcloud.managedDatabaseUser.ManagedDatabaseUser.Initializer"></a>
 
@@ -818,7 +818,7 @@ import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v8/manageddatabaseuse
 | <code><a href="#@cdktf/provider-upcloud.managedDatabaseUser.ManagedDatabaseUserConfig.property.service">Service</a></code> | <code>*string</code> | Service's UUID for which this user belongs to. |
 | <code><a href="#@cdktf/provider-upcloud.managedDatabaseUser.ManagedDatabaseUserConfig.property.username">Username</a></code> | <code>*string</code> | Name of the database user. |
 | <code><a href="#@cdktf/provider-upcloud.managedDatabaseUser.ManagedDatabaseUserConfig.property.authentication">Authentication</a></code> | <code>*string</code> | MySQL only, authentication type. |
-| <code><a href="#@cdktf/provider-upcloud.managedDatabaseUser.ManagedDatabaseUserConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/2.11.0/docs/resources/managed_database_user#id ManagedDatabaseUser#id}. |
+| <code><a href="#@cdktf/provider-upcloud.managedDatabaseUser.ManagedDatabaseUserConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/2.12.0/docs/resources/managed_database_user#id ManagedDatabaseUser#id}. |
 | <code><a href="#@cdktf/provider-upcloud.managedDatabaseUser.ManagedDatabaseUserConfig.property.opensearchAccessControl">OpensearchAccessControl</a></code> | <code><a href="#@cdktf/provider-upcloud.managedDatabaseUser.ManagedDatabaseUserOpensearchAccessControl">ManagedDatabaseUserOpensearchAccessControl</a></code> | opensearch_access_control block. |
 | <code><a href="#@cdktf/provider-upcloud.managedDatabaseUser.ManagedDatabaseUserConfig.property.password">Password</a></code> | <code>*string</code> | Password for the database user. Defaults to a random value. |
 | <code><a href="#@cdktf/provider-upcloud.managedDatabaseUser.ManagedDatabaseUserConfig.property.pgAccessControl">PgAccessControl</a></code> | <code><a href="#@cdktf/provider-upcloud.managedDatabaseUser.ManagedDatabaseUserPgAccessControl">ManagedDatabaseUserPgAccessControl</a></code> | pg_access_control block. |
@@ -906,7 +906,7 @@ Service *string
 
 Service's UUID for which this user belongs to.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/2.11.0/docs/resources/managed_database_user#service ManagedDatabaseUser#service}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/2.12.0/docs/resources/managed_database_user#service ManagedDatabaseUser#service}
 
 ---
 
@@ -920,7 +920,7 @@ Username *string
 
 Name of the database user.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/2.11.0/docs/resources/managed_database_user#username ManagedDatabaseUser#username}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/2.12.0/docs/resources/managed_database_user#username ManagedDatabaseUser#username}
 
 ---
 
@@ -934,7 +934,7 @@ Authentication *string
 
 MySQL only, authentication type.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/2.11.0/docs/resources/managed_database_user#authentication ManagedDatabaseUser#authentication}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/2.12.0/docs/resources/managed_database_user#authentication ManagedDatabaseUser#authentication}
 
 ---
 
@@ -946,7 +946,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/2.11.0/docs/resources/managed_database_user#id ManagedDatabaseUser#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/2.12.0/docs/resources/managed_database_user#id ManagedDatabaseUser#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -963,7 +963,7 @@ OpensearchAccessControl ManagedDatabaseUserOpensearchAccessControl
 
 opensearch_access_control block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/2.11.0/docs/resources/managed_database_user#opensearch_access_control ManagedDatabaseUser#opensearch_access_control}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/2.12.0/docs/resources/managed_database_user#opensearch_access_control ManagedDatabaseUser#opensearch_access_control}
 
 ---
 
@@ -977,7 +977,7 @@ Password *string
 
 Password for the database user. Defaults to a random value.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/2.11.0/docs/resources/managed_database_user#password ManagedDatabaseUser#password}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/2.12.0/docs/resources/managed_database_user#password ManagedDatabaseUser#password}
 
 ---
 
@@ -991,7 +991,7 @@ PgAccessControl ManagedDatabaseUserPgAccessControl
 
 pg_access_control block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/2.11.0/docs/resources/managed_database_user#pg_access_control ManagedDatabaseUser#pg_access_control}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/2.12.0/docs/resources/managed_database_user#pg_access_control ManagedDatabaseUser#pg_access_control}
 
 ---
 
@@ -1005,7 +1005,7 @@ RedisAccessControl ManagedDatabaseUserRedisAccessControl
 
 redis_access_control block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/2.11.0/docs/resources/managed_database_user#redis_access_control ManagedDatabaseUser#redis_access_control}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/2.12.0/docs/resources/managed_database_user#redis_access_control ManagedDatabaseUser#redis_access_control}
 
 ---
 
@@ -1039,7 +1039,7 @@ Rules interface{}
 
 rules block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/2.11.0/docs/resources/managed_database_user#rules ManagedDatabaseUser#rules}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/2.12.0/docs/resources/managed_database_user#rules ManagedDatabaseUser#rules}
 
 ---
 
@@ -1075,7 +1075,7 @@ Index *string
 
 Set index name, pattern or top level API.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/2.11.0/docs/resources/managed_database_user#index ManagedDatabaseUser#index}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/2.12.0/docs/resources/managed_database_user#index ManagedDatabaseUser#index}
 
 ---
 
@@ -1089,7 +1089,7 @@ Permission *string
 
 Set permission access.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/2.11.0/docs/resources/managed_database_user#permission ManagedDatabaseUser#permission}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/2.12.0/docs/resources/managed_database_user#permission ManagedDatabaseUser#permission}
 
 ---
 
@@ -1123,7 +1123,7 @@ AllowReplication interface{}
 
 Grant replication privilege.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/2.11.0/docs/resources/managed_database_user#allow_replication ManagedDatabaseUser#allow_replication}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/2.12.0/docs/resources/managed_database_user#allow_replication ManagedDatabaseUser#allow_replication}
 
 ---
 
@@ -1163,7 +1163,7 @@ Categories *[]*string
 
 Set access control to all commands in specified categories.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/2.11.0/docs/resources/managed_database_user#categories ManagedDatabaseUser#categories}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/2.12.0/docs/resources/managed_database_user#categories ManagedDatabaseUser#categories}
 
 ---
 
@@ -1177,7 +1177,7 @@ Channels *[]*string
 
 Set access control to Pub/Sub channels.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/2.11.0/docs/resources/managed_database_user#channels ManagedDatabaseUser#channels}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/2.12.0/docs/resources/managed_database_user#channels ManagedDatabaseUser#channels}
 
 ---
 
@@ -1191,7 +1191,7 @@ Commands *[]*string
 
 Set access control to commands.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/2.11.0/docs/resources/managed_database_user#commands ManagedDatabaseUser#commands}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/2.12.0/docs/resources/managed_database_user#commands ManagedDatabaseUser#commands}
 
 ---
 
@@ -1205,7 +1205,7 @@ Keys *[]*string
 
 Set access control to keys.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/2.11.0/docs/resources/managed_database_user#keys ManagedDatabaseUser#keys}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/2.12.0/docs/resources/managed_database_user#keys ManagedDatabaseUser#keys}
 
 ---
 

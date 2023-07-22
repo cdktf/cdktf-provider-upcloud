@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/upcloudltd/upcloud/2.11.0/docs/resources/server_group
+// https://registry.terraform.io/providers/upcloudltd/upcloud/2.12.0/docs/resources/server_group
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -26,12 +26,12 @@ export interface ServerGroupConfig extends cdktf.TerraformMetaArguments {
 				Plese also note that anti-affinity policies are only applied on server start. This means that if anti-affinity
 				policies in server group are not met, you need to manually restart the servers in said group,
 				for example via API, UpCloud Control Panel or upctl (UpCloud CLI)
-  * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/2.11.0/docs/resources/server_group#anti_affinity_policy ServerGroup#anti_affinity_policy}
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/2.12.0/docs/resources/server_group#anti_affinity_policy ServerGroup#anti_affinity_policy}
   */
   readonly antiAffinityPolicy?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/2.11.0/docs/resources/server_group#id ServerGroup#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/2.12.0/docs/resources/server_group#id ServerGroup#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -39,26 +39,26 @@ export interface ServerGroupConfig extends cdktf.TerraformMetaArguments {
   readonly id?: string;
   /**
   * Key-value pairs to classify the server group.
-  * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/2.11.0/docs/resources/server_group#labels ServerGroup#labels}
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/2.12.0/docs/resources/server_group#labels ServerGroup#labels}
   */
   readonly labels?: { [key: string]: string };
   /**
   * UUIDs of the servers that are members of this group
-  * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/2.11.0/docs/resources/server_group#members ServerGroup#members}
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/2.12.0/docs/resources/server_group#members ServerGroup#members}
   */
   readonly members?: string[];
   /**
   * Title of your server group
-  * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/2.11.0/docs/resources/server_group#title ServerGroup#title}
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/2.12.0/docs/resources/server_group#title ServerGroup#title}
   */
   readonly title: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/upcloudltd/upcloud/2.11.0/docs/resources/server_group upcloud_server_group}
+* Represents a {@link https://registry.terraform.io/providers/upcloudltd/upcloud/2.12.0/docs/resources/server_group upcloud_server_group}
 */
 export class ServerGroup extends cdktf.TerraformResource {
 
@@ -72,7 +72,7 @@ export class ServerGroup extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/upcloudltd/upcloud/2.11.0/docs/resources/server_group upcloud_server_group} Resource
+  * Create a new {@link https://registry.terraform.io/providers/upcloudltd/upcloud/2.12.0/docs/resources/server_group upcloud_server_group} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -83,7 +83,7 @@ export class ServerGroup extends cdktf.TerraformResource {
       terraformResourceType: 'upcloud_server_group',
       terraformGeneratorMetadata: {
         providerName: 'upcloud',
-        providerVersion: '2.11.0',
+        providerVersion: '2.12.0',
         providerVersionConstraint: '~> 2.4'
       },
       provider: config.provider,

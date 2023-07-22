@@ -1,6 +1,6 @@
 # `upcloud_loadbalancer_static_backend_member`
 
-Refer to the Terraform Registory for docs: [`upcloud_loadbalancer_static_backend_member`](https://registry.terraform.io/providers/upcloudltd/upcloud/2.11.0/docs/resources/loadbalancer_static_backend_member).
+Refer to the Terraform Registory for docs: [`upcloud_loadbalancer_static_backend_member`](https://registry.terraform.io/providers/upcloudltd/upcloud/2.12.0/docs/resources/loadbalancer_static_backend_member).
 
 # `loadbalancerStaticBackendMember` Submodule <a name="`loadbalancerStaticBackendMember` Submodule" id="@cdktf/provider-upcloud.loadbalancerStaticBackendMember"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`upcloud_loadbalancer_static_backend
 
 ### LoadbalancerStaticBackendMember <a name="LoadbalancerStaticBackendMember" id="@cdktf/provider-upcloud.loadbalancerStaticBackendMember.LoadbalancerStaticBackendMember"></a>
 
-Represents a {@link https://registry.terraform.io/providers/upcloudltd/upcloud/2.11.0/docs/resources/loadbalancer_static_backend_member upcloud_loadbalancer_static_backend_member}.
+Represents a {@link https://registry.terraform.io/providers/upcloudltd/upcloud/2.12.0/docs/resources/loadbalancer_static_backend_member upcloud_loadbalancer_static_backend_member}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-upcloud.loadbalancerStaticBackendMember.LoadbalancerStaticBackendMember.Initializer"></a>
 
@@ -54,7 +54,7 @@ loadbalancerStaticBackendMember.LoadbalancerStaticBackendMember(
 | <code><a href="#@cdktf/provider-upcloud.loadbalancerStaticBackendMember.LoadbalancerStaticBackendMember.Initializer.parameter.port">port</a></code> | <code>typing.Union[int, float]</code> | Server port. |
 | <code><a href="#@cdktf/provider-upcloud.loadbalancerStaticBackendMember.LoadbalancerStaticBackendMember.Initializer.parameter.weight">weight</a></code> | <code>typing.Union[int, float]</code> | Used to adjust the server's weight relative to other servers. |
 | <code><a href="#@cdktf/provider-upcloud.loadbalancerStaticBackendMember.LoadbalancerStaticBackendMember.Initializer.parameter.enabled">enabled</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Indicates if the member is enabled. Disabled members are excluded from load balancing. |
-| <code><a href="#@cdktf/provider-upcloud.loadbalancerStaticBackendMember.LoadbalancerStaticBackendMember.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/2.11.0/docs/resources/loadbalancer_static_backend_member#id LoadbalancerStaticBackendMember#id}. |
+| <code><a href="#@cdktf/provider-upcloud.loadbalancerStaticBackendMember.LoadbalancerStaticBackendMember.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/2.12.0/docs/resources/loadbalancer_static_backend_member#id LoadbalancerStaticBackendMember#id}. |
 
 ---
 
@@ -124,7 +124,7 @@ Must be unique amongst siblings in the same scope
 
 ID of the load balancer backend to which the member is connected.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/2.11.0/docs/resources/loadbalancer_static_backend_member#backend LoadbalancerStaticBackendMember#backend}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/2.12.0/docs/resources/loadbalancer_static_backend_member#backend LoadbalancerStaticBackendMember#backend}
 
 ---
 
@@ -134,7 +134,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upclo
 
 Server IP address in the customer private network.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/2.11.0/docs/resources/loadbalancer_static_backend_member#ip LoadbalancerStaticBackendMember#ip}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/2.12.0/docs/resources/loadbalancer_static_backend_member#ip LoadbalancerStaticBackendMember#ip}
 
 ---
 
@@ -144,7 +144,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upclo
 
 Maximum number of sessions before queueing.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/2.11.0/docs/resources/loadbalancer_static_backend_member#max_sessions LoadbalancerStaticBackendMember#max_sessions}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/2.12.0/docs/resources/loadbalancer_static_backend_member#max_sessions LoadbalancerStaticBackendMember#max_sessions}
 
 ---
 
@@ -154,7 +154,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upclo
 
 The name of the member must be unique within the load balancer backend service.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/2.11.0/docs/resources/loadbalancer_static_backend_member#name LoadbalancerStaticBackendMember#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/2.12.0/docs/resources/loadbalancer_static_backend_member#name LoadbalancerStaticBackendMember#name}
 
 ---
 
@@ -164,7 +164,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upclo
 
 Server port.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/2.11.0/docs/resources/loadbalancer_static_backend_member#port LoadbalancerStaticBackendMember#port}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/2.12.0/docs/resources/loadbalancer_static_backend_member#port LoadbalancerStaticBackendMember#port}
 
 ---
 
@@ -177,7 +177,7 @@ Used to adjust the server's weight relative to other servers.
 All servers will receive a load proportional to their weight relative to the sum of all weights, so the higher the weight, the higher the load.
 A value of 0 means the server will not participate in load balancing but will still accept persistent connections.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/2.11.0/docs/resources/loadbalancer_static_backend_member#weight LoadbalancerStaticBackendMember#weight}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/2.12.0/docs/resources/loadbalancer_static_backend_member#weight LoadbalancerStaticBackendMember#weight}
 
 ---
 
@@ -187,7 +187,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upclo
 
 Indicates if the member is enabled. Disabled members are excluded from load balancing.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/2.11.0/docs/resources/loadbalancer_static_backend_member#enabled LoadbalancerStaticBackendMember#enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/2.12.0/docs/resources/loadbalancer_static_backend_member#enabled LoadbalancerStaticBackendMember#enabled}
 
 ---
 
@@ -195,7 +195,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upclo
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/2.11.0/docs/resources/loadbalancer_static_backend_member#id LoadbalancerStaticBackendMember#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/2.12.0/docs/resources/loadbalancer_static_backend_member#id LoadbalancerStaticBackendMember#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -927,7 +927,7 @@ loadbalancerStaticBackendMember.LoadbalancerStaticBackendMemberConfig(
 | <code><a href="#@cdktf/provider-upcloud.loadbalancerStaticBackendMember.LoadbalancerStaticBackendMemberConfig.property.port">port</a></code> | <code>typing.Union[int, float]</code> | Server port. |
 | <code><a href="#@cdktf/provider-upcloud.loadbalancerStaticBackendMember.LoadbalancerStaticBackendMemberConfig.property.weight">weight</a></code> | <code>typing.Union[int, float]</code> | Used to adjust the server's weight relative to other servers. |
 | <code><a href="#@cdktf/provider-upcloud.loadbalancerStaticBackendMember.LoadbalancerStaticBackendMemberConfig.property.enabled">enabled</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Indicates if the member is enabled. Disabled members are excluded from load balancing. |
-| <code><a href="#@cdktf/provider-upcloud.loadbalancerStaticBackendMember.LoadbalancerStaticBackendMemberConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/2.11.0/docs/resources/loadbalancer_static_backend_member#id LoadbalancerStaticBackendMember#id}. |
+| <code><a href="#@cdktf/provider-upcloud.loadbalancerStaticBackendMember.LoadbalancerStaticBackendMemberConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/2.12.0/docs/resources/loadbalancer_static_backend_member#id LoadbalancerStaticBackendMember#id}. |
 
 ---
 
@@ -1011,7 +1011,7 @@ backend: str
 
 ID of the load balancer backend to which the member is connected.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/2.11.0/docs/resources/loadbalancer_static_backend_member#backend LoadbalancerStaticBackendMember#backend}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/2.12.0/docs/resources/loadbalancer_static_backend_member#backend LoadbalancerStaticBackendMember#backend}
 
 ---
 
@@ -1025,7 +1025,7 @@ ip: str
 
 Server IP address in the customer private network.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/2.11.0/docs/resources/loadbalancer_static_backend_member#ip LoadbalancerStaticBackendMember#ip}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/2.12.0/docs/resources/loadbalancer_static_backend_member#ip LoadbalancerStaticBackendMember#ip}
 
 ---
 
@@ -1039,7 +1039,7 @@ max_sessions: typing.Union[int, float]
 
 Maximum number of sessions before queueing.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/2.11.0/docs/resources/loadbalancer_static_backend_member#max_sessions LoadbalancerStaticBackendMember#max_sessions}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/2.12.0/docs/resources/loadbalancer_static_backend_member#max_sessions LoadbalancerStaticBackendMember#max_sessions}
 
 ---
 
@@ -1053,7 +1053,7 @@ name: str
 
 The name of the member must be unique within the load balancer backend service.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/2.11.0/docs/resources/loadbalancer_static_backend_member#name LoadbalancerStaticBackendMember#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/2.12.0/docs/resources/loadbalancer_static_backend_member#name LoadbalancerStaticBackendMember#name}
 
 ---
 
@@ -1067,7 +1067,7 @@ port: typing.Union[int, float]
 
 Server port.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/2.11.0/docs/resources/loadbalancer_static_backend_member#port LoadbalancerStaticBackendMember#port}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/2.12.0/docs/resources/loadbalancer_static_backend_member#port LoadbalancerStaticBackendMember#port}
 
 ---
 
@@ -1084,7 +1084,7 @@ Used to adjust the server's weight relative to other servers.
 All servers will receive a load proportional to their weight relative to the sum of all weights, so the higher the weight, the higher the load.
 A value of 0 means the server will not participate in load balancing but will still accept persistent connections.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/2.11.0/docs/resources/loadbalancer_static_backend_member#weight LoadbalancerStaticBackendMember#weight}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/2.12.0/docs/resources/loadbalancer_static_backend_member#weight LoadbalancerStaticBackendMember#weight}
 
 ---
 
@@ -1098,7 +1098,7 @@ enabled: typing.Union[bool, IResolvable]
 
 Indicates if the member is enabled. Disabled members are excluded from load balancing.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/2.11.0/docs/resources/loadbalancer_static_backend_member#enabled LoadbalancerStaticBackendMember#enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/2.12.0/docs/resources/loadbalancer_static_backend_member#enabled LoadbalancerStaticBackendMember#enabled}
 
 ---
 
@@ -1110,7 +1110,7 @@ id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/2.11.0/docs/resources/loadbalancer_static_backend_member#id LoadbalancerStaticBackendMember#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/2.12.0/docs/resources/loadbalancer_static_backend_member#id LoadbalancerStaticBackendMember#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.

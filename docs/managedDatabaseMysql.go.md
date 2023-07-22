@@ -1,6 +1,6 @@
 # `upcloud_managed_database_mysql`
 
-Refer to the Terraform Registory for docs: [`upcloud_managed_database_mysql`](https://registry.terraform.io/providers/upcloudltd/upcloud/2.11.0/docs/resources/managed_database_mysql).
+Refer to the Terraform Registory for docs: [`upcloud_managed_database_mysql`](https://registry.terraform.io/providers/upcloudltd/upcloud/2.12.0/docs/resources/managed_database_mysql).
 
 # `managedDatabaseMysql` Submodule <a name="`managedDatabaseMysql` Submodule" id="@cdktf/provider-upcloud.managedDatabaseMysql"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`upcloud_managed_database_mysql`](ht
 
 ### ManagedDatabaseMysql <a name="ManagedDatabaseMysql" id="@cdktf/provider-upcloud.managedDatabaseMysql.ManagedDatabaseMysql"></a>
 
-Represents a {@link https://registry.terraform.io/providers/upcloudltd/upcloud/2.11.0/docs/resources/managed_database_mysql upcloud_managed_database_mysql}.
+Represents a {@link https://registry.terraform.io/providers/upcloudltd/upcloud/2.12.0/docs/resources/managed_database_mysql upcloud_managed_database_mysql}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-upcloud.managedDatabaseMysql.ManagedDatabaseMysql.Initializer"></a>
 
@@ -927,7 +927,7 @@ import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v8/manageddatabasemys
 | <code><a href="#@cdktf/provider-upcloud.managedDatabaseMysql.ManagedDatabaseMysqlConfig.property.name">Name</a></code> | <code>*string</code> | Name of the service. |
 | <code><a href="#@cdktf/provider-upcloud.managedDatabaseMysql.ManagedDatabaseMysqlConfig.property.plan">Plan</a></code> | <code>*string</code> | Service plan to use. |
 | <code><a href="#@cdktf/provider-upcloud.managedDatabaseMysql.ManagedDatabaseMysqlConfig.property.zone">Zone</a></code> | <code>*string</code> | Zone where the instance resides, e.g. `de-fra1`. You can list available zones with `upctl zone list`. |
-| <code><a href="#@cdktf/provider-upcloud.managedDatabaseMysql.ManagedDatabaseMysqlConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/2.11.0/docs/resources/managed_database_mysql#id ManagedDatabaseMysql#id}. |
+| <code><a href="#@cdktf/provider-upcloud.managedDatabaseMysql.ManagedDatabaseMysqlConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/2.12.0/docs/resources/managed_database_mysql#id ManagedDatabaseMysql#id}. |
 | <code><a href="#@cdktf/provider-upcloud.managedDatabaseMysql.ManagedDatabaseMysqlConfig.property.maintenanceWindowDow">MaintenanceWindowDow</a></code> | <code>*string</code> | Maintenance window day of week. Lower case weekday name (monday, tuesday, ...). |
 | <code><a href="#@cdktf/provider-upcloud.managedDatabaseMysql.ManagedDatabaseMysqlConfig.property.maintenanceWindowTime">MaintenanceWindowTime</a></code> | <code>*string</code> | Maintenance window UTC time in hh:mm:ss format. |
 | <code><a href="#@cdktf/provider-upcloud.managedDatabaseMysql.ManagedDatabaseMysqlConfig.property.powered">Powered</a></code> | <code>interface{}</code> | The administrative power state of the service. |
@@ -1018,7 +1018,7 @@ Name of the service.
 
 The name is used as a prefix for the logical hostname. Must be unique within an account
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/2.11.0/docs/resources/managed_database_mysql#name ManagedDatabaseMysql#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/2.12.0/docs/resources/managed_database_mysql#name ManagedDatabaseMysql#name}
 
 ---
 
@@ -1034,7 +1034,7 @@ Service plan to use.
 
 This determines how much resources the instance will have. You can list available plans with `upctl database plans <type>`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/2.11.0/docs/resources/managed_database_mysql#plan ManagedDatabaseMysql#plan}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/2.12.0/docs/resources/managed_database_mysql#plan ManagedDatabaseMysql#plan}
 
 ---
 
@@ -1048,7 +1048,7 @@ Zone *string
 
 Zone where the instance resides, e.g. `de-fra1`. You can list available zones with `upctl zone list`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/2.11.0/docs/resources/managed_database_mysql#zone ManagedDatabaseMysql#zone}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/2.12.0/docs/resources/managed_database_mysql#zone ManagedDatabaseMysql#zone}
 
 ---
 
@@ -1060,7 +1060,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/2.11.0/docs/resources/managed_database_mysql#id ManagedDatabaseMysql#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/2.12.0/docs/resources/managed_database_mysql#id ManagedDatabaseMysql#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1077,7 +1077,7 @@ MaintenanceWindowDow *string
 
 Maintenance window day of week. Lower case weekday name (monday, tuesday, ...).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/2.11.0/docs/resources/managed_database_mysql#maintenance_window_dow ManagedDatabaseMysql#maintenance_window_dow}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/2.12.0/docs/resources/managed_database_mysql#maintenance_window_dow ManagedDatabaseMysql#maintenance_window_dow}
 
 ---
 
@@ -1091,7 +1091,7 @@ MaintenanceWindowTime *string
 
 Maintenance window UTC time in hh:mm:ss format.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/2.11.0/docs/resources/managed_database_mysql#maintenance_window_time ManagedDatabaseMysql#maintenance_window_time}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/2.12.0/docs/resources/managed_database_mysql#maintenance_window_time ManagedDatabaseMysql#maintenance_window_time}
 
 ---
 
@@ -1105,7 +1105,7 @@ Powered interface{}
 
 The administrative power state of the service.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/2.11.0/docs/resources/managed_database_mysql#powered ManagedDatabaseMysql#powered}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/2.12.0/docs/resources/managed_database_mysql#powered ManagedDatabaseMysql#powered}
 
 ---
 
@@ -1119,7 +1119,7 @@ Properties ManagedDatabaseMysqlProperties
 
 properties block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/2.11.0/docs/resources/managed_database_mysql#properties ManagedDatabaseMysql#properties}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/2.12.0/docs/resources/managed_database_mysql#properties ManagedDatabaseMysql#properties}
 
 ---
 
@@ -1133,7 +1133,7 @@ Title *string
 
 Title of a managed database instance.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/2.11.0/docs/resources/managed_database_mysql#title ManagedDatabaseMysql#title}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/2.12.0/docs/resources/managed_database_mysql#title ManagedDatabaseMysql#title}
 
 ---
 
@@ -1260,7 +1260,7 @@ Custom password for admin user.
 
 Defaults to random string. This must be set only when a new service is being created.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/2.11.0/docs/resources/managed_database_mysql#admin_password ManagedDatabaseMysql#admin_password}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/2.12.0/docs/resources/managed_database_mysql#admin_password ManagedDatabaseMysql#admin_password}
 
 ---
 
@@ -1274,7 +1274,7 @@ AdminUsername *string
 
 Custom username for admin user. This must be set only when a new service is being created.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/2.11.0/docs/resources/managed_database_mysql#admin_username ManagedDatabaseMysql#admin_username}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/2.12.0/docs/resources/managed_database_mysql#admin_username ManagedDatabaseMysql#admin_username}
 
 ---
 
@@ -1288,7 +1288,7 @@ AutomaticUtilityNetworkIpFilter interface{}
 
 Automatic utility network IP Filter.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/2.11.0/docs/resources/managed_database_mysql#automatic_utility_network_ip_filter ManagedDatabaseMysql#automatic_utility_network_ip_filter}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/2.12.0/docs/resources/managed_database_mysql#automatic_utility_network_ip_filter ManagedDatabaseMysql#automatic_utility_network_ip_filter}
 
 ---
 
@@ -1304,7 +1304,7 @@ The hour of day (in UTC) when backup for the service is started.
 
 New backup is only started if previous backup has already completed.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/2.11.0/docs/resources/managed_database_mysql#backup_hour ManagedDatabaseMysql#backup_hour}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/2.12.0/docs/resources/managed_database_mysql#backup_hour ManagedDatabaseMysql#backup_hour}
 
 ---
 
@@ -1320,7 +1320,7 @@ The minute of an hour when backup for the service is started.
 
 New backup is only started if previous backup has already completed.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/2.11.0/docs/resources/managed_database_mysql#backup_minute ManagedDatabaseMysql#backup_minute}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/2.12.0/docs/resources/managed_database_mysql#backup_minute ManagedDatabaseMysql#backup_minute}
 
 ---
 
@@ -1336,7 +1336,7 @@ The minimum amount of time in seconds to keep binlog entries before deletion.
 
 This may be extended for services that require binlog entries for longer than the default for example if using the MySQL Debezium Kafka connector.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/2.11.0/docs/resources/managed_database_mysql#binlog_retention_period ManagedDatabaseMysql#binlog_retention_period}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/2.12.0/docs/resources/managed_database_mysql#binlog_retention_period ManagedDatabaseMysql#binlog_retention_period}
 
 ---
 
@@ -1350,7 +1350,7 @@ ConnectTimeout *f64
 
 The number of seconds that the mysqld server waits for a connect packet before responding with Bad handshake.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/2.11.0/docs/resources/managed_database_mysql#connect_timeout ManagedDatabaseMysql#connect_timeout}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/2.12.0/docs/resources/managed_database_mysql#connect_timeout ManagedDatabaseMysql#connect_timeout}
 
 ---
 
@@ -1364,7 +1364,7 @@ DefaultTimeZone *string
 
 Default server time zone as an offset from UTC (from -12:00 to +12:00), a time zone name, or `SYSTEM` to use the MySQL server default.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/2.11.0/docs/resources/managed_database_mysql#default_time_zone ManagedDatabaseMysql#default_time_zone}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/2.12.0/docs/resources/managed_database_mysql#default_time_zone ManagedDatabaseMysql#default_time_zone}
 
 ---
 
@@ -1378,7 +1378,7 @@ GroupConcatMaxLen *f64
 
 The maximum permitted result length in bytes for the `GROUP_CONCAT()` function.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/2.11.0/docs/resources/managed_database_mysql#group_concat_max_len ManagedDatabaseMysql#group_concat_max_len}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/2.12.0/docs/resources/managed_database_mysql#group_concat_max_len ManagedDatabaseMysql#group_concat_max_len}
 
 ---
 
@@ -1392,7 +1392,7 @@ InformationSchemaStatsExpiry *f64
 
 The time, in seconds, before cached statistics expire.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/2.11.0/docs/resources/managed_database_mysql#information_schema_stats_expiry ManagedDatabaseMysql#information_schema_stats_expiry}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/2.12.0/docs/resources/managed_database_mysql#information_schema_stats_expiry ManagedDatabaseMysql#information_schema_stats_expiry}
 
 ---
 
@@ -1408,7 +1408,7 @@ Maximum size for the InnoDB change buffer, as a percentage of the total size of 
 
 Default is 25
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/2.11.0/docs/resources/managed_database_mysql#innodb_change_buffer_max_size ManagedDatabaseMysql#innodb_change_buffer_max_size}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/2.12.0/docs/resources/managed_database_mysql#innodb_change_buffer_max_size ManagedDatabaseMysql#innodb_change_buffer_max_size}
 
 ---
 
@@ -1422,7 +1422,7 @@ InnodbFlushNeighbors *f64
 
 Specifies whether flushing a page from the InnoDB buffer pool also flushes other dirty pages in the same extent (default is 1): 0 - dirty pages in the same extent are not flushed,  1 - flush contiguous dirty pages in the same extent,  2 - flush dirty pages in the same extent.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/2.11.0/docs/resources/managed_database_mysql#innodb_flush_neighbors ManagedDatabaseMysql#innodb_flush_neighbors}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/2.12.0/docs/resources/managed_database_mysql#innodb_flush_neighbors ManagedDatabaseMysql#innodb_flush_neighbors}
 
 ---
 
@@ -1436,7 +1436,7 @@ InnodbFtMinTokenSize *f64
 
 Minimum length of words that are stored in an InnoDB `FULLTEXT` index.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/2.11.0/docs/resources/managed_database_mysql#innodb_ft_min_token_size ManagedDatabaseMysql#innodb_ft_min_token_size}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/2.12.0/docs/resources/managed_database_mysql#innodb_ft_min_token_size ManagedDatabaseMysql#innodb_ft_min_token_size}
 
 ---
 
@@ -1450,7 +1450,7 @@ InnodbFtServerStopwordTable *string
 
 This option is used to specify your own InnoDB `FULLTEXT` index stopword list for all InnoDB tables.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/2.11.0/docs/resources/managed_database_mysql#innodb_ft_server_stopword_table ManagedDatabaseMysql#innodb_ft_server_stopword_table}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/2.12.0/docs/resources/managed_database_mysql#innodb_ft_server_stopword_table ManagedDatabaseMysql#innodb_ft_server_stopword_table}
 
 ---
 
@@ -1464,7 +1464,7 @@ InnodbLockWaitTimeout *f64
 
 The length of time in seconds an InnoDB transaction waits for a row lock before giving up.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/2.11.0/docs/resources/managed_database_mysql#innodb_lock_wait_timeout ManagedDatabaseMysql#innodb_lock_wait_timeout}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/2.12.0/docs/resources/managed_database_mysql#innodb_lock_wait_timeout ManagedDatabaseMysql#innodb_lock_wait_timeout}
 
 ---
 
@@ -1478,7 +1478,7 @@ InnodbLogBufferSize *f64
 
 The size in bytes of the buffer that InnoDB uses to write to the log files on disk.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/2.11.0/docs/resources/managed_database_mysql#innodb_log_buffer_size ManagedDatabaseMysql#innodb_log_buffer_size}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/2.12.0/docs/resources/managed_database_mysql#innodb_log_buffer_size ManagedDatabaseMysql#innodb_log_buffer_size}
 
 ---
 
@@ -1492,7 +1492,7 @@ InnodbOnlineAlterLogMaxSize *f64
 
 The upper limit in bytes on the size of the temporary log files used during online DDL operations for InnoDB tables.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/2.11.0/docs/resources/managed_database_mysql#innodb_online_alter_log_max_size ManagedDatabaseMysql#innodb_online_alter_log_max_size}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/2.12.0/docs/resources/managed_database_mysql#innodb_online_alter_log_max_size ManagedDatabaseMysql#innodb_online_alter_log_max_size}
 
 ---
 
@@ -1506,7 +1506,7 @@ InnodbPrintAllDeadlocks interface{}
 
 When enabled, information about all deadlocks in InnoDB user transactions is recorded in the error log. Disabled by default.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/2.11.0/docs/resources/managed_database_mysql#innodb_print_all_deadlocks ManagedDatabaseMysql#innodb_print_all_deadlocks}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/2.12.0/docs/resources/managed_database_mysql#innodb_print_all_deadlocks ManagedDatabaseMysql#innodb_print_all_deadlocks}
 
 ---
 
@@ -1522,7 +1522,7 @@ The number of I/O threads for read operations in InnoDB.
 
 Default is 4. Changing this parameter will lead to a restart of the MySQL service.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/2.11.0/docs/resources/managed_database_mysql#innodb_read_io_threads ManagedDatabaseMysql#innodb_read_io_threads}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/2.12.0/docs/resources/managed_database_mysql#innodb_read_io_threads ManagedDatabaseMysql#innodb_read_io_threads}
 
 ---
 
@@ -1536,7 +1536,7 @@ InnodbRollbackOnTimeout interface{}
 
 When enabled a transaction timeout causes InnoDB to abort and roll back the entire transaction.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/2.11.0/docs/resources/managed_database_mysql#innodb_rollback_on_timeout ManagedDatabaseMysql#innodb_rollback_on_timeout}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/2.12.0/docs/resources/managed_database_mysql#innodb_rollback_on_timeout ManagedDatabaseMysql#innodb_rollback_on_timeout}
 
 ---
 
@@ -1550,7 +1550,7 @@ InnodbThreadConcurrency *f64
 
 Defines the maximum number of threads permitted inside of InnoDB. Default is 0 (infinite concurrency - no limit).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/2.11.0/docs/resources/managed_database_mysql#innodb_thread_concurrency ManagedDatabaseMysql#innodb_thread_concurrency}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/2.12.0/docs/resources/managed_database_mysql#innodb_thread_concurrency ManagedDatabaseMysql#innodb_thread_concurrency}
 
 ---
 
@@ -1566,7 +1566,7 @@ The number of I/O threads for write operations in InnoDB.
 
 Default is 4. Changing this parameter will lead to a restart of the MySQL service.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/2.11.0/docs/resources/managed_database_mysql#innodb_write_io_threads ManagedDatabaseMysql#innodb_write_io_threads}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/2.12.0/docs/resources/managed_database_mysql#innodb_write_io_threads ManagedDatabaseMysql#innodb_write_io_threads}
 
 ---
 
@@ -1580,7 +1580,7 @@ InteractiveTimeout *f64
 
 The number of seconds the server waits for activity on an interactive connection before closing it.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/2.11.0/docs/resources/managed_database_mysql#interactive_timeout ManagedDatabaseMysql#interactive_timeout}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/2.12.0/docs/resources/managed_database_mysql#interactive_timeout ManagedDatabaseMysql#interactive_timeout}
 
 ---
 
@@ -1594,7 +1594,7 @@ InternalTmpMemStorageEngine *string
 
 The storage engine for in-memory internal temporary tables.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/2.11.0/docs/resources/managed_database_mysql#internal_tmp_mem_storage_engine ManagedDatabaseMysql#internal_tmp_mem_storage_engine}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/2.12.0/docs/resources/managed_database_mysql#internal_tmp_mem_storage_engine ManagedDatabaseMysql#internal_tmp_mem_storage_engine}
 
 ---
 
@@ -1608,7 +1608,7 @@ IpFilter *[]*string
 
 IP filter.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/2.11.0/docs/resources/managed_database_mysql#ip_filter ManagedDatabaseMysql#ip_filter}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/2.12.0/docs/resources/managed_database_mysql#ip_filter ManagedDatabaseMysql#ip_filter}
 
 ---
 
@@ -1622,7 +1622,7 @@ LongQueryTime *f64
 
 The `slow_query_logs` work as SQL statements that take more than `long_query_time` seconds to execute. Default is `10s`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/2.11.0/docs/resources/managed_database_mysql#long_query_time ManagedDatabaseMysql#long_query_time}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/2.12.0/docs/resources/managed_database_mysql#long_query_time ManagedDatabaseMysql#long_query_time}
 
 ---
 
@@ -1636,7 +1636,7 @@ MaxAllowedPacket *f64
 
 Size of the largest message in bytes that can be received by the server. Default is `67108864` (64M).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/2.11.0/docs/resources/managed_database_mysql#max_allowed_packet ManagedDatabaseMysql#max_allowed_packet}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/2.12.0/docs/resources/managed_database_mysql#max_allowed_packet ManagedDatabaseMysql#max_allowed_packet}
 
 ---
 
@@ -1650,7 +1650,7 @@ MaxHeapTableSize *f64
 
 Limits the size of internal in-memory tables. Also set `tmp_table_size`. Default is `16777216` (16M).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/2.11.0/docs/resources/managed_database_mysql#max_heap_table_size ManagedDatabaseMysql#max_heap_table_size}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/2.12.0/docs/resources/managed_database_mysql#max_heap_table_size ManagedDatabaseMysql#max_heap_table_size}
 
 ---
 
@@ -1664,7 +1664,7 @@ Migration ManagedDatabaseMysqlPropertiesMigration
 
 migration block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/2.11.0/docs/resources/managed_database_mysql#migration ManagedDatabaseMysql#migration}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/2.12.0/docs/resources/managed_database_mysql#migration ManagedDatabaseMysql#migration}
 
 ---
 
@@ -1680,7 +1680,7 @@ Start sizes of connection buffer and result buffer.
 
 Default is 16384 (16K). Changing this parameter will lead to a restart of the MySQL service.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/2.11.0/docs/resources/managed_database_mysql#net_buffer_length ManagedDatabaseMysql#net_buffer_length}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/2.12.0/docs/resources/managed_database_mysql#net_buffer_length ManagedDatabaseMysql#net_buffer_length}
 
 ---
 
@@ -1694,7 +1694,7 @@ NetReadTimeout *f64
 
 The number of seconds to wait for more data from a connection before aborting the read.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/2.11.0/docs/resources/managed_database_mysql#net_read_timeout ManagedDatabaseMysql#net_read_timeout}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/2.12.0/docs/resources/managed_database_mysql#net_read_timeout ManagedDatabaseMysql#net_read_timeout}
 
 ---
 
@@ -1708,7 +1708,7 @@ NetWriteTimeout *f64
 
 The number of seconds to wait for a block to be written to a connection before aborting the write.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/2.11.0/docs/resources/managed_database_mysql#net_write_timeout ManagedDatabaseMysql#net_write_timeout}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/2.12.0/docs/resources/managed_database_mysql#net_write_timeout ManagedDatabaseMysql#net_write_timeout}
 
 ---
 
@@ -1722,7 +1722,7 @@ PublicAccess interface{}
 
 Public access allows connections to your Managed Database services via the public internet.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/2.11.0/docs/resources/managed_database_mysql#public_access ManagedDatabaseMysql#public_access}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/2.12.0/docs/resources/managed_database_mysql#public_access ManagedDatabaseMysql#public_access}
 
 ---
 
@@ -1738,7 +1738,7 @@ Slow query log enables capturing of slow queries.
 
 Setting `slow_query_log` to false also truncates the `mysql.slow_log` table. Default is off
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/2.11.0/docs/resources/managed_database_mysql#slow_query_log ManagedDatabaseMysql#slow_query_log}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/2.12.0/docs/resources/managed_database_mysql#slow_query_log ManagedDatabaseMysql#slow_query_log}
 
 ---
 
@@ -1752,7 +1752,7 @@ SortBufferSize *f64
 
 Sort buffer size in bytes for `ORDER BY` optimization. Default is `262144` (256K).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/2.11.0/docs/resources/managed_database_mysql#sort_buffer_size ManagedDatabaseMysql#sort_buffer_size}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/2.12.0/docs/resources/managed_database_mysql#sort_buffer_size ManagedDatabaseMysql#sort_buffer_size}
 
 ---
 
@@ -1769,7 +1769,7 @@ Global SQL mode.
 Set to empty to use MySQL server defaults.
 When creating a new service and not setting this field default SQL mode (strict, SQL standard compliant) will be assigned.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/2.11.0/docs/resources/managed_database_mysql#sql_mode ManagedDatabaseMysql#sql_mode}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/2.12.0/docs/resources/managed_database_mysql#sql_mode ManagedDatabaseMysql#sql_mode}
 
 ---
 
@@ -1785,7 +1785,7 @@ Require primary key to be defined for new tables or old tables modified with ALT
 
 It is recommended to always have primary keys because various functionality may break if any large table is missing them.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/2.11.0/docs/resources/managed_database_mysql#sql_require_primary_key ManagedDatabaseMysql#sql_require_primary_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/2.12.0/docs/resources/managed_database_mysql#sql_require_primary_key ManagedDatabaseMysql#sql_require_primary_key}
 
 ---
 
@@ -1799,7 +1799,7 @@ TmpTableSize *f64
 
 Limits the size of internal in-memory tables. Also set `max_heap_table_size`. Default is `16777216` (16M).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/2.11.0/docs/resources/managed_database_mysql#tmp_table_size ManagedDatabaseMysql#tmp_table_size}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/2.12.0/docs/resources/managed_database_mysql#tmp_table_size ManagedDatabaseMysql#tmp_table_size}
 
 ---
 
@@ -1813,7 +1813,7 @@ Version *string
 
 MySQL major version.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/2.11.0/docs/resources/managed_database_mysql#version ManagedDatabaseMysql#version}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/2.12.0/docs/resources/managed_database_mysql#version ManagedDatabaseMysql#version}
 
 ---
 
@@ -1827,7 +1827,7 @@ WaitTimeout *f64
 
 The number of seconds the server waits for activity on a noninteractive connection before closing it.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/2.11.0/docs/resources/managed_database_mysql#wait_timeout ManagedDatabaseMysql#wait_timeout}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/2.12.0/docs/resources/managed_database_mysql#wait_timeout ManagedDatabaseMysql#wait_timeout}
 
 ---
 
@@ -1873,7 +1873,7 @@ Dbname *string
 
 Database name for bootstrapping the initial connection.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/2.11.0/docs/resources/managed_database_mysql#dbname ManagedDatabaseMysql#dbname}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/2.12.0/docs/resources/managed_database_mysql#dbname ManagedDatabaseMysql#dbname}
 
 ---
 
@@ -1887,7 +1887,7 @@ Host *string
 
 Hostname or IP address of the server where to migrate data from.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/2.11.0/docs/resources/managed_database_mysql#host ManagedDatabaseMysql#host}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/2.12.0/docs/resources/managed_database_mysql#host ManagedDatabaseMysql#host}
 
 ---
 
@@ -1901,7 +1901,7 @@ IgnoreDbs *string
 
 Comma-separated list of databases, which should be ignored during migration (supported by MySQL only at the moment).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/2.11.0/docs/resources/managed_database_mysql#ignore_dbs ManagedDatabaseMysql#ignore_dbs}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/2.12.0/docs/resources/managed_database_mysql#ignore_dbs ManagedDatabaseMysql#ignore_dbs}
 
 ---
 
@@ -1915,7 +1915,7 @@ Password *string
 
 Password for authentication with the server where to migrate data from.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/2.11.0/docs/resources/managed_database_mysql#password ManagedDatabaseMysql#password}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/2.12.0/docs/resources/managed_database_mysql#password ManagedDatabaseMysql#password}
 
 ---
 
@@ -1929,7 +1929,7 @@ Port *f64
 
 Port number of the server where to migrate data from.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/2.11.0/docs/resources/managed_database_mysql#port ManagedDatabaseMysql#port}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/2.12.0/docs/resources/managed_database_mysql#port ManagedDatabaseMysql#port}
 
 ---
 
@@ -1943,7 +1943,7 @@ Ssl interface{}
 
 The server where to migrate data from is secured with SSL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/2.11.0/docs/resources/managed_database_mysql#ssl ManagedDatabaseMysql#ssl}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/2.12.0/docs/resources/managed_database_mysql#ssl ManagedDatabaseMysql#ssl}
 
 ---
 
@@ -1957,7 +1957,7 @@ Username *string
 
 User name for authentication with the server where to migrate data from.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/2.11.0/docs/resources/managed_database_mysql#username ManagedDatabaseMysql#username}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/2.12.0/docs/resources/managed_database_mysql#username ManagedDatabaseMysql#username}
 
 ---
 

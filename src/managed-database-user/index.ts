@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/upcloudltd/upcloud/2.11.0/docs/resources/managed_database_user
+// https://registry.terraform.io/providers/upcloudltd/upcloud/2.12.0/docs/resources/managed_database_user
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -14,12 +14,12 @@ import * as cdktf from 'cdktf';
 export interface ManagedDatabaseUserConfig extends cdktf.TerraformMetaArguments {
   /**
   * MySQL only, authentication type.
-  * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/2.11.0/docs/resources/managed_database_user#authentication ManagedDatabaseUser#authentication}
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/2.12.0/docs/resources/managed_database_user#authentication ManagedDatabaseUser#authentication}
   */
   readonly authentication?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/2.11.0/docs/resources/managed_database_user#id ManagedDatabaseUser#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/2.12.0/docs/resources/managed_database_user#id ManagedDatabaseUser#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -27,52 +27,52 @@ export interface ManagedDatabaseUserConfig extends cdktf.TerraformMetaArguments 
   readonly id?: string;
   /**
   * Password for the database user. Defaults to a random value
-  * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/2.11.0/docs/resources/managed_database_user#password ManagedDatabaseUser#password}
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/2.12.0/docs/resources/managed_database_user#password ManagedDatabaseUser#password}
   */
   readonly password?: string;
   /**
   * Service's UUID for which this user belongs to
-  * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/2.11.0/docs/resources/managed_database_user#service ManagedDatabaseUser#service}
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/2.12.0/docs/resources/managed_database_user#service ManagedDatabaseUser#service}
   */
   readonly service: string;
   /**
   * Name of the database user
-  * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/2.11.0/docs/resources/managed_database_user#username ManagedDatabaseUser#username}
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/2.12.0/docs/resources/managed_database_user#username ManagedDatabaseUser#username}
   */
   readonly username: string;
   /**
   * opensearch_access_control block
-  * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/2.11.0/docs/resources/managed_database_user#opensearch_access_control ManagedDatabaseUser#opensearch_access_control}
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/2.12.0/docs/resources/managed_database_user#opensearch_access_control ManagedDatabaseUser#opensearch_access_control}
   */
   readonly opensearchAccessControl?: ManagedDatabaseUserOpensearchAccessControl;
   /**
   * pg_access_control block
-  * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/2.11.0/docs/resources/managed_database_user#pg_access_control ManagedDatabaseUser#pg_access_control}
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/2.12.0/docs/resources/managed_database_user#pg_access_control ManagedDatabaseUser#pg_access_control}
   */
   readonly pgAccessControl?: ManagedDatabaseUserPgAccessControl;
   /**
   * redis_access_control block
-  * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/2.11.0/docs/resources/managed_database_user#redis_access_control ManagedDatabaseUser#redis_access_control}
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/2.12.0/docs/resources/managed_database_user#redis_access_control ManagedDatabaseUser#redis_access_control}
   */
   readonly redisAccessControl?: ManagedDatabaseUserRedisAccessControl;
 }
 export interface ManagedDatabaseUserOpensearchAccessControlRules {
   /**
   * Set index name, pattern or top level API.
-  * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/2.11.0/docs/resources/managed_database_user#index ManagedDatabaseUser#index}
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/2.12.0/docs/resources/managed_database_user#index ManagedDatabaseUser#index}
   */
   readonly index: string;
   /**
   * Set permission access.
-  * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/2.11.0/docs/resources/managed_database_user#permission ManagedDatabaseUser#permission}
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/2.12.0/docs/resources/managed_database_user#permission ManagedDatabaseUser#permission}
   */
   readonly permission: string;
 }
@@ -187,8 +187,8 @@ export class ManagedDatabaseUserOpensearchAccessControlRulesList extends cdktf.C
 export interface ManagedDatabaseUserOpensearchAccessControl {
   /**
   * rules block
-  * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/2.11.0/docs/resources/managed_database_user#rules ManagedDatabaseUser#rules}
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/2.12.0/docs/resources/managed_database_user#rules ManagedDatabaseUser#rules}
   */
   readonly rules: ManagedDatabaseUserOpensearchAccessControlRules[] | cdktf.IResolvable;
 }
@@ -251,8 +251,8 @@ export class ManagedDatabaseUserOpensearchAccessControlOutputReference extends c
 export interface ManagedDatabaseUserPgAccessControl {
   /**
   * Grant replication privilege
-  * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/2.11.0/docs/resources/managed_database_user#allow_replication ManagedDatabaseUser#allow_replication}
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/2.12.0/docs/resources/managed_database_user#allow_replication ManagedDatabaseUser#allow_replication}
   */
   readonly allowReplication?: boolean | cdktf.IResolvable;
 }
@@ -318,26 +318,26 @@ export class ManagedDatabaseUserPgAccessControlOutputReference extends cdktf.Com
 export interface ManagedDatabaseUserRedisAccessControl {
   /**
   * Set access control to all commands in specified categories.
-  * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/2.11.0/docs/resources/managed_database_user#categories ManagedDatabaseUser#categories}
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/2.12.0/docs/resources/managed_database_user#categories ManagedDatabaseUser#categories}
   */
   readonly categories?: string[];
   /**
   * Set access control to Pub/Sub channels.
-  * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/2.11.0/docs/resources/managed_database_user#channels ManagedDatabaseUser#channels}
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/2.12.0/docs/resources/managed_database_user#channels ManagedDatabaseUser#channels}
   */
   readonly channels?: string[];
   /**
   * Set access control to commands.
-  * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/2.11.0/docs/resources/managed_database_user#commands ManagedDatabaseUser#commands}
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/2.12.0/docs/resources/managed_database_user#commands ManagedDatabaseUser#commands}
   */
   readonly commands?: string[];
   /**
   * Set access control to keys.
-  * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/2.11.0/docs/resources/managed_database_user#keys ManagedDatabaseUser#keys}
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/2.12.0/docs/resources/managed_database_user#keys ManagedDatabaseUser#keys}
   */
   readonly keys?: string[];
 }
@@ -471,7 +471,7 @@ export class ManagedDatabaseUserRedisAccessControlOutputReference extends cdktf.
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/upcloudltd/upcloud/2.11.0/docs/resources/managed_database_user upcloud_managed_database_user}
+* Represents a {@link https://registry.terraform.io/providers/upcloudltd/upcloud/2.12.0/docs/resources/managed_database_user upcloud_managed_database_user}
 */
 export class ManagedDatabaseUser extends cdktf.TerraformResource {
 
@@ -485,7 +485,7 @@ export class ManagedDatabaseUser extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/upcloudltd/upcloud/2.11.0/docs/resources/managed_database_user upcloud_managed_database_user} Resource
+  * Create a new {@link https://registry.terraform.io/providers/upcloudltd/upcloud/2.12.0/docs/resources/managed_database_user upcloud_managed_database_user} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -496,7 +496,7 @@ export class ManagedDatabaseUser extends cdktf.TerraformResource {
       terraformResourceType: 'upcloud_managed_database_user',
       terraformGeneratorMetadata: {
         providerName: 'upcloud',
-        providerVersion: '2.11.0',
+        providerVersion: '2.12.0',
         providerVersionConstraint: '~> 2.4'
       },
       provider: config.provider,
