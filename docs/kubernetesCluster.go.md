@@ -13,7 +13,7 @@ Represents a {@link https://registry.terraform.io/providers/upcloudltd/upcloud/2
 #### Initializers <a name="Initializers" id="@cdktf/provider-upcloud.kubernetesCluster.KubernetesCluster.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/kubernetescluster"
+import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v8/kubernetescluster"
 
 kubernetescluster.NewKubernetesCluster(scope Construct, id *string, config KubernetesClusterConfig) KubernetesCluster
 ```
@@ -291,7 +291,7 @@ func ResetPrivateNodeGroups()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-upcloud.kubernetesCluster.KubernetesCluster.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/kubernetescluster"
+import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v8/kubernetescluster"
 
 kubernetescluster.KubernetesCluster_IsConstruct(x interface{}) *bool
 ```
@@ -323,7 +323,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-upcloud.kubernetesCluster.KubernetesCluster.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/kubernetescluster"
+import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v8/kubernetescluster"
 
 kubernetescluster.KubernetesCluster_IsTerraformElement(x interface{}) *bool
 ```
@@ -337,7 +337,7 @@ kubernetescluster.KubernetesCluster_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-upcloud.kubernetesCluster.KubernetesCluster.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/kubernetescluster"
+import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v8/kubernetescluster"
 
 kubernetescluster.KubernetesCluster_IsTerraformResource(x interface{}) *bool
 ```
@@ -701,7 +701,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-upcloud.kubernetesCluster.KubernetesClusterConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/kubernetescluster"
+import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v8/kubernetescluster"
 
 &kubernetescluster.KubernetesClusterConfig {
 	Connection: interface{},
