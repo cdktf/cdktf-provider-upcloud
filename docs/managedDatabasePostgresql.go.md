@@ -1249,7 +1249,7 @@ import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v9/manageddatabasepos
 | <code><a href="#@cdktf/provider-upcloud.managedDatabasePostgresql.ManagedDatabasePostgresqlProperties.property.automaticUtilityNetworkIpFilter">AutomaticUtilityNetworkIpFilter</a></code> | <code>interface{}</code> | Automatic utility network IP Filter. |
 | <code><a href="#@cdktf/provider-upcloud.managedDatabasePostgresql.ManagedDatabasePostgresqlProperties.property.autovacuumAnalyzeScaleFactor">AutovacuumAnalyzeScaleFactor</a></code> | <code>*f64</code> | Specifies a fraction of the table size to add to `autovacuum_analyze_threshold` when deciding whether to trigger an `ANALYZE`. |
 | <code><a href="#@cdktf/provider-upcloud.managedDatabasePostgresql.ManagedDatabasePostgresqlProperties.property.autovacuumAnalyzeThreshold">AutovacuumAnalyzeThreshold</a></code> | <code>*f64</code> | Specifies the minimum number of inserted, updated or deleted tuples needed to trigger an ANALYZE in any one table. |
-| <code><a href="#@cdktf/provider-upcloud.managedDatabasePostgresql.ManagedDatabasePostgresqlProperties.property.autovacuumFreezeMaxAge">AutovacuumFreezeMaxAge</a></code> | <code>*f64</code> | Specifies the maximum age (in transactions) that a table's `pg_class.relfrozenxid` field can attain before a `VACUUM` operation is forced to prevent transaction ID wraparound within the table.  Note that the system will launch autovacuum processes to prevent wraparound even when autovacuum is otherwise disabled.  This parameter will cause the server to be restarted. |
+| <code><a href="#@cdktf/provider-upcloud.managedDatabasePostgresql.ManagedDatabasePostgresqlProperties.property.autovacuumFreezeMaxAge">AutovacuumFreezeMaxAge</a></code> | <code>*f64</code> | Specifies the maximum age (in transactions) that a table's `pg_class.relfrozenxid` field can attain before a `VACUUM` operation is forced to prevent transaction ID wraparound within the table.  				Note that the system will launch autovacuum processes to prevent wraparound even when autovacuum is otherwise disabled.  				This parameter will cause the server to be restarted. |
 | <code><a href="#@cdktf/provider-upcloud.managedDatabasePostgresql.ManagedDatabasePostgresqlProperties.property.autovacuumMaxWorkers">AutovacuumMaxWorkers</a></code> | <code>*f64</code> | Specifies the maximum number of autovacuum processes (other than the autovacuum launcher) that may be running at any one time. |
 | <code><a href="#@cdktf/provider-upcloud.managedDatabasePostgresql.ManagedDatabasePostgresqlProperties.property.autovacuumNaptime">AutovacuumNaptime</a></code> | <code>*f64</code> | Specifies the minimum delay between autovacuum runs on any given database. |
 | <code><a href="#@cdktf/provider-upcloud.managedDatabasePostgresql.ManagedDatabasePostgresqlProperties.property.autovacuumVacuumCostDelay">AutovacuumVacuumCostDelay</a></code> | <code>*f64</code> | Specifies the cost delay value that will be used in automatic VACUUM operations. |
@@ -1311,7 +1311,7 @@ import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v9/manageddatabasepos
 | <code><a href="#@cdktf/provider-upcloud.managedDatabasePostgresql.ManagedDatabasePostgresqlProperties.property.version">Version</a></code> | <code>*string</code> | PostgreSQL major version. |
 | <code><a href="#@cdktf/provider-upcloud.managedDatabasePostgresql.ManagedDatabasePostgresqlProperties.property.walSenderTimeout">WalSenderTimeout</a></code> | <code>*f64</code> | Terminate replication connections that are inactive for longer than this amount of time, in milliseconds. |
 | <code><a href="#@cdktf/provider-upcloud.managedDatabasePostgresql.ManagedDatabasePostgresqlProperties.property.walWriterDelay">WalWriterDelay</a></code> | <code>*f64</code> | WAL flush interval in milliseconds. |
-| <code><a href="#@cdktf/provider-upcloud.managedDatabasePostgresql.ManagedDatabasePostgresqlProperties.property.workMem">WorkMem</a></code> | <code>*f64</code> | Sets the maximum amount of memory to be used by a query operation (such as a sort or hash table) before writing to temporary disk files,  in MB. |
+| <code><a href="#@cdktf/provider-upcloud.managedDatabasePostgresql.ManagedDatabasePostgresqlProperties.property.workMem">WorkMem</a></code> | <code>*f64</code> | Sets the maximum amount of memory to be used by a query operation (such as a sort or hash table) before writing to temporary disk files,  			in MB. |
 
 ---
 
@@ -1399,7 +1399,7 @@ AutovacuumFreezeMaxAge *f64
 
 - *Type:* *f64
 
-Specifies the maximum age (in transactions) that a table's `pg_class.relfrozenxid` field can attain before a `VACUUM` operation is forced to prevent transaction ID wraparound within the table.  Note that the system will launch autovacuum processes to prevent wraparound even when autovacuum is otherwise disabled.  This parameter will cause the server to be restarted.
+Specifies the maximum age (in transactions) that a table's `pg_class.relfrozenxid` field can attain before a `VACUUM` operation is forced to prevent transaction ID wraparound within the table.  				Note that the system will launch autovacuum processes to prevent wraparound even when autovacuum is otherwise disabled.  				This parameter will cause the server to be restarted.
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/2.12.0/docs/resources/managed_database_postgresql#autovacuum_freeze_max_age ManagedDatabasePostgresql#autovacuum_freeze_max_age}
 
@@ -2308,7 +2308,7 @@ WorkMem *f64
 
 - *Type:* *f64
 
-Sets the maximum amount of memory to be used by a query operation (such as a sort or hash table) before writing to temporary disk files,  in MB.
+Sets the maximum amount of memory to be used by a query operation (such as a sort or hash table) before writing to temporary disk files,  			in MB.
 
 Default is 1MB + 0.075% of total RAM (up to 32MB).
 

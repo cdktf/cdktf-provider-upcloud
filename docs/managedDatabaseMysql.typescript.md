@@ -1705,7 +1705,7 @@ public readonly sqlMode: string;
 Global SQL mode.
 
 Set to empty to use MySQL server defaults. 
-When creating a new service and not setting this field default SQL mode (strict, SQL standard compliant) will be assigned.
+			When creating a new service and not setting this field default SQL mode (strict, SQL standard compliant) will be assigned.
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/2.12.0/docs/resources/managed_database_mysql#sql_mode ManagedDatabaseMysql#sql_mode}
 

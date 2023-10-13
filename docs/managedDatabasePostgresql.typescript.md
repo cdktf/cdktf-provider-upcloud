@@ -1159,7 +1159,7 @@ const managedDatabasePostgresqlProperties: managedDatabasePostgresql.ManagedData
 | <code><a href="#@cdktf/provider-upcloud.managedDatabasePostgresql.ManagedDatabasePostgresqlProperties.property.automaticUtilityNetworkIpFilter">automaticUtilityNetworkIpFilter</a></code> | <code>boolean \| cdktf.IResolvable</code> | Automatic utility network IP Filter. |
 | <code><a href="#@cdktf/provider-upcloud.managedDatabasePostgresql.ManagedDatabasePostgresqlProperties.property.autovacuumAnalyzeScaleFactor">autovacuumAnalyzeScaleFactor</a></code> | <code>number</code> | Specifies a fraction of the table size to add to `autovacuum_analyze_threshold` when deciding whether to trigger an `ANALYZE`. |
 | <code><a href="#@cdktf/provider-upcloud.managedDatabasePostgresql.ManagedDatabasePostgresqlProperties.property.autovacuumAnalyzeThreshold">autovacuumAnalyzeThreshold</a></code> | <code>number</code> | Specifies the minimum number of inserted, updated or deleted tuples needed to trigger an ANALYZE in any one table. |
-| <code><a href="#@cdktf/provider-upcloud.managedDatabasePostgresql.ManagedDatabasePostgresqlProperties.property.autovacuumFreezeMaxAge">autovacuumFreezeMaxAge</a></code> | <code>number</code> | Specifies the maximum age (in transactions) that a table's `pg_class.relfrozenxid` field can attain before a `VACUUM` operation is forced to prevent transaction ID wraparound within the table.  Note that the system will launch autovacuum processes to prevent wraparound even when autovacuum is otherwise disabled.  This parameter will cause the server to be restarted. |
+| <code><a href="#@cdktf/provider-upcloud.managedDatabasePostgresql.ManagedDatabasePostgresqlProperties.property.autovacuumFreezeMaxAge">autovacuumFreezeMaxAge</a></code> | <code>number</code> | Specifies the maximum age (in transactions) that a table's `pg_class.relfrozenxid` field can attain before a `VACUUM` operation is forced to prevent transaction ID wraparound within the table.  				Note that the system will launch autovacuum processes to prevent wraparound even when autovacuum is otherwise disabled.  				This parameter will cause the server to be restarted. |
 | <code><a href="#@cdktf/provider-upcloud.managedDatabasePostgresql.ManagedDatabasePostgresqlProperties.property.autovacuumMaxWorkers">autovacuumMaxWorkers</a></code> | <code>number</code> | Specifies the maximum number of autovacuum processes (other than the autovacuum launcher) that may be running at any one time. |
 | <code><a href="#@cdktf/provider-upcloud.managedDatabasePostgresql.ManagedDatabasePostgresqlProperties.property.autovacuumNaptime">autovacuumNaptime</a></code> | <code>number</code> | Specifies the minimum delay between autovacuum runs on any given database. |
 | <code><a href="#@cdktf/provider-upcloud.managedDatabasePostgresql.ManagedDatabasePostgresqlProperties.property.autovacuumVacuumCostDelay">autovacuumVacuumCostDelay</a></code> | <code>number</code> | Specifies the cost delay value that will be used in automatic VACUUM operations. |
@@ -1221,7 +1221,7 @@ const managedDatabasePostgresqlProperties: managedDatabasePostgresql.ManagedData
 | <code><a href="#@cdktf/provider-upcloud.managedDatabasePostgresql.ManagedDatabasePostgresqlProperties.property.version">version</a></code> | <code>string</code> | PostgreSQL major version. |
 | <code><a href="#@cdktf/provider-upcloud.managedDatabasePostgresql.ManagedDatabasePostgresqlProperties.property.walSenderTimeout">walSenderTimeout</a></code> | <code>number</code> | Terminate replication connections that are inactive for longer than this amount of time, in milliseconds. |
 | <code><a href="#@cdktf/provider-upcloud.managedDatabasePostgresql.ManagedDatabasePostgresqlProperties.property.walWriterDelay">walWriterDelay</a></code> | <code>number</code> | WAL flush interval in milliseconds. |
-| <code><a href="#@cdktf/provider-upcloud.managedDatabasePostgresql.ManagedDatabasePostgresqlProperties.property.workMem">workMem</a></code> | <code>number</code> | Sets the maximum amount of memory to be used by a query operation (such as a sort or hash table) before writing to temporary disk files,  in MB. |
+| <code><a href="#@cdktf/provider-upcloud.managedDatabasePostgresql.ManagedDatabasePostgresqlProperties.property.workMem">workMem</a></code> | <code>number</code> | Sets the maximum amount of memory to be used by a query operation (such as a sort or hash table) before writing to temporary disk files,  			in MB. |
 
 ---
 
@@ -1309,7 +1309,7 @@ public readonly autovacuumFreezeMaxAge: number;
 
 - *Type:* number
 
-Specifies the maximum age (in transactions) that a table's `pg_class.relfrozenxid` field can attain before a `VACUUM` operation is forced to prevent transaction ID wraparound within the table.  Note that the system will launch autovacuum processes to prevent wraparound even when autovacuum is otherwise disabled.  This parameter will cause the server to be restarted.
+Specifies the maximum age (in transactions) that a table's `pg_class.relfrozenxid` field can attain before a `VACUUM` operation is forced to prevent transaction ID wraparound within the table.  				Note that the system will launch autovacuum processes to prevent wraparound even when autovacuum is otherwise disabled.  				This parameter will cause the server to be restarted.
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/2.12.0/docs/resources/managed_database_postgresql#autovacuum_freeze_max_age ManagedDatabasePostgresql#autovacuum_freeze_max_age}
 
@@ -2000,7 +2000,7 @@ public readonly pgStatStatementsTrack: string;
 Controls which statements are counted.
 
 Specify top to track top-level statements (those issued directly by clients), all to also track nested statements (such as statements invoked within functions), 
-or none to disable statement statistics collection.The default value is `top`.
+			or none to disable statement statistics collection.The default value is `top`.
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/2.12.0/docs/resources/managed_database_postgresql#pg_stat_statements_track ManagedDatabasePostgresql#pg_stat_statements_track}
 
@@ -2218,7 +2218,7 @@ public readonly workMem: number;
 
 - *Type:* number
 
-Sets the maximum amount of memory to be used by a query operation (such as a sort or hash table) before writing to temporary disk files,  in MB.
+Sets the maximum amount of memory to be used by a query operation (such as a sort or hash table) before writing to temporary disk files,  			in MB.
 
 Default is 1MB + 0.075% of total RAM (up to 32MB).
 
