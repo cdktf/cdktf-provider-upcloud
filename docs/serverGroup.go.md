@@ -13,7 +13,7 @@ Represents a {@link https://registry.terraform.io/providers/upcloudltd/upcloud/2
 #### Initializers <a name="Initializers" id="@cdktf/provider-upcloud.serverGroup.ServerGroup.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v9/servergroup"
+import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/servergroup"
 
 servergroup.NewServerGroup(scope Construct, id *string, config ServerGroupConfig) ServerGroup
 ```
@@ -298,7 +298,7 @@ func ResetMembers()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-upcloud.serverGroup.ServerGroup.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v9/servergroup"
+import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/servergroup"
 
 servergroup.ServerGroup_IsConstruct(x interface{}) *bool
 ```
@@ -330,7 +330,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-upcloud.serverGroup.ServerGroup.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v9/servergroup"
+import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/servergroup"
 
 servergroup.ServerGroup_IsTerraformElement(x interface{}) *bool
 ```
@@ -344,7 +344,7 @@ servergroup.ServerGroup_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-upcloud.serverGroup.ServerGroup.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v9/servergroup"
+import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/servergroup"
 
 servergroup.ServerGroup_IsTerraformResource(x interface{}) *bool
 ```
@@ -653,7 +653,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-upcloud.serverGroup.ServerGroupConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v9/servergroup"
+import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/servergroup"
 
 &servergroup.ServerGroupConfig {
 	Connection: interface{},
@@ -787,16 +787,18 @@ Defines if a server group is an anti-affinity group.
 Setting this to "strict" or yes" will
 result in all servers in the group being placed on separate compute hosts. The value can be "strict", "yes" or "no".
 
-"strict" refers to strict policy doesn't allow servers in the same server group to be on the same host
-"yes" refers to best-effort policy and tries to put servers on different hosts, but this is not guaranteed
-"no" refers to having no policy and thus no affect server host affinity
+```
+			* "strict" refers to strict policy doesn't allow servers in the same server group to be on the same host
+			* "yes" refers to best-effort policy and tries to put servers on different hosts, but this is not guaranteed
+			* "no" refers to having no policy and thus no affect server host affinity
 
-To verify if the anti-affinity policies are met by requesting a server group details from API. For more information
-please see UpCloud API documentation on server groups.
+			To verify if the anti-affinity policies are met by requesting a server group details from API. For more information
+			please see UpCloud API documentation on server groups.
 
-Plese also note that anti-affinity policies are only applied on server start. This means that if anti-affinity
-policies in server group are not met, you need to manually restart the servers in said group,
-for example via API, UpCloud Control Panel or upctl (UpCloud CLI)
+			Plese also note that anti-affinity policies are only applied on server start. This means that if anti-affinity
+			policies in server group are not met, you need to manually restart the servers in said group,
+			for example via API, UpCloud Control Panel or upctl (UpCloud CLI)
+```
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/2.12.0/docs/resources/server_group#anti_affinity_policy ServerGroup#anti_affinity_policy}
 

@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/upcloudltd/upcloud/2.12.0/docs/resources/object_storage
 // generated from terraform resource schema
 
@@ -14,11 +9,11 @@ import * as cdktf from 'cdktf';
 export interface ObjectStorageConfig extends cdktf.TerraformMetaArguments {
   /**
   * The access key used to identify user.
-				Can be set to an empty string, which will tell the provider to get the access key from environment variable.
-				The environment variable should be "UPCLOUD_OBJECT_STORAGE_ACCESS_KEY_{name}".
-				{name} is the name given to object storage instance (so not the resource label), it should be all uppercased
-				and all dashes (-) should be replaced with underscores (_). For example, object storage named "my-files" would
-				use environment variable named "UPCLOUD_OBJECT_STORAGE_ACCESS_KEY_MY_FILES".
+  * 				Can be set to an empty string, which will tell the provider to get the access key from environment variable.
+  * 				The environment variable should be "UPCLOUD_OBJECT_STORAGE_ACCESS_KEY_{name}".
+  * 				{name} is the name given to object storage instance (so not the resource label), it should be all uppercased
+  * 				and all dashes (-) should be replaced with underscores (_). For example, object storage named "my-files" would
+  * 				use environment variable named "UPCLOUD_OBJECT_STORAGE_ACCESS_KEY_MY_FILES".
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/2.12.0/docs/resources/object_storage#access_key ObjectStorage#access_key}
   */
@@ -44,11 +39,11 @@ export interface ObjectStorageConfig extends cdktf.TerraformMetaArguments {
   readonly name: string;
   /**
   * The secret key used to authenticate user.
-				Can be set to an empty string, which will tell the provider to get the secret key from environment variable.
-				The environment variable should be "UPCLOUD_OBJECT_STORAGE_SECRET_KEY_{name}".
-				{name} is the name given to object storage instance (so not the resource label), it should be all uppercased
-				and all dashes (-) should be replaced with underscores (_). For example, object storage named "my-files" would
-				use environment variable named "UPCLOUD_OBJECT_STORAGE_SECRET_KEY_MY_FILES".
+  * 				Can be set to an empty string, which will tell the provider to get the secret key from environment variable.
+  * 				The environment variable should be "UPCLOUD_OBJECT_STORAGE_SECRET_KEY_{name}".
+  * 				{name} is the name given to object storage instance (so not the resource label), it should be all uppercased
+  * 				and all dashes (-) should be replaced with underscores (_). For example, object storage named "my-files" would
+  * 				use environment variable named "UPCLOUD_OBJECT_STORAGE_SECRET_KEY_MY_FILES".
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/2.12.0/docs/resources/object_storage#secret_key ObjectStorage#secret_key}
   */

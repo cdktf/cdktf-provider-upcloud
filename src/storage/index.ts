@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/upcloudltd/upcloud/2.12.0/docs/resources/storage
 // generated from terraform resource schema
 
@@ -20,9 +15,9 @@ export interface StorageConfig extends cdktf.TerraformMetaArguments {
   readonly deleteAutoresizeBackup?: boolean | cdktf.IResolvable;
   /**
   * If set to true, provider will attempt to resize partition and filesystem when the size of the storage changes.
-				Please note that before the resize attempt is made, backup of the storage will be taken. If the resize attempt fails, the backup will be used
-				to restore the storage and then deleted. If the resize attempt succeeds, backup will be kept (unless delete_autoresize_backup option is set to true).
-				Taking and keeping backups incure costs.
+  * 				Please note that before the resize attempt is made, backup of the storage will be taken. If the resize attempt fails, the backup will be used
+  * 				to restore the storage and then deleted. If the resize attempt succeeds, backup will be kept (unless delete_autoresize_backup option is set to true).
+  * 				Taking and keeping backups incure costs.
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/2.12.0/docs/resources/storage#filesystem_autoresize Storage#filesystem_autoresize}
   */

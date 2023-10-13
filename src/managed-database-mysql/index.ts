@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/upcloudltd/upcloud/2.12.0/docs/resources/managed_database_mysql
 // generated from terraform resource schema
 
@@ -674,14 +669,14 @@ export interface ManagedDatabaseMysqlProperties {
   readonly sortBufferSize?: number;
   /**
   * Global SQL mode. Set to empty to use MySQL server defaults. 
-			When creating a new service and not setting this field default SQL mode (strict, SQL standard compliant) will be assigned.
+  * 			When creating a new service and not setting this field default SQL mode (strict, SQL standard compliant) will be assigned.
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/2.12.0/docs/resources/managed_database_mysql#sql_mode ManagedDatabaseMysql#sql_mode}
   */
   readonly sqlMode?: string;
   /**
   * Require primary key to be defined for new tables or old tables modified with ALTER TABLE and fail if missing. 
-			It is recommended to always have primary keys because various functionality may break if any large table is missing them.
+  * 			It is recommended to always have primary keys because various functionality may break if any large table is missing them.
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/2.12.0/docs/resources/managed_database_mysql#sql_require_primary_key ManagedDatabaseMysql#sql_require_primary_key}
   */

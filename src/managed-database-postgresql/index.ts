@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/upcloudltd/upcloud/2.12.0/docs/resources/managed_database_postgresql
 // generated from terraform resource schema
 
@@ -836,7 +831,7 @@ export class ManagedDatabasePostgresqlPropertiesPglookoutOutputReference extends
 export interface ManagedDatabasePostgresqlPropertiesTimescaledb {
   /**
   * The number of background workers for timescaledb operations. 
-						You should configure this setting to the sum of your number of databases and the total number of concurrent background workers you want running at any given point in time.
+  * 						You should configure this setting to the sum of your number of databases and the total number of concurrent background workers you want running at any given point in time.
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/2.12.0/docs/resources/managed_database_postgresql#max_background_workers ManagedDatabasePostgresql#max_background_workers}
   */
@@ -934,8 +929,8 @@ export interface ManagedDatabasePostgresqlProperties {
   readonly autovacuumAnalyzeThreshold?: number;
   /**
   * Specifies the maximum age (in transactions) that a table's `pg_class.relfrozenxid` field can attain before a `VACUUM` operation is forced to prevent transaction ID wraparound within the table. 
-				Note that the system will launch autovacuum processes to prevent wraparound even when autovacuum is otherwise disabled. 
-				This parameter will cause the server to be restarted.
+  * 				Note that the system will launch autovacuum processes to prevent wraparound even when autovacuum is otherwise disabled. 
+  * 				This parameter will cause the server to be restarted.
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/2.12.0/docs/resources/managed_database_postgresql#autovacuum_freeze_max_age ManagedDatabasePostgresql#autovacuum_freeze_max_age}
   */
@@ -1200,8 +1195,8 @@ export interface ManagedDatabasePostgresqlProperties {
   readonly pgStatMonitorPgsmMaxBuckets?: number;
   /**
   * Controls which statements are counted. 
-			Specify top to track top-level statements (those issued directly by clients), all to also track nested statements (such as statements invoked within functions), 
-			or none to disable statement statistics collection.The default value is `top`.
+  * 			Specify top to track top-level statements (those issued directly by clients), all to also track nested statements (such as statements invoked within functions), 
+  * 			or none to disable statement statistics collection.The default value is `top`.
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/2.12.0/docs/resources/managed_database_postgresql#pg_stat_statements_track ManagedDatabasePostgresql#pg_stat_statements_track}
   */
@@ -1214,7 +1209,7 @@ export interface ManagedDatabasePostgresqlProperties {
   readonly publicAccess?: boolean | cdktf.IResolvable;
   /**
   * Percentage of total RAM that the database server uses for shared memory buffers. 
-				Valid range is 20-60 (float), which corresponds to 20% - 60%. This setting adjusts the `shared_buffers` configuration value.
+  * 				Valid range is 20-60 (float), which corresponds to 20% - 60%. This setting adjusts the `shared_buffers` configuration value.
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/2.12.0/docs/resources/managed_database_postgresql#shared_buffers_percentage ManagedDatabasePostgresql#shared_buffers_percentage}
   */
@@ -1257,7 +1252,7 @@ export interface ManagedDatabasePostgresqlProperties {
   readonly trackFunctions?: string;
   /**
   * Enables timing of database I/O calls. 
-			This parameter is off by default, because it will repeatedly query the operating system for the current time, which may cause significant overhead on some platforms.
+  * 			This parameter is off by default, because it will repeatedly query the operating system for the current time, which may cause significant overhead on some platforms.
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/2.12.0/docs/resources/managed_database_postgresql#track_io_timing ManagedDatabasePostgresql#track_io_timing}
   */
@@ -1288,7 +1283,7 @@ export interface ManagedDatabasePostgresqlProperties {
   readonly walWriterDelay?: number;
   /**
   * Sets the maximum amount of memory to be used by a query operation (such as a sort or hash table) before writing to temporary disk files, 
-			in MB. Default is 1MB + 0.075% of total RAM (up to 32MB).
+  * 			in MB. Default is 1MB + 0.075% of total RAM (up to 32MB).
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/2.12.0/docs/resources/managed_database_postgresql#work_mem ManagedDatabasePostgresql#work_mem}
   */

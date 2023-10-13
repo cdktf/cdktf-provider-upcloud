@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/upcloudltd/upcloud/2.12.0/docs/resources/loadbalancer_resolver
 // generated from terraform resource schema
 
@@ -45,7 +40,7 @@ export interface LoadbalancerResolverConfig extends cdktf.TerraformMetaArguments
   readonly name: string;
   /**
   * List of nameserver IP addresses. Nameserver can reside in public internet or in customer private network. 
-				Port is optional, if missing then default 53 will be used.
+  * 				Port is optional, if missing then default 53 will be used.
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/2.12.0/docs/resources/loadbalancer_resolver#nameservers LoadbalancerResolver#nameservers}
   */
