@@ -13,7 +13,7 @@ Represents a {@link https://registry.terraform.io/providers/upcloudltd/upcloud/2
 #### Initializers <a name="Initializers" id="@cdktf/provider-upcloud.loadbalancerManualCertificateBundle.LoadbalancerManualCertificateBundle.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v9/loadbalancermanualcertificatebundle"
+import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v10/loadbalancermanualcertificatebundle"
 
 loadbalancermanualcertificatebundle.NewLoadbalancerManualCertificateBundle(scope Construct, id *string, config LoadbalancerManualCertificateBundleConfig) LoadbalancerManualCertificateBundle
 ```
@@ -284,7 +284,7 @@ func ResetIntermediates()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-upcloud.loadbalancerManualCertificateBundle.LoadbalancerManualCertificateBundle.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v9/loadbalancermanualcertificatebundle"
+import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v10/loadbalancermanualcertificatebundle"
 
 loadbalancermanualcertificatebundle.LoadbalancerManualCertificateBundle_IsConstruct(x interface{}) *bool
 ```
@@ -316,7 +316,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-upcloud.loadbalancerManualCertificateBundle.LoadbalancerManualCertificateBundle.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v9/loadbalancermanualcertificatebundle"
+import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v10/loadbalancermanualcertificatebundle"
 
 loadbalancermanualcertificatebundle.LoadbalancerManualCertificateBundle_IsTerraformElement(x interface{}) *bool
 ```
@@ -330,7 +330,7 @@ loadbalancermanualcertificatebundle.LoadbalancerManualCertificateBundle_IsTerraf
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-upcloud.loadbalancerManualCertificateBundle.LoadbalancerManualCertificateBundle.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v9/loadbalancermanualcertificatebundle"
+import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v10/loadbalancermanualcertificatebundle"
 
 loadbalancermanualcertificatebundle.LoadbalancerManualCertificateBundle_IsTerraformResource(x interface{}) *bool
 ```
@@ -672,7 +672,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-upcloud.loadbalancerManualCertificateBundle.LoadbalancerManualCertificateBundleConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v9/loadbalancermanualcertificatebundle"
+import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v10/loadbalancermanualcertificatebundle"
 
 &loadbalancermanualcertificatebundle.LoadbalancerManualCertificateBundleConfig {
 	Connection: interface{},
