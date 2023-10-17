@@ -179,6 +179,20 @@ export class ObjectStorage extends cdktf.TerraformResource {
   // =================
   public static readonly tfResourceType = "upcloud_object_storage";
 
+  // ==============
+  // STATIC Methods
+  // ==============
+  /**
+  * Generates CDKTF code for importing a ObjectStorage resource upon running "cdktf plan <stack-name>"
+  * @param scope The scope in which to define this construct
+  * @param importToId The construct id used in the generated config for the ObjectStorage to import
+  * @param importFromId The id of the existing ObjectStorage that should be imported. Refer to the {@link https://registry.terraform.io/providers/upcloudltd/upcloud/2.12.0/docs/resources/object_storage#import import section} in the documentation of this resource for the id to use
+  * @param provider? Optional instance of the provider where the ObjectStorage to import is found
+  */
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
+        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "upcloud_object_storage", importId: importFromId, provider });
+      }
+
   // ===========
   // INITIALIZER
   // ===========

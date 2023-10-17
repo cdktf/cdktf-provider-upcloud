@@ -951,6 +951,20 @@ export class ManagedDatabaseRedis extends cdktf.TerraformResource {
   // =================
   public static readonly tfResourceType = "upcloud_managed_database_redis";
 
+  // ==============
+  // STATIC Methods
+  // ==============
+  /**
+  * Generates CDKTF code for importing a ManagedDatabaseRedis resource upon running "cdktf plan <stack-name>"
+  * @param scope The scope in which to define this construct
+  * @param importToId The construct id used in the generated config for the ManagedDatabaseRedis to import
+  * @param importFromId The id of the existing ManagedDatabaseRedis that should be imported. Refer to the {@link https://registry.terraform.io/providers/upcloudltd/upcloud/2.12.0/docs/resources/managed_database_redis#import import section} in the documentation of this resource for the id to use
+  * @param provider? Optional instance of the provider where the ManagedDatabaseRedis to import is found
+  */
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
+        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "upcloud_managed_database_redis", importId: importFromId, provider });
+      }
+
   // ===========
   // INITIALIZER
   // ===========
