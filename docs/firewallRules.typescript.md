@@ -60,6 +60,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-upcloud.firewallRules.FirewallRules.resetOverrideLogicalId">resetOverrideLogicalId</a></code> | Resets a previously passed logical Id to use the auto-generated logical id again. |
 | <code><a href="#@cdktf/provider-upcloud.firewallRules.FirewallRules.toMetadata">toMetadata</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.firewallRules.FirewallRules.toTerraform">toTerraform</a></code> | Adds this resource to the terraform JSON output. |
+| <code><a href="#@cdktf/provider-upcloud.firewallRules.FirewallRules.addMoveTarget">addMoveTarget</a></code> | Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move. |
 | <code><a href="#@cdktf/provider-upcloud.firewallRules.FirewallRules.getAnyMapAttribute">getAnyMapAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.firewallRules.FirewallRules.getBooleanAttribute">getBooleanAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.firewallRules.FirewallRules.getBooleanMapAttribute">getBooleanMapAttribute</a></code> | *No description.* |
@@ -69,7 +70,9 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-upcloud.firewallRules.FirewallRules.getNumberMapAttribute">getNumberMapAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.firewallRules.FirewallRules.getStringAttribute">getStringAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.firewallRules.FirewallRules.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-upcloud.firewallRules.FirewallRules.importFrom">importFrom</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.firewallRules.FirewallRules.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-upcloud.firewallRules.FirewallRules.moveTo">moveTo</a></code> | Moves this resource to the target resource given by moveTarget. |
 | <code><a href="#@cdktf/provider-upcloud.firewallRules.FirewallRules.putFirewallRule">putFirewallRule</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.firewallRules.FirewallRules.resetId">resetId</a></code> | *No description.* |
 
@@ -138,6 +141,22 @@ public toTerraform(): any
 ```
 
 Adds this resource to the terraform JSON output.
+
+##### `addMoveTarget` <a name="addMoveTarget" id="@cdktf/provider-upcloud.firewallRules.FirewallRules.addMoveTarget"></a>
+
+```typescript
+public addMoveTarget(moveTarget: string): void
+```
+
+Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
+
+###### `moveTarget`<sup>Required</sup> <a name="moveTarget" id="@cdktf/provider-upcloud.firewallRules.FirewallRules.addMoveTarget.parameter.moveTarget"></a>
+
+- *Type:* string
+
+The string move target that will correspond to this resource.
+
+---
 
 ##### `getAnyMapAttribute` <a name="getAnyMapAttribute" id="@cdktf/provider-upcloud.firewallRules.FirewallRules.getAnyMapAttribute"></a>
 
@@ -247,6 +266,24 @@ public getStringMapAttribute(terraformAttribute: string): {[ key: string ]: stri
 
 ---
 
+##### `importFrom` <a name="importFrom" id="@cdktf/provider-upcloud.firewallRules.FirewallRules.importFrom"></a>
+
+```typescript
+public importFrom(id: string, provider?: TerraformProvider): void
+```
+
+###### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-upcloud.firewallRules.FirewallRules.importFrom.parameter.id"></a>
+
+- *Type:* string
+
+---
+
+###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktf/provider-upcloud.firewallRules.FirewallRules.importFrom.parameter.provider"></a>
+
+- *Type:* cdktf.TerraformProvider
+
+---
+
 ##### `interpolationForAttribute` <a name="interpolationForAttribute" id="@cdktf/provider-upcloud.firewallRules.FirewallRules.interpolationForAttribute"></a>
 
 ```typescript
@@ -256,6 +293,30 @@ public interpolationForAttribute(terraformAttribute: string): IResolvable
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-upcloud.firewallRules.FirewallRules.interpolationForAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
+
+---
+
+##### `moveTo` <a name="moveTo" id="@cdktf/provider-upcloud.firewallRules.FirewallRules.moveTo"></a>
+
+```typescript
+public moveTo(moveTarget: string, index?: string | number): void
+```
+
+Moves this resource to the target resource given by moveTarget.
+
+###### `moveTarget`<sup>Required</sup> <a name="moveTarget" id="@cdktf/provider-upcloud.firewallRules.FirewallRules.moveTo.parameter.moveTarget"></a>
+
+- *Type:* string
+
+The previously set user defined string set by .addMoveTarget() corresponding to the resource to move to.
+
+---
+
+###### `index`<sup>Optional</sup> <a name="index" id="@cdktf/provider-upcloud.firewallRules.FirewallRules.moveTo.parameter.index"></a>
+
+- *Type:* string | number
+
+Optional The index corresponding to the key the resource is to appear in the foreach of a resource to move to.
 
 ---
 
@@ -284,6 +345,7 @@ public resetId(): void
 | <code><a href="#@cdktf/provider-upcloud.firewallRules.FirewallRules.isConstruct">isConstruct</a></code> | Checks if `x` is a construct. |
 | <code><a href="#@cdktf/provider-upcloud.firewallRules.FirewallRules.isTerraformElement">isTerraformElement</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.firewallRules.FirewallRules.isTerraformResource">isTerraformResource</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-upcloud.firewallRules.FirewallRules.generateConfigForImport">generateConfigForImport</a></code> | Generates CDKTF code for importing a FirewallRules resource upon running "cdktf plan <stack-name>". |
 
 ---
 
@@ -344,6 +406,50 @@ firewallRules.FirewallRules.isTerraformResource(x: any)
 ###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-upcloud.firewallRules.FirewallRules.isTerraformResource.parameter.x"></a>
 
 - *Type:* any
+
+---
+
+##### `generateConfigForImport` <a name="generateConfigForImport" id="@cdktf/provider-upcloud.firewallRules.FirewallRules.generateConfigForImport"></a>
+
+```typescript
+import { firewallRules } from '@cdktf/provider-upcloud'
+
+firewallRules.FirewallRules.generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: TerraformProvider)
+```
+
+Generates CDKTF code for importing a FirewallRules resource upon running "cdktf plan <stack-name>".
+
+###### `scope`<sup>Required</sup> <a name="scope" id="@cdktf/provider-upcloud.firewallRules.FirewallRules.generateConfigForImport.parameter.scope"></a>
+
+- *Type:* constructs.Construct
+
+The scope in which to define this construct.
+
+---
+
+###### `importToId`<sup>Required</sup> <a name="importToId" id="@cdktf/provider-upcloud.firewallRules.FirewallRules.generateConfigForImport.parameter.importToId"></a>
+
+- *Type:* string
+
+The construct id used in the generated config for the FirewallRules to import.
+
+---
+
+###### `importFromId`<sup>Required</sup> <a name="importFromId" id="@cdktf/provider-upcloud.firewallRules.FirewallRules.generateConfigForImport.parameter.importFromId"></a>
+
+- *Type:* string
+
+The id of the existing FirewallRules that should be imported.
+
+Refer to the {@link https://registry.terraform.io/providers/upcloudltd/upcloud/2.12.0/docs/resources/firewall_rules#import import section} in the documentation of this resource for the id to use
+
+---
+
+###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktf/provider-upcloud.firewallRules.FirewallRules.generateConfigForImport.parameter.provider"></a>
+
+- *Type:* cdktf.TerraformProvider
+
+? Optional instance of the provider where the FirewallRules to import is found.
 
 ---
 
