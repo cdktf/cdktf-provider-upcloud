@@ -13,7 +13,7 @@ Represents a {@link https://registry.terraform.io/providers/upcloudltd/upcloud/2
 #### Initializers <a name="Initializers" id="@cdktf/provider-upcloud.objectStorage.ObjectStorage.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v10/objectstorage"
+import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/objectstorage"
 
 objectstorage.NewObjectStorage(scope Construct, id *string, config ObjectStorageConfig) ObjectStorage
 ```
@@ -366,7 +366,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-upcloud.objectStorage.ObjectStorage.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v10/objectstorage"
+import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/objectstorage"
 
 objectstorage.ObjectStorage_IsConstruct(x interface{}) *bool
 ```
@@ -398,7 +398,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-upcloud.objectStorage.ObjectStorage.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v10/objectstorage"
+import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/objectstorage"
 
 objectstorage.ObjectStorage_IsTerraformElement(x interface{}) *bool
 ```
@@ -412,7 +412,7 @@ objectstorage.ObjectStorage_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-upcloud.objectStorage.ObjectStorage.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v10/objectstorage"
+import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/objectstorage"
 
 objectstorage.ObjectStorage_IsTerraformResource(x interface{}) *bool
 ```
@@ -426,7 +426,7 @@ objectstorage.ObjectStorage_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-upcloud.objectStorage.ObjectStorage.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v10/objectstorage"
+import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/objectstorage"
 
 objectstorage.ObjectStorage_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -875,7 +875,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-upcloud.objectStorage.ObjectStorageBucket.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v10/objectstorage"
+import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/objectstorage"
 
 &objectstorage.ObjectStorageBucket {
 	Name: *string,
@@ -909,7 +909,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upclo
 #### Initializer <a name="Initializer" id="@cdktf/provider-upcloud.objectStorage.ObjectStorageConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v10/objectstorage"
+import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/objectstorage"
 
 &objectstorage.ObjectStorageConfig {
 	Connection: interface{},
@@ -1154,7 +1154,7 @@ If you experience problems setting this value it might not be settable. Please t
 #### Initializers <a name="Initializers" id="@cdktf/provider-upcloud.objectStorage.ObjectStorageBucketList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v10/objectstorage"
+import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/objectstorage"
 
 objectstorage.NewObjectStorageBucketList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ObjectStorageBucketList
 ```
@@ -1297,7 +1297,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-upcloud.objectStorage.ObjectStorageBucketOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v10/objectstorage"
+import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/objectstorage"
 
 objectstorage.NewObjectStorageBucketOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ObjectStorageBucketOutputReference
 ```
