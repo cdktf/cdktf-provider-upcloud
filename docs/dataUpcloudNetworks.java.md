@@ -1,6 +1,6 @@
 # `data_upcloud_networks`
 
-Refer to the Terraform Registory for docs: [`data_upcloud_networks`](https://registry.terraform.io/providers/upcloudltd/upcloud/2.12.0/docs/data-sources/networks).
+Refer to the Terraform Registory for docs: [`data_upcloud_networks`](https://registry.terraform.io/providers/upcloudltd/upcloud/3.0.3/docs/data-sources/networks).
 
 # `dataUpcloudNetworks` Submodule <a name="`dataUpcloudNetworks` Submodule" id="@cdktf/provider-upcloud.dataUpcloudNetworks"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`data_upcloud_networks`](https://reg
 
 ### DataUpcloudNetworks <a name="DataUpcloudNetworks" id="@cdktf/provider-upcloud.dataUpcloudNetworks.DataUpcloudNetworks"></a>
 
-Represents a {@link https://registry.terraform.io/providers/upcloudltd/upcloud/2.12.0/docs/data-sources/networks upcloud_networks}.
+Represents a {@link https://registry.terraform.io/providers/upcloudltd/upcloud/3.0.3/docs/data-sources/networks upcloud_networks}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-upcloud.dataUpcloudNetworks.DataUpcloudNetworks.Initializer"></a>
 
@@ -45,7 +45,7 @@ DataUpcloudNetworks.Builder.create(Construct scope, java.lang.String id)
 | <code><a href="#@cdktf/provider-upcloud.dataUpcloudNetworks.DataUpcloudNetworks.Initializer.parameter.provider">provider</a></code> | <code>com.hashicorp.cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.dataUpcloudNetworks.DataUpcloudNetworks.Initializer.parameter.provisioners">provisioners</a></code> | <code>java.util.List<com.hashicorp.cdktf.FileProvisioner OR com.hashicorp.cdktf.LocalExecProvisioner OR com.hashicorp.cdktf.RemoteExecProvisioner></code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.dataUpcloudNetworks.DataUpcloudNetworks.Initializer.parameter.filterName">filterName</a></code> | <code>java.lang.String</code> | If specified, results will be filtered to match name using a regular expression. |
-| <code><a href="#@cdktf/provider-upcloud.dataUpcloudNetworks.DataUpcloudNetworks.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/2.12.0/docs/data-sources/networks#id DataUpcloudNetworks#id}. |
+| <code><a href="#@cdktf/provider-upcloud.dataUpcloudNetworks.DataUpcloudNetworks.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/3.0.3/docs/data-sources/networks#id DataUpcloudNetworks#id}. |
 | <code><a href="#@cdktf/provider-upcloud.dataUpcloudNetworks.DataUpcloudNetworks.Initializer.parameter.zone">zone</a></code> | <code>java.lang.String</code> | If specified, this data source will return only networks from this zone. |
 
 ---
@@ -116,7 +116,7 @@ Must be unique amongst siblings in the same scope
 
 If specified, results will be filtered to match name using a regular expression.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/2.12.0/docs/data-sources/networks#filter_name DataUpcloudNetworks#filter_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/3.0.3/docs/data-sources/networks#filter_name DataUpcloudNetworks#filter_name}
 
 ---
 
@@ -124,7 +124,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upclo
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/2.12.0/docs/data-sources/networks#id DataUpcloudNetworks#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/3.0.3/docs/data-sources/networks#id DataUpcloudNetworks#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -137,7 +137,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 If specified, this data source will return only networks from this zone.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/2.12.0/docs/data-sources/networks#zone DataUpcloudNetworks#zone}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/3.0.3/docs/data-sources/networks#zone DataUpcloudNetworks#zone}
 
 ---
 
@@ -472,7 +472,7 @@ The construct id used in the generated config for the DataUpcloudNetworks to imp
 
 The id of the existing DataUpcloudNetworks that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/upcloudltd/upcloud/2.12.0/docs/data-sources/networks#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/upcloudltd/upcloud/3.0.3/docs/data-sources/networks#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -759,7 +759,7 @@ DataUpcloudNetworksConfig.builder()
 | <code><a href="#@cdktf/provider-upcloud.dataUpcloudNetworks.DataUpcloudNetworksConfig.property.provider">provider</a></code> | <code>com.hashicorp.cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.dataUpcloudNetworks.DataUpcloudNetworksConfig.property.provisioners">provisioners</a></code> | <code>java.util.List<com.hashicorp.cdktf.FileProvisioner OR com.hashicorp.cdktf.LocalExecProvisioner OR com.hashicorp.cdktf.RemoteExecProvisioner></code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.dataUpcloudNetworks.DataUpcloudNetworksConfig.property.filterName">filterName</a></code> | <code>java.lang.String</code> | If specified, results will be filtered to match name using a regular expression. |
-| <code><a href="#@cdktf/provider-upcloud.dataUpcloudNetworks.DataUpcloudNetworksConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/2.12.0/docs/data-sources/networks#id DataUpcloudNetworks#id}. |
+| <code><a href="#@cdktf/provider-upcloud.dataUpcloudNetworks.DataUpcloudNetworksConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/3.0.3/docs/data-sources/networks#id DataUpcloudNetworks#id}. |
 | <code><a href="#@cdktf/provider-upcloud.dataUpcloudNetworks.DataUpcloudNetworksConfig.property.zone">zone</a></code> | <code>java.lang.String</code> | If specified, this data source will return only networks from this zone. |
 
 ---
@@ -844,7 +844,7 @@ public java.lang.String getFilterName();
 
 If specified, results will be filtered to match name using a regular expression.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/2.12.0/docs/data-sources/networks#filter_name DataUpcloudNetworks#filter_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/3.0.3/docs/data-sources/networks#filter_name DataUpcloudNetworks#filter_name}
 
 ---
 
@@ -856,7 +856,7 @@ public java.lang.String getId();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/2.12.0/docs/data-sources/networks#id DataUpcloudNetworks#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/3.0.3/docs/data-sources/networks#id DataUpcloudNetworks#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -873,7 +873,7 @@ public java.lang.String getZone();
 
 If specified, this data source will return only networks from this zone.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/2.12.0/docs/data-sources/networks#zone DataUpcloudNetworks#zone}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/3.0.3/docs/data-sources/networks#zone DataUpcloudNetworks#zone}
 
 ---
 
@@ -1279,6 +1279,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-upcloud.dataUpcloudNetworks.DataUpcloudNetworksNetworksIpNetworkOutputReference.property.dhcp">dhcp</a></code> | <code>com.hashicorp.cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.dataUpcloudNetworks.DataUpcloudNetworksNetworksIpNetworkOutputReference.property.dhcpDefaultRoute">dhcpDefaultRoute</a></code> | <code>com.hashicorp.cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.dataUpcloudNetworks.DataUpcloudNetworksNetworksIpNetworkOutputReference.property.dhcpDns">dhcpDns</a></code> | <code>java.util.List<java.lang.String></code> | *No description.* |
+| <code><a href="#@cdktf/provider-upcloud.dataUpcloudNetworks.DataUpcloudNetworksNetworksIpNetworkOutputReference.property.dhcpRoutes">dhcpRoutes</a></code> | <code>java.util.List<java.lang.String></code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.dataUpcloudNetworks.DataUpcloudNetworksNetworksIpNetworkOutputReference.property.family">family</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.dataUpcloudNetworks.DataUpcloudNetworksNetworksIpNetworkOutputReference.property.gateway">gateway</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.dataUpcloudNetworks.DataUpcloudNetworksNetworksIpNetworkOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktf/provider-upcloud.dataUpcloudNetworks.DataUpcloudNetworksNetworksIpNetwork">DataUpcloudNetworksNetworksIpNetwork</a></code> | *No description.* |
@@ -1343,6 +1344,16 @@ public IResolvable getDhcpDefaultRoute();
 
 ```java
 public java.util.List<java.lang.String> getDhcpDns();
+```
+
+- *Type:* java.util.List<java.lang.String>
+
+---
+
+##### `dhcpRoutes`<sup>Required</sup> <a name="dhcpRoutes" id="@cdktf/provider-upcloud.dataUpcloudNetworks.DataUpcloudNetworksNetworksIpNetworkOutputReference.property.dhcpRoutes"></a>
+
+```java
+public java.util.List<java.lang.String> getDhcpRoutes();
 ```
 
 - *Type:* java.util.List<java.lang.String>

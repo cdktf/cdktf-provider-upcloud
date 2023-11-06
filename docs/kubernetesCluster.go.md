@@ -1,6 +1,6 @@
 # `upcloud_kubernetes_cluster`
 
-Refer to the Terraform Registory for docs: [`upcloud_kubernetes_cluster`](https://registry.terraform.io/providers/upcloudltd/upcloud/2.12.0/docs/resources/kubernetes_cluster).
+Refer to the Terraform Registory for docs: [`upcloud_kubernetes_cluster`](https://registry.terraform.io/providers/upcloudltd/upcloud/3.0.3/docs/resources/kubernetes_cluster).
 
 # `kubernetesCluster` Submodule <a name="`kubernetesCluster` Submodule" id="@cdktf/provider-upcloud.kubernetesCluster"></a>
 
@@ -8,12 +8,12 @@ Refer to the Terraform Registory for docs: [`upcloud_kubernetes_cluster`](https:
 
 ### KubernetesCluster <a name="KubernetesCluster" id="@cdktf/provider-upcloud.kubernetesCluster.KubernetesCluster"></a>
 
-Represents a {@link https://registry.terraform.io/providers/upcloudltd/upcloud/2.12.0/docs/resources/kubernetes_cluster upcloud_kubernetes_cluster}.
+Represents a {@link https://registry.terraform.io/providers/upcloudltd/upcloud/3.0.3/docs/resources/kubernetes_cluster upcloud_kubernetes_cluster}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-upcloud.kubernetesCluster.KubernetesCluster.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v10/kubernetescluster"
+import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v11/kubernetescluster"
 
 kubernetescluster.NewKubernetesCluster(scope Construct, id *string, config KubernetesClusterConfig) KubernetesCluster
 ```
@@ -353,7 +353,7 @@ func ResetPrivateNodeGroups()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-upcloud.kubernetesCluster.KubernetesCluster.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v10/kubernetescluster"
+import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v11/kubernetescluster"
 
 kubernetescluster.KubernetesCluster_IsConstruct(x interface{}) *bool
 ```
@@ -385,7 +385,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-upcloud.kubernetesCluster.KubernetesCluster.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v10/kubernetescluster"
+import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v11/kubernetescluster"
 
 kubernetescluster.KubernetesCluster_IsTerraformElement(x interface{}) *bool
 ```
@@ -399,7 +399,7 @@ kubernetescluster.KubernetesCluster_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-upcloud.kubernetesCluster.KubernetesCluster.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v10/kubernetescluster"
+import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v11/kubernetescluster"
 
 kubernetescluster.KubernetesCluster_IsTerraformResource(x interface{}) *bool
 ```
@@ -413,7 +413,7 @@ kubernetescluster.KubernetesCluster_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-upcloud.kubernetesCluster.KubernetesCluster.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v10/kubernetescluster"
+import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v11/kubernetescluster"
 
 kubernetescluster.KubernetesCluster_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -442,7 +442,7 @@ The construct id used in the generated config for the KubernetesCluster to impor
 
 The id of the existing KubernetesCluster that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/upcloudltd/upcloud/2.12.0/docs/resources/kubernetes_cluster#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/upcloudltd/upcloud/3.0.3/docs/resources/kubernetes_cluster#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -475,12 +475,14 @@ Refer to the {@link https://registry.terraform.io/providers/upcloudltd/upcloud/2
 | <code><a href="#@cdktf/provider-upcloud.kubernetesCluster.KubernetesCluster.property.networkCidr">NetworkCidr</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.kubernetesCluster.KubernetesCluster.property.nodeGroups">NodeGroups</a></code> | <code>*[]*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.kubernetesCluster.KubernetesCluster.property.state">State</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-upcloud.kubernetesCluster.KubernetesCluster.property.controlPlaneIpFilterInput">ControlPlaneIpFilterInput</a></code> | <code>*[]*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.kubernetesCluster.KubernetesCluster.property.idInput">IdInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.kubernetesCluster.KubernetesCluster.property.nameInput">NameInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.kubernetesCluster.KubernetesCluster.property.networkInput">NetworkInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.kubernetesCluster.KubernetesCluster.property.planInput">PlanInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.kubernetesCluster.KubernetesCluster.property.privateNodeGroupsInput">PrivateNodeGroupsInput</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.kubernetesCluster.KubernetesCluster.property.zoneInput">ZoneInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-upcloud.kubernetesCluster.KubernetesCluster.property.controlPlaneIpFilter">ControlPlaneIpFilter</a></code> | <code>*[]*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.kubernetesCluster.KubernetesCluster.property.id">Id</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.kubernetesCluster.KubernetesCluster.property.name">Name</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.kubernetesCluster.KubernetesCluster.property.network">Network</a></code> | <code>*string</code> | *No description.* |
@@ -662,6 +664,16 @@ func State() *string
 
 ---
 
+##### `ControlPlaneIpFilterInput`<sup>Optional</sup> <a name="ControlPlaneIpFilterInput" id="@cdktf/provider-upcloud.kubernetesCluster.KubernetesCluster.property.controlPlaneIpFilterInput"></a>
+
+```go
+func ControlPlaneIpFilterInput() *[]*string
+```
+
+- *Type:* *[]*string
+
+---
+
 ##### `IdInput`<sup>Optional</sup> <a name="IdInput" id="@cdktf/provider-upcloud.kubernetesCluster.KubernetesCluster.property.idInput"></a>
 
 ```go
@@ -719,6 +731,16 @@ func ZoneInput() *string
 ```
 
 - *Type:* *string
+
+---
+
+##### `ControlPlaneIpFilter`<sup>Required</sup> <a name="ControlPlaneIpFilter" id="@cdktf/provider-upcloud.kubernetesCluster.KubernetesCluster.property.controlPlaneIpFilter"></a>
+
+```go
+func ControlPlaneIpFilter() *[]*string
+```
+
+- *Type:* *[]*string
 
 ---
 
@@ -807,7 +829,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-upcloud.kubernetesCluster.KubernetesClusterConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v10/kubernetescluster"
+import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v11/kubernetescluster"
 
 &kubernetescluster.KubernetesClusterConfig {
 	Connection: interface{},
@@ -817,6 +839,7 @@ import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v10/kubernetescluster
 	Lifecycle: github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle,
 	Provider: github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider,
 	Provisioners: *[]interface{},
+	ControlPlaneIpFilter: *[]*string,
 	Name: *string,
 	Network: *string,
 	Zone: *string,
@@ -837,10 +860,11 @@ import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v10/kubernetescluster
 | <code><a href="#@cdktf/provider-upcloud.kubernetesCluster.KubernetesClusterConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.kubernetesCluster.KubernetesClusterConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.kubernetesCluster.KubernetesClusterConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
+| <code><a href="#@cdktf/provider-upcloud.kubernetesCluster.KubernetesClusterConfig.property.controlPlaneIpFilter">ControlPlaneIpFilter</a></code> | <code>*[]*string</code> | IP addresses or IP ranges in CIDR format which are allowed to access the cluster control plane. |
 | <code><a href="#@cdktf/provider-upcloud.kubernetesCluster.KubernetesClusterConfig.property.name">Name</a></code> | <code>*string</code> | Cluster name. Needs to be unique within the account. |
 | <code><a href="#@cdktf/provider-upcloud.kubernetesCluster.KubernetesClusterConfig.property.network">Network</a></code> | <code>*string</code> | Network ID for the cluster to run in. |
 | <code><a href="#@cdktf/provider-upcloud.kubernetesCluster.KubernetesClusterConfig.property.zone">Zone</a></code> | <code>*string</code> | Zone in which the Kubernetes cluster will be hosted, e.g. `de-fra1`. You can list available zones with `upctl zone list`. |
-| <code><a href="#@cdktf/provider-upcloud.kubernetesCluster.KubernetesClusterConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/2.12.0/docs/resources/kubernetes_cluster#id KubernetesCluster#id}. |
+| <code><a href="#@cdktf/provider-upcloud.kubernetesCluster.KubernetesClusterConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/3.0.3/docs/resources/kubernetes_cluster#id KubernetesCluster#id}. |
 | <code><a href="#@cdktf/provider-upcloud.kubernetesCluster.KubernetesClusterConfig.property.plan">Plan</a></code> | <code>*string</code> | The pricing plan used for the cluster. |
 | <code><a href="#@cdktf/provider-upcloud.kubernetesCluster.KubernetesClusterConfig.property.privateNodeGroups">PrivateNodeGroups</a></code> | <code>interface{}</code> | Enable private node groups. Private node groups requires a network that is routed through NAT gateway. |
 
@@ -916,6 +940,22 @@ Provisioners *[]interface{}
 
 ---
 
+##### `ControlPlaneIpFilter`<sup>Required</sup> <a name="ControlPlaneIpFilter" id="@cdktf/provider-upcloud.kubernetesCluster.KubernetesClusterConfig.property.controlPlaneIpFilter"></a>
+
+```go
+ControlPlaneIpFilter *[]*string
+```
+
+- *Type:* *[]*string
+
+IP addresses or IP ranges in CIDR format which are allowed to access the cluster control plane.
+
+To allow access from any source, use `["0.0.0.0/0"]`. To deny access from all sources, use `[]`. Values set here do not restrict access to node groups or exposed Kubernetes services.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/3.0.3/docs/resources/kubernetes_cluster#control_plane_ip_filter KubernetesCluster#control_plane_ip_filter}
+
+---
+
 ##### `Name`<sup>Required</sup> <a name="Name" id="@cdktf/provider-upcloud.kubernetesCluster.KubernetesClusterConfig.property.name"></a>
 
 ```go
@@ -926,7 +966,7 @@ Name *string
 
 Cluster name. Needs to be unique within the account.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/2.12.0/docs/resources/kubernetes_cluster#name KubernetesCluster#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/3.0.3/docs/resources/kubernetes_cluster#name KubernetesCluster#name}
 
 ---
 
@@ -940,7 +980,7 @@ Network *string
 
 Network ID for the cluster to run in.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/2.12.0/docs/resources/kubernetes_cluster#network KubernetesCluster#network}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/3.0.3/docs/resources/kubernetes_cluster#network KubernetesCluster#network}
 
 ---
 
@@ -954,7 +994,7 @@ Zone *string
 
 Zone in which the Kubernetes cluster will be hosted, e.g. `de-fra1`. You can list available zones with `upctl zone list`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/2.12.0/docs/resources/kubernetes_cluster#zone KubernetesCluster#zone}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/3.0.3/docs/resources/kubernetes_cluster#zone KubernetesCluster#zone}
 
 ---
 
@@ -966,7 +1006,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/2.12.0/docs/resources/kubernetes_cluster#id KubernetesCluster#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/3.0.3/docs/resources/kubernetes_cluster#id KubernetesCluster#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -985,7 +1025,7 @@ The pricing plan used for the cluster.
 
 Default plan is `development`. You can list available plans with `upctl kubernetes plans`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/2.12.0/docs/resources/kubernetes_cluster#plan KubernetesCluster#plan}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/3.0.3/docs/resources/kubernetes_cluster#plan KubernetesCluster#plan}
 
 ---
 
@@ -999,7 +1039,7 @@ PrivateNodeGroups interface{}
 
 Enable private node groups. Private node groups requires a network that is routed through NAT gateway.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/2.12.0/docs/resources/kubernetes_cluster#private_node_groups KubernetesCluster#private_node_groups}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/3.0.3/docs/resources/kubernetes_cluster#private_node_groups KubernetesCluster#private_node_groups}
 
 ---
 

@@ -1,3 +1,3 @@
 # `upcloud_managed_database_user`
 
-Refer to the Terraform Registory for docs: [`upcloud_managed_database_user`](https://registry.terraform.io/providers/upcloudltd/upcloud/2.12.0/docs/resources/managed_database_user).
+Refer to the Terraform Registory for docs: [`upcloud_managed_database_user`](https://registry.terraform.io/providers/upcloudltd/upcloud/3.0.3/docs/resources/managed_database_user).

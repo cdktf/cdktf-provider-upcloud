@@ -1,6 +1,6 @@
 # `upcloud_floating_ip_address`
 
-Refer to the Terraform Registory for docs: [`upcloud_floating_ip_address`](https://registry.terraform.io/providers/upcloudltd/upcloud/2.12.0/docs/resources/floating_ip_address).
+Refer to the Terraform Registory for docs: [`upcloud_floating_ip_address`](https://registry.terraform.io/providers/upcloudltd/upcloud/3.0.3/docs/resources/floating_ip_address).
 
 # `floatingIpAddress` Submodule <a name="`floatingIpAddress` Submodule" id="@cdktf/provider-upcloud.floatingIpAddress"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`upcloud_floating_ip_address`](https
 
 ### FloatingIpAddress <a name="FloatingIpAddress" id="@cdktf/provider-upcloud.floatingIpAddress.FloatingIpAddress"></a>
 
-Represents a {@link https://registry.terraform.io/providers/upcloudltd/upcloud/2.12.0/docs/resources/floating_ip_address upcloud_floating_ip_address}.
+Represents a {@link https://registry.terraform.io/providers/upcloudltd/upcloud/3.0.3/docs/resources/floating_ip_address upcloud_floating_ip_address}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-upcloud.floatingIpAddress.FloatingIpAddress.Initializer"></a>
 
@@ -46,9 +46,9 @@ FloatingIpAddress.Builder.create(Construct scope, java.lang.String id)
 | <code><a href="#@cdktf/provider-upcloud.floatingIpAddress.FloatingIpAddress.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>com.hashicorp.cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.floatingIpAddress.FloatingIpAddress.Initializer.parameter.provider">provider</a></code> | <code>com.hashicorp.cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.floatingIpAddress.FloatingIpAddress.Initializer.parameter.provisioners">provisioners</a></code> | <code>java.util.List<com.hashicorp.cdktf.FileProvisioner OR com.hashicorp.cdktf.LocalExecProvisioner OR com.hashicorp.cdktf.RemoteExecProvisioner></code> | *No description.* |
-| <code><a href="#@cdktf/provider-upcloud.floatingIpAddress.FloatingIpAddress.Initializer.parameter.access">access</a></code> | <code>java.lang.String</code> | Is address for utility or public network. |
+| <code><a href="#@cdktf/provider-upcloud.floatingIpAddress.FloatingIpAddress.Initializer.parameter.access">access</a></code> | <code>java.lang.String</code> | Network access for the floating IP address. Supported value: `public`. |
 | <code><a href="#@cdktf/provider-upcloud.floatingIpAddress.FloatingIpAddress.Initializer.parameter.family">family</a></code> | <code>java.lang.String</code> | The address family of new IP address. |
-| <code><a href="#@cdktf/provider-upcloud.floatingIpAddress.FloatingIpAddress.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/2.12.0/docs/resources/floating_ip_address#id FloatingIpAddress#id}. |
+| <code><a href="#@cdktf/provider-upcloud.floatingIpAddress.FloatingIpAddress.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/3.0.3/docs/resources/floating_ip_address#id FloatingIpAddress#id}. |
 | <code><a href="#@cdktf/provider-upcloud.floatingIpAddress.FloatingIpAddress.Initializer.parameter.macAddress">macAddress</a></code> | <code>java.lang.String</code> | MAC address of server interface to assign address to. |
 | <code><a href="#@cdktf/provider-upcloud.floatingIpAddress.FloatingIpAddress.Initializer.parameter.zone">zone</a></code> | <code>java.lang.String</code> | Zone of address, required when assigning a detached floating IP address, e.g. `de-fra1`. You can list available zones with `upctl zone list`. |
 
@@ -118,9 +118,9 @@ Must be unique amongst siblings in the same scope
 
 - *Type:* java.lang.String
 
-Is address for utility or public network.
+Network access for the floating IP address. Supported value: `public`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/2.12.0/docs/resources/floating_ip_address#access FloatingIpAddress#access}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/3.0.3/docs/resources/floating_ip_address#access FloatingIpAddress#access}
 
 ---
 
@@ -130,7 +130,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upclo
 
 The address family of new IP address.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/2.12.0/docs/resources/floating_ip_address#family FloatingIpAddress#family}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/3.0.3/docs/resources/floating_ip_address#family FloatingIpAddress#family}
 
 ---
 
@@ -138,7 +138,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upclo
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/2.12.0/docs/resources/floating_ip_address#id FloatingIpAddress#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/3.0.3/docs/resources/floating_ip_address#id FloatingIpAddress#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -151,7 +151,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 MAC address of server interface to assign address to.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/2.12.0/docs/resources/floating_ip_address#mac_address FloatingIpAddress#mac_address}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/3.0.3/docs/resources/floating_ip_address#mac_address FloatingIpAddress#mac_address}
 
 ---
 
@@ -161,7 +161,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upclo
 
 Zone of address, required when assigning a detached floating IP address, e.g. `de-fra1`. You can list available zones with `upctl zone list`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/2.12.0/docs/resources/floating_ip_address#zone FloatingIpAddress#zone}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/3.0.3/docs/resources/floating_ip_address#zone FloatingIpAddress#zone}
 
 ---
 
@@ -573,7 +573,7 @@ The construct id used in the generated config for the FloatingIpAddress to impor
 
 The id of the existing FloatingIpAddress that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/upcloudltd/upcloud/2.12.0/docs/resources/floating_ip_address#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/upcloudltd/upcloud/3.0.3/docs/resources/floating_ip_address#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -927,9 +927,9 @@ FloatingIpAddressConfig.builder()
 | <code><a href="#@cdktf/provider-upcloud.floatingIpAddress.FloatingIpAddressConfig.property.lifecycle">lifecycle</a></code> | <code>com.hashicorp.cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.floatingIpAddress.FloatingIpAddressConfig.property.provider">provider</a></code> | <code>com.hashicorp.cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.floatingIpAddress.FloatingIpAddressConfig.property.provisioners">provisioners</a></code> | <code>java.util.List<com.hashicorp.cdktf.FileProvisioner OR com.hashicorp.cdktf.LocalExecProvisioner OR com.hashicorp.cdktf.RemoteExecProvisioner></code> | *No description.* |
-| <code><a href="#@cdktf/provider-upcloud.floatingIpAddress.FloatingIpAddressConfig.property.access">access</a></code> | <code>java.lang.String</code> | Is address for utility or public network. |
+| <code><a href="#@cdktf/provider-upcloud.floatingIpAddress.FloatingIpAddressConfig.property.access">access</a></code> | <code>java.lang.String</code> | Network access for the floating IP address. Supported value: `public`. |
 | <code><a href="#@cdktf/provider-upcloud.floatingIpAddress.FloatingIpAddressConfig.property.family">family</a></code> | <code>java.lang.String</code> | The address family of new IP address. |
-| <code><a href="#@cdktf/provider-upcloud.floatingIpAddress.FloatingIpAddressConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/2.12.0/docs/resources/floating_ip_address#id FloatingIpAddress#id}. |
+| <code><a href="#@cdktf/provider-upcloud.floatingIpAddress.FloatingIpAddressConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/3.0.3/docs/resources/floating_ip_address#id FloatingIpAddress#id}. |
 | <code><a href="#@cdktf/provider-upcloud.floatingIpAddress.FloatingIpAddressConfig.property.macAddress">macAddress</a></code> | <code>java.lang.String</code> | MAC address of server interface to assign address to. |
 | <code><a href="#@cdktf/provider-upcloud.floatingIpAddress.FloatingIpAddressConfig.property.zone">zone</a></code> | <code>java.lang.String</code> | Zone of address, required when assigning a detached floating IP address, e.g. `de-fra1`. You can list available zones with `upctl zone list`. |
 
@@ -1013,9 +1013,9 @@ public java.lang.String getAccess();
 
 - *Type:* java.lang.String
 
-Is address for utility or public network.
+Network access for the floating IP address. Supported value: `public`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/2.12.0/docs/resources/floating_ip_address#access FloatingIpAddress#access}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/3.0.3/docs/resources/floating_ip_address#access FloatingIpAddress#access}
 
 ---
 
@@ -1029,7 +1029,7 @@ public java.lang.String getFamily();
 
 The address family of new IP address.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/2.12.0/docs/resources/floating_ip_address#family FloatingIpAddress#family}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/3.0.3/docs/resources/floating_ip_address#family FloatingIpAddress#family}
 
 ---
 
@@ -1041,7 +1041,7 @@ public java.lang.String getId();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/2.12.0/docs/resources/floating_ip_address#id FloatingIpAddress#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/3.0.3/docs/resources/floating_ip_address#id FloatingIpAddress#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1058,7 +1058,7 @@ public java.lang.String getMacAddress();
 
 MAC address of server interface to assign address to.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/2.12.0/docs/resources/floating_ip_address#mac_address FloatingIpAddress#mac_address}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/3.0.3/docs/resources/floating_ip_address#mac_address FloatingIpAddress#mac_address}
 
 ---
 
@@ -1072,7 +1072,7 @@ public java.lang.String getZone();
 
 Zone of address, required when assigning a detached floating IP address, e.g. `de-fra1`. You can list available zones with `upctl zone list`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/2.12.0/docs/resources/floating_ip_address#zone FloatingIpAddress#zone}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/3.0.3/docs/resources/floating_ip_address#zone FloatingIpAddress#zone}
 
 ---
 

@@ -1,6 +1,6 @@
 # `upcloud_router`
 
-Refer to the Terraform Registory for docs: [`upcloud_router`](https://registry.terraform.io/providers/upcloudltd/upcloud/2.12.0/docs/resources/router).
+Refer to the Terraform Registory for docs: [`upcloud_router`](https://registry.terraform.io/providers/upcloudltd/upcloud/3.0.3/docs/resources/router).
 
 # `router` Submodule <a name="`router` Submodule" id="@cdktf/provider-upcloud.router"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`upcloud_router`](https://registry.t
 
 ### Router <a name="Router" id="@cdktf/provider-upcloud.router.Router"></a>
 
-Represents a {@link https://registry.terraform.io/providers/upcloudltd/upcloud/2.12.0/docs/resources/router upcloud_router}.
+Represents a {@link https://registry.terraform.io/providers/upcloudltd/upcloud/3.0.3/docs/resources/router upcloud_router}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-upcloud.router.Router.Initializer"></a>
 
@@ -73,7 +73,9 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-upcloud.router.Router.importFrom">importFrom</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.router.Router.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.router.Router.moveTo">moveTo</a></code> | Moves this resource to the target resource given by moveTarget. |
+| <code><a href="#@cdktf/provider-upcloud.router.Router.putStaticRoute">putStaticRoute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.router.Router.resetId">resetId</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-upcloud.router.Router.resetStaticRoute">resetStaticRoute</a></code> | *No description.* |
 
 ---
 
@@ -319,10 +321,28 @@ Optional The index corresponding to the key the resource is to appear in the for
 
 ---
 
+##### `putStaticRoute` <a name="putStaticRoute" id="@cdktf/provider-upcloud.router.Router.putStaticRoute"></a>
+
+```typescript
+public putStaticRoute(value: IResolvable | RouterStaticRoute[]): void
+```
+
+###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-upcloud.router.Router.putStaticRoute.parameter.value"></a>
+
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-upcloud.router.RouterStaticRoute">RouterStaticRoute</a>[]
+
+---
+
 ##### `resetId` <a name="resetId" id="@cdktf/provider-upcloud.router.Router.resetId"></a>
 
 ```typescript
 public resetId(): void
+```
+
+##### `resetStaticRoute` <a name="resetStaticRoute" id="@cdktf/provider-upcloud.router.Router.resetStaticRoute"></a>
+
+```typescript
+public resetStaticRoute(): void
 ```
 
 #### Static Functions <a name="Static Functions" id="Static Functions"></a>
@@ -428,7 +448,7 @@ The construct id used in the generated config for the Router to import.
 
 The id of the existing Router that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/upcloudltd/upcloud/2.12.0/docs/resources/router#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/upcloudltd/upcloud/3.0.3/docs/resources/router#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -459,9 +479,11 @@ Refer to the {@link https://registry.terraform.io/providers/upcloudltd/upcloud/2
 | <code><a href="#@cdktf/provider-upcloud.router.Router.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.router.Router.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.router.Router.property.attachedNetworks">attachedNetworks</a></code> | <code>string[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-upcloud.router.Router.property.staticRoute">staticRoute</a></code> | <code><a href="#@cdktf/provider-upcloud.router.RouterStaticRouteList">RouterStaticRouteList</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.router.Router.property.type">type</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.router.Router.property.idInput">idInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.router.Router.property.nameInput">nameInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-upcloud.router.Router.property.staticRouteInput">staticRouteInput</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-upcloud.router.RouterStaticRoute">RouterStaticRoute</a>[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.router.Router.property.id">id</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.router.Router.property.name">name</a></code> | <code>string</code> | *No description.* |
 
@@ -619,6 +641,16 @@ public readonly attachedNetworks: string[];
 
 ---
 
+##### `staticRoute`<sup>Required</sup> <a name="staticRoute" id="@cdktf/provider-upcloud.router.Router.property.staticRoute"></a>
+
+```typescript
+public readonly staticRoute: RouterStaticRouteList;
+```
+
+- *Type:* <a href="#@cdktf/provider-upcloud.router.RouterStaticRouteList">RouterStaticRouteList</a>
+
+---
+
 ##### `type`<sup>Required</sup> <a name="type" id="@cdktf/provider-upcloud.router.Router.property.type"></a>
 
 ```typescript
@@ -646,6 +678,16 @@ public readonly nameInput: string;
 ```
 
 - *Type:* string
+
+---
+
+##### `staticRouteInput`<sup>Optional</sup> <a name="staticRouteInput" id="@cdktf/provider-upcloud.router.Router.property.staticRouteInput"></a>
+
+```typescript
+public readonly staticRouteInput: IResolvable | RouterStaticRoute[];
+```
+
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-upcloud.router.RouterStaticRoute">RouterStaticRoute</a>[]
 
 ---
 
@@ -711,7 +753,8 @@ const routerConfig: router.RouterConfig = { ... }
 | <code><a href="#@cdktf/provider-upcloud.router.RouterConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.router.RouterConfig.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.router.RouterConfig.property.name">name</a></code> | <code>string</code> | Name of the router. |
-| <code><a href="#@cdktf/provider-upcloud.router.RouterConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/2.12.0/docs/resources/router#id Router#id}. |
+| <code><a href="#@cdktf/provider-upcloud.router.RouterConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/3.0.3/docs/resources/router#id Router#id}. |
+| <code><a href="#@cdktf/provider-upcloud.router.RouterConfig.property.staticRoute">staticRoute</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-upcloud.router.RouterStaticRoute">RouterStaticRoute</a>[]</code> | static_route block. |
 
 ---
 
@@ -795,7 +838,7 @@ public readonly name: string;
 
 Name of the router.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/2.12.0/docs/resources/router#name Router#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/3.0.3/docs/resources/router#name Router#name}
 
 ---
 
@@ -807,10 +850,572 @@ public readonly id: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/2.12.0/docs/resources/router#id Router#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/3.0.3/docs/resources/router#id Router#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+
+---
+
+##### `staticRoute`<sup>Optional</sup> <a name="staticRoute" id="@cdktf/provider-upcloud.router.RouterConfig.property.staticRoute"></a>
+
+```typescript
+public readonly staticRoute: IResolvable | RouterStaticRoute[];
+```
+
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-upcloud.router.RouterStaticRoute">RouterStaticRoute</a>[]
+
+static_route block.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/3.0.3/docs/resources/router#static_route Router#static_route}
+
+---
+
+### RouterStaticRoute <a name="RouterStaticRoute" id="@cdktf/provider-upcloud.router.RouterStaticRoute"></a>
+
+#### Initializer <a name="Initializer" id="@cdktf/provider-upcloud.router.RouterStaticRoute.Initializer"></a>
+
+```typescript
+import { router } from '@cdktf/provider-upcloud'
+
+const routerStaticRoute: router.RouterStaticRoute = { ... }
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-upcloud.router.RouterStaticRoute.property.nexthop">nexthop</a></code> | <code>string</code> | Next hop address. |
+| <code><a href="#@cdktf/provider-upcloud.router.RouterStaticRoute.property.route">route</a></code> | <code>string</code> | Destination prefix of the route. |
+| <code><a href="#@cdktf/provider-upcloud.router.RouterStaticRoute.property.name">name</a></code> | <code>string</code> | Name or description of the route. |
+
+---
+
+##### `nexthop`<sup>Required</sup> <a name="nexthop" id="@cdktf/provider-upcloud.router.RouterStaticRoute.property.nexthop"></a>
+
+```typescript
+public readonly nexthop: string;
+```
+
+- *Type:* string
+
+Next hop address.
+
+NOTE: For static route to be active the next hop has to be an address of a reachable running Cloud Server in one of the Private Networks attached to the router.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/3.0.3/docs/resources/router#nexthop Router#nexthop}
+
+---
+
+##### `route`<sup>Required</sup> <a name="route" id="@cdktf/provider-upcloud.router.RouterStaticRoute.property.route"></a>
+
+```typescript
+public readonly route: string;
+```
+
+- *Type:* string
+
+Destination prefix of the route.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/3.0.3/docs/resources/router#route Router#route}
+
+---
+
+##### `name`<sup>Optional</sup> <a name="name" id="@cdktf/provider-upcloud.router.RouterStaticRoute.property.name"></a>
+
+```typescript
+public readonly name: string;
+```
+
+- *Type:* string
+
+Name or description of the route.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/3.0.3/docs/resources/router#name Router#name}
+
+---
+
+## Classes <a name="Classes" id="Classes"></a>
+
+### RouterStaticRouteList <a name="RouterStaticRouteList" id="@cdktf/provider-upcloud.router.RouterStaticRouteList"></a>
+
+#### Initializers <a name="Initializers" id="@cdktf/provider-upcloud.router.RouterStaticRouteList.Initializer"></a>
+
+```typescript
+import { router } from '@cdktf/provider-upcloud'
+
+new router.RouterStaticRouteList(terraformResource: IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-upcloud.router.RouterStaticRouteList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktf/provider-upcloud.router.RouterStaticRouteList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktf/provider-upcloud.router.RouterStaticRouteList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktf/provider-upcloud.router.RouterStaticRouteList.Initializer.parameter.terraformResource"></a>
+
+- *Type:* cdktf.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-upcloud.router.RouterStaticRouteList.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `wrapsSet`<sup>Required</sup> <a name="wrapsSet" id="@cdktf/provider-upcloud.router.RouterStaticRouteList.Initializer.parameter.wrapsSet"></a>
+
+- *Type:* boolean
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktf/provider-upcloud.router.RouterStaticRouteList.computeFqn">computeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-upcloud.router.RouterStaticRouteList.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktf/provider-upcloud.router.RouterStaticRouteList.toString">toString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktf/provider-upcloud.router.RouterStaticRouteList.get">get</a></code> | *No description.* |
+
+---
+
+##### `computeFqn` <a name="computeFqn" id="@cdktf/provider-upcloud.router.RouterStaticRouteList.computeFqn"></a>
+
+```typescript
+public computeFqn(): string
+```
+
+##### `resolve` <a name="resolve" id="@cdktf/provider-upcloud.router.RouterStaticRouteList.resolve"></a>
+
+```typescript
+public resolve(_context: IResolveContext): any
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktf/provider-upcloud.router.RouterStaticRouteList.resolve.parameter._context"></a>
+
+- *Type:* cdktf.IResolveContext
+
+---
+
+##### `toString` <a name="toString" id="@cdktf/provider-upcloud.router.RouterStaticRouteList.toString"></a>
+
+```typescript
+public toString(): string
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `get` <a name="get" id="@cdktf/provider-upcloud.router.RouterStaticRouteList.get"></a>
+
+```typescript
+public get(index: number): RouterStaticRouteOutputReference
+```
+
+###### `index`<sup>Required</sup> <a name="index" id="@cdktf/provider-upcloud.router.RouterStaticRouteList.get.parameter.index"></a>
+
+- *Type:* number
+
+the index of the item to return.
+
+---
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-upcloud.router.RouterStaticRouteList.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktf/provider-upcloud.router.RouterStaticRouteList.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-upcloud.router.RouterStaticRouteList.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-upcloud.router.RouterStaticRoute">RouterStaticRoute</a>[]</code> | *No description.* |
+
+---
+
+##### `creationStack`<sup>Required</sup> <a name="creationStack" id="@cdktf/provider-upcloud.router.RouterStaticRouteList.property.creationStack"></a>
+
+```typescript
+public readonly creationStack: string[];
+```
+
+- *Type:* string[]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktf/provider-upcloud.router.RouterStaticRouteList.property.fqn"></a>
+
+```typescript
+public readonly fqn: string;
+```
+
+- *Type:* string
+
+---
+
+##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-upcloud.router.RouterStaticRouteList.property.internalValue"></a>
+
+```typescript
+public readonly internalValue: IResolvable | RouterStaticRoute[];
+```
+
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-upcloud.router.RouterStaticRoute">RouterStaticRoute</a>[]
+
+---
+
+
+### RouterStaticRouteOutputReference <a name="RouterStaticRouteOutputReference" id="@cdktf/provider-upcloud.router.RouterStaticRouteOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktf/provider-upcloud.router.RouterStaticRouteOutputReference.Initializer"></a>
+
+```typescript
+import { router } from '@cdktf/provider-upcloud'
+
+new router.RouterStaticRouteOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-upcloud.router.RouterStaticRouteOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktf/provider-upcloud.router.RouterStaticRouteOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktf/provider-upcloud.router.RouterStaticRouteOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>number</code> | the index of this item in the list. |
+| <code><a href="#@cdktf/provider-upcloud.router.RouterStaticRouteOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktf/provider-upcloud.router.RouterStaticRouteOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* cdktf.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-upcloud.router.RouterStaticRouteOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `complexObjectIndex`<sup>Required</sup> <a name="complexObjectIndex" id="@cdktf/provider-upcloud.router.RouterStaticRouteOutputReference.Initializer.parameter.complexObjectIndex"></a>
+
+- *Type:* number
+
+the index of this item in the list.
+
+---
+
+##### `complexObjectIsFromSet`<sup>Required</sup> <a name="complexObjectIsFromSet" id="@cdktf/provider-upcloud.router.RouterStaticRouteOutputReference.Initializer.parameter.complexObjectIsFromSet"></a>
+
+- *Type:* boolean
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktf/provider-upcloud.router.RouterStaticRouteOutputReference.computeFqn">computeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-upcloud.router.RouterStaticRouteOutputReference.getAnyMapAttribute">getAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-upcloud.router.RouterStaticRouteOutputReference.getBooleanAttribute">getBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-upcloud.router.RouterStaticRouteOutputReference.getBooleanMapAttribute">getBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-upcloud.router.RouterStaticRouteOutputReference.getListAttribute">getListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-upcloud.router.RouterStaticRouteOutputReference.getNumberAttribute">getNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-upcloud.router.RouterStaticRouteOutputReference.getNumberListAttribute">getNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-upcloud.router.RouterStaticRouteOutputReference.getNumberMapAttribute">getNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-upcloud.router.RouterStaticRouteOutputReference.getStringAttribute">getStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-upcloud.router.RouterStaticRouteOutputReference.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-upcloud.router.RouterStaticRouteOutputReference.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-upcloud.router.RouterStaticRouteOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktf/provider-upcloud.router.RouterStaticRouteOutputReference.toString">toString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktf/provider-upcloud.router.RouterStaticRouteOutputReference.resetName">resetName</a></code> | *No description.* |
+
+---
+
+##### `computeFqn` <a name="computeFqn" id="@cdktf/provider-upcloud.router.RouterStaticRouteOutputReference.computeFqn"></a>
+
+```typescript
+public computeFqn(): string
+```
+
+##### `getAnyMapAttribute` <a name="getAnyMapAttribute" id="@cdktf/provider-upcloud.router.RouterStaticRouteOutputReference.getAnyMapAttribute"></a>
+
+```typescript
+public getAnyMapAttribute(terraformAttribute: string): {[ key: string ]: any}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-upcloud.router.RouterStaticRouteOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getBooleanAttribute` <a name="getBooleanAttribute" id="@cdktf/provider-upcloud.router.RouterStaticRouteOutputReference.getBooleanAttribute"></a>
+
+```typescript
+public getBooleanAttribute(terraformAttribute: string): IResolvable
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-upcloud.router.RouterStaticRouteOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getBooleanMapAttribute` <a name="getBooleanMapAttribute" id="@cdktf/provider-upcloud.router.RouterStaticRouteOutputReference.getBooleanMapAttribute"></a>
+
+```typescript
+public getBooleanMapAttribute(terraformAttribute: string): {[ key: string ]: boolean}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-upcloud.router.RouterStaticRouteOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getListAttribute` <a name="getListAttribute" id="@cdktf/provider-upcloud.router.RouterStaticRouteOutputReference.getListAttribute"></a>
+
+```typescript
+public getListAttribute(terraformAttribute: string): string[]
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-upcloud.router.RouterStaticRouteOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getNumberAttribute` <a name="getNumberAttribute" id="@cdktf/provider-upcloud.router.RouterStaticRouteOutputReference.getNumberAttribute"></a>
+
+```typescript
+public getNumberAttribute(terraformAttribute: string): number
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-upcloud.router.RouterStaticRouteOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getNumberListAttribute` <a name="getNumberListAttribute" id="@cdktf/provider-upcloud.router.RouterStaticRouteOutputReference.getNumberListAttribute"></a>
+
+```typescript
+public getNumberListAttribute(terraformAttribute: string): number[]
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-upcloud.router.RouterStaticRouteOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getNumberMapAttribute` <a name="getNumberMapAttribute" id="@cdktf/provider-upcloud.router.RouterStaticRouteOutputReference.getNumberMapAttribute"></a>
+
+```typescript
+public getNumberMapAttribute(terraformAttribute: string): {[ key: string ]: number}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-upcloud.router.RouterStaticRouteOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getStringAttribute` <a name="getStringAttribute" id="@cdktf/provider-upcloud.router.RouterStaticRouteOutputReference.getStringAttribute"></a>
+
+```typescript
+public getStringAttribute(terraformAttribute: string): string
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-upcloud.router.RouterStaticRouteOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getStringMapAttribute` <a name="getStringMapAttribute" id="@cdktf/provider-upcloud.router.RouterStaticRouteOutputReference.getStringMapAttribute"></a>
+
+```typescript
+public getStringMapAttribute(terraformAttribute: string): {[ key: string ]: string}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-upcloud.router.RouterStaticRouteOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `interpolationForAttribute` <a name="interpolationForAttribute" id="@cdktf/provider-upcloud.router.RouterStaticRouteOutputReference.interpolationForAttribute"></a>
+
+```typescript
+public interpolationForAttribute(property: string): IResolvable
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktf/provider-upcloud.router.RouterStaticRouteOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* string
+
+---
+
+##### `resolve` <a name="resolve" id="@cdktf/provider-upcloud.router.RouterStaticRouteOutputReference.resolve"></a>
+
+```typescript
+public resolve(_context: IResolveContext): any
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktf/provider-upcloud.router.RouterStaticRouteOutputReference.resolve.parameter._context"></a>
+
+- *Type:* cdktf.IResolveContext
+
+---
+
+##### `toString` <a name="toString" id="@cdktf/provider-upcloud.router.RouterStaticRouteOutputReference.toString"></a>
+
+```typescript
+public toString(): string
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `resetName` <a name="resetName" id="@cdktf/provider-upcloud.router.RouterStaticRouteOutputReference.resetName"></a>
+
+```typescript
+public resetName(): void
+```
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-upcloud.router.RouterStaticRouteOutputReference.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktf/provider-upcloud.router.RouterStaticRouteOutputReference.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-upcloud.router.RouterStaticRouteOutputReference.property.nameInput">nameInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-upcloud.router.RouterStaticRouteOutputReference.property.nexthopInput">nexthopInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-upcloud.router.RouterStaticRouteOutputReference.property.routeInput">routeInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-upcloud.router.RouterStaticRouteOutputReference.property.name">name</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-upcloud.router.RouterStaticRouteOutputReference.property.nexthop">nexthop</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-upcloud.router.RouterStaticRouteOutputReference.property.route">route</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-upcloud.router.RouterStaticRouteOutputReference.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-upcloud.router.RouterStaticRoute">RouterStaticRoute</a></code> | *No description.* |
+
+---
+
+##### `creationStack`<sup>Required</sup> <a name="creationStack" id="@cdktf/provider-upcloud.router.RouterStaticRouteOutputReference.property.creationStack"></a>
+
+```typescript
+public readonly creationStack: string[];
+```
+
+- *Type:* string[]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktf/provider-upcloud.router.RouterStaticRouteOutputReference.property.fqn"></a>
+
+```typescript
+public readonly fqn: string;
+```
+
+- *Type:* string
+
+---
+
+##### `nameInput`<sup>Optional</sup> <a name="nameInput" id="@cdktf/provider-upcloud.router.RouterStaticRouteOutputReference.property.nameInput"></a>
+
+```typescript
+public readonly nameInput: string;
+```
+
+- *Type:* string
+
+---
+
+##### `nexthopInput`<sup>Optional</sup> <a name="nexthopInput" id="@cdktf/provider-upcloud.router.RouterStaticRouteOutputReference.property.nexthopInput"></a>
+
+```typescript
+public readonly nexthopInput: string;
+```
+
+- *Type:* string
+
+---
+
+##### `routeInput`<sup>Optional</sup> <a name="routeInput" id="@cdktf/provider-upcloud.router.RouterStaticRouteOutputReference.property.routeInput"></a>
+
+```typescript
+public readonly routeInput: string;
+```
+
+- *Type:* string
+
+---
+
+##### `name`<sup>Required</sup> <a name="name" id="@cdktf/provider-upcloud.router.RouterStaticRouteOutputReference.property.name"></a>
+
+```typescript
+public readonly name: string;
+```
+
+- *Type:* string
+
+---
+
+##### `nexthop`<sup>Required</sup> <a name="nexthop" id="@cdktf/provider-upcloud.router.RouterStaticRouteOutputReference.property.nexthop"></a>
+
+```typescript
+public readonly nexthop: string;
+```
+
+- *Type:* string
+
+---
+
+##### `route`<sup>Required</sup> <a name="route" id="@cdktf/provider-upcloud.router.RouterStaticRouteOutputReference.property.route"></a>
+
+```typescript
+public readonly route: string;
+```
+
+- *Type:* string
+
+---
+
+##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-upcloud.router.RouterStaticRouteOutputReference.property.internalValue"></a>
+
+```typescript
+public readonly internalValue: IResolvable | RouterStaticRoute;
+```
+
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-upcloud.router.RouterStaticRoute">RouterStaticRoute</a>
 
 ---
 

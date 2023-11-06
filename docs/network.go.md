@@ -1,6 +1,6 @@
 # `upcloud_network`
 
-Refer to the Terraform Registory for docs: [`upcloud_network`](https://registry.terraform.io/providers/upcloudltd/upcloud/2.12.0/docs/resources/network).
+Refer to the Terraform Registory for docs: [`upcloud_network`](https://registry.terraform.io/providers/upcloudltd/upcloud/3.0.3/docs/resources/network).
 
 # `network` Submodule <a name="`network` Submodule" id="@cdktf/provider-upcloud.network"></a>
 
@@ -8,12 +8,12 @@ Refer to the Terraform Registory for docs: [`upcloud_network`](https://registry.
 
 ### Network <a name="Network" id="@cdktf/provider-upcloud.network.Network"></a>
 
-Represents a {@link https://registry.terraform.io/providers/upcloudltd/upcloud/2.12.0/docs/resources/network upcloud_network}.
+Represents a {@link https://registry.terraform.io/providers/upcloudltd/upcloud/3.0.3/docs/resources/network upcloud_network}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-upcloud.network.Network.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v10/network"
+import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v11/network"
 
 network.NewNetwork(scope Construct, id *string, config NetworkConfig) Network
 ```
@@ -359,7 +359,7 @@ func ResetRouter()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-upcloud.network.Network.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v10/network"
+import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v11/network"
 
 network.Network_IsConstruct(x interface{}) *bool
 ```
@@ -391,7 +391,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-upcloud.network.Network.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v10/network"
+import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v11/network"
 
 network.Network_IsTerraformElement(x interface{}) *bool
 ```
@@ -405,7 +405,7 @@ network.Network_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-upcloud.network.Network.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v10/network"
+import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v11/network"
 
 network.Network_IsTerraformResource(x interface{}) *bool
 ```
@@ -419,7 +419,7 @@ network.Network_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-upcloud.network.Network.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v10/network"
+import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v11/network"
 
 network.Network_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -448,7 +448,7 @@ The construct id used in the generated config for the Network to import.
 
 The id of the existing Network that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/upcloudltd/upcloud/2.12.0/docs/resources/network#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/upcloudltd/upcloud/3.0.3/docs/resources/network#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -769,7 +769,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-upcloud.network.NetworkConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v10/network"
+import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v11/network"
 
 &network.NetworkConfig {
 	Connection: interface{},
@@ -779,7 +779,7 @@ import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v10/network"
 	Lifecycle: github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle,
 	Provider: github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider,
 	Provisioners: *[]interface{},
-	IpNetwork: github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v10.network.NetworkIpNetwork,
+	IpNetwork: github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v11.network.NetworkIpNetwork,
 	Name: *string,
 	Zone: *string,
 	Id: *string,
@@ -801,7 +801,7 @@ import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v10/network"
 | <code><a href="#@cdktf/provider-upcloud.network.NetworkConfig.property.ipNetwork">IpNetwork</a></code> | <code><a href="#@cdktf/provider-upcloud.network.NetworkIpNetwork">NetworkIpNetwork</a></code> | ip_network block. |
 | <code><a href="#@cdktf/provider-upcloud.network.NetworkConfig.property.name">Name</a></code> | <code>*string</code> | A valid name for the network. |
 | <code><a href="#@cdktf/provider-upcloud.network.NetworkConfig.property.zone">Zone</a></code> | <code>*string</code> | The zone the network is in, e.g. `de-fra1`. You can list available zones with `upctl zone list`. |
-| <code><a href="#@cdktf/provider-upcloud.network.NetworkConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/2.12.0/docs/resources/network#id Network#id}. |
+| <code><a href="#@cdktf/provider-upcloud.network.NetworkConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/3.0.3/docs/resources/network#id Network#id}. |
 | <code><a href="#@cdktf/provider-upcloud.network.NetworkConfig.property.router">Router</a></code> | <code>*string</code> | The UUID of a router. |
 
 ---
@@ -886,7 +886,7 @@ IpNetwork NetworkIpNetwork
 
 ip_network block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/2.12.0/docs/resources/network#ip_network Network#ip_network}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/3.0.3/docs/resources/network#ip_network Network#ip_network}
 
 ---
 
@@ -900,7 +900,7 @@ Name *string
 
 A valid name for the network.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/2.12.0/docs/resources/network#name Network#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/3.0.3/docs/resources/network#name Network#name}
 
 ---
 
@@ -914,7 +914,7 @@ Zone *string
 
 The zone the network is in, e.g. `de-fra1`. You can list available zones with `upctl zone list`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/2.12.0/docs/resources/network#zone Network#zone}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/3.0.3/docs/resources/network#zone Network#zone}
 
 ---
 
@@ -926,7 +926,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/2.12.0/docs/resources/network#id Network#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/3.0.3/docs/resources/network#id Network#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -943,7 +943,7 @@ Router *string
 
 The UUID of a router.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/2.12.0/docs/resources/network#router Network#router}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/3.0.3/docs/resources/network#router Network#router}
 
 ---
 
@@ -952,7 +952,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upclo
 #### Initializer <a name="Initializer" id="@cdktf/provider-upcloud.network.NetworkIpNetwork.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v10/network"
+import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v11/network"
 
 &network.NetworkIpNetwork {
 	Address: *string,
@@ -960,6 +960,7 @@ import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v10/network"
 	Family: *string,
 	DhcpDefaultRoute: interface{},
 	DhcpDns: *[]*string,
+	DhcpRoutes: *[]*string,
 	Gateway: *string,
 }
 ```
@@ -973,6 +974,7 @@ import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v10/network"
 | <code><a href="#@cdktf/provider-upcloud.network.NetworkIpNetwork.property.family">Family</a></code> | <code>*string</code> | IP address family. |
 | <code><a href="#@cdktf/provider-upcloud.network.NetworkIpNetwork.property.dhcpDefaultRoute">DhcpDefaultRoute</a></code> | <code>interface{}</code> | Is the gateway the DHCP default route? |
 | <code><a href="#@cdktf/provider-upcloud.network.NetworkIpNetwork.property.dhcpDns">DhcpDns</a></code> | <code>*[]*string</code> | The DNS servers given by DHCP. |
+| <code><a href="#@cdktf/provider-upcloud.network.NetworkIpNetwork.property.dhcpRoutes">DhcpRoutes</a></code> | <code>*[]*string</code> | The additional DHCP classless static routes given by DHCP. |
 | <code><a href="#@cdktf/provider-upcloud.network.NetworkIpNetwork.property.gateway">Gateway</a></code> | <code>*string</code> | Gateway address given by DHCP. |
 
 ---
@@ -987,7 +989,7 @@ Address *string
 
 The CIDR range of the subnet.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/2.12.0/docs/resources/network#address Network#address}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/3.0.3/docs/resources/network#address Network#address}
 
 ---
 
@@ -1001,7 +1003,7 @@ Dhcp interface{}
 
 Is DHCP enabled?
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/2.12.0/docs/resources/network#dhcp Network#dhcp}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/3.0.3/docs/resources/network#dhcp Network#dhcp}
 
 ---
 
@@ -1015,7 +1017,7 @@ Family *string
 
 IP address family.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/2.12.0/docs/resources/network#family Network#family}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/3.0.3/docs/resources/network#family Network#family}
 
 ---
 
@@ -1029,7 +1031,7 @@ DhcpDefaultRoute interface{}
 
 Is the gateway the DHCP default route?
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/2.12.0/docs/resources/network#dhcp_default_route Network#dhcp_default_route}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/3.0.3/docs/resources/network#dhcp_default_route Network#dhcp_default_route}
 
 ---
 
@@ -1043,7 +1045,21 @@ DhcpDns *[]*string
 
 The DNS servers given by DHCP.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/2.12.0/docs/resources/network#dhcp_dns Network#dhcp_dns}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/3.0.3/docs/resources/network#dhcp_dns Network#dhcp_dns}
+
+---
+
+##### `DhcpRoutes`<sup>Optional</sup> <a name="DhcpRoutes" id="@cdktf/provider-upcloud.network.NetworkIpNetwork.property.dhcpRoutes"></a>
+
+```go
+DhcpRoutes *[]*string
+```
+
+- *Type:* *[]*string
+
+The additional DHCP classless static routes given by DHCP.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/3.0.3/docs/resources/network#dhcp_routes Network#dhcp_routes}
 
 ---
 
@@ -1057,7 +1073,7 @@ Gateway *string
 
 Gateway address given by DHCP.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/2.12.0/docs/resources/network#gateway Network#gateway}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/3.0.3/docs/resources/network#gateway Network#gateway}
 
 ---
 
@@ -1068,7 +1084,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upclo
 #### Initializers <a name="Initializers" id="@cdktf/provider-upcloud.network.NetworkIpNetworkOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v10/network"
+import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v11/network"
 
 network.NewNetworkIpNetworkOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) NetworkIpNetworkOutputReference
 ```
@@ -1115,6 +1131,7 @@ The attribute on the parent resource this class is referencing.
 | <code><a href="#@cdktf/provider-upcloud.network.NetworkIpNetworkOutputReference.toString">ToString</a></code> | Return a string representation of this resolvable object. |
 | <code><a href="#@cdktf/provider-upcloud.network.NetworkIpNetworkOutputReference.resetDhcpDefaultRoute">ResetDhcpDefaultRoute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.network.NetworkIpNetworkOutputReference.resetDhcpDns">ResetDhcpDns</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-upcloud.network.NetworkIpNetworkOutputReference.resetDhcpRoutes">ResetDhcpRoutes</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.network.NetworkIpNetworkOutputReference.resetGateway">ResetGateway</a></code> | *No description.* |
 
 ---
@@ -1281,6 +1298,12 @@ func ResetDhcpDefaultRoute()
 func ResetDhcpDns()
 ```
 
+##### `ResetDhcpRoutes` <a name="ResetDhcpRoutes" id="@cdktf/provider-upcloud.network.NetworkIpNetworkOutputReference.resetDhcpRoutes"></a>
+
+```go
+func ResetDhcpRoutes()
+```
+
 ##### `ResetGateway` <a name="ResetGateway" id="@cdktf/provider-upcloud.network.NetworkIpNetworkOutputReference.resetGateway"></a>
 
 ```go
@@ -1298,12 +1321,14 @@ func ResetGateway()
 | <code><a href="#@cdktf/provider-upcloud.network.NetworkIpNetworkOutputReference.property.dhcpDefaultRouteInput">DhcpDefaultRouteInput</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.network.NetworkIpNetworkOutputReference.property.dhcpDnsInput">DhcpDnsInput</a></code> | <code>*[]*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.network.NetworkIpNetworkOutputReference.property.dhcpInput">DhcpInput</a></code> | <code>interface{}</code> | *No description.* |
+| <code><a href="#@cdktf/provider-upcloud.network.NetworkIpNetworkOutputReference.property.dhcpRoutesInput">DhcpRoutesInput</a></code> | <code>*[]*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.network.NetworkIpNetworkOutputReference.property.familyInput">FamilyInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.network.NetworkIpNetworkOutputReference.property.gatewayInput">GatewayInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.network.NetworkIpNetworkOutputReference.property.address">Address</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.network.NetworkIpNetworkOutputReference.property.dhcp">Dhcp</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.network.NetworkIpNetworkOutputReference.property.dhcpDefaultRoute">DhcpDefaultRoute</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.network.NetworkIpNetworkOutputReference.property.dhcpDns">DhcpDns</a></code> | <code>*[]*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-upcloud.network.NetworkIpNetworkOutputReference.property.dhcpRoutes">DhcpRoutes</a></code> | <code>*[]*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.network.NetworkIpNetworkOutputReference.property.family">Family</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.network.NetworkIpNetworkOutputReference.property.gateway">Gateway</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.network.NetworkIpNetworkOutputReference.property.internalValue">InternalValue</a></code> | <code><a href="#@cdktf/provider-upcloud.network.NetworkIpNetwork">NetworkIpNetwork</a></code> | *No description.* |
@@ -1374,6 +1399,16 @@ func DhcpInput() interface{}
 
 ---
 
+##### `DhcpRoutesInput`<sup>Optional</sup> <a name="DhcpRoutesInput" id="@cdktf/provider-upcloud.network.NetworkIpNetworkOutputReference.property.dhcpRoutesInput"></a>
+
+```go
+func DhcpRoutesInput() *[]*string
+```
+
+- *Type:* *[]*string
+
+---
+
 ##### `FamilyInput`<sup>Optional</sup> <a name="FamilyInput" id="@cdktf/provider-upcloud.network.NetworkIpNetworkOutputReference.property.familyInput"></a>
 
 ```go
@@ -1428,6 +1463,16 @@ func DhcpDefaultRoute() interface{}
 
 ```go
 func DhcpDns() *[]*string
+```
+
+- *Type:* *[]*string
+
+---
+
+##### `DhcpRoutes`<sup>Required</sup> <a name="DhcpRoutes" id="@cdktf/provider-upcloud.network.NetworkIpNetworkOutputReference.property.dhcpRoutes"></a>
+
+```go
+func DhcpRoutes() *[]*string
 ```
 
 - *Type:* *[]*string
