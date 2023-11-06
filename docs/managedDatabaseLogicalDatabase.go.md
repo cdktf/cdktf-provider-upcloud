@@ -1,6 +1,6 @@
 # `upcloud_managed_database_logical_database`
 
-Refer to the Terraform Registory for docs: [`upcloud_managed_database_logical_database`](https://registry.terraform.io/providers/upcloudltd/upcloud/2.12.0/docs/resources/managed_database_logical_database).
+Refer to the Terraform Registory for docs: [`upcloud_managed_database_logical_database`](https://registry.terraform.io/providers/upcloudltd/upcloud/3.0.3/docs/resources/managed_database_logical_database).
 
 # `managedDatabaseLogicalDatabase` Submodule <a name="`managedDatabaseLogicalDatabase` Submodule" id="@cdktf/provider-upcloud.managedDatabaseLogicalDatabase"></a>
 
@@ -8,12 +8,12 @@ Refer to the Terraform Registory for docs: [`upcloud_managed_database_logical_da
 
 ### ManagedDatabaseLogicalDatabase <a name="ManagedDatabaseLogicalDatabase" id="@cdktf/provider-upcloud.managedDatabaseLogicalDatabase.ManagedDatabaseLogicalDatabase"></a>
 
-Represents a {@link https://registry.terraform.io/providers/upcloudltd/upcloud/2.12.0/docs/resources/managed_database_logical_database upcloud_managed_database_logical_database}.
+Represents a {@link https://registry.terraform.io/providers/upcloudltd/upcloud/3.0.3/docs/resources/managed_database_logical_database upcloud_managed_database_logical_database}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-upcloud.managedDatabaseLogicalDatabase.ManagedDatabaseLogicalDatabase.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v10/manageddatabaselogicaldatabase"
+import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/manageddatabaselogicaldatabase"
 
 manageddatabaselogicaldatabase.NewManagedDatabaseLogicalDatabase(scope Construct, id *string, config ManagedDatabaseLogicalDatabaseConfig) ManagedDatabaseLogicalDatabase
 ```
@@ -353,7 +353,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-upcloud.managedDatabaseLogicalDatabase.ManagedDatabaseLogicalDatabase.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v10/manageddatabaselogicaldatabase"
+import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/manageddatabaselogicaldatabase"
 
 manageddatabaselogicaldatabase.ManagedDatabaseLogicalDatabase_IsConstruct(x interface{}) *bool
 ```
@@ -385,7 +385,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-upcloud.managedDatabaseLogicalDatabase.ManagedDatabaseLogicalDatabase.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v10/manageddatabaselogicaldatabase"
+import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/manageddatabaselogicaldatabase"
 
 manageddatabaselogicaldatabase.ManagedDatabaseLogicalDatabase_IsTerraformElement(x interface{}) *bool
 ```
@@ -399,7 +399,7 @@ manageddatabaselogicaldatabase.ManagedDatabaseLogicalDatabase_IsTerraformElement
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-upcloud.managedDatabaseLogicalDatabase.ManagedDatabaseLogicalDatabase.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v10/manageddatabaselogicaldatabase"
+import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/manageddatabaselogicaldatabase"
 
 manageddatabaselogicaldatabase.ManagedDatabaseLogicalDatabase_IsTerraformResource(x interface{}) *bool
 ```
@@ -413,7 +413,7 @@ manageddatabaselogicaldatabase.ManagedDatabaseLogicalDatabase_IsTerraformResourc
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-upcloud.managedDatabaseLogicalDatabase.ManagedDatabaseLogicalDatabase.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v10/manageddatabaselogicaldatabase"
+import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/manageddatabaselogicaldatabase"
 
 manageddatabaselogicaldatabase.ManagedDatabaseLogicalDatabase_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -442,7 +442,7 @@ The construct id used in the generated config for the ManagedDatabaseLogicalData
 
 The id of the existing ManagedDatabaseLogicalDatabase that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/upcloudltd/upcloud/2.12.0/docs/resources/managed_database_logical_database#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/upcloudltd/upcloud/3.0.3/docs/resources/managed_database_logical_database#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -752,7 +752,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-upcloud.managedDatabaseLogicalDatabase.ManagedDatabaseLogicalDatabaseConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v10/manageddatabaselogicaldatabase"
+import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/manageddatabaselogicaldatabase"
 
 &manageddatabaselogicaldatabase.ManagedDatabaseLogicalDatabaseConfig {
 	Connection: interface{},
@@ -785,7 +785,7 @@ import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v10/manageddatabaselo
 | <code><a href="#@cdktf/provider-upcloud.managedDatabaseLogicalDatabase.ManagedDatabaseLogicalDatabaseConfig.property.service">Service</a></code> | <code>*string</code> | Service's UUID for which this user belongs to. |
 | <code><a href="#@cdktf/provider-upcloud.managedDatabaseLogicalDatabase.ManagedDatabaseLogicalDatabaseConfig.property.characterSet">CharacterSet</a></code> | <code>*string</code> | Default character set for the database (LC_CTYPE). |
 | <code><a href="#@cdktf/provider-upcloud.managedDatabaseLogicalDatabase.ManagedDatabaseLogicalDatabaseConfig.property.collation">Collation</a></code> | <code>*string</code> | Default collation for the database (LC_COLLATE). |
-| <code><a href="#@cdktf/provider-upcloud.managedDatabaseLogicalDatabase.ManagedDatabaseLogicalDatabaseConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/2.12.0/docs/resources/managed_database_logical_database#id ManagedDatabaseLogicalDatabase#id}. |
+| <code><a href="#@cdktf/provider-upcloud.managedDatabaseLogicalDatabase.ManagedDatabaseLogicalDatabaseConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/3.0.3/docs/resources/managed_database_logical_database#id ManagedDatabaseLogicalDatabase#id}. |
 
 ---
 
@@ -869,7 +869,7 @@ Name *string
 
 Name of the logical database.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/2.12.0/docs/resources/managed_database_logical_database#name ManagedDatabaseLogicalDatabase#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/3.0.3/docs/resources/managed_database_logical_database#name ManagedDatabaseLogicalDatabase#name}
 
 ---
 
@@ -883,7 +883,7 @@ Service *string
 
 Service's UUID for which this user belongs to.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/2.12.0/docs/resources/managed_database_logical_database#service ManagedDatabaseLogicalDatabase#service}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/3.0.3/docs/resources/managed_database_logical_database#service ManagedDatabaseLogicalDatabase#service}
 
 ---
 
@@ -897,7 +897,7 @@ CharacterSet *string
 
 Default character set for the database (LC_CTYPE).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/2.12.0/docs/resources/managed_database_logical_database#character_set ManagedDatabaseLogicalDatabase#character_set}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/3.0.3/docs/resources/managed_database_logical_database#character_set ManagedDatabaseLogicalDatabase#character_set}
 
 ---
 
@@ -911,7 +911,7 @@ Collation *string
 
 Default collation for the database (LC_COLLATE).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/2.12.0/docs/resources/managed_database_logical_database#collation ManagedDatabaseLogicalDatabase#collation}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/3.0.3/docs/resources/managed_database_logical_database#collation ManagedDatabaseLogicalDatabase#collation}
 
 ---
 
@@ -923,7 +923,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/2.12.0/docs/resources/managed_database_logical_database#id ManagedDatabaseLogicalDatabase#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/3.0.3/docs/resources/managed_database_logical_database#id ManagedDatabaseLogicalDatabase#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.

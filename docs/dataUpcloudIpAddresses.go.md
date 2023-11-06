@@ -1,6 +1,6 @@
 # `data_upcloud_ip_addresses`
 
-Refer to the Terraform Registory for docs: [`data_upcloud_ip_addresses`](https://registry.terraform.io/providers/upcloudltd/upcloud/2.12.0/docs/data-sources/ip_addresses).
+Refer to the Terraform Registory for docs: [`data_upcloud_ip_addresses`](https://registry.terraform.io/providers/upcloudltd/upcloud/3.0.3/docs/data-sources/ip_addresses).
 
 # `dataUpcloudIpAddresses` Submodule <a name="`dataUpcloudIpAddresses` Submodule" id="@cdktf/provider-upcloud.dataUpcloudIpAddresses"></a>
 
@@ -8,12 +8,12 @@ Refer to the Terraform Registory for docs: [`data_upcloud_ip_addresses`](https:/
 
 ### DataUpcloudIpAddresses <a name="DataUpcloudIpAddresses" id="@cdktf/provider-upcloud.dataUpcloudIpAddresses.DataUpcloudIpAddresses"></a>
 
-Represents a {@link https://registry.terraform.io/providers/upcloudltd/upcloud/2.12.0/docs/data-sources/ip_addresses upcloud_ip_addresses}.
+Represents a {@link https://registry.terraform.io/providers/upcloudltd/upcloud/3.0.3/docs/data-sources/ip_addresses upcloud_ip_addresses}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-upcloud.dataUpcloudIpAddresses.DataUpcloudIpAddresses.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v10/dataupcloudipaddresses"
+import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/dataupcloudipaddresses"
 
 dataupcloudipaddresses.NewDataUpcloudIpAddresses(scope Construct, id *string, config DataUpcloudIpAddressesConfig) DataUpcloudIpAddresses
 ```
@@ -278,7 +278,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-upcloud.dataUpcloudIpAddresses.DataUpcloudIpAddresses.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v10/dataupcloudipaddresses"
+import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/dataupcloudipaddresses"
 
 dataupcloudipaddresses.DataUpcloudIpAddresses_IsConstruct(x interface{}) *bool
 ```
@@ -310,7 +310,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-upcloud.dataUpcloudIpAddresses.DataUpcloudIpAddresses.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v10/dataupcloudipaddresses"
+import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/dataupcloudipaddresses"
 
 dataupcloudipaddresses.DataUpcloudIpAddresses_IsTerraformElement(x interface{}) *bool
 ```
@@ -324,7 +324,7 @@ dataupcloudipaddresses.DataUpcloudIpAddresses_IsTerraformElement(x interface{}) 
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-upcloud.dataUpcloudIpAddresses.DataUpcloudIpAddresses.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v10/dataupcloudipaddresses"
+import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/dataupcloudipaddresses"
 
 dataupcloudipaddresses.DataUpcloudIpAddresses_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -338,7 +338,7 @@ dataupcloudipaddresses.DataUpcloudIpAddresses_IsTerraformDataSource(x interface{
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-upcloud.dataUpcloudIpAddresses.DataUpcloudIpAddresses.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v10/dataupcloudipaddresses"
+import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/dataupcloudipaddresses"
 
 dataupcloudipaddresses.DataUpcloudIpAddresses_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -367,7 +367,7 @@ The construct id used in the generated config for the DataUpcloudIpAddresses to 
 
 The id of the existing DataUpcloudIpAddresses that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/upcloudltd/upcloud/2.12.0/docs/data-sources/ip_addresses#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/upcloudltd/upcloud/3.0.3/docs/data-sources/ip_addresses#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -578,7 +578,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-upcloud.dataUpcloudIpAddresses.DataUpcloudIpAddressesAddresses.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v10/dataupcloudipaddresses"
+import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/dataupcloudipaddresses"
 
 &dataupcloudipaddresses.DataUpcloudIpAddressesAddresses {
 
@@ -591,7 +591,7 @@ import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v10/dataupcloudipaddr
 #### Initializer <a name="Initializer" id="@cdktf/provider-upcloud.dataUpcloudIpAddresses.DataUpcloudIpAddressesConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v10/dataupcloudipaddresses"
+import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/dataupcloudipaddresses"
 
 &dataupcloudipaddresses.DataUpcloudIpAddressesConfig {
 	Connection: interface{},
@@ -616,7 +616,7 @@ import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v10/dataupcloudipaddr
 | <code><a href="#@cdktf/provider-upcloud.dataUpcloudIpAddresses.DataUpcloudIpAddressesConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.dataUpcloudIpAddresses.DataUpcloudIpAddressesConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.dataUpcloudIpAddresses.DataUpcloudIpAddressesConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-upcloud.dataUpcloudIpAddresses.DataUpcloudIpAddressesConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/2.12.0/docs/data-sources/ip_addresses#id DataUpcloudIpAddresses#id}. |
+| <code><a href="#@cdktf/provider-upcloud.dataUpcloudIpAddresses.DataUpcloudIpAddressesConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/3.0.3/docs/data-sources/ip_addresses#id DataUpcloudIpAddresses#id}. |
 
 ---
 
@@ -698,7 +698,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/2.12.0/docs/data-sources/ip_addresses#id DataUpcloudIpAddresses#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/3.0.3/docs/data-sources/ip_addresses#id DataUpcloudIpAddresses#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -712,7 +712,7 @@ If you experience problems setting this value it might not be settable. Please t
 #### Initializers <a name="Initializers" id="@cdktf/provider-upcloud.dataUpcloudIpAddresses.DataUpcloudIpAddressesAddressesList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v10/dataupcloudipaddresses"
+import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/dataupcloudipaddresses"
 
 dataupcloudipaddresses.NewDataUpcloudIpAddressesAddressesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataUpcloudIpAddressesAddressesList
 ```
@@ -844,7 +844,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-upcloud.dataUpcloudIpAddresses.DataUpcloudIpAddressesAddressesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v10/dataupcloudipaddresses"
+import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/dataupcloudipaddresses"
 
 dataupcloudipaddresses.NewDataUpcloudIpAddressesAddressesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataUpcloudIpAddressesAddressesOutputReference
 ```

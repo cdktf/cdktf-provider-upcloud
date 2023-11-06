@@ -1,6 +1,6 @@
 # `data_upcloud_networks`
 
-Refer to the Terraform Registory for docs: [`data_upcloud_networks`](https://registry.terraform.io/providers/upcloudltd/upcloud/2.12.0/docs/data-sources/networks).
+Refer to the Terraform Registory for docs: [`data_upcloud_networks`](https://registry.terraform.io/providers/upcloudltd/upcloud/3.0.3/docs/data-sources/networks).
 
 # `dataUpcloudNetworks` Submodule <a name="`dataUpcloudNetworks` Submodule" id="@cdktf/provider-upcloud.dataUpcloudNetworks"></a>
 
@@ -8,12 +8,12 @@ Refer to the Terraform Registory for docs: [`data_upcloud_networks`](https://reg
 
 ### DataUpcloudNetworks <a name="DataUpcloudNetworks" id="@cdktf/provider-upcloud.dataUpcloudNetworks.DataUpcloudNetworks"></a>
 
-Represents a {@link https://registry.terraform.io/providers/upcloudltd/upcloud/2.12.0/docs/data-sources/networks upcloud_networks}.
+Represents a {@link https://registry.terraform.io/providers/upcloudltd/upcloud/3.0.3/docs/data-sources/networks upcloud_networks}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-upcloud.dataUpcloudNetworks.DataUpcloudNetworks.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v10/dataupcloudnetworks"
+import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/dataupcloudnetworks"
 
 dataupcloudnetworks.NewDataUpcloudNetworks(scope Construct, id *string, config DataUpcloudNetworksConfig) DataUpcloudNetworks
 ```
@@ -292,7 +292,7 @@ func ResetZone()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-upcloud.dataUpcloudNetworks.DataUpcloudNetworks.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v10/dataupcloudnetworks"
+import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/dataupcloudnetworks"
 
 dataupcloudnetworks.DataUpcloudNetworks_IsConstruct(x interface{}) *bool
 ```
@@ -324,7 +324,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-upcloud.dataUpcloudNetworks.DataUpcloudNetworks.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v10/dataupcloudnetworks"
+import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/dataupcloudnetworks"
 
 dataupcloudnetworks.DataUpcloudNetworks_IsTerraformElement(x interface{}) *bool
 ```
@@ -338,7 +338,7 @@ dataupcloudnetworks.DataUpcloudNetworks_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-upcloud.dataUpcloudNetworks.DataUpcloudNetworks.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v10/dataupcloudnetworks"
+import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/dataupcloudnetworks"
 
 dataupcloudnetworks.DataUpcloudNetworks_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -352,7 +352,7 @@ dataupcloudnetworks.DataUpcloudNetworks_IsTerraformDataSource(x interface{}) *bo
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-upcloud.dataUpcloudNetworks.DataUpcloudNetworks.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v10/dataupcloudnetworks"
+import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/dataupcloudnetworks"
 
 dataupcloudnetworks.DataUpcloudNetworks_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -381,7 +381,7 @@ The construct id used in the generated config for the DataUpcloudNetworks to imp
 
 The id of the existing DataUpcloudNetworks that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/upcloudltd/upcloud/2.12.0/docs/data-sources/networks#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/upcloudltd/upcloud/3.0.3/docs/data-sources/networks#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -636,7 +636,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-upcloud.dataUpcloudNetworks.DataUpcloudNetworksConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v10/dataupcloudnetworks"
+import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/dataupcloudnetworks"
 
 &dataupcloudnetworks.DataUpcloudNetworksConfig {
 	Connection: interface{},
@@ -664,7 +664,7 @@ import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v10/dataupcloudnetwor
 | <code><a href="#@cdktf/provider-upcloud.dataUpcloudNetworks.DataUpcloudNetworksConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.dataUpcloudNetworks.DataUpcloudNetworksConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.dataUpcloudNetworks.DataUpcloudNetworksConfig.property.filterName">FilterName</a></code> | <code>*string</code> | If specified, results will be filtered to match name using a regular expression. |
-| <code><a href="#@cdktf/provider-upcloud.dataUpcloudNetworks.DataUpcloudNetworksConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/2.12.0/docs/data-sources/networks#id DataUpcloudNetworks#id}. |
+| <code><a href="#@cdktf/provider-upcloud.dataUpcloudNetworks.DataUpcloudNetworksConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/3.0.3/docs/data-sources/networks#id DataUpcloudNetworks#id}. |
 | <code><a href="#@cdktf/provider-upcloud.dataUpcloudNetworks.DataUpcloudNetworksConfig.property.zone">Zone</a></code> | <code>*string</code> | If specified, this data source will return only networks from this zone. |
 
 ---
@@ -749,7 +749,7 @@ FilterName *string
 
 If specified, results will be filtered to match name using a regular expression.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/2.12.0/docs/data-sources/networks#filter_name DataUpcloudNetworks#filter_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/3.0.3/docs/data-sources/networks#filter_name DataUpcloudNetworks#filter_name}
 
 ---
 
@@ -761,7 +761,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/2.12.0/docs/data-sources/networks#id DataUpcloudNetworks#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/3.0.3/docs/data-sources/networks#id DataUpcloudNetworks#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -778,7 +778,7 @@ Zone *string
 
 If specified, this data source will return only networks from this zone.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/2.12.0/docs/data-sources/networks#zone DataUpcloudNetworks#zone}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/3.0.3/docs/data-sources/networks#zone DataUpcloudNetworks#zone}
 
 ---
 
@@ -787,7 +787,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upclo
 #### Initializer <a name="Initializer" id="@cdktf/provider-upcloud.dataUpcloudNetworks.DataUpcloudNetworksNetworks.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v10/dataupcloudnetworks"
+import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/dataupcloudnetworks"
 
 &dataupcloudnetworks.DataUpcloudNetworksNetworks {
 
@@ -800,7 +800,7 @@ import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v10/dataupcloudnetwor
 #### Initializer <a name="Initializer" id="@cdktf/provider-upcloud.dataUpcloudNetworks.DataUpcloudNetworksNetworksIpNetwork.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v10/dataupcloudnetworks"
+import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/dataupcloudnetworks"
 
 &dataupcloudnetworks.DataUpcloudNetworksNetworksIpNetwork {
 
@@ -813,7 +813,7 @@ import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v10/dataupcloudnetwor
 #### Initializer <a name="Initializer" id="@cdktf/provider-upcloud.dataUpcloudNetworks.DataUpcloudNetworksNetworksServers.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v10/dataupcloudnetworks"
+import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/dataupcloudnetworks"
 
 &dataupcloudnetworks.DataUpcloudNetworksNetworksServers {
 
@@ -828,7 +828,7 @@ import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v10/dataupcloudnetwor
 #### Initializers <a name="Initializers" id="@cdktf/provider-upcloud.dataUpcloudNetworks.DataUpcloudNetworksNetworksIpNetworkList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v10/dataupcloudnetworks"
+import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/dataupcloudnetworks"
 
 dataupcloudnetworks.NewDataUpcloudNetworksNetworksIpNetworkList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataUpcloudNetworksNetworksIpNetworkList
 ```
@@ -960,7 +960,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-upcloud.dataUpcloudNetworks.DataUpcloudNetworksNetworksIpNetworkOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v10/dataupcloudnetworks"
+import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/dataupcloudnetworks"
 
 dataupcloudnetworks.NewDataUpcloudNetworksNetworksIpNetworkOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataUpcloudNetworksNetworksIpNetworkOutputReference
 ```
@@ -1187,6 +1187,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-upcloud.dataUpcloudNetworks.DataUpcloudNetworksNetworksIpNetworkOutputReference.property.dhcp">Dhcp</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.dataUpcloudNetworks.DataUpcloudNetworksNetworksIpNetworkOutputReference.property.dhcpDefaultRoute">DhcpDefaultRoute</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.dataUpcloudNetworks.DataUpcloudNetworksNetworksIpNetworkOutputReference.property.dhcpDns">DhcpDns</a></code> | <code>*[]*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-upcloud.dataUpcloudNetworks.DataUpcloudNetworksNetworksIpNetworkOutputReference.property.dhcpRoutes">DhcpRoutes</a></code> | <code>*[]*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.dataUpcloudNetworks.DataUpcloudNetworksNetworksIpNetworkOutputReference.property.family">Family</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.dataUpcloudNetworks.DataUpcloudNetworksNetworksIpNetworkOutputReference.property.gateway">Gateway</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.dataUpcloudNetworks.DataUpcloudNetworksNetworksIpNetworkOutputReference.property.internalValue">InternalValue</a></code> | <code><a href="#@cdktf/provider-upcloud.dataUpcloudNetworks.DataUpcloudNetworksNetworksIpNetwork">DataUpcloudNetworksNetworksIpNetwork</a></code> | *No description.* |
@@ -1257,6 +1258,16 @@ func DhcpDns() *[]*string
 
 ---
 
+##### `DhcpRoutes`<sup>Required</sup> <a name="DhcpRoutes" id="@cdktf/provider-upcloud.dataUpcloudNetworks.DataUpcloudNetworksNetworksIpNetworkOutputReference.property.dhcpRoutes"></a>
+
+```go
+func DhcpRoutes() *[]*string
+```
+
+- *Type:* *[]*string
+
+---
+
 ##### `Family`<sup>Required</sup> <a name="Family" id="@cdktf/provider-upcloud.dataUpcloudNetworks.DataUpcloudNetworksNetworksIpNetworkOutputReference.property.family"></a>
 
 ```go
@@ -1293,7 +1304,7 @@ func InternalValue() DataUpcloudNetworksNetworksIpNetwork
 #### Initializers <a name="Initializers" id="@cdktf/provider-upcloud.dataUpcloudNetworks.DataUpcloudNetworksNetworksList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v10/dataupcloudnetworks"
+import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/dataupcloudnetworks"
 
 dataupcloudnetworks.NewDataUpcloudNetworksNetworksList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataUpcloudNetworksNetworksList
 ```
@@ -1425,7 +1436,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-upcloud.dataUpcloudNetworks.DataUpcloudNetworksNetworksOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v10/dataupcloudnetworks"
+import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/dataupcloudnetworks"
 
 dataupcloudnetworks.NewDataUpcloudNetworksNetworksOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataUpcloudNetworksNetworksOutputReference
 ```
@@ -1758,7 +1769,7 @@ func InternalValue() DataUpcloudNetworksNetworks
 #### Initializers <a name="Initializers" id="@cdktf/provider-upcloud.dataUpcloudNetworks.DataUpcloudNetworksNetworksServersList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v10/dataupcloudnetworks"
+import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/dataupcloudnetworks"
 
 dataupcloudnetworks.NewDataUpcloudNetworksNetworksServersList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataUpcloudNetworksNetworksServersList
 ```
@@ -1890,7 +1901,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-upcloud.dataUpcloudNetworks.DataUpcloudNetworksNetworksServersOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v10/dataupcloudnetworks"
+import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/dataupcloudnetworks"
 
 dataupcloudnetworks.NewDataUpcloudNetworksNetworksServersOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataUpcloudNetworksNetworksServersOutputReference
 ```

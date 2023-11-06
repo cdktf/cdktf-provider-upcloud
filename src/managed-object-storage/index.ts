@@ -1,0 +1,483 @@
+// https://registry.terraform.io/providers/upcloudltd/upcloud/3.0.3/docs/resources/managed_object_storage
+// generated from terraform resource schema
+
+import { Construct } from 'constructs';
+import * as cdktf from 'cdktf';
+
+// Configuration
+
+export interface ManagedObjectStorageConfig extends cdktf.TerraformMetaArguments {
+  /**
+  * Service status managed by the end user.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/3.0.3/docs/resources/managed_object_storage#configured_status ManagedObjectStorage#configured_status}
+  */
+  readonly configuredStatus: string;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/3.0.3/docs/resources/managed_object_storage#id ManagedObjectStorage#id}
+  *
+  * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
+  * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+  */
+  readonly id?: string;
+  /**
+  * Key-value pairs to classify the managed object storage.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/3.0.3/docs/resources/managed_object_storage#labels ManagedObjectStorage#labels}
+  */
+  readonly labels?: { [key: string]: string };
+  /**
+  * Region in which the service will be hosted, see `upcloud_managed_object_storage_regions` data source.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/3.0.3/docs/resources/managed_object_storage#region ManagedObjectStorage#region}
+  */
+  readonly region: string;
+  /**
+  * List of UpCloud API users allowed to use object storage. Valid values include current account and it's sub-accounts. See `upcloud_managed_object_storage_user_access_key` for managing access keys.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/3.0.3/docs/resources/managed_object_storage#users ManagedObjectStorage#users}
+  */
+  readonly users?: string[];
+  /**
+  * network block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/3.0.3/docs/resources/managed_object_storage#network ManagedObjectStorage#network}
+  */
+  readonly network?: ManagedObjectStorageNetwork[] | cdktf.IResolvable;
+}
+export interface ManagedObjectStorageEndpoint {
+}
+
+export function managedObjectStorageEndpointToTerraform(struct?: ManagedObjectStorageEndpoint): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+  }
+}
+
+export class ManagedObjectStorageEndpointOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): ManagedObjectStorageEndpoint | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: ManagedObjectStorageEndpoint | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+    }
+  }
+
+  // domain_name - computed: true, optional: false, required: false
+  public get domainName() {
+    return this.getStringAttribute('domain_name');
+  }
+
+  // type - computed: true, optional: false, required: false
+  public get type() {
+    return this.getStringAttribute('type');
+  }
+}
+
+export class ManagedObjectStorageEndpointList extends cdktf.ComplexList {
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): ManagedObjectStorageEndpointOutputReference {
+    return new ManagedObjectStorageEndpointOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
+export interface ManagedObjectStorageNetwork {
+  /**
+  * Network family. IPv6 currently not supported.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/3.0.3/docs/resources/managed_object_storage#family ManagedObjectStorage#family}
+  */
+  readonly family: string;
+  /**
+  * Network name. Must be unique within the service.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/3.0.3/docs/resources/managed_object_storage#name ManagedObjectStorage#name}
+  */
+  readonly name: string;
+  /**
+  * Network type.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/3.0.3/docs/resources/managed_object_storage#type ManagedObjectStorage#type}
+  */
+  readonly type: string;
+  /**
+  * Private network uuid. For public networks the field should be omitted.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/3.0.3/docs/resources/managed_object_storage#uuid ManagedObjectStorage#uuid}
+  */
+  readonly uuid?: string;
+}
+
+export function managedObjectStorageNetworkToTerraform(struct?: ManagedObjectStorageNetwork | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    family: cdktf.stringToTerraform(struct!.family),
+    name: cdktf.stringToTerraform(struct!.name),
+    type: cdktf.stringToTerraform(struct!.type),
+    uuid: cdktf.stringToTerraform(struct!.uuid),
+  }
+}
+
+export class ManagedObjectStorageNetworkOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): ManagedObjectStorageNetwork | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._family !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.family = this._family;
+    }
+    if (this._name !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.name = this._name;
+    }
+    if (this._type !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.type = this._type;
+    }
+    if (this._uuid !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.uuid = this._uuid;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: ManagedObjectStorageNetwork | cdktf.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._family = undefined;
+      this._name = undefined;
+      this._type = undefined;
+      this._uuid = undefined;
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._family = value.family;
+      this._name = value.name;
+      this._type = value.type;
+      this._uuid = value.uuid;
+    }
+  }
+
+  // family - computed: false, optional: false, required: true
+  private _family?: string; 
+  public get family() {
+    return this.getStringAttribute('family');
+  }
+  public set family(value: string) {
+    this._family = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get familyInput() {
+    return this._family;
+  }
+
+  // name - computed: false, optional: false, required: true
+  private _name?: string; 
+  public get name() {
+    return this.getStringAttribute('name');
+  }
+  public set name(value: string) {
+    this._name = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get nameInput() {
+    return this._name;
+  }
+
+  // type - computed: false, optional: false, required: true
+  private _type?: string; 
+  public get type() {
+    return this.getStringAttribute('type');
+  }
+  public set type(value: string) {
+    this._type = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get typeInput() {
+    return this._type;
+  }
+
+  // uuid - computed: false, optional: true, required: false
+  private _uuid?: string; 
+  public get uuid() {
+    return this.getStringAttribute('uuid');
+  }
+  public set uuid(value: string) {
+    this._uuid = value;
+  }
+  public resetUuid() {
+    this._uuid = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get uuidInput() {
+    return this._uuid;
+  }
+}
+
+export class ManagedObjectStorageNetworkList extends cdktf.ComplexList {
+  public internalValue? : ManagedObjectStorageNetwork[] | cdktf.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): ManagedObjectStorageNetworkOutputReference {
+    return new ManagedObjectStorageNetworkOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
+
+/**
+* Represents a {@link https://registry.terraform.io/providers/upcloudltd/upcloud/3.0.3/docs/resources/managed_object_storage upcloud_managed_object_storage}
+*/
+export class ManagedObjectStorage extends cdktf.TerraformResource {
+
+  // =================
+  // STATIC PROPERTIES
+  // =================
+  public static readonly tfResourceType = "upcloud_managed_object_storage";
+
+  // ==============
+  // STATIC Methods
+  // ==============
+  /**
+  * Generates CDKTF code for importing a ManagedObjectStorage resource upon running "cdktf plan <stack-name>"
+  * @param scope The scope in which to define this construct
+  * @param importToId The construct id used in the generated config for the ManagedObjectStorage to import
+  * @param importFromId The id of the existing ManagedObjectStorage that should be imported. Refer to the {@link https://registry.terraform.io/providers/upcloudltd/upcloud/3.0.3/docs/resources/managed_object_storage#import import section} in the documentation of this resource for the id to use
+  * @param provider? Optional instance of the provider where the ManagedObjectStorage to import is found
+  */
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
+        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "upcloud_managed_object_storage", importId: importFromId, provider });
+      }
+
+  // ===========
+  // INITIALIZER
+  // ===========
+
+  /**
+  * Create a new {@link https://registry.terraform.io/providers/upcloudltd/upcloud/3.0.3/docs/resources/managed_object_storage upcloud_managed_object_storage} Resource
+  *
+  * @param scope The scope in which to define this construct
+  * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
+  * @param options ManagedObjectStorageConfig
+  */
+  public constructor(scope: Construct, id: string, config: ManagedObjectStorageConfig) {
+    super(scope, id, {
+      terraformResourceType: 'upcloud_managed_object_storage',
+      terraformGeneratorMetadata: {
+        providerName: 'upcloud',
+        providerVersion: '3.0.3',
+        providerVersionConstraint: '~> 3.0'
+      },
+      provider: config.provider,
+      dependsOn: config.dependsOn,
+      count: config.count,
+      lifecycle: config.lifecycle,
+      provisioners: config.provisioners,
+      connection: config.connection,
+      forEach: config.forEach
+    });
+    this._configuredStatus = config.configuredStatus;
+    this._id = config.id;
+    this._labels = config.labels;
+    this._region = config.region;
+    this._users = config.users;
+    this._network.internalValue = config.network;
+  }
+
+  // ==========
+  // ATTRIBUTES
+  // ==========
+
+  // configured_status - computed: false, optional: false, required: true
+  private _configuredStatus?: string; 
+  public get configuredStatus() {
+    return this.getStringAttribute('configured_status');
+  }
+  public set configuredStatus(value: string) {
+    this._configuredStatus = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get configuredStatusInput() {
+    return this._configuredStatus;
+  }
+
+  // created_at - computed: true, optional: false, required: false
+  public get createdAt() {
+    return this.getStringAttribute('created_at');
+  }
+
+  // endpoint - computed: true, optional: false, required: false
+  private _endpoint = new ManagedObjectStorageEndpointList(this, "endpoint", true);
+  public get endpoint() {
+    return this._endpoint;
+  }
+
+  // id - computed: true, optional: true, required: false
+  private _id?: string; 
+  public get id() {
+    return this.getStringAttribute('id');
+  }
+  public set id(value: string) {
+    this._id = value;
+  }
+  public resetId() {
+    this._id = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get idInput() {
+    return this._id;
+  }
+
+  // labels - computed: false, optional: true, required: false
+  private _labels?: { [key: string]: string }; 
+  public get labels() {
+    return this.getStringMapAttribute('labels');
+  }
+  public set labels(value: { [key: string]: string }) {
+    this._labels = value;
+  }
+  public resetLabels() {
+    this._labels = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get labelsInput() {
+    return this._labels;
+  }
+
+  // operational_state - computed: true, optional: false, required: false
+  public get operationalState() {
+    return this.getStringAttribute('operational_state');
+  }
+
+  // region - computed: false, optional: false, required: true
+  private _region?: string; 
+  public get region() {
+    return this.getStringAttribute('region');
+  }
+  public set region(value: string) {
+    this._region = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get regionInput() {
+    return this._region;
+  }
+
+  // updated_at - computed: true, optional: false, required: false
+  public get updatedAt() {
+    return this.getStringAttribute('updated_at');
+  }
+
+  // users - computed: false, optional: true, required: false
+  private _users?: string[]; 
+  public get users() {
+    return cdktf.Fn.tolist(this.getListAttribute('users'));
+  }
+  public set users(value: string[]) {
+    this._users = value;
+  }
+  public resetUsers() {
+    this._users = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get usersInput() {
+    return this._users;
+  }
+
+  // network - computed: false, optional: true, required: false
+  private _network = new ManagedObjectStorageNetworkList(this, "network", true);
+  public get network() {
+    return this._network;
+  }
+  public putNetwork(value: ManagedObjectStorageNetwork[] | cdktf.IResolvable) {
+    this._network.internalValue = value;
+  }
+  public resetNetwork() {
+    this._network.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get networkInput() {
+    return this._network.internalValue;
+  }
+
+  // =========
+  // SYNTHESIS
+  // =========
+
+  protected synthesizeAttributes(): { [name: string]: any } {
+    return {
+      configured_status: cdktf.stringToTerraform(this._configuredStatus),
+      id: cdktf.stringToTerraform(this._id),
+      labels: cdktf.hashMapper(cdktf.stringToTerraform)(this._labels),
+      region: cdktf.stringToTerraform(this._region),
+      users: cdktf.listMapper(cdktf.stringToTerraform, false)(this._users),
+      network: cdktf.listMapper(managedObjectStorageNetworkToTerraform, true)(this._network.internalValue),
+    };
+  }
+}

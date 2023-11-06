@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/upcloudltd/upcloud/2.12.0/docs/resources/network
+// https://registry.terraform.io/providers/upcloudltd/upcloud/3.0.3/docs/resources/network
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,7 +8,7 @@ import * as cdktf from 'cdktf';
 
 export interface NetworkConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/2.12.0/docs/resources/network#id Network#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/3.0.3/docs/resources/network#id Network#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -22,25 +17,25 @@ export interface NetworkConfig extends cdktf.TerraformMetaArguments {
   /**
   * A valid name for the network
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/2.12.0/docs/resources/network#name Network#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/3.0.3/docs/resources/network#name Network#name}
   */
   readonly name: string;
   /**
   * The UUID of a router
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/2.12.0/docs/resources/network#router Network#router}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/3.0.3/docs/resources/network#router Network#router}
   */
   readonly router?: string;
   /**
   * The zone the network is in, e.g. `de-fra1`. You can list available zones with `upctl zone list`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/2.12.0/docs/resources/network#zone Network#zone}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/3.0.3/docs/resources/network#zone Network#zone}
   */
   readonly zone: string;
   /**
   * ip_network block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/2.12.0/docs/resources/network#ip_network Network#ip_network}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/3.0.3/docs/resources/network#ip_network Network#ip_network}
   */
   readonly ipNetwork: NetworkIpNetwork;
 }
@@ -48,37 +43,43 @@ export interface NetworkIpNetwork {
   /**
   * The CIDR range of the subnet
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/2.12.0/docs/resources/network#address Network#address}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/3.0.3/docs/resources/network#address Network#address}
   */
   readonly address: string;
   /**
   * Is DHCP enabled?
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/2.12.0/docs/resources/network#dhcp Network#dhcp}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/3.0.3/docs/resources/network#dhcp Network#dhcp}
   */
   readonly dhcp: boolean | cdktf.IResolvable;
   /**
   * Is the gateway the DHCP default route?
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/2.12.0/docs/resources/network#dhcp_default_route Network#dhcp_default_route}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/3.0.3/docs/resources/network#dhcp_default_route Network#dhcp_default_route}
   */
   readonly dhcpDefaultRoute?: boolean | cdktf.IResolvable;
   /**
   * The DNS servers given by DHCP
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/2.12.0/docs/resources/network#dhcp_dns Network#dhcp_dns}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/3.0.3/docs/resources/network#dhcp_dns Network#dhcp_dns}
   */
   readonly dhcpDns?: string[];
   /**
+  * The additional DHCP classless static routes given by DHCP
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/3.0.3/docs/resources/network#dhcp_routes Network#dhcp_routes}
+  */
+  readonly dhcpRoutes?: string[];
+  /**
   * IP address family
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/2.12.0/docs/resources/network#family Network#family}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/3.0.3/docs/resources/network#family Network#family}
   */
   readonly family: string;
   /**
   * Gateway address given by DHCP
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/2.12.0/docs/resources/network#gateway Network#gateway}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/3.0.3/docs/resources/network#gateway Network#gateway}
   */
   readonly gateway?: string;
 }
@@ -93,6 +94,7 @@ export function networkIpNetworkToTerraform(struct?: NetworkIpNetworkOutputRefer
     dhcp: cdktf.booleanToTerraform(struct!.dhcp),
     dhcp_default_route: cdktf.booleanToTerraform(struct!.dhcpDefaultRoute),
     dhcp_dns: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.dhcpDns),
+    dhcp_routes: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.dhcpRoutes),
     family: cdktf.stringToTerraform(struct!.family),
     gateway: cdktf.stringToTerraform(struct!.gateway),
   }
@@ -128,6 +130,10 @@ export class NetworkIpNetworkOutputReference extends cdktf.ComplexObject {
       hasAnyValues = true;
       internalValueResult.dhcpDns = this._dhcpDns;
     }
+    if (this._dhcpRoutes !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.dhcpRoutes = this._dhcpRoutes;
+    }
     if (this._family !== undefined) {
       hasAnyValues = true;
       internalValueResult.family = this._family;
@@ -146,6 +152,7 @@ export class NetworkIpNetworkOutputReference extends cdktf.ComplexObject {
       this._dhcp = undefined;
       this._dhcpDefaultRoute = undefined;
       this._dhcpDns = undefined;
+      this._dhcpRoutes = undefined;
       this._family = undefined;
       this._gateway = undefined;
     }
@@ -155,6 +162,7 @@ export class NetworkIpNetworkOutputReference extends cdktf.ComplexObject {
       this._dhcp = value.dhcp;
       this._dhcpDefaultRoute = value.dhcpDefaultRoute;
       this._dhcpDns = value.dhcpDns;
+      this._dhcpRoutes = value.dhcpRoutes;
       this._family = value.family;
       this._gateway = value.gateway;
     }
@@ -218,6 +226,22 @@ export class NetworkIpNetworkOutputReference extends cdktf.ComplexObject {
     return this._dhcpDns;
   }
 
+  // dhcp_routes - computed: true, optional: true, required: false
+  private _dhcpRoutes?: string[]; 
+  public get dhcpRoutes() {
+    return cdktf.Fn.tolist(this.getListAttribute('dhcp_routes'));
+  }
+  public set dhcpRoutes(value: string[]) {
+    this._dhcpRoutes = value;
+  }
+  public resetDhcpRoutes() {
+    this._dhcpRoutes = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get dhcpRoutesInput() {
+    return this._dhcpRoutes;
+  }
+
   // family - computed: false, optional: false, required: true
   private _family?: string; 
   public get family() {
@@ -249,7 +273,7 @@ export class NetworkIpNetworkOutputReference extends cdktf.ComplexObject {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/upcloudltd/upcloud/2.12.0/docs/resources/network upcloud_network}
+* Represents a {@link https://registry.terraform.io/providers/upcloudltd/upcloud/3.0.3/docs/resources/network upcloud_network}
 */
 export class Network extends cdktf.TerraformResource {
 
@@ -265,7 +289,7 @@ export class Network extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a Network resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the Network to import
-  * @param importFromId The id of the existing Network that should be imported. Refer to the {@link https://registry.terraform.io/providers/upcloudltd/upcloud/2.12.0/docs/resources/network#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing Network that should be imported. Refer to the {@link https://registry.terraform.io/providers/upcloudltd/upcloud/3.0.3/docs/resources/network#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the Network to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -277,7 +301,7 @@ export class Network extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/upcloudltd/upcloud/2.12.0/docs/resources/network upcloud_network} Resource
+  * Create a new {@link https://registry.terraform.io/providers/upcloudltd/upcloud/3.0.3/docs/resources/network upcloud_network} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -288,8 +312,8 @@ export class Network extends cdktf.TerraformResource {
       terraformResourceType: 'upcloud_network',
       terraformGeneratorMetadata: {
         providerName: 'upcloud',
-        providerVersion: '2.12.0',
-        providerVersionConstraint: '~> 2.4'
+        providerVersion: '3.0.3',
+        providerVersionConstraint: '~> 3.0'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,
