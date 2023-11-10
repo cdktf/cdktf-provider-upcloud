@@ -3,7 +3,7 @@
 
 This repo builds and publishes the Terraform upcloud Provider bindings for [CDK for Terraform](https://cdk.tf).
 
-Is based directly on upcloud 3.0.3
+Is based directly on upcloud 3.1.0
 
 ## Available Packages
 
@@ -63,7 +63,7 @@ This project is explicitly not tracking the Terraform upcloud Provider version 1
 These are the upstream dependencies:
 
 - [Terraform CDK](https://cdk.tf)
-- [Terraform upcloud Provider](https://registry.terraform.io/providers/UpCloudLtd/upcloud/3.0.3)
+- [Terraform upcloud Provider](https://registry.terraform.io/providers/UpCloudLtd/upcloud/3.1.0)
     - This links to the minimum version being tracked, you can find the latest released version [in our releases](https://github.com/cdktf/cdktf-provider-upcloud/releases)
 - [Terraform Engine](https://terraform.io)
 
