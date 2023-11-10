@@ -1,6 +1,6 @@
 # `data_upcloud_tags`
 
-Refer to the Terraform Registory for docs: [`data_upcloud_tags`](https://registry.terraform.io/providers/upcloudltd/upcloud/3.0.3/docs/data-sources/tags).
+Refer to the Terraform Registory for docs: [`data_upcloud_tags`](https://registry.terraform.io/providers/upcloudltd/upcloud/3.1.0/docs/data-sources/tags).
 
 # `dataUpcloudTags` Submodule <a name="`dataUpcloudTags` Submodule" id="@cdktf/provider-upcloud.dataUpcloudTags"></a>
 
@@ -8,12 +8,12 @@ Refer to the Terraform Registory for docs: [`data_upcloud_tags`](https://registr
 
 ### DataUpcloudTags <a name="DataUpcloudTags" id="@cdktf/provider-upcloud.dataUpcloudTags.DataUpcloudTags"></a>
 
-Represents a {@link https://registry.terraform.io/providers/upcloudltd/upcloud/3.0.3/docs/data-sources/tags upcloud_tags}.
+Represents a {@link https://registry.terraform.io/providers/upcloudltd/upcloud/3.1.0/docs/data-sources/tags upcloud_tags}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-upcloud.dataUpcloudTags.DataUpcloudTags.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v11/dataupcloudtags"
+import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/dataupcloudtags"
 
 dataupcloudtags.NewDataUpcloudTags(scope Construct, id *string, config DataUpcloudTagsConfig) DataUpcloudTags
 ```
@@ -278,7 +278,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-upcloud.dataUpcloudTags.DataUpcloudTags.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v11/dataupcloudtags"
+import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/dataupcloudtags"
 
 dataupcloudtags.DataUpcloudTags_IsConstruct(x interface{}) *bool
 ```
@@ -310,7 +310,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-upcloud.dataUpcloudTags.DataUpcloudTags.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v11/dataupcloudtags"
+import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/dataupcloudtags"
 
 dataupcloudtags.DataUpcloudTags_IsTerraformElement(x interface{}) *bool
 ```
@@ -324,7 +324,7 @@ dataupcloudtags.DataUpcloudTags_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-upcloud.dataUpcloudTags.DataUpcloudTags.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v11/dataupcloudtags"
+import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/dataupcloudtags"
 
 dataupcloudtags.DataUpcloudTags_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -338,7 +338,7 @@ dataupcloudtags.DataUpcloudTags_IsTerraformDataSource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-upcloud.dataUpcloudTags.DataUpcloudTags.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v11/dataupcloudtags"
+import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/dataupcloudtags"
 
 dataupcloudtags.DataUpcloudTags_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -367,7 +367,7 @@ The construct id used in the generated config for the DataUpcloudTags to import.
 
 The id of the existing DataUpcloudTags that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/upcloudltd/upcloud/3.0.3/docs/data-sources/tags#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/upcloudltd/upcloud/3.1.0/docs/data-sources/tags#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -578,7 +578,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-upcloud.dataUpcloudTags.DataUpcloudTagsConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v11/dataupcloudtags"
+import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/dataupcloudtags"
 
 &dataupcloudtags.DataUpcloudTagsConfig {
 	Connection: interface{},
@@ -603,7 +603,7 @@ import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v11/dataupcloudtags"
 | <code><a href="#@cdktf/provider-upcloud.dataUpcloudTags.DataUpcloudTagsConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.dataUpcloudTags.DataUpcloudTagsConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.dataUpcloudTags.DataUpcloudTagsConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-upcloud.dataUpcloudTags.DataUpcloudTagsConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/3.0.3/docs/data-sources/tags#id DataUpcloudTags#id}. |
+| <code><a href="#@cdktf/provider-upcloud.dataUpcloudTags.DataUpcloudTagsConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/3.1.0/docs/data-sources/tags#id DataUpcloudTags#id}. |
 
 ---
 
@@ -685,7 +685,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/3.0.3/docs/data-sources/tags#id DataUpcloudTags#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/3.1.0/docs/data-sources/tags#id DataUpcloudTags#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -697,7 +697,7 @@ If you experience problems setting this value it might not be settable. Please t
 #### Initializer <a name="Initializer" id="@cdktf/provider-upcloud.dataUpcloudTags.DataUpcloudTagsTags.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v11/dataupcloudtags"
+import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/dataupcloudtags"
 
 &dataupcloudtags.DataUpcloudTagsTags {
 
@@ -712,7 +712,7 @@ import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v11/dataupcloudtags"
 #### Initializers <a name="Initializers" id="@cdktf/provider-upcloud.dataUpcloudTags.DataUpcloudTagsTagsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v11/dataupcloudtags"
+import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/dataupcloudtags"
 
 dataupcloudtags.NewDataUpcloudTagsTagsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataUpcloudTagsTagsList
 ```
@@ -844,7 +844,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-upcloud.dataUpcloudTags.DataUpcloudTagsTagsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v11/dataupcloudtags"
+import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/dataupcloudtags"
 
 dataupcloudtags.NewDataUpcloudTagsTagsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataUpcloudTagsTagsOutputReference
 ```

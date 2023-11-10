@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/upcloudltd/upcloud/3.0.3/docs/data-sources/networks
+// https://registry.terraform.io/providers/upcloudltd/upcloud/3.1.0/docs/data-sources/networks
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,11 +10,11 @@ export interface DataUpcloudNetworksConfig extends cdktf.TerraformMetaArguments 
   /**
   * If specified, results will be filtered to match name using a regular expression
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/3.0.3/docs/data-sources/networks#filter_name DataUpcloudNetworks#filter_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/3.1.0/docs/data-sources/networks#filter_name DataUpcloudNetworks#filter_name}
   */
   readonly filterName?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/3.0.3/docs/data-sources/networks#id DataUpcloudNetworks#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/3.1.0/docs/data-sources/networks#id DataUpcloudNetworks#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -28,7 +23,7 @@ export interface DataUpcloudNetworksConfig extends cdktf.TerraformMetaArguments 
   /**
   * If specified, this data source will return only networks from this zone
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/3.0.3/docs/data-sources/networks#zone DataUpcloudNetworks#zone}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/3.1.0/docs/data-sources/networks#zone DataUpcloudNetworks#zone}
   */
   readonly zone?: string;
 }
@@ -288,7 +283,7 @@ export class DataUpcloudNetworksNetworksList extends cdktf.ComplexList {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/upcloudltd/upcloud/3.0.3/docs/data-sources/networks upcloud_networks}
+* Represents a {@link https://registry.terraform.io/providers/upcloudltd/upcloud/3.1.0/docs/data-sources/networks upcloud_networks}
 */
 export class DataUpcloudNetworks extends cdktf.TerraformDataSource {
 
@@ -304,7 +299,7 @@ export class DataUpcloudNetworks extends cdktf.TerraformDataSource {
   * Generates CDKTF code for importing a DataUpcloudNetworks resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataUpcloudNetworks to import
-  * @param importFromId The id of the existing DataUpcloudNetworks that should be imported. Refer to the {@link https://registry.terraform.io/providers/upcloudltd/upcloud/3.0.3/docs/data-sources/networks#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataUpcloudNetworks that should be imported. Refer to the {@link https://registry.terraform.io/providers/upcloudltd/upcloud/3.1.0/docs/data-sources/networks#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataUpcloudNetworks to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -316,7 +311,7 @@ export class DataUpcloudNetworks extends cdktf.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/upcloudltd/upcloud/3.0.3/docs/data-sources/networks upcloud_networks} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/upcloudltd/upcloud/3.1.0/docs/data-sources/networks upcloud_networks} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -327,7 +322,7 @@ export class DataUpcloudNetworks extends cdktf.TerraformDataSource {
       terraformResourceType: 'upcloud_networks',
       terraformGeneratorMetadata: {
         providerName: 'upcloud',
-        providerVersion: '3.0.3',
+        providerVersion: '3.1.0',
         providerVersionConstraint: '~> 3.0'
       },
       provider: config.provider,
