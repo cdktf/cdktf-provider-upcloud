@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/upcloudltd/upcloud/3.1.0/docs/resources/storage
+// https://registry.terraform.io/providers/upcloudltd/upcloud/3.1.1/docs/resources/storage
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,7 +10,7 @@ export interface StorageConfig extends cdktf.TerraformMetaArguments {
   /**
   * If set to true, the backup taken before the partition and filesystem resize attempt will be deleted immediately after success.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/3.1.0/docs/resources/storage#delete_autoresize_backup Storage#delete_autoresize_backup}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/3.1.1/docs/resources/storage#delete_autoresize_backup Storage#delete_autoresize_backup}
   */
   readonly deleteAutoresizeBackup?: boolean | cdktf.IResolvable;
   /**
@@ -24,11 +19,11 @@ export interface StorageConfig extends cdktf.TerraformMetaArguments {
   * 				to restore the storage and then deleted. If the resize attempt succeeds, backup will be kept (unless delete_autoresize_backup option is set to true).
   * 				Taking and keeping backups incure costs.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/3.1.0/docs/resources/storage#filesystem_autoresize Storage#filesystem_autoresize}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/3.1.1/docs/resources/storage#filesystem_autoresize Storage#filesystem_autoresize}
   */
   readonly filesystemAutoresize?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/3.1.0/docs/resources/storage#id Storage#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/3.1.1/docs/resources/storage#id Storage#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -37,43 +32,43 @@ export interface StorageConfig extends cdktf.TerraformMetaArguments {
   /**
   * The size of the storage in gigabytes
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/3.1.0/docs/resources/storage#size Storage#size}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/3.1.1/docs/resources/storage#size Storage#size}
   */
   readonly size: number;
   /**
   * The storage tier to use
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/3.1.0/docs/resources/storage#tier Storage#tier}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/3.1.1/docs/resources/storage#tier Storage#tier}
   */
   readonly tier?: string;
   /**
   * A short, informative description
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/3.1.0/docs/resources/storage#title Storage#title}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/3.1.1/docs/resources/storage#title Storage#title}
   */
   readonly title: string;
   /**
   * The zone in which the storage will be created, e.g. `de-fra1`. You can list available zones with `upctl zone list`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/3.1.0/docs/resources/storage#zone Storage#zone}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/3.1.1/docs/resources/storage#zone Storage#zone}
   */
   readonly zone: string;
   /**
   * backup_rule block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/3.1.0/docs/resources/storage#backup_rule Storage#backup_rule}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/3.1.1/docs/resources/storage#backup_rule Storage#backup_rule}
   */
   readonly backupRule?: StorageBackupRule;
   /**
   * clone block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/3.1.0/docs/resources/storage#clone Storage#clone}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/3.1.1/docs/resources/storage#clone Storage#clone}
   */
   readonly clone?: StorageClone;
   /**
   * import block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/3.1.0/docs/resources/storage#import Storage#import}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/3.1.1/docs/resources/storage#import Storage#import}
   */
   readonly import?: StorageImport;
 }
@@ -81,19 +76,19 @@ export interface StorageBackupRule {
   /**
   * The weekday when the backup is created
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/3.1.0/docs/resources/storage#interval Storage#interval}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/3.1.1/docs/resources/storage#interval Storage#interval}
   */
   readonly interval: string;
   /**
   * The number of days before a backup is automatically deleted
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/3.1.0/docs/resources/storage#retention Storage#retention}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/3.1.1/docs/resources/storage#retention Storage#retention}
   */
   readonly retention: number;
   /**
   * The time of day when the backup is created
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/3.1.0/docs/resources/storage#time Storage#time}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/3.1.1/docs/resources/storage#time Storage#time}
   */
   readonly time: string;
 }
@@ -197,7 +192,7 @@ export interface StorageClone {
   /**
   * The unique identifier of the storage/template to clone
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/3.1.0/docs/resources/storage#id Storage#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/3.1.1/docs/resources/storage#id Storage#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -264,19 +259,19 @@ export interface StorageImport {
   /**
   * The mode of the import task. One of `http_import` or `direct_upload`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/3.1.0/docs/resources/storage#source Storage#source}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/3.1.1/docs/resources/storage#source Storage#source}
   */
   readonly source: string;
   /**
   * For `direct_upload`; an optional hash of the file to upload.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/3.1.0/docs/resources/storage#source_hash Storage#source_hash}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/3.1.1/docs/resources/storage#source_hash Storage#source_hash}
   */
   readonly sourceHash?: string;
   /**
   * The location of the file to import. For `http_import` an accessible URL for `direct_upload` a local file.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/3.1.0/docs/resources/storage#source_location Storage#source_location}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/3.1.1/docs/resources/storage#source_location Storage#source_location}
   */
   readonly sourceLocation: string;
 }
@@ -391,7 +386,7 @@ export class StorageImportOutputReference extends cdktf.ComplexObject {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/upcloudltd/upcloud/3.1.0/docs/resources/storage upcloud_storage}
+* Represents a {@link https://registry.terraform.io/providers/upcloudltd/upcloud/3.1.1/docs/resources/storage upcloud_storage}
 */
 export class Storage extends cdktf.TerraformResource {
 
@@ -407,7 +402,7 @@ export class Storage extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a Storage resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the Storage to import
-  * @param importFromId The id of the existing Storage that should be imported. Refer to the {@link https://registry.terraform.io/providers/upcloudltd/upcloud/3.1.0/docs/resources/storage#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing Storage that should be imported. Refer to the {@link https://registry.terraform.io/providers/upcloudltd/upcloud/3.1.1/docs/resources/storage#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the Storage to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -419,7 +414,7 @@ export class Storage extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/upcloudltd/upcloud/3.1.0/docs/resources/storage upcloud_storage} Resource
+  * Create a new {@link https://registry.terraform.io/providers/upcloudltd/upcloud/3.1.1/docs/resources/storage upcloud_storage} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -430,7 +425,7 @@ export class Storage extends cdktf.TerraformResource {
       terraformResourceType: 'upcloud_storage',
       terraformGeneratorMetadata: {
         providerName: 'upcloud',
-        providerVersion: '3.1.0',
+        providerVersion: '3.1.1',
         providerVersionConstraint: '~> 3.0'
       },
       provider: config.provider,

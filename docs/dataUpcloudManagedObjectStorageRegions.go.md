@@ -1,6 +1,6 @@
 # `data_upcloud_managed_object_storage_regions`
 
-Refer to the Terraform Registory for docs: [`data_upcloud_managed_object_storage_regions`](https://registry.terraform.io/providers/upcloudltd/upcloud/3.1.0/docs/data-sources/managed_object_storage_regions).
+Refer to the Terraform Registory for docs: [`data_upcloud_managed_object_storage_regions`](https://registry.terraform.io/providers/upcloudltd/upcloud/3.1.1/docs/data-sources/managed_object_storage_regions).
 
 # `dataUpcloudManagedObjectStorageRegions` Submodule <a name="`dataUpcloudManagedObjectStorageRegions` Submodule" id="@cdktf/provider-upcloud.dataUpcloudManagedObjectStorageRegions"></a>
 
@@ -8,12 +8,12 @@ Refer to the Terraform Registory for docs: [`data_upcloud_managed_object_storage
 
 ### DataUpcloudManagedObjectStorageRegions <a name="DataUpcloudManagedObjectStorageRegions" id="@cdktf/provider-upcloud.dataUpcloudManagedObjectStorageRegions.DataUpcloudManagedObjectStorageRegions"></a>
 
-Represents a {@link https://registry.terraform.io/providers/upcloudltd/upcloud/3.1.0/docs/data-sources/managed_object_storage_regions upcloud_managed_object_storage_regions}.
+Represents a {@link https://registry.terraform.io/providers/upcloudltd/upcloud/3.1.1/docs/data-sources/managed_object_storage_regions upcloud_managed_object_storage_regions}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-upcloud.dataUpcloudManagedObjectStorageRegions.DataUpcloudManagedObjectStorageRegions.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v11/dataupcloudmanagedobjectstorageregions"
+import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/dataupcloudmanagedobjectstorageregions"
 
 dataupcloudmanagedobjectstorageregions.NewDataUpcloudManagedObjectStorageRegions(scope Construct, id *string, config DataUpcloudManagedObjectStorageRegionsConfig) DataUpcloudManagedObjectStorageRegions
 ```
@@ -278,7 +278,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-upcloud.dataUpcloudManagedObjectStorageRegions.DataUpcloudManagedObjectStorageRegions.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v11/dataupcloudmanagedobjectstorageregions"
+import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/dataupcloudmanagedobjectstorageregions"
 
 dataupcloudmanagedobjectstorageregions.DataUpcloudManagedObjectStorageRegions_IsConstruct(x interface{}) *bool
 ```
@@ -310,7 +310,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-upcloud.dataUpcloudManagedObjectStorageRegions.DataUpcloudManagedObjectStorageRegions.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v11/dataupcloudmanagedobjectstorageregions"
+import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/dataupcloudmanagedobjectstorageregions"
 
 dataupcloudmanagedobjectstorageregions.DataUpcloudManagedObjectStorageRegions_IsTerraformElement(x interface{}) *bool
 ```
@@ -324,7 +324,7 @@ dataupcloudmanagedobjectstorageregions.DataUpcloudManagedObjectStorageRegions_Is
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-upcloud.dataUpcloudManagedObjectStorageRegions.DataUpcloudManagedObjectStorageRegions.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v11/dataupcloudmanagedobjectstorageregions"
+import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/dataupcloudmanagedobjectstorageregions"
 
 dataupcloudmanagedobjectstorageregions.DataUpcloudManagedObjectStorageRegions_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -338,7 +338,7 @@ dataupcloudmanagedobjectstorageregions.DataUpcloudManagedObjectStorageRegions_Is
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-upcloud.dataUpcloudManagedObjectStorageRegions.DataUpcloudManagedObjectStorageRegions.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v11/dataupcloudmanagedobjectstorageregions"
+import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/dataupcloudmanagedobjectstorageregions"
 
 dataupcloudmanagedobjectstorageregions.DataUpcloudManagedObjectStorageRegions_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -367,7 +367,7 @@ The construct id used in the generated config for the DataUpcloudManagedObjectSt
 
 The id of the existing DataUpcloudManagedObjectStorageRegions that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/upcloudltd/upcloud/3.1.0/docs/data-sources/managed_object_storage_regions#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/upcloudltd/upcloud/3.1.1/docs/data-sources/managed_object_storage_regions#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -578,7 +578,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-upcloud.dataUpcloudManagedObjectStorageRegions.DataUpcloudManagedObjectStorageRegionsConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v11/dataupcloudmanagedobjectstorageregions"
+import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/dataupcloudmanagedobjectstorageregions"
 
 &dataupcloudmanagedobjectstorageregions.DataUpcloudManagedObjectStorageRegionsConfig {
 	Connection: interface{},
@@ -603,7 +603,7 @@ import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v11/dataupcloudmanage
 | <code><a href="#@cdktf/provider-upcloud.dataUpcloudManagedObjectStorageRegions.DataUpcloudManagedObjectStorageRegionsConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.dataUpcloudManagedObjectStorageRegions.DataUpcloudManagedObjectStorageRegionsConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.dataUpcloudManagedObjectStorageRegions.DataUpcloudManagedObjectStorageRegionsConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-upcloud.dataUpcloudManagedObjectStorageRegions.DataUpcloudManagedObjectStorageRegionsConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/3.1.0/docs/data-sources/managed_object_storage_regions#id DataUpcloudManagedObjectStorageRegions#id}. |
+| <code><a href="#@cdktf/provider-upcloud.dataUpcloudManagedObjectStorageRegions.DataUpcloudManagedObjectStorageRegionsConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/3.1.1/docs/data-sources/managed_object_storage_regions#id DataUpcloudManagedObjectStorageRegions#id}. |
 
 ---
 
@@ -685,7 +685,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/3.1.0/docs/data-sources/managed_object_storage_regions#id DataUpcloudManagedObjectStorageRegions#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/3.1.1/docs/data-sources/managed_object_storage_regions#id DataUpcloudManagedObjectStorageRegions#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -697,7 +697,7 @@ If you experience problems setting this value it might not be settable. Please t
 #### Initializer <a name="Initializer" id="@cdktf/provider-upcloud.dataUpcloudManagedObjectStorageRegions.DataUpcloudManagedObjectStorageRegionsRegions.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v11/dataupcloudmanagedobjectstorageregions"
+import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/dataupcloudmanagedobjectstorageregions"
 
 &dataupcloudmanagedobjectstorageregions.DataUpcloudManagedObjectStorageRegionsRegions {
 
@@ -712,7 +712,7 @@ import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v11/dataupcloudmanage
 #### Initializers <a name="Initializers" id="@cdktf/provider-upcloud.dataUpcloudManagedObjectStorageRegions.DataUpcloudManagedObjectStorageRegionsRegionsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v11/dataupcloudmanagedobjectstorageregions"
+import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/dataupcloudmanagedobjectstorageregions"
 
 dataupcloudmanagedobjectstorageregions.NewDataUpcloudManagedObjectStorageRegionsRegionsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataUpcloudManagedObjectStorageRegionsRegionsList
 ```
@@ -844,7 +844,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-upcloud.dataUpcloudManagedObjectStorageRegions.DataUpcloudManagedObjectStorageRegionsRegionsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v11/dataupcloudmanagedobjectstorageregions"
+import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/dataupcloudmanagedobjectstorageregions"
 
 dataupcloudmanagedobjectstorageregions.NewDataUpcloudManagedObjectStorageRegionsRegionsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataUpcloudManagedObjectStorageRegionsRegionsOutputReference
 ```

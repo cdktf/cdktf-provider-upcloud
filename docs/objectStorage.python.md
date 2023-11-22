@@ -1,6 +1,6 @@
 # `upcloud_object_storage`
 
-Refer to the Terraform Registory for docs: [`upcloud_object_storage`](https://registry.terraform.io/providers/upcloudltd/upcloud/3.1.0/docs/resources/object_storage).
+Refer to the Terraform Registory for docs: [`upcloud_object_storage`](https://registry.terraform.io/providers/upcloudltd/upcloud/3.1.1/docs/resources/object_storage).
 
 # `objectStorage` Submodule <a name="`objectStorage` Submodule" id="@cdktf/provider-upcloud.objectStorage"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`upcloud_object_storage`](https://re
 
 ### ObjectStorage <a name="ObjectStorage" id="@cdktf/provider-upcloud.objectStorage.ObjectStorage"></a>
 
-Represents a {@link https://registry.terraform.io/providers/upcloudltd/upcloud/3.1.0/docs/resources/object_storage upcloud_object_storage}.
+Represents a {@link https://registry.terraform.io/providers/upcloudltd/upcloud/3.1.1/docs/resources/object_storage upcloud_object_storage}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-upcloud.objectStorage.ObjectStorage.Initializer"></a>
 
@@ -54,7 +54,7 @@ objectStorage.ObjectStorage(
 | <code><a href="#@cdktf/provider-upcloud.objectStorage.ObjectStorage.Initializer.parameter.zone">zone</a></code> | <code>str</code> | The zone in which the object storage instance will be created, e.g. `de-fra1`. You can list available zones with `upctl zone list`. |
 | <code><a href="#@cdktf/provider-upcloud.objectStorage.ObjectStorage.Initializer.parameter.bucket">bucket</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-upcloud.objectStorage.ObjectStorageBucket">ObjectStorageBucket</a>]]</code> | bucket block. |
 | <code><a href="#@cdktf/provider-upcloud.objectStorage.ObjectStorage.Initializer.parameter.description">description</a></code> | <code>str</code> | The description of the object storage instance to be created. |
-| <code><a href="#@cdktf/provider-upcloud.objectStorage.ObjectStorage.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/3.1.0/docs/resources/object_storage#id ObjectStorage#id}. |
+| <code><a href="#@cdktf/provider-upcloud.objectStorage.ObjectStorage.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/3.1.1/docs/resources/object_storage#id ObjectStorage#id}. |
 
 ---
 
@@ -130,7 +130,7 @@ The environment variable should be "UPCLOUD_OBJECT_STORAGE_ACCESS_KEY_{name}".
 and all dashes (-) should be replaced with underscores (_). For example, object storage named "my-files" would
 use environment variable named "UPCLOUD_OBJECT_STORAGE_ACCESS_KEY_MY_FILES".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/3.1.0/docs/resources/object_storage#access_key ObjectStorage#access_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/3.1.1/docs/resources/object_storage#access_key ObjectStorage#access_key}
 
 ---
 
@@ -140,7 +140,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upclo
 
 The name of the object storage instance to be created.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/3.1.0/docs/resources/object_storage#name ObjectStorage#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/3.1.1/docs/resources/object_storage#name ObjectStorage#name}
 
 ---
 
@@ -156,7 +156,7 @@ The environment variable should be "UPCLOUD_OBJECT_STORAGE_SECRET_KEY_{name}".
 and all dashes (-) should be replaced with underscores (_). For example, object storage named "my-files" would
 use environment variable named "UPCLOUD_OBJECT_STORAGE_SECRET_KEY_MY_FILES".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/3.1.0/docs/resources/object_storage#secret_key ObjectStorage#secret_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/3.1.1/docs/resources/object_storage#secret_key ObjectStorage#secret_key}
 
 ---
 
@@ -166,7 +166,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upclo
 
 The size of the object storage instance in gigabytes.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/3.1.0/docs/resources/object_storage#size ObjectStorage#size}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/3.1.1/docs/resources/object_storage#size ObjectStorage#size}
 
 ---
 
@@ -176,7 +176,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upclo
 
 The zone in which the object storage instance will be created, e.g. `de-fra1`. You can list available zones with `upctl zone list`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/3.1.0/docs/resources/object_storage#zone ObjectStorage#zone}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/3.1.1/docs/resources/object_storage#zone ObjectStorage#zone}
 
 ---
 
@@ -186,7 +186,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upclo
 
 bucket block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/3.1.0/docs/resources/object_storage#bucket ObjectStorage#bucket}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/3.1.1/docs/resources/object_storage#bucket ObjectStorage#bucket}
 
 ---
 
@@ -196,7 +196,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upclo
 
 The description of the object storage instance to be created.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/3.1.0/docs/resources/object_storage#description ObjectStorage#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/3.1.1/docs/resources/object_storage#description ObjectStorage#description}
 
 ---
 
@@ -204,7 +204,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upclo
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/3.1.0/docs/resources/object_storage#id ObjectStorage#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/3.1.1/docs/resources/object_storage#id ObjectStorage#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -662,7 +662,7 @@ The construct id used in the generated config for the ObjectStorage to import.
 
 The id of the existing ObjectStorage that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/upcloudltd/upcloud/3.1.0/docs/resources/object_storage#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/upcloudltd/upcloud/3.1.1/docs/resources/object_storage#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1107,7 +1107,7 @@ name: str
 
 The name of the bucket.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/3.1.0/docs/resources/object_storage#name ObjectStorage#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/3.1.1/docs/resources/object_storage#name ObjectStorage#name}
 
 ---
 
@@ -1155,7 +1155,7 @@ objectStorage.ObjectStorageConfig(
 | <code><a href="#@cdktf/provider-upcloud.objectStorage.ObjectStorageConfig.property.zone">zone</a></code> | <code>str</code> | The zone in which the object storage instance will be created, e.g. `de-fra1`. You can list available zones with `upctl zone list`. |
 | <code><a href="#@cdktf/provider-upcloud.objectStorage.ObjectStorageConfig.property.bucket">bucket</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-upcloud.objectStorage.ObjectStorageBucket">ObjectStorageBucket</a>]]</code> | bucket block. |
 | <code><a href="#@cdktf/provider-upcloud.objectStorage.ObjectStorageConfig.property.description">description</a></code> | <code>str</code> | The description of the object storage instance to be created. |
-| <code><a href="#@cdktf/provider-upcloud.objectStorage.ObjectStorageConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/3.1.0/docs/resources/object_storage#id ObjectStorage#id}. |
+| <code><a href="#@cdktf/provider-upcloud.objectStorage.ObjectStorageConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/3.1.1/docs/resources/object_storage#id ObjectStorage#id}. |
 
 ---
 
@@ -1245,7 +1245,7 @@ The environment variable should be "UPCLOUD_OBJECT_STORAGE_ACCESS_KEY_{name}".
 and all dashes (-) should be replaced with underscores (_). For example, object storage named "my-files" would
 use environment variable named "UPCLOUD_OBJECT_STORAGE_ACCESS_KEY_MY_FILES".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/3.1.0/docs/resources/object_storage#access_key ObjectStorage#access_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/3.1.1/docs/resources/object_storage#access_key ObjectStorage#access_key}
 
 ---
 
@@ -1259,7 +1259,7 @@ name: str
 
 The name of the object storage instance to be created.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/3.1.0/docs/resources/object_storage#name ObjectStorage#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/3.1.1/docs/resources/object_storage#name ObjectStorage#name}
 
 ---
 
@@ -1279,7 +1279,7 @@ The environment variable should be "UPCLOUD_OBJECT_STORAGE_SECRET_KEY_{name}".
 and all dashes (-) should be replaced with underscores (_). For example, object storage named "my-files" would
 use environment variable named "UPCLOUD_OBJECT_STORAGE_SECRET_KEY_MY_FILES".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/3.1.0/docs/resources/object_storage#secret_key ObjectStorage#secret_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/3.1.1/docs/resources/object_storage#secret_key ObjectStorage#secret_key}
 
 ---
 
@@ -1293,7 +1293,7 @@ size: typing.Union[int, float]
 
 The size of the object storage instance in gigabytes.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/3.1.0/docs/resources/object_storage#size ObjectStorage#size}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/3.1.1/docs/resources/object_storage#size ObjectStorage#size}
 
 ---
 
@@ -1307,7 +1307,7 @@ zone: str
 
 The zone in which the object storage instance will be created, e.g. `de-fra1`. You can list available zones with `upctl zone list`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/3.1.0/docs/resources/object_storage#zone ObjectStorage#zone}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/3.1.1/docs/resources/object_storage#zone ObjectStorage#zone}
 
 ---
 
@@ -1321,7 +1321,7 @@ bucket: typing.Union[IResolvable, typing.List[ObjectStorageBucket]]
 
 bucket block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/3.1.0/docs/resources/object_storage#bucket ObjectStorage#bucket}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/3.1.1/docs/resources/object_storage#bucket ObjectStorage#bucket}
 
 ---
 
@@ -1335,7 +1335,7 @@ description: str
 
 The description of the object storage instance to be created.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/3.1.0/docs/resources/object_storage#description ObjectStorage#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/3.1.1/docs/resources/object_storage#description ObjectStorage#description}
 
 ---
 
@@ -1347,7 +1347,7 @@ id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/3.1.0/docs/resources/object_storage#id ObjectStorage#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/3.1.1/docs/resources/object_storage#id ObjectStorage#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.

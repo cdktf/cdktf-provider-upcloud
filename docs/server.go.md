@@ -1,6 +1,6 @@
 # `upcloud_server`
 
-Refer to the Terraform Registory for docs: [`upcloud_server`](https://registry.terraform.io/providers/upcloudltd/upcloud/3.1.0/docs/resources/server).
+Refer to the Terraform Registory for docs: [`upcloud_server`](https://registry.terraform.io/providers/upcloudltd/upcloud/3.1.1/docs/resources/server).
 
 # `server` Submodule <a name="`server` Submodule" id="@cdktf/provider-upcloud.server"></a>
 
@@ -8,12 +8,12 @@ Refer to the Terraform Registory for docs: [`upcloud_server`](https://registry.t
 
 ### Server <a name="Server" id="@cdktf/provider-upcloud.server.Server"></a>
 
-Represents a {@link https://registry.terraform.io/providers/upcloudltd/upcloud/3.1.0/docs/resources/server upcloud_server}.
+Represents a {@link https://registry.terraform.io/providers/upcloudltd/upcloud/3.1.1/docs/resources/server upcloud_server}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-upcloud.server.Server.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v11/server"
+import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/server"
 
 server.NewServer(scope Construct, id *string, config ServerConfig) Server
 ```
@@ -523,7 +523,7 @@ func ResetVideoModel()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-upcloud.server.Server.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v11/server"
+import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/server"
 
 server.Server_IsConstruct(x interface{}) *bool
 ```
@@ -555,7 +555,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-upcloud.server.Server.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v11/server"
+import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/server"
 
 server.Server_IsTerraformElement(x interface{}) *bool
 ```
@@ -569,7 +569,7 @@ server.Server_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-upcloud.server.Server.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v11/server"
+import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/server"
 
 server.Server_IsTerraformResource(x interface{}) *bool
 ```
@@ -583,7 +583,7 @@ server.Server_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-upcloud.server.Server.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v11/server"
+import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/server"
 
 server.Server_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -612,7 +612,7 @@ The construct id used in the generated config for the Server to import.
 
 The id of the existing Server that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/upcloudltd/upcloud/3.1.0/docs/resources/server#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/upcloudltd/upcloud/3.1.1/docs/resources/server#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1274,7 +1274,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-upcloud.server.ServerConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v11/server"
+import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/server"
 
 &server.ServerConfig {
 	Connection: interface{},
@@ -1292,15 +1292,15 @@ import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v11/server"
 	Host: *f64,
 	Id: *string,
 	Labels: *map[string]*string,
-	Login: github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v11.server.ServerLogin,
+	Login: github.com/cdktf/cdktf-provider-upcloud-go/upcloud.server.ServerLogin,
 	Mem: *f64,
 	Metadata: interface{},
 	NicModel: *string,
 	Plan: *string,
-	SimpleBackup: github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v11.server.ServerSimpleBackup,
+	SimpleBackup: github.com/cdktf/cdktf-provider-upcloud-go/upcloud.server.ServerSimpleBackup,
 	StorageDevices: interface{},
 	Tags: *[]*string,
-	Template: github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v11.server.ServerTemplate,
+	Template: github.com/cdktf/cdktf-provider-upcloud-go/upcloud.server.ServerTemplate,
 	Timezone: *string,
 	Title: *string,
 	UserData: *string,
@@ -1325,7 +1325,7 @@ import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v11/server"
 | <code><a href="#@cdktf/provider-upcloud.server.ServerConfig.property.cpu">Cpu</a></code> | <code>*f64</code> | The number of CPU for the server. |
 | <code><a href="#@cdktf/provider-upcloud.server.ServerConfig.property.firewall">Firewall</a></code> | <code>interface{}</code> | Are firewall rules active for the server. |
 | <code><a href="#@cdktf/provider-upcloud.server.ServerConfig.property.host">Host</a></code> | <code>*f64</code> | Use this to start the VM on a specific host. |
-| <code><a href="#@cdktf/provider-upcloud.server.ServerConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/3.1.0/docs/resources/server#id Server#id}. |
+| <code><a href="#@cdktf/provider-upcloud.server.ServerConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/3.1.1/docs/resources/server#id Server#id}. |
 | <code><a href="#@cdktf/provider-upcloud.server.ServerConfig.property.labels">Labels</a></code> | <code>*map[string]*string</code> | Key-value pairs to classify the server. |
 | <code><a href="#@cdktf/provider-upcloud.server.ServerConfig.property.login">Login</a></code> | <code><a href="#@cdktf/provider-upcloud.server.ServerLogin">ServerLogin</a></code> | login block. |
 | <code><a href="#@cdktf/provider-upcloud.server.ServerConfig.property.mem">Mem</a></code> | <code>*f64</code> | The size of memory for the server (in megabytes). |
@@ -1423,7 +1423,7 @@ Hostname *string
 
 A valid domain name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/3.1.0/docs/resources/server#hostname Server#hostname}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/3.1.1/docs/resources/server#hostname Server#hostname}
 
 ---
 
@@ -1437,7 +1437,7 @@ NetworkInterface interface{}
 
 network_interface block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/3.1.0/docs/resources/server#network_interface Server#network_interface}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/3.1.1/docs/resources/server#network_interface Server#network_interface}
 
 ---
 
@@ -1451,7 +1451,7 @@ Zone *string
 
 The zone in which the server will be hosted, e.g. `de-fra1`. You can list available zones with `upctl zone list`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/3.1.0/docs/resources/server#zone Server#zone}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/3.1.1/docs/resources/server#zone Server#zone}
 
 ---
 
@@ -1465,7 +1465,7 @@ Cpu *f64
 
 The number of CPU for the server.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/3.1.0/docs/resources/server#cpu Server#cpu}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/3.1.1/docs/resources/server#cpu Server#cpu}
 
 ---
 
@@ -1479,7 +1479,7 @@ Firewall interface{}
 
 Are firewall rules active for the server.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/3.1.0/docs/resources/server#firewall Server#firewall}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/3.1.1/docs/resources/server#firewall Server#firewall}
 
 ---
 
@@ -1495,7 +1495,7 @@ Use this to start the VM on a specific host.
 
 Refers to value from host -attribute. Only available for private cloud hosts
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/3.1.0/docs/resources/server#host Server#host}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/3.1.1/docs/resources/server#host Server#host}
 
 ---
 
@@ -1507,7 +1507,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/3.1.0/docs/resources/server#id Server#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/3.1.1/docs/resources/server#id Server#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1524,7 +1524,7 @@ Labels *map[string]*string
 
 Key-value pairs to classify the server.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/3.1.0/docs/resources/server#labels Server#labels}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/3.1.1/docs/resources/server#labels Server#labels}
 
 ---
 
@@ -1538,7 +1538,7 @@ Login ServerLogin
 
 login block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/3.1.0/docs/resources/server#login Server#login}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/3.1.1/docs/resources/server#login Server#login}
 
 ---
 
@@ -1552,7 +1552,7 @@ Mem *f64
 
 The size of memory for the server (in megabytes).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/3.1.0/docs/resources/server#mem Server#mem}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/3.1.1/docs/resources/server#mem Server#mem}
 
 ---
 
@@ -1566,7 +1566,7 @@ Metadata interface{}
 
 Is the metadata service active for the server.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/3.1.0/docs/resources/server#metadata Server#metadata}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/3.1.1/docs/resources/server#metadata Server#metadata}
 
 ---
 
@@ -1580,7 +1580,7 @@ NicModel *string
 
 The model of the server's network interfaces.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/3.1.0/docs/resources/server#nic_model Server#nic_model}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/3.1.1/docs/resources/server#nic_model Server#nic_model}
 
 ---
 
@@ -1594,7 +1594,7 @@ Plan *string
 
 The pricing plan used for the server. You can list available server plans with `upctl server plans`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/3.1.0/docs/resources/server#plan Server#plan}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/3.1.1/docs/resources/server#plan Server#plan}
 
 ---
 
@@ -1608,7 +1608,7 @@ SimpleBackup ServerSimpleBackup
 
 simple_backup block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/3.1.0/docs/resources/server#simple_backup Server#simple_backup}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/3.1.1/docs/resources/server#simple_backup Server#simple_backup}
 
 ---
 
@@ -1622,7 +1622,7 @@ StorageDevices interface{}
 
 storage_devices block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/3.1.0/docs/resources/server#storage_devices Server#storage_devices}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/3.1.1/docs/resources/server#storage_devices Server#storage_devices}
 
 ---
 
@@ -1636,7 +1636,7 @@ Tags *[]*string
 
 The server related tags.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/3.1.0/docs/resources/server#tags Server#tags}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/3.1.1/docs/resources/server#tags Server#tags}
 
 ---
 
@@ -1650,7 +1650,7 @@ Template ServerTemplate
 
 template block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/3.1.0/docs/resources/server#template Server#template}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/3.1.1/docs/resources/server#template Server#template}
 
 ---
 
@@ -1664,7 +1664,7 @@ Timezone *string
 
 A timezone identifier, e.g. `Europe/Helsinki`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/3.1.0/docs/resources/server#timezone Server#timezone}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/3.1.1/docs/resources/server#timezone Server#timezone}
 
 ---
 
@@ -1678,7 +1678,7 @@ Title *string
 
 A short, informational description.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/3.1.0/docs/resources/server#title Server#title}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/3.1.1/docs/resources/server#title Server#title}
 
 ---
 
@@ -1692,7 +1692,7 @@ UserData *string
 
 Defines URL for a server setup script, or the script body itself.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/3.1.0/docs/resources/server#user_data Server#user_data}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/3.1.1/docs/resources/server#user_data Server#user_data}
 
 ---
 
@@ -1706,7 +1706,7 @@ VideoModel *string
 
 The model of the server's video interface.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/3.1.0/docs/resources/server#video_model Server#video_model}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/3.1.1/docs/resources/server#video_model Server#video_model}
 
 ---
 
@@ -1715,7 +1715,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upclo
 #### Initializer <a name="Initializer" id="@cdktf/provider-upcloud.server.ServerLogin.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v11/server"
+import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/server"
 
 &server.ServerLogin {
 	CreatePassword: interface{},
@@ -1746,7 +1746,7 @@ CreatePassword interface{}
 
 Indicates a password should be create to allow access.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/3.1.0/docs/resources/server#create_password Server#create_password}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/3.1.1/docs/resources/server#create_password Server#create_password}
 
 ---
 
@@ -1760,7 +1760,7 @@ Keys *[]*string
 
 A list of ssh keys to access the server.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/3.1.0/docs/resources/server#keys Server#keys}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/3.1.1/docs/resources/server#keys Server#keys}
 
 ---
 
@@ -1774,7 +1774,7 @@ PasswordDelivery *string
 
 The delivery method for the server's root password (one of `none`, `email` or `sms`).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/3.1.0/docs/resources/server#password_delivery Server#password_delivery}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/3.1.1/docs/resources/server#password_delivery Server#password_delivery}
 
 ---
 
@@ -1788,7 +1788,7 @@ User *string
 
 Username to be create to access the server.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/3.1.0/docs/resources/server#user Server#user}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/3.1.1/docs/resources/server#user Server#user}
 
 ---
 
@@ -1797,7 +1797,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upclo
 #### Initializer <a name="Initializer" id="@cdktf/provider-upcloud.server.ServerNetworkInterface.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v11/server"
+import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/server"
 
 &server.ServerNetworkInterface {
 	Type: *string,
@@ -1832,7 +1832,7 @@ Type *string
 
 Network interface type. For private network interfaces, a network must be specified with an existing network id.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/3.1.0/docs/resources/server#type Server#type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/3.1.1/docs/resources/server#type Server#type}
 
 ---
 
@@ -1846,7 +1846,7 @@ Bootable interface{}
 
 `true` if this interface should be used for network booting.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/3.1.0/docs/resources/server#bootable Server#bootable}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/3.1.1/docs/resources/server#bootable Server#bootable}
 
 ---
 
@@ -1860,7 +1860,7 @@ IpAddress *string
 
 The assigned IP address.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/3.1.0/docs/resources/server#ip_address Server#ip_address}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/3.1.1/docs/resources/server#ip_address Server#ip_address}
 
 ---
 
@@ -1874,7 +1874,7 @@ IpAddressFamily *string
 
 The IP address type of this interface (one of `IPv4` or `IPv6`).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/3.1.0/docs/resources/server#ip_address_family Server#ip_address_family}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/3.1.1/docs/resources/server#ip_address_family Server#ip_address_family}
 
 ---
 
@@ -1888,7 +1888,7 @@ Network *string
 
 The unique ID of a network to attach this network to.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/3.1.0/docs/resources/server#network Server#network}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/3.1.1/docs/resources/server#network Server#network}
 
 ---
 
@@ -1902,7 +1902,7 @@ SourceIpFiltering interface{}
 
 `true` if source IP should be filtered.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/3.1.0/docs/resources/server#source_ip_filtering Server#source_ip_filtering}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/3.1.1/docs/resources/server#source_ip_filtering Server#source_ip_filtering}
 
 ---
 
@@ -1911,7 +1911,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upclo
 #### Initializer <a name="Initializer" id="@cdktf/provider-upcloud.server.ServerSimpleBackup.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v11/server"
+import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/server"
 
 &server.ServerSimpleBackup {
 	Plan: *string,
@@ -1938,7 +1938,7 @@ Plan *string
 
 Simple backup plan. Accepted values: daily, dailies, weeklies, monthlies.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/3.1.0/docs/resources/server#plan Server#plan}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/3.1.1/docs/resources/server#plan Server#plan}
 
 ---
 
@@ -1952,7 +1952,7 @@ Time *string
 
 Time of the day at which backup will be taken. Should be provided in a hhmm format (e.g. 2230).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/3.1.0/docs/resources/server#time Server#time}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/3.1.1/docs/resources/server#time Server#time}
 
 ---
 
@@ -1961,7 +1961,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upclo
 #### Initializer <a name="Initializer" id="@cdktf/provider-upcloud.server.ServerStorageDevices.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v11/server"
+import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/server"
 
 &server.ServerStorageDevices {
 	Storage: *string,
@@ -1990,7 +1990,7 @@ Storage *string
 
 A valid storage UUID.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/3.1.0/docs/resources/server#storage Server#storage}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/3.1.1/docs/resources/server#storage Server#storage}
 
 ---
 
@@ -2006,7 +2006,7 @@ The device address the storage will be attached to.
 
 Specify only the bus name (ide/scsi/virtio) to auto-select next available address from that bus.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/3.1.0/docs/resources/server#address Server#address}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/3.1.1/docs/resources/server#address Server#address}
 
 ---
 
@@ -2020,7 +2020,7 @@ Type *string
 
 The device type the storage will be attached as.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/3.1.0/docs/resources/server#type Server#type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/3.1.1/docs/resources/server#type Server#type}
 
 ---
 
@@ -2029,12 +2029,12 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upclo
 #### Initializer <a name="Initializer" id="@cdktf/provider-upcloud.server.ServerTemplate.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v11/server"
+import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/server"
 
 &server.ServerTemplate {
 	Storage: *string,
 	Address: *string,
-	BackupRule: github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v11.server.ServerTemplateBackupRule,
+	BackupRule: github.com/cdktf/cdktf-provider-upcloud-go/upcloud.server.ServerTemplateBackupRule,
 	DeleteAutoresizeBackup: interface{},
 	FilesystemAutoresize: interface{},
 	Size: *f64,
@@ -2068,7 +2068,7 @@ A valid storage UUID or template name.
 
 You can list available public templates with `upctl storage list --public --template` and available private templates with `upctl storage list --template`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/3.1.0/docs/resources/server#storage Server#storage}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/3.1.1/docs/resources/server#storage Server#storage}
 
 ---
 
@@ -2084,7 +2084,7 @@ The device address the storage will be attached to.
 
 Specify only the bus name (ide/scsi/virtio) to auto-select next available address from that bus.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/3.1.0/docs/resources/server#address Server#address}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/3.1.1/docs/resources/server#address Server#address}
 
 ---
 
@@ -2098,7 +2098,7 @@ BackupRule ServerTemplateBackupRule
 
 backup_rule block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/3.1.0/docs/resources/server#backup_rule Server#backup_rule}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/3.1.1/docs/resources/server#backup_rule Server#backup_rule}
 
 ---
 
@@ -2112,7 +2112,7 @@ DeleteAutoresizeBackup interface{}
 
 If set to true, the backup taken before the partition and filesystem resize attempt will be deleted immediately after success.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/3.1.0/docs/resources/server#delete_autoresize_backup Server#delete_autoresize_backup}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/3.1.1/docs/resources/server#delete_autoresize_backup Server#delete_autoresize_backup}
 
 ---
 
@@ -2130,7 +2130,7 @@ Please note that before the resize attempt is made, backup of the storage will b
 to restore the storage and then deleted. If the resize attempt succeeds, backup will be kept (unless delete_autoresize_backup option is set to true).
 Taking and keeping backups incure costs.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/3.1.0/docs/resources/server#filesystem_autoresize Server#filesystem_autoresize}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/3.1.1/docs/resources/server#filesystem_autoresize Server#filesystem_autoresize}
 
 ---
 
@@ -2144,7 +2144,7 @@ Size *f64
 
 The size of the storage in gigabytes.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/3.1.0/docs/resources/server#size Server#size}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/3.1.1/docs/resources/server#size Server#size}
 
 ---
 
@@ -2158,7 +2158,7 @@ Title *string
 
 A short, informative description.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/3.1.0/docs/resources/server#title Server#title}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/3.1.1/docs/resources/server#title Server#title}
 
 ---
 
@@ -2167,7 +2167,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upclo
 #### Initializer <a name="Initializer" id="@cdktf/provider-upcloud.server.ServerTemplateBackupRule.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v11/server"
+import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/server"
 
 &server.ServerTemplateBackupRule {
 	Interval: *string,
@@ -2196,7 +2196,7 @@ Interval *string
 
 The weekday when the backup is created.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/3.1.0/docs/resources/server#interval Server#interval}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/3.1.1/docs/resources/server#interval Server#interval}
 
 ---
 
@@ -2210,7 +2210,7 @@ Retention *f64
 
 The number of days before a backup is automatically deleted.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/3.1.0/docs/resources/server#retention Server#retention}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/3.1.1/docs/resources/server#retention Server#retention}
 
 ---
 
@@ -2224,7 +2224,7 @@ Time *string
 
 The time of day when the backup is created.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/3.1.0/docs/resources/server#time Server#time}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/3.1.1/docs/resources/server#time Server#time}
 
 ---
 
@@ -2235,7 +2235,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upclo
 #### Initializers <a name="Initializers" id="@cdktf/provider-upcloud.server.ServerLoginOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v11/server"
+import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/server"
 
 server.NewServerLoginOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ServerLoginOutputReference
 ```
@@ -2600,7 +2600,7 @@ func InternalValue() ServerLogin
 #### Initializers <a name="Initializers" id="@cdktf/provider-upcloud.server.ServerNetworkInterfaceList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v11/server"
+import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/server"
 
 server.NewServerNetworkInterfaceList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ServerNetworkInterfaceList
 ```
@@ -2743,7 +2743,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-upcloud.server.ServerNetworkInterfaceOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v11/server"
+import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/server"
 
 server.NewServerNetworkInterfaceOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ServerNetworkInterfaceOutputReference
 ```
@@ -3199,7 +3199,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-upcloud.server.ServerSimpleBackupOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v11/server"
+import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/server"
 
 server.NewServerSimpleBackupOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ServerSimpleBackupOutputReference
 ```
@@ -3492,7 +3492,7 @@ func InternalValue() ServerSimpleBackup
 #### Initializers <a name="Initializers" id="@cdktf/provider-upcloud.server.ServerStorageDevicesList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v11/server"
+import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/server"
 
 server.NewServerStorageDevicesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ServerStorageDevicesList
 ```
@@ -3635,7 +3635,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-upcloud.server.ServerStorageDevicesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v11/server"
+import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/server"
 
 server.NewServerStorageDevicesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ServerStorageDevicesOutputReference
 ```
@@ -3982,7 +3982,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-upcloud.server.ServerTemplateBackupRuleOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v11/server"
+import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/server"
 
 server.NewServerTemplateBackupRuleOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ServerTemplateBackupRuleOutputReference
 ```
@@ -4297,7 +4297,7 @@ func InternalValue() ServerTemplateBackupRule
 #### Initializers <a name="Initializers" id="@cdktf/provider-upcloud.server.ServerTemplateOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v11/server"
+import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/server"
 
 server.NewServerTemplateOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ServerTemplateOutputReference
 ```

@@ -1,6 +1,6 @@
 # `data_upcloud_zone`
 
-Refer to the Terraform Registory for docs: [`data_upcloud_zone`](https://registry.terraform.io/providers/upcloudltd/upcloud/3.1.0/docs/data-sources/zone).
+Refer to the Terraform Registory for docs: [`data_upcloud_zone`](https://registry.terraform.io/providers/upcloudltd/upcloud/3.1.1/docs/data-sources/zone).
 
 # `dataUpcloudZone` Submodule <a name="`dataUpcloudZone` Submodule" id="@cdktf/provider-upcloud.dataUpcloudZone"></a>
 
@@ -8,12 +8,12 @@ Refer to the Terraform Registory for docs: [`data_upcloud_zone`](https://registr
 
 ### DataUpcloudZone <a name="DataUpcloudZone" id="@cdktf/provider-upcloud.dataUpcloudZone.DataUpcloudZone"></a>
 
-Represents a {@link https://registry.terraform.io/providers/upcloudltd/upcloud/3.1.0/docs/data-sources/zone upcloud_zone}.
+Represents a {@link https://registry.terraform.io/providers/upcloudltd/upcloud/3.1.1/docs/data-sources/zone upcloud_zone}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-upcloud.dataUpcloudZone.DataUpcloudZone.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v11/dataupcloudzone"
+import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/dataupcloudzone"
 
 dataupcloudzone.NewDataUpcloudZone(scope Construct, id *string, config DataUpcloudZoneConfig) DataUpcloudZone
 ```
@@ -278,7 +278,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-upcloud.dataUpcloudZone.DataUpcloudZone.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v11/dataupcloudzone"
+import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/dataupcloudzone"
 
 dataupcloudzone.DataUpcloudZone_IsConstruct(x interface{}) *bool
 ```
@@ -310,7 +310,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-upcloud.dataUpcloudZone.DataUpcloudZone.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v11/dataupcloudzone"
+import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/dataupcloudzone"
 
 dataupcloudzone.DataUpcloudZone_IsTerraformElement(x interface{}) *bool
 ```
@@ -324,7 +324,7 @@ dataupcloudzone.DataUpcloudZone_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-upcloud.dataUpcloudZone.DataUpcloudZone.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v11/dataupcloudzone"
+import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/dataupcloudzone"
 
 dataupcloudzone.DataUpcloudZone_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -338,7 +338,7 @@ dataupcloudzone.DataUpcloudZone_IsTerraformDataSource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-upcloud.dataUpcloudZone.DataUpcloudZone.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v11/dataupcloudzone"
+import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/dataupcloudzone"
 
 dataupcloudzone.DataUpcloudZone_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -367,7 +367,7 @@ The construct id used in the generated config for the DataUpcloudZone to import.
 
 The id of the existing DataUpcloudZone that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/upcloudltd/upcloud/3.1.0/docs/data-sources/zone#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/upcloudltd/upcloud/3.1.1/docs/data-sources/zone#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -611,7 +611,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-upcloud.dataUpcloudZone.DataUpcloudZoneConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v11/dataupcloudzone"
+import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/dataupcloudzone"
 
 &dataupcloudzone.DataUpcloudZoneConfig {
 	Connection: interface{},
@@ -638,7 +638,7 @@ import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v11/dataupcloudzone"
 | <code><a href="#@cdktf/provider-upcloud.dataUpcloudZone.DataUpcloudZoneConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.dataUpcloudZone.DataUpcloudZoneConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.dataUpcloudZone.DataUpcloudZoneConfig.property.name">Name</a></code> | <code>*string</code> | Unique lablel for the zone. |
-| <code><a href="#@cdktf/provider-upcloud.dataUpcloudZone.DataUpcloudZoneConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/3.1.0/docs/data-sources/zone#id DataUpcloudZone#id}. |
+| <code><a href="#@cdktf/provider-upcloud.dataUpcloudZone.DataUpcloudZoneConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/3.1.1/docs/data-sources/zone#id DataUpcloudZone#id}. |
 
 ---
 
@@ -722,7 +722,7 @@ Name *string
 
 Unique lablel for the zone.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/3.1.0/docs/data-sources/zone#name DataUpcloudZone#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/3.1.1/docs/data-sources/zone#name DataUpcloudZone#name}
 
 ---
 
@@ -734,7 +734,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/3.1.0/docs/data-sources/zone#id DataUpcloudZone#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/3.1.1/docs/data-sources/zone#id DataUpcloudZone#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
