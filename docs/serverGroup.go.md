@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/upcloudltd/upcloud/3
 #### Initializers <a name="Initializers" id="@cdktf/provider-upcloud.serverGroup.ServerGroup.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/servergroup"
+import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v11/servergroup"
 
 servergroup.NewServerGroup(scope Construct, id *string, config ServerGroupConfig) ServerGroup
 ```
@@ -356,7 +356,7 @@ func ResetMembers()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-upcloud.serverGroup.ServerGroup.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/servergroup"
+import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v11/servergroup"
 
 servergroup.ServerGroup_IsConstruct(x interface{}) *bool
 ```
@@ -388,7 +388,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-upcloud.serverGroup.ServerGroup.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/servergroup"
+import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v11/servergroup"
 
 servergroup.ServerGroup_IsTerraformElement(x interface{}) *bool
 ```
@@ -402,7 +402,7 @@ servergroup.ServerGroup_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-upcloud.serverGroup.ServerGroup.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/servergroup"
+import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v11/servergroup"
 
 servergroup.ServerGroup_IsTerraformResource(x interface{}) *bool
 ```
@@ -416,7 +416,7 @@ servergroup.ServerGroup_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-upcloud.serverGroup.ServerGroup.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/servergroup"
+import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v11/servergroup"
 
 servergroup.ServerGroup_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -755,7 +755,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-upcloud.serverGroup.ServerGroupConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/servergroup"
+import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v11/servergroup"
 
 &servergroup.ServerGroupConfig {
 	Connection: interface{},
