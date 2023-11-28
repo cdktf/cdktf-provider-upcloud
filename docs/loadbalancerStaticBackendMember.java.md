@@ -1,7 +1,3 @@
-# `upcloud_loadbalancer_static_backend_member`
-
-Refer to the Terraform Registory for docs: [`upcloud_loadbalancer_static_backend_member`](https://registry.terraform.io/providers/upcloudltd/upcloud/3.1.1/docs/resources/loadbalancer_static_backend_member).
-
 # `loadbalancerStaticBackendMember` Submodule <a name="`loadbalancerStaticBackendMember` Submodule" id="@cdktf/provider-upcloud.loadbalancerStaticBackendMember"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

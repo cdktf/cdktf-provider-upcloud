@@ -1,7 +1,3 @@
-# `data_upcloud_managed_object_storage_regions`
-
-Refer to the Terraform Registory for docs: [`data_upcloud_managed_object_storage_regions`](https://registry.terraform.io/providers/upcloudltd/upcloud/3.1.1/docs/data-sources/managed_object_storage_regions).
-
 # `dataUpcloudManagedObjectStorageRegions` Submodule <a name="`dataUpcloudManagedObjectStorageRegions` Submodule" id="@cdktf/provider-upcloud.dataUpcloudManagedObjectStorageRegions"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

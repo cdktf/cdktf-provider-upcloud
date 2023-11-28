@@ -1,7 +1,3 @@
-# `upcloud_managed_database_user`
-
-Refer to the Terraform Registory for docs: [`upcloud_managed_database_user`](https://registry.terraform.io/providers/upcloudltd/upcloud/3.1.1/docs/resources/managed_database_user).
-
 # `managedDatabaseUser` Submodule <a name="`managedDatabaseUser` Submodule" id="@cdktf/provider-upcloud.managedDatabaseUser"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

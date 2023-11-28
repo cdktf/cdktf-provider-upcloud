@@ -1,7 +1,3 @@
-# `upcloud_server`
-
-Refer to the Terraform Registory for docs: [`upcloud_server`](https://registry.terraform.io/providers/upcloudltd/upcloud/3.1.1/docs/resources/server).
-
 # `server` Submodule <a name="`server` Submodule" id="@cdktf/provider-upcloud.server"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

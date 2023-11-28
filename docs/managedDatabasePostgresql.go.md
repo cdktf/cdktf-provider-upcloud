@@ -1,7 +1,3 @@
-# `upcloud_managed_database_postgresql`
-
-Refer to the Terraform Registory for docs: [`upcloud_managed_database_postgresql`](https://registry.terraform.io/providers/upcloudltd/upcloud/3.1.1/docs/resources/managed_database_postgresql).
-
 # `managedDatabasePostgresql` Submodule <a name="`managedDatabasePostgresql` Submodule" id="@cdktf/provider-upcloud.managedDatabasePostgresql"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

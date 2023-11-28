@@ -1,7 +1,3 @@
-# `upcloud_tag`
-
-Refer to the Terraform Registory for docs: [`upcloud_tag`](https://registry.terraform.io/providers/upcloudltd/upcloud/3.1.1/docs/resources/tag).
-
 # `tag` Submodule <a name="`tag` Submodule" id="@cdktf/provider-upcloud.tag"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

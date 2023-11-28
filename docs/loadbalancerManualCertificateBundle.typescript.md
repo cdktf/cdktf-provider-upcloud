@@ -1,7 +1,3 @@
-# `upcloud_loadbalancer_manual_certificate_bundle`
-
-Refer to the Terraform Registory for docs: [`upcloud_loadbalancer_manual_certificate_bundle`](https://registry.terraform.io/providers/upcloudltd/upcloud/3.1.1/docs/resources/loadbalancer_manual_certificate_bundle).
-
 # `loadbalancerManualCertificateBundle` Submodule <a name="`loadbalancerManualCertificateBundle` Submodule" id="@cdktf/provider-upcloud.loadbalancerManualCertificateBundle"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>
