@@ -1,7 +1,3 @@
-# `upcloud_managed_database_mysql`
-
-Refer to the Terraform Registory for docs: [`upcloud_managed_database_mysql`](https://registry.terraform.io/providers/upcloudltd/upcloud/3.1.1/docs/resources/managed_database_mysql).
-
 # `managedDatabaseMysql` Submodule <a name="`managedDatabaseMysql` Submodule" id="@cdktf/provider-upcloud.managedDatabaseMysql"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

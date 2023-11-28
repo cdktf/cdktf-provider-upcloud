@@ -1,7 +1,3 @@
-# `upcloud_tag`
-
-Refer to the Terraform Registory for docs: [`upcloud_tag`](https://registry.terraform.io/providers/upcloudltd/upcloud/3.1.1/docs/resources/tag).
-
 # `tag` Submodule <a name="`tag` Submodule" id="@cdktf/provider-upcloud.tag"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>
@@ -13,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/upcloudltd/upcloud/3
 #### Initializers <a name="Initializers" id="@cdktf/provider-upcloud.tag.Tag.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v11/tag"
+import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/tag"
 
 tag.NewTag(scope Construct, id *string, config TagConfig) Tag
 ```
@@ -353,7 +349,7 @@ func ResetServers()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-upcloud.tag.Tag.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v11/tag"
+import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/tag"
 
 tag.Tag_IsConstruct(x interface{}) *bool
 ```
@@ -385,7 +381,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-upcloud.tag.Tag.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v11/tag"
+import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/tag"
 
 tag.Tag_IsTerraformElement(x interface{}) *bool
 ```
@@ -399,7 +395,7 @@ tag.Tag_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-upcloud.tag.Tag.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v11/tag"
+import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/tag"
 
 tag.Tag_IsTerraformResource(x interface{}) *bool
 ```
@@ -413,7 +409,7 @@ tag.Tag_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-upcloud.tag.Tag.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v11/tag"
+import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/tag"
 
 tag.Tag_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -730,7 +726,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-upcloud.tag.TagConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v11/tag"
+import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/tag"
 
 &tag.TagConfig {
 	Connection: interface{},

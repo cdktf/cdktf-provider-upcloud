@@ -1,7 +1,3 @@
-# `upcloud_managed_object_storage`
-
-Refer to the Terraform Registory for docs: [`upcloud_managed_object_storage`](https://registry.terraform.io/providers/upcloudltd/upcloud/3.1.1/docs/resources/managed_object_storage).
-
 # `managedObjectStorage` Submodule <a name="`managedObjectStorage` Submodule" id="@cdktf/provider-upcloud.managedObjectStorage"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>
@@ -13,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/upcloudltd/upcloud/3
 #### Initializers <a name="Initializers" id="@cdktf/provider-upcloud.managedObjectStorage.ManagedObjectStorage.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v11/managedobjectstorage"
+import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/managedobjectstorage"
 
 managedobjectstorage.NewManagedObjectStorage(scope Construct, id *string, config ManagedObjectStorageConfig) ManagedObjectStorage
 ```
@@ -373,7 +369,7 @@ func ResetUsers()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-upcloud.managedObjectStorage.ManagedObjectStorage.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v11/managedobjectstorage"
+import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/managedobjectstorage"
 
 managedobjectstorage.ManagedObjectStorage_IsConstruct(x interface{}) *bool
 ```
@@ -405,7 +401,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-upcloud.managedObjectStorage.ManagedObjectStorage.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v11/managedobjectstorage"
+import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/managedobjectstorage"
 
 managedobjectstorage.ManagedObjectStorage_IsTerraformElement(x interface{}) *bool
 ```
@@ -419,7 +415,7 @@ managedobjectstorage.ManagedObjectStorage_IsTerraformElement(x interface{}) *boo
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-upcloud.managedObjectStorage.ManagedObjectStorage.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v11/managedobjectstorage"
+import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/managedobjectstorage"
 
 managedobjectstorage.ManagedObjectStorage_IsTerraformResource(x interface{}) *bool
 ```
@@ -433,7 +429,7 @@ managedobjectstorage.ManagedObjectStorage_IsTerraformResource(x interface{}) *bo
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-upcloud.managedObjectStorage.ManagedObjectStorage.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v11/managedobjectstorage"
+import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/managedobjectstorage"
 
 managedobjectstorage.ManagedObjectStorage_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -838,7 +834,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-upcloud.managedObjectStorage.ManagedObjectStorageConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v11/managedobjectstorage"
+import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/managedobjectstorage"
 
 &managedobjectstorage.ManagedObjectStorageConfig {
 	Connection: interface{},
@@ -1039,7 +1035,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upclo
 #### Initializer <a name="Initializer" id="@cdktf/provider-upcloud.managedObjectStorage.ManagedObjectStorageEndpoint.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v11/managedobjectstorage"
+import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/managedobjectstorage"
 
 &managedobjectstorage.ManagedObjectStorageEndpoint {
 
@@ -1052,7 +1048,7 @@ import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v11/managedobjectstor
 #### Initializer <a name="Initializer" id="@cdktf/provider-upcloud.managedObjectStorage.ManagedObjectStorageNetwork.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v11/managedobjectstorage"
+import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/managedobjectstorage"
 
 &managedobjectstorage.ManagedObjectStorageNetwork {
 	Family: *string,
@@ -1136,7 +1132,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upclo
 #### Initializers <a name="Initializers" id="@cdktf/provider-upcloud.managedObjectStorage.ManagedObjectStorageEndpointList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v11/managedobjectstorage"
+import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/managedobjectstorage"
 
 managedobjectstorage.NewManagedObjectStorageEndpointList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ManagedObjectStorageEndpointList
 ```
@@ -1268,7 +1264,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-upcloud.managedObjectStorage.ManagedObjectStorageEndpointOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v11/managedobjectstorage"
+import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/managedobjectstorage"
 
 managedobjectstorage.NewManagedObjectStorageEndpointOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ManagedObjectStorageEndpointOutputReference
 ```
@@ -1557,7 +1553,7 @@ func InternalValue() ManagedObjectStorageEndpoint
 #### Initializers <a name="Initializers" id="@cdktf/provider-upcloud.managedObjectStorage.ManagedObjectStorageNetworkList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v11/managedobjectstorage"
+import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/managedobjectstorage"
 
 managedobjectstorage.NewManagedObjectStorageNetworkList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ManagedObjectStorageNetworkList
 ```
@@ -1700,7 +1696,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-upcloud.managedObjectStorage.ManagedObjectStorageNetworkOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v11/managedobjectstorage"
+import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/managedobjectstorage"
 
 managedobjectstorage.NewManagedObjectStorageNetworkOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ManagedObjectStorageNetworkOutputReference
 ```

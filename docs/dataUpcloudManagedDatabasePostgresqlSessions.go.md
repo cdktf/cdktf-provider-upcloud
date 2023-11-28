@@ -1,7 +1,3 @@
-# `data_upcloud_managed_database_postgresql_sessions`
-
-Refer to the Terraform Registory for docs: [`data_upcloud_managed_database_postgresql_sessions`](https://registry.terraform.io/providers/upcloudltd/upcloud/3.1.1/docs/data-sources/managed_database_postgresql_sessions).
-
 # `dataUpcloudManagedDatabasePostgresqlSessions` Submodule <a name="`dataUpcloudManagedDatabasePostgresqlSessions` Submodule" id="@cdktf/provider-upcloud.dataUpcloudManagedDatabasePostgresqlSessions"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>
@@ -13,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/upcloudltd/upcloud/3
 #### Initializers <a name="Initializers" id="@cdktf/provider-upcloud.dataUpcloudManagedDatabasePostgresqlSessions.DataUpcloudManagedDatabasePostgresqlSessions.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v11/dataupcloudmanageddatabasepostgresqlsessions"
+import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/dataupcloudmanageddatabasepostgresqlsessions"
 
 dataupcloudmanageddatabasepostgresqlsessions.NewDataUpcloudManagedDatabasePostgresqlSessions(scope Construct, id *string, config DataUpcloudManagedDatabasePostgresqlSessionsConfig) DataUpcloudManagedDatabasePostgresqlSessions
 ```
@@ -319,7 +315,7 @@ func ResetSessions()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-upcloud.dataUpcloudManagedDatabasePostgresqlSessions.DataUpcloudManagedDatabasePostgresqlSessions.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v11/dataupcloudmanageddatabasepostgresqlsessions"
+import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/dataupcloudmanageddatabasepostgresqlsessions"
 
 dataupcloudmanageddatabasepostgresqlsessions.DataUpcloudManagedDatabasePostgresqlSessions_IsConstruct(x interface{}) *bool
 ```
@@ -351,7 +347,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-upcloud.dataUpcloudManagedDatabasePostgresqlSessions.DataUpcloudManagedDatabasePostgresqlSessions.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v11/dataupcloudmanageddatabasepostgresqlsessions"
+import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/dataupcloudmanageddatabasepostgresqlsessions"
 
 dataupcloudmanageddatabasepostgresqlsessions.DataUpcloudManagedDatabasePostgresqlSessions_IsTerraformElement(x interface{}) *bool
 ```
@@ -365,7 +361,7 @@ dataupcloudmanageddatabasepostgresqlsessions.DataUpcloudManagedDatabasePostgresq
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-upcloud.dataUpcloudManagedDatabasePostgresqlSessions.DataUpcloudManagedDatabasePostgresqlSessions.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v11/dataupcloudmanageddatabasepostgresqlsessions"
+import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/dataupcloudmanageddatabasepostgresqlsessions"
 
 dataupcloudmanageddatabasepostgresqlsessions.DataUpcloudManagedDatabasePostgresqlSessions_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -379,7 +375,7 @@ dataupcloudmanageddatabasepostgresqlsessions.DataUpcloudManagedDatabasePostgresq
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-upcloud.dataUpcloudManagedDatabasePostgresqlSessions.DataUpcloudManagedDatabasePostgresqlSessions.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v11/dataupcloudmanageddatabasepostgresqlsessions"
+import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/dataupcloudmanageddatabasepostgresqlsessions"
 
 dataupcloudmanageddatabasepostgresqlsessions.DataUpcloudManagedDatabasePostgresqlSessions_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -718,7 +714,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-upcloud.dataUpcloudManagedDatabasePostgresqlSessions.DataUpcloudManagedDatabasePostgresqlSessionsConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v11/dataupcloudmanageddatabasepostgresqlsessions"
+import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/dataupcloudmanageddatabasepostgresqlsessions"
 
 &dataupcloudmanageddatabasepostgresqlsessions.DataUpcloudManagedDatabasePostgresqlSessionsConfig {
 	Connection: interface{},
@@ -917,7 +913,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upclo
 #### Initializer <a name="Initializer" id="@cdktf/provider-upcloud.dataUpcloudManagedDatabasePostgresqlSessions.DataUpcloudManagedDatabasePostgresqlSessionsSessions.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v11/dataupcloudmanageddatabasepostgresqlsessions"
+import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/dataupcloudmanageddatabasepostgresqlsessions"
 
 &dataupcloudmanageddatabasepostgresqlsessions.DataUpcloudManagedDatabasePostgresqlSessionsSessions {
 	BackendXid: *f64,
@@ -1001,7 +997,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upclo
 #### Initializers <a name="Initializers" id="@cdktf/provider-upcloud.dataUpcloudManagedDatabasePostgresqlSessions.DataUpcloudManagedDatabasePostgresqlSessionsSessionsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v11/dataupcloudmanageddatabasepostgresqlsessions"
+import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/dataupcloudmanageddatabasepostgresqlsessions"
 
 dataupcloudmanageddatabasepostgresqlsessions.NewDataUpcloudManagedDatabasePostgresqlSessionsSessionsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataUpcloudManagedDatabasePostgresqlSessionsSessionsList
 ```
@@ -1144,7 +1140,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-upcloud.dataUpcloudManagedDatabasePostgresqlSessions.DataUpcloudManagedDatabasePostgresqlSessionsSessionsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v11/dataupcloudmanageddatabasepostgresqlsessions"
+import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/dataupcloudmanageddatabasepostgresqlsessions"
 
 dataupcloudmanageddatabasepostgresqlsessions.NewDataUpcloudManagedDatabasePostgresqlSessionsSessionsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataUpcloudManagedDatabasePostgresqlSessionsSessionsOutputReference
 ```

@@ -1,7 +1,3 @@
-# `upcloud_kubernetes_cluster`
-
-Refer to the Terraform Registory for docs: [`upcloud_kubernetes_cluster`](https://registry.terraform.io/providers/upcloudltd/upcloud/3.1.1/docs/resources/kubernetes_cluster).
-
 # `kubernetesCluster` Submodule <a name="`kubernetesCluster` Submodule" id="@cdktf/provider-upcloud.kubernetesCluster"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

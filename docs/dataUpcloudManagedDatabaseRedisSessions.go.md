@@ -1,7 +1,3 @@
-# `data_upcloud_managed_database_redis_sessions`
-
-Refer to the Terraform Registory for docs: [`data_upcloud_managed_database_redis_sessions`](https://registry.terraform.io/providers/upcloudltd/upcloud/3.1.1/docs/data-sources/managed_database_redis_sessions).
-
 # `dataUpcloudManagedDatabaseRedisSessions` Submodule <a name="`dataUpcloudManagedDatabaseRedisSessions` Submodule" id="@cdktf/provider-upcloud.dataUpcloudManagedDatabaseRedisSessions"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>
@@ -13,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/upcloudltd/upcloud/3
 #### Initializers <a name="Initializers" id="@cdktf/provider-upcloud.dataUpcloudManagedDatabaseRedisSessions.DataUpcloudManagedDatabaseRedisSessions.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v11/dataupcloudmanageddatabaseredissessions"
+import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/dataupcloudmanageddatabaseredissessions"
 
 dataupcloudmanageddatabaseredissessions.NewDataUpcloudManagedDatabaseRedisSessions(scope Construct, id *string, config DataUpcloudManagedDatabaseRedisSessionsConfig) DataUpcloudManagedDatabaseRedisSessions
 ```
@@ -319,7 +315,7 @@ func ResetSessions()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-upcloud.dataUpcloudManagedDatabaseRedisSessions.DataUpcloudManagedDatabaseRedisSessions.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v11/dataupcloudmanageddatabaseredissessions"
+import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/dataupcloudmanageddatabaseredissessions"
 
 dataupcloudmanageddatabaseredissessions.DataUpcloudManagedDatabaseRedisSessions_IsConstruct(x interface{}) *bool
 ```
@@ -351,7 +347,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-upcloud.dataUpcloudManagedDatabaseRedisSessions.DataUpcloudManagedDatabaseRedisSessions.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v11/dataupcloudmanageddatabaseredissessions"
+import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/dataupcloudmanageddatabaseredissessions"
 
 dataupcloudmanageddatabaseredissessions.DataUpcloudManagedDatabaseRedisSessions_IsTerraformElement(x interface{}) *bool
 ```
@@ -365,7 +361,7 @@ dataupcloudmanageddatabaseredissessions.DataUpcloudManagedDatabaseRedisSessions_
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-upcloud.dataUpcloudManagedDatabaseRedisSessions.DataUpcloudManagedDatabaseRedisSessions.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v11/dataupcloudmanageddatabaseredissessions"
+import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/dataupcloudmanageddatabaseredissessions"
 
 dataupcloudmanageddatabaseredissessions.DataUpcloudManagedDatabaseRedisSessions_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -379,7 +375,7 @@ dataupcloudmanageddatabaseredissessions.DataUpcloudManagedDatabaseRedisSessions_
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-upcloud.dataUpcloudManagedDatabaseRedisSessions.DataUpcloudManagedDatabaseRedisSessions.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v11/dataupcloudmanageddatabaseredissessions"
+import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/dataupcloudmanageddatabaseredissessions"
 
 dataupcloudmanageddatabaseredissessions.DataUpcloudManagedDatabaseRedisSessions_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -718,7 +714,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-upcloud.dataUpcloudManagedDatabaseRedisSessions.DataUpcloudManagedDatabaseRedisSessionsConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v11/dataupcloudmanageddatabaseredissessions"
+import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/dataupcloudmanageddatabaseredissessions"
 
 &dataupcloudmanageddatabaseredissessions.DataUpcloudManagedDatabaseRedisSessionsConfig {
 	Connection: interface{},
@@ -917,7 +913,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upclo
 #### Initializer <a name="Initializer" id="@cdktf/provider-upcloud.dataUpcloudManagedDatabaseRedisSessions.DataUpcloudManagedDatabaseRedisSessionsSessions.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v11/dataupcloudmanageddatabaseredissessions"
+import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/dataupcloudmanageddatabaseredissessions"
 
 &dataupcloudmanageddatabaseredissessions.DataUpcloudManagedDatabaseRedisSessionsSessions {
 
@@ -932,7 +928,7 @@ import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v11/dataupcloudmanage
 #### Initializers <a name="Initializers" id="@cdktf/provider-upcloud.dataUpcloudManagedDatabaseRedisSessions.DataUpcloudManagedDatabaseRedisSessionsSessionsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v11/dataupcloudmanageddatabaseredissessions"
+import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/dataupcloudmanageddatabaseredissessions"
 
 dataupcloudmanageddatabaseredissessions.NewDataUpcloudManagedDatabaseRedisSessionsSessionsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataUpcloudManagedDatabaseRedisSessionsSessionsList
 ```
@@ -1075,7 +1071,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-upcloud.dataUpcloudManagedDatabaseRedisSessions.DataUpcloudManagedDatabaseRedisSessionsSessionsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v11/dataupcloudmanageddatabaseredissessions"
+import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/dataupcloudmanageddatabaseredissessions"
 
 dataupcloudmanageddatabaseredissessions.NewDataUpcloudManagedDatabaseRedisSessionsSessionsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataUpcloudManagedDatabaseRedisSessionsSessionsOutputReference
 ```

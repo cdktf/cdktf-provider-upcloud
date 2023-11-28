@@ -1,7 +1,3 @@
-# `upcloud_loadbalancer_dynamic_certificate_bundle`
-
-Refer to the Terraform Registory for docs: [`upcloud_loadbalancer_dynamic_certificate_bundle`](https://registry.terraform.io/providers/upcloudltd/upcloud/3.1.1/docs/resources/loadbalancer_dynamic_certificate_bundle).
-
 # `loadbalancerDynamicCertificateBundle` Submodule <a name="`loadbalancerDynamicCertificateBundle` Submodule" id="@cdktf/provider-upcloud.loadbalancerDynamicCertificateBundle"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

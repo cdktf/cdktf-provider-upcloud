@@ -1,7 +1,3 @@
-# `data_upcloud_zones`
-
-Refer to the Terraform Registory for docs: [`data_upcloud_zones`](https://registry.terraform.io/providers/upcloudltd/upcloud/3.1.1/docs/data-sources/zones).
-
 # `dataUpcloudZones` Submodule <a name="`dataUpcloudZones` Submodule" id="@cdktf/provider-upcloud.dataUpcloudZones"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

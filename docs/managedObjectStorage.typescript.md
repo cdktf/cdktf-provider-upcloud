@@ -1,7 +1,3 @@
-# `upcloud_managed_object_storage`
-
-Refer to the Terraform Registory for docs: [`upcloud_managed_object_storage`](https://registry.terraform.io/providers/upcloudltd/upcloud/3.1.1/docs/resources/managed_object_storage).
-
 # `managedObjectStorage` Submodule <a name="`managedObjectStorage` Submodule" id="@cdktf/provider-upcloud.managedObjectStorage"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

@@ -1,7 +1,3 @@
-# `upcloud_loadbalancer_backend`
-
-Refer to the Terraform Registory for docs: [`upcloud_loadbalancer_backend`](https://registry.terraform.io/providers/upcloudltd/upcloud/3.1.1/docs/resources/loadbalancer_backend).
-
 # `loadbalancerBackend` Submodule <a name="`loadbalancerBackend` Submodule" id="@cdktf/provider-upcloud.loadbalancerBackend"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

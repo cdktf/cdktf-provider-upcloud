@@ -1,7 +1,3 @@
-# `upcloud_managed_database_opensearch`
-
-Refer to the Terraform Registory for docs: [`upcloud_managed_database_opensearch`](https://registry.terraform.io/providers/upcloudltd/upcloud/3.1.1/docs/resources/managed_database_opensearch).
-
 # `managedDatabaseOpensearch` Submodule <a name="`managedDatabaseOpensearch` Submodule" id="@cdktf/provider-upcloud.managedDatabaseOpensearch"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

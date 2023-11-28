@@ -1,7 +1,3 @@
-# `upcloud_storage`
-
-Refer to the Terraform Registory for docs: [`upcloud_storage`](https://registry.terraform.io/providers/upcloudltd/upcloud/3.1.1/docs/resources/storage).
-
 # `storage` Submodule <a name="`storage` Submodule" id="@cdktf/provider-upcloud.storage"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>
@@ -13,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/upcloudltd/upcloud/3
 #### Initializers <a name="Initializers" id="@cdktf/provider-upcloud.storage.Storage.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v11/storage"
+import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/storage"
 
 storage.NewStorage(scope Construct, id *string, config StorageConfig) Storage
 ```
@@ -420,7 +416,7 @@ func ResetTier()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-upcloud.storage.Storage.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v11/storage"
+import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/storage"
 
 storage.Storage_IsConstruct(x interface{}) *bool
 ```
@@ -452,7 +448,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-upcloud.storage.Storage.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v11/storage"
+import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/storage"
 
 storage.Storage_IsTerraformElement(x interface{}) *bool
 ```
@@ -466,7 +462,7 @@ storage.Storage_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-upcloud.storage.Storage.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v11/storage"
+import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/storage"
 
 storage.Storage_IsTerraformResource(x interface{}) *bool
 ```
@@ -480,7 +476,7 @@ storage.Storage_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-upcloud.storage.Storage.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v11/storage"
+import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/storage"
 
 storage.Storage_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -929,7 +925,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-upcloud.storage.StorageBackupRule.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v11/storage"
+import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/storage"
 
 &storage.StorageBackupRule {
 	Interval: *string,
@@ -995,7 +991,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upclo
 #### Initializer <a name="Initializer" id="@cdktf/provider-upcloud.storage.StorageClone.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v11/storage"
+import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/storage"
 
 &storage.StorageClone {
 	Id: *string,
@@ -1032,7 +1028,7 @@ If you experience problems setting this value it might not be settable. Please t
 #### Initializer <a name="Initializer" id="@cdktf/provider-upcloud.storage.StorageConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v11/storage"
+import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/storage"
 
 &storage.StorageConfig {
 	Connection: interface{},
@@ -1045,12 +1041,12 @@ import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v11/storage"
 	Size: *f64,
 	Title: *string,
 	Zone: *string,
-	BackupRule: github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v11.storage.StorageBackupRule,
-	Clone: github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v11.storage.StorageClone,
+	BackupRule: github.com/cdktf/cdktf-provider-upcloud-go/upcloud.storage.StorageBackupRule,
+	Clone: github.com/cdktf/cdktf-provider-upcloud-go/upcloud.storage.StorageClone,
 	DeleteAutoresizeBackup: interface{},
 	FilesystemAutoresize: interface{},
 	Id: *string,
-	Import: github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v11.storage.StorageImport,
+	Import: github.com/cdktf/cdktf-provider-upcloud-go/upcloud.storage.StorageImport,
 	Tier: *string,
 }
 ```
@@ -1299,7 +1295,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upclo
 #### Initializer <a name="Initializer" id="@cdktf/provider-upcloud.storage.StorageImport.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v11/storage"
+import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/storage"
 
 &storage.StorageImport {
 	Source: *string,
@@ -1367,7 +1363,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upclo
 #### Initializers <a name="Initializers" id="@cdktf/provider-upcloud.storage.StorageBackupRuleOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v11/storage"
+import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/storage"
 
 storage.NewStorageBackupRuleOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) StorageBackupRuleOutputReference
 ```
@@ -1682,7 +1678,7 @@ func InternalValue() StorageBackupRule
 #### Initializers <a name="Initializers" id="@cdktf/provider-upcloud.storage.StorageCloneOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v11/storage"
+import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/storage"
 
 storage.NewStorageCloneOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) StorageCloneOutputReference
 ```
@@ -1953,7 +1949,7 @@ func InternalValue() StorageClone
 #### Initializers <a name="Initializers" id="@cdktf/provider-upcloud.storage.StorageImportOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v11/storage"
+import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/storage"
 
 storage.NewStorageImportOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) StorageImportOutputReference
 ```
