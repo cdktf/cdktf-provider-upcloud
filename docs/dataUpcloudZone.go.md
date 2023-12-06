@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/upcloudltd/upcloud/3
 #### Initializers <a name="Initializers" id="@cdktf/provider-upcloud.dataUpcloudZone.DataUpcloudZone.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/dataupcloudzone"
+import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v11/dataupcloudzone"
 
 dataupcloudzone.NewDataUpcloudZone(scope Construct, id *string, config DataUpcloudZoneConfig) DataUpcloudZone
 ```
@@ -274,7 +274,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-upcloud.dataUpcloudZone.DataUpcloudZone.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/dataupcloudzone"
+import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v11/dataupcloudzone"
 
 dataupcloudzone.DataUpcloudZone_IsConstruct(x interface{}) *bool
 ```
@@ -306,7 +306,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-upcloud.dataUpcloudZone.DataUpcloudZone.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/dataupcloudzone"
+import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v11/dataupcloudzone"
 
 dataupcloudzone.DataUpcloudZone_IsTerraformElement(x interface{}) *bool
 ```
@@ -320,7 +320,7 @@ dataupcloudzone.DataUpcloudZone_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-upcloud.dataUpcloudZone.DataUpcloudZone.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/dataupcloudzone"
+import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v11/dataupcloudzone"
 
 dataupcloudzone.DataUpcloudZone_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -334,7 +334,7 @@ dataupcloudzone.DataUpcloudZone_IsTerraformDataSource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-upcloud.dataUpcloudZone.DataUpcloudZone.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/dataupcloudzone"
+import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v11/dataupcloudzone"
 
 dataupcloudzone.DataUpcloudZone_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -607,7 +607,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-upcloud.dataUpcloudZone.DataUpcloudZoneConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/dataupcloudzone"
+import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v11/dataupcloudzone"
 
 &dataupcloudzone.DataUpcloudZoneConfig {
 	Connection: interface{},
