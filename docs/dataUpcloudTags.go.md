@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/upcloudltd/upcloud/3
 #### Initializers <a name="Initializers" id="@cdktf/provider-upcloud.dataUpcloudTags.DataUpcloudTags.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/dataupcloudtags"
+import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v11/dataupcloudtags"
 
 dataupcloudtags.NewDataUpcloudTags(scope Construct, id *string, config DataUpcloudTagsConfig) DataUpcloudTags
 ```
@@ -274,7 +274,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-upcloud.dataUpcloudTags.DataUpcloudTags.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/dataupcloudtags"
+import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v11/dataupcloudtags"
 
 dataupcloudtags.DataUpcloudTags_IsConstruct(x interface{}) *bool
 ```
@@ -306,7 +306,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-upcloud.dataUpcloudTags.DataUpcloudTags.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/dataupcloudtags"
+import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v11/dataupcloudtags"
 
 dataupcloudtags.DataUpcloudTags_IsTerraformElement(x interface{}) *bool
 ```
@@ -320,7 +320,7 @@ dataupcloudtags.DataUpcloudTags_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-upcloud.dataUpcloudTags.DataUpcloudTags.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/dataupcloudtags"
+import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v11/dataupcloudtags"
 
 dataupcloudtags.DataUpcloudTags_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -334,7 +334,7 @@ dataupcloudtags.DataUpcloudTags_IsTerraformDataSource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-upcloud.dataUpcloudTags.DataUpcloudTags.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/dataupcloudtags"
+import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v11/dataupcloudtags"
 
 dataupcloudtags.DataUpcloudTags_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -574,7 +574,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-upcloud.dataUpcloudTags.DataUpcloudTagsConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/dataupcloudtags"
+import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v11/dataupcloudtags"
 
 &dataupcloudtags.DataUpcloudTagsConfig {
 	Connection: interface{},
@@ -693,7 +693,7 @@ If you experience problems setting this value it might not be settable. Please t
 #### Initializer <a name="Initializer" id="@cdktf/provider-upcloud.dataUpcloudTags.DataUpcloudTagsTags.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/dataupcloudtags"
+import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v11/dataupcloudtags"
 
 &dataupcloudtags.DataUpcloudTagsTags {
 
@@ -708,7 +708,7 @@ import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/dataupcloudtags"
 #### Initializers <a name="Initializers" id="@cdktf/provider-upcloud.dataUpcloudTags.DataUpcloudTagsTagsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/dataupcloudtags"
+import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v11/dataupcloudtags"
 
 dataupcloudtags.NewDataUpcloudTagsTagsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataUpcloudTagsTagsList
 ```
@@ -840,7 +840,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-upcloud.dataUpcloudTags.DataUpcloudTagsTagsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/dataupcloudtags"
+import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v11/dataupcloudtags"
 
 dataupcloudtags.NewDataUpcloudTagsTagsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataUpcloudTagsTagsOutputReference
 ```
