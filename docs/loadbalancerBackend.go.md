@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/upcloudltd/upcloud/3
 #### Initializers <a name="Initializers" id="@cdktf/provider-upcloud.loadbalancerBackend.LoadbalancerBackend.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/loadbalancerbackend"
+import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v11/loadbalancerbackend"
 
 loadbalancerbackend.NewLoadbalancerBackend(scope Construct, id *string, config LoadbalancerBackendConfig) LoadbalancerBackend
 ```
@@ -405,7 +405,7 @@ func ResetResolverName()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-upcloud.loadbalancerBackend.LoadbalancerBackend.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/loadbalancerbackend"
+import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v11/loadbalancerbackend"
 
 loadbalancerbackend.LoadbalancerBackend_IsConstruct(x interface{}) *bool
 ```
@@ -437,7 +437,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-upcloud.loadbalancerBackend.LoadbalancerBackend.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/loadbalancerbackend"
+import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v11/loadbalancerbackend"
 
 loadbalancerbackend.LoadbalancerBackend_IsTerraformElement(x interface{}) *bool
 ```
@@ -451,7 +451,7 @@ loadbalancerbackend.LoadbalancerBackend_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-upcloud.loadbalancerBackend.LoadbalancerBackend.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/loadbalancerbackend"
+import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v11/loadbalancerbackend"
 
 loadbalancerbackend.LoadbalancerBackend_IsTerraformResource(x interface{}) *bool
 ```
@@ -465,7 +465,7 @@ loadbalancerbackend.LoadbalancerBackend_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-upcloud.loadbalancerBackend.LoadbalancerBackend.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/loadbalancerbackend"
+import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v11/loadbalancerbackend"
 
 loadbalancerbackend.LoadbalancerBackend_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -815,7 +815,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-upcloud.loadbalancerBackend.LoadbalancerBackendConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/loadbalancerbackend"
+import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v11/loadbalancerbackend"
 
 &loadbalancerbackend.LoadbalancerBackendConfig {
 	Connection: interface{},
@@ -828,7 +828,7 @@ import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/loadbalancerbackend"
 	Loadbalancer: *string,
 	Name: *string,
 	Id: *string,
-	Properties: github.com/cdktf/cdktf-provider-upcloud-go/upcloud.loadbalancerBackend.LoadbalancerBackendProperties,
+	Properties: github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v11.loadbalancerBackend.LoadbalancerBackendProperties,
 	ResolverName: *string,
 }
 ```
@@ -998,7 +998,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upclo
 #### Initializer <a name="Initializer" id="@cdktf/provider-upcloud.loadbalancerBackend.LoadbalancerBackendProperties.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/loadbalancerbackend"
+import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v11/loadbalancerbackend"
 
 &loadbalancerbackend.LoadbalancerBackendProperties {
 	HealthCheckExpectedStatus: *f64,
@@ -1194,7 +1194,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upclo
 #### Initializers <a name="Initializers" id="@cdktf/provider-upcloud.loadbalancerBackend.LoadbalancerBackendPropertiesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/loadbalancerbackend"
+import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v11/loadbalancerbackend"
 
 loadbalancerbackend.NewLoadbalancerBackendPropertiesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) LoadbalancerBackendPropertiesOutputReference
 ```
