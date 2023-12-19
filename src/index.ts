@@ -11,6 +11,7 @@ export * as kubernetesCluster from './kubernetes-cluster';
 export * as kubernetesNodeGroup from './kubernetes-node-group';
 export * as loadbalancer from './loadbalancer';
 export * as loadbalancerBackend from './loadbalancer-backend';
+export * as loadbalancerBackendTlsConfig from './loadbalancer-backend-tls-config';
 export * as loadbalancerDynamicBackendMember from './loadbalancer-dynamic-backend-member';
 export * as loadbalancerDynamicCertificateBundle from './loadbalancer-dynamic-certificate-bundle';
 export * as loadbalancerFrontend from './loadbalancer-frontend';

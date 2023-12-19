@@ -4,7 +4,7 @@
 
 ### UpcloudProvider <a name="UpcloudProvider" id="@cdktf/provider-upcloud.provider.UpcloudProvider"></a>
 
-Represents a {@link https://registry.terraform.io/providers/upcloudltd/upcloud/3.1.1/docs upcloud}.
+Represents a {@link https://registry.terraform.io/providers/upcloudltd/upcloud/3.2.0/docs upcloud}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-upcloud.provider.UpcloudProvider.Initializer"></a>
 
@@ -58,6 +58,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-upcloud.provider.UpcloudProvider.toTerraform">ToTerraform</a></code> | Adds this resource to the terraform JSON output. |
 | <code><a href="#@cdktf/provider-upcloud.provider.UpcloudProvider.resetAlias">ResetAlias</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.provider.UpcloudProvider.resetPassword">ResetPassword</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-upcloud.provider.UpcloudProvider.resetRequestTimeoutSec">ResetRequestTimeoutSec</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.provider.UpcloudProvider.resetRetryMax">ResetRetryMax</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.provider.UpcloudProvider.resetRetryWaitMaxSec">ResetRetryWaitMaxSec</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.provider.UpcloudProvider.resetRetryWaitMinSec">ResetRetryWaitMinSec</a></code> | *No description.* |
@@ -139,6 +140,12 @@ func ResetAlias()
 
 ```go
 func ResetPassword()
+```
+
+##### `ResetRequestTimeoutSec` <a name="ResetRequestTimeoutSec" id="@cdktf/provider-upcloud.provider.UpcloudProvider.resetRequestTimeoutSec"></a>
+
+```go
+func ResetRequestTimeoutSec()
 ```
 
 ##### `ResetRetryMax` <a name="ResetRetryMax" id="@cdktf/provider-upcloud.provider.UpcloudProvider.resetRetryMax"></a>
@@ -268,7 +275,7 @@ The construct id used in the generated config for the UpcloudProvider to import.
 
 The id of the existing UpcloudProvider that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/upcloudltd/upcloud/3.1.1/docs#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/upcloudltd/upcloud/3.2.0/docs#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -295,11 +302,13 @@ Refer to the {@link https://registry.terraform.io/providers/upcloudltd/upcloud/3
 | <code><a href="#@cdktf/provider-upcloud.provider.UpcloudProvider.property.alias">Alias</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.provider.UpcloudProvider.property.aliasInput">AliasInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.provider.UpcloudProvider.property.passwordInput">PasswordInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-upcloud.provider.UpcloudProvider.property.requestTimeoutSecInput">RequestTimeoutSecInput</a></code> | <code>*f64</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.provider.UpcloudProvider.property.retryMaxInput">RetryMaxInput</a></code> | <code>*f64</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.provider.UpcloudProvider.property.retryWaitMaxSecInput">RetryWaitMaxSecInput</a></code> | <code>*f64</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.provider.UpcloudProvider.property.retryWaitMinSecInput">RetryWaitMinSecInput</a></code> | <code>*f64</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.provider.UpcloudProvider.property.usernameInput">UsernameInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.provider.UpcloudProvider.property.password">Password</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-upcloud.provider.UpcloudProvider.property.requestTimeoutSec">RequestTimeoutSec</a></code> | <code>*f64</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.provider.UpcloudProvider.property.retryMax">RetryMax</a></code> | <code>*f64</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.provider.UpcloudProvider.property.retryWaitMaxSec">RetryWaitMaxSec</a></code> | <code>*f64</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.provider.UpcloudProvider.property.retryWaitMinSec">RetryWaitMinSec</a></code> | <code>*f64</code> | *No description.* |
@@ -419,6 +428,16 @@ func PasswordInput() *string
 
 ---
 
+##### `RequestTimeoutSecInput`<sup>Optional</sup> <a name="RequestTimeoutSecInput" id="@cdktf/provider-upcloud.provider.UpcloudProvider.property.requestTimeoutSecInput"></a>
+
+```go
+func RequestTimeoutSecInput() *f64
+```
+
+- *Type:* *f64
+
+---
+
 ##### `RetryMaxInput`<sup>Optional</sup> <a name="RetryMaxInput" id="@cdktf/provider-upcloud.provider.UpcloudProvider.property.retryMaxInput"></a>
 
 ```go
@@ -466,6 +485,16 @@ func Password() *string
 ```
 
 - *Type:* *string
+
+---
+
+##### `RequestTimeoutSec`<sup>Optional</sup> <a name="RequestTimeoutSec" id="@cdktf/provider-upcloud.provider.UpcloudProvider.property.requestTimeoutSec"></a>
+
+```go
+func RequestTimeoutSec() *f64
+```
+
+- *Type:* *f64
 
 ---
 
@@ -539,6 +568,7 @@ import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v11/provider"
 &provider.UpcloudProviderConfig {
 	Alias: *string,
 	Password: *string,
+	RequestTimeoutSec: *f64,
 	RetryMax: *f64,
 	RetryWaitMaxSec: *f64,
 	RetryWaitMinSec: *f64,
@@ -552,6 +582,7 @@ import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v11/provider"
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-upcloud.provider.UpcloudProviderConfig.property.alias">Alias</a></code> | <code>*string</code> | Alias name. |
 | <code><a href="#@cdktf/provider-upcloud.provider.UpcloudProviderConfig.property.password">Password</a></code> | <code>*string</code> | Password for UpCloud API user. Can also be configured using the `UPCLOUD_PASSWORD` environment variable. |
+| <code><a href="#@cdktf/provider-upcloud.provider.UpcloudProviderConfig.property.requestTimeoutSec">RequestTimeoutSec</a></code> | <code>*f64</code> | The duration (in seconds) that the provider waits for an HTTP request towards UpCloud API to complete. |
 | <code><a href="#@cdktf/provider-upcloud.provider.UpcloudProviderConfig.property.retryMax">RetryMax</a></code> | <code>*f64</code> | Maximum number of retries. |
 | <code><a href="#@cdktf/provider-upcloud.provider.UpcloudProviderConfig.property.retryWaitMaxSec">RetryWaitMaxSec</a></code> | <code>*f64</code> | Maximum time to wait between retries. |
 | <code><a href="#@cdktf/provider-upcloud.provider.UpcloudProviderConfig.property.retryWaitMinSec">RetryWaitMinSec</a></code> | <code>*f64</code> | Minimum time to wait between retries. |
@@ -569,7 +600,7 @@ Alias *string
 
 Alias name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/3.1.1/docs#alias UpcloudProvider#alias}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/3.2.0/docs#alias UpcloudProvider#alias}
 
 ---
 
@@ -583,7 +614,23 @@ Password *string
 
 Password for UpCloud API user. Can also be configured using the `UPCLOUD_PASSWORD` environment variable.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/3.1.1/docs#password UpcloudProvider#password}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/3.2.0/docs#password UpcloudProvider#password}
+
+---
+
+##### `RequestTimeoutSec`<sup>Optional</sup> <a name="RequestTimeoutSec" id="@cdktf/provider-upcloud.provider.UpcloudProviderConfig.property.requestTimeoutSec"></a>
+
+```go
+RequestTimeoutSec *f64
+```
+
+- *Type:* *f64
+
+The duration (in seconds) that the provider waits for an HTTP request towards UpCloud API to complete.
+
+Defaults to 120 seconds
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/3.2.0/docs#request_timeout_sec UpcloudProvider#request_timeout_sec}
 
 ---
 
@@ -597,7 +644,7 @@ RetryMax *f64
 
 Maximum number of retries.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/3.1.1/docs#retry_max UpcloudProvider#retry_max}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/3.2.0/docs#retry_max UpcloudProvider#retry_max}
 
 ---
 
@@ -611,7 +658,7 @@ RetryWaitMaxSec *f64
 
 Maximum time to wait between retries.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/3.1.1/docs#retry_wait_max_sec UpcloudProvider#retry_wait_max_sec}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/3.2.0/docs#retry_wait_max_sec UpcloudProvider#retry_wait_max_sec}
 
 ---
 
@@ -625,7 +672,7 @@ RetryWaitMinSec *f64
 
 Minimum time to wait between retries.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/3.1.1/docs#retry_wait_min_sec UpcloudProvider#retry_wait_min_sec}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/3.2.0/docs#retry_wait_min_sec UpcloudProvider#retry_wait_min_sec}
 
 ---
 
@@ -639,7 +686,7 @@ Username *string
 
 UpCloud username with API access. Can also be configured using the `UPCLOUD_USERNAME` environment variable.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/3.1.1/docs#username UpcloudProvider#username}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/3.2.0/docs#username UpcloudProvider#username}
 
 ---
 

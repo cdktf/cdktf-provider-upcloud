@@ -1,3 +1,3 @@
 # `data_upcloud_tags`
 
-Refer to the Terraform Registory for docs: [`data_upcloud_tags`](https://registry.terraform.io/providers/upcloudltd/upcloud/3.1.1/docs/data-sources/tags).
+Refer to the Terraform Registory for docs: [`data_upcloud_tags`](https://registry.terraform.io/providers/upcloudltd/upcloud/3.2.0/docs/data-sources/tags).

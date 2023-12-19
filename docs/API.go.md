@@ -21,6 +21,7 @@ The following submodules are available:
 - [kubernetesNodeGroup](./kubernetesNodeGroup.go.md)
 - [loadbalancer](./loadbalancer.go.md)
 - [loadbalancerBackend](./loadbalancerBackend.go.md)
+- [loadbalancerBackendTlsConfig](./loadbalancerBackendTlsConfig.go.md)
 - [loadbalancerDynamicBackendMember](./loadbalancerDynamicBackendMember.go.md)
 - [loadbalancerDynamicCertificateBundle](./loadbalancerDynamicCertificateBundle.go.md)
 - [loadbalancerFrontend](./loadbalancerFrontend.go.md)

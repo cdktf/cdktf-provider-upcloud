@@ -11,6 +11,7 @@ Object.defineProperty(exports, 'kubernetesCluster', { get: function () { return 
 Object.defineProperty(exports, 'kubernetesNodeGroup', { get: function () { return require('./kubernetes-node-group'); } });
 Object.defineProperty(exports, 'loadbalancer', { get: function () { return require('./loadbalancer'); } });
 Object.defineProperty(exports, 'loadbalancerBackend', { get: function () { return require('./loadbalancer-backend'); } });
+Object.defineProperty(exports, 'loadbalancerBackendTlsConfig', { get: function () { return require('./loadbalancer-backend-tls-config'); } });
 Object.defineProperty(exports, 'loadbalancerDynamicBackendMember', { get: function () { return require('./loadbalancer-dynamic-backend-member'); } });
 Object.defineProperty(exports, 'loadbalancerDynamicCertificateBundle', { get: function () { return require('./loadbalancer-dynamic-certificate-bundle'); } });
 Object.defineProperty(exports, 'loadbalancerFrontend', { get: function () { return require('./loadbalancer-frontend'); } });

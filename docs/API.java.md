@@ -21,6 +21,7 @@ The following submodules are available:
 - [kubernetesNodeGroup](./kubernetesNodeGroup.java.md)
 - [loadbalancer](./loadbalancer.java.md)
 - [loadbalancerBackend](./loadbalancerBackend.java.md)
+- [loadbalancerBackendTlsConfig](./loadbalancerBackendTlsConfig.java.md)
 - [loadbalancerDynamicBackendMember](./loadbalancerDynamicBackendMember.java.md)
 - [loadbalancerDynamicCertificateBundle](./loadbalancerDynamicCertificateBundle.java.md)
 - [loadbalancerFrontend](./loadbalancerFrontend.java.md)
