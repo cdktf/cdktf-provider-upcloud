@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/upcloudltd/upcloud/3.1.1/docs/resources/loadbalancer_frontend
+// https://registry.terraform.io/providers/upcloudltd/upcloud/3.2.0/docs/resources/loadbalancer_frontend
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,11 +10,11 @@ export interface LoadbalancerFrontendConfig extends cdktf.TerraformMetaArguments
   /**
   * The name of the default backend where traffic will be routed. Note, default backend can be overwritten in frontend rules.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/3.1.1/docs/resources/loadbalancer_frontend#default_backend_name LoadbalancerFrontend#default_backend_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/3.2.0/docs/resources/loadbalancer_frontend#default_backend_name LoadbalancerFrontend#default_backend_name}
   */
   readonly defaultBackendName: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/3.1.1/docs/resources/loadbalancer_frontend#id LoadbalancerFrontend#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/3.2.0/docs/resources/loadbalancer_frontend#id LoadbalancerFrontend#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -28,37 +23,37 @@ export interface LoadbalancerFrontendConfig extends cdktf.TerraformMetaArguments
   /**
   * ID of the load balancer to which the frontend is connected.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/3.1.1/docs/resources/loadbalancer_frontend#loadbalancer LoadbalancerFrontend#loadbalancer}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/3.2.0/docs/resources/loadbalancer_frontend#loadbalancer LoadbalancerFrontend#loadbalancer}
   */
   readonly loadbalancer: string;
   /**
   * When load balancer operating in `tcp` mode it acts as a layer 4 proxy. In `http` mode it acts as a layer 7 proxy.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/3.1.1/docs/resources/loadbalancer_frontend#mode LoadbalancerFrontend#mode}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/3.2.0/docs/resources/loadbalancer_frontend#mode LoadbalancerFrontend#mode}
   */
   readonly mode: string;
   /**
   * The name of the frontend must be unique within the load balancer service.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/3.1.1/docs/resources/loadbalancer_frontend#name LoadbalancerFrontend#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/3.2.0/docs/resources/loadbalancer_frontend#name LoadbalancerFrontend#name}
   */
   readonly name: string;
   /**
   * Port to listen incoming requests
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/3.1.1/docs/resources/loadbalancer_frontend#port LoadbalancerFrontend#port}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/3.2.0/docs/resources/loadbalancer_frontend#port LoadbalancerFrontend#port}
   */
   readonly port: number;
   /**
   * networks block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/3.1.1/docs/resources/loadbalancer_frontend#networks LoadbalancerFrontend#networks}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/3.2.0/docs/resources/loadbalancer_frontend#networks LoadbalancerFrontend#networks}
   */
   readonly networks?: LoadbalancerFrontendNetworks[] | cdktf.IResolvable;
   /**
   * properties block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/3.1.1/docs/resources/loadbalancer_frontend#properties LoadbalancerFrontend#properties}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/3.2.0/docs/resources/loadbalancer_frontend#properties LoadbalancerFrontend#properties}
   */
   readonly properties?: LoadbalancerFrontendProperties;
 }
@@ -66,7 +61,7 @@ export interface LoadbalancerFrontendNetworks {
   /**
   * Name of the load balancer network
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/3.1.1/docs/resources/loadbalancer_frontend#name LoadbalancerFrontend#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/3.2.0/docs/resources/loadbalancer_frontend#name LoadbalancerFrontend#name}
   */
   readonly name: string;
 }
@@ -160,15 +155,21 @@ export class LoadbalancerFrontendNetworksList extends cdktf.ComplexList {
 }
 export interface LoadbalancerFrontendProperties {
   /**
+  * Enable or disable HTTP/2 support.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/3.2.0/docs/resources/loadbalancer_frontend#http2_enabled LoadbalancerFrontend#http2_enabled}
+  */
+  readonly http2Enabled?: boolean | cdktf.IResolvable;
+  /**
   * Enable or disable inbound proxy protocol support.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/3.1.1/docs/resources/loadbalancer_frontend#inbound_proxy_protocol LoadbalancerFrontend#inbound_proxy_protocol}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/3.2.0/docs/resources/loadbalancer_frontend#inbound_proxy_protocol LoadbalancerFrontend#inbound_proxy_protocol}
   */
   readonly inboundProxyProtocol?: boolean | cdktf.IResolvable;
   /**
   * Client request timeout in seconds.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/3.1.1/docs/resources/loadbalancer_frontend#timeout_client LoadbalancerFrontend#timeout_client}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/3.2.0/docs/resources/loadbalancer_frontend#timeout_client LoadbalancerFrontend#timeout_client}
   */
   readonly timeoutClient?: number;
 }
@@ -179,6 +180,7 @@ export function loadbalancerFrontendPropertiesToTerraform(struct?: LoadbalancerF
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
+    http2_enabled: cdktf.booleanToTerraform(struct!.http2Enabled),
     inbound_proxy_protocol: cdktf.booleanToTerraform(struct!.inboundProxyProtocol),
     timeout_client: cdktf.numberToTerraform(struct!.timeoutClient),
   }
@@ -198,6 +200,10 @@ export class LoadbalancerFrontendPropertiesOutputReference extends cdktf.Complex
   public get internalValue(): LoadbalancerFrontendProperties | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
+    if (this._http2Enabled !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.http2Enabled = this._http2Enabled;
+    }
     if (this._inboundProxyProtocol !== undefined) {
       hasAnyValues = true;
       internalValueResult.inboundProxyProtocol = this._inboundProxyProtocol;
@@ -212,14 +218,32 @@ export class LoadbalancerFrontendPropertiesOutputReference extends cdktf.Complex
   public set internalValue(value: LoadbalancerFrontendProperties | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
+      this._http2Enabled = undefined;
       this._inboundProxyProtocol = undefined;
       this._timeoutClient = undefined;
     }
     else {
       this.isEmptyObject = Object.keys(value).length === 0;
+      this._http2Enabled = value.http2Enabled;
       this._inboundProxyProtocol = value.inboundProxyProtocol;
       this._timeoutClient = value.timeoutClient;
     }
+  }
+
+  // http2_enabled - computed: false, optional: true, required: false
+  private _http2Enabled?: boolean | cdktf.IResolvable; 
+  public get http2Enabled() {
+    return this.getBooleanAttribute('http2_enabled');
+  }
+  public set http2Enabled(value: boolean | cdktf.IResolvable) {
+    this._http2Enabled = value;
+  }
+  public resetHttp2Enabled() {
+    this._http2Enabled = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get http2EnabledInput() {
+    return this._http2Enabled;
   }
 
   // inbound_proxy_protocol - computed: false, optional: true, required: false
@@ -256,7 +280,7 @@ export class LoadbalancerFrontendPropertiesOutputReference extends cdktf.Complex
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/upcloudltd/upcloud/3.1.1/docs/resources/loadbalancer_frontend upcloud_loadbalancer_frontend}
+* Represents a {@link https://registry.terraform.io/providers/upcloudltd/upcloud/3.2.0/docs/resources/loadbalancer_frontend upcloud_loadbalancer_frontend}
 */
 export class LoadbalancerFrontend extends cdktf.TerraformResource {
 
@@ -272,7 +296,7 @@ export class LoadbalancerFrontend extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a LoadbalancerFrontend resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the LoadbalancerFrontend to import
-  * @param importFromId The id of the existing LoadbalancerFrontend that should be imported. Refer to the {@link https://registry.terraform.io/providers/upcloudltd/upcloud/3.1.1/docs/resources/loadbalancer_frontend#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing LoadbalancerFrontend that should be imported. Refer to the {@link https://registry.terraform.io/providers/upcloudltd/upcloud/3.2.0/docs/resources/loadbalancer_frontend#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the LoadbalancerFrontend to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -284,7 +308,7 @@ export class LoadbalancerFrontend extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/upcloudltd/upcloud/3.1.1/docs/resources/loadbalancer_frontend upcloud_loadbalancer_frontend} Resource
+  * Create a new {@link https://registry.terraform.io/providers/upcloudltd/upcloud/3.2.0/docs/resources/loadbalancer_frontend upcloud_loadbalancer_frontend} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -295,7 +319,7 @@ export class LoadbalancerFrontend extends cdktf.TerraformResource {
       terraformResourceType: 'upcloud_loadbalancer_frontend',
       terraformGeneratorMetadata: {
         providerName: 'upcloud',
-        providerVersion: '3.1.1',
+        providerVersion: '3.2.0',
         providerVersionConstraint: '~> 3.0'
       },
       provider: config.provider,

@@ -4,7 +4,7 @@
 
 ### UpcloudProvider <a name="UpcloudProvider" id="@cdktf/provider-upcloud.provider.UpcloudProvider"></a>
 
-Represents a {@link https://registry.terraform.io/providers/upcloudltd/upcloud/3.1.1/docs upcloud}.
+Represents a {@link https://registry.terraform.io/providers/upcloudltd/upcloud/3.2.0/docs upcloud}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-upcloud.provider.UpcloudProvider.Initializer"></a>
 
@@ -14,6 +14,7 @@ import com.hashicorp.cdktf.providers.upcloud.provider.UpcloudProvider;
 UpcloudProvider.Builder.create(Construct scope, java.lang.String id)
 //  .alias(java.lang.String)
 //  .password(java.lang.String)
+//  .requestTimeoutSec(java.lang.Number)
 //  .retryMax(java.lang.Number)
 //  .retryWaitMaxSec(java.lang.Number)
 //  .retryWaitMinSec(java.lang.Number)
@@ -27,6 +28,7 @@ UpcloudProvider.Builder.create(Construct scope, java.lang.String id)
 | <code><a href="#@cdktf/provider-upcloud.provider.UpcloudProvider.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | The scoped construct ID. |
 | <code><a href="#@cdktf/provider-upcloud.provider.UpcloudProvider.Initializer.parameter.alias">alias</a></code> | <code>java.lang.String</code> | Alias name. |
 | <code><a href="#@cdktf/provider-upcloud.provider.UpcloudProvider.Initializer.parameter.password">password</a></code> | <code>java.lang.String</code> | Password for UpCloud API user. Can also be configured using the `UPCLOUD_PASSWORD` environment variable. |
+| <code><a href="#@cdktf/provider-upcloud.provider.UpcloudProvider.Initializer.parameter.requestTimeoutSec">requestTimeoutSec</a></code> | <code>java.lang.Number</code> | The duration (in seconds) that the provider waits for an HTTP request towards UpCloud API to complete. |
 | <code><a href="#@cdktf/provider-upcloud.provider.UpcloudProvider.Initializer.parameter.retryMax">retryMax</a></code> | <code>java.lang.Number</code> | Maximum number of retries. |
 | <code><a href="#@cdktf/provider-upcloud.provider.UpcloudProvider.Initializer.parameter.retryWaitMaxSec">retryWaitMaxSec</a></code> | <code>java.lang.Number</code> | Maximum time to wait between retries. |
 | <code><a href="#@cdktf/provider-upcloud.provider.UpcloudProvider.Initializer.parameter.retryWaitMinSec">retryWaitMinSec</a></code> | <code>java.lang.Number</code> | Minimum time to wait between retries. |
@@ -58,7 +60,7 @@ Must be unique amongst siblings in the same scope
 
 Alias name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/3.1.1/docs#alias UpcloudProvider#alias}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/3.2.0/docs#alias UpcloudProvider#alias}
 
 ---
 
@@ -68,7 +70,19 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upclo
 
 Password for UpCloud API user. Can also be configured using the `UPCLOUD_PASSWORD` environment variable.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/3.1.1/docs#password UpcloudProvider#password}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/3.2.0/docs#password UpcloudProvider#password}
+
+---
+
+##### `requestTimeoutSec`<sup>Optional</sup> <a name="requestTimeoutSec" id="@cdktf/provider-upcloud.provider.UpcloudProvider.Initializer.parameter.requestTimeoutSec"></a>
+
+- *Type:* java.lang.Number
+
+The duration (in seconds) that the provider waits for an HTTP request towards UpCloud API to complete.
+
+Defaults to 120 seconds
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/3.2.0/docs#request_timeout_sec UpcloudProvider#request_timeout_sec}
 
 ---
 
@@ -78,7 +92,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upclo
 
 Maximum number of retries.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/3.1.1/docs#retry_max UpcloudProvider#retry_max}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/3.2.0/docs#retry_max UpcloudProvider#retry_max}
 
 ---
 
@@ -88,7 +102,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upclo
 
 Maximum time to wait between retries.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/3.1.1/docs#retry_wait_max_sec UpcloudProvider#retry_wait_max_sec}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/3.2.0/docs#retry_wait_max_sec UpcloudProvider#retry_wait_max_sec}
 
 ---
 
@@ -98,7 +112,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upclo
 
 Minimum time to wait between retries.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/3.1.1/docs#retry_wait_min_sec UpcloudProvider#retry_wait_min_sec}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/3.2.0/docs#retry_wait_min_sec UpcloudProvider#retry_wait_min_sec}
 
 ---
 
@@ -108,7 +122,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upclo
 
 UpCloud username with API access. Can also be configured using the `UPCLOUD_USERNAME` environment variable.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/3.1.1/docs#username UpcloudProvider#username}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/3.2.0/docs#username UpcloudProvider#username}
 
 ---
 
@@ -124,6 +138,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upclo
 | <code><a href="#@cdktf/provider-upcloud.provider.UpcloudProvider.toTerraform">toTerraform</a></code> | Adds this resource to the terraform JSON output. |
 | <code><a href="#@cdktf/provider-upcloud.provider.UpcloudProvider.resetAlias">resetAlias</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.provider.UpcloudProvider.resetPassword">resetPassword</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-upcloud.provider.UpcloudProvider.resetRequestTimeoutSec">resetRequestTimeoutSec</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.provider.UpcloudProvider.resetRetryMax">resetRetryMax</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.provider.UpcloudProvider.resetRetryWaitMaxSec">resetRetryWaitMaxSec</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.provider.UpcloudProvider.resetRetryWaitMinSec">resetRetryWaitMinSec</a></code> | *No description.* |
@@ -205,6 +220,12 @@ public void resetAlias()
 
 ```java
 public void resetPassword()
+```
+
+##### `resetRequestTimeoutSec` <a name="resetRequestTimeoutSec" id="@cdktf/provider-upcloud.provider.UpcloudProvider.resetRequestTimeoutSec"></a>
+
+```java
+public void resetRequestTimeoutSec()
 ```
 
 ##### `resetRetryMax` <a name="resetRetryMax" id="@cdktf/provider-upcloud.provider.UpcloudProvider.resetRetryMax"></a>
@@ -334,7 +355,7 @@ The construct id used in the generated config for the UpcloudProvider to import.
 
 The id of the existing UpcloudProvider that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/upcloudltd/upcloud/3.1.1/docs#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/upcloudltd/upcloud/3.2.0/docs#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -361,11 +382,13 @@ Refer to the {@link https://registry.terraform.io/providers/upcloudltd/upcloud/3
 | <code><a href="#@cdktf/provider-upcloud.provider.UpcloudProvider.property.alias">alias</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.provider.UpcloudProvider.property.aliasInput">aliasInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.provider.UpcloudProvider.property.passwordInput">passwordInput</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktf/provider-upcloud.provider.UpcloudProvider.property.requestTimeoutSecInput">requestTimeoutSecInput</a></code> | <code>java.lang.Number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.provider.UpcloudProvider.property.retryMaxInput">retryMaxInput</a></code> | <code>java.lang.Number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.provider.UpcloudProvider.property.retryWaitMaxSecInput">retryWaitMaxSecInput</a></code> | <code>java.lang.Number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.provider.UpcloudProvider.property.retryWaitMinSecInput">retryWaitMinSecInput</a></code> | <code>java.lang.Number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.provider.UpcloudProvider.property.usernameInput">usernameInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.provider.UpcloudProvider.property.password">password</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktf/provider-upcloud.provider.UpcloudProvider.property.requestTimeoutSec">requestTimeoutSec</a></code> | <code>java.lang.Number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.provider.UpcloudProvider.property.retryMax">retryMax</a></code> | <code>java.lang.Number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.provider.UpcloudProvider.property.retryWaitMaxSec">retryWaitMaxSec</a></code> | <code>java.lang.Number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.provider.UpcloudProvider.property.retryWaitMinSec">retryWaitMinSec</a></code> | <code>java.lang.Number</code> | *No description.* |
@@ -485,6 +508,16 @@ public java.lang.String getPasswordInput();
 
 ---
 
+##### `requestTimeoutSecInput`<sup>Optional</sup> <a name="requestTimeoutSecInput" id="@cdktf/provider-upcloud.provider.UpcloudProvider.property.requestTimeoutSecInput"></a>
+
+```java
+public java.lang.Number getRequestTimeoutSecInput();
+```
+
+- *Type:* java.lang.Number
+
+---
+
 ##### `retryMaxInput`<sup>Optional</sup> <a name="retryMaxInput" id="@cdktf/provider-upcloud.provider.UpcloudProvider.property.retryMaxInput"></a>
 
 ```java
@@ -532,6 +565,16 @@ public java.lang.String getPassword();
 ```
 
 - *Type:* java.lang.String
+
+---
+
+##### `requestTimeoutSec`<sup>Optional</sup> <a name="requestTimeoutSec" id="@cdktf/provider-upcloud.provider.UpcloudProvider.property.requestTimeoutSec"></a>
+
+```java
+public java.lang.Number getRequestTimeoutSec();
+```
+
+- *Type:* java.lang.Number
 
 ---
 
@@ -605,6 +648,7 @@ import com.hashicorp.cdktf.providers.upcloud.provider.UpcloudProviderConfig;
 UpcloudProviderConfig.builder()
 //  .alias(java.lang.String)
 //  .password(java.lang.String)
+//  .requestTimeoutSec(java.lang.Number)
 //  .retryMax(java.lang.Number)
 //  .retryWaitMaxSec(java.lang.Number)
 //  .retryWaitMinSec(java.lang.Number)
@@ -618,6 +662,7 @@ UpcloudProviderConfig.builder()
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-upcloud.provider.UpcloudProviderConfig.property.alias">alias</a></code> | <code>java.lang.String</code> | Alias name. |
 | <code><a href="#@cdktf/provider-upcloud.provider.UpcloudProviderConfig.property.password">password</a></code> | <code>java.lang.String</code> | Password for UpCloud API user. Can also be configured using the `UPCLOUD_PASSWORD` environment variable. |
+| <code><a href="#@cdktf/provider-upcloud.provider.UpcloudProviderConfig.property.requestTimeoutSec">requestTimeoutSec</a></code> | <code>java.lang.Number</code> | The duration (in seconds) that the provider waits for an HTTP request towards UpCloud API to complete. |
 | <code><a href="#@cdktf/provider-upcloud.provider.UpcloudProviderConfig.property.retryMax">retryMax</a></code> | <code>java.lang.Number</code> | Maximum number of retries. |
 | <code><a href="#@cdktf/provider-upcloud.provider.UpcloudProviderConfig.property.retryWaitMaxSec">retryWaitMaxSec</a></code> | <code>java.lang.Number</code> | Maximum time to wait between retries. |
 | <code><a href="#@cdktf/provider-upcloud.provider.UpcloudProviderConfig.property.retryWaitMinSec">retryWaitMinSec</a></code> | <code>java.lang.Number</code> | Minimum time to wait between retries. |
@@ -635,7 +680,7 @@ public java.lang.String getAlias();
 
 Alias name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/3.1.1/docs#alias UpcloudProvider#alias}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/3.2.0/docs#alias UpcloudProvider#alias}
 
 ---
 
@@ -649,7 +694,23 @@ public java.lang.String getPassword();
 
 Password for UpCloud API user. Can also be configured using the `UPCLOUD_PASSWORD` environment variable.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/3.1.1/docs#password UpcloudProvider#password}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/3.2.0/docs#password UpcloudProvider#password}
+
+---
+
+##### `requestTimeoutSec`<sup>Optional</sup> <a name="requestTimeoutSec" id="@cdktf/provider-upcloud.provider.UpcloudProviderConfig.property.requestTimeoutSec"></a>
+
+```java
+public java.lang.Number getRequestTimeoutSec();
+```
+
+- *Type:* java.lang.Number
+
+The duration (in seconds) that the provider waits for an HTTP request towards UpCloud API to complete.
+
+Defaults to 120 seconds
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/3.2.0/docs#request_timeout_sec UpcloudProvider#request_timeout_sec}
 
 ---
 
@@ -663,7 +724,7 @@ public java.lang.Number getRetryMax();
 
 Maximum number of retries.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/3.1.1/docs#retry_max UpcloudProvider#retry_max}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/3.2.0/docs#retry_max UpcloudProvider#retry_max}
 
 ---
 
@@ -677,7 +738,7 @@ public java.lang.Number getRetryWaitMaxSec();
 
 Maximum time to wait between retries.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/3.1.1/docs#retry_wait_max_sec UpcloudProvider#retry_wait_max_sec}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/3.2.0/docs#retry_wait_max_sec UpcloudProvider#retry_wait_max_sec}
 
 ---
 
@@ -691,7 +752,7 @@ public java.lang.Number getRetryWaitMinSec();
 
 Minimum time to wait between retries.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/3.1.1/docs#retry_wait_min_sec UpcloudProvider#retry_wait_min_sec}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/3.2.0/docs#retry_wait_min_sec UpcloudProvider#retry_wait_min_sec}
 
 ---
 
@@ -705,7 +766,7 @@ public java.lang.String getUsername();
 
 UpCloud username with API access. Can also be configured using the `UPCLOUD_USERNAME` environment variable.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/3.1.1/docs#username UpcloudProvider#username}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/3.2.0/docs#username UpcloudProvider#username}
 
 ---
 

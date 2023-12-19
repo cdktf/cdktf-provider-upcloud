@@ -21,6 +21,7 @@ The following submodules are available:
 - [kubernetesNodeGroup](./kubernetesNodeGroup.python.md)
 - [loadbalancer](./loadbalancer.python.md)
 - [loadbalancerBackend](./loadbalancerBackend.python.md)
+- [loadbalancerBackendTlsConfig](./loadbalancerBackendTlsConfig.python.md)
 - [loadbalancerDynamicBackendMember](./loadbalancerDynamicBackendMember.python.md)
 - [loadbalancerDynamicCertificateBundle](./loadbalancerDynamicCertificateBundle.python.md)
 - [loadbalancerFrontend](./loadbalancerFrontend.python.md)

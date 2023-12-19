@@ -21,6 +21,7 @@ The following submodules are available:
 - [kubernetesNodeGroup](./kubernetesNodeGroup.csharp.md)
 - [loadbalancer](./loadbalancer.csharp.md)
 - [loadbalancerBackend](./loadbalancerBackend.csharp.md)
+- [loadbalancerBackendTlsConfig](./loadbalancerBackendTlsConfig.csharp.md)
 - [loadbalancerDynamicBackendMember](./loadbalancerDynamicBackendMember.csharp.md)
 - [loadbalancerDynamicCertificateBundle](./loadbalancerDynamicCertificateBundle.csharp.md)
 - [loadbalancerFrontend](./loadbalancerFrontend.csharp.md)

@@ -21,6 +21,7 @@ The following submodules are available:
 - [kubernetesNodeGroup](./kubernetesNodeGroup.typescript.md)
 - [loadbalancer](./loadbalancer.typescript.md)
 - [loadbalancerBackend](./loadbalancerBackend.typescript.md)
+- [loadbalancerBackendTlsConfig](./loadbalancerBackendTlsConfig.typescript.md)
 - [loadbalancerDynamicBackendMember](./loadbalancerDynamicBackendMember.typescript.md)
 - [loadbalancerDynamicCertificateBundle](./loadbalancerDynamicCertificateBundle.typescript.md)
 - [loadbalancerFrontend](./loadbalancerFrontend.typescript.md)
