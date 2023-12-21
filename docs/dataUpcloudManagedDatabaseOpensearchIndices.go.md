@@ -4,12 +4,12 @@
 
 ### DataUpcloudManagedDatabaseOpensearchIndices <a name="DataUpcloudManagedDatabaseOpensearchIndices" id="@cdktf/provider-upcloud.dataUpcloudManagedDatabaseOpensearchIndices.DataUpcloudManagedDatabaseOpensearchIndices"></a>
 
-Represents a {@link https://registry.terraform.io/providers/upcloudltd/upcloud/3.2.0/docs/data-sources/managed_database_opensearch_indices upcloud_managed_database_opensearch_indices}.
+Represents a {@link https://registry.terraform.io/providers/upcloudltd/upcloud/3.3.0/docs/data-sources/managed_database_opensearch_indices upcloud_managed_database_opensearch_indices}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-upcloud.dataUpcloudManagedDatabaseOpensearchIndices.DataUpcloudManagedDatabaseOpensearchIndices.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v11/dataupcloudmanageddatabaseopensearchindices"
+import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/dataupcloudmanageddatabaseopensearchindices"
 
 dataupcloudmanageddatabaseopensearchindices.NewDataUpcloudManagedDatabaseOpensearchIndices(scope Construct, id *string, config DataUpcloudManagedDatabaseOpensearchIndicesConfig) DataUpcloudManagedDatabaseOpensearchIndices
 ```
@@ -294,7 +294,7 @@ func ResetIndices()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-upcloud.dataUpcloudManagedDatabaseOpensearchIndices.DataUpcloudManagedDatabaseOpensearchIndices.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v11/dataupcloudmanageddatabaseopensearchindices"
+import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/dataupcloudmanageddatabaseopensearchindices"
 
 dataupcloudmanageddatabaseopensearchindices.DataUpcloudManagedDatabaseOpensearchIndices_IsConstruct(x interface{}) *bool
 ```
@@ -326,7 +326,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-upcloud.dataUpcloudManagedDatabaseOpensearchIndices.DataUpcloudManagedDatabaseOpensearchIndices.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v11/dataupcloudmanageddatabaseopensearchindices"
+import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/dataupcloudmanageddatabaseopensearchindices"
 
 dataupcloudmanageddatabaseopensearchindices.DataUpcloudManagedDatabaseOpensearchIndices_IsTerraformElement(x interface{}) *bool
 ```
@@ -340,7 +340,7 @@ dataupcloudmanageddatabaseopensearchindices.DataUpcloudManagedDatabaseOpensearch
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-upcloud.dataUpcloudManagedDatabaseOpensearchIndices.DataUpcloudManagedDatabaseOpensearchIndices.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v11/dataupcloudmanageddatabaseopensearchindices"
+import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/dataupcloudmanageddatabaseopensearchindices"
 
 dataupcloudmanageddatabaseopensearchindices.DataUpcloudManagedDatabaseOpensearchIndices_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -354,7 +354,7 @@ dataupcloudmanageddatabaseopensearchindices.DataUpcloudManagedDatabaseOpensearch
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-upcloud.dataUpcloudManagedDatabaseOpensearchIndices.DataUpcloudManagedDatabaseOpensearchIndices.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v11/dataupcloudmanageddatabaseopensearchindices"
+import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/dataupcloudmanageddatabaseopensearchindices"
 
 dataupcloudmanageddatabaseopensearchindices.DataUpcloudManagedDatabaseOpensearchIndices_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -383,7 +383,7 @@ The construct id used in the generated config for the DataUpcloudManagedDatabase
 
 The id of the existing DataUpcloudManagedDatabaseOpensearchIndices that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/upcloudltd/upcloud/3.2.0/docs/data-sources/managed_database_opensearch_indices#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/upcloudltd/upcloud/3.3.0/docs/data-sources/managed_database_opensearch_indices#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -627,7 +627,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-upcloud.dataUpcloudManagedDatabaseOpensearchIndices.DataUpcloudManagedDatabaseOpensearchIndicesConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v11/dataupcloudmanageddatabaseopensearchindices"
+import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/dataupcloudmanageddatabaseopensearchindices"
 
 &dataupcloudmanageddatabaseopensearchindices.DataUpcloudManagedDatabaseOpensearchIndicesConfig {
 	Connection: interface{},
@@ -655,7 +655,7 @@ import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v11/dataupcloudmanage
 | <code><a href="#@cdktf/provider-upcloud.dataUpcloudManagedDatabaseOpensearchIndices.DataUpcloudManagedDatabaseOpensearchIndicesConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.dataUpcloudManagedDatabaseOpensearchIndices.DataUpcloudManagedDatabaseOpensearchIndicesConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.dataUpcloudManagedDatabaseOpensearchIndices.DataUpcloudManagedDatabaseOpensearchIndicesConfig.property.service">Service</a></code> | <code>*string</code> | Service's UUID for which these indices belongs to. |
-| <code><a href="#@cdktf/provider-upcloud.dataUpcloudManagedDatabaseOpensearchIndices.DataUpcloudManagedDatabaseOpensearchIndicesConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/3.2.0/docs/data-sources/managed_database_opensearch_indices#id DataUpcloudManagedDatabaseOpensearchIndices#id}. |
+| <code><a href="#@cdktf/provider-upcloud.dataUpcloudManagedDatabaseOpensearchIndices.DataUpcloudManagedDatabaseOpensearchIndicesConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/3.3.0/docs/data-sources/managed_database_opensearch_indices#id DataUpcloudManagedDatabaseOpensearchIndices#id}. |
 | <code><a href="#@cdktf/provider-upcloud.dataUpcloudManagedDatabaseOpensearchIndices.DataUpcloudManagedDatabaseOpensearchIndicesConfig.property.indices">Indices</a></code> | <code>interface{}</code> | indices block. |
 
 ---
@@ -740,7 +740,7 @@ Service *string
 
 Service's UUID for which these indices belongs to.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/3.2.0/docs/data-sources/managed_database_opensearch_indices#service DataUpcloudManagedDatabaseOpensearchIndices#service}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/3.3.0/docs/data-sources/managed_database_opensearch_indices#service DataUpcloudManagedDatabaseOpensearchIndices#service}
 
 ---
 
@@ -752,7 +752,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/3.2.0/docs/data-sources/managed_database_opensearch_indices#id DataUpcloudManagedDatabaseOpensearchIndices#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/3.3.0/docs/data-sources/managed_database_opensearch_indices#id DataUpcloudManagedDatabaseOpensearchIndices#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -769,7 +769,7 @@ Indices interface{}
 
 indices block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/3.2.0/docs/data-sources/managed_database_opensearch_indices#indices DataUpcloudManagedDatabaseOpensearchIndices#indices}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/3.3.0/docs/data-sources/managed_database_opensearch_indices#indices DataUpcloudManagedDatabaseOpensearchIndices#indices}
 
 ---
 
@@ -778,7 +778,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upclo
 #### Initializer <a name="Initializer" id="@cdktf/provider-upcloud.dataUpcloudManagedDatabaseOpensearchIndices.DataUpcloudManagedDatabaseOpensearchIndicesIndices.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v11/dataupcloudmanageddatabaseopensearchindices"
+import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/dataupcloudmanageddatabaseopensearchindices"
 
 &dataupcloudmanageddatabaseopensearchindices.DataUpcloudManagedDatabaseOpensearchIndicesIndices {
 
@@ -793,7 +793,7 @@ import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v11/dataupcloudmanage
 #### Initializers <a name="Initializers" id="@cdktf/provider-upcloud.dataUpcloudManagedDatabaseOpensearchIndices.DataUpcloudManagedDatabaseOpensearchIndicesIndicesList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v11/dataupcloudmanageddatabaseopensearchindices"
+import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/dataupcloudmanageddatabaseopensearchindices"
 
 dataupcloudmanageddatabaseopensearchindices.NewDataUpcloudManagedDatabaseOpensearchIndicesIndicesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataUpcloudManagedDatabaseOpensearchIndicesIndicesList
 ```
@@ -936,7 +936,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-upcloud.dataUpcloudManagedDatabaseOpensearchIndices.DataUpcloudManagedDatabaseOpensearchIndicesIndicesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v11/dataupcloudmanageddatabaseopensearchindices"
+import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/dataupcloudmanageddatabaseopensearchindices"
 
 dataupcloudmanageddatabaseopensearchindices.NewDataUpcloudManagedDatabaseOpensearchIndicesIndicesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataUpcloudManagedDatabaseOpensearchIndicesIndicesOutputReference
 ```
