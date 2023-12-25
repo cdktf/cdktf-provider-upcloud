@@ -1,6 +1,9 @@
-# Submodules <a name="Submodules" id="submodules"></a>
+# API Reference <a name="API Reference" id="api-reference"></a>
+
+## Submodules <a name="Submodules" id="submodules"></a>
 
 The following submodules are available:
+
 - [dataUpcloudHosts](./dataUpcloudHosts.go.md)
 - [dataUpcloudIpAddresses](./dataUpcloudIpAddresses.go.md)
 - [dataUpcloudKubernetesCluster](./dataUpcloudKubernetesCluster.go.md)
@@ -46,3 +49,8 @@ The following submodules are available:
 - [serverGroup](./serverGroup.go.md)
 - [storage](./storage.go.md)
 - [tag](./tag.go.md)
+
+
+
+
+
