@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/upcloudltd/upcloud/3
 #### Initializers <a name="Initializers" id="@cdktf/provider-upcloud.managedDatabaseLogicalDatabase.ManagedDatabaseLogicalDatabase.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v11/manageddatabaselogicaldatabase"
+import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/manageddatabaselogicaldatabase"
 
 manageddatabaselogicaldatabase.NewManagedDatabaseLogicalDatabase(scope Construct, id *string, config ManagedDatabaseLogicalDatabaseConfig) ManagedDatabaseLogicalDatabase
 ```
@@ -392,7 +392,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-upcloud.managedDatabaseLogicalDatabase.ManagedDatabaseLogicalDatabase.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v11/manageddatabaselogicaldatabase"
+import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/manageddatabaselogicaldatabase"
 
 manageddatabaselogicaldatabase.ManagedDatabaseLogicalDatabase_IsConstruct(x interface{}) *bool
 ```
@@ -424,7 +424,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-upcloud.managedDatabaseLogicalDatabase.ManagedDatabaseLogicalDatabase.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v11/manageddatabaselogicaldatabase"
+import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/manageddatabaselogicaldatabase"
 
 manageddatabaselogicaldatabase.ManagedDatabaseLogicalDatabase_IsTerraformElement(x interface{}) *bool
 ```
@@ -438,7 +438,7 @@ manageddatabaselogicaldatabase.ManagedDatabaseLogicalDatabase_IsTerraformElement
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-upcloud.managedDatabaseLogicalDatabase.ManagedDatabaseLogicalDatabase.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v11/manageddatabaselogicaldatabase"
+import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/manageddatabaselogicaldatabase"
 
 manageddatabaselogicaldatabase.ManagedDatabaseLogicalDatabase_IsTerraformResource(x interface{}) *bool
 ```
@@ -452,7 +452,7 @@ manageddatabaselogicaldatabase.ManagedDatabaseLogicalDatabase_IsTerraformResourc
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-upcloud.managedDatabaseLogicalDatabase.ManagedDatabaseLogicalDatabase.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v11/manageddatabaselogicaldatabase"
+import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/manageddatabaselogicaldatabase"
 
 manageddatabaselogicaldatabase.ManagedDatabaseLogicalDatabase_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -791,7 +791,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-upcloud.managedDatabaseLogicalDatabase.ManagedDatabaseLogicalDatabaseConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v11/manageddatabaselogicaldatabase"
+import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/manageddatabaselogicaldatabase"
 
 &manageddatabaselogicaldatabase.ManagedDatabaseLogicalDatabaseConfig {
 	Connection: interface{},
