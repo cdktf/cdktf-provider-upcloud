@@ -110,6 +110,37 @@ export function storageBackupRuleToTerraform(struct?: StorageBackupRuleOutputRef
   }
 }
 
+
+export function storageBackupRuleToHclTerraform(struct?: StorageBackupRuleOutputReference | StorageBackupRule): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    interval: {
+      value: cdktf.stringToHclTerraform(struct!.interval),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    retention: {
+      value: cdktf.numberToHclTerraform(struct!.retention),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    time: {
+      value: cdktf.stringToHclTerraform(struct!.time),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class StorageBackupRuleOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -215,6 +246,25 @@ export function storageCloneToTerraform(struct?: StorageCloneOutputReference | S
   }
 }
 
+
+export function storageCloneToHclTerraform(struct?: StorageCloneOutputReference | StorageClone): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    id: {
+      value: cdktf.stringToHclTerraform(struct!.id),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class StorageCloneOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -291,6 +341,37 @@ export function storageImportToTerraform(struct?: StorageImportOutputReference |
     source_hash: cdktf.stringToTerraform(struct!.sourceHash),
     source_location: cdktf.stringToTerraform(struct!.sourceLocation),
   }
+}
+
+
+export function storageImportToHclTerraform(struct?: StorageImportOutputReference | StorageImport): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    source: {
+      value: cdktf.stringToHclTerraform(struct!.source),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    source_hash: {
+      value: cdktf.stringToHclTerraform(struct!.sourceHash),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    source_location: {
+      value: cdktf.stringToHclTerraform(struct!.sourceLocation),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class StorageImportOutputReference extends cdktf.ComplexObject {
@@ -625,5 +706,73 @@ export class Storage extends cdktf.TerraformResource {
       clone: storageCloneToTerraform(this._clone.internalValue),
       import: storageImportToTerraform(this._import.internalValue),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      delete_autoresize_backup: {
+        value: cdktf.booleanToHclTerraform(this._deleteAutoresizeBackup),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      filesystem_autoresize: {
+        value: cdktf.booleanToHclTerraform(this._filesystemAutoresize),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      size: {
+        value: cdktf.numberToHclTerraform(this._size),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "number",
+      },
+      tier: {
+        value: cdktf.stringToHclTerraform(this._tier),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      title: {
+        value: cdktf.stringToHclTerraform(this._title),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      zone: {
+        value: cdktf.stringToHclTerraform(this._zone),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      backup_rule: {
+        value: storageBackupRuleToHclTerraform(this._backupRule.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "StorageBackupRuleList",
+      },
+      clone: {
+        value: storageCloneToHclTerraform(this._clone.internalValue),
+        isBlock: true,
+        type: "set",
+        storageClassType: "StorageCloneList",
+      },
+      import: {
+        value: storageImportToHclTerraform(this._import.internalValue),
+        isBlock: true,
+        type: "set",
+        storageClassType: "StorageImportList",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

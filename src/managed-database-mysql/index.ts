@@ -80,6 +80,17 @@ export function managedDatabaseMysqlComponentsToTerraform(struct?: ManagedDataba
   }
 }
 
+
+export function managedDatabaseMysqlComponentsToHclTerraform(struct?: ManagedDatabaseMysqlComponents): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
+}
+
 export class ManagedDatabaseMysqlComponentsOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -162,6 +173,17 @@ export function managedDatabaseMysqlNodeStatesToTerraform(struct?: ManagedDataba
   }
   return {
   }
+}
+
+
+export function managedDatabaseMysqlNodeStatesToHclTerraform(struct?: ManagedDatabaseMysqlNodeStates): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
 }
 
 export class ManagedDatabaseMysqlNodeStatesOutputReference extends cdktf.ComplexObject {
@@ -285,6 +307,61 @@ export function managedDatabaseMysqlPropertiesMigrationToTerraform(struct?: Mana
     ssl: cdktf.booleanToTerraform(struct!.ssl),
     username: cdktf.stringToTerraform(struct!.username),
   }
+}
+
+
+export function managedDatabaseMysqlPropertiesMigrationToHclTerraform(struct?: ManagedDatabaseMysqlPropertiesMigrationOutputReference | ManagedDatabaseMysqlPropertiesMigration): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    dbname: {
+      value: cdktf.stringToHclTerraform(struct!.dbname),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    host: {
+      value: cdktf.stringToHclTerraform(struct!.host),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    ignore_dbs: {
+      value: cdktf.stringToHclTerraform(struct!.ignoreDbs),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    password: {
+      value: cdktf.stringToHclTerraform(struct!.password),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    port: {
+      value: cdktf.numberToHclTerraform(struct!.port),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    ssl: {
+      value: cdktf.booleanToHclTerraform(struct!.ssl),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+    username: {
+      value: cdktf.stringToHclTerraform(struct!.username),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class ManagedDatabaseMysqlPropertiesMigrationOutputReference extends cdktf.ComplexObject {
@@ -766,6 +843,265 @@ export function managedDatabaseMysqlPropertiesToTerraform(struct?: ManagedDataba
     wait_timeout: cdktf.numberToTerraform(struct!.waitTimeout),
     migration: managedDatabaseMysqlPropertiesMigrationToTerraform(struct!.migration),
   }
+}
+
+
+export function managedDatabaseMysqlPropertiesToHclTerraform(struct?: ManagedDatabaseMysqlPropertiesOutputReference | ManagedDatabaseMysqlProperties): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    admin_password: {
+      value: cdktf.stringToHclTerraform(struct!.adminPassword),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    admin_username: {
+      value: cdktf.stringToHclTerraform(struct!.adminUsername),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    automatic_utility_network_ip_filter: {
+      value: cdktf.booleanToHclTerraform(struct!.automaticUtilityNetworkIpFilter),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+    backup_hour: {
+      value: cdktf.numberToHclTerraform(struct!.backupHour),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    backup_minute: {
+      value: cdktf.numberToHclTerraform(struct!.backupMinute),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    binlog_retention_period: {
+      value: cdktf.numberToHclTerraform(struct!.binlogRetentionPeriod),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    connect_timeout: {
+      value: cdktf.numberToHclTerraform(struct!.connectTimeout),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    default_time_zone: {
+      value: cdktf.stringToHclTerraform(struct!.defaultTimeZone),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    group_concat_max_len: {
+      value: cdktf.numberToHclTerraform(struct!.groupConcatMaxLen),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    information_schema_stats_expiry: {
+      value: cdktf.numberToHclTerraform(struct!.informationSchemaStatsExpiry),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    innodb_change_buffer_max_size: {
+      value: cdktf.numberToHclTerraform(struct!.innodbChangeBufferMaxSize),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    innodb_flush_neighbors: {
+      value: cdktf.numberToHclTerraform(struct!.innodbFlushNeighbors),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    innodb_ft_min_token_size: {
+      value: cdktf.numberToHclTerraform(struct!.innodbFtMinTokenSize),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    innodb_ft_server_stopword_table: {
+      value: cdktf.stringToHclTerraform(struct!.innodbFtServerStopwordTable),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    innodb_lock_wait_timeout: {
+      value: cdktf.numberToHclTerraform(struct!.innodbLockWaitTimeout),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    innodb_log_buffer_size: {
+      value: cdktf.numberToHclTerraform(struct!.innodbLogBufferSize),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    innodb_online_alter_log_max_size: {
+      value: cdktf.numberToHclTerraform(struct!.innodbOnlineAlterLogMaxSize),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    innodb_print_all_deadlocks: {
+      value: cdktf.booleanToHclTerraform(struct!.innodbPrintAllDeadlocks),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+    innodb_read_io_threads: {
+      value: cdktf.numberToHclTerraform(struct!.innodbReadIoThreads),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    innodb_rollback_on_timeout: {
+      value: cdktf.booleanToHclTerraform(struct!.innodbRollbackOnTimeout),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+    innodb_thread_concurrency: {
+      value: cdktf.numberToHclTerraform(struct!.innodbThreadConcurrency),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    innodb_write_io_threads: {
+      value: cdktf.numberToHclTerraform(struct!.innodbWriteIoThreads),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    interactive_timeout: {
+      value: cdktf.numberToHclTerraform(struct!.interactiveTimeout),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    internal_tmp_mem_storage_engine: {
+      value: cdktf.stringToHclTerraform(struct!.internalTmpMemStorageEngine),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    ip_filter: {
+      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.ipFilter),
+      isBlock: false,
+      type: "list",
+      storageClassType: "stringList",
+    },
+    long_query_time: {
+      value: cdktf.numberToHclTerraform(struct!.longQueryTime),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    max_allowed_packet: {
+      value: cdktf.numberToHclTerraform(struct!.maxAllowedPacket),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    max_heap_table_size: {
+      value: cdktf.numberToHclTerraform(struct!.maxHeapTableSize),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    net_buffer_length: {
+      value: cdktf.numberToHclTerraform(struct!.netBufferLength),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    net_read_timeout: {
+      value: cdktf.numberToHclTerraform(struct!.netReadTimeout),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    net_write_timeout: {
+      value: cdktf.numberToHclTerraform(struct!.netWriteTimeout),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    public_access: {
+      value: cdktf.booleanToHclTerraform(struct!.publicAccess),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+    service_log: {
+      value: cdktf.booleanToHclTerraform(struct!.serviceLog),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+    slow_query_log: {
+      value: cdktf.booleanToHclTerraform(struct!.slowQueryLog),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+    sort_buffer_size: {
+      value: cdktf.numberToHclTerraform(struct!.sortBufferSize),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    sql_mode: {
+      value: cdktf.stringToHclTerraform(struct!.sqlMode),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    sql_require_primary_key: {
+      value: cdktf.booleanToHclTerraform(struct!.sqlRequirePrimaryKey),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+    tmp_table_size: {
+      value: cdktf.numberToHclTerraform(struct!.tmpTableSize),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    version: {
+      value: cdktf.stringToHclTerraform(struct!.version),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    wait_timeout: {
+      value: cdktf.numberToHclTerraform(struct!.waitTimeout),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    migration: {
+      value: managedDatabaseMysqlPropertiesMigrationToHclTerraform(struct!.migration),
+      isBlock: true,
+      type: "list",
+      storageClassType: "ManagedDatabaseMysqlPropertiesMigrationList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class ManagedDatabaseMysqlPropertiesOutputReference extends cdktf.ComplexObject {
@@ -1966,5 +2302,67 @@ export class ManagedDatabaseMysql extends cdktf.TerraformResource {
       zone: cdktf.stringToTerraform(this._zone),
       properties: managedDatabaseMysqlPropertiesToTerraform(this._properties.internalValue),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      maintenance_window_dow: {
+        value: cdktf.stringToHclTerraform(this._maintenanceWindowDow),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      maintenance_window_time: {
+        value: cdktf.stringToHclTerraform(this._maintenanceWindowTime),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      name: {
+        value: cdktf.stringToHclTerraform(this._name),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      plan: {
+        value: cdktf.stringToHclTerraform(this._plan),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      powered: {
+        value: cdktf.booleanToHclTerraform(this._powered),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      title: {
+        value: cdktf.stringToHclTerraform(this._title),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      zone: {
+        value: cdktf.stringToHclTerraform(this._zone),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      properties: {
+        value: managedDatabaseMysqlPropertiesToHclTerraform(this._properties.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "ManagedDatabaseMysqlPropertiesList",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

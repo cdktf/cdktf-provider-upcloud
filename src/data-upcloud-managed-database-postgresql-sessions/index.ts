@@ -90,6 +90,43 @@ export function dataUpcloudManagedDatabasePostgresqlSessionsSessionsToTerraform(
   }
 }
 
+
+export function dataUpcloudManagedDatabasePostgresqlSessionsSessionsToHclTerraform(struct?: DataUpcloudManagedDatabasePostgresqlSessionsSessions | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    backend_xid: {
+      value: cdktf.numberToHclTerraform(struct!.backendXid),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    backend_xmin: {
+      value: cdktf.numberToHclTerraform(struct!.backendXmin),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    client_hostname: {
+      value: cdktf.stringToHclTerraform(struct!.clientHostname),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    xact_start: {
+      value: cdktf.stringToHclTerraform(struct!.xactStart),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class DataUpcloudManagedDatabasePostgresqlSessionsSessionsOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
   private resolvableValue?: cdktf.IResolvable;
@@ -491,5 +528,49 @@ export class DataUpcloudManagedDatabasePostgresqlSessions extends cdktf.Terrafor
       service: cdktf.stringToTerraform(this._service),
       sessions: cdktf.listMapper(dataUpcloudManagedDatabasePostgresqlSessionsSessionsToTerraform, true)(this._sessions.internalValue),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      limit: {
+        value: cdktf.numberToHclTerraform(this._limit),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "number",
+      },
+      offset: {
+        value: cdktf.numberToHclTerraform(this._offset),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "number",
+      },
+      order: {
+        value: cdktf.stringToHclTerraform(this._order),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      service: {
+        value: cdktf.stringToHclTerraform(this._service),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      sessions: {
+        value: cdktf.listMapperHcl(dataUpcloudManagedDatabasePostgresqlSessionsSessionsToHclTerraform, true)(this._sessions.internalValue),
+        isBlock: true,
+        type: "set",
+        storageClassType: "DataUpcloudManagedDatabasePostgresqlSessionsSessionsList",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

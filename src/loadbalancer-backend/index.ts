@@ -161,6 +161,109 @@ export function loadbalancerBackendPropertiesToTerraform(struct?: LoadbalancerBa
   }
 }
 
+
+export function loadbalancerBackendPropertiesToHclTerraform(struct?: LoadbalancerBackendPropertiesOutputReference | LoadbalancerBackendProperties): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    health_check_expected_status: {
+      value: cdktf.numberToHclTerraform(struct!.healthCheckExpectedStatus),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    health_check_fall: {
+      value: cdktf.numberToHclTerraform(struct!.healthCheckFall),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    health_check_interval: {
+      value: cdktf.numberToHclTerraform(struct!.healthCheckInterval),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    health_check_rise: {
+      value: cdktf.numberToHclTerraform(struct!.healthCheckRise),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    health_check_tls_verify: {
+      value: cdktf.booleanToHclTerraform(struct!.healthCheckTlsVerify),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+    health_check_type: {
+      value: cdktf.stringToHclTerraform(struct!.healthCheckType),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    health_check_url: {
+      value: cdktf.stringToHclTerraform(struct!.healthCheckUrl),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    http2_enabled: {
+      value: cdktf.booleanToHclTerraform(struct!.http2Enabled),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+    outbound_proxy_protocol: {
+      value: cdktf.stringToHclTerraform(struct!.outboundProxyProtocol),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    sticky_session_cookie_name: {
+      value: cdktf.stringToHclTerraform(struct!.stickySessionCookieName),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    timeout_server: {
+      value: cdktf.numberToHclTerraform(struct!.timeoutServer),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    timeout_tunnel: {
+      value: cdktf.numberToHclTerraform(struct!.timeoutTunnel),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    tls_enabled: {
+      value: cdktf.booleanToHclTerraform(struct!.tlsEnabled),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+    tls_use_system_ca: {
+      value: cdktf.booleanToHclTerraform(struct!.tlsUseSystemCa),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+    tls_verify: {
+      value: cdktf.booleanToHclTerraform(struct!.tlsVerify),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class LoadbalancerBackendPropertiesOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -681,5 +784,43 @@ export class LoadbalancerBackend extends cdktf.TerraformResource {
       resolver_name: cdktf.stringToTerraform(this._resolverName),
       properties: loadbalancerBackendPropertiesToTerraform(this._properties.internalValue),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      loadbalancer: {
+        value: cdktf.stringToHclTerraform(this._loadbalancer),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      name: {
+        value: cdktf.stringToHclTerraform(this._name),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      resolver_name: {
+        value: cdktf.stringToHclTerraform(this._resolverName),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      properties: {
+        value: loadbalancerBackendPropertiesToHclTerraform(this._properties.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "LoadbalancerBackendPropertiesList",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

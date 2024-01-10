@@ -80,6 +80,17 @@ export function managedDatabaseRedisComponentsToTerraform(struct?: ManagedDataba
   }
 }
 
+
+export function managedDatabaseRedisComponentsToHclTerraform(struct?: ManagedDatabaseRedisComponents): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
+}
+
 export class ManagedDatabaseRedisComponentsOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -162,6 +173,17 @@ export function managedDatabaseRedisNodeStatesToTerraform(struct?: ManagedDataba
   }
   return {
   }
+}
+
+
+export function managedDatabaseRedisNodeStatesToHclTerraform(struct?: ManagedDatabaseRedisNodeStates): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
 }
 
 export class ManagedDatabaseRedisNodeStatesOutputReference extends cdktf.ComplexObject {
@@ -285,6 +307,61 @@ export function managedDatabaseRedisPropertiesMigrationToTerraform(struct?: Mana
     ssl: cdktf.booleanToTerraform(struct!.ssl),
     username: cdktf.stringToTerraform(struct!.username),
   }
+}
+
+
+export function managedDatabaseRedisPropertiesMigrationToHclTerraform(struct?: ManagedDatabaseRedisPropertiesMigrationOutputReference | ManagedDatabaseRedisPropertiesMigration): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    dbname: {
+      value: cdktf.stringToHclTerraform(struct!.dbname),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    host: {
+      value: cdktf.stringToHclTerraform(struct!.host),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    ignore_dbs: {
+      value: cdktf.stringToHclTerraform(struct!.ignoreDbs),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    password: {
+      value: cdktf.stringToHclTerraform(struct!.password),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    port: {
+      value: cdktf.numberToHclTerraform(struct!.port),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    ssl: {
+      value: cdktf.booleanToHclTerraform(struct!.ssl),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+    username: {
+      value: cdktf.stringToHclTerraform(struct!.username),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class ManagedDatabaseRedisPropertiesMigrationOutputReference extends cdktf.ComplexObject {
@@ -589,6 +666,115 @@ export function managedDatabaseRedisPropertiesToTerraform(struct?: ManagedDataba
     service_log: cdktf.booleanToTerraform(struct!.serviceLog),
     migration: managedDatabaseRedisPropertiesMigrationToTerraform(struct!.migration),
   }
+}
+
+
+export function managedDatabaseRedisPropertiesToHclTerraform(struct?: ManagedDatabaseRedisPropertiesOutputReference | ManagedDatabaseRedisProperties): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    automatic_utility_network_ip_filter: {
+      value: cdktf.booleanToHclTerraform(struct!.automaticUtilityNetworkIpFilter),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+    ip_filter: {
+      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.ipFilter),
+      isBlock: false,
+      type: "list",
+      storageClassType: "stringList",
+    },
+    public_access: {
+      value: cdktf.booleanToHclTerraform(struct!.publicAccess),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+    redis_acl_channels_default: {
+      value: cdktf.stringToHclTerraform(struct!.redisAclChannelsDefault),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    redis_io_threads: {
+      value: cdktf.numberToHclTerraform(struct!.redisIoThreads),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    redis_lfu_decay_time: {
+      value: cdktf.numberToHclTerraform(struct!.redisLfuDecayTime),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    redis_lfu_log_factor: {
+      value: cdktf.numberToHclTerraform(struct!.redisLfuLogFactor),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    redis_maxmemory_policy: {
+      value: cdktf.stringToHclTerraform(struct!.redisMaxmemoryPolicy),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    redis_notify_keyspace_events: {
+      value: cdktf.stringToHclTerraform(struct!.redisNotifyKeyspaceEvents),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    redis_number_of_databases: {
+      value: cdktf.numberToHclTerraform(struct!.redisNumberOfDatabases),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    redis_persistence: {
+      value: cdktf.stringToHclTerraform(struct!.redisPersistence),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    redis_pubsub_client_output_buffer_limit: {
+      value: cdktf.numberToHclTerraform(struct!.redisPubsubClientOutputBufferLimit),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    redis_ssl: {
+      value: cdktf.booleanToHclTerraform(struct!.redisSsl),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+    redis_timeout: {
+      value: cdktf.numberToHclTerraform(struct!.redisTimeout),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    service_log: {
+      value: cdktf.booleanToHclTerraform(struct!.serviceLog),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+    migration: {
+      value: managedDatabaseRedisPropertiesMigrationToHclTerraform(struct!.migration),
+      isBlock: true,
+      type: "list",
+      storageClassType: "ManagedDatabaseRedisPropertiesMigrationList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class ManagedDatabaseRedisPropertiesOutputReference extends cdktf.ComplexObject {
@@ -1239,5 +1425,67 @@ export class ManagedDatabaseRedis extends cdktf.TerraformResource {
       zone: cdktf.stringToTerraform(this._zone),
       properties: managedDatabaseRedisPropertiesToTerraform(this._properties.internalValue),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      maintenance_window_dow: {
+        value: cdktf.stringToHclTerraform(this._maintenanceWindowDow),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      maintenance_window_time: {
+        value: cdktf.stringToHclTerraform(this._maintenanceWindowTime),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      name: {
+        value: cdktf.stringToHclTerraform(this._name),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      plan: {
+        value: cdktf.stringToHclTerraform(this._plan),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      powered: {
+        value: cdktf.booleanToHclTerraform(this._powered),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      title: {
+        value: cdktf.stringToHclTerraform(this._title),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      zone: {
+        value: cdktf.stringToHclTerraform(this._zone),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      properties: {
+        value: managedDatabaseRedisPropertiesToHclTerraform(this._properties.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "ManagedDatabaseRedisPropertiesList",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

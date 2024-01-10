@@ -273,4 +273,66 @@ export class LoadbalancerResolver extends cdktf.TerraformResource {
       timeout_retry: cdktf.numberToTerraform(this._timeoutRetry),
     };
   }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      cache_invalid: {
+        value: cdktf.numberToHclTerraform(this._cacheInvalid),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "number",
+      },
+      cache_valid: {
+        value: cdktf.numberToHclTerraform(this._cacheValid),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "number",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      loadbalancer: {
+        value: cdktf.stringToHclTerraform(this._loadbalancer),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      name: {
+        value: cdktf.stringToHclTerraform(this._name),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      nameservers: {
+        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._nameservers),
+        isBlock: false,
+        type: "list",
+        storageClassType: "stringList",
+      },
+      retries: {
+        value: cdktf.numberToHclTerraform(this._retries),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "number",
+      },
+      timeout: {
+        value: cdktf.numberToHclTerraform(this._timeout),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "number",
+      },
+      timeout_retry: {
+        value: cdktf.numberToHclTerraform(this._timeoutRetry),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "number",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
+  }
 }

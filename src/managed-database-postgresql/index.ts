@@ -80,6 +80,17 @@ export function managedDatabasePostgresqlComponentsToTerraform(struct?: ManagedD
   }
 }
 
+
+export function managedDatabasePostgresqlComponentsToHclTerraform(struct?: ManagedDatabasePostgresqlComponents): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
+}
+
 export class ManagedDatabasePostgresqlComponentsOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -162,6 +173,17 @@ export function managedDatabasePostgresqlNodeStatesToTerraform(struct?: ManagedD
   }
   return {
   }
+}
+
+
+export function managedDatabasePostgresqlNodeStatesToHclTerraform(struct?: ManagedDatabasePostgresqlNodeStates): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
 }
 
 export class ManagedDatabasePostgresqlNodeStatesOutputReference extends cdktf.ComplexObject {
@@ -285,6 +307,61 @@ export function managedDatabasePostgresqlPropertiesMigrationToTerraform(struct?:
     ssl: cdktf.booleanToTerraform(struct!.ssl),
     username: cdktf.stringToTerraform(struct!.username),
   }
+}
+
+
+export function managedDatabasePostgresqlPropertiesMigrationToHclTerraform(struct?: ManagedDatabasePostgresqlPropertiesMigrationOutputReference | ManagedDatabasePostgresqlPropertiesMigration): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    dbname: {
+      value: cdktf.stringToHclTerraform(struct!.dbname),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    host: {
+      value: cdktf.stringToHclTerraform(struct!.host),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    ignore_dbs: {
+      value: cdktf.stringToHclTerraform(struct!.ignoreDbs),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    password: {
+      value: cdktf.stringToHclTerraform(struct!.password),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    port: {
+      value: cdktf.numberToHclTerraform(struct!.port),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    ssl: {
+      value: cdktf.booleanToHclTerraform(struct!.ssl),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+    username: {
+      value: cdktf.stringToHclTerraform(struct!.username),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class ManagedDatabasePostgresqlPropertiesMigrationOutputReference extends cdktf.ComplexObject {
@@ -542,6 +619,73 @@ export function managedDatabasePostgresqlPropertiesPgbouncerToTerraform(struct?:
   }
 }
 
+
+export function managedDatabasePostgresqlPropertiesPgbouncerToHclTerraform(struct?: ManagedDatabasePostgresqlPropertiesPgbouncerOutputReference | ManagedDatabasePostgresqlPropertiesPgbouncer): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    autodb_idle_timeout: {
+      value: cdktf.numberToHclTerraform(struct!.autodbIdleTimeout),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    autodb_max_db_connections: {
+      value: cdktf.numberToHclTerraform(struct!.autodbMaxDbConnections),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    autodb_pool_mode: {
+      value: cdktf.stringToHclTerraform(struct!.autodbPoolMode),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    autodb_pool_size: {
+      value: cdktf.numberToHclTerraform(struct!.autodbPoolSize),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    ignore_startup_parameters: {
+      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.ignoreStartupParameters),
+      isBlock: false,
+      type: "list",
+      storageClassType: "stringList",
+    },
+    min_pool_size: {
+      value: cdktf.numberToHclTerraform(struct!.minPoolSize),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    server_idle_timeout: {
+      value: cdktf.numberToHclTerraform(struct!.serverIdleTimeout),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    server_lifetime: {
+      value: cdktf.numberToHclTerraform(struct!.serverLifetime),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    server_reset_query_always: {
+      value: cdktf.booleanToHclTerraform(struct!.serverResetQueryAlways),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class ManagedDatabasePostgresqlPropertiesPgbouncerOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -785,6 +929,25 @@ export function managedDatabasePostgresqlPropertiesPglookoutToTerraform(struct?:
   }
 }
 
+
+export function managedDatabasePostgresqlPropertiesPglookoutToHclTerraform(struct?: ManagedDatabasePostgresqlPropertiesPglookoutOutputReference | ManagedDatabasePostgresqlPropertiesPglookout): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    max_failover_replication_time_lag: {
+      value: cdktf.numberToHclTerraform(struct!.maxFailoverReplicationTimeLag),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class ManagedDatabasePostgresqlPropertiesPglookoutOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -851,6 +1014,25 @@ export function managedDatabasePostgresqlPropertiesTimescaledbToTerraform(struct
   return {
     max_background_workers: cdktf.numberToTerraform(struct!.maxBackgroundWorkers),
   }
+}
+
+
+export function managedDatabasePostgresqlPropertiesTimescaledbToHclTerraform(struct?: ManagedDatabasePostgresqlPropertiesTimescaledbOutputReference | ManagedDatabasePostgresqlPropertiesTimescaledb): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    max_background_workers: {
+      value: cdktf.numberToHclTerraform(struct!.maxBackgroundWorkers),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class ManagedDatabasePostgresqlPropertiesTimescaledbOutputReference extends cdktf.ComplexObject {
@@ -1401,6 +1583,433 @@ export function managedDatabasePostgresqlPropertiesToTerraform(struct?: ManagedD
     pglookout: managedDatabasePostgresqlPropertiesPglookoutToTerraform(struct!.pglookout),
     timescaledb: managedDatabasePostgresqlPropertiesTimescaledbToTerraform(struct!.timescaledb),
   }
+}
+
+
+export function managedDatabasePostgresqlPropertiesToHclTerraform(struct?: ManagedDatabasePostgresqlPropertiesOutputReference | ManagedDatabasePostgresqlProperties): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    admin_password: {
+      value: cdktf.stringToHclTerraform(struct!.adminPassword),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    admin_username: {
+      value: cdktf.stringToHclTerraform(struct!.adminUsername),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    automatic_utility_network_ip_filter: {
+      value: cdktf.booleanToHclTerraform(struct!.automaticUtilityNetworkIpFilter),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+    autovacuum_analyze_scale_factor: {
+      value: cdktf.numberToHclTerraform(struct!.autovacuumAnalyzeScaleFactor),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    autovacuum_analyze_threshold: {
+      value: cdktf.numberToHclTerraform(struct!.autovacuumAnalyzeThreshold),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    autovacuum_freeze_max_age: {
+      value: cdktf.numberToHclTerraform(struct!.autovacuumFreezeMaxAge),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    autovacuum_max_workers: {
+      value: cdktf.numberToHclTerraform(struct!.autovacuumMaxWorkers),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    autovacuum_naptime: {
+      value: cdktf.numberToHclTerraform(struct!.autovacuumNaptime),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    autovacuum_vacuum_cost_delay: {
+      value: cdktf.numberToHclTerraform(struct!.autovacuumVacuumCostDelay),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    autovacuum_vacuum_cost_limit: {
+      value: cdktf.numberToHclTerraform(struct!.autovacuumVacuumCostLimit),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    autovacuum_vacuum_scale_factor: {
+      value: cdktf.numberToHclTerraform(struct!.autovacuumVacuumScaleFactor),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    autovacuum_vacuum_threshold: {
+      value: cdktf.numberToHclTerraform(struct!.autovacuumVacuumThreshold),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    backup_hour: {
+      value: cdktf.numberToHclTerraform(struct!.backupHour),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    backup_minute: {
+      value: cdktf.numberToHclTerraform(struct!.backupMinute),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    bgwriter_delay: {
+      value: cdktf.numberToHclTerraform(struct!.bgwriterDelay),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    bgwriter_flush_after: {
+      value: cdktf.numberToHclTerraform(struct!.bgwriterFlushAfter),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    bgwriter_lru_maxpages: {
+      value: cdktf.numberToHclTerraform(struct!.bgwriterLruMaxpages),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    bgwriter_lru_multiplier: {
+      value: cdktf.numberToHclTerraform(struct!.bgwriterLruMultiplier),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    deadlock_timeout: {
+      value: cdktf.numberToHclTerraform(struct!.deadlockTimeout),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    default_toast_compression: {
+      value: cdktf.stringToHclTerraform(struct!.defaultToastCompression),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    idle_in_transaction_session_timeout: {
+      value: cdktf.numberToHclTerraform(struct!.idleInTransactionSessionTimeout),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    ip_filter: {
+      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.ipFilter),
+      isBlock: false,
+      type: "list",
+      storageClassType: "stringList",
+    },
+    jit: {
+      value: cdktf.booleanToHclTerraform(struct!.jit),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+    log_autovacuum_min_duration: {
+      value: cdktf.numberToHclTerraform(struct!.logAutovacuumMinDuration),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    log_error_verbosity: {
+      value: cdktf.stringToHclTerraform(struct!.logErrorVerbosity),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    log_line_prefix: {
+      value: cdktf.stringToHclTerraform(struct!.logLinePrefix),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    log_min_duration_statement: {
+      value: cdktf.numberToHclTerraform(struct!.logMinDurationStatement),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    log_temp_files: {
+      value: cdktf.numberToHclTerraform(struct!.logTempFiles),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    max_files_per_process: {
+      value: cdktf.numberToHclTerraform(struct!.maxFilesPerProcess),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    max_locks_per_transaction: {
+      value: cdktf.numberToHclTerraform(struct!.maxLocksPerTransaction),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    max_logical_replication_workers: {
+      value: cdktf.numberToHclTerraform(struct!.maxLogicalReplicationWorkers),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    max_parallel_workers: {
+      value: cdktf.numberToHclTerraform(struct!.maxParallelWorkers),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    max_parallel_workers_per_gather: {
+      value: cdktf.numberToHclTerraform(struct!.maxParallelWorkersPerGather),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    max_pred_locks_per_transaction: {
+      value: cdktf.numberToHclTerraform(struct!.maxPredLocksPerTransaction),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    max_prepared_transactions: {
+      value: cdktf.numberToHclTerraform(struct!.maxPreparedTransactions),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    max_replication_slots: {
+      value: cdktf.numberToHclTerraform(struct!.maxReplicationSlots),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    max_slot_wal_keep_size: {
+      value: cdktf.numberToHclTerraform(struct!.maxSlotWalKeepSize),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    max_stack_depth: {
+      value: cdktf.numberToHclTerraform(struct!.maxStackDepth),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    max_standby_archive_delay: {
+      value: cdktf.numberToHclTerraform(struct!.maxStandbyArchiveDelay),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    max_standby_streaming_delay: {
+      value: cdktf.numberToHclTerraform(struct!.maxStandbyStreamingDelay),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    max_wal_senders: {
+      value: cdktf.numberToHclTerraform(struct!.maxWalSenders),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    max_worker_processes: {
+      value: cdktf.numberToHclTerraform(struct!.maxWorkerProcesses),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    pg_partman_bgw_interval: {
+      value: cdktf.numberToHclTerraform(struct!.pgPartmanBgwInterval),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    pg_partman_bgw_role: {
+      value: cdktf.stringToHclTerraform(struct!.pgPartmanBgwRole),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    pg_read_replica: {
+      value: cdktf.booleanToHclTerraform(struct!.pgReadReplica),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+    pg_service_to_fork_from: {
+      value: cdktf.stringToHclTerraform(struct!.pgServiceToForkFrom),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    pg_stat_monitor_enable: {
+      value: cdktf.booleanToHclTerraform(struct!.pgStatMonitorEnable),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+    pg_stat_monitor_pgsm_enable_query_plan: {
+      value: cdktf.booleanToHclTerraform(struct!.pgStatMonitorPgsmEnableQueryPlan),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+    pg_stat_monitor_pgsm_max_buckets: {
+      value: cdktf.numberToHclTerraform(struct!.pgStatMonitorPgsmMaxBuckets),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    pg_stat_statements_track: {
+      value: cdktf.stringToHclTerraform(struct!.pgStatStatementsTrack),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    public_access: {
+      value: cdktf.booleanToHclTerraform(struct!.publicAccess),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+    service_log: {
+      value: cdktf.booleanToHclTerraform(struct!.serviceLog),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+    shared_buffers_percentage: {
+      value: cdktf.numberToHclTerraform(struct!.sharedBuffersPercentage),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    synchronous_replication: {
+      value: cdktf.stringToHclTerraform(struct!.synchronousReplication),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    temp_file_limit: {
+      value: cdktf.numberToHclTerraform(struct!.tempFileLimit),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    timezone: {
+      value: cdktf.stringToHclTerraform(struct!.timezone),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    track_activity_query_size: {
+      value: cdktf.numberToHclTerraform(struct!.trackActivityQuerySize),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    track_commit_timestamp: {
+      value: cdktf.stringToHclTerraform(struct!.trackCommitTimestamp),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    track_functions: {
+      value: cdktf.stringToHclTerraform(struct!.trackFunctions),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    track_io_timing: {
+      value: cdktf.stringToHclTerraform(struct!.trackIoTiming),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    variant: {
+      value: cdktf.stringToHclTerraform(struct!.variant),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    version: {
+      value: cdktf.stringToHclTerraform(struct!.version),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    wal_sender_timeout: {
+      value: cdktf.numberToHclTerraform(struct!.walSenderTimeout),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    wal_writer_delay: {
+      value: cdktf.numberToHclTerraform(struct!.walWriterDelay),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    work_mem: {
+      value: cdktf.numberToHclTerraform(struct!.workMem),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    migration: {
+      value: managedDatabasePostgresqlPropertiesMigrationToHclTerraform(struct!.migration),
+      isBlock: true,
+      type: "list",
+      storageClassType: "ManagedDatabasePostgresqlPropertiesMigrationList",
+    },
+    pgbouncer: {
+      value: managedDatabasePostgresqlPropertiesPgbouncerToHclTerraform(struct!.pgbouncer),
+      isBlock: true,
+      type: "list",
+      storageClassType: "ManagedDatabasePostgresqlPropertiesPgbouncerList",
+    },
+    pglookout: {
+      value: managedDatabasePostgresqlPropertiesPglookoutToHclTerraform(struct!.pglookout),
+      isBlock: true,
+      type: "list",
+      storageClassType: "ManagedDatabasePostgresqlPropertiesPglookoutList",
+    },
+    timescaledb: {
+      value: managedDatabasePostgresqlPropertiesTimescaledbToHclTerraform(struct!.timescaledb),
+      isBlock: true,
+      type: "list",
+      storageClassType: "ManagedDatabasePostgresqlPropertiesTimescaledbList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class ManagedDatabasePostgresqlPropertiesOutputReference extends cdktf.ComplexObject {
@@ -3222,5 +3831,67 @@ export class ManagedDatabasePostgresql extends cdktf.TerraformResource {
       zone: cdktf.stringToTerraform(this._zone),
       properties: managedDatabasePostgresqlPropertiesToTerraform(this._properties.internalValue),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      maintenance_window_dow: {
+        value: cdktf.stringToHclTerraform(this._maintenanceWindowDow),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      maintenance_window_time: {
+        value: cdktf.stringToHclTerraform(this._maintenanceWindowTime),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      name: {
+        value: cdktf.stringToHclTerraform(this._name),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      plan: {
+        value: cdktf.stringToHclTerraform(this._plan),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      powered: {
+        value: cdktf.booleanToHclTerraform(this._powered),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      title: {
+        value: cdktf.stringToHclTerraform(this._title),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      zone: {
+        value: cdktf.stringToHclTerraform(this._zone),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      properties: {
+        value: managedDatabasePostgresqlPropertiesToHclTerraform(this._properties.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "ManagedDatabasePostgresqlPropertiesList",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

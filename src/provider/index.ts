@@ -241,4 +241,54 @@ export class UpcloudProvider extends cdktf.TerraformProvider {
       alias: cdktf.stringToTerraform(this._alias),
     };
   }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      password: {
+        value: cdktf.stringToHclTerraform(this._password),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      request_timeout_sec: {
+        value: cdktf.numberToHclTerraform(this._requestTimeoutSec),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "number",
+      },
+      retry_max: {
+        value: cdktf.numberToHclTerraform(this._retryMax),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "number",
+      },
+      retry_wait_max_sec: {
+        value: cdktf.numberToHclTerraform(this._retryWaitMaxSec),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "number",
+      },
+      retry_wait_min_sec: {
+        value: cdktf.numberToHclTerraform(this._retryWaitMinSec),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "number",
+      },
+      username: {
+        value: cdktf.stringToHclTerraform(this._username),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      alias: {
+        value: cdktf.stringToHclTerraform(this._alias),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
+  }
 }

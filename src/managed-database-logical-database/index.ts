@@ -194,4 +194,42 @@ export class ManagedDatabaseLogicalDatabase extends cdktf.TerraformResource {
       service: cdktf.stringToTerraform(this._service),
     };
   }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      character_set: {
+        value: cdktf.stringToHclTerraform(this._characterSet),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      collation: {
+        value: cdktf.stringToHclTerraform(this._collation),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      name: {
+        value: cdktf.stringToHclTerraform(this._name),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      service: {
+        value: cdktf.stringToHclTerraform(this._service),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
+  }
 }
