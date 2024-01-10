@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/upcloudltd/upcloud/3.3.0/docs/resources/loadbalancer
 // generated from terraform resource schema
 
@@ -74,6 +69,17 @@ export function loadbalancerNodesNetworksIpAddressesToTerraform(struct?: Loadbal
   }
 }
 
+
+export function loadbalancerNodesNetworksIpAddressesToHclTerraform(struct?: LoadbalancerNodesNetworksIpAddresses): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
+}
+
 export class LoadbalancerNodesNetworksIpAddressesOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -141,6 +147,17 @@ export function loadbalancerNodesNetworksToTerraform(struct?: LoadbalancerNodesN
   }
   return {
   }
+}
+
+
+export function loadbalancerNodesNetworksToHclTerraform(struct?: LoadbalancerNodesNetworks): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
 }
 
 export class LoadbalancerNodesNetworksOutputReference extends cdktf.ComplexObject {
@@ -216,6 +233,17 @@ export function loadbalancerNodesToTerraform(struct?: LoadbalancerNodes): any {
   }
   return {
   }
+}
+
+
+export function loadbalancerNodesToHclTerraform(struct?: LoadbalancerNodes): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
 }
 
 export class LoadbalancerNodesOutputReference extends cdktf.ComplexObject {
@@ -314,6 +342,43 @@ export function loadbalancerNetworksToTerraform(struct?: LoadbalancerNetworks | 
     network: cdktf.stringToTerraform(struct!.network),
     type: cdktf.stringToTerraform(struct!.type),
   }
+}
+
+
+export function loadbalancerNetworksToHclTerraform(struct?: LoadbalancerNetworks | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    family: {
+      value: cdktf.stringToHclTerraform(struct!.family),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    name: {
+      value: cdktf.stringToHclTerraform(struct!.name),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    network: {
+      value: cdktf.stringToHclTerraform(struct!.network),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    type: {
+      value: cdktf.stringToHclTerraform(struct!.type),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class LoadbalancerNetworksOutputReference extends cdktf.ComplexObject {
@@ -694,5 +759,61 @@ export class Loadbalancer extends cdktf.TerraformResource {
       zone: cdktf.stringToTerraform(this._zone),
       networks: cdktf.listMapper(loadbalancerNetworksToTerraform, true)(this._networks.internalValue),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      configured_status: {
+        value: cdktf.stringToHclTerraform(this._configuredStatus),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      labels: {
+        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._labels),
+        isBlock: false,
+        type: "map",
+        storageClassType: "stringMap",
+      },
+      name: {
+        value: cdktf.stringToHclTerraform(this._name),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      network: {
+        value: cdktf.stringToHclTerraform(this._network),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      plan: {
+        value: cdktf.stringToHclTerraform(this._plan),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      zone: {
+        value: cdktf.stringToHclTerraform(this._zone),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      networks: {
+        value: cdktf.listMapperHcl(loadbalancerNetworksToHclTerraform, true)(this._networks.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "LoadbalancerNetworksList",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

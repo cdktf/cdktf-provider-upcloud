@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/upcloudltd/upcloud/3.3.0/docs/resources/loadbalancer_frontend
 // generated from terraform resource schema
 
@@ -79,6 +74,25 @@ export function loadbalancerFrontendNetworksToTerraform(struct?: LoadbalancerFro
   return {
     name: cdktf.stringToTerraform(struct!.name),
   }
+}
+
+
+export function loadbalancerFrontendNetworksToHclTerraform(struct?: LoadbalancerFrontendNetworks | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    name: {
+      value: cdktf.stringToHclTerraform(struct!.name),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class LoadbalancerFrontendNetworksOutputReference extends cdktf.ComplexObject {
@@ -189,6 +203,37 @@ export function loadbalancerFrontendPropertiesToTerraform(struct?: LoadbalancerF
     inbound_proxy_protocol: cdktf.booleanToTerraform(struct!.inboundProxyProtocol),
     timeout_client: cdktf.numberToTerraform(struct!.timeoutClient),
   }
+}
+
+
+export function loadbalancerFrontendPropertiesToHclTerraform(struct?: LoadbalancerFrontendPropertiesOutputReference | LoadbalancerFrontendProperties): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    http2_enabled: {
+      value: cdktf.booleanToHclTerraform(struct!.http2Enabled),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+    inbound_proxy_protocol: {
+      value: cdktf.booleanToHclTerraform(struct!.inboundProxyProtocol),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+    timeout_client: {
+      value: cdktf.numberToHclTerraform(struct!.timeoutClient),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class LoadbalancerFrontendPropertiesOutputReference extends cdktf.ComplexObject {
@@ -487,5 +532,61 @@ export class LoadbalancerFrontend extends cdktf.TerraformResource {
       networks: cdktf.listMapper(loadbalancerFrontendNetworksToTerraform, true)(this._networks.internalValue),
       properties: loadbalancerFrontendPropertiesToTerraform(this._properties.internalValue),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      default_backend_name: {
+        value: cdktf.stringToHclTerraform(this._defaultBackendName),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      loadbalancer: {
+        value: cdktf.stringToHclTerraform(this._loadbalancer),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      mode: {
+        value: cdktf.stringToHclTerraform(this._mode),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      name: {
+        value: cdktf.stringToHclTerraform(this._name),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      port: {
+        value: cdktf.numberToHclTerraform(this._port),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "number",
+      },
+      networks: {
+        value: cdktf.listMapperHcl(loadbalancerFrontendNetworksToHclTerraform, true)(this._networks.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "LoadbalancerFrontendNetworksList",
+      },
+      properties: {
+        value: loadbalancerFrontendPropertiesToHclTerraform(this._properties.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "LoadbalancerFrontendPropertiesList",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

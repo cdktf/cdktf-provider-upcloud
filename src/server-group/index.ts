@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/upcloudltd/upcloud/3.3.0/docs/resources/server_group
 // generated from terraform resource schema
 
@@ -208,5 +203,43 @@ export class ServerGroup extends cdktf.TerraformResource {
       members: cdktf.listMapper(cdktf.stringToTerraform, false)(this._members),
       title: cdktf.stringToTerraform(this._title),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      anti_affinity_policy: {
+        value: cdktf.stringToHclTerraform(this._antiAffinityPolicy),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      labels: {
+        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._labels),
+        isBlock: false,
+        type: "map",
+        storageClassType: "stringMap",
+      },
+      members: {
+        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._members),
+        isBlock: false,
+        type: "set",
+        storageClassType: "stringList",
+      },
+      title: {
+        value: cdktf.stringToHclTerraform(this._title),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

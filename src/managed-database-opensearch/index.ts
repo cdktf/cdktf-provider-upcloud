@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/upcloudltd/upcloud/3.3.0/docs/resources/managed_database_opensearch
 // generated from terraform resource schema
 
@@ -92,6 +87,17 @@ export function managedDatabaseOpensearchComponentsToTerraform(struct?: ManagedD
   }
 }
 
+
+export function managedDatabaseOpensearchComponentsToHclTerraform(struct?: ManagedDatabaseOpensearchComponents): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
+}
+
 export class ManagedDatabaseOpensearchComponentsOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -174,6 +180,17 @@ export function managedDatabaseOpensearchNodeStatesToTerraform(struct?: ManagedD
   }
   return {
   }
+}
+
+
+export function managedDatabaseOpensearchNodeStatesToHclTerraform(struct?: ManagedDatabaseOpensearchNodeStates): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
 }
 
 export class ManagedDatabaseOpensearchNodeStatesOutputReference extends cdktf.ComplexObject {
@@ -297,6 +314,61 @@ export function managedDatabaseOpensearchPropertiesMigrationToTerraform(struct?:
     ssl: cdktf.booleanToTerraform(struct!.ssl),
     username: cdktf.stringToTerraform(struct!.username),
   }
+}
+
+
+export function managedDatabaseOpensearchPropertiesMigrationToHclTerraform(struct?: ManagedDatabaseOpensearchPropertiesMigrationOutputReference | ManagedDatabaseOpensearchPropertiesMigration): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    dbname: {
+      value: cdktf.stringToHclTerraform(struct!.dbname),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    host: {
+      value: cdktf.stringToHclTerraform(struct!.host),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    ignore_dbs: {
+      value: cdktf.stringToHclTerraform(struct!.ignoreDbs),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    password: {
+      value: cdktf.stringToHclTerraform(struct!.password),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    port: {
+      value: cdktf.numberToHclTerraform(struct!.port),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    ssl: {
+      value: cdktf.booleanToHclTerraform(struct!.ssl),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+    username: {
+      value: cdktf.stringToHclTerraform(struct!.username),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class ManagedDatabaseOpensearchPropertiesMigrationOutputReference extends cdktf.ComplexObject {
@@ -524,6 +596,49 @@ export function managedDatabaseOpensearchPropertiesToTerraform(struct?: ManagedD
     version: cdktf.stringToTerraform(struct!.version),
     migration: managedDatabaseOpensearchPropertiesMigrationToTerraform(struct!.migration),
   }
+}
+
+
+export function managedDatabaseOpensearchPropertiesToHclTerraform(struct?: ManagedDatabaseOpensearchPropertiesOutputReference | ManagedDatabaseOpensearchProperties): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    automatic_utility_network_ip_filter: {
+      value: cdktf.booleanToHclTerraform(struct!.automaticUtilityNetworkIpFilter),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+    ip_filter: {
+      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.ipFilter),
+      isBlock: false,
+      type: "list",
+      storageClassType: "stringList",
+    },
+    public_access: {
+      value: cdktf.booleanToHclTerraform(struct!.publicAccess),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+    version: {
+      value: cdktf.stringToHclTerraform(struct!.version),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    migration: {
+      value: managedDatabaseOpensearchPropertiesMigrationToHclTerraform(struct!.migration),
+      isBlock: true,
+      type: "list",
+      storageClassType: "ManagedDatabaseOpensearchPropertiesMigrationList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class ManagedDatabaseOpensearchPropertiesOutputReference extends cdktf.ComplexObject {
@@ -968,5 +1083,79 @@ export class ManagedDatabaseOpensearch extends cdktf.TerraformResource {
       zone: cdktf.stringToTerraform(this._zone),
       properties: managedDatabaseOpensearchPropertiesToTerraform(this._properties.internalValue),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      access_control: {
+        value: cdktf.booleanToHclTerraform(this._accessControl),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      extended_access_control: {
+        value: cdktf.booleanToHclTerraform(this._extendedAccessControl),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      maintenance_window_dow: {
+        value: cdktf.stringToHclTerraform(this._maintenanceWindowDow),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      maintenance_window_time: {
+        value: cdktf.stringToHclTerraform(this._maintenanceWindowTime),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      name: {
+        value: cdktf.stringToHclTerraform(this._name),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      plan: {
+        value: cdktf.stringToHclTerraform(this._plan),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      powered: {
+        value: cdktf.booleanToHclTerraform(this._powered),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      title: {
+        value: cdktf.stringToHclTerraform(this._title),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      zone: {
+        value: cdktf.stringToHclTerraform(this._zone),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      properties: {
+        value: managedDatabaseOpensearchPropertiesToHclTerraform(this._properties.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "ManagedDatabaseOpensearchPropertiesList",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

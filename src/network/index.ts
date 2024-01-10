@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/upcloudltd/upcloud/3.3.0/docs/resources/network
 // generated from terraform resource schema
 
@@ -103,6 +98,61 @@ export function networkIpNetworkToTerraform(struct?: NetworkIpNetworkOutputRefer
     family: cdktf.stringToTerraform(struct!.family),
     gateway: cdktf.stringToTerraform(struct!.gateway),
   }
+}
+
+
+export function networkIpNetworkToHclTerraform(struct?: NetworkIpNetworkOutputReference | NetworkIpNetwork): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    address: {
+      value: cdktf.stringToHclTerraform(struct!.address),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    dhcp: {
+      value: cdktf.booleanToHclTerraform(struct!.dhcp),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+    dhcp_default_route: {
+      value: cdktf.booleanToHclTerraform(struct!.dhcpDefaultRoute),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+    dhcp_dns: {
+      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.dhcpDns),
+      isBlock: false,
+      type: "set",
+      storageClassType: "stringList",
+    },
+    dhcp_routes: {
+      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.dhcpRoutes),
+      isBlock: false,
+      type: "set",
+      storageClassType: "stringList",
+    },
+    family: {
+      value: cdktf.stringToHclTerraform(struct!.family),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    gateway: {
+      value: cdktf.stringToHclTerraform(struct!.gateway),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class NetworkIpNetworkOutputReference extends cdktf.ComplexObject {
@@ -427,5 +477,43 @@ export class Network extends cdktf.TerraformResource {
       zone: cdktf.stringToTerraform(this._zone),
       ip_network: networkIpNetworkToTerraform(this._ipNetwork.internalValue),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      name: {
+        value: cdktf.stringToHclTerraform(this._name),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      router: {
+        value: cdktf.stringToHclTerraform(this._router),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      zone: {
+        value: cdktf.stringToHclTerraform(this._zone),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      ip_network: {
+        value: networkIpNetworkToHclTerraform(this._ipNetwork.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "NetworkIpNetworkList",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

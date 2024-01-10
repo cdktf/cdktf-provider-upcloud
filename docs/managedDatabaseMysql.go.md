@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/upcloudltd/upcloud/3
 #### Initializers <a name="Initializers" id="@cdktf/provider-upcloud.managedDatabaseMysql.ManagedDatabaseMysql.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v11/manageddatabasemysql"
+import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/manageddatabasemysql"
 
 manageddatabasemysql.NewManagedDatabaseMysql(scope Construct, id *string, config ManagedDatabaseMysqlConfig) ManagedDatabaseMysql
 ```
@@ -54,6 +54,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-upcloud.managedDatabaseMysql.ManagedDatabaseMysql.addOverride">AddOverride</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.managedDatabaseMysql.ManagedDatabaseMysql.overrideLogicalId">OverrideLogicalId</a></code> | Overrides the auto-generated logical ID with a specific ID. |
 | <code><a href="#@cdktf/provider-upcloud.managedDatabaseMysql.ManagedDatabaseMysql.resetOverrideLogicalId">ResetOverrideLogicalId</a></code> | Resets a previously passed logical Id to use the auto-generated logical id again. |
+| <code><a href="#@cdktf/provider-upcloud.managedDatabaseMysql.ManagedDatabaseMysql.toHclTerraform">ToHclTerraform</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.managedDatabaseMysql.ManagedDatabaseMysql.toMetadata">ToMetadata</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.managedDatabaseMysql.ManagedDatabaseMysql.toTerraform">ToTerraform</a></code> | Adds this resource to the terraform JSON output. |
 | <code><a href="#@cdktf/provider-upcloud.managedDatabaseMysql.ManagedDatabaseMysql.addMoveTarget">AddMoveTarget</a></code> | Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move. |
@@ -131,6 +132,12 @@ func ResetOverrideLogicalId()
 ```
 
 Resets a previously passed logical Id to use the auto-generated logical id again.
+
+##### `ToHclTerraform` <a name="ToHclTerraform" id="@cdktf/provider-upcloud.managedDatabaseMysql.ManagedDatabaseMysql.toHclTerraform"></a>
+
+```go
+func ToHclTerraform() interface{}
+```
 
 ##### `ToMetadata` <a name="ToMetadata" id="@cdktf/provider-upcloud.managedDatabaseMysql.ManagedDatabaseMysql.toMetadata"></a>
 
@@ -426,7 +433,7 @@ func ResetTitle()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-upcloud.managedDatabaseMysql.ManagedDatabaseMysql.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v11/manageddatabasemysql"
+import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/manageddatabasemysql"
 
 manageddatabasemysql.ManagedDatabaseMysql_IsConstruct(x interface{}) *bool
 ```
@@ -458,7 +465,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-upcloud.managedDatabaseMysql.ManagedDatabaseMysql.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v11/manageddatabasemysql"
+import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/manageddatabasemysql"
 
 manageddatabasemysql.ManagedDatabaseMysql_IsTerraformElement(x interface{}) *bool
 ```
@@ -472,7 +479,7 @@ manageddatabasemysql.ManagedDatabaseMysql_IsTerraformElement(x interface{}) *boo
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-upcloud.managedDatabaseMysql.ManagedDatabaseMysql.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v11/manageddatabasemysql"
+import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/manageddatabasemysql"
 
 manageddatabasemysql.ManagedDatabaseMysql_IsTerraformResource(x interface{}) *bool
 ```
@@ -486,7 +493,7 @@ manageddatabasemysql.ManagedDatabaseMysql_IsTerraformResource(x interface{}) *bo
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-upcloud.managedDatabaseMysql.ManagedDatabaseMysql.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v11/manageddatabasemysql"
+import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/manageddatabasemysql"
 
 manageddatabasemysql.ManagedDatabaseMysql_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -1023,7 +1030,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-upcloud.managedDatabaseMysql.ManagedDatabaseMysqlComponents.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v11/manageddatabasemysql"
+import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/manageddatabasemysql"
 
 &manageddatabasemysql.ManagedDatabaseMysqlComponents {
 
@@ -1036,7 +1043,7 @@ import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v11/manageddatabasemy
 #### Initializer <a name="Initializer" id="@cdktf/provider-upcloud.managedDatabaseMysql.ManagedDatabaseMysqlConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v11/manageddatabasemysql"
+import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/manageddatabasemysql"
 
 &manageddatabasemysql.ManagedDatabaseMysqlConfig {
 	Connection: interface{},
@@ -1053,7 +1060,7 @@ import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v11/manageddatabasemy
 	MaintenanceWindowDow: *string,
 	MaintenanceWindowTime: *string,
 	Powered: interface{},
-	Properties: github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v11.managedDatabaseMysql.ManagedDatabaseMysqlProperties,
+	Properties: github.com/cdktf/cdktf-provider-upcloud-go/upcloud.managedDatabaseMysql.ManagedDatabaseMysqlProperties,
 	Title: *string,
 }
 ```
@@ -1287,7 +1294,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upclo
 #### Initializer <a name="Initializer" id="@cdktf/provider-upcloud.managedDatabaseMysql.ManagedDatabaseMysqlNodeStates.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v11/manageddatabasemysql"
+import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/manageddatabasemysql"
 
 &manageddatabasemysql.ManagedDatabaseMysqlNodeStates {
 
@@ -1300,7 +1307,7 @@ import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v11/manageddatabasemy
 #### Initializer <a name="Initializer" id="@cdktf/provider-upcloud.managedDatabaseMysql.ManagedDatabaseMysqlProperties.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v11/manageddatabasemysql"
+import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/manageddatabasemysql"
 
 &manageddatabasemysql.ManagedDatabaseMysqlProperties {
 	AdminPassword: *string,
@@ -1331,7 +1338,7 @@ import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v11/manageddatabasemy
 	LongQueryTime: *f64,
 	MaxAllowedPacket: *f64,
 	MaxHeapTableSize: *f64,
-	Migration: github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v11.managedDatabaseMysql.ManagedDatabaseMysqlPropertiesMigration,
+	Migration: github.com/cdktf/cdktf-provider-upcloud-go/upcloud.managedDatabaseMysql.ManagedDatabaseMysqlPropertiesMigration,
 	NetBufferLength: *f64,
 	NetReadTimeout: *f64,
 	NetWriteTimeout: *f64,
@@ -1997,7 +2004,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upclo
 #### Initializer <a name="Initializer" id="@cdktf/provider-upcloud.managedDatabaseMysql.ManagedDatabaseMysqlPropertiesMigration.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v11/manageddatabasemysql"
+import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/manageddatabasemysql"
 
 &manageddatabasemysql.ManagedDatabaseMysqlPropertiesMigration {
 	Dbname: *string,
@@ -2129,7 +2136,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upclo
 #### Initializers <a name="Initializers" id="@cdktf/provider-upcloud.managedDatabaseMysql.ManagedDatabaseMysqlComponentsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v11/manageddatabasemysql"
+import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/manageddatabasemysql"
 
 manageddatabasemysql.NewManagedDatabaseMysqlComponentsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ManagedDatabaseMysqlComponentsList
 ```
@@ -2170,10 +2177,27 @@ whether the list is wrapping a set (will add tolist() to be able to access an it
 
 | **Name** | **Description** |
 | --- | --- |
+| <code><a href="#@cdktf/provider-upcloud.managedDatabaseMysql.ManagedDatabaseMysqlComponentsList.allWithMapKey">AllWithMapKey</a></code> | Creating an iterator for this complex list. |
 | <code><a href="#@cdktf/provider-upcloud.managedDatabaseMysql.ManagedDatabaseMysqlComponentsList.computeFqn">ComputeFqn</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.managedDatabaseMysql.ManagedDatabaseMysqlComponentsList.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
 | <code><a href="#@cdktf/provider-upcloud.managedDatabaseMysql.ManagedDatabaseMysqlComponentsList.toString">ToString</a></code> | Return a string representation of this resolvable object. |
 | <code><a href="#@cdktf/provider-upcloud.managedDatabaseMysql.ManagedDatabaseMysqlComponentsList.get">Get</a></code> | *No description.* |
+
+---
+
+##### `AllWithMapKey` <a name="AllWithMapKey" id="@cdktf/provider-upcloud.managedDatabaseMysql.ManagedDatabaseMysqlComponentsList.allWithMapKey"></a>
+
+```go
+func AllWithMapKey(mapKeyAttributeName *string) DynamicListTerraformIterator
+```
+
+Creating an iterator for this complex list.
+
+The list will be converted into a map with the mapKeyAttributeName as the key.
+
+###### `mapKeyAttributeName`<sup>Required</sup> <a name="mapKeyAttributeName" id="@cdktf/provider-upcloud.managedDatabaseMysql.ManagedDatabaseMysqlComponentsList.allWithMapKey.parameter.mapKeyAttributeName"></a>
+
+- *Type:* *string
 
 ---
 
@@ -2261,7 +2285,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-upcloud.managedDatabaseMysql.ManagedDatabaseMysqlComponentsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v11/manageddatabasemysql"
+import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/manageddatabasemysql"
 
 manageddatabasemysql.NewManagedDatabaseMysqlComponentsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ManagedDatabaseMysqlComponentsOutputReference
 ```
@@ -2583,7 +2607,7 @@ func InternalValue() ManagedDatabaseMysqlComponents
 #### Initializers <a name="Initializers" id="@cdktf/provider-upcloud.managedDatabaseMysql.ManagedDatabaseMysqlNodeStatesList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v11/manageddatabasemysql"
+import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/manageddatabasemysql"
 
 manageddatabasemysql.NewManagedDatabaseMysqlNodeStatesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ManagedDatabaseMysqlNodeStatesList
 ```
@@ -2624,10 +2648,27 @@ whether the list is wrapping a set (will add tolist() to be able to access an it
 
 | **Name** | **Description** |
 | --- | --- |
+| <code><a href="#@cdktf/provider-upcloud.managedDatabaseMysql.ManagedDatabaseMysqlNodeStatesList.allWithMapKey">AllWithMapKey</a></code> | Creating an iterator for this complex list. |
 | <code><a href="#@cdktf/provider-upcloud.managedDatabaseMysql.ManagedDatabaseMysqlNodeStatesList.computeFqn">ComputeFqn</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.managedDatabaseMysql.ManagedDatabaseMysqlNodeStatesList.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
 | <code><a href="#@cdktf/provider-upcloud.managedDatabaseMysql.ManagedDatabaseMysqlNodeStatesList.toString">ToString</a></code> | Return a string representation of this resolvable object. |
 | <code><a href="#@cdktf/provider-upcloud.managedDatabaseMysql.ManagedDatabaseMysqlNodeStatesList.get">Get</a></code> | *No description.* |
+
+---
+
+##### `AllWithMapKey` <a name="AllWithMapKey" id="@cdktf/provider-upcloud.managedDatabaseMysql.ManagedDatabaseMysqlNodeStatesList.allWithMapKey"></a>
+
+```go
+func AllWithMapKey(mapKeyAttributeName *string) DynamicListTerraformIterator
+```
+
+Creating an iterator for this complex list.
+
+The list will be converted into a map with the mapKeyAttributeName as the key.
+
+###### `mapKeyAttributeName`<sup>Required</sup> <a name="mapKeyAttributeName" id="@cdktf/provider-upcloud.managedDatabaseMysql.ManagedDatabaseMysqlNodeStatesList.allWithMapKey.parameter.mapKeyAttributeName"></a>
+
+- *Type:* *string
 
 ---
 
@@ -2715,7 +2756,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-upcloud.managedDatabaseMysql.ManagedDatabaseMysqlNodeStatesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v11/manageddatabasemysql"
+import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/manageddatabasemysql"
 
 manageddatabasemysql.NewManagedDatabaseMysqlNodeStatesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ManagedDatabaseMysqlNodeStatesOutputReference
 ```
@@ -3015,7 +3056,7 @@ func InternalValue() ManagedDatabaseMysqlNodeStates
 #### Initializers <a name="Initializers" id="@cdktf/provider-upcloud.managedDatabaseMysql.ManagedDatabaseMysqlPropertiesMigrationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v11/manageddatabasemysql"
+import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/manageddatabasemysql"
 
 manageddatabasemysql.NewManagedDatabaseMysqlPropertiesMigrationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ManagedDatabaseMysqlPropertiesMigrationOutputReference
 ```
@@ -3467,7 +3508,7 @@ func InternalValue() ManagedDatabaseMysqlPropertiesMigration
 #### Initializers <a name="Initializers" id="@cdktf/provider-upcloud.managedDatabaseMysql.ManagedDatabaseMysqlPropertiesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v11/manageddatabasemysql"
+import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/manageddatabasemysql"
 
 manageddatabasemysql.NewManagedDatabaseMysqlPropertiesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ManagedDatabaseMysqlPropertiesOutputReference
 ```

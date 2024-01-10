@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/upcloudltd/upcloud/3.3.0/docs/resources/kubernetes_node_group
 // generated from terraform resource schema
 
@@ -105,6 +100,31 @@ export function kubernetesNodeGroupKubeletArgsToTerraform(struct?: KubernetesNod
     key: cdktf.stringToTerraform(struct!.key),
     value: cdktf.stringToTerraform(struct!.value),
   }
+}
+
+
+export function kubernetesNodeGroupKubeletArgsToHclTerraform(struct?: KubernetesNodeGroupKubeletArgs | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    key: {
+      value: cdktf.stringToHclTerraform(struct!.key),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    value: {
+      value: cdktf.stringToHclTerraform(struct!.value),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class KubernetesNodeGroupKubeletArgsOutputReference extends cdktf.ComplexObject {
@@ -234,6 +254,37 @@ export function kubernetesNodeGroupTaintToTerraform(struct?: KubernetesNodeGroup
     key: cdktf.stringToTerraform(struct!.key),
     value: cdktf.stringToTerraform(struct!.value),
   }
+}
+
+
+export function kubernetesNodeGroupTaintToHclTerraform(struct?: KubernetesNodeGroupTaint | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    effect: {
+      value: cdktf.stringToHclTerraform(struct!.effect),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    key: {
+      value: cdktf.stringToHclTerraform(struct!.key),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    value: {
+      value: cdktf.stringToHclTerraform(struct!.value),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class KubernetesNodeGroupTaintOutputReference extends cdktf.ComplexObject {
@@ -602,5 +653,79 @@ export class KubernetesNodeGroup extends cdktf.TerraformResource {
       kubelet_args: cdktf.listMapper(kubernetesNodeGroupKubeletArgsToTerraform, true)(this._kubeletArgs.internalValue),
       taint: cdktf.listMapper(kubernetesNodeGroupTaintToTerraform, true)(this._taint.internalValue),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      anti_affinity: {
+        value: cdktf.booleanToHclTerraform(this._antiAffinity),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      cluster: {
+        value: cdktf.stringToHclTerraform(this._cluster),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      labels: {
+        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._labels),
+        isBlock: false,
+        type: "map",
+        storageClassType: "stringMap",
+      },
+      name: {
+        value: cdktf.stringToHclTerraform(this._name),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      node_count: {
+        value: cdktf.numberToHclTerraform(this._nodeCount),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "number",
+      },
+      plan: {
+        value: cdktf.stringToHclTerraform(this._plan),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      ssh_keys: {
+        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._sshKeys),
+        isBlock: false,
+        type: "set",
+        storageClassType: "stringList",
+      },
+      utility_network_access: {
+        value: cdktf.booleanToHclTerraform(this._utilityNetworkAccess),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      kubelet_args: {
+        value: cdktf.listMapperHcl(kubernetesNodeGroupKubeletArgsToHclTerraform, true)(this._kubeletArgs.internalValue),
+        isBlock: true,
+        type: "set",
+        storageClassType: "KubernetesNodeGroupKubeletArgsList",
+      },
+      taint: {
+        value: cdktf.listMapperHcl(kubernetesNodeGroupTaintToHclTerraform, true)(this._taint.internalValue),
+        isBlock: true,
+        type: "set",
+        storageClassType: "KubernetesNodeGroupTaintList",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

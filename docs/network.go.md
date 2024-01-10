@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/upcloudltd/upcloud/3
 #### Initializers <a name="Initializers" id="@cdktf/provider-upcloud.network.Network.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v11/network"
+import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/network"
 
 network.NewNetwork(scope Construct, id *string, config NetworkConfig) Network
 ```
@@ -54,6 +54,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-upcloud.network.Network.addOverride">AddOverride</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.network.Network.overrideLogicalId">OverrideLogicalId</a></code> | Overrides the auto-generated logical ID with a specific ID. |
 | <code><a href="#@cdktf/provider-upcloud.network.Network.resetOverrideLogicalId">ResetOverrideLogicalId</a></code> | Resets a previously passed logical Id to use the auto-generated logical id again. |
+| <code><a href="#@cdktf/provider-upcloud.network.Network.toHclTerraform">ToHclTerraform</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.network.Network.toMetadata">ToMetadata</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.network.Network.toTerraform">ToTerraform</a></code> | Adds this resource to the terraform JSON output. |
 | <code><a href="#@cdktf/provider-upcloud.network.Network.addMoveTarget">AddMoveTarget</a></code> | Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move. |
@@ -127,6 +128,12 @@ func ResetOverrideLogicalId()
 ```
 
 Resets a previously passed logical Id to use the auto-generated logical id again.
+
+##### `ToHclTerraform` <a name="ToHclTerraform" id="@cdktf/provider-upcloud.network.Network.toHclTerraform"></a>
+
+```go
+func ToHclTerraform() interface{}
+```
 
 ##### `ToMetadata` <a name="ToMetadata" id="@cdktf/provider-upcloud.network.Network.toMetadata"></a>
 
@@ -398,7 +405,7 @@ func ResetRouter()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-upcloud.network.Network.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v11/network"
+import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/network"
 
 network.Network_IsConstruct(x interface{}) *bool
 ```
@@ -430,7 +437,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-upcloud.network.Network.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v11/network"
+import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/network"
 
 network.Network_IsTerraformElement(x interface{}) *bool
 ```
@@ -444,7 +451,7 @@ network.Network_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-upcloud.network.Network.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v11/network"
+import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/network"
 
 network.Network_IsTerraformResource(x interface{}) *bool
 ```
@@ -458,7 +465,7 @@ network.Network_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-upcloud.network.Network.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v11/network"
+import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/network"
 
 network.Network_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -808,7 +815,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-upcloud.network.NetworkConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v11/network"
+import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/network"
 
 &network.NetworkConfig {
 	Connection: interface{},
@@ -818,7 +825,7 @@ import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v11/network"
 	Lifecycle: github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle,
 	Provider: github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider,
 	Provisioners: *[]interface{},
-	IpNetwork: github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v11.network.NetworkIpNetwork,
+	IpNetwork: github.com/cdktf/cdktf-provider-upcloud-go/upcloud.network.NetworkIpNetwork,
 	Name: *string,
 	Zone: *string,
 	Id: *string,
@@ -991,7 +998,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upclo
 #### Initializer <a name="Initializer" id="@cdktf/provider-upcloud.network.NetworkIpNetwork.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v11/network"
+import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/network"
 
 &network.NetworkIpNetwork {
 	Address: *string,
@@ -1123,7 +1130,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upclo
 #### Initializers <a name="Initializers" id="@cdktf/provider-upcloud.network.NetworkIpNetworkOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v11/network"
+import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/network"
 
 network.NewNetworkIpNetworkOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) NetworkIpNetworkOutputReference
 ```

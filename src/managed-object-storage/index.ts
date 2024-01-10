@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/upcloudltd/upcloud/3.3.0/docs/resources/managed_object_storage
 // generated from terraform resource schema
 
@@ -66,6 +61,17 @@ export function managedObjectStorageEndpointToTerraform(struct?: ManagedObjectSt
   }
   return {
   }
+}
+
+
+export function managedObjectStorageEndpointToHclTerraform(struct?: ManagedObjectStorageEndpoint): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
 }
 
 export class ManagedObjectStorageEndpointOutputReference extends cdktf.ComplexObject {
@@ -163,6 +169,43 @@ export function managedObjectStorageNetworkToTerraform(struct?: ManagedObjectSto
     type: cdktf.stringToTerraform(struct!.type),
     uuid: cdktf.stringToTerraform(struct!.uuid),
   }
+}
+
+
+export function managedObjectStorageNetworkToHclTerraform(struct?: ManagedObjectStorageNetwork | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    family: {
+      value: cdktf.stringToHclTerraform(struct!.family),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    name: {
+      value: cdktf.stringToHclTerraform(struct!.name),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    type: {
+      value: cdktf.stringToHclTerraform(struct!.type),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    uuid: {
+      value: cdktf.stringToHclTerraform(struct!.uuid),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class ManagedObjectStorageNetworkOutputReference extends cdktf.ComplexObject {
@@ -505,5 +548,55 @@ export class ManagedObjectStorage extends cdktf.TerraformResource {
       users: cdktf.listMapper(cdktf.stringToTerraform, false)(this._users),
       network: cdktf.listMapper(managedObjectStorageNetworkToTerraform, true)(this._network.internalValue),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      configured_status: {
+        value: cdktf.stringToHclTerraform(this._configuredStatus),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      labels: {
+        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._labels),
+        isBlock: false,
+        type: "map",
+        storageClassType: "stringMap",
+      },
+      name: {
+        value: cdktf.stringToHclTerraform(this._name),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      region: {
+        value: cdktf.stringToHclTerraform(this._region),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      users: {
+        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._users),
+        isBlock: false,
+        type: "set",
+        storageClassType: "stringList",
+      },
+      network: {
+        value: cdktf.listMapperHcl(managedObjectStorageNetworkToHclTerraform, true)(this._network.internalValue),
+        isBlock: true,
+        type: "set",
+        storageClassType: "ManagedObjectStorageNetworkList",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

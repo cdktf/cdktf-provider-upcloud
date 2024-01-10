@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/upcloudltd/upcloud/3.3.0/docs/resources/floating_ip_address
 // generated from terraform resource schema
 
@@ -204,5 +199,43 @@ export class FloatingIpAddress extends cdktf.TerraformResource {
       mac_address: cdktf.stringToTerraform(this._macAddress),
       zone: cdktf.stringToTerraform(this._zone),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      access: {
+        value: cdktf.stringToHclTerraform(this._access),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      family: {
+        value: cdktf.stringToHclTerraform(this._family),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      mac_address: {
+        value: cdktf.stringToHclTerraform(this._macAddress),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      zone: {
+        value: cdktf.stringToHclTerraform(this._zone),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

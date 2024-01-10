@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/upcloudltd/upcloud/3.3.0/docs/data-sources/networks
 // generated from terraform resource schema
 
@@ -42,6 +37,17 @@ export function dataUpcloudNetworksNetworksIpNetworkToTerraform(struct?: DataUpc
   }
   return {
   }
+}
+
+
+export function dataUpcloudNetworksNetworksIpNetworkToHclTerraform(struct?: DataUpcloudNetworksNetworksIpNetwork): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
 }
 
 export class DataUpcloudNetworksNetworksIpNetworkOutputReference extends cdktf.ComplexObject {
@@ -138,6 +144,17 @@ export function dataUpcloudNetworksNetworksServersToTerraform(struct?: DataUpclo
   }
 }
 
+
+export function dataUpcloudNetworksNetworksServersToHclTerraform(struct?: DataUpcloudNetworksNetworksServers): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
+}
+
 export class DataUpcloudNetworksNetworksServersOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -205,6 +222,17 @@ export function dataUpcloudNetworksNetworksToTerraform(struct?: DataUpcloudNetwo
   }
   return {
   }
+}
+
+
+export function dataUpcloudNetworksNetworksToHclTerraform(struct?: DataUpcloudNetworksNetworks): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
 }
 
 export class DataUpcloudNetworksNetworksOutputReference extends cdktf.ComplexObject {
@@ -411,5 +439,31 @@ export class DataUpcloudNetworks extends cdktf.TerraformDataSource {
       id: cdktf.stringToTerraform(this._id),
       zone: cdktf.stringToTerraform(this._zone),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      filter_name: {
+        value: cdktf.stringToHclTerraform(this._filterName),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      zone: {
+        value: cdktf.stringToHclTerraform(this._zone),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

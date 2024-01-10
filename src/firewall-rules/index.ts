@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/upcloudltd/upcloud/3.3.0/docs/resources/firewall_rules
 // generated from terraform resource schema
 
@@ -140,6 +135,103 @@ export function firewallRulesFirewallRuleToTerraform(struct?: FirewallRulesFirew
     source_port_end: cdktf.stringToTerraform(struct!.sourcePortEnd),
     source_port_start: cdktf.stringToTerraform(struct!.sourcePortStart),
   }
+}
+
+
+export function firewallRulesFirewallRuleToHclTerraform(struct?: FirewallRulesFirewallRule | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    action: {
+      value: cdktf.stringToHclTerraform(struct!.action),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    comment: {
+      value: cdktf.stringToHclTerraform(struct!.comment),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    destination_address_end: {
+      value: cdktf.stringToHclTerraform(struct!.destinationAddressEnd),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    destination_address_start: {
+      value: cdktf.stringToHclTerraform(struct!.destinationAddressStart),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    destination_port_end: {
+      value: cdktf.stringToHclTerraform(struct!.destinationPortEnd),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    destination_port_start: {
+      value: cdktf.stringToHclTerraform(struct!.destinationPortStart),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    direction: {
+      value: cdktf.stringToHclTerraform(struct!.direction),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    family: {
+      value: cdktf.stringToHclTerraform(struct!.family),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    icmp_type: {
+      value: cdktf.stringToHclTerraform(struct!.icmpType),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    protocol: {
+      value: cdktf.stringToHclTerraform(struct!.protocol),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    source_address_end: {
+      value: cdktf.stringToHclTerraform(struct!.sourceAddressEnd),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    source_address_start: {
+      value: cdktf.stringToHclTerraform(struct!.sourceAddressStart),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    source_port_end: {
+      value: cdktf.stringToHclTerraform(struct!.sourcePortEnd),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    source_port_start: {
+      value: cdktf.stringToHclTerraform(struct!.sourcePortStart),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class FirewallRulesFirewallRuleOutputReference extends cdktf.ComplexObject {
@@ -615,5 +707,31 @@ export class FirewallRules extends cdktf.TerraformResource {
       server_id: cdktf.stringToTerraform(this._serverId),
       firewall_rule: cdktf.listMapper(firewallRulesFirewallRuleToTerraform, true)(this._firewallRule.internalValue),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      server_id: {
+        value: cdktf.stringToHclTerraform(this._serverId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      firewall_rule: {
+        value: cdktf.listMapperHcl(firewallRulesFirewallRuleToHclTerraform, true)(this._firewallRule.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "FirewallRulesFirewallRuleList",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

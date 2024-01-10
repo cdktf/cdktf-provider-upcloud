@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/upcloudltd/upcloud/3.3.0/docs/resources/gateway
 // generated from terraform resource schema
 
@@ -66,6 +61,17 @@ export function gatewayAddressesToTerraform(struct?: GatewayAddresses): any {
   }
   return {
   }
+}
+
+
+export function gatewayAddressesToHclTerraform(struct?: GatewayAddresses): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
 }
 
 export class GatewayAddressesOutputReference extends cdktf.ComplexObject {
@@ -145,6 +151,25 @@ export function gatewayRouterToTerraform(struct?: GatewayRouterOutputReference |
   return {
     id: cdktf.stringToTerraform(struct!.id),
   }
+}
+
+
+export function gatewayRouterToHclTerraform(struct?: GatewayRouterOutputReference | GatewayRouter): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    id: {
+      value: cdktf.stringToHclTerraform(struct!.id),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class GatewayRouterOutputReference extends cdktf.ComplexObject {
@@ -382,5 +407,55 @@ export class Gateway extends cdktf.TerraformResource {
       zone: cdktf.stringToTerraform(this._zone),
       router: gatewayRouterToTerraform(this._router.internalValue),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      configured_status: {
+        value: cdktf.stringToHclTerraform(this._configuredStatus),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      features: {
+        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._features),
+        isBlock: false,
+        type: "set",
+        storageClassType: "stringList",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      labels: {
+        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._labels),
+        isBlock: false,
+        type: "map",
+        storageClassType: "stringMap",
+      },
+      name: {
+        value: cdktf.stringToHclTerraform(this._name),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      zone: {
+        value: cdktf.stringToHclTerraform(this._zone),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      router: {
+        value: gatewayRouterToHclTerraform(this._router.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "GatewayRouterList",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

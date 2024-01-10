@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/upcloudltd/upcloud/3.3.0/docs/resources/managed_database_user
 // generated from terraform resource schema
 
@@ -86,6 +81,31 @@ export function managedDatabaseUserOpensearchAccessControlRulesToTerraform(struc
     index: cdktf.stringToTerraform(struct!.index),
     permission: cdktf.stringToTerraform(struct!.permission),
   }
+}
+
+
+export function managedDatabaseUserOpensearchAccessControlRulesToHclTerraform(struct?: ManagedDatabaseUserOpensearchAccessControlRules | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    index: {
+      value: cdktf.stringToHclTerraform(struct!.index),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    permission: {
+      value: cdktf.stringToHclTerraform(struct!.permission),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class ManagedDatabaseUserOpensearchAccessControlRulesOutputReference extends cdktf.ComplexObject {
@@ -203,6 +223,25 @@ export function managedDatabaseUserOpensearchAccessControlToTerraform(struct?: M
   }
 }
 
+
+export function managedDatabaseUserOpensearchAccessControlToHclTerraform(struct?: ManagedDatabaseUserOpensearchAccessControlOutputReference | ManagedDatabaseUserOpensearchAccessControl): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    rules: {
+      value: cdktf.listMapperHcl(managedDatabaseUserOpensearchAccessControlRulesToHclTerraform, true)(struct!.rules),
+      isBlock: true,
+      type: "list",
+      storageClassType: "ManagedDatabaseUserOpensearchAccessControlRulesList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class ManagedDatabaseUserOpensearchAccessControlOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -265,6 +304,25 @@ export function managedDatabaseUserPgAccessControlToTerraform(struct?: ManagedDa
   return {
     allow_replication: cdktf.booleanToTerraform(struct!.allowReplication),
   }
+}
+
+
+export function managedDatabaseUserPgAccessControlToHclTerraform(struct?: ManagedDatabaseUserPgAccessControlOutputReference | ManagedDatabaseUserPgAccessControl): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    allow_replication: {
+      value: cdktf.booleanToHclTerraform(struct!.allowReplication),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class ManagedDatabaseUserPgAccessControlOutputReference extends cdktf.ComplexObject {
@@ -353,6 +411,43 @@ export function managedDatabaseUserRedisAccessControlToTerraform(struct?: Manage
     commands: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.commands),
     keys: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.keys),
   }
+}
+
+
+export function managedDatabaseUserRedisAccessControlToHclTerraform(struct?: ManagedDatabaseUserRedisAccessControlOutputReference | ManagedDatabaseUserRedisAccessControl): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    categories: {
+      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.categories),
+      isBlock: false,
+      type: "list",
+      storageClassType: "stringList",
+    },
+    channels: {
+      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.channels),
+      isBlock: false,
+      type: "list",
+      storageClassType: "stringList",
+    },
+    commands: {
+      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.commands),
+      isBlock: false,
+      type: "list",
+      storageClassType: "stringList",
+    },
+    keys: {
+      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.keys),
+      isBlock: false,
+      type: "list",
+      storageClassType: "stringList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class ManagedDatabaseUserRedisAccessControlOutputReference extends cdktf.ComplexObject {
@@ -677,5 +772,61 @@ export class ManagedDatabaseUser extends cdktf.TerraformResource {
       pg_access_control: managedDatabaseUserPgAccessControlToTerraform(this._pgAccessControl.internalValue),
       redis_access_control: managedDatabaseUserRedisAccessControlToTerraform(this._redisAccessControl.internalValue),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      authentication: {
+        value: cdktf.stringToHclTerraform(this._authentication),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      password: {
+        value: cdktf.stringToHclTerraform(this._password),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      service: {
+        value: cdktf.stringToHclTerraform(this._service),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      username: {
+        value: cdktf.stringToHclTerraform(this._username),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      opensearch_access_control: {
+        value: managedDatabaseUserOpensearchAccessControlToHclTerraform(this._opensearchAccessControl.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "ManagedDatabaseUserOpensearchAccessControlList",
+      },
+      pg_access_control: {
+        value: managedDatabaseUserPgAccessControlToHclTerraform(this._pgAccessControl.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "ManagedDatabaseUserPgAccessControlList",
+      },
+      redis_access_control: {
+        value: managedDatabaseUserRedisAccessControlToHclTerraform(this._redisAccessControl.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "ManagedDatabaseUserRedisAccessControlList",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }
