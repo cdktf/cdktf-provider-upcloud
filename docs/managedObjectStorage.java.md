@@ -4,7 +4,7 @@
 
 ### ManagedObjectStorage <a name="ManagedObjectStorage" id="@cdktf/provider-upcloud.managedObjectStorage.ManagedObjectStorage"></a>
 
-Represents a {@link https://registry.terraform.io/providers/upcloudltd/upcloud/3.3.0/docs/resources/managed_object_storage upcloud_managed_object_storage}.
+Represents a {@link https://registry.terraform.io/providers/upcloudltd/upcloud/3.3.1/docs/resources/managed_object_storage upcloud_managed_object_storage}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-upcloud.managedObjectStorage.ManagedObjectStorage.Initializer"></a>
 
@@ -48,7 +48,7 @@ ManagedObjectStorage.Builder.create(Construct scope, java.lang.String id)
 | <code><a href="#@cdktf/provider-upcloud.managedObjectStorage.ManagedObjectStorage.Initializer.parameter.configuredStatus">configuredStatus</a></code> | <code>java.lang.String</code> | Service status managed by the end user. |
 | <code><a href="#@cdktf/provider-upcloud.managedObjectStorage.ManagedObjectStorage.Initializer.parameter.name">name</a></code> | <code>java.lang.String</code> | Name of the Managed Object Storage service. Must be unique within account. |
 | <code><a href="#@cdktf/provider-upcloud.managedObjectStorage.ManagedObjectStorage.Initializer.parameter.region">region</a></code> | <code>java.lang.String</code> | Region in which the service will be hosted, see `upcloud_managed_object_storage_regions` data source. |
-| <code><a href="#@cdktf/provider-upcloud.managedObjectStorage.ManagedObjectStorage.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/3.3.0/docs/resources/managed_object_storage#id ManagedObjectStorage#id}. |
+| <code><a href="#@cdktf/provider-upcloud.managedObjectStorage.ManagedObjectStorage.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/3.3.1/docs/resources/managed_object_storage#id ManagedObjectStorage#id}. |
 | <code><a href="#@cdktf/provider-upcloud.managedObjectStorage.ManagedObjectStorage.Initializer.parameter.labels">labels</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | Key-value pairs to classify the managed object storage. |
 | <code><a href="#@cdktf/provider-upcloud.managedObjectStorage.ManagedObjectStorage.Initializer.parameter.network">network</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-upcloud.managedObjectStorage.ManagedObjectStorageNetwork">ManagedObjectStorageNetwork</a>></code> | network block. |
 | <code><a href="#@cdktf/provider-upcloud.managedObjectStorage.ManagedObjectStorage.Initializer.parameter.users">users</a></code> | <code>java.util.List<java.lang.String></code> | List of UpCloud API users allowed to use object storage. |
@@ -121,7 +121,7 @@ Must be unique amongst siblings in the same scope
 
 Service status managed by the end user.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/3.3.0/docs/resources/managed_object_storage#configured_status ManagedObjectStorage#configured_status}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/3.3.1/docs/resources/managed_object_storage#configured_status ManagedObjectStorage#configured_status}
 
 ---
 
@@ -131,7 +131,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upclo
 
 Name of the Managed Object Storage service. Must be unique within account.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/3.3.0/docs/resources/managed_object_storage#name ManagedObjectStorage#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/3.3.1/docs/resources/managed_object_storage#name ManagedObjectStorage#name}
 
 ---
 
@@ -141,7 +141,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upclo
 
 Region in which the service will be hosted, see `upcloud_managed_object_storage_regions` data source.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/3.3.0/docs/resources/managed_object_storage#region ManagedObjectStorage#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/3.3.1/docs/resources/managed_object_storage#region ManagedObjectStorage#region}
 
 ---
 
@@ -149,7 +149,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upclo
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/3.3.0/docs/resources/managed_object_storage#id ManagedObjectStorage#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/3.3.1/docs/resources/managed_object_storage#id ManagedObjectStorage#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -162,7 +162,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 Key-value pairs to classify the managed object storage.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/3.3.0/docs/resources/managed_object_storage#labels ManagedObjectStorage#labels}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/3.3.1/docs/resources/managed_object_storage#labels ManagedObjectStorage#labels}
 
 ---
 
@@ -172,7 +172,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upclo
 
 network block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/3.3.0/docs/resources/managed_object_storage#network ManagedObjectStorage#network}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/3.3.1/docs/resources/managed_object_storage#network ManagedObjectStorage#network}
 
 ---
 
@@ -184,7 +184,7 @@ List of UpCloud API users allowed to use object storage.
 
 Valid values include current account and it's sub-accounts. See `upcloud_managed_object_storage_user_access_key` for managing access keys.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/3.3.0/docs/resources/managed_object_storage#users ManagedObjectStorage#users}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/3.3.1/docs/resources/managed_object_storage#users ManagedObjectStorage#users}
 
 ---
 
@@ -652,7 +652,7 @@ The construct id used in the generated config for the ManagedObjectStorage to im
 
 The id of the existing ManagedObjectStorage that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/upcloudltd/upcloud/3.3.0/docs/resources/managed_object_storage#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/upcloudltd/upcloud/3.3.1/docs/resources/managed_object_storage#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1089,7 +1089,7 @@ ManagedObjectStorageConfig.builder()
 | <code><a href="#@cdktf/provider-upcloud.managedObjectStorage.ManagedObjectStorageConfig.property.configuredStatus">configuredStatus</a></code> | <code>java.lang.String</code> | Service status managed by the end user. |
 | <code><a href="#@cdktf/provider-upcloud.managedObjectStorage.ManagedObjectStorageConfig.property.name">name</a></code> | <code>java.lang.String</code> | Name of the Managed Object Storage service. Must be unique within account. |
 | <code><a href="#@cdktf/provider-upcloud.managedObjectStorage.ManagedObjectStorageConfig.property.region">region</a></code> | <code>java.lang.String</code> | Region in which the service will be hosted, see `upcloud_managed_object_storage_regions` data source. |
-| <code><a href="#@cdktf/provider-upcloud.managedObjectStorage.ManagedObjectStorageConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/3.3.0/docs/resources/managed_object_storage#id ManagedObjectStorage#id}. |
+| <code><a href="#@cdktf/provider-upcloud.managedObjectStorage.ManagedObjectStorageConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/3.3.1/docs/resources/managed_object_storage#id ManagedObjectStorage#id}. |
 | <code><a href="#@cdktf/provider-upcloud.managedObjectStorage.ManagedObjectStorageConfig.property.labels">labels</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | Key-value pairs to classify the managed object storage. |
 | <code><a href="#@cdktf/provider-upcloud.managedObjectStorage.ManagedObjectStorageConfig.property.network">network</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-upcloud.managedObjectStorage.ManagedObjectStorageNetwork">ManagedObjectStorageNetwork</a>></code> | network block. |
 | <code><a href="#@cdktf/provider-upcloud.managedObjectStorage.ManagedObjectStorageConfig.property.users">users</a></code> | <code>java.util.List<java.lang.String></code> | List of UpCloud API users allowed to use object storage. |
@@ -1176,7 +1176,7 @@ public java.lang.String getConfiguredStatus();
 
 Service status managed by the end user.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/3.3.0/docs/resources/managed_object_storage#configured_status ManagedObjectStorage#configured_status}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/3.3.1/docs/resources/managed_object_storage#configured_status ManagedObjectStorage#configured_status}
 
 ---
 
@@ -1190,7 +1190,7 @@ public java.lang.String getName();
 
 Name of the Managed Object Storage service. Must be unique within account.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/3.3.0/docs/resources/managed_object_storage#name ManagedObjectStorage#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/3.3.1/docs/resources/managed_object_storage#name ManagedObjectStorage#name}
 
 ---
 
@@ -1204,7 +1204,7 @@ public java.lang.String getRegion();
 
 Region in which the service will be hosted, see `upcloud_managed_object_storage_regions` data source.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/3.3.0/docs/resources/managed_object_storage#region ManagedObjectStorage#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/3.3.1/docs/resources/managed_object_storage#region ManagedObjectStorage#region}
 
 ---
 
@@ -1216,7 +1216,7 @@ public java.lang.String getId();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/3.3.0/docs/resources/managed_object_storage#id ManagedObjectStorage#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/3.3.1/docs/resources/managed_object_storage#id ManagedObjectStorage#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1233,7 +1233,7 @@ public java.util.Map<java.lang.String, java.lang.String> getLabels();
 
 Key-value pairs to classify the managed object storage.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/3.3.0/docs/resources/managed_object_storage#labels ManagedObjectStorage#labels}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/3.3.1/docs/resources/managed_object_storage#labels ManagedObjectStorage#labels}
 
 ---
 
@@ -1247,7 +1247,7 @@ public java.lang.Object getNetwork();
 
 network block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/3.3.0/docs/resources/managed_object_storage#network ManagedObjectStorage#network}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/3.3.1/docs/resources/managed_object_storage#network ManagedObjectStorage#network}
 
 ---
 
@@ -1263,7 +1263,7 @@ List of UpCloud API users allowed to use object storage.
 
 Valid values include current account and it's sub-accounts. See `upcloud_managed_object_storage_user_access_key` for managing access keys.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/3.3.0/docs/resources/managed_object_storage#users ManagedObjectStorage#users}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/3.3.1/docs/resources/managed_object_storage#users ManagedObjectStorage#users}
 
 ---
 
@@ -1315,7 +1315,7 @@ public java.lang.String getFamily();
 
 Network family. IPv6 currently not supported.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/3.3.0/docs/resources/managed_object_storage#family ManagedObjectStorage#family}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/3.3.1/docs/resources/managed_object_storage#family ManagedObjectStorage#family}
 
 ---
 
@@ -1329,7 +1329,7 @@ public java.lang.String getName();
 
 Network name. Must be unique within the service.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/3.3.0/docs/resources/managed_object_storage#name ManagedObjectStorage#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/3.3.1/docs/resources/managed_object_storage#name ManagedObjectStorage#name}
 
 ---
 
@@ -1343,7 +1343,7 @@ public java.lang.String getType();
 
 Network type.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/3.3.0/docs/resources/managed_object_storage#type ManagedObjectStorage#type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/3.3.1/docs/resources/managed_object_storage#type ManagedObjectStorage#type}
 
 ---
 
@@ -1357,7 +1357,7 @@ public java.lang.String getUuid();
 
 Private network uuid. For public networks the field should be omitted.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/3.3.0/docs/resources/managed_object_storage#uuid ManagedObjectStorage#uuid}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/3.3.1/docs/resources/managed_object_storage#uuid ManagedObjectStorage#uuid}
 
 ---
 

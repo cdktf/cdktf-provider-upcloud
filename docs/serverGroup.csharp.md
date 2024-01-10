@@ -4,7 +4,7 @@
 
 ### ServerGroup <a name="ServerGroup" id="@cdktf/provider-upcloud.serverGroup.ServerGroup"></a>
 
-Represents a {@link https://registry.terraform.io/providers/upcloudltd/upcloud/3.3.0/docs/resources/server_group upcloud_server_group}.
+Represents a {@link https://registry.terraform.io/providers/upcloudltd/upcloud/3.3.1/docs/resources/server_group upcloud_server_group}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-upcloud.serverGroup.ServerGroup.Initializer"></a>
 
@@ -495,7 +495,7 @@ The construct id used in the generated config for the ServerGroup to import.
 
 The id of the existing ServerGroup that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/upcloudltd/upcloud/3.3.0/docs/resources/server_group#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/upcloudltd/upcloud/3.3.1/docs/resources/server_group#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -836,7 +836,7 @@ new ServerGroupConfig {
 | <code><a href="#@cdktf/provider-upcloud.serverGroup.ServerGroupConfig.property.provisioners">Provisioners</a></code> | <code>object[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.serverGroup.ServerGroupConfig.property.title">Title</a></code> | <code>string</code> | Title of your server group. |
 | <code><a href="#@cdktf/provider-upcloud.serverGroup.ServerGroupConfig.property.antiAffinityPolicy">AntiAffinityPolicy</a></code> | <code>string</code> | Defines if a server group is an anti-affinity group. |
-| <code><a href="#@cdktf/provider-upcloud.serverGroup.ServerGroupConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/3.3.0/docs/resources/server_group#id ServerGroup#id}. |
+| <code><a href="#@cdktf/provider-upcloud.serverGroup.ServerGroupConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/3.3.1/docs/resources/server_group#id ServerGroup#id}. |
 | <code><a href="#@cdktf/provider-upcloud.serverGroup.ServerGroupConfig.property.labels">Labels</a></code> | <code>System.Collections.Generic.IDictionary<string, string></code> | Key-value pairs to classify the server group. |
 | <code><a href="#@cdktf/provider-upcloud.serverGroup.ServerGroupConfig.property.members">Members</a></code> | <code>string[]</code> | UUIDs of the servers that are members of this group. |
 
@@ -922,7 +922,7 @@ public string Title { get; set; }
 
 Title of your server group.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/3.3.0/docs/resources/server_group#title ServerGroup#title}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/3.3.1/docs/resources/server_group#title ServerGroup#title}
 
 ---
 
@@ -952,7 +952,7 @@ policies in server group are not met, you need to manually restart the servers i
 for example via API, UpCloud Control Panel or upctl (UpCloud CLI)
 ```
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/3.3.0/docs/resources/server_group#anti_affinity_policy ServerGroup#anti_affinity_policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/3.3.1/docs/resources/server_group#anti_affinity_policy ServerGroup#anti_affinity_policy}
 
 ---
 
@@ -964,7 +964,7 @@ public string Id { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/3.3.0/docs/resources/server_group#id ServerGroup#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/3.3.1/docs/resources/server_group#id ServerGroup#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -981,7 +981,7 @@ public System.Collections.Generic.IDictionary<string, string> Labels { get; set;
 
 Key-value pairs to classify the server group.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/3.3.0/docs/resources/server_group#labels ServerGroup#labels}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/3.3.1/docs/resources/server_group#labels ServerGroup#labels}
 
 ---
 
@@ -995,7 +995,7 @@ public string[] Members { get; set; }
 
 UUIDs of the servers that are members of this group.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/3.3.0/docs/resources/server_group#members ServerGroup#members}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/3.3.1/docs/resources/server_group#members ServerGroup#members}
 
 ---
 
