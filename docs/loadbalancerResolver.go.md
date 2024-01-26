@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/upcloudltd/upcloud/3
 #### Initializers <a name="Initializers" id="@cdktf/provider-upcloud.loadbalancerResolver.LoadbalancerResolver.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/loadbalancerresolver"
+import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v12/loadbalancerresolver"
 
 loadbalancerresolver.NewLoadbalancerResolver(scope Construct, id *string, config LoadbalancerResolverConfig) LoadbalancerResolver
 ```
@@ -385,7 +385,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-upcloud.loadbalancerResolver.LoadbalancerResolver.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/loadbalancerresolver"
+import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v12/loadbalancerresolver"
 
 loadbalancerresolver.LoadbalancerResolver_IsConstruct(x interface{}) *bool
 ```
@@ -417,7 +417,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-upcloud.loadbalancerResolver.LoadbalancerResolver.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/loadbalancerresolver"
+import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v12/loadbalancerresolver"
 
 loadbalancerresolver.LoadbalancerResolver_IsTerraformElement(x interface{}) *bool
 ```
@@ -431,7 +431,7 @@ loadbalancerresolver.LoadbalancerResolver_IsTerraformElement(x interface{}) *boo
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-upcloud.loadbalancerResolver.LoadbalancerResolver.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/loadbalancerresolver"
+import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v12/loadbalancerresolver"
 
 loadbalancerresolver.LoadbalancerResolver_IsTerraformResource(x interface{}) *bool
 ```
@@ -445,7 +445,7 @@ loadbalancerresolver.LoadbalancerResolver_IsTerraformResource(x interface{}) *bo
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-upcloud.loadbalancerResolver.LoadbalancerResolver.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/loadbalancerresolver"
+import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v12/loadbalancerresolver"
 
 loadbalancerresolver.LoadbalancerResolver_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -872,7 +872,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-upcloud.loadbalancerResolver.LoadbalancerResolverConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/loadbalancerresolver"
+import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v12/loadbalancerresolver"
 
 &loadbalancerresolver.LoadbalancerResolverConfig {
 	Connection: interface{},
