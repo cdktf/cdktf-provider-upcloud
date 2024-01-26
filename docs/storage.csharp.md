@@ -4,7 +4,7 @@
 
 ### Storage <a name="Storage" id="@cdktf/provider-upcloud.storage.Storage"></a>
 
-Represents a {@link https://registry.terraform.io/providers/upcloudltd/upcloud/3.3.1/docs/resources/storage upcloud_storage}.
+Represents a {@link https://registry.terraform.io/providers/upcloudltd/upcloud/3.4.0/docs/resources/storage upcloud_storage}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-upcloud.storage.Storage.Initializer"></a>
 
@@ -79,6 +79,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-upcloud.storage.Storage.resetBackupRule">ResetBackupRule</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.storage.Storage.resetClone">ResetClone</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.storage.Storage.resetDeleteAutoresizeBackup">ResetDeleteAutoresizeBackup</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-upcloud.storage.Storage.resetEncrypt">ResetEncrypt</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.storage.Storage.resetFilesystemAutoresize">ResetFilesystemAutoresize</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.storage.Storage.resetId">ResetId</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.storage.Storage.resetImport">ResetImport</a></code> | *No description.* |
@@ -428,6 +429,12 @@ private void ResetClone()
 private void ResetDeleteAutoresizeBackup()
 ```
 
+##### `ResetEncrypt` <a name="ResetEncrypt" id="@cdktf/provider-upcloud.storage.Storage.resetEncrypt"></a>
+
+```csharp
+private void ResetEncrypt()
+```
+
 ##### `ResetFilesystemAutoresize` <a name="ResetFilesystemAutoresize" id="@cdktf/provider-upcloud.storage.Storage.resetFilesystemAutoresize"></a>
 
 ```csharp
@@ -555,7 +562,7 @@ The construct id used in the generated config for the Storage to import.
 
 The id of the existing Storage that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/upcloudltd/upcloud/3.3.1/docs/resources/storage#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/upcloudltd/upcloud/3.4.0/docs/resources/storage#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -591,6 +598,7 @@ Refer to the {@link https://registry.terraform.io/providers/upcloudltd/upcloud/3
 | <code><a href="#@cdktf/provider-upcloud.storage.Storage.property.backupRuleInput">BackupRuleInput</a></code> | <code><a href="#@cdktf/provider-upcloud.storage.StorageBackupRule">StorageBackupRule</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.storage.Storage.property.cloneInput">CloneInput</a></code> | <code><a href="#@cdktf/provider-upcloud.storage.StorageClone">StorageClone</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.storage.Storage.property.deleteAutoresizeBackupInput">DeleteAutoresizeBackupInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-upcloud.storage.Storage.property.encryptInput">EncryptInput</a></code> | <code>object</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.storage.Storage.property.filesystemAutoresizeInput">FilesystemAutoresizeInput</a></code> | <code>object</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.storage.Storage.property.idInput">IdInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.storage.Storage.property.importInput">ImportInput</a></code> | <code><a href="#@cdktf/provider-upcloud.storage.StorageImport">StorageImport</a></code> | *No description.* |
@@ -599,6 +607,7 @@ Refer to the {@link https://registry.terraform.io/providers/upcloudltd/upcloud/3
 | <code><a href="#@cdktf/provider-upcloud.storage.Storage.property.titleInput">TitleInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.storage.Storage.property.zoneInput">ZoneInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.storage.Storage.property.deleteAutoresizeBackup">DeleteAutoresizeBackup</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-upcloud.storage.Storage.property.encrypt">Encrypt</a></code> | <code>object</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.storage.Storage.property.filesystemAutoresize">FilesystemAutoresize</a></code> | <code>object</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.storage.Storage.property.id">Id</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.storage.Storage.property.size">Size</a></code> | <code>double</code> | *No description.* |
@@ -810,6 +819,16 @@ public object DeleteAutoresizeBackupInput { get; }
 
 ---
 
+##### `EncryptInput`<sup>Optional</sup> <a name="EncryptInput" id="@cdktf/provider-upcloud.storage.Storage.property.encryptInput"></a>
+
+```csharp
+public object EncryptInput { get; }
+```
+
+- *Type:* object
+
+---
+
 ##### `FilesystemAutoresizeInput`<sup>Optional</sup> <a name="FilesystemAutoresizeInput" id="@cdktf/provider-upcloud.storage.Storage.property.filesystemAutoresizeInput"></a>
 
 ```csharp
@@ -884,6 +903,16 @@ public string ZoneInput { get; }
 
 ```csharp
 public object DeleteAutoresizeBackup { get; }
+```
+
+- *Type:* object
+
+---
+
+##### `Encrypt`<sup>Required</sup> <a name="Encrypt" id="@cdktf/provider-upcloud.storage.Storage.property.encrypt"></a>
+
+```csharp
+public object Encrypt { get; }
 ```
 
 - *Type:* object
@@ -1004,7 +1033,7 @@ public string Interval { get; set; }
 
 The weekday when the backup is created.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/3.3.1/docs/resources/storage#interval Storage#interval}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/3.4.0/docs/resources/storage#interval Storage#interval}
 
 ---
 
@@ -1018,7 +1047,7 @@ public double Retention { get; set; }
 
 The number of days before a backup is automatically deleted.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/3.3.1/docs/resources/storage#retention Storage#retention}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/3.4.0/docs/resources/storage#retention Storage#retention}
 
 ---
 
@@ -1032,7 +1061,7 @@ public string Time { get; set; }
 
 The time of day when the backup is created.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/3.3.1/docs/resources/storage#time Storage#time}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/3.4.0/docs/resources/storage#time Storage#time}
 
 ---
 
@@ -1066,7 +1095,7 @@ public string Id { get; set; }
 
 The unique identifier of the storage/template to clone.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/3.3.1/docs/resources/storage#id Storage#id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/3.4.0/docs/resources/storage#id Storage#id}
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1094,6 +1123,7 @@ new StorageConfig {
     StorageBackupRule BackupRule = null,
     StorageClone Clone = null,
     object DeleteAutoresizeBackup = null,
+    object Encrypt = null,
     object FilesystemAutoresize = null,
     string Id = null,
     StorageImport Import = null,
@@ -1118,8 +1148,9 @@ new StorageConfig {
 | <code><a href="#@cdktf/provider-upcloud.storage.StorageConfig.property.backupRule">BackupRule</a></code> | <code><a href="#@cdktf/provider-upcloud.storage.StorageBackupRule">StorageBackupRule</a></code> | backup_rule block. |
 | <code><a href="#@cdktf/provider-upcloud.storage.StorageConfig.property.clone">Clone</a></code> | <code><a href="#@cdktf/provider-upcloud.storage.StorageClone">StorageClone</a></code> | clone block. |
 | <code><a href="#@cdktf/provider-upcloud.storage.StorageConfig.property.deleteAutoresizeBackup">DeleteAutoresizeBackup</a></code> | <code>object</code> | If set to true, the backup taken before the partition and filesystem resize attempt will be deleted immediately after success. |
+| <code><a href="#@cdktf/provider-upcloud.storage.StorageConfig.property.encrypt">Encrypt</a></code> | <code>object</code> | Sets if the storage is encrypted at rest. |
 | <code><a href="#@cdktf/provider-upcloud.storage.StorageConfig.property.filesystemAutoresize">FilesystemAutoresize</a></code> | <code>object</code> | If set to true, provider will attempt to resize partition and filesystem when the size of the storage changes. |
-| <code><a href="#@cdktf/provider-upcloud.storage.StorageConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/3.3.1/docs/resources/storage#id Storage#id}. |
+| <code><a href="#@cdktf/provider-upcloud.storage.StorageConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/3.4.0/docs/resources/storage#id Storage#id}. |
 | <code><a href="#@cdktf/provider-upcloud.storage.StorageConfig.property.import">Import</a></code> | <code><a href="#@cdktf/provider-upcloud.storage.StorageImport">StorageImport</a></code> | import block. |
 | <code><a href="#@cdktf/provider-upcloud.storage.StorageConfig.property.tier">Tier</a></code> | <code>string</code> | The storage tier to use. |
 
@@ -1205,7 +1236,7 @@ public double Size { get; set; }
 
 The size of the storage in gigabytes.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/3.3.1/docs/resources/storage#size Storage#size}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/3.4.0/docs/resources/storage#size Storage#size}
 
 ---
 
@@ -1219,7 +1250,7 @@ public string Title { get; set; }
 
 A short, informative description.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/3.3.1/docs/resources/storage#title Storage#title}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/3.4.0/docs/resources/storage#title Storage#title}
 
 ---
 
@@ -1233,7 +1264,7 @@ public string Zone { get; set; }
 
 The zone in which the storage will be created, e.g. `de-fra1`. You can list available zones with `upctl zone list`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/3.3.1/docs/resources/storage#zone Storage#zone}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/3.4.0/docs/resources/storage#zone Storage#zone}
 
 ---
 
@@ -1247,7 +1278,7 @@ public StorageBackupRule BackupRule { get; set; }
 
 backup_rule block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/3.3.1/docs/resources/storage#backup_rule Storage#backup_rule}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/3.4.0/docs/resources/storage#backup_rule Storage#backup_rule}
 
 ---
 
@@ -1261,7 +1292,7 @@ public StorageClone Clone { get; set; }
 
 clone block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/3.3.1/docs/resources/storage#clone Storage#clone}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/3.4.0/docs/resources/storage#clone Storage#clone}
 
 ---
 
@@ -1275,7 +1306,21 @@ public object DeleteAutoresizeBackup { get; set; }
 
 If set to true, the backup taken before the partition and filesystem resize attempt will be deleted immediately after success.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/3.3.1/docs/resources/storage#delete_autoresize_backup Storage#delete_autoresize_backup}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/3.4.0/docs/resources/storage#delete_autoresize_backup Storage#delete_autoresize_backup}
+
+---
+
+##### `Encrypt`<sup>Optional</sup> <a name="Encrypt" id="@cdktf/provider-upcloud.storage.StorageConfig.property.encrypt"></a>
+
+```csharp
+public object Encrypt { get; set; }
+```
+
+- *Type:* object
+
+Sets if the storage is encrypted at rest.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/3.4.0/docs/resources/storage#encrypt Storage#encrypt}
 
 ---
 
@@ -1293,7 +1338,7 @@ Please note that before the resize attempt is made, backup of the storage will b
 to restore the storage and then deleted. If the resize attempt succeeds, backup will be kept (unless delete_autoresize_backup option is set to true).
 Taking and keeping backups incure costs.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/3.3.1/docs/resources/storage#filesystem_autoresize Storage#filesystem_autoresize}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/3.4.0/docs/resources/storage#filesystem_autoresize Storage#filesystem_autoresize}
 
 ---
 
@@ -1305,7 +1350,7 @@ public string Id { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/3.3.1/docs/resources/storage#id Storage#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/3.4.0/docs/resources/storage#id Storage#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1322,7 +1367,7 @@ public StorageImport Import { get; set; }
 
 import block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/3.3.1/docs/resources/storage#import Storage#import}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/3.4.0/docs/resources/storage#import Storage#import}
 
 ---
 
@@ -1336,7 +1381,7 @@ public string Tier { get; set; }
 
 The storage tier to use.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/3.3.1/docs/resources/storage#tier Storage#tier}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/3.4.0/docs/resources/storage#tier Storage#tier}
 
 ---
 
@@ -1374,7 +1419,7 @@ public string Source { get; set; }
 
 The mode of the import task. One of `http_import` or `direct_upload`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/3.3.1/docs/resources/storage#source Storage#source}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/3.4.0/docs/resources/storage#source Storage#source}
 
 ---
 
@@ -1388,7 +1433,7 @@ public string SourceLocation { get; set; }
 
 The location of the file to import. For `http_import` an accessible URL for `direct_upload` a local file.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/3.3.1/docs/resources/storage#source_location Storage#source_location}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/3.4.0/docs/resources/storage#source_location Storage#source_location}
 
 ---
 
@@ -1402,7 +1447,7 @@ public string SourceHash { get; set; }
 
 For `direct_upload`; an optional hash of the file to upload.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/3.3.1/docs/resources/storage#source_hash Storage#source_hash}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/3.4.0/docs/resources/storage#source_hash Storage#source_hash}
 
 ---
 

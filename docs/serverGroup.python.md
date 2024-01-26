@@ -4,7 +4,7 @@
 
 ### ServerGroup <a name="ServerGroup" id="@cdktf/provider-upcloud.serverGroup.ServerGroup"></a>
 
-Represents a {@link https://registry.terraform.io/providers/upcloudltd/upcloud/3.3.1/docs/resources/server_group upcloud_server_group}.
+Represents a {@link https://registry.terraform.io/providers/upcloudltd/upcloud/3.4.0/docs/resources/server_group upcloud_server_group}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-upcloud.serverGroup.ServerGroup.Initializer"></a>
 
@@ -25,7 +25,8 @@ serverGroup.ServerGroup(
   anti_affinity_policy: str = None,
   id: str = None,
   labels: typing.Mapping[str] = None,
-  members: typing.List[str] = None
+  members: typing.List[str] = None,
+  track_members: typing.Union[bool, IResolvable] = None
 )
 ```
 
@@ -42,9 +43,10 @@ serverGroup.ServerGroup(
 | <code><a href="#@cdktf/provider-upcloud.serverGroup.ServerGroup.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.serverGroup.ServerGroup.Initializer.parameter.title">title</a></code> | <code>str</code> | Title of your server group. |
 | <code><a href="#@cdktf/provider-upcloud.serverGroup.ServerGroup.Initializer.parameter.antiAffinityPolicy">anti_affinity_policy</a></code> | <code>str</code> | Defines if a server group is an anti-affinity group. |
-| <code><a href="#@cdktf/provider-upcloud.serverGroup.ServerGroup.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/3.3.1/docs/resources/server_group#id ServerGroup#id}. |
+| <code><a href="#@cdktf/provider-upcloud.serverGroup.ServerGroup.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/3.4.0/docs/resources/server_group#id ServerGroup#id}. |
 | <code><a href="#@cdktf/provider-upcloud.serverGroup.ServerGroup.Initializer.parameter.labels">labels</a></code> | <code>typing.Mapping[str]</code> | Key-value pairs to classify the server group. |
 | <code><a href="#@cdktf/provider-upcloud.serverGroup.ServerGroup.Initializer.parameter.members">members</a></code> | <code>typing.List[str]</code> | UUIDs of the servers that are members of this group. |
+| <code><a href="#@cdktf/provider-upcloud.serverGroup.ServerGroup.Initializer.parameter.trackMembers">track_members</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Controls if members of the server group are being tracked in this resource. |
 
 ---
 
@@ -114,7 +116,7 @@ Must be unique amongst siblings in the same scope
 
 Title of your server group.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/3.3.1/docs/resources/server_group#title ServerGroup#title}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/3.4.0/docs/resources/server_group#title ServerGroup#title}
 
 ---
 
@@ -140,7 +142,7 @@ policies in server group are not met, you need to manually restart the servers i
 for example via API, UpCloud Control Panel or upctl (UpCloud CLI)
 ```
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/3.3.1/docs/resources/server_group#anti_affinity_policy ServerGroup#anti_affinity_policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/3.4.0/docs/resources/server_group#anti_affinity_policy ServerGroup#anti_affinity_policy}
 
 ---
 
@@ -148,7 +150,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upclo
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/3.3.1/docs/resources/server_group#id ServerGroup#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/3.4.0/docs/resources/server_group#id ServerGroup#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -161,7 +163,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 Key-value pairs to classify the server group.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/3.3.1/docs/resources/server_group#labels ServerGroup#labels}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/3.4.0/docs/resources/server_group#labels ServerGroup#labels}
 
 ---
 
@@ -171,7 +173,21 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upclo
 
 UUIDs of the servers that are members of this group.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/3.3.1/docs/resources/server_group#members ServerGroup#members}
+Servers can also be attached to the server group via `server_group` property of `upcloud_server`. See also `track_members` property.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/3.4.0/docs/resources/server_group#members ServerGroup#members}
+
+---
+
+##### `track_members`<sup>Optional</sup> <a name="track_members" id="@cdktf/provider-upcloud.serverGroup.ServerGroup.Initializer.parameter.trackMembers"></a>
+
+- *Type:* typing.Union[bool, cdktf.IResolvable]
+
+Controls if members of the server group are being tracked in this resource.
+
+Set to `false` when using `server_group` property of `upcloud_server` to attach servers to the server group to avoid delayed state updates.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/3.4.0/docs/resources/server_group#track_members ServerGroup#track_members}
 
 ---
 
@@ -206,6 +222,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upclo
 | <code><a href="#@cdktf/provider-upcloud.serverGroup.ServerGroup.resetId">reset_id</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.serverGroup.ServerGroup.resetLabels">reset_labels</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.serverGroup.ServerGroup.resetMembers">reset_members</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-upcloud.serverGroup.ServerGroup.resetTrackMembers">reset_track_members</a></code> | *No description.* |
 
 ---
 
@@ -558,6 +575,12 @@ def reset_labels() -> None
 def reset_members() -> None
 ```
 
+##### `reset_track_members` <a name="reset_track_members" id="@cdktf/provider-upcloud.serverGroup.ServerGroup.resetTrackMembers"></a>
+
+```python
+def reset_track_members() -> None
+```
+
 #### Static Functions <a name="Static Functions" id="Static Functions"></a>
 
 | **Name** | **Description** |
@@ -672,7 +695,7 @@ The construct id used in the generated config for the ServerGroup to import.
 
 The id of the existing ServerGroup that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/upcloudltd/upcloud/3.3.1/docs/resources/server_group#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/upcloudltd/upcloud/3.4.0/docs/resources/server_group#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -707,11 +730,13 @@ Refer to the {@link https://registry.terraform.io/providers/upcloudltd/upcloud/3
 | <code><a href="#@cdktf/provider-upcloud.serverGroup.ServerGroup.property.labelsInput">labels_input</a></code> | <code>typing.Mapping[str]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.serverGroup.ServerGroup.property.membersInput">members_input</a></code> | <code>typing.List[str]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.serverGroup.ServerGroup.property.titleInput">title_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-upcloud.serverGroup.ServerGroup.property.trackMembersInput">track_members_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.serverGroup.ServerGroup.property.antiAffinityPolicy">anti_affinity_policy</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.serverGroup.ServerGroup.property.id">id</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.serverGroup.ServerGroup.property.labels">labels</a></code> | <code>typing.Mapping[str]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.serverGroup.ServerGroup.property.members">members</a></code> | <code>typing.List[str]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.serverGroup.ServerGroup.property.title">title</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-upcloud.serverGroup.ServerGroup.property.trackMembers">track_members</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
 
 ---
 
@@ -907,6 +932,16 @@ title_input: str
 
 ---
 
+##### `track_members_input`<sup>Optional</sup> <a name="track_members_input" id="@cdktf/provider-upcloud.serverGroup.ServerGroup.property.trackMembersInput"></a>
+
+```python
+track_members_input: typing.Union[bool, IResolvable]
+```
+
+- *Type:* typing.Union[bool, cdktf.IResolvable]
+
+---
+
 ##### `anti_affinity_policy`<sup>Required</sup> <a name="anti_affinity_policy" id="@cdktf/provider-upcloud.serverGroup.ServerGroup.property.antiAffinityPolicy"></a>
 
 ```python
@@ -957,6 +992,16 @@ title: str
 
 ---
 
+##### `track_members`<sup>Required</sup> <a name="track_members" id="@cdktf/provider-upcloud.serverGroup.ServerGroup.property.trackMembers"></a>
+
+```python
+track_members: typing.Union[bool, IResolvable]
+```
+
+- *Type:* typing.Union[bool, cdktf.IResolvable]
+
+---
+
 #### Constants <a name="Constants" id="Constants"></a>
 
 | **Name** | **Type** | **Description** |
@@ -996,7 +1041,8 @@ serverGroup.ServerGroupConfig(
   anti_affinity_policy: str = None,
   id: str = None,
   labels: typing.Mapping[str] = None,
-  members: typing.List[str] = None
+  members: typing.List[str] = None,
+  track_members: typing.Union[bool, IResolvable] = None
 )
 ```
 
@@ -1013,9 +1059,10 @@ serverGroup.ServerGroupConfig(
 | <code><a href="#@cdktf/provider-upcloud.serverGroup.ServerGroupConfig.property.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.serverGroup.ServerGroupConfig.property.title">title</a></code> | <code>str</code> | Title of your server group. |
 | <code><a href="#@cdktf/provider-upcloud.serverGroup.ServerGroupConfig.property.antiAffinityPolicy">anti_affinity_policy</a></code> | <code>str</code> | Defines if a server group is an anti-affinity group. |
-| <code><a href="#@cdktf/provider-upcloud.serverGroup.ServerGroupConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/3.3.1/docs/resources/server_group#id ServerGroup#id}. |
+| <code><a href="#@cdktf/provider-upcloud.serverGroup.ServerGroupConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/3.4.0/docs/resources/server_group#id ServerGroup#id}. |
 | <code><a href="#@cdktf/provider-upcloud.serverGroup.ServerGroupConfig.property.labels">labels</a></code> | <code>typing.Mapping[str]</code> | Key-value pairs to classify the server group. |
 | <code><a href="#@cdktf/provider-upcloud.serverGroup.ServerGroupConfig.property.members">members</a></code> | <code>typing.List[str]</code> | UUIDs of the servers that are members of this group. |
+| <code><a href="#@cdktf/provider-upcloud.serverGroup.ServerGroupConfig.property.trackMembers">track_members</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Controls if members of the server group are being tracked in this resource. |
 
 ---
 
@@ -1099,7 +1146,7 @@ title: str
 
 Title of your server group.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/3.3.1/docs/resources/server_group#title ServerGroup#title}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/3.4.0/docs/resources/server_group#title ServerGroup#title}
 
 ---
 
@@ -1129,7 +1176,7 @@ policies in server group are not met, you need to manually restart the servers i
 for example via API, UpCloud Control Panel or upctl (UpCloud CLI)
 ```
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/3.3.1/docs/resources/server_group#anti_affinity_policy ServerGroup#anti_affinity_policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/3.4.0/docs/resources/server_group#anti_affinity_policy ServerGroup#anti_affinity_policy}
 
 ---
 
@@ -1141,7 +1188,7 @@ id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/3.3.1/docs/resources/server_group#id ServerGroup#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/3.4.0/docs/resources/server_group#id ServerGroup#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1158,7 +1205,7 @@ labels: typing.Mapping[str]
 
 Key-value pairs to classify the server group.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/3.3.1/docs/resources/server_group#labels ServerGroup#labels}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/3.4.0/docs/resources/server_group#labels ServerGroup#labels}
 
 ---
 
@@ -1172,7 +1219,25 @@ members: typing.List[str]
 
 UUIDs of the servers that are members of this group.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/3.3.1/docs/resources/server_group#members ServerGroup#members}
+Servers can also be attached to the server group via `server_group` property of `upcloud_server`. See also `track_members` property.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/3.4.0/docs/resources/server_group#members ServerGroup#members}
+
+---
+
+##### `track_members`<sup>Optional</sup> <a name="track_members" id="@cdktf/provider-upcloud.serverGroup.ServerGroupConfig.property.trackMembers"></a>
+
+```python
+track_members: typing.Union[bool, IResolvable]
+```
+
+- *Type:* typing.Union[bool, cdktf.IResolvable]
+
+Controls if members of the server group are being tracked in this resource.
+
+Set to `false` when using `server_group` property of `upcloud_server` to attach servers to the server group to avoid delayed state updates.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/3.4.0/docs/resources/server_group#track_members ServerGroup#track_members}
 
 ---
 
