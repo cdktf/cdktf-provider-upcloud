@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/upcloudltd/upcloud/3.4.0/docs/resources/managed_database_opensearch
+// https://registry.terraform.io/providers/upcloudltd/upcloud/4.0.0/docs/resources/managed_database_opensearch
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,17 +10,17 @@ export interface ManagedDatabaseOpensearchConfig extends cdktf.TerraformMetaArgu
   /**
   * Enables users access control for OpenSearch service. User access control rules will only be enforced if this attribute is enabled.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/3.4.0/docs/resources/managed_database_opensearch#access_control ManagedDatabaseOpensearch#access_control}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/4.0.0/docs/resources/managed_database_opensearch#access_control ManagedDatabaseOpensearch#access_control}
   */
   readonly accessControl?: boolean | cdktf.IResolvable;
   /**
   * Grant access to top-level `_mget`, `_msearch` and `_bulk` APIs. Users are limited to perform operations on indices based on the user-specific access control rules.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/3.4.0/docs/resources/managed_database_opensearch#extended_access_control ManagedDatabaseOpensearch#extended_access_control}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/4.0.0/docs/resources/managed_database_opensearch#extended_access_control ManagedDatabaseOpensearch#extended_access_control}
   */
   readonly extendedAccessControl?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/3.4.0/docs/resources/managed_database_opensearch#id ManagedDatabaseOpensearch#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/4.0.0/docs/resources/managed_database_opensearch#id ManagedDatabaseOpensearch#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -34,49 +29,49 @@ export interface ManagedDatabaseOpensearchConfig extends cdktf.TerraformMetaArgu
   /**
   * Maintenance window day of week. Lower case weekday name (monday, tuesday, ...)
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/3.4.0/docs/resources/managed_database_opensearch#maintenance_window_dow ManagedDatabaseOpensearch#maintenance_window_dow}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/4.0.0/docs/resources/managed_database_opensearch#maintenance_window_dow ManagedDatabaseOpensearch#maintenance_window_dow}
   */
   readonly maintenanceWindowDow?: string;
   /**
   * Maintenance window UTC time in hh:mm:ss format
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/3.4.0/docs/resources/managed_database_opensearch#maintenance_window_time ManagedDatabaseOpensearch#maintenance_window_time}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/4.0.0/docs/resources/managed_database_opensearch#maintenance_window_time ManagedDatabaseOpensearch#maintenance_window_time}
   */
   readonly maintenanceWindowTime?: string;
   /**
   * Name of the service. The name is used as a prefix for the logical hostname. Must be unique within an account
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/3.4.0/docs/resources/managed_database_opensearch#name ManagedDatabaseOpensearch#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/4.0.0/docs/resources/managed_database_opensearch#name ManagedDatabaseOpensearch#name}
   */
   readonly name: string;
   /**
   * Service plan to use. This determines how much resources the instance will have. You can list available plans with `upctl database plans <type>`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/3.4.0/docs/resources/managed_database_opensearch#plan ManagedDatabaseOpensearch#plan}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/4.0.0/docs/resources/managed_database_opensearch#plan ManagedDatabaseOpensearch#plan}
   */
   readonly plan: string;
   /**
   * The administrative power state of the service
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/3.4.0/docs/resources/managed_database_opensearch#powered ManagedDatabaseOpensearch#powered}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/4.0.0/docs/resources/managed_database_opensearch#powered ManagedDatabaseOpensearch#powered}
   */
   readonly powered?: boolean | cdktf.IResolvable;
   /**
   * Title of a managed database instance
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/3.4.0/docs/resources/managed_database_opensearch#title ManagedDatabaseOpensearch#title}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/4.0.0/docs/resources/managed_database_opensearch#title ManagedDatabaseOpensearch#title}
   */
-  readonly title?: string;
+  readonly title: string;
   /**
   * Zone where the instance resides, e.g. `de-fra1`. You can list available zones with `upctl zone list`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/3.4.0/docs/resources/managed_database_opensearch#zone ManagedDatabaseOpensearch#zone}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/4.0.0/docs/resources/managed_database_opensearch#zone ManagedDatabaseOpensearch#zone}
   */
   readonly zone: string;
   /**
   * properties block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/3.4.0/docs/resources/managed_database_opensearch#properties ManagedDatabaseOpensearch#properties}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/4.0.0/docs/resources/managed_database_opensearch#properties ManagedDatabaseOpensearch#properties}
   */
   readonly properties?: ManagedDatabaseOpensearchProperties;
 }
@@ -264,43 +259,43 @@ export interface ManagedDatabaseOpensearchPropertiesMigration {
   /**
   * Database name for bootstrapping the initial connection
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/3.4.0/docs/resources/managed_database_opensearch#dbname ManagedDatabaseOpensearch#dbname}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/4.0.0/docs/resources/managed_database_opensearch#dbname ManagedDatabaseOpensearch#dbname}
   */
   readonly dbname?: string;
   /**
   * Hostname or IP address of the server where to migrate data from
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/3.4.0/docs/resources/managed_database_opensearch#host ManagedDatabaseOpensearch#host}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/4.0.0/docs/resources/managed_database_opensearch#host ManagedDatabaseOpensearch#host}
   */
   readonly host?: string;
   /**
   * Comma-separated list of databases, which should be ignored during migration (supported by MySQL only at the moment)
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/3.4.0/docs/resources/managed_database_opensearch#ignore_dbs ManagedDatabaseOpensearch#ignore_dbs}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/4.0.0/docs/resources/managed_database_opensearch#ignore_dbs ManagedDatabaseOpensearch#ignore_dbs}
   */
   readonly ignoreDbs?: string;
   /**
   * Password for authentication with the server where to migrate data from
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/3.4.0/docs/resources/managed_database_opensearch#password ManagedDatabaseOpensearch#password}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/4.0.0/docs/resources/managed_database_opensearch#password ManagedDatabaseOpensearch#password}
   */
   readonly password?: string;
   /**
   * Port number of the server where to migrate data from
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/3.4.0/docs/resources/managed_database_opensearch#port ManagedDatabaseOpensearch#port}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/4.0.0/docs/resources/managed_database_opensearch#port ManagedDatabaseOpensearch#port}
   */
   readonly port?: number;
   /**
   * The server where to migrate data from is secured with SSL
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/3.4.0/docs/resources/managed_database_opensearch#ssl ManagedDatabaseOpensearch#ssl}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/4.0.0/docs/resources/managed_database_opensearch#ssl ManagedDatabaseOpensearch#ssl}
   */
   readonly ssl?: boolean | cdktf.IResolvable;
   /**
   * User name for authentication with the server where to migrate data from
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/3.4.0/docs/resources/managed_database_opensearch#username ManagedDatabaseOpensearch#username}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/4.0.0/docs/resources/managed_database_opensearch#username ManagedDatabaseOpensearch#username}
   */
   readonly username?: string;
 }
@@ -560,31 +555,31 @@ export interface ManagedDatabaseOpensearchProperties {
   /**
   * Automatic utility network IP Filter
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/3.4.0/docs/resources/managed_database_opensearch#automatic_utility_network_ip_filter ManagedDatabaseOpensearch#automatic_utility_network_ip_filter}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/4.0.0/docs/resources/managed_database_opensearch#automatic_utility_network_ip_filter ManagedDatabaseOpensearch#automatic_utility_network_ip_filter}
   */
   readonly automaticUtilityNetworkIpFilter?: boolean | cdktf.IResolvable;
   /**
   * IP filter
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/3.4.0/docs/resources/managed_database_opensearch#ip_filter ManagedDatabaseOpensearch#ip_filter}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/4.0.0/docs/resources/managed_database_opensearch#ip_filter ManagedDatabaseOpensearch#ip_filter}
   */
   readonly ipFilter?: string[];
   /**
   * Public access allows connections to your Managed Database services via the public internet.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/3.4.0/docs/resources/managed_database_opensearch#public_access ManagedDatabaseOpensearch#public_access}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/4.0.0/docs/resources/managed_database_opensearch#public_access ManagedDatabaseOpensearch#public_access}
   */
   readonly publicAccess?: boolean | cdktf.IResolvable;
   /**
   * OpenSearch major version
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/3.4.0/docs/resources/managed_database_opensearch#version ManagedDatabaseOpensearch#version}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/4.0.0/docs/resources/managed_database_opensearch#version ManagedDatabaseOpensearch#version}
   */
   readonly version?: string;
   /**
   * migration block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/3.4.0/docs/resources/managed_database_opensearch#migration ManagedDatabaseOpensearch#migration}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/4.0.0/docs/resources/managed_database_opensearch#migration ManagedDatabaseOpensearch#migration}
   */
   readonly migration?: ManagedDatabaseOpensearchPropertiesMigration;
 }
@@ -784,7 +779,7 @@ export class ManagedDatabaseOpensearchPropertiesOutputReference extends cdktf.Co
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/upcloudltd/upcloud/3.4.0/docs/resources/managed_database_opensearch upcloud_managed_database_opensearch}
+* Represents a {@link https://registry.terraform.io/providers/upcloudltd/upcloud/4.0.0/docs/resources/managed_database_opensearch upcloud_managed_database_opensearch}
 */
 export class ManagedDatabaseOpensearch extends cdktf.TerraformResource {
 
@@ -800,7 +795,7 @@ export class ManagedDatabaseOpensearch extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a ManagedDatabaseOpensearch resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the ManagedDatabaseOpensearch to import
-  * @param importFromId The id of the existing ManagedDatabaseOpensearch that should be imported. Refer to the {@link https://registry.terraform.io/providers/upcloudltd/upcloud/3.4.0/docs/resources/managed_database_opensearch#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing ManagedDatabaseOpensearch that should be imported. Refer to the {@link https://registry.terraform.io/providers/upcloudltd/upcloud/4.0.0/docs/resources/managed_database_opensearch#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the ManagedDatabaseOpensearch to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -812,7 +807,7 @@ export class ManagedDatabaseOpensearch extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/upcloudltd/upcloud/3.4.0/docs/resources/managed_database_opensearch upcloud_managed_database_opensearch} Resource
+  * Create a new {@link https://registry.terraform.io/providers/upcloudltd/upcloud/4.0.0/docs/resources/managed_database_opensearch upcloud_managed_database_opensearch} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -823,8 +818,8 @@ export class ManagedDatabaseOpensearch extends cdktf.TerraformResource {
       terraformResourceType: 'upcloud_managed_database_opensearch',
       terraformGeneratorMetadata: {
         providerName: 'upcloud',
-        providerVersion: '3.4.0',
-        providerVersionConstraint: '~> 3.0'
+        providerVersion: '4.0.0',
+        providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,
@@ -1020,16 +1015,13 @@ export class ManagedDatabaseOpensearch extends cdktf.TerraformResource {
     return this.getStringAttribute('state');
   }
 
-  // title - computed: false, optional: true, required: false
+  // title - computed: false, optional: false, required: true
   private _title?: string; 
   public get title() {
     return this.getStringAttribute('title');
   }
   public set title(value: string) {
     this._title = value;
-  }
-  public resetTitle() {
-    this._title = undefined;
   }
   // Temporarily expose input value. Use with caution.
   public get titleInput() {
