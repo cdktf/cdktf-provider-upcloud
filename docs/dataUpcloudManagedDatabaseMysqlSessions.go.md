@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/upcloudltd/upcloud/4
 #### Initializers <a name="Initializers" id="@cdktf/provider-upcloud.dataUpcloudManagedDatabaseMysqlSessions.DataUpcloudManagedDatabaseMysqlSessions.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/dataupcloudmanageddatabasemysqlsessions"
+import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v13/dataupcloudmanageddatabasemysqlsessions"
 
 dataupcloudmanageddatabasemysqlsessions.NewDataUpcloudManagedDatabaseMysqlSessions(scope Construct, id *string, config DataUpcloudManagedDatabaseMysqlSessionsConfig) DataUpcloudManagedDatabaseMysqlSessions
 ```
@@ -324,7 +324,7 @@ func ResetSessions()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-upcloud.dataUpcloudManagedDatabaseMysqlSessions.DataUpcloudManagedDatabaseMysqlSessions.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/dataupcloudmanageddatabasemysqlsessions"
+import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v13/dataupcloudmanageddatabasemysqlsessions"
 
 dataupcloudmanageddatabasemysqlsessions.DataUpcloudManagedDatabaseMysqlSessions_IsConstruct(x interface{}) *bool
 ```
@@ -356,7 +356,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-upcloud.dataUpcloudManagedDatabaseMysqlSessions.DataUpcloudManagedDatabaseMysqlSessions.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/dataupcloudmanageddatabasemysqlsessions"
+import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v13/dataupcloudmanageddatabasemysqlsessions"
 
 dataupcloudmanageddatabasemysqlsessions.DataUpcloudManagedDatabaseMysqlSessions_IsTerraformElement(x interface{}) *bool
 ```
@@ -370,7 +370,7 @@ dataupcloudmanageddatabasemysqlsessions.DataUpcloudManagedDatabaseMysqlSessions_
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-upcloud.dataUpcloudManagedDatabaseMysqlSessions.DataUpcloudManagedDatabaseMysqlSessions.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/dataupcloudmanageddatabasemysqlsessions"
+import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v13/dataupcloudmanageddatabasemysqlsessions"
 
 dataupcloudmanageddatabasemysqlsessions.DataUpcloudManagedDatabaseMysqlSessions_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -384,7 +384,7 @@ dataupcloudmanageddatabasemysqlsessions.DataUpcloudManagedDatabaseMysqlSessions_
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-upcloud.dataUpcloudManagedDatabaseMysqlSessions.DataUpcloudManagedDatabaseMysqlSessions.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/dataupcloudmanageddatabasemysqlsessions"
+import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v13/dataupcloudmanageddatabasemysqlsessions"
 
 dataupcloudmanageddatabasemysqlsessions.DataUpcloudManagedDatabaseMysqlSessions_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -723,7 +723,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-upcloud.dataUpcloudManagedDatabaseMysqlSessions.DataUpcloudManagedDatabaseMysqlSessionsConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/dataupcloudmanageddatabasemysqlsessions"
+import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v13/dataupcloudmanageddatabasemysqlsessions"
 
 &dataupcloudmanageddatabasemysqlsessions.DataUpcloudManagedDatabaseMysqlSessionsConfig {
 	Connection: interface{},
@@ -922,7 +922,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upclo
 #### Initializer <a name="Initializer" id="@cdktf/provider-upcloud.dataUpcloudManagedDatabaseMysqlSessions.DataUpcloudManagedDatabaseMysqlSessionsSessions.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/dataupcloudmanageddatabasemysqlsessions"
+import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v13/dataupcloudmanageddatabasemysqlsessions"
 
 &dataupcloudmanageddatabasemysqlsessions.DataUpcloudManagedDatabaseMysqlSessionsSessions {
 
@@ -937,7 +937,7 @@ import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/dataupcloudmanageddat
 #### Initializers <a name="Initializers" id="@cdktf/provider-upcloud.dataUpcloudManagedDatabaseMysqlSessions.DataUpcloudManagedDatabaseMysqlSessionsSessionsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/dataupcloudmanageddatabasemysqlsessions"
+import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v13/dataupcloudmanageddatabasemysqlsessions"
 
 dataupcloudmanageddatabasemysqlsessions.NewDataUpcloudManagedDatabaseMysqlSessionsSessionsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataUpcloudManagedDatabaseMysqlSessionsSessionsList
 ```
@@ -1097,7 +1097,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-upcloud.dataUpcloudManagedDatabaseMysqlSessions.DataUpcloudManagedDatabaseMysqlSessionsSessionsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/dataupcloudmanageddatabasemysqlsessions"
+import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v13/dataupcloudmanageddatabasemysqlsessions"
 
 dataupcloudmanageddatabasemysqlsessions.NewDataUpcloudManagedDatabaseMysqlSessionsSessionsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataUpcloudManagedDatabaseMysqlSessionsSessionsOutputReference
 ```

@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/upcloudltd/upcloud/4
 #### Initializers <a name="Initializers" id="@cdktf/provider-upcloud.floatingIpAddress.FloatingIpAddress.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/floatingipaddress"
+import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v13/floatingipaddress"
 
 floatingipaddress.NewFloatingIpAddress(scope Construct, id *string, config FloatingIpAddressConfig) FloatingIpAddress
 ```
@@ -413,7 +413,7 @@ func ResetZone()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-upcloud.floatingIpAddress.FloatingIpAddress.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/floatingipaddress"
+import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v13/floatingipaddress"
 
 floatingipaddress.FloatingIpAddress_IsConstruct(x interface{}) *bool
 ```
@@ -445,7 +445,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-upcloud.floatingIpAddress.FloatingIpAddress.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/floatingipaddress"
+import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v13/floatingipaddress"
 
 floatingipaddress.FloatingIpAddress_IsTerraformElement(x interface{}) *bool
 ```
@@ -459,7 +459,7 @@ floatingipaddress.FloatingIpAddress_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-upcloud.floatingIpAddress.FloatingIpAddress.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/floatingipaddress"
+import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v13/floatingipaddress"
 
 floatingipaddress.FloatingIpAddress_IsTerraformResource(x interface{}) *bool
 ```
@@ -473,7 +473,7 @@ floatingipaddress.FloatingIpAddress_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-upcloud.floatingIpAddress.FloatingIpAddress.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/floatingipaddress"
+import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v13/floatingipaddress"
 
 floatingipaddress.FloatingIpAddress_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -823,7 +823,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-upcloud.floatingIpAddress.FloatingIpAddressConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/floatingipaddress"
+import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v13/floatingipaddress"
 
 &floatingipaddress.FloatingIpAddressConfig {
 	Connection: interface{},
