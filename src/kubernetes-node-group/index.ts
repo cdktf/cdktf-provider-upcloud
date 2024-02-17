@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/upcloudltd/upcloud/4.0.0/docs/resources/kubernetes_node_group
+// https://registry.terraform.io/providers/upcloudltd/upcloud/4.1.0/docs/resources/kubernetes_node_group
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -16,17 +16,17 @@ export interface KubernetesNodeGroupConfig extends cdktf.TerraformMetaArguments 
   * If set to true, nodes in this group will be placed on separate compute hosts.
   * 				Please note that anti-affinity policy is considered "best effort" and enabling it does not fully guarantee that the nodes will end up on different hardware.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/4.0.0/docs/resources/kubernetes_node_group#anti_affinity KubernetesNodeGroup#anti_affinity}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/4.1.0/docs/resources/kubernetes_node_group#anti_affinity KubernetesNodeGroup#anti_affinity}
   */
   readonly antiAffinity?: boolean | cdktf.IResolvable;
   /**
   * Cluster ID.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/4.0.0/docs/resources/kubernetes_node_group#cluster KubernetesNodeGroup#cluster}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/4.1.0/docs/resources/kubernetes_node_group#cluster KubernetesNodeGroup#cluster}
   */
   readonly cluster: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/4.0.0/docs/resources/kubernetes_node_group#id KubernetesNodeGroup#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/4.1.0/docs/resources/kubernetes_node_group#id KubernetesNodeGroup#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -35,49 +35,49 @@ export interface KubernetesNodeGroupConfig extends cdktf.TerraformMetaArguments 
   /**
   * Key-value pairs to classify the node group.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/4.0.0/docs/resources/kubernetes_node_group#labels KubernetesNodeGroup#labels}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/4.1.0/docs/resources/kubernetes_node_group#labels KubernetesNodeGroup#labels}
   */
   readonly labels?: { [key: string]: string };
   /**
   * The name of the node group. Needs to be unique within a cluster.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/4.0.0/docs/resources/kubernetes_node_group#name KubernetesNodeGroup#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/4.1.0/docs/resources/kubernetes_node_group#name KubernetesNodeGroup#name}
   */
   readonly name: string;
   /**
   * Amount of nodes to provision in the node group.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/4.0.0/docs/resources/kubernetes_node_group#node_count KubernetesNodeGroup#node_count}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/4.1.0/docs/resources/kubernetes_node_group#node_count KubernetesNodeGroup#node_count}
   */
   readonly nodeCount: number;
   /**
   * The server plan used for the node group. You can list available plans with `upctl server plans`
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/4.0.0/docs/resources/kubernetes_node_group#plan KubernetesNodeGroup#plan}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/4.1.0/docs/resources/kubernetes_node_group#plan KubernetesNodeGroup#plan}
   */
   readonly plan: string;
   /**
   * You can optionally select SSH keys to be added as authorized keys to the nodes in this node group. This allows you to connect to the nodes via SSH once they are running.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/4.0.0/docs/resources/kubernetes_node_group#ssh_keys KubernetesNodeGroup#ssh_keys}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/4.1.0/docs/resources/kubernetes_node_group#ssh_keys KubernetesNodeGroup#ssh_keys}
   */
   readonly sshKeys?: string[];
   /**
   * If set to false, nodes in this group will not have access to utility network.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/4.0.0/docs/resources/kubernetes_node_group#utility_network_access KubernetesNodeGroup#utility_network_access}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/4.1.0/docs/resources/kubernetes_node_group#utility_network_access KubernetesNodeGroup#utility_network_access}
   */
   readonly utilityNetworkAccess?: boolean | cdktf.IResolvable;
   /**
   * kubelet_args block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/4.0.0/docs/resources/kubernetes_node_group#kubelet_args KubernetesNodeGroup#kubelet_args}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/4.1.0/docs/resources/kubernetes_node_group#kubelet_args KubernetesNodeGroup#kubelet_args}
   */
   readonly kubeletArgs?: KubernetesNodeGroupKubeletArgs[] | cdktf.IResolvable;
   /**
   * taint block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/4.0.0/docs/resources/kubernetes_node_group#taint KubernetesNodeGroup#taint}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/4.1.0/docs/resources/kubernetes_node_group#taint KubernetesNodeGroup#taint}
   */
   readonly taint?: KubernetesNodeGroupTaint[] | cdktf.IResolvable;
 }
@@ -85,13 +85,13 @@ export interface KubernetesNodeGroupKubeletArgs {
   /**
   * Kubelet argument key.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/4.0.0/docs/resources/kubernetes_node_group#key KubernetesNodeGroup#key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/4.1.0/docs/resources/kubernetes_node_group#key KubernetesNodeGroup#key}
   */
   readonly key: string;
   /**
   * Kubelet argument value.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/4.0.0/docs/resources/kubernetes_node_group#value KubernetesNodeGroup#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/4.1.0/docs/resources/kubernetes_node_group#value KubernetesNodeGroup#value}
   */
   readonly value: string;
 }
@@ -232,19 +232,19 @@ export interface KubernetesNodeGroupTaint {
   /**
   * Taint effect.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/4.0.0/docs/resources/kubernetes_node_group#effect KubernetesNodeGroup#effect}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/4.1.0/docs/resources/kubernetes_node_group#effect KubernetesNodeGroup#effect}
   */
   readonly effect: string;
   /**
   * Taint key.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/4.0.0/docs/resources/kubernetes_node_group#key KubernetesNodeGroup#key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/4.1.0/docs/resources/kubernetes_node_group#key KubernetesNodeGroup#key}
   */
   readonly key: string;
   /**
   * Taint value.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/4.0.0/docs/resources/kubernetes_node_group#value KubernetesNodeGroup#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/4.1.0/docs/resources/kubernetes_node_group#value KubernetesNodeGroup#value}
   */
   readonly value: string;
 }
@@ -409,7 +409,7 @@ export class KubernetesNodeGroupTaintList extends cdktf.ComplexList {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/upcloudltd/upcloud/4.0.0/docs/resources/kubernetes_node_group upcloud_kubernetes_node_group}
+* Represents a {@link https://registry.terraform.io/providers/upcloudltd/upcloud/4.1.0/docs/resources/kubernetes_node_group upcloud_kubernetes_node_group}
 */
 export class KubernetesNodeGroup extends cdktf.TerraformResource {
 
@@ -425,7 +425,7 @@ export class KubernetesNodeGroup extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a KubernetesNodeGroup resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the KubernetesNodeGroup to import
-  * @param importFromId The id of the existing KubernetesNodeGroup that should be imported. Refer to the {@link https://registry.terraform.io/providers/upcloudltd/upcloud/4.0.0/docs/resources/kubernetes_node_group#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing KubernetesNodeGroup that should be imported. Refer to the {@link https://registry.terraform.io/providers/upcloudltd/upcloud/4.1.0/docs/resources/kubernetes_node_group#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the KubernetesNodeGroup to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -437,7 +437,7 @@ export class KubernetesNodeGroup extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/upcloudltd/upcloud/4.0.0/docs/resources/kubernetes_node_group upcloud_kubernetes_node_group} Resource
+  * Create a new {@link https://registry.terraform.io/providers/upcloudltd/upcloud/4.1.0/docs/resources/kubernetes_node_group upcloud_kubernetes_node_group} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -448,7 +448,7 @@ export class KubernetesNodeGroup extends cdktf.TerraformResource {
       terraformResourceType: 'upcloud_kubernetes_node_group',
       terraformGeneratorMetadata: {
         providerName: 'upcloud',
-        providerVersion: '4.0.0',
+        providerVersion: '4.1.0',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,

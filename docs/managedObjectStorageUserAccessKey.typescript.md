@@ -4,7 +4,7 @@
 
 ### ManagedObjectStorageUserAccessKey <a name="ManagedObjectStorageUserAccessKey" id="@cdktf/provider-upcloud.managedObjectStorageUserAccessKey.ManagedObjectStorageUserAccessKey"></a>
 
-Represents a {@link https://registry.terraform.io/providers/upcloudltd/upcloud/4.0.0/docs/resources/managed_object_storage_user_access_key upcloud_managed_object_storage_user_access_key}.
+Represents a {@link https://registry.terraform.io/providers/upcloudltd/upcloud/4.1.0/docs/resources/managed_object_storage_user_access_key upcloud_managed_object_storage_user_access_key}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-upcloud.managedObjectStorageUserAccessKey.ManagedObjectStorageUserAccessKey.Initializer"></a>
 
@@ -474,7 +474,7 @@ The construct id used in the generated config for the ManagedObjectStorageUserAc
 
 The id of the existing ManagedObjectStorageUserAccessKey that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/upcloudltd/upcloud/4.0.0/docs/resources/managed_object_storage_user_access_key#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/upcloudltd/upcloud/4.1.0/docs/resources/managed_object_storage_user_access_key#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -859,7 +859,7 @@ const managedObjectStorageUserAccessKeyConfig: managedObjectStorageUserAccessKey
 | <code><a href="#@cdktf/provider-upcloud.managedObjectStorageUserAccessKey.ManagedObjectStorageUserAccessKeyConfig.property.name">name</a></code> | <code>string</code> | Access key name. Must be unique within the user. |
 | <code><a href="#@cdktf/provider-upcloud.managedObjectStorageUserAccessKey.ManagedObjectStorageUserAccessKeyConfig.property.serviceUuid">serviceUuid</a></code> | <code>string</code> | Managed Object Storage service UUID. |
 | <code><a href="#@cdktf/provider-upcloud.managedObjectStorageUserAccessKey.ManagedObjectStorageUserAccessKeyConfig.property.username">username</a></code> | <code>string</code> | Username. |
-| <code><a href="#@cdktf/provider-upcloud.managedObjectStorageUserAccessKey.ManagedObjectStorageUserAccessKeyConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/4.0.0/docs/resources/managed_object_storage_user_access_key#id ManagedObjectStorageUserAccessKey#id}. |
+| <code><a href="#@cdktf/provider-upcloud.managedObjectStorageUserAccessKey.ManagedObjectStorageUserAccessKeyConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/4.1.0/docs/resources/managed_object_storage_user_access_key#id ManagedObjectStorageUserAccessKey#id}. |
 
 ---
 
@@ -943,7 +943,7 @@ public readonly enabled: boolean | IResolvable;
 
 Enabled or not.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/4.0.0/docs/resources/managed_object_storage_user_access_key#enabled ManagedObjectStorageUserAccessKey#enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/4.1.0/docs/resources/managed_object_storage_user_access_key#enabled ManagedObjectStorageUserAccessKey#enabled}
 
 ---
 
@@ -957,7 +957,7 @@ public readonly name: string;
 
 Access key name. Must be unique within the user.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/4.0.0/docs/resources/managed_object_storage_user_access_key#name ManagedObjectStorageUserAccessKey#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/4.1.0/docs/resources/managed_object_storage_user_access_key#name ManagedObjectStorageUserAccessKey#name}
 
 ---
 
@@ -971,7 +971,7 @@ public readonly serviceUuid: string;
 
 Managed Object Storage service UUID.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/4.0.0/docs/resources/managed_object_storage_user_access_key#service_uuid ManagedObjectStorageUserAccessKey#service_uuid}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/4.1.0/docs/resources/managed_object_storage_user_access_key#service_uuid ManagedObjectStorageUserAccessKey#service_uuid}
 
 ---
 
@@ -985,7 +985,7 @@ public readonly username: string;
 
 Username.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/4.0.0/docs/resources/managed_object_storage_user_access_key#username ManagedObjectStorageUserAccessKey#username}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/4.1.0/docs/resources/managed_object_storage_user_access_key#username ManagedObjectStorageUserAccessKey#username}
 
 ---
 
@@ -997,7 +997,7 @@ public readonly id: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/4.0.0/docs/resources/managed_object_storage_user_access_key#id ManagedObjectStorageUserAccessKey#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/4.1.0/docs/resources/managed_object_storage_user_access_key#id ManagedObjectStorageUserAccessKey#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
