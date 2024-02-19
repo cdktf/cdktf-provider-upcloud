@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/upcloudltd/upcloud/4
 #### Initializers <a name="Initializers" id="@cdktf/provider-upcloud.provider.UpcloudProvider.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v13/provider"
+import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/provider"
 
 provider.NewUpcloudProvider(scope Construct, id *string, config UpcloudProviderConfig) UpcloudProvider
 ```
@@ -193,7 +193,7 @@ func ResetUsername()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-upcloud.provider.UpcloudProvider.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v13/provider"
+import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/provider"
 
 provider.UpcloudProvider_IsConstruct(x interface{}) *bool
 ```
@@ -225,7 +225,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-upcloud.provider.UpcloudProvider.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v13/provider"
+import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/provider"
 
 provider.UpcloudProvider_IsTerraformElement(x interface{}) *bool
 ```
@@ -239,7 +239,7 @@ provider.UpcloudProvider_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformProvider` <a name="IsTerraformProvider" id="@cdktf/provider-upcloud.provider.UpcloudProvider.isTerraformProvider"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v13/provider"
+import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/provider"
 
 provider.UpcloudProvider_IsTerraformProvider(x interface{}) *bool
 ```
@@ -253,7 +253,7 @@ provider.UpcloudProvider_IsTerraformProvider(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-upcloud.provider.UpcloudProvider.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v13/provider"
+import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/provider"
 
 provider.UpcloudProvider_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -570,7 +570,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-upcloud.provider.UpcloudProviderConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v13/provider"
+import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/provider"
 
 &provider.UpcloudProviderConfig {
 	Alias: *string,
