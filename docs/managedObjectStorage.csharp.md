@@ -4,7 +4,7 @@
 
 ### ManagedObjectStorage <a name="ManagedObjectStorage" id="@cdktf/provider-upcloud.managedObjectStorage.ManagedObjectStorage"></a>
 
-Represents a {@link https://registry.terraform.io/providers/upcloudltd/upcloud/4.1.0/docs/resources/managed_object_storage upcloud_managed_object_storage}.
+Represents a {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.0.1/docs/resources/managed_object_storage upcloud_managed_object_storage}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-upcloud.managedObjectStorage.ManagedObjectStorage.Initializer"></a>
 
@@ -77,7 +77,6 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-upcloud.managedObjectStorage.ManagedObjectStorage.resetId">ResetId</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.managedObjectStorage.ManagedObjectStorage.resetLabels">ResetLabels</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.managedObjectStorage.ManagedObjectStorage.resetNetwork">ResetNetwork</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-upcloud.managedObjectStorage.ManagedObjectStorage.resetUsers">ResetUsers</a></code> | *No description.* |
 
 ---
 
@@ -399,12 +398,6 @@ private void ResetLabels()
 private void ResetNetwork()
 ```
 
-##### `ResetUsers` <a name="ResetUsers" id="@cdktf/provider-upcloud.managedObjectStorage.ManagedObjectStorage.resetUsers"></a>
-
-```csharp
-private void ResetUsers()
-```
-
 #### Static Functions <a name="Static Functions" id="Static Functions"></a>
 
 | **Name** | **Description** |
@@ -508,7 +501,7 @@ The construct id used in the generated config for the ManagedObjectStorage to im
 
 The id of the existing ManagedObjectStorage that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/upcloudltd/upcloud/4.1.0/docs/resources/managed_object_storage#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.0.1/docs/resources/managed_object_storage#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -549,13 +542,11 @@ Refer to the {@link https://registry.terraform.io/providers/upcloudltd/upcloud/4
 | <code><a href="#@cdktf/provider-upcloud.managedObjectStorage.ManagedObjectStorage.property.nameInput">NameInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.managedObjectStorage.ManagedObjectStorage.property.networkInput">NetworkInput</a></code> | <code>object</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.managedObjectStorage.ManagedObjectStorage.property.regionInput">RegionInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-upcloud.managedObjectStorage.ManagedObjectStorage.property.usersInput">UsersInput</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.managedObjectStorage.ManagedObjectStorage.property.configuredStatus">ConfiguredStatus</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.managedObjectStorage.ManagedObjectStorage.property.id">Id</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.managedObjectStorage.ManagedObjectStorage.property.labels">Labels</a></code> | <code>System.Collections.Generic.IDictionary<string, string></code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.managedObjectStorage.ManagedObjectStorage.property.name">Name</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.managedObjectStorage.ManagedObjectStorage.property.region">Region</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-upcloud.managedObjectStorage.ManagedObjectStorage.property.users">Users</a></code> | <code>string[]</code> | *No description.* |
 
 ---
 
@@ -811,16 +802,6 @@ public string RegionInput { get; }
 
 ---
 
-##### `UsersInput`<sup>Optional</sup> <a name="UsersInput" id="@cdktf/provider-upcloud.managedObjectStorage.ManagedObjectStorage.property.usersInput"></a>
-
-```csharp
-public string[] UsersInput { get; }
-```
-
-- *Type:* string[]
-
----
-
 ##### `ConfiguredStatus`<sup>Required</sup> <a name="ConfiguredStatus" id="@cdktf/provider-upcloud.managedObjectStorage.ManagedObjectStorage.property.configuredStatus"></a>
 
 ```csharp
@@ -871,16 +852,6 @@ public string Region { get; }
 
 ---
 
-##### `Users`<sup>Required</sup> <a name="Users" id="@cdktf/provider-upcloud.managedObjectStorage.ManagedObjectStorage.property.users"></a>
-
-```csharp
-public string[] Users { get; }
-```
-
-- *Type:* string[]
-
----
-
 #### Constants <a name="Constants" id="Constants"></a>
 
 | **Name** | **Type** | **Description** |
@@ -921,8 +892,7 @@ new ManagedObjectStorageConfig {
     string Region,
     string Id = null,
     System.Collections.Generic.IDictionary<string, string> Labels = null,
-    object Network = null,
-    string[] Users = null
+    object Network = null
 };
 ```
 
@@ -940,10 +910,9 @@ new ManagedObjectStorageConfig {
 | <code><a href="#@cdktf/provider-upcloud.managedObjectStorage.ManagedObjectStorageConfig.property.configuredStatus">ConfiguredStatus</a></code> | <code>string</code> | Service status managed by the end user. |
 | <code><a href="#@cdktf/provider-upcloud.managedObjectStorage.ManagedObjectStorageConfig.property.name">Name</a></code> | <code>string</code> | Name of the Managed Object Storage service. Must be unique within account. |
 | <code><a href="#@cdktf/provider-upcloud.managedObjectStorage.ManagedObjectStorageConfig.property.region">Region</a></code> | <code>string</code> | Region in which the service will be hosted, see `upcloud_managed_object_storage_regions` data source. |
-| <code><a href="#@cdktf/provider-upcloud.managedObjectStorage.ManagedObjectStorageConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/4.1.0/docs/resources/managed_object_storage#id ManagedObjectStorage#id}. |
+| <code><a href="#@cdktf/provider-upcloud.managedObjectStorage.ManagedObjectStorageConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.0.1/docs/resources/managed_object_storage#id ManagedObjectStorage#id}. |
 | <code><a href="#@cdktf/provider-upcloud.managedObjectStorage.ManagedObjectStorageConfig.property.labels">Labels</a></code> | <code>System.Collections.Generic.IDictionary<string, string></code> | Key-value pairs to classify the managed object storage. |
 | <code><a href="#@cdktf/provider-upcloud.managedObjectStorage.ManagedObjectStorageConfig.property.network">Network</a></code> | <code>object</code> | network block. |
-| <code><a href="#@cdktf/provider-upcloud.managedObjectStorage.ManagedObjectStorageConfig.property.users">Users</a></code> | <code>string[]</code> | List of custom usernames for accessing the object storage. |
 
 ---
 
@@ -1027,7 +996,7 @@ public string ConfiguredStatus { get; set; }
 
 Service status managed by the end user.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/4.1.0/docs/resources/managed_object_storage#configured_status ManagedObjectStorage#configured_status}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.0.1/docs/resources/managed_object_storage#configured_status ManagedObjectStorage#configured_status}
 
 ---
 
@@ -1041,7 +1010,7 @@ public string Name { get; set; }
 
 Name of the Managed Object Storage service. Must be unique within account.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/4.1.0/docs/resources/managed_object_storage#name ManagedObjectStorage#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.0.1/docs/resources/managed_object_storage#name ManagedObjectStorage#name}
 
 ---
 
@@ -1055,7 +1024,7 @@ public string Region { get; set; }
 
 Region in which the service will be hosted, see `upcloud_managed_object_storage_regions` data source.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/4.1.0/docs/resources/managed_object_storage#region ManagedObjectStorage#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.0.1/docs/resources/managed_object_storage#region ManagedObjectStorage#region}
 
 ---
 
@@ -1067,7 +1036,7 @@ public string Id { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/4.1.0/docs/resources/managed_object_storage#id ManagedObjectStorage#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.0.1/docs/resources/managed_object_storage#id ManagedObjectStorage#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1084,7 +1053,7 @@ public System.Collections.Generic.IDictionary<string, string> Labels { get; set;
 
 Key-value pairs to classify the managed object storage.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/4.1.0/docs/resources/managed_object_storage#labels ManagedObjectStorage#labels}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.0.1/docs/resources/managed_object_storage#labels ManagedObjectStorage#labels}
 
 ---
 
@@ -1098,23 +1067,7 @@ public object Network { get; set; }
 
 network block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/4.1.0/docs/resources/managed_object_storage#network ManagedObjectStorage#network}
-
----
-
-##### `Users`<sup>Optional</sup> <a name="Users" id="@cdktf/provider-upcloud.managedObjectStorage.ManagedObjectStorageConfig.property.users"></a>
-
-```csharp
-public string[] Users { get; set; }
-```
-
-- *Type:* string[]
-
-List of custom usernames for accessing the object storage.
-
-No relation to UpCloud API accounts. See `upcloud_managed_object_storage_user_access_key` for managing access keys.
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/4.1.0/docs/resources/managed_object_storage#users ManagedObjectStorage#users}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.0.1/docs/resources/managed_object_storage#network ManagedObjectStorage#network}
 
 ---
 
@@ -1167,7 +1120,7 @@ public string Family { get; set; }
 
 Network family. IPv6 currently not supported.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/4.1.0/docs/resources/managed_object_storage#family ManagedObjectStorage#family}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.0.1/docs/resources/managed_object_storage#family ManagedObjectStorage#family}
 
 ---
 
@@ -1181,7 +1134,7 @@ public string Name { get; set; }
 
 Network name. Must be unique within the service.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/4.1.0/docs/resources/managed_object_storage#name ManagedObjectStorage#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.0.1/docs/resources/managed_object_storage#name ManagedObjectStorage#name}
 
 ---
 
@@ -1195,7 +1148,7 @@ public string Type { get; set; }
 
 Network type.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/4.1.0/docs/resources/managed_object_storage#type ManagedObjectStorage#type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.0.1/docs/resources/managed_object_storage#type ManagedObjectStorage#type}
 
 ---
 
@@ -1209,7 +1162,7 @@ public string Uuid { get; set; }
 
 Private network uuid. For public networks the field should be omitted.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/4.1.0/docs/resources/managed_object_storage#uuid ManagedObjectStorage#uuid}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.0.1/docs/resources/managed_object_storage#uuid ManagedObjectStorage#uuid}
 
 ---
 
@@ -1593,6 +1546,8 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-upcloud.managedObjectStorage.ManagedObjectStorageEndpointOutputReference.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-upcloud.managedObjectStorage.ManagedObjectStorageEndpointOutputReference.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.managedObjectStorage.ManagedObjectStorageEndpointOutputReference.property.domainName">DomainName</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-upcloud.managedObjectStorage.ManagedObjectStorageEndpointOutputReference.property.iamUrl">IamUrl</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-upcloud.managedObjectStorage.ManagedObjectStorageEndpointOutputReference.property.stsUrl">StsUrl</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.managedObjectStorage.ManagedObjectStorageEndpointOutputReference.property.type">Type</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.managedObjectStorage.ManagedObjectStorageEndpointOutputReference.property.internalValue">InternalValue</a></code> | <code><a href="#@cdktf/provider-upcloud.managedObjectStorage.ManagedObjectStorageEndpoint">ManagedObjectStorageEndpoint</a></code> | *No description.* |
 
@@ -1626,6 +1581,26 @@ public string Fqn { get; }
 
 ```csharp
 public string DomainName { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `IamUrl`<sup>Required</sup> <a name="IamUrl" id="@cdktf/provider-upcloud.managedObjectStorage.ManagedObjectStorageEndpointOutputReference.property.iamUrl"></a>
+
+```csharp
+public string IamUrl { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `StsUrl`<sup>Required</sup> <a name="StsUrl" id="@cdktf/provider-upcloud.managedObjectStorage.ManagedObjectStorageEndpointOutputReference.property.stsUrl"></a>
+
+```csharp
+public string StsUrl { get; }
 ```
 
 - *Type:* string

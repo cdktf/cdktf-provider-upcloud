@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/upcloudltd/upcloud/4.1.0/docs/resources/managed_object_storage
+// https://registry.terraform.io/providers/upcloudltd/upcloud/5.0.1/docs/resources/managed_object_storage
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,11 +10,11 @@ export interface ManagedObjectStorageConfig extends cdktf.TerraformMetaArguments
   /**
   * Service status managed by the end user.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/4.1.0/docs/resources/managed_object_storage#configured_status ManagedObjectStorage#configured_status}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.0.1/docs/resources/managed_object_storage#configured_status ManagedObjectStorage#configured_status}
   */
   readonly configuredStatus: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/4.1.0/docs/resources/managed_object_storage#id ManagedObjectStorage#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.0.1/docs/resources/managed_object_storage#id ManagedObjectStorage#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -28,31 +23,25 @@ export interface ManagedObjectStorageConfig extends cdktf.TerraformMetaArguments
   /**
   * Key-value pairs to classify the managed object storage.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/4.1.0/docs/resources/managed_object_storage#labels ManagedObjectStorage#labels}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.0.1/docs/resources/managed_object_storage#labels ManagedObjectStorage#labels}
   */
   readonly labels?: { [key: string]: string };
   /**
   * Name of the Managed Object Storage service. Must be unique within account.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/4.1.0/docs/resources/managed_object_storage#name ManagedObjectStorage#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.0.1/docs/resources/managed_object_storage#name ManagedObjectStorage#name}
   */
   readonly name: string;
   /**
   * Region in which the service will be hosted, see `upcloud_managed_object_storage_regions` data source.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/4.1.0/docs/resources/managed_object_storage#region ManagedObjectStorage#region}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.0.1/docs/resources/managed_object_storage#region ManagedObjectStorage#region}
   */
   readonly region: string;
   /**
-  * List of custom usernames for accessing the object storage. No relation to UpCloud API accounts. See `upcloud_managed_object_storage_user_access_key` for managing access keys.
-  *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/4.1.0/docs/resources/managed_object_storage#users ManagedObjectStorage#users}
-  */
-  readonly users?: string[];
-  /**
   * network block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/4.1.0/docs/resources/managed_object_storage#network ManagedObjectStorage#network}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.0.1/docs/resources/managed_object_storage#network ManagedObjectStorage#network}
   */
   readonly network?: ManagedObjectStorageNetwork[] | cdktf.IResolvable;
 }
@@ -112,6 +101,16 @@ export class ManagedObjectStorageEndpointOutputReference extends cdktf.ComplexOb
     return this.getStringAttribute('domain_name');
   }
 
+  // iam_url - computed: true, optional: false, required: false
+  public get iamUrl() {
+    return this.getStringAttribute('iam_url');
+  }
+
+  // sts_url - computed: true, optional: false, required: false
+  public get stsUrl() {
+    return this.getStringAttribute('sts_url');
+  }
+
   // type - computed: true, optional: false, required: false
   public get type() {
     return this.getStringAttribute('type');
@@ -140,25 +139,25 @@ export interface ManagedObjectStorageNetwork {
   /**
   * Network family. IPv6 currently not supported.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/4.1.0/docs/resources/managed_object_storage#family ManagedObjectStorage#family}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.0.1/docs/resources/managed_object_storage#family ManagedObjectStorage#family}
   */
   readonly family: string;
   /**
   * Network name. Must be unique within the service.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/4.1.0/docs/resources/managed_object_storage#name ManagedObjectStorage#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.0.1/docs/resources/managed_object_storage#name ManagedObjectStorage#name}
   */
   readonly name: string;
   /**
   * Network type.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/4.1.0/docs/resources/managed_object_storage#type ManagedObjectStorage#type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.0.1/docs/resources/managed_object_storage#type ManagedObjectStorage#type}
   */
   readonly type: string;
   /**
   * Private network uuid. For public networks the field should be omitted.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/4.1.0/docs/resources/managed_object_storage#uuid ManagedObjectStorage#uuid}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.0.1/docs/resources/managed_object_storage#uuid ManagedObjectStorage#uuid}
   */
   readonly uuid?: string;
 }
@@ -352,7 +351,7 @@ export class ManagedObjectStorageNetworkList extends cdktf.ComplexList {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/upcloudltd/upcloud/4.1.0/docs/resources/managed_object_storage upcloud_managed_object_storage}
+* Represents a {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.0.1/docs/resources/managed_object_storage upcloud_managed_object_storage}
 */
 export class ManagedObjectStorage extends cdktf.TerraformResource {
 
@@ -368,7 +367,7 @@ export class ManagedObjectStorage extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a ManagedObjectStorage resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the ManagedObjectStorage to import
-  * @param importFromId The id of the existing ManagedObjectStorage that should be imported. Refer to the {@link https://registry.terraform.io/providers/upcloudltd/upcloud/4.1.0/docs/resources/managed_object_storage#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing ManagedObjectStorage that should be imported. Refer to the {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.0.1/docs/resources/managed_object_storage#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the ManagedObjectStorage to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -380,7 +379,7 @@ export class ManagedObjectStorage extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/upcloudltd/upcloud/4.1.0/docs/resources/managed_object_storage upcloud_managed_object_storage} Resource
+  * Create a new {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.0.1/docs/resources/managed_object_storage upcloud_managed_object_storage} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -391,8 +390,8 @@ export class ManagedObjectStorage extends cdktf.TerraformResource {
       terraformResourceType: 'upcloud_managed_object_storage',
       terraformGeneratorMetadata: {
         providerName: 'upcloud',
-        providerVersion: '4.1.0',
-        providerVersionConstraint: '~> 4.0'
+        providerVersion: '5.0.1',
+        providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,
@@ -407,7 +406,6 @@ export class ManagedObjectStorage extends cdktf.TerraformResource {
     this._labels = config.labels;
     this._name = config.name;
     this._region = config.region;
-    this._users = config.users;
     this._network.internalValue = config.network;
   }
 
@@ -507,22 +505,6 @@ export class ManagedObjectStorage extends cdktf.TerraformResource {
     return this.getStringAttribute('updated_at');
   }
 
-  // users - computed: false, optional: true, required: false
-  private _users?: string[]; 
-  public get users() {
-    return cdktf.Fn.tolist(this.getListAttribute('users'));
-  }
-  public set users(value: string[]) {
-    this._users = value;
-  }
-  public resetUsers() {
-    this._users = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get usersInput() {
-    return this._users;
-  }
-
   // network - computed: false, optional: true, required: false
   private _network = new ManagedObjectStorageNetworkList(this, "network", true);
   public get network() {
@@ -550,7 +532,6 @@ export class ManagedObjectStorage extends cdktf.TerraformResource {
       labels: cdktf.hashMapper(cdktf.stringToTerraform)(this._labels),
       name: cdktf.stringToTerraform(this._name),
       region: cdktf.stringToTerraform(this._region),
-      users: cdktf.listMapper(cdktf.stringToTerraform, false)(this._users),
       network: cdktf.listMapper(managedObjectStorageNetworkToTerraform, true)(this._network.internalValue),
     };
   }
@@ -586,12 +567,6 @@ export class ManagedObjectStorage extends cdktf.TerraformResource {
         isBlock: false,
         type: "simple",
         storageClassType: "string",
-      },
-      users: {
-        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._users),
-        isBlock: false,
-        type: "set",
-        storageClassType: "stringList",
       },
       network: {
         value: cdktf.listMapperHcl(managedObjectStorageNetworkToHclTerraform, true)(this._network.internalValue),
