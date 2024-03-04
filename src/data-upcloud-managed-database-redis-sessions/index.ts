@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/upcloudltd/upcloud/4.1.0/docs/data-sources/managed_database_redis_sessions
+// https://registry.terraform.io/providers/upcloudltd/upcloud/5.0.1/docs/data-sources/managed_database_redis_sessions
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,7 +13,7 @@ import * as cdktf from 'cdktf';
 
 export interface DataUpcloudManagedDatabaseRedisSessionsConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/4.1.0/docs/data-sources/managed_database_redis_sessions#id DataUpcloudManagedDatabaseRedisSessions#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.0.1/docs/data-sources/managed_database_redis_sessions#id DataUpcloudManagedDatabaseRedisSessions#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -22,31 +22,31 @@ export interface DataUpcloudManagedDatabaseRedisSessionsConfig extends cdktf.Ter
   /**
   * Number of entries to receive at most.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/4.1.0/docs/data-sources/managed_database_redis_sessions#limit DataUpcloudManagedDatabaseRedisSessions#limit}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.0.1/docs/data-sources/managed_database_redis_sessions#limit DataUpcloudManagedDatabaseRedisSessions#limit}
   */
   readonly limit?: number;
   /**
   * Offset for retrieved results based on sort order.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/4.1.0/docs/data-sources/managed_database_redis_sessions#offset DataUpcloudManagedDatabaseRedisSessions#offset}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.0.1/docs/data-sources/managed_database_redis_sessions#offset DataUpcloudManagedDatabaseRedisSessions#offset}
   */
   readonly offset?: number;
   /**
   * Order by session field and sort retrieved results. Limited variables can be used for ordering.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/4.1.0/docs/data-sources/managed_database_redis_sessions#order DataUpcloudManagedDatabaseRedisSessions#order}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.0.1/docs/data-sources/managed_database_redis_sessions#order DataUpcloudManagedDatabaseRedisSessions#order}
   */
   readonly order?: string;
   /**
   * Service's UUID for which these sessions belongs to
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/4.1.0/docs/data-sources/managed_database_redis_sessions#service DataUpcloudManagedDatabaseRedisSessions#service}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.0.1/docs/data-sources/managed_database_redis_sessions#service DataUpcloudManagedDatabaseRedisSessions#service}
   */
   readonly service: string;
   /**
   * sessions block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/4.1.0/docs/data-sources/managed_database_redis_sessions#sessions DataUpcloudManagedDatabaseRedisSessions#sessions}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.0.1/docs/data-sources/managed_database_redis_sessions#sessions DataUpcloudManagedDatabaseRedisSessions#sessions}
   */
   readonly sessions?: DataUpcloudManagedDatabaseRedisSessionsSessions[] | cdktf.IResolvable;
 }
@@ -218,7 +218,7 @@ export class DataUpcloudManagedDatabaseRedisSessionsSessionsList extends cdktf.C
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/upcloudltd/upcloud/4.1.0/docs/data-sources/managed_database_redis_sessions upcloud_managed_database_redis_sessions}
+* Represents a {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.0.1/docs/data-sources/managed_database_redis_sessions upcloud_managed_database_redis_sessions}
 */
 export class DataUpcloudManagedDatabaseRedisSessions extends cdktf.TerraformDataSource {
 
@@ -234,7 +234,7 @@ export class DataUpcloudManagedDatabaseRedisSessions extends cdktf.TerraformData
   * Generates CDKTF code for importing a DataUpcloudManagedDatabaseRedisSessions resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataUpcloudManagedDatabaseRedisSessions to import
-  * @param importFromId The id of the existing DataUpcloudManagedDatabaseRedisSessions that should be imported. Refer to the {@link https://registry.terraform.io/providers/upcloudltd/upcloud/4.1.0/docs/data-sources/managed_database_redis_sessions#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataUpcloudManagedDatabaseRedisSessions that should be imported. Refer to the {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.0.1/docs/data-sources/managed_database_redis_sessions#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataUpcloudManagedDatabaseRedisSessions to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -246,7 +246,7 @@ export class DataUpcloudManagedDatabaseRedisSessions extends cdktf.TerraformData
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/upcloudltd/upcloud/4.1.0/docs/data-sources/managed_database_redis_sessions upcloud_managed_database_redis_sessions} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.0.1/docs/data-sources/managed_database_redis_sessions upcloud_managed_database_redis_sessions} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -257,8 +257,8 @@ export class DataUpcloudManagedDatabaseRedisSessions extends cdktf.TerraformData
       terraformResourceType: 'upcloud_managed_database_redis_sessions',
       terraformGeneratorMetadata: {
         providerName: 'upcloud',
-        providerVersion: '4.1.0',
-        providerVersionConstraint: '~> 4.0'
+        providerVersion: '5.0.1',
+        providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,

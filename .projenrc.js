@@ -6,7 +6,7 @@
 const { CdktfProviderProject } = require("@cdktf/provider-project");
 const project = new CdktfProviderProject({
   useCustomGithubRunner: false,
-  terraformProvider: "UpCloudLtd/upcloud@~> 4.0",
+  terraformProvider: "UpCloudLtd/upcloud@~> 5.0",
   cdktfVersion: "^0.20.0",
   constructsVersion: "^10.3.0",
   minNodeVersion: "18.12.0",
