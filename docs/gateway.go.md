@@ -4,12 +4,12 @@
 
 ### Gateway <a name="Gateway" id="@cdktf/provider-upcloud.gateway.Gateway"></a>
 
-Represents a {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.0.2/docs/resources/gateway upcloud_gateway}.
+Represents a {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.0.3/docs/resources/gateway upcloud_gateway}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-upcloud.gateway.Gateway.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v14/gateway"
+import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/gateway"
 
 gateway.NewGateway(scope Construct, id *string, config GatewayConfig) Gateway
 ```
@@ -412,7 +412,7 @@ func ResetLabels()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-upcloud.gateway.Gateway.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v14/gateway"
+import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/gateway"
 
 gateway.Gateway_IsConstruct(x interface{}) *bool
 ```
@@ -444,7 +444,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-upcloud.gateway.Gateway.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v14/gateway"
+import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/gateway"
 
 gateway.Gateway_IsTerraformElement(x interface{}) *bool
 ```
@@ -458,7 +458,7 @@ gateway.Gateway_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-upcloud.gateway.Gateway.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v14/gateway"
+import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/gateway"
 
 gateway.Gateway_IsTerraformResource(x interface{}) *bool
 ```
@@ -472,7 +472,7 @@ gateway.Gateway_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-upcloud.gateway.Gateway.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v14/gateway"
+import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/gateway"
 
 gateway.Gateway_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -501,7 +501,7 @@ The construct id used in the generated config for the Gateway to import.
 
 The id of the existing Gateway that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.0.2/docs/resources/gateway#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.0.3/docs/resources/gateway#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -877,7 +877,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-upcloud.gateway.GatewayAddresses.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v14/gateway"
+import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/gateway"
 
 &gateway.GatewayAddresses {
 
@@ -890,7 +890,7 @@ import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v14/gateway"
 #### Initializer <a name="Initializer" id="@cdktf/provider-upcloud.gateway.GatewayConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v14/gateway"
+import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/gateway"
 
 &gateway.GatewayConfig {
 	Connection: interface{},
@@ -902,7 +902,7 @@ import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v14/gateway"
 	Provisioners: *[]interface{},
 	Features: *[]*string,
 	Name: *string,
-	Router: github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v14.gateway.GatewayRouter,
+	Router: github.com/cdktf/cdktf-provider-upcloud-go/upcloud.gateway.GatewayRouter,
 	Zone: *string,
 	ConfiguredStatus: *string,
 	Id: *string,
@@ -926,7 +926,7 @@ import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v14/gateway"
 | <code><a href="#@cdktf/provider-upcloud.gateway.GatewayConfig.property.router">Router</a></code> | <code><a href="#@cdktf/provider-upcloud.gateway.GatewayRouter">GatewayRouter</a></code> | router block. |
 | <code><a href="#@cdktf/provider-upcloud.gateway.GatewayConfig.property.zone">Zone</a></code> | <code>*string</code> | Zone in which the gateway will be hosted, e.g. `de-fra1`. |
 | <code><a href="#@cdktf/provider-upcloud.gateway.GatewayConfig.property.configuredStatus">ConfiguredStatus</a></code> | <code>*string</code> | The service configured status indicates the service's current intended status. Managed by the customer. |
-| <code><a href="#@cdktf/provider-upcloud.gateway.GatewayConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.0.2/docs/resources/gateway#id Gateway#id}. |
+| <code><a href="#@cdktf/provider-upcloud.gateway.GatewayConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.0.3/docs/resources/gateway#id Gateway#id}. |
 | <code><a href="#@cdktf/provider-upcloud.gateway.GatewayConfig.property.labels">Labels</a></code> | <code>*map[string]*string</code> | Key-value pairs to classify the network gateway. |
 
 ---
@@ -1011,7 +1011,7 @@ Features *[]*string
 
 Features enabled for the gateway.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.0.2/docs/resources/gateway#features Gateway#features}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.0.3/docs/resources/gateway#features Gateway#features}
 
 ---
 
@@ -1025,7 +1025,7 @@ Name *string
 
 Gateway name. Needs to be unique within the account.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.0.2/docs/resources/gateway#name Gateway#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.0.3/docs/resources/gateway#name Gateway#name}
 
 ---
 
@@ -1039,7 +1039,7 @@ Router GatewayRouter
 
 router block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.0.2/docs/resources/gateway#router Gateway#router}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.0.3/docs/resources/gateway#router Gateway#router}
 
 ---
 
@@ -1053,7 +1053,7 @@ Zone *string
 
 Zone in which the gateway will be hosted, e.g. `de-fra1`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.0.2/docs/resources/gateway#zone Gateway#zone}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.0.3/docs/resources/gateway#zone Gateway#zone}
 
 ---
 
@@ -1067,7 +1067,7 @@ ConfiguredStatus *string
 
 The service configured status indicates the service's current intended status. Managed by the customer.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.0.2/docs/resources/gateway#configured_status Gateway#configured_status}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.0.3/docs/resources/gateway#configured_status Gateway#configured_status}
 
 ---
 
@@ -1079,7 +1079,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.0.2/docs/resources/gateway#id Gateway#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.0.3/docs/resources/gateway#id Gateway#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1096,7 +1096,7 @@ Labels *map[string]*string
 
 Key-value pairs to classify the network gateway.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.0.2/docs/resources/gateway#labels Gateway#labels}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.0.3/docs/resources/gateway#labels Gateway#labels}
 
 ---
 
@@ -1105,7 +1105,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upclo
 #### Initializer <a name="Initializer" id="@cdktf/provider-upcloud.gateway.GatewayRouter.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v14/gateway"
+import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/gateway"
 
 &gateway.GatewayRouter {
 	Id: *string,
@@ -1130,7 +1130,7 @@ Id *string
 
 ID of the router attached to the gateway.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.0.2/docs/resources/gateway#id Gateway#id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.0.3/docs/resources/gateway#id Gateway#id}
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1144,7 +1144,7 @@ If you experience problems setting this value it might not be settable. Please t
 #### Initializers <a name="Initializers" id="@cdktf/provider-upcloud.gateway.GatewayAddressesList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v14/gateway"
+import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/gateway"
 
 gateway.NewGatewayAddressesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) GatewayAddressesList
 ```
@@ -1293,7 +1293,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-upcloud.gateway.GatewayAddressesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v14/gateway"
+import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/gateway"
 
 gateway.NewGatewayAddressesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) GatewayAddressesOutputReference
 ```
@@ -1582,7 +1582,7 @@ func InternalValue() GatewayAddresses
 #### Initializers <a name="Initializers" id="@cdktf/provider-upcloud.gateway.GatewayRouterOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v14/gateway"
+import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/gateway"
 
 gateway.NewGatewayRouterOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GatewayRouterOutputReference
 ```
