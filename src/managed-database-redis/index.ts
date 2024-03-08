@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/upcloudltd/upcloud/5.0.3/docs/resources/managed_database_redis
+// https://registry.terraform.io/providers/upcloudltd/upcloud/5.1.0/docs/resources/managed_database_redis
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,7 +8,7 @@ import * as cdktf from 'cdktf';
 
 export interface ManagedDatabaseRedisConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.0.3/docs/resources/managed_database_redis#id ManagedDatabaseRedis#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.1.0/docs/resources/managed_database_redis#id ManagedDatabaseRedis#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -22,49 +17,55 @@ export interface ManagedDatabaseRedisConfig extends cdktf.TerraformMetaArguments
   /**
   * Maintenance window day of week. Lower case weekday name (monday, tuesday, ...)
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.0.3/docs/resources/managed_database_redis#maintenance_window_dow ManagedDatabaseRedis#maintenance_window_dow}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.1.0/docs/resources/managed_database_redis#maintenance_window_dow ManagedDatabaseRedis#maintenance_window_dow}
   */
   readonly maintenanceWindowDow?: string;
   /**
   * Maintenance window UTC time in hh:mm:ss format
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.0.3/docs/resources/managed_database_redis#maintenance_window_time ManagedDatabaseRedis#maintenance_window_time}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.1.0/docs/resources/managed_database_redis#maintenance_window_time ManagedDatabaseRedis#maintenance_window_time}
   */
   readonly maintenanceWindowTime?: string;
   /**
   * Name of the service. The name is used as a prefix for the logical hostname. Must be unique within an account
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.0.3/docs/resources/managed_database_redis#name ManagedDatabaseRedis#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.1.0/docs/resources/managed_database_redis#name ManagedDatabaseRedis#name}
   */
   readonly name: string;
   /**
   * Service plan to use. This determines how much resources the instance will have. You can list available plans with `upctl database plans <type>`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.0.3/docs/resources/managed_database_redis#plan ManagedDatabaseRedis#plan}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.1.0/docs/resources/managed_database_redis#plan ManagedDatabaseRedis#plan}
   */
   readonly plan: string;
   /**
   * The administrative power state of the service
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.0.3/docs/resources/managed_database_redis#powered ManagedDatabaseRedis#powered}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.1.0/docs/resources/managed_database_redis#powered ManagedDatabaseRedis#powered}
   */
   readonly powered?: boolean | cdktf.IResolvable;
   /**
   * Title of a managed database instance
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.0.3/docs/resources/managed_database_redis#title ManagedDatabaseRedis#title}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.1.0/docs/resources/managed_database_redis#title ManagedDatabaseRedis#title}
   */
   readonly title: string;
   /**
   * Zone where the instance resides, e.g. `de-fra1`. You can list available zones with `upctl zone list`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.0.3/docs/resources/managed_database_redis#zone ManagedDatabaseRedis#zone}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.1.0/docs/resources/managed_database_redis#zone ManagedDatabaseRedis#zone}
   */
   readonly zone: string;
   /**
+  * network block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.1.0/docs/resources/managed_database_redis#network ManagedDatabaseRedis#network}
+  */
+  readonly network?: ManagedDatabaseRedisNetwork[] | cdktf.IResolvable;
+  /**
   * properties block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.0.3/docs/resources/managed_database_redis#properties ManagedDatabaseRedis#properties}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.1.0/docs/resources/managed_database_redis#properties ManagedDatabaseRedis#properties}
   */
   readonly properties?: ManagedDatabaseRedisProperties;
 }
@@ -248,47 +249,258 @@ export class ManagedDatabaseRedisNodeStatesList extends cdktf.ComplexList {
     return new ManagedDatabaseRedisNodeStatesOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
   }
 }
+export interface ManagedDatabaseRedisNetwork {
+  /**
+  * Network family. Currently only `IPv4` is supported.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.1.0/docs/resources/managed_database_redis#family ManagedDatabaseRedis#family}
+  */
+  readonly family: string;
+  /**
+  * The name of the network. Must be unique within the service.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.1.0/docs/resources/managed_database_redis#name ManagedDatabaseRedis#name}
+  */
+  readonly name: string;
+  /**
+  * The type of the network. Must be private.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.1.0/docs/resources/managed_database_redis#type ManagedDatabaseRedis#type}
+  */
+  readonly type: string;
+  /**
+  * Private network UUID. Must reside in the same zone as the database.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.1.0/docs/resources/managed_database_redis#uuid ManagedDatabaseRedis#uuid}
+  */
+  readonly uuid: string;
+}
+
+export function managedDatabaseRedisNetworkToTerraform(struct?: ManagedDatabaseRedisNetwork | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    family: cdktf.stringToTerraform(struct!.family),
+    name: cdktf.stringToTerraform(struct!.name),
+    type: cdktf.stringToTerraform(struct!.type),
+    uuid: cdktf.stringToTerraform(struct!.uuid),
+  }
+}
+
+
+export function managedDatabaseRedisNetworkToHclTerraform(struct?: ManagedDatabaseRedisNetwork | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    family: {
+      value: cdktf.stringToHclTerraform(struct!.family),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    name: {
+      value: cdktf.stringToHclTerraform(struct!.name),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    type: {
+      value: cdktf.stringToHclTerraform(struct!.type),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    uuid: {
+      value: cdktf.stringToHclTerraform(struct!.uuid),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class ManagedDatabaseRedisNetworkOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): ManagedDatabaseRedisNetwork | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._family !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.family = this._family;
+    }
+    if (this._name !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.name = this._name;
+    }
+    if (this._type !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.type = this._type;
+    }
+    if (this._uuid !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.uuid = this._uuid;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: ManagedDatabaseRedisNetwork | cdktf.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._family = undefined;
+      this._name = undefined;
+      this._type = undefined;
+      this._uuid = undefined;
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._family = value.family;
+      this._name = value.name;
+      this._type = value.type;
+      this._uuid = value.uuid;
+    }
+  }
+
+  // family - computed: false, optional: false, required: true
+  private _family?: string; 
+  public get family() {
+    return this.getStringAttribute('family');
+  }
+  public set family(value: string) {
+    this._family = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get familyInput() {
+    return this._family;
+  }
+
+  // name - computed: false, optional: false, required: true
+  private _name?: string; 
+  public get name() {
+    return this.getStringAttribute('name');
+  }
+  public set name(value: string) {
+    this._name = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get nameInput() {
+    return this._name;
+  }
+
+  // type - computed: false, optional: false, required: true
+  private _type?: string; 
+  public get type() {
+    return this.getStringAttribute('type');
+  }
+  public set type(value: string) {
+    this._type = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get typeInput() {
+    return this._type;
+  }
+
+  // uuid - computed: false, optional: false, required: true
+  private _uuid?: string; 
+  public get uuid() {
+    return this.getStringAttribute('uuid');
+  }
+  public set uuid(value: string) {
+    this._uuid = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get uuidInput() {
+    return this._uuid;
+  }
+}
+
+export class ManagedDatabaseRedisNetworkList extends cdktf.ComplexList {
+  public internalValue? : ManagedDatabaseRedisNetwork[] | cdktf.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): ManagedDatabaseRedisNetworkOutputReference {
+    return new ManagedDatabaseRedisNetworkOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
 export interface ManagedDatabaseRedisPropertiesMigration {
   /**
   * Database name for bootstrapping the initial connection
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.0.3/docs/resources/managed_database_redis#dbname ManagedDatabaseRedis#dbname}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.1.0/docs/resources/managed_database_redis#dbname ManagedDatabaseRedis#dbname}
   */
   readonly dbname?: string;
   /**
   * Hostname or IP address of the server where to migrate data from
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.0.3/docs/resources/managed_database_redis#host ManagedDatabaseRedis#host}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.1.0/docs/resources/managed_database_redis#host ManagedDatabaseRedis#host}
   */
   readonly host?: string;
   /**
   * Comma-separated list of databases, which should be ignored during migration (supported by MySQL only at the moment)
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.0.3/docs/resources/managed_database_redis#ignore_dbs ManagedDatabaseRedis#ignore_dbs}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.1.0/docs/resources/managed_database_redis#ignore_dbs ManagedDatabaseRedis#ignore_dbs}
   */
   readonly ignoreDbs?: string;
   /**
   * Password for authentication with the server where to migrate data from
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.0.3/docs/resources/managed_database_redis#password ManagedDatabaseRedis#password}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.1.0/docs/resources/managed_database_redis#password ManagedDatabaseRedis#password}
   */
   readonly password?: string;
   /**
   * Port number of the server where to migrate data from
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.0.3/docs/resources/managed_database_redis#port ManagedDatabaseRedis#port}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.1.0/docs/resources/managed_database_redis#port ManagedDatabaseRedis#port}
   */
   readonly port?: number;
   /**
   * The server where to migrate data from is secured with SSL
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.0.3/docs/resources/managed_database_redis#ssl ManagedDatabaseRedis#ssl}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.1.0/docs/resources/managed_database_redis#ssl ManagedDatabaseRedis#ssl}
   */
   readonly ssl?: boolean | cdktf.IResolvable;
   /**
   * User name for authentication with the server where to migrate data from
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.0.3/docs/resources/managed_database_redis#username ManagedDatabaseRedis#username}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.1.0/docs/resources/managed_database_redis#username ManagedDatabaseRedis#username}
   */
   readonly username?: string;
 }
@@ -548,103 +760,103 @@ export interface ManagedDatabaseRedisProperties {
   /**
   * Automatic utility network IP Filter
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.0.3/docs/resources/managed_database_redis#automatic_utility_network_ip_filter ManagedDatabaseRedis#automatic_utility_network_ip_filter}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.1.0/docs/resources/managed_database_redis#automatic_utility_network_ip_filter ManagedDatabaseRedis#automatic_utility_network_ip_filter}
   */
   readonly automaticUtilityNetworkIpFilter?: boolean | cdktf.IResolvable;
   /**
   * IP filter
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.0.3/docs/resources/managed_database_redis#ip_filter ManagedDatabaseRedis#ip_filter}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.1.0/docs/resources/managed_database_redis#ip_filter ManagedDatabaseRedis#ip_filter}
   */
   readonly ipFilter?: string[];
   /**
   * Public access allows connections to your Managed Database services via the public internet.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.0.3/docs/resources/managed_database_redis#public_access ManagedDatabaseRedis#public_access}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.1.0/docs/resources/managed_database_redis#public_access ManagedDatabaseRedis#public_access}
   */
   readonly publicAccess?: boolean | cdktf.IResolvable;
   /**
   * Default ACL for pub/sub channels used when Redis user is created. Determines default pub/sub channels' ACL for new users if ACL is not supplied. When this option is not defined, all_channels is assumed to keep backward compatibility. This option doesn't affect Redis configuration acl-pubsub-default.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.0.3/docs/resources/managed_database_redis#redis_acl_channels_default ManagedDatabaseRedis#redis_acl_channels_default}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.1.0/docs/resources/managed_database_redis#redis_acl_channels_default ManagedDatabaseRedis#redis_acl_channels_default}
   */
   readonly redisAclChannelsDefault?: string;
   /**
   * Redis IO thread count.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.0.3/docs/resources/managed_database_redis#redis_io_threads ManagedDatabaseRedis#redis_io_threads}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.1.0/docs/resources/managed_database_redis#redis_io_threads ManagedDatabaseRedis#redis_io_threads}
   */
   readonly redisIoThreads?: number;
   /**
   * LFU maxmemory-policy counter decay time in minutes. Default is 1.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.0.3/docs/resources/managed_database_redis#redis_lfu_decay_time ManagedDatabaseRedis#redis_lfu_decay_time}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.1.0/docs/resources/managed_database_redis#redis_lfu_decay_time ManagedDatabaseRedis#redis_lfu_decay_time}
   */
   readonly redisLfuDecayTime?: number;
   /**
   * Counter logarithm factor for volatile-lfu and allkeys-lfu maxmemory-policies. Default is 10.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.0.3/docs/resources/managed_database_redis#redis_lfu_log_factor ManagedDatabaseRedis#redis_lfu_log_factor}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.1.0/docs/resources/managed_database_redis#redis_lfu_log_factor ManagedDatabaseRedis#redis_lfu_log_factor}
   */
   readonly redisLfuLogFactor?: number;
   /**
   * Redis maxmemory-policy. Default is `noeviction`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.0.3/docs/resources/managed_database_redis#redis_maxmemory_policy ManagedDatabaseRedis#redis_maxmemory_policy}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.1.0/docs/resources/managed_database_redis#redis_maxmemory_policy ManagedDatabaseRedis#redis_maxmemory_policy}
   */
   readonly redisMaxmemoryPolicy?: string;
   /**
   * Set notify-keyspace-events option. Default is "".
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.0.3/docs/resources/managed_database_redis#redis_notify_keyspace_events ManagedDatabaseRedis#redis_notify_keyspace_events}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.1.0/docs/resources/managed_database_redis#redis_notify_keyspace_events ManagedDatabaseRedis#redis_notify_keyspace_events}
   */
   readonly redisNotifyKeyspaceEvents?: string;
   /**
   * Number of redis databases. Set number of redis databases. Changing this will cause a restart of redis service.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.0.3/docs/resources/managed_database_redis#redis_number_of_databases ManagedDatabaseRedis#redis_number_of_databases}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.1.0/docs/resources/managed_database_redis#redis_number_of_databases ManagedDatabaseRedis#redis_number_of_databases}
   */
   readonly redisNumberOfDatabases?: number;
   /**
   * Redis persistence. When persistence is 'rdb', Redis does RDB dumps each 10 minutes if any key is changed. Also RDB dumps are done according to backup schedule for backup purposes. When persistence is 'off', no RDB dumps and backups are done, so data can be lost at any moment if service is restarted for any reason, or if service is powered off. Also service can't be forked.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.0.3/docs/resources/managed_database_redis#redis_persistence ManagedDatabaseRedis#redis_persistence}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.1.0/docs/resources/managed_database_redis#redis_persistence ManagedDatabaseRedis#redis_persistence}
   */
   readonly redisPersistence?: string;
   /**
   * Pub/sub client output buffer hard limit in MB. Set output buffer limit for pub / sub clients in MB. The value is the hard limit, the soft limit is 1/4 of the hard limit. When setting the limit, be mindful of the available memory in the selected service plan.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.0.3/docs/resources/managed_database_redis#redis_pubsub_client_output_buffer_limit ManagedDatabaseRedis#redis_pubsub_client_output_buffer_limit}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.1.0/docs/resources/managed_database_redis#redis_pubsub_client_output_buffer_limit ManagedDatabaseRedis#redis_pubsub_client_output_buffer_limit}
   */
   readonly redisPubsubClientOutputBufferLimit?: number;
   /**
   * Require SSL to access Redis. Default is `true`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.0.3/docs/resources/managed_database_redis#redis_ssl ManagedDatabaseRedis#redis_ssl}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.1.0/docs/resources/managed_database_redis#redis_ssl ManagedDatabaseRedis#redis_ssl}
   */
   readonly redisSsl?: boolean | cdktf.IResolvable;
   /**
   * Redis idle connection timeout in seconds. Default is 300.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.0.3/docs/resources/managed_database_redis#redis_timeout ManagedDatabaseRedis#redis_timeout}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.1.0/docs/resources/managed_database_redis#redis_timeout ManagedDatabaseRedis#redis_timeout}
   */
   readonly redisTimeout?: number;
   /**
   * Redis major version.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.0.3/docs/resources/managed_database_redis#redis_version ManagedDatabaseRedis#redis_version}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.1.0/docs/resources/managed_database_redis#redis_version ManagedDatabaseRedis#redis_version}
   */
   readonly redisVersion?: string;
   /**
   * Store logs for the service so that they are available in the HTTP API and console.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.0.3/docs/resources/managed_database_redis#service_log ManagedDatabaseRedis#service_log}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.1.0/docs/resources/managed_database_redis#service_log ManagedDatabaseRedis#service_log}
   */
   readonly serviceLog?: boolean | cdktf.IResolvable;
   /**
   * migration block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.0.3/docs/resources/managed_database_redis#migration ManagedDatabaseRedis#migration}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.1.0/docs/resources/managed_database_redis#migration ManagedDatabaseRedis#migration}
   */
   readonly migration?: ManagedDatabaseRedisPropertiesMigration;
 }
@@ -1192,7 +1404,7 @@ export class ManagedDatabaseRedisPropertiesOutputReference extends cdktf.Complex
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.0.3/docs/resources/managed_database_redis upcloud_managed_database_redis}
+* Represents a {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.1.0/docs/resources/managed_database_redis upcloud_managed_database_redis}
 */
 export class ManagedDatabaseRedis extends cdktf.TerraformResource {
 
@@ -1208,7 +1420,7 @@ export class ManagedDatabaseRedis extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a ManagedDatabaseRedis resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the ManagedDatabaseRedis to import
-  * @param importFromId The id of the existing ManagedDatabaseRedis that should be imported. Refer to the {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.0.3/docs/resources/managed_database_redis#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing ManagedDatabaseRedis that should be imported. Refer to the {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.1.0/docs/resources/managed_database_redis#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the ManagedDatabaseRedis to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -1220,7 +1432,7 @@ export class ManagedDatabaseRedis extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.0.3/docs/resources/managed_database_redis upcloud_managed_database_redis} Resource
+  * Create a new {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.1.0/docs/resources/managed_database_redis upcloud_managed_database_redis} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -1231,7 +1443,7 @@ export class ManagedDatabaseRedis extends cdktf.TerraformResource {
       terraformResourceType: 'upcloud_managed_database_redis',
       terraformGeneratorMetadata: {
         providerName: 'upcloud',
-        providerVersion: '5.0.3',
+        providerVersion: '5.1.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,
@@ -1250,6 +1462,7 @@ export class ManagedDatabaseRedis extends cdktf.TerraformResource {
     this._powered = config.powered;
     this._title = config.title;
     this._zone = config.zone;
+    this._network.internalValue = config.network;
     this._properties.internalValue = config.properties;
   }
 
@@ -1425,6 +1638,22 @@ export class ManagedDatabaseRedis extends cdktf.TerraformResource {
     return this._zone;
   }
 
+  // network - computed: false, optional: true, required: false
+  private _network = new ManagedDatabaseRedisNetworkList(this, "network", true);
+  public get network() {
+    return this._network;
+  }
+  public putNetwork(value: ManagedDatabaseRedisNetwork[] | cdktf.IResolvable) {
+    this._network.internalValue = value;
+  }
+  public resetNetwork() {
+    this._network.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get networkInput() {
+    return this._network.internalValue;
+  }
+
   // properties - computed: false, optional: true, required: false
   private _properties = new ManagedDatabaseRedisPropertiesOutputReference(this, "properties");
   public get properties() {
@@ -1455,6 +1684,7 @@ export class ManagedDatabaseRedis extends cdktf.TerraformResource {
       powered: cdktf.booleanToTerraform(this._powered),
       title: cdktf.stringToTerraform(this._title),
       zone: cdktf.stringToTerraform(this._zone),
+      network: cdktf.listMapper(managedDatabaseRedisNetworkToTerraform, true)(this._network.internalValue),
       properties: managedDatabaseRedisPropertiesToTerraform(this._properties.internalValue),
     };
   }
@@ -1508,6 +1738,12 @@ export class ManagedDatabaseRedis extends cdktf.TerraformResource {
         isBlock: false,
         type: "simple",
         storageClassType: "string",
+      },
+      network: {
+        value: cdktf.listMapperHcl(managedDatabaseRedisNetworkToHclTerraform, true)(this._network.internalValue),
+        isBlock: true,
+        type: "set",
+        storageClassType: "ManagedDatabaseRedisNetworkList",
       },
       properties: {
         value: managedDatabaseRedisPropertiesToHclTerraform(this._properties.internalValue),
