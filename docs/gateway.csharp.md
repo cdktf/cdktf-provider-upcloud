@@ -4,7 +4,7 @@
 
 ### Gateway <a name="Gateway" id="@cdktf/provider-upcloud.gateway.Gateway"></a>
 
-Represents a {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.1.1/docs/resources/gateway upcloud_gateway}.
+Represents a {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.2.0/docs/resources/gateway upcloud_gateway}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-upcloud.gateway.Gateway.Initializer"></a>
 
@@ -73,10 +73,13 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-upcloud.gateway.Gateway.moveFromId">MoveFromId</a></code> | Move the resource corresponding to "id" to this resource. |
 | <code><a href="#@cdktf/provider-upcloud.gateway.Gateway.moveTo">MoveTo</a></code> | Moves this resource to the target resource given by moveTarget. |
 | <code><a href="#@cdktf/provider-upcloud.gateway.Gateway.moveToId">MoveToId</a></code> | Moves this resource to the resource corresponding to "id". |
+| <code><a href="#@cdktf/provider-upcloud.gateway.Gateway.putAddress">PutAddress</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.gateway.Gateway.putRouter">PutRouter</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-upcloud.gateway.Gateway.resetAddress">ResetAddress</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.gateway.Gateway.resetConfiguredStatus">ResetConfiguredStatus</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.gateway.Gateway.resetId">ResetId</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.gateway.Gateway.resetLabels">ResetLabels</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-upcloud.gateway.Gateway.resetPlan">ResetPlan</a></code> | *No description.* |
 
 ---
 
@@ -368,6 +371,18 @@ Full id of resource to move to, e.g. "aws_s3_bucket.example".
 
 ---
 
+##### `PutAddress` <a name="PutAddress" id="@cdktf/provider-upcloud.gateway.Gateway.putAddress"></a>
+
+```csharp
+private void PutAddress(GatewayAddress Value)
+```
+
+###### `Value`<sup>Required</sup> <a name="Value" id="@cdktf/provider-upcloud.gateway.Gateway.putAddress.parameter.value"></a>
+
+- *Type:* <a href="#@cdktf/provider-upcloud.gateway.GatewayAddress">GatewayAddress</a>
+
+---
+
 ##### `PutRouter` <a name="PutRouter" id="@cdktf/provider-upcloud.gateway.Gateway.putRouter"></a>
 
 ```csharp
@@ -379,6 +394,12 @@ private void PutRouter(GatewayRouter Value)
 - *Type:* <a href="#@cdktf/provider-upcloud.gateway.GatewayRouter">GatewayRouter</a>
 
 ---
+
+##### `ResetAddress` <a name="ResetAddress" id="@cdktf/provider-upcloud.gateway.Gateway.resetAddress"></a>
+
+```csharp
+private void ResetAddress()
+```
 
 ##### `ResetConfiguredStatus` <a name="ResetConfiguredStatus" id="@cdktf/provider-upcloud.gateway.Gateway.resetConfiguredStatus"></a>
 
@@ -396,6 +417,12 @@ private void ResetId()
 
 ```csharp
 private void ResetLabels()
+```
+
+##### `ResetPlan` <a name="ResetPlan" id="@cdktf/provider-upcloud.gateway.Gateway.resetPlan"></a>
+
+```csharp
+private void ResetPlan()
 ```
 
 #### Static Functions <a name="Static Functions" id="Static Functions"></a>
@@ -501,7 +528,7 @@ The construct id used in the generated config for the Gateway to import.
 
 The id of the existing Gateway that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.1.1/docs/resources/gateway#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.2.0/docs/resources/gateway#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -531,14 +558,18 @@ Refer to the {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5
 | <code><a href="#@cdktf/provider-upcloud.gateway.Gateway.property.lifecycle">Lifecycle</a></code> | <code>HashiCorp.Cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.gateway.Gateway.property.provider">Provider</a></code> | <code>HashiCorp.Cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.gateway.Gateway.property.provisioners">Provisioners</a></code> | <code>object[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-upcloud.gateway.Gateway.property.address">Address</a></code> | <code><a href="#@cdktf/provider-upcloud.gateway.GatewayAddressOutputReference">GatewayAddressOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.gateway.Gateway.property.addresses">Addresses</a></code> | <code><a href="#@cdktf/provider-upcloud.gateway.GatewayAddressesList">GatewayAddressesList</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-upcloud.gateway.Gateway.property.connections">Connections</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.gateway.Gateway.property.operationalState">OperationalState</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.gateway.Gateway.property.router">Router</a></code> | <code><a href="#@cdktf/provider-upcloud.gateway.GatewayRouterOutputReference">GatewayRouterOutputReference</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-upcloud.gateway.Gateway.property.addressInput">AddressInput</a></code> | <code><a href="#@cdktf/provider-upcloud.gateway.GatewayAddress">GatewayAddress</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.gateway.Gateway.property.configuredStatusInput">ConfiguredStatusInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.gateway.Gateway.property.featuresInput">FeaturesInput</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.gateway.Gateway.property.idInput">IdInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.gateway.Gateway.property.labelsInput">LabelsInput</a></code> | <code>System.Collections.Generic.IDictionary<string, string></code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.gateway.Gateway.property.nameInput">NameInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-upcloud.gateway.Gateway.property.planInput">PlanInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.gateway.Gateway.property.routerInput">RouterInput</a></code> | <code><a href="#@cdktf/provider-upcloud.gateway.GatewayRouter">GatewayRouter</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.gateway.Gateway.property.zoneInput">ZoneInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.gateway.Gateway.property.configuredStatus">ConfiguredStatus</a></code> | <code>string</code> | *No description.* |
@@ -546,6 +577,7 @@ Refer to the {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5
 | <code><a href="#@cdktf/provider-upcloud.gateway.Gateway.property.id">Id</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.gateway.Gateway.property.labels">Labels</a></code> | <code>System.Collections.Generic.IDictionary<string, string></code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.gateway.Gateway.property.name">Name</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-upcloud.gateway.Gateway.property.plan">Plan</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.gateway.Gateway.property.zone">Zone</a></code> | <code>string</code> | *No description.* |
 
 ---
@@ -692,6 +724,16 @@ public object[] Provisioners { get; }
 
 ---
 
+##### `Address`<sup>Required</sup> <a name="Address" id="@cdktf/provider-upcloud.gateway.Gateway.property.address"></a>
+
+```csharp
+public GatewayAddressOutputReference Address { get; }
+```
+
+- *Type:* <a href="#@cdktf/provider-upcloud.gateway.GatewayAddressOutputReference">GatewayAddressOutputReference</a>
+
+---
+
 ##### `Addresses`<sup>Required</sup> <a name="Addresses" id="@cdktf/provider-upcloud.gateway.Gateway.property.addresses"></a>
 
 ```csharp
@@ -699,6 +741,16 @@ public GatewayAddressesList Addresses { get; }
 ```
 
 - *Type:* <a href="#@cdktf/provider-upcloud.gateway.GatewayAddressesList">GatewayAddressesList</a>
+
+---
+
+##### `Connections`<sup>Required</sup> <a name="Connections" id="@cdktf/provider-upcloud.gateway.Gateway.property.connections"></a>
+
+```csharp
+public string[] Connections { get; }
+```
+
+- *Type:* string[]
 
 ---
 
@@ -719,6 +771,16 @@ public GatewayRouterOutputReference Router { get; }
 ```
 
 - *Type:* <a href="#@cdktf/provider-upcloud.gateway.GatewayRouterOutputReference">GatewayRouterOutputReference</a>
+
+---
+
+##### `AddressInput`<sup>Optional</sup> <a name="AddressInput" id="@cdktf/provider-upcloud.gateway.Gateway.property.addressInput"></a>
+
+```csharp
+public GatewayAddress AddressInput { get; }
+```
+
+- *Type:* <a href="#@cdktf/provider-upcloud.gateway.GatewayAddress">GatewayAddress</a>
 
 ---
 
@@ -766,6 +828,16 @@ public System.Collections.Generic.IDictionary<string, string> LabelsInput { get;
 
 ```csharp
 public string NameInput { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `PlanInput`<sup>Optional</sup> <a name="PlanInput" id="@cdktf/provider-upcloud.gateway.Gateway.property.planInput"></a>
+
+```csharp
+public string PlanInput { get; }
 ```
 
 - *Type:* string
@@ -842,6 +914,16 @@ public string Name { get; }
 
 ---
 
+##### `Plan`<sup>Required</sup> <a name="Plan" id="@cdktf/provider-upcloud.gateway.Gateway.property.plan"></a>
+
+```csharp
+public string Plan { get; }
+```
+
+- *Type:* string
+
+---
+
 ##### `Zone`<sup>Required</sup> <a name="Zone" id="@cdktf/provider-upcloud.gateway.Gateway.property.zone"></a>
 
 ```csharp
@@ -871,6 +953,40 @@ public string TfResourceType { get; }
 ---
 
 ## Structs <a name="Structs" id="Structs"></a>
+
+### GatewayAddress <a name="GatewayAddress" id="@cdktf/provider-upcloud.gateway.GatewayAddress"></a>
+
+#### Initializer <a name="Initializer" id="@cdktf/provider-upcloud.gateway.GatewayAddress.Initializer"></a>
+
+```csharp
+using HashiCorp.Cdktf.Providers.Upcloud;
+
+new GatewayAddress {
+    string Name = null
+};
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-upcloud.gateway.GatewayAddress.property.name">Name</a></code> | <code>string</code> | Name of the IP address. |
+
+---
+
+##### `Name`<sup>Optional</sup> <a name="Name" id="@cdktf/provider-upcloud.gateway.GatewayAddress.property.name"></a>
+
+```csharp
+public string Name { get; set; }
+```
+
+- *Type:* string
+
+Name of the IP address.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.2.0/docs/resources/gateway#name Gateway#name}
+
+---
 
 ### GatewayAddresses <a name="GatewayAddresses" id="@cdktf/provider-upcloud.gateway.GatewayAddresses"></a>
 
@@ -904,9 +1020,11 @@ new GatewayConfig {
     string Name,
     GatewayRouter Router,
     string Zone,
+    GatewayAddress Address = null,
     string ConfiguredStatus = null,
     string Id = null,
-    System.Collections.Generic.IDictionary<string, string> Labels = null
+    System.Collections.Generic.IDictionary<string, string> Labels = null,
+    string Plan = null
 };
 ```
 
@@ -921,13 +1039,15 @@ new GatewayConfig {
 | <code><a href="#@cdktf/provider-upcloud.gateway.GatewayConfig.property.lifecycle">Lifecycle</a></code> | <code>HashiCorp.Cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.gateway.GatewayConfig.property.provider">Provider</a></code> | <code>HashiCorp.Cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.gateway.GatewayConfig.property.provisioners">Provisioners</a></code> | <code>object[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-upcloud.gateway.GatewayConfig.property.features">Features</a></code> | <code>string[]</code> | Features enabled for the gateway. |
+| <code><a href="#@cdktf/provider-upcloud.gateway.GatewayConfig.property.features">Features</a></code> | <code>string[]</code> | Features enabled for the gateway. Note that VPN feature is currently in beta, for more details see https://upcloud.com/resources/docs/networking#nat-and-vpn-gateways. |
 | <code><a href="#@cdktf/provider-upcloud.gateway.GatewayConfig.property.name">Name</a></code> | <code>string</code> | Gateway name. Needs to be unique within the account. |
 | <code><a href="#@cdktf/provider-upcloud.gateway.GatewayConfig.property.router">Router</a></code> | <code><a href="#@cdktf/provider-upcloud.gateway.GatewayRouter">GatewayRouter</a></code> | router block. |
 | <code><a href="#@cdktf/provider-upcloud.gateway.GatewayConfig.property.zone">Zone</a></code> | <code>string</code> | Zone in which the gateway will be hosted, e.g. `de-fra1`. |
+| <code><a href="#@cdktf/provider-upcloud.gateway.GatewayConfig.property.address">Address</a></code> | <code><a href="#@cdktf/provider-upcloud.gateway.GatewayAddress">GatewayAddress</a></code> | address block. |
 | <code><a href="#@cdktf/provider-upcloud.gateway.GatewayConfig.property.configuredStatus">ConfiguredStatus</a></code> | <code>string</code> | The service configured status indicates the service's current intended status. Managed by the customer. |
-| <code><a href="#@cdktf/provider-upcloud.gateway.GatewayConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.1.1/docs/resources/gateway#id Gateway#id}. |
+| <code><a href="#@cdktf/provider-upcloud.gateway.GatewayConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.2.0/docs/resources/gateway#id Gateway#id}. |
 | <code><a href="#@cdktf/provider-upcloud.gateway.GatewayConfig.property.labels">Labels</a></code> | <code>System.Collections.Generic.IDictionary<string, string></code> | Key-value pairs to classify the network gateway. |
+| <code><a href="#@cdktf/provider-upcloud.gateway.GatewayConfig.property.plan">Plan</a></code> | <code>string</code> | Gateway pricing plan. |
 
 ---
 
@@ -1009,9 +1129,9 @@ public string[] Features { get; set; }
 
 - *Type:* string[]
 
-Features enabled for the gateway.
+Features enabled for the gateway. Note that VPN feature is currently in beta, for more details see https://upcloud.com/resources/docs/networking#nat-and-vpn-gateways.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.1.1/docs/resources/gateway#features Gateway#features}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.2.0/docs/resources/gateway#features Gateway#features}
 
 ---
 
@@ -1025,7 +1145,7 @@ public string Name { get; set; }
 
 Gateway name. Needs to be unique within the account.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.1.1/docs/resources/gateway#name Gateway#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.2.0/docs/resources/gateway#name Gateway#name}
 
 ---
 
@@ -1039,7 +1159,7 @@ public GatewayRouter Router { get; set; }
 
 router block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.1.1/docs/resources/gateway#router Gateway#router}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.2.0/docs/resources/gateway#router Gateway#router}
 
 ---
 
@@ -1053,7 +1173,21 @@ public string Zone { get; set; }
 
 Zone in which the gateway will be hosted, e.g. `de-fra1`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.1.1/docs/resources/gateway#zone Gateway#zone}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.2.0/docs/resources/gateway#zone Gateway#zone}
+
+---
+
+##### `Address`<sup>Optional</sup> <a name="Address" id="@cdktf/provider-upcloud.gateway.GatewayConfig.property.address"></a>
+
+```csharp
+public GatewayAddress Address { get; set; }
+```
+
+- *Type:* <a href="#@cdktf/provider-upcloud.gateway.GatewayAddress">GatewayAddress</a>
+
+address block.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.2.0/docs/resources/gateway#address Gateway#address}
 
 ---
 
@@ -1067,7 +1201,7 @@ public string ConfiguredStatus { get; set; }
 
 The service configured status indicates the service's current intended status. Managed by the customer.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.1.1/docs/resources/gateway#configured_status Gateway#configured_status}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.2.0/docs/resources/gateway#configured_status Gateway#configured_status}
 
 ---
 
@@ -1079,7 +1213,7 @@ public string Id { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.1.1/docs/resources/gateway#id Gateway#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.2.0/docs/resources/gateway#id Gateway#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1096,7 +1230,21 @@ public System.Collections.Generic.IDictionary<string, string> Labels { get; set;
 
 Key-value pairs to classify the network gateway.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.1.1/docs/resources/gateway#labels Gateway#labels}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.2.0/docs/resources/gateway#labels Gateway#labels}
+
+---
+
+##### `Plan`<sup>Optional</sup> <a name="Plan" id="@cdktf/provider-upcloud.gateway.GatewayConfig.property.plan"></a>
+
+```csharp
+public string Plan { get; set; }
+```
+
+- *Type:* string
+
+Gateway pricing plan.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.2.0/docs/resources/gateway#plan Gateway#plan}
 
 ---
 
@@ -1130,7 +1278,7 @@ public string Id { get; set; }
 
 ID of the router attached to the gateway.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.1.1/docs/resources/gateway#id Gateway#id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.2.0/docs/resources/gateway#id Gateway#id}
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1573,6 +1721,295 @@ public GatewayAddresses InternalValue { get; }
 ```
 
 - *Type:* <a href="#@cdktf/provider-upcloud.gateway.GatewayAddresses">GatewayAddresses</a>
+
+---
+
+
+### GatewayAddressOutputReference <a name="GatewayAddressOutputReference" id="@cdktf/provider-upcloud.gateway.GatewayAddressOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktf/provider-upcloud.gateway.GatewayAddressOutputReference.Initializer"></a>
+
+```csharp
+using HashiCorp.Cdktf.Providers.Upcloud;
+
+new GatewayAddressOutputReference(IInterpolatingParent TerraformResource, string TerraformAttribute);
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-upcloud.gateway.GatewayAddressOutputReference.Initializer.parameter.terraformResource">TerraformResource</a></code> | <code>HashiCorp.Cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktf/provider-upcloud.gateway.GatewayAddressOutputReference.Initializer.parameter.terraformAttribute">TerraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
+
+---
+
+##### `TerraformResource`<sup>Required</sup> <a name="TerraformResource" id="@cdktf/provider-upcloud.gateway.GatewayAddressOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* HashiCorp.Cdktf.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktf/provider-upcloud.gateway.GatewayAddressOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktf/provider-upcloud.gateway.GatewayAddressOutputReference.computeFqn">ComputeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-upcloud.gateway.GatewayAddressOutputReference.getAnyMapAttribute">GetAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-upcloud.gateway.GatewayAddressOutputReference.getBooleanAttribute">GetBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-upcloud.gateway.GatewayAddressOutputReference.getBooleanMapAttribute">GetBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-upcloud.gateway.GatewayAddressOutputReference.getListAttribute">GetListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-upcloud.gateway.GatewayAddressOutputReference.getNumberAttribute">GetNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-upcloud.gateway.GatewayAddressOutputReference.getNumberListAttribute">GetNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-upcloud.gateway.GatewayAddressOutputReference.getNumberMapAttribute">GetNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-upcloud.gateway.GatewayAddressOutputReference.getStringAttribute">GetStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-upcloud.gateway.GatewayAddressOutputReference.getStringMapAttribute">GetStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-upcloud.gateway.GatewayAddressOutputReference.interpolationForAttribute">InterpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-upcloud.gateway.GatewayAddressOutputReference.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktf/provider-upcloud.gateway.GatewayAddressOutputReference.toString">ToString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktf/provider-upcloud.gateway.GatewayAddressOutputReference.resetName">ResetName</a></code> | *No description.* |
+
+---
+
+##### `ComputeFqn` <a name="ComputeFqn" id="@cdktf/provider-upcloud.gateway.GatewayAddressOutputReference.computeFqn"></a>
+
+```csharp
+private string ComputeFqn()
+```
+
+##### `GetAnyMapAttribute` <a name="GetAnyMapAttribute" id="@cdktf/provider-upcloud.gateway.GatewayAddressOutputReference.getAnyMapAttribute"></a>
+
+```csharp
+private System.Collections.Generic.IDictionary<string, object> GetAnyMapAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktf/provider-upcloud.gateway.GatewayAddressOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetBooleanAttribute` <a name="GetBooleanAttribute" id="@cdktf/provider-upcloud.gateway.GatewayAddressOutputReference.getBooleanAttribute"></a>
+
+```csharp
+private IResolvable GetBooleanAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktf/provider-upcloud.gateway.GatewayAddressOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetBooleanMapAttribute` <a name="GetBooleanMapAttribute" id="@cdktf/provider-upcloud.gateway.GatewayAddressOutputReference.getBooleanMapAttribute"></a>
+
+```csharp
+private System.Collections.Generic.IDictionary<string, bool> GetBooleanMapAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktf/provider-upcloud.gateway.GatewayAddressOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetListAttribute` <a name="GetListAttribute" id="@cdktf/provider-upcloud.gateway.GatewayAddressOutputReference.getListAttribute"></a>
+
+```csharp
+private string[] GetListAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktf/provider-upcloud.gateway.GatewayAddressOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetNumberAttribute` <a name="GetNumberAttribute" id="@cdktf/provider-upcloud.gateway.GatewayAddressOutputReference.getNumberAttribute"></a>
+
+```csharp
+private double GetNumberAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktf/provider-upcloud.gateway.GatewayAddressOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetNumberListAttribute` <a name="GetNumberListAttribute" id="@cdktf/provider-upcloud.gateway.GatewayAddressOutputReference.getNumberListAttribute"></a>
+
+```csharp
+private double[] GetNumberListAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktf/provider-upcloud.gateway.GatewayAddressOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetNumberMapAttribute` <a name="GetNumberMapAttribute" id="@cdktf/provider-upcloud.gateway.GatewayAddressOutputReference.getNumberMapAttribute"></a>
+
+```csharp
+private System.Collections.Generic.IDictionary<string, double> GetNumberMapAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktf/provider-upcloud.gateway.GatewayAddressOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetStringAttribute` <a name="GetStringAttribute" id="@cdktf/provider-upcloud.gateway.GatewayAddressOutputReference.getStringAttribute"></a>
+
+```csharp
+private string GetStringAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktf/provider-upcloud.gateway.GatewayAddressOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetStringMapAttribute` <a name="GetStringMapAttribute" id="@cdktf/provider-upcloud.gateway.GatewayAddressOutputReference.getStringMapAttribute"></a>
+
+```csharp
+private System.Collections.Generic.IDictionary<string, string> GetStringMapAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktf/provider-upcloud.gateway.GatewayAddressOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `InterpolationForAttribute` <a name="InterpolationForAttribute" id="@cdktf/provider-upcloud.gateway.GatewayAddressOutputReference.interpolationForAttribute"></a>
+
+```csharp
+private IResolvable InterpolationForAttribute(string Property)
+```
+
+###### `Property`<sup>Required</sup> <a name="Property" id="@cdktf/provider-upcloud.gateway.GatewayAddressOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* string
+
+---
+
+##### `Resolve` <a name="Resolve" id="@cdktf/provider-upcloud.gateway.GatewayAddressOutputReference.resolve"></a>
+
+```csharp
+private object Resolve(IResolveContext Context)
+```
+
+Produce the Token's value at resolution time.
+
+###### `Context`<sup>Required</sup> <a name="Context" id="@cdktf/provider-upcloud.gateway.GatewayAddressOutputReference.resolve.parameter._context"></a>
+
+- *Type:* HashiCorp.Cdktf.IResolveContext
+
+---
+
+##### `ToString` <a name="ToString" id="@cdktf/provider-upcloud.gateway.GatewayAddressOutputReference.toString"></a>
+
+```csharp
+private string ToString()
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `ResetName` <a name="ResetName" id="@cdktf/provider-upcloud.gateway.GatewayAddressOutputReference.resetName"></a>
+
+```csharp
+private void ResetName()
+```
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-upcloud.gateway.GatewayAddressOutputReference.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktf/provider-upcloud.gateway.GatewayAddressOutputReference.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-upcloud.gateway.GatewayAddressOutputReference.property.address">Address</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-upcloud.gateway.GatewayAddressOutputReference.property.nameInput">NameInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-upcloud.gateway.GatewayAddressOutputReference.property.name">Name</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-upcloud.gateway.GatewayAddressOutputReference.property.internalValue">InternalValue</a></code> | <code><a href="#@cdktf/provider-upcloud.gateway.GatewayAddress">GatewayAddress</a></code> | *No description.* |
+
+---
+
+##### `CreationStack`<sup>Required</sup> <a name="CreationStack" id="@cdktf/provider-upcloud.gateway.GatewayAddressOutputReference.property.creationStack"></a>
+
+```csharp
+public string[] CreationStack { get; }
+```
+
+- *Type:* string[]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `Fqn`<sup>Required</sup> <a name="Fqn" id="@cdktf/provider-upcloud.gateway.GatewayAddressOutputReference.property.fqn"></a>
+
+```csharp
+public string Fqn { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `Address`<sup>Required</sup> <a name="Address" id="@cdktf/provider-upcloud.gateway.GatewayAddressOutputReference.property.address"></a>
+
+```csharp
+public string Address { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `NameInput`<sup>Optional</sup> <a name="NameInput" id="@cdktf/provider-upcloud.gateway.GatewayAddressOutputReference.property.nameInput"></a>
+
+```csharp
+public string NameInput { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `Name`<sup>Required</sup> <a name="Name" id="@cdktf/provider-upcloud.gateway.GatewayAddressOutputReference.property.name"></a>
+
+```csharp
+public string Name { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-upcloud.gateway.GatewayAddressOutputReference.property.internalValue"></a>
+
+```csharp
+public GatewayAddress InternalValue { get; }
+```
+
+- *Type:* <a href="#@cdktf/provider-upcloud.gateway.GatewayAddress">GatewayAddress</a>
 
 ---
 

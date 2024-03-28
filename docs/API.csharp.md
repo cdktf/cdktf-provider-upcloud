@@ -21,6 +21,8 @@ The following submodules are available:
 - [firewallRules](./firewallRules.csharp.md)
 - [floatingIpAddress](./floatingIpAddress.csharp.md)
 - [gateway](./gateway.csharp.md)
+- [gatewayConnection](./gatewayConnection.csharp.md)
+- [gatewayConnectionTunnel](./gatewayConnectionTunnel.csharp.md)
 - [kubernetesCluster](./kubernetesCluster.csharp.md)
 - [kubernetesNodeGroup](./kubernetesNodeGroup.csharp.md)
 - [loadbalancer](./loadbalancer.csharp.md)

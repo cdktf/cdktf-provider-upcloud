@@ -4,12 +4,12 @@
 
 ### DataUpcloudStorage <a name="DataUpcloudStorage" id="@cdktf/provider-upcloud.dataUpcloudStorage.DataUpcloudStorage"></a>
 
-Represents a {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.1.1/docs/data-sources/storage upcloud_storage}.
+Represents a {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.2.0/docs/data-sources/storage upcloud_storage}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-upcloud.dataUpcloudStorage.DataUpcloudStorage.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v14/dataupcloudstorage"
+import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/dataupcloudstorage"
 
 dataupcloudstorage.NewDataUpcloudStorage(scope Construct, id *string, config DataUpcloudStorageConfig) DataUpcloudStorage
 ```
@@ -318,7 +318,7 @@ func ResetZone()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-upcloud.dataUpcloudStorage.DataUpcloudStorage.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v14/dataupcloudstorage"
+import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/dataupcloudstorage"
 
 dataupcloudstorage.DataUpcloudStorage_IsConstruct(x interface{}) *bool
 ```
@@ -350,7 +350,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-upcloud.dataUpcloudStorage.DataUpcloudStorage.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v14/dataupcloudstorage"
+import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/dataupcloudstorage"
 
 dataupcloudstorage.DataUpcloudStorage_IsTerraformElement(x interface{}) *bool
 ```
@@ -364,7 +364,7 @@ dataupcloudstorage.DataUpcloudStorage_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-upcloud.dataUpcloudStorage.DataUpcloudStorage.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v14/dataupcloudstorage"
+import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/dataupcloudstorage"
 
 dataupcloudstorage.DataUpcloudStorage_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -378,7 +378,7 @@ dataupcloudstorage.DataUpcloudStorage_IsTerraformDataSource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-upcloud.dataUpcloudStorage.DataUpcloudStorage.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v14/dataupcloudstorage"
+import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/dataupcloudstorage"
 
 dataupcloudstorage.DataUpcloudStorage_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -407,7 +407,7 @@ The construct id used in the generated config for the DataUpcloudStorage to impo
 
 The id of the existing DataUpcloudStorage that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.1.1/docs/data-sources/storage#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.2.0/docs/data-sources/storage#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -783,7 +783,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-upcloud.dataUpcloudStorage.DataUpcloudStorageConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v14/dataupcloudstorage"
+import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/dataupcloudstorage"
 
 &dataupcloudstorage.DataUpcloudStorageConfig {
 	Connection: interface{},
@@ -816,7 +816,7 @@ import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v14/dataupcloudstorag
 | <code><a href="#@cdktf/provider-upcloud.dataUpcloudStorage.DataUpcloudStorageConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.dataUpcloudStorage.DataUpcloudStorageConfig.property.type">Type</a></code> | <code>*string</code> | Storage type (normal, backup, cdrom, template). Use 'favorite' as type to filter storages on the list of favorites. |
 | <code><a href="#@cdktf/provider-upcloud.dataUpcloudStorage.DataUpcloudStorageConfig.property.accessType">AccessType</a></code> | <code>*string</code> | Storage access type (public, private). |
-| <code><a href="#@cdktf/provider-upcloud.dataUpcloudStorage.DataUpcloudStorageConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.1.1/docs/data-sources/storage#id DataUpcloudStorage#id}. |
+| <code><a href="#@cdktf/provider-upcloud.dataUpcloudStorage.DataUpcloudStorageConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.2.0/docs/data-sources/storage#id DataUpcloudStorage#id}. |
 | <code><a href="#@cdktf/provider-upcloud.dataUpcloudStorage.DataUpcloudStorageConfig.property.mostRecent">MostRecent</a></code> | <code>interface{}</code> | If more than one result is returned, use the most recent storage. |
 | <code><a href="#@cdktf/provider-upcloud.dataUpcloudStorage.DataUpcloudStorageConfig.property.name">Name</a></code> | <code>*string</code> | Exact name of the storage (same as title). |
 | <code><a href="#@cdktf/provider-upcloud.dataUpcloudStorage.DataUpcloudStorageConfig.property.nameRegex">NameRegex</a></code> | <code>*string</code> | Use regular expression to match storage name. |
@@ -904,7 +904,7 @@ Type *string
 
 Storage type (normal, backup, cdrom, template). Use 'favorite' as type to filter storages on the list of favorites.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.1.1/docs/data-sources/storage#type DataUpcloudStorage#type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.2.0/docs/data-sources/storage#type DataUpcloudStorage#type}
 
 ---
 
@@ -918,7 +918,7 @@ AccessType *string
 
 Storage access type (public, private).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.1.1/docs/data-sources/storage#access_type DataUpcloudStorage#access_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.2.0/docs/data-sources/storage#access_type DataUpcloudStorage#access_type}
 
 ---
 
@@ -930,7 +930,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.1.1/docs/data-sources/storage#id DataUpcloudStorage#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.2.0/docs/data-sources/storage#id DataUpcloudStorage#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -949,7 +949,7 @@ If more than one result is returned, use the most recent storage.
 
 This is only useful with private storages. Public storages might give unpredictable results.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.1.1/docs/data-sources/storage#most_recent DataUpcloudStorage#most_recent}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.2.0/docs/data-sources/storage#most_recent DataUpcloudStorage#most_recent}
 
 ---
 
@@ -963,7 +963,7 @@ Name *string
 
 Exact name of the storage (same as title).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.1.1/docs/data-sources/storage#name DataUpcloudStorage#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.2.0/docs/data-sources/storage#name DataUpcloudStorage#name}
 
 ---
 
@@ -977,7 +977,7 @@ NameRegex *string
 
 Use regular expression to match storage name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.1.1/docs/data-sources/storage#name_regex DataUpcloudStorage#name_regex}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.2.0/docs/data-sources/storage#name_regex DataUpcloudStorage#name_regex}
 
 ---
 
@@ -991,7 +991,7 @@ Zone *string
 
 The zone in which the storage resides, e.g. `de-fra1`. You can list available zones with `upctl zone list`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.1.1/docs/data-sources/storage#zone DataUpcloudStorage#zone}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.2.0/docs/data-sources/storage#zone DataUpcloudStorage#zone}
 
 ---
 

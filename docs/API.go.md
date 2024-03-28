@@ -21,6 +21,8 @@ The following submodules are available:
 - [firewallRules](./firewallRules.go.md)
 - [floatingIpAddress](./floatingIpAddress.go.md)
 - [gateway](./gateway.go.md)
+- [gatewayConnection](./gatewayConnection.go.md)
+- [gatewayConnectionTunnel](./gatewayConnectionTunnel.go.md)
 - [kubernetesCluster](./kubernetesCluster.go.md)
 - [kubernetesNodeGroup](./kubernetesNodeGroup.go.md)
 - [loadbalancer](./loadbalancer.go.md)

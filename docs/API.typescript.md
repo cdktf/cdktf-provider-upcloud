@@ -21,6 +21,8 @@ The following submodules are available:
 - [firewallRules](./firewallRules.typescript.md)
 - [floatingIpAddress](./floatingIpAddress.typescript.md)
 - [gateway](./gateway.typescript.md)
+- [gatewayConnection](./gatewayConnection.typescript.md)
+- [gatewayConnectionTunnel](./gatewayConnectionTunnel.typescript.md)
 - [kubernetesCluster](./kubernetesCluster.typescript.md)
 - [kubernetesNodeGroup](./kubernetesNodeGroup.typescript.md)
 - [loadbalancer](./loadbalancer.typescript.md)

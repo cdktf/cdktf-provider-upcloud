@@ -4,7 +4,7 @@
 
 ### Loadbalancer <a name="Loadbalancer" id="@cdktf/provider-upcloud.loadbalancer.Loadbalancer"></a>
 
-Represents a {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.1.1/docs/resources/loadbalancer upcloud_loadbalancer}.
+Represents a {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.2.0/docs/resources/loadbalancer upcloud_loadbalancer}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-upcloud.loadbalancer.Loadbalancer.Initializer"></a>
 
@@ -49,7 +49,7 @@ loadbalancer.Loadbalancer(
 | <code><a href="#@cdktf/provider-upcloud.loadbalancer.Loadbalancer.Initializer.parameter.plan">plan</a></code> | <code>str</code> | Plan which the service will have. You can list available load balancer plans with `upctl loadbalancer plans`. |
 | <code><a href="#@cdktf/provider-upcloud.loadbalancer.Loadbalancer.Initializer.parameter.zone">zone</a></code> | <code>str</code> | Zone in which the service will be hosted, e.g. `fi-hel1`. You can list available zones with `upctl zone list`. |
 | <code><a href="#@cdktf/provider-upcloud.loadbalancer.Loadbalancer.Initializer.parameter.configuredStatus">configured_status</a></code> | <code>str</code> | The service configured status indicates the service's current intended status. Managed by the customer. |
-| <code><a href="#@cdktf/provider-upcloud.loadbalancer.Loadbalancer.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.1.1/docs/resources/loadbalancer#id Loadbalancer#id}. |
+| <code><a href="#@cdktf/provider-upcloud.loadbalancer.Loadbalancer.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.2.0/docs/resources/loadbalancer#id Loadbalancer#id}. |
 | <code><a href="#@cdktf/provider-upcloud.loadbalancer.Loadbalancer.Initializer.parameter.labels">labels</a></code> | <code>typing.Mapping[str]</code> | Key-value pairs to classify the load balancer. |
 | <code><a href="#@cdktf/provider-upcloud.loadbalancer.Loadbalancer.Initializer.parameter.maintenanceDow">maintenance_dow</a></code> | <code>str</code> | The day of the week on which maintenance will be performed. |
 | <code><a href="#@cdktf/provider-upcloud.loadbalancer.Loadbalancer.Initializer.parameter.maintenanceTime">maintenance_time</a></code> | <code>str</code> | The time at which the maintenance will begin in UTC. |
@@ -124,7 +124,7 @@ Must be unique amongst siblings in the same scope
 
 The name of the service must be unique within customer account.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.1.1/docs/resources/loadbalancer#name Loadbalancer#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.2.0/docs/resources/loadbalancer#name Loadbalancer#name}
 
 ---
 
@@ -134,7 +134,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upclo
 
 Plan which the service will have. You can list available load balancer plans with `upctl loadbalancer plans`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.1.1/docs/resources/loadbalancer#plan Loadbalancer#plan}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.2.0/docs/resources/loadbalancer#plan Loadbalancer#plan}
 
 ---
 
@@ -144,7 +144,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upclo
 
 Zone in which the service will be hosted, e.g. `fi-hel1`. You can list available zones with `upctl zone list`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.1.1/docs/resources/loadbalancer#zone Loadbalancer#zone}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.2.0/docs/resources/loadbalancer#zone Loadbalancer#zone}
 
 ---
 
@@ -154,7 +154,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upclo
 
 The service configured status indicates the service's current intended status. Managed by the customer.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.1.1/docs/resources/loadbalancer#configured_status Loadbalancer#configured_status}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.2.0/docs/resources/loadbalancer#configured_status Loadbalancer#configured_status}
 
 ---
 
@@ -162,7 +162,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upclo
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.1.1/docs/resources/loadbalancer#id Loadbalancer#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.2.0/docs/resources/loadbalancer#id Loadbalancer#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -175,7 +175,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 Key-value pairs to classify the load balancer.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.1.1/docs/resources/loadbalancer#labels Loadbalancer#labels}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.2.0/docs/resources/loadbalancer#labels Loadbalancer#labels}
 
 ---
 
@@ -187,7 +187,7 @@ The day of the week on which maintenance will be performed.
 
 If not provided, we will randomly select a weekend day. Valid values `monday|tuesday|wednesday|thursday|friday|saturday|sunday`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.1.1/docs/resources/loadbalancer#maintenance_dow Loadbalancer#maintenance_dow}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.2.0/docs/resources/loadbalancer#maintenance_dow Loadbalancer#maintenance_dow}
 
 ---
 
@@ -199,7 +199,7 @@ The time at which the maintenance will begin in UTC.
 
 A 2-hour timeframe has been allocated for maintenance. During this period, the multi-node production plans will not experience any downtime, while the one-node plans will have a downtime of 1-2 minutes. If not provided, we will randomly select an off-peak time. Needs to be a valid time format in UTC HH:MM:SSZ, for example `20:01:01Z`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.1.1/docs/resources/loadbalancer#maintenance_time Loadbalancer#maintenance_time}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.2.0/docs/resources/loadbalancer#maintenance_time Loadbalancer#maintenance_time}
 
 ---
 
@@ -209,7 +209,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upclo
 
 Private network UUID where traffic will be routed. Must reside in load balancer zone.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.1.1/docs/resources/loadbalancer#network Loadbalancer#network}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.2.0/docs/resources/loadbalancer#network Loadbalancer#network}
 
 ---
 
@@ -219,7 +219,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upclo
 
 networks block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.1.1/docs/resources/loadbalancer#networks Loadbalancer#networks}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.2.0/docs/resources/loadbalancer#networks Loadbalancer#networks}
 
 ---
 
@@ -756,7 +756,7 @@ The construct id used in the generated config for the Loadbalancer to import.
 
 The id of the existing Loadbalancer that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.1.1/docs/resources/loadbalancer#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.2.0/docs/resources/loadbalancer#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1280,7 +1280,7 @@ loadbalancer.LoadbalancerConfig(
 | <code><a href="#@cdktf/provider-upcloud.loadbalancer.LoadbalancerConfig.property.plan">plan</a></code> | <code>str</code> | Plan which the service will have. You can list available load balancer plans with `upctl loadbalancer plans`. |
 | <code><a href="#@cdktf/provider-upcloud.loadbalancer.LoadbalancerConfig.property.zone">zone</a></code> | <code>str</code> | Zone in which the service will be hosted, e.g. `fi-hel1`. You can list available zones with `upctl zone list`. |
 | <code><a href="#@cdktf/provider-upcloud.loadbalancer.LoadbalancerConfig.property.configuredStatus">configured_status</a></code> | <code>str</code> | The service configured status indicates the service's current intended status. Managed by the customer. |
-| <code><a href="#@cdktf/provider-upcloud.loadbalancer.LoadbalancerConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.1.1/docs/resources/loadbalancer#id Loadbalancer#id}. |
+| <code><a href="#@cdktf/provider-upcloud.loadbalancer.LoadbalancerConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.2.0/docs/resources/loadbalancer#id Loadbalancer#id}. |
 | <code><a href="#@cdktf/provider-upcloud.loadbalancer.LoadbalancerConfig.property.labels">labels</a></code> | <code>typing.Mapping[str]</code> | Key-value pairs to classify the load balancer. |
 | <code><a href="#@cdktf/provider-upcloud.loadbalancer.LoadbalancerConfig.property.maintenanceDow">maintenance_dow</a></code> | <code>str</code> | The day of the week on which maintenance will be performed. |
 | <code><a href="#@cdktf/provider-upcloud.loadbalancer.LoadbalancerConfig.property.maintenanceTime">maintenance_time</a></code> | <code>str</code> | The time at which the maintenance will begin in UTC. |
@@ -1369,7 +1369,7 @@ name: str
 
 The name of the service must be unique within customer account.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.1.1/docs/resources/loadbalancer#name Loadbalancer#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.2.0/docs/resources/loadbalancer#name Loadbalancer#name}
 
 ---
 
@@ -1383,7 +1383,7 @@ plan: str
 
 Plan which the service will have. You can list available load balancer plans with `upctl loadbalancer plans`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.1.1/docs/resources/loadbalancer#plan Loadbalancer#plan}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.2.0/docs/resources/loadbalancer#plan Loadbalancer#plan}
 
 ---
 
@@ -1397,7 +1397,7 @@ zone: str
 
 Zone in which the service will be hosted, e.g. `fi-hel1`. You can list available zones with `upctl zone list`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.1.1/docs/resources/loadbalancer#zone Loadbalancer#zone}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.2.0/docs/resources/loadbalancer#zone Loadbalancer#zone}
 
 ---
 
@@ -1411,7 +1411,7 @@ configured_status: str
 
 The service configured status indicates the service's current intended status. Managed by the customer.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.1.1/docs/resources/loadbalancer#configured_status Loadbalancer#configured_status}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.2.0/docs/resources/loadbalancer#configured_status Loadbalancer#configured_status}
 
 ---
 
@@ -1423,7 +1423,7 @@ id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.1.1/docs/resources/loadbalancer#id Loadbalancer#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.2.0/docs/resources/loadbalancer#id Loadbalancer#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1440,7 +1440,7 @@ labels: typing.Mapping[str]
 
 Key-value pairs to classify the load balancer.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.1.1/docs/resources/loadbalancer#labels Loadbalancer#labels}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.2.0/docs/resources/loadbalancer#labels Loadbalancer#labels}
 
 ---
 
@@ -1456,7 +1456,7 @@ The day of the week on which maintenance will be performed.
 
 If not provided, we will randomly select a weekend day. Valid values `monday|tuesday|wednesday|thursday|friday|saturday|sunday`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.1.1/docs/resources/loadbalancer#maintenance_dow Loadbalancer#maintenance_dow}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.2.0/docs/resources/loadbalancer#maintenance_dow Loadbalancer#maintenance_dow}
 
 ---
 
@@ -1472,7 +1472,7 @@ The time at which the maintenance will begin in UTC.
 
 A 2-hour timeframe has been allocated for maintenance. During this period, the multi-node production plans will not experience any downtime, while the one-node plans will have a downtime of 1-2 minutes. If not provided, we will randomly select an off-peak time. Needs to be a valid time format in UTC HH:MM:SSZ, for example `20:01:01Z`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.1.1/docs/resources/loadbalancer#maintenance_time Loadbalancer#maintenance_time}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.2.0/docs/resources/loadbalancer#maintenance_time Loadbalancer#maintenance_time}
 
 ---
 
@@ -1486,7 +1486,7 @@ network: str
 
 Private network UUID where traffic will be routed. Must reside in load balancer zone.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.1.1/docs/resources/loadbalancer#network Loadbalancer#network}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.2.0/docs/resources/loadbalancer#network Loadbalancer#network}
 
 ---
 
@@ -1500,7 +1500,7 @@ networks: typing.Union[IResolvable, typing.List[LoadbalancerNetworks]]
 
 networks block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.1.1/docs/resources/loadbalancer#networks Loadbalancer#networks}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.2.0/docs/resources/loadbalancer#networks Loadbalancer#networks}
 
 ---
 
@@ -1540,7 +1540,7 @@ family: str
 
 Network family. Currently only `IPv4` is supported.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.1.1/docs/resources/loadbalancer#family Loadbalancer#family}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.2.0/docs/resources/loadbalancer#family Loadbalancer#family}
 
 ---
 
@@ -1554,7 +1554,7 @@ name: str
 
 The name of the network must be unique within the service.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.1.1/docs/resources/loadbalancer#name Loadbalancer#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.2.0/docs/resources/loadbalancer#name Loadbalancer#name}
 
 ---
 
@@ -1570,7 +1570,7 @@ The type of the network.
 
 Only one public network can be attached and at least one private network must be attached.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.1.1/docs/resources/loadbalancer#type Loadbalancer#type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.2.0/docs/resources/loadbalancer#type Loadbalancer#type}
 
 ---
 
@@ -1586,7 +1586,7 @@ Private network UUID.
 
 Required for private networks and must reside in loadbalancer zone. For public network the field should be omitted.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.1.1/docs/resources/loadbalancer#network Loadbalancer#network}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.2.0/docs/resources/loadbalancer#network Loadbalancer#network}
 
 ---
 

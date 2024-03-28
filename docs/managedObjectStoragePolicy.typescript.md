@@ -4,7 +4,7 @@
 
 ### ManagedObjectStoragePolicy <a name="ManagedObjectStoragePolicy" id="@cdktf/provider-upcloud.managedObjectStoragePolicy.ManagedObjectStoragePolicy"></a>
 
-Represents a {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.1.1/docs/resources/managed_object_storage_policy upcloud_managed_object_storage_policy}.
+Represents a {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.2.0/docs/resources/managed_object_storage_policy upcloud_managed_object_storage_policy}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-upcloud.managedObjectStoragePolicy.ManagedObjectStoragePolicy.Initializer"></a>
 
@@ -481,7 +481,7 @@ The construct id used in the generated config for the ManagedObjectStoragePolicy
 
 The id of the existing ManagedObjectStoragePolicy that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.1.1/docs/resources/managed_object_storage_policy#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.2.0/docs/resources/managed_object_storage_policy#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -877,7 +877,7 @@ const managedObjectStoragePolicyConfig: managedObjectStoragePolicy.ManagedObject
 | <code><a href="#@cdktf/provider-upcloud.managedObjectStoragePolicy.ManagedObjectStoragePolicyConfig.property.name">name</a></code> | <code>string</code> | Policy name. |
 | <code><a href="#@cdktf/provider-upcloud.managedObjectStoragePolicy.ManagedObjectStoragePolicyConfig.property.serviceUuid">serviceUuid</a></code> | <code>string</code> | Managed Object Storage service UUID. |
 | <code><a href="#@cdktf/provider-upcloud.managedObjectStoragePolicy.ManagedObjectStoragePolicyConfig.property.description">description</a></code> | <code>string</code> | Description of the policy. |
-| <code><a href="#@cdktf/provider-upcloud.managedObjectStoragePolicy.ManagedObjectStoragePolicyConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.1.1/docs/resources/managed_object_storage_policy#id ManagedObjectStoragePolicy#id}. |
+| <code><a href="#@cdktf/provider-upcloud.managedObjectStoragePolicy.ManagedObjectStoragePolicyConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.2.0/docs/resources/managed_object_storage_policy#id ManagedObjectStoragePolicy#id}. |
 
 ---
 
@@ -961,7 +961,7 @@ public readonly document: string;
 
 Policy document, URL-encoded compliant with RFC 3986.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.1.1/docs/resources/managed_object_storage_policy#document ManagedObjectStoragePolicy#document}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.2.0/docs/resources/managed_object_storage_policy#document ManagedObjectStoragePolicy#document}
 
 ---
 
@@ -975,7 +975,7 @@ public readonly name: string;
 
 Policy name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.1.1/docs/resources/managed_object_storage_policy#name ManagedObjectStoragePolicy#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.2.0/docs/resources/managed_object_storage_policy#name ManagedObjectStoragePolicy#name}
 
 ---
 
@@ -989,7 +989,7 @@ public readonly serviceUuid: string;
 
 Managed Object Storage service UUID.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.1.1/docs/resources/managed_object_storage_policy#service_uuid ManagedObjectStoragePolicy#service_uuid}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.2.0/docs/resources/managed_object_storage_policy#service_uuid ManagedObjectStoragePolicy#service_uuid}
 
 ---
 
@@ -1003,7 +1003,7 @@ public readonly description: string;
 
 Description of the policy.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.1.1/docs/resources/managed_object_storage_policy#description ManagedObjectStoragePolicy#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.2.0/docs/resources/managed_object_storage_policy#description ManagedObjectStoragePolicy#description}
 
 ---
 
@@ -1015,7 +1015,7 @@ public readonly id: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.1.1/docs/resources/managed_object_storage_policy#id ManagedObjectStoragePolicy#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.2.0/docs/resources/managed_object_storage_policy#id ManagedObjectStoragePolicy#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.

@@ -4,12 +4,12 @@
 
 ### Router <a name="Router" id="@cdktf/provider-upcloud.router.Router"></a>
 
-Represents a {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.1.1/docs/resources/router upcloud_router}.
+Represents a {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.2.0/docs/resources/router upcloud_router}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-upcloud.router.Router.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v14/router"
+import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/router"
 
 router.NewRouter(scope Construct, id *string, config RouterConfig) Router
 ```
@@ -405,7 +405,7 @@ func ResetStaticRoute()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-upcloud.router.Router.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v14/router"
+import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/router"
 
 router.Router_IsConstruct(x interface{}) *bool
 ```
@@ -437,7 +437,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-upcloud.router.Router.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v14/router"
+import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/router"
 
 router.Router_IsTerraformElement(x interface{}) *bool
 ```
@@ -451,7 +451,7 @@ router.Router_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-upcloud.router.Router.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v14/router"
+import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/router"
 
 router.Router_IsTerraformResource(x interface{}) *bool
 ```
@@ -465,7 +465,7 @@ router.Router_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-upcloud.router.Router.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v14/router"
+import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/router"
 
 router.Router_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -494,7 +494,7 @@ The construct id used in the generated config for the Router to import.
 
 The id of the existing Router that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.1.1/docs/resources/router#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.2.0/docs/resources/router#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -782,7 +782,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-upcloud.router.RouterConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v14/router"
+import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/router"
 
 &router.RouterConfig {
 	Connection: interface{},
@@ -810,7 +810,7 @@ import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v14/router"
 | <code><a href="#@cdktf/provider-upcloud.router.RouterConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.router.RouterConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.router.RouterConfig.property.name">Name</a></code> | <code>*string</code> | Name of the router. |
-| <code><a href="#@cdktf/provider-upcloud.router.RouterConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.1.1/docs/resources/router#id Router#id}. |
+| <code><a href="#@cdktf/provider-upcloud.router.RouterConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.2.0/docs/resources/router#id Router#id}. |
 | <code><a href="#@cdktf/provider-upcloud.router.RouterConfig.property.staticRoute">StaticRoute</a></code> | <code>interface{}</code> | static_route block. |
 
 ---
@@ -895,7 +895,7 @@ Name *string
 
 Name of the router.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.1.1/docs/resources/router#name Router#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.2.0/docs/resources/router#name Router#name}
 
 ---
 
@@ -907,7 +907,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.1.1/docs/resources/router#id Router#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.2.0/docs/resources/router#id Router#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -924,7 +924,7 @@ StaticRoute interface{}
 
 static_route block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.1.1/docs/resources/router#static_route Router#static_route}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.2.0/docs/resources/router#static_route Router#static_route}
 
 ---
 
@@ -933,7 +933,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upclo
 #### Initializer <a name="Initializer" id="@cdktf/provider-upcloud.router.RouterStaticRoute.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v14/router"
+import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/router"
 
 &router.RouterStaticRoute {
 	Nexthop: *string,
@@ -964,7 +964,7 @@ Next hop address.
 
 NOTE: For static route to be active the next hop has to be an address of a reachable running Cloud Server in one of the Private Networks attached to the router.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.1.1/docs/resources/router#nexthop Router#nexthop}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.2.0/docs/resources/router#nexthop Router#nexthop}
 
 ---
 
@@ -978,7 +978,7 @@ Route *string
 
 Destination prefix of the route.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.1.1/docs/resources/router#route Router#route}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.2.0/docs/resources/router#route Router#route}
 
 ---
 
@@ -992,7 +992,7 @@ Name *string
 
 Name or description of the route.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.1.1/docs/resources/router#name Router#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.2.0/docs/resources/router#name Router#name}
 
 ---
 
@@ -1003,7 +1003,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upclo
 #### Initializers <a name="Initializers" id="@cdktf/provider-upcloud.router.RouterStaticRouteList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v14/router"
+import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/router"
 
 router.NewRouterStaticRouteList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) RouterStaticRouteList
 ```
@@ -1163,7 +1163,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-upcloud.router.RouterStaticRouteOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v14/router"
+import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/router"
 
 router.NewRouterStaticRouteOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) RouterStaticRouteOutputReference
 ```

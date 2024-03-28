@@ -21,6 +21,8 @@ The following submodules are available:
 - [firewallRules](./firewallRules.java.md)
 - [floatingIpAddress](./floatingIpAddress.java.md)
 - [gateway](./gateway.java.md)
+- [gatewayConnection](./gatewayConnection.java.md)
+- [gatewayConnectionTunnel](./gatewayConnectionTunnel.java.md)
 - [kubernetesCluster](./kubernetesCluster.java.md)
 - [kubernetesNodeGroup](./kubernetesNodeGroup.java.md)
 - [loadbalancer](./loadbalancer.java.md)

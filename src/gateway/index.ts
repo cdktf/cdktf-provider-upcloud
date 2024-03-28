@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/upcloudltd/upcloud/5.1.1/docs/resources/gateway
+// https://registry.terraform.io/providers/upcloudltd/upcloud/5.2.0/docs/resources/gateway
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,17 +10,17 @@ export interface GatewayConfig extends cdktf.TerraformMetaArguments {
   /**
   * The service configured status indicates the service's current intended status. Managed by the customer.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.1.1/docs/resources/gateway#configured_status Gateway#configured_status}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.2.0/docs/resources/gateway#configured_status Gateway#configured_status}
   */
   readonly configuredStatus?: string;
   /**
-  * Features enabled for the gateway.
+  * Features enabled for the gateway. Note that VPN feature is currently in beta, for more details see https://upcloud.com/resources/docs/networking#nat-and-vpn-gateways.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.1.1/docs/resources/gateway#features Gateway#features}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.2.0/docs/resources/gateway#features Gateway#features}
   */
   readonly features: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.1.1/docs/resources/gateway#id Gateway#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.2.0/docs/resources/gateway#id Gateway#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -34,25 +29,37 @@ export interface GatewayConfig extends cdktf.TerraformMetaArguments {
   /**
   * Key-value pairs to classify the network gateway.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.1.1/docs/resources/gateway#labels Gateway#labels}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.2.0/docs/resources/gateway#labels Gateway#labels}
   */
   readonly labels?: { [key: string]: string };
   /**
   * Gateway name. Needs to be unique within the account.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.1.1/docs/resources/gateway#name Gateway#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.2.0/docs/resources/gateway#name Gateway#name}
   */
   readonly name: string;
   /**
+  * Gateway pricing plan.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.2.0/docs/resources/gateway#plan Gateway#plan}
+  */
+  readonly plan?: string;
+  /**
   * Zone in which the gateway will be hosted, e.g. `de-fra1`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.1.1/docs/resources/gateway#zone Gateway#zone}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.2.0/docs/resources/gateway#zone Gateway#zone}
   */
   readonly zone: string;
   /**
+  * address block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.2.0/docs/resources/gateway#address Gateway#address}
+  */
+  readonly address?: GatewayAddress;
+  /**
   * router block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.1.1/docs/resources/gateway#router Gateway#router}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.2.0/docs/resources/gateway#router Gateway#router}
   */
   readonly router: GatewayRouter;
 }
@@ -136,11 +143,102 @@ export class GatewayAddressesList extends cdktf.ComplexList {
     return new GatewayAddressesOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
   }
 }
+export interface GatewayAddress {
+  /**
+  * Name of the IP address
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.2.0/docs/resources/gateway#name Gateway#name}
+  */
+  readonly name?: string;
+}
+
+export function gatewayAddressToTerraform(struct?: GatewayAddressOutputReference | GatewayAddress): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    name: cdktf.stringToTerraform(struct!.name),
+  }
+}
+
+
+export function gatewayAddressToHclTerraform(struct?: GatewayAddressOutputReference | GatewayAddress): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    name: {
+      value: cdktf.stringToHclTerraform(struct!.name),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class GatewayAddressOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): GatewayAddress | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._name !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.name = this._name;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: GatewayAddress | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._name = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._name = value.name;
+    }
+  }
+
+  // address - computed: true, optional: false, required: false
+  public get address() {
+    return this.getStringAttribute('address');
+  }
+
+  // name - computed: true, optional: true, required: false
+  private _name?: string; 
+  public get name() {
+    return this.getStringAttribute('name');
+  }
+  public set name(value: string) {
+    this._name = value;
+  }
+  public resetName() {
+    this._name = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get nameInput() {
+    return this._name;
+  }
+}
 export interface GatewayRouter {
   /**
   * ID of the router attached to the gateway.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.1.1/docs/resources/gateway#id Gateway#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.2.0/docs/resources/gateway#id Gateway#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -224,7 +322,7 @@ export class GatewayRouterOutputReference extends cdktf.ComplexObject {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.1.1/docs/resources/gateway upcloud_gateway}
+* Represents a {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.2.0/docs/resources/gateway upcloud_gateway}
 */
 export class Gateway extends cdktf.TerraformResource {
 
@@ -240,7 +338,7 @@ export class Gateway extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a Gateway resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the Gateway to import
-  * @param importFromId The id of the existing Gateway that should be imported. Refer to the {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.1.1/docs/resources/gateway#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing Gateway that should be imported. Refer to the {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.2.0/docs/resources/gateway#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the Gateway to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -252,7 +350,7 @@ export class Gateway extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.1.1/docs/resources/gateway upcloud_gateway} Resource
+  * Create a new {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.2.0/docs/resources/gateway upcloud_gateway} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -263,7 +361,7 @@ export class Gateway extends cdktf.TerraformResource {
       terraformResourceType: 'upcloud_gateway',
       terraformGeneratorMetadata: {
         providerName: 'upcloud',
-        providerVersion: '5.1.1',
+        providerVersion: '5.2.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,
@@ -279,7 +377,9 @@ export class Gateway extends cdktf.TerraformResource {
     this._id = config.id;
     this._labels = config.labels;
     this._name = config.name;
+    this._plan = config.plan;
     this._zone = config.zone;
+    this._address.internalValue = config.address;
     this._router.internalValue = config.router;
   }
 
@@ -307,6 +407,11 @@ export class Gateway extends cdktf.TerraformResource {
   // Temporarily expose input value. Use with caution.
   public get configuredStatusInput() {
     return this._configuredStatus;
+  }
+
+  // connections - computed: true, optional: false, required: false
+  public get connections() {
+    return this.getListAttribute('connections');
   }
 
   // features - computed: false, optional: false, required: true
@@ -372,6 +477,22 @@ export class Gateway extends cdktf.TerraformResource {
     return this.getStringAttribute('operational_state');
   }
 
+  // plan - computed: true, optional: true, required: false
+  private _plan?: string; 
+  public get plan() {
+    return this.getStringAttribute('plan');
+  }
+  public set plan(value: string) {
+    this._plan = value;
+  }
+  public resetPlan() {
+    this._plan = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get planInput() {
+    return this._plan;
+  }
+
   // zone - computed: false, optional: false, required: true
   private _zone?: string; 
   public get zone() {
@@ -383,6 +504,22 @@ export class Gateway extends cdktf.TerraformResource {
   // Temporarily expose input value. Use with caution.
   public get zoneInput() {
     return this._zone;
+  }
+
+  // address - computed: false, optional: true, required: false
+  private _address = new GatewayAddressOutputReference(this, "address");
+  public get address() {
+    return this._address;
+  }
+  public putAddress(value: GatewayAddress) {
+    this._address.internalValue = value;
+  }
+  public resetAddress() {
+    this._address.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get addressInput() {
+    return this._address.internalValue;
   }
 
   // router - computed: false, optional: false, required: true
@@ -409,7 +546,9 @@ export class Gateway extends cdktf.TerraformResource {
       id: cdktf.stringToTerraform(this._id),
       labels: cdktf.hashMapper(cdktf.stringToTerraform)(this._labels),
       name: cdktf.stringToTerraform(this._name),
+      plan: cdktf.stringToTerraform(this._plan),
       zone: cdktf.stringToTerraform(this._zone),
+      address: gatewayAddressToTerraform(this._address.internalValue),
       router: gatewayRouterToTerraform(this._router.internalValue),
     };
   }
@@ -446,11 +585,23 @@ export class Gateway extends cdktf.TerraformResource {
         type: "simple",
         storageClassType: "string",
       },
+      plan: {
+        value: cdktf.stringToHclTerraform(this._plan),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
       zone: {
         value: cdktf.stringToHclTerraform(this._zone),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
+      },
+      address: {
+        value: gatewayAddressToHclTerraform(this._address.internalValue),
+        isBlock: true,
+        type: "set",
+        storageClassType: "GatewayAddressList",
       },
       router: {
         value: gatewayRouterToHclTerraform(this._router.internalValue),
