@@ -7,6 +7,8 @@
 Object.defineProperty(exports, 'firewallRules', { get: function () { return require('./firewall-rules'); } });
 Object.defineProperty(exports, 'floatingIpAddress', { get: function () { return require('./floating-ip-address'); } });
 Object.defineProperty(exports, 'gateway', { get: function () { return require('./gateway'); } });
+Object.defineProperty(exports, 'gatewayConnection', { get: function () { return require('./gateway-connection'); } });
+Object.defineProperty(exports, 'gatewayConnectionTunnel', { get: function () { return require('./gateway-connection-tunnel'); } });
 Object.defineProperty(exports, 'kubernetesCluster', { get: function () { return require('./kubernetes-cluster'); } });
 Object.defineProperty(exports, 'kubernetesNodeGroup', { get: function () { return require('./kubernetes-node-group'); } });
 Object.defineProperty(exports, 'loadbalancer', { get: function () { return require('./loadbalancer'); } });

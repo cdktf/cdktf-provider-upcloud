@@ -7,6 +7,8 @@
 export * as firewallRules from './firewall-rules';
 export * as floatingIpAddress from './floating-ip-address';
 export * as gateway from './gateway';
+export * as gatewayConnection from './gateway-connection';
+export * as gatewayConnectionTunnel from './gateway-connection-tunnel';
 export * as kubernetesCluster from './kubernetes-cluster';
 export * as kubernetesNodeGroup from './kubernetes-node-group';
 export * as loadbalancer from './loadbalancer';
