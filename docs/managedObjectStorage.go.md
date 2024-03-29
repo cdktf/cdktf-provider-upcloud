@@ -4,7 +4,7 @@
 
 ### ManagedObjectStorage <a name="ManagedObjectStorage" id="@cdktf/provider-upcloud.managedObjectStorage.ManagedObjectStorage"></a>
 
-Represents a {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.2.0/docs/resources/managed_object_storage upcloud_managed_object_storage}.
+Represents a {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.2.1/docs/resources/managed_object_storage upcloud_managed_object_storage}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-upcloud.managedObjectStorage.ManagedObjectStorage.Initializer"></a>
 
@@ -501,7 +501,7 @@ The construct id used in the generated config for the ManagedObjectStorage to im
 
 The id of the existing ManagedObjectStorage that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.2.0/docs/resources/managed_object_storage#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.2.1/docs/resources/managed_object_storage#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -910,7 +910,7 @@ import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v14/managedobjectstor
 | <code><a href="#@cdktf/provider-upcloud.managedObjectStorage.ManagedObjectStorageConfig.property.configuredStatus">ConfiguredStatus</a></code> | <code>*string</code> | Service status managed by the end user. |
 | <code><a href="#@cdktf/provider-upcloud.managedObjectStorage.ManagedObjectStorageConfig.property.name">Name</a></code> | <code>*string</code> | Name of the Managed Object Storage service. Must be unique within account. |
 | <code><a href="#@cdktf/provider-upcloud.managedObjectStorage.ManagedObjectStorageConfig.property.region">Region</a></code> | <code>*string</code> | Region in which the service will be hosted, see `upcloud_managed_object_storage_regions` data source. |
-| <code><a href="#@cdktf/provider-upcloud.managedObjectStorage.ManagedObjectStorageConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.2.0/docs/resources/managed_object_storage#id ManagedObjectStorage#id}. |
+| <code><a href="#@cdktf/provider-upcloud.managedObjectStorage.ManagedObjectStorageConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.2.1/docs/resources/managed_object_storage#id ManagedObjectStorage#id}. |
 | <code><a href="#@cdktf/provider-upcloud.managedObjectStorage.ManagedObjectStorageConfig.property.labels">Labels</a></code> | <code>*map[string]*string</code> | Key-value pairs to classify the managed object storage. |
 | <code><a href="#@cdktf/provider-upcloud.managedObjectStorage.ManagedObjectStorageConfig.property.network">Network</a></code> | <code>interface{}</code> | network block. |
 
@@ -996,7 +996,7 @@ ConfiguredStatus *string
 
 Service status managed by the end user.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.2.0/docs/resources/managed_object_storage#configured_status ManagedObjectStorage#configured_status}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.2.1/docs/resources/managed_object_storage#configured_status ManagedObjectStorage#configured_status}
 
 ---
 
@@ -1010,7 +1010,7 @@ Name *string
 
 Name of the Managed Object Storage service. Must be unique within account.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.2.0/docs/resources/managed_object_storage#name ManagedObjectStorage#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.2.1/docs/resources/managed_object_storage#name ManagedObjectStorage#name}
 
 ---
 
@@ -1024,7 +1024,7 @@ Region *string
 
 Region in which the service will be hosted, see `upcloud_managed_object_storage_regions` data source.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.2.0/docs/resources/managed_object_storage#region ManagedObjectStorage#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.2.1/docs/resources/managed_object_storage#region ManagedObjectStorage#region}
 
 ---
 
@@ -1036,7 +1036,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.2.0/docs/resources/managed_object_storage#id ManagedObjectStorage#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.2.1/docs/resources/managed_object_storage#id ManagedObjectStorage#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1053,7 +1053,7 @@ Labels *map[string]*string
 
 Key-value pairs to classify the managed object storage.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.2.0/docs/resources/managed_object_storage#labels ManagedObjectStorage#labels}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.2.1/docs/resources/managed_object_storage#labels ManagedObjectStorage#labels}
 
 ---
 
@@ -1067,7 +1067,7 @@ Network interface{}
 
 network block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.2.0/docs/resources/managed_object_storage#network ManagedObjectStorage#network}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.2.1/docs/resources/managed_object_storage#network ManagedObjectStorage#network}
 
 ---
 
@@ -1120,7 +1120,7 @@ Family *string
 
 Network family. IPv6 currently not supported.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.2.0/docs/resources/managed_object_storage#family ManagedObjectStorage#family}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.2.1/docs/resources/managed_object_storage#family ManagedObjectStorage#family}
 
 ---
 
@@ -1134,7 +1134,7 @@ Name *string
 
 Network name. Must be unique within the service.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.2.0/docs/resources/managed_object_storage#name ManagedObjectStorage#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.2.1/docs/resources/managed_object_storage#name ManagedObjectStorage#name}
 
 ---
 
@@ -1148,7 +1148,7 @@ Type *string
 
 Network type.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.2.0/docs/resources/managed_object_storage#type ManagedObjectStorage#type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.2.1/docs/resources/managed_object_storage#type ManagedObjectStorage#type}
 
 ---
 
@@ -1162,7 +1162,7 @@ Uuid *string
 
 Private network uuid. For public networks the field should be omitted.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.2.0/docs/resources/managed_object_storage#uuid ManagedObjectStorage#uuid}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.2.1/docs/resources/managed_object_storage#uuid ManagedObjectStorage#uuid}
 
 ---
 
