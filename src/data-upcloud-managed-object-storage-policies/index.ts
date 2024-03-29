@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/upcloudltd/upcloud/5.2.0/docs/data-sources/managed_object_storage_policies
+// https://registry.terraform.io/providers/upcloudltd/upcloud/5.2.1/docs/data-sources/managed_object_storage_policies
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,7 +8,7 @@ import * as cdktf from 'cdktf';
 
 export interface DataUpcloudManagedObjectStoragePoliciesConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.2.0/docs/data-sources/managed_object_storage_policies#id DataUpcloudManagedObjectStoragePolicies#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.2.1/docs/data-sources/managed_object_storage_policies#id DataUpcloudManagedObjectStoragePolicies#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -22,7 +17,7 @@ export interface DataUpcloudManagedObjectStoragePoliciesConfig extends cdktf.Ter
   /**
   * Service UUID.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.2.0/docs/data-sources/managed_object_storage_policies#service_uuid DataUpcloudManagedObjectStoragePolicies#service_uuid}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.2.1/docs/data-sources/managed_object_storage_policies#service_uuid DataUpcloudManagedObjectStoragePolicies#service_uuid}
   */
   readonly serviceUuid: string;
 }
@@ -148,7 +143,7 @@ export class DataUpcloudManagedObjectStoragePoliciesPoliciesList extends cdktf.C
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.2.0/docs/data-sources/managed_object_storage_policies upcloud_managed_object_storage_policies}
+* Represents a {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.2.1/docs/data-sources/managed_object_storage_policies upcloud_managed_object_storage_policies}
 */
 export class DataUpcloudManagedObjectStoragePolicies extends cdktf.TerraformDataSource {
 
@@ -164,7 +159,7 @@ export class DataUpcloudManagedObjectStoragePolicies extends cdktf.TerraformData
   * Generates CDKTF code for importing a DataUpcloudManagedObjectStoragePolicies resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataUpcloudManagedObjectStoragePolicies to import
-  * @param importFromId The id of the existing DataUpcloudManagedObjectStoragePolicies that should be imported. Refer to the {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.2.0/docs/data-sources/managed_object_storage_policies#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataUpcloudManagedObjectStoragePolicies that should be imported. Refer to the {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.2.1/docs/data-sources/managed_object_storage_policies#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataUpcloudManagedObjectStoragePolicies to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -176,7 +171,7 @@ export class DataUpcloudManagedObjectStoragePolicies extends cdktf.TerraformData
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.2.0/docs/data-sources/managed_object_storage_policies upcloud_managed_object_storage_policies} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.2.1/docs/data-sources/managed_object_storage_policies upcloud_managed_object_storage_policies} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -187,7 +182,7 @@ export class DataUpcloudManagedObjectStoragePolicies extends cdktf.TerraformData
       terraformResourceType: 'upcloud_managed_object_storage_policies',
       terraformGeneratorMetadata: {
         providerName: 'upcloud',
-        providerVersion: '5.2.0',
+        providerVersion: '5.2.1',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,
