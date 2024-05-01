@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5
 #### Initializers <a name="Initializers" id="@cdktf/provider-upcloud.gatewayConnection.GatewayConnection.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/gatewayconnection"
+import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v14/gatewayconnection"
 
 gatewayconnection.NewGatewayConnection(scope Construct, id *string, config GatewayConnectionConfig) GatewayConnection
 ```
@@ -432,7 +432,7 @@ func ResetType()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-upcloud.gatewayConnection.GatewayConnection.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/gatewayconnection"
+import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v14/gatewayconnection"
 
 gatewayconnection.GatewayConnection_IsConstruct(x interface{}) *bool
 ```
@@ -464,7 +464,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-upcloud.gatewayConnection.GatewayConnection.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/gatewayconnection"
+import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v14/gatewayconnection"
 
 gatewayconnection.GatewayConnection_IsTerraformElement(x interface{}) *bool
 ```
@@ -478,7 +478,7 @@ gatewayconnection.GatewayConnection_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-upcloud.gatewayConnection.GatewayConnection.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/gatewayconnection"
+import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v14/gatewayconnection"
 
 gatewayconnection.GatewayConnection_IsTerraformResource(x interface{}) *bool
 ```
@@ -492,7 +492,7 @@ gatewayconnection.GatewayConnection_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-upcloud.gatewayConnection.GatewayConnection.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/gatewayconnection"
+import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v14/gatewayconnection"
 
 gatewayconnection.GatewayConnection_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -864,7 +864,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-upcloud.gatewayConnection.GatewayConnectionConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/gatewayconnection"
+import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v14/gatewayconnection"
 
 &gatewayconnection.GatewayConnectionConfig {
 	Connection: interface{},
@@ -1063,7 +1063,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upclo
 #### Initializer <a name="Initializer" id="@cdktf/provider-upcloud.gatewayConnection.GatewayConnectionLocalRoute.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/gatewayconnection"
+import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v14/gatewayconnection"
 
 &gatewayconnection.GatewayConnectionLocalRoute {
 	Name: *string,
@@ -1129,7 +1129,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upclo
 #### Initializer <a name="Initializer" id="@cdktf/provider-upcloud.gatewayConnection.GatewayConnectionRemoteRoute.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/gatewayconnection"
+import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v14/gatewayconnection"
 
 &gatewayconnection.GatewayConnectionRemoteRoute {
 	Name: *string,
@@ -1197,7 +1197,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upclo
 #### Initializers <a name="Initializers" id="@cdktf/provider-upcloud.gatewayConnection.GatewayConnectionLocalRouteList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/gatewayconnection"
+import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v14/gatewayconnection"
 
 gatewayconnection.NewGatewayConnectionLocalRouteList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) GatewayConnectionLocalRouteList
 ```
@@ -1357,7 +1357,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-upcloud.gatewayConnection.GatewayConnectionLocalRouteOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/gatewayconnection"
+import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v14/gatewayconnection"
 
 gatewayconnection.NewGatewayConnectionLocalRouteOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) GatewayConnectionLocalRouteOutputReference
 ```
@@ -1697,7 +1697,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-upcloud.gatewayConnection.GatewayConnectionRemoteRouteList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/gatewayconnection"
+import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v14/gatewayconnection"
 
 gatewayconnection.NewGatewayConnectionRemoteRouteList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) GatewayConnectionRemoteRouteList
 ```
@@ -1857,7 +1857,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-upcloud.gatewayConnection.GatewayConnectionRemoteRouteOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/gatewayconnection"
+import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v14/gatewayconnection"
 
 gatewayconnection.NewGatewayConnectionRemoteRouteOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) GatewayConnectionRemoteRouteOutputReference
 ```
