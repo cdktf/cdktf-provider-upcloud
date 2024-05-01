@@ -4,12 +4,12 @@
 
 ### GatewayConnectionTunnel <a name="GatewayConnectionTunnel" id="@cdktf/provider-upcloud.gatewayConnectionTunnel.GatewayConnectionTunnel"></a>
 
-Represents a {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.2.2/docs/resources/gateway_connection_tunnel upcloud_gateway_connection_tunnel}.
+Represents a {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.2.3/docs/resources/gateway_connection_tunnel upcloud_gateway_connection_tunnel}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-upcloud.gatewayConnectionTunnel.GatewayConnectionTunnel.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v14/gatewayconnectiontunnel"
+import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/gatewayconnectiontunnel"
 
 gatewayconnectiontunnel.NewGatewayConnectionTunnel(scope Construct, id *string, config GatewayConnectionTunnelConfig) GatewayConnectionTunnel
 ```
@@ -418,7 +418,7 @@ func ResetIpsecProperties()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-upcloud.gatewayConnectionTunnel.GatewayConnectionTunnel.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v14/gatewayconnectiontunnel"
+import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/gatewayconnectiontunnel"
 
 gatewayconnectiontunnel.GatewayConnectionTunnel_IsConstruct(x interface{}) *bool
 ```
@@ -450,7 +450,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-upcloud.gatewayConnectionTunnel.GatewayConnectionTunnel.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v14/gatewayconnectiontunnel"
+import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/gatewayconnectiontunnel"
 
 gatewayconnectiontunnel.GatewayConnectionTunnel_IsTerraformElement(x interface{}) *bool
 ```
@@ -464,7 +464,7 @@ gatewayconnectiontunnel.GatewayConnectionTunnel_IsTerraformElement(x interface{}
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-upcloud.gatewayConnectionTunnel.GatewayConnectionTunnel.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v14/gatewayconnectiontunnel"
+import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/gatewayconnectiontunnel"
 
 gatewayconnectiontunnel.GatewayConnectionTunnel_IsTerraformResource(x interface{}) *bool
 ```
@@ -478,7 +478,7 @@ gatewayconnectiontunnel.GatewayConnectionTunnel_IsTerraformResource(x interface{
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-upcloud.gatewayConnectionTunnel.GatewayConnectionTunnel.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v14/gatewayconnectiontunnel"
+import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/gatewayconnectiontunnel"
 
 gatewayconnectiontunnel.GatewayConnectionTunnel_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -507,7 +507,7 @@ The construct id used in the generated config for the GatewayConnectionTunnel to
 
 The id of the existing GatewayConnectionTunnel that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.2.2/docs/resources/gateway_connection_tunnel#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.2.3/docs/resources/gateway_connection_tunnel#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -872,7 +872,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-upcloud.gatewayConnectionTunnel.GatewayConnectionTunnelConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v14/gatewayconnectiontunnel"
+import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/gatewayconnectiontunnel"
 
 &gatewayconnectiontunnel.GatewayConnectionTunnelConfig {
 	Connection: interface{},
@@ -883,12 +883,12 @@ import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v14/gatewayconnection
 	Provider: github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider,
 	Provisioners: *[]interface{},
 	ConnectionId: *string,
-	IpsecAuthPsk: github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v14.gatewayConnectionTunnel.GatewayConnectionTunnelIpsecAuthPsk,
+	IpsecAuthPsk: github.com/cdktf/cdktf-provider-upcloud-go/upcloud.gatewayConnectionTunnel.GatewayConnectionTunnelIpsecAuthPsk,
 	LocalAddressName: *string,
 	Name: *string,
 	RemoteAddress: *string,
 	Id: *string,
-	IpsecProperties: github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v14.gatewayConnectionTunnel.GatewayConnectionTunnelIpsecProperties,
+	IpsecProperties: github.com/cdktf/cdktf-provider-upcloud-go/upcloud.gatewayConnectionTunnel.GatewayConnectionTunnelIpsecProperties,
 }
 ```
 
@@ -908,7 +908,7 @@ import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v14/gatewayconnection
 | <code><a href="#@cdktf/provider-upcloud.gatewayConnectionTunnel.GatewayConnectionTunnelConfig.property.localAddressName">LocalAddressName</a></code> | <code>*string</code> | Public (UpCloud) endpoint address of this tunnel. |
 | <code><a href="#@cdktf/provider-upcloud.gatewayConnectionTunnel.GatewayConnectionTunnelConfig.property.name">Name</a></code> | <code>*string</code> | The name of the tunnel, should be unique within the connection. |
 | <code><a href="#@cdktf/provider-upcloud.gatewayConnectionTunnel.GatewayConnectionTunnelConfig.property.remoteAddress">RemoteAddress</a></code> | <code>*string</code> | Remote public IP address of the tunnel. |
-| <code><a href="#@cdktf/provider-upcloud.gatewayConnectionTunnel.GatewayConnectionTunnelConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.2.2/docs/resources/gateway_connection_tunnel#id GatewayConnectionTunnel#id}. |
+| <code><a href="#@cdktf/provider-upcloud.gatewayConnectionTunnel.GatewayConnectionTunnelConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.2.3/docs/resources/gateway_connection_tunnel#id GatewayConnectionTunnel#id}. |
 | <code><a href="#@cdktf/provider-upcloud.gatewayConnectionTunnel.GatewayConnectionTunnelConfig.property.ipsecProperties">IpsecProperties</a></code> | <code><a href="#@cdktf/provider-upcloud.gatewayConnectionTunnel.GatewayConnectionTunnelIpsecProperties">GatewayConnectionTunnelIpsecProperties</a></code> | ipsec_properties block. |
 
 ---
@@ -993,7 +993,7 @@ ConnectionId *string
 
 ID of the upcloud_gateway_connection resource to which the tunnel belongs.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.2.2/docs/resources/gateway_connection_tunnel#connection_id GatewayConnectionTunnel#connection_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.2.3/docs/resources/gateway_connection_tunnel#connection_id GatewayConnectionTunnel#connection_id}
 
 ---
 
@@ -1007,7 +1007,7 @@ IpsecAuthPsk GatewayConnectionTunnelIpsecAuthPsk
 
 ipsec_auth_psk block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.2.2/docs/resources/gateway_connection_tunnel#ipsec_auth_psk GatewayConnectionTunnel#ipsec_auth_psk}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.2.3/docs/resources/gateway_connection_tunnel#ipsec_auth_psk GatewayConnectionTunnel#ipsec_auth_psk}
 
 ---
 
@@ -1021,7 +1021,7 @@ LocalAddressName *string
 
 Public (UpCloud) endpoint address of this tunnel.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.2.2/docs/resources/gateway_connection_tunnel#local_address_name GatewayConnectionTunnel#local_address_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.2.3/docs/resources/gateway_connection_tunnel#local_address_name GatewayConnectionTunnel#local_address_name}
 
 ---
 
@@ -1035,7 +1035,7 @@ Name *string
 
 The name of the tunnel, should be unique within the connection.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.2.2/docs/resources/gateway_connection_tunnel#name GatewayConnectionTunnel#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.2.3/docs/resources/gateway_connection_tunnel#name GatewayConnectionTunnel#name}
 
 ---
 
@@ -1049,7 +1049,7 @@ RemoteAddress *string
 
 Remote public IP address of the tunnel.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.2.2/docs/resources/gateway_connection_tunnel#remote_address GatewayConnectionTunnel#remote_address}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.2.3/docs/resources/gateway_connection_tunnel#remote_address GatewayConnectionTunnel#remote_address}
 
 ---
 
@@ -1061,7 +1061,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.2.2/docs/resources/gateway_connection_tunnel#id GatewayConnectionTunnel#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.2.3/docs/resources/gateway_connection_tunnel#id GatewayConnectionTunnel#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1078,7 +1078,7 @@ IpsecProperties GatewayConnectionTunnelIpsecProperties
 
 ipsec_properties block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.2.2/docs/resources/gateway_connection_tunnel#ipsec_properties GatewayConnectionTunnel#ipsec_properties}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.2.3/docs/resources/gateway_connection_tunnel#ipsec_properties GatewayConnectionTunnel#ipsec_properties}
 
 ---
 
@@ -1087,7 +1087,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upclo
 #### Initializer <a name="Initializer" id="@cdktf/provider-upcloud.gatewayConnectionTunnel.GatewayConnectionTunnelIpsecAuthPsk.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v14/gatewayconnectiontunnel"
+import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/gatewayconnectiontunnel"
 
 &gatewayconnectiontunnel.GatewayConnectionTunnelIpsecAuthPsk {
 	Psk: *string,
@@ -1114,7 +1114,7 @@ The pre-shared key.
 
 This value is only used during resource creation and is not returned in the state. It is not possible to update this value. If you need to update it, delete the connection and create a new one.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.2.2/docs/resources/gateway_connection_tunnel#psk GatewayConnectionTunnel#psk}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.2.3/docs/resources/gateway_connection_tunnel#psk GatewayConnectionTunnel#psk}
 
 ---
 
@@ -1123,7 +1123,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upclo
 #### Initializer <a name="Initializer" id="@cdktf/provider-upcloud.gatewayConnectionTunnel.GatewayConnectionTunnelIpsecProperties.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v14/gatewayconnectiontunnel"
+import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/gatewayconnectiontunnel"
 
 &gatewayconnectiontunnel.GatewayConnectionTunnelIpsecProperties {
 	ChildRekeyTime: *f64,
@@ -1168,7 +1168,7 @@ ChildRekeyTime *f64
 
 IKE child SA rekey time in seconds.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.2.2/docs/resources/gateway_connection_tunnel#child_rekey_time GatewayConnectionTunnel#child_rekey_time}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.2.3/docs/resources/gateway_connection_tunnel#child_rekey_time GatewayConnectionTunnel#child_rekey_time}
 
 ---
 
@@ -1182,7 +1182,7 @@ DpdDelay *f64
 
 Delay before sending Dead Peer Detection packets if no traffic is detected, in seconds.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.2.2/docs/resources/gateway_connection_tunnel#dpd_delay GatewayConnectionTunnel#dpd_delay}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.2.3/docs/resources/gateway_connection_tunnel#dpd_delay GatewayConnectionTunnel#dpd_delay}
 
 ---
 
@@ -1196,7 +1196,7 @@ DpdTimeout *f64
 
 Timeout period for DPD reply before considering the peer to be dead, in seconds.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.2.2/docs/resources/gateway_connection_tunnel#dpd_timeout GatewayConnectionTunnel#dpd_timeout}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.2.3/docs/resources/gateway_connection_tunnel#dpd_timeout GatewayConnectionTunnel#dpd_timeout}
 
 ---
 
@@ -1210,7 +1210,7 @@ IkeLifetime *f64
 
 Maximum IKE SA lifetime in seconds.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.2.2/docs/resources/gateway_connection_tunnel#ike_lifetime GatewayConnectionTunnel#ike_lifetime}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.2.3/docs/resources/gateway_connection_tunnel#ike_lifetime GatewayConnectionTunnel#ike_lifetime}
 
 ---
 
@@ -1224,7 +1224,7 @@ Phase1Algorithms *[]*string
 
 List of Phase 1: Proposal algorithms.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.2.2/docs/resources/gateway_connection_tunnel#phase1_algorithms GatewayConnectionTunnel#phase1_algorithms}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.2.3/docs/resources/gateway_connection_tunnel#phase1_algorithms GatewayConnectionTunnel#phase1_algorithms}
 
 ---
 
@@ -1238,7 +1238,7 @@ Phase1DhGroupNumbers *[]*f64
 
 List of Phase 1 Diffie-Hellman group numbers.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.2.2/docs/resources/gateway_connection_tunnel#phase1_dh_group_numbers GatewayConnectionTunnel#phase1_dh_group_numbers}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.2.3/docs/resources/gateway_connection_tunnel#phase1_dh_group_numbers GatewayConnectionTunnel#phase1_dh_group_numbers}
 
 ---
 
@@ -1252,7 +1252,7 @@ Phase1IntegrityAlgorithms *[]*string
 
 List of Phase 1 integrity algorithms.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.2.2/docs/resources/gateway_connection_tunnel#phase1_integrity_algorithms GatewayConnectionTunnel#phase1_integrity_algorithms}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.2.3/docs/resources/gateway_connection_tunnel#phase1_integrity_algorithms GatewayConnectionTunnel#phase1_integrity_algorithms}
 
 ---
 
@@ -1266,7 +1266,7 @@ Phase2Algorithms *[]*string
 
 List of Phase 2: Security Association algorithms.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.2.2/docs/resources/gateway_connection_tunnel#phase2_algorithms GatewayConnectionTunnel#phase2_algorithms}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.2.3/docs/resources/gateway_connection_tunnel#phase2_algorithms GatewayConnectionTunnel#phase2_algorithms}
 
 ---
 
@@ -1280,7 +1280,7 @@ Phase2DhGroupNumbers *[]*f64
 
 List of Phase 2 Diffie-Hellman group numbers.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.2.2/docs/resources/gateway_connection_tunnel#phase2_dh_group_numbers GatewayConnectionTunnel#phase2_dh_group_numbers}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.2.3/docs/resources/gateway_connection_tunnel#phase2_dh_group_numbers GatewayConnectionTunnel#phase2_dh_group_numbers}
 
 ---
 
@@ -1294,7 +1294,7 @@ Phase2IntegrityAlgorithms *[]*string
 
 List of Phase 2 integrity algorithms.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.2.2/docs/resources/gateway_connection_tunnel#phase2_integrity_algorithms GatewayConnectionTunnel#phase2_integrity_algorithms}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.2.3/docs/resources/gateway_connection_tunnel#phase2_integrity_algorithms GatewayConnectionTunnel#phase2_integrity_algorithms}
 
 ---
 
@@ -1308,7 +1308,7 @@ RekeyTime *f64
 
 IKE SA rekey time in seconds.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.2.2/docs/resources/gateway_connection_tunnel#rekey_time GatewayConnectionTunnel#rekey_time}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.2.3/docs/resources/gateway_connection_tunnel#rekey_time GatewayConnectionTunnel#rekey_time}
 
 ---
 
@@ -1319,7 +1319,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upclo
 #### Initializers <a name="Initializers" id="@cdktf/provider-upcloud.gatewayConnectionTunnel.GatewayConnectionTunnelIpsecAuthPskOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v14/gatewayconnectiontunnel"
+import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/gatewayconnectiontunnel"
 
 gatewayconnectiontunnel.NewGatewayConnectionTunnelIpsecAuthPskOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GatewayConnectionTunnelIpsecAuthPskOutputReference
 ```
@@ -1590,7 +1590,7 @@ func InternalValue() GatewayConnectionTunnelIpsecAuthPsk
 #### Initializers <a name="Initializers" id="@cdktf/provider-upcloud.gatewayConnectionTunnel.GatewayConnectionTunnelIpsecPropertiesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v14/gatewayconnectiontunnel"
+import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/gatewayconnectiontunnel"
 
 gatewayconnectiontunnel.NewGatewayConnectionTunnelIpsecPropertiesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GatewayConnectionTunnelIpsecPropertiesOutputReference
 ```
