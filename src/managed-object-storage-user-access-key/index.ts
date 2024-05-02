@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/upcloudltd/upcloud/5.2.3/docs/resources/managed_object_storage_user_access_key
 // generated from terraform resource schema
 
