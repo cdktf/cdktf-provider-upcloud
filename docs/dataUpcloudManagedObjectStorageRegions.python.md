@@ -4,7 +4,7 @@
 
 ### DataUpcloudManagedObjectStorageRegions <a name="DataUpcloudManagedObjectStorageRegions" id="@cdktf/provider-upcloud.dataUpcloudManagedObjectStorageRegions.DataUpcloudManagedObjectStorageRegions"></a>
 
-Represents a {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.2.3/docs/data-sources/managed_object_storage_regions upcloud_managed_object_storage_regions}.
+Represents a {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.3.0/docs/data-sources/managed_object_storage_regions upcloud_managed_object_storage_regions}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-upcloud.dataUpcloudManagedObjectStorageRegions.DataUpcloudManagedObjectStorageRegions.Initializer"></a>
 
@@ -21,7 +21,7 @@ dataUpcloudManagedObjectStorageRegions.DataUpcloudManagedObjectStorageRegions(
   lifecycle: TerraformResourceLifecycle = None,
   provider: TerraformProvider = None,
   provisioners: typing.List[typing.Union[FileProvisioner, LocalExecProvisioner, RemoteExecProvisioner]] = None,
-  id: str = None
+  regions: typing.Union[IResolvable, typing.List[DataUpcloudManagedObjectStorageRegionsRegions]] = None
 )
 ```
 
@@ -36,7 +36,7 @@ dataUpcloudManagedObjectStorageRegions.DataUpcloudManagedObjectStorageRegions(
 | <code><a href="#@cdktf/provider-upcloud.dataUpcloudManagedObjectStorageRegions.DataUpcloudManagedObjectStorageRegions.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.dataUpcloudManagedObjectStorageRegions.DataUpcloudManagedObjectStorageRegions.Initializer.parameter.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.dataUpcloudManagedObjectStorageRegions.DataUpcloudManagedObjectStorageRegions.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-upcloud.dataUpcloudManagedObjectStorageRegions.DataUpcloudManagedObjectStorageRegions.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.2.3/docs/data-sources/managed_object_storage_regions#id DataUpcloudManagedObjectStorageRegions#id}. |
+| <code><a href="#@cdktf/provider-upcloud.dataUpcloudManagedObjectStorageRegions.DataUpcloudManagedObjectStorageRegions.Initializer.parameter.regions">regions</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-upcloud.dataUpcloudManagedObjectStorageRegions.DataUpcloudManagedObjectStorageRegionsRegions">DataUpcloudManagedObjectStorageRegionsRegions</a>]]</code> | regions block. |
 
 ---
 
@@ -100,14 +100,13 @@ Must be unique amongst siblings in the same scope
 
 ---
 
-##### `id`<sup>Optional</sup> <a name="id" id="@cdktf/provider-upcloud.dataUpcloudManagedObjectStorageRegions.DataUpcloudManagedObjectStorageRegions.Initializer.parameter.id"></a>
+##### `regions`<sup>Optional</sup> <a name="regions" id="@cdktf/provider-upcloud.dataUpcloudManagedObjectStorageRegions.DataUpcloudManagedObjectStorageRegions.Initializer.parameter.regions"></a>
 
-- *Type:* str
+- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-upcloud.dataUpcloudManagedObjectStorageRegions.DataUpcloudManagedObjectStorageRegionsRegions">DataUpcloudManagedObjectStorageRegionsRegions</a>]]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.2.3/docs/data-sources/managed_object_storage_regions#id DataUpcloudManagedObjectStorageRegions#id}.
+regions block.
 
-Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
-If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.3.0/docs/data-sources/managed_object_storage_regions#regions DataUpcloudManagedObjectStorageRegions#regions}
 
 ---
 
@@ -132,7 +131,8 @@ If you experience problems setting this value it might not be settable. Please t
 | <code><a href="#@cdktf/provider-upcloud.dataUpcloudManagedObjectStorageRegions.DataUpcloudManagedObjectStorageRegions.getStringAttribute">get_string_attribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.dataUpcloudManagedObjectStorageRegions.DataUpcloudManagedObjectStorageRegions.getStringMapAttribute">get_string_map_attribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.dataUpcloudManagedObjectStorageRegions.DataUpcloudManagedObjectStorageRegions.interpolationForAttribute">interpolation_for_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-upcloud.dataUpcloudManagedObjectStorageRegions.DataUpcloudManagedObjectStorageRegions.resetId">reset_id</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-upcloud.dataUpcloudManagedObjectStorageRegions.DataUpcloudManagedObjectStorageRegions.putRegions">put_regions</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-upcloud.dataUpcloudManagedObjectStorageRegions.DataUpcloudManagedObjectStorageRegions.resetRegions">reset_regions</a></code> | *No description.* |
 
 ---
 
@@ -353,10 +353,24 @@ def interpolation_for_attribute(
 
 ---
 
-##### `reset_id` <a name="reset_id" id="@cdktf/provider-upcloud.dataUpcloudManagedObjectStorageRegions.DataUpcloudManagedObjectStorageRegions.resetId"></a>
+##### `put_regions` <a name="put_regions" id="@cdktf/provider-upcloud.dataUpcloudManagedObjectStorageRegions.DataUpcloudManagedObjectStorageRegions.putRegions"></a>
 
 ```python
-def reset_id() -> None
+def put_regions(
+  value: typing.Union[IResolvable, typing.List[DataUpcloudManagedObjectStorageRegionsRegions]]
+) -> None
+```
+
+###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-upcloud.dataUpcloudManagedObjectStorageRegions.DataUpcloudManagedObjectStorageRegions.putRegions.parameter.value"></a>
+
+- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-upcloud.dataUpcloudManagedObjectStorageRegions.DataUpcloudManagedObjectStorageRegionsRegions">DataUpcloudManagedObjectStorageRegionsRegions</a>]]
+
+---
+
+##### `reset_regions` <a name="reset_regions" id="@cdktf/provider-upcloud.dataUpcloudManagedObjectStorageRegions.DataUpcloudManagedObjectStorageRegions.resetRegions"></a>
+
+```python
+def reset_regions() -> None
 ```
 
 #### Static Functions <a name="Static Functions" id="Static Functions"></a>
@@ -473,7 +487,7 @@ The construct id used in the generated config for the DataUpcloudManagedObjectSt
 
 The id of the existing DataUpcloudManagedObjectStorageRegions that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.2.3/docs/data-sources/managed_object_storage_regions#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.3.0/docs/data-sources/managed_object_storage_regions#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -501,9 +515,9 @@ Refer to the {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5
 | <code><a href="#@cdktf/provider-upcloud.dataUpcloudManagedObjectStorageRegions.DataUpcloudManagedObjectStorageRegions.property.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.dataUpcloudManagedObjectStorageRegions.DataUpcloudManagedObjectStorageRegions.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.dataUpcloudManagedObjectStorageRegions.DataUpcloudManagedObjectStorageRegions.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-upcloud.dataUpcloudManagedObjectStorageRegions.DataUpcloudManagedObjectStorageRegions.property.regions">regions</a></code> | <code><a href="#@cdktf/provider-upcloud.dataUpcloudManagedObjectStorageRegions.DataUpcloudManagedObjectStorageRegionsRegionsList">DataUpcloudManagedObjectStorageRegionsRegionsList</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-upcloud.dataUpcloudManagedObjectStorageRegions.DataUpcloudManagedObjectStorageRegions.property.idInput">id_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.dataUpcloudManagedObjectStorageRegions.DataUpcloudManagedObjectStorageRegions.property.id">id</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-upcloud.dataUpcloudManagedObjectStorageRegions.DataUpcloudManagedObjectStorageRegions.property.regions">regions</a></code> | <code><a href="#@cdktf/provider-upcloud.dataUpcloudManagedObjectStorageRegions.DataUpcloudManagedObjectStorageRegionsRegionsList">DataUpcloudManagedObjectStorageRegionsRegionsList</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-upcloud.dataUpcloudManagedObjectStorageRegions.DataUpcloudManagedObjectStorageRegions.property.regionsInput">regions_input</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-upcloud.dataUpcloudManagedObjectStorageRegions.DataUpcloudManagedObjectStorageRegionsRegions">DataUpcloudManagedObjectStorageRegionsRegions</a>]]</code> | *No description.* |
 
 ---
 
@@ -629,6 +643,16 @@ provider: TerraformProvider
 
 ---
 
+##### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-upcloud.dataUpcloudManagedObjectStorageRegions.DataUpcloudManagedObjectStorageRegions.property.id"></a>
+
+```python
+id: str
+```
+
+- *Type:* str
+
+---
+
 ##### `regions`<sup>Required</sup> <a name="regions" id="@cdktf/provider-upcloud.dataUpcloudManagedObjectStorageRegions.DataUpcloudManagedObjectStorageRegions.property.regions"></a>
 
 ```python
@@ -639,23 +663,13 @@ regions: DataUpcloudManagedObjectStorageRegionsRegionsList
 
 ---
 
-##### `id_input`<sup>Optional</sup> <a name="id_input" id="@cdktf/provider-upcloud.dataUpcloudManagedObjectStorageRegions.DataUpcloudManagedObjectStorageRegions.property.idInput"></a>
+##### `regions_input`<sup>Optional</sup> <a name="regions_input" id="@cdktf/provider-upcloud.dataUpcloudManagedObjectStorageRegions.DataUpcloudManagedObjectStorageRegions.property.regionsInput"></a>
 
 ```python
-id_input: str
+regions_input: typing.Union[IResolvable, typing.List[DataUpcloudManagedObjectStorageRegionsRegions]]
 ```
 
-- *Type:* str
-
----
-
-##### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-upcloud.dataUpcloudManagedObjectStorageRegions.DataUpcloudManagedObjectStorageRegions.property.id"></a>
-
-```python
-id: str
-```
-
-- *Type:* str
+- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-upcloud.dataUpcloudManagedObjectStorageRegions.DataUpcloudManagedObjectStorageRegionsRegions">DataUpcloudManagedObjectStorageRegionsRegions</a>]]
 
 ---
 
@@ -694,7 +708,7 @@ dataUpcloudManagedObjectStorageRegions.DataUpcloudManagedObjectStorageRegionsCon
   lifecycle: TerraformResourceLifecycle = None,
   provider: TerraformProvider = None,
   provisioners: typing.List[typing.Union[FileProvisioner, LocalExecProvisioner, RemoteExecProvisioner]] = None,
-  id: str = None
+  regions: typing.Union[IResolvable, typing.List[DataUpcloudManagedObjectStorageRegionsRegions]] = None
 )
 ```
 
@@ -709,7 +723,7 @@ dataUpcloudManagedObjectStorageRegions.DataUpcloudManagedObjectStorageRegionsCon
 | <code><a href="#@cdktf/provider-upcloud.dataUpcloudManagedObjectStorageRegions.DataUpcloudManagedObjectStorageRegionsConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.dataUpcloudManagedObjectStorageRegions.DataUpcloudManagedObjectStorageRegionsConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.dataUpcloudManagedObjectStorageRegions.DataUpcloudManagedObjectStorageRegionsConfig.property.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-upcloud.dataUpcloudManagedObjectStorageRegions.DataUpcloudManagedObjectStorageRegionsConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.2.3/docs/data-sources/managed_object_storage_regions#id DataUpcloudManagedObjectStorageRegions#id}. |
+| <code><a href="#@cdktf/provider-upcloud.dataUpcloudManagedObjectStorageRegions.DataUpcloudManagedObjectStorageRegionsConfig.property.regions">regions</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-upcloud.dataUpcloudManagedObjectStorageRegions.DataUpcloudManagedObjectStorageRegionsRegions">DataUpcloudManagedObjectStorageRegionsRegions</a>]]</code> | regions block. |
 
 ---
 
@@ -783,18 +797,17 @@ provisioners: typing.List[typing.Union[FileProvisioner, LocalExecProvisioner, Re
 
 ---
 
-##### `id`<sup>Optional</sup> <a name="id" id="@cdktf/provider-upcloud.dataUpcloudManagedObjectStorageRegions.DataUpcloudManagedObjectStorageRegionsConfig.property.id"></a>
+##### `regions`<sup>Optional</sup> <a name="regions" id="@cdktf/provider-upcloud.dataUpcloudManagedObjectStorageRegions.DataUpcloudManagedObjectStorageRegionsConfig.property.regions"></a>
 
 ```python
-id: str
+regions: typing.Union[IResolvable, typing.List[DataUpcloudManagedObjectStorageRegionsRegions]]
 ```
 
-- *Type:* str
+- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-upcloud.dataUpcloudManagedObjectStorageRegions.DataUpcloudManagedObjectStorageRegionsRegions">DataUpcloudManagedObjectStorageRegionsRegions</a>]]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.2.3/docs/data-sources/managed_object_storage_regions#id DataUpcloudManagedObjectStorageRegions#id}.
+regions block.
 
-Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
-If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.3.0/docs/data-sources/managed_object_storage_regions#regions DataUpcloudManagedObjectStorageRegions#regions}
 
 ---
 
@@ -942,6 +955,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-upcloud.dataUpcloudManagedObjectStorageRegions.DataUpcloudManagedObjectStorageRegionsRegionsList.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-upcloud.dataUpcloudManagedObjectStorageRegions.DataUpcloudManagedObjectStorageRegionsRegionsList.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-upcloud.dataUpcloudManagedObjectStorageRegions.DataUpcloudManagedObjectStorageRegionsRegionsList.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-upcloud.dataUpcloudManagedObjectStorageRegions.DataUpcloudManagedObjectStorageRegionsRegions">DataUpcloudManagedObjectStorageRegionsRegions</a>]]</code> | *No description.* |
 
 ---
 
@@ -966,6 +980,16 @@ fqn: str
 ```
 
 - *Type:* str
+
+---
+
+##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-upcloud.dataUpcloudManagedObjectStorageRegions.DataUpcloudManagedObjectStorageRegionsRegionsList.property.internalValue"></a>
+
+```python
+internal_value: typing.Union[IResolvable, typing.List[DataUpcloudManagedObjectStorageRegionsRegions]]
+```
+
+- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-upcloud.dataUpcloudManagedObjectStorageRegions.DataUpcloudManagedObjectStorageRegionsRegions">DataUpcloudManagedObjectStorageRegionsRegions</a>]]
 
 ---
 
@@ -1228,7 +1252,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-upcloud.dataUpcloudManagedObjectStorageRegions.DataUpcloudManagedObjectStorageRegionsRegionsOutputReference.property.name">name</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.dataUpcloudManagedObjectStorageRegions.DataUpcloudManagedObjectStorageRegionsRegionsOutputReference.property.primaryZone">primary_zone</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.dataUpcloudManagedObjectStorageRegions.DataUpcloudManagedObjectStorageRegionsRegionsOutputReference.property.zones">zones</a></code> | <code>typing.List[str]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-upcloud.dataUpcloudManagedObjectStorageRegions.DataUpcloudManagedObjectStorageRegionsRegionsOutputReference.property.internalValue">internal_value</a></code> | <code><a href="#@cdktf/provider-upcloud.dataUpcloudManagedObjectStorageRegions.DataUpcloudManagedObjectStorageRegionsRegions">DataUpcloudManagedObjectStorageRegionsRegions</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-upcloud.dataUpcloudManagedObjectStorageRegions.DataUpcloudManagedObjectStorageRegionsRegionsOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-upcloud.dataUpcloudManagedObjectStorageRegions.DataUpcloudManagedObjectStorageRegionsRegions">DataUpcloudManagedObjectStorageRegionsRegions</a>]</code> | *No description.* |
 
 ---
 
@@ -1289,10 +1313,10 @@ zones: typing.List[str]
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-upcloud.dataUpcloudManagedObjectStorageRegions.DataUpcloudManagedObjectStorageRegionsRegionsOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: DataUpcloudManagedObjectStorageRegionsRegions
+internal_value: typing.Union[IResolvable, DataUpcloudManagedObjectStorageRegionsRegions]
 ```
 
-- *Type:* <a href="#@cdktf/provider-upcloud.dataUpcloudManagedObjectStorageRegions.DataUpcloudManagedObjectStorageRegionsRegions">DataUpcloudManagedObjectStorageRegionsRegions</a>
+- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-upcloud.dataUpcloudManagedObjectStorageRegions.DataUpcloudManagedObjectStorageRegionsRegions">DataUpcloudManagedObjectStorageRegionsRegions</a>]
 
 ---
 

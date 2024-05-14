@@ -34,6 +34,7 @@ export * as managedObjectStorageUser from './managed-object-storage-user';
 export * as managedObjectStorageUserAccessKey from './managed-object-storage-user-access-key';
 export * as managedObjectStorageUserPolicy from './managed-object-storage-user-policy';
 export * as network from './network';
+export * as networkPeering from './network-peering';
 export * as objectStorage from './object-storage';
 export * as router from './router';
 export * as server from './server';

@@ -4,7 +4,7 @@
 
 ### Network <a name="Network" id="@cdktf/provider-upcloud.network.Network"></a>
 
-Represents a {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.2.3/docs/resources/network upcloud_network}.
+Represents a {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.3.0/docs/resources/network upcloud_network}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-upcloud.network.Network.Initializer"></a>
 
@@ -74,7 +74,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-upcloud.network.Network.moveTo">moveTo</a></code> | Moves this resource to the target resource given by moveTarget. |
 | <code><a href="#@cdktf/provider-upcloud.network.Network.moveToId">moveToId</a></code> | Moves this resource to the resource corresponding to "id". |
 | <code><a href="#@cdktf/provider-upcloud.network.Network.putIpNetwork">putIpNetwork</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-upcloud.network.Network.resetId">resetId</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-upcloud.network.Network.resetIpNetwork">resetIpNetwork</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.network.Network.resetRouter">resetRouter</a></code> | *No description.* |
 
 ---
@@ -370,19 +370,19 @@ Full id of resource to move to, e.g. "aws_s3_bucket.example".
 ##### `putIpNetwork` <a name="putIpNetwork" id="@cdktf/provider-upcloud.network.Network.putIpNetwork"></a>
 
 ```typescript
-public putIpNetwork(value: NetworkIpNetwork): void
+public putIpNetwork(value: IResolvable | NetworkIpNetwork[]): void
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-upcloud.network.Network.putIpNetwork.parameter.value"></a>
 
-- *Type:* <a href="#@cdktf/provider-upcloud.network.NetworkIpNetwork">NetworkIpNetwork</a>
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-upcloud.network.NetworkIpNetwork">NetworkIpNetwork</a>[]
 
 ---
 
-##### `resetId` <a name="resetId" id="@cdktf/provider-upcloud.network.Network.resetId"></a>
+##### `resetIpNetwork` <a name="resetIpNetwork" id="@cdktf/provider-upcloud.network.Network.resetIpNetwork"></a>
 
 ```typescript
-public resetId(): void
+public resetIpNetwork(): void
 ```
 
 ##### `resetRouter` <a name="resetRouter" id="@cdktf/provider-upcloud.network.Network.resetRouter"></a>
@@ -494,7 +494,7 @@ The construct id used in the generated config for the Network to import.
 
 The id of the existing Network that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.2.3/docs/resources/network#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.3.0/docs/resources/network#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -524,14 +524,13 @@ Refer to the {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5
 | <code><a href="#@cdktf/provider-upcloud.network.Network.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.network.Network.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.network.Network.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-upcloud.network.Network.property.ipNetwork">ipNetwork</a></code> | <code><a href="#@cdktf/provider-upcloud.network.NetworkIpNetworkOutputReference">NetworkIpNetworkOutputReference</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-upcloud.network.Network.property.id">id</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-upcloud.network.Network.property.ipNetwork">ipNetwork</a></code> | <code><a href="#@cdktf/provider-upcloud.network.NetworkIpNetworkList">NetworkIpNetworkList</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.network.Network.property.type">type</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-upcloud.network.Network.property.idInput">idInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-upcloud.network.Network.property.ipNetworkInput">ipNetworkInput</a></code> | <code><a href="#@cdktf/provider-upcloud.network.NetworkIpNetwork">NetworkIpNetwork</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-upcloud.network.Network.property.ipNetworkInput">ipNetworkInput</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-upcloud.network.NetworkIpNetwork">NetworkIpNetwork</a>[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.network.Network.property.nameInput">nameInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.network.Network.property.routerInput">routerInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.network.Network.property.zoneInput">zoneInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-upcloud.network.Network.property.id">id</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.network.Network.property.name">name</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.network.Network.property.router">router</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.network.Network.property.zone">zone</a></code> | <code>string</code> | *No description.* |
@@ -680,13 +679,23 @@ public readonly provisioners: FileProvisioner | LocalExecProvisioner | RemoteExe
 
 ---
 
+##### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-upcloud.network.Network.property.id"></a>
+
+```typescript
+public readonly id: string;
+```
+
+- *Type:* string
+
+---
+
 ##### `ipNetwork`<sup>Required</sup> <a name="ipNetwork" id="@cdktf/provider-upcloud.network.Network.property.ipNetwork"></a>
 
 ```typescript
-public readonly ipNetwork: NetworkIpNetworkOutputReference;
+public readonly ipNetwork: NetworkIpNetworkList;
 ```
 
-- *Type:* <a href="#@cdktf/provider-upcloud.network.NetworkIpNetworkOutputReference">NetworkIpNetworkOutputReference</a>
+- *Type:* <a href="#@cdktf/provider-upcloud.network.NetworkIpNetworkList">NetworkIpNetworkList</a>
 
 ---
 
@@ -700,23 +709,13 @@ public readonly type: string;
 
 ---
 
-##### `idInput`<sup>Optional</sup> <a name="idInput" id="@cdktf/provider-upcloud.network.Network.property.idInput"></a>
-
-```typescript
-public readonly idInput: string;
-```
-
-- *Type:* string
-
----
-
 ##### `ipNetworkInput`<sup>Optional</sup> <a name="ipNetworkInput" id="@cdktf/provider-upcloud.network.Network.property.ipNetworkInput"></a>
 
 ```typescript
-public readonly ipNetworkInput: NetworkIpNetwork;
+public readonly ipNetworkInput: IResolvable | NetworkIpNetwork[];
 ```
 
-- *Type:* <a href="#@cdktf/provider-upcloud.network.NetworkIpNetwork">NetworkIpNetwork</a>
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-upcloud.network.NetworkIpNetwork">NetworkIpNetwork</a>[]
 
 ---
 
@@ -744,16 +743,6 @@ public readonly routerInput: string;
 
 ```typescript
 public readonly zoneInput: string;
-```
-
-- *Type:* string
-
----
-
-##### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-upcloud.network.Network.property.id"></a>
-
-```typescript
-public readonly id: string;
 ```
 
 - *Type:* string
@@ -831,11 +820,10 @@ const networkConfig: network.NetworkConfig = { ... }
 | <code><a href="#@cdktf/provider-upcloud.network.NetworkConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.network.NetworkConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.network.NetworkConfig.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-upcloud.network.NetworkConfig.property.ipNetwork">ipNetwork</a></code> | <code><a href="#@cdktf/provider-upcloud.network.NetworkIpNetwork">NetworkIpNetwork</a></code> | ip_network block. |
-| <code><a href="#@cdktf/provider-upcloud.network.NetworkConfig.property.name">name</a></code> | <code>string</code> | A valid name for the network. |
+| <code><a href="#@cdktf/provider-upcloud.network.NetworkConfig.property.name">name</a></code> | <code>string</code> | Name of the network. |
 | <code><a href="#@cdktf/provider-upcloud.network.NetworkConfig.property.zone">zone</a></code> | <code>string</code> | The zone the network is in, e.g. `de-fra1`. You can list available zones with `upctl zone list`. |
-| <code><a href="#@cdktf/provider-upcloud.network.NetworkConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.2.3/docs/resources/network#id Network#id}. |
-| <code><a href="#@cdktf/provider-upcloud.network.NetworkConfig.property.router">router</a></code> | <code>string</code> | The UUID of a router. |
+| <code><a href="#@cdktf/provider-upcloud.network.NetworkConfig.property.ipNetwork">ipNetwork</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-upcloud.network.NetworkIpNetwork">NetworkIpNetwork</a>[]</code> | ip_network block. |
+| <code><a href="#@cdktf/provider-upcloud.network.NetworkConfig.property.router">router</a></code> | <code>string</code> | UUID of a router to attach to this network. |
 
 ---
 
@@ -909,20 +897,6 @@ public readonly provisioners: FileProvisioner | LocalExecProvisioner | RemoteExe
 
 ---
 
-##### `ipNetwork`<sup>Required</sup> <a name="ipNetwork" id="@cdktf/provider-upcloud.network.NetworkConfig.property.ipNetwork"></a>
-
-```typescript
-public readonly ipNetwork: NetworkIpNetwork;
-```
-
-- *Type:* <a href="#@cdktf/provider-upcloud.network.NetworkIpNetwork">NetworkIpNetwork</a>
-
-ip_network block.
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.2.3/docs/resources/network#ip_network Network#ip_network}
-
----
-
 ##### `name`<sup>Required</sup> <a name="name" id="@cdktf/provider-upcloud.network.NetworkConfig.property.name"></a>
 
 ```typescript
@@ -931,9 +905,9 @@ public readonly name: string;
 
 - *Type:* string
 
-A valid name for the network.
+Name of the network.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.2.3/docs/resources/network#name Network#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.3.0/docs/resources/network#name Network#name}
 
 ---
 
@@ -947,22 +921,21 @@ public readonly zone: string;
 
 The zone the network is in, e.g. `de-fra1`. You can list available zones with `upctl zone list`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.2.3/docs/resources/network#zone Network#zone}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.3.0/docs/resources/network#zone Network#zone}
 
 ---
 
-##### `id`<sup>Optional</sup> <a name="id" id="@cdktf/provider-upcloud.network.NetworkConfig.property.id"></a>
+##### `ipNetwork`<sup>Optional</sup> <a name="ipNetwork" id="@cdktf/provider-upcloud.network.NetworkConfig.property.ipNetwork"></a>
 
 ```typescript
-public readonly id: string;
+public readonly ipNetwork: IResolvable | NetworkIpNetwork[];
 ```
 
-- *Type:* string
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-upcloud.network.NetworkIpNetwork">NetworkIpNetwork</a>[]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.2.3/docs/resources/network#id Network#id}.
+ip_network block.
 
-Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
-If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.3.0/docs/resources/network#ip_network Network#ip_network}
 
 ---
 
@@ -974,9 +947,9 @@ public readonly router: string;
 
 - *Type:* string
 
-The UUID of a router.
+UUID of a router to attach to this network.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.2.3/docs/resources/network#router Network#router}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.3.0/docs/resources/network#router Network#router}
 
 ---
 
@@ -1014,7 +987,7 @@ public readonly address: string;
 
 The CIDR range of the subnet.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.2.3/docs/resources/network#address Network#address}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.3.0/docs/resources/network#address Network#address}
 
 ---
 
@@ -1028,7 +1001,7 @@ public readonly dhcp: boolean | IResolvable;
 
 Is DHCP enabled?
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.2.3/docs/resources/network#dhcp Network#dhcp}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.3.0/docs/resources/network#dhcp Network#dhcp}
 
 ---
 
@@ -1042,7 +1015,7 @@ public readonly family: string;
 
 IP address family.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.2.3/docs/resources/network#family Network#family}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.3.0/docs/resources/network#family Network#family}
 
 ---
 
@@ -1056,7 +1029,7 @@ public readonly dhcpDefaultRoute: boolean | IResolvable;
 
 Is the gateway the DHCP default route?
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.2.3/docs/resources/network#dhcp_default_route Network#dhcp_default_route}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.3.0/docs/resources/network#dhcp_default_route Network#dhcp_default_route}
 
 ---
 
@@ -1070,7 +1043,7 @@ public readonly dhcpDns: string[];
 
 The DNS servers given by DHCP.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.2.3/docs/resources/network#dhcp_dns Network#dhcp_dns}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.3.0/docs/resources/network#dhcp_dns Network#dhcp_dns}
 
 ---
 
@@ -1084,7 +1057,7 @@ public readonly dhcpRoutes: string[];
 
 The additional DHCP classless static routes given by DHCP.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.2.3/docs/resources/network#dhcp_routes Network#dhcp_routes}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.3.0/docs/resources/network#dhcp_routes Network#dhcp_routes}
 
 ---
 
@@ -1098,11 +1071,171 @@ public readonly gateway: string;
 
 Gateway address given by DHCP.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.2.3/docs/resources/network#gateway Network#gateway}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.3.0/docs/resources/network#gateway Network#gateway}
 
 ---
 
 ## Classes <a name="Classes" id="Classes"></a>
+
+### NetworkIpNetworkList <a name="NetworkIpNetworkList" id="@cdktf/provider-upcloud.network.NetworkIpNetworkList"></a>
+
+#### Initializers <a name="Initializers" id="@cdktf/provider-upcloud.network.NetworkIpNetworkList.Initializer"></a>
+
+```typescript
+import { network } from '@cdktf/provider-upcloud'
+
+new network.NetworkIpNetworkList(terraformResource: IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-upcloud.network.NetworkIpNetworkList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktf/provider-upcloud.network.NetworkIpNetworkList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktf/provider-upcloud.network.NetworkIpNetworkList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktf/provider-upcloud.network.NetworkIpNetworkList.Initializer.parameter.terraformResource"></a>
+
+- *Type:* cdktf.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-upcloud.network.NetworkIpNetworkList.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `wrapsSet`<sup>Required</sup> <a name="wrapsSet" id="@cdktf/provider-upcloud.network.NetworkIpNetworkList.Initializer.parameter.wrapsSet"></a>
+
+- *Type:* boolean
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktf/provider-upcloud.network.NetworkIpNetworkList.allWithMapKey">allWithMapKey</a></code> | Creating an iterator for this complex list. |
+| <code><a href="#@cdktf/provider-upcloud.network.NetworkIpNetworkList.computeFqn">computeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-upcloud.network.NetworkIpNetworkList.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktf/provider-upcloud.network.NetworkIpNetworkList.toString">toString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktf/provider-upcloud.network.NetworkIpNetworkList.get">get</a></code> | *No description.* |
+
+---
+
+##### `allWithMapKey` <a name="allWithMapKey" id="@cdktf/provider-upcloud.network.NetworkIpNetworkList.allWithMapKey"></a>
+
+```typescript
+public allWithMapKey(mapKeyAttributeName: string): DynamicListTerraformIterator
+```
+
+Creating an iterator for this complex list.
+
+The list will be converted into a map with the mapKeyAttributeName as the key.
+
+###### `mapKeyAttributeName`<sup>Required</sup> <a name="mapKeyAttributeName" id="@cdktf/provider-upcloud.network.NetworkIpNetworkList.allWithMapKey.parameter.mapKeyAttributeName"></a>
+
+- *Type:* string
+
+---
+
+##### `computeFqn` <a name="computeFqn" id="@cdktf/provider-upcloud.network.NetworkIpNetworkList.computeFqn"></a>
+
+```typescript
+public computeFqn(): string
+```
+
+##### `resolve` <a name="resolve" id="@cdktf/provider-upcloud.network.NetworkIpNetworkList.resolve"></a>
+
+```typescript
+public resolve(_context: IResolveContext): any
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktf/provider-upcloud.network.NetworkIpNetworkList.resolve.parameter._context"></a>
+
+- *Type:* cdktf.IResolveContext
+
+---
+
+##### `toString` <a name="toString" id="@cdktf/provider-upcloud.network.NetworkIpNetworkList.toString"></a>
+
+```typescript
+public toString(): string
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `get` <a name="get" id="@cdktf/provider-upcloud.network.NetworkIpNetworkList.get"></a>
+
+```typescript
+public get(index: number): NetworkIpNetworkOutputReference
+```
+
+###### `index`<sup>Required</sup> <a name="index" id="@cdktf/provider-upcloud.network.NetworkIpNetworkList.get.parameter.index"></a>
+
+- *Type:* number
+
+the index of the item to return.
+
+---
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-upcloud.network.NetworkIpNetworkList.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktf/provider-upcloud.network.NetworkIpNetworkList.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-upcloud.network.NetworkIpNetworkList.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-upcloud.network.NetworkIpNetwork">NetworkIpNetwork</a>[]</code> | *No description.* |
+
+---
+
+##### `creationStack`<sup>Required</sup> <a name="creationStack" id="@cdktf/provider-upcloud.network.NetworkIpNetworkList.property.creationStack"></a>
+
+```typescript
+public readonly creationStack: string[];
+```
+
+- *Type:* string[]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktf/provider-upcloud.network.NetworkIpNetworkList.property.fqn"></a>
+
+```typescript
+public readonly fqn: string;
+```
+
+- *Type:* string
+
+---
+
+##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-upcloud.network.NetworkIpNetworkList.property.internalValue"></a>
+
+```typescript
+public readonly internalValue: IResolvable | NetworkIpNetwork[];
+```
+
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-upcloud.network.NetworkIpNetwork">NetworkIpNetwork</a>[]
+
+---
+
 
 ### NetworkIpNetworkOutputReference <a name="NetworkIpNetworkOutputReference" id="@cdktf/provider-upcloud.network.NetworkIpNetworkOutputReference"></a>
 
@@ -1111,13 +1244,15 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upclo
 ```typescript
 import { network } from '@cdktf/provider-upcloud'
 
-new network.NetworkIpNetworkOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
+new network.NetworkIpNetworkOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean)
 ```
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-upcloud.network.NetworkIpNetworkOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktf/provider-upcloud.network.NetworkIpNetworkOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktf/provider-upcloud.network.NetworkIpNetworkOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>number</code> | the index of this item in the list. |
+| <code><a href="#@cdktf/provider-upcloud.network.NetworkIpNetworkOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
 ---
 
@@ -1134,6 +1269,22 @@ The parent resource.
 - *Type:* string
 
 The attribute on the parent resource this class is referencing.
+
+---
+
+##### `complexObjectIndex`<sup>Required</sup> <a name="complexObjectIndex" id="@cdktf/provider-upcloud.network.NetworkIpNetworkOutputReference.Initializer.parameter.complexObjectIndex"></a>
+
+- *Type:* number
+
+the index of this item in the list.
+
+---
+
+##### `complexObjectIsFromSet`<sup>Required</sup> <a name="complexObjectIsFromSet" id="@cdktf/provider-upcloud.network.NetworkIpNetworkOutputReference.Initializer.parameter.complexObjectIsFromSet"></a>
+
+- *Type:* boolean
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
 
 ---
 
@@ -1356,7 +1507,7 @@ public resetGateway(): void
 | <code><a href="#@cdktf/provider-upcloud.network.NetworkIpNetworkOutputReference.property.dhcpRoutes">dhcpRoutes</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.network.NetworkIpNetworkOutputReference.property.family">family</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.network.NetworkIpNetworkOutputReference.property.gateway">gateway</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-upcloud.network.NetworkIpNetworkOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktf/provider-upcloud.network.NetworkIpNetwork">NetworkIpNetwork</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-upcloud.network.NetworkIpNetworkOutputReference.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-upcloud.network.NetworkIpNetwork">NetworkIpNetwork</a></code> | *No description.* |
 
 ---
 
@@ -1527,10 +1678,10 @@ public readonly gateway: string;
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-upcloud.network.NetworkIpNetworkOutputReference.property.internalValue"></a>
 
 ```typescript
-public readonly internalValue: NetworkIpNetwork;
+public readonly internalValue: IResolvable | NetworkIpNetwork;
 ```
 
-- *Type:* <a href="#@cdktf/provider-upcloud.network.NetworkIpNetwork">NetworkIpNetwork</a>
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-upcloud.network.NetworkIpNetwork">NetworkIpNetwork</a>
 
 ---
 

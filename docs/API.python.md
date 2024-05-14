@@ -48,6 +48,7 @@ The following submodules are available:
 - [managedObjectStorageUserAccessKey](./managedObjectStorageUserAccessKey.python.md)
 - [managedObjectStorageUserPolicy](./managedObjectStorageUserPolicy.python.md)
 - [network](./network.python.md)
+- [networkPeering](./networkPeering.python.md)
 - [objectStorage](./objectStorage.python.md)
 - [provider](./provider.python.md)
 - [router](./router.python.md)

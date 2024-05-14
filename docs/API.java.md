@@ -48,6 +48,7 @@ The following submodules are available:
 - [managedObjectStorageUserAccessKey](./managedObjectStorageUserAccessKey.java.md)
 - [managedObjectStorageUserPolicy](./managedObjectStorageUserPolicy.java.md)
 - [network](./network.java.md)
+- [networkPeering](./networkPeering.java.md)
 - [objectStorage](./objectStorage.java.md)
 - [provider](./provider.java.md)
 - [router](./router.java.md)

@@ -34,6 +34,7 @@ Object.defineProperty(exports, 'managedObjectStorageUser', { get: function () { 
 Object.defineProperty(exports, 'managedObjectStorageUserAccessKey', { get: function () { return require('./managed-object-storage-user-access-key'); } });
 Object.defineProperty(exports, 'managedObjectStorageUserPolicy', { get: function () { return require('./managed-object-storage-user-policy'); } });
 Object.defineProperty(exports, 'network', { get: function () { return require('./network'); } });
+Object.defineProperty(exports, 'networkPeering', { get: function () { return require('./network-peering'); } });
 Object.defineProperty(exports, 'objectStorage', { get: function () { return require('./object-storage'); } });
 Object.defineProperty(exports, 'router', { get: function () { return require('./router'); } });
 Object.defineProperty(exports, 'server', { get: function () { return require('./server'); } });
