@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/upcloudltd/upcloud/5.3.0/docs/resources/kubernetes_cluster
+// https://registry.terraform.io/providers/upcloudltd/upcloud/5.4.0/docs/resources/kubernetes_cluster
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,11 +10,11 @@ export interface KubernetesClusterConfig extends cdktf.TerraformMetaArguments {
   /**
   * IP addresses or IP ranges in CIDR format which are allowed to access the cluster control plane. To allow access from any source, use `["0.0.0.0/0"]`. To deny access from all sources, use `[]`. Values set here do not restrict access to node groups or exposed Kubernetes services.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.3.0/docs/resources/kubernetes_cluster#control_plane_ip_filter KubernetesCluster#control_plane_ip_filter}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.4.0/docs/resources/kubernetes_cluster#control_plane_ip_filter KubernetesCluster#control_plane_ip_filter}
   */
   readonly controlPlaneIpFilter: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.3.0/docs/resources/kubernetes_cluster#id KubernetesCluster#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.4.0/docs/resources/kubernetes_cluster#id KubernetesCluster#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -28,49 +23,55 @@ export interface KubernetesClusterConfig extends cdktf.TerraformMetaArguments {
   /**
   * Key-value pairs to classify the cluster.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.3.0/docs/resources/kubernetes_cluster#labels KubernetesCluster#labels}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.4.0/docs/resources/kubernetes_cluster#labels KubernetesCluster#labels}
   */
   readonly labels?: { [key: string]: string };
   /**
   * Cluster name. Needs to be unique within the account.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.3.0/docs/resources/kubernetes_cluster#name KubernetesCluster#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.4.0/docs/resources/kubernetes_cluster#name KubernetesCluster#name}
   */
   readonly name: string;
   /**
   * Network ID for the cluster to run in.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.3.0/docs/resources/kubernetes_cluster#network KubernetesCluster#network}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.4.0/docs/resources/kubernetes_cluster#network KubernetesCluster#network}
   */
   readonly network: string;
   /**
   * The pricing plan used for the cluster. Default plan is `development`. You can list available plans with `upctl kubernetes plans`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.3.0/docs/resources/kubernetes_cluster#plan KubernetesCluster#plan}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.4.0/docs/resources/kubernetes_cluster#plan KubernetesCluster#plan}
   */
   readonly plan?: string;
   /**
   * Enable private node groups. Private node groups requires a network that is routed through NAT gateway.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.3.0/docs/resources/kubernetes_cluster#private_node_groups KubernetesCluster#private_node_groups}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.4.0/docs/resources/kubernetes_cluster#private_node_groups KubernetesCluster#private_node_groups}
   */
   readonly privateNodeGroups?: boolean | cdktf.IResolvable;
   /**
+  * Set default storage encryption strategy for all nodes in the cluster.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.4.0/docs/resources/kubernetes_cluster#storage_encryption KubernetesCluster#storage_encryption}
+  */
+  readonly storageEncryption?: string;
+  /**
   * Kubernetes version ID, e.g. `1.27`. You can list available version IDs with `upctl kubernetes versions`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.3.0/docs/resources/kubernetes_cluster#version KubernetesCluster#version}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.4.0/docs/resources/kubernetes_cluster#version KubernetesCluster#version}
   */
   readonly version?: string;
   /**
   * Zone in which the Kubernetes cluster will be hosted, e.g. `de-fra1`. You can list available zones with `upctl zone list`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.3.0/docs/resources/kubernetes_cluster#zone KubernetesCluster#zone}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.4.0/docs/resources/kubernetes_cluster#zone KubernetesCluster#zone}
   */
   readonly zone: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.3.0/docs/resources/kubernetes_cluster upcloud_kubernetes_cluster}
+* Represents a {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.4.0/docs/resources/kubernetes_cluster upcloud_kubernetes_cluster}
 */
 export class KubernetesCluster extends cdktf.TerraformResource {
 
@@ -86,7 +87,7 @@ export class KubernetesCluster extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a KubernetesCluster resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the KubernetesCluster to import
-  * @param importFromId The id of the existing KubernetesCluster that should be imported. Refer to the {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.3.0/docs/resources/kubernetes_cluster#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing KubernetesCluster that should be imported. Refer to the {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.4.0/docs/resources/kubernetes_cluster#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the KubernetesCluster to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -98,7 +99,7 @@ export class KubernetesCluster extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.3.0/docs/resources/kubernetes_cluster upcloud_kubernetes_cluster} Resource
+  * Create a new {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.4.0/docs/resources/kubernetes_cluster upcloud_kubernetes_cluster} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -109,7 +110,7 @@ export class KubernetesCluster extends cdktf.TerraformResource {
       terraformResourceType: 'upcloud_kubernetes_cluster',
       terraformGeneratorMetadata: {
         providerName: 'upcloud',
-        providerVersion: '5.3.0',
+        providerVersion: '5.4.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,
@@ -127,6 +128,7 @@ export class KubernetesCluster extends cdktf.TerraformResource {
     this._network = config.network;
     this._plan = config.plan;
     this._privateNodeGroups = config.privateNodeGroups;
+    this._storageEncryption = config.storageEncryption;
     this._version = config.version;
     this._zone = config.zone;
   }
@@ -253,6 +255,22 @@ export class KubernetesCluster extends cdktf.TerraformResource {
     return this.getStringAttribute('state');
   }
 
+  // storage_encryption - computed: false, optional: true, required: false
+  private _storageEncryption?: string; 
+  public get storageEncryption() {
+    return this.getStringAttribute('storage_encryption');
+  }
+  public set storageEncryption(value: string) {
+    this._storageEncryption = value;
+  }
+  public resetStorageEncryption() {
+    this._storageEncryption = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get storageEncryptionInput() {
+    return this._storageEncryption;
+  }
+
   // version - computed: true, optional: true, required: false
   private _version?: string; 
   public get version() {
@@ -295,6 +313,7 @@ export class KubernetesCluster extends cdktf.TerraformResource {
       network: cdktf.stringToTerraform(this._network),
       plan: cdktf.stringToTerraform(this._plan),
       private_node_groups: cdktf.booleanToTerraform(this._privateNodeGroups),
+      storage_encryption: cdktf.stringToTerraform(this._storageEncryption),
       version: cdktf.stringToTerraform(this._version),
       zone: cdktf.stringToTerraform(this._zone),
     };
@@ -343,6 +362,12 @@ export class KubernetesCluster extends cdktf.TerraformResource {
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
+      },
+      storage_encryption: {
+        value: cdktf.stringToHclTerraform(this._storageEncryption),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
       },
       version: {
         value: cdktf.stringToHclTerraform(this._version),
