@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/upcloudltd/upcloud/5.3.0/docs/data-sources/managed_database_mysql_sessions
+// https://registry.terraform.io/providers/upcloudltd/upcloud/5.4.0/docs/data-sources/managed_database_mysql_sessions
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,7 +13,7 @@ import * as cdktf from 'cdktf';
 
 export interface DataUpcloudManagedDatabaseMysqlSessionsConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.3.0/docs/data-sources/managed_database_mysql_sessions#id DataUpcloudManagedDatabaseMysqlSessions#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.4.0/docs/data-sources/managed_database_mysql_sessions#id DataUpcloudManagedDatabaseMysqlSessions#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -22,31 +22,31 @@ export interface DataUpcloudManagedDatabaseMysqlSessionsConfig extends cdktf.Ter
   /**
   * Number of entries to receive at most.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.3.0/docs/data-sources/managed_database_mysql_sessions#limit DataUpcloudManagedDatabaseMysqlSessions#limit}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.4.0/docs/data-sources/managed_database_mysql_sessions#limit DataUpcloudManagedDatabaseMysqlSessions#limit}
   */
   readonly limit?: number;
   /**
   * Offset for retrieved results based on sort order.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.3.0/docs/data-sources/managed_database_mysql_sessions#offset DataUpcloudManagedDatabaseMysqlSessions#offset}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.4.0/docs/data-sources/managed_database_mysql_sessions#offset DataUpcloudManagedDatabaseMysqlSessions#offset}
   */
   readonly offset?: number;
   /**
   * Order by session field and sort retrieved results. Limited variables can be used for ordering.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.3.0/docs/data-sources/managed_database_mysql_sessions#order DataUpcloudManagedDatabaseMysqlSessions#order}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.4.0/docs/data-sources/managed_database_mysql_sessions#order DataUpcloudManagedDatabaseMysqlSessions#order}
   */
   readonly order?: string;
   /**
   * Service's UUID for which these sessions belongs to
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.3.0/docs/data-sources/managed_database_mysql_sessions#service DataUpcloudManagedDatabaseMysqlSessions#service}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.4.0/docs/data-sources/managed_database_mysql_sessions#service DataUpcloudManagedDatabaseMysqlSessions#service}
   */
   readonly service: string;
   /**
   * sessions block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.3.0/docs/data-sources/managed_database_mysql_sessions#sessions DataUpcloudManagedDatabaseMysqlSessions#sessions}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.4.0/docs/data-sources/managed_database_mysql_sessions#sessions DataUpcloudManagedDatabaseMysqlSessions#sessions}
   */
   readonly sessions?: DataUpcloudManagedDatabaseMysqlSessionsSessions[] | cdktf.IResolvable;
 }
@@ -173,7 +173,7 @@ export class DataUpcloudManagedDatabaseMysqlSessionsSessionsList extends cdktf.C
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.3.0/docs/data-sources/managed_database_mysql_sessions upcloud_managed_database_mysql_sessions}
+* Represents a {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.4.0/docs/data-sources/managed_database_mysql_sessions upcloud_managed_database_mysql_sessions}
 */
 export class DataUpcloudManagedDatabaseMysqlSessions extends cdktf.TerraformDataSource {
 
@@ -189,7 +189,7 @@ export class DataUpcloudManagedDatabaseMysqlSessions extends cdktf.TerraformData
   * Generates CDKTF code for importing a DataUpcloudManagedDatabaseMysqlSessions resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataUpcloudManagedDatabaseMysqlSessions to import
-  * @param importFromId The id of the existing DataUpcloudManagedDatabaseMysqlSessions that should be imported. Refer to the {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.3.0/docs/data-sources/managed_database_mysql_sessions#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataUpcloudManagedDatabaseMysqlSessions that should be imported. Refer to the {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.4.0/docs/data-sources/managed_database_mysql_sessions#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataUpcloudManagedDatabaseMysqlSessions to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -201,7 +201,7 @@ export class DataUpcloudManagedDatabaseMysqlSessions extends cdktf.TerraformData
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.3.0/docs/data-sources/managed_database_mysql_sessions upcloud_managed_database_mysql_sessions} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.4.0/docs/data-sources/managed_database_mysql_sessions upcloud_managed_database_mysql_sessions} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -212,7 +212,7 @@ export class DataUpcloudManagedDatabaseMysqlSessions extends cdktf.TerraformData
       terraformResourceType: 'upcloud_managed_database_mysql_sessions',
       terraformGeneratorMetadata: {
         providerName: 'upcloud',
-        providerVersion: '5.3.0',
+        providerVersion: '5.4.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,
