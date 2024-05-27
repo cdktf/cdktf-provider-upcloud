@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5
 #### Initializers <a name="Initializers" id="@cdktf/provider-upcloud.managedDatabaseUser.ManagedDatabaseUser.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/manageddatabaseuser"
+import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v14/manageddatabaseuser"
 
 manageddatabaseuser.NewManagedDatabaseUser(scope Construct, id *string, config ManagedDatabaseUserConfig) ManagedDatabaseUser
 ```
@@ -459,7 +459,7 @@ func ResetRedisAccessControl()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-upcloud.managedDatabaseUser.ManagedDatabaseUser.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/manageddatabaseuser"
+import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v14/manageddatabaseuser"
 
 manageddatabaseuser.ManagedDatabaseUser_IsConstruct(x interface{}) *bool
 ```
@@ -491,7 +491,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-upcloud.managedDatabaseUser.ManagedDatabaseUser.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/manageddatabaseuser"
+import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v14/manageddatabaseuser"
 
 manageddatabaseuser.ManagedDatabaseUser_IsTerraformElement(x interface{}) *bool
 ```
@@ -505,7 +505,7 @@ manageddatabaseuser.ManagedDatabaseUser_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-upcloud.managedDatabaseUser.ManagedDatabaseUser.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/manageddatabaseuser"
+import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v14/manageddatabaseuser"
 
 manageddatabaseuser.ManagedDatabaseUser_IsTerraformResource(x interface{}) *bool
 ```
@@ -519,7 +519,7 @@ manageddatabaseuser.ManagedDatabaseUser_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-upcloud.managedDatabaseUser.ManagedDatabaseUser.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/manageddatabaseuser"
+import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v14/manageddatabaseuser"
 
 manageddatabaseuser.ManagedDatabaseUser_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -935,7 +935,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-upcloud.managedDatabaseUser.ManagedDatabaseUserConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/manageddatabaseuser"
+import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v14/manageddatabaseuser"
 
 &manageddatabaseuser.ManagedDatabaseUserConfig {
 	Connection: interface{},
@@ -949,10 +949,10 @@ import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/manageddatabaseuser"
 	Username: *string,
 	Authentication: *string,
 	Id: *string,
-	OpensearchAccessControl: github.com/cdktf/cdktf-provider-upcloud-go/upcloud.managedDatabaseUser.ManagedDatabaseUserOpensearchAccessControl,
+	OpensearchAccessControl: github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v14.managedDatabaseUser.ManagedDatabaseUserOpensearchAccessControl,
 	Password: *string,
-	PgAccessControl: github.com/cdktf/cdktf-provider-upcloud-go/upcloud.managedDatabaseUser.ManagedDatabaseUserPgAccessControl,
-	RedisAccessControl: github.com/cdktf/cdktf-provider-upcloud-go/upcloud.managedDatabaseUser.ManagedDatabaseUserRedisAccessControl,
+	PgAccessControl: github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v14.managedDatabaseUser.ManagedDatabaseUserPgAccessControl,
+	RedisAccessControl: github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v14.managedDatabaseUser.ManagedDatabaseUserRedisAccessControl,
 }
 ```
 
@@ -1166,7 +1166,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upclo
 #### Initializer <a name="Initializer" id="@cdktf/provider-upcloud.managedDatabaseUser.ManagedDatabaseUserOpensearchAccessControl.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/manageddatabaseuser"
+import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v14/manageddatabaseuser"
 
 &manageddatabaseuser.ManagedDatabaseUserOpensearchAccessControl {
 	Rules: interface{},
@@ -1200,7 +1200,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upclo
 #### Initializer <a name="Initializer" id="@cdktf/provider-upcloud.managedDatabaseUser.ManagedDatabaseUserOpensearchAccessControlRules.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/manageddatabaseuser"
+import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v14/manageddatabaseuser"
 
 &manageddatabaseuser.ManagedDatabaseUserOpensearchAccessControlRules {
 	Index: *string,
@@ -1250,7 +1250,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upclo
 #### Initializer <a name="Initializer" id="@cdktf/provider-upcloud.managedDatabaseUser.ManagedDatabaseUserPgAccessControl.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/manageddatabaseuser"
+import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v14/manageddatabaseuser"
 
 &manageddatabaseuser.ManagedDatabaseUserPgAccessControl {
 	AllowReplication: interface{},
@@ -1284,7 +1284,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upclo
 #### Initializer <a name="Initializer" id="@cdktf/provider-upcloud.managedDatabaseUser.ManagedDatabaseUserRedisAccessControl.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/manageddatabaseuser"
+import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v14/manageddatabaseuser"
 
 &manageddatabaseuser.ManagedDatabaseUserRedisAccessControl {
 	Categories: *[]*string,
@@ -1368,7 +1368,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upclo
 #### Initializers <a name="Initializers" id="@cdktf/provider-upcloud.managedDatabaseUser.ManagedDatabaseUserOpensearchAccessControlOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/manageddatabaseuser"
+import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v14/manageddatabaseuser"
 
 manageddatabaseuser.NewManagedDatabaseUserOpensearchAccessControlOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ManagedDatabaseUserOpensearchAccessControlOutputReference
 ```
@@ -1652,7 +1652,7 @@ func InternalValue() ManagedDatabaseUserOpensearchAccessControl
 #### Initializers <a name="Initializers" id="@cdktf/provider-upcloud.managedDatabaseUser.ManagedDatabaseUserOpensearchAccessControlRulesList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/manageddatabaseuser"
+import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v14/manageddatabaseuser"
 
 manageddatabaseuser.NewManagedDatabaseUserOpensearchAccessControlRulesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ManagedDatabaseUserOpensearchAccessControlRulesList
 ```
@@ -1812,7 +1812,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-upcloud.managedDatabaseUser.ManagedDatabaseUserOpensearchAccessControlRulesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/manageddatabaseuser"
+import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v14/manageddatabaseuser"
 
 manageddatabaseuser.NewManagedDatabaseUserOpensearchAccessControlRulesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ManagedDatabaseUserOpensearchAccessControlRulesOutputReference
 ```
@@ -2123,7 +2123,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-upcloud.managedDatabaseUser.ManagedDatabaseUserPgAccessControlOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/manageddatabaseuser"
+import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v14/manageddatabaseuser"
 
 manageddatabaseuser.NewManagedDatabaseUserPgAccessControlOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ManagedDatabaseUserPgAccessControlOutputReference
 ```
@@ -2401,7 +2401,7 @@ func InternalValue() ManagedDatabaseUserPgAccessControl
 #### Initializers <a name="Initializers" id="@cdktf/provider-upcloud.managedDatabaseUser.ManagedDatabaseUserRedisAccessControlOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/manageddatabaseuser"
+import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v14/manageddatabaseuser"
 
 manageddatabaseuser.NewManagedDatabaseUserRedisAccessControlOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ManagedDatabaseUserRedisAccessControlOutputReference
 ```
