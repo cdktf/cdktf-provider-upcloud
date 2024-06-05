@@ -4,7 +4,7 @@
 
 ### DataUpcloudZone <a name="DataUpcloudZone" id="@cdktf/provider-upcloud.dataUpcloudZone.DataUpcloudZone"></a>
 
-Represents a {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.4.0/docs/data-sources/zone upcloud_zone}.
+Represents a {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.5.0/docs/data-sources/zone upcloud_zone}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-upcloud.dataUpcloudZone.DataUpcloudZone.Initializer"></a>
 
@@ -21,8 +21,8 @@ dataUpcloudZone.DataUpcloudZone(
   lifecycle: TerraformResourceLifecycle = None,
   provider: TerraformProvider = None,
   provisioners: typing.List[typing.Union[FileProvisioner, LocalExecProvisioner, RemoteExecProvisioner]] = None,
-  name: str,
-  id: str = None
+  id: str = None,
+  name: str = None
 )
 ```
 
@@ -37,8 +37,8 @@ dataUpcloudZone.DataUpcloudZone(
 | <code><a href="#@cdktf/provider-upcloud.dataUpcloudZone.DataUpcloudZone.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.dataUpcloudZone.DataUpcloudZone.Initializer.parameter.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.dataUpcloudZone.DataUpcloudZone.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-upcloud.dataUpcloudZone.DataUpcloudZone.Initializer.parameter.name">name</a></code> | <code>str</code> | Unique lablel for the zone. |
-| <code><a href="#@cdktf/provider-upcloud.dataUpcloudZone.DataUpcloudZone.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.4.0/docs/data-sources/zone#id DataUpcloudZone#id}. |
+| <code><a href="#@cdktf/provider-upcloud.dataUpcloudZone.DataUpcloudZone.Initializer.parameter.id">id</a></code> | <code>str</code> | Identifier of the zone. |
+| <code><a href="#@cdktf/provider-upcloud.dataUpcloudZone.DataUpcloudZone.Initializer.parameter.name">name</a></code> | <code>str</code> | Identifier of the zone. |
 
 ---
 
@@ -102,24 +102,28 @@ Must be unique amongst siblings in the same scope
 
 ---
 
-##### `name`<sup>Required</sup> <a name="name" id="@cdktf/provider-upcloud.dataUpcloudZone.DataUpcloudZone.Initializer.parameter.name"></a>
-
-- *Type:* str
-
-Unique lablel for the zone.
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.4.0/docs/data-sources/zone#name DataUpcloudZone#name}
-
----
-
 ##### `id`<sup>Optional</sup> <a name="id" id="@cdktf/provider-upcloud.dataUpcloudZone.DataUpcloudZone.Initializer.parameter.id"></a>
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.4.0/docs/data-sources/zone#id DataUpcloudZone#id}.
+Identifier of the zone.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.5.0/docs/data-sources/zone#id DataUpcloudZone#id}
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+
+---
+
+##### `name`<sup>Optional</sup> <a name="name" id="@cdktf/provider-upcloud.dataUpcloudZone.DataUpcloudZone.Initializer.parameter.name"></a>
+
+- *Type:* str
+
+Identifier of the zone.
+
+Contains the same value as `id`. If both `id` and `name` are set, `id` takes precedence.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.5.0/docs/data-sources/zone#name DataUpcloudZone#name}
 
 ---
 
@@ -145,6 +149,7 @@ If you experience problems setting this value it might not be settable. Please t
 | <code><a href="#@cdktf/provider-upcloud.dataUpcloudZone.DataUpcloudZone.getStringMapAttribute">get_string_map_attribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.dataUpcloudZone.DataUpcloudZone.interpolationForAttribute">interpolation_for_attribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.dataUpcloudZone.DataUpcloudZone.resetId">reset_id</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-upcloud.dataUpcloudZone.DataUpcloudZone.resetName">reset_name</a></code> | *No description.* |
 
 ---
 
@@ -371,6 +376,12 @@ def interpolation_for_attribute(
 def reset_id() -> None
 ```
 
+##### `reset_name` <a name="reset_name" id="@cdktf/provider-upcloud.dataUpcloudZone.DataUpcloudZone.resetName"></a>
+
+```python
+def reset_name() -> None
+```
+
 #### Static Functions <a name="Static Functions" id="Static Functions"></a>
 
 | **Name** | **Description** |
@@ -485,7 +496,7 @@ The construct id used in the generated config for the DataUpcloudZone to import.
 
 The id of the existing DataUpcloudZone that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.4.0/docs/data-sources/zone#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.5.0/docs/data-sources/zone#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -514,6 +525,7 @@ Refer to the {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5
 | <code><a href="#@cdktf/provider-upcloud.dataUpcloudZone.DataUpcloudZone.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.dataUpcloudZone.DataUpcloudZone.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.dataUpcloudZone.DataUpcloudZone.property.description">description</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-upcloud.dataUpcloudZone.DataUpcloudZone.property.parentZone">parent_zone</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.dataUpcloudZone.DataUpcloudZone.property.public">public</a></code> | <code>cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.dataUpcloudZone.DataUpcloudZone.property.idInput">id_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.dataUpcloudZone.DataUpcloudZone.property.nameInput">name_input</a></code> | <code>str</code> | *No description.* |
@@ -654,6 +666,16 @@ description: str
 
 ---
 
+##### `parent_zone`<sup>Required</sup> <a name="parent_zone" id="@cdktf/provider-upcloud.dataUpcloudZone.DataUpcloudZone.property.parentZone"></a>
+
+```python
+parent_zone: str
+```
+
+- *Type:* str
+
+---
+
 ##### `public`<sup>Required</sup> <a name="public" id="@cdktf/provider-upcloud.dataUpcloudZone.DataUpcloudZone.property.public"></a>
 
 ```python
@@ -739,8 +761,8 @@ dataUpcloudZone.DataUpcloudZoneConfig(
   lifecycle: TerraformResourceLifecycle = None,
   provider: TerraformProvider = None,
   provisioners: typing.List[typing.Union[FileProvisioner, LocalExecProvisioner, RemoteExecProvisioner]] = None,
-  name: str,
-  id: str = None
+  id: str = None,
+  name: str = None
 )
 ```
 
@@ -755,8 +777,8 @@ dataUpcloudZone.DataUpcloudZoneConfig(
 | <code><a href="#@cdktf/provider-upcloud.dataUpcloudZone.DataUpcloudZoneConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.dataUpcloudZone.DataUpcloudZoneConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.dataUpcloudZone.DataUpcloudZoneConfig.property.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-upcloud.dataUpcloudZone.DataUpcloudZoneConfig.property.name">name</a></code> | <code>str</code> | Unique lablel for the zone. |
-| <code><a href="#@cdktf/provider-upcloud.dataUpcloudZone.DataUpcloudZoneConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.4.0/docs/data-sources/zone#id DataUpcloudZone#id}. |
+| <code><a href="#@cdktf/provider-upcloud.dataUpcloudZone.DataUpcloudZoneConfig.property.id">id</a></code> | <code>str</code> | Identifier of the zone. |
+| <code><a href="#@cdktf/provider-upcloud.dataUpcloudZone.DataUpcloudZoneConfig.property.name">name</a></code> | <code>str</code> | Identifier of the zone. |
 
 ---
 
@@ -830,20 +852,6 @@ provisioners: typing.List[typing.Union[FileProvisioner, LocalExecProvisioner, Re
 
 ---
 
-##### `name`<sup>Required</sup> <a name="name" id="@cdktf/provider-upcloud.dataUpcloudZone.DataUpcloudZoneConfig.property.name"></a>
-
-```python
-name: str
-```
-
-- *Type:* str
-
-Unique lablel for the zone.
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.4.0/docs/data-sources/zone#name DataUpcloudZone#name}
-
----
-
 ##### `id`<sup>Optional</sup> <a name="id" id="@cdktf/provider-upcloud.dataUpcloudZone.DataUpcloudZoneConfig.property.id"></a>
 
 ```python
@@ -852,10 +860,28 @@ id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.4.0/docs/data-sources/zone#id DataUpcloudZone#id}.
+Identifier of the zone.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.5.0/docs/data-sources/zone#id DataUpcloudZone#id}
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+
+---
+
+##### `name`<sup>Optional</sup> <a name="name" id="@cdktf/provider-upcloud.dataUpcloudZone.DataUpcloudZoneConfig.property.name"></a>
+
+```python
+name: str
+```
+
+- *Type:* str
+
+Identifier of the zone.
+
+Contains the same value as `id`. If both `id` and `name` are set, `id` takes precedence.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.5.0/docs/data-sources/zone#name DataUpcloudZone#name}
 
 ---
 
