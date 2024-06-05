@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/upcloudltd/upcloud/5.4.0/docs/resources/network_peering
+// https://registry.terraform.io/providers/upcloudltd/upcloud/5.5.0/docs/resources/network_peering
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,31 +15,31 @@ export interface NetworkPeeringConfig extends cdktf.TerraformMetaArguments {
   /**
   * Configured status of the network peering.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.4.0/docs/resources/network_peering#configured_status NetworkPeering#configured_status}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.5.0/docs/resources/network_peering#configured_status NetworkPeering#configured_status}
   */
   readonly configuredStatus?: string;
   /**
   * Key-value pairs to classify the network peering.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.4.0/docs/resources/network_peering#labels NetworkPeering#labels}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.5.0/docs/resources/network_peering#labels NetworkPeering#labels}
   */
   readonly labels?: { [key: string]: string };
   /**
   * Name of the network peering.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.4.0/docs/resources/network_peering#name NetworkPeering#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.5.0/docs/resources/network_peering#name NetworkPeering#name}
   */
   readonly name: string;
   /**
   * network block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.4.0/docs/resources/network_peering#network NetworkPeering#network}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.5.0/docs/resources/network_peering#network NetworkPeering#network}
   */
   readonly network?: NetworkPeeringNetwork[] | cdktf.IResolvable;
   /**
   * peer_network block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.4.0/docs/resources/network_peering#peer_network NetworkPeering#peer_network}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.5.0/docs/resources/network_peering#peer_network NetworkPeering#peer_network}
   */
   readonly peerNetwork?: NetworkPeeringPeerNetwork[] | cdktf.IResolvable;
 }
@@ -47,7 +47,7 @@ export interface NetworkPeeringNetwork {
   /**
   * The UUID of the network.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.4.0/docs/resources/network_peering#uuid NetworkPeering#uuid}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.5.0/docs/resources/network_peering#uuid NetworkPeering#uuid}
   */
   readonly uuid: string;
 }
@@ -162,7 +162,7 @@ export interface NetworkPeeringPeerNetwork {
   /**
   * The UUID of the network.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.4.0/docs/resources/network_peering#uuid NetworkPeering#uuid}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.5.0/docs/resources/network_peering#uuid NetworkPeering#uuid}
   */
   readonly uuid: string;
 }
@@ -275,7 +275,7 @@ export class NetworkPeeringPeerNetworkList extends cdktf.ComplexList {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.4.0/docs/resources/network_peering upcloud_network_peering}
+* Represents a {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.5.0/docs/resources/network_peering upcloud_network_peering}
 */
 export class NetworkPeering extends cdktf.TerraformResource {
 
@@ -291,7 +291,7 @@ export class NetworkPeering extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a NetworkPeering resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the NetworkPeering to import
-  * @param importFromId The id of the existing NetworkPeering that should be imported. Refer to the {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.4.0/docs/resources/network_peering#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing NetworkPeering that should be imported. Refer to the {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.5.0/docs/resources/network_peering#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the NetworkPeering to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -303,7 +303,7 @@ export class NetworkPeering extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.4.0/docs/resources/network_peering upcloud_network_peering} Resource
+  * Create a new {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.5.0/docs/resources/network_peering upcloud_network_peering} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -314,7 +314,7 @@ export class NetworkPeering extends cdktf.TerraformResource {
       terraformResourceType: 'upcloud_network_peering',
       terraformGeneratorMetadata: {
         providerName: 'upcloud',
-        providerVersion: '5.4.0',
+        providerVersion: '5.5.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,
