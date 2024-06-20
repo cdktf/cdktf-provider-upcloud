@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/upcloudltd/upcloud/5.5.0/docs/resources/router
+// https://registry.terraform.io/providers/upcloudltd/upcloud/5.6.0/docs/resources/router
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,22 +8,21 @@ import * as cdktf from 'cdktf';
 
 export interface RouterConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.5.0/docs/resources/router#id Router#id}
+  * Key-value pairs to classify the router.
   *
-  * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
-  * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.6.0/docs/resources/router#labels Router#labels}
   */
-  readonly id?: string;
+  readonly labels?: { [key: string]: string };
   /**
-  * Name of the router
+  * Name of the router.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.5.0/docs/resources/router#name Router#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.6.0/docs/resources/router#name Router#name}
   */
   readonly name: string;
   /**
   * static_route block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.5.0/docs/resources/router#static_route Router#static_route}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.6.0/docs/resources/router#static_route Router#static_route}
   */
   readonly staticRoute?: RouterStaticRoute[] | cdktf.IResolvable;
 }
@@ -36,19 +30,19 @@ export interface RouterStaticRoute {
   /**
   * Name or description of the route.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.5.0/docs/resources/router#name Router#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.6.0/docs/resources/router#name Router#name}
   */
   readonly name?: string;
   /**
   * Next hop address. NOTE: For static route to be active the next hop has to be an address of a reachable running Cloud Server in one of the Private Networks attached to the router.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.5.0/docs/resources/router#nexthop Router#nexthop}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.6.0/docs/resources/router#nexthop Router#nexthop}
   */
   readonly nexthop: string;
   /**
   * Destination prefix of the route.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.5.0/docs/resources/router#route Router#route}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.6.0/docs/resources/router#route Router#route}
   */
   readonly route: string;
 }
@@ -216,7 +210,7 @@ export class RouterStaticRouteList extends cdktf.ComplexList {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.5.0/docs/resources/router upcloud_router}
+* Represents a {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.6.0/docs/resources/router upcloud_router}
 */
 export class Router extends cdktf.TerraformResource {
 
@@ -232,7 +226,7 @@ export class Router extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a Router resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the Router to import
-  * @param importFromId The id of the existing Router that should be imported. Refer to the {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.5.0/docs/resources/router#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing Router that should be imported. Refer to the {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.6.0/docs/resources/router#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the Router to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -244,7 +238,7 @@ export class Router extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.5.0/docs/resources/router upcloud_router} Resource
+  * Create a new {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.6.0/docs/resources/router upcloud_router} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -255,7 +249,7 @@ export class Router extends cdktf.TerraformResource {
       terraformResourceType: 'upcloud_router',
       terraformGeneratorMetadata: {
         providerName: 'upcloud',
-        providerVersion: '5.5.0',
+        providerVersion: '5.6.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,
@@ -266,7 +260,7 @@ export class Router extends cdktf.TerraformResource {
       connection: config.connection,
       forEach: config.forEach
     });
-    this._id = config.id;
+    this._labels = config.labels;
     this._name = config.name;
     this._staticRoute.internalValue = config.staticRoute;
   }
@@ -280,20 +274,25 @@ export class Router extends cdktf.TerraformResource {
     return this.getListAttribute('attached_networks');
   }
 
-  // id - computed: true, optional: true, required: false
-  private _id?: string; 
+  // id - computed: true, optional: false, required: false
   public get id() {
     return this.getStringAttribute('id');
   }
-  public set id(value: string) {
-    this._id = value;
+
+  // labels - computed: true, optional: true, required: false
+  private _labels?: { [key: string]: string }; 
+  public get labels() {
+    return this.getStringMapAttribute('labels');
   }
-  public resetId() {
-    this._id = undefined;
+  public set labels(value: { [key: string]: string }) {
+    this._labels = value;
+  }
+  public resetLabels() {
+    this._labels = undefined;
   }
   // Temporarily expose input value. Use with caution.
-  public get idInput() {
-    return this._id;
+  public get labelsInput() {
+    return this._labels;
   }
 
   // name - computed: false, optional: false, required: true
@@ -336,7 +335,7 @@ export class Router extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      id: cdktf.stringToTerraform(this._id),
+      labels: cdktf.hashMapper(cdktf.stringToTerraform)(this._labels),
       name: cdktf.stringToTerraform(this._name),
       static_route: cdktf.listMapper(routerStaticRouteToTerraform, true)(this._staticRoute.internalValue),
     };
@@ -344,11 +343,11 @@ export class Router extends cdktf.TerraformResource {
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
-      id: {
-        value: cdktf.stringToHclTerraform(this._id),
+      labels: {
+        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._labels),
         isBlock: false,
-        type: "simple",
-        storageClassType: "string",
+        type: "map",
+        storageClassType: "stringMap",
       },
       name: {
         value: cdktf.stringToHclTerraform(this._name),

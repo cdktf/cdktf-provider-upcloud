@@ -4,12 +4,12 @@
 
 ### Storage <a name="Storage" id="@cdktf/provider-upcloud.storage.Storage"></a>
 
-Represents a {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.5.0/docs/resources/storage upcloud_storage}.
+Represents a {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.6.0/docs/resources/storage upcloud_storage}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-upcloud.storage.Storage.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v14/storage"
+import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/storage"
 
 storage.NewStorage(scope Construct, id *string, config StorageConfig) Storage
 ```
@@ -473,7 +473,7 @@ func ResetTier()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-upcloud.storage.Storage.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v14/storage"
+import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/storage"
 
 storage.Storage_IsConstruct(x interface{}) *bool
 ```
@@ -505,7 +505,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-upcloud.storage.Storage.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v14/storage"
+import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/storage"
 
 storage.Storage_IsTerraformElement(x interface{}) *bool
 ```
@@ -519,7 +519,7 @@ storage.Storage_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-upcloud.storage.Storage.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v14/storage"
+import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/storage"
 
 storage.Storage_IsTerraformResource(x interface{}) *bool
 ```
@@ -533,7 +533,7 @@ storage.Storage_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-upcloud.storage.Storage.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v14/storage"
+import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/storage"
 
 storage.Storage_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -562,7 +562,7 @@ The construct id used in the generated config for the Storage to import.
 
 The id of the existing Storage that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.5.0/docs/resources/storage#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.6.0/docs/resources/storage#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1004,7 +1004,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-upcloud.storage.StorageBackupRule.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v14/storage"
+import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/storage"
 
 &storage.StorageBackupRule {
 	Interval: *string,
@@ -1033,7 +1033,7 @@ Interval *string
 
 The weekday when the backup is created.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.5.0/docs/resources/storage#interval Storage#interval}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.6.0/docs/resources/storage#interval Storage#interval}
 
 ---
 
@@ -1047,7 +1047,7 @@ Retention *f64
 
 The number of days before a backup is automatically deleted.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.5.0/docs/resources/storage#retention Storage#retention}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.6.0/docs/resources/storage#retention Storage#retention}
 
 ---
 
@@ -1061,7 +1061,7 @@ Time *string
 
 The time of day when the backup is created.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.5.0/docs/resources/storage#time Storage#time}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.6.0/docs/resources/storage#time Storage#time}
 
 ---
 
@@ -1070,7 +1070,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upclo
 #### Initializer <a name="Initializer" id="@cdktf/provider-upcloud.storage.StorageClone.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v14/storage"
+import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/storage"
 
 &storage.StorageClone {
 	Id: *string,
@@ -1095,7 +1095,7 @@ Id *string
 
 The unique identifier of the storage/template to clone.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.5.0/docs/resources/storage#id Storage#id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.6.0/docs/resources/storage#id Storage#id}
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1107,7 +1107,7 @@ If you experience problems setting this value it might not be settable. Please t
 #### Initializer <a name="Initializer" id="@cdktf/provider-upcloud.storage.StorageConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v14/storage"
+import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/storage"
 
 &storage.StorageConfig {
 	Connection: interface{},
@@ -1120,13 +1120,13 @@ import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v14/storage"
 	Size: *f64,
 	Title: *string,
 	Zone: *string,
-	BackupRule: github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v14.storage.StorageBackupRule,
-	Clone: github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v14.storage.StorageClone,
+	BackupRule: github.com/cdktf/cdktf-provider-upcloud-go/upcloud.storage.StorageBackupRule,
+	Clone: github.com/cdktf/cdktf-provider-upcloud-go/upcloud.storage.StorageClone,
 	DeleteAutoresizeBackup: interface{},
 	Encrypt: interface{},
 	FilesystemAutoresize: interface{},
 	Id: *string,
-	Import: github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v14.storage.StorageImport,
+	Import: github.com/cdktf/cdktf-provider-upcloud-go/upcloud.storage.StorageImport,
 	Tier: *string,
 }
 ```
@@ -1150,7 +1150,7 @@ import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v14/storage"
 | <code><a href="#@cdktf/provider-upcloud.storage.StorageConfig.property.deleteAutoresizeBackup">DeleteAutoresizeBackup</a></code> | <code>interface{}</code> | If set to true, the backup taken before the partition and filesystem resize attempt will be deleted immediately after success. |
 | <code><a href="#@cdktf/provider-upcloud.storage.StorageConfig.property.encrypt">Encrypt</a></code> | <code>interface{}</code> | Sets if the storage is encrypted at rest. |
 | <code><a href="#@cdktf/provider-upcloud.storage.StorageConfig.property.filesystemAutoresize">FilesystemAutoresize</a></code> | <code>interface{}</code> | If set to true, provider will attempt to resize partition and filesystem when the size of the storage changes. |
-| <code><a href="#@cdktf/provider-upcloud.storage.StorageConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.5.0/docs/resources/storage#id Storage#id}. |
+| <code><a href="#@cdktf/provider-upcloud.storage.StorageConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.6.0/docs/resources/storage#id Storage#id}. |
 | <code><a href="#@cdktf/provider-upcloud.storage.StorageConfig.property.import">Import</a></code> | <code><a href="#@cdktf/provider-upcloud.storage.StorageImport">StorageImport</a></code> | import block. |
 | <code><a href="#@cdktf/provider-upcloud.storage.StorageConfig.property.tier">Tier</a></code> | <code>*string</code> | The storage tier to use. |
 
@@ -1236,7 +1236,7 @@ Size *f64
 
 The size of the storage in gigabytes.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.5.0/docs/resources/storage#size Storage#size}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.6.0/docs/resources/storage#size Storage#size}
 
 ---
 
@@ -1250,7 +1250,7 @@ Title *string
 
 A short, informative description.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.5.0/docs/resources/storage#title Storage#title}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.6.0/docs/resources/storage#title Storage#title}
 
 ---
 
@@ -1264,7 +1264,7 @@ Zone *string
 
 The zone in which the storage will be created, e.g. `de-fra1`. You can list available zones with `upctl zone list`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.5.0/docs/resources/storage#zone Storage#zone}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.6.0/docs/resources/storage#zone Storage#zone}
 
 ---
 
@@ -1278,7 +1278,7 @@ BackupRule StorageBackupRule
 
 backup_rule block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.5.0/docs/resources/storage#backup_rule Storage#backup_rule}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.6.0/docs/resources/storage#backup_rule Storage#backup_rule}
 
 ---
 
@@ -1292,7 +1292,7 @@ Clone StorageClone
 
 clone block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.5.0/docs/resources/storage#clone Storage#clone}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.6.0/docs/resources/storage#clone Storage#clone}
 
 ---
 
@@ -1306,7 +1306,7 @@ DeleteAutoresizeBackup interface{}
 
 If set to true, the backup taken before the partition and filesystem resize attempt will be deleted immediately after success.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.5.0/docs/resources/storage#delete_autoresize_backup Storage#delete_autoresize_backup}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.6.0/docs/resources/storage#delete_autoresize_backup Storage#delete_autoresize_backup}
 
 ---
 
@@ -1320,7 +1320,7 @@ Encrypt interface{}
 
 Sets if the storage is encrypted at rest.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.5.0/docs/resources/storage#encrypt Storage#encrypt}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.6.0/docs/resources/storage#encrypt Storage#encrypt}
 
 ---
 
@@ -1338,7 +1338,7 @@ Please note that before the resize attempt is made, backup of the storage will b
 to restore the storage and then deleted. If the resize attempt succeeds, backup will be kept (unless delete_autoresize_backup option is set to true).
 Taking and keeping backups incure costs.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.5.0/docs/resources/storage#filesystem_autoresize Storage#filesystem_autoresize}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.6.0/docs/resources/storage#filesystem_autoresize Storage#filesystem_autoresize}
 
 ---
 
@@ -1350,7 +1350,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.5.0/docs/resources/storage#id Storage#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.6.0/docs/resources/storage#id Storage#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1367,7 +1367,7 @@ Import StorageImport
 
 import block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.5.0/docs/resources/storage#import Storage#import}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.6.0/docs/resources/storage#import Storage#import}
 
 ---
 
@@ -1381,7 +1381,7 @@ Tier *string
 
 The storage tier to use.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.5.0/docs/resources/storage#tier Storage#tier}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.6.0/docs/resources/storage#tier Storage#tier}
 
 ---
 
@@ -1390,7 +1390,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upclo
 #### Initializer <a name="Initializer" id="@cdktf/provider-upcloud.storage.StorageImport.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v14/storage"
+import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/storage"
 
 &storage.StorageImport {
 	Source: *string,
@@ -1419,7 +1419,7 @@ Source *string
 
 The mode of the import task. One of `http_import` or `direct_upload`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.5.0/docs/resources/storage#source Storage#source}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.6.0/docs/resources/storage#source Storage#source}
 
 ---
 
@@ -1433,7 +1433,7 @@ SourceLocation *string
 
 The location of the file to import. For `http_import` an accessible URL for `direct_upload` a local file.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.5.0/docs/resources/storage#source_location Storage#source_location}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.6.0/docs/resources/storage#source_location Storage#source_location}
 
 ---
 
@@ -1447,7 +1447,7 @@ SourceHash *string
 
 For `direct_upload`; an optional hash of the file to upload.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.5.0/docs/resources/storage#source_hash Storage#source_hash}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.6.0/docs/resources/storage#source_hash Storage#source_hash}
 
 ---
 
@@ -1458,7 +1458,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upclo
 #### Initializers <a name="Initializers" id="@cdktf/provider-upcloud.storage.StorageBackupRuleOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v14/storage"
+import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/storage"
 
 storage.NewStorageBackupRuleOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) StorageBackupRuleOutputReference
 ```
@@ -1773,7 +1773,7 @@ func InternalValue() StorageBackupRule
 #### Initializers <a name="Initializers" id="@cdktf/provider-upcloud.storage.StorageCloneOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v14/storage"
+import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/storage"
 
 storage.NewStorageCloneOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) StorageCloneOutputReference
 ```
@@ -2044,7 +2044,7 @@ func InternalValue() StorageClone
 #### Initializers <a name="Initializers" id="@cdktf/provider-upcloud.storage.StorageImportOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v14/storage"
+import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/storage"
 
 storage.NewStorageImportOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) StorageImportOutputReference
 ```

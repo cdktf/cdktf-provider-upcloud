@@ -4,7 +4,7 @@
 
 ### FloatingIpAddress <a name="FloatingIpAddress" id="@cdktf/provider-upcloud.floatingIpAddress.FloatingIpAddress"></a>
 
-Represents a {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.5.0/docs/resources/floating_ip_address upcloud_floating_ip_address}.
+Represents a {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.6.0/docs/resources/floating_ip_address upcloud_floating_ip_address}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-upcloud.floatingIpAddress.FloatingIpAddress.Initializer"></a>
 
@@ -75,7 +75,6 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-upcloud.floatingIpAddress.FloatingIpAddress.moveToId">MoveToId</a></code> | Moves this resource to the resource corresponding to "id". |
 | <code><a href="#@cdktf/provider-upcloud.floatingIpAddress.FloatingIpAddress.resetAccess">ResetAccess</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.floatingIpAddress.FloatingIpAddress.resetFamily">ResetFamily</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-upcloud.floatingIpAddress.FloatingIpAddress.resetId">ResetId</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.floatingIpAddress.FloatingIpAddress.resetMacAddress">ResetMacAddress</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.floatingIpAddress.FloatingIpAddress.resetZone">ResetZone</a></code> | *No description.* |
 
@@ -381,12 +380,6 @@ private void ResetAccess()
 private void ResetFamily()
 ```
 
-##### `ResetId` <a name="ResetId" id="@cdktf/provider-upcloud.floatingIpAddress.FloatingIpAddress.resetId"></a>
-
-```csharp
-private void ResetId()
-```
-
 ##### `ResetMacAddress` <a name="ResetMacAddress" id="@cdktf/provider-upcloud.floatingIpAddress.FloatingIpAddress.resetMacAddress"></a>
 
 ```csharp
@@ -502,7 +495,7 @@ The construct id used in the generated config for the FloatingIpAddress to impor
 
 The id of the existing FloatingIpAddress that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.5.0/docs/resources/floating_ip_address#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.6.0/docs/resources/floating_ip_address#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -532,15 +525,14 @@ Refer to the {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5
 | <code><a href="#@cdktf/provider-upcloud.floatingIpAddress.FloatingIpAddress.property.lifecycle">Lifecycle</a></code> | <code>HashiCorp.Cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.floatingIpAddress.FloatingIpAddress.property.provider">Provider</a></code> | <code>HashiCorp.Cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.floatingIpAddress.FloatingIpAddress.property.provisioners">Provisioners</a></code> | <code>object[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-upcloud.floatingIpAddress.FloatingIpAddress.property.id">Id</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.floatingIpAddress.FloatingIpAddress.property.ipAddress">IpAddress</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.floatingIpAddress.FloatingIpAddress.property.accessInput">AccessInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.floatingIpAddress.FloatingIpAddress.property.familyInput">FamilyInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-upcloud.floatingIpAddress.FloatingIpAddress.property.idInput">IdInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.floatingIpAddress.FloatingIpAddress.property.macAddressInput">MacAddressInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.floatingIpAddress.FloatingIpAddress.property.zoneInput">ZoneInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.floatingIpAddress.FloatingIpAddress.property.access">Access</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.floatingIpAddress.FloatingIpAddress.property.family">Family</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-upcloud.floatingIpAddress.FloatingIpAddress.property.id">Id</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.floatingIpAddress.FloatingIpAddress.property.macAddress">MacAddress</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.floatingIpAddress.FloatingIpAddress.property.zone">Zone</a></code> | <code>string</code> | *No description.* |
 
@@ -688,6 +680,16 @@ public object[] Provisioners { get; }
 
 ---
 
+##### `Id`<sup>Required</sup> <a name="Id" id="@cdktf/provider-upcloud.floatingIpAddress.FloatingIpAddress.property.id"></a>
+
+```csharp
+public string Id { get; }
+```
+
+- *Type:* string
+
+---
+
 ##### `IpAddress`<sup>Required</sup> <a name="IpAddress" id="@cdktf/provider-upcloud.floatingIpAddress.FloatingIpAddress.property.ipAddress"></a>
 
 ```csharp
@@ -712,16 +714,6 @@ public string AccessInput { get; }
 
 ```csharp
 public string FamilyInput { get; }
-```
-
-- *Type:* string
-
----
-
-##### `IdInput`<sup>Optional</sup> <a name="IdInput" id="@cdktf/provider-upcloud.floatingIpAddress.FloatingIpAddress.property.idInput"></a>
-
-```csharp
-public string IdInput { get; }
 ```
 
 - *Type:* string
@@ -762,16 +754,6 @@ public string Access { get; }
 
 ```csharp
 public string Family { get; }
-```
-
-- *Type:* string
-
----
-
-##### `Id`<sup>Required</sup> <a name="Id" id="@cdktf/provider-upcloud.floatingIpAddress.FloatingIpAddress.property.id"></a>
-
-```csharp
-public string Id { get; }
 ```
 
 - *Type:* string
@@ -835,7 +817,6 @@ new FloatingIpAddressConfig {
     object[] Provisioners = null,
     string Access = null,
     string Family = null,
-    string Id = null,
     string MacAddress = null,
     string Zone = null
 };
@@ -853,10 +834,9 @@ new FloatingIpAddressConfig {
 | <code><a href="#@cdktf/provider-upcloud.floatingIpAddress.FloatingIpAddressConfig.property.provider">Provider</a></code> | <code>HashiCorp.Cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.floatingIpAddress.FloatingIpAddressConfig.property.provisioners">Provisioners</a></code> | <code>object[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.floatingIpAddress.FloatingIpAddressConfig.property.access">Access</a></code> | <code>string</code> | Network access for the floating IP address. Supported value: `public`. |
-| <code><a href="#@cdktf/provider-upcloud.floatingIpAddress.FloatingIpAddressConfig.property.family">Family</a></code> | <code>string</code> | The address family of new IP address. |
-| <code><a href="#@cdktf/provider-upcloud.floatingIpAddress.FloatingIpAddressConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.5.0/docs/resources/floating_ip_address#id FloatingIpAddress#id}. |
-| <code><a href="#@cdktf/provider-upcloud.floatingIpAddress.FloatingIpAddressConfig.property.macAddress">MacAddress</a></code> | <code>string</code> | MAC address of server interface to assign address to. |
-| <code><a href="#@cdktf/provider-upcloud.floatingIpAddress.FloatingIpAddressConfig.property.zone">Zone</a></code> | <code>string</code> | Zone of address, required when assigning a detached floating IP address, e.g. `de-fra1`. You can list available zones with `upctl zone list`. |
+| <code><a href="#@cdktf/provider-upcloud.floatingIpAddress.FloatingIpAddressConfig.property.family">Family</a></code> | <code>string</code> | The address family of the floating IP address. |
+| <code><a href="#@cdktf/provider-upcloud.floatingIpAddress.FloatingIpAddressConfig.property.macAddress">MacAddress</a></code> | <code>string</code> | MAC address of a server interface to assign address to. |
+| <code><a href="#@cdktf/provider-upcloud.floatingIpAddress.FloatingIpAddressConfig.property.zone">Zone</a></code> | <code>string</code> | Zone of the address, e.g. `de-fra1`. Required when assigning a detached floating IP address. You can list available zones with `upctl zone list`. |
 
 ---
 
@@ -940,7 +920,7 @@ public string Access { get; set; }
 
 Network access for the floating IP address. Supported value: `public`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.5.0/docs/resources/floating_ip_address#access FloatingIpAddress#access}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.6.0/docs/resources/floating_ip_address#access FloatingIpAddress#access}
 
 ---
 
@@ -952,24 +932,9 @@ public string Family { get; set; }
 
 - *Type:* string
 
-The address family of new IP address.
+The address family of the floating IP address.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.5.0/docs/resources/floating_ip_address#family FloatingIpAddress#family}
-
----
-
-##### `Id`<sup>Optional</sup> <a name="Id" id="@cdktf/provider-upcloud.floatingIpAddress.FloatingIpAddressConfig.property.id"></a>
-
-```csharp
-public string Id { get; set; }
-```
-
-- *Type:* string
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.5.0/docs/resources/floating_ip_address#id FloatingIpAddress#id}.
-
-Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
-If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.6.0/docs/resources/floating_ip_address#family FloatingIpAddress#family}
 
 ---
 
@@ -981,9 +946,9 @@ public string MacAddress { get; set; }
 
 - *Type:* string
 
-MAC address of server interface to assign address to.
+MAC address of a server interface to assign address to.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.5.0/docs/resources/floating_ip_address#mac_address FloatingIpAddress#mac_address}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.6.0/docs/resources/floating_ip_address#mac_address FloatingIpAddress#mac_address}
 
 ---
 
@@ -995,9 +960,9 @@ public string Zone { get; set; }
 
 - *Type:* string
 
-Zone of address, required when assigning a detached floating IP address, e.g. `de-fra1`. You can list available zones with `upctl zone list`.
+Zone of the address, e.g. `de-fra1`. Required when assigning a detached floating IP address. You can list available zones with `upctl zone list`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.5.0/docs/resources/floating_ip_address#zone FloatingIpAddress#zone}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.6.0/docs/resources/floating_ip_address#zone FloatingIpAddress#zone}
 
 ---
 
