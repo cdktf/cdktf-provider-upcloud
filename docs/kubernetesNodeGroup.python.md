@@ -4,7 +4,7 @@
 
 ### KubernetesNodeGroup <a name="KubernetesNodeGroup" id="@cdktf/provider-upcloud.kubernetesNodeGroup.KubernetesNodeGroup"></a>
 
-Represents a {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.5.0/docs/resources/kubernetes_node_group upcloud_kubernetes_node_group}.
+Represents a {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.6.0/docs/resources/kubernetes_node_group upcloud_kubernetes_node_group}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-upcloud.kubernetesNodeGroup.KubernetesNodeGroup.Initializer"></a>
 
@@ -54,7 +54,7 @@ kubernetesNodeGroup.KubernetesNodeGroup(
 | <code><a href="#@cdktf/provider-upcloud.kubernetesNodeGroup.KubernetesNodeGroup.Initializer.parameter.plan">plan</a></code> | <code>str</code> | The server plan used for the node group. You can list available plans with `upctl server plans`. |
 | <code><a href="#@cdktf/provider-upcloud.kubernetesNodeGroup.KubernetesNodeGroup.Initializer.parameter.antiAffinity">anti_affinity</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | If set to true, nodes in this group will be placed on separate compute hosts. |
 | <code><a href="#@cdktf/provider-upcloud.kubernetesNodeGroup.KubernetesNodeGroup.Initializer.parameter.customPlan">custom_plan</a></code> | <code><a href="#@cdktf/provider-upcloud.kubernetesNodeGroup.KubernetesNodeGroupCustomPlan">KubernetesNodeGroupCustomPlan</a></code> | custom_plan block. |
-| <code><a href="#@cdktf/provider-upcloud.kubernetesNodeGroup.KubernetesNodeGroup.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.5.0/docs/resources/kubernetes_node_group#id KubernetesNodeGroup#id}. |
+| <code><a href="#@cdktf/provider-upcloud.kubernetesNodeGroup.KubernetesNodeGroup.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.6.0/docs/resources/kubernetes_node_group#id KubernetesNodeGroup#id}. |
 | <code><a href="#@cdktf/provider-upcloud.kubernetesNodeGroup.KubernetesNodeGroup.Initializer.parameter.kubeletArgs">kubelet_args</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-upcloud.kubernetesNodeGroup.KubernetesNodeGroupKubeletArgs">KubernetesNodeGroupKubeletArgs</a>]]</code> | kubelet_args block. |
 | <code><a href="#@cdktf/provider-upcloud.kubernetesNodeGroup.KubernetesNodeGroup.Initializer.parameter.labels">labels</a></code> | <code>typing.Mapping[str]</code> | Key-value pairs to classify the node group. |
 | <code><a href="#@cdktf/provider-upcloud.kubernetesNodeGroup.KubernetesNodeGroup.Initializer.parameter.sshKeys">ssh_keys</a></code> | <code>typing.List[str]</code> | You can optionally select SSH keys to be added as authorized keys to the nodes in this node group. |
@@ -130,7 +130,7 @@ Must be unique amongst siblings in the same scope
 
 Cluster ID.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.5.0/docs/resources/kubernetes_node_group#cluster KubernetesNodeGroup#cluster}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.6.0/docs/resources/kubernetes_node_group#cluster KubernetesNodeGroup#cluster}
 
 ---
 
@@ -140,7 +140,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upclo
 
 The name of the node group. Needs to be unique within a cluster.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.5.0/docs/resources/kubernetes_node_group#name KubernetesNodeGroup#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.6.0/docs/resources/kubernetes_node_group#name KubernetesNodeGroup#name}
 
 ---
 
@@ -150,7 +150,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upclo
 
 Amount of nodes to provision in the node group.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.5.0/docs/resources/kubernetes_node_group#node_count KubernetesNodeGroup#node_count}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.6.0/docs/resources/kubernetes_node_group#node_count KubernetesNodeGroup#node_count}
 
 ---
 
@@ -160,7 +160,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upclo
 
 The server plan used for the node group. You can list available plans with `upctl server plans`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.5.0/docs/resources/kubernetes_node_group#plan KubernetesNodeGroup#plan}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.6.0/docs/resources/kubernetes_node_group#plan KubernetesNodeGroup#plan}
 
 ---
 
@@ -172,7 +172,7 @@ If set to true, nodes in this group will be placed on separate compute hosts.
 
 Please note that anti-affinity policy is considered "best effort" and enabling it does not fully guarantee that the nodes will end up on different hardware.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.5.0/docs/resources/kubernetes_node_group#anti_affinity KubernetesNodeGroup#anti_affinity}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.6.0/docs/resources/kubernetes_node_group#anti_affinity KubernetesNodeGroup#anti_affinity}
 
 ---
 
@@ -182,7 +182,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upclo
 
 custom_plan block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.5.0/docs/resources/kubernetes_node_group#custom_plan KubernetesNodeGroup#custom_plan}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.6.0/docs/resources/kubernetes_node_group#custom_plan KubernetesNodeGroup#custom_plan}
 
 ---
 
@@ -190,7 +190,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upclo
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.5.0/docs/resources/kubernetes_node_group#id KubernetesNodeGroup#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.6.0/docs/resources/kubernetes_node_group#id KubernetesNodeGroup#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -203,7 +203,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 kubelet_args block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.5.0/docs/resources/kubernetes_node_group#kubelet_args KubernetesNodeGroup#kubelet_args}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.6.0/docs/resources/kubernetes_node_group#kubelet_args KubernetesNodeGroup#kubelet_args}
 
 ---
 
@@ -213,7 +213,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upclo
 
 Key-value pairs to classify the node group.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.5.0/docs/resources/kubernetes_node_group#labels KubernetesNodeGroup#labels}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.6.0/docs/resources/kubernetes_node_group#labels KubernetesNodeGroup#labels}
 
 ---
 
@@ -225,7 +225,7 @@ You can optionally select SSH keys to be added as authorized keys to the nodes i
 
 This allows you to connect to the nodes via SSH once they are running.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.5.0/docs/resources/kubernetes_node_group#ssh_keys KubernetesNodeGroup#ssh_keys}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.6.0/docs/resources/kubernetes_node_group#ssh_keys KubernetesNodeGroup#ssh_keys}
 
 ---
 
@@ -235,7 +235,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upclo
 
 Storage encryption strategy for the nodes in this group.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.5.0/docs/resources/kubernetes_node_group#storage_encryption KubernetesNodeGroup#storage_encryption}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.6.0/docs/resources/kubernetes_node_group#storage_encryption KubernetesNodeGroup#storage_encryption}
 
 ---
 
@@ -245,7 +245,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upclo
 
 taint block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.5.0/docs/resources/kubernetes_node_group#taint KubernetesNodeGroup#taint}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.6.0/docs/resources/kubernetes_node_group#taint KubernetesNodeGroup#taint}
 
 ---
 
@@ -255,7 +255,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upclo
 
 If set to false, nodes in this group will not have access to utility network.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.5.0/docs/resources/kubernetes_node_group#utility_network_access KubernetesNodeGroup#utility_network_access}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.6.0/docs/resources/kubernetes_node_group#utility_network_access KubernetesNodeGroup#utility_network_access}
 
 ---
 
@@ -643,7 +643,7 @@ def put_custom_plan(
 
 The number of CPU cores dedicated to individual node group nodes when using custom plan.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.5.0/docs/resources/kubernetes_node_group#cores KubernetesNodeGroup#cores}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.6.0/docs/resources/kubernetes_node_group#cores KubernetesNodeGroup#cores}
 
 ---
 
@@ -655,7 +655,7 @@ The amount of memory in megabytes to assign to individual node group node when u
 
 Value needs to be divisible by 1024.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.5.0/docs/resources/kubernetes_node_group#memory KubernetesNodeGroup#memory}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.6.0/docs/resources/kubernetes_node_group#memory KubernetesNodeGroup#memory}
 
 ---
 
@@ -665,7 +665,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upclo
 
 The size of the storage device in gigabytes.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.5.0/docs/resources/kubernetes_node_group#storage_size KubernetesNodeGroup#storage_size}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.6.0/docs/resources/kubernetes_node_group#storage_size KubernetesNodeGroup#storage_size}
 
 ---
 
@@ -675,7 +675,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upclo
 
 The storage tier to use. Defaults to maxiops.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.5.0/docs/resources/kubernetes_node_group#storage_tier KubernetesNodeGroup#storage_tier}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.6.0/docs/resources/kubernetes_node_group#storage_tier KubernetesNodeGroup#storage_tier}
 
 ---
 
@@ -875,7 +875,7 @@ The construct id used in the generated config for the KubernetesNodeGroup to imp
 
 The id of the existing KubernetesNodeGroup that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.5.0/docs/resources/kubernetes_node_group#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.6.0/docs/resources/kubernetes_node_group#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1404,7 +1404,7 @@ kubernetesNodeGroup.KubernetesNodeGroupConfig(
 | <code><a href="#@cdktf/provider-upcloud.kubernetesNodeGroup.KubernetesNodeGroupConfig.property.plan">plan</a></code> | <code>str</code> | The server plan used for the node group. You can list available plans with `upctl server plans`. |
 | <code><a href="#@cdktf/provider-upcloud.kubernetesNodeGroup.KubernetesNodeGroupConfig.property.antiAffinity">anti_affinity</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | If set to true, nodes in this group will be placed on separate compute hosts. |
 | <code><a href="#@cdktf/provider-upcloud.kubernetesNodeGroup.KubernetesNodeGroupConfig.property.customPlan">custom_plan</a></code> | <code><a href="#@cdktf/provider-upcloud.kubernetesNodeGroup.KubernetesNodeGroupCustomPlan">KubernetesNodeGroupCustomPlan</a></code> | custom_plan block. |
-| <code><a href="#@cdktf/provider-upcloud.kubernetesNodeGroup.KubernetesNodeGroupConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.5.0/docs/resources/kubernetes_node_group#id KubernetesNodeGroup#id}. |
+| <code><a href="#@cdktf/provider-upcloud.kubernetesNodeGroup.KubernetesNodeGroupConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.6.0/docs/resources/kubernetes_node_group#id KubernetesNodeGroup#id}. |
 | <code><a href="#@cdktf/provider-upcloud.kubernetesNodeGroup.KubernetesNodeGroupConfig.property.kubeletArgs">kubelet_args</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-upcloud.kubernetesNodeGroup.KubernetesNodeGroupKubeletArgs">KubernetesNodeGroupKubeletArgs</a>]]</code> | kubelet_args block. |
 | <code><a href="#@cdktf/provider-upcloud.kubernetesNodeGroup.KubernetesNodeGroupConfig.property.labels">labels</a></code> | <code>typing.Mapping[str]</code> | Key-value pairs to classify the node group. |
 | <code><a href="#@cdktf/provider-upcloud.kubernetesNodeGroup.KubernetesNodeGroupConfig.property.sshKeys">ssh_keys</a></code> | <code>typing.List[str]</code> | You can optionally select SSH keys to be added as authorized keys to the nodes in this node group. |
@@ -1494,7 +1494,7 @@ cluster: str
 
 Cluster ID.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.5.0/docs/resources/kubernetes_node_group#cluster KubernetesNodeGroup#cluster}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.6.0/docs/resources/kubernetes_node_group#cluster KubernetesNodeGroup#cluster}
 
 ---
 
@@ -1508,7 +1508,7 @@ name: str
 
 The name of the node group. Needs to be unique within a cluster.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.5.0/docs/resources/kubernetes_node_group#name KubernetesNodeGroup#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.6.0/docs/resources/kubernetes_node_group#name KubernetesNodeGroup#name}
 
 ---
 
@@ -1522,7 +1522,7 @@ node_count: typing.Union[int, float]
 
 Amount of nodes to provision in the node group.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.5.0/docs/resources/kubernetes_node_group#node_count KubernetesNodeGroup#node_count}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.6.0/docs/resources/kubernetes_node_group#node_count KubernetesNodeGroup#node_count}
 
 ---
 
@@ -1536,7 +1536,7 @@ plan: str
 
 The server plan used for the node group. You can list available plans with `upctl server plans`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.5.0/docs/resources/kubernetes_node_group#plan KubernetesNodeGroup#plan}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.6.0/docs/resources/kubernetes_node_group#plan KubernetesNodeGroup#plan}
 
 ---
 
@@ -1552,7 +1552,7 @@ If set to true, nodes in this group will be placed on separate compute hosts.
 
 Please note that anti-affinity policy is considered "best effort" and enabling it does not fully guarantee that the nodes will end up on different hardware.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.5.0/docs/resources/kubernetes_node_group#anti_affinity KubernetesNodeGroup#anti_affinity}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.6.0/docs/resources/kubernetes_node_group#anti_affinity KubernetesNodeGroup#anti_affinity}
 
 ---
 
@@ -1566,7 +1566,7 @@ custom_plan: KubernetesNodeGroupCustomPlan
 
 custom_plan block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.5.0/docs/resources/kubernetes_node_group#custom_plan KubernetesNodeGroup#custom_plan}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.6.0/docs/resources/kubernetes_node_group#custom_plan KubernetesNodeGroup#custom_plan}
 
 ---
 
@@ -1578,7 +1578,7 @@ id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.5.0/docs/resources/kubernetes_node_group#id KubernetesNodeGroup#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.6.0/docs/resources/kubernetes_node_group#id KubernetesNodeGroup#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1595,7 +1595,7 @@ kubelet_args: typing.Union[IResolvable, typing.List[KubernetesNodeGroupKubeletAr
 
 kubelet_args block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.5.0/docs/resources/kubernetes_node_group#kubelet_args KubernetesNodeGroup#kubelet_args}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.6.0/docs/resources/kubernetes_node_group#kubelet_args KubernetesNodeGroup#kubelet_args}
 
 ---
 
@@ -1609,7 +1609,7 @@ labels: typing.Mapping[str]
 
 Key-value pairs to classify the node group.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.5.0/docs/resources/kubernetes_node_group#labels KubernetesNodeGroup#labels}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.6.0/docs/resources/kubernetes_node_group#labels KubernetesNodeGroup#labels}
 
 ---
 
@@ -1625,7 +1625,7 @@ You can optionally select SSH keys to be added as authorized keys to the nodes i
 
 This allows you to connect to the nodes via SSH once they are running.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.5.0/docs/resources/kubernetes_node_group#ssh_keys KubernetesNodeGroup#ssh_keys}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.6.0/docs/resources/kubernetes_node_group#ssh_keys KubernetesNodeGroup#ssh_keys}
 
 ---
 
@@ -1639,7 +1639,7 @@ storage_encryption: str
 
 Storage encryption strategy for the nodes in this group.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.5.0/docs/resources/kubernetes_node_group#storage_encryption KubernetesNodeGroup#storage_encryption}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.6.0/docs/resources/kubernetes_node_group#storage_encryption KubernetesNodeGroup#storage_encryption}
 
 ---
 
@@ -1653,7 +1653,7 @@ taint: typing.Union[IResolvable, typing.List[KubernetesNodeGroupTaint]]
 
 taint block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.5.0/docs/resources/kubernetes_node_group#taint KubernetesNodeGroup#taint}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.6.0/docs/resources/kubernetes_node_group#taint KubernetesNodeGroup#taint}
 
 ---
 
@@ -1667,7 +1667,7 @@ utility_network_access: typing.Union[bool, IResolvable]
 
 If set to false, nodes in this group will not have access to utility network.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.5.0/docs/resources/kubernetes_node_group#utility_network_access KubernetesNodeGroup#utility_network_access}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.6.0/docs/resources/kubernetes_node_group#utility_network_access KubernetesNodeGroup#utility_network_access}
 
 ---
 
@@ -1707,7 +1707,7 @@ cores: typing.Union[int, float]
 
 The number of CPU cores dedicated to individual node group nodes when using custom plan.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.5.0/docs/resources/kubernetes_node_group#cores KubernetesNodeGroup#cores}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.6.0/docs/resources/kubernetes_node_group#cores KubernetesNodeGroup#cores}
 
 ---
 
@@ -1723,7 +1723,7 @@ The amount of memory in megabytes to assign to individual node group node when u
 
 Value needs to be divisible by 1024.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.5.0/docs/resources/kubernetes_node_group#memory KubernetesNodeGroup#memory}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.6.0/docs/resources/kubernetes_node_group#memory KubernetesNodeGroup#memory}
 
 ---
 
@@ -1737,7 +1737,7 @@ storage_size: typing.Union[int, float]
 
 The size of the storage device in gigabytes.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.5.0/docs/resources/kubernetes_node_group#storage_size KubernetesNodeGroup#storage_size}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.6.0/docs/resources/kubernetes_node_group#storage_size KubernetesNodeGroup#storage_size}
 
 ---
 
@@ -1751,7 +1751,7 @@ storage_tier: str
 
 The storage tier to use. Defaults to maxiops.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.5.0/docs/resources/kubernetes_node_group#storage_tier KubernetesNodeGroup#storage_tier}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.6.0/docs/resources/kubernetes_node_group#storage_tier KubernetesNodeGroup#storage_tier}
 
 ---
 
@@ -1787,7 +1787,7 @@ key: str
 
 Kubelet argument key.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.5.0/docs/resources/kubernetes_node_group#key KubernetesNodeGroup#key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.6.0/docs/resources/kubernetes_node_group#key KubernetesNodeGroup#key}
 
 ---
 
@@ -1801,7 +1801,7 @@ value: str
 
 Kubelet argument value.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.5.0/docs/resources/kubernetes_node_group#value KubernetesNodeGroup#value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.6.0/docs/resources/kubernetes_node_group#value KubernetesNodeGroup#value}
 
 ---
 
@@ -1839,7 +1839,7 @@ effect: str
 
 Taint effect.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.5.0/docs/resources/kubernetes_node_group#effect KubernetesNodeGroup#effect}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.6.0/docs/resources/kubernetes_node_group#effect KubernetesNodeGroup#effect}
 
 ---
 
@@ -1853,7 +1853,7 @@ key: str
 
 Taint key.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.5.0/docs/resources/kubernetes_node_group#key KubernetesNodeGroup#key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.6.0/docs/resources/kubernetes_node_group#key KubernetesNodeGroup#key}
 
 ---
 
@@ -1867,7 +1867,7 @@ value: str
 
 Taint value.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.5.0/docs/resources/kubernetes_node_group#value KubernetesNodeGroup#value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.6.0/docs/resources/kubernetes_node_group#value KubernetesNodeGroup#value}
 
 ---
 

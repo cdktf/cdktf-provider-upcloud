@@ -4,7 +4,7 @@
 
 ### Router <a name="Router" id="@cdktf/provider-upcloud.router.Router"></a>
 
-Represents a {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.5.0/docs/resources/router upcloud_router}.
+Represents a {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.6.0/docs/resources/router upcloud_router}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-upcloud.router.Router.Initializer"></a>
 
@@ -74,7 +74,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-upcloud.router.Router.moveTo">moveTo</a></code> | Moves this resource to the target resource given by moveTarget. |
 | <code><a href="#@cdktf/provider-upcloud.router.Router.moveToId">moveToId</a></code> | Moves this resource to the resource corresponding to "id". |
 | <code><a href="#@cdktf/provider-upcloud.router.Router.putStaticRoute">putStaticRoute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-upcloud.router.Router.resetId">resetId</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-upcloud.router.Router.resetLabels">resetLabels</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.router.Router.resetStaticRoute">resetStaticRoute</a></code> | *No description.* |
 
 ---
@@ -379,10 +379,10 @@ public putStaticRoute(value: IResolvable | RouterStaticRoute[]): void
 
 ---
 
-##### `resetId` <a name="resetId" id="@cdktf/provider-upcloud.router.Router.resetId"></a>
+##### `resetLabels` <a name="resetLabels" id="@cdktf/provider-upcloud.router.Router.resetLabels"></a>
 
 ```typescript
-public resetId(): void
+public resetLabels(): void
 ```
 
 ##### `resetStaticRoute` <a name="resetStaticRoute" id="@cdktf/provider-upcloud.router.Router.resetStaticRoute"></a>
@@ -494,7 +494,7 @@ The construct id used in the generated config for the Router to import.
 
 The id of the existing Router that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.5.0/docs/resources/router#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.6.0/docs/resources/router#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -525,12 +525,13 @@ Refer to the {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5
 | <code><a href="#@cdktf/provider-upcloud.router.Router.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.router.Router.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.router.Router.property.attachedNetworks">attachedNetworks</a></code> | <code>string[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-upcloud.router.Router.property.id">id</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.router.Router.property.staticRoute">staticRoute</a></code> | <code><a href="#@cdktf/provider-upcloud.router.RouterStaticRouteList">RouterStaticRouteList</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.router.Router.property.type">type</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-upcloud.router.Router.property.idInput">idInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-upcloud.router.Router.property.labelsInput">labelsInput</a></code> | <code>{[ key: string ]: string}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.router.Router.property.nameInput">nameInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.router.Router.property.staticRouteInput">staticRouteInput</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-upcloud.router.RouterStaticRoute">RouterStaticRoute</a>[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-upcloud.router.Router.property.id">id</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-upcloud.router.Router.property.labels">labels</a></code> | <code>{[ key: string ]: string}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.router.Router.property.name">name</a></code> | <code>string</code> | *No description.* |
 
 ---
@@ -687,6 +688,16 @@ public readonly attachedNetworks: string[];
 
 ---
 
+##### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-upcloud.router.Router.property.id"></a>
+
+```typescript
+public readonly id: string;
+```
+
+- *Type:* string
+
+---
+
 ##### `staticRoute`<sup>Required</sup> <a name="staticRoute" id="@cdktf/provider-upcloud.router.Router.property.staticRoute"></a>
 
 ```typescript
@@ -707,13 +718,13 @@ public readonly type: string;
 
 ---
 
-##### `idInput`<sup>Optional</sup> <a name="idInput" id="@cdktf/provider-upcloud.router.Router.property.idInput"></a>
+##### `labelsInput`<sup>Optional</sup> <a name="labelsInput" id="@cdktf/provider-upcloud.router.Router.property.labelsInput"></a>
 
 ```typescript
-public readonly idInput: string;
+public readonly labelsInput: {[ key: string ]: string};
 ```
 
-- *Type:* string
+- *Type:* {[ key: string ]: string}
 
 ---
 
@@ -737,13 +748,13 @@ public readonly staticRouteInput: IResolvable | RouterStaticRoute[];
 
 ---
 
-##### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-upcloud.router.Router.property.id"></a>
+##### `labels`<sup>Required</sup> <a name="labels" id="@cdktf/provider-upcloud.router.Router.property.labels"></a>
 
 ```typescript
-public readonly id: string;
+public readonly labels: {[ key: string ]: string};
 ```
 
-- *Type:* string
+- *Type:* {[ key: string ]: string}
 
 ---
 
@@ -799,7 +810,7 @@ const routerConfig: router.RouterConfig = { ... }
 | <code><a href="#@cdktf/provider-upcloud.router.RouterConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.router.RouterConfig.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.router.RouterConfig.property.name">name</a></code> | <code>string</code> | Name of the router. |
-| <code><a href="#@cdktf/provider-upcloud.router.RouterConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.5.0/docs/resources/router#id Router#id}. |
+| <code><a href="#@cdktf/provider-upcloud.router.RouterConfig.property.labels">labels</a></code> | <code>{[ key: string ]: string}</code> | Key-value pairs to classify the router. |
 | <code><a href="#@cdktf/provider-upcloud.router.RouterConfig.property.staticRoute">staticRoute</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-upcloud.router.RouterStaticRoute">RouterStaticRoute</a>[]</code> | static_route block. |
 
 ---
@@ -884,22 +895,21 @@ public readonly name: string;
 
 Name of the router.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.5.0/docs/resources/router#name Router#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.6.0/docs/resources/router#name Router#name}
 
 ---
 
-##### `id`<sup>Optional</sup> <a name="id" id="@cdktf/provider-upcloud.router.RouterConfig.property.id"></a>
+##### `labels`<sup>Optional</sup> <a name="labels" id="@cdktf/provider-upcloud.router.RouterConfig.property.labels"></a>
 
 ```typescript
-public readonly id: string;
+public readonly labels: {[ key: string ]: string};
 ```
 
-- *Type:* string
+- *Type:* {[ key: string ]: string}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.5.0/docs/resources/router#id Router#id}.
+Key-value pairs to classify the router.
 
-Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
-If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.6.0/docs/resources/router#labels Router#labels}
 
 ---
 
@@ -913,7 +923,7 @@ public readonly staticRoute: IResolvable | RouterStaticRoute[];
 
 static_route block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.5.0/docs/resources/router#static_route Router#static_route}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.6.0/docs/resources/router#static_route Router#static_route}
 
 ---
 
@@ -949,7 +959,7 @@ Next hop address.
 
 NOTE: For static route to be active the next hop has to be an address of a reachable running Cloud Server in one of the Private Networks attached to the router.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.5.0/docs/resources/router#nexthop Router#nexthop}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.6.0/docs/resources/router#nexthop Router#nexthop}
 
 ---
 
@@ -963,7 +973,7 @@ public readonly route: string;
 
 Destination prefix of the route.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.5.0/docs/resources/router#route Router#route}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.6.0/docs/resources/router#route Router#route}
 
 ---
 
@@ -977,7 +987,7 @@ public readonly name: string;
 
 Name or description of the route.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.5.0/docs/resources/router#name Router#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.6.0/docs/resources/router#name Router#name}
 
 ---
 

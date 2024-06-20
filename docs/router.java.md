@@ -4,7 +4,7 @@
 
 ### Router <a name="Router" id="@cdktf/provider-upcloud.router.Router"></a>
 
-Represents a {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.5.0/docs/resources/router upcloud_router}.
+Represents a {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.6.0/docs/resources/router upcloud_router}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-upcloud.router.Router.Initializer"></a>
 
@@ -24,7 +24,7 @@ Router.Builder.create(Construct scope, java.lang.String id)
 //  .provisioners(LocalExecProvisioner)
 //  .provisioners(RemoteExecProvisioner>)
     .name(java.lang.String)
-//  .id(java.lang.String)
+//  .labels(java.util.Map<java.lang.String, java.lang.String>)
 //  .staticRoute(IResolvable)
 //  .staticRoute(java.util.List<RouterStaticRoute>)
     .build();
@@ -42,7 +42,7 @@ Router.Builder.create(Construct scope, java.lang.String id)
 | <code><a href="#@cdktf/provider-upcloud.router.Router.Initializer.parameter.provider">provider</a></code> | <code>com.hashicorp.cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.router.Router.Initializer.parameter.provisioners">provisioners</a></code> | <code>java.util.List<com.hashicorp.cdktf.FileProvisioner OR com.hashicorp.cdktf.LocalExecProvisioner OR com.hashicorp.cdktf.RemoteExecProvisioner></code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.router.Router.Initializer.parameter.name">name</a></code> | <code>java.lang.String</code> | Name of the router. |
-| <code><a href="#@cdktf/provider-upcloud.router.Router.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.5.0/docs/resources/router#id Router#id}. |
+| <code><a href="#@cdktf/provider-upcloud.router.Router.Initializer.parameter.labels">labels</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | Key-value pairs to classify the router. |
 | <code><a href="#@cdktf/provider-upcloud.router.Router.Initializer.parameter.staticRoute">staticRoute</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-upcloud.router.RouterStaticRoute">RouterStaticRoute</a>></code> | static_route block. |
 
 ---
@@ -113,18 +113,17 @@ Must be unique amongst siblings in the same scope
 
 Name of the router.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.5.0/docs/resources/router#name Router#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.6.0/docs/resources/router#name Router#name}
 
 ---
 
-##### `id`<sup>Optional</sup> <a name="id" id="@cdktf/provider-upcloud.router.Router.Initializer.parameter.id"></a>
+##### `labels`<sup>Optional</sup> <a name="labels" id="@cdktf/provider-upcloud.router.Router.Initializer.parameter.labels"></a>
 
-- *Type:* java.lang.String
+- *Type:* java.util.Map<java.lang.String, java.lang.String>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.5.0/docs/resources/router#id Router#id}.
+Key-value pairs to classify the router.
 
-Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
-If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.6.0/docs/resources/router#labels Router#labels}
 
 ---
 
@@ -134,7 +133,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 static_route block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.5.0/docs/resources/router#static_route Router#static_route}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.6.0/docs/resources/router#static_route Router#static_route}
 
 ---
 
@@ -166,7 +165,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upclo
 | <code><a href="#@cdktf/provider-upcloud.router.Router.moveTo">moveTo</a></code> | Moves this resource to the target resource given by moveTarget. |
 | <code><a href="#@cdktf/provider-upcloud.router.Router.moveToId">moveToId</a></code> | Moves this resource to the resource corresponding to "id". |
 | <code><a href="#@cdktf/provider-upcloud.router.Router.putStaticRoute">putStaticRoute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-upcloud.router.Router.resetId">resetId</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-upcloud.router.Router.resetLabels">resetLabels</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.router.Router.resetStaticRoute">resetStaticRoute</a></code> | *No description.* |
 
 ---
@@ -473,10 +472,10 @@ public void putStaticRoute(IResolvable OR java.util.List<RouterStaticRoute> valu
 
 ---
 
-##### `resetId` <a name="resetId" id="@cdktf/provider-upcloud.router.Router.resetId"></a>
+##### `resetLabels` <a name="resetLabels" id="@cdktf/provider-upcloud.router.Router.resetLabels"></a>
 
 ```java
-public void resetId()
+public void resetLabels()
 ```
 
 ##### `resetStaticRoute` <a name="resetStaticRoute" id="@cdktf/provider-upcloud.router.Router.resetStaticRoute"></a>
@@ -588,7 +587,7 @@ The construct id used in the generated config for the Router to import.
 
 The id of the existing Router that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.5.0/docs/resources/router#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.6.0/docs/resources/router#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -619,12 +618,13 @@ Refer to the {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5
 | <code><a href="#@cdktf/provider-upcloud.router.Router.property.provider">provider</a></code> | <code>com.hashicorp.cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.router.Router.property.provisioners">provisioners</a></code> | <code>java.util.List<com.hashicorp.cdktf.FileProvisioner OR com.hashicorp.cdktf.LocalExecProvisioner OR com.hashicorp.cdktf.RemoteExecProvisioner></code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.router.Router.property.attachedNetworks">attachedNetworks</a></code> | <code>java.util.List<java.lang.String></code> | *No description.* |
+| <code><a href="#@cdktf/provider-upcloud.router.Router.property.id">id</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.router.Router.property.staticRoute">staticRoute</a></code> | <code><a href="#@cdktf/provider-upcloud.router.RouterStaticRouteList">RouterStaticRouteList</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.router.Router.property.type">type</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-upcloud.router.Router.property.idInput">idInput</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktf/provider-upcloud.router.Router.property.labelsInput">labelsInput</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.router.Router.property.nameInput">nameInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.router.Router.property.staticRouteInput">staticRouteInput</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-upcloud.router.RouterStaticRoute">RouterStaticRoute</a>></code> | *No description.* |
-| <code><a href="#@cdktf/provider-upcloud.router.Router.property.id">id</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktf/provider-upcloud.router.Router.property.labels">labels</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.router.Router.property.name">name</a></code> | <code>java.lang.String</code> | *No description.* |
 
 ---
@@ -781,6 +781,16 @@ public java.util.List<java.lang.String> getAttachedNetworks();
 
 ---
 
+##### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-upcloud.router.Router.property.id"></a>
+
+```java
+public java.lang.String getId();
+```
+
+- *Type:* java.lang.String
+
+---
+
 ##### `staticRoute`<sup>Required</sup> <a name="staticRoute" id="@cdktf/provider-upcloud.router.Router.property.staticRoute"></a>
 
 ```java
@@ -801,13 +811,13 @@ public java.lang.String getType();
 
 ---
 
-##### `idInput`<sup>Optional</sup> <a name="idInput" id="@cdktf/provider-upcloud.router.Router.property.idInput"></a>
+##### `labelsInput`<sup>Optional</sup> <a name="labelsInput" id="@cdktf/provider-upcloud.router.Router.property.labelsInput"></a>
 
 ```java
-public java.lang.String getIdInput();
+public java.util.Map<java.lang.String, java.lang.String> getLabelsInput();
 ```
 
-- *Type:* java.lang.String
+- *Type:* java.util.Map<java.lang.String, java.lang.String>
 
 ---
 
@@ -831,13 +841,13 @@ public java.lang.Object getStaticRouteInput();
 
 ---
 
-##### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-upcloud.router.Router.property.id"></a>
+##### `labels`<sup>Required</sup> <a name="labels" id="@cdktf/provider-upcloud.router.Router.property.labels"></a>
 
 ```java
-public java.lang.String getId();
+public java.util.Map<java.lang.String, java.lang.String> getLabels();
 ```
 
-- *Type:* java.lang.String
+- *Type:* java.util.Map<java.lang.String, java.lang.String>
 
 ---
 
@@ -891,7 +901,7 @@ RouterConfig.builder()
 //  .provisioners(LocalExecProvisioner)
 //  .provisioners(RemoteExecProvisioner>)
     .name(java.lang.String)
-//  .id(java.lang.String)
+//  .labels(java.util.Map<java.lang.String, java.lang.String>)
 //  .staticRoute(IResolvable)
 //  .staticRoute(java.util.List<RouterStaticRoute>)
     .build();
@@ -909,7 +919,7 @@ RouterConfig.builder()
 | <code><a href="#@cdktf/provider-upcloud.router.RouterConfig.property.provider">provider</a></code> | <code>com.hashicorp.cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.router.RouterConfig.property.provisioners">provisioners</a></code> | <code>java.util.List<com.hashicorp.cdktf.FileProvisioner OR com.hashicorp.cdktf.LocalExecProvisioner OR com.hashicorp.cdktf.RemoteExecProvisioner></code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.router.RouterConfig.property.name">name</a></code> | <code>java.lang.String</code> | Name of the router. |
-| <code><a href="#@cdktf/provider-upcloud.router.RouterConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.5.0/docs/resources/router#id Router#id}. |
+| <code><a href="#@cdktf/provider-upcloud.router.RouterConfig.property.labels">labels</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | Key-value pairs to classify the router. |
 | <code><a href="#@cdktf/provider-upcloud.router.RouterConfig.property.staticRoute">staticRoute</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-upcloud.router.RouterStaticRoute">RouterStaticRoute</a>></code> | static_route block. |
 
 ---
@@ -994,22 +1004,21 @@ public java.lang.String getName();
 
 Name of the router.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.5.0/docs/resources/router#name Router#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.6.0/docs/resources/router#name Router#name}
 
 ---
 
-##### `id`<sup>Optional</sup> <a name="id" id="@cdktf/provider-upcloud.router.RouterConfig.property.id"></a>
+##### `labels`<sup>Optional</sup> <a name="labels" id="@cdktf/provider-upcloud.router.RouterConfig.property.labels"></a>
 
 ```java
-public java.lang.String getId();
+public java.util.Map<java.lang.String, java.lang.String> getLabels();
 ```
 
-- *Type:* java.lang.String
+- *Type:* java.util.Map<java.lang.String, java.lang.String>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.5.0/docs/resources/router#id Router#id}.
+Key-value pairs to classify the router.
 
-Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
-If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.6.0/docs/resources/router#labels Router#labels}
 
 ---
 
@@ -1023,7 +1032,7 @@ public java.lang.Object getStaticRoute();
 
 static_route block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.5.0/docs/resources/router#static_route Router#static_route}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.6.0/docs/resources/router#static_route Router#static_route}
 
 ---
 
@@ -1063,7 +1072,7 @@ Next hop address.
 
 NOTE: For static route to be active the next hop has to be an address of a reachable running Cloud Server in one of the Private Networks attached to the router.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.5.0/docs/resources/router#nexthop Router#nexthop}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.6.0/docs/resources/router#nexthop Router#nexthop}
 
 ---
 
@@ -1077,7 +1086,7 @@ public java.lang.String getRoute();
 
 Destination prefix of the route.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.5.0/docs/resources/router#route Router#route}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.6.0/docs/resources/router#route Router#route}
 
 ---
 
@@ -1091,7 +1100,7 @@ public java.lang.String getName();
 
 Name or description of the route.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.5.0/docs/resources/router#name Router#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.6.0/docs/resources/router#name Router#name}
 
 ---
 

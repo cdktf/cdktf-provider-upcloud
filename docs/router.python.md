@@ -4,7 +4,7 @@
 
 ### Router <a name="Router" id="@cdktf/provider-upcloud.router.Router"></a>
 
-Represents a {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.5.0/docs/resources/router upcloud_router}.
+Represents a {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.6.0/docs/resources/router upcloud_router}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-upcloud.router.Router.Initializer"></a>
 
@@ -22,7 +22,7 @@ router.Router(
   provider: TerraformProvider = None,
   provisioners: typing.List[typing.Union[FileProvisioner, LocalExecProvisioner, RemoteExecProvisioner]] = None,
   name: str,
-  id: str = None,
+  labels: typing.Mapping[str] = None,
   static_route: typing.Union[IResolvable, typing.List[RouterStaticRoute]] = None
 )
 ```
@@ -39,7 +39,7 @@ router.Router(
 | <code><a href="#@cdktf/provider-upcloud.router.Router.Initializer.parameter.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.router.Router.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.router.Router.Initializer.parameter.name">name</a></code> | <code>str</code> | Name of the router. |
-| <code><a href="#@cdktf/provider-upcloud.router.Router.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.5.0/docs/resources/router#id Router#id}. |
+| <code><a href="#@cdktf/provider-upcloud.router.Router.Initializer.parameter.labels">labels</a></code> | <code>typing.Mapping[str]</code> | Key-value pairs to classify the router. |
 | <code><a href="#@cdktf/provider-upcloud.router.Router.Initializer.parameter.staticRoute">static_route</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-upcloud.router.RouterStaticRoute">RouterStaticRoute</a>]]</code> | static_route block. |
 
 ---
@@ -110,18 +110,17 @@ Must be unique amongst siblings in the same scope
 
 Name of the router.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.5.0/docs/resources/router#name Router#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.6.0/docs/resources/router#name Router#name}
 
 ---
 
-##### `id`<sup>Optional</sup> <a name="id" id="@cdktf/provider-upcloud.router.Router.Initializer.parameter.id"></a>
+##### `labels`<sup>Optional</sup> <a name="labels" id="@cdktf/provider-upcloud.router.Router.Initializer.parameter.labels"></a>
 
-- *Type:* str
+- *Type:* typing.Mapping[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.5.0/docs/resources/router#id Router#id}.
+Key-value pairs to classify the router.
 
-Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
-If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.6.0/docs/resources/router#labels Router#labels}
 
 ---
 
@@ -131,7 +130,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 static_route block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.5.0/docs/resources/router#static_route Router#static_route}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.6.0/docs/resources/router#static_route Router#static_route}
 
 ---
 
@@ -163,7 +162,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upclo
 | <code><a href="#@cdktf/provider-upcloud.router.Router.moveTo">move_to</a></code> | Moves this resource to the target resource given by moveTarget. |
 | <code><a href="#@cdktf/provider-upcloud.router.Router.moveToId">move_to_id</a></code> | Moves this resource to the resource corresponding to "id". |
 | <code><a href="#@cdktf/provider-upcloud.router.Router.putStaticRoute">put_static_route</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-upcloud.router.Router.resetId">reset_id</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-upcloud.router.Router.resetLabels">reset_labels</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.router.Router.resetStaticRoute">reset_static_route</a></code> | *No description.* |
 
 ---
@@ -507,10 +506,10 @@ def put_static_route(
 
 ---
 
-##### `reset_id` <a name="reset_id" id="@cdktf/provider-upcloud.router.Router.resetId"></a>
+##### `reset_labels` <a name="reset_labels" id="@cdktf/provider-upcloud.router.Router.resetLabels"></a>
 
 ```python
-def reset_id() -> None
+def reset_labels() -> None
 ```
 
 ##### `reset_static_route` <a name="reset_static_route" id="@cdktf/provider-upcloud.router.Router.resetStaticRoute"></a>
@@ -633,7 +632,7 @@ The construct id used in the generated config for the Router to import.
 
 The id of the existing Router that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.5.0/docs/resources/router#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.6.0/docs/resources/router#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -664,12 +663,13 @@ Refer to the {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5
 | <code><a href="#@cdktf/provider-upcloud.router.Router.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.router.Router.property.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.router.Router.property.attachedNetworks">attached_networks</a></code> | <code>typing.List[str]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-upcloud.router.Router.property.id">id</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.router.Router.property.staticRoute">static_route</a></code> | <code><a href="#@cdktf/provider-upcloud.router.RouterStaticRouteList">RouterStaticRouteList</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.router.Router.property.type">type</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-upcloud.router.Router.property.idInput">id_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-upcloud.router.Router.property.labelsInput">labels_input</a></code> | <code>typing.Mapping[str]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.router.Router.property.nameInput">name_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.router.Router.property.staticRouteInput">static_route_input</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-upcloud.router.RouterStaticRoute">RouterStaticRoute</a>]]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-upcloud.router.Router.property.id">id</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-upcloud.router.Router.property.labels">labels</a></code> | <code>typing.Mapping[str]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.router.Router.property.name">name</a></code> | <code>str</code> | *No description.* |
 
 ---
@@ -826,6 +826,16 @@ attached_networks: typing.List[str]
 
 ---
 
+##### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-upcloud.router.Router.property.id"></a>
+
+```python
+id: str
+```
+
+- *Type:* str
+
+---
+
 ##### `static_route`<sup>Required</sup> <a name="static_route" id="@cdktf/provider-upcloud.router.Router.property.staticRoute"></a>
 
 ```python
@@ -846,13 +856,13 @@ type: str
 
 ---
 
-##### `id_input`<sup>Optional</sup> <a name="id_input" id="@cdktf/provider-upcloud.router.Router.property.idInput"></a>
+##### `labels_input`<sup>Optional</sup> <a name="labels_input" id="@cdktf/provider-upcloud.router.Router.property.labelsInput"></a>
 
 ```python
-id_input: str
+labels_input: typing.Mapping[str]
 ```
 
-- *Type:* str
+- *Type:* typing.Mapping[str]
 
 ---
 
@@ -876,13 +886,13 @@ static_route_input: typing.Union[IResolvable, typing.List[RouterStaticRoute]]
 
 ---
 
-##### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-upcloud.router.Router.property.id"></a>
+##### `labels`<sup>Required</sup> <a name="labels" id="@cdktf/provider-upcloud.router.Router.property.labels"></a>
 
 ```python
-id: str
+labels: typing.Mapping[str]
 ```
 
-- *Type:* str
+- *Type:* typing.Mapping[str]
 
 ---
 
@@ -932,7 +942,7 @@ router.RouterConfig(
   provider: TerraformProvider = None,
   provisioners: typing.List[typing.Union[FileProvisioner, LocalExecProvisioner, RemoteExecProvisioner]] = None,
   name: str,
-  id: str = None,
+  labels: typing.Mapping[str] = None,
   static_route: typing.Union[IResolvable, typing.List[RouterStaticRoute]] = None
 )
 ```
@@ -949,7 +959,7 @@ router.RouterConfig(
 | <code><a href="#@cdktf/provider-upcloud.router.RouterConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.router.RouterConfig.property.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.router.RouterConfig.property.name">name</a></code> | <code>str</code> | Name of the router. |
-| <code><a href="#@cdktf/provider-upcloud.router.RouterConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.5.0/docs/resources/router#id Router#id}. |
+| <code><a href="#@cdktf/provider-upcloud.router.RouterConfig.property.labels">labels</a></code> | <code>typing.Mapping[str]</code> | Key-value pairs to classify the router. |
 | <code><a href="#@cdktf/provider-upcloud.router.RouterConfig.property.staticRoute">static_route</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-upcloud.router.RouterStaticRoute">RouterStaticRoute</a>]]</code> | static_route block. |
 
 ---
@@ -1034,22 +1044,21 @@ name: str
 
 Name of the router.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.5.0/docs/resources/router#name Router#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.6.0/docs/resources/router#name Router#name}
 
 ---
 
-##### `id`<sup>Optional</sup> <a name="id" id="@cdktf/provider-upcloud.router.RouterConfig.property.id"></a>
+##### `labels`<sup>Optional</sup> <a name="labels" id="@cdktf/provider-upcloud.router.RouterConfig.property.labels"></a>
 
 ```python
-id: str
+labels: typing.Mapping[str]
 ```
 
-- *Type:* str
+- *Type:* typing.Mapping[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.5.0/docs/resources/router#id Router#id}.
+Key-value pairs to classify the router.
 
-Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
-If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.6.0/docs/resources/router#labels Router#labels}
 
 ---
 
@@ -1063,7 +1072,7 @@ static_route: typing.Union[IResolvable, typing.List[RouterStaticRoute]]
 
 static_route block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.5.0/docs/resources/router#static_route Router#static_route}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.6.0/docs/resources/router#static_route Router#static_route}
 
 ---
 
@@ -1103,7 +1112,7 @@ Next hop address.
 
 NOTE: For static route to be active the next hop has to be an address of a reachable running Cloud Server in one of the Private Networks attached to the router.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.5.0/docs/resources/router#nexthop Router#nexthop}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.6.0/docs/resources/router#nexthop Router#nexthop}
 
 ---
 
@@ -1117,7 +1126,7 @@ route: str
 
 Destination prefix of the route.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.5.0/docs/resources/router#route Router#route}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.6.0/docs/resources/router#route Router#route}
 
 ---
 
@@ -1131,7 +1140,7 @@ name: str
 
 Name or description of the route.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.5.0/docs/resources/router#name Router#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.6.0/docs/resources/router#name Router#name}
 
 ---
 
