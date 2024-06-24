@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5
 #### Initializers <a name="Initializers" id="@cdktf/provider-upcloud.kubernetesNodeGroup.KubernetesNodeGroup.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v14/kubernetesnodegroup"
+import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/kubernetesnodegroup"
 
 kubernetesnodegroup.NewKubernetesNodeGroup(scope Construct, id *string, config KubernetesNodeGroupConfig) KubernetesNodeGroup
 ```
@@ -480,7 +480,7 @@ func ResetUtilityNetworkAccess()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-upcloud.kubernetesNodeGroup.KubernetesNodeGroup.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v14/kubernetesnodegroup"
+import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/kubernetesnodegroup"
 
 kubernetesnodegroup.KubernetesNodeGroup_IsConstruct(x interface{}) *bool
 ```
@@ -512,7 +512,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-upcloud.kubernetesNodeGroup.KubernetesNodeGroup.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v14/kubernetesnodegroup"
+import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/kubernetesnodegroup"
 
 kubernetesnodegroup.KubernetesNodeGroup_IsTerraformElement(x interface{}) *bool
 ```
@@ -526,7 +526,7 @@ kubernetesnodegroup.KubernetesNodeGroup_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-upcloud.kubernetesNodeGroup.KubernetesNodeGroup.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v14/kubernetesnodegroup"
+import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/kubernetesnodegroup"
 
 kubernetesnodegroup.KubernetesNodeGroup_IsTerraformResource(x interface{}) *bool
 ```
@@ -540,7 +540,7 @@ kubernetesnodegroup.KubernetesNodeGroup_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-upcloud.kubernetesNodeGroup.KubernetesNodeGroup.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v14/kubernetesnodegroup"
+import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/kubernetesnodegroup"
 
 kubernetesnodegroup.KubernetesNodeGroup_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -1055,7 +1055,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-upcloud.kubernetesNodeGroup.KubernetesNodeGroupConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v14/kubernetesnodegroup"
+import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/kubernetesnodegroup"
 
 &kubernetesnodegroup.KubernetesNodeGroupConfig {
 	Connection: interface{},
@@ -1070,7 +1070,7 @@ import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v14/kubernetesnodegro
 	NodeCount: *f64,
 	Plan: *string,
 	AntiAffinity: interface{},
-	CustomPlan: github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v14.kubernetesNodeGroup.KubernetesNodeGroupCustomPlan,
+	CustomPlan: github.com/cdktf/cdktf-provider-upcloud-go/upcloud.kubernetesNodeGroup.KubernetesNodeGroupCustomPlan,
 	Id: *string,
 	KubeletArgs: interface{},
 	Labels: *map[string]*string,
@@ -1370,7 +1370,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upclo
 #### Initializer <a name="Initializer" id="@cdktf/provider-upcloud.kubernetesNodeGroup.KubernetesNodeGroupCustomPlan.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v14/kubernetesnodegroup"
+import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/kubernetesnodegroup"
 
 &kubernetesnodegroup.KubernetesNodeGroupCustomPlan {
 	Cores: *f64,
@@ -1454,7 +1454,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upclo
 #### Initializer <a name="Initializer" id="@cdktf/provider-upcloud.kubernetesNodeGroup.KubernetesNodeGroupKubeletArgs.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v14/kubernetesnodegroup"
+import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/kubernetesnodegroup"
 
 &kubernetesnodegroup.KubernetesNodeGroupKubeletArgs {
 	Key: *string,
@@ -1504,7 +1504,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upclo
 #### Initializer <a name="Initializer" id="@cdktf/provider-upcloud.kubernetesNodeGroup.KubernetesNodeGroupTaint.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v14/kubernetesnodegroup"
+import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/kubernetesnodegroup"
 
 &kubernetesnodegroup.KubernetesNodeGroupTaint {
 	Effect: *string,
@@ -1572,7 +1572,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upclo
 #### Initializers <a name="Initializers" id="@cdktf/provider-upcloud.kubernetesNodeGroup.KubernetesNodeGroupCustomPlanOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v14/kubernetesnodegroup"
+import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/kubernetesnodegroup"
 
 kubernetesnodegroup.NewKubernetesNodeGroupCustomPlanOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) KubernetesNodeGroupCustomPlanOutputReference
 ```
@@ -1916,7 +1916,7 @@ func InternalValue() KubernetesNodeGroupCustomPlan
 #### Initializers <a name="Initializers" id="@cdktf/provider-upcloud.kubernetesNodeGroup.KubernetesNodeGroupKubeletArgsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v14/kubernetesnodegroup"
+import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/kubernetesnodegroup"
 
 kubernetesnodegroup.NewKubernetesNodeGroupKubeletArgsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) KubernetesNodeGroupKubeletArgsList
 ```
@@ -2076,7 +2076,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-upcloud.kubernetesNodeGroup.KubernetesNodeGroupKubeletArgsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v14/kubernetesnodegroup"
+import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/kubernetesnodegroup"
 
 kubernetesnodegroup.NewKubernetesNodeGroupKubeletArgsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) KubernetesNodeGroupKubeletArgsOutputReference
 ```
@@ -2387,7 +2387,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-upcloud.kubernetesNodeGroup.KubernetesNodeGroupTaintList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v14/kubernetesnodegroup"
+import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/kubernetesnodegroup"
 
 kubernetesnodegroup.NewKubernetesNodeGroupTaintList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) KubernetesNodeGroupTaintList
 ```
@@ -2547,7 +2547,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-upcloud.kubernetesNodeGroup.KubernetesNodeGroupTaintOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v14/kubernetesnodegroup"
+import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/kubernetesnodegroup"
 
 kubernetesnodegroup.NewKubernetesNodeGroupTaintOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) KubernetesNodeGroupTaintOutputReference
 ```
