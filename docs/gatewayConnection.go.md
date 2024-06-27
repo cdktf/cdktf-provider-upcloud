@@ -4,12 +4,12 @@
 
 ### GatewayConnection <a name="GatewayConnection" id="@cdktf/provider-upcloud.gatewayConnection.GatewayConnection"></a>
 
-Represents a {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.6.0/docs/resources/gateway_connection upcloud_gateway_connection}.
+Represents a {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.6.1/docs/resources/gateway_connection upcloud_gateway_connection}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-upcloud.gatewayConnection.GatewayConnection.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v14/gatewayconnection"
+import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/gatewayconnection"
 
 gatewayconnection.NewGatewayConnection(scope Construct, id *string, config GatewayConnectionConfig) GatewayConnection
 ```
@@ -432,7 +432,7 @@ func ResetType()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-upcloud.gatewayConnection.GatewayConnection.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v14/gatewayconnection"
+import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/gatewayconnection"
 
 gatewayconnection.GatewayConnection_IsConstruct(x interface{}) *bool
 ```
@@ -464,7 +464,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-upcloud.gatewayConnection.GatewayConnection.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v14/gatewayconnection"
+import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/gatewayconnection"
 
 gatewayconnection.GatewayConnection_IsTerraformElement(x interface{}) *bool
 ```
@@ -478,7 +478,7 @@ gatewayconnection.GatewayConnection_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-upcloud.gatewayConnection.GatewayConnection.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v14/gatewayconnection"
+import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/gatewayconnection"
 
 gatewayconnection.GatewayConnection_IsTerraformResource(x interface{}) *bool
 ```
@@ -492,7 +492,7 @@ gatewayconnection.GatewayConnection_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-upcloud.gatewayConnection.GatewayConnection.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v14/gatewayconnection"
+import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/gatewayconnection"
 
 gatewayconnection.GatewayConnection_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -521,7 +521,7 @@ The construct id used in the generated config for the GatewayConnection to impor
 
 The id of the existing GatewayConnection that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.6.0/docs/resources/gateway_connection#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.6.1/docs/resources/gateway_connection#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -875,7 +875,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-upcloud.gatewayConnection.GatewayConnectionConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v14/gatewayconnection"
+import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/gatewayconnection"
 
 &gatewayconnection.GatewayConnectionConfig {
 	Connection: interface{},
@@ -907,7 +907,7 @@ import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v14/gatewayconnection
 | <code><a href="#@cdktf/provider-upcloud.gatewayConnection.GatewayConnectionConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.gatewayConnection.GatewayConnectionConfig.property.gateway">Gateway</a></code> | <code>*string</code> | The ID of the upcloud_gateway resource to which the connection belongs. |
 | <code><a href="#@cdktf/provider-upcloud.gatewayConnection.GatewayConnectionConfig.property.name">Name</a></code> | <code>*string</code> | The name of the connection, should be unique within the gateway. |
-| <code><a href="#@cdktf/provider-upcloud.gatewayConnection.GatewayConnectionConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.6.0/docs/resources/gateway_connection#id GatewayConnection#id}. |
+| <code><a href="#@cdktf/provider-upcloud.gatewayConnection.GatewayConnectionConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.6.1/docs/resources/gateway_connection#id GatewayConnection#id}. |
 | <code><a href="#@cdktf/provider-upcloud.gatewayConnection.GatewayConnectionConfig.property.localRoute">LocalRoute</a></code> | <code>interface{}</code> | local_route block. |
 | <code><a href="#@cdktf/provider-upcloud.gatewayConnection.GatewayConnectionConfig.property.remoteRoute">RemoteRoute</a></code> | <code>interface{}</code> | remote_route block. |
 | <code><a href="#@cdktf/provider-upcloud.gatewayConnection.GatewayConnectionConfig.property.type">Type</a></code> | <code>*string</code> | The type of the connection; currently the only supported type is 'ipsec'. |
@@ -994,7 +994,7 @@ Gateway *string
 
 The ID of the upcloud_gateway resource to which the connection belongs.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.6.0/docs/resources/gateway_connection#gateway GatewayConnection#gateway}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.6.1/docs/resources/gateway_connection#gateway GatewayConnection#gateway}
 
 ---
 
@@ -1008,7 +1008,7 @@ Name *string
 
 The name of the connection, should be unique within the gateway.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.6.0/docs/resources/gateway_connection#name GatewayConnection#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.6.1/docs/resources/gateway_connection#name GatewayConnection#name}
 
 ---
 
@@ -1020,7 +1020,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.6.0/docs/resources/gateway_connection#id GatewayConnection#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.6.1/docs/resources/gateway_connection#id GatewayConnection#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1037,7 +1037,7 @@ LocalRoute interface{}
 
 local_route block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.6.0/docs/resources/gateway_connection#local_route GatewayConnection#local_route}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.6.1/docs/resources/gateway_connection#local_route GatewayConnection#local_route}
 
 ---
 
@@ -1051,7 +1051,7 @@ RemoteRoute interface{}
 
 remote_route block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.6.0/docs/resources/gateway_connection#remote_route GatewayConnection#remote_route}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.6.1/docs/resources/gateway_connection#remote_route GatewayConnection#remote_route}
 
 ---
 
@@ -1065,7 +1065,7 @@ Type *string
 
 The type of the connection; currently the only supported type is 'ipsec'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.6.0/docs/resources/gateway_connection#type GatewayConnection#type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.6.1/docs/resources/gateway_connection#type GatewayConnection#type}
 
 ---
 
@@ -1074,7 +1074,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upclo
 #### Initializer <a name="Initializer" id="@cdktf/provider-upcloud.gatewayConnection.GatewayConnectionLocalRoute.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v14/gatewayconnection"
+import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/gatewayconnection"
 
 &gatewayconnection.GatewayConnectionLocalRoute {
 	Name: *string,
@@ -1103,7 +1103,7 @@ Name *string
 
 Name of the route.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.6.0/docs/resources/gateway_connection#name GatewayConnection#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.6.1/docs/resources/gateway_connection#name GatewayConnection#name}
 
 ---
 
@@ -1117,7 +1117,7 @@ StaticNetwork *string
 
 Destination prefix of the route; needs to be a valid IPv4 prefix.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.6.0/docs/resources/gateway_connection#static_network GatewayConnection#static_network}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.6.1/docs/resources/gateway_connection#static_network GatewayConnection#static_network}
 
 ---
 
@@ -1131,7 +1131,7 @@ Type *string
 
 Type of route; currently the only supported type is 'static'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.6.0/docs/resources/gateway_connection#type GatewayConnection#type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.6.1/docs/resources/gateway_connection#type GatewayConnection#type}
 
 ---
 
@@ -1140,7 +1140,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upclo
 #### Initializer <a name="Initializer" id="@cdktf/provider-upcloud.gatewayConnection.GatewayConnectionRemoteRoute.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v14/gatewayconnection"
+import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/gatewayconnection"
 
 &gatewayconnection.GatewayConnectionRemoteRoute {
 	Name: *string,
@@ -1169,7 +1169,7 @@ Name *string
 
 Name of the route.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.6.0/docs/resources/gateway_connection#name GatewayConnection#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.6.1/docs/resources/gateway_connection#name GatewayConnection#name}
 
 ---
 
@@ -1183,7 +1183,7 @@ StaticNetwork *string
 
 Destination prefix of the route; needs to be a valid IPv4 prefix.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.6.0/docs/resources/gateway_connection#static_network GatewayConnection#static_network}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.6.1/docs/resources/gateway_connection#static_network GatewayConnection#static_network}
 
 ---
 
@@ -1197,7 +1197,7 @@ Type *string
 
 Type of route; currently the only supported type is 'static'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.6.0/docs/resources/gateway_connection#type GatewayConnection#type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.6.1/docs/resources/gateway_connection#type GatewayConnection#type}
 
 ---
 
@@ -1208,7 +1208,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upclo
 #### Initializers <a name="Initializers" id="@cdktf/provider-upcloud.gatewayConnection.GatewayConnectionLocalRouteList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v14/gatewayconnection"
+import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/gatewayconnection"
 
 gatewayconnection.NewGatewayConnectionLocalRouteList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) GatewayConnectionLocalRouteList
 ```
@@ -1368,7 +1368,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-upcloud.gatewayConnection.GatewayConnectionLocalRouteOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v14/gatewayconnection"
+import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/gatewayconnection"
 
 gatewayconnection.NewGatewayConnectionLocalRouteOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) GatewayConnectionLocalRouteOutputReference
 ```
@@ -1708,7 +1708,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-upcloud.gatewayConnection.GatewayConnectionRemoteRouteList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v14/gatewayconnection"
+import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/gatewayconnection"
 
 gatewayconnection.NewGatewayConnectionRemoteRouteList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) GatewayConnectionRemoteRouteList
 ```
@@ -1868,7 +1868,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-upcloud.gatewayConnection.GatewayConnectionRemoteRouteOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v14/gatewayconnection"
+import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/gatewayconnection"
 
 gatewayconnection.NewGatewayConnectionRemoteRouteOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) GatewayConnectionRemoteRouteOutputReference
 ```
