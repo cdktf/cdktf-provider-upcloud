@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/upcloudltd/upcloud/5.6.1/docs/resources/kubernetes_cluster
+// https://registry.terraform.io/providers/upcloudltd/upcloud/5.7.0/docs/resources/kubernetes_cluster
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,68 +15,61 @@ export interface KubernetesClusterConfig extends cdktf.TerraformMetaArguments {
   /**
   * IP addresses or IP ranges in CIDR format which are allowed to access the cluster control plane. To allow access from any source, use `["0.0.0.0/0"]`. To deny access from all sources, use `[]`. Values set here do not restrict access to node groups or exposed Kubernetes services.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.6.1/docs/resources/kubernetes_cluster#control_plane_ip_filter KubernetesCluster#control_plane_ip_filter}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.7.0/docs/resources/kubernetes_cluster#control_plane_ip_filter KubernetesCluster#control_plane_ip_filter}
   */
   readonly controlPlaneIpFilter: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.6.1/docs/resources/kubernetes_cluster#id KubernetesCluster#id}
-  *
-  * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
-  * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
-  */
-  readonly id?: string;
-  /**
   * Key-value pairs to classify the cluster.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.6.1/docs/resources/kubernetes_cluster#labels KubernetesCluster#labels}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.7.0/docs/resources/kubernetes_cluster#labels KubernetesCluster#labels}
   */
   readonly labels?: { [key: string]: string };
   /**
   * Cluster name. Needs to be unique within the account.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.6.1/docs/resources/kubernetes_cluster#name KubernetesCluster#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.7.0/docs/resources/kubernetes_cluster#name KubernetesCluster#name}
   */
   readonly name: string;
   /**
   * Network ID for the cluster to run in.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.6.1/docs/resources/kubernetes_cluster#network KubernetesCluster#network}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.7.0/docs/resources/kubernetes_cluster#network KubernetesCluster#network}
   */
   readonly network: string;
   /**
   * The pricing plan used for the cluster. Default plan is `development`. You can list available plans with `upctl kubernetes plans`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.6.1/docs/resources/kubernetes_cluster#plan KubernetesCluster#plan}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.7.0/docs/resources/kubernetes_cluster#plan KubernetesCluster#plan}
   */
   readonly plan?: string;
   /**
   * Enable private node groups. Private node groups requires a network that is routed through NAT gateway.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.6.1/docs/resources/kubernetes_cluster#private_node_groups KubernetesCluster#private_node_groups}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.7.0/docs/resources/kubernetes_cluster#private_node_groups KubernetesCluster#private_node_groups}
   */
   readonly privateNodeGroups?: boolean | cdktf.IResolvable;
   /**
   * Set default storage encryption strategy for all nodes in the cluster.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.6.1/docs/resources/kubernetes_cluster#storage_encryption KubernetesCluster#storage_encryption}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.7.0/docs/resources/kubernetes_cluster#storage_encryption KubernetesCluster#storage_encryption}
   */
   readonly storageEncryption?: string;
   /**
-  * Kubernetes version ID, e.g. `1.27`. You can list available version IDs with `upctl kubernetes versions`.
+  * Kubernetes version ID, e.g. `1.28`. You can list available version IDs with `upctl kubernetes versions`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.6.1/docs/resources/kubernetes_cluster#version KubernetesCluster#version}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.7.0/docs/resources/kubernetes_cluster#version KubernetesCluster#version}
   */
   readonly version?: string;
   /**
   * Zone in which the Kubernetes cluster will be hosted, e.g. `de-fra1`. You can list available zones with `upctl zone list`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.6.1/docs/resources/kubernetes_cluster#zone KubernetesCluster#zone}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.7.0/docs/resources/kubernetes_cluster#zone KubernetesCluster#zone}
   */
   readonly zone: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.6.1/docs/resources/kubernetes_cluster upcloud_kubernetes_cluster}
+* Represents a {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.7.0/docs/resources/kubernetes_cluster upcloud_kubernetes_cluster}
 */
 export class KubernetesCluster extends cdktf.TerraformResource {
 
@@ -92,7 +85,7 @@ export class KubernetesCluster extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a KubernetesCluster resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the KubernetesCluster to import
-  * @param importFromId The id of the existing KubernetesCluster that should be imported. Refer to the {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.6.1/docs/resources/kubernetes_cluster#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing KubernetesCluster that should be imported. Refer to the {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.7.0/docs/resources/kubernetes_cluster#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the KubernetesCluster to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -104,7 +97,7 @@ export class KubernetesCluster extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.6.1/docs/resources/kubernetes_cluster upcloud_kubernetes_cluster} Resource
+  * Create a new {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.7.0/docs/resources/kubernetes_cluster upcloud_kubernetes_cluster} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -115,7 +108,7 @@ export class KubernetesCluster extends cdktf.TerraformResource {
       terraformResourceType: 'upcloud_kubernetes_cluster',
       terraformGeneratorMetadata: {
         providerName: 'upcloud',
-        providerVersion: '5.6.1',
+        providerVersion: '5.7.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,
@@ -127,7 +120,6 @@ export class KubernetesCluster extends cdktf.TerraformResource {
       forEach: config.forEach
     });
     this._controlPlaneIpFilter = config.controlPlaneIpFilter;
-    this._id = config.id;
     this._labels = config.labels;
     this._name = config.name;
     this._network = config.network;
@@ -155,23 +147,12 @@ export class KubernetesCluster extends cdktf.TerraformResource {
     return this._controlPlaneIpFilter;
   }
 
-  // id - computed: true, optional: true, required: false
-  private _id?: string; 
+  // id - computed: true, optional: false, required: false
   public get id() {
     return this.getStringAttribute('id');
   }
-  public set id(value: string) {
-    this._id = value;
-  }
-  public resetId() {
-    this._id = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get idInput() {
-    return this._id;
-  }
 
-  // labels - computed: false, optional: true, required: false
+  // labels - computed: true, optional: true, required: false
   private _labels?: { [key: string]: string }; 
   public get labels() {
     return this.getStringMapAttribute('labels');
@@ -223,7 +204,7 @@ export class KubernetesCluster extends cdktf.TerraformResource {
     return this.getListAttribute('node_groups');
   }
 
-  // plan - computed: false, optional: true, required: false
+  // plan - computed: true, optional: true, required: false
   private _plan?: string; 
   public get plan() {
     return this.getStringAttribute('plan');
@@ -239,7 +220,7 @@ export class KubernetesCluster extends cdktf.TerraformResource {
     return this._plan;
   }
 
-  // private_node_groups - computed: false, optional: true, required: false
+  // private_node_groups - computed: true, optional: true, required: false
   private _privateNodeGroups?: boolean | cdktf.IResolvable; 
   public get privateNodeGroups() {
     return this.getBooleanAttribute('private_node_groups');
@@ -312,7 +293,6 @@ export class KubernetesCluster extends cdktf.TerraformResource {
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
       control_plane_ip_filter: cdktf.listMapper(cdktf.stringToTerraform, false)(this._controlPlaneIpFilter),
-      id: cdktf.stringToTerraform(this._id),
       labels: cdktf.hashMapper(cdktf.stringToTerraform)(this._labels),
       name: cdktf.stringToTerraform(this._name),
       network: cdktf.stringToTerraform(this._network),
@@ -331,12 +311,6 @@ export class KubernetesCluster extends cdktf.TerraformResource {
         isBlock: false,
         type: "set",
         storageClassType: "stringList",
-      },
-      id: {
-        value: cdktf.stringToHclTerraform(this._id),
-        isBlock: false,
-        type: "simple",
-        storageClassType: "string",
       },
       labels: {
         value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._labels),
