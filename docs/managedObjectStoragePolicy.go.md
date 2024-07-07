@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5
 #### Initializers <a name="Initializers" id="@cdktf/provider-upcloud.managedObjectStoragePolicy.ManagedObjectStoragePolicy.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v14/managedobjectstoragepolicy"
+import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/managedobjectstoragepolicy"
 
 managedobjectstoragepolicy.NewManagedObjectStoragePolicy(scope Construct, id *string, config ManagedObjectStoragePolicyConfig) ManagedObjectStoragePolicy
 ```
@@ -392,7 +392,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-upcloud.managedObjectStoragePolicy.ManagedObjectStoragePolicy.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v14/managedobjectstoragepolicy"
+import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/managedobjectstoragepolicy"
 
 managedobjectstoragepolicy.ManagedObjectStoragePolicy_IsConstruct(x interface{}) *bool
 ```
@@ -424,7 +424,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-upcloud.managedObjectStoragePolicy.ManagedObjectStoragePolicy.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v14/managedobjectstoragepolicy"
+import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/managedobjectstoragepolicy"
 
 managedobjectstoragepolicy.ManagedObjectStoragePolicy_IsTerraformElement(x interface{}) *bool
 ```
@@ -438,7 +438,7 @@ managedobjectstoragepolicy.ManagedObjectStoragePolicy_IsTerraformElement(x inter
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-upcloud.managedObjectStoragePolicy.ManagedObjectStoragePolicy.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v14/managedobjectstoragepolicy"
+import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/managedobjectstoragepolicy"
 
 managedobjectstoragepolicy.ManagedObjectStoragePolicy_IsTerraformResource(x interface{}) *bool
 ```
@@ -452,7 +452,7 @@ managedobjectstoragepolicy.ManagedObjectStoragePolicy_IsTerraformResource(x inte
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-upcloud.managedObjectStoragePolicy.ManagedObjectStoragePolicy.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v14/managedobjectstoragepolicy"
+import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/managedobjectstoragepolicy"
 
 managedobjectstoragepolicy.ManagedObjectStoragePolicy_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -857,7 +857,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-upcloud.managedObjectStoragePolicy.ManagedObjectStoragePolicyConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v14/managedobjectstoragepolicy"
+import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/managedobjectstoragepolicy"
 
 &managedobjectstoragepolicy.ManagedObjectStoragePolicyConfig {
 	Connection: interface{},
