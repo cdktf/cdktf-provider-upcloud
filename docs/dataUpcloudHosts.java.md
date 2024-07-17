@@ -4,7 +4,7 @@
 
 ### DataUpcloudHosts <a name="DataUpcloudHosts" id="@cdktf/provider-upcloud.dataUpcloudHosts.DataUpcloudHosts"></a>
 
-Represents a {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.7.0/docs/data-sources/hosts upcloud_hosts}.
+Represents a {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.8.0/docs/data-sources/hosts upcloud_hosts}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-upcloud.dataUpcloudHosts.DataUpcloudHosts.Initializer"></a>
 
@@ -23,7 +23,8 @@ DataUpcloudHosts.Builder.create(Construct scope, java.lang.String id)
 //  .provisioners(java.util.List<FileProvisioner)
 //  .provisioners(LocalExecProvisioner)
 //  .provisioners(RemoteExecProvisioner>)
-//  .id(java.lang.String)
+//  .hosts(IResolvable)
+//  .hosts(java.util.List<DataUpcloudHostsHosts>)
     .build();
 ```
 
@@ -38,7 +39,7 @@ DataUpcloudHosts.Builder.create(Construct scope, java.lang.String id)
 | <code><a href="#@cdktf/provider-upcloud.dataUpcloudHosts.DataUpcloudHosts.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>com.hashicorp.cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.dataUpcloudHosts.DataUpcloudHosts.Initializer.parameter.provider">provider</a></code> | <code>com.hashicorp.cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.dataUpcloudHosts.DataUpcloudHosts.Initializer.parameter.provisioners">provisioners</a></code> | <code>java.util.List<com.hashicorp.cdktf.FileProvisioner OR com.hashicorp.cdktf.LocalExecProvisioner OR com.hashicorp.cdktf.RemoteExecProvisioner></code> | *No description.* |
-| <code><a href="#@cdktf/provider-upcloud.dataUpcloudHosts.DataUpcloudHosts.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.7.0/docs/data-sources/hosts#id DataUpcloudHosts#id}. |
+| <code><a href="#@cdktf/provider-upcloud.dataUpcloudHosts.DataUpcloudHosts.Initializer.parameter.hosts">hosts</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-upcloud.dataUpcloudHosts.DataUpcloudHostsHosts">DataUpcloudHostsHosts</a>></code> | hosts block. |
 
 ---
 
@@ -102,14 +103,13 @@ Must be unique amongst siblings in the same scope
 
 ---
 
-##### `id`<sup>Optional</sup> <a name="id" id="@cdktf/provider-upcloud.dataUpcloudHosts.DataUpcloudHosts.Initializer.parameter.id"></a>
+##### `hosts`<sup>Optional</sup> <a name="hosts" id="@cdktf/provider-upcloud.dataUpcloudHosts.DataUpcloudHosts.Initializer.parameter.hosts"></a>
 
-- *Type:* java.lang.String
+- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-upcloud.dataUpcloudHosts.DataUpcloudHostsHosts">DataUpcloudHostsHosts</a>>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.7.0/docs/data-sources/hosts#id DataUpcloudHosts#id}.
+hosts block.
 
-Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
-If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.8.0/docs/data-sources/hosts#hosts DataUpcloudHosts#hosts}
 
 ---
 
@@ -134,7 +134,8 @@ If you experience problems setting this value it might not be settable. Please t
 | <code><a href="#@cdktf/provider-upcloud.dataUpcloudHosts.DataUpcloudHosts.getStringAttribute">getStringAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.dataUpcloudHosts.DataUpcloudHosts.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.dataUpcloudHosts.DataUpcloudHosts.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-upcloud.dataUpcloudHosts.DataUpcloudHosts.resetId">resetId</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-upcloud.dataUpcloudHosts.DataUpcloudHosts.putHosts">putHosts</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-upcloud.dataUpcloudHosts.DataUpcloudHosts.resetHosts">resetHosts</a></code> | *No description.* |
 
 ---
 
@@ -330,10 +331,22 @@ public IResolvable interpolationForAttribute(java.lang.String terraformAttribute
 
 ---
 
-##### `resetId` <a name="resetId" id="@cdktf/provider-upcloud.dataUpcloudHosts.DataUpcloudHosts.resetId"></a>
+##### `putHosts` <a name="putHosts" id="@cdktf/provider-upcloud.dataUpcloudHosts.DataUpcloudHosts.putHosts"></a>
 
 ```java
-public void resetId()
+public void putHosts(IResolvable OR java.util.List<DataUpcloudHostsHosts> value)
+```
+
+###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-upcloud.dataUpcloudHosts.DataUpcloudHosts.putHosts.parameter.value"></a>
+
+- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-upcloud.dataUpcloudHosts.DataUpcloudHostsHosts">DataUpcloudHostsHosts</a>>
+
+---
+
+##### `resetHosts` <a name="resetHosts" id="@cdktf/provider-upcloud.dataUpcloudHosts.DataUpcloudHosts.resetHosts"></a>
+
+```java
+public void resetHosts()
 ```
 
 #### Static Functions <a name="Static Functions" id="Static Functions"></a>
@@ -439,7 +452,7 @@ The construct id used in the generated config for the DataUpcloudHosts to import
 
 The id of the existing DataUpcloudHosts that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.7.0/docs/data-sources/hosts#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.8.0/docs/data-sources/hosts#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -468,8 +481,8 @@ Refer to the {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5
 | <code><a href="#@cdktf/provider-upcloud.dataUpcloudHosts.DataUpcloudHosts.property.lifecycle">lifecycle</a></code> | <code>com.hashicorp.cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.dataUpcloudHosts.DataUpcloudHosts.property.provider">provider</a></code> | <code>com.hashicorp.cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.dataUpcloudHosts.DataUpcloudHosts.property.hosts">hosts</a></code> | <code><a href="#@cdktf/provider-upcloud.dataUpcloudHosts.DataUpcloudHostsHostsList">DataUpcloudHostsHostsList</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-upcloud.dataUpcloudHosts.DataUpcloudHosts.property.idInput">idInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.dataUpcloudHosts.DataUpcloudHosts.property.id">id</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktf/provider-upcloud.dataUpcloudHosts.DataUpcloudHosts.property.hostsInput">hostsInput</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-upcloud.dataUpcloudHosts.DataUpcloudHostsHosts">DataUpcloudHostsHosts</a>></code> | *No description.* |
 
 ---
 
@@ -605,16 +618,6 @@ public DataUpcloudHostsHostsList getHosts();
 
 ---
 
-##### `idInput`<sup>Optional</sup> <a name="idInput" id="@cdktf/provider-upcloud.dataUpcloudHosts.DataUpcloudHosts.property.idInput"></a>
-
-```java
-public java.lang.String getIdInput();
-```
-
-- *Type:* java.lang.String
-
----
-
 ##### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-upcloud.dataUpcloudHosts.DataUpcloudHosts.property.id"></a>
 
 ```java
@@ -622,6 +625,16 @@ public java.lang.String getId();
 ```
 
 - *Type:* java.lang.String
+
+---
+
+##### `hostsInput`<sup>Optional</sup> <a name="hostsInput" id="@cdktf/provider-upcloud.dataUpcloudHosts.DataUpcloudHosts.property.hostsInput"></a>
+
+```java
+public java.lang.Object getHostsInput();
+```
+
+- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-upcloud.dataUpcloudHosts.DataUpcloudHostsHosts">DataUpcloudHostsHosts</a>>
 
 ---
 
@@ -664,7 +677,8 @@ DataUpcloudHostsConfig.builder()
 //  .provisioners(java.util.List<FileProvisioner)
 //  .provisioners(LocalExecProvisioner)
 //  .provisioners(RemoteExecProvisioner>)
-//  .id(java.lang.String)
+//  .hosts(IResolvable)
+//  .hosts(java.util.List<DataUpcloudHostsHosts>)
     .build();
 ```
 
@@ -679,7 +693,7 @@ DataUpcloudHostsConfig.builder()
 | <code><a href="#@cdktf/provider-upcloud.dataUpcloudHosts.DataUpcloudHostsConfig.property.lifecycle">lifecycle</a></code> | <code>com.hashicorp.cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.dataUpcloudHosts.DataUpcloudHostsConfig.property.provider">provider</a></code> | <code>com.hashicorp.cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.dataUpcloudHosts.DataUpcloudHostsConfig.property.provisioners">provisioners</a></code> | <code>java.util.List<com.hashicorp.cdktf.FileProvisioner OR com.hashicorp.cdktf.LocalExecProvisioner OR com.hashicorp.cdktf.RemoteExecProvisioner></code> | *No description.* |
-| <code><a href="#@cdktf/provider-upcloud.dataUpcloudHosts.DataUpcloudHostsConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.7.0/docs/data-sources/hosts#id DataUpcloudHosts#id}. |
+| <code><a href="#@cdktf/provider-upcloud.dataUpcloudHosts.DataUpcloudHostsConfig.property.hosts">hosts</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-upcloud.dataUpcloudHosts.DataUpcloudHostsHosts">DataUpcloudHostsHosts</a>></code> | hosts block. |
 
 ---
 
@@ -753,18 +767,17 @@ public java.lang.Object getProvisioners();
 
 ---
 
-##### `id`<sup>Optional</sup> <a name="id" id="@cdktf/provider-upcloud.dataUpcloudHosts.DataUpcloudHostsConfig.property.id"></a>
+##### `hosts`<sup>Optional</sup> <a name="hosts" id="@cdktf/provider-upcloud.dataUpcloudHosts.DataUpcloudHostsConfig.property.hosts"></a>
 
 ```java
-public java.lang.String getId();
+public java.lang.Object getHosts();
 ```
 
-- *Type:* java.lang.String
+- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-upcloud.dataUpcloudHosts.DataUpcloudHostsHosts">DataUpcloudHostsHosts</a>>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.7.0/docs/data-sources/hosts#id DataUpcloudHosts#id}.
+hosts block.
 
-Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
-If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.8.0/docs/data-sources/hosts#hosts DataUpcloudHosts#hosts}
 
 ---
 
@@ -903,6 +916,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-upcloud.dataUpcloudHosts.DataUpcloudHostsHostsList.property.creationStack">creationStack</a></code> | <code>java.util.List<java.lang.String></code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-upcloud.dataUpcloudHosts.DataUpcloudHostsHostsList.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktf/provider-upcloud.dataUpcloudHosts.DataUpcloudHostsHostsList.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-upcloud.dataUpcloudHosts.DataUpcloudHostsHosts">DataUpcloudHostsHosts</a>></code> | *No description.* |
 
 ---
 
@@ -927,6 +941,16 @@ public java.lang.String getFqn();
 ```
 
 - *Type:* java.lang.String
+
+---
+
+##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-upcloud.dataUpcloudHosts.DataUpcloudHostsHostsList.property.internalValue"></a>
+
+```java
+public java.lang.Object getInternalValue();
+```
+
+- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-upcloud.dataUpcloudHosts.DataUpcloudHostsHosts">DataUpcloudHostsHosts</a>>
 
 ---
 
@@ -1162,7 +1186,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-upcloud.dataUpcloudHosts.DataUpcloudHostsHostsOutputReference.property.description">description</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.dataUpcloudHosts.DataUpcloudHostsHostsOutputReference.property.hostId">hostId</a></code> | <code>java.lang.Number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.dataUpcloudHosts.DataUpcloudHostsHostsOutputReference.property.zone">zone</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-upcloud.dataUpcloudHosts.DataUpcloudHostsHostsOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktf/provider-upcloud.dataUpcloudHosts.DataUpcloudHostsHosts">DataUpcloudHostsHosts</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-upcloud.dataUpcloudHosts.DataUpcloudHostsHostsOutputReference.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-upcloud.dataUpcloudHosts.DataUpcloudHostsHosts">DataUpcloudHostsHosts</a></code> | *No description.* |
 
 ---
 
@@ -1223,10 +1247,10 @@ public java.lang.String getZone();
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-upcloud.dataUpcloudHosts.DataUpcloudHostsHostsOutputReference.property.internalValue"></a>
 
 ```java
-public DataUpcloudHostsHosts getInternalValue();
+public java.lang.Object getInternalValue();
 ```
 
-- *Type:* <a href="#@cdktf/provider-upcloud.dataUpcloudHosts.DataUpcloudHostsHosts">DataUpcloudHostsHosts</a>
+- *Type:* com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-upcloud.dataUpcloudHosts.DataUpcloudHostsHosts">DataUpcloudHostsHosts</a>
 
 ---
 

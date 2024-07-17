@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/upcloudltd/upcloud/5.7.0/docs/resources/loadbalancer_frontend
+// https://registry.terraform.io/providers/upcloudltd/upcloud/5.8.0/docs/resources/loadbalancer_frontend
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,58 +10,51 @@ export interface LoadbalancerFrontendConfig extends cdktf.TerraformMetaArguments
   /**
   * The name of the default backend where traffic will be routed. Note, default backend can be overwritten in frontend rules.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.7.0/docs/resources/loadbalancer_frontend#default_backend_name LoadbalancerFrontend#default_backend_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.8.0/docs/resources/loadbalancer_frontend#default_backend_name LoadbalancerFrontend#default_backend_name}
   */
   readonly defaultBackendName: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.7.0/docs/resources/loadbalancer_frontend#id LoadbalancerFrontend#id}
+  * UUID of the load balancer to which the frontend is connected.
   *
-  * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
-  * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
-  */
-  readonly id?: string;
-  /**
-  * ID of the load balancer to which the frontend is connected.
-  *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.7.0/docs/resources/loadbalancer_frontend#loadbalancer LoadbalancerFrontend#loadbalancer}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.8.0/docs/resources/loadbalancer_frontend#loadbalancer LoadbalancerFrontend#loadbalancer}
   */
   readonly loadbalancer: string;
   /**
   * When load balancer operating in `tcp` mode it acts as a layer 4 proxy. In `http` mode it acts as a layer 7 proxy.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.7.0/docs/resources/loadbalancer_frontend#mode LoadbalancerFrontend#mode}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.8.0/docs/resources/loadbalancer_frontend#mode LoadbalancerFrontend#mode}
   */
   readonly mode: string;
   /**
-  * The name of the frontend must be unique within the load balancer service.
+  * The name of the frontend. Must be unique within the load balancer service.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.7.0/docs/resources/loadbalancer_frontend#name LoadbalancerFrontend#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.8.0/docs/resources/loadbalancer_frontend#name LoadbalancerFrontend#name}
   */
   readonly name: string;
   /**
-  * Port to listen incoming requests
+  * Port to listen for incoming requests.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.7.0/docs/resources/loadbalancer_frontend#port LoadbalancerFrontend#port}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.8.0/docs/resources/loadbalancer_frontend#port LoadbalancerFrontend#port}
   */
   readonly port: number;
   /**
   * networks block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.7.0/docs/resources/loadbalancer_frontend#networks LoadbalancerFrontend#networks}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.8.0/docs/resources/loadbalancer_frontend#networks LoadbalancerFrontend#networks}
   */
   readonly networks?: LoadbalancerFrontendNetworks[] | cdktf.IResolvable;
   /**
   * properties block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.7.0/docs/resources/loadbalancer_frontend#properties LoadbalancerFrontend#properties}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.8.0/docs/resources/loadbalancer_frontend#properties LoadbalancerFrontend#properties}
   */
-  readonly properties?: LoadbalancerFrontendProperties;
+  readonly properties?: LoadbalancerFrontendProperties[] | cdktf.IResolvable;
 }
 export interface LoadbalancerFrontendNetworks {
   /**
-  * Name of the load balancer network
+  * Name of the load balancer network.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.7.0/docs/resources/loadbalancer_frontend#name LoadbalancerFrontend#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.8.0/docs/resources/loadbalancer_frontend#name LoadbalancerFrontend#name}
   */
   readonly name: string;
 }
@@ -181,24 +169,24 @@ export interface LoadbalancerFrontendProperties {
   /**
   * Enable or disable HTTP/2 support.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.7.0/docs/resources/loadbalancer_frontend#http2_enabled LoadbalancerFrontend#http2_enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.8.0/docs/resources/loadbalancer_frontend#http2_enabled LoadbalancerFrontend#http2_enabled}
   */
   readonly http2Enabled?: boolean | cdktf.IResolvable;
   /**
   * Enable or disable inbound proxy protocol support.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.7.0/docs/resources/loadbalancer_frontend#inbound_proxy_protocol LoadbalancerFrontend#inbound_proxy_protocol}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.8.0/docs/resources/loadbalancer_frontend#inbound_proxy_protocol LoadbalancerFrontend#inbound_proxy_protocol}
   */
   readonly inboundProxyProtocol?: boolean | cdktf.IResolvable;
   /**
   * Client request timeout in seconds.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.7.0/docs/resources/loadbalancer_frontend#timeout_client LoadbalancerFrontend#timeout_client}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.8.0/docs/resources/loadbalancer_frontend#timeout_client LoadbalancerFrontend#timeout_client}
   */
   readonly timeoutClient?: number;
 }
 
-export function loadbalancerFrontendPropertiesToTerraform(struct?: LoadbalancerFrontendPropertiesOutputReference | LoadbalancerFrontendProperties): any {
+export function loadbalancerFrontendPropertiesToTerraform(struct?: LoadbalancerFrontendProperties | cdktf.IResolvable): any {
   if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
@@ -211,7 +199,7 @@ export function loadbalancerFrontendPropertiesToTerraform(struct?: LoadbalancerF
 }
 
 
-export function loadbalancerFrontendPropertiesToHclTerraform(struct?: LoadbalancerFrontendPropertiesOutputReference | LoadbalancerFrontendProperties): any {
+export function loadbalancerFrontendPropertiesToHclTerraform(struct?: LoadbalancerFrontendProperties | cdktf.IResolvable): any {
   if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
@@ -243,16 +231,22 @@ export function loadbalancerFrontendPropertiesToHclTerraform(struct?: Loadbalanc
 
 export class LoadbalancerFrontendPropertiesOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
-    super(terraformResource, terraformAttribute, false, 0);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): LoadbalancerFrontendProperties | undefined {
+  public get internalValue(): LoadbalancerFrontendProperties | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._http2Enabled !== undefined) {
@@ -270,22 +264,28 @@ export class LoadbalancerFrontendPropertiesOutputReference extends cdktf.Complex
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: LoadbalancerFrontendProperties | undefined) {
+  public set internalValue(value: LoadbalancerFrontendProperties | cdktf.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
+      this.resolvableValue = undefined;
       this._http2Enabled = undefined;
       this._inboundProxyProtocol = undefined;
       this._timeoutClient = undefined;
     }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
     else {
       this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
       this._http2Enabled = value.http2Enabled;
       this._inboundProxyProtocol = value.inboundProxyProtocol;
       this._timeoutClient = value.timeoutClient;
     }
   }
 
-  // http2_enabled - computed: false, optional: true, required: false
+  // http2_enabled - computed: true, optional: true, required: false
   private _http2Enabled?: boolean | cdktf.IResolvable; 
   public get http2Enabled() {
     return this.getBooleanAttribute('http2_enabled');
@@ -301,7 +301,7 @@ export class LoadbalancerFrontendPropertiesOutputReference extends cdktf.Complex
     return this._http2Enabled;
   }
 
-  // inbound_proxy_protocol - computed: false, optional: true, required: false
+  // inbound_proxy_protocol - computed: true, optional: true, required: false
   private _inboundProxyProtocol?: boolean | cdktf.IResolvable; 
   public get inboundProxyProtocol() {
     return this.getBooleanAttribute('inbound_proxy_protocol');
@@ -317,7 +317,7 @@ export class LoadbalancerFrontendPropertiesOutputReference extends cdktf.Complex
     return this._inboundProxyProtocol;
   }
 
-  // timeout_client - computed: false, optional: true, required: false
+  // timeout_client - computed: true, optional: true, required: false
   private _timeoutClient?: number; 
   public get timeoutClient() {
     return this.getNumberAttribute('timeout_client');
@@ -334,8 +334,28 @@ export class LoadbalancerFrontendPropertiesOutputReference extends cdktf.Complex
   }
 }
 
+export class LoadbalancerFrontendPropertiesList extends cdktf.ComplexList {
+  public internalValue? : LoadbalancerFrontendProperties[] | cdktf.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): LoadbalancerFrontendPropertiesOutputReference {
+    return new LoadbalancerFrontendPropertiesOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
+
 /**
-* Represents a {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.7.0/docs/resources/loadbalancer_frontend upcloud_loadbalancer_frontend}
+* Represents a {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.8.0/docs/resources/loadbalancer_frontend upcloud_loadbalancer_frontend}
 */
 export class LoadbalancerFrontend extends cdktf.TerraformResource {
 
@@ -351,7 +371,7 @@ export class LoadbalancerFrontend extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a LoadbalancerFrontend resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the LoadbalancerFrontend to import
-  * @param importFromId The id of the existing LoadbalancerFrontend that should be imported. Refer to the {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.7.0/docs/resources/loadbalancer_frontend#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing LoadbalancerFrontend that should be imported. Refer to the {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.8.0/docs/resources/loadbalancer_frontend#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the LoadbalancerFrontend to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -363,7 +383,7 @@ export class LoadbalancerFrontend extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.7.0/docs/resources/loadbalancer_frontend upcloud_loadbalancer_frontend} Resource
+  * Create a new {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.8.0/docs/resources/loadbalancer_frontend upcloud_loadbalancer_frontend} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -374,7 +394,7 @@ export class LoadbalancerFrontend extends cdktf.TerraformResource {
       terraformResourceType: 'upcloud_loadbalancer_frontend',
       terraformGeneratorMetadata: {
         providerName: 'upcloud',
-        providerVersion: '5.7.0',
+        providerVersion: '5.8.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,
@@ -386,7 +406,6 @@ export class LoadbalancerFrontend extends cdktf.TerraformResource {
       forEach: config.forEach
     });
     this._defaultBackendName = config.defaultBackendName;
-    this._id = config.id;
     this._loadbalancer = config.loadbalancer;
     this._mode = config.mode;
     this._name = config.name;
@@ -412,20 +431,9 @@ export class LoadbalancerFrontend extends cdktf.TerraformResource {
     return this._defaultBackendName;
   }
 
-  // id - computed: true, optional: true, required: false
-  private _id?: string; 
+  // id - computed: true, optional: false, required: false
   public get id() {
     return this.getStringAttribute('id');
-  }
-  public set id(value: string) {
-    this._id = value;
-  }
-  public resetId() {
-    this._id = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get idInput() {
-    return this._id;
   }
 
   // loadbalancer - computed: false, optional: false, required: true
@@ -491,7 +499,7 @@ export class LoadbalancerFrontend extends cdktf.TerraformResource {
   }
 
   // networks - computed: false, optional: true, required: false
-  private _networks = new LoadbalancerFrontendNetworksList(this, "networks", false);
+  private _networks = new LoadbalancerFrontendNetworksList(this, "networks", true);
   public get networks() {
     return this._networks;
   }
@@ -507,11 +515,11 @@ export class LoadbalancerFrontend extends cdktf.TerraformResource {
   }
 
   // properties - computed: false, optional: true, required: false
-  private _properties = new LoadbalancerFrontendPropertiesOutputReference(this, "properties");
+  private _properties = new LoadbalancerFrontendPropertiesList(this, "properties", false);
   public get properties() {
     return this._properties;
   }
-  public putProperties(value: LoadbalancerFrontendProperties) {
+  public putProperties(value: LoadbalancerFrontendProperties[] | cdktf.IResolvable) {
     this._properties.internalValue = value;
   }
   public resetProperties() {
@@ -529,13 +537,12 @@ export class LoadbalancerFrontend extends cdktf.TerraformResource {
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
       default_backend_name: cdktf.stringToTerraform(this._defaultBackendName),
-      id: cdktf.stringToTerraform(this._id),
       loadbalancer: cdktf.stringToTerraform(this._loadbalancer),
       mode: cdktf.stringToTerraform(this._mode),
       name: cdktf.stringToTerraform(this._name),
       port: cdktf.numberToTerraform(this._port),
       networks: cdktf.listMapper(loadbalancerFrontendNetworksToTerraform, true)(this._networks.internalValue),
-      properties: loadbalancerFrontendPropertiesToTerraform(this._properties.internalValue),
+      properties: cdktf.listMapper(loadbalancerFrontendPropertiesToTerraform, true)(this._properties.internalValue),
     };
   }
 
@@ -543,12 +550,6 @@ export class LoadbalancerFrontend extends cdktf.TerraformResource {
     const attrs = {
       default_backend_name: {
         value: cdktf.stringToHclTerraform(this._defaultBackendName),
-        isBlock: false,
-        type: "simple",
-        storageClassType: "string",
-      },
-      id: {
-        value: cdktf.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
@@ -580,11 +581,11 @@ export class LoadbalancerFrontend extends cdktf.TerraformResource {
       networks: {
         value: cdktf.listMapperHcl(loadbalancerFrontendNetworksToHclTerraform, true)(this._networks.internalValue),
         isBlock: true,
-        type: "list",
+        type: "set",
         storageClassType: "LoadbalancerFrontendNetworksList",
       },
       properties: {
-        value: loadbalancerFrontendPropertiesToHclTerraform(this._properties.internalValue),
+        value: cdktf.listMapperHcl(loadbalancerFrontendPropertiesToHclTerraform, true)(this._properties.internalValue),
         isBlock: true,
         type: "list",
         storageClassType: "LoadbalancerFrontendPropertiesList",
