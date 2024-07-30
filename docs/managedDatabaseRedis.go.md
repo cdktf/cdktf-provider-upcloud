@@ -4,12 +4,12 @@
 
 ### ManagedDatabaseRedis <a name="ManagedDatabaseRedis" id="@cdktf/provider-upcloud.managedDatabaseRedis.ManagedDatabaseRedis"></a>
 
-Represents a {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.8.1/docs/resources/managed_database_redis upcloud_managed_database_redis}.
+Represents a {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.9.0/docs/resources/managed_database_redis upcloud_managed_database_redis}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-upcloud.managedDatabaseRedis.ManagedDatabaseRedis.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v14/manageddatabaseredis"
+import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/manageddatabaseredis"
 
 manageddatabaseredis.NewManagedDatabaseRedis(scope Construct, id *string, config ManagedDatabaseRedisConfig) ManagedDatabaseRedis
 ```
@@ -76,6 +76,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-upcloud.managedDatabaseRedis.ManagedDatabaseRedis.putNetwork">PutNetwork</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.managedDatabaseRedis.ManagedDatabaseRedis.putProperties">PutProperties</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.managedDatabaseRedis.ManagedDatabaseRedis.resetId">ResetId</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-upcloud.managedDatabaseRedis.ManagedDatabaseRedis.resetLabels">ResetLabels</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.managedDatabaseRedis.ManagedDatabaseRedis.resetMaintenanceWindowDow">ResetMaintenanceWindowDow</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.managedDatabaseRedis.ManagedDatabaseRedis.resetMaintenanceWindowTime">ResetMaintenanceWindowTime</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.managedDatabaseRedis.ManagedDatabaseRedis.resetNetwork">ResetNetwork</a></code> | *No description.* |
@@ -402,6 +403,12 @@ func PutProperties(value ManagedDatabaseRedisProperties)
 func ResetId()
 ```
 
+##### `ResetLabels` <a name="ResetLabels" id="@cdktf/provider-upcloud.managedDatabaseRedis.ManagedDatabaseRedis.resetLabels"></a>
+
+```go
+func ResetLabels()
+```
+
 ##### `ResetMaintenanceWindowDow` <a name="ResetMaintenanceWindowDow" id="@cdktf/provider-upcloud.managedDatabaseRedis.ManagedDatabaseRedis.resetMaintenanceWindowDow"></a>
 
 ```go
@@ -446,7 +453,7 @@ func ResetProperties()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-upcloud.managedDatabaseRedis.ManagedDatabaseRedis.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v14/manageddatabaseredis"
+import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/manageddatabaseredis"
 
 manageddatabaseredis.ManagedDatabaseRedis_IsConstruct(x interface{}) *bool
 ```
@@ -478,7 +485,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-upcloud.managedDatabaseRedis.ManagedDatabaseRedis.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v14/manageddatabaseredis"
+import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/manageddatabaseredis"
 
 manageddatabaseredis.ManagedDatabaseRedis_IsTerraformElement(x interface{}) *bool
 ```
@@ -492,7 +499,7 @@ manageddatabaseredis.ManagedDatabaseRedis_IsTerraformElement(x interface{}) *boo
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-upcloud.managedDatabaseRedis.ManagedDatabaseRedis.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v14/manageddatabaseredis"
+import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/manageddatabaseredis"
 
 manageddatabaseredis.ManagedDatabaseRedis_IsTerraformResource(x interface{}) *bool
 ```
@@ -506,7 +513,7 @@ manageddatabaseredis.ManagedDatabaseRedis_IsTerraformResource(x interface{}) *bo
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-upcloud.managedDatabaseRedis.ManagedDatabaseRedis.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v14/manageddatabaseredis"
+import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/manageddatabaseredis"
 
 manageddatabaseredis.ManagedDatabaseRedis_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -535,7 +542,7 @@ The construct id used in the generated config for the ManagedDatabaseRedis to im
 
 The id of the existing ManagedDatabaseRedis that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.8.1/docs/resources/managed_database_redis#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.9.0/docs/resources/managed_database_redis#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -578,6 +585,7 @@ Refer to the {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5
 | <code><a href="#@cdktf/provider-upcloud.managedDatabaseRedis.ManagedDatabaseRedis.property.state">State</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.managedDatabaseRedis.ManagedDatabaseRedis.property.type">Type</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.managedDatabaseRedis.ManagedDatabaseRedis.property.idInput">IdInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-upcloud.managedDatabaseRedis.ManagedDatabaseRedis.property.labelsInput">LabelsInput</a></code> | <code>*map[string]*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.managedDatabaseRedis.ManagedDatabaseRedis.property.maintenanceWindowDowInput">MaintenanceWindowDowInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.managedDatabaseRedis.ManagedDatabaseRedis.property.maintenanceWindowTimeInput">MaintenanceWindowTimeInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.managedDatabaseRedis.ManagedDatabaseRedis.property.nameInput">NameInput</a></code> | <code>*string</code> | *No description.* |
@@ -588,6 +596,7 @@ Refer to the {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5
 | <code><a href="#@cdktf/provider-upcloud.managedDatabaseRedis.ManagedDatabaseRedis.property.titleInput">TitleInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.managedDatabaseRedis.ManagedDatabaseRedis.property.zoneInput">ZoneInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.managedDatabaseRedis.ManagedDatabaseRedis.property.id">Id</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-upcloud.managedDatabaseRedis.ManagedDatabaseRedis.property.labels">Labels</a></code> | <code>*map[string]*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.managedDatabaseRedis.ManagedDatabaseRedis.property.maintenanceWindowDow">MaintenanceWindowDow</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.managedDatabaseRedis.ManagedDatabaseRedis.property.maintenanceWindowTime">MaintenanceWindowTime</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.managedDatabaseRedis.ManagedDatabaseRedis.property.name">Name</a></code> | <code>*string</code> | *No description.* |
@@ -870,6 +879,16 @@ func IdInput() *string
 
 ---
 
+##### `LabelsInput`<sup>Optional</sup> <a name="LabelsInput" id="@cdktf/provider-upcloud.managedDatabaseRedis.ManagedDatabaseRedis.property.labelsInput"></a>
+
+```go
+func LabelsInput() *map[string]*string
+```
+
+- *Type:* *map[string]*string
+
+---
+
 ##### `MaintenanceWindowDowInput`<sup>Optional</sup> <a name="MaintenanceWindowDowInput" id="@cdktf/provider-upcloud.managedDatabaseRedis.ManagedDatabaseRedis.property.maintenanceWindowDowInput"></a>
 
 ```go
@@ -970,6 +989,16 @@ func Id() *string
 
 ---
 
+##### `Labels`<sup>Required</sup> <a name="Labels" id="@cdktf/provider-upcloud.managedDatabaseRedis.ManagedDatabaseRedis.property.labels"></a>
+
+```go
+func Labels() *map[string]*string
+```
+
+- *Type:* *map[string]*string
+
+---
+
 ##### `MaintenanceWindowDow`<sup>Required</sup> <a name="MaintenanceWindowDow" id="@cdktf/provider-upcloud.managedDatabaseRedis.ManagedDatabaseRedis.property.maintenanceWindowDow"></a>
 
 ```go
@@ -1065,7 +1094,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-upcloud.managedDatabaseRedis.ManagedDatabaseRedisComponents.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v14/manageddatabaseredis"
+import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/manageddatabaseredis"
 
 &manageddatabaseredis.ManagedDatabaseRedisComponents {
 
@@ -1078,7 +1107,7 @@ import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v14/manageddatabasere
 #### Initializer <a name="Initializer" id="@cdktf/provider-upcloud.managedDatabaseRedis.ManagedDatabaseRedisConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v14/manageddatabaseredis"
+import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/manageddatabaseredis"
 
 &manageddatabaseredis.ManagedDatabaseRedisConfig {
 	Connection: interface{},
@@ -1093,11 +1122,12 @@ import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v14/manageddatabasere
 	Title: *string,
 	Zone: *string,
 	Id: *string,
+	Labels: *map[string]*string,
 	MaintenanceWindowDow: *string,
 	MaintenanceWindowTime: *string,
 	Network: interface{},
 	Powered: interface{},
-	Properties: github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v14.managedDatabaseRedis.ManagedDatabaseRedisProperties,
+	Properties: github.com/cdktf/cdktf-provider-upcloud-go/upcloud.managedDatabaseRedis.ManagedDatabaseRedisProperties,
 }
 ```
 
@@ -1116,7 +1146,8 @@ import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v14/manageddatabasere
 | <code><a href="#@cdktf/provider-upcloud.managedDatabaseRedis.ManagedDatabaseRedisConfig.property.plan">Plan</a></code> | <code>*string</code> | Service plan to use. |
 | <code><a href="#@cdktf/provider-upcloud.managedDatabaseRedis.ManagedDatabaseRedisConfig.property.title">Title</a></code> | <code>*string</code> | Title of a managed database instance. |
 | <code><a href="#@cdktf/provider-upcloud.managedDatabaseRedis.ManagedDatabaseRedisConfig.property.zone">Zone</a></code> | <code>*string</code> | Zone where the instance resides, e.g. `de-fra1`. You can list available zones with `upctl zone list`. |
-| <code><a href="#@cdktf/provider-upcloud.managedDatabaseRedis.ManagedDatabaseRedisConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.8.1/docs/resources/managed_database_redis#id ManagedDatabaseRedis#id}. |
+| <code><a href="#@cdktf/provider-upcloud.managedDatabaseRedis.ManagedDatabaseRedisConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.9.0/docs/resources/managed_database_redis#id ManagedDatabaseRedis#id}. |
+| <code><a href="#@cdktf/provider-upcloud.managedDatabaseRedis.ManagedDatabaseRedisConfig.property.labels">Labels</a></code> | <code>*map[string]*string</code> | Key-value pairs to classify the managed database. |
 | <code><a href="#@cdktf/provider-upcloud.managedDatabaseRedis.ManagedDatabaseRedisConfig.property.maintenanceWindowDow">MaintenanceWindowDow</a></code> | <code>*string</code> | Maintenance window day of week. Lower case weekday name (monday, tuesday, ...). |
 | <code><a href="#@cdktf/provider-upcloud.managedDatabaseRedis.ManagedDatabaseRedisConfig.property.maintenanceWindowTime">MaintenanceWindowTime</a></code> | <code>*string</code> | Maintenance window UTC time in hh:mm:ss format. |
 | <code><a href="#@cdktf/provider-upcloud.managedDatabaseRedis.ManagedDatabaseRedisConfig.property.network">Network</a></code> | <code>interface{}</code> | network block. |
@@ -1207,7 +1238,7 @@ Name of the service.
 
 The name is used as a prefix for the logical hostname. Must be unique within an account
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.8.1/docs/resources/managed_database_redis#name ManagedDatabaseRedis#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.9.0/docs/resources/managed_database_redis#name ManagedDatabaseRedis#name}
 
 ---
 
@@ -1223,7 +1254,7 @@ Service plan to use.
 
 This determines how much resources the instance will have. You can list available plans with `upctl database plans <type>`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.8.1/docs/resources/managed_database_redis#plan ManagedDatabaseRedis#plan}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.9.0/docs/resources/managed_database_redis#plan ManagedDatabaseRedis#plan}
 
 ---
 
@@ -1237,7 +1268,7 @@ Title *string
 
 Title of a managed database instance.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.8.1/docs/resources/managed_database_redis#title ManagedDatabaseRedis#title}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.9.0/docs/resources/managed_database_redis#title ManagedDatabaseRedis#title}
 
 ---
 
@@ -1251,7 +1282,7 @@ Zone *string
 
 Zone where the instance resides, e.g. `de-fra1`. You can list available zones with `upctl zone list`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.8.1/docs/resources/managed_database_redis#zone ManagedDatabaseRedis#zone}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.9.0/docs/resources/managed_database_redis#zone ManagedDatabaseRedis#zone}
 
 ---
 
@@ -1263,10 +1294,24 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.8.1/docs/resources/managed_database_redis#id ManagedDatabaseRedis#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.9.0/docs/resources/managed_database_redis#id ManagedDatabaseRedis#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+
+---
+
+##### `Labels`<sup>Optional</sup> <a name="Labels" id="@cdktf/provider-upcloud.managedDatabaseRedis.ManagedDatabaseRedisConfig.property.labels"></a>
+
+```go
+Labels *map[string]*string
+```
+
+- *Type:* *map[string]*string
+
+Key-value pairs to classify the managed database.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.9.0/docs/resources/managed_database_redis#labels ManagedDatabaseRedis#labels}
 
 ---
 
@@ -1280,7 +1325,7 @@ MaintenanceWindowDow *string
 
 Maintenance window day of week. Lower case weekday name (monday, tuesday, ...).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.8.1/docs/resources/managed_database_redis#maintenance_window_dow ManagedDatabaseRedis#maintenance_window_dow}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.9.0/docs/resources/managed_database_redis#maintenance_window_dow ManagedDatabaseRedis#maintenance_window_dow}
 
 ---
 
@@ -1294,7 +1339,7 @@ MaintenanceWindowTime *string
 
 Maintenance window UTC time in hh:mm:ss format.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.8.1/docs/resources/managed_database_redis#maintenance_window_time ManagedDatabaseRedis#maintenance_window_time}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.9.0/docs/resources/managed_database_redis#maintenance_window_time ManagedDatabaseRedis#maintenance_window_time}
 
 ---
 
@@ -1308,7 +1353,7 @@ Network interface{}
 
 network block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.8.1/docs/resources/managed_database_redis#network ManagedDatabaseRedis#network}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.9.0/docs/resources/managed_database_redis#network ManagedDatabaseRedis#network}
 
 ---
 
@@ -1322,7 +1367,7 @@ Powered interface{}
 
 The administrative power state of the service.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.8.1/docs/resources/managed_database_redis#powered ManagedDatabaseRedis#powered}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.9.0/docs/resources/managed_database_redis#powered ManagedDatabaseRedis#powered}
 
 ---
 
@@ -1336,7 +1381,7 @@ Properties ManagedDatabaseRedisProperties
 
 properties block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.8.1/docs/resources/managed_database_redis#properties ManagedDatabaseRedis#properties}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.9.0/docs/resources/managed_database_redis#properties ManagedDatabaseRedis#properties}
 
 ---
 
@@ -1345,7 +1390,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upclo
 #### Initializer <a name="Initializer" id="@cdktf/provider-upcloud.managedDatabaseRedis.ManagedDatabaseRedisNetwork.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v14/manageddatabaseredis"
+import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/manageddatabaseredis"
 
 &manageddatabaseredis.ManagedDatabaseRedisNetwork {
 	Family: *string,
@@ -1376,7 +1421,7 @@ Family *string
 
 Network family. Currently only `IPv4` is supported.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.8.1/docs/resources/managed_database_redis#family ManagedDatabaseRedis#family}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.9.0/docs/resources/managed_database_redis#family ManagedDatabaseRedis#family}
 
 ---
 
@@ -1390,7 +1435,7 @@ Name *string
 
 The name of the network. Must be unique within the service.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.8.1/docs/resources/managed_database_redis#name ManagedDatabaseRedis#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.9.0/docs/resources/managed_database_redis#name ManagedDatabaseRedis#name}
 
 ---
 
@@ -1404,7 +1449,7 @@ Type *string
 
 The type of the network. Must be private.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.8.1/docs/resources/managed_database_redis#type ManagedDatabaseRedis#type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.9.0/docs/resources/managed_database_redis#type ManagedDatabaseRedis#type}
 
 ---
 
@@ -1418,7 +1463,7 @@ Uuid *string
 
 Private network UUID. Must reside in the same zone as the database.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.8.1/docs/resources/managed_database_redis#uuid ManagedDatabaseRedis#uuid}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.9.0/docs/resources/managed_database_redis#uuid ManagedDatabaseRedis#uuid}
 
 ---
 
@@ -1427,7 +1472,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upclo
 #### Initializer <a name="Initializer" id="@cdktf/provider-upcloud.managedDatabaseRedis.ManagedDatabaseRedisNodeStates.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v14/manageddatabaseredis"
+import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/manageddatabaseredis"
 
 &manageddatabaseredis.ManagedDatabaseRedisNodeStates {
 
@@ -1440,12 +1485,12 @@ import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v14/manageddatabasere
 #### Initializer <a name="Initializer" id="@cdktf/provider-upcloud.managedDatabaseRedis.ManagedDatabaseRedisProperties.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v14/manageddatabaseredis"
+import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/manageddatabaseredis"
 
 &manageddatabaseredis.ManagedDatabaseRedisProperties {
 	AutomaticUtilityNetworkIpFilter: interface{},
 	IpFilter: *[]*string,
-	Migration: github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v14.managedDatabaseRedis.ManagedDatabaseRedisPropertiesMigration,
+	Migration: github.com/cdktf/cdktf-provider-upcloud-go/upcloud.managedDatabaseRedis.ManagedDatabaseRedisPropertiesMigration,
 	PublicAccess: interface{},
 	RedisAclChannelsDefault: *string,
 	RedisIoThreads: *f64,
@@ -1497,7 +1542,7 @@ AutomaticUtilityNetworkIpFilter interface{}
 
 Automatic utility network IP Filter. Automatically allow connections from servers in the utility network within the same zone.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.8.1/docs/resources/managed_database_redis#automatic_utility_network_ip_filter ManagedDatabaseRedis#automatic_utility_network_ip_filter}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.9.0/docs/resources/managed_database_redis#automatic_utility_network_ip_filter ManagedDatabaseRedis#automatic_utility_network_ip_filter}
 
 ---
 
@@ -1511,7 +1556,7 @@ IpFilter *[]*string
 
 IP filter. Allow incoming connections from CIDR address block, e.g. '10.20.0.0/16'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.8.1/docs/resources/managed_database_redis#ip_filter ManagedDatabaseRedis#ip_filter}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.9.0/docs/resources/managed_database_redis#ip_filter ManagedDatabaseRedis#ip_filter}
 
 ---
 
@@ -1525,7 +1570,7 @@ Migration ManagedDatabaseRedisPropertiesMigration
 
 migration block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.8.1/docs/resources/managed_database_redis#migration ManagedDatabaseRedis#migration}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.9.0/docs/resources/managed_database_redis#migration ManagedDatabaseRedis#migration}
 
 ---
 
@@ -1539,7 +1584,7 @@ PublicAccess interface{}
 
 Public Access. Allow access to the service from the public Internet.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.8.1/docs/resources/managed_database_redis#public_access ManagedDatabaseRedis#public_access}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.9.0/docs/resources/managed_database_redis#public_access ManagedDatabaseRedis#public_access}
 
 ---
 
@@ -1555,7 +1600,7 @@ Default ACL for pub/sub channels used when Redis user is created.
 
 Determines default pub/sub channels' ACL for new users if ACL is not supplied. When this option is not defined, all_channels is assumed to keep backward compatibility. This option doesn't affect Redis configuration acl-pubsub-default.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.8.1/docs/resources/managed_database_redis#redis_acl_channels_default ManagedDatabaseRedis#redis_acl_channels_default}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.9.0/docs/resources/managed_database_redis#redis_acl_channels_default ManagedDatabaseRedis#redis_acl_channels_default}
 
 ---
 
@@ -1569,7 +1614,7 @@ RedisIoThreads *f64
 
 Redis IO thread count. Set Redis IO thread count. Changing this will cause a restart of the Redis service.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.8.1/docs/resources/managed_database_redis#redis_io_threads ManagedDatabaseRedis#redis_io_threads}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.9.0/docs/resources/managed_database_redis#redis_io_threads ManagedDatabaseRedis#redis_io_threads}
 
 ---
 
@@ -1583,7 +1628,7 @@ RedisLfuDecayTime *f64
 
 LFU maxmemory-policy counter decay time in minutes.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.8.1/docs/resources/managed_database_redis#redis_lfu_decay_time ManagedDatabaseRedis#redis_lfu_decay_time}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.9.0/docs/resources/managed_database_redis#redis_lfu_decay_time ManagedDatabaseRedis#redis_lfu_decay_time}
 
 ---
 
@@ -1597,7 +1642,7 @@ RedisLfuLogFactor *f64
 
 Counter logarithm factor for volatile-lfu and allkeys-lfu maxmemory-policies.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.8.1/docs/resources/managed_database_redis#redis_lfu_log_factor ManagedDatabaseRedis#redis_lfu_log_factor}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.9.0/docs/resources/managed_database_redis#redis_lfu_log_factor ManagedDatabaseRedis#redis_lfu_log_factor}
 
 ---
 
@@ -1611,7 +1656,7 @@ RedisMaxmemoryPolicy *string
 
 Redis maxmemory-policy.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.8.1/docs/resources/managed_database_redis#redis_maxmemory_policy ManagedDatabaseRedis#redis_maxmemory_policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.9.0/docs/resources/managed_database_redis#redis_maxmemory_policy ManagedDatabaseRedis#redis_maxmemory_policy}
 
 ---
 
@@ -1625,7 +1670,7 @@ RedisNotifyKeyspaceEvents *string
 
 Set notify-keyspace-events option.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.8.1/docs/resources/managed_database_redis#redis_notify_keyspace_events ManagedDatabaseRedis#redis_notify_keyspace_events}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.9.0/docs/resources/managed_database_redis#redis_notify_keyspace_events ManagedDatabaseRedis#redis_notify_keyspace_events}
 
 ---
 
@@ -1639,7 +1684,7 @@ RedisNumberOfDatabases *f64
 
 Number of Redis databases. Set number of Redis databases. Changing this will cause a restart of the Redis service.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.8.1/docs/resources/managed_database_redis#redis_number_of_databases ManagedDatabaseRedis#redis_number_of_databases}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.9.0/docs/resources/managed_database_redis#redis_number_of_databases ManagedDatabaseRedis#redis_number_of_databases}
 
 ---
 
@@ -1655,7 +1700,7 @@ Redis persistence.
 
 When persistence is 'rdb', Redis does RDB dumps each 10 minutes if any key is changed. Also RDB dumps are done according to the backup schedule for backup purposes. When persistence is 'off', no RDB dumps or backups are done, so data can be lost at any moment if the service is restarted for any reason, or if the service is powered off. Also, the service can't be forked.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.8.1/docs/resources/managed_database_redis#redis_persistence ManagedDatabaseRedis#redis_persistence}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.9.0/docs/resources/managed_database_redis#redis_persistence ManagedDatabaseRedis#redis_persistence}
 
 ---
 
@@ -1671,7 +1716,7 @@ Pub/sub client output buffer hard limit in MB.
 
 Set output buffer limit for pub / sub clients in MB. The value is the hard limit, the soft limit is 1/4 of the hard limit. When setting the limit, be mindful of the available memory in the selected service plan.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.8.1/docs/resources/managed_database_redis#redis_pubsub_client_output_buffer_limit ManagedDatabaseRedis#redis_pubsub_client_output_buffer_limit}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.9.0/docs/resources/managed_database_redis#redis_pubsub_client_output_buffer_limit ManagedDatabaseRedis#redis_pubsub_client_output_buffer_limit}
 
 ---
 
@@ -1685,7 +1730,7 @@ RedisSsl interface{}
 
 Require SSL to access Redis.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.8.1/docs/resources/managed_database_redis#redis_ssl ManagedDatabaseRedis#redis_ssl}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.9.0/docs/resources/managed_database_redis#redis_ssl ManagedDatabaseRedis#redis_ssl}
 
 ---
 
@@ -1699,7 +1744,7 @@ RedisTimeout *f64
 
 Redis idle connection timeout in seconds.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.8.1/docs/resources/managed_database_redis#redis_timeout ManagedDatabaseRedis#redis_timeout}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.9.0/docs/resources/managed_database_redis#redis_timeout ManagedDatabaseRedis#redis_timeout}
 
 ---
 
@@ -1713,7 +1758,7 @@ RedisVersion *string
 
 Redis major version.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.8.1/docs/resources/managed_database_redis#redis_version ManagedDatabaseRedis#redis_version}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.9.0/docs/resources/managed_database_redis#redis_version ManagedDatabaseRedis#redis_version}
 
 ---
 
@@ -1727,7 +1772,7 @@ ServiceLog interface{}
 
 Service logging. Store logs for the service so that they are available in the HTTP API and console.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.8.1/docs/resources/managed_database_redis#service_log ManagedDatabaseRedis#service_log}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.9.0/docs/resources/managed_database_redis#service_log ManagedDatabaseRedis#service_log}
 
 ---
 
@@ -1736,7 +1781,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upclo
 #### Initializer <a name="Initializer" id="@cdktf/provider-upcloud.managedDatabaseRedis.ManagedDatabaseRedisPropertiesMigration.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v14/manageddatabaseredis"
+import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/manageddatabaseredis"
 
 &manageddatabaseredis.ManagedDatabaseRedisPropertiesMigration {
 	Dbname: *string,
@@ -1775,7 +1820,7 @@ Dbname *string
 
 Database name for bootstrapping the initial connection.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.8.1/docs/resources/managed_database_redis#dbname ManagedDatabaseRedis#dbname}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.9.0/docs/resources/managed_database_redis#dbname ManagedDatabaseRedis#dbname}
 
 ---
 
@@ -1789,7 +1834,7 @@ Host *string
 
 Hostname or IP address of the server where to migrate data from.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.8.1/docs/resources/managed_database_redis#host ManagedDatabaseRedis#host}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.9.0/docs/resources/managed_database_redis#host ManagedDatabaseRedis#host}
 
 ---
 
@@ -1803,7 +1848,7 @@ IgnoreDbs *string
 
 Comma-separated list of databases, which should be ignored during migration (supported by MySQL and PostgreSQL only at the moment).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.8.1/docs/resources/managed_database_redis#ignore_dbs ManagedDatabaseRedis#ignore_dbs}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.9.0/docs/resources/managed_database_redis#ignore_dbs ManagedDatabaseRedis#ignore_dbs}
 
 ---
 
@@ -1817,7 +1862,7 @@ Method *string
 
 The migration method to be used (currently supported only by Redis, Dragonfly, MySQL and PostgreSQL service types).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.8.1/docs/resources/managed_database_redis#method ManagedDatabaseRedis#method}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.9.0/docs/resources/managed_database_redis#method ManagedDatabaseRedis#method}
 
 ---
 
@@ -1831,7 +1876,7 @@ Password *string
 
 Password for authentication with the server where to migrate data from.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.8.1/docs/resources/managed_database_redis#password ManagedDatabaseRedis#password}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.9.0/docs/resources/managed_database_redis#password ManagedDatabaseRedis#password}
 
 ---
 
@@ -1845,7 +1890,7 @@ Port *f64
 
 Port number of the server where to migrate data from.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.8.1/docs/resources/managed_database_redis#port ManagedDatabaseRedis#port}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.9.0/docs/resources/managed_database_redis#port ManagedDatabaseRedis#port}
 
 ---
 
@@ -1859,7 +1904,7 @@ Ssl interface{}
 
 The server where to migrate data from is secured with SSL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.8.1/docs/resources/managed_database_redis#ssl ManagedDatabaseRedis#ssl}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.9.0/docs/resources/managed_database_redis#ssl ManagedDatabaseRedis#ssl}
 
 ---
 
@@ -1873,7 +1918,7 @@ Username *string
 
 User name for authentication with the server where to migrate data from.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.8.1/docs/resources/managed_database_redis#username ManagedDatabaseRedis#username}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.9.0/docs/resources/managed_database_redis#username ManagedDatabaseRedis#username}
 
 ---
 
@@ -1884,7 +1929,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upclo
 #### Initializers <a name="Initializers" id="@cdktf/provider-upcloud.managedDatabaseRedis.ManagedDatabaseRedisComponentsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v14/manageddatabaseredis"
+import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/manageddatabaseredis"
 
 manageddatabaseredis.NewManagedDatabaseRedisComponentsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ManagedDatabaseRedisComponentsList
 ```
@@ -2033,7 +2078,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-upcloud.managedDatabaseRedis.ManagedDatabaseRedisComponentsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v14/manageddatabaseredis"
+import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/manageddatabaseredis"
 
 manageddatabaseredis.NewManagedDatabaseRedisComponentsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ManagedDatabaseRedisComponentsOutputReference
 ```
@@ -2355,7 +2400,7 @@ func InternalValue() ManagedDatabaseRedisComponents
 #### Initializers <a name="Initializers" id="@cdktf/provider-upcloud.managedDatabaseRedis.ManagedDatabaseRedisNetworkList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v14/manageddatabaseredis"
+import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/manageddatabaseredis"
 
 manageddatabaseredis.NewManagedDatabaseRedisNetworkList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ManagedDatabaseRedisNetworkList
 ```
@@ -2515,7 +2560,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-upcloud.managedDatabaseRedis.ManagedDatabaseRedisNetworkOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v14/manageddatabaseredis"
+import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/manageddatabaseredis"
 
 manageddatabaseredis.NewManagedDatabaseRedisNetworkOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ManagedDatabaseRedisNetworkOutputReference
 ```
@@ -2870,7 +2915,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-upcloud.managedDatabaseRedis.ManagedDatabaseRedisNodeStatesList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v14/manageddatabaseredis"
+import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/manageddatabaseredis"
 
 manageddatabaseredis.NewManagedDatabaseRedisNodeStatesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ManagedDatabaseRedisNodeStatesList
 ```
@@ -3019,7 +3064,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-upcloud.managedDatabaseRedis.ManagedDatabaseRedisNodeStatesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v14/manageddatabaseredis"
+import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/manageddatabaseredis"
 
 manageddatabaseredis.NewManagedDatabaseRedisNodeStatesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ManagedDatabaseRedisNodeStatesOutputReference
 ```
@@ -3319,7 +3364,7 @@ func InternalValue() ManagedDatabaseRedisNodeStates
 #### Initializers <a name="Initializers" id="@cdktf/provider-upcloud.managedDatabaseRedis.ManagedDatabaseRedisPropertiesMigrationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v14/manageddatabaseredis"
+import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/manageddatabaseredis"
 
 manageddatabaseredis.NewManagedDatabaseRedisPropertiesMigrationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ManagedDatabaseRedisPropertiesMigrationOutputReference
 ```
@@ -3800,7 +3845,7 @@ func InternalValue() ManagedDatabaseRedisPropertiesMigration
 #### Initializers <a name="Initializers" id="@cdktf/provider-upcloud.managedDatabaseRedis.ManagedDatabaseRedisPropertiesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v14/manageddatabaseredis"
+import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/manageddatabaseredis"
 
 manageddatabaseredis.NewManagedDatabaseRedisPropertiesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ManagedDatabaseRedisPropertiesOutputReference
 ```

@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/upcloudltd/upcloud/5.8.1/docs/resources/server_group
+// https://registry.terraform.io/providers/upcloudltd/upcloud/5.9.0/docs/resources/server_group
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -27,44 +22,37 @@ export interface ServerGroupConfig extends cdktf.TerraformMetaArguments {
   * 	policies in server group are not met, you need to manually restart the servers in said group,
   * 	for example via API, UpCloud Control Panel or upctl (UpCloud CLI)
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.8.1/docs/resources/server_group#anti_affinity_policy ServerGroup#anti_affinity_policy}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.9.0/docs/resources/server_group#anti_affinity_policy ServerGroup#anti_affinity_policy}
   */
   readonly antiAffinityPolicy?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.8.1/docs/resources/server_group#id ServerGroup#id}
-  *
-  * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
-  * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
-  */
-  readonly id?: string;
-  /**
   * Key-value pairs to classify the server group.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.8.1/docs/resources/server_group#labels ServerGroup#labels}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.9.0/docs/resources/server_group#labels ServerGroup#labels}
   */
   readonly labels?: { [key: string]: string };
   /**
   * UUIDs of the servers that are members of this group. Servers can also be attached to the server group via `server_group` property of `upcloud_server`. See also `track_members` property.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.8.1/docs/resources/server_group#members ServerGroup#members}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.9.0/docs/resources/server_group#members ServerGroup#members}
   */
   readonly members?: string[];
   /**
   * Title of your server group
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.8.1/docs/resources/server_group#title ServerGroup#title}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.9.0/docs/resources/server_group#title ServerGroup#title}
   */
   readonly title: string;
   /**
   * Controls if members of the server group are being tracked in this resource. Set to `false` when using `server_group` property of `upcloud_server` to attach servers to the server group to avoid delayed state updates.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.8.1/docs/resources/server_group#track_members ServerGroup#track_members}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.9.0/docs/resources/server_group#track_members ServerGroup#track_members}
   */
   readonly trackMembers?: boolean | cdktf.IResolvable;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.8.1/docs/resources/server_group upcloud_server_group}
+* Represents a {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.9.0/docs/resources/server_group upcloud_server_group}
 */
 export class ServerGroup extends cdktf.TerraformResource {
 
@@ -80,7 +68,7 @@ export class ServerGroup extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a ServerGroup resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the ServerGroup to import
-  * @param importFromId The id of the existing ServerGroup that should be imported. Refer to the {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.8.1/docs/resources/server_group#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing ServerGroup that should be imported. Refer to the {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.9.0/docs/resources/server_group#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the ServerGroup to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -92,7 +80,7 @@ export class ServerGroup extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.8.1/docs/resources/server_group upcloud_server_group} Resource
+  * Create a new {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.9.0/docs/resources/server_group upcloud_server_group} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -103,7 +91,7 @@ export class ServerGroup extends cdktf.TerraformResource {
       terraformResourceType: 'upcloud_server_group',
       terraformGeneratorMetadata: {
         providerName: 'upcloud',
-        providerVersion: '5.8.1',
+        providerVersion: '5.9.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,
@@ -115,7 +103,6 @@ export class ServerGroup extends cdktf.TerraformResource {
       forEach: config.forEach
     });
     this._antiAffinityPolicy = config.antiAffinityPolicy;
-    this._id = config.id;
     this._labels = config.labels;
     this._members = config.members;
     this._title = config.title;
@@ -126,7 +113,7 @@ export class ServerGroup extends cdktf.TerraformResource {
   // ATTRIBUTES
   // ==========
 
-  // anti_affinity_policy - computed: false, optional: true, required: false
+  // anti_affinity_policy - computed: true, optional: true, required: false
   private _antiAffinityPolicy?: string; 
   public get antiAffinityPolicy() {
     return this.getStringAttribute('anti_affinity_policy');
@@ -142,23 +129,12 @@ export class ServerGroup extends cdktf.TerraformResource {
     return this._antiAffinityPolicy;
   }
 
-  // id - computed: true, optional: true, required: false
-  private _id?: string; 
+  // id - computed: true, optional: false, required: false
   public get id() {
     return this.getStringAttribute('id');
   }
-  public set id(value: string) {
-    this._id = value;
-  }
-  public resetId() {
-    this._id = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get idInput() {
-    return this._id;
-  }
 
-  // labels - computed: false, optional: true, required: false
+  // labels - computed: true, optional: true, required: false
   private _labels?: { [key: string]: string }; 
   public get labels() {
     return this.getStringMapAttribute('labels');
@@ -203,7 +179,7 @@ export class ServerGroup extends cdktf.TerraformResource {
     return this._title;
   }
 
-  // track_members - computed: false, optional: true, required: false
+  // track_members - computed: true, optional: true, required: false
   private _trackMembers?: boolean | cdktf.IResolvable; 
   public get trackMembers() {
     return this.getBooleanAttribute('track_members');
@@ -226,7 +202,6 @@ export class ServerGroup extends cdktf.TerraformResource {
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
       anti_affinity_policy: cdktf.stringToTerraform(this._antiAffinityPolicy),
-      id: cdktf.stringToTerraform(this._id),
       labels: cdktf.hashMapper(cdktf.stringToTerraform)(this._labels),
       members: cdktf.listMapper(cdktf.stringToTerraform, false)(this._members),
       title: cdktf.stringToTerraform(this._title),
@@ -238,12 +213,6 @@ export class ServerGroup extends cdktf.TerraformResource {
     const attrs = {
       anti_affinity_policy: {
         value: cdktf.stringToHclTerraform(this._antiAffinityPolicy),
-        isBlock: false,
-        type: "simple",
-        storageClassType: "string",
-      },
-      id: {
-        value: cdktf.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
