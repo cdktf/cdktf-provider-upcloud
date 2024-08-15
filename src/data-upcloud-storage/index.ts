@@ -1,3 +1,8 @@
+/**
+ * Copyright (c) HashiCorp, Inc.
+ * SPDX-License-Identifier: MPL-2.0
+ */
+
 // https://registry.terraform.io/providers/upcloudltd/upcloud/5.9.1/docs/data-sources/storage
 // generated from terraform resource schema
 
