@@ -1,3 +1,8 @@
+/**
+ * Copyright (c) HashiCorp, Inc.
+ * SPDX-License-Identifier: MPL-2.0
+ */
+
 // https://registry.terraform.io/providers/upcloudltd/upcloud/5.10.0/docs/resources/managed_database_redis
 // generated from terraform resource schema
 
