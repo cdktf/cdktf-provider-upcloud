@@ -4,7 +4,7 @@
 
 ### KubernetesNodeGroup <a name="KubernetesNodeGroup" id="@cdktf/provider-upcloud.kubernetesNodeGroup.KubernetesNodeGroup"></a>
 
-Represents a {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.9.1/docs/resources/kubernetes_node_group upcloud_kubernetes_node_group}.
+Represents a {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.10.0/docs/resources/kubernetes_node_group upcloud_kubernetes_node_group}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-upcloud.kubernetesNodeGroup.KubernetesNodeGroup.Initializer"></a>
 
@@ -26,8 +26,7 @@ kubernetesNodeGroup.KubernetesNodeGroup(
   node_count: typing.Union[int, float],
   plan: str,
   anti_affinity: typing.Union[bool, IResolvable] = None,
-  custom_plan: KubernetesNodeGroupCustomPlan = None,
-  id: str = None,
+  custom_plan: typing.Union[IResolvable, typing.List[KubernetesNodeGroupCustomPlan]] = None,
   kubelet_args: typing.Union[IResolvable, typing.List[KubernetesNodeGroupKubeletArgs]] = None,
   labels: typing.Mapping[str] = None,
   ssh_keys: typing.List[str] = None,
@@ -53,12 +52,11 @@ kubernetesNodeGroup.KubernetesNodeGroup(
 | <code><a href="#@cdktf/provider-upcloud.kubernetesNodeGroup.KubernetesNodeGroup.Initializer.parameter.nodeCount">node_count</a></code> | <code>typing.Union[int, float]</code> | Amount of nodes to provision in the node group. |
 | <code><a href="#@cdktf/provider-upcloud.kubernetesNodeGroup.KubernetesNodeGroup.Initializer.parameter.plan">plan</a></code> | <code>str</code> | The server plan used for the node group. You can list available plans with `upctl server plans`. |
 | <code><a href="#@cdktf/provider-upcloud.kubernetesNodeGroup.KubernetesNodeGroup.Initializer.parameter.antiAffinity">anti_affinity</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | If set to true, nodes in this group will be placed on separate compute hosts. |
-| <code><a href="#@cdktf/provider-upcloud.kubernetesNodeGroup.KubernetesNodeGroup.Initializer.parameter.customPlan">custom_plan</a></code> | <code><a href="#@cdktf/provider-upcloud.kubernetesNodeGroup.KubernetesNodeGroupCustomPlan">KubernetesNodeGroupCustomPlan</a></code> | custom_plan block. |
-| <code><a href="#@cdktf/provider-upcloud.kubernetesNodeGroup.KubernetesNodeGroup.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.9.1/docs/resources/kubernetes_node_group#id KubernetesNodeGroup#id}. |
+| <code><a href="#@cdktf/provider-upcloud.kubernetesNodeGroup.KubernetesNodeGroup.Initializer.parameter.customPlan">custom_plan</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-upcloud.kubernetesNodeGroup.KubernetesNodeGroupCustomPlan">KubernetesNodeGroupCustomPlan</a>]]</code> | custom_plan block. |
 | <code><a href="#@cdktf/provider-upcloud.kubernetesNodeGroup.KubernetesNodeGroup.Initializer.parameter.kubeletArgs">kubelet_args</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-upcloud.kubernetesNodeGroup.KubernetesNodeGroupKubeletArgs">KubernetesNodeGroupKubeletArgs</a>]]</code> | kubelet_args block. |
-| <code><a href="#@cdktf/provider-upcloud.kubernetesNodeGroup.KubernetesNodeGroup.Initializer.parameter.labels">labels</a></code> | <code>typing.Mapping[str]</code> | Key-value pairs to classify the node group. |
+| <code><a href="#@cdktf/provider-upcloud.kubernetesNodeGroup.KubernetesNodeGroup.Initializer.parameter.labels">labels</a></code> | <code>typing.Mapping[str]</code> | User defined key-value pairs to classify the node_group. |
 | <code><a href="#@cdktf/provider-upcloud.kubernetesNodeGroup.KubernetesNodeGroup.Initializer.parameter.sshKeys">ssh_keys</a></code> | <code>typing.List[str]</code> | You can optionally select SSH keys to be added as authorized keys to the nodes in this node group. |
-| <code><a href="#@cdktf/provider-upcloud.kubernetesNodeGroup.KubernetesNodeGroup.Initializer.parameter.storageEncryption">storage_encryption</a></code> | <code>str</code> | Storage encryption strategy for the nodes in this group. |
+| <code><a href="#@cdktf/provider-upcloud.kubernetesNodeGroup.KubernetesNodeGroup.Initializer.parameter.storageEncryption">storage_encryption</a></code> | <code>str</code> | The storage encryption strategy to use for the nodes in this group. |
 | <code><a href="#@cdktf/provider-upcloud.kubernetesNodeGroup.KubernetesNodeGroup.Initializer.parameter.taint">taint</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-upcloud.kubernetesNodeGroup.KubernetesNodeGroupTaint">KubernetesNodeGroupTaint</a>]]</code> | taint block. |
 | <code><a href="#@cdktf/provider-upcloud.kubernetesNodeGroup.KubernetesNodeGroup.Initializer.parameter.utilityNetworkAccess">utility_network_access</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | If set to false, nodes in this group will not have access to utility network. |
 
@@ -130,7 +128,7 @@ Must be unique amongst siblings in the same scope
 
 UUID of the cluster.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.9.1/docs/resources/kubernetes_node_group#cluster KubernetesNodeGroup#cluster}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.10.0/docs/resources/kubernetes_node_group#cluster KubernetesNodeGroup#cluster}
 
 ---
 
@@ -140,7 +138,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upclo
 
 The name of the node group. Needs to be unique within a cluster.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.9.1/docs/resources/kubernetes_node_group#name KubernetesNodeGroup#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.10.0/docs/resources/kubernetes_node_group#name KubernetesNodeGroup#name}
 
 ---
 
@@ -150,7 +148,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upclo
 
 Amount of nodes to provision in the node group.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.9.1/docs/resources/kubernetes_node_group#node_count KubernetesNodeGroup#node_count}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.10.0/docs/resources/kubernetes_node_group#node_count KubernetesNodeGroup#node_count}
 
 ---
 
@@ -160,7 +158,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upclo
 
 The server plan used for the node group. You can list available plans with `upctl server plans`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.9.1/docs/resources/kubernetes_node_group#plan KubernetesNodeGroup#plan}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.10.0/docs/resources/kubernetes_node_group#plan KubernetesNodeGroup#plan}
 
 ---
 
@@ -170,30 +168,19 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upclo
 
 If set to true, nodes in this group will be placed on separate compute hosts.
 
-Please note that anti-affinity policy is considered "best effort" and enabling it does not fully guarantee that the nodes will end up on different hardware.
+Please note that anti-affinity policy is considered 'best effort' and enabling it does not fully guarantee that the nodes will end up on different hardware.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.9.1/docs/resources/kubernetes_node_group#anti_affinity KubernetesNodeGroup#anti_affinity}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.10.0/docs/resources/kubernetes_node_group#anti_affinity KubernetesNodeGroup#anti_affinity}
 
 ---
 
 ##### `custom_plan`<sup>Optional</sup> <a name="custom_plan" id="@cdktf/provider-upcloud.kubernetesNodeGroup.KubernetesNodeGroup.Initializer.parameter.customPlan"></a>
 
-- *Type:* <a href="#@cdktf/provider-upcloud.kubernetesNodeGroup.KubernetesNodeGroupCustomPlan">KubernetesNodeGroupCustomPlan</a>
+- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-upcloud.kubernetesNodeGroup.KubernetesNodeGroupCustomPlan">KubernetesNodeGroupCustomPlan</a>]]
 
 custom_plan block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.9.1/docs/resources/kubernetes_node_group#custom_plan KubernetesNodeGroup#custom_plan}
-
----
-
-##### `id`<sup>Optional</sup> <a name="id" id="@cdktf/provider-upcloud.kubernetesNodeGroup.KubernetesNodeGroup.Initializer.parameter.id"></a>
-
-- *Type:* str
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.9.1/docs/resources/kubernetes_node_group#id KubernetesNodeGroup#id}.
-
-Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
-If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.10.0/docs/resources/kubernetes_node_group#custom_plan KubernetesNodeGroup#custom_plan}
 
 ---
 
@@ -203,7 +190,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 kubelet_args block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.9.1/docs/resources/kubernetes_node_group#kubelet_args KubernetesNodeGroup#kubelet_args}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.10.0/docs/resources/kubernetes_node_group#kubelet_args KubernetesNodeGroup#kubelet_args}
 
 ---
 
@@ -211,9 +198,9 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upclo
 
 - *Type:* typing.Mapping[str]
 
-Key-value pairs to classify the node group.
+User defined key-value pairs to classify the node_group.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.9.1/docs/resources/kubernetes_node_group#labels KubernetesNodeGroup#labels}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.10.0/docs/resources/kubernetes_node_group#labels KubernetesNodeGroup#labels}
 
 ---
 
@@ -225,7 +212,7 @@ You can optionally select SSH keys to be added as authorized keys to the nodes i
 
 This allows you to connect to the nodes via SSH once they are running.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.9.1/docs/resources/kubernetes_node_group#ssh_keys KubernetesNodeGroup#ssh_keys}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.10.0/docs/resources/kubernetes_node_group#ssh_keys KubernetesNodeGroup#ssh_keys}
 
 ---
 
@@ -233,9 +220,11 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upclo
 
 - *Type:* str
 
-Storage encryption strategy for the nodes in this group.
+The storage encryption strategy to use for the nodes in this group.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.9.1/docs/resources/kubernetes_node_group#storage_encryption KubernetesNodeGroup#storage_encryption}
+If not set, the cluster's storage encryption strategy will be used, if applicable.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.10.0/docs/resources/kubernetes_node_group#storage_encryption KubernetesNodeGroup#storage_encryption}
 
 ---
 
@@ -245,7 +234,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upclo
 
 taint block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.9.1/docs/resources/kubernetes_node_group#taint KubernetesNodeGroup#taint}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.10.0/docs/resources/kubernetes_node_group#taint KubernetesNodeGroup#taint}
 
 ---
 
@@ -255,7 +244,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upclo
 
 If set to false, nodes in this group will not have access to utility network.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.9.1/docs/resources/kubernetes_node_group#utility_network_access KubernetesNodeGroup#utility_network_access}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.10.0/docs/resources/kubernetes_node_group#utility_network_access KubernetesNodeGroup#utility_network_access}
 
 ---
 
@@ -291,7 +280,6 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upclo
 | <code><a href="#@cdktf/provider-upcloud.kubernetesNodeGroup.KubernetesNodeGroup.putTaint">put_taint</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.kubernetesNodeGroup.KubernetesNodeGroup.resetAntiAffinity">reset_anti_affinity</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.kubernetesNodeGroup.KubernetesNodeGroup.resetCustomPlan">reset_custom_plan</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-upcloud.kubernetesNodeGroup.KubernetesNodeGroup.resetId">reset_id</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.kubernetesNodeGroup.KubernetesNodeGroup.resetKubeletArgs">reset_kubelet_args</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.kubernetesNodeGroup.KubernetesNodeGroup.resetLabels">reset_labels</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.kubernetesNodeGroup.KubernetesNodeGroup.resetSshKeys">reset_ssh_keys</a></code> | *No description.* |
@@ -630,52 +618,13 @@ Full id of resource to move to, e.g. "aws_s3_bucket.example".
 
 ```python
 def put_custom_plan(
-  cores: typing.Union[int, float],
-  memory: typing.Union[int, float],
-  storage_size: typing.Union[int, float],
-  storage_tier: str = None
+  value: typing.Union[IResolvable, typing.List[KubernetesNodeGroupCustomPlan]]
 ) -> None
 ```
 
-###### `cores`<sup>Required</sup> <a name="cores" id="@cdktf/provider-upcloud.kubernetesNodeGroup.KubernetesNodeGroup.putCustomPlan.parameter.cores"></a>
+###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-upcloud.kubernetesNodeGroup.KubernetesNodeGroup.putCustomPlan.parameter.value"></a>
 
-- *Type:* typing.Union[int, float]
-
-The number of CPU cores dedicated to individual node group nodes when using custom plan.
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.9.1/docs/resources/kubernetes_node_group#cores KubernetesNodeGroup#cores}
-
----
-
-###### `memory`<sup>Required</sup> <a name="memory" id="@cdktf/provider-upcloud.kubernetesNodeGroup.KubernetesNodeGroup.putCustomPlan.parameter.memory"></a>
-
-- *Type:* typing.Union[int, float]
-
-The amount of memory in megabytes to assign to individual node group node when using custom plan.
-
-Value needs to be divisible by 1024.
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.9.1/docs/resources/kubernetes_node_group#memory KubernetesNodeGroup#memory}
-
----
-
-###### `storage_size`<sup>Required</sup> <a name="storage_size" id="@cdktf/provider-upcloud.kubernetesNodeGroup.KubernetesNodeGroup.putCustomPlan.parameter.storageSize"></a>
-
-- *Type:* typing.Union[int, float]
-
-The size of the storage device in gigabytes.
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.9.1/docs/resources/kubernetes_node_group#storage_size KubernetesNodeGroup#storage_size}
-
----
-
-###### `storage_tier`<sup>Optional</sup> <a name="storage_tier" id="@cdktf/provider-upcloud.kubernetesNodeGroup.KubernetesNodeGroup.putCustomPlan.parameter.storageTier"></a>
-
-- *Type:* str
-
-The storage tier to use. Defaults to maxiops.
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.9.1/docs/resources/kubernetes_node_group#storage_tier KubernetesNodeGroup#storage_tier}
+- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-upcloud.kubernetesNodeGroup.KubernetesNodeGroupCustomPlan">KubernetesNodeGroupCustomPlan</a>]]
 
 ---
 
@@ -717,12 +666,6 @@ def reset_anti_affinity() -> None
 
 ```python
 def reset_custom_plan() -> None
-```
-
-##### `reset_id` <a name="reset_id" id="@cdktf/provider-upcloud.kubernetesNodeGroup.KubernetesNodeGroup.resetId"></a>
-
-```python
-def reset_id() -> None
 ```
 
 ##### `reset_kubelet_args` <a name="reset_kubelet_args" id="@cdktf/provider-upcloud.kubernetesNodeGroup.KubernetesNodeGroup.resetKubeletArgs"></a>
@@ -875,7 +818,7 @@ The construct id used in the generated config for the KubernetesNodeGroup to imp
 
 The id of the existing KubernetesNodeGroup that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.9.1/docs/resources/kubernetes_node_group#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.10.0/docs/resources/kubernetes_node_group#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -905,13 +848,13 @@ Refer to the {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5
 | <code><a href="#@cdktf/provider-upcloud.kubernetesNodeGroup.KubernetesNodeGroup.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.kubernetesNodeGroup.KubernetesNodeGroup.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.kubernetesNodeGroup.KubernetesNodeGroup.property.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-upcloud.kubernetesNodeGroup.KubernetesNodeGroup.property.customPlan">custom_plan</a></code> | <code><a href="#@cdktf/provider-upcloud.kubernetesNodeGroup.KubernetesNodeGroupCustomPlanOutputReference">KubernetesNodeGroupCustomPlanOutputReference</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-upcloud.kubernetesNodeGroup.KubernetesNodeGroup.property.customPlan">custom_plan</a></code> | <code><a href="#@cdktf/provider-upcloud.kubernetesNodeGroup.KubernetesNodeGroupCustomPlanList">KubernetesNodeGroupCustomPlanList</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-upcloud.kubernetesNodeGroup.KubernetesNodeGroup.property.id">id</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.kubernetesNodeGroup.KubernetesNodeGroup.property.kubeletArgs">kubelet_args</a></code> | <code><a href="#@cdktf/provider-upcloud.kubernetesNodeGroup.KubernetesNodeGroupKubeletArgsList">KubernetesNodeGroupKubeletArgsList</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.kubernetesNodeGroup.KubernetesNodeGroup.property.taint">taint</a></code> | <code><a href="#@cdktf/provider-upcloud.kubernetesNodeGroup.KubernetesNodeGroupTaintList">KubernetesNodeGroupTaintList</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.kubernetesNodeGroup.KubernetesNodeGroup.property.antiAffinityInput">anti_affinity_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.kubernetesNodeGroup.KubernetesNodeGroup.property.clusterInput">cluster_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-upcloud.kubernetesNodeGroup.KubernetesNodeGroup.property.customPlanInput">custom_plan_input</a></code> | <code><a href="#@cdktf/provider-upcloud.kubernetesNodeGroup.KubernetesNodeGroupCustomPlan">KubernetesNodeGroupCustomPlan</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-upcloud.kubernetesNodeGroup.KubernetesNodeGroup.property.idInput">id_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-upcloud.kubernetesNodeGroup.KubernetesNodeGroup.property.customPlanInput">custom_plan_input</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-upcloud.kubernetesNodeGroup.KubernetesNodeGroupCustomPlan">KubernetesNodeGroupCustomPlan</a>]]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.kubernetesNodeGroup.KubernetesNodeGroup.property.kubeletArgsInput">kubelet_args_input</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-upcloud.kubernetesNodeGroup.KubernetesNodeGroupKubeletArgs">KubernetesNodeGroupKubeletArgs</a>]]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.kubernetesNodeGroup.KubernetesNodeGroup.property.labelsInput">labels_input</a></code> | <code>typing.Mapping[str]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.kubernetesNodeGroup.KubernetesNodeGroup.property.nameInput">name_input</a></code> | <code>str</code> | *No description.* |
@@ -923,7 +866,6 @@ Refer to the {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5
 | <code><a href="#@cdktf/provider-upcloud.kubernetesNodeGroup.KubernetesNodeGroup.property.utilityNetworkAccessInput">utility_network_access_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.kubernetesNodeGroup.KubernetesNodeGroup.property.antiAffinity">anti_affinity</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.kubernetesNodeGroup.KubernetesNodeGroup.property.cluster">cluster</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-upcloud.kubernetesNodeGroup.KubernetesNodeGroup.property.id">id</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.kubernetesNodeGroup.KubernetesNodeGroup.property.labels">labels</a></code> | <code>typing.Mapping[str]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.kubernetesNodeGroup.KubernetesNodeGroup.property.name">name</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.kubernetesNodeGroup.KubernetesNodeGroup.property.nodeCount">node_count</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
@@ -1079,10 +1021,20 @@ provisioners: typing.List[typing.Union[FileProvisioner, LocalExecProvisioner, Re
 ##### `custom_plan`<sup>Required</sup> <a name="custom_plan" id="@cdktf/provider-upcloud.kubernetesNodeGroup.KubernetesNodeGroup.property.customPlan"></a>
 
 ```python
-custom_plan: KubernetesNodeGroupCustomPlanOutputReference
+custom_plan: KubernetesNodeGroupCustomPlanList
 ```
 
-- *Type:* <a href="#@cdktf/provider-upcloud.kubernetesNodeGroup.KubernetesNodeGroupCustomPlanOutputReference">KubernetesNodeGroupCustomPlanOutputReference</a>
+- *Type:* <a href="#@cdktf/provider-upcloud.kubernetesNodeGroup.KubernetesNodeGroupCustomPlanList">KubernetesNodeGroupCustomPlanList</a>
+
+---
+
+##### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-upcloud.kubernetesNodeGroup.KubernetesNodeGroup.property.id"></a>
+
+```python
+id: str
+```
+
+- *Type:* str
 
 ---
 
@@ -1129,20 +1081,10 @@ cluster_input: str
 ##### `custom_plan_input`<sup>Optional</sup> <a name="custom_plan_input" id="@cdktf/provider-upcloud.kubernetesNodeGroup.KubernetesNodeGroup.property.customPlanInput"></a>
 
 ```python
-custom_plan_input: KubernetesNodeGroupCustomPlan
+custom_plan_input: typing.Union[IResolvable, typing.List[KubernetesNodeGroupCustomPlan]]
 ```
 
-- *Type:* <a href="#@cdktf/provider-upcloud.kubernetesNodeGroup.KubernetesNodeGroupCustomPlan">KubernetesNodeGroupCustomPlan</a>
-
----
-
-##### `id_input`<sup>Optional</sup> <a name="id_input" id="@cdktf/provider-upcloud.kubernetesNodeGroup.KubernetesNodeGroup.property.idInput"></a>
-
-```python
-id_input: str
-```
-
-- *Type:* str
+- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-upcloud.kubernetesNodeGroup.KubernetesNodeGroupCustomPlan">KubernetesNodeGroupCustomPlan</a>]]
 
 ---
 
@@ -1250,16 +1192,6 @@ anti_affinity: typing.Union[bool, IResolvable]
 
 ```python
 cluster: str
-```
-
-- *Type:* str
-
----
-
-##### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-upcloud.kubernetesNodeGroup.KubernetesNodeGroup.property.id"></a>
-
-```python
-id: str
 ```
 
 - *Type:* str
@@ -1376,8 +1308,7 @@ kubernetesNodeGroup.KubernetesNodeGroupConfig(
   node_count: typing.Union[int, float],
   plan: str,
   anti_affinity: typing.Union[bool, IResolvable] = None,
-  custom_plan: KubernetesNodeGroupCustomPlan = None,
-  id: str = None,
+  custom_plan: typing.Union[IResolvable, typing.List[KubernetesNodeGroupCustomPlan]] = None,
   kubelet_args: typing.Union[IResolvable, typing.List[KubernetesNodeGroupKubeletArgs]] = None,
   labels: typing.Mapping[str] = None,
   ssh_keys: typing.List[str] = None,
@@ -1403,12 +1334,11 @@ kubernetesNodeGroup.KubernetesNodeGroupConfig(
 | <code><a href="#@cdktf/provider-upcloud.kubernetesNodeGroup.KubernetesNodeGroupConfig.property.nodeCount">node_count</a></code> | <code>typing.Union[int, float]</code> | Amount of nodes to provision in the node group. |
 | <code><a href="#@cdktf/provider-upcloud.kubernetesNodeGroup.KubernetesNodeGroupConfig.property.plan">plan</a></code> | <code>str</code> | The server plan used for the node group. You can list available plans with `upctl server plans`. |
 | <code><a href="#@cdktf/provider-upcloud.kubernetesNodeGroup.KubernetesNodeGroupConfig.property.antiAffinity">anti_affinity</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | If set to true, nodes in this group will be placed on separate compute hosts. |
-| <code><a href="#@cdktf/provider-upcloud.kubernetesNodeGroup.KubernetesNodeGroupConfig.property.customPlan">custom_plan</a></code> | <code><a href="#@cdktf/provider-upcloud.kubernetesNodeGroup.KubernetesNodeGroupCustomPlan">KubernetesNodeGroupCustomPlan</a></code> | custom_plan block. |
-| <code><a href="#@cdktf/provider-upcloud.kubernetesNodeGroup.KubernetesNodeGroupConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.9.1/docs/resources/kubernetes_node_group#id KubernetesNodeGroup#id}. |
+| <code><a href="#@cdktf/provider-upcloud.kubernetesNodeGroup.KubernetesNodeGroupConfig.property.customPlan">custom_plan</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-upcloud.kubernetesNodeGroup.KubernetesNodeGroupCustomPlan">KubernetesNodeGroupCustomPlan</a>]]</code> | custom_plan block. |
 | <code><a href="#@cdktf/provider-upcloud.kubernetesNodeGroup.KubernetesNodeGroupConfig.property.kubeletArgs">kubelet_args</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-upcloud.kubernetesNodeGroup.KubernetesNodeGroupKubeletArgs">KubernetesNodeGroupKubeletArgs</a>]]</code> | kubelet_args block. |
-| <code><a href="#@cdktf/provider-upcloud.kubernetesNodeGroup.KubernetesNodeGroupConfig.property.labels">labels</a></code> | <code>typing.Mapping[str]</code> | Key-value pairs to classify the node group. |
+| <code><a href="#@cdktf/provider-upcloud.kubernetesNodeGroup.KubernetesNodeGroupConfig.property.labels">labels</a></code> | <code>typing.Mapping[str]</code> | User defined key-value pairs to classify the node_group. |
 | <code><a href="#@cdktf/provider-upcloud.kubernetesNodeGroup.KubernetesNodeGroupConfig.property.sshKeys">ssh_keys</a></code> | <code>typing.List[str]</code> | You can optionally select SSH keys to be added as authorized keys to the nodes in this node group. |
-| <code><a href="#@cdktf/provider-upcloud.kubernetesNodeGroup.KubernetesNodeGroupConfig.property.storageEncryption">storage_encryption</a></code> | <code>str</code> | Storage encryption strategy for the nodes in this group. |
+| <code><a href="#@cdktf/provider-upcloud.kubernetesNodeGroup.KubernetesNodeGroupConfig.property.storageEncryption">storage_encryption</a></code> | <code>str</code> | The storage encryption strategy to use for the nodes in this group. |
 | <code><a href="#@cdktf/provider-upcloud.kubernetesNodeGroup.KubernetesNodeGroupConfig.property.taint">taint</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-upcloud.kubernetesNodeGroup.KubernetesNodeGroupTaint">KubernetesNodeGroupTaint</a>]]</code> | taint block. |
 | <code><a href="#@cdktf/provider-upcloud.kubernetesNodeGroup.KubernetesNodeGroupConfig.property.utilityNetworkAccess">utility_network_access</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | If set to false, nodes in this group will not have access to utility network. |
 
@@ -1494,7 +1424,7 @@ cluster: str
 
 UUID of the cluster.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.9.1/docs/resources/kubernetes_node_group#cluster KubernetesNodeGroup#cluster}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.10.0/docs/resources/kubernetes_node_group#cluster KubernetesNodeGroup#cluster}
 
 ---
 
@@ -1508,7 +1438,7 @@ name: str
 
 The name of the node group. Needs to be unique within a cluster.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.9.1/docs/resources/kubernetes_node_group#name KubernetesNodeGroup#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.10.0/docs/resources/kubernetes_node_group#name KubernetesNodeGroup#name}
 
 ---
 
@@ -1522,7 +1452,7 @@ node_count: typing.Union[int, float]
 
 Amount of nodes to provision in the node group.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.9.1/docs/resources/kubernetes_node_group#node_count KubernetesNodeGroup#node_count}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.10.0/docs/resources/kubernetes_node_group#node_count KubernetesNodeGroup#node_count}
 
 ---
 
@@ -1536,7 +1466,7 @@ plan: str
 
 The server plan used for the node group. You can list available plans with `upctl server plans`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.9.1/docs/resources/kubernetes_node_group#plan KubernetesNodeGroup#plan}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.10.0/docs/resources/kubernetes_node_group#plan KubernetesNodeGroup#plan}
 
 ---
 
@@ -1550,38 +1480,23 @@ anti_affinity: typing.Union[bool, IResolvable]
 
 If set to true, nodes in this group will be placed on separate compute hosts.
 
-Please note that anti-affinity policy is considered "best effort" and enabling it does not fully guarantee that the nodes will end up on different hardware.
+Please note that anti-affinity policy is considered 'best effort' and enabling it does not fully guarantee that the nodes will end up on different hardware.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.9.1/docs/resources/kubernetes_node_group#anti_affinity KubernetesNodeGroup#anti_affinity}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.10.0/docs/resources/kubernetes_node_group#anti_affinity KubernetesNodeGroup#anti_affinity}
 
 ---
 
 ##### `custom_plan`<sup>Optional</sup> <a name="custom_plan" id="@cdktf/provider-upcloud.kubernetesNodeGroup.KubernetesNodeGroupConfig.property.customPlan"></a>
 
 ```python
-custom_plan: KubernetesNodeGroupCustomPlan
+custom_plan: typing.Union[IResolvable, typing.List[KubernetesNodeGroupCustomPlan]]
 ```
 
-- *Type:* <a href="#@cdktf/provider-upcloud.kubernetesNodeGroup.KubernetesNodeGroupCustomPlan">KubernetesNodeGroupCustomPlan</a>
+- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-upcloud.kubernetesNodeGroup.KubernetesNodeGroupCustomPlan">KubernetesNodeGroupCustomPlan</a>]]
 
 custom_plan block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.9.1/docs/resources/kubernetes_node_group#custom_plan KubernetesNodeGroup#custom_plan}
-
----
-
-##### `id`<sup>Optional</sup> <a name="id" id="@cdktf/provider-upcloud.kubernetesNodeGroup.KubernetesNodeGroupConfig.property.id"></a>
-
-```python
-id: str
-```
-
-- *Type:* str
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.9.1/docs/resources/kubernetes_node_group#id KubernetesNodeGroup#id}.
-
-Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
-If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.10.0/docs/resources/kubernetes_node_group#custom_plan KubernetesNodeGroup#custom_plan}
 
 ---
 
@@ -1595,7 +1510,7 @@ kubelet_args: typing.Union[IResolvable, typing.List[KubernetesNodeGroupKubeletAr
 
 kubelet_args block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.9.1/docs/resources/kubernetes_node_group#kubelet_args KubernetesNodeGroup#kubelet_args}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.10.0/docs/resources/kubernetes_node_group#kubelet_args KubernetesNodeGroup#kubelet_args}
 
 ---
 
@@ -1607,9 +1522,9 @@ labels: typing.Mapping[str]
 
 - *Type:* typing.Mapping[str]
 
-Key-value pairs to classify the node group.
+User defined key-value pairs to classify the node_group.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.9.1/docs/resources/kubernetes_node_group#labels KubernetesNodeGroup#labels}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.10.0/docs/resources/kubernetes_node_group#labels KubernetesNodeGroup#labels}
 
 ---
 
@@ -1625,7 +1540,7 @@ You can optionally select SSH keys to be added as authorized keys to the nodes i
 
 This allows you to connect to the nodes via SSH once they are running.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.9.1/docs/resources/kubernetes_node_group#ssh_keys KubernetesNodeGroup#ssh_keys}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.10.0/docs/resources/kubernetes_node_group#ssh_keys KubernetesNodeGroup#ssh_keys}
 
 ---
 
@@ -1637,9 +1552,11 @@ storage_encryption: str
 
 - *Type:* str
 
-Storage encryption strategy for the nodes in this group.
+The storage encryption strategy to use for the nodes in this group.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.9.1/docs/resources/kubernetes_node_group#storage_encryption KubernetesNodeGroup#storage_encryption}
+If not set, the cluster's storage encryption strategy will be used, if applicable.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.10.0/docs/resources/kubernetes_node_group#storage_encryption KubernetesNodeGroup#storage_encryption}
 
 ---
 
@@ -1653,7 +1570,7 @@ taint: typing.Union[IResolvable, typing.List[KubernetesNodeGroupTaint]]
 
 taint block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.9.1/docs/resources/kubernetes_node_group#taint KubernetesNodeGroup#taint}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.10.0/docs/resources/kubernetes_node_group#taint KubernetesNodeGroup#taint}
 
 ---
 
@@ -1667,7 +1584,7 @@ utility_network_access: typing.Union[bool, IResolvable]
 
 If set to false, nodes in this group will not have access to utility network.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.9.1/docs/resources/kubernetes_node_group#utility_network_access KubernetesNodeGroup#utility_network_access}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.10.0/docs/resources/kubernetes_node_group#utility_network_access KubernetesNodeGroup#utility_network_access}
 
 ---
 
@@ -1707,7 +1624,7 @@ cores: typing.Union[int, float]
 
 The number of CPU cores dedicated to individual node group nodes when using custom plan.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.9.1/docs/resources/kubernetes_node_group#cores KubernetesNodeGroup#cores}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.10.0/docs/resources/kubernetes_node_group#cores KubernetesNodeGroup#cores}
 
 ---
 
@@ -1723,7 +1640,7 @@ The amount of memory in megabytes to assign to individual node group node when u
 
 Value needs to be divisible by 1024.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.9.1/docs/resources/kubernetes_node_group#memory KubernetesNodeGroup#memory}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.10.0/docs/resources/kubernetes_node_group#memory KubernetesNodeGroup#memory}
 
 ---
 
@@ -1737,7 +1654,7 @@ storage_size: typing.Union[int, float]
 
 The size of the storage device in gigabytes.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.9.1/docs/resources/kubernetes_node_group#storage_size KubernetesNodeGroup#storage_size}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.10.0/docs/resources/kubernetes_node_group#storage_size KubernetesNodeGroup#storage_size}
 
 ---
 
@@ -1751,7 +1668,7 @@ storage_tier: str
 
 The storage tier to use. Defaults to maxiops.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.9.1/docs/resources/kubernetes_node_group#storage_tier KubernetesNodeGroup#storage_tier}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.10.0/docs/resources/kubernetes_node_group#storage_tier KubernetesNodeGroup#storage_tier}
 
 ---
 
@@ -1787,7 +1704,7 @@ key: str
 
 Kubelet argument key.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.9.1/docs/resources/kubernetes_node_group#key KubernetesNodeGroup#key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.10.0/docs/resources/kubernetes_node_group#key KubernetesNodeGroup#key}
 
 ---
 
@@ -1801,7 +1718,7 @@ value: str
 
 Kubelet argument value.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.9.1/docs/resources/kubernetes_node_group#value KubernetesNodeGroup#value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.10.0/docs/resources/kubernetes_node_group#value KubernetesNodeGroup#value}
 
 ---
 
@@ -1839,7 +1756,7 @@ effect: str
 
 Taint effect.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.9.1/docs/resources/kubernetes_node_group#effect KubernetesNodeGroup#effect}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.10.0/docs/resources/kubernetes_node_group#effect KubernetesNodeGroup#effect}
 
 ---
 
@@ -1853,7 +1770,7 @@ key: str
 
 Taint key.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.9.1/docs/resources/kubernetes_node_group#key KubernetesNodeGroup#key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.10.0/docs/resources/kubernetes_node_group#key KubernetesNodeGroup#key}
 
 ---
 
@@ -1867,11 +1784,181 @@ value: str
 
 Taint value.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.9.1/docs/resources/kubernetes_node_group#value KubernetesNodeGroup#value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.10.0/docs/resources/kubernetes_node_group#value KubernetesNodeGroup#value}
 
 ---
 
 ## Classes <a name="Classes" id="Classes"></a>
+
+### KubernetesNodeGroupCustomPlanList <a name="KubernetesNodeGroupCustomPlanList" id="@cdktf/provider-upcloud.kubernetesNodeGroup.KubernetesNodeGroupCustomPlanList"></a>
+
+#### Initializers <a name="Initializers" id="@cdktf/provider-upcloud.kubernetesNodeGroup.KubernetesNodeGroupCustomPlanList.Initializer"></a>
+
+```python
+from cdktf_cdktf_provider_upcloud import kubernetes_node_group
+
+kubernetesNodeGroup.KubernetesNodeGroupCustomPlanList(
+  terraform_resource: IInterpolatingParent,
+  terraform_attribute: str,
+  wraps_set: bool
+)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-upcloud.kubernetesNodeGroup.KubernetesNodeGroupCustomPlanList.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktf/provider-upcloud.kubernetesNodeGroup.KubernetesNodeGroupCustomPlanList.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktf/provider-upcloud.kubernetesNodeGroup.KubernetesNodeGroupCustomPlanList.Initializer.parameter.wrapsSet">wraps_set</a></code> | <code>bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+
+---
+
+##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktf/provider-upcloud.kubernetesNodeGroup.KubernetesNodeGroupCustomPlanList.Initializer.parameter.terraformResource"></a>
+
+- *Type:* cdktf.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-upcloud.kubernetesNodeGroup.KubernetesNodeGroupCustomPlanList.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `wraps_set`<sup>Required</sup> <a name="wraps_set" id="@cdktf/provider-upcloud.kubernetesNodeGroup.KubernetesNodeGroupCustomPlanList.Initializer.parameter.wrapsSet"></a>
+
+- *Type:* bool
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktf/provider-upcloud.kubernetesNodeGroup.KubernetesNodeGroupCustomPlanList.allWithMapKey">all_with_map_key</a></code> | Creating an iterator for this complex list. |
+| <code><a href="#@cdktf/provider-upcloud.kubernetesNodeGroup.KubernetesNodeGroupCustomPlanList.computeFqn">compute_fqn</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-upcloud.kubernetesNodeGroup.KubernetesNodeGroupCustomPlanList.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktf/provider-upcloud.kubernetesNodeGroup.KubernetesNodeGroupCustomPlanList.toString">to_string</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktf/provider-upcloud.kubernetesNodeGroup.KubernetesNodeGroupCustomPlanList.get">get</a></code> | *No description.* |
+
+---
+
+##### `all_with_map_key` <a name="all_with_map_key" id="@cdktf/provider-upcloud.kubernetesNodeGroup.KubernetesNodeGroupCustomPlanList.allWithMapKey"></a>
+
+```python
+def all_with_map_key(
+  map_key_attribute_name: str
+) -> DynamicListTerraformIterator
+```
+
+Creating an iterator for this complex list.
+
+The list will be converted into a map with the mapKeyAttributeName as the key.
+
+###### `map_key_attribute_name`<sup>Required</sup> <a name="map_key_attribute_name" id="@cdktf/provider-upcloud.kubernetesNodeGroup.KubernetesNodeGroupCustomPlanList.allWithMapKey.parameter.mapKeyAttributeName"></a>
+
+- *Type:* str
+
+---
+
+##### `compute_fqn` <a name="compute_fqn" id="@cdktf/provider-upcloud.kubernetesNodeGroup.KubernetesNodeGroupCustomPlanList.computeFqn"></a>
+
+```python
+def compute_fqn() -> str
+```
+
+##### `resolve` <a name="resolve" id="@cdktf/provider-upcloud.kubernetesNodeGroup.KubernetesNodeGroupCustomPlanList.resolve"></a>
+
+```python
+def resolve(
+  _context: IResolveContext
+) -> typing.Any
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktf/provider-upcloud.kubernetesNodeGroup.KubernetesNodeGroupCustomPlanList.resolve.parameter._context"></a>
+
+- *Type:* cdktf.IResolveContext
+
+---
+
+##### `to_string` <a name="to_string" id="@cdktf/provider-upcloud.kubernetesNodeGroup.KubernetesNodeGroupCustomPlanList.toString"></a>
+
+```python
+def to_string() -> str
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `get` <a name="get" id="@cdktf/provider-upcloud.kubernetesNodeGroup.KubernetesNodeGroupCustomPlanList.get"></a>
+
+```python
+def get(
+  index: typing.Union[int, float]
+) -> KubernetesNodeGroupCustomPlanOutputReference
+```
+
+###### `index`<sup>Required</sup> <a name="index" id="@cdktf/provider-upcloud.kubernetesNodeGroup.KubernetesNodeGroupCustomPlanList.get.parameter.index"></a>
+
+- *Type:* typing.Union[int, float]
+
+the index of the item to return.
+
+---
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-upcloud.kubernetesNodeGroup.KubernetesNodeGroupCustomPlanList.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktf/provider-upcloud.kubernetesNodeGroup.KubernetesNodeGroupCustomPlanList.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-upcloud.kubernetesNodeGroup.KubernetesNodeGroupCustomPlanList.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-upcloud.kubernetesNodeGroup.KubernetesNodeGroupCustomPlan">KubernetesNodeGroupCustomPlan</a>]]</code> | *No description.* |
+
+---
+
+##### `creation_stack`<sup>Required</sup> <a name="creation_stack" id="@cdktf/provider-upcloud.kubernetesNodeGroup.KubernetesNodeGroupCustomPlanList.property.creationStack"></a>
+
+```python
+creation_stack: typing.List[str]
+```
+
+- *Type:* typing.List[str]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktf/provider-upcloud.kubernetesNodeGroup.KubernetesNodeGroupCustomPlanList.property.fqn"></a>
+
+```python
+fqn: str
+```
+
+- *Type:* str
+
+---
+
+##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-upcloud.kubernetesNodeGroup.KubernetesNodeGroupCustomPlanList.property.internalValue"></a>
+
+```python
+internal_value: typing.Union[IResolvable, typing.List[KubernetesNodeGroupCustomPlan]]
+```
+
+- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-upcloud.kubernetesNodeGroup.KubernetesNodeGroupCustomPlan">KubernetesNodeGroupCustomPlan</a>]]
+
+---
+
 
 ### KubernetesNodeGroupCustomPlanOutputReference <a name="KubernetesNodeGroupCustomPlanOutputReference" id="@cdktf/provider-upcloud.kubernetesNodeGroup.KubernetesNodeGroupCustomPlanOutputReference"></a>
 
@@ -1882,7 +1969,9 @@ from cdktf_cdktf_provider_upcloud import kubernetes_node_group
 
 kubernetesNodeGroup.KubernetesNodeGroupCustomPlanOutputReference(
   terraform_resource: IInterpolatingParent,
-  terraform_attribute: str
+  terraform_attribute: str,
+  complex_object_index: typing.Union[int, float],
+  complex_object_is_from_set: bool
 )
 ```
 
@@ -1890,6 +1979,8 @@ kubernetesNodeGroup.KubernetesNodeGroupCustomPlanOutputReference(
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-upcloud.kubernetesNodeGroup.KubernetesNodeGroupCustomPlanOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktf/provider-upcloud.kubernetesNodeGroup.KubernetesNodeGroupCustomPlanOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktf/provider-upcloud.kubernetesNodeGroup.KubernetesNodeGroupCustomPlanOutputReference.Initializer.parameter.complexObjectIndex">complex_object_index</a></code> | <code>typing.Union[int, float]</code> | the index of this item in the list. |
+| <code><a href="#@cdktf/provider-upcloud.kubernetesNodeGroup.KubernetesNodeGroupCustomPlanOutputReference.Initializer.parameter.complexObjectIsFromSet">complex_object_is_from_set</a></code> | <code>bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
 ---
 
@@ -1906,6 +1997,22 @@ The parent resource.
 - *Type:* str
 
 The attribute on the parent resource this class is referencing.
+
+---
+
+##### `complex_object_index`<sup>Required</sup> <a name="complex_object_index" id="@cdktf/provider-upcloud.kubernetesNodeGroup.KubernetesNodeGroupCustomPlanOutputReference.Initializer.parameter.complexObjectIndex"></a>
+
+- *Type:* typing.Union[int, float]
+
+the index of this item in the list.
+
+---
+
+##### `complex_object_is_from_set`<sup>Required</sup> <a name="complex_object_is_from_set" id="@cdktf/provider-upcloud.kubernetesNodeGroup.KubernetesNodeGroupCustomPlanOutputReference.Initializer.parameter.complexObjectIsFromSet"></a>
+
+- *Type:* bool
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
 
 ---
 
@@ -2123,7 +2230,7 @@ def reset_storage_tier() -> None
 | <code><a href="#@cdktf/provider-upcloud.kubernetesNodeGroup.KubernetesNodeGroupCustomPlanOutputReference.property.memory">memory</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.kubernetesNodeGroup.KubernetesNodeGroupCustomPlanOutputReference.property.storageSize">storage_size</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.kubernetesNodeGroup.KubernetesNodeGroupCustomPlanOutputReference.property.storageTier">storage_tier</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-upcloud.kubernetesNodeGroup.KubernetesNodeGroupCustomPlanOutputReference.property.internalValue">internal_value</a></code> | <code><a href="#@cdktf/provider-upcloud.kubernetesNodeGroup.KubernetesNodeGroupCustomPlan">KubernetesNodeGroupCustomPlan</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-upcloud.kubernetesNodeGroup.KubernetesNodeGroupCustomPlanOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-upcloud.kubernetesNodeGroup.KubernetesNodeGroupCustomPlan">KubernetesNodeGroupCustomPlan</a>]</code> | *No description.* |
 
 ---
 
@@ -2234,10 +2341,10 @@ storage_tier: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-upcloud.kubernetesNodeGroup.KubernetesNodeGroupCustomPlanOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: KubernetesNodeGroupCustomPlan
+internal_value: typing.Union[IResolvable, KubernetesNodeGroupCustomPlan]
 ```
 
-- *Type:* <a href="#@cdktf/provider-upcloud.kubernetesNodeGroup.KubernetesNodeGroupCustomPlan">KubernetesNodeGroupCustomPlan</a>
+- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-upcloud.kubernetesNodeGroup.KubernetesNodeGroupCustomPlan">KubernetesNodeGroupCustomPlan</a>]
 
 ---
 

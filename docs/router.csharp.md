@@ -4,7 +4,7 @@
 
 ### Router <a name="Router" id="@cdktf/provider-upcloud.router.Router"></a>
 
-Represents a {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.9.1/docs/resources/router upcloud_router}.
+Represents a {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.10.0/docs/resources/router upcloud_router}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-upcloud.router.Router.Initializer"></a>
 
@@ -494,7 +494,7 @@ The construct id used in the generated config for the Router to import.
 
 The id of the existing Router that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.9.1/docs/resources/router#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.10.0/docs/resources/router#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -832,7 +832,7 @@ new RouterConfig {
 | <code><a href="#@cdktf/provider-upcloud.router.RouterConfig.property.provider">Provider</a></code> | <code>HashiCorp.Cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.router.RouterConfig.property.provisioners">Provisioners</a></code> | <code>object[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.router.RouterConfig.property.name">Name</a></code> | <code>string</code> | Name of the router. |
-| <code><a href="#@cdktf/provider-upcloud.router.RouterConfig.property.labels">Labels</a></code> | <code>System.Collections.Generic.IDictionary<string, string></code> | Key-value pairs to classify the router. |
+| <code><a href="#@cdktf/provider-upcloud.router.RouterConfig.property.labels">Labels</a></code> | <code>System.Collections.Generic.IDictionary<string, string></code> | User defined key-value pairs to classify the router. |
 | <code><a href="#@cdktf/provider-upcloud.router.RouterConfig.property.staticRoute">StaticRoute</a></code> | <code>object</code> | static_route block. |
 
 ---
@@ -917,7 +917,7 @@ public string Name { get; set; }
 
 Name of the router.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.9.1/docs/resources/router#name Router#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.10.0/docs/resources/router#name Router#name}
 
 ---
 
@@ -929,9 +929,9 @@ public System.Collections.Generic.IDictionary<string, string> Labels { get; set;
 
 - *Type:* System.Collections.Generic.IDictionary<string, string>
 
-Key-value pairs to classify the router.
+User defined key-value pairs to classify the router.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.9.1/docs/resources/router#labels Router#labels}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.10.0/docs/resources/router#labels Router#labels}
 
 ---
 
@@ -945,7 +945,7 @@ public object StaticRoute { get; set; }
 
 static_route block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.9.1/docs/resources/router#static_route Router#static_route}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.10.0/docs/resources/router#static_route Router#static_route}
 
 ---
 
@@ -985,7 +985,7 @@ Next hop address.
 
 NOTE: For static route to be active the next hop has to be an address of a reachable running Cloud Server in one of the Private Networks attached to the router.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.9.1/docs/resources/router#nexthop Router#nexthop}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.10.0/docs/resources/router#nexthop Router#nexthop}
 
 ---
 
@@ -999,7 +999,7 @@ public string Route { get; set; }
 
 Destination prefix of the route.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.9.1/docs/resources/router#route Router#route}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.10.0/docs/resources/router#route Router#route}
 
 ---
 
@@ -1013,7 +1013,7 @@ public string Name { get; set; }
 
 Name or description of the route.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.9.1/docs/resources/router#name Router#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.10.0/docs/resources/router#name Router#name}
 
 ---
 

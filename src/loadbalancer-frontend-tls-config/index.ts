@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/upcloudltd/upcloud/5.9.1/docs/resources/loadbalancer_frontend_tls_config
+// https://registry.terraform.io/providers/upcloudltd/upcloud/5.10.0/docs/resources/loadbalancer_frontend_tls_config
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,32 +15,25 @@ export interface LoadbalancerFrontendTlsConfigConfig extends cdktf.TerraformMeta
   /**
   * Reference to certificate bundle ID.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.9.1/docs/resources/loadbalancer_frontend_tls_config#certificate_bundle LoadbalancerFrontendTlsConfig#certificate_bundle}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.10.0/docs/resources/loadbalancer_frontend_tls_config#certificate_bundle LoadbalancerFrontendTlsConfig#certificate_bundle}
   */
   readonly certificateBundle: string;
   /**
   * ID of the load balancer frontend to which the TLS config is connected.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.9.1/docs/resources/loadbalancer_frontend_tls_config#frontend LoadbalancerFrontendTlsConfig#frontend}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.10.0/docs/resources/loadbalancer_frontend_tls_config#frontend LoadbalancerFrontendTlsConfig#frontend}
   */
   readonly frontend: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.9.1/docs/resources/loadbalancer_frontend_tls_config#id LoadbalancerFrontendTlsConfig#id}
+  * The name of the TLS config. Must be unique within customer account.
   *
-  * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
-  * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
-  */
-  readonly id?: string;
-  /**
-  * The name of the TLS config must be unique within service frontend.
-  *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.9.1/docs/resources/loadbalancer_frontend_tls_config#name LoadbalancerFrontendTlsConfig#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.10.0/docs/resources/loadbalancer_frontend_tls_config#name LoadbalancerFrontendTlsConfig#name}
   */
   readonly name: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.9.1/docs/resources/loadbalancer_frontend_tls_config upcloud_loadbalancer_frontend_tls_config}
+* Represents a {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.10.0/docs/resources/loadbalancer_frontend_tls_config upcloud_loadbalancer_frontend_tls_config}
 */
 export class LoadbalancerFrontendTlsConfig extends cdktf.TerraformResource {
 
@@ -56,7 +49,7 @@ export class LoadbalancerFrontendTlsConfig extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a LoadbalancerFrontendTlsConfig resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the LoadbalancerFrontendTlsConfig to import
-  * @param importFromId The id of the existing LoadbalancerFrontendTlsConfig that should be imported. Refer to the {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.9.1/docs/resources/loadbalancer_frontend_tls_config#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing LoadbalancerFrontendTlsConfig that should be imported. Refer to the {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.10.0/docs/resources/loadbalancer_frontend_tls_config#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the LoadbalancerFrontendTlsConfig to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -68,7 +61,7 @@ export class LoadbalancerFrontendTlsConfig extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.9.1/docs/resources/loadbalancer_frontend_tls_config upcloud_loadbalancer_frontend_tls_config} Resource
+  * Create a new {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.10.0/docs/resources/loadbalancer_frontend_tls_config upcloud_loadbalancer_frontend_tls_config} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -79,7 +72,7 @@ export class LoadbalancerFrontendTlsConfig extends cdktf.TerraformResource {
       terraformResourceType: 'upcloud_loadbalancer_frontend_tls_config',
       terraformGeneratorMetadata: {
         providerName: 'upcloud',
-        providerVersion: '5.9.1',
+        providerVersion: '5.10.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,
@@ -92,7 +85,6 @@ export class LoadbalancerFrontendTlsConfig extends cdktf.TerraformResource {
     });
     this._certificateBundle = config.certificateBundle;
     this._frontend = config.frontend;
-    this._id = config.id;
     this._name = config.name;
   }
 
@@ -126,20 +118,9 @@ export class LoadbalancerFrontendTlsConfig extends cdktf.TerraformResource {
     return this._frontend;
   }
 
-  // id - computed: true, optional: true, required: false
-  private _id?: string; 
+  // id - computed: true, optional: false, required: false
   public get id() {
     return this.getStringAttribute('id');
-  }
-  public set id(value: string) {
-    this._id = value;
-  }
-  public resetId() {
-    this._id = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get idInput() {
-    return this._id;
   }
 
   // name - computed: false, optional: false, required: true
@@ -163,7 +144,6 @@ export class LoadbalancerFrontendTlsConfig extends cdktf.TerraformResource {
     return {
       certificate_bundle: cdktf.stringToTerraform(this._certificateBundle),
       frontend: cdktf.stringToTerraform(this._frontend),
-      id: cdktf.stringToTerraform(this._id),
       name: cdktf.stringToTerraform(this._name),
     };
   }
@@ -178,12 +158,6 @@ export class LoadbalancerFrontendTlsConfig extends cdktf.TerraformResource {
       },
       frontend: {
         value: cdktf.stringToHclTerraform(this._frontend),
-        isBlock: false,
-        type: "simple",
-        storageClassType: "string",
-      },
-      id: {
-        value: cdktf.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

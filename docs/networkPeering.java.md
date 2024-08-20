@@ -4,7 +4,7 @@
 
 ### NetworkPeering <a name="NetworkPeering" id="@cdktf/provider-upcloud.networkPeering.NetworkPeering"></a>
 
-Represents a {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.9.1/docs/resources/network_peering upcloud_network_peering}.
+Represents a {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.10.0/docs/resources/network_peering upcloud_network_peering}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-upcloud.networkPeering.NetworkPeering.Initializer"></a>
 
@@ -46,7 +46,7 @@ NetworkPeering.Builder.create(Construct scope, java.lang.String id)
 | <code><a href="#@cdktf/provider-upcloud.networkPeering.NetworkPeering.Initializer.parameter.provisioners">provisioners</a></code> | <code>java.util.List<com.hashicorp.cdktf.FileProvisioner OR com.hashicorp.cdktf.LocalExecProvisioner OR com.hashicorp.cdktf.RemoteExecProvisioner></code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.networkPeering.NetworkPeering.Initializer.parameter.name">name</a></code> | <code>java.lang.String</code> | Name of the network peering. |
 | <code><a href="#@cdktf/provider-upcloud.networkPeering.NetworkPeering.Initializer.parameter.configuredStatus">configuredStatus</a></code> | <code>java.lang.String</code> | Configured status of the network peering. |
-| <code><a href="#@cdktf/provider-upcloud.networkPeering.NetworkPeering.Initializer.parameter.labels">labels</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | Key-value pairs to classify the network peering. |
+| <code><a href="#@cdktf/provider-upcloud.networkPeering.NetworkPeering.Initializer.parameter.labels">labels</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | User defined key-value pairs to classify the network peering. |
 | <code><a href="#@cdktf/provider-upcloud.networkPeering.NetworkPeering.Initializer.parameter.network">network</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-upcloud.networkPeering.NetworkPeeringNetwork">NetworkPeeringNetwork</a>></code> | network block. |
 | <code><a href="#@cdktf/provider-upcloud.networkPeering.NetworkPeering.Initializer.parameter.peerNetwork">peerNetwork</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-upcloud.networkPeering.NetworkPeeringPeerNetwork">NetworkPeeringPeerNetwork</a>></code> | peer_network block. |
 
@@ -118,7 +118,7 @@ Must be unique amongst siblings in the same scope
 
 Name of the network peering.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.9.1/docs/resources/network_peering#name NetworkPeering#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.10.0/docs/resources/network_peering#name NetworkPeering#name}
 
 ---
 
@@ -128,7 +128,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upclo
 
 Configured status of the network peering.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.9.1/docs/resources/network_peering#configured_status NetworkPeering#configured_status}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.10.0/docs/resources/network_peering#configured_status NetworkPeering#configured_status}
 
 ---
 
@@ -136,9 +136,9 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upclo
 
 - *Type:* java.util.Map<java.lang.String, java.lang.String>
 
-Key-value pairs to classify the network peering.
+User defined key-value pairs to classify the network peering.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.9.1/docs/resources/network_peering#labels NetworkPeering#labels}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.10.0/docs/resources/network_peering#labels NetworkPeering#labels}
 
 ---
 
@@ -148,7 +148,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upclo
 
 network block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.9.1/docs/resources/network_peering#network NetworkPeering#network}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.10.0/docs/resources/network_peering#network NetworkPeering#network}
 
 ---
 
@@ -158,7 +158,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upclo
 
 peer_network block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.9.1/docs/resources/network_peering#peer_network NetworkPeering#peer_network}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.10.0/docs/resources/network_peering#peer_network NetworkPeering#peer_network}
 
 ---
 
@@ -639,7 +639,7 @@ The construct id used in the generated config for the NetworkPeering to import.
 
 The id of the existing NetworkPeering that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.9.1/docs/resources/network_peering#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.10.0/docs/resources/network_peering#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -997,7 +997,7 @@ NetworkPeeringConfig.builder()
 | <code><a href="#@cdktf/provider-upcloud.networkPeering.NetworkPeeringConfig.property.provisioners">provisioners</a></code> | <code>java.util.List<com.hashicorp.cdktf.FileProvisioner OR com.hashicorp.cdktf.LocalExecProvisioner OR com.hashicorp.cdktf.RemoteExecProvisioner></code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.networkPeering.NetworkPeeringConfig.property.name">name</a></code> | <code>java.lang.String</code> | Name of the network peering. |
 | <code><a href="#@cdktf/provider-upcloud.networkPeering.NetworkPeeringConfig.property.configuredStatus">configuredStatus</a></code> | <code>java.lang.String</code> | Configured status of the network peering. |
-| <code><a href="#@cdktf/provider-upcloud.networkPeering.NetworkPeeringConfig.property.labels">labels</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | Key-value pairs to classify the network peering. |
+| <code><a href="#@cdktf/provider-upcloud.networkPeering.NetworkPeeringConfig.property.labels">labels</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | User defined key-value pairs to classify the network peering. |
 | <code><a href="#@cdktf/provider-upcloud.networkPeering.NetworkPeeringConfig.property.network">network</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-upcloud.networkPeering.NetworkPeeringNetwork">NetworkPeeringNetwork</a>></code> | network block. |
 | <code><a href="#@cdktf/provider-upcloud.networkPeering.NetworkPeeringConfig.property.peerNetwork">peerNetwork</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-upcloud.networkPeering.NetworkPeeringPeerNetwork">NetworkPeeringPeerNetwork</a>></code> | peer_network block. |
 
@@ -1083,7 +1083,7 @@ public java.lang.String getName();
 
 Name of the network peering.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.9.1/docs/resources/network_peering#name NetworkPeering#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.10.0/docs/resources/network_peering#name NetworkPeering#name}
 
 ---
 
@@ -1097,7 +1097,7 @@ public java.lang.String getConfiguredStatus();
 
 Configured status of the network peering.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.9.1/docs/resources/network_peering#configured_status NetworkPeering#configured_status}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.10.0/docs/resources/network_peering#configured_status NetworkPeering#configured_status}
 
 ---
 
@@ -1109,9 +1109,9 @@ public java.util.Map<java.lang.String, java.lang.String> getLabels();
 
 - *Type:* java.util.Map<java.lang.String, java.lang.String>
 
-Key-value pairs to classify the network peering.
+User defined key-value pairs to classify the network peering.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.9.1/docs/resources/network_peering#labels NetworkPeering#labels}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.10.0/docs/resources/network_peering#labels NetworkPeering#labels}
 
 ---
 
@@ -1125,7 +1125,7 @@ public java.lang.Object getNetwork();
 
 network block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.9.1/docs/resources/network_peering#network NetworkPeering#network}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.10.0/docs/resources/network_peering#network NetworkPeering#network}
 
 ---
 
@@ -1139,7 +1139,7 @@ public java.lang.Object getPeerNetwork();
 
 peer_network block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.9.1/docs/resources/network_peering#peer_network NetworkPeering#peer_network}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.10.0/docs/resources/network_peering#peer_network NetworkPeering#peer_network}
 
 ---
 
@@ -1173,7 +1173,7 @@ public java.lang.String getUuid();
 
 The UUID of the network.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.9.1/docs/resources/network_peering#uuid NetworkPeering#uuid}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.10.0/docs/resources/network_peering#uuid NetworkPeering#uuid}
 
 ---
 
@@ -1207,7 +1207,7 @@ public java.lang.String getUuid();
 
 The UUID of the network.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.9.1/docs/resources/network_peering#uuid NetworkPeering#uuid}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.10.0/docs/resources/network_peering#uuid NetworkPeering#uuid}
 
 ---
 

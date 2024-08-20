@@ -4,7 +4,7 @@
 
 ### GatewayConnectionTunnel <a name="GatewayConnectionTunnel" id="@cdktf/provider-upcloud.gatewayConnectionTunnel.GatewayConnectionTunnel"></a>
 
-Represents a {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.9.1/docs/resources/gateway_connection_tunnel upcloud_gateway_connection_tunnel}.
+Represents a {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.10.0/docs/resources/gateway_connection_tunnel upcloud_gateway_connection_tunnel}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-upcloud.gatewayConnectionTunnel.GatewayConnectionTunnel.Initializer"></a>
 
@@ -507,7 +507,7 @@ The construct id used in the generated config for the GatewayConnectionTunnel to
 
 The id of the existing GatewayConnectionTunnel that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.9.1/docs/resources/gateway_connection_tunnel#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.10.0/docs/resources/gateway_connection_tunnel#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -904,7 +904,7 @@ const gatewayConnectionTunnelConfig: gatewayConnectionTunnel.GatewayConnectionTu
 | <code><a href="#@cdktf/provider-upcloud.gatewayConnectionTunnel.GatewayConnectionTunnelConfig.property.localAddressName">localAddressName</a></code> | <code>string</code> | Public (UpCloud) endpoint address of this tunnel. |
 | <code><a href="#@cdktf/provider-upcloud.gatewayConnectionTunnel.GatewayConnectionTunnelConfig.property.name">name</a></code> | <code>string</code> | The name of the tunnel, should be unique within the connection. |
 | <code><a href="#@cdktf/provider-upcloud.gatewayConnectionTunnel.GatewayConnectionTunnelConfig.property.remoteAddress">remoteAddress</a></code> | <code>string</code> | Remote public IP address of the tunnel. |
-| <code><a href="#@cdktf/provider-upcloud.gatewayConnectionTunnel.GatewayConnectionTunnelConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.9.1/docs/resources/gateway_connection_tunnel#id GatewayConnectionTunnel#id}. |
+| <code><a href="#@cdktf/provider-upcloud.gatewayConnectionTunnel.GatewayConnectionTunnelConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.10.0/docs/resources/gateway_connection_tunnel#id GatewayConnectionTunnel#id}. |
 | <code><a href="#@cdktf/provider-upcloud.gatewayConnectionTunnel.GatewayConnectionTunnelConfig.property.ipsecProperties">ipsecProperties</a></code> | <code><a href="#@cdktf/provider-upcloud.gatewayConnectionTunnel.GatewayConnectionTunnelIpsecProperties">GatewayConnectionTunnelIpsecProperties</a></code> | ipsec_properties block. |
 
 ---
@@ -989,7 +989,7 @@ public readonly connectionId: string;
 
 ID of the upcloud_gateway_connection resource to which the tunnel belongs.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.9.1/docs/resources/gateway_connection_tunnel#connection_id GatewayConnectionTunnel#connection_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.10.0/docs/resources/gateway_connection_tunnel#connection_id GatewayConnectionTunnel#connection_id}
 
 ---
 
@@ -1003,7 +1003,7 @@ public readonly ipsecAuthPsk: GatewayConnectionTunnelIpsecAuthPsk;
 
 ipsec_auth_psk block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.9.1/docs/resources/gateway_connection_tunnel#ipsec_auth_psk GatewayConnectionTunnel#ipsec_auth_psk}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.10.0/docs/resources/gateway_connection_tunnel#ipsec_auth_psk GatewayConnectionTunnel#ipsec_auth_psk}
 
 ---
 
@@ -1017,7 +1017,7 @@ public readonly localAddressName: string;
 
 Public (UpCloud) endpoint address of this tunnel.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.9.1/docs/resources/gateway_connection_tunnel#local_address_name GatewayConnectionTunnel#local_address_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.10.0/docs/resources/gateway_connection_tunnel#local_address_name GatewayConnectionTunnel#local_address_name}
 
 ---
 
@@ -1031,7 +1031,7 @@ public readonly name: string;
 
 The name of the tunnel, should be unique within the connection.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.9.1/docs/resources/gateway_connection_tunnel#name GatewayConnectionTunnel#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.10.0/docs/resources/gateway_connection_tunnel#name GatewayConnectionTunnel#name}
 
 ---
 
@@ -1045,7 +1045,7 @@ public readonly remoteAddress: string;
 
 Remote public IP address of the tunnel.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.9.1/docs/resources/gateway_connection_tunnel#remote_address GatewayConnectionTunnel#remote_address}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.10.0/docs/resources/gateway_connection_tunnel#remote_address GatewayConnectionTunnel#remote_address}
 
 ---
 
@@ -1057,7 +1057,7 @@ public readonly id: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.9.1/docs/resources/gateway_connection_tunnel#id GatewayConnectionTunnel#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.10.0/docs/resources/gateway_connection_tunnel#id GatewayConnectionTunnel#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1074,7 +1074,7 @@ public readonly ipsecProperties: GatewayConnectionTunnelIpsecProperties;
 
 ipsec_properties block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.9.1/docs/resources/gateway_connection_tunnel#ipsec_properties GatewayConnectionTunnel#ipsec_properties}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.10.0/docs/resources/gateway_connection_tunnel#ipsec_properties GatewayConnectionTunnel#ipsec_properties}
 
 ---
 
@@ -1108,7 +1108,7 @@ The pre-shared key.
 
 This value is only used during resource creation and is not returned in the state. It is not possible to update this value. If you need to update it, delete the connection and create a new one.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.9.1/docs/resources/gateway_connection_tunnel#psk GatewayConnectionTunnel#psk}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.10.0/docs/resources/gateway_connection_tunnel#psk GatewayConnectionTunnel#psk}
 
 ---
 
@@ -1150,7 +1150,7 @@ public readonly childRekeyTime: number;
 
 IKE child SA rekey time in seconds.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.9.1/docs/resources/gateway_connection_tunnel#child_rekey_time GatewayConnectionTunnel#child_rekey_time}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.10.0/docs/resources/gateway_connection_tunnel#child_rekey_time GatewayConnectionTunnel#child_rekey_time}
 
 ---
 
@@ -1164,7 +1164,7 @@ public readonly dpdDelay: number;
 
 Delay before sending Dead Peer Detection packets if no traffic is detected, in seconds.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.9.1/docs/resources/gateway_connection_tunnel#dpd_delay GatewayConnectionTunnel#dpd_delay}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.10.0/docs/resources/gateway_connection_tunnel#dpd_delay GatewayConnectionTunnel#dpd_delay}
 
 ---
 
@@ -1178,7 +1178,7 @@ public readonly dpdTimeout: number;
 
 Timeout period for DPD reply before considering the peer to be dead, in seconds.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.9.1/docs/resources/gateway_connection_tunnel#dpd_timeout GatewayConnectionTunnel#dpd_timeout}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.10.0/docs/resources/gateway_connection_tunnel#dpd_timeout GatewayConnectionTunnel#dpd_timeout}
 
 ---
 
@@ -1192,7 +1192,7 @@ public readonly ikeLifetime: number;
 
 Maximum IKE SA lifetime in seconds.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.9.1/docs/resources/gateway_connection_tunnel#ike_lifetime GatewayConnectionTunnel#ike_lifetime}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.10.0/docs/resources/gateway_connection_tunnel#ike_lifetime GatewayConnectionTunnel#ike_lifetime}
 
 ---
 
@@ -1206,7 +1206,7 @@ public readonly phase1Algorithms: string[];
 
 List of Phase 1: Proposal algorithms.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.9.1/docs/resources/gateway_connection_tunnel#phase1_algorithms GatewayConnectionTunnel#phase1_algorithms}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.10.0/docs/resources/gateway_connection_tunnel#phase1_algorithms GatewayConnectionTunnel#phase1_algorithms}
 
 ---
 
@@ -1220,7 +1220,7 @@ public readonly phase1DhGroupNumbers: number[];
 
 List of Phase 1 Diffie-Hellman group numbers.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.9.1/docs/resources/gateway_connection_tunnel#phase1_dh_group_numbers GatewayConnectionTunnel#phase1_dh_group_numbers}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.10.0/docs/resources/gateway_connection_tunnel#phase1_dh_group_numbers GatewayConnectionTunnel#phase1_dh_group_numbers}
 
 ---
 
@@ -1234,7 +1234,7 @@ public readonly phase1IntegrityAlgorithms: string[];
 
 List of Phase 1 integrity algorithms.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.9.1/docs/resources/gateway_connection_tunnel#phase1_integrity_algorithms GatewayConnectionTunnel#phase1_integrity_algorithms}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.10.0/docs/resources/gateway_connection_tunnel#phase1_integrity_algorithms GatewayConnectionTunnel#phase1_integrity_algorithms}
 
 ---
 
@@ -1248,7 +1248,7 @@ public readonly phase2Algorithms: string[];
 
 List of Phase 2: Security Association algorithms.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.9.1/docs/resources/gateway_connection_tunnel#phase2_algorithms GatewayConnectionTunnel#phase2_algorithms}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.10.0/docs/resources/gateway_connection_tunnel#phase2_algorithms GatewayConnectionTunnel#phase2_algorithms}
 
 ---
 
@@ -1262,7 +1262,7 @@ public readonly phase2DhGroupNumbers: number[];
 
 List of Phase 2 Diffie-Hellman group numbers.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.9.1/docs/resources/gateway_connection_tunnel#phase2_dh_group_numbers GatewayConnectionTunnel#phase2_dh_group_numbers}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.10.0/docs/resources/gateway_connection_tunnel#phase2_dh_group_numbers GatewayConnectionTunnel#phase2_dh_group_numbers}
 
 ---
 
@@ -1276,7 +1276,7 @@ public readonly phase2IntegrityAlgorithms: string[];
 
 List of Phase 2 integrity algorithms.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.9.1/docs/resources/gateway_connection_tunnel#phase2_integrity_algorithms GatewayConnectionTunnel#phase2_integrity_algorithms}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.10.0/docs/resources/gateway_connection_tunnel#phase2_integrity_algorithms GatewayConnectionTunnel#phase2_integrity_algorithms}
 
 ---
 
@@ -1290,7 +1290,7 @@ public readonly rekeyTime: number;
 
 IKE SA rekey time in seconds.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.9.1/docs/resources/gateway_connection_tunnel#rekey_time GatewayConnectionTunnel#rekey_time}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.10.0/docs/resources/gateway_connection_tunnel#rekey_time GatewayConnectionTunnel#rekey_time}
 
 ---
 

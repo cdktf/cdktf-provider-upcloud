@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/upcloudltd/upcloud/5.9.1/docs/resources/loadbalancer_dynamic_certificate_bundle
+// https://registry.terraform.io/providers/upcloudltd/upcloud/5.10.0/docs/resources/loadbalancer_dynamic_certificate_bundle
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,32 +15,25 @@ export interface LoadbalancerDynamicCertificateBundleConfig extends cdktf.Terraf
   /**
   * Certificate hostnames.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.9.1/docs/resources/loadbalancer_dynamic_certificate_bundle#hostnames LoadbalancerDynamicCertificateBundle#hostnames}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.10.0/docs/resources/loadbalancer_dynamic_certificate_bundle#hostnames LoadbalancerDynamicCertificateBundle#hostnames}
   */
   readonly hostnames: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.9.1/docs/resources/loadbalancer_dynamic_certificate_bundle#id LoadbalancerDynamicCertificateBundle#id}
-  *
-  * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
-  * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
-  */
-  readonly id?: string;
-  /**
   * Private key type (`rsa` / `ecdsa`).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.9.1/docs/resources/loadbalancer_dynamic_certificate_bundle#key_type LoadbalancerDynamicCertificateBundle#key_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.10.0/docs/resources/loadbalancer_dynamic_certificate_bundle#key_type LoadbalancerDynamicCertificateBundle#key_type}
   */
   readonly keyType: string;
   /**
-  * The name of the bundle must be unique within customer account.
+  * The name of the certificate bundle. Must be unique within customer account.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.9.1/docs/resources/loadbalancer_dynamic_certificate_bundle#name LoadbalancerDynamicCertificateBundle#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.10.0/docs/resources/loadbalancer_dynamic_certificate_bundle#name LoadbalancerDynamicCertificateBundle#name}
   */
   readonly name: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.9.1/docs/resources/loadbalancer_dynamic_certificate_bundle upcloud_loadbalancer_dynamic_certificate_bundle}
+* Represents a {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.10.0/docs/resources/loadbalancer_dynamic_certificate_bundle upcloud_loadbalancer_dynamic_certificate_bundle}
 */
 export class LoadbalancerDynamicCertificateBundle extends cdktf.TerraformResource {
 
@@ -56,7 +49,7 @@ export class LoadbalancerDynamicCertificateBundle extends cdktf.TerraformResourc
   * Generates CDKTF code for importing a LoadbalancerDynamicCertificateBundle resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the LoadbalancerDynamicCertificateBundle to import
-  * @param importFromId The id of the existing LoadbalancerDynamicCertificateBundle that should be imported. Refer to the {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.9.1/docs/resources/loadbalancer_dynamic_certificate_bundle#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing LoadbalancerDynamicCertificateBundle that should be imported. Refer to the {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.10.0/docs/resources/loadbalancer_dynamic_certificate_bundle#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the LoadbalancerDynamicCertificateBundle to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -68,7 +61,7 @@ export class LoadbalancerDynamicCertificateBundle extends cdktf.TerraformResourc
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.9.1/docs/resources/loadbalancer_dynamic_certificate_bundle upcloud_loadbalancer_dynamic_certificate_bundle} Resource
+  * Create a new {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.10.0/docs/resources/loadbalancer_dynamic_certificate_bundle upcloud_loadbalancer_dynamic_certificate_bundle} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -79,7 +72,7 @@ export class LoadbalancerDynamicCertificateBundle extends cdktf.TerraformResourc
       terraformResourceType: 'upcloud_loadbalancer_dynamic_certificate_bundle',
       terraformGeneratorMetadata: {
         providerName: 'upcloud',
-        providerVersion: '5.9.1',
+        providerVersion: '5.10.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,
@@ -91,7 +84,6 @@ export class LoadbalancerDynamicCertificateBundle extends cdktf.TerraformResourc
       forEach: config.forEach
     });
     this._hostnames = config.hostnames;
-    this._id = config.id;
     this._keyType = config.keyType;
     this._name = config.name;
   }
@@ -113,20 +105,9 @@ export class LoadbalancerDynamicCertificateBundle extends cdktf.TerraformResourc
     return this._hostnames;
   }
 
-  // id - computed: true, optional: true, required: false
-  private _id?: string; 
+  // id - computed: true, optional: false, required: false
   public get id() {
     return this.getStringAttribute('id');
-  }
-  public set id(value: string) {
-    this._id = value;
-  }
-  public resetId() {
-    this._id = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get idInput() {
-    return this._id;
   }
 
   // key_type - computed: false, optional: false, required: true
@@ -177,7 +158,6 @@ export class LoadbalancerDynamicCertificateBundle extends cdktf.TerraformResourc
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
       hostnames: cdktf.listMapper(cdktf.stringToTerraform, false)(this._hostnames),
-      id: cdktf.stringToTerraform(this._id),
       key_type: cdktf.stringToTerraform(this._keyType),
       name: cdktf.stringToTerraform(this._name),
     };
@@ -190,12 +170,6 @@ export class LoadbalancerDynamicCertificateBundle extends cdktf.TerraformResourc
         isBlock: false,
         type: "list",
         storageClassType: "stringList",
-      },
-      id: {
-        value: cdktf.stringToHclTerraform(this._id),
-        isBlock: false,
-        type: "simple",
-        storageClassType: "string",
       },
       key_type: {
         value: cdktf.stringToHclTerraform(this._keyType),

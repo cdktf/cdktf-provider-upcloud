@@ -4,7 +4,7 @@
 
 ### Storage <a name="Storage" id="@cdktf/provider-upcloud.storage.Storage"></a>
 
-Represents a {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.9.1/docs/resources/storage upcloud_storage}.
+Represents a {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.10.0/docs/resources/storage upcloud_storage}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-upcloud.storage.Storage.Initializer"></a>
 
@@ -81,8 +81,8 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-upcloud.storage.Storage.resetDeleteAutoresizeBackup">resetDeleteAutoresizeBackup</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.storage.Storage.resetEncrypt">resetEncrypt</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.storage.Storage.resetFilesystemAutoresize">resetFilesystemAutoresize</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-upcloud.storage.Storage.resetId">resetId</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.storage.Storage.resetImport">resetImport</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-upcloud.storage.Storage.resetLabels">resetLabels</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.storage.Storage.resetTier">resetTier</a></code> | *No description.* |
 
 ---
@@ -378,36 +378,36 @@ Full id of resource to move to, e.g. "aws_s3_bucket.example".
 ##### `putBackupRule` <a name="putBackupRule" id="@cdktf/provider-upcloud.storage.Storage.putBackupRule"></a>
 
 ```typescript
-public putBackupRule(value: StorageBackupRule): void
+public putBackupRule(value: IResolvable | StorageBackupRule[]): void
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-upcloud.storage.Storage.putBackupRule.parameter.value"></a>
 
-- *Type:* <a href="#@cdktf/provider-upcloud.storage.StorageBackupRule">StorageBackupRule</a>
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-upcloud.storage.StorageBackupRule">StorageBackupRule</a>[]
 
 ---
 
 ##### `putClone` <a name="putClone" id="@cdktf/provider-upcloud.storage.Storage.putClone"></a>
 
 ```typescript
-public putClone(value: StorageClone): void
+public putClone(value: IResolvable | StorageClone[]): void
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-upcloud.storage.Storage.putClone.parameter.value"></a>
 
-- *Type:* <a href="#@cdktf/provider-upcloud.storage.StorageClone">StorageClone</a>
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-upcloud.storage.StorageClone">StorageClone</a>[]
 
 ---
 
 ##### `putImport` <a name="putImport" id="@cdktf/provider-upcloud.storage.Storage.putImport"></a>
 
 ```typescript
-public putImport(value: StorageImport): void
+public putImport(value: IResolvable | StorageImport[]): void
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-upcloud.storage.Storage.putImport.parameter.value"></a>
 
-- *Type:* <a href="#@cdktf/provider-upcloud.storage.StorageImport">StorageImport</a>
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-upcloud.storage.StorageImport">StorageImport</a>[]
 
 ---
 
@@ -441,16 +441,16 @@ public resetEncrypt(): void
 public resetFilesystemAutoresize(): void
 ```
 
-##### `resetId` <a name="resetId" id="@cdktf/provider-upcloud.storage.Storage.resetId"></a>
-
-```typescript
-public resetId(): void
-```
-
 ##### `resetImport` <a name="resetImport" id="@cdktf/provider-upcloud.storage.Storage.resetImport"></a>
 
 ```typescript
 public resetImport(): void
+```
+
+##### `resetLabels` <a name="resetLabels" id="@cdktf/provider-upcloud.storage.Storage.resetLabels"></a>
+
+```typescript
+public resetLabels(): void
 ```
 
 ##### `resetTier` <a name="resetTier" id="@cdktf/provider-upcloud.storage.Storage.resetTier"></a>
@@ -562,7 +562,7 @@ The construct id used in the generated config for the Storage to import.
 
 The id of the existing Storage that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.9.1/docs/resources/storage#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.10.0/docs/resources/storage#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -592,16 +592,19 @@ Refer to the {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5
 | <code><a href="#@cdktf/provider-upcloud.storage.Storage.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.storage.Storage.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.storage.Storage.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-upcloud.storage.Storage.property.backupRule">backupRule</a></code> | <code><a href="#@cdktf/provider-upcloud.storage.StorageBackupRuleOutputReference">StorageBackupRuleOutputReference</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-upcloud.storage.Storage.property.clone">clone</a></code> | <code><a href="#@cdktf/provider-upcloud.storage.StorageCloneOutputReference">StorageCloneOutputReference</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-upcloud.storage.Storage.property.import">import</a></code> | <code><a href="#@cdktf/provider-upcloud.storage.StorageImportOutputReference">StorageImportOutputReference</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-upcloud.storage.Storage.property.backupRuleInput">backupRuleInput</a></code> | <code><a href="#@cdktf/provider-upcloud.storage.StorageBackupRule">StorageBackupRule</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-upcloud.storage.Storage.property.cloneInput">cloneInput</a></code> | <code><a href="#@cdktf/provider-upcloud.storage.StorageClone">StorageClone</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-upcloud.storage.Storage.property.backupRule">backupRule</a></code> | <code><a href="#@cdktf/provider-upcloud.storage.StorageBackupRuleList">StorageBackupRuleList</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-upcloud.storage.Storage.property.clone">clone</a></code> | <code><a href="#@cdktf/provider-upcloud.storage.StorageCloneList">StorageCloneList</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-upcloud.storage.Storage.property.id">id</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-upcloud.storage.Storage.property.import">import</a></code> | <code><a href="#@cdktf/provider-upcloud.storage.StorageImportList">StorageImportList</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-upcloud.storage.Storage.property.systemLabels">systemLabels</a></code> | <code>cdktf.StringMap</code> | *No description.* |
+| <code><a href="#@cdktf/provider-upcloud.storage.Storage.property.type">type</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-upcloud.storage.Storage.property.backupRuleInput">backupRuleInput</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-upcloud.storage.StorageBackupRule">StorageBackupRule</a>[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-upcloud.storage.Storage.property.cloneInput">cloneInput</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-upcloud.storage.StorageClone">StorageClone</a>[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.storage.Storage.property.deleteAutoresizeBackupInput">deleteAutoresizeBackupInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.storage.Storage.property.encryptInput">encryptInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.storage.Storage.property.filesystemAutoresizeInput">filesystemAutoresizeInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-upcloud.storage.Storage.property.idInput">idInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-upcloud.storage.Storage.property.importInput">importInput</a></code> | <code><a href="#@cdktf/provider-upcloud.storage.StorageImport">StorageImport</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-upcloud.storage.Storage.property.importInput">importInput</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-upcloud.storage.StorageImport">StorageImport</a>[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-upcloud.storage.Storage.property.labelsInput">labelsInput</a></code> | <code>{[ key: string ]: string}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.storage.Storage.property.sizeInput">sizeInput</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.storage.Storage.property.tierInput">tierInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.storage.Storage.property.titleInput">titleInput</a></code> | <code>string</code> | *No description.* |
@@ -609,7 +612,7 @@ Refer to the {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5
 | <code><a href="#@cdktf/provider-upcloud.storage.Storage.property.deleteAutoresizeBackup">deleteAutoresizeBackup</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.storage.Storage.property.encrypt">encrypt</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.storage.Storage.property.filesystemAutoresize">filesystemAutoresize</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-upcloud.storage.Storage.property.id">id</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-upcloud.storage.Storage.property.labels">labels</a></code> | <code>{[ key: string ]: string}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.storage.Storage.property.size">size</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.storage.Storage.property.tier">tier</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.storage.Storage.property.title">title</a></code> | <code>string</code> | *No description.* |
@@ -762,50 +765,80 @@ public readonly provisioners: FileProvisioner | LocalExecProvisioner | RemoteExe
 ##### `backupRule`<sup>Required</sup> <a name="backupRule" id="@cdktf/provider-upcloud.storage.Storage.property.backupRule"></a>
 
 ```typescript
-public readonly backupRule: StorageBackupRuleOutputReference;
+public readonly backupRule: StorageBackupRuleList;
 ```
 
-- *Type:* <a href="#@cdktf/provider-upcloud.storage.StorageBackupRuleOutputReference">StorageBackupRuleOutputReference</a>
+- *Type:* <a href="#@cdktf/provider-upcloud.storage.StorageBackupRuleList">StorageBackupRuleList</a>
 
 ---
 
 ##### `clone`<sup>Required</sup> <a name="clone" id="@cdktf/provider-upcloud.storage.Storage.property.clone"></a>
 
 ```typescript
-public readonly clone: StorageCloneOutputReference;
+public readonly clone: StorageCloneList;
 ```
 
-- *Type:* <a href="#@cdktf/provider-upcloud.storage.StorageCloneOutputReference">StorageCloneOutputReference</a>
+- *Type:* <a href="#@cdktf/provider-upcloud.storage.StorageCloneList">StorageCloneList</a>
+
+---
+
+##### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-upcloud.storage.Storage.property.id"></a>
+
+```typescript
+public readonly id: string;
+```
+
+- *Type:* string
 
 ---
 
 ##### `import`<sup>Required</sup> <a name="import" id="@cdktf/provider-upcloud.storage.Storage.property.import"></a>
 
 ```typescript
-public readonly import: StorageImportOutputReference;
+public readonly import: StorageImportList;
 ```
 
-- *Type:* <a href="#@cdktf/provider-upcloud.storage.StorageImportOutputReference">StorageImportOutputReference</a>
+- *Type:* <a href="#@cdktf/provider-upcloud.storage.StorageImportList">StorageImportList</a>
+
+---
+
+##### `systemLabels`<sup>Required</sup> <a name="systemLabels" id="@cdktf/provider-upcloud.storage.Storage.property.systemLabels"></a>
+
+```typescript
+public readonly systemLabels: StringMap;
+```
+
+- *Type:* cdktf.StringMap
+
+---
+
+##### `type`<sup>Required</sup> <a name="type" id="@cdktf/provider-upcloud.storage.Storage.property.type"></a>
+
+```typescript
+public readonly type: string;
+```
+
+- *Type:* string
 
 ---
 
 ##### `backupRuleInput`<sup>Optional</sup> <a name="backupRuleInput" id="@cdktf/provider-upcloud.storage.Storage.property.backupRuleInput"></a>
 
 ```typescript
-public readonly backupRuleInput: StorageBackupRule;
+public readonly backupRuleInput: IResolvable | StorageBackupRule[];
 ```
 
-- *Type:* <a href="#@cdktf/provider-upcloud.storage.StorageBackupRule">StorageBackupRule</a>
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-upcloud.storage.StorageBackupRule">StorageBackupRule</a>[]
 
 ---
 
 ##### `cloneInput`<sup>Optional</sup> <a name="cloneInput" id="@cdktf/provider-upcloud.storage.Storage.property.cloneInput"></a>
 
 ```typescript
-public readonly cloneInput: StorageClone;
+public readonly cloneInput: IResolvable | StorageClone[];
 ```
 
-- *Type:* <a href="#@cdktf/provider-upcloud.storage.StorageClone">StorageClone</a>
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-upcloud.storage.StorageClone">StorageClone</a>[]
 
 ---
 
@@ -839,23 +872,23 @@ public readonly filesystemAutoresizeInput: boolean | IResolvable;
 
 ---
 
-##### `idInput`<sup>Optional</sup> <a name="idInput" id="@cdktf/provider-upcloud.storage.Storage.property.idInput"></a>
-
-```typescript
-public readonly idInput: string;
-```
-
-- *Type:* string
-
----
-
 ##### `importInput`<sup>Optional</sup> <a name="importInput" id="@cdktf/provider-upcloud.storage.Storage.property.importInput"></a>
 
 ```typescript
-public readonly importInput: StorageImport;
+public readonly importInput: IResolvable | StorageImport[];
 ```
 
-- *Type:* <a href="#@cdktf/provider-upcloud.storage.StorageImport">StorageImport</a>
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-upcloud.storage.StorageImport">StorageImport</a>[]
+
+---
+
+##### `labelsInput`<sup>Optional</sup> <a name="labelsInput" id="@cdktf/provider-upcloud.storage.Storage.property.labelsInput"></a>
+
+```typescript
+public readonly labelsInput: {[ key: string ]: string};
+```
+
+- *Type:* {[ key: string ]: string}
 
 ---
 
@@ -929,13 +962,13 @@ public readonly filesystemAutoresize: boolean | IResolvable;
 
 ---
 
-##### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-upcloud.storage.Storage.property.id"></a>
+##### `labels`<sup>Required</sup> <a name="labels" id="@cdktf/provider-upcloud.storage.Storage.property.labels"></a>
 
 ```typescript
-public readonly id: string;
+public readonly labels: {[ key: string ]: string};
 ```
 
-- *Type:* string
+- *Type:* {[ key: string ]: string}
 
 ---
 
@@ -1029,7 +1062,7 @@ public readonly interval: string;
 
 The weekday when the backup is created.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.9.1/docs/resources/storage#interval Storage#interval}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.10.0/docs/resources/storage#interval Storage#interval}
 
 ---
 
@@ -1043,7 +1076,7 @@ public readonly retention: number;
 
 The number of days before a backup is automatically deleted.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.9.1/docs/resources/storage#retention Storage#retention}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.10.0/docs/resources/storage#retention Storage#retention}
 
 ---
 
@@ -1057,7 +1090,7 @@ public readonly time: string;
 
 The time of day when the backup is created.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.9.1/docs/resources/storage#time Storage#time}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.10.0/docs/resources/storage#time Storage#time}
 
 ---
 
@@ -1089,7 +1122,7 @@ public readonly id: string;
 
 The unique identifier of the storage/template to clone.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.9.1/docs/resources/storage#id Storage#id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.10.0/docs/resources/storage#id Storage#id}
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1118,16 +1151,16 @@ const storageConfig: storage.StorageConfig = { ... }
 | <code><a href="#@cdktf/provider-upcloud.storage.StorageConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.storage.StorageConfig.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.storage.StorageConfig.property.size">size</a></code> | <code>number</code> | The size of the storage in gigabytes. |
-| <code><a href="#@cdktf/provider-upcloud.storage.StorageConfig.property.title">title</a></code> | <code>string</code> | A short, informative description. |
-| <code><a href="#@cdktf/provider-upcloud.storage.StorageConfig.property.zone">zone</a></code> | <code>string</code> | The zone in which the storage will be created, e.g. `de-fra1`. You can list available zones with `upctl zone list`. |
-| <code><a href="#@cdktf/provider-upcloud.storage.StorageConfig.property.backupRule">backupRule</a></code> | <code><a href="#@cdktf/provider-upcloud.storage.StorageBackupRule">StorageBackupRule</a></code> | backup_rule block. |
-| <code><a href="#@cdktf/provider-upcloud.storage.StorageConfig.property.clone">clone</a></code> | <code><a href="#@cdktf/provider-upcloud.storage.StorageClone">StorageClone</a></code> | clone block. |
+| <code><a href="#@cdktf/provider-upcloud.storage.StorageConfig.property.title">title</a></code> | <code>string</code> | The title of the storage. |
+| <code><a href="#@cdktf/provider-upcloud.storage.StorageConfig.property.zone">zone</a></code> | <code>string</code> | The zone the storage is in, e.g. `de-fra1`. You can list available zones with `upctl zone list`. |
+| <code><a href="#@cdktf/provider-upcloud.storage.StorageConfig.property.backupRule">backupRule</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-upcloud.storage.StorageBackupRule">StorageBackupRule</a>[]</code> | backup_rule block. |
+| <code><a href="#@cdktf/provider-upcloud.storage.StorageConfig.property.clone">clone</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-upcloud.storage.StorageClone">StorageClone</a>[]</code> | clone block. |
 | <code><a href="#@cdktf/provider-upcloud.storage.StorageConfig.property.deleteAutoresizeBackup">deleteAutoresizeBackup</a></code> | <code>boolean \| cdktf.IResolvable</code> | If set to true, the backup taken before the partition and filesystem resize attempt will be deleted immediately after success. |
 | <code><a href="#@cdktf/provider-upcloud.storage.StorageConfig.property.encrypt">encrypt</a></code> | <code>boolean \| cdktf.IResolvable</code> | Sets if the storage is encrypted at rest. |
 | <code><a href="#@cdktf/provider-upcloud.storage.StorageConfig.property.filesystemAutoresize">filesystemAutoresize</a></code> | <code>boolean \| cdktf.IResolvable</code> | If set to true, provider will attempt to resize partition and filesystem when the size of the storage changes. |
-| <code><a href="#@cdktf/provider-upcloud.storage.StorageConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.9.1/docs/resources/storage#id Storage#id}. |
-| <code><a href="#@cdktf/provider-upcloud.storage.StorageConfig.property.import">import</a></code> | <code><a href="#@cdktf/provider-upcloud.storage.StorageImport">StorageImport</a></code> | import block. |
-| <code><a href="#@cdktf/provider-upcloud.storage.StorageConfig.property.tier">tier</a></code> | <code>string</code> | The storage tier to use. |
+| <code><a href="#@cdktf/provider-upcloud.storage.StorageConfig.property.import">import</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-upcloud.storage.StorageImport">StorageImport</a>[]</code> | import block. |
+| <code><a href="#@cdktf/provider-upcloud.storage.StorageConfig.property.labels">labels</a></code> | <code>{[ key: string ]: string}</code> | User defined key-value pairs to classify the storage. |
+| <code><a href="#@cdktf/provider-upcloud.storage.StorageConfig.property.tier">tier</a></code> | <code>string</code> | The tier of the storage. |
 
 ---
 
@@ -1211,7 +1244,7 @@ public readonly size: number;
 
 The size of the storage in gigabytes.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.9.1/docs/resources/storage#size Storage#size}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.10.0/docs/resources/storage#size Storage#size}
 
 ---
 
@@ -1223,9 +1256,9 @@ public readonly title: string;
 
 - *Type:* string
 
-A short, informative description.
+The title of the storage.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.9.1/docs/resources/storage#title Storage#title}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.10.0/docs/resources/storage#title Storage#title}
 
 ---
 
@@ -1237,37 +1270,37 @@ public readonly zone: string;
 
 - *Type:* string
 
-The zone in which the storage will be created, e.g. `de-fra1`. You can list available zones with `upctl zone list`.
+The zone the storage is in, e.g. `de-fra1`. You can list available zones with `upctl zone list`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.9.1/docs/resources/storage#zone Storage#zone}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.10.0/docs/resources/storage#zone Storage#zone}
 
 ---
 
 ##### `backupRule`<sup>Optional</sup> <a name="backupRule" id="@cdktf/provider-upcloud.storage.StorageConfig.property.backupRule"></a>
 
 ```typescript
-public readonly backupRule: StorageBackupRule;
+public readonly backupRule: IResolvable | StorageBackupRule[];
 ```
 
-- *Type:* <a href="#@cdktf/provider-upcloud.storage.StorageBackupRule">StorageBackupRule</a>
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-upcloud.storage.StorageBackupRule">StorageBackupRule</a>[]
 
 backup_rule block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.9.1/docs/resources/storage#backup_rule Storage#backup_rule}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.10.0/docs/resources/storage#backup_rule Storage#backup_rule}
 
 ---
 
 ##### `clone`<sup>Optional</sup> <a name="clone" id="@cdktf/provider-upcloud.storage.StorageConfig.property.clone"></a>
 
 ```typescript
-public readonly clone: StorageClone;
+public readonly clone: IResolvable | StorageClone[];
 ```
 
-- *Type:* <a href="#@cdktf/provider-upcloud.storage.StorageClone">StorageClone</a>
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-upcloud.storage.StorageClone">StorageClone</a>[]
 
 clone block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.9.1/docs/resources/storage#clone Storage#clone}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.10.0/docs/resources/storage#clone Storage#clone}
 
 ---
 
@@ -1281,7 +1314,7 @@ public readonly deleteAutoresizeBackup: boolean | IResolvable;
 
 If set to true, the backup taken before the partition and filesystem resize attempt will be deleted immediately after success.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.9.1/docs/resources/storage#delete_autoresize_backup Storage#delete_autoresize_backup}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.10.0/docs/resources/storage#delete_autoresize_backup Storage#delete_autoresize_backup}
 
 ---
 
@@ -1295,7 +1328,7 @@ public readonly encrypt: boolean | IResolvable;
 
 Sets if the storage is encrypted at rest.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.9.1/docs/resources/storage#encrypt Storage#encrypt}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.10.0/docs/resources/storage#encrypt Storage#encrypt}
 
 ---
 
@@ -1309,40 +1342,38 @@ public readonly filesystemAutoresize: boolean | IResolvable;
 
 If set to true, provider will attempt to resize partition and filesystem when the size of the storage changes.
 
-Please note that before the resize attempt is made, backup of the storage will be taken. If the resize attempt fails, the backup will be used
-				to restore the storage and then deleted. If the resize attempt succeeds, backup will be kept (unless delete_autoresize_backup option is set to true).
+Please note that before the resize attempt is made, backup of the storage will be taken. If the resize attempt fails, the backup will be used to restore the storage and then deleted. If the resize attempt succeeds, backup will be kept (unless `delete_autoresize_backup` option is set to true).
 				Taking and keeping backups incure costs.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.9.1/docs/resources/storage#filesystem_autoresize Storage#filesystem_autoresize}
-
----
-
-##### `id`<sup>Optional</sup> <a name="id" id="@cdktf/provider-upcloud.storage.StorageConfig.property.id"></a>
-
-```typescript
-public readonly id: string;
-```
-
-- *Type:* string
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.9.1/docs/resources/storage#id Storage#id}.
-
-Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
-If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.10.0/docs/resources/storage#filesystem_autoresize Storage#filesystem_autoresize}
 
 ---
 
 ##### `import`<sup>Optional</sup> <a name="import" id="@cdktf/provider-upcloud.storage.StorageConfig.property.import"></a>
 
 ```typescript
-public readonly import: StorageImport;
+public readonly import: IResolvable | StorageImport[];
 ```
 
-- *Type:* <a href="#@cdktf/provider-upcloud.storage.StorageImport">StorageImport</a>
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-upcloud.storage.StorageImport">StorageImport</a>[]
 
 import block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.9.1/docs/resources/storage#import Storage#import}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.10.0/docs/resources/storage#import Storage#import}
+
+---
+
+##### `labels`<sup>Optional</sup> <a name="labels" id="@cdktf/provider-upcloud.storage.StorageConfig.property.labels"></a>
+
+```typescript
+public readonly labels: {[ key: string ]: string};
+```
+
+- *Type:* {[ key: string ]: string}
+
+User defined key-value pairs to classify the storage.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.10.0/docs/resources/storage#labels Storage#labels}
 
 ---
 
@@ -1354,9 +1385,9 @@ public readonly tier: string;
 
 - *Type:* string
 
-The storage tier to use.
+The tier of the storage.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.9.1/docs/resources/storage#tier Storage#tier}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.10.0/docs/resources/storage#tier Storage#tier}
 
 ---
 
@@ -1376,7 +1407,7 @@ const storageImport: storage.StorageImport = { ... }
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-upcloud.storage.StorageImport.property.source">source</a></code> | <code>string</code> | The mode of the import task. One of `http_import` or `direct_upload`. |
 | <code><a href="#@cdktf/provider-upcloud.storage.StorageImport.property.sourceLocation">sourceLocation</a></code> | <code>string</code> | The location of the file to import. For `http_import` an accessible URL for `direct_upload` a local file. |
-| <code><a href="#@cdktf/provider-upcloud.storage.StorageImport.property.sourceHash">sourceHash</a></code> | <code>string</code> | For `direct_upload`; an optional hash of the file to upload. |
+| <code><a href="#@cdktf/provider-upcloud.storage.StorageImport.property.sourceHash">sourceHash</a></code> | <code>string</code> | SHA256 hash of the source content. |
 
 ---
 
@@ -1390,7 +1421,7 @@ public readonly source: string;
 
 The mode of the import task. One of `http_import` or `direct_upload`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.9.1/docs/resources/storage#source Storage#source}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.10.0/docs/resources/storage#source Storage#source}
 
 ---
 
@@ -1404,7 +1435,7 @@ public readonly sourceLocation: string;
 
 The location of the file to import. For `http_import` an accessible URL for `direct_upload` a local file.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.9.1/docs/resources/storage#source_location Storage#source_location}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.10.0/docs/resources/storage#source_location Storage#source_location}
 
 ---
 
@@ -1416,13 +1447,175 @@ public readonly sourceHash: string;
 
 - *Type:* string
 
-For `direct_upload`; an optional hash of the file to upload.
+SHA256 hash of the source content.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.9.1/docs/resources/storage#source_hash Storage#source_hash}
+This hash is used to verify the integrity of the imported data by comparing it to `sha256sum` after the import has completed. Possible filename is automatically removed from the hash before comparison.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.10.0/docs/resources/storage#source_hash Storage#source_hash}
 
 ---
 
 ## Classes <a name="Classes" id="Classes"></a>
+
+### StorageBackupRuleList <a name="StorageBackupRuleList" id="@cdktf/provider-upcloud.storage.StorageBackupRuleList"></a>
+
+#### Initializers <a name="Initializers" id="@cdktf/provider-upcloud.storage.StorageBackupRuleList.Initializer"></a>
+
+```typescript
+import { storage } from '@cdktf/provider-upcloud'
+
+new storage.StorageBackupRuleList(terraformResource: IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-upcloud.storage.StorageBackupRuleList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktf/provider-upcloud.storage.StorageBackupRuleList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktf/provider-upcloud.storage.StorageBackupRuleList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktf/provider-upcloud.storage.StorageBackupRuleList.Initializer.parameter.terraformResource"></a>
+
+- *Type:* cdktf.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-upcloud.storage.StorageBackupRuleList.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `wrapsSet`<sup>Required</sup> <a name="wrapsSet" id="@cdktf/provider-upcloud.storage.StorageBackupRuleList.Initializer.parameter.wrapsSet"></a>
+
+- *Type:* boolean
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktf/provider-upcloud.storage.StorageBackupRuleList.allWithMapKey">allWithMapKey</a></code> | Creating an iterator for this complex list. |
+| <code><a href="#@cdktf/provider-upcloud.storage.StorageBackupRuleList.computeFqn">computeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-upcloud.storage.StorageBackupRuleList.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktf/provider-upcloud.storage.StorageBackupRuleList.toString">toString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktf/provider-upcloud.storage.StorageBackupRuleList.get">get</a></code> | *No description.* |
+
+---
+
+##### `allWithMapKey` <a name="allWithMapKey" id="@cdktf/provider-upcloud.storage.StorageBackupRuleList.allWithMapKey"></a>
+
+```typescript
+public allWithMapKey(mapKeyAttributeName: string): DynamicListTerraformIterator
+```
+
+Creating an iterator for this complex list.
+
+The list will be converted into a map with the mapKeyAttributeName as the key.
+
+###### `mapKeyAttributeName`<sup>Required</sup> <a name="mapKeyAttributeName" id="@cdktf/provider-upcloud.storage.StorageBackupRuleList.allWithMapKey.parameter.mapKeyAttributeName"></a>
+
+- *Type:* string
+
+---
+
+##### `computeFqn` <a name="computeFqn" id="@cdktf/provider-upcloud.storage.StorageBackupRuleList.computeFqn"></a>
+
+```typescript
+public computeFqn(): string
+```
+
+##### `resolve` <a name="resolve" id="@cdktf/provider-upcloud.storage.StorageBackupRuleList.resolve"></a>
+
+```typescript
+public resolve(_context: IResolveContext): any
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktf/provider-upcloud.storage.StorageBackupRuleList.resolve.parameter._context"></a>
+
+- *Type:* cdktf.IResolveContext
+
+---
+
+##### `toString` <a name="toString" id="@cdktf/provider-upcloud.storage.StorageBackupRuleList.toString"></a>
+
+```typescript
+public toString(): string
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `get` <a name="get" id="@cdktf/provider-upcloud.storage.StorageBackupRuleList.get"></a>
+
+```typescript
+public get(index: number): StorageBackupRuleOutputReference
+```
+
+###### `index`<sup>Required</sup> <a name="index" id="@cdktf/provider-upcloud.storage.StorageBackupRuleList.get.parameter.index"></a>
+
+- *Type:* number
+
+the index of the item to return.
+
+---
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-upcloud.storage.StorageBackupRuleList.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktf/provider-upcloud.storage.StorageBackupRuleList.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-upcloud.storage.StorageBackupRuleList.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-upcloud.storage.StorageBackupRule">StorageBackupRule</a>[]</code> | *No description.* |
+
+---
+
+##### `creationStack`<sup>Required</sup> <a name="creationStack" id="@cdktf/provider-upcloud.storage.StorageBackupRuleList.property.creationStack"></a>
+
+```typescript
+public readonly creationStack: string[];
+```
+
+- *Type:* string[]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktf/provider-upcloud.storage.StorageBackupRuleList.property.fqn"></a>
+
+```typescript
+public readonly fqn: string;
+```
+
+- *Type:* string
+
+---
+
+##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-upcloud.storage.StorageBackupRuleList.property.internalValue"></a>
+
+```typescript
+public readonly internalValue: IResolvable | StorageBackupRule[];
+```
+
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-upcloud.storage.StorageBackupRule">StorageBackupRule</a>[]
+
+---
+
 
 ### StorageBackupRuleOutputReference <a name="StorageBackupRuleOutputReference" id="@cdktf/provider-upcloud.storage.StorageBackupRuleOutputReference"></a>
 
@@ -1431,13 +1624,15 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upclo
 ```typescript
 import { storage } from '@cdktf/provider-upcloud'
 
-new storage.StorageBackupRuleOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
+new storage.StorageBackupRuleOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean)
 ```
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-upcloud.storage.StorageBackupRuleOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktf/provider-upcloud.storage.StorageBackupRuleOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktf/provider-upcloud.storage.StorageBackupRuleOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>number</code> | the index of this item in the list. |
+| <code><a href="#@cdktf/provider-upcloud.storage.StorageBackupRuleOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
 ---
 
@@ -1454,6 +1649,22 @@ The parent resource.
 - *Type:* string
 
 The attribute on the parent resource this class is referencing.
+
+---
+
+##### `complexObjectIndex`<sup>Required</sup> <a name="complexObjectIndex" id="@cdktf/provider-upcloud.storage.StorageBackupRuleOutputReference.Initializer.parameter.complexObjectIndex"></a>
+
+- *Type:* number
+
+the index of this item in the list.
+
+---
+
+##### `complexObjectIsFromSet`<sup>Required</sup> <a name="complexObjectIsFromSet" id="@cdktf/provider-upcloud.storage.StorageBackupRuleOutputReference.Initializer.parameter.complexObjectIsFromSet"></a>
+
+- *Type:* boolean
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
 
 ---
 
@@ -1640,7 +1851,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-upcloud.storage.StorageBackupRuleOutputReference.property.interval">interval</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.storage.StorageBackupRuleOutputReference.property.retention">retention</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.storage.StorageBackupRuleOutputReference.property.time">time</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-upcloud.storage.StorageBackupRuleOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktf/provider-upcloud.storage.StorageBackupRule">StorageBackupRule</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-upcloud.storage.StorageBackupRuleOutputReference.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-upcloud.storage.StorageBackupRule">StorageBackupRule</a></code> | *No description.* |
 
 ---
 
@@ -1731,10 +1942,170 @@ public readonly time: string;
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-upcloud.storage.StorageBackupRuleOutputReference.property.internalValue"></a>
 
 ```typescript
-public readonly internalValue: StorageBackupRule;
+public readonly internalValue: IResolvable | StorageBackupRule;
 ```
 
-- *Type:* <a href="#@cdktf/provider-upcloud.storage.StorageBackupRule">StorageBackupRule</a>
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-upcloud.storage.StorageBackupRule">StorageBackupRule</a>
+
+---
+
+
+### StorageCloneList <a name="StorageCloneList" id="@cdktf/provider-upcloud.storage.StorageCloneList"></a>
+
+#### Initializers <a name="Initializers" id="@cdktf/provider-upcloud.storage.StorageCloneList.Initializer"></a>
+
+```typescript
+import { storage } from '@cdktf/provider-upcloud'
+
+new storage.StorageCloneList(terraformResource: IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-upcloud.storage.StorageCloneList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktf/provider-upcloud.storage.StorageCloneList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktf/provider-upcloud.storage.StorageCloneList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktf/provider-upcloud.storage.StorageCloneList.Initializer.parameter.terraformResource"></a>
+
+- *Type:* cdktf.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-upcloud.storage.StorageCloneList.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `wrapsSet`<sup>Required</sup> <a name="wrapsSet" id="@cdktf/provider-upcloud.storage.StorageCloneList.Initializer.parameter.wrapsSet"></a>
+
+- *Type:* boolean
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktf/provider-upcloud.storage.StorageCloneList.allWithMapKey">allWithMapKey</a></code> | Creating an iterator for this complex list. |
+| <code><a href="#@cdktf/provider-upcloud.storage.StorageCloneList.computeFqn">computeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-upcloud.storage.StorageCloneList.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktf/provider-upcloud.storage.StorageCloneList.toString">toString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktf/provider-upcloud.storage.StorageCloneList.get">get</a></code> | *No description.* |
+
+---
+
+##### `allWithMapKey` <a name="allWithMapKey" id="@cdktf/provider-upcloud.storage.StorageCloneList.allWithMapKey"></a>
+
+```typescript
+public allWithMapKey(mapKeyAttributeName: string): DynamicListTerraformIterator
+```
+
+Creating an iterator for this complex list.
+
+The list will be converted into a map with the mapKeyAttributeName as the key.
+
+###### `mapKeyAttributeName`<sup>Required</sup> <a name="mapKeyAttributeName" id="@cdktf/provider-upcloud.storage.StorageCloneList.allWithMapKey.parameter.mapKeyAttributeName"></a>
+
+- *Type:* string
+
+---
+
+##### `computeFqn` <a name="computeFqn" id="@cdktf/provider-upcloud.storage.StorageCloneList.computeFqn"></a>
+
+```typescript
+public computeFqn(): string
+```
+
+##### `resolve` <a name="resolve" id="@cdktf/provider-upcloud.storage.StorageCloneList.resolve"></a>
+
+```typescript
+public resolve(_context: IResolveContext): any
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktf/provider-upcloud.storage.StorageCloneList.resolve.parameter._context"></a>
+
+- *Type:* cdktf.IResolveContext
+
+---
+
+##### `toString` <a name="toString" id="@cdktf/provider-upcloud.storage.StorageCloneList.toString"></a>
+
+```typescript
+public toString(): string
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `get` <a name="get" id="@cdktf/provider-upcloud.storage.StorageCloneList.get"></a>
+
+```typescript
+public get(index: number): StorageCloneOutputReference
+```
+
+###### `index`<sup>Required</sup> <a name="index" id="@cdktf/provider-upcloud.storage.StorageCloneList.get.parameter.index"></a>
+
+- *Type:* number
+
+the index of the item to return.
+
+---
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-upcloud.storage.StorageCloneList.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktf/provider-upcloud.storage.StorageCloneList.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-upcloud.storage.StorageCloneList.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-upcloud.storage.StorageClone">StorageClone</a>[]</code> | *No description.* |
+
+---
+
+##### `creationStack`<sup>Required</sup> <a name="creationStack" id="@cdktf/provider-upcloud.storage.StorageCloneList.property.creationStack"></a>
+
+```typescript
+public readonly creationStack: string[];
+```
+
+- *Type:* string[]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktf/provider-upcloud.storage.StorageCloneList.property.fqn"></a>
+
+```typescript
+public readonly fqn: string;
+```
+
+- *Type:* string
+
+---
+
+##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-upcloud.storage.StorageCloneList.property.internalValue"></a>
+
+```typescript
+public readonly internalValue: IResolvable | StorageClone[];
+```
+
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-upcloud.storage.StorageClone">StorageClone</a>[]
 
 ---
 
@@ -1746,13 +2117,15 @@ public readonly internalValue: StorageBackupRule;
 ```typescript
 import { storage } from '@cdktf/provider-upcloud'
 
-new storage.StorageCloneOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
+new storage.StorageCloneOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean)
 ```
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-upcloud.storage.StorageCloneOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktf/provider-upcloud.storage.StorageCloneOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktf/provider-upcloud.storage.StorageCloneOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>number</code> | the index of this item in the list. |
+| <code><a href="#@cdktf/provider-upcloud.storage.StorageCloneOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
 ---
 
@@ -1769,6 +2142,22 @@ The parent resource.
 - *Type:* string
 
 The attribute on the parent resource this class is referencing.
+
+---
+
+##### `complexObjectIndex`<sup>Required</sup> <a name="complexObjectIndex" id="@cdktf/provider-upcloud.storage.StorageCloneOutputReference.Initializer.parameter.complexObjectIndex"></a>
+
+- *Type:* number
+
+the index of this item in the list.
+
+---
+
+##### `complexObjectIsFromSet`<sup>Required</sup> <a name="complexObjectIsFromSet" id="@cdktf/provider-upcloud.storage.StorageCloneOutputReference.Initializer.parameter.complexObjectIsFromSet"></a>
+
+- *Type:* boolean
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
 
 ---
 
@@ -1951,7 +2340,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-upcloud.storage.StorageCloneOutputReference.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.storage.StorageCloneOutputReference.property.idInput">idInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.storage.StorageCloneOutputReference.property.id">id</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-upcloud.storage.StorageCloneOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktf/provider-upcloud.storage.StorageClone">StorageClone</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-upcloud.storage.StorageCloneOutputReference.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-upcloud.storage.StorageClone">StorageClone</a></code> | *No description.* |
 
 ---
 
@@ -2002,10 +2391,170 @@ public readonly id: string;
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-upcloud.storage.StorageCloneOutputReference.property.internalValue"></a>
 
 ```typescript
-public readonly internalValue: StorageClone;
+public readonly internalValue: IResolvable | StorageClone;
 ```
 
-- *Type:* <a href="#@cdktf/provider-upcloud.storage.StorageClone">StorageClone</a>
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-upcloud.storage.StorageClone">StorageClone</a>
+
+---
+
+
+### StorageImportList <a name="StorageImportList" id="@cdktf/provider-upcloud.storage.StorageImportList"></a>
+
+#### Initializers <a name="Initializers" id="@cdktf/provider-upcloud.storage.StorageImportList.Initializer"></a>
+
+```typescript
+import { storage } from '@cdktf/provider-upcloud'
+
+new storage.StorageImportList(terraformResource: IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-upcloud.storage.StorageImportList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktf/provider-upcloud.storage.StorageImportList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktf/provider-upcloud.storage.StorageImportList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktf/provider-upcloud.storage.StorageImportList.Initializer.parameter.terraformResource"></a>
+
+- *Type:* cdktf.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-upcloud.storage.StorageImportList.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `wrapsSet`<sup>Required</sup> <a name="wrapsSet" id="@cdktf/provider-upcloud.storage.StorageImportList.Initializer.parameter.wrapsSet"></a>
+
+- *Type:* boolean
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktf/provider-upcloud.storage.StorageImportList.allWithMapKey">allWithMapKey</a></code> | Creating an iterator for this complex list. |
+| <code><a href="#@cdktf/provider-upcloud.storage.StorageImportList.computeFqn">computeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-upcloud.storage.StorageImportList.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktf/provider-upcloud.storage.StorageImportList.toString">toString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktf/provider-upcloud.storage.StorageImportList.get">get</a></code> | *No description.* |
+
+---
+
+##### `allWithMapKey` <a name="allWithMapKey" id="@cdktf/provider-upcloud.storage.StorageImportList.allWithMapKey"></a>
+
+```typescript
+public allWithMapKey(mapKeyAttributeName: string): DynamicListTerraformIterator
+```
+
+Creating an iterator for this complex list.
+
+The list will be converted into a map with the mapKeyAttributeName as the key.
+
+###### `mapKeyAttributeName`<sup>Required</sup> <a name="mapKeyAttributeName" id="@cdktf/provider-upcloud.storage.StorageImportList.allWithMapKey.parameter.mapKeyAttributeName"></a>
+
+- *Type:* string
+
+---
+
+##### `computeFqn` <a name="computeFqn" id="@cdktf/provider-upcloud.storage.StorageImportList.computeFqn"></a>
+
+```typescript
+public computeFqn(): string
+```
+
+##### `resolve` <a name="resolve" id="@cdktf/provider-upcloud.storage.StorageImportList.resolve"></a>
+
+```typescript
+public resolve(_context: IResolveContext): any
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktf/provider-upcloud.storage.StorageImportList.resolve.parameter._context"></a>
+
+- *Type:* cdktf.IResolveContext
+
+---
+
+##### `toString` <a name="toString" id="@cdktf/provider-upcloud.storage.StorageImportList.toString"></a>
+
+```typescript
+public toString(): string
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `get` <a name="get" id="@cdktf/provider-upcloud.storage.StorageImportList.get"></a>
+
+```typescript
+public get(index: number): StorageImportOutputReference
+```
+
+###### `index`<sup>Required</sup> <a name="index" id="@cdktf/provider-upcloud.storage.StorageImportList.get.parameter.index"></a>
+
+- *Type:* number
+
+the index of the item to return.
+
+---
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-upcloud.storage.StorageImportList.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktf/provider-upcloud.storage.StorageImportList.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-upcloud.storage.StorageImportList.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-upcloud.storage.StorageImport">StorageImport</a>[]</code> | *No description.* |
+
+---
+
+##### `creationStack`<sup>Required</sup> <a name="creationStack" id="@cdktf/provider-upcloud.storage.StorageImportList.property.creationStack"></a>
+
+```typescript
+public readonly creationStack: string[];
+```
+
+- *Type:* string[]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktf/provider-upcloud.storage.StorageImportList.property.fqn"></a>
+
+```typescript
+public readonly fqn: string;
+```
+
+- *Type:* string
+
+---
+
+##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-upcloud.storage.StorageImportList.property.internalValue"></a>
+
+```typescript
+public readonly internalValue: IResolvable | StorageImport[];
+```
+
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-upcloud.storage.StorageImport">StorageImport</a>[]
 
 ---
 
@@ -2017,13 +2566,15 @@ public readonly internalValue: StorageClone;
 ```typescript
 import { storage } from '@cdktf/provider-upcloud'
 
-new storage.StorageImportOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
+new storage.StorageImportOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean)
 ```
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-upcloud.storage.StorageImportOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktf/provider-upcloud.storage.StorageImportOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktf/provider-upcloud.storage.StorageImportOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>number</code> | the index of this item in the list. |
+| <code><a href="#@cdktf/provider-upcloud.storage.StorageImportOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
 ---
 
@@ -2040,6 +2591,22 @@ The parent resource.
 - *Type:* string
 
 The attribute on the parent resource this class is referencing.
+
+---
+
+##### `complexObjectIndex`<sup>Required</sup> <a name="complexObjectIndex" id="@cdktf/provider-upcloud.storage.StorageImportOutputReference.Initializer.parameter.complexObjectIndex"></a>
+
+- *Type:* number
+
+the index of this item in the list.
+
+---
+
+##### `complexObjectIsFromSet`<sup>Required</sup> <a name="complexObjectIsFromSet" id="@cdktf/provider-upcloud.storage.StorageImportOutputReference.Initializer.parameter.complexObjectIsFromSet"></a>
+
+- *Type:* boolean
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
 
 ---
 
@@ -2235,7 +2802,7 @@ public resetSourceHash(): void
 | <code><a href="#@cdktf/provider-upcloud.storage.StorageImportOutputReference.property.source">source</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.storage.StorageImportOutputReference.property.sourceHash">sourceHash</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.storage.StorageImportOutputReference.property.sourceLocation">sourceLocation</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-upcloud.storage.StorageImportOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktf/provider-upcloud.storage.StorageImport">StorageImport</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-upcloud.storage.StorageImportOutputReference.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-upcloud.storage.StorageImport">StorageImport</a></code> | *No description.* |
 
 ---
 
@@ -2346,10 +2913,10 @@ public readonly sourceLocation: string;
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-upcloud.storage.StorageImportOutputReference.property.internalValue"></a>
 
 ```typescript
-public readonly internalValue: StorageImport;
+public readonly internalValue: IResolvable | StorageImport;
 ```
 
-- *Type:* <a href="#@cdktf/provider-upcloud.storage.StorageImport">StorageImport</a>
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-upcloud.storage.StorageImport">StorageImport</a>
 
 ---
 

@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/upcloudltd/upcloud/5.9.1/docs/resources/loadbalancer_manual_certificate_bundle
+// https://registry.terraform.io/providers/upcloudltd/upcloud/5.10.0/docs/resources/loadbalancer_manual_certificate_bundle
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,40 +13,33 @@ import * as cdktf from 'cdktf';
 
 export interface LoadbalancerManualCertificateBundleConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Certificate within base64 string must be in PEM format.
+  * Certificate as base64 encoded string. Must be in PEM format.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.9.1/docs/resources/loadbalancer_manual_certificate_bundle#certificate LoadbalancerManualCertificateBundle#certificate}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.10.0/docs/resources/loadbalancer_manual_certificate_bundle#certificate LoadbalancerManualCertificateBundle#certificate}
   */
   readonly certificate: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.9.1/docs/resources/loadbalancer_manual_certificate_bundle#id LoadbalancerManualCertificateBundle#id}
+  * Intermediate certificates as base64 encoded string. Must be in PEM format.
   *
-  * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
-  * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
-  */
-  readonly id?: string;
-  /**
-  * Intermediate certificates within base64 string must be in PEM format.
-  *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.9.1/docs/resources/loadbalancer_manual_certificate_bundle#intermediates LoadbalancerManualCertificateBundle#intermediates}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.10.0/docs/resources/loadbalancer_manual_certificate_bundle#intermediates LoadbalancerManualCertificateBundle#intermediates}
   */
   readonly intermediates?: string;
   /**
-  * The name of the bundle must be unique within customer account.
+  * The name of the certificate bundle. Must be unique within customer account.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.9.1/docs/resources/loadbalancer_manual_certificate_bundle#name LoadbalancerManualCertificateBundle#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.10.0/docs/resources/loadbalancer_manual_certificate_bundle#name LoadbalancerManualCertificateBundle#name}
   */
   readonly name: string;
   /**
-  * Private key within base64 string must be in PEM format.
+  * Private key as base64 encoded string. Must be in PEM format.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.9.1/docs/resources/loadbalancer_manual_certificate_bundle#private_key LoadbalancerManualCertificateBundle#private_key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.10.0/docs/resources/loadbalancer_manual_certificate_bundle#private_key LoadbalancerManualCertificateBundle#private_key}
   */
   readonly privateKey: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.9.1/docs/resources/loadbalancer_manual_certificate_bundle upcloud_loadbalancer_manual_certificate_bundle}
+* Represents a {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.10.0/docs/resources/loadbalancer_manual_certificate_bundle upcloud_loadbalancer_manual_certificate_bundle}
 */
 export class LoadbalancerManualCertificateBundle extends cdktf.TerraformResource {
 
@@ -62,7 +55,7 @@ export class LoadbalancerManualCertificateBundle extends cdktf.TerraformResource
   * Generates CDKTF code for importing a LoadbalancerManualCertificateBundle resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the LoadbalancerManualCertificateBundle to import
-  * @param importFromId The id of the existing LoadbalancerManualCertificateBundle that should be imported. Refer to the {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.9.1/docs/resources/loadbalancer_manual_certificate_bundle#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing LoadbalancerManualCertificateBundle that should be imported. Refer to the {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.10.0/docs/resources/loadbalancer_manual_certificate_bundle#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the LoadbalancerManualCertificateBundle to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -74,7 +67,7 @@ export class LoadbalancerManualCertificateBundle extends cdktf.TerraformResource
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.9.1/docs/resources/loadbalancer_manual_certificate_bundle upcloud_loadbalancer_manual_certificate_bundle} Resource
+  * Create a new {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.10.0/docs/resources/loadbalancer_manual_certificate_bundle upcloud_loadbalancer_manual_certificate_bundle} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -85,7 +78,7 @@ export class LoadbalancerManualCertificateBundle extends cdktf.TerraformResource
       terraformResourceType: 'upcloud_loadbalancer_manual_certificate_bundle',
       terraformGeneratorMetadata: {
         providerName: 'upcloud',
-        providerVersion: '5.9.1',
+        providerVersion: '5.10.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,
@@ -97,7 +90,6 @@ export class LoadbalancerManualCertificateBundle extends cdktf.TerraformResource
       forEach: config.forEach
     });
     this._certificate = config.certificate;
-    this._id = config.id;
     this._intermediates = config.intermediates;
     this._name = config.name;
     this._privateKey = config.privateKey;
@@ -120,23 +112,12 @@ export class LoadbalancerManualCertificateBundle extends cdktf.TerraformResource
     return this._certificate;
   }
 
-  // id - computed: true, optional: true, required: false
-  private _id?: string; 
+  // id - computed: true, optional: false, required: false
   public get id() {
     return this.getStringAttribute('id');
   }
-  public set id(value: string) {
-    this._id = value;
-  }
-  public resetId() {
-    this._id = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get idInput() {
-    return this._id;
-  }
 
-  // intermediates - computed: false, optional: true, required: false
+  // intermediates - computed: true, optional: true, required: false
   private _intermediates?: string; 
   public get intermediates() {
     return this.getStringAttribute('intermediates');
@@ -200,7 +181,6 @@ export class LoadbalancerManualCertificateBundle extends cdktf.TerraformResource
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
       certificate: cdktf.stringToTerraform(this._certificate),
-      id: cdktf.stringToTerraform(this._id),
       intermediates: cdktf.stringToTerraform(this._intermediates),
       name: cdktf.stringToTerraform(this._name),
       private_key: cdktf.stringToTerraform(this._privateKey),
@@ -211,12 +191,6 @@ export class LoadbalancerManualCertificateBundle extends cdktf.TerraformResource
     const attrs = {
       certificate: {
         value: cdktf.stringToHclTerraform(this._certificate),
-        isBlock: false,
-        type: "simple",
-        storageClassType: "string",
-      },
-      id: {
-        value: cdktf.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

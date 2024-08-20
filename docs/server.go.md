@@ -4,7 +4,7 @@
 
 ### Server <a name="Server" id="@cdktf/provider-upcloud.server.Server"></a>
 
-Represents a {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.9.1/docs/resources/server upcloud_server}.
+Represents a {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.10.0/docs/resources/server upcloud_server}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-upcloud.server.Server.Initializer"></a>
 
@@ -672,7 +672,7 @@ The construct id used in the generated config for the Server to import.
 
 The id of the existing Server that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.9.1/docs/resources/server#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.10.0/docs/resources/server#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1432,8 +1432,8 @@ import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v14/server"
 | <code><a href="#@cdktf/provider-upcloud.server.ServerConfig.property.cpu">Cpu</a></code> | <code>*f64</code> | The number of CPU for the server. |
 | <code><a href="#@cdktf/provider-upcloud.server.ServerConfig.property.firewall">Firewall</a></code> | <code>interface{}</code> | Are firewall rules active for the server. |
 | <code><a href="#@cdktf/provider-upcloud.server.ServerConfig.property.host">Host</a></code> | <code>*f64</code> | Use this to start the VM on a specific host. |
-| <code><a href="#@cdktf/provider-upcloud.server.ServerConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.9.1/docs/resources/server#id Server#id}. |
-| <code><a href="#@cdktf/provider-upcloud.server.ServerConfig.property.labels">Labels</a></code> | <code>*map[string]*string</code> | Key-value pairs to classify the server. |
+| <code><a href="#@cdktf/provider-upcloud.server.ServerConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.10.0/docs/resources/server#id Server#id}. |
+| <code><a href="#@cdktf/provider-upcloud.server.ServerConfig.property.labels">Labels</a></code> | <code>*map[string]*string</code> | User defined key-value pairs to classify the server. |
 | <code><a href="#@cdktf/provider-upcloud.server.ServerConfig.property.login">Login</a></code> | <code><a href="#@cdktf/provider-upcloud.server.ServerLogin">ServerLogin</a></code> | login block. |
 | <code><a href="#@cdktf/provider-upcloud.server.ServerConfig.property.mem">Mem</a></code> | <code>*f64</code> | The size of memory for the server (in megabytes). |
 | <code><a href="#@cdktf/provider-upcloud.server.ServerConfig.property.metadata">Metadata</a></code> | <code>interface{}</code> | Is the metadata service active for the server. |
@@ -1531,7 +1531,7 @@ Hostname *string
 
 A valid domain name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.9.1/docs/resources/server#hostname Server#hostname}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.10.0/docs/resources/server#hostname Server#hostname}
 
 ---
 
@@ -1545,7 +1545,7 @@ NetworkInterface interface{}
 
 network_interface block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.9.1/docs/resources/server#network_interface Server#network_interface}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.10.0/docs/resources/server#network_interface Server#network_interface}
 
 ---
 
@@ -1559,7 +1559,7 @@ Zone *string
 
 The zone in which the server will be hosted, e.g. `de-fra1`. You can list available zones with `upctl zone list`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.9.1/docs/resources/server#zone Server#zone}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.10.0/docs/resources/server#zone Server#zone}
 
 ---
 
@@ -1573,7 +1573,7 @@ BootOrder *string
 
 The boot device order, `cdrom`|`disk`|`network` or comma separated combination of those values. Defaults to `disk`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.9.1/docs/resources/server#boot_order Server#boot_order}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.10.0/docs/resources/server#boot_order Server#boot_order}
 
 ---
 
@@ -1587,7 +1587,7 @@ Cpu *f64
 
 The number of CPU for the server.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.9.1/docs/resources/server#cpu Server#cpu}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.10.0/docs/resources/server#cpu Server#cpu}
 
 ---
 
@@ -1601,7 +1601,7 @@ Firewall interface{}
 
 Are firewall rules active for the server.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.9.1/docs/resources/server#firewall Server#firewall}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.10.0/docs/resources/server#firewall Server#firewall}
 
 ---
 
@@ -1617,7 +1617,7 @@ Use this to start the VM on a specific host.
 
 Refers to value from host -attribute. Only available for private cloud hosts
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.9.1/docs/resources/server#host Server#host}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.10.0/docs/resources/server#host Server#host}
 
 ---
 
@@ -1629,7 +1629,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.9.1/docs/resources/server#id Server#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.10.0/docs/resources/server#id Server#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1644,9 +1644,9 @@ Labels *map[string]*string
 
 - *Type:* *map[string]*string
 
-Key-value pairs to classify the server.
+User defined key-value pairs to classify the server.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.9.1/docs/resources/server#labels Server#labels}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.10.0/docs/resources/server#labels Server#labels}
 
 ---
 
@@ -1660,7 +1660,7 @@ Login ServerLogin
 
 login block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.9.1/docs/resources/server#login Server#login}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.10.0/docs/resources/server#login Server#login}
 
 ---
 
@@ -1674,7 +1674,7 @@ Mem *f64
 
 The size of memory for the server (in megabytes).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.9.1/docs/resources/server#mem Server#mem}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.10.0/docs/resources/server#mem Server#mem}
 
 ---
 
@@ -1688,7 +1688,7 @@ Metadata interface{}
 
 Is the metadata service active for the server.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.9.1/docs/resources/server#metadata Server#metadata}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.10.0/docs/resources/server#metadata Server#metadata}
 
 ---
 
@@ -1702,7 +1702,7 @@ NicModel *string
 
 The model of the server's network interfaces.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.9.1/docs/resources/server#nic_model Server#nic_model}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.10.0/docs/resources/server#nic_model Server#nic_model}
 
 ---
 
@@ -1716,7 +1716,7 @@ Plan *string
 
 The pricing plan used for the server. You can list available server plans with `upctl server plans`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.9.1/docs/resources/server#plan Server#plan}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.10.0/docs/resources/server#plan Server#plan}
 
 ---
 
@@ -1732,7 +1732,7 @@ The UUID of a server group to attach this server to.
 
 Note that the server can also be attached to a server group via the `members` property of `upcloud_server_group`. Only one of the these should be defined at a time. This value is only updated if it has been set to non-zero value.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.9.1/docs/resources/server#server_group Server#server_group}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.10.0/docs/resources/server#server_group Server#server_group}
 
 ---
 
@@ -1746,7 +1746,7 @@ SimpleBackup ServerSimpleBackup
 
 simple_backup block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.9.1/docs/resources/server#simple_backup Server#simple_backup}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.10.0/docs/resources/server#simple_backup Server#simple_backup}
 
 ---
 
@@ -1760,7 +1760,7 @@ StorageDevices interface{}
 
 storage_devices block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.9.1/docs/resources/server#storage_devices Server#storage_devices}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.10.0/docs/resources/server#storage_devices Server#storage_devices}
 
 ---
 
@@ -1774,7 +1774,7 @@ Tags *[]*string
 
 The server related tags.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.9.1/docs/resources/server#tags Server#tags}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.10.0/docs/resources/server#tags Server#tags}
 
 ---
 
@@ -1788,7 +1788,7 @@ Template ServerTemplate
 
 template block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.9.1/docs/resources/server#template Server#template}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.10.0/docs/resources/server#template Server#template}
 
 ---
 
@@ -1802,7 +1802,7 @@ Timezone *string
 
 A timezone identifier, e.g. `Europe/Helsinki`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.9.1/docs/resources/server#timezone Server#timezone}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.10.0/docs/resources/server#timezone Server#timezone}
 
 ---
 
@@ -1816,7 +1816,7 @@ Title *string
 
 A short, informational description.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.9.1/docs/resources/server#title Server#title}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.10.0/docs/resources/server#title Server#title}
 
 ---
 
@@ -1830,7 +1830,7 @@ UserData *string
 
 Defines URL for a server setup script, or the script body itself.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.9.1/docs/resources/server#user_data Server#user_data}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.10.0/docs/resources/server#user_data Server#user_data}
 
 ---
 
@@ -1844,7 +1844,7 @@ VideoModel *string
 
 The model of the server's video interface.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.9.1/docs/resources/server#video_model Server#video_model}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.10.0/docs/resources/server#video_model Server#video_model}
 
 ---
 
@@ -1884,7 +1884,7 @@ CreatePassword interface{}
 
 Indicates a password should be create to allow access.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.9.1/docs/resources/server#create_password Server#create_password}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.10.0/docs/resources/server#create_password Server#create_password}
 
 ---
 
@@ -1898,7 +1898,7 @@ Keys *[]*string
 
 A list of ssh keys to access the server.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.9.1/docs/resources/server#keys Server#keys}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.10.0/docs/resources/server#keys Server#keys}
 
 ---
 
@@ -1912,7 +1912,7 @@ PasswordDelivery *string
 
 The delivery method for the server's root password (one of `none`, `email` or `sms`).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.9.1/docs/resources/server#password_delivery Server#password_delivery}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.10.0/docs/resources/server#password_delivery Server#password_delivery}
 
 ---
 
@@ -1926,7 +1926,7 @@ User *string
 
 Username to be create to access the server.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.9.1/docs/resources/server#user Server#user}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.10.0/docs/resources/server#user Server#user}
 
 ---
 
@@ -1972,7 +1972,7 @@ Type *string
 
 Network interface type. For private network interfaces, a network must be specified with an existing network id.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.9.1/docs/resources/server#type Server#type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.10.0/docs/resources/server#type Server#type}
 
 ---
 
@@ -1986,7 +1986,7 @@ AdditionalIpAddress interface{}
 
 additional_ip_address block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.9.1/docs/resources/server#additional_ip_address Server#additional_ip_address}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.10.0/docs/resources/server#additional_ip_address Server#additional_ip_address}
 
 ---
 
@@ -2000,7 +2000,7 @@ Bootable interface{}
 
 `true` if this interface should be used for network booting.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.9.1/docs/resources/server#bootable Server#bootable}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.10.0/docs/resources/server#bootable Server#bootable}
 
 ---
 
@@ -2014,7 +2014,7 @@ IpAddress *string
 
 The assigned primary IP address.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.9.1/docs/resources/server#ip_address Server#ip_address}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.10.0/docs/resources/server#ip_address Server#ip_address}
 
 ---
 
@@ -2028,7 +2028,7 @@ IpAddressFamily *string
 
 The type of the primary IP address of this interface (one of `IPv4` or `IPv6`).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.9.1/docs/resources/server#ip_address_family Server#ip_address_family}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.10.0/docs/resources/server#ip_address_family Server#ip_address_family}
 
 ---
 
@@ -2042,7 +2042,7 @@ Network *string
 
 The unique ID of a network to attach this network to.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.9.1/docs/resources/server#network Server#network}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.10.0/docs/resources/server#network Server#network}
 
 ---
 
@@ -2056,7 +2056,7 @@ SourceIpFiltering interface{}
 
 `true` if source IP should be filtered.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.9.1/docs/resources/server#source_ip_filtering Server#source_ip_filtering}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.10.0/docs/resources/server#source_ip_filtering Server#source_ip_filtering}
 
 ---
 
@@ -2092,7 +2092,7 @@ IpAddress *string
 
 The assigned additional IP address.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.9.1/docs/resources/server#ip_address Server#ip_address}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.10.0/docs/resources/server#ip_address Server#ip_address}
 
 ---
 
@@ -2106,7 +2106,7 @@ IpAddressFamily *string
 
 The type of this additional IP address of this interface (one of `IPv4` or `IPv6`).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.9.1/docs/resources/server#ip_address_family Server#ip_address_family}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.10.0/docs/resources/server#ip_address_family Server#ip_address_family}
 
 ---
 
@@ -2142,7 +2142,7 @@ Plan *string
 
 Simple backup plan. Accepted values: daily, dailies, weeklies, monthlies.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.9.1/docs/resources/server#plan Server#plan}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.10.0/docs/resources/server#plan Server#plan}
 
 ---
 
@@ -2156,7 +2156,7 @@ Time *string
 
 Time of the day at which backup will be taken. Should be provided in a hhmm format (e.g. 2230).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.9.1/docs/resources/server#time Server#time}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.10.0/docs/resources/server#time Server#time}
 
 ---
 
@@ -2196,7 +2196,7 @@ Storage *string
 
 A valid storage UUID.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.9.1/docs/resources/server#storage Server#storage}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.10.0/docs/resources/server#storage Server#storage}
 
 ---
 
@@ -2212,7 +2212,7 @@ The device address the storage will be attached to (`scsi`|`virtio`|`ide`).
 
 Leave `address_position` field empty to auto-select next available address from that bus.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.9.1/docs/resources/server#address Server#address}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.10.0/docs/resources/server#address Server#address}
 
 ---
 
@@ -2228,7 +2228,7 @@ The device position in the given bus (defined via field `address`).
 
 Valid values for address `virtio` are `0-15` (`0`, for example). Valid values for `scsi` or `ide` are `0-1:0-1` (`0:0`, for example). Leave empty to auto-select next available address in the given bus.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.9.1/docs/resources/server#address_position Server#address_position}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.10.0/docs/resources/server#address_position Server#address_position}
 
 ---
 
@@ -2242,7 +2242,7 @@ Type *string
 
 The device type the storage will be attached as.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.9.1/docs/resources/server#type Server#type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.10.0/docs/resources/server#type Server#type}
 
 ---
 
@@ -2294,7 +2294,7 @@ A valid storage UUID or template name.
 
 You can list available public templates with `upctl storage list --public --template` and available private templates with `upctl storage list --template`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.9.1/docs/resources/server#storage Server#storage}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.10.0/docs/resources/server#storage Server#storage}
 
 ---
 
@@ -2310,7 +2310,7 @@ The device address the storage will be attached to (`scsi`|`virtio`|`ide`).
 
 Leave `address_position` field empty to auto-select next available address from that bus.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.9.1/docs/resources/server#address Server#address}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.10.0/docs/resources/server#address Server#address}
 
 ---
 
@@ -2326,7 +2326,7 @@ The device position in the given bus (defined via field `address`).
 
 For example `0:0`, or `0`. Leave empty to auto-select next available address in the given bus.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.9.1/docs/resources/server#address_position Server#address_position}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.10.0/docs/resources/server#address_position Server#address_position}
 
 ---
 
@@ -2340,7 +2340,7 @@ BackupRule ServerTemplateBackupRule
 
 backup_rule block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.9.1/docs/resources/server#backup_rule Server#backup_rule}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.10.0/docs/resources/server#backup_rule Server#backup_rule}
 
 ---
 
@@ -2354,7 +2354,7 @@ DeleteAutoresizeBackup interface{}
 
 If set to true, the backup taken before the partition and filesystem resize attempt will be deleted immediately after success.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.9.1/docs/resources/server#delete_autoresize_backup Server#delete_autoresize_backup}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.10.0/docs/resources/server#delete_autoresize_backup Server#delete_autoresize_backup}
 
 ---
 
@@ -2368,7 +2368,7 @@ Encrypt interface{}
 
 Sets if the storage is encrypted at rest.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.9.1/docs/resources/server#encrypt Server#encrypt}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.10.0/docs/resources/server#encrypt Server#encrypt}
 
 ---
 
@@ -2386,7 +2386,7 @@ Please note that before the resize attempt is made, backup of the storage will b
 to restore the storage and then deleted. If the resize attempt succeeds, backup will be kept (unless delete_autoresize_backup option is set to true).
 Taking and keeping backups incure costs.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.9.1/docs/resources/server#filesystem_autoresize Server#filesystem_autoresize}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.10.0/docs/resources/server#filesystem_autoresize Server#filesystem_autoresize}
 
 ---
 
@@ -2400,7 +2400,7 @@ Size *f64
 
 The size of the storage in gigabytes.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.9.1/docs/resources/server#size Server#size}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.10.0/docs/resources/server#size Server#size}
 
 ---
 
@@ -2414,7 +2414,7 @@ Title *string
 
 A short, informative description.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.9.1/docs/resources/server#title Server#title}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.10.0/docs/resources/server#title Server#title}
 
 ---
 
@@ -2452,7 +2452,7 @@ Interval *string
 
 The weekday when the backup is created.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.9.1/docs/resources/server#interval Server#interval}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.10.0/docs/resources/server#interval Server#interval}
 
 ---
 
@@ -2466,7 +2466,7 @@ Retention *f64
 
 The number of days before a backup is automatically deleted.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.9.1/docs/resources/server#retention Server#retention}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.10.0/docs/resources/server#retention Server#retention}
 
 ---
 
@@ -2480,7 +2480,7 @@ Time *string
 
 The time of day when the backup is created.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.9.1/docs/resources/server#time Server#time}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.10.0/docs/resources/server#time Server#time}
 
 ---
 

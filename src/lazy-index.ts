@@ -40,6 +40,7 @@ Object.defineProperty(exports, 'router', { get: function () { return require('./
 Object.defineProperty(exports, 'server', { get: function () { return require('./server'); } });
 Object.defineProperty(exports, 'serverGroup', { get: function () { return require('./server-group'); } });
 Object.defineProperty(exports, 'storage', { get: function () { return require('./storage'); } });
+Object.defineProperty(exports, 'storageTemplate', { get: function () { return require('./storage-template'); } });
 Object.defineProperty(exports, 'tag', { get: function () { return require('./tag'); } });
 Object.defineProperty(exports, 'dataUpcloudHosts', { get: function () { return require('./data-upcloud-hosts'); } });
 Object.defineProperty(exports, 'dataUpcloudIpAddresses', { get: function () { return require('./data-upcloud-ip-addresses'); } });
