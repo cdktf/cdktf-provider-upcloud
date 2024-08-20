@@ -55,6 +55,7 @@ The following submodules are available:
 - [server](./server.java.md)
 - [serverGroup](./serverGroup.java.md)
 - [storage](./storage.java.md)
+- [storageTemplate](./storageTemplate.java.md)
 - [tag](./tag.java.md)
 
 

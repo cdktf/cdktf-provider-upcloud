@@ -55,6 +55,7 @@ The following submodules are available:
 - [server](./server.typescript.md)
 - [serverGroup](./serverGroup.typescript.md)
 - [storage](./storage.typescript.md)
+- [storageTemplate](./storageTemplate.typescript.md)
 - [tag](./tag.typescript.md)
 
 

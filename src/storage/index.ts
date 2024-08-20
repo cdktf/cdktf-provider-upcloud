@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/upcloudltd/upcloud/5.9.1/docs/resources/storage
+// https://registry.terraform.io/providers/upcloudltd/upcloud/5.10.0/docs/resources/storage
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,96 +10,93 @@ export interface StorageConfig extends cdktf.TerraformMetaArguments {
   /**
   * If set to true, the backup taken before the partition and filesystem resize attempt will be deleted immediately after success.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.9.1/docs/resources/storage#delete_autoresize_backup Storage#delete_autoresize_backup}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.10.0/docs/resources/storage#delete_autoresize_backup Storage#delete_autoresize_backup}
   */
   readonly deleteAutoresizeBackup?: boolean | cdktf.IResolvable;
   /**
-  * Sets if the storage is encrypted at rest
+  * Sets if the storage is encrypted at rest.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.9.1/docs/resources/storage#encrypt Storage#encrypt}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.10.0/docs/resources/storage#encrypt Storage#encrypt}
   */
   readonly encrypt?: boolean | cdktf.IResolvable;
   /**
-  * If set to true, provider will attempt to resize partition and filesystem when the size of the storage changes.
-  * 				Please note that before the resize attempt is made, backup of the storage will be taken. If the resize attempt fails, the backup will be used
-  * 				to restore the storage and then deleted. If the resize attempt succeeds, backup will be kept (unless delete_autoresize_backup option is set to true).
+  * If set to true, provider will attempt to resize partition and filesystem when the size of the storage changes. Please note that before the resize attempt is made, backup of the storage will be taken. If the resize attempt fails, the backup will be used to restore the storage and then deleted. If the resize attempt succeeds, backup will be kept (unless `delete_autoresize_backup` option is set to true).
   * 				Taking and keeping backups incure costs.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.9.1/docs/resources/storage#filesystem_autoresize Storage#filesystem_autoresize}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.10.0/docs/resources/storage#filesystem_autoresize Storage#filesystem_autoresize}
   */
   readonly filesystemAutoresize?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.9.1/docs/resources/storage#id Storage#id}
+  * User defined key-value pairs to classify the storage.
   *
-  * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
-  * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.10.0/docs/resources/storage#labels Storage#labels}
   */
-  readonly id?: string;
+  readonly labels?: { [key: string]: string };
   /**
-  * The size of the storage in gigabytes
+  * The size of the storage in gigabytes.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.9.1/docs/resources/storage#size Storage#size}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.10.0/docs/resources/storage#size Storage#size}
   */
   readonly size: number;
   /**
-  * The storage tier to use
+  * The tier of the storage.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.9.1/docs/resources/storage#tier Storage#tier}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.10.0/docs/resources/storage#tier Storage#tier}
   */
   readonly tier?: string;
   /**
-  * A short, informative description
+  * The title of the storage.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.9.1/docs/resources/storage#title Storage#title}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.10.0/docs/resources/storage#title Storage#title}
   */
   readonly title: string;
   /**
-  * The zone in which the storage will be created, e.g. `de-fra1`. You can list available zones with `upctl zone list`.
+  * The zone the storage is in, e.g. `de-fra1`. You can list available zones with `upctl zone list`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.9.1/docs/resources/storage#zone Storage#zone}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.10.0/docs/resources/storage#zone Storage#zone}
   */
   readonly zone: string;
   /**
   * backup_rule block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.9.1/docs/resources/storage#backup_rule Storage#backup_rule}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.10.0/docs/resources/storage#backup_rule Storage#backup_rule}
   */
-  readonly backupRule?: StorageBackupRule;
+  readonly backupRule?: StorageBackupRule[] | cdktf.IResolvable;
   /**
   * clone block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.9.1/docs/resources/storage#clone Storage#clone}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.10.0/docs/resources/storage#clone Storage#clone}
   */
-  readonly clone?: StorageClone;
+  readonly clone?: StorageClone[] | cdktf.IResolvable;
   /**
   * import block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.9.1/docs/resources/storage#import Storage#import}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.10.0/docs/resources/storage#import Storage#import}
   */
-  readonly import?: StorageImport;
+  readonly import?: StorageImport[] | cdktf.IResolvable;
 }
 export interface StorageBackupRule {
   /**
   * The weekday when the backup is created
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.9.1/docs/resources/storage#interval Storage#interval}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.10.0/docs/resources/storage#interval Storage#interval}
   */
   readonly interval: string;
   /**
   * The number of days before a backup is automatically deleted
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.9.1/docs/resources/storage#retention Storage#retention}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.10.0/docs/resources/storage#retention Storage#retention}
   */
   readonly retention: number;
   /**
   * The time of day when the backup is created
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.9.1/docs/resources/storage#time Storage#time}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.10.0/docs/resources/storage#time Storage#time}
   */
   readonly time: string;
 }
 
-export function storageBackupRuleToTerraform(struct?: StorageBackupRuleOutputReference | StorageBackupRule): any {
+export function storageBackupRuleToTerraform(struct?: StorageBackupRule | cdktf.IResolvable): any {
   if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
@@ -117,7 +109,7 @@ export function storageBackupRuleToTerraform(struct?: StorageBackupRuleOutputRef
 }
 
 
-export function storageBackupRuleToHclTerraform(struct?: StorageBackupRuleOutputReference | StorageBackupRule): any {
+export function storageBackupRuleToHclTerraform(struct?: StorageBackupRule | cdktf.IResolvable): any {
   if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
@@ -149,16 +141,22 @@ export function storageBackupRuleToHclTerraform(struct?: StorageBackupRuleOutput
 
 export class StorageBackupRuleOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
-    super(terraformResource, terraformAttribute, false, 0);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): StorageBackupRule | undefined {
+  public get internalValue(): StorageBackupRule | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._interval !== undefined) {
@@ -176,15 +174,21 @@ export class StorageBackupRuleOutputReference extends cdktf.ComplexObject {
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: StorageBackupRule | undefined) {
+  public set internalValue(value: StorageBackupRule | cdktf.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
+      this.resolvableValue = undefined;
       this._interval = undefined;
       this._retention = undefined;
       this._time = undefined;
     }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
     else {
       this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
       this._interval = value.interval;
       this._retention = value.retention;
       this._time = value.time;
@@ -230,11 +234,31 @@ export class StorageBackupRuleOutputReference extends cdktf.ComplexObject {
     return this._time;
   }
 }
+
+export class StorageBackupRuleList extends cdktf.ComplexList {
+  public internalValue? : StorageBackupRule[] | cdktf.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): StorageBackupRuleOutputReference {
+    return new StorageBackupRuleOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
 export interface StorageClone {
   /**
-  * The unique identifier of the storage/template to clone
+  * The unique identifier of the storage/template to clone.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.9.1/docs/resources/storage#id Storage#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.10.0/docs/resources/storage#id Storage#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -242,7 +266,7 @@ export interface StorageClone {
   readonly id: string;
 }
 
-export function storageCloneToTerraform(struct?: StorageCloneOutputReference | StorageClone): any {
+export function storageCloneToTerraform(struct?: StorageClone | cdktf.IResolvable): any {
   if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
@@ -253,7 +277,7 @@ export function storageCloneToTerraform(struct?: StorageCloneOutputReference | S
 }
 
 
-export function storageCloneToHclTerraform(struct?: StorageCloneOutputReference | StorageClone): any {
+export function storageCloneToHclTerraform(struct?: StorageClone | cdktf.IResolvable): any {
   if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
@@ -273,16 +297,22 @@ export function storageCloneToHclTerraform(struct?: StorageCloneOutputReference 
 
 export class StorageCloneOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
-    super(terraformResource, terraformAttribute, false, 0);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): StorageClone | undefined {
+  public get internalValue(): StorageClone | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._id !== undefined) {
@@ -292,13 +322,19 @@ export class StorageCloneOutputReference extends cdktf.ComplexObject {
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: StorageClone | undefined) {
+  public set internalValue(value: StorageClone | cdktf.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
+      this.resolvableValue = undefined;
       this._id = undefined;
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
     }
     else {
       this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
       this._id = value.id;
     }
   }
@@ -316,28 +352,48 @@ export class StorageCloneOutputReference extends cdktf.ComplexObject {
     return this._id;
   }
 }
+
+export class StorageCloneList extends cdktf.ComplexList {
+  public internalValue? : StorageClone[] | cdktf.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): StorageCloneOutputReference {
+    return new StorageCloneOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
 export interface StorageImport {
   /**
   * The mode of the import task. One of `http_import` or `direct_upload`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.9.1/docs/resources/storage#source Storage#source}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.10.0/docs/resources/storage#source Storage#source}
   */
   readonly source: string;
   /**
-  * For `direct_upload`; an optional hash of the file to upload.
+  * SHA256 hash of the source content. This hash is used to verify the integrity of the imported data by comparing it to `sha256sum` after the import has completed. Possible filename is automatically removed from the hash before comparison.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.9.1/docs/resources/storage#source_hash Storage#source_hash}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.10.0/docs/resources/storage#source_hash Storage#source_hash}
   */
   readonly sourceHash?: string;
   /**
   * The location of the file to import. For `http_import` an accessible URL for `direct_upload` a local file.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.9.1/docs/resources/storage#source_location Storage#source_location}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.10.0/docs/resources/storage#source_location Storage#source_location}
   */
   readonly sourceLocation: string;
 }
 
-export function storageImportToTerraform(struct?: StorageImportOutputReference | StorageImport): any {
+export function storageImportToTerraform(struct?: StorageImport | cdktf.IResolvable): any {
   if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
@@ -350,7 +406,7 @@ export function storageImportToTerraform(struct?: StorageImportOutputReference |
 }
 
 
-export function storageImportToHclTerraform(struct?: StorageImportOutputReference | StorageImport): any {
+export function storageImportToHclTerraform(struct?: StorageImport | cdktf.IResolvable): any {
   if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
@@ -382,16 +438,22 @@ export function storageImportToHclTerraform(struct?: StorageImportOutputReferenc
 
 export class StorageImportOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
-    super(terraformResource, terraformAttribute, false, 0);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): StorageImport | undefined {
+  public get internalValue(): StorageImport | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._source !== undefined) {
@@ -409,15 +471,21 @@ export class StorageImportOutputReference extends cdktf.ComplexObject {
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: StorageImport | undefined) {
+  public set internalValue(value: StorageImport | cdktf.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
+      this.resolvableValue = undefined;
       this._source = undefined;
       this._sourceHash = undefined;
       this._sourceLocation = undefined;
     }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
     else {
       this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
       this._source = value.source;
       this._sourceHash = value.sourceHash;
       this._sourceLocation = value.sourceLocation;
@@ -477,8 +545,28 @@ export class StorageImportOutputReference extends cdktf.ComplexObject {
   }
 }
 
+export class StorageImportList extends cdktf.ComplexList {
+  public internalValue? : StorageImport[] | cdktf.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): StorageImportOutputReference {
+    return new StorageImportOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
+
 /**
-* Represents a {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.9.1/docs/resources/storage upcloud_storage}
+* Represents a {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.10.0/docs/resources/storage upcloud_storage}
 */
 export class Storage extends cdktf.TerraformResource {
 
@@ -494,7 +582,7 @@ export class Storage extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a Storage resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the Storage to import
-  * @param importFromId The id of the existing Storage that should be imported. Refer to the {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.9.1/docs/resources/storage#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing Storage that should be imported. Refer to the {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.10.0/docs/resources/storage#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the Storage to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -506,7 +594,7 @@ export class Storage extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.9.1/docs/resources/storage upcloud_storage} Resource
+  * Create a new {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.10.0/docs/resources/storage upcloud_storage} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -517,7 +605,7 @@ export class Storage extends cdktf.TerraformResource {
       terraformResourceType: 'upcloud_storage',
       terraformGeneratorMetadata: {
         providerName: 'upcloud',
-        providerVersion: '5.9.1',
+        providerVersion: '5.10.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,
@@ -531,7 +619,7 @@ export class Storage extends cdktf.TerraformResource {
     this._deleteAutoresizeBackup = config.deleteAutoresizeBackup;
     this._encrypt = config.encrypt;
     this._filesystemAutoresize = config.filesystemAutoresize;
-    this._id = config.id;
+    this._labels = config.labels;
     this._size = config.size;
     this._tier = config.tier;
     this._title = config.title;
@@ -545,7 +633,7 @@ export class Storage extends cdktf.TerraformResource {
   // ATTRIBUTES
   // ==========
 
-  // delete_autoresize_backup - computed: false, optional: true, required: false
+  // delete_autoresize_backup - computed: true, optional: true, required: false
   private _deleteAutoresizeBackup?: boolean | cdktf.IResolvable; 
   public get deleteAutoresizeBackup() {
     return this.getBooleanAttribute('delete_autoresize_backup');
@@ -561,7 +649,7 @@ export class Storage extends cdktf.TerraformResource {
     return this._deleteAutoresizeBackup;
   }
 
-  // encrypt - computed: false, optional: true, required: false
+  // encrypt - computed: true, optional: true, required: false
   private _encrypt?: boolean | cdktf.IResolvable; 
   public get encrypt() {
     return this.getBooleanAttribute('encrypt');
@@ -577,7 +665,7 @@ export class Storage extends cdktf.TerraformResource {
     return this._encrypt;
   }
 
-  // filesystem_autoresize - computed: false, optional: true, required: false
+  // filesystem_autoresize - computed: true, optional: true, required: false
   private _filesystemAutoresize?: boolean | cdktf.IResolvable; 
   public get filesystemAutoresize() {
     return this.getBooleanAttribute('filesystem_autoresize');
@@ -593,20 +681,25 @@ export class Storage extends cdktf.TerraformResource {
     return this._filesystemAutoresize;
   }
 
-  // id - computed: true, optional: true, required: false
-  private _id?: string; 
+  // id - computed: true, optional: false, required: false
   public get id() {
     return this.getStringAttribute('id');
   }
-  public set id(value: string) {
-    this._id = value;
+
+  // labels - computed: true, optional: true, required: false
+  private _labels?: { [key: string]: string }; 
+  public get labels() {
+    return this.getStringMapAttribute('labels');
   }
-  public resetId() {
-    this._id = undefined;
+  public set labels(value: { [key: string]: string }) {
+    this._labels = value;
+  }
+  public resetLabels() {
+    this._labels = undefined;
   }
   // Temporarily expose input value. Use with caution.
-  public get idInput() {
-    return this._id;
+  public get labelsInput() {
+    return this._labels;
   }
 
   // size - computed: false, optional: false, required: true
@@ -620,6 +713,12 @@ export class Storage extends cdktf.TerraformResource {
   // Temporarily expose input value. Use with caution.
   public get sizeInput() {
     return this._size;
+  }
+
+  // system_labels - computed: true, optional: false, required: false
+  private _systemLabels = new cdktf.StringMap(this, "system_labels");
+  public get systemLabels() {
+    return this._systemLabels;
   }
 
   // tier - computed: true, optional: true, required: false
@@ -651,6 +750,11 @@ export class Storage extends cdktf.TerraformResource {
     return this._title;
   }
 
+  // type - computed: true, optional: false, required: false
+  public get type() {
+    return this.getStringAttribute('type');
+  }
+
   // zone - computed: false, optional: false, required: true
   private _zone?: string; 
   public get zone() {
@@ -665,11 +769,11 @@ export class Storage extends cdktf.TerraformResource {
   }
 
   // backup_rule - computed: false, optional: true, required: false
-  private _backupRule = new StorageBackupRuleOutputReference(this, "backup_rule");
+  private _backupRule = new StorageBackupRuleList(this, "backup_rule", false);
   public get backupRule() {
     return this._backupRule;
   }
-  public putBackupRule(value: StorageBackupRule) {
+  public putBackupRule(value: StorageBackupRule[] | cdktf.IResolvable) {
     this._backupRule.internalValue = value;
   }
   public resetBackupRule() {
@@ -681,11 +785,11 @@ export class Storage extends cdktf.TerraformResource {
   }
 
   // clone - computed: false, optional: true, required: false
-  private _clone = new StorageCloneOutputReference(this, "clone");
+  private _clone = new StorageCloneList(this, "clone", true);
   public get clone() {
     return this._clone;
   }
-  public putClone(value: StorageClone) {
+  public putClone(value: StorageClone[] | cdktf.IResolvable) {
     this._clone.internalValue = value;
   }
   public resetClone() {
@@ -697,11 +801,11 @@ export class Storage extends cdktf.TerraformResource {
   }
 
   // import - computed: false, optional: true, required: false
-  private _import = new StorageImportOutputReference(this, "import");
+  private _import = new StorageImportList(this, "import", true);
   public get import() {
     return this._import;
   }
-  public putImport(value: StorageImport) {
+  public putImport(value: StorageImport[] | cdktf.IResolvable) {
     this._import.internalValue = value;
   }
   public resetImport() {
@@ -721,14 +825,14 @@ export class Storage extends cdktf.TerraformResource {
       delete_autoresize_backup: cdktf.booleanToTerraform(this._deleteAutoresizeBackup),
       encrypt: cdktf.booleanToTerraform(this._encrypt),
       filesystem_autoresize: cdktf.booleanToTerraform(this._filesystemAutoresize),
-      id: cdktf.stringToTerraform(this._id),
+      labels: cdktf.hashMapper(cdktf.stringToTerraform)(this._labels),
       size: cdktf.numberToTerraform(this._size),
       tier: cdktf.stringToTerraform(this._tier),
       title: cdktf.stringToTerraform(this._title),
       zone: cdktf.stringToTerraform(this._zone),
-      backup_rule: storageBackupRuleToTerraform(this._backupRule.internalValue),
-      clone: storageCloneToTerraform(this._clone.internalValue),
-      import: storageImportToTerraform(this._import.internalValue),
+      backup_rule: cdktf.listMapper(storageBackupRuleToTerraform, true)(this._backupRule.internalValue),
+      clone: cdktf.listMapper(storageCloneToTerraform, true)(this._clone.internalValue),
+      import: cdktf.listMapper(storageImportToTerraform, true)(this._import.internalValue),
     };
   }
 
@@ -752,11 +856,11 @@ export class Storage extends cdktf.TerraformResource {
         type: "simple",
         storageClassType: "boolean",
       },
-      id: {
-        value: cdktf.stringToHclTerraform(this._id),
+      labels: {
+        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._labels),
         isBlock: false,
-        type: "simple",
-        storageClassType: "string",
+        type: "map",
+        storageClassType: "stringMap",
       },
       size: {
         value: cdktf.numberToHclTerraform(this._size),
@@ -783,19 +887,19 @@ export class Storage extends cdktf.TerraformResource {
         storageClassType: "string",
       },
       backup_rule: {
-        value: storageBackupRuleToHclTerraform(this._backupRule.internalValue),
+        value: cdktf.listMapperHcl(storageBackupRuleToHclTerraform, true)(this._backupRule.internalValue),
         isBlock: true,
         type: "list",
         storageClassType: "StorageBackupRuleList",
       },
       clone: {
-        value: storageCloneToHclTerraform(this._clone.internalValue),
+        value: cdktf.listMapperHcl(storageCloneToHclTerraform, true)(this._clone.internalValue),
         isBlock: true,
         type: "set",
         storageClassType: "StorageCloneList",
       },
       import: {
-        value: storageImportToHclTerraform(this._import.internalValue),
+        value: cdktf.listMapperHcl(storageImportToHclTerraform, true)(this._import.internalValue),
         isBlock: true,
         type: "set",
         storageClassType: "StorageImportList",
