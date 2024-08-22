@@ -4,12 +4,12 @@
 
 ### LoadbalancerManualCertificateBundle <a name="LoadbalancerManualCertificateBundle" id="@cdktf/provider-upcloud.loadbalancerManualCertificateBundle.LoadbalancerManualCertificateBundle"></a>
 
-Represents a {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.10.0/docs/resources/loadbalancer_manual_certificate_bundle upcloud_loadbalancer_manual_certificate_bundle}.
+Represents a {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.10.1/docs/resources/loadbalancer_manual_certificate_bundle upcloud_loadbalancer_manual_certificate_bundle}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-upcloud.loadbalancerManualCertificateBundle.LoadbalancerManualCertificateBundle.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v14/loadbalancermanualcertificatebundle"
+import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/loadbalancermanualcertificatebundle"
 
 loadbalancermanualcertificatebundle.NewLoadbalancerManualCertificateBundle(scope Construct, id *string, config LoadbalancerManualCertificateBundleConfig) LoadbalancerManualCertificateBundle
 ```
@@ -385,7 +385,7 @@ func ResetIntermediates()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-upcloud.loadbalancerManualCertificateBundle.LoadbalancerManualCertificateBundle.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v14/loadbalancermanualcertificatebundle"
+import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/loadbalancermanualcertificatebundle"
 
 loadbalancermanualcertificatebundle.LoadbalancerManualCertificateBundle_IsConstruct(x interface{}) *bool
 ```
@@ -417,7 +417,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-upcloud.loadbalancerManualCertificateBundle.LoadbalancerManualCertificateBundle.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v14/loadbalancermanualcertificatebundle"
+import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/loadbalancermanualcertificatebundle"
 
 loadbalancermanualcertificatebundle.LoadbalancerManualCertificateBundle_IsTerraformElement(x interface{}) *bool
 ```
@@ -431,7 +431,7 @@ loadbalancermanualcertificatebundle.LoadbalancerManualCertificateBundle_IsTerraf
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-upcloud.loadbalancerManualCertificateBundle.LoadbalancerManualCertificateBundle.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v14/loadbalancermanualcertificatebundle"
+import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/loadbalancermanualcertificatebundle"
 
 loadbalancermanualcertificatebundle.LoadbalancerManualCertificateBundle_IsTerraformResource(x interface{}) *bool
 ```
@@ -445,7 +445,7 @@ loadbalancermanualcertificatebundle.LoadbalancerManualCertificateBundle_IsTerraf
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-upcloud.loadbalancerManualCertificateBundle.LoadbalancerManualCertificateBundle.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v14/loadbalancermanualcertificatebundle"
+import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/loadbalancermanualcertificatebundle"
 
 loadbalancermanualcertificatebundle.LoadbalancerManualCertificateBundle_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -474,7 +474,7 @@ The construct id used in the generated config for the LoadbalancerManualCertific
 
 The id of the existing LoadbalancerManualCertificateBundle that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.10.0/docs/resources/loadbalancer_manual_certificate_bundle#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.10.1/docs/resources/loadbalancer_manual_certificate_bundle#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -806,7 +806,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-upcloud.loadbalancerManualCertificateBundle.LoadbalancerManualCertificateBundleConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v14/loadbalancermanualcertificatebundle"
+import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/loadbalancermanualcertificatebundle"
 
 &loadbalancermanualcertificatebundle.LoadbalancerManualCertificateBundleConfig {
 	Connection: interface{},
@@ -921,7 +921,7 @@ Certificate *string
 
 Certificate as base64 encoded string. Must be in PEM format.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.10.0/docs/resources/loadbalancer_manual_certificate_bundle#certificate LoadbalancerManualCertificateBundle#certificate}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.10.1/docs/resources/loadbalancer_manual_certificate_bundle#certificate LoadbalancerManualCertificateBundle#certificate}
 
 ---
 
@@ -935,7 +935,7 @@ Name *string
 
 The name of the certificate bundle. Must be unique within customer account.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.10.0/docs/resources/loadbalancer_manual_certificate_bundle#name LoadbalancerManualCertificateBundle#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.10.1/docs/resources/loadbalancer_manual_certificate_bundle#name LoadbalancerManualCertificateBundle#name}
 
 ---
 
@@ -949,7 +949,7 @@ PrivateKey *string
 
 Private key as base64 encoded string. Must be in PEM format.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.10.0/docs/resources/loadbalancer_manual_certificate_bundle#private_key LoadbalancerManualCertificateBundle#private_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.10.1/docs/resources/loadbalancer_manual_certificate_bundle#private_key LoadbalancerManualCertificateBundle#private_key}
 
 ---
 
@@ -963,7 +963,7 @@ Intermediates *string
 
 Intermediate certificates as base64 encoded string. Must be in PEM format.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.10.0/docs/resources/loadbalancer_manual_certificate_bundle#intermediates LoadbalancerManualCertificateBundle#intermediates}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.10.1/docs/resources/loadbalancer_manual_certificate_bundle#intermediates LoadbalancerManualCertificateBundle#intermediates}
 
 ---
 
