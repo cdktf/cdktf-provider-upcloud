@@ -4,7 +4,7 @@
 
 ### DataUpcloudStorage <a name="DataUpcloudStorage" id="@cdktf/provider-upcloud.dataUpcloudStorage.DataUpcloudStorage"></a>
 
-Represents a {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.10.1/docs/data-sources/storage upcloud_storage}.
+Represents a {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.11.0/docs/data-sources/storage upcloud_storage}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-upcloud.dataUpcloudStorage.DataUpcloudStorage.Initializer"></a>
 
@@ -23,13 +23,14 @@ DataUpcloudStorage.Builder.create(Construct scope, java.lang.String id)
 //  .provisioners(java.util.List<FileProvisioner)
 //  .provisioners(LocalExecProvisioner)
 //  .provisioners(RemoteExecProvisioner>)
-    .type(java.lang.String)
 //  .accessType(java.lang.String)
 //  .id(java.lang.String)
 //  .mostRecent(java.lang.Boolean)
 //  .mostRecent(IResolvable)
 //  .name(java.lang.String)
 //  .nameRegex(java.lang.String)
+//  .title(java.lang.String)
+//  .type(java.lang.String)
 //  .zone(java.lang.String)
     .build();
 ```
@@ -45,13 +46,14 @@ DataUpcloudStorage.Builder.create(Construct scope, java.lang.String id)
 | <code><a href="#@cdktf/provider-upcloud.dataUpcloudStorage.DataUpcloudStorage.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>com.hashicorp.cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.dataUpcloudStorage.DataUpcloudStorage.Initializer.parameter.provider">provider</a></code> | <code>com.hashicorp.cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.dataUpcloudStorage.DataUpcloudStorage.Initializer.parameter.provisioners">provisioners</a></code> | <code>java.util.List<com.hashicorp.cdktf.FileProvisioner OR com.hashicorp.cdktf.LocalExecProvisioner OR com.hashicorp.cdktf.RemoteExecProvisioner></code> | *No description.* |
-| <code><a href="#@cdktf/provider-upcloud.dataUpcloudStorage.DataUpcloudStorage.Initializer.parameter.type">type</a></code> | <code>java.lang.String</code> | Storage type (normal, backup, cdrom, template). Use 'favorite' as type to filter storages on the list of favorites. |
-| <code><a href="#@cdktf/provider-upcloud.dataUpcloudStorage.DataUpcloudStorage.Initializer.parameter.accessType">accessType</a></code> | <code>java.lang.String</code> | Storage access type (public, private). |
-| <code><a href="#@cdktf/provider-upcloud.dataUpcloudStorage.DataUpcloudStorage.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.10.1/docs/data-sources/storage#id DataUpcloudStorage#id}. |
+| <code><a href="#@cdktf/provider-upcloud.dataUpcloudStorage.DataUpcloudStorage.Initializer.parameter.accessType">accessType</a></code> | <code>java.lang.String</code> | The access type of the storage, `public` or `private`. |
+| <code><a href="#@cdktf/provider-upcloud.dataUpcloudStorage.DataUpcloudStorage.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | UUID of the storage. |
 | <code><a href="#@cdktf/provider-upcloud.dataUpcloudStorage.DataUpcloudStorage.Initializer.parameter.mostRecent">mostRecent</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | If more than one result is returned, use the most recent storage. |
-| <code><a href="#@cdktf/provider-upcloud.dataUpcloudStorage.DataUpcloudStorage.Initializer.parameter.name">name</a></code> | <code>java.lang.String</code> | Exact name of the storage (same as title). |
-| <code><a href="#@cdktf/provider-upcloud.dataUpcloudStorage.DataUpcloudStorage.Initializer.parameter.nameRegex">nameRegex</a></code> | <code>java.lang.String</code> | Use regular expression to match storage name. |
-| <code><a href="#@cdktf/provider-upcloud.dataUpcloudStorage.DataUpcloudStorage.Initializer.parameter.zone">zone</a></code> | <code>java.lang.String</code> | The zone in which the storage resides, e.g. `de-fra1`. You can list available zones with `upctl zone list`. |
+| <code><a href="#@cdktf/provider-upcloud.dataUpcloudStorage.DataUpcloudStorage.Initializer.parameter.name">name</a></code> | <code>java.lang.String</code> | Exact name of the storage (same as title). Deprecated, use `title` instead. |
+| <code><a href="#@cdktf/provider-upcloud.dataUpcloudStorage.DataUpcloudStorage.Initializer.parameter.nameRegex">nameRegex</a></code> | <code>java.lang.String</code> | Use regular expression to match storage name. Deprecated, use exact title or UUID instead. |
+| <code><a href="#@cdktf/provider-upcloud.dataUpcloudStorage.DataUpcloudStorage.Initializer.parameter.title">title</a></code> | <code>java.lang.String</code> | The title of the storage. |
+| <code><a href="#@cdktf/provider-upcloud.dataUpcloudStorage.DataUpcloudStorage.Initializer.parameter.type">type</a></code> | <code>java.lang.String</code> | The type of the storage. |
+| <code><a href="#@cdktf/provider-upcloud.dataUpcloudStorage.DataUpcloudStorage.Initializer.parameter.zone">zone</a></code> | <code>java.lang.String</code> | The zone the storage is in, e.g. `de-fra1`. |
 
 ---
 
@@ -115,23 +117,13 @@ Must be unique amongst siblings in the same scope
 
 ---
 
-##### `type`<sup>Required</sup> <a name="type" id="@cdktf/provider-upcloud.dataUpcloudStorage.DataUpcloudStorage.Initializer.parameter.type"></a>
-
-- *Type:* java.lang.String
-
-Storage type (normal, backup, cdrom, template). Use 'favorite' as type to filter storages on the list of favorites.
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.10.1/docs/data-sources/storage#type DataUpcloudStorage#type}
-
----
-
 ##### `accessType`<sup>Optional</sup> <a name="accessType" id="@cdktf/provider-upcloud.dataUpcloudStorage.DataUpcloudStorage.Initializer.parameter.accessType"></a>
 
 - *Type:* java.lang.String
 
-Storage access type (public, private).
+The access type of the storage, `public` or `private`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.10.1/docs/data-sources/storage#access_type DataUpcloudStorage#access_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.11.0/docs/data-sources/storage#access_type DataUpcloudStorage#access_type}
 
 ---
 
@@ -139,7 +131,9 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upclo
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.10.1/docs/data-sources/storage#id DataUpcloudStorage#id}.
+UUID of the storage.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.11.0/docs/data-sources/storage#id DataUpcloudStorage#id}
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -154,7 +148,7 @@ If more than one result is returned, use the most recent storage.
 
 This is only useful with private storages. Public storages might give unpredictable results.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.10.1/docs/data-sources/storage#most_recent DataUpcloudStorage#most_recent}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.11.0/docs/data-sources/storage#most_recent DataUpcloudStorage#most_recent}
 
 ---
 
@@ -162,9 +156,9 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upclo
 
 - *Type:* java.lang.String
 
-Exact name of the storage (same as title).
+Exact name of the storage (same as title). Deprecated, use `title` instead.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.10.1/docs/data-sources/storage#name DataUpcloudStorage#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.11.0/docs/data-sources/storage#name DataUpcloudStorage#name}
 
 ---
 
@@ -172,9 +166,29 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upclo
 
 - *Type:* java.lang.String
 
-Use regular expression to match storage name.
+Use regular expression to match storage name. Deprecated, use exact title or UUID instead.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.10.1/docs/data-sources/storage#name_regex DataUpcloudStorage#name_regex}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.11.0/docs/data-sources/storage#name_regex DataUpcloudStorage#name_regex}
+
+---
+
+##### `title`<sup>Optional</sup> <a name="title" id="@cdktf/provider-upcloud.dataUpcloudStorage.DataUpcloudStorage.Initializer.parameter.title"></a>
+
+- *Type:* java.lang.String
+
+The title of the storage.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.11.0/docs/data-sources/storage#title DataUpcloudStorage#title}
+
+---
+
+##### `type`<sup>Optional</sup> <a name="type" id="@cdktf/provider-upcloud.dataUpcloudStorage.DataUpcloudStorage.Initializer.parameter.type"></a>
+
+- *Type:* java.lang.String
+
+The type of the storage.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.11.0/docs/data-sources/storage#type DataUpcloudStorage#type}
 
 ---
 
@@ -182,9 +196,9 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upclo
 
 - *Type:* java.lang.String
 
-The zone in which the storage resides, e.g. `de-fra1`. You can list available zones with `upctl zone list`.
+The zone the storage is in, e.g. `de-fra1`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.10.1/docs/data-sources/storage#zone DataUpcloudStorage#zone}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.11.0/docs/data-sources/storage#zone DataUpcloudStorage#zone}
 
 ---
 
@@ -214,6 +228,8 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upclo
 | <code><a href="#@cdktf/provider-upcloud.dataUpcloudStorage.DataUpcloudStorage.resetMostRecent">resetMostRecent</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.dataUpcloudStorage.DataUpcloudStorage.resetName">resetName</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.dataUpcloudStorage.DataUpcloudStorage.resetNameRegex">resetNameRegex</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-upcloud.dataUpcloudStorage.DataUpcloudStorage.resetTitle">resetTitle</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-upcloud.dataUpcloudStorage.DataUpcloudStorage.resetType">resetType</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.dataUpcloudStorage.DataUpcloudStorage.resetZone">resetZone</a></code> | *No description.* |
 
 ---
@@ -440,6 +456,18 @@ public void resetName()
 public void resetNameRegex()
 ```
 
+##### `resetTitle` <a name="resetTitle" id="@cdktf/provider-upcloud.dataUpcloudStorage.DataUpcloudStorage.resetTitle"></a>
+
+```java
+public void resetTitle()
+```
+
+##### `resetType` <a name="resetType" id="@cdktf/provider-upcloud.dataUpcloudStorage.DataUpcloudStorage.resetType"></a>
+
+```java
+public void resetType()
+```
+
 ##### `resetZone` <a name="resetZone" id="@cdktf/provider-upcloud.dataUpcloudStorage.DataUpcloudStorage.resetZone"></a>
 
 ```java
@@ -549,7 +577,7 @@ The construct id used in the generated config for the DataUpcloudStorage to impo
 
 The id of the existing DataUpcloudStorage that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.10.1/docs/data-sources/storage#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.11.0/docs/data-sources/storage#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -577,15 +605,18 @@ Refer to the {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5
 | <code><a href="#@cdktf/provider-upcloud.dataUpcloudStorage.DataUpcloudStorage.property.forEach">forEach</a></code> | <code>com.hashicorp.cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.dataUpcloudStorage.DataUpcloudStorage.property.lifecycle">lifecycle</a></code> | <code>com.hashicorp.cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.dataUpcloudStorage.DataUpcloudStorage.property.provider">provider</a></code> | <code>com.hashicorp.cdktf.TerraformProvider</code> | *No description.* |
+| <code><a href="#@cdktf/provider-upcloud.dataUpcloudStorage.DataUpcloudStorage.property.encrypt">encrypt</a></code> | <code>com.hashicorp.cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-upcloud.dataUpcloudStorage.DataUpcloudStorage.property.labels">labels</a></code> | <code>com.hashicorp.cdktf.StringMap</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.dataUpcloudStorage.DataUpcloudStorage.property.size">size</a></code> | <code>java.lang.Number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.dataUpcloudStorage.DataUpcloudStorage.property.state">state</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktf/provider-upcloud.dataUpcloudStorage.DataUpcloudStorage.property.systemLabels">systemLabels</a></code> | <code>com.hashicorp.cdktf.StringMap</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.dataUpcloudStorage.DataUpcloudStorage.property.tier">tier</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-upcloud.dataUpcloudStorage.DataUpcloudStorage.property.title">title</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.dataUpcloudStorage.DataUpcloudStorage.property.accessTypeInput">accessTypeInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.dataUpcloudStorage.DataUpcloudStorage.property.idInput">idInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.dataUpcloudStorage.DataUpcloudStorage.property.mostRecentInput">mostRecentInput</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.dataUpcloudStorage.DataUpcloudStorage.property.nameInput">nameInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.dataUpcloudStorage.DataUpcloudStorage.property.nameRegexInput">nameRegexInput</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktf/provider-upcloud.dataUpcloudStorage.DataUpcloudStorage.property.titleInput">titleInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.dataUpcloudStorage.DataUpcloudStorage.property.typeInput">typeInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.dataUpcloudStorage.DataUpcloudStorage.property.zoneInput">zoneInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.dataUpcloudStorage.DataUpcloudStorage.property.accessType">accessType</a></code> | <code>java.lang.String</code> | *No description.* |
@@ -593,6 +624,7 @@ Refer to the {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5
 | <code><a href="#@cdktf/provider-upcloud.dataUpcloudStorage.DataUpcloudStorage.property.mostRecent">mostRecent</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.dataUpcloudStorage.DataUpcloudStorage.property.name">name</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.dataUpcloudStorage.DataUpcloudStorage.property.nameRegex">nameRegex</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktf/provider-upcloud.dataUpcloudStorage.DataUpcloudStorage.property.title">title</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.dataUpcloudStorage.DataUpcloudStorage.property.type">type</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.dataUpcloudStorage.DataUpcloudStorage.property.zone">zone</a></code> | <code>java.lang.String</code> | *No description.* |
 
@@ -720,6 +752,26 @@ public TerraformProvider getProvider();
 
 ---
 
+##### `encrypt`<sup>Required</sup> <a name="encrypt" id="@cdktf/provider-upcloud.dataUpcloudStorage.DataUpcloudStorage.property.encrypt"></a>
+
+```java
+public IResolvable getEncrypt();
+```
+
+- *Type:* com.hashicorp.cdktf.IResolvable
+
+---
+
+##### `labels`<sup>Required</sup> <a name="labels" id="@cdktf/provider-upcloud.dataUpcloudStorage.DataUpcloudStorage.property.labels"></a>
+
+```java
+public StringMap getLabels();
+```
+
+- *Type:* com.hashicorp.cdktf.StringMap
+
+---
+
 ##### `size`<sup>Required</sup> <a name="size" id="@cdktf/provider-upcloud.dataUpcloudStorage.DataUpcloudStorage.property.size"></a>
 
 ```java
@@ -740,20 +792,20 @@ public java.lang.String getState();
 
 ---
 
+##### `systemLabels`<sup>Required</sup> <a name="systemLabels" id="@cdktf/provider-upcloud.dataUpcloudStorage.DataUpcloudStorage.property.systemLabels"></a>
+
+```java
+public StringMap getSystemLabels();
+```
+
+- *Type:* com.hashicorp.cdktf.StringMap
+
+---
+
 ##### `tier`<sup>Required</sup> <a name="tier" id="@cdktf/provider-upcloud.dataUpcloudStorage.DataUpcloudStorage.property.tier"></a>
 
 ```java
 public java.lang.String getTier();
-```
-
-- *Type:* java.lang.String
-
----
-
-##### `title`<sup>Required</sup> <a name="title" id="@cdktf/provider-upcloud.dataUpcloudStorage.DataUpcloudStorage.property.title"></a>
-
-```java
-public java.lang.String getTitle();
 ```
 
 - *Type:* java.lang.String
@@ -804,6 +856,16 @@ public java.lang.String getNameInput();
 
 ```java
 public java.lang.String getNameRegexInput();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `titleInput`<sup>Optional</sup> <a name="titleInput" id="@cdktf/provider-upcloud.dataUpcloudStorage.DataUpcloudStorage.property.titleInput"></a>
+
+```java
+public java.lang.String getTitleInput();
 ```
 
 - *Type:* java.lang.String
@@ -880,6 +942,16 @@ public java.lang.String getNameRegex();
 
 ---
 
+##### `title`<sup>Required</sup> <a name="title" id="@cdktf/provider-upcloud.dataUpcloudStorage.DataUpcloudStorage.property.title"></a>
+
+```java
+public java.lang.String getTitle();
+```
+
+- *Type:* java.lang.String
+
+---
+
 ##### `type`<sup>Required</sup> <a name="type" id="@cdktf/provider-upcloud.dataUpcloudStorage.DataUpcloudStorage.property.type"></a>
 
 ```java
@@ -939,13 +1011,14 @@ DataUpcloudStorageConfig.builder()
 //  .provisioners(java.util.List<FileProvisioner)
 //  .provisioners(LocalExecProvisioner)
 //  .provisioners(RemoteExecProvisioner>)
-    .type(java.lang.String)
 //  .accessType(java.lang.String)
 //  .id(java.lang.String)
 //  .mostRecent(java.lang.Boolean)
 //  .mostRecent(IResolvable)
 //  .name(java.lang.String)
 //  .nameRegex(java.lang.String)
+//  .title(java.lang.String)
+//  .type(java.lang.String)
 //  .zone(java.lang.String)
     .build();
 ```
@@ -961,13 +1034,14 @@ DataUpcloudStorageConfig.builder()
 | <code><a href="#@cdktf/provider-upcloud.dataUpcloudStorage.DataUpcloudStorageConfig.property.lifecycle">lifecycle</a></code> | <code>com.hashicorp.cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.dataUpcloudStorage.DataUpcloudStorageConfig.property.provider">provider</a></code> | <code>com.hashicorp.cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.dataUpcloudStorage.DataUpcloudStorageConfig.property.provisioners">provisioners</a></code> | <code>java.util.List<com.hashicorp.cdktf.FileProvisioner OR com.hashicorp.cdktf.LocalExecProvisioner OR com.hashicorp.cdktf.RemoteExecProvisioner></code> | *No description.* |
-| <code><a href="#@cdktf/provider-upcloud.dataUpcloudStorage.DataUpcloudStorageConfig.property.type">type</a></code> | <code>java.lang.String</code> | Storage type (normal, backup, cdrom, template). Use 'favorite' as type to filter storages on the list of favorites. |
-| <code><a href="#@cdktf/provider-upcloud.dataUpcloudStorage.DataUpcloudStorageConfig.property.accessType">accessType</a></code> | <code>java.lang.String</code> | Storage access type (public, private). |
-| <code><a href="#@cdktf/provider-upcloud.dataUpcloudStorage.DataUpcloudStorageConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.10.1/docs/data-sources/storage#id DataUpcloudStorage#id}. |
+| <code><a href="#@cdktf/provider-upcloud.dataUpcloudStorage.DataUpcloudStorageConfig.property.accessType">accessType</a></code> | <code>java.lang.String</code> | The access type of the storage, `public` or `private`. |
+| <code><a href="#@cdktf/provider-upcloud.dataUpcloudStorage.DataUpcloudStorageConfig.property.id">id</a></code> | <code>java.lang.String</code> | UUID of the storage. |
 | <code><a href="#@cdktf/provider-upcloud.dataUpcloudStorage.DataUpcloudStorageConfig.property.mostRecent">mostRecent</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | If more than one result is returned, use the most recent storage. |
-| <code><a href="#@cdktf/provider-upcloud.dataUpcloudStorage.DataUpcloudStorageConfig.property.name">name</a></code> | <code>java.lang.String</code> | Exact name of the storage (same as title). |
-| <code><a href="#@cdktf/provider-upcloud.dataUpcloudStorage.DataUpcloudStorageConfig.property.nameRegex">nameRegex</a></code> | <code>java.lang.String</code> | Use regular expression to match storage name. |
-| <code><a href="#@cdktf/provider-upcloud.dataUpcloudStorage.DataUpcloudStorageConfig.property.zone">zone</a></code> | <code>java.lang.String</code> | The zone in which the storage resides, e.g. `de-fra1`. You can list available zones with `upctl zone list`. |
+| <code><a href="#@cdktf/provider-upcloud.dataUpcloudStorage.DataUpcloudStorageConfig.property.name">name</a></code> | <code>java.lang.String</code> | Exact name of the storage (same as title). Deprecated, use `title` instead. |
+| <code><a href="#@cdktf/provider-upcloud.dataUpcloudStorage.DataUpcloudStorageConfig.property.nameRegex">nameRegex</a></code> | <code>java.lang.String</code> | Use regular expression to match storage name. Deprecated, use exact title or UUID instead. |
+| <code><a href="#@cdktf/provider-upcloud.dataUpcloudStorage.DataUpcloudStorageConfig.property.title">title</a></code> | <code>java.lang.String</code> | The title of the storage. |
+| <code><a href="#@cdktf/provider-upcloud.dataUpcloudStorage.DataUpcloudStorageConfig.property.type">type</a></code> | <code>java.lang.String</code> | The type of the storage. |
+| <code><a href="#@cdktf/provider-upcloud.dataUpcloudStorage.DataUpcloudStorageConfig.property.zone">zone</a></code> | <code>java.lang.String</code> | The zone the storage is in, e.g. `de-fra1`. |
 
 ---
 
@@ -1041,20 +1115,6 @@ public java.lang.Object getProvisioners();
 
 ---
 
-##### `type`<sup>Required</sup> <a name="type" id="@cdktf/provider-upcloud.dataUpcloudStorage.DataUpcloudStorageConfig.property.type"></a>
-
-```java
-public java.lang.String getType();
-```
-
-- *Type:* java.lang.String
-
-Storage type (normal, backup, cdrom, template). Use 'favorite' as type to filter storages on the list of favorites.
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.10.1/docs/data-sources/storage#type DataUpcloudStorage#type}
-
----
-
 ##### `accessType`<sup>Optional</sup> <a name="accessType" id="@cdktf/provider-upcloud.dataUpcloudStorage.DataUpcloudStorageConfig.property.accessType"></a>
 
 ```java
@@ -1063,9 +1123,9 @@ public java.lang.String getAccessType();
 
 - *Type:* java.lang.String
 
-Storage access type (public, private).
+The access type of the storage, `public` or `private`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.10.1/docs/data-sources/storage#access_type DataUpcloudStorage#access_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.11.0/docs/data-sources/storage#access_type DataUpcloudStorage#access_type}
 
 ---
 
@@ -1077,7 +1137,9 @@ public java.lang.String getId();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.10.1/docs/data-sources/storage#id DataUpcloudStorage#id}.
+UUID of the storage.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.11.0/docs/data-sources/storage#id DataUpcloudStorage#id}
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1096,7 +1158,7 @@ If more than one result is returned, use the most recent storage.
 
 This is only useful with private storages. Public storages might give unpredictable results.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.10.1/docs/data-sources/storage#most_recent DataUpcloudStorage#most_recent}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.11.0/docs/data-sources/storage#most_recent DataUpcloudStorage#most_recent}
 
 ---
 
@@ -1108,9 +1170,9 @@ public java.lang.String getName();
 
 - *Type:* java.lang.String
 
-Exact name of the storage (same as title).
+Exact name of the storage (same as title). Deprecated, use `title` instead.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.10.1/docs/data-sources/storage#name DataUpcloudStorage#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.11.0/docs/data-sources/storage#name DataUpcloudStorage#name}
 
 ---
 
@@ -1122,9 +1184,37 @@ public java.lang.String getNameRegex();
 
 - *Type:* java.lang.String
 
-Use regular expression to match storage name.
+Use regular expression to match storage name. Deprecated, use exact title or UUID instead.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.10.1/docs/data-sources/storage#name_regex DataUpcloudStorage#name_regex}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.11.0/docs/data-sources/storage#name_regex DataUpcloudStorage#name_regex}
+
+---
+
+##### `title`<sup>Optional</sup> <a name="title" id="@cdktf/provider-upcloud.dataUpcloudStorage.DataUpcloudStorageConfig.property.title"></a>
+
+```java
+public java.lang.String getTitle();
+```
+
+- *Type:* java.lang.String
+
+The title of the storage.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.11.0/docs/data-sources/storage#title DataUpcloudStorage#title}
+
+---
+
+##### `type`<sup>Optional</sup> <a name="type" id="@cdktf/provider-upcloud.dataUpcloudStorage.DataUpcloudStorageConfig.property.type"></a>
+
+```java
+public java.lang.String getType();
+```
+
+- *Type:* java.lang.String
+
+The type of the storage.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.11.0/docs/data-sources/storage#type DataUpcloudStorage#type}
 
 ---
 
@@ -1136,9 +1226,9 @@ public java.lang.String getZone();
 
 - *Type:* java.lang.String
 
-The zone in which the storage resides, e.g. `de-fra1`. You can list available zones with `upctl zone list`.
+The zone the storage is in, e.g. `de-fra1`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.10.1/docs/data-sources/storage#zone DataUpcloudStorage#zone}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.11.0/docs/data-sources/storage#zone DataUpcloudStorage#zone}
 
 ---
 

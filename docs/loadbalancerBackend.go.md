@@ -4,12 +4,12 @@
 
 ### LoadbalancerBackend <a name="LoadbalancerBackend" id="@cdktf/provider-upcloud.loadbalancerBackend.LoadbalancerBackend"></a>
 
-Represents a {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.10.1/docs/resources/loadbalancer_backend upcloud_loadbalancer_backend}.
+Represents a {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.11.0/docs/resources/loadbalancer_backend upcloud_loadbalancer_backend}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-upcloud.loadbalancerBackend.LoadbalancerBackend.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v14/loadbalancerbackend"
+import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/loadbalancerbackend"
 
 loadbalancerbackend.NewLoadbalancerBackend(scope Construct, id *string, config LoadbalancerBackendConfig) LoadbalancerBackend
 ```
@@ -74,7 +74,6 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-upcloud.loadbalancerBackend.LoadbalancerBackend.moveTo">MoveTo</a></code> | Moves this resource to the target resource given by moveTarget. |
 | <code><a href="#@cdktf/provider-upcloud.loadbalancerBackend.LoadbalancerBackend.moveToId">MoveToId</a></code> | Moves this resource to the resource corresponding to "id". |
 | <code><a href="#@cdktf/provider-upcloud.loadbalancerBackend.LoadbalancerBackend.putProperties">PutProperties</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-upcloud.loadbalancerBackend.LoadbalancerBackend.resetId">ResetId</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.loadbalancerBackend.LoadbalancerBackend.resetProperties">ResetProperties</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.loadbalancerBackend.LoadbalancerBackend.resetResolverName">ResetResolverName</a></code> | *No description.* |
 
@@ -371,20 +370,14 @@ Full id of resource to move to, e.g. "aws_s3_bucket.example".
 ##### `PutProperties` <a name="PutProperties" id="@cdktf/provider-upcloud.loadbalancerBackend.LoadbalancerBackend.putProperties"></a>
 
 ```go
-func PutProperties(value LoadbalancerBackendProperties)
+func PutProperties(value interface{})
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-upcloud.loadbalancerBackend.LoadbalancerBackend.putProperties.parameter.value"></a>
 
-- *Type:* <a href="#@cdktf/provider-upcloud.loadbalancerBackend.LoadbalancerBackendProperties">LoadbalancerBackendProperties</a>
+- *Type:* interface{}
 
 ---
-
-##### `ResetId` <a name="ResetId" id="@cdktf/provider-upcloud.loadbalancerBackend.LoadbalancerBackend.resetId"></a>
-
-```go
-func ResetId()
-```
 
 ##### `ResetProperties` <a name="ResetProperties" id="@cdktf/provider-upcloud.loadbalancerBackend.LoadbalancerBackend.resetProperties"></a>
 
@@ -412,7 +405,7 @@ func ResetResolverName()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-upcloud.loadbalancerBackend.LoadbalancerBackend.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v14/loadbalancerbackend"
+import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/loadbalancerbackend"
 
 loadbalancerbackend.LoadbalancerBackend_IsConstruct(x interface{}) *bool
 ```
@@ -444,7 +437,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-upcloud.loadbalancerBackend.LoadbalancerBackend.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v14/loadbalancerbackend"
+import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/loadbalancerbackend"
 
 loadbalancerbackend.LoadbalancerBackend_IsTerraformElement(x interface{}) *bool
 ```
@@ -458,7 +451,7 @@ loadbalancerbackend.LoadbalancerBackend_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-upcloud.loadbalancerBackend.LoadbalancerBackend.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v14/loadbalancerbackend"
+import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/loadbalancerbackend"
 
 loadbalancerbackend.LoadbalancerBackend_IsTerraformResource(x interface{}) *bool
 ```
@@ -472,7 +465,7 @@ loadbalancerbackend.LoadbalancerBackend_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-upcloud.loadbalancerBackend.LoadbalancerBackend.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v14/loadbalancerbackend"
+import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/loadbalancerbackend"
 
 loadbalancerbackend.LoadbalancerBackend_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -501,7 +494,7 @@ The construct id used in the generated config for the LoadbalancerBackend to imp
 
 The id of the existing LoadbalancerBackend that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.10.1/docs/resources/loadbalancer_backend#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.11.0/docs/resources/loadbalancer_backend#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -531,15 +524,14 @@ Refer to the {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5
 | <code><a href="#@cdktf/provider-upcloud.loadbalancerBackend.LoadbalancerBackend.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.loadbalancerBackend.LoadbalancerBackend.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.loadbalancerBackend.LoadbalancerBackend.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
+| <code><a href="#@cdktf/provider-upcloud.loadbalancerBackend.LoadbalancerBackend.property.id">Id</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.loadbalancerBackend.LoadbalancerBackend.property.members">Members</a></code> | <code>*[]*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-upcloud.loadbalancerBackend.LoadbalancerBackend.property.properties">Properties</a></code> | <code><a href="#@cdktf/provider-upcloud.loadbalancerBackend.LoadbalancerBackendPropertiesOutputReference">LoadbalancerBackendPropertiesOutputReference</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-upcloud.loadbalancerBackend.LoadbalancerBackend.property.properties">Properties</a></code> | <code><a href="#@cdktf/provider-upcloud.loadbalancerBackend.LoadbalancerBackendPropertiesList">LoadbalancerBackendPropertiesList</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.loadbalancerBackend.LoadbalancerBackend.property.tlsConfigs">TlsConfigs</a></code> | <code>*[]*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-upcloud.loadbalancerBackend.LoadbalancerBackend.property.idInput">IdInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.loadbalancerBackend.LoadbalancerBackend.property.loadbalancerInput">LoadbalancerInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.loadbalancerBackend.LoadbalancerBackend.property.nameInput">NameInput</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-upcloud.loadbalancerBackend.LoadbalancerBackend.property.propertiesInput">PropertiesInput</a></code> | <code><a href="#@cdktf/provider-upcloud.loadbalancerBackend.LoadbalancerBackendProperties">LoadbalancerBackendProperties</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-upcloud.loadbalancerBackend.LoadbalancerBackend.property.propertiesInput">PropertiesInput</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.loadbalancerBackend.LoadbalancerBackend.property.resolverNameInput">ResolverNameInput</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-upcloud.loadbalancerBackend.LoadbalancerBackend.property.id">Id</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.loadbalancerBackend.LoadbalancerBackend.property.loadbalancer">Loadbalancer</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.loadbalancerBackend.LoadbalancerBackend.property.name">Name</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.loadbalancerBackend.LoadbalancerBackend.property.resolverName">ResolverName</a></code> | <code>*string</code> | *No description.* |
@@ -688,6 +680,16 @@ func Provisioners() *[]interface{}
 
 ---
 
+##### `Id`<sup>Required</sup> <a name="Id" id="@cdktf/provider-upcloud.loadbalancerBackend.LoadbalancerBackend.property.id"></a>
+
+```go
+func Id() *string
+```
+
+- *Type:* *string
+
+---
+
 ##### `Members`<sup>Required</sup> <a name="Members" id="@cdktf/provider-upcloud.loadbalancerBackend.LoadbalancerBackend.property.members"></a>
 
 ```go
@@ -701,10 +703,10 @@ func Members() *[]*string
 ##### `Properties`<sup>Required</sup> <a name="Properties" id="@cdktf/provider-upcloud.loadbalancerBackend.LoadbalancerBackend.property.properties"></a>
 
 ```go
-func Properties() LoadbalancerBackendPropertiesOutputReference
+func Properties() LoadbalancerBackendPropertiesList
 ```
 
-- *Type:* <a href="#@cdktf/provider-upcloud.loadbalancerBackend.LoadbalancerBackendPropertiesOutputReference">LoadbalancerBackendPropertiesOutputReference</a>
+- *Type:* <a href="#@cdktf/provider-upcloud.loadbalancerBackend.LoadbalancerBackendPropertiesList">LoadbalancerBackendPropertiesList</a>
 
 ---
 
@@ -715,16 +717,6 @@ func TlsConfigs() *[]*string
 ```
 
 - *Type:* *[]*string
-
----
-
-##### `IdInput`<sup>Optional</sup> <a name="IdInput" id="@cdktf/provider-upcloud.loadbalancerBackend.LoadbalancerBackend.property.idInput"></a>
-
-```go
-func IdInput() *string
-```
-
-- *Type:* *string
 
 ---
 
@@ -751,10 +743,10 @@ func NameInput() *string
 ##### `PropertiesInput`<sup>Optional</sup> <a name="PropertiesInput" id="@cdktf/provider-upcloud.loadbalancerBackend.LoadbalancerBackend.property.propertiesInput"></a>
 
 ```go
-func PropertiesInput() LoadbalancerBackendProperties
+func PropertiesInput() interface{}
 ```
 
-- *Type:* <a href="#@cdktf/provider-upcloud.loadbalancerBackend.LoadbalancerBackendProperties">LoadbalancerBackendProperties</a>
+- *Type:* interface{}
 
 ---
 
@@ -762,16 +754,6 @@ func PropertiesInput() LoadbalancerBackendProperties
 
 ```go
 func ResolverNameInput() *string
-```
-
-- *Type:* *string
-
----
-
-##### `Id`<sup>Required</sup> <a name="Id" id="@cdktf/provider-upcloud.loadbalancerBackend.LoadbalancerBackend.property.id"></a>
-
-```go
-func Id() *string
 ```
 
 - *Type:* *string
@@ -833,7 +815,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-upcloud.loadbalancerBackend.LoadbalancerBackendConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v14/loadbalancerbackend"
+import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/loadbalancerbackend"
 
 &loadbalancerbackend.LoadbalancerBackendConfig {
 	Connection: interface{},
@@ -845,8 +827,7 @@ import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v14/loadbalancerbacke
 	Provisioners: *[]interface{},
 	Loadbalancer: *string,
 	Name: *string,
-	Id: *string,
-	Properties: github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v14.loadbalancerBackend.LoadbalancerBackendProperties,
+	Properties: interface{},
 	ResolverName: *string,
 }
 ```
@@ -862,11 +843,10 @@ import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v14/loadbalancerbacke
 | <code><a href="#@cdktf/provider-upcloud.loadbalancerBackend.LoadbalancerBackendConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.loadbalancerBackend.LoadbalancerBackendConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.loadbalancerBackend.LoadbalancerBackendConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-upcloud.loadbalancerBackend.LoadbalancerBackendConfig.property.loadbalancer">Loadbalancer</a></code> | <code>*string</code> | ID of the load balancer to which the backend is connected. |
-| <code><a href="#@cdktf/provider-upcloud.loadbalancerBackend.LoadbalancerBackendConfig.property.name">Name</a></code> | <code>*string</code> | The name of the backend must be unique within the load balancer service. |
-| <code><a href="#@cdktf/provider-upcloud.loadbalancerBackend.LoadbalancerBackendConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.10.1/docs/resources/loadbalancer_backend#id LoadbalancerBackend#id}. |
-| <code><a href="#@cdktf/provider-upcloud.loadbalancerBackend.LoadbalancerBackendConfig.property.properties">Properties</a></code> | <code><a href="#@cdktf/provider-upcloud.loadbalancerBackend.LoadbalancerBackendProperties">LoadbalancerBackendProperties</a></code> | properties block. |
-| <code><a href="#@cdktf/provider-upcloud.loadbalancerBackend.LoadbalancerBackendConfig.property.resolverName">ResolverName</a></code> | <code>*string</code> | Domain Name Resolver used with dynamic type members. |
+| <code><a href="#@cdktf/provider-upcloud.loadbalancerBackend.LoadbalancerBackendConfig.property.loadbalancer">Loadbalancer</a></code> | <code>*string</code> | UUID of the load balancer to which the backend is connected. |
+| <code><a href="#@cdktf/provider-upcloud.loadbalancerBackend.LoadbalancerBackendConfig.property.name">Name</a></code> | <code>*string</code> | The name of the backend. Must be unique within the load balancer service. |
+| <code><a href="#@cdktf/provider-upcloud.loadbalancerBackend.LoadbalancerBackendConfig.property.properties">Properties</a></code> | <code>interface{}</code> | properties block. |
+| <code><a href="#@cdktf/provider-upcloud.loadbalancerBackend.LoadbalancerBackendConfig.property.resolverName">ResolverName</a></code> | <code>*string</code> | Domain name resolver used with dynamic type members. |
 
 ---
 
@@ -948,9 +928,9 @@ Loadbalancer *string
 
 - *Type:* *string
 
-ID of the load balancer to which the backend is connected.
+UUID of the load balancer to which the backend is connected.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.10.1/docs/resources/loadbalancer_backend#loadbalancer LoadbalancerBackend#loadbalancer}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.11.0/docs/resources/loadbalancer_backend#loadbalancer LoadbalancerBackend#loadbalancer}
 
 ---
 
@@ -962,38 +942,23 @@ Name *string
 
 - *Type:* *string
 
-The name of the backend must be unique within the load balancer service.
+The name of the backend. Must be unique within the load balancer service.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.10.1/docs/resources/loadbalancer_backend#name LoadbalancerBackend#name}
-
----
-
-##### `Id`<sup>Optional</sup> <a name="Id" id="@cdktf/provider-upcloud.loadbalancerBackend.LoadbalancerBackendConfig.property.id"></a>
-
-```go
-Id *string
-```
-
-- *Type:* *string
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.10.1/docs/resources/loadbalancer_backend#id LoadbalancerBackend#id}.
-
-Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
-If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.11.0/docs/resources/loadbalancer_backend#name LoadbalancerBackend#name}
 
 ---
 
 ##### `Properties`<sup>Optional</sup> <a name="Properties" id="@cdktf/provider-upcloud.loadbalancerBackend.LoadbalancerBackendConfig.property.properties"></a>
 
 ```go
-Properties LoadbalancerBackendProperties
+Properties interface{}
 ```
 
-- *Type:* <a href="#@cdktf/provider-upcloud.loadbalancerBackend.LoadbalancerBackendProperties">LoadbalancerBackendProperties</a>
+- *Type:* interface{}
 
 properties block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.10.1/docs/resources/loadbalancer_backend#properties LoadbalancerBackend#properties}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.11.0/docs/resources/loadbalancer_backend#properties LoadbalancerBackend#properties}
 
 ---
 
@@ -1005,9 +970,9 @@ ResolverName *string
 
 - *Type:* *string
 
-Domain Name Resolver used with dynamic type members.
+Domain name resolver used with dynamic type members.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.10.1/docs/resources/loadbalancer_backend#resolver_name LoadbalancerBackend#resolver_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.11.0/docs/resources/loadbalancer_backend#resolver_name LoadbalancerBackend#resolver_name}
 
 ---
 
@@ -1016,7 +981,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upclo
 #### Initializer <a name="Initializer" id="@cdktf/provider-upcloud.loadbalancerBackend.LoadbalancerBackendProperties.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v14/loadbalancerbackend"
+import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/loadbalancerbackend"
 
 &loadbalancerbackend.LoadbalancerBackendProperties {
 	HealthCheckExpectedStatus: *f64,
@@ -1041,15 +1006,15 @@ import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v14/loadbalancerbacke
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-upcloud.loadbalancerBackend.LoadbalancerBackendProperties.property.healthCheckExpectedStatus">HealthCheckExpectedStatus</a></code> | <code>*f64</code> | Expected HTTP status code returned by the customer application to mark server as healthy. Ignored for tcp type. |
+| <code><a href="#@cdktf/provider-upcloud.loadbalancerBackend.LoadbalancerBackendProperties.property.healthCheckExpectedStatus">HealthCheckExpectedStatus</a></code> | <code>*f64</code> | Expected HTTP status code returned by the customer application to mark server as healthy. Ignored for `tcp` `health_check_type`. |
 | <code><a href="#@cdktf/provider-upcloud.loadbalancerBackend.LoadbalancerBackendProperties.property.healthCheckFall">HealthCheckFall</a></code> | <code>*f64</code> | Sets how many failed health checks are allowed until the backend member is taken off from the rotation. |
-| <code><a href="#@cdktf/provider-upcloud.loadbalancerBackend.LoadbalancerBackendProperties.property.healthCheckInterval">HealthCheckInterval</a></code> | <code>*f64</code> | Interval between health checks. |
-| <code><a href="#@cdktf/provider-upcloud.loadbalancerBackend.LoadbalancerBackendProperties.property.healthCheckRise">HealthCheckRise</a></code> | <code>*f64</code> | Sets how many passing checks there must be before returning the backend member to the rotation. |
+| <code><a href="#@cdktf/provider-upcloud.loadbalancerBackend.LoadbalancerBackendProperties.property.healthCheckInterval">HealthCheckInterval</a></code> | <code>*f64</code> | Interval between health checks in seconds. |
+| <code><a href="#@cdktf/provider-upcloud.loadbalancerBackend.LoadbalancerBackendProperties.property.healthCheckRise">HealthCheckRise</a></code> | <code>*f64</code> | Sets how many successful health checks are required to put the backend member back into rotation. |
 | <code><a href="#@cdktf/provider-upcloud.loadbalancerBackend.LoadbalancerBackendProperties.property.healthCheckTlsVerify">HealthCheckTlsVerify</a></code> | <code>interface{}</code> | Enables certificate verification with the system CA certificate bundle. Works with https scheme in health_check_url, otherwise ignored. |
 | <code><a href="#@cdktf/provider-upcloud.loadbalancerBackend.LoadbalancerBackendProperties.property.healthCheckType">HealthCheckType</a></code> | <code>*string</code> | Health check type. |
-| <code><a href="#@cdktf/provider-upcloud.loadbalancerBackend.LoadbalancerBackendProperties.property.healthCheckUrl">HealthCheckUrl</a></code> | <code>*string</code> | Target path for health check HTTP GET requests. Ignored for tcp type. |
+| <code><a href="#@cdktf/provider-upcloud.loadbalancerBackend.LoadbalancerBackendProperties.property.healthCheckUrl">HealthCheckUrl</a></code> | <code>*string</code> | Target path for health check HTTP GET requests. Ignored for `tcp` `health_check_type`. |
 | <code><a href="#@cdktf/provider-upcloud.loadbalancerBackend.LoadbalancerBackendProperties.property.http2Enabled">Http2Enabled</a></code> | <code>interface{}</code> | Allow HTTP/2 connections to backend members by utilizing ALPN extension of TLS protocol, therefore it can only be enabled when tls_enabled is set to true. |
-| <code><a href="#@cdktf/provider-upcloud.loadbalancerBackend.LoadbalancerBackendProperties.property.outboundProxyProtocol">OutboundProxyProtocol</a></code> | <code>*string</code> | Enable outbound proxy protocol by setting the desired version. Empty string disables proxy protocol. |
+| <code><a href="#@cdktf/provider-upcloud.loadbalancerBackend.LoadbalancerBackendProperties.property.outboundProxyProtocol">OutboundProxyProtocol</a></code> | <code>*string</code> | Enable outbound proxy protocol by setting the desired version. Defaults to empty string. Empty string disables proxy protocol. |
 | <code><a href="#@cdktf/provider-upcloud.loadbalancerBackend.LoadbalancerBackendProperties.property.stickySessionCookieName">StickySessionCookieName</a></code> | <code>*string</code> | Sets sticky session cookie name. Empty string disables sticky session. |
 | <code><a href="#@cdktf/provider-upcloud.loadbalancerBackend.LoadbalancerBackendProperties.property.timeoutServer">TimeoutServer</a></code> | <code>*f64</code> | Backend server timeout in seconds. |
 | <code><a href="#@cdktf/provider-upcloud.loadbalancerBackend.LoadbalancerBackendProperties.property.timeoutTunnel">TimeoutTunnel</a></code> | <code>*f64</code> | Maximum inactivity time on the client and server side for tunnels in seconds. |
@@ -1067,9 +1032,9 @@ HealthCheckExpectedStatus *f64
 
 - *Type:* *f64
 
-Expected HTTP status code returned by the customer application to mark server as healthy. Ignored for tcp type.
+Expected HTTP status code returned by the customer application to mark server as healthy. Ignored for `tcp` `health_check_type`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.10.1/docs/resources/loadbalancer_backend#health_check_expected_status LoadbalancerBackend#health_check_expected_status}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.11.0/docs/resources/loadbalancer_backend#health_check_expected_status LoadbalancerBackend#health_check_expected_status}
 
 ---
 
@@ -1083,7 +1048,7 @@ HealthCheckFall *f64
 
 Sets how many failed health checks are allowed until the backend member is taken off from the rotation.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.10.1/docs/resources/loadbalancer_backend#health_check_fall LoadbalancerBackend#health_check_fall}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.11.0/docs/resources/loadbalancer_backend#health_check_fall LoadbalancerBackend#health_check_fall}
 
 ---
 
@@ -1095,9 +1060,9 @@ HealthCheckInterval *f64
 
 - *Type:* *f64
 
-Interval between health checks.
+Interval between health checks in seconds.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.10.1/docs/resources/loadbalancer_backend#health_check_interval LoadbalancerBackend#health_check_interval}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.11.0/docs/resources/loadbalancer_backend#health_check_interval LoadbalancerBackend#health_check_interval}
 
 ---
 
@@ -1109,9 +1074,9 @@ HealthCheckRise *f64
 
 - *Type:* *f64
 
-Sets how many passing checks there must be before returning the backend member to the rotation.
+Sets how many successful health checks are required to put the backend member back into rotation.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.10.1/docs/resources/loadbalancer_backend#health_check_rise LoadbalancerBackend#health_check_rise}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.11.0/docs/resources/loadbalancer_backend#health_check_rise LoadbalancerBackend#health_check_rise}
 
 ---
 
@@ -1125,7 +1090,7 @@ HealthCheckTlsVerify interface{}
 
 Enables certificate verification with the system CA certificate bundle. Works with https scheme in health_check_url, otherwise ignored.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.10.1/docs/resources/loadbalancer_backend#health_check_tls_verify LoadbalancerBackend#health_check_tls_verify}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.11.0/docs/resources/loadbalancer_backend#health_check_tls_verify LoadbalancerBackend#health_check_tls_verify}
 
 ---
 
@@ -1139,7 +1104,7 @@ HealthCheckType *string
 
 Health check type.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.10.1/docs/resources/loadbalancer_backend#health_check_type LoadbalancerBackend#health_check_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.11.0/docs/resources/loadbalancer_backend#health_check_type LoadbalancerBackend#health_check_type}
 
 ---
 
@@ -1151,9 +1116,9 @@ HealthCheckUrl *string
 
 - *Type:* *string
 
-Target path for health check HTTP GET requests. Ignored for tcp type.
+Target path for health check HTTP GET requests. Ignored for `tcp` `health_check_type`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.10.1/docs/resources/loadbalancer_backend#health_check_url LoadbalancerBackend#health_check_url}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.11.0/docs/resources/loadbalancer_backend#health_check_url LoadbalancerBackend#health_check_url}
 
 ---
 
@@ -1169,7 +1134,7 @@ Allow HTTP/2 connections to backend members by utilizing ALPN extension of TLS p
 
 Note: members should support HTTP/2 for this setting to work.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.10.1/docs/resources/loadbalancer_backend#http2_enabled LoadbalancerBackend#http2_enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.11.0/docs/resources/loadbalancer_backend#http2_enabled LoadbalancerBackend#http2_enabled}
 
 ---
 
@@ -1181,9 +1146,9 @@ OutboundProxyProtocol *string
 
 - *Type:* *string
 
-Enable outbound proxy protocol by setting the desired version. Empty string disables proxy protocol.
+Enable outbound proxy protocol by setting the desired version. Defaults to empty string. Empty string disables proxy protocol.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.10.1/docs/resources/loadbalancer_backend#outbound_proxy_protocol LoadbalancerBackend#outbound_proxy_protocol}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.11.0/docs/resources/loadbalancer_backend#outbound_proxy_protocol LoadbalancerBackend#outbound_proxy_protocol}
 
 ---
 
@@ -1197,7 +1162,7 @@ StickySessionCookieName *string
 
 Sets sticky session cookie name. Empty string disables sticky session.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.10.1/docs/resources/loadbalancer_backend#sticky_session_cookie_name LoadbalancerBackend#sticky_session_cookie_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.11.0/docs/resources/loadbalancer_backend#sticky_session_cookie_name LoadbalancerBackend#sticky_session_cookie_name}
 
 ---
 
@@ -1211,7 +1176,7 @@ TimeoutServer *f64
 
 Backend server timeout in seconds.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.10.1/docs/resources/loadbalancer_backend#timeout_server LoadbalancerBackend#timeout_server}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.11.0/docs/resources/loadbalancer_backend#timeout_server LoadbalancerBackend#timeout_server}
 
 ---
 
@@ -1225,7 +1190,7 @@ TimeoutTunnel *f64
 
 Maximum inactivity time on the client and server side for tunnels in seconds.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.10.1/docs/resources/loadbalancer_backend#timeout_tunnel LoadbalancerBackend#timeout_tunnel}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.11.0/docs/resources/loadbalancer_backend#timeout_tunnel LoadbalancerBackend#timeout_tunnel}
 
 ---
 
@@ -1239,7 +1204,7 @@ TlsEnabled interface{}
 
 Enables TLS connection from the load balancer to backend servers.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.10.1/docs/resources/loadbalancer_backend#tls_enabled LoadbalancerBackend#tls_enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.11.0/docs/resources/loadbalancer_backend#tls_enabled LoadbalancerBackend#tls_enabled}
 
 ---
 
@@ -1253,7 +1218,7 @@ TlsUseSystemCa interface{}
 
 If enabled, then the system CA certificate bundle will be used for the certificate verification.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.10.1/docs/resources/loadbalancer_backend#tls_use_system_ca LoadbalancerBackend#tls_use_system_ca}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.11.0/docs/resources/loadbalancer_backend#tls_use_system_ca LoadbalancerBackend#tls_use_system_ca}
 
 ---
 
@@ -1269,26 +1234,188 @@ Enables backend servers certificate verification.
 
 Please make sure that TLS config with the certificate bundle of type authority attached to the backend or `tls_use_system_ca` enabled. Note: `tls_verify` has preference over `health_check_tls_verify` when `tls_enabled` in true.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.10.1/docs/resources/loadbalancer_backend#tls_verify LoadbalancerBackend#tls_verify}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.11.0/docs/resources/loadbalancer_backend#tls_verify LoadbalancerBackend#tls_verify}
 
 ---
 
 ## Classes <a name="Classes" id="Classes"></a>
+
+### LoadbalancerBackendPropertiesList <a name="LoadbalancerBackendPropertiesList" id="@cdktf/provider-upcloud.loadbalancerBackend.LoadbalancerBackendPropertiesList"></a>
+
+#### Initializers <a name="Initializers" id="@cdktf/provider-upcloud.loadbalancerBackend.LoadbalancerBackendPropertiesList.Initializer"></a>
+
+```go
+import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/loadbalancerbackend"
+
+loadbalancerbackend.NewLoadbalancerBackendPropertiesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) LoadbalancerBackendPropertiesList
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-upcloud.loadbalancerBackend.LoadbalancerBackendPropertiesList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktf/provider-upcloud.loadbalancerBackend.LoadbalancerBackendPropertiesList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>*string</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktf/provider-upcloud.loadbalancerBackend.LoadbalancerBackendPropertiesList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>*bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktf/provider-upcloud.loadbalancerBackend.LoadbalancerBackendPropertiesList.Initializer.parameter.terraformResource"></a>
+
+- *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-upcloud.loadbalancerBackend.LoadbalancerBackendPropertiesList.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `wrapsSet`<sup>Required</sup> <a name="wrapsSet" id="@cdktf/provider-upcloud.loadbalancerBackend.LoadbalancerBackendPropertiesList.Initializer.parameter.wrapsSet"></a>
+
+- *Type:* *bool
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktf/provider-upcloud.loadbalancerBackend.LoadbalancerBackendPropertiesList.allWithMapKey">AllWithMapKey</a></code> | Creating an iterator for this complex list. |
+| <code><a href="#@cdktf/provider-upcloud.loadbalancerBackend.LoadbalancerBackendPropertiesList.computeFqn">ComputeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-upcloud.loadbalancerBackend.LoadbalancerBackendPropertiesList.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktf/provider-upcloud.loadbalancerBackend.LoadbalancerBackendPropertiesList.toString">ToString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktf/provider-upcloud.loadbalancerBackend.LoadbalancerBackendPropertiesList.get">Get</a></code> | *No description.* |
+
+---
+
+##### `AllWithMapKey` <a name="AllWithMapKey" id="@cdktf/provider-upcloud.loadbalancerBackend.LoadbalancerBackendPropertiesList.allWithMapKey"></a>
+
+```go
+func AllWithMapKey(mapKeyAttributeName *string) DynamicListTerraformIterator
+```
+
+Creating an iterator for this complex list.
+
+The list will be converted into a map with the mapKeyAttributeName as the key.
+
+###### `mapKeyAttributeName`<sup>Required</sup> <a name="mapKeyAttributeName" id="@cdktf/provider-upcloud.loadbalancerBackend.LoadbalancerBackendPropertiesList.allWithMapKey.parameter.mapKeyAttributeName"></a>
+
+- *Type:* *string
+
+---
+
+##### `ComputeFqn` <a name="ComputeFqn" id="@cdktf/provider-upcloud.loadbalancerBackend.LoadbalancerBackendPropertiesList.computeFqn"></a>
+
+```go
+func ComputeFqn() *string
+```
+
+##### `Resolve` <a name="Resolve" id="@cdktf/provider-upcloud.loadbalancerBackend.LoadbalancerBackendPropertiesList.resolve"></a>
+
+```go
+func Resolve(_context IResolveContext) interface{}
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktf/provider-upcloud.loadbalancerBackend.LoadbalancerBackendPropertiesList.resolve.parameter._context"></a>
+
+- *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.IResolveContext
+
+---
+
+##### `ToString` <a name="ToString" id="@cdktf/provider-upcloud.loadbalancerBackend.LoadbalancerBackendPropertiesList.toString"></a>
+
+```go
+func ToString() *string
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `Get` <a name="Get" id="@cdktf/provider-upcloud.loadbalancerBackend.LoadbalancerBackendPropertiesList.get"></a>
+
+```go
+func Get(index *f64) LoadbalancerBackendPropertiesOutputReference
+```
+
+###### `index`<sup>Required</sup> <a name="index" id="@cdktf/provider-upcloud.loadbalancerBackend.LoadbalancerBackendPropertiesList.get.parameter.index"></a>
+
+- *Type:* *f64
+
+the index of the item to return.
+
+---
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-upcloud.loadbalancerBackend.LoadbalancerBackendPropertiesList.property.creationStack">CreationStack</a></code> | <code>*[]*string</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktf/provider-upcloud.loadbalancerBackend.LoadbalancerBackendPropertiesList.property.fqn">Fqn</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-upcloud.loadbalancerBackend.LoadbalancerBackendPropertiesList.property.internalValue">InternalValue</a></code> | <code>interface{}</code> | *No description.* |
+
+---
+
+##### `CreationStack`<sup>Required</sup> <a name="CreationStack" id="@cdktf/provider-upcloud.loadbalancerBackend.LoadbalancerBackendPropertiesList.property.creationStack"></a>
+
+```go
+func CreationStack() *[]*string
+```
+
+- *Type:* *[]*string
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `Fqn`<sup>Required</sup> <a name="Fqn" id="@cdktf/provider-upcloud.loadbalancerBackend.LoadbalancerBackendPropertiesList.property.fqn"></a>
+
+```go
+func Fqn() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-upcloud.loadbalancerBackend.LoadbalancerBackendPropertiesList.property.internalValue"></a>
+
+```go
+func InternalValue() interface{}
+```
+
+- *Type:* interface{}
+
+---
+
 
 ### LoadbalancerBackendPropertiesOutputReference <a name="LoadbalancerBackendPropertiesOutputReference" id="@cdktf/provider-upcloud.loadbalancerBackend.LoadbalancerBackendPropertiesOutputReference"></a>
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-upcloud.loadbalancerBackend.LoadbalancerBackendPropertiesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v14/loadbalancerbackend"
+import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/loadbalancerbackend"
 
-loadbalancerbackend.NewLoadbalancerBackendPropertiesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) LoadbalancerBackendPropertiesOutputReference
+loadbalancerbackend.NewLoadbalancerBackendPropertiesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) LoadbalancerBackendPropertiesOutputReference
 ```
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-upcloud.loadbalancerBackend.LoadbalancerBackendPropertiesOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktf/provider-upcloud.loadbalancerBackend.LoadbalancerBackendPropertiesOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>*string</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktf/provider-upcloud.loadbalancerBackend.LoadbalancerBackendPropertiesOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>*f64</code> | the index of this item in the list. |
+| <code><a href="#@cdktf/provider-upcloud.loadbalancerBackend.LoadbalancerBackendPropertiesOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>*bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
 ---
 
@@ -1305,6 +1432,22 @@ The parent resource.
 - *Type:* *string
 
 The attribute on the parent resource this class is referencing.
+
+---
+
+##### `complexObjectIndex`<sup>Required</sup> <a name="complexObjectIndex" id="@cdktf/provider-upcloud.loadbalancerBackend.LoadbalancerBackendPropertiesOutputReference.Initializer.parameter.complexObjectIndex"></a>
+
+- *Type:* *f64
+
+the index of this item in the list.
+
+---
+
+##### `complexObjectIsFromSet`<sup>Required</sup> <a name="complexObjectIsFromSet" id="@cdktf/provider-upcloud.loadbalancerBackend.LoadbalancerBackendPropertiesOutputReference.Initializer.parameter.complexObjectIsFromSet"></a>
+
+- *Type:* *bool
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
 
 ---
 
@@ -1590,7 +1733,6 @@ func ResetTlsVerify()
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-upcloud.loadbalancerBackend.LoadbalancerBackendPropertiesOutputReference.property.creationStack">CreationStack</a></code> | <code>*[]*string</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-upcloud.loadbalancerBackend.LoadbalancerBackendPropertiesOutputReference.property.fqn">Fqn</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-upcloud.loadbalancerBackend.LoadbalancerBackendPropertiesOutputReference.property.tlsConfigs">TlsConfigs</a></code> | <code>*[]*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.loadbalancerBackend.LoadbalancerBackendPropertiesOutputReference.property.healthCheckExpectedStatusInput">HealthCheckExpectedStatusInput</a></code> | <code>*f64</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.loadbalancerBackend.LoadbalancerBackendPropertiesOutputReference.property.healthCheckFallInput">HealthCheckFallInput</a></code> | <code>*f64</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.loadbalancerBackend.LoadbalancerBackendPropertiesOutputReference.property.healthCheckIntervalInput">HealthCheckIntervalInput</a></code> | <code>*f64</code> | *No description.* |
@@ -1621,7 +1763,7 @@ func ResetTlsVerify()
 | <code><a href="#@cdktf/provider-upcloud.loadbalancerBackend.LoadbalancerBackendPropertiesOutputReference.property.tlsEnabled">TlsEnabled</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.loadbalancerBackend.LoadbalancerBackendPropertiesOutputReference.property.tlsUseSystemCa">TlsUseSystemCa</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.loadbalancerBackend.LoadbalancerBackendPropertiesOutputReference.property.tlsVerify">TlsVerify</a></code> | <code>interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-upcloud.loadbalancerBackend.LoadbalancerBackendPropertiesOutputReference.property.internalValue">InternalValue</a></code> | <code><a href="#@cdktf/provider-upcloud.loadbalancerBackend.LoadbalancerBackendProperties">LoadbalancerBackendProperties</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-upcloud.loadbalancerBackend.LoadbalancerBackendPropertiesOutputReference.property.internalValue">InternalValue</a></code> | <code>interface{}</code> | *No description.* |
 
 ---
 
@@ -1646,16 +1788,6 @@ func Fqn() *string
 ```
 
 - *Type:* *string
-
----
-
-##### `TlsConfigs`<sup>Required</sup> <a name="TlsConfigs" id="@cdktf/provider-upcloud.loadbalancerBackend.LoadbalancerBackendPropertiesOutputReference.property.tlsConfigs"></a>
-
-```go
-func TlsConfigs() *[]*string
-```
-
-- *Type:* *[]*string
 
 ---
 
@@ -1962,10 +2094,10 @@ func TlsVerify() interface{}
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-upcloud.loadbalancerBackend.LoadbalancerBackendPropertiesOutputReference.property.internalValue"></a>
 
 ```go
-func InternalValue() LoadbalancerBackendProperties
+func InternalValue() interface{}
 ```
 
-- *Type:* <a href="#@cdktf/provider-upcloud.loadbalancerBackend.LoadbalancerBackendProperties">LoadbalancerBackendProperties</a>
+- *Type:* interface{}
 
 ---
 

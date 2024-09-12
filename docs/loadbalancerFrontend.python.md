@@ -4,7 +4,7 @@
 
 ### LoadbalancerFrontend <a name="LoadbalancerFrontend" id="@cdktf/provider-upcloud.loadbalancerFrontend.LoadbalancerFrontend"></a>
 
-Represents a {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.10.1/docs/resources/loadbalancer_frontend upcloud_loadbalancer_frontend}.
+Represents a {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.11.0/docs/resources/loadbalancer_frontend upcloud_loadbalancer_frontend}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-upcloud.loadbalancerFrontend.LoadbalancerFrontend.Initializer"></a>
 
@@ -120,7 +120,7 @@ The name of the default backend where traffic will be routed.
 
 Note, default backend can be overwritten in frontend rules.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.10.1/docs/resources/loadbalancer_frontend#default_backend_name LoadbalancerFrontend#default_backend_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.11.0/docs/resources/loadbalancer_frontend#default_backend_name LoadbalancerFrontend#default_backend_name}
 
 ---
 
@@ -130,7 +130,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upclo
 
 UUID of the load balancer to which the frontend is connected.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.10.1/docs/resources/loadbalancer_frontend#loadbalancer LoadbalancerFrontend#loadbalancer}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.11.0/docs/resources/loadbalancer_frontend#loadbalancer LoadbalancerFrontend#loadbalancer}
 
 ---
 
@@ -142,7 +142,7 @@ When load balancer operating in `tcp` mode it acts as a layer 4 proxy.
 
 In `http` mode it acts as a layer 7 proxy.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.10.1/docs/resources/loadbalancer_frontend#mode LoadbalancerFrontend#mode}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.11.0/docs/resources/loadbalancer_frontend#mode LoadbalancerFrontend#mode}
 
 ---
 
@@ -152,7 +152,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upclo
 
 The name of the frontend. Must be unique within the load balancer service.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.10.1/docs/resources/loadbalancer_frontend#name LoadbalancerFrontend#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.11.0/docs/resources/loadbalancer_frontend#name LoadbalancerFrontend#name}
 
 ---
 
@@ -162,7 +162,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upclo
 
 Port to listen for incoming requests.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.10.1/docs/resources/loadbalancer_frontend#port LoadbalancerFrontend#port}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.11.0/docs/resources/loadbalancer_frontend#port LoadbalancerFrontend#port}
 
 ---
 
@@ -172,7 +172,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upclo
 
 networks block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.10.1/docs/resources/loadbalancer_frontend#networks LoadbalancerFrontend#networks}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.11.0/docs/resources/loadbalancer_frontend#networks LoadbalancerFrontend#networks}
 
 ---
 
@@ -182,7 +182,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upclo
 
 properties block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.10.1/docs/resources/loadbalancer_frontend#properties LoadbalancerFrontend#properties}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.11.0/docs/resources/loadbalancer_frontend#properties LoadbalancerFrontend#properties}
 
 ---
 
@@ -699,7 +699,7 @@ The construct id used in the generated config for the LoadbalancerFrontend to im
 
 The id of the existing LoadbalancerFrontend that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.10.1/docs/resources/loadbalancer_frontend#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.11.0/docs/resources/loadbalancer_frontend#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1209,7 +1209,7 @@ The name of the default backend where traffic will be routed.
 
 Note, default backend can be overwritten in frontend rules.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.10.1/docs/resources/loadbalancer_frontend#default_backend_name LoadbalancerFrontend#default_backend_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.11.0/docs/resources/loadbalancer_frontend#default_backend_name LoadbalancerFrontend#default_backend_name}
 
 ---
 
@@ -1223,7 +1223,7 @@ loadbalancer: str
 
 UUID of the load balancer to which the frontend is connected.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.10.1/docs/resources/loadbalancer_frontend#loadbalancer LoadbalancerFrontend#loadbalancer}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.11.0/docs/resources/loadbalancer_frontend#loadbalancer LoadbalancerFrontend#loadbalancer}
 
 ---
 
@@ -1239,7 +1239,7 @@ When load balancer operating in `tcp` mode it acts as a layer 4 proxy.
 
 In `http` mode it acts as a layer 7 proxy.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.10.1/docs/resources/loadbalancer_frontend#mode LoadbalancerFrontend#mode}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.11.0/docs/resources/loadbalancer_frontend#mode LoadbalancerFrontend#mode}
 
 ---
 
@@ -1253,7 +1253,7 @@ name: str
 
 The name of the frontend. Must be unique within the load balancer service.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.10.1/docs/resources/loadbalancer_frontend#name LoadbalancerFrontend#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.11.0/docs/resources/loadbalancer_frontend#name LoadbalancerFrontend#name}
 
 ---
 
@@ -1267,7 +1267,7 @@ port: typing.Union[int, float]
 
 Port to listen for incoming requests.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.10.1/docs/resources/loadbalancer_frontend#port LoadbalancerFrontend#port}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.11.0/docs/resources/loadbalancer_frontend#port LoadbalancerFrontend#port}
 
 ---
 
@@ -1281,7 +1281,7 @@ networks: typing.Union[IResolvable, typing.List[LoadbalancerFrontendNetworks]]
 
 networks block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.10.1/docs/resources/loadbalancer_frontend#networks LoadbalancerFrontend#networks}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.11.0/docs/resources/loadbalancer_frontend#networks LoadbalancerFrontend#networks}
 
 ---
 
@@ -1295,7 +1295,7 @@ properties: typing.Union[IResolvable, typing.List[LoadbalancerFrontendProperties
 
 properties block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.10.1/docs/resources/loadbalancer_frontend#properties LoadbalancerFrontend#properties}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.11.0/docs/resources/loadbalancer_frontend#properties LoadbalancerFrontend#properties}
 
 ---
 
@@ -1329,7 +1329,7 @@ name: str
 
 Name of the load balancer network.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.10.1/docs/resources/loadbalancer_frontend#name LoadbalancerFrontend#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.11.0/docs/resources/loadbalancer_frontend#name LoadbalancerFrontend#name}
 
 ---
 
@@ -1367,7 +1367,7 @@ http2_enabled: typing.Union[bool, IResolvable]
 
 Enable or disable HTTP/2 support.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.10.1/docs/resources/loadbalancer_frontend#http2_enabled LoadbalancerFrontend#http2_enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.11.0/docs/resources/loadbalancer_frontend#http2_enabled LoadbalancerFrontend#http2_enabled}
 
 ---
 
@@ -1381,7 +1381,7 @@ inbound_proxy_protocol: typing.Union[bool, IResolvable]
 
 Enable or disable inbound proxy protocol support.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.10.1/docs/resources/loadbalancer_frontend#inbound_proxy_protocol LoadbalancerFrontend#inbound_proxy_protocol}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.11.0/docs/resources/loadbalancer_frontend#inbound_proxy_protocol LoadbalancerFrontend#inbound_proxy_protocol}
 
 ---
 
@@ -1395,7 +1395,7 @@ timeout_client: typing.Union[int, float]
 
 Client request timeout in seconds.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.10.1/docs/resources/loadbalancer_frontend#timeout_client LoadbalancerFrontend#timeout_client}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.11.0/docs/resources/loadbalancer_frontend#timeout_client LoadbalancerFrontend#timeout_client}
 
 ---
 

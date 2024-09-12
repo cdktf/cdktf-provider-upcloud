@@ -4,14 +4,14 @@
 
 ### DataUpcloudStorage <a name="DataUpcloudStorage" id="@cdktf/provider-upcloud.dataUpcloudStorage.DataUpcloudStorage"></a>
 
-Represents a {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.10.1/docs/data-sources/storage upcloud_storage}.
+Represents a {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.11.0/docs/data-sources/storage upcloud_storage}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-upcloud.dataUpcloudStorage.DataUpcloudStorage.Initializer"></a>
 
 ```csharp
 using HashiCorp.Cdktf.Providers.Upcloud;
 
-new DataUpcloudStorage(Construct Scope, string Id, DataUpcloudStorageConfig Config);
+new DataUpcloudStorage(Construct Scope, string Id, DataUpcloudStorageConfig Config = null);
 ```
 
 | **Name** | **Type** | **Description** |
@@ -40,7 +40,7 @@ Must be unique amongst siblings in the same scope
 
 ---
 
-##### `Config`<sup>Required</sup> <a name="Config" id="@cdktf/provider-upcloud.dataUpcloudStorage.DataUpcloudStorage.Initializer.parameter.config"></a>
+##### `Config`<sup>Optional</sup> <a name="Config" id="@cdktf/provider-upcloud.dataUpcloudStorage.DataUpcloudStorage.Initializer.parameter.config"></a>
 
 - *Type:* <a href="#@cdktf/provider-upcloud.dataUpcloudStorage.DataUpcloudStorageConfig">DataUpcloudStorageConfig</a>
 
@@ -72,6 +72,8 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-upcloud.dataUpcloudStorage.DataUpcloudStorage.resetMostRecent">ResetMostRecent</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.dataUpcloudStorage.DataUpcloudStorage.resetName">ResetName</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.dataUpcloudStorage.DataUpcloudStorage.resetNameRegex">ResetNameRegex</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-upcloud.dataUpcloudStorage.DataUpcloudStorage.resetTitle">ResetTitle</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-upcloud.dataUpcloudStorage.DataUpcloudStorage.resetType">ResetType</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.dataUpcloudStorage.DataUpcloudStorage.resetZone">ResetZone</a></code> | *No description.* |
 
 ---
@@ -298,6 +300,18 @@ private void ResetName()
 private void ResetNameRegex()
 ```
 
+##### `ResetTitle` <a name="ResetTitle" id="@cdktf/provider-upcloud.dataUpcloudStorage.DataUpcloudStorage.resetTitle"></a>
+
+```csharp
+private void ResetTitle()
+```
+
+##### `ResetType` <a name="ResetType" id="@cdktf/provider-upcloud.dataUpcloudStorage.DataUpcloudStorage.resetType"></a>
+
+```csharp
+private void ResetType()
+```
+
 ##### `ResetZone` <a name="ResetZone" id="@cdktf/provider-upcloud.dataUpcloudStorage.DataUpcloudStorage.resetZone"></a>
 
 ```csharp
@@ -407,7 +421,7 @@ The construct id used in the generated config for the DataUpcloudStorage to impo
 
 The id of the existing DataUpcloudStorage that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.10.1/docs/data-sources/storage#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.11.0/docs/data-sources/storage#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -435,15 +449,18 @@ Refer to the {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5
 | <code><a href="#@cdktf/provider-upcloud.dataUpcloudStorage.DataUpcloudStorage.property.forEach">ForEach</a></code> | <code>HashiCorp.Cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.dataUpcloudStorage.DataUpcloudStorage.property.lifecycle">Lifecycle</a></code> | <code>HashiCorp.Cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.dataUpcloudStorage.DataUpcloudStorage.property.provider">Provider</a></code> | <code>HashiCorp.Cdktf.TerraformProvider</code> | *No description.* |
+| <code><a href="#@cdktf/provider-upcloud.dataUpcloudStorage.DataUpcloudStorage.property.encrypt">Encrypt</a></code> | <code>HashiCorp.Cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-upcloud.dataUpcloudStorage.DataUpcloudStorage.property.labels">Labels</a></code> | <code>HashiCorp.Cdktf.StringMap</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.dataUpcloudStorage.DataUpcloudStorage.property.size">Size</a></code> | <code>double</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.dataUpcloudStorage.DataUpcloudStorage.property.state">State</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-upcloud.dataUpcloudStorage.DataUpcloudStorage.property.systemLabels">SystemLabels</a></code> | <code>HashiCorp.Cdktf.StringMap</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.dataUpcloudStorage.DataUpcloudStorage.property.tier">Tier</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-upcloud.dataUpcloudStorage.DataUpcloudStorage.property.title">Title</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.dataUpcloudStorage.DataUpcloudStorage.property.accessTypeInput">AccessTypeInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.dataUpcloudStorage.DataUpcloudStorage.property.idInput">IdInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.dataUpcloudStorage.DataUpcloudStorage.property.mostRecentInput">MostRecentInput</a></code> | <code>object</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.dataUpcloudStorage.DataUpcloudStorage.property.nameInput">NameInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.dataUpcloudStorage.DataUpcloudStorage.property.nameRegexInput">NameRegexInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-upcloud.dataUpcloudStorage.DataUpcloudStorage.property.titleInput">TitleInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.dataUpcloudStorage.DataUpcloudStorage.property.typeInput">TypeInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.dataUpcloudStorage.DataUpcloudStorage.property.zoneInput">ZoneInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.dataUpcloudStorage.DataUpcloudStorage.property.accessType">AccessType</a></code> | <code>string</code> | *No description.* |
@@ -451,6 +468,7 @@ Refer to the {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5
 | <code><a href="#@cdktf/provider-upcloud.dataUpcloudStorage.DataUpcloudStorage.property.mostRecent">MostRecent</a></code> | <code>object</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.dataUpcloudStorage.DataUpcloudStorage.property.name">Name</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.dataUpcloudStorage.DataUpcloudStorage.property.nameRegex">NameRegex</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-upcloud.dataUpcloudStorage.DataUpcloudStorage.property.title">Title</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.dataUpcloudStorage.DataUpcloudStorage.property.type">Type</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.dataUpcloudStorage.DataUpcloudStorage.property.zone">Zone</a></code> | <code>string</code> | *No description.* |
 
@@ -578,6 +596,26 @@ public TerraformProvider Provider { get; }
 
 ---
 
+##### `Encrypt`<sup>Required</sup> <a name="Encrypt" id="@cdktf/provider-upcloud.dataUpcloudStorage.DataUpcloudStorage.property.encrypt"></a>
+
+```csharp
+public IResolvable Encrypt { get; }
+```
+
+- *Type:* HashiCorp.Cdktf.IResolvable
+
+---
+
+##### `Labels`<sup>Required</sup> <a name="Labels" id="@cdktf/provider-upcloud.dataUpcloudStorage.DataUpcloudStorage.property.labels"></a>
+
+```csharp
+public StringMap Labels { get; }
+```
+
+- *Type:* HashiCorp.Cdktf.StringMap
+
+---
+
 ##### `Size`<sup>Required</sup> <a name="Size" id="@cdktf/provider-upcloud.dataUpcloudStorage.DataUpcloudStorage.property.size"></a>
 
 ```csharp
@@ -598,20 +636,20 @@ public string State { get; }
 
 ---
 
+##### `SystemLabels`<sup>Required</sup> <a name="SystemLabels" id="@cdktf/provider-upcloud.dataUpcloudStorage.DataUpcloudStorage.property.systemLabels"></a>
+
+```csharp
+public StringMap SystemLabels { get; }
+```
+
+- *Type:* HashiCorp.Cdktf.StringMap
+
+---
+
 ##### `Tier`<sup>Required</sup> <a name="Tier" id="@cdktf/provider-upcloud.dataUpcloudStorage.DataUpcloudStorage.property.tier"></a>
 
 ```csharp
 public string Tier { get; }
-```
-
-- *Type:* string
-
----
-
-##### `Title`<sup>Required</sup> <a name="Title" id="@cdktf/provider-upcloud.dataUpcloudStorage.DataUpcloudStorage.property.title"></a>
-
-```csharp
-public string Title { get; }
 ```
 
 - *Type:* string
@@ -662,6 +700,16 @@ public string NameInput { get; }
 
 ```csharp
 public string NameRegexInput { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `TitleInput`<sup>Optional</sup> <a name="TitleInput" id="@cdktf/provider-upcloud.dataUpcloudStorage.DataUpcloudStorage.property.titleInput"></a>
+
+```csharp
+public string TitleInput { get; }
 ```
 
 - *Type:* string
@@ -738,6 +786,16 @@ public string NameRegex { get; }
 
 ---
 
+##### `Title`<sup>Required</sup> <a name="Title" id="@cdktf/provider-upcloud.dataUpcloudStorage.DataUpcloudStorage.property.title"></a>
+
+```csharp
+public string Title { get; }
+```
+
+- *Type:* string
+
+---
+
 ##### `Type`<sup>Required</sup> <a name="Type" id="@cdktf/provider-upcloud.dataUpcloudStorage.DataUpcloudStorage.property.type"></a>
 
 ```csharp
@@ -793,12 +851,13 @@ new DataUpcloudStorageConfig {
     TerraformResourceLifecycle Lifecycle = null,
     TerraformProvider Provider = null,
     object[] Provisioners = null,
-    string Type,
     string AccessType = null,
     string Id = null,
     object MostRecent = null,
     string Name = null,
     string NameRegex = null,
+    string Title = null,
+    string Type = null,
     string Zone = null
 };
 ```
@@ -814,13 +873,14 @@ new DataUpcloudStorageConfig {
 | <code><a href="#@cdktf/provider-upcloud.dataUpcloudStorage.DataUpcloudStorageConfig.property.lifecycle">Lifecycle</a></code> | <code>HashiCorp.Cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.dataUpcloudStorage.DataUpcloudStorageConfig.property.provider">Provider</a></code> | <code>HashiCorp.Cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.dataUpcloudStorage.DataUpcloudStorageConfig.property.provisioners">Provisioners</a></code> | <code>object[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-upcloud.dataUpcloudStorage.DataUpcloudStorageConfig.property.type">Type</a></code> | <code>string</code> | Storage type (normal, backup, cdrom, template). Use 'favorite' as type to filter storages on the list of favorites. |
-| <code><a href="#@cdktf/provider-upcloud.dataUpcloudStorage.DataUpcloudStorageConfig.property.accessType">AccessType</a></code> | <code>string</code> | Storage access type (public, private). |
-| <code><a href="#@cdktf/provider-upcloud.dataUpcloudStorage.DataUpcloudStorageConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.10.1/docs/data-sources/storage#id DataUpcloudStorage#id}. |
+| <code><a href="#@cdktf/provider-upcloud.dataUpcloudStorage.DataUpcloudStorageConfig.property.accessType">AccessType</a></code> | <code>string</code> | The access type of the storage, `public` or `private`. |
+| <code><a href="#@cdktf/provider-upcloud.dataUpcloudStorage.DataUpcloudStorageConfig.property.id">Id</a></code> | <code>string</code> | UUID of the storage. |
 | <code><a href="#@cdktf/provider-upcloud.dataUpcloudStorage.DataUpcloudStorageConfig.property.mostRecent">MostRecent</a></code> | <code>object</code> | If more than one result is returned, use the most recent storage. |
-| <code><a href="#@cdktf/provider-upcloud.dataUpcloudStorage.DataUpcloudStorageConfig.property.name">Name</a></code> | <code>string</code> | Exact name of the storage (same as title). |
-| <code><a href="#@cdktf/provider-upcloud.dataUpcloudStorage.DataUpcloudStorageConfig.property.nameRegex">NameRegex</a></code> | <code>string</code> | Use regular expression to match storage name. |
-| <code><a href="#@cdktf/provider-upcloud.dataUpcloudStorage.DataUpcloudStorageConfig.property.zone">Zone</a></code> | <code>string</code> | The zone in which the storage resides, e.g. `de-fra1`. You can list available zones with `upctl zone list`. |
+| <code><a href="#@cdktf/provider-upcloud.dataUpcloudStorage.DataUpcloudStorageConfig.property.name">Name</a></code> | <code>string</code> | Exact name of the storage (same as title). Deprecated, use `title` instead. |
+| <code><a href="#@cdktf/provider-upcloud.dataUpcloudStorage.DataUpcloudStorageConfig.property.nameRegex">NameRegex</a></code> | <code>string</code> | Use regular expression to match storage name. Deprecated, use exact title or UUID instead. |
+| <code><a href="#@cdktf/provider-upcloud.dataUpcloudStorage.DataUpcloudStorageConfig.property.title">Title</a></code> | <code>string</code> | The title of the storage. |
+| <code><a href="#@cdktf/provider-upcloud.dataUpcloudStorage.DataUpcloudStorageConfig.property.type">Type</a></code> | <code>string</code> | The type of the storage. |
+| <code><a href="#@cdktf/provider-upcloud.dataUpcloudStorage.DataUpcloudStorageConfig.property.zone">Zone</a></code> | <code>string</code> | The zone the storage is in, e.g. `de-fra1`. |
 
 ---
 
@@ -894,20 +954,6 @@ public object[] Provisioners { get; set; }
 
 ---
 
-##### `Type`<sup>Required</sup> <a name="Type" id="@cdktf/provider-upcloud.dataUpcloudStorage.DataUpcloudStorageConfig.property.type"></a>
-
-```csharp
-public string Type { get; set; }
-```
-
-- *Type:* string
-
-Storage type (normal, backup, cdrom, template). Use 'favorite' as type to filter storages on the list of favorites.
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.10.1/docs/data-sources/storage#type DataUpcloudStorage#type}
-
----
-
 ##### `AccessType`<sup>Optional</sup> <a name="AccessType" id="@cdktf/provider-upcloud.dataUpcloudStorage.DataUpcloudStorageConfig.property.accessType"></a>
 
 ```csharp
@@ -916,9 +962,9 @@ public string AccessType { get; set; }
 
 - *Type:* string
 
-Storage access type (public, private).
+The access type of the storage, `public` or `private`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.10.1/docs/data-sources/storage#access_type DataUpcloudStorage#access_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.11.0/docs/data-sources/storage#access_type DataUpcloudStorage#access_type}
 
 ---
 
@@ -930,7 +976,9 @@ public string Id { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.10.1/docs/data-sources/storage#id DataUpcloudStorage#id}.
+UUID of the storage.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.11.0/docs/data-sources/storage#id DataUpcloudStorage#id}
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -949,7 +997,7 @@ If more than one result is returned, use the most recent storage.
 
 This is only useful with private storages. Public storages might give unpredictable results.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.10.1/docs/data-sources/storage#most_recent DataUpcloudStorage#most_recent}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.11.0/docs/data-sources/storage#most_recent DataUpcloudStorage#most_recent}
 
 ---
 
@@ -961,9 +1009,9 @@ public string Name { get; set; }
 
 - *Type:* string
 
-Exact name of the storage (same as title).
+Exact name of the storage (same as title). Deprecated, use `title` instead.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.10.1/docs/data-sources/storage#name DataUpcloudStorage#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.11.0/docs/data-sources/storage#name DataUpcloudStorage#name}
 
 ---
 
@@ -975,9 +1023,37 @@ public string NameRegex { get; set; }
 
 - *Type:* string
 
-Use regular expression to match storage name.
+Use regular expression to match storage name. Deprecated, use exact title or UUID instead.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.10.1/docs/data-sources/storage#name_regex DataUpcloudStorage#name_regex}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.11.0/docs/data-sources/storage#name_regex DataUpcloudStorage#name_regex}
+
+---
+
+##### `Title`<sup>Optional</sup> <a name="Title" id="@cdktf/provider-upcloud.dataUpcloudStorage.DataUpcloudStorageConfig.property.title"></a>
+
+```csharp
+public string Title { get; set; }
+```
+
+- *Type:* string
+
+The title of the storage.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.11.0/docs/data-sources/storage#title DataUpcloudStorage#title}
+
+---
+
+##### `Type`<sup>Optional</sup> <a name="Type" id="@cdktf/provider-upcloud.dataUpcloudStorage.DataUpcloudStorageConfig.property.type"></a>
+
+```csharp
+public string Type { get; set; }
+```
+
+- *Type:* string
+
+The type of the storage.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.11.0/docs/data-sources/storage#type DataUpcloudStorage#type}
 
 ---
 
@@ -989,9 +1065,9 @@ public string Zone { get; set; }
 
 - *Type:* string
 
-The zone in which the storage resides, e.g. `de-fra1`. You can list available zones with `upctl zone list`.
+The zone the storage is in, e.g. `de-fra1`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.10.1/docs/data-sources/storage#zone DataUpcloudStorage#zone}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.11.0/docs/data-sources/storage#zone DataUpcloudStorage#zone}
 
 ---
 
