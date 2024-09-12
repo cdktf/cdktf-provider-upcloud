@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/upcloudltd/upcloud/5.10.1/docs/resources/loadbalancer_backend
+// https://registry.terraform.io/providers/upcloudltd/upcloud/5.11.0/docs/resources/loadbalancer_backend
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,131 +13,124 @@ import * as cdktf from 'cdktf';
 
 export interface LoadbalancerBackendConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.10.1/docs/resources/loadbalancer_backend#id LoadbalancerBackend#id}
+  * UUID of the load balancer to which the backend is connected.
   *
-  * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
-  * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
-  */
-  readonly id?: string;
-  /**
-  * ID of the load balancer to which the backend is connected.
-  *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.10.1/docs/resources/loadbalancer_backend#loadbalancer LoadbalancerBackend#loadbalancer}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.11.0/docs/resources/loadbalancer_backend#loadbalancer LoadbalancerBackend#loadbalancer}
   */
   readonly loadbalancer: string;
   /**
-  * The name of the backend must be unique within the load balancer service.
+  * The name of the backend. Must be unique within the load balancer service.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.10.1/docs/resources/loadbalancer_backend#name LoadbalancerBackend#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.11.0/docs/resources/loadbalancer_backend#name LoadbalancerBackend#name}
   */
   readonly name: string;
   /**
-  * Domain Name Resolver used with dynamic type members.
+  * Domain name resolver used with dynamic type members.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.10.1/docs/resources/loadbalancer_backend#resolver_name LoadbalancerBackend#resolver_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.11.0/docs/resources/loadbalancer_backend#resolver_name LoadbalancerBackend#resolver_name}
   */
   readonly resolverName?: string;
   /**
   * properties block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.10.1/docs/resources/loadbalancer_backend#properties LoadbalancerBackend#properties}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.11.0/docs/resources/loadbalancer_backend#properties LoadbalancerBackend#properties}
   */
-  readonly properties?: LoadbalancerBackendProperties;
+  readonly properties?: LoadbalancerBackendProperties[] | cdktf.IResolvable;
 }
 export interface LoadbalancerBackendProperties {
   /**
-  * Expected HTTP status code returned by the customer application to mark server as healthy. Ignored for tcp type.
+  * Expected HTTP status code returned by the customer application to mark server as healthy. Ignored for `tcp` `health_check_type`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.10.1/docs/resources/loadbalancer_backend#health_check_expected_status LoadbalancerBackend#health_check_expected_status}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.11.0/docs/resources/loadbalancer_backend#health_check_expected_status LoadbalancerBackend#health_check_expected_status}
   */
   readonly healthCheckExpectedStatus?: number;
   /**
   * Sets how many failed health checks are allowed until the backend member is taken off from the rotation.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.10.1/docs/resources/loadbalancer_backend#health_check_fall LoadbalancerBackend#health_check_fall}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.11.0/docs/resources/loadbalancer_backend#health_check_fall LoadbalancerBackend#health_check_fall}
   */
   readonly healthCheckFall?: number;
   /**
-  * Interval between health checks.
+  * Interval between health checks in seconds.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.10.1/docs/resources/loadbalancer_backend#health_check_interval LoadbalancerBackend#health_check_interval}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.11.0/docs/resources/loadbalancer_backend#health_check_interval LoadbalancerBackend#health_check_interval}
   */
   readonly healthCheckInterval?: number;
   /**
-  * Sets how many passing checks there must be before returning the backend member to the rotation.
+  * Sets how many successful health checks are required to put the backend member back into rotation.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.10.1/docs/resources/loadbalancer_backend#health_check_rise LoadbalancerBackend#health_check_rise}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.11.0/docs/resources/loadbalancer_backend#health_check_rise LoadbalancerBackend#health_check_rise}
   */
   readonly healthCheckRise?: number;
   /**
   * Enables certificate verification with the system CA certificate bundle. Works with https scheme in health_check_url, otherwise ignored.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.10.1/docs/resources/loadbalancer_backend#health_check_tls_verify LoadbalancerBackend#health_check_tls_verify}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.11.0/docs/resources/loadbalancer_backend#health_check_tls_verify LoadbalancerBackend#health_check_tls_verify}
   */
   readonly healthCheckTlsVerify?: boolean | cdktf.IResolvable;
   /**
   * Health check type.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.10.1/docs/resources/loadbalancer_backend#health_check_type LoadbalancerBackend#health_check_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.11.0/docs/resources/loadbalancer_backend#health_check_type LoadbalancerBackend#health_check_type}
   */
   readonly healthCheckType?: string;
   /**
-  * Target path for health check HTTP GET requests. Ignored for tcp type.
+  * Target path for health check HTTP GET requests. Ignored for `tcp` `health_check_type`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.10.1/docs/resources/loadbalancer_backend#health_check_url LoadbalancerBackend#health_check_url}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.11.0/docs/resources/loadbalancer_backend#health_check_url LoadbalancerBackend#health_check_url}
   */
   readonly healthCheckUrl?: string;
   /**
   * Allow HTTP/2 connections to backend members by utilizing ALPN extension of TLS protocol, therefore it can only be enabled when tls_enabled is set to true. Note: members should support HTTP/2 for this setting to work.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.10.1/docs/resources/loadbalancer_backend#http2_enabled LoadbalancerBackend#http2_enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.11.0/docs/resources/loadbalancer_backend#http2_enabled LoadbalancerBackend#http2_enabled}
   */
   readonly http2Enabled?: boolean | cdktf.IResolvable;
   /**
-  * Enable outbound proxy protocol by setting the desired version. Empty string disables proxy protocol.
+  * Enable outbound proxy protocol by setting the desired version. Defaults to empty string. Empty string disables proxy protocol.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.10.1/docs/resources/loadbalancer_backend#outbound_proxy_protocol LoadbalancerBackend#outbound_proxy_protocol}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.11.0/docs/resources/loadbalancer_backend#outbound_proxy_protocol LoadbalancerBackend#outbound_proxy_protocol}
   */
   readonly outboundProxyProtocol?: string;
   /**
   * Sets sticky session cookie name. Empty string disables sticky session.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.10.1/docs/resources/loadbalancer_backend#sticky_session_cookie_name LoadbalancerBackend#sticky_session_cookie_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.11.0/docs/resources/loadbalancer_backend#sticky_session_cookie_name LoadbalancerBackend#sticky_session_cookie_name}
   */
   readonly stickySessionCookieName?: string;
   /**
   * Backend server timeout in seconds.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.10.1/docs/resources/loadbalancer_backend#timeout_server LoadbalancerBackend#timeout_server}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.11.0/docs/resources/loadbalancer_backend#timeout_server LoadbalancerBackend#timeout_server}
   */
   readonly timeoutServer?: number;
   /**
   * Maximum inactivity time on the client and server side for tunnels in seconds.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.10.1/docs/resources/loadbalancer_backend#timeout_tunnel LoadbalancerBackend#timeout_tunnel}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.11.0/docs/resources/loadbalancer_backend#timeout_tunnel LoadbalancerBackend#timeout_tunnel}
   */
   readonly timeoutTunnel?: number;
   /**
   * Enables TLS connection from the load balancer to backend servers.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.10.1/docs/resources/loadbalancer_backend#tls_enabled LoadbalancerBackend#tls_enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.11.0/docs/resources/loadbalancer_backend#tls_enabled LoadbalancerBackend#tls_enabled}
   */
   readonly tlsEnabled?: boolean | cdktf.IResolvable;
   /**
   * If enabled, then the system CA certificate bundle will be used for the certificate verification.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.10.1/docs/resources/loadbalancer_backend#tls_use_system_ca LoadbalancerBackend#tls_use_system_ca}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.11.0/docs/resources/loadbalancer_backend#tls_use_system_ca LoadbalancerBackend#tls_use_system_ca}
   */
   readonly tlsUseSystemCa?: boolean | cdktf.IResolvable;
   /**
   * Enables backend servers certificate verification. Please make sure that TLS config with the certificate bundle of type authority attached to the backend or `tls_use_system_ca` enabled. Note: `tls_verify` has preference over `health_check_tls_verify` when `tls_enabled` in true.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.10.1/docs/resources/loadbalancer_backend#tls_verify LoadbalancerBackend#tls_verify}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.11.0/docs/resources/loadbalancer_backend#tls_verify LoadbalancerBackend#tls_verify}
   */
   readonly tlsVerify?: boolean | cdktf.IResolvable;
 }
 
-export function loadbalancerBackendPropertiesToTerraform(struct?: LoadbalancerBackendPropertiesOutputReference | LoadbalancerBackendProperties): any {
+export function loadbalancerBackendPropertiesToTerraform(struct?: LoadbalancerBackendProperties | cdktf.IResolvable): any {
   if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
@@ -162,7 +155,7 @@ export function loadbalancerBackendPropertiesToTerraform(struct?: LoadbalancerBa
 }
 
 
-export function loadbalancerBackendPropertiesToHclTerraform(struct?: LoadbalancerBackendPropertiesOutputReference | LoadbalancerBackendProperties): any {
+export function loadbalancerBackendPropertiesToHclTerraform(struct?: LoadbalancerBackendProperties | cdktf.IResolvable): any {
   if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
@@ -266,16 +259,22 @@ export function loadbalancerBackendPropertiesToHclTerraform(struct?: Loadbalance
 
 export class LoadbalancerBackendPropertiesOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
-    super(terraformResource, terraformAttribute, false, 0);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): LoadbalancerBackendProperties | undefined {
+  public get internalValue(): LoadbalancerBackendProperties | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._healthCheckExpectedStatus !== undefined) {
@@ -341,9 +340,10 @@ export class LoadbalancerBackendPropertiesOutputReference extends cdktf.ComplexO
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: LoadbalancerBackendProperties | undefined) {
+  public set internalValue(value: LoadbalancerBackendProperties | cdktf.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
+      this.resolvableValue = undefined;
       this._healthCheckExpectedStatus = undefined;
       this._healthCheckFall = undefined;
       this._healthCheckInterval = undefined;
@@ -360,8 +360,13 @@ export class LoadbalancerBackendPropertiesOutputReference extends cdktf.ComplexO
       this._tlsUseSystemCa = undefined;
       this._tlsVerify = undefined;
     }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
     else {
       this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
       this._healthCheckExpectedStatus = value.healthCheckExpectedStatus;
       this._healthCheckFall = value.healthCheckFall;
       this._healthCheckInterval = value.healthCheckInterval;
@@ -380,7 +385,7 @@ export class LoadbalancerBackendPropertiesOutputReference extends cdktf.ComplexO
     }
   }
 
-  // health_check_expected_status - computed: false, optional: true, required: false
+  // health_check_expected_status - computed: true, optional: true, required: false
   private _healthCheckExpectedStatus?: number; 
   public get healthCheckExpectedStatus() {
     return this.getNumberAttribute('health_check_expected_status');
@@ -396,7 +401,7 @@ export class LoadbalancerBackendPropertiesOutputReference extends cdktf.ComplexO
     return this._healthCheckExpectedStatus;
   }
 
-  // health_check_fall - computed: false, optional: true, required: false
+  // health_check_fall - computed: true, optional: true, required: false
   private _healthCheckFall?: number; 
   public get healthCheckFall() {
     return this.getNumberAttribute('health_check_fall');
@@ -412,7 +417,7 @@ export class LoadbalancerBackendPropertiesOutputReference extends cdktf.ComplexO
     return this._healthCheckFall;
   }
 
-  // health_check_interval - computed: false, optional: true, required: false
+  // health_check_interval - computed: true, optional: true, required: false
   private _healthCheckInterval?: number; 
   public get healthCheckInterval() {
     return this.getNumberAttribute('health_check_interval');
@@ -428,7 +433,7 @@ export class LoadbalancerBackendPropertiesOutputReference extends cdktf.ComplexO
     return this._healthCheckInterval;
   }
 
-  // health_check_rise - computed: false, optional: true, required: false
+  // health_check_rise - computed: true, optional: true, required: false
   private _healthCheckRise?: number; 
   public get healthCheckRise() {
     return this.getNumberAttribute('health_check_rise');
@@ -444,7 +449,7 @@ export class LoadbalancerBackendPropertiesOutputReference extends cdktf.ComplexO
     return this._healthCheckRise;
   }
 
-  // health_check_tls_verify - computed: false, optional: true, required: false
+  // health_check_tls_verify - computed: true, optional: true, required: false
   private _healthCheckTlsVerify?: boolean | cdktf.IResolvable; 
   public get healthCheckTlsVerify() {
     return this.getBooleanAttribute('health_check_tls_verify');
@@ -460,7 +465,7 @@ export class LoadbalancerBackendPropertiesOutputReference extends cdktf.ComplexO
     return this._healthCheckTlsVerify;
   }
 
-  // health_check_type - computed: false, optional: true, required: false
+  // health_check_type - computed: true, optional: true, required: false
   private _healthCheckType?: string; 
   public get healthCheckType() {
     return this.getStringAttribute('health_check_type');
@@ -476,7 +481,7 @@ export class LoadbalancerBackendPropertiesOutputReference extends cdktf.ComplexO
     return this._healthCheckType;
   }
 
-  // health_check_url - computed: false, optional: true, required: false
+  // health_check_url - computed: true, optional: true, required: false
   private _healthCheckUrl?: string; 
   public get healthCheckUrl() {
     return this.getStringAttribute('health_check_url');
@@ -492,7 +497,7 @@ export class LoadbalancerBackendPropertiesOutputReference extends cdktf.ComplexO
     return this._healthCheckUrl;
   }
 
-  // http2_enabled - computed: false, optional: true, required: false
+  // http2_enabled - computed: true, optional: true, required: false
   private _http2Enabled?: boolean | cdktf.IResolvable; 
   public get http2Enabled() {
     return this.getBooleanAttribute('http2_enabled');
@@ -508,7 +513,7 @@ export class LoadbalancerBackendPropertiesOutputReference extends cdktf.ComplexO
     return this._http2Enabled;
   }
 
-  // outbound_proxy_protocol - computed: false, optional: true, required: false
+  // outbound_proxy_protocol - computed: true, optional: true, required: false
   private _outboundProxyProtocol?: string; 
   public get outboundProxyProtocol() {
     return this.getStringAttribute('outbound_proxy_protocol');
@@ -524,7 +529,7 @@ export class LoadbalancerBackendPropertiesOutputReference extends cdktf.ComplexO
     return this._outboundProxyProtocol;
   }
 
-  // sticky_session_cookie_name - computed: false, optional: true, required: false
+  // sticky_session_cookie_name - computed: true, optional: true, required: false
   private _stickySessionCookieName?: string; 
   public get stickySessionCookieName() {
     return this.getStringAttribute('sticky_session_cookie_name');
@@ -540,7 +545,7 @@ export class LoadbalancerBackendPropertiesOutputReference extends cdktf.ComplexO
     return this._stickySessionCookieName;
   }
 
-  // timeout_server - computed: false, optional: true, required: false
+  // timeout_server - computed: true, optional: true, required: false
   private _timeoutServer?: number; 
   public get timeoutServer() {
     return this.getNumberAttribute('timeout_server');
@@ -556,7 +561,7 @@ export class LoadbalancerBackendPropertiesOutputReference extends cdktf.ComplexO
     return this._timeoutServer;
   }
 
-  // timeout_tunnel - computed: false, optional: true, required: false
+  // timeout_tunnel - computed: true, optional: true, required: false
   private _timeoutTunnel?: number; 
   public get timeoutTunnel() {
     return this.getNumberAttribute('timeout_tunnel');
@@ -572,12 +577,7 @@ export class LoadbalancerBackendPropertiesOutputReference extends cdktf.ComplexO
     return this._timeoutTunnel;
   }
 
-  // tls_configs - computed: true, optional: false, required: false
-  public get tlsConfigs() {
-    return this.getListAttribute('tls_configs');
-  }
-
-  // tls_enabled - computed: false, optional: true, required: false
+  // tls_enabled - computed: true, optional: true, required: false
   private _tlsEnabled?: boolean | cdktf.IResolvable; 
   public get tlsEnabled() {
     return this.getBooleanAttribute('tls_enabled');
@@ -593,7 +593,7 @@ export class LoadbalancerBackendPropertiesOutputReference extends cdktf.ComplexO
     return this._tlsEnabled;
   }
 
-  // tls_use_system_ca - computed: false, optional: true, required: false
+  // tls_use_system_ca - computed: true, optional: true, required: false
   private _tlsUseSystemCa?: boolean | cdktf.IResolvable; 
   public get tlsUseSystemCa() {
     return this.getBooleanAttribute('tls_use_system_ca');
@@ -609,7 +609,7 @@ export class LoadbalancerBackendPropertiesOutputReference extends cdktf.ComplexO
     return this._tlsUseSystemCa;
   }
 
-  // tls_verify - computed: false, optional: true, required: false
+  // tls_verify - computed: true, optional: true, required: false
   private _tlsVerify?: boolean | cdktf.IResolvable; 
   public get tlsVerify() {
     return this.getBooleanAttribute('tls_verify');
@@ -626,8 +626,28 @@ export class LoadbalancerBackendPropertiesOutputReference extends cdktf.ComplexO
   }
 }
 
+export class LoadbalancerBackendPropertiesList extends cdktf.ComplexList {
+  public internalValue? : LoadbalancerBackendProperties[] | cdktf.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): LoadbalancerBackendPropertiesOutputReference {
+    return new LoadbalancerBackendPropertiesOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
+
 /**
-* Represents a {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.10.1/docs/resources/loadbalancer_backend upcloud_loadbalancer_backend}
+* Represents a {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.11.0/docs/resources/loadbalancer_backend upcloud_loadbalancer_backend}
 */
 export class LoadbalancerBackend extends cdktf.TerraformResource {
 
@@ -643,7 +663,7 @@ export class LoadbalancerBackend extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a LoadbalancerBackend resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the LoadbalancerBackend to import
-  * @param importFromId The id of the existing LoadbalancerBackend that should be imported. Refer to the {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.10.1/docs/resources/loadbalancer_backend#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing LoadbalancerBackend that should be imported. Refer to the {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.11.0/docs/resources/loadbalancer_backend#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the LoadbalancerBackend to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -655,7 +675,7 @@ export class LoadbalancerBackend extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.10.1/docs/resources/loadbalancer_backend upcloud_loadbalancer_backend} Resource
+  * Create a new {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.11.0/docs/resources/loadbalancer_backend upcloud_loadbalancer_backend} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -666,7 +686,7 @@ export class LoadbalancerBackend extends cdktf.TerraformResource {
       terraformResourceType: 'upcloud_loadbalancer_backend',
       terraformGeneratorMetadata: {
         providerName: 'upcloud',
-        providerVersion: '5.10.1',
+        providerVersion: '5.11.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,
@@ -677,7 +697,6 @@ export class LoadbalancerBackend extends cdktf.TerraformResource {
       connection: config.connection,
       forEach: config.forEach
     });
-    this._id = config.id;
     this._loadbalancer = config.loadbalancer;
     this._name = config.name;
     this._resolverName = config.resolverName;
@@ -688,20 +707,9 @@ export class LoadbalancerBackend extends cdktf.TerraformResource {
   // ATTRIBUTES
   // ==========
 
-  // id - computed: true, optional: true, required: false
-  private _id?: string; 
+  // id - computed: true, optional: false, required: false
   public get id() {
     return this.getStringAttribute('id');
-  }
-  public set id(value: string) {
-    this._id = value;
-  }
-  public resetId() {
-    this._id = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get idInput() {
-    return this._id;
   }
 
   // loadbalancer - computed: false, optional: false, required: true
@@ -735,7 +743,7 @@ export class LoadbalancerBackend extends cdktf.TerraformResource {
     return this._name;
   }
 
-  // resolver_name - computed: false, optional: true, required: false
+  // resolver_name - computed: true, optional: true, required: false
   private _resolverName?: string; 
   public get resolverName() {
     return this.getStringAttribute('resolver_name');
@@ -757,11 +765,11 @@ export class LoadbalancerBackend extends cdktf.TerraformResource {
   }
 
   // properties - computed: false, optional: true, required: false
-  private _properties = new LoadbalancerBackendPropertiesOutputReference(this, "properties");
+  private _properties = new LoadbalancerBackendPropertiesList(this, "properties", false);
   public get properties() {
     return this._properties;
   }
-  public putProperties(value: LoadbalancerBackendProperties) {
+  public putProperties(value: LoadbalancerBackendProperties[] | cdktf.IResolvable) {
     this._properties.internalValue = value;
   }
   public resetProperties() {
@@ -778,22 +786,15 @@ export class LoadbalancerBackend extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      id: cdktf.stringToTerraform(this._id),
       loadbalancer: cdktf.stringToTerraform(this._loadbalancer),
       name: cdktf.stringToTerraform(this._name),
       resolver_name: cdktf.stringToTerraform(this._resolverName),
-      properties: loadbalancerBackendPropertiesToTerraform(this._properties.internalValue),
+      properties: cdktf.listMapper(loadbalancerBackendPropertiesToTerraform, true)(this._properties.internalValue),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
-      id: {
-        value: cdktf.stringToHclTerraform(this._id),
-        isBlock: false,
-        type: "simple",
-        storageClassType: "string",
-      },
       loadbalancer: {
         value: cdktf.stringToHclTerraform(this._loadbalancer),
         isBlock: false,
@@ -813,7 +814,7 @@ export class LoadbalancerBackend extends cdktf.TerraformResource {
         storageClassType: "string",
       },
       properties: {
-        value: loadbalancerBackendPropertiesToHclTerraform(this._properties.internalValue),
+        value: cdktf.listMapperHcl(loadbalancerBackendPropertiesToHclTerraform, true)(this._properties.internalValue),
         isBlock: true,
         type: "list",
         storageClassType: "LoadbalancerBackendPropertiesList",

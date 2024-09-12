@@ -29,6 +29,7 @@ Object.defineProperty(exports, 'managedDatabasePostgresql', { get: function () {
 Object.defineProperty(exports, 'managedDatabaseRedis', { get: function () { return require('./managed-database-redis'); } });
 Object.defineProperty(exports, 'managedDatabaseUser', { get: function () { return require('./managed-database-user'); } });
 Object.defineProperty(exports, 'managedObjectStorage', { get: function () { return require('./managed-object-storage'); } });
+Object.defineProperty(exports, 'managedObjectStorageCustomDomain', { get: function () { return require('./managed-object-storage-custom-domain'); } });
 Object.defineProperty(exports, 'managedObjectStoragePolicy', { get: function () { return require('./managed-object-storage-policy'); } });
 Object.defineProperty(exports, 'managedObjectStorageUser', { get: function () { return require('./managed-object-storage-user'); } });
 Object.defineProperty(exports, 'managedObjectStorageUserAccessKey', { get: function () { return require('./managed-object-storage-user-access-key'); } });
@@ -45,6 +46,7 @@ Object.defineProperty(exports, 'tag', { get: function () { return require('./tag
 Object.defineProperty(exports, 'dataUpcloudHosts', { get: function () { return require('./data-upcloud-hosts'); } });
 Object.defineProperty(exports, 'dataUpcloudIpAddresses', { get: function () { return require('./data-upcloud-ip-addresses'); } });
 Object.defineProperty(exports, 'dataUpcloudKubernetesCluster', { get: function () { return require('./data-upcloud-kubernetes-cluster'); } });
+Object.defineProperty(exports, 'dataUpcloudLoadBalancerDnsChallengeDomain', { get: function () { return require('./data-upcloud-load-balancer-dns-challenge-domain'); } });
 Object.defineProperty(exports, 'dataUpcloudManagedDatabaseMysqlSessions', { get: function () { return require('./data-upcloud-managed-database-mysql-sessions'); } });
 Object.defineProperty(exports, 'dataUpcloudManagedDatabaseOpensearchIndices', { get: function () { return require('./data-upcloud-managed-database-opensearch-indices'); } });
 Object.defineProperty(exports, 'dataUpcloudManagedDatabasePostgresqlSessions', { get: function () { return require('./data-upcloud-managed-database-postgresql-sessions'); } });
