@@ -4,7 +4,7 @@
 
 ### GatewayConnection <a name="GatewayConnection" id="@cdktf/provider-upcloud.gatewayConnection.GatewayConnection"></a>
 
-Represents a {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.11.0/docs/resources/gateway_connection upcloud_gateway_connection}.
+Represents a {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.11.1/docs/resources/gateway_connection upcloud_gateway_connection}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-upcloud.gatewayConnection.GatewayConnection.Initializer"></a>
 
@@ -521,7 +521,7 @@ The construct id used in the generated config for the GatewayConnection to impor
 
 The id of the existing GatewayConnection that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.11.0/docs/resources/gateway_connection#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.11.1/docs/resources/gateway_connection#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -907,7 +907,7 @@ new GatewayConnectionConfig {
 | <code><a href="#@cdktf/provider-upcloud.gatewayConnection.GatewayConnectionConfig.property.provisioners">Provisioners</a></code> | <code>object[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.gatewayConnection.GatewayConnectionConfig.property.gateway">Gateway</a></code> | <code>string</code> | The ID of the upcloud_gateway resource to which the connection belongs. |
 | <code><a href="#@cdktf/provider-upcloud.gatewayConnection.GatewayConnectionConfig.property.name">Name</a></code> | <code>string</code> | The name of the connection, should be unique within the gateway. |
-| <code><a href="#@cdktf/provider-upcloud.gatewayConnection.GatewayConnectionConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.11.0/docs/resources/gateway_connection#id GatewayConnection#id}. |
+| <code><a href="#@cdktf/provider-upcloud.gatewayConnection.GatewayConnectionConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.11.1/docs/resources/gateway_connection#id GatewayConnection#id}. |
 | <code><a href="#@cdktf/provider-upcloud.gatewayConnection.GatewayConnectionConfig.property.localRoute">LocalRoute</a></code> | <code>object</code> | local_route block. |
 | <code><a href="#@cdktf/provider-upcloud.gatewayConnection.GatewayConnectionConfig.property.remoteRoute">RemoteRoute</a></code> | <code>object</code> | remote_route block. |
 | <code><a href="#@cdktf/provider-upcloud.gatewayConnection.GatewayConnectionConfig.property.type">Type</a></code> | <code>string</code> | The type of the connection; currently the only supported type is 'ipsec'. |
@@ -994,7 +994,7 @@ public string Gateway { get; set; }
 
 The ID of the upcloud_gateway resource to which the connection belongs.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.11.0/docs/resources/gateway_connection#gateway GatewayConnection#gateway}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.11.1/docs/resources/gateway_connection#gateway GatewayConnection#gateway}
 
 ---
 
@@ -1008,7 +1008,7 @@ public string Name { get; set; }
 
 The name of the connection, should be unique within the gateway.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.11.0/docs/resources/gateway_connection#name GatewayConnection#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.11.1/docs/resources/gateway_connection#name GatewayConnection#name}
 
 ---
 
@@ -1020,7 +1020,7 @@ public string Id { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.11.0/docs/resources/gateway_connection#id GatewayConnection#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.11.1/docs/resources/gateway_connection#id GatewayConnection#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1037,7 +1037,7 @@ public object LocalRoute { get; set; }
 
 local_route block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.11.0/docs/resources/gateway_connection#local_route GatewayConnection#local_route}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.11.1/docs/resources/gateway_connection#local_route GatewayConnection#local_route}
 
 ---
 
@@ -1051,7 +1051,7 @@ public object RemoteRoute { get; set; }
 
 remote_route block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.11.0/docs/resources/gateway_connection#remote_route GatewayConnection#remote_route}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.11.1/docs/resources/gateway_connection#remote_route GatewayConnection#remote_route}
 
 ---
 
@@ -1065,7 +1065,7 @@ public string Type { get; set; }
 
 The type of the connection; currently the only supported type is 'ipsec'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.11.0/docs/resources/gateway_connection#type GatewayConnection#type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.11.1/docs/resources/gateway_connection#type GatewayConnection#type}
 
 ---
 
@@ -1103,7 +1103,7 @@ public string Name { get; set; }
 
 Name of the route.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.11.0/docs/resources/gateway_connection#name GatewayConnection#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.11.1/docs/resources/gateway_connection#name GatewayConnection#name}
 
 ---
 
@@ -1117,7 +1117,7 @@ public string StaticNetwork { get; set; }
 
 Destination prefix of the route; needs to be a valid IPv4 prefix.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.11.0/docs/resources/gateway_connection#static_network GatewayConnection#static_network}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.11.1/docs/resources/gateway_connection#static_network GatewayConnection#static_network}
 
 ---
 
@@ -1131,7 +1131,7 @@ public string Type { get; set; }
 
 Type of route; currently the only supported type is 'static'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.11.0/docs/resources/gateway_connection#type GatewayConnection#type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.11.1/docs/resources/gateway_connection#type GatewayConnection#type}
 
 ---
 
@@ -1169,7 +1169,7 @@ public string Name { get; set; }
 
 Name of the route.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.11.0/docs/resources/gateway_connection#name GatewayConnection#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.11.1/docs/resources/gateway_connection#name GatewayConnection#name}
 
 ---
 
@@ -1183,7 +1183,7 @@ public string StaticNetwork { get; set; }
 
 Destination prefix of the route; needs to be a valid IPv4 prefix.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.11.0/docs/resources/gateway_connection#static_network GatewayConnection#static_network}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.11.1/docs/resources/gateway_connection#static_network GatewayConnection#static_network}
 
 ---
 
@@ -1197,7 +1197,7 @@ public string Type { get; set; }
 
 Type of route; currently the only supported type is 'static'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.11.0/docs/resources/gateway_connection#type GatewayConnection#type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.11.1/docs/resources/gateway_connection#type GatewayConnection#type}
 
 ---
 
