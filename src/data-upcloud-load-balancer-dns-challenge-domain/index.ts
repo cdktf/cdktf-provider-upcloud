@@ -1,3 +1,8 @@
+/**
+ * Copyright (c) HashiCorp, Inc.
+ * SPDX-License-Identifier: MPL-2.0
+ */
+
 // https://registry.terraform.io/providers/upcloudltd/upcloud/5.11.1/docs/data-sources/load_balancer_dns_challenge_domain
 // generated from terraform resource schema
 
