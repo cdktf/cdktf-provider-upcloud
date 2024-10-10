@@ -4,12 +4,12 @@
 
 ### LoadbalancerDynamicCertificateBundle <a name="LoadbalancerDynamicCertificateBundle" id="@cdktf/provider-upcloud.loadbalancerDynamicCertificateBundle.LoadbalancerDynamicCertificateBundle"></a>
 
-Represents a {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.11.2/docs/resources/loadbalancer_dynamic_certificate_bundle upcloud_loadbalancer_dynamic_certificate_bundle}.
+Represents a {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.11.3/docs/resources/loadbalancer_dynamic_certificate_bundle upcloud_loadbalancer_dynamic_certificate_bundle}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-upcloud.loadbalancerDynamicCertificateBundle.LoadbalancerDynamicCertificateBundle.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v14/loadbalancerdynamiccertificatebundle"
+import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/loadbalancerdynamiccertificatebundle"
 
 loadbalancerdynamiccertificatebundle.NewLoadbalancerDynamicCertificateBundle(scope Construct, id *string, config LoadbalancerDynamicCertificateBundleConfig) LoadbalancerDynamicCertificateBundle
 ```
@@ -378,7 +378,7 @@ Full id of resource to move to, e.g. "aws_s3_bucket.example".
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-upcloud.loadbalancerDynamicCertificateBundle.LoadbalancerDynamicCertificateBundle.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v14/loadbalancerdynamiccertificatebundle"
+import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/loadbalancerdynamiccertificatebundle"
 
 loadbalancerdynamiccertificatebundle.LoadbalancerDynamicCertificateBundle_IsConstruct(x interface{}) *bool
 ```
@@ -410,7 +410,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-upcloud.loadbalancerDynamicCertificateBundle.LoadbalancerDynamicCertificateBundle.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v14/loadbalancerdynamiccertificatebundle"
+import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/loadbalancerdynamiccertificatebundle"
 
 loadbalancerdynamiccertificatebundle.LoadbalancerDynamicCertificateBundle_IsTerraformElement(x interface{}) *bool
 ```
@@ -424,7 +424,7 @@ loadbalancerdynamiccertificatebundle.LoadbalancerDynamicCertificateBundle_IsTerr
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-upcloud.loadbalancerDynamicCertificateBundle.LoadbalancerDynamicCertificateBundle.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v14/loadbalancerdynamiccertificatebundle"
+import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/loadbalancerdynamiccertificatebundle"
 
 loadbalancerdynamiccertificatebundle.LoadbalancerDynamicCertificateBundle_IsTerraformResource(x interface{}) *bool
 ```
@@ -438,7 +438,7 @@ loadbalancerdynamiccertificatebundle.LoadbalancerDynamicCertificateBundle_IsTerr
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-upcloud.loadbalancerDynamicCertificateBundle.LoadbalancerDynamicCertificateBundle.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v14/loadbalancerdynamiccertificatebundle"
+import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/loadbalancerdynamiccertificatebundle"
 
 loadbalancerdynamiccertificatebundle.LoadbalancerDynamicCertificateBundle_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -467,7 +467,7 @@ The construct id used in the generated config for the LoadbalancerDynamicCertifi
 
 The id of the existing LoadbalancerDynamicCertificateBundle that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.11.2/docs/resources/loadbalancer_dynamic_certificate_bundle#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.11.3/docs/resources/loadbalancer_dynamic_certificate_bundle#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -777,7 +777,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-upcloud.loadbalancerDynamicCertificateBundle.LoadbalancerDynamicCertificateBundleConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v14/loadbalancerdynamiccertificatebundle"
+import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/loadbalancerdynamiccertificatebundle"
 
 &loadbalancerdynamiccertificatebundle.LoadbalancerDynamicCertificateBundleConfig {
 	Connection: interface{},
@@ -890,7 +890,7 @@ Hostnames *[]*string
 
 Certificate hostnames.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.11.2/docs/resources/loadbalancer_dynamic_certificate_bundle#hostnames LoadbalancerDynamicCertificateBundle#hostnames}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.11.3/docs/resources/loadbalancer_dynamic_certificate_bundle#hostnames LoadbalancerDynamicCertificateBundle#hostnames}
 
 ---
 
@@ -904,7 +904,7 @@ KeyType *string
 
 Private key type (`rsa` / `ecdsa`).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.11.2/docs/resources/loadbalancer_dynamic_certificate_bundle#key_type LoadbalancerDynamicCertificateBundle#key_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.11.3/docs/resources/loadbalancer_dynamic_certificate_bundle#key_type LoadbalancerDynamicCertificateBundle#key_type}
 
 ---
 
@@ -918,7 +918,7 @@ Name *string
 
 The name of the certificate bundle. Must be unique within customer account.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.11.2/docs/resources/loadbalancer_dynamic_certificate_bundle#name LoadbalancerDynamicCertificateBundle#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.11.3/docs/resources/loadbalancer_dynamic_certificate_bundle#name LoadbalancerDynamicCertificateBundle#name}
 
 ---
 
