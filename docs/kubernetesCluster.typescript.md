@@ -4,7 +4,7 @@
 
 ### KubernetesCluster <a name="KubernetesCluster" id="@cdktf/provider-upcloud.kubernetesCluster.KubernetesCluster"></a>
 
-Represents a {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.11.2/docs/resources/kubernetes_cluster upcloud_kubernetes_cluster}.
+Represents a {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.11.3/docs/resources/kubernetes_cluster upcloud_kubernetes_cluster}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-upcloud.kubernetesCluster.KubernetesCluster.Initializer"></a>
 
@@ -502,7 +502,7 @@ The construct id used in the generated config for the KubernetesCluster to impor
 
 The id of the existing KubernetesCluster that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.11.2/docs/resources/kubernetes_cluster#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.11.3/docs/resources/kubernetes_cluster#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -968,7 +968,7 @@ const kubernetesClusterConfig: kubernetesCluster.KubernetesClusterConfig = { ...
 | <code><a href="#@cdktf/provider-upcloud.kubernetesCluster.KubernetesClusterConfig.property.plan">plan</a></code> | <code>string</code> | The pricing plan used for the cluster. |
 | <code><a href="#@cdktf/provider-upcloud.kubernetesCluster.KubernetesClusterConfig.property.privateNodeGroups">privateNodeGroups</a></code> | <code>boolean \| cdktf.IResolvable</code> | Enable private node groups. Private node groups requires a network that is routed through NAT gateway. |
 | <code><a href="#@cdktf/provider-upcloud.kubernetesCluster.KubernetesClusterConfig.property.storageEncryption">storageEncryption</a></code> | <code>string</code> | Set default storage encryption strategy for all nodes in the cluster. |
-| <code><a href="#@cdktf/provider-upcloud.kubernetesCluster.KubernetesClusterConfig.property.version">version</a></code> | <code>string</code> | Kubernetes version ID, e.g. `1.28`. You can list available version IDs with `upctl kubernetes versions`. |
+| <code><a href="#@cdktf/provider-upcloud.kubernetesCluster.KubernetesClusterConfig.property.version">version</a></code> | <code>string</code> | Kubernetes version ID, e.g. `1.29`. You can list available version IDs with `upctl kubernetes versions`. |
 
 ---
 
@@ -1054,7 +1054,7 @@ IP addresses or IP ranges in CIDR format which are allowed to access the cluster
 
 To allow access from any source, use `["0.0.0.0/0"]`. To deny access from all sources, use `[]`. Values set here do not restrict access to node groups or exposed Kubernetes services.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.11.2/docs/resources/kubernetes_cluster#control_plane_ip_filter KubernetesCluster#control_plane_ip_filter}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.11.3/docs/resources/kubernetes_cluster#control_plane_ip_filter KubernetesCluster#control_plane_ip_filter}
 
 ---
 
@@ -1068,7 +1068,7 @@ public readonly name: string;
 
 Cluster name. Needs to be unique within the account.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.11.2/docs/resources/kubernetes_cluster#name KubernetesCluster#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.11.3/docs/resources/kubernetes_cluster#name KubernetesCluster#name}
 
 ---
 
@@ -1082,7 +1082,7 @@ public readonly network: string;
 
 Network ID for the cluster to run in.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.11.2/docs/resources/kubernetes_cluster#network KubernetesCluster#network}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.11.3/docs/resources/kubernetes_cluster#network KubernetesCluster#network}
 
 ---
 
@@ -1096,7 +1096,7 @@ public readonly zone: string;
 
 Zone in which the Kubernetes cluster will be hosted, e.g. `de-fra1`. You can list available zones with `upctl zone list`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.11.2/docs/resources/kubernetes_cluster#zone KubernetesCluster#zone}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.11.3/docs/resources/kubernetes_cluster#zone KubernetesCluster#zone}
 
 ---
 
@@ -1110,7 +1110,7 @@ public readonly labels: {[ key: string ]: string};
 
 User defined key-value pairs to classify the cluster.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.11.2/docs/resources/kubernetes_cluster#labels KubernetesCluster#labels}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.11.3/docs/resources/kubernetes_cluster#labels KubernetesCluster#labels}
 
 ---
 
@@ -1126,7 +1126,7 @@ The pricing plan used for the cluster.
 
 Default plan is `development`. You can list available plans with `upctl kubernetes plans`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.11.2/docs/resources/kubernetes_cluster#plan KubernetesCluster#plan}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.11.3/docs/resources/kubernetes_cluster#plan KubernetesCluster#plan}
 
 ---
 
@@ -1140,7 +1140,7 @@ public readonly privateNodeGroups: boolean | IResolvable;
 
 Enable private node groups. Private node groups requires a network that is routed through NAT gateway.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.11.2/docs/resources/kubernetes_cluster#private_node_groups KubernetesCluster#private_node_groups}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.11.3/docs/resources/kubernetes_cluster#private_node_groups KubernetesCluster#private_node_groups}
 
 ---
 
@@ -1154,7 +1154,7 @@ public readonly storageEncryption: string;
 
 Set default storage encryption strategy for all nodes in the cluster.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.11.2/docs/resources/kubernetes_cluster#storage_encryption KubernetesCluster#storage_encryption}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.11.3/docs/resources/kubernetes_cluster#storage_encryption KubernetesCluster#storage_encryption}
 
 ---
 
@@ -1166,9 +1166,9 @@ public readonly version: string;
 
 - *Type:* string
 
-Kubernetes version ID, e.g. `1.28`. You can list available version IDs with `upctl kubernetes versions`.
+Kubernetes version ID, e.g. `1.29`. You can list available version IDs with `upctl kubernetes versions`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.11.2/docs/resources/kubernetes_cluster#version KubernetesCluster#version}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.11.3/docs/resources/kubernetes_cluster#version KubernetesCluster#version}
 
 ---
 

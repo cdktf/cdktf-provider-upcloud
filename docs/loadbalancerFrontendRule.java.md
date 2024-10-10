@@ -4,7 +4,7 @@
 
 ### LoadbalancerFrontendRule <a name="LoadbalancerFrontendRule" id="@cdktf/provider-upcloud.loadbalancerFrontendRule.LoadbalancerFrontendRule"></a>
 
-Represents a {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.11.2/docs/resources/loadbalancer_frontend_rule upcloud_loadbalancer_frontend_rule}.
+Represents a {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.11.3/docs/resources/loadbalancer_frontend_rule upcloud_loadbalancer_frontend_rule}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-upcloud.loadbalancerFrontendRule.LoadbalancerFrontendRule.Initializer"></a>
 
@@ -26,9 +26,10 @@ LoadbalancerFrontendRule.Builder.create(Construct scope, java.lang.String id)
     .frontend(java.lang.String)
     .name(java.lang.String)
     .priority(java.lang.Number)
-//  .actions(LoadbalancerFrontendRuleActions)
-//  .id(java.lang.String)
-//  .matchers(LoadbalancerFrontendRuleMatchers)
+//  .actions(IResolvable)
+//  .actions(java.util.List<LoadbalancerFrontendRuleActions>)
+//  .matchers(IResolvable)
+//  .matchers(java.util.List<LoadbalancerFrontendRuleMatchers>)
     .build();
 ```
 
@@ -43,12 +44,11 @@ LoadbalancerFrontendRule.Builder.create(Construct scope, java.lang.String id)
 | <code><a href="#@cdktf/provider-upcloud.loadbalancerFrontendRule.LoadbalancerFrontendRule.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>com.hashicorp.cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.loadbalancerFrontendRule.LoadbalancerFrontendRule.Initializer.parameter.provider">provider</a></code> | <code>com.hashicorp.cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.loadbalancerFrontendRule.LoadbalancerFrontendRule.Initializer.parameter.provisioners">provisioners</a></code> | <code>java.util.List<com.hashicorp.cdktf.FileProvisioner OR com.hashicorp.cdktf.LocalExecProvisioner OR com.hashicorp.cdktf.RemoteExecProvisioner></code> | *No description.* |
-| <code><a href="#@cdktf/provider-upcloud.loadbalancerFrontendRule.LoadbalancerFrontendRule.Initializer.parameter.frontend">frontend</a></code> | <code>java.lang.String</code> | ID of the load balancer frontend to which the rule is connected. |
-| <code><a href="#@cdktf/provider-upcloud.loadbalancerFrontendRule.LoadbalancerFrontendRule.Initializer.parameter.name">name</a></code> | <code>java.lang.String</code> | The name of the frontend rule must be unique within the load balancer service. |
+| <code><a href="#@cdktf/provider-upcloud.loadbalancerFrontendRule.LoadbalancerFrontendRule.Initializer.parameter.frontend">frontend</a></code> | <code>java.lang.String</code> | ID of the load balancer frontend to which the frontend rule is connected. |
+| <code><a href="#@cdktf/provider-upcloud.loadbalancerFrontendRule.LoadbalancerFrontendRule.Initializer.parameter.name">name</a></code> | <code>java.lang.String</code> | The name of the frontend rule. Must be unique within the frontend. |
 | <code><a href="#@cdktf/provider-upcloud.loadbalancerFrontendRule.LoadbalancerFrontendRule.Initializer.parameter.priority">priority</a></code> | <code>java.lang.Number</code> | Rule with the higher priority goes first. Rules with the same priority processed in alphabetical order. |
-| <code><a href="#@cdktf/provider-upcloud.loadbalancerFrontendRule.LoadbalancerFrontendRule.Initializer.parameter.actions">actions</a></code> | <code><a href="#@cdktf/provider-upcloud.loadbalancerFrontendRule.LoadbalancerFrontendRuleActions">LoadbalancerFrontendRuleActions</a></code> | actions block. |
-| <code><a href="#@cdktf/provider-upcloud.loadbalancerFrontendRule.LoadbalancerFrontendRule.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.11.2/docs/resources/loadbalancer_frontend_rule#id LoadbalancerFrontendRule#id}. |
-| <code><a href="#@cdktf/provider-upcloud.loadbalancerFrontendRule.LoadbalancerFrontendRule.Initializer.parameter.matchers">matchers</a></code> | <code><a href="#@cdktf/provider-upcloud.loadbalancerFrontendRule.LoadbalancerFrontendRuleMatchers">LoadbalancerFrontendRuleMatchers</a></code> | matchers block. |
+| <code><a href="#@cdktf/provider-upcloud.loadbalancerFrontendRule.LoadbalancerFrontendRule.Initializer.parameter.actions">actions</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-upcloud.loadbalancerFrontendRule.LoadbalancerFrontendRuleActions">LoadbalancerFrontendRuleActions</a>></code> | actions block. |
+| <code><a href="#@cdktf/provider-upcloud.loadbalancerFrontendRule.LoadbalancerFrontendRule.Initializer.parameter.matchers">matchers</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-upcloud.loadbalancerFrontendRule.LoadbalancerFrontendRuleMatchers">LoadbalancerFrontendRuleMatchers</a>></code> | matchers block. |
 
 ---
 
@@ -116,9 +116,9 @@ Must be unique amongst siblings in the same scope
 
 - *Type:* java.lang.String
 
-ID of the load balancer frontend to which the rule is connected.
+ID of the load balancer frontend to which the frontend rule is connected.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.11.2/docs/resources/loadbalancer_frontend_rule#frontend LoadbalancerFrontendRule#frontend}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.11.3/docs/resources/loadbalancer_frontend_rule#frontend LoadbalancerFrontendRule#frontend}
 
 ---
 
@@ -126,9 +126,9 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upclo
 
 - *Type:* java.lang.String
 
-The name of the frontend rule must be unique within the load balancer service.
+The name of the frontend rule. Must be unique within the frontend.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.11.2/docs/resources/loadbalancer_frontend_rule#name LoadbalancerFrontendRule#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.11.3/docs/resources/loadbalancer_frontend_rule#name LoadbalancerFrontendRule#name}
 
 ---
 
@@ -138,38 +138,27 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upclo
 
 Rule with the higher priority goes first. Rules with the same priority processed in alphabetical order.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.11.2/docs/resources/loadbalancer_frontend_rule#priority LoadbalancerFrontendRule#priority}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.11.3/docs/resources/loadbalancer_frontend_rule#priority LoadbalancerFrontendRule#priority}
 
 ---
 
 ##### `actions`<sup>Optional</sup> <a name="actions" id="@cdktf/provider-upcloud.loadbalancerFrontendRule.LoadbalancerFrontendRule.Initializer.parameter.actions"></a>
 
-- *Type:* <a href="#@cdktf/provider-upcloud.loadbalancerFrontendRule.LoadbalancerFrontendRuleActions">LoadbalancerFrontendRuleActions</a>
+- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-upcloud.loadbalancerFrontendRule.LoadbalancerFrontendRuleActions">LoadbalancerFrontendRuleActions</a>>
 
 actions block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.11.2/docs/resources/loadbalancer_frontend_rule#actions LoadbalancerFrontendRule#actions}
-
----
-
-##### `id`<sup>Optional</sup> <a name="id" id="@cdktf/provider-upcloud.loadbalancerFrontendRule.LoadbalancerFrontendRule.Initializer.parameter.id"></a>
-
-- *Type:* java.lang.String
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.11.2/docs/resources/loadbalancer_frontend_rule#id LoadbalancerFrontendRule#id}.
-
-Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
-If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.11.3/docs/resources/loadbalancer_frontend_rule#actions LoadbalancerFrontendRule#actions}
 
 ---
 
 ##### `matchers`<sup>Optional</sup> <a name="matchers" id="@cdktf/provider-upcloud.loadbalancerFrontendRule.LoadbalancerFrontendRule.Initializer.parameter.matchers"></a>
 
-- *Type:* <a href="#@cdktf/provider-upcloud.loadbalancerFrontendRule.LoadbalancerFrontendRuleMatchers">LoadbalancerFrontendRuleMatchers</a>
+- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-upcloud.loadbalancerFrontendRule.LoadbalancerFrontendRuleMatchers">LoadbalancerFrontendRuleMatchers</a>>
 
 matchers block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.11.2/docs/resources/loadbalancer_frontend_rule#matchers LoadbalancerFrontendRule#matchers}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.11.3/docs/resources/loadbalancer_frontend_rule#matchers LoadbalancerFrontendRule#matchers}
 
 ---
 
@@ -203,7 +192,6 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upclo
 | <code><a href="#@cdktf/provider-upcloud.loadbalancerFrontendRule.LoadbalancerFrontendRule.putActions">putActions</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.loadbalancerFrontendRule.LoadbalancerFrontendRule.putMatchers">putMatchers</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.loadbalancerFrontendRule.LoadbalancerFrontendRule.resetActions">resetActions</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-upcloud.loadbalancerFrontendRule.LoadbalancerFrontendRule.resetId">resetId</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.loadbalancerFrontendRule.LoadbalancerFrontendRule.resetMatchers">resetMatchers</a></code> | *No description.* |
 
 ---
@@ -501,24 +489,24 @@ Full id of resource to move to, e.g. "aws_s3_bucket.example".
 ##### `putActions` <a name="putActions" id="@cdktf/provider-upcloud.loadbalancerFrontendRule.LoadbalancerFrontendRule.putActions"></a>
 
 ```java
-public void putActions(LoadbalancerFrontendRuleActions value)
+public void putActions(IResolvable OR java.util.List<LoadbalancerFrontendRuleActions> value)
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-upcloud.loadbalancerFrontendRule.LoadbalancerFrontendRule.putActions.parameter.value"></a>
 
-- *Type:* <a href="#@cdktf/provider-upcloud.loadbalancerFrontendRule.LoadbalancerFrontendRuleActions">LoadbalancerFrontendRuleActions</a>
+- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-upcloud.loadbalancerFrontendRule.LoadbalancerFrontendRuleActions">LoadbalancerFrontendRuleActions</a>>
 
 ---
 
 ##### `putMatchers` <a name="putMatchers" id="@cdktf/provider-upcloud.loadbalancerFrontendRule.LoadbalancerFrontendRule.putMatchers"></a>
 
 ```java
-public void putMatchers(LoadbalancerFrontendRuleMatchers value)
+public void putMatchers(IResolvable OR java.util.List<LoadbalancerFrontendRuleMatchers> value)
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-upcloud.loadbalancerFrontendRule.LoadbalancerFrontendRule.putMatchers.parameter.value"></a>
 
-- *Type:* <a href="#@cdktf/provider-upcloud.loadbalancerFrontendRule.LoadbalancerFrontendRuleMatchers">LoadbalancerFrontendRuleMatchers</a>
+- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-upcloud.loadbalancerFrontendRule.LoadbalancerFrontendRuleMatchers">LoadbalancerFrontendRuleMatchers</a>>
 
 ---
 
@@ -526,12 +514,6 @@ public void putMatchers(LoadbalancerFrontendRuleMatchers value)
 
 ```java
 public void resetActions()
-```
-
-##### `resetId` <a name="resetId" id="@cdktf/provider-upcloud.loadbalancerFrontendRule.LoadbalancerFrontendRule.resetId"></a>
-
-```java
-public void resetId()
 ```
 
 ##### `resetMatchers` <a name="resetMatchers" id="@cdktf/provider-upcloud.loadbalancerFrontendRule.LoadbalancerFrontendRule.resetMatchers"></a>
@@ -643,7 +625,7 @@ The construct id used in the generated config for the LoadbalancerFrontendRule t
 
 The id of the existing LoadbalancerFrontendRule that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.11.2/docs/resources/loadbalancer_frontend_rule#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.11.3/docs/resources/loadbalancer_frontend_rule#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -673,16 +655,15 @@ Refer to the {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5
 | <code><a href="#@cdktf/provider-upcloud.loadbalancerFrontendRule.LoadbalancerFrontendRule.property.lifecycle">lifecycle</a></code> | <code>com.hashicorp.cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.loadbalancerFrontendRule.LoadbalancerFrontendRule.property.provider">provider</a></code> | <code>com.hashicorp.cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.loadbalancerFrontendRule.LoadbalancerFrontendRule.property.provisioners">provisioners</a></code> | <code>java.util.List<com.hashicorp.cdktf.FileProvisioner OR com.hashicorp.cdktf.LocalExecProvisioner OR com.hashicorp.cdktf.RemoteExecProvisioner></code> | *No description.* |
-| <code><a href="#@cdktf/provider-upcloud.loadbalancerFrontendRule.LoadbalancerFrontendRule.property.actions">actions</a></code> | <code><a href="#@cdktf/provider-upcloud.loadbalancerFrontendRule.LoadbalancerFrontendRuleActionsOutputReference">LoadbalancerFrontendRuleActionsOutputReference</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-upcloud.loadbalancerFrontendRule.LoadbalancerFrontendRule.property.matchers">matchers</a></code> | <code><a href="#@cdktf/provider-upcloud.loadbalancerFrontendRule.LoadbalancerFrontendRuleMatchersOutputReference">LoadbalancerFrontendRuleMatchersOutputReference</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-upcloud.loadbalancerFrontendRule.LoadbalancerFrontendRule.property.actionsInput">actionsInput</a></code> | <code><a href="#@cdktf/provider-upcloud.loadbalancerFrontendRule.LoadbalancerFrontendRuleActions">LoadbalancerFrontendRuleActions</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-upcloud.loadbalancerFrontendRule.LoadbalancerFrontendRule.property.actions">actions</a></code> | <code><a href="#@cdktf/provider-upcloud.loadbalancerFrontendRule.LoadbalancerFrontendRuleActionsList">LoadbalancerFrontendRuleActionsList</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-upcloud.loadbalancerFrontendRule.LoadbalancerFrontendRule.property.id">id</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktf/provider-upcloud.loadbalancerFrontendRule.LoadbalancerFrontendRule.property.matchers">matchers</a></code> | <code><a href="#@cdktf/provider-upcloud.loadbalancerFrontendRule.LoadbalancerFrontendRuleMatchersList">LoadbalancerFrontendRuleMatchersList</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-upcloud.loadbalancerFrontendRule.LoadbalancerFrontendRule.property.actionsInput">actionsInput</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-upcloud.loadbalancerFrontendRule.LoadbalancerFrontendRuleActions">LoadbalancerFrontendRuleActions</a>></code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.loadbalancerFrontendRule.LoadbalancerFrontendRule.property.frontendInput">frontendInput</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-upcloud.loadbalancerFrontendRule.LoadbalancerFrontendRule.property.idInput">idInput</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-upcloud.loadbalancerFrontendRule.LoadbalancerFrontendRule.property.matchersInput">matchersInput</a></code> | <code><a href="#@cdktf/provider-upcloud.loadbalancerFrontendRule.LoadbalancerFrontendRuleMatchers">LoadbalancerFrontendRuleMatchers</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-upcloud.loadbalancerFrontendRule.LoadbalancerFrontendRule.property.matchersInput">matchersInput</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-upcloud.loadbalancerFrontendRule.LoadbalancerFrontendRuleMatchers">LoadbalancerFrontendRuleMatchers</a>></code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.loadbalancerFrontendRule.LoadbalancerFrontendRule.property.nameInput">nameInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.loadbalancerFrontendRule.LoadbalancerFrontendRule.property.priorityInput">priorityInput</a></code> | <code>java.lang.Number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.loadbalancerFrontendRule.LoadbalancerFrontendRule.property.frontend">frontend</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-upcloud.loadbalancerFrontendRule.LoadbalancerFrontendRule.property.id">id</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.loadbalancerFrontendRule.LoadbalancerFrontendRule.property.name">name</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.loadbalancerFrontendRule.LoadbalancerFrontendRule.property.priority">priority</a></code> | <code>java.lang.Number</code> | *No description.* |
 
@@ -833,30 +814,40 @@ public java.lang.Object getProvisioners();
 ##### `actions`<sup>Required</sup> <a name="actions" id="@cdktf/provider-upcloud.loadbalancerFrontendRule.LoadbalancerFrontendRule.property.actions"></a>
 
 ```java
-public LoadbalancerFrontendRuleActionsOutputReference getActions();
+public LoadbalancerFrontendRuleActionsList getActions();
 ```
 
-- *Type:* <a href="#@cdktf/provider-upcloud.loadbalancerFrontendRule.LoadbalancerFrontendRuleActionsOutputReference">LoadbalancerFrontendRuleActionsOutputReference</a>
+- *Type:* <a href="#@cdktf/provider-upcloud.loadbalancerFrontendRule.LoadbalancerFrontendRuleActionsList">LoadbalancerFrontendRuleActionsList</a>
+
+---
+
+##### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-upcloud.loadbalancerFrontendRule.LoadbalancerFrontendRule.property.id"></a>
+
+```java
+public java.lang.String getId();
+```
+
+- *Type:* java.lang.String
 
 ---
 
 ##### `matchers`<sup>Required</sup> <a name="matchers" id="@cdktf/provider-upcloud.loadbalancerFrontendRule.LoadbalancerFrontendRule.property.matchers"></a>
 
 ```java
-public LoadbalancerFrontendRuleMatchersOutputReference getMatchers();
+public LoadbalancerFrontendRuleMatchersList getMatchers();
 ```
 
-- *Type:* <a href="#@cdktf/provider-upcloud.loadbalancerFrontendRule.LoadbalancerFrontendRuleMatchersOutputReference">LoadbalancerFrontendRuleMatchersOutputReference</a>
+- *Type:* <a href="#@cdktf/provider-upcloud.loadbalancerFrontendRule.LoadbalancerFrontendRuleMatchersList">LoadbalancerFrontendRuleMatchersList</a>
 
 ---
 
 ##### `actionsInput`<sup>Optional</sup> <a name="actionsInput" id="@cdktf/provider-upcloud.loadbalancerFrontendRule.LoadbalancerFrontendRule.property.actionsInput"></a>
 
 ```java
-public LoadbalancerFrontendRuleActions getActionsInput();
+public java.lang.Object getActionsInput();
 ```
 
-- *Type:* <a href="#@cdktf/provider-upcloud.loadbalancerFrontendRule.LoadbalancerFrontendRuleActions">LoadbalancerFrontendRuleActions</a>
+- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-upcloud.loadbalancerFrontendRule.LoadbalancerFrontendRuleActions">LoadbalancerFrontendRuleActions</a>>
 
 ---
 
@@ -870,23 +861,13 @@ public java.lang.String getFrontendInput();
 
 ---
 
-##### `idInput`<sup>Optional</sup> <a name="idInput" id="@cdktf/provider-upcloud.loadbalancerFrontendRule.LoadbalancerFrontendRule.property.idInput"></a>
-
-```java
-public java.lang.String getIdInput();
-```
-
-- *Type:* java.lang.String
-
----
-
 ##### `matchersInput`<sup>Optional</sup> <a name="matchersInput" id="@cdktf/provider-upcloud.loadbalancerFrontendRule.LoadbalancerFrontendRule.property.matchersInput"></a>
 
 ```java
-public LoadbalancerFrontendRuleMatchers getMatchersInput();
+public java.lang.Object getMatchersInput();
 ```
 
-- *Type:* <a href="#@cdktf/provider-upcloud.loadbalancerFrontendRule.LoadbalancerFrontendRuleMatchers">LoadbalancerFrontendRuleMatchers</a>
+- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-upcloud.loadbalancerFrontendRule.LoadbalancerFrontendRuleMatchers">LoadbalancerFrontendRuleMatchers</a>>
 
 ---
 
@@ -914,16 +895,6 @@ public java.lang.Number getPriorityInput();
 
 ```java
 public java.lang.String getFrontend();
-```
-
-- *Type:* java.lang.String
-
----
-
-##### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-upcloud.loadbalancerFrontendRule.LoadbalancerFrontendRule.property.id"></a>
-
-```java
-public java.lang.String getId();
 ```
 
 - *Type:* java.lang.String
@@ -1013,7 +984,7 @@ public java.lang.Object getHttpRedirect();
 
 http_redirect block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.11.2/docs/resources/loadbalancer_frontend_rule#http_redirect LoadbalancerFrontendRule#http_redirect}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.11.3/docs/resources/loadbalancer_frontend_rule#http_redirect LoadbalancerFrontendRule#http_redirect}
 
 ---
 
@@ -1027,7 +998,7 @@ public java.lang.Object getHttpReturn();
 
 http_return block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.11.2/docs/resources/loadbalancer_frontend_rule#http_return LoadbalancerFrontendRule#http_return}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.11.3/docs/resources/loadbalancer_frontend_rule#http_return LoadbalancerFrontendRule#http_return}
 
 ---
 
@@ -1041,7 +1012,7 @@ public java.lang.Object getSetForwardedHeaders();
 
 set_forwarded_headers block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.11.2/docs/resources/loadbalancer_frontend_rule#set_forwarded_headers LoadbalancerFrontendRule#set_forwarded_headers}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.11.3/docs/resources/loadbalancer_frontend_rule#set_forwarded_headers LoadbalancerFrontendRule#set_forwarded_headers}
 
 ---
 
@@ -1055,7 +1026,7 @@ public java.lang.Object getTcpReject();
 
 tcp_reject block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.11.2/docs/resources/loadbalancer_frontend_rule#tcp_reject LoadbalancerFrontendRule#tcp_reject}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.11.3/docs/resources/loadbalancer_frontend_rule#tcp_reject LoadbalancerFrontendRule#tcp_reject}
 
 ---
 
@@ -1069,7 +1040,7 @@ public java.lang.Object getUseBackend();
 
 use_backend block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.11.2/docs/resources/loadbalancer_frontend_rule#use_backend LoadbalancerFrontendRule#use_backend}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.11.3/docs/resources/loadbalancer_frontend_rule#use_backend LoadbalancerFrontendRule#use_backend}
 
 ---
 
@@ -1105,7 +1076,7 @@ public java.lang.String getLocation();
 
 Target location.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.11.2/docs/resources/loadbalancer_frontend_rule#location LoadbalancerFrontendRule#location}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.11.3/docs/resources/loadbalancer_frontend_rule#location LoadbalancerFrontendRule#location}
 
 ---
 
@@ -1119,7 +1090,7 @@ public java.lang.String getScheme();
 
 Target scheme.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.11.2/docs/resources/loadbalancer_frontend_rule#scheme LoadbalancerFrontendRule#scheme}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.11.3/docs/resources/loadbalancer_frontend_rule#scheme LoadbalancerFrontendRule#scheme}
 
 ---
 
@@ -1157,7 +1128,7 @@ public java.lang.String getContentType();
 
 Content type.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.11.2/docs/resources/loadbalancer_frontend_rule#content_type LoadbalancerFrontendRule#content_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.11.3/docs/resources/loadbalancer_frontend_rule#content_type LoadbalancerFrontendRule#content_type}
 
 ---
 
@@ -1171,7 +1142,7 @@ public java.lang.String getPayload();
 
 The payload.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.11.2/docs/resources/loadbalancer_frontend_rule#payload LoadbalancerFrontendRule#payload}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.11.3/docs/resources/loadbalancer_frontend_rule#payload LoadbalancerFrontendRule#payload}
 
 ---
 
@@ -1185,7 +1156,7 @@ public java.lang.Number getStatus();
 
 HTTP status code.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.11.2/docs/resources/loadbalancer_frontend_rule#status LoadbalancerFrontendRule#status}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.11.3/docs/resources/loadbalancer_frontend_rule#status LoadbalancerFrontendRule#status}
 
 ---
 
@@ -1206,7 +1177,7 @@ LoadbalancerFrontendRuleActionsSetForwardedHeaders.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-upcloud.loadbalancerFrontendRule.LoadbalancerFrontendRuleActionsSetForwardedHeaders.property.active">active</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.11.2/docs/resources/loadbalancer_frontend_rule#active LoadbalancerFrontendRule#active}. |
+| <code><a href="#@cdktf/provider-upcloud.loadbalancerFrontendRule.LoadbalancerFrontendRuleActionsSetForwardedHeaders.property.active">active</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.11.3/docs/resources/loadbalancer_frontend_rule#active LoadbalancerFrontendRule#active}. |
 
 ---
 
@@ -1218,7 +1189,7 @@ public java.lang.Object getActive();
 
 - *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.11.2/docs/resources/loadbalancer_frontend_rule#active LoadbalancerFrontendRule#active}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.11.3/docs/resources/loadbalancer_frontend_rule#active LoadbalancerFrontendRule#active}.
 
 ---
 
@@ -1239,7 +1210,7 @@ LoadbalancerFrontendRuleActionsTcpReject.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-upcloud.loadbalancerFrontendRule.LoadbalancerFrontendRuleActionsTcpReject.property.active">active</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.11.2/docs/resources/loadbalancer_frontend_rule#active LoadbalancerFrontendRule#active}. |
+| <code><a href="#@cdktf/provider-upcloud.loadbalancerFrontendRule.LoadbalancerFrontendRuleActionsTcpReject.property.active">active</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Indicates if the rule is active. |
 
 ---
 
@@ -1251,7 +1222,9 @@ public java.lang.Object getActive();
 
 - *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.11.2/docs/resources/loadbalancer_frontend_rule#active LoadbalancerFrontendRule#active}.
+Indicates if the rule is active.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.11.3/docs/resources/loadbalancer_frontend_rule#active LoadbalancerFrontendRule#active}
 
 ---
 
@@ -1285,7 +1258,7 @@ public java.lang.String getBackendName();
 
 The name of the backend where traffic will be routed.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.11.2/docs/resources/loadbalancer_frontend_rule#backend_name LoadbalancerFrontendRule#backend_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.11.3/docs/resources/loadbalancer_frontend_rule#backend_name LoadbalancerFrontendRule#backend_name}
 
 ---
 
@@ -1311,9 +1284,10 @@ LoadbalancerFrontendRuleConfig.builder()
     .frontend(java.lang.String)
     .name(java.lang.String)
     .priority(java.lang.Number)
-//  .actions(LoadbalancerFrontendRuleActions)
-//  .id(java.lang.String)
-//  .matchers(LoadbalancerFrontendRuleMatchers)
+//  .actions(IResolvable)
+//  .actions(java.util.List<LoadbalancerFrontendRuleActions>)
+//  .matchers(IResolvable)
+//  .matchers(java.util.List<LoadbalancerFrontendRuleMatchers>)
     .build();
 ```
 
@@ -1328,12 +1302,11 @@ LoadbalancerFrontendRuleConfig.builder()
 | <code><a href="#@cdktf/provider-upcloud.loadbalancerFrontendRule.LoadbalancerFrontendRuleConfig.property.lifecycle">lifecycle</a></code> | <code>com.hashicorp.cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.loadbalancerFrontendRule.LoadbalancerFrontendRuleConfig.property.provider">provider</a></code> | <code>com.hashicorp.cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.loadbalancerFrontendRule.LoadbalancerFrontendRuleConfig.property.provisioners">provisioners</a></code> | <code>java.util.List<com.hashicorp.cdktf.FileProvisioner OR com.hashicorp.cdktf.LocalExecProvisioner OR com.hashicorp.cdktf.RemoteExecProvisioner></code> | *No description.* |
-| <code><a href="#@cdktf/provider-upcloud.loadbalancerFrontendRule.LoadbalancerFrontendRuleConfig.property.frontend">frontend</a></code> | <code>java.lang.String</code> | ID of the load balancer frontend to which the rule is connected. |
-| <code><a href="#@cdktf/provider-upcloud.loadbalancerFrontendRule.LoadbalancerFrontendRuleConfig.property.name">name</a></code> | <code>java.lang.String</code> | The name of the frontend rule must be unique within the load balancer service. |
+| <code><a href="#@cdktf/provider-upcloud.loadbalancerFrontendRule.LoadbalancerFrontendRuleConfig.property.frontend">frontend</a></code> | <code>java.lang.String</code> | ID of the load balancer frontend to which the frontend rule is connected. |
+| <code><a href="#@cdktf/provider-upcloud.loadbalancerFrontendRule.LoadbalancerFrontendRuleConfig.property.name">name</a></code> | <code>java.lang.String</code> | The name of the frontend rule. Must be unique within the frontend. |
 | <code><a href="#@cdktf/provider-upcloud.loadbalancerFrontendRule.LoadbalancerFrontendRuleConfig.property.priority">priority</a></code> | <code>java.lang.Number</code> | Rule with the higher priority goes first. Rules with the same priority processed in alphabetical order. |
-| <code><a href="#@cdktf/provider-upcloud.loadbalancerFrontendRule.LoadbalancerFrontendRuleConfig.property.actions">actions</a></code> | <code><a href="#@cdktf/provider-upcloud.loadbalancerFrontendRule.LoadbalancerFrontendRuleActions">LoadbalancerFrontendRuleActions</a></code> | actions block. |
-| <code><a href="#@cdktf/provider-upcloud.loadbalancerFrontendRule.LoadbalancerFrontendRuleConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.11.2/docs/resources/loadbalancer_frontend_rule#id LoadbalancerFrontendRule#id}. |
-| <code><a href="#@cdktf/provider-upcloud.loadbalancerFrontendRule.LoadbalancerFrontendRuleConfig.property.matchers">matchers</a></code> | <code><a href="#@cdktf/provider-upcloud.loadbalancerFrontendRule.LoadbalancerFrontendRuleMatchers">LoadbalancerFrontendRuleMatchers</a></code> | matchers block. |
+| <code><a href="#@cdktf/provider-upcloud.loadbalancerFrontendRule.LoadbalancerFrontendRuleConfig.property.actions">actions</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-upcloud.loadbalancerFrontendRule.LoadbalancerFrontendRuleActions">LoadbalancerFrontendRuleActions</a>></code> | actions block. |
+| <code><a href="#@cdktf/provider-upcloud.loadbalancerFrontendRule.LoadbalancerFrontendRuleConfig.property.matchers">matchers</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-upcloud.loadbalancerFrontendRule.LoadbalancerFrontendRuleMatchers">LoadbalancerFrontendRuleMatchers</a>></code> | matchers block. |
 
 ---
 
@@ -1415,9 +1388,9 @@ public java.lang.String getFrontend();
 
 - *Type:* java.lang.String
 
-ID of the load balancer frontend to which the rule is connected.
+ID of the load balancer frontend to which the frontend rule is connected.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.11.2/docs/resources/loadbalancer_frontend_rule#frontend LoadbalancerFrontendRule#frontend}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.11.3/docs/resources/loadbalancer_frontend_rule#frontend LoadbalancerFrontendRule#frontend}
 
 ---
 
@@ -1429,9 +1402,9 @@ public java.lang.String getName();
 
 - *Type:* java.lang.String
 
-The name of the frontend rule must be unique within the load balancer service.
+The name of the frontend rule. Must be unique within the frontend.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.11.2/docs/resources/loadbalancer_frontend_rule#name LoadbalancerFrontendRule#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.11.3/docs/resources/loadbalancer_frontend_rule#name LoadbalancerFrontendRule#name}
 
 ---
 
@@ -1445,50 +1418,35 @@ public java.lang.Number getPriority();
 
 Rule with the higher priority goes first. Rules with the same priority processed in alphabetical order.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.11.2/docs/resources/loadbalancer_frontend_rule#priority LoadbalancerFrontendRule#priority}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.11.3/docs/resources/loadbalancer_frontend_rule#priority LoadbalancerFrontendRule#priority}
 
 ---
 
 ##### `actions`<sup>Optional</sup> <a name="actions" id="@cdktf/provider-upcloud.loadbalancerFrontendRule.LoadbalancerFrontendRuleConfig.property.actions"></a>
 
 ```java
-public LoadbalancerFrontendRuleActions getActions();
+public java.lang.Object getActions();
 ```
 
-- *Type:* <a href="#@cdktf/provider-upcloud.loadbalancerFrontendRule.LoadbalancerFrontendRuleActions">LoadbalancerFrontendRuleActions</a>
+- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-upcloud.loadbalancerFrontendRule.LoadbalancerFrontendRuleActions">LoadbalancerFrontendRuleActions</a>>
 
 actions block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.11.2/docs/resources/loadbalancer_frontend_rule#actions LoadbalancerFrontendRule#actions}
-
----
-
-##### `id`<sup>Optional</sup> <a name="id" id="@cdktf/provider-upcloud.loadbalancerFrontendRule.LoadbalancerFrontendRuleConfig.property.id"></a>
-
-```java
-public java.lang.String getId();
-```
-
-- *Type:* java.lang.String
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.11.2/docs/resources/loadbalancer_frontend_rule#id LoadbalancerFrontendRule#id}.
-
-Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
-If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.11.3/docs/resources/loadbalancer_frontend_rule#actions LoadbalancerFrontendRule#actions}
 
 ---
 
 ##### `matchers`<sup>Optional</sup> <a name="matchers" id="@cdktf/provider-upcloud.loadbalancerFrontendRule.LoadbalancerFrontendRuleConfig.property.matchers"></a>
 
 ```java
-public LoadbalancerFrontendRuleMatchers getMatchers();
+public java.lang.Object getMatchers();
 ```
 
-- *Type:* <a href="#@cdktf/provider-upcloud.loadbalancerFrontendRule.LoadbalancerFrontendRuleMatchers">LoadbalancerFrontendRuleMatchers</a>
+- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-upcloud.loadbalancerFrontendRule.LoadbalancerFrontendRuleMatchers">LoadbalancerFrontendRuleMatchers</a>>
 
 matchers block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.11.2/docs/resources/loadbalancer_frontend_rule#matchers LoadbalancerFrontendRule#matchers}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.11.3/docs/resources/loadbalancer_frontend_rule#matchers LoadbalancerFrontendRule#matchers}
 
 ---
 
@@ -1562,7 +1520,7 @@ public java.lang.Object getBodySize();
 
 body_size block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.11.2/docs/resources/loadbalancer_frontend_rule#body_size LoadbalancerFrontendRule#body_size}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.11.3/docs/resources/loadbalancer_frontend_rule#body_size LoadbalancerFrontendRule#body_size}
 
 ---
 
@@ -1576,7 +1534,7 @@ public java.lang.Object getBodySizeRange();
 
 body_size_range block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.11.2/docs/resources/loadbalancer_frontend_rule#body_size_range LoadbalancerFrontendRule#body_size_range}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.11.3/docs/resources/loadbalancer_frontend_rule#body_size_range LoadbalancerFrontendRule#body_size_range}
 
 ---
 
@@ -1590,7 +1548,7 @@ public java.lang.Object getCookie();
 
 cookie block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.11.2/docs/resources/loadbalancer_frontend_rule#cookie LoadbalancerFrontendRule#cookie}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.11.3/docs/resources/loadbalancer_frontend_rule#cookie LoadbalancerFrontendRule#cookie}
 
 ---
 
@@ -1604,7 +1562,7 @@ public java.lang.Object getHeader();
 
 header block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.11.2/docs/resources/loadbalancer_frontend_rule#header LoadbalancerFrontendRule#header}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.11.3/docs/resources/loadbalancer_frontend_rule#header LoadbalancerFrontendRule#header}
 
 ---
 
@@ -1618,7 +1576,7 @@ public java.lang.Object getHost();
 
 host block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.11.2/docs/resources/loadbalancer_frontend_rule#host LoadbalancerFrontendRule#host}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.11.3/docs/resources/loadbalancer_frontend_rule#host LoadbalancerFrontendRule#host}
 
 ---
 
@@ -1632,7 +1590,7 @@ public java.lang.Object getHttpMethod();
 
 http_method block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.11.2/docs/resources/loadbalancer_frontend_rule#http_method LoadbalancerFrontendRule#http_method}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.11.3/docs/resources/loadbalancer_frontend_rule#http_method LoadbalancerFrontendRule#http_method}
 
 ---
 
@@ -1646,7 +1604,7 @@ public java.lang.Object getNumMembersUp();
 
 num_members_up block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.11.2/docs/resources/loadbalancer_frontend_rule#num_members_up LoadbalancerFrontendRule#num_members_up}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.11.3/docs/resources/loadbalancer_frontend_rule#num_members_up LoadbalancerFrontendRule#num_members_up}
 
 ---
 
@@ -1660,7 +1618,7 @@ public java.lang.Object getPath();
 
 path block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.11.2/docs/resources/loadbalancer_frontend_rule#path LoadbalancerFrontendRule#path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.11.3/docs/resources/loadbalancer_frontend_rule#path LoadbalancerFrontendRule#path}
 
 ---
 
@@ -1674,7 +1632,7 @@ public java.lang.Object getSrcIp();
 
 src_ip block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.11.2/docs/resources/loadbalancer_frontend_rule#src_ip LoadbalancerFrontendRule#src_ip}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.11.3/docs/resources/loadbalancer_frontend_rule#src_ip LoadbalancerFrontendRule#src_ip}
 
 ---
 
@@ -1688,7 +1646,7 @@ public java.lang.Object getSrcPort();
 
 src_port block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.11.2/docs/resources/loadbalancer_frontend_rule#src_port LoadbalancerFrontendRule#src_port}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.11.3/docs/resources/loadbalancer_frontend_rule#src_port LoadbalancerFrontendRule#src_port}
 
 ---
 
@@ -1702,7 +1660,7 @@ public java.lang.Object getSrcPortRange();
 
 src_port_range block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.11.2/docs/resources/loadbalancer_frontend_rule#src_port_range LoadbalancerFrontendRule#src_port_range}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.11.3/docs/resources/loadbalancer_frontend_rule#src_port_range LoadbalancerFrontendRule#src_port_range}
 
 ---
 
@@ -1716,7 +1674,7 @@ public java.lang.Object getUrl();
 
 url block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.11.2/docs/resources/loadbalancer_frontend_rule#url LoadbalancerFrontendRule#url}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.11.3/docs/resources/loadbalancer_frontend_rule#url LoadbalancerFrontendRule#url}
 
 ---
 
@@ -1730,7 +1688,7 @@ public java.lang.Object getUrlParam();
 
 url_param block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.11.2/docs/resources/loadbalancer_frontend_rule#url_param LoadbalancerFrontendRule#url_param}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.11.3/docs/resources/loadbalancer_frontend_rule#url_param LoadbalancerFrontendRule#url_param}
 
 ---
 
@@ -1744,7 +1702,7 @@ public java.lang.Object getUrlQuery();
 
 url_query block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.11.2/docs/resources/loadbalancer_frontend_rule#url_query LoadbalancerFrontendRule#url_query}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.11.3/docs/resources/loadbalancer_frontend_rule#url_query LoadbalancerFrontendRule#url_query}
 
 ---
 
@@ -1769,7 +1727,7 @@ LoadbalancerFrontendRuleMatchersBodySize.builder()
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-upcloud.loadbalancerFrontendRule.LoadbalancerFrontendRuleMatchersBodySize.property.method">method</a></code> | <code>java.lang.String</code> | Match method (`equal`, `greater`, `greater_or_equal`, `less`, `less_or_equal`). |
 | <code><a href="#@cdktf/provider-upcloud.loadbalancerFrontendRule.LoadbalancerFrontendRuleMatchersBodySize.property.value">value</a></code> | <code>java.lang.Number</code> | Integer value. |
-| <code><a href="#@cdktf/provider-upcloud.loadbalancerFrontendRule.LoadbalancerFrontendRuleMatchersBodySize.property.inverse">inverse</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Sets if the condition should be inverted. Works similar to logical NOT operator. |
+| <code><a href="#@cdktf/provider-upcloud.loadbalancerFrontendRule.LoadbalancerFrontendRuleMatchersBodySize.property.inverse">inverse</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Defines if the condition should be inverted. Works similarly to logical NOT operator. |
 
 ---
 
@@ -1783,7 +1741,7 @@ public java.lang.String getMethod();
 
 Match method (`equal`, `greater`, `greater_or_equal`, `less`, `less_or_equal`).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.11.2/docs/resources/loadbalancer_frontend_rule#method LoadbalancerFrontendRule#method}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.11.3/docs/resources/loadbalancer_frontend_rule#method LoadbalancerFrontendRule#method}
 
 ---
 
@@ -1797,7 +1755,7 @@ public java.lang.Number getValue();
 
 Integer value.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.11.2/docs/resources/loadbalancer_frontend_rule#value LoadbalancerFrontendRule#value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.11.3/docs/resources/loadbalancer_frontend_rule#value LoadbalancerFrontendRule#value}
 
 ---
 
@@ -1809,9 +1767,9 @@ public java.lang.Object getInverse();
 
 - *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
 
-Sets if the condition should be inverted. Works similar to logical NOT operator.
+Defines if the condition should be inverted. Works similarly to logical NOT operator.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.11.2/docs/resources/loadbalancer_frontend_rule#inverse LoadbalancerFrontendRule#inverse}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.11.3/docs/resources/loadbalancer_frontend_rule#inverse LoadbalancerFrontendRule#inverse}
 
 ---
 
@@ -1836,7 +1794,7 @@ LoadbalancerFrontendRuleMatchersBodySizeRange.builder()
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-upcloud.loadbalancerFrontendRule.LoadbalancerFrontendRuleMatchersBodySizeRange.property.rangeEnd">rangeEnd</a></code> | <code>java.lang.Number</code> | Integer value. |
 | <code><a href="#@cdktf/provider-upcloud.loadbalancerFrontendRule.LoadbalancerFrontendRuleMatchersBodySizeRange.property.rangeStart">rangeStart</a></code> | <code>java.lang.Number</code> | Integer value. |
-| <code><a href="#@cdktf/provider-upcloud.loadbalancerFrontendRule.LoadbalancerFrontendRuleMatchersBodySizeRange.property.inverse">inverse</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Sets if the condition should be inverted. Works similar to logical NOT operator. |
+| <code><a href="#@cdktf/provider-upcloud.loadbalancerFrontendRule.LoadbalancerFrontendRuleMatchersBodySizeRange.property.inverse">inverse</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Defines if the condition should be inverted. Works similarly to logical NOT operator. |
 
 ---
 
@@ -1850,7 +1808,7 @@ public java.lang.Number getRangeEnd();
 
 Integer value.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.11.2/docs/resources/loadbalancer_frontend_rule#range_end LoadbalancerFrontendRule#range_end}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.11.3/docs/resources/loadbalancer_frontend_rule#range_end LoadbalancerFrontendRule#range_end}
 
 ---
 
@@ -1864,7 +1822,7 @@ public java.lang.Number getRangeStart();
 
 Integer value.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.11.2/docs/resources/loadbalancer_frontend_rule#range_start LoadbalancerFrontendRule#range_start}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.11.3/docs/resources/loadbalancer_frontend_rule#range_start LoadbalancerFrontendRule#range_start}
 
 ---
 
@@ -1876,9 +1834,9 @@ public java.lang.Object getInverse();
 
 - *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
 
-Sets if the condition should be inverted. Works similar to logical NOT operator.
+Defines if the condition should be inverted. Works similarly to logical NOT operator.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.11.2/docs/resources/loadbalancer_frontend_rule#inverse LoadbalancerFrontendRule#inverse}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.11.3/docs/resources/loadbalancer_frontend_rule#inverse LoadbalancerFrontendRule#inverse}
 
 ---
 
@@ -1906,8 +1864,8 @@ LoadbalancerFrontendRuleMatchersCookie.builder()
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-upcloud.loadbalancerFrontendRule.LoadbalancerFrontendRuleMatchersCookie.property.method">method</a></code> | <code>java.lang.String</code> | Match method (`exact`, `substring`, `regexp`, `starts`, `ends`, `domain`, `ip`, `exists`). |
 | <code><a href="#@cdktf/provider-upcloud.loadbalancerFrontendRule.LoadbalancerFrontendRuleMatchersCookie.property.name">name</a></code> | <code>java.lang.String</code> | Name of the argument. |
-| <code><a href="#@cdktf/provider-upcloud.loadbalancerFrontendRule.LoadbalancerFrontendRuleMatchersCookie.property.ignoreCase">ignoreCase</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Ignore case, default `false`. |
-| <code><a href="#@cdktf/provider-upcloud.loadbalancerFrontendRule.LoadbalancerFrontendRuleMatchersCookie.property.inverse">inverse</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Sets if the condition should be inverted. Works similar to logical NOT operator. |
+| <code><a href="#@cdktf/provider-upcloud.loadbalancerFrontendRule.LoadbalancerFrontendRuleMatchersCookie.property.ignoreCase">ignoreCase</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Defines if case should be ignored. Defaults to `false`. |
+| <code><a href="#@cdktf/provider-upcloud.loadbalancerFrontendRule.LoadbalancerFrontendRuleMatchersCookie.property.inverse">inverse</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Defines if the condition should be inverted. Works similarly to logical NOT operator. |
 | <code><a href="#@cdktf/provider-upcloud.loadbalancerFrontendRule.LoadbalancerFrontendRuleMatchersCookie.property.value">value</a></code> | <code>java.lang.String</code> | String value. |
 
 ---
@@ -1924,7 +1882,7 @@ Match method (`exact`, `substring`, `regexp`, `starts`, `ends`, `domain`, `ip`, 
 
 Matcher with `exists` and `ip` methods must be used without `value` and `ignore_case` fields.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.11.2/docs/resources/loadbalancer_frontend_rule#method LoadbalancerFrontendRule#method}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.11.3/docs/resources/loadbalancer_frontend_rule#method LoadbalancerFrontendRule#method}
 
 ---
 
@@ -1938,7 +1896,7 @@ public java.lang.String getName();
 
 Name of the argument.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.11.2/docs/resources/loadbalancer_frontend_rule#name LoadbalancerFrontendRule#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.11.3/docs/resources/loadbalancer_frontend_rule#name LoadbalancerFrontendRule#name}
 
 ---
 
@@ -1950,9 +1908,9 @@ public java.lang.Object getIgnoreCase();
 
 - *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
 
-Ignore case, default `false`.
+Defines if case should be ignored. Defaults to `false`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.11.2/docs/resources/loadbalancer_frontend_rule#ignore_case LoadbalancerFrontendRule#ignore_case}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.11.3/docs/resources/loadbalancer_frontend_rule#ignore_case LoadbalancerFrontendRule#ignore_case}
 
 ---
 
@@ -1964,9 +1922,9 @@ public java.lang.Object getInverse();
 
 - *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
 
-Sets if the condition should be inverted. Works similar to logical NOT operator.
+Defines if the condition should be inverted. Works similarly to logical NOT operator.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.11.2/docs/resources/loadbalancer_frontend_rule#inverse LoadbalancerFrontendRule#inverse}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.11.3/docs/resources/loadbalancer_frontend_rule#inverse LoadbalancerFrontendRule#inverse}
 
 ---
 
@@ -1980,7 +1938,7 @@ public java.lang.String getValue();
 
 String value.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.11.2/docs/resources/loadbalancer_frontend_rule#value LoadbalancerFrontendRule#value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.11.3/docs/resources/loadbalancer_frontend_rule#value LoadbalancerFrontendRule#value}
 
 ---
 
@@ -2008,8 +1966,8 @@ LoadbalancerFrontendRuleMatchersHeader.builder()
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-upcloud.loadbalancerFrontendRule.LoadbalancerFrontendRuleMatchersHeader.property.method">method</a></code> | <code>java.lang.String</code> | Match method (`exact`, `substring`, `regexp`, `starts`, `ends`, `domain`, `ip`, `exists`). |
 | <code><a href="#@cdktf/provider-upcloud.loadbalancerFrontendRule.LoadbalancerFrontendRuleMatchersHeader.property.name">name</a></code> | <code>java.lang.String</code> | Name of the argument. |
-| <code><a href="#@cdktf/provider-upcloud.loadbalancerFrontendRule.LoadbalancerFrontendRuleMatchersHeader.property.ignoreCase">ignoreCase</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Ignore case, default `false`. |
-| <code><a href="#@cdktf/provider-upcloud.loadbalancerFrontendRule.LoadbalancerFrontendRuleMatchersHeader.property.inverse">inverse</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Sets if the condition should be inverted. Works similar to logical NOT operator. |
+| <code><a href="#@cdktf/provider-upcloud.loadbalancerFrontendRule.LoadbalancerFrontendRuleMatchersHeader.property.ignoreCase">ignoreCase</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Defines if case should be ignored. Defaults to `false`. |
+| <code><a href="#@cdktf/provider-upcloud.loadbalancerFrontendRule.LoadbalancerFrontendRuleMatchersHeader.property.inverse">inverse</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Defines if the condition should be inverted. Works similarly to logical NOT operator. |
 | <code><a href="#@cdktf/provider-upcloud.loadbalancerFrontendRule.LoadbalancerFrontendRuleMatchersHeader.property.value">value</a></code> | <code>java.lang.String</code> | String value. |
 
 ---
@@ -2026,7 +1984,7 @@ Match method (`exact`, `substring`, `regexp`, `starts`, `ends`, `domain`, `ip`, 
 
 Matcher with `exists` and `ip` methods must be used without `value` and `ignore_case` fields.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.11.2/docs/resources/loadbalancer_frontend_rule#method LoadbalancerFrontendRule#method}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.11.3/docs/resources/loadbalancer_frontend_rule#method LoadbalancerFrontendRule#method}
 
 ---
 
@@ -2040,7 +1998,7 @@ public java.lang.String getName();
 
 Name of the argument.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.11.2/docs/resources/loadbalancer_frontend_rule#name LoadbalancerFrontendRule#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.11.3/docs/resources/loadbalancer_frontend_rule#name LoadbalancerFrontendRule#name}
 
 ---
 
@@ -2052,9 +2010,9 @@ public java.lang.Object getIgnoreCase();
 
 - *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
 
-Ignore case, default `false`.
+Defines if case should be ignored. Defaults to `false`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.11.2/docs/resources/loadbalancer_frontend_rule#ignore_case LoadbalancerFrontendRule#ignore_case}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.11.3/docs/resources/loadbalancer_frontend_rule#ignore_case LoadbalancerFrontendRule#ignore_case}
 
 ---
 
@@ -2066,9 +2024,9 @@ public java.lang.Object getInverse();
 
 - *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
 
-Sets if the condition should be inverted. Works similar to logical NOT operator.
+Defines if the condition should be inverted. Works similarly to logical NOT operator.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.11.2/docs/resources/loadbalancer_frontend_rule#inverse LoadbalancerFrontendRule#inverse}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.11.3/docs/resources/loadbalancer_frontend_rule#inverse LoadbalancerFrontendRule#inverse}
 
 ---
 
@@ -2082,7 +2040,7 @@ public java.lang.String getValue();
 
 String value.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.11.2/docs/resources/loadbalancer_frontend_rule#value LoadbalancerFrontendRule#value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.11.3/docs/resources/loadbalancer_frontend_rule#value LoadbalancerFrontendRule#value}
 
 ---
 
@@ -2105,7 +2063,7 @@ LoadbalancerFrontendRuleMatchersHost.builder()
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-upcloud.loadbalancerFrontendRule.LoadbalancerFrontendRuleMatchersHost.property.value">value</a></code> | <code>java.lang.String</code> | String value. |
-| <code><a href="#@cdktf/provider-upcloud.loadbalancerFrontendRule.LoadbalancerFrontendRuleMatchersHost.property.inverse">inverse</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Sets if the condition should be inverted. Works similar to logical NOT operator. |
+| <code><a href="#@cdktf/provider-upcloud.loadbalancerFrontendRule.LoadbalancerFrontendRuleMatchersHost.property.inverse">inverse</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Defines if the condition should be inverted. Works similarly to logical NOT operator. |
 
 ---
 
@@ -2119,7 +2077,7 @@ public java.lang.String getValue();
 
 String value.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.11.2/docs/resources/loadbalancer_frontend_rule#value LoadbalancerFrontendRule#value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.11.3/docs/resources/loadbalancer_frontend_rule#value LoadbalancerFrontendRule#value}
 
 ---
 
@@ -2131,9 +2089,9 @@ public java.lang.Object getInverse();
 
 - *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
 
-Sets if the condition should be inverted. Works similar to logical NOT operator.
+Defines if the condition should be inverted. Works similarly to logical NOT operator.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.11.2/docs/resources/loadbalancer_frontend_rule#inverse LoadbalancerFrontendRule#inverse}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.11.3/docs/resources/loadbalancer_frontend_rule#inverse LoadbalancerFrontendRule#inverse}
 
 ---
 
@@ -2156,7 +2114,7 @@ LoadbalancerFrontendRuleMatchersHttpMethod.builder()
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-upcloud.loadbalancerFrontendRule.LoadbalancerFrontendRuleMatchersHttpMethod.property.value">value</a></code> | <code>java.lang.String</code> | String value (`GET`, `HEAD`, `POST`, `PUT`, `PATCH`, `DELETE`, `CONNECT`, `OPTIONS`, `TRACE`). |
-| <code><a href="#@cdktf/provider-upcloud.loadbalancerFrontendRule.LoadbalancerFrontendRuleMatchersHttpMethod.property.inverse">inverse</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Sets if the condition should be inverted. Works similar to logical NOT operator. |
+| <code><a href="#@cdktf/provider-upcloud.loadbalancerFrontendRule.LoadbalancerFrontendRuleMatchersHttpMethod.property.inverse">inverse</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Defines if the condition should be inverted. Works similarly to logical NOT operator. |
 
 ---
 
@@ -2170,7 +2128,7 @@ public java.lang.String getValue();
 
 String value (`GET`, `HEAD`, `POST`, `PUT`, `PATCH`, `DELETE`, `CONNECT`, `OPTIONS`, `TRACE`).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.11.2/docs/resources/loadbalancer_frontend_rule#value LoadbalancerFrontendRule#value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.11.3/docs/resources/loadbalancer_frontend_rule#value LoadbalancerFrontendRule#value}
 
 ---
 
@@ -2182,9 +2140,9 @@ public java.lang.Object getInverse();
 
 - *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
 
-Sets if the condition should be inverted. Works similar to logical NOT operator.
+Defines if the condition should be inverted. Works similarly to logical NOT operator.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.11.2/docs/resources/loadbalancer_frontend_rule#inverse LoadbalancerFrontendRule#inverse}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.11.3/docs/resources/loadbalancer_frontend_rule#inverse LoadbalancerFrontendRule#inverse}
 
 ---
 
@@ -2208,10 +2166,10 @@ LoadbalancerFrontendRuleMatchersNumMembersUp.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-upcloud.loadbalancerFrontendRule.LoadbalancerFrontendRuleMatchersNumMembersUp.property.backendName">backendName</a></code> | <code>java.lang.String</code> | The name of the `backend` which members will be monitored. |
+| <code><a href="#@cdktf/provider-upcloud.loadbalancerFrontendRule.LoadbalancerFrontendRuleMatchersNumMembersUp.property.backendName">backendName</a></code> | <code>java.lang.String</code> | The name of the `backend`. |
 | <code><a href="#@cdktf/provider-upcloud.loadbalancerFrontendRule.LoadbalancerFrontendRuleMatchersNumMembersUp.property.method">method</a></code> | <code>java.lang.String</code> | Match method (`equal`, `greater`, `greater_or_equal`, `less`, `less_or_equal`). |
 | <code><a href="#@cdktf/provider-upcloud.loadbalancerFrontendRule.LoadbalancerFrontendRuleMatchersNumMembersUp.property.value">value</a></code> | <code>java.lang.Number</code> | Integer value. |
-| <code><a href="#@cdktf/provider-upcloud.loadbalancerFrontendRule.LoadbalancerFrontendRuleMatchersNumMembersUp.property.inverse">inverse</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Sets if the condition should be inverted. Works similar to logical NOT operator. |
+| <code><a href="#@cdktf/provider-upcloud.loadbalancerFrontendRule.LoadbalancerFrontendRuleMatchersNumMembersUp.property.inverse">inverse</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Defines if the condition should be inverted. Works similarly to logical NOT operator. |
 
 ---
 
@@ -2223,9 +2181,9 @@ public java.lang.String getBackendName();
 
 - *Type:* java.lang.String
 
-The name of the `backend` which members will be monitored.
+The name of the `backend`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.11.2/docs/resources/loadbalancer_frontend_rule#backend_name LoadbalancerFrontendRule#backend_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.11.3/docs/resources/loadbalancer_frontend_rule#backend_name LoadbalancerFrontendRule#backend_name}
 
 ---
 
@@ -2239,7 +2197,7 @@ public java.lang.String getMethod();
 
 Match method (`equal`, `greater`, `greater_or_equal`, `less`, `less_or_equal`).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.11.2/docs/resources/loadbalancer_frontend_rule#method LoadbalancerFrontendRule#method}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.11.3/docs/resources/loadbalancer_frontend_rule#method LoadbalancerFrontendRule#method}
 
 ---
 
@@ -2253,7 +2211,7 @@ public java.lang.Number getValue();
 
 Integer value.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.11.2/docs/resources/loadbalancer_frontend_rule#value LoadbalancerFrontendRule#value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.11.3/docs/resources/loadbalancer_frontend_rule#value LoadbalancerFrontendRule#value}
 
 ---
 
@@ -2265,9 +2223,9 @@ public java.lang.Object getInverse();
 
 - *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
 
-Sets if the condition should be inverted. Works similar to logical NOT operator.
+Defines if the condition should be inverted. Works similarly to logical NOT operator.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.11.2/docs/resources/loadbalancer_frontend_rule#inverse LoadbalancerFrontendRule#inverse}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.11.3/docs/resources/loadbalancer_frontend_rule#inverse LoadbalancerFrontendRule#inverse}
 
 ---
 
@@ -2293,8 +2251,8 @@ LoadbalancerFrontendRuleMatchersPath.builder()
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-upcloud.loadbalancerFrontendRule.LoadbalancerFrontendRuleMatchersPath.property.method">method</a></code> | <code>java.lang.String</code> | Match method (`exact`, `substring`, `regexp`, `starts`, `ends`, `domain`, `ip`, `exists`). |
-| <code><a href="#@cdktf/provider-upcloud.loadbalancerFrontendRule.LoadbalancerFrontendRuleMatchersPath.property.ignoreCase">ignoreCase</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Ignore case, default `false`. |
-| <code><a href="#@cdktf/provider-upcloud.loadbalancerFrontendRule.LoadbalancerFrontendRuleMatchersPath.property.inverse">inverse</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Sets if the condition should be inverted. Works similar to logical NOT operator. |
+| <code><a href="#@cdktf/provider-upcloud.loadbalancerFrontendRule.LoadbalancerFrontendRuleMatchersPath.property.ignoreCase">ignoreCase</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Defines if case should be ignored. Defaults to `false`. |
+| <code><a href="#@cdktf/provider-upcloud.loadbalancerFrontendRule.LoadbalancerFrontendRuleMatchersPath.property.inverse">inverse</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Defines if the condition should be inverted. Works similarly to logical NOT operator. |
 | <code><a href="#@cdktf/provider-upcloud.loadbalancerFrontendRule.LoadbalancerFrontendRuleMatchersPath.property.value">value</a></code> | <code>java.lang.String</code> | String value. |
 
 ---
@@ -2311,7 +2269,7 @@ Match method (`exact`, `substring`, `regexp`, `starts`, `ends`, `domain`, `ip`, 
 
 Matcher with `exists` and `ip` methods must be used without `value` and `ignore_case` fields.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.11.2/docs/resources/loadbalancer_frontend_rule#method LoadbalancerFrontendRule#method}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.11.3/docs/resources/loadbalancer_frontend_rule#method LoadbalancerFrontendRule#method}
 
 ---
 
@@ -2323,9 +2281,9 @@ public java.lang.Object getIgnoreCase();
 
 - *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
 
-Ignore case, default `false`.
+Defines if case should be ignored. Defaults to `false`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.11.2/docs/resources/loadbalancer_frontend_rule#ignore_case LoadbalancerFrontendRule#ignore_case}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.11.3/docs/resources/loadbalancer_frontend_rule#ignore_case LoadbalancerFrontendRule#ignore_case}
 
 ---
 
@@ -2337,9 +2295,9 @@ public java.lang.Object getInverse();
 
 - *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
 
-Sets if the condition should be inverted. Works similar to logical NOT operator.
+Defines if the condition should be inverted. Works similarly to logical NOT operator.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.11.2/docs/resources/loadbalancer_frontend_rule#inverse LoadbalancerFrontendRule#inverse}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.11.3/docs/resources/loadbalancer_frontend_rule#inverse LoadbalancerFrontendRule#inverse}
 
 ---
 
@@ -2353,7 +2311,7 @@ public java.lang.String getValue();
 
 String value.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.11.2/docs/resources/loadbalancer_frontend_rule#value LoadbalancerFrontendRule#value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.11.3/docs/resources/loadbalancer_frontend_rule#value LoadbalancerFrontendRule#value}
 
 ---
 
@@ -2376,7 +2334,7 @@ LoadbalancerFrontendRuleMatchersSrcIp.builder()
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-upcloud.loadbalancerFrontendRule.LoadbalancerFrontendRuleMatchersSrcIp.property.value">value</a></code> | <code>java.lang.String</code> | IP address. CIDR masks are supported, e.g. `192.168.0.0/24`. |
-| <code><a href="#@cdktf/provider-upcloud.loadbalancerFrontendRule.LoadbalancerFrontendRuleMatchersSrcIp.property.inverse">inverse</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Sets if the condition should be inverted. Works similar to logical NOT operator. |
+| <code><a href="#@cdktf/provider-upcloud.loadbalancerFrontendRule.LoadbalancerFrontendRuleMatchersSrcIp.property.inverse">inverse</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Defines if the condition should be inverted. Works similarly to logical NOT operator. |
 
 ---
 
@@ -2390,7 +2348,7 @@ public java.lang.String getValue();
 
 IP address. CIDR masks are supported, e.g. `192.168.0.0/24`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.11.2/docs/resources/loadbalancer_frontend_rule#value LoadbalancerFrontendRule#value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.11.3/docs/resources/loadbalancer_frontend_rule#value LoadbalancerFrontendRule#value}
 
 ---
 
@@ -2402,9 +2360,9 @@ public java.lang.Object getInverse();
 
 - *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
 
-Sets if the condition should be inverted. Works similar to logical NOT operator.
+Defines if the condition should be inverted. Works similarly to logical NOT operator.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.11.2/docs/resources/loadbalancer_frontend_rule#inverse LoadbalancerFrontendRule#inverse}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.11.3/docs/resources/loadbalancer_frontend_rule#inverse LoadbalancerFrontendRule#inverse}
 
 ---
 
@@ -2429,7 +2387,7 @@ LoadbalancerFrontendRuleMatchersSrcPort.builder()
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-upcloud.loadbalancerFrontendRule.LoadbalancerFrontendRuleMatchersSrcPort.property.method">method</a></code> | <code>java.lang.String</code> | Match method (`equal`, `greater`, `greater_or_equal`, `less`, `less_or_equal`). |
 | <code><a href="#@cdktf/provider-upcloud.loadbalancerFrontendRule.LoadbalancerFrontendRuleMatchersSrcPort.property.value">value</a></code> | <code>java.lang.Number</code> | Integer value. |
-| <code><a href="#@cdktf/provider-upcloud.loadbalancerFrontendRule.LoadbalancerFrontendRuleMatchersSrcPort.property.inverse">inverse</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Sets if the condition should be inverted. Works similar to logical NOT operator. |
+| <code><a href="#@cdktf/provider-upcloud.loadbalancerFrontendRule.LoadbalancerFrontendRuleMatchersSrcPort.property.inverse">inverse</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Defines if the condition should be inverted. Works similarly to logical NOT operator. |
 
 ---
 
@@ -2443,7 +2401,7 @@ public java.lang.String getMethod();
 
 Match method (`equal`, `greater`, `greater_or_equal`, `less`, `less_or_equal`).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.11.2/docs/resources/loadbalancer_frontend_rule#method LoadbalancerFrontendRule#method}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.11.3/docs/resources/loadbalancer_frontend_rule#method LoadbalancerFrontendRule#method}
 
 ---
 
@@ -2457,7 +2415,7 @@ public java.lang.Number getValue();
 
 Integer value.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.11.2/docs/resources/loadbalancer_frontend_rule#value LoadbalancerFrontendRule#value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.11.3/docs/resources/loadbalancer_frontend_rule#value LoadbalancerFrontendRule#value}
 
 ---
 
@@ -2469,9 +2427,9 @@ public java.lang.Object getInverse();
 
 - *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
 
-Sets if the condition should be inverted. Works similar to logical NOT operator.
+Defines if the condition should be inverted. Works similarly to logical NOT operator.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.11.2/docs/resources/loadbalancer_frontend_rule#inverse LoadbalancerFrontendRule#inverse}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.11.3/docs/resources/loadbalancer_frontend_rule#inverse LoadbalancerFrontendRule#inverse}
 
 ---
 
@@ -2496,7 +2454,7 @@ LoadbalancerFrontendRuleMatchersSrcPortRange.builder()
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-upcloud.loadbalancerFrontendRule.LoadbalancerFrontendRuleMatchersSrcPortRange.property.rangeEnd">rangeEnd</a></code> | <code>java.lang.Number</code> | Integer value. |
 | <code><a href="#@cdktf/provider-upcloud.loadbalancerFrontendRule.LoadbalancerFrontendRuleMatchersSrcPortRange.property.rangeStart">rangeStart</a></code> | <code>java.lang.Number</code> | Integer value. |
-| <code><a href="#@cdktf/provider-upcloud.loadbalancerFrontendRule.LoadbalancerFrontendRuleMatchersSrcPortRange.property.inverse">inverse</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Sets if the condition should be inverted. Works similar to logical NOT operator. |
+| <code><a href="#@cdktf/provider-upcloud.loadbalancerFrontendRule.LoadbalancerFrontendRuleMatchersSrcPortRange.property.inverse">inverse</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Defines if the condition should be inverted. Works similarly to logical NOT operator. |
 
 ---
 
@@ -2510,7 +2468,7 @@ public java.lang.Number getRangeEnd();
 
 Integer value.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.11.2/docs/resources/loadbalancer_frontend_rule#range_end LoadbalancerFrontendRule#range_end}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.11.3/docs/resources/loadbalancer_frontend_rule#range_end LoadbalancerFrontendRule#range_end}
 
 ---
 
@@ -2524,7 +2482,7 @@ public java.lang.Number getRangeStart();
 
 Integer value.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.11.2/docs/resources/loadbalancer_frontend_rule#range_start LoadbalancerFrontendRule#range_start}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.11.3/docs/resources/loadbalancer_frontend_rule#range_start LoadbalancerFrontendRule#range_start}
 
 ---
 
@@ -2536,9 +2494,9 @@ public java.lang.Object getInverse();
 
 - *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
 
-Sets if the condition should be inverted. Works similar to logical NOT operator.
+Defines if the condition should be inverted. Works similarly to logical NOT operator.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.11.2/docs/resources/loadbalancer_frontend_rule#inverse LoadbalancerFrontendRule#inverse}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.11.3/docs/resources/loadbalancer_frontend_rule#inverse LoadbalancerFrontendRule#inverse}
 
 ---
 
@@ -2564,8 +2522,8 @@ LoadbalancerFrontendRuleMatchersUrl.builder()
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-upcloud.loadbalancerFrontendRule.LoadbalancerFrontendRuleMatchersUrl.property.method">method</a></code> | <code>java.lang.String</code> | Match method (`exact`, `substring`, `regexp`, `starts`, `ends`, `domain`, `ip`, `exists`). |
-| <code><a href="#@cdktf/provider-upcloud.loadbalancerFrontendRule.LoadbalancerFrontendRuleMatchersUrl.property.ignoreCase">ignoreCase</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Ignore case, default `false`. |
-| <code><a href="#@cdktf/provider-upcloud.loadbalancerFrontendRule.LoadbalancerFrontendRuleMatchersUrl.property.inverse">inverse</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Sets if the condition should be inverted. Works similar to logical NOT operator. |
+| <code><a href="#@cdktf/provider-upcloud.loadbalancerFrontendRule.LoadbalancerFrontendRuleMatchersUrl.property.ignoreCase">ignoreCase</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Defines if case should be ignored. Defaults to `false`. |
+| <code><a href="#@cdktf/provider-upcloud.loadbalancerFrontendRule.LoadbalancerFrontendRuleMatchersUrl.property.inverse">inverse</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Defines if the condition should be inverted. Works similarly to logical NOT operator. |
 | <code><a href="#@cdktf/provider-upcloud.loadbalancerFrontendRule.LoadbalancerFrontendRuleMatchersUrl.property.value">value</a></code> | <code>java.lang.String</code> | String value. |
 
 ---
@@ -2582,7 +2540,7 @@ Match method (`exact`, `substring`, `regexp`, `starts`, `ends`, `domain`, `ip`, 
 
 Matcher with `exists` and `ip` methods must be used without `value` and `ignore_case` fields.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.11.2/docs/resources/loadbalancer_frontend_rule#method LoadbalancerFrontendRule#method}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.11.3/docs/resources/loadbalancer_frontend_rule#method LoadbalancerFrontendRule#method}
 
 ---
 
@@ -2594,9 +2552,9 @@ public java.lang.Object getIgnoreCase();
 
 - *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
 
-Ignore case, default `false`.
+Defines if case should be ignored. Defaults to `false`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.11.2/docs/resources/loadbalancer_frontend_rule#ignore_case LoadbalancerFrontendRule#ignore_case}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.11.3/docs/resources/loadbalancer_frontend_rule#ignore_case LoadbalancerFrontendRule#ignore_case}
 
 ---
 
@@ -2608,9 +2566,9 @@ public java.lang.Object getInverse();
 
 - *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
 
-Sets if the condition should be inverted. Works similar to logical NOT operator.
+Defines if the condition should be inverted. Works similarly to logical NOT operator.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.11.2/docs/resources/loadbalancer_frontend_rule#inverse LoadbalancerFrontendRule#inverse}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.11.3/docs/resources/loadbalancer_frontend_rule#inverse LoadbalancerFrontendRule#inverse}
 
 ---
 
@@ -2624,7 +2582,7 @@ public java.lang.String getValue();
 
 String value.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.11.2/docs/resources/loadbalancer_frontend_rule#value LoadbalancerFrontendRule#value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.11.3/docs/resources/loadbalancer_frontend_rule#value LoadbalancerFrontendRule#value}
 
 ---
 
@@ -2652,8 +2610,8 @@ LoadbalancerFrontendRuleMatchersUrlParam.builder()
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-upcloud.loadbalancerFrontendRule.LoadbalancerFrontendRuleMatchersUrlParam.property.method">method</a></code> | <code>java.lang.String</code> | Match method (`exact`, `substring`, `regexp`, `starts`, `ends`, `domain`, `ip`, `exists`). |
 | <code><a href="#@cdktf/provider-upcloud.loadbalancerFrontendRule.LoadbalancerFrontendRuleMatchersUrlParam.property.name">name</a></code> | <code>java.lang.String</code> | Name of the argument. |
-| <code><a href="#@cdktf/provider-upcloud.loadbalancerFrontendRule.LoadbalancerFrontendRuleMatchersUrlParam.property.ignoreCase">ignoreCase</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Ignore case, default `false`. |
-| <code><a href="#@cdktf/provider-upcloud.loadbalancerFrontendRule.LoadbalancerFrontendRuleMatchersUrlParam.property.inverse">inverse</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Sets if the condition should be inverted. Works similar to logical NOT operator. |
+| <code><a href="#@cdktf/provider-upcloud.loadbalancerFrontendRule.LoadbalancerFrontendRuleMatchersUrlParam.property.ignoreCase">ignoreCase</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Defines if case should be ignored. Defaults to `false`. |
+| <code><a href="#@cdktf/provider-upcloud.loadbalancerFrontendRule.LoadbalancerFrontendRuleMatchersUrlParam.property.inverse">inverse</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Defines if the condition should be inverted. Works similarly to logical NOT operator. |
 | <code><a href="#@cdktf/provider-upcloud.loadbalancerFrontendRule.LoadbalancerFrontendRuleMatchersUrlParam.property.value">value</a></code> | <code>java.lang.String</code> | String value. |
 
 ---
@@ -2670,7 +2628,7 @@ Match method (`exact`, `substring`, `regexp`, `starts`, `ends`, `domain`, `ip`, 
 
 Matcher with `exists` and `ip` methods must be used without `value` and `ignore_case` fields.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.11.2/docs/resources/loadbalancer_frontend_rule#method LoadbalancerFrontendRule#method}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.11.3/docs/resources/loadbalancer_frontend_rule#method LoadbalancerFrontendRule#method}
 
 ---
 
@@ -2684,7 +2642,7 @@ public java.lang.String getName();
 
 Name of the argument.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.11.2/docs/resources/loadbalancer_frontend_rule#name LoadbalancerFrontendRule#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.11.3/docs/resources/loadbalancer_frontend_rule#name LoadbalancerFrontendRule#name}
 
 ---
 
@@ -2696,9 +2654,9 @@ public java.lang.Object getIgnoreCase();
 
 - *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
 
-Ignore case, default `false`.
+Defines if case should be ignored. Defaults to `false`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.11.2/docs/resources/loadbalancer_frontend_rule#ignore_case LoadbalancerFrontendRule#ignore_case}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.11.3/docs/resources/loadbalancer_frontend_rule#ignore_case LoadbalancerFrontendRule#ignore_case}
 
 ---
 
@@ -2710,9 +2668,9 @@ public java.lang.Object getInverse();
 
 - *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
 
-Sets if the condition should be inverted. Works similar to logical NOT operator.
+Defines if the condition should be inverted. Works similarly to logical NOT operator.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.11.2/docs/resources/loadbalancer_frontend_rule#inverse LoadbalancerFrontendRule#inverse}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.11.3/docs/resources/loadbalancer_frontend_rule#inverse LoadbalancerFrontendRule#inverse}
 
 ---
 
@@ -2726,7 +2684,7 @@ public java.lang.String getValue();
 
 String value.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.11.2/docs/resources/loadbalancer_frontend_rule#value LoadbalancerFrontendRule#value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.11.3/docs/resources/loadbalancer_frontend_rule#value LoadbalancerFrontendRule#value}
 
 ---
 
@@ -2752,8 +2710,8 @@ LoadbalancerFrontendRuleMatchersUrlQuery.builder()
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-upcloud.loadbalancerFrontendRule.LoadbalancerFrontendRuleMatchersUrlQuery.property.method">method</a></code> | <code>java.lang.String</code> | Match method (`exact`, `substring`, `regexp`, `starts`, `ends`, `domain`, `ip`, `exists`). |
-| <code><a href="#@cdktf/provider-upcloud.loadbalancerFrontendRule.LoadbalancerFrontendRuleMatchersUrlQuery.property.ignoreCase">ignoreCase</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Ignore case, default `false`. |
-| <code><a href="#@cdktf/provider-upcloud.loadbalancerFrontendRule.LoadbalancerFrontendRuleMatchersUrlQuery.property.inverse">inverse</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Sets if the condition should be inverted. Works similar to logical NOT operator. |
+| <code><a href="#@cdktf/provider-upcloud.loadbalancerFrontendRule.LoadbalancerFrontendRuleMatchersUrlQuery.property.ignoreCase">ignoreCase</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Defines if case should be ignored. Defaults to `false`. |
+| <code><a href="#@cdktf/provider-upcloud.loadbalancerFrontendRule.LoadbalancerFrontendRuleMatchersUrlQuery.property.inverse">inverse</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Defines if the condition should be inverted. Works similarly to logical NOT operator. |
 | <code><a href="#@cdktf/provider-upcloud.loadbalancerFrontendRule.LoadbalancerFrontendRuleMatchersUrlQuery.property.value">value</a></code> | <code>java.lang.String</code> | String value. |
 
 ---
@@ -2770,7 +2728,7 @@ Match method (`exact`, `substring`, `regexp`, `starts`, `ends`, `domain`, `ip`, 
 
 Matcher with `exists` and `ip` methods must be used without `value` and `ignore_case` fields.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.11.2/docs/resources/loadbalancer_frontend_rule#method LoadbalancerFrontendRule#method}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.11.3/docs/resources/loadbalancer_frontend_rule#method LoadbalancerFrontendRule#method}
 
 ---
 
@@ -2782,9 +2740,9 @@ public java.lang.Object getIgnoreCase();
 
 - *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
 
-Ignore case, default `false`.
+Defines if case should be ignored. Defaults to `false`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.11.2/docs/resources/loadbalancer_frontend_rule#ignore_case LoadbalancerFrontendRule#ignore_case}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.11.3/docs/resources/loadbalancer_frontend_rule#ignore_case LoadbalancerFrontendRule#ignore_case}
 
 ---
 
@@ -2796,9 +2754,9 @@ public java.lang.Object getInverse();
 
 - *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
 
-Sets if the condition should be inverted. Works similar to logical NOT operator.
+Defines if the condition should be inverted. Works similarly to logical NOT operator.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.11.2/docs/resources/loadbalancer_frontend_rule#inverse LoadbalancerFrontendRule#inverse}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.11.3/docs/resources/loadbalancer_frontend_rule#inverse LoadbalancerFrontendRule#inverse}
 
 ---
 
@@ -2812,7 +2770,7 @@ public java.lang.String getValue();
 
 String value.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.11.2/docs/resources/loadbalancer_frontend_rule#value LoadbalancerFrontendRule#value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.11.3/docs/resources/loadbalancer_frontend_rule#value LoadbalancerFrontendRule#value}
 
 ---
 
@@ -3796,6 +3754,166 @@ public java.lang.Object getInternalValue();
 ---
 
 
+### LoadbalancerFrontendRuleActionsList <a name="LoadbalancerFrontendRuleActionsList" id="@cdktf/provider-upcloud.loadbalancerFrontendRule.LoadbalancerFrontendRuleActionsList"></a>
+
+#### Initializers <a name="Initializers" id="@cdktf/provider-upcloud.loadbalancerFrontendRule.LoadbalancerFrontendRuleActionsList.Initializer"></a>
+
+```java
+import com.hashicorp.cdktf.providers.upcloud.loadbalancer_frontend_rule.LoadbalancerFrontendRuleActionsList;
+
+new LoadbalancerFrontendRuleActionsList(IInterpolatingParent terraformResource, java.lang.String terraformAttribute, java.lang.Boolean wrapsSet);
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-upcloud.loadbalancerFrontendRule.LoadbalancerFrontendRuleActionsList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>com.hashicorp.cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktf/provider-upcloud.loadbalancerFrontendRule.LoadbalancerFrontendRuleActionsList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>java.lang.String</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktf/provider-upcloud.loadbalancerFrontendRule.LoadbalancerFrontendRuleActionsList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>java.lang.Boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktf/provider-upcloud.loadbalancerFrontendRule.LoadbalancerFrontendRuleActionsList.Initializer.parameter.terraformResource"></a>
+
+- *Type:* com.hashicorp.cdktf.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-upcloud.loadbalancerFrontendRule.LoadbalancerFrontendRuleActionsList.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `wrapsSet`<sup>Required</sup> <a name="wrapsSet" id="@cdktf/provider-upcloud.loadbalancerFrontendRule.LoadbalancerFrontendRuleActionsList.Initializer.parameter.wrapsSet"></a>
+
+- *Type:* java.lang.Boolean
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktf/provider-upcloud.loadbalancerFrontendRule.LoadbalancerFrontendRuleActionsList.allWithMapKey">allWithMapKey</a></code> | Creating an iterator for this complex list. |
+| <code><a href="#@cdktf/provider-upcloud.loadbalancerFrontendRule.LoadbalancerFrontendRuleActionsList.computeFqn">computeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-upcloud.loadbalancerFrontendRule.LoadbalancerFrontendRuleActionsList.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktf/provider-upcloud.loadbalancerFrontendRule.LoadbalancerFrontendRuleActionsList.toString">toString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktf/provider-upcloud.loadbalancerFrontendRule.LoadbalancerFrontendRuleActionsList.get">get</a></code> | *No description.* |
+
+---
+
+##### `allWithMapKey` <a name="allWithMapKey" id="@cdktf/provider-upcloud.loadbalancerFrontendRule.LoadbalancerFrontendRuleActionsList.allWithMapKey"></a>
+
+```java
+public DynamicListTerraformIterator allWithMapKey(java.lang.String mapKeyAttributeName)
+```
+
+Creating an iterator for this complex list.
+
+The list will be converted into a map with the mapKeyAttributeName as the key.
+
+###### `mapKeyAttributeName`<sup>Required</sup> <a name="mapKeyAttributeName" id="@cdktf/provider-upcloud.loadbalancerFrontendRule.LoadbalancerFrontendRuleActionsList.allWithMapKey.parameter.mapKeyAttributeName"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `computeFqn` <a name="computeFqn" id="@cdktf/provider-upcloud.loadbalancerFrontendRule.LoadbalancerFrontendRuleActionsList.computeFqn"></a>
+
+```java
+public java.lang.String computeFqn()
+```
+
+##### `resolve` <a name="resolve" id="@cdktf/provider-upcloud.loadbalancerFrontendRule.LoadbalancerFrontendRuleActionsList.resolve"></a>
+
+```java
+public java.lang.Object resolve(IResolveContext _context)
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktf/provider-upcloud.loadbalancerFrontendRule.LoadbalancerFrontendRuleActionsList.resolve.parameter._context"></a>
+
+- *Type:* com.hashicorp.cdktf.IResolveContext
+
+---
+
+##### `toString` <a name="toString" id="@cdktf/provider-upcloud.loadbalancerFrontendRule.LoadbalancerFrontendRuleActionsList.toString"></a>
+
+```java
+public java.lang.String toString()
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `get` <a name="get" id="@cdktf/provider-upcloud.loadbalancerFrontendRule.LoadbalancerFrontendRuleActionsList.get"></a>
+
+```java
+public LoadbalancerFrontendRuleActionsOutputReference get(java.lang.Number index)
+```
+
+###### `index`<sup>Required</sup> <a name="index" id="@cdktf/provider-upcloud.loadbalancerFrontendRule.LoadbalancerFrontendRuleActionsList.get.parameter.index"></a>
+
+- *Type:* java.lang.Number
+
+the index of the item to return.
+
+---
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-upcloud.loadbalancerFrontendRule.LoadbalancerFrontendRuleActionsList.property.creationStack">creationStack</a></code> | <code>java.util.List<java.lang.String></code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktf/provider-upcloud.loadbalancerFrontendRule.LoadbalancerFrontendRuleActionsList.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktf/provider-upcloud.loadbalancerFrontendRule.LoadbalancerFrontendRuleActionsList.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-upcloud.loadbalancerFrontendRule.LoadbalancerFrontendRuleActions">LoadbalancerFrontendRuleActions</a>></code> | *No description.* |
+
+---
+
+##### `creationStack`<sup>Required</sup> <a name="creationStack" id="@cdktf/provider-upcloud.loadbalancerFrontendRule.LoadbalancerFrontendRuleActionsList.property.creationStack"></a>
+
+```java
+public java.util.List<java.lang.String> getCreationStack();
+```
+
+- *Type:* java.util.List<java.lang.String>
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktf/provider-upcloud.loadbalancerFrontendRule.LoadbalancerFrontendRuleActionsList.property.fqn"></a>
+
+```java
+public java.lang.String getFqn();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-upcloud.loadbalancerFrontendRule.LoadbalancerFrontendRuleActionsList.property.internalValue"></a>
+
+```java
+public java.lang.Object getInternalValue();
+```
+
+- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-upcloud.loadbalancerFrontendRule.LoadbalancerFrontendRuleActions">LoadbalancerFrontendRuleActions</a>>
+
+---
+
+
 ### LoadbalancerFrontendRuleActionsOutputReference <a name="LoadbalancerFrontendRuleActionsOutputReference" id="@cdktf/provider-upcloud.loadbalancerFrontendRule.LoadbalancerFrontendRuleActionsOutputReference"></a>
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-upcloud.loadbalancerFrontendRule.LoadbalancerFrontendRuleActionsOutputReference.Initializer"></a>
@@ -3803,13 +3921,15 @@ public java.lang.Object getInternalValue();
 ```java
 import com.hashicorp.cdktf.providers.upcloud.loadbalancer_frontend_rule.LoadbalancerFrontendRuleActionsOutputReference;
 
-new LoadbalancerFrontendRuleActionsOutputReference(IInterpolatingParent terraformResource, java.lang.String terraformAttribute);
+new LoadbalancerFrontendRuleActionsOutputReference(IInterpolatingParent terraformResource, java.lang.String terraformAttribute, java.lang.Number complexObjectIndex, java.lang.Boolean complexObjectIsFromSet);
 ```
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-upcloud.loadbalancerFrontendRule.LoadbalancerFrontendRuleActionsOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>com.hashicorp.cdktf.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktf/provider-upcloud.loadbalancerFrontendRule.LoadbalancerFrontendRuleActionsOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>java.lang.String</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktf/provider-upcloud.loadbalancerFrontendRule.LoadbalancerFrontendRuleActionsOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>java.lang.Number</code> | the index of this item in the list. |
+| <code><a href="#@cdktf/provider-upcloud.loadbalancerFrontendRule.LoadbalancerFrontendRuleActionsOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>java.lang.Boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
 ---
 
@@ -3826,6 +3946,22 @@ The parent resource.
 - *Type:* java.lang.String
 
 The attribute on the parent resource this class is referencing.
+
+---
+
+##### `complexObjectIndex`<sup>Required</sup> <a name="complexObjectIndex" id="@cdktf/provider-upcloud.loadbalancerFrontendRule.LoadbalancerFrontendRuleActionsOutputReference.Initializer.parameter.complexObjectIndex"></a>
+
+- *Type:* java.lang.Number
+
+the index of this item in the list.
+
+---
+
+##### `complexObjectIsFromSet`<sup>Required</sup> <a name="complexObjectIsFromSet" id="@cdktf/provider-upcloud.loadbalancerFrontendRule.LoadbalancerFrontendRuleActionsOutputReference.Initializer.parameter.complexObjectIsFromSet"></a>
+
+- *Type:* java.lang.Boolean
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
 
 ---
 
@@ -4116,7 +4252,7 @@ public void resetUseBackend()
 | <code><a href="#@cdktf/provider-upcloud.loadbalancerFrontendRule.LoadbalancerFrontendRuleActionsOutputReference.property.setForwardedHeadersInput">setForwardedHeadersInput</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-upcloud.loadbalancerFrontendRule.LoadbalancerFrontendRuleActionsSetForwardedHeaders">LoadbalancerFrontendRuleActionsSetForwardedHeaders</a>></code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.loadbalancerFrontendRule.LoadbalancerFrontendRuleActionsOutputReference.property.tcpRejectInput">tcpRejectInput</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-upcloud.loadbalancerFrontendRule.LoadbalancerFrontendRuleActionsTcpReject">LoadbalancerFrontendRuleActionsTcpReject</a>></code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.loadbalancerFrontendRule.LoadbalancerFrontendRuleActionsOutputReference.property.useBackendInput">useBackendInput</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-upcloud.loadbalancerFrontendRule.LoadbalancerFrontendRuleActionsUseBackend">LoadbalancerFrontendRuleActionsUseBackend</a>></code> | *No description.* |
-| <code><a href="#@cdktf/provider-upcloud.loadbalancerFrontendRule.LoadbalancerFrontendRuleActionsOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktf/provider-upcloud.loadbalancerFrontendRule.LoadbalancerFrontendRuleActions">LoadbalancerFrontendRuleActions</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-upcloud.loadbalancerFrontendRule.LoadbalancerFrontendRuleActionsOutputReference.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-upcloud.loadbalancerFrontendRule.LoadbalancerFrontendRuleActions">LoadbalancerFrontendRuleActions</a></code> | *No description.* |
 
 ---
 
@@ -4247,10 +4383,10 @@ public java.lang.Object getUseBackendInput();
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-upcloud.loadbalancerFrontendRule.LoadbalancerFrontendRuleActionsOutputReference.property.internalValue"></a>
 
 ```java
-public LoadbalancerFrontendRuleActions getInternalValue();
+public java.lang.Object getInternalValue();
 ```
 
-- *Type:* <a href="#@cdktf/provider-upcloud.loadbalancerFrontendRule.LoadbalancerFrontendRuleActions">LoadbalancerFrontendRuleActions</a>
+- *Type:* com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-upcloud.loadbalancerFrontendRule.LoadbalancerFrontendRuleActions">LoadbalancerFrontendRuleActions</a>
 
 ---
 
@@ -8688,6 +8824,166 @@ public java.lang.Object getInternalValue();
 ---
 
 
+### LoadbalancerFrontendRuleMatchersList <a name="LoadbalancerFrontendRuleMatchersList" id="@cdktf/provider-upcloud.loadbalancerFrontendRule.LoadbalancerFrontendRuleMatchersList"></a>
+
+#### Initializers <a name="Initializers" id="@cdktf/provider-upcloud.loadbalancerFrontendRule.LoadbalancerFrontendRuleMatchersList.Initializer"></a>
+
+```java
+import com.hashicorp.cdktf.providers.upcloud.loadbalancer_frontend_rule.LoadbalancerFrontendRuleMatchersList;
+
+new LoadbalancerFrontendRuleMatchersList(IInterpolatingParent terraformResource, java.lang.String terraformAttribute, java.lang.Boolean wrapsSet);
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-upcloud.loadbalancerFrontendRule.LoadbalancerFrontendRuleMatchersList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>com.hashicorp.cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktf/provider-upcloud.loadbalancerFrontendRule.LoadbalancerFrontendRuleMatchersList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>java.lang.String</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktf/provider-upcloud.loadbalancerFrontendRule.LoadbalancerFrontendRuleMatchersList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>java.lang.Boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktf/provider-upcloud.loadbalancerFrontendRule.LoadbalancerFrontendRuleMatchersList.Initializer.parameter.terraformResource"></a>
+
+- *Type:* com.hashicorp.cdktf.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-upcloud.loadbalancerFrontendRule.LoadbalancerFrontendRuleMatchersList.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `wrapsSet`<sup>Required</sup> <a name="wrapsSet" id="@cdktf/provider-upcloud.loadbalancerFrontendRule.LoadbalancerFrontendRuleMatchersList.Initializer.parameter.wrapsSet"></a>
+
+- *Type:* java.lang.Boolean
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktf/provider-upcloud.loadbalancerFrontendRule.LoadbalancerFrontendRuleMatchersList.allWithMapKey">allWithMapKey</a></code> | Creating an iterator for this complex list. |
+| <code><a href="#@cdktf/provider-upcloud.loadbalancerFrontendRule.LoadbalancerFrontendRuleMatchersList.computeFqn">computeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-upcloud.loadbalancerFrontendRule.LoadbalancerFrontendRuleMatchersList.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktf/provider-upcloud.loadbalancerFrontendRule.LoadbalancerFrontendRuleMatchersList.toString">toString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktf/provider-upcloud.loadbalancerFrontendRule.LoadbalancerFrontendRuleMatchersList.get">get</a></code> | *No description.* |
+
+---
+
+##### `allWithMapKey` <a name="allWithMapKey" id="@cdktf/provider-upcloud.loadbalancerFrontendRule.LoadbalancerFrontendRuleMatchersList.allWithMapKey"></a>
+
+```java
+public DynamicListTerraformIterator allWithMapKey(java.lang.String mapKeyAttributeName)
+```
+
+Creating an iterator for this complex list.
+
+The list will be converted into a map with the mapKeyAttributeName as the key.
+
+###### `mapKeyAttributeName`<sup>Required</sup> <a name="mapKeyAttributeName" id="@cdktf/provider-upcloud.loadbalancerFrontendRule.LoadbalancerFrontendRuleMatchersList.allWithMapKey.parameter.mapKeyAttributeName"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `computeFqn` <a name="computeFqn" id="@cdktf/provider-upcloud.loadbalancerFrontendRule.LoadbalancerFrontendRuleMatchersList.computeFqn"></a>
+
+```java
+public java.lang.String computeFqn()
+```
+
+##### `resolve` <a name="resolve" id="@cdktf/provider-upcloud.loadbalancerFrontendRule.LoadbalancerFrontendRuleMatchersList.resolve"></a>
+
+```java
+public java.lang.Object resolve(IResolveContext _context)
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktf/provider-upcloud.loadbalancerFrontendRule.LoadbalancerFrontendRuleMatchersList.resolve.parameter._context"></a>
+
+- *Type:* com.hashicorp.cdktf.IResolveContext
+
+---
+
+##### `toString` <a name="toString" id="@cdktf/provider-upcloud.loadbalancerFrontendRule.LoadbalancerFrontendRuleMatchersList.toString"></a>
+
+```java
+public java.lang.String toString()
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `get` <a name="get" id="@cdktf/provider-upcloud.loadbalancerFrontendRule.LoadbalancerFrontendRuleMatchersList.get"></a>
+
+```java
+public LoadbalancerFrontendRuleMatchersOutputReference get(java.lang.Number index)
+```
+
+###### `index`<sup>Required</sup> <a name="index" id="@cdktf/provider-upcloud.loadbalancerFrontendRule.LoadbalancerFrontendRuleMatchersList.get.parameter.index"></a>
+
+- *Type:* java.lang.Number
+
+the index of the item to return.
+
+---
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-upcloud.loadbalancerFrontendRule.LoadbalancerFrontendRuleMatchersList.property.creationStack">creationStack</a></code> | <code>java.util.List<java.lang.String></code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktf/provider-upcloud.loadbalancerFrontendRule.LoadbalancerFrontendRuleMatchersList.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktf/provider-upcloud.loadbalancerFrontendRule.LoadbalancerFrontendRuleMatchersList.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-upcloud.loadbalancerFrontendRule.LoadbalancerFrontendRuleMatchers">LoadbalancerFrontendRuleMatchers</a>></code> | *No description.* |
+
+---
+
+##### `creationStack`<sup>Required</sup> <a name="creationStack" id="@cdktf/provider-upcloud.loadbalancerFrontendRule.LoadbalancerFrontendRuleMatchersList.property.creationStack"></a>
+
+```java
+public java.util.List<java.lang.String> getCreationStack();
+```
+
+- *Type:* java.util.List<java.lang.String>
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktf/provider-upcloud.loadbalancerFrontendRule.LoadbalancerFrontendRuleMatchersList.property.fqn"></a>
+
+```java
+public java.lang.String getFqn();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-upcloud.loadbalancerFrontendRule.LoadbalancerFrontendRuleMatchersList.property.internalValue"></a>
+
+```java
+public java.lang.Object getInternalValue();
+```
+
+- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-upcloud.loadbalancerFrontendRule.LoadbalancerFrontendRuleMatchers">LoadbalancerFrontendRuleMatchers</a>>
+
+---
+
+
 ### LoadbalancerFrontendRuleMatchersNumMembersUpList <a name="LoadbalancerFrontendRuleMatchersNumMembersUpList" id="@cdktf/provider-upcloud.loadbalancerFrontendRule.LoadbalancerFrontendRuleMatchersNumMembersUpList"></a>
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-upcloud.loadbalancerFrontendRule.LoadbalancerFrontendRuleMatchersNumMembersUpList.Initializer"></a>
@@ -9217,13 +9513,15 @@ public java.lang.Object getInternalValue();
 ```java
 import com.hashicorp.cdktf.providers.upcloud.loadbalancer_frontend_rule.LoadbalancerFrontendRuleMatchersOutputReference;
 
-new LoadbalancerFrontendRuleMatchersOutputReference(IInterpolatingParent terraformResource, java.lang.String terraformAttribute);
+new LoadbalancerFrontendRuleMatchersOutputReference(IInterpolatingParent terraformResource, java.lang.String terraformAttribute, java.lang.Number complexObjectIndex, java.lang.Boolean complexObjectIsFromSet);
 ```
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-upcloud.loadbalancerFrontendRule.LoadbalancerFrontendRuleMatchersOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>com.hashicorp.cdktf.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktf/provider-upcloud.loadbalancerFrontendRule.LoadbalancerFrontendRuleMatchersOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>java.lang.String</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktf/provider-upcloud.loadbalancerFrontendRule.LoadbalancerFrontendRuleMatchersOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>java.lang.Number</code> | the index of this item in the list. |
+| <code><a href="#@cdktf/provider-upcloud.loadbalancerFrontendRule.LoadbalancerFrontendRuleMatchersOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>java.lang.Boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
 ---
 
@@ -9240,6 +9538,22 @@ The parent resource.
 - *Type:* java.lang.String
 
 The attribute on the parent resource this class is referencing.
+
+---
+
+##### `complexObjectIndex`<sup>Required</sup> <a name="complexObjectIndex" id="@cdktf/provider-upcloud.loadbalancerFrontendRule.LoadbalancerFrontendRuleMatchersOutputReference.Initializer.parameter.complexObjectIndex"></a>
+
+- *Type:* java.lang.Number
+
+the index of this item in the list.
+
+---
+
+##### `complexObjectIsFromSet`<sup>Required</sup> <a name="complexObjectIsFromSet" id="@cdktf/provider-upcloud.loadbalancerFrontendRule.LoadbalancerFrontendRuleMatchersOutputReference.Initializer.parameter.complexObjectIsFromSet"></a>
+
+- *Type:* java.lang.Boolean
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
 
 ---
 
@@ -9728,7 +10042,7 @@ public void resetUrlQuery()
 | <code><a href="#@cdktf/provider-upcloud.loadbalancerFrontendRule.LoadbalancerFrontendRuleMatchersOutputReference.property.urlInput">urlInput</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-upcloud.loadbalancerFrontendRule.LoadbalancerFrontendRuleMatchersUrl">LoadbalancerFrontendRuleMatchersUrl</a>></code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.loadbalancerFrontendRule.LoadbalancerFrontendRuleMatchersOutputReference.property.urlParamInput">urlParamInput</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-upcloud.loadbalancerFrontendRule.LoadbalancerFrontendRuleMatchersUrlParam">LoadbalancerFrontendRuleMatchersUrlParam</a>></code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.loadbalancerFrontendRule.LoadbalancerFrontendRuleMatchersOutputReference.property.urlQueryInput">urlQueryInput</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-upcloud.loadbalancerFrontendRule.LoadbalancerFrontendRuleMatchersUrlQuery">LoadbalancerFrontendRuleMatchersUrlQuery</a>></code> | *No description.* |
-| <code><a href="#@cdktf/provider-upcloud.loadbalancerFrontendRule.LoadbalancerFrontendRuleMatchersOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktf/provider-upcloud.loadbalancerFrontendRule.LoadbalancerFrontendRuleMatchers">LoadbalancerFrontendRuleMatchers</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-upcloud.loadbalancerFrontendRule.LoadbalancerFrontendRuleMatchersOutputReference.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-upcloud.loadbalancerFrontendRule.LoadbalancerFrontendRuleMatchers">LoadbalancerFrontendRuleMatchers</a></code> | *No description.* |
 
 ---
 
@@ -10039,10 +10353,10 @@ public java.lang.Object getUrlQueryInput();
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-upcloud.loadbalancerFrontendRule.LoadbalancerFrontendRuleMatchersOutputReference.property.internalValue"></a>
 
 ```java
-public LoadbalancerFrontendRuleMatchers getInternalValue();
+public java.lang.Object getInternalValue();
 ```
 
-- *Type:* <a href="#@cdktf/provider-upcloud.loadbalancerFrontendRule.LoadbalancerFrontendRuleMatchers">LoadbalancerFrontendRuleMatchers</a>
+- *Type:* com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-upcloud.loadbalancerFrontendRule.LoadbalancerFrontendRuleMatchers">LoadbalancerFrontendRuleMatchers</a>
 
 ---
 

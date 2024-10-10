@@ -4,7 +4,7 @@
 
 ### DataUpcloudHosts <a name="DataUpcloudHosts" id="@cdktf/provider-upcloud.dataUpcloudHosts.DataUpcloudHosts"></a>
 
-Represents a {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.11.2/docs/data-sources/hosts upcloud_hosts}.
+Represents a {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.11.3/docs/data-sources/hosts upcloud_hosts}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-upcloud.dataUpcloudHosts.DataUpcloudHosts.Initializer"></a>
 
@@ -106,7 +106,7 @@ Must be unique amongst siblings in the same scope
 
 hosts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.11.2/docs/data-sources/hosts#hosts DataUpcloudHosts#hosts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.11.3/docs/data-sources/hosts#hosts DataUpcloudHosts#hosts}
 
 ---
 
@@ -487,7 +487,7 @@ The construct id used in the generated config for the DataUpcloudHosts to import
 
 The id of the existing DataUpcloudHosts that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.11.2/docs/data-sources/hosts#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.11.3/docs/data-sources/hosts#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -807,7 +807,7 @@ hosts: typing.Union[IResolvable, typing.List[DataUpcloudHostsHosts]]
 
 hosts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.11.2/docs/data-sources/hosts#hosts DataUpcloudHosts#hosts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.11.3/docs/data-sources/hosts#hosts DataUpcloudHosts#hosts}
 
 ---
 

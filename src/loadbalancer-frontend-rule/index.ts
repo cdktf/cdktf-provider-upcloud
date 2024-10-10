@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/upcloudltd/upcloud/5.11.2/docs/resources/loadbalancer_frontend_rule
+// https://registry.terraform.io/providers/upcloudltd/upcloud/5.11.3/docs/resources/loadbalancer_frontend_rule
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,54 +13,47 @@ import * as cdktf from 'cdktf';
 
 export interface LoadbalancerFrontendRuleConfig extends cdktf.TerraformMetaArguments {
   /**
-  * ID of the load balancer frontend to which the rule is connected.
+  * ID of the load balancer frontend to which the frontend rule is connected.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.11.2/docs/resources/loadbalancer_frontend_rule#frontend LoadbalancerFrontendRule#frontend}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.11.3/docs/resources/loadbalancer_frontend_rule#frontend LoadbalancerFrontendRule#frontend}
   */
   readonly frontend: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.11.2/docs/resources/loadbalancer_frontend_rule#id LoadbalancerFrontendRule#id}
+  * The name of the frontend rule. Must be unique within the frontend.
   *
-  * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
-  * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
-  */
-  readonly id?: string;
-  /**
-  * The name of the frontend rule must be unique within the load balancer service.
-  *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.11.2/docs/resources/loadbalancer_frontend_rule#name LoadbalancerFrontendRule#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.11.3/docs/resources/loadbalancer_frontend_rule#name LoadbalancerFrontendRule#name}
   */
   readonly name: string;
   /**
   * Rule with the higher priority goes first. Rules with the same priority processed in alphabetical order.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.11.2/docs/resources/loadbalancer_frontend_rule#priority LoadbalancerFrontendRule#priority}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.11.3/docs/resources/loadbalancer_frontend_rule#priority LoadbalancerFrontendRule#priority}
   */
   readonly priority: number;
   /**
   * actions block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.11.2/docs/resources/loadbalancer_frontend_rule#actions LoadbalancerFrontendRule#actions}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.11.3/docs/resources/loadbalancer_frontend_rule#actions LoadbalancerFrontendRule#actions}
   */
-  readonly actions?: LoadbalancerFrontendRuleActions;
+  readonly actions?: LoadbalancerFrontendRuleActions[] | cdktf.IResolvable;
   /**
   * matchers block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.11.2/docs/resources/loadbalancer_frontend_rule#matchers LoadbalancerFrontendRule#matchers}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.11.3/docs/resources/loadbalancer_frontend_rule#matchers LoadbalancerFrontendRule#matchers}
   */
-  readonly matchers?: LoadbalancerFrontendRuleMatchers;
+  readonly matchers?: LoadbalancerFrontendRuleMatchers[] | cdktf.IResolvable;
 }
 export interface LoadbalancerFrontendRuleActionsHttpRedirect {
   /**
   * Target location.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.11.2/docs/resources/loadbalancer_frontend_rule#location LoadbalancerFrontendRule#location}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.11.3/docs/resources/loadbalancer_frontend_rule#location LoadbalancerFrontendRule#location}
   */
   readonly location?: string;
   /**
   * Target scheme.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.11.2/docs/resources/loadbalancer_frontend_rule#scheme LoadbalancerFrontendRule#scheme}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.11.3/docs/resources/loadbalancer_frontend_rule#scheme LoadbalancerFrontendRule#scheme}
   */
   readonly scheme?: string;
 }
@@ -207,19 +200,19 @@ export interface LoadbalancerFrontendRuleActionsHttpReturn {
   /**
   * Content type.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.11.2/docs/resources/loadbalancer_frontend_rule#content_type LoadbalancerFrontendRule#content_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.11.3/docs/resources/loadbalancer_frontend_rule#content_type LoadbalancerFrontendRule#content_type}
   */
   readonly contentType: string;
   /**
   * The payload.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.11.2/docs/resources/loadbalancer_frontend_rule#payload LoadbalancerFrontendRule#payload}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.11.3/docs/resources/loadbalancer_frontend_rule#payload LoadbalancerFrontendRule#payload}
   */
   readonly payload: string;
   /**
   * HTTP status code.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.11.2/docs/resources/loadbalancer_frontend_rule#status LoadbalancerFrontendRule#status}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.11.3/docs/resources/loadbalancer_frontend_rule#status LoadbalancerFrontendRule#status}
   */
   readonly status: number;
 }
@@ -384,7 +377,7 @@ export class LoadbalancerFrontendRuleActionsHttpReturnList extends cdktf.Complex
 }
 export interface LoadbalancerFrontendRuleActionsSetForwardedHeaders {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.11.2/docs/resources/loadbalancer_frontend_rule#active LoadbalancerFrontendRule#active}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.11.3/docs/resources/loadbalancer_frontend_rule#active LoadbalancerFrontendRule#active}
   */
   readonly active?: boolean | cdktf.IResolvable;
 }
@@ -462,7 +455,7 @@ export class LoadbalancerFrontendRuleActionsSetForwardedHeadersOutputReference e
     }
   }
 
-  // active - computed: false, optional: true, required: false
+  // active - computed: true, optional: true, required: false
   private _active?: boolean | cdktf.IResolvable; 
   public get active() {
     return this.getBooleanAttribute('active');
@@ -500,7 +493,9 @@ export class LoadbalancerFrontendRuleActionsSetForwardedHeadersList extends cdkt
 }
 export interface LoadbalancerFrontendRuleActionsTcpReject {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.11.2/docs/resources/loadbalancer_frontend_rule#active LoadbalancerFrontendRule#active}
+  * Indicates if the rule is active.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.11.3/docs/resources/loadbalancer_frontend_rule#active LoadbalancerFrontendRule#active}
   */
   readonly active?: boolean | cdktf.IResolvable;
 }
@@ -578,7 +573,7 @@ export class LoadbalancerFrontendRuleActionsTcpRejectOutputReference extends cdk
     }
   }
 
-  // active - computed: false, optional: true, required: false
+  // active - computed: true, optional: true, required: false
   private _active?: boolean | cdktf.IResolvable; 
   public get active() {
     return this.getBooleanAttribute('active');
@@ -618,7 +613,7 @@ export interface LoadbalancerFrontendRuleActionsUseBackend {
   /**
   * The name of the backend where traffic will be routed.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.11.2/docs/resources/loadbalancer_frontend_rule#backend_name LoadbalancerFrontendRule#backend_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.11.3/docs/resources/loadbalancer_frontend_rule#backend_name LoadbalancerFrontendRule#backend_name}
   */
   readonly backendName: string;
 }
@@ -733,36 +728,36 @@ export interface LoadbalancerFrontendRuleActions {
   /**
   * http_redirect block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.11.2/docs/resources/loadbalancer_frontend_rule#http_redirect LoadbalancerFrontendRule#http_redirect}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.11.3/docs/resources/loadbalancer_frontend_rule#http_redirect LoadbalancerFrontendRule#http_redirect}
   */
   readonly httpRedirect?: LoadbalancerFrontendRuleActionsHttpRedirect[] | cdktf.IResolvable;
   /**
   * http_return block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.11.2/docs/resources/loadbalancer_frontend_rule#http_return LoadbalancerFrontendRule#http_return}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.11.3/docs/resources/loadbalancer_frontend_rule#http_return LoadbalancerFrontendRule#http_return}
   */
   readonly httpReturn?: LoadbalancerFrontendRuleActionsHttpReturn[] | cdktf.IResolvable;
   /**
   * set_forwarded_headers block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.11.2/docs/resources/loadbalancer_frontend_rule#set_forwarded_headers LoadbalancerFrontendRule#set_forwarded_headers}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.11.3/docs/resources/loadbalancer_frontend_rule#set_forwarded_headers LoadbalancerFrontendRule#set_forwarded_headers}
   */
   readonly setForwardedHeaders?: LoadbalancerFrontendRuleActionsSetForwardedHeaders[] | cdktf.IResolvable;
   /**
   * tcp_reject block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.11.2/docs/resources/loadbalancer_frontend_rule#tcp_reject LoadbalancerFrontendRule#tcp_reject}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.11.3/docs/resources/loadbalancer_frontend_rule#tcp_reject LoadbalancerFrontendRule#tcp_reject}
   */
   readonly tcpReject?: LoadbalancerFrontendRuleActionsTcpReject[] | cdktf.IResolvable;
   /**
   * use_backend block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.11.2/docs/resources/loadbalancer_frontend_rule#use_backend LoadbalancerFrontendRule#use_backend}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.11.3/docs/resources/loadbalancer_frontend_rule#use_backend LoadbalancerFrontendRule#use_backend}
   */
   readonly useBackend?: LoadbalancerFrontendRuleActionsUseBackend[] | cdktf.IResolvable;
 }
 
-export function loadbalancerFrontendRuleActionsToTerraform(struct?: LoadbalancerFrontendRuleActionsOutputReference | LoadbalancerFrontendRuleActions): any {
+export function loadbalancerFrontendRuleActionsToTerraform(struct?: LoadbalancerFrontendRuleActions | cdktf.IResolvable): any {
   if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
@@ -777,7 +772,7 @@ export function loadbalancerFrontendRuleActionsToTerraform(struct?: Loadbalancer
 }
 
 
-export function loadbalancerFrontendRuleActionsToHclTerraform(struct?: LoadbalancerFrontendRuleActionsOutputReference | LoadbalancerFrontendRuleActions): any {
+export function loadbalancerFrontendRuleActionsToHclTerraform(struct?: LoadbalancerFrontendRuleActions | cdktf.IResolvable): any {
   if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
@@ -821,16 +816,22 @@ export function loadbalancerFrontendRuleActionsToHclTerraform(struct?: Loadbalan
 
 export class LoadbalancerFrontendRuleActionsOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
-    super(terraformResource, terraformAttribute, false, 0);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): LoadbalancerFrontendRuleActions | undefined {
+  public get internalValue(): LoadbalancerFrontendRuleActions | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._httpRedirect?.internalValue !== undefined) {
@@ -856,17 +857,23 @@ export class LoadbalancerFrontendRuleActionsOutputReference extends cdktf.Comple
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: LoadbalancerFrontendRuleActions | undefined) {
+  public set internalValue(value: LoadbalancerFrontendRuleActions | cdktf.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
+      this.resolvableValue = undefined;
       this._httpRedirect.internalValue = undefined;
       this._httpReturn.internalValue = undefined;
       this._setForwardedHeaders.internalValue = undefined;
       this._tcpReject.internalValue = undefined;
       this._useBackend.internalValue = undefined;
     }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
     else {
       this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
       this._httpRedirect.internalValue = value.httpRedirect;
       this._httpReturn.internalValue = value.httpReturn;
       this._setForwardedHeaders.internalValue = value.setForwardedHeaders;
@@ -955,23 +962,43 @@ export class LoadbalancerFrontendRuleActionsOutputReference extends cdktf.Comple
     return this._useBackend.internalValue;
   }
 }
+
+export class LoadbalancerFrontendRuleActionsList extends cdktf.ComplexList {
+  public internalValue? : LoadbalancerFrontendRuleActions[] | cdktf.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): LoadbalancerFrontendRuleActionsOutputReference {
+    return new LoadbalancerFrontendRuleActionsOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
 export interface LoadbalancerFrontendRuleMatchersBodySize {
   /**
-  * Sets if the condition should be inverted. Works similar to logical NOT operator.
+  * Defines if the condition should be inverted. Works similarly to logical NOT operator.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.11.2/docs/resources/loadbalancer_frontend_rule#inverse LoadbalancerFrontendRule#inverse}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.11.3/docs/resources/loadbalancer_frontend_rule#inverse LoadbalancerFrontendRule#inverse}
   */
   readonly inverse?: boolean | cdktf.IResolvable;
   /**
   * Match method (`equal`, `greater`, `greater_or_equal`, `less`, `less_or_equal`).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.11.2/docs/resources/loadbalancer_frontend_rule#method LoadbalancerFrontendRule#method}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.11.3/docs/resources/loadbalancer_frontend_rule#method LoadbalancerFrontendRule#method}
   */
   readonly method: string;
   /**
   * Integer value.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.11.2/docs/resources/loadbalancer_frontend_rule#value LoadbalancerFrontendRule#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.11.3/docs/resources/loadbalancer_frontend_rule#value LoadbalancerFrontendRule#value}
   */
   readonly value: number;
 }
@@ -1075,7 +1102,7 @@ export class LoadbalancerFrontendRuleMatchersBodySizeOutputReference extends cdk
     }
   }
 
-  // inverse - computed: false, optional: true, required: false
+  // inverse - computed: true, optional: true, required: false
   private _inverse?: boolean | cdktf.IResolvable; 
   public get inverse() {
     return this.getBooleanAttribute('inverse');
@@ -1139,21 +1166,21 @@ export class LoadbalancerFrontendRuleMatchersBodySizeList extends cdktf.ComplexL
 }
 export interface LoadbalancerFrontendRuleMatchersBodySizeRange {
   /**
-  * Sets if the condition should be inverted. Works similar to logical NOT operator.
+  * Defines if the condition should be inverted. Works similarly to logical NOT operator.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.11.2/docs/resources/loadbalancer_frontend_rule#inverse LoadbalancerFrontendRule#inverse}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.11.3/docs/resources/loadbalancer_frontend_rule#inverse LoadbalancerFrontendRule#inverse}
   */
   readonly inverse?: boolean | cdktf.IResolvable;
   /**
   * Integer value.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.11.2/docs/resources/loadbalancer_frontend_rule#range_end LoadbalancerFrontendRule#range_end}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.11.3/docs/resources/loadbalancer_frontend_rule#range_end LoadbalancerFrontendRule#range_end}
   */
   readonly rangeEnd: number;
   /**
   * Integer value.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.11.2/docs/resources/loadbalancer_frontend_rule#range_start LoadbalancerFrontendRule#range_start}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.11.3/docs/resources/loadbalancer_frontend_rule#range_start LoadbalancerFrontendRule#range_start}
   */
   readonly rangeStart: number;
 }
@@ -1257,7 +1284,7 @@ export class LoadbalancerFrontendRuleMatchersBodySizeRangeOutputReference extend
     }
   }
 
-  // inverse - computed: false, optional: true, required: false
+  // inverse - computed: true, optional: true, required: false
   private _inverse?: boolean | cdktf.IResolvable; 
   public get inverse() {
     return this.getBooleanAttribute('inverse');
@@ -1321,33 +1348,33 @@ export class LoadbalancerFrontendRuleMatchersBodySizeRangeList extends cdktf.Com
 }
 export interface LoadbalancerFrontendRuleMatchersCookie {
   /**
-  * Ignore case, default `false`.
+  * Defines if case should be ignored. Defaults to `false`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.11.2/docs/resources/loadbalancer_frontend_rule#ignore_case LoadbalancerFrontendRule#ignore_case}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.11.3/docs/resources/loadbalancer_frontend_rule#ignore_case LoadbalancerFrontendRule#ignore_case}
   */
   readonly ignoreCase?: boolean | cdktf.IResolvable;
   /**
-  * Sets if the condition should be inverted. Works similar to logical NOT operator.
+  * Defines if the condition should be inverted. Works similarly to logical NOT operator.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.11.2/docs/resources/loadbalancer_frontend_rule#inverse LoadbalancerFrontendRule#inverse}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.11.3/docs/resources/loadbalancer_frontend_rule#inverse LoadbalancerFrontendRule#inverse}
   */
   readonly inverse?: boolean | cdktf.IResolvable;
   /**
   * Match method (`exact`, `substring`, `regexp`, `starts`, `ends`, `domain`, `ip`, `exists`). Matcher with `exists` and `ip` methods must be used without `value` and `ignore_case` fields.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.11.2/docs/resources/loadbalancer_frontend_rule#method LoadbalancerFrontendRule#method}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.11.3/docs/resources/loadbalancer_frontend_rule#method LoadbalancerFrontendRule#method}
   */
   readonly method: string;
   /**
   * Name of the argument.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.11.2/docs/resources/loadbalancer_frontend_rule#name LoadbalancerFrontendRule#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.11.3/docs/resources/loadbalancer_frontend_rule#name LoadbalancerFrontendRule#name}
   */
   readonly name: string;
   /**
   * String value.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.11.2/docs/resources/loadbalancer_frontend_rule#value LoadbalancerFrontendRule#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.11.3/docs/resources/loadbalancer_frontend_rule#value LoadbalancerFrontendRule#value}
   */
   readonly value?: string;
 }
@@ -1477,7 +1504,7 @@ export class LoadbalancerFrontendRuleMatchersCookieOutputReference extends cdktf
     }
   }
 
-  // ignore_case - computed: false, optional: true, required: false
+  // ignore_case - computed: true, optional: true, required: false
   private _ignoreCase?: boolean | cdktf.IResolvable; 
   public get ignoreCase() {
     return this.getBooleanAttribute('ignore_case');
@@ -1493,7 +1520,7 @@ export class LoadbalancerFrontendRuleMatchersCookieOutputReference extends cdktf
     return this._ignoreCase;
   }
 
-  // inverse - computed: false, optional: true, required: false
+  // inverse - computed: true, optional: true, required: false
   private _inverse?: boolean | cdktf.IResolvable; 
   public get inverse() {
     return this.getBooleanAttribute('inverse');
@@ -1573,33 +1600,33 @@ export class LoadbalancerFrontendRuleMatchersCookieList extends cdktf.ComplexLis
 }
 export interface LoadbalancerFrontendRuleMatchersHeader {
   /**
-  * Ignore case, default `false`.
+  * Defines if case should be ignored. Defaults to `false`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.11.2/docs/resources/loadbalancer_frontend_rule#ignore_case LoadbalancerFrontendRule#ignore_case}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.11.3/docs/resources/loadbalancer_frontend_rule#ignore_case LoadbalancerFrontendRule#ignore_case}
   */
   readonly ignoreCase?: boolean | cdktf.IResolvable;
   /**
-  * Sets if the condition should be inverted. Works similar to logical NOT operator.
+  * Defines if the condition should be inverted. Works similarly to logical NOT operator.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.11.2/docs/resources/loadbalancer_frontend_rule#inverse LoadbalancerFrontendRule#inverse}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.11.3/docs/resources/loadbalancer_frontend_rule#inverse LoadbalancerFrontendRule#inverse}
   */
   readonly inverse?: boolean | cdktf.IResolvable;
   /**
   * Match method (`exact`, `substring`, `regexp`, `starts`, `ends`, `domain`, `ip`, `exists`). Matcher with `exists` and `ip` methods must be used without `value` and `ignore_case` fields.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.11.2/docs/resources/loadbalancer_frontend_rule#method LoadbalancerFrontendRule#method}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.11.3/docs/resources/loadbalancer_frontend_rule#method LoadbalancerFrontendRule#method}
   */
   readonly method: string;
   /**
   * Name of the argument.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.11.2/docs/resources/loadbalancer_frontend_rule#name LoadbalancerFrontendRule#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.11.3/docs/resources/loadbalancer_frontend_rule#name LoadbalancerFrontendRule#name}
   */
   readonly name: string;
   /**
   * String value.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.11.2/docs/resources/loadbalancer_frontend_rule#value LoadbalancerFrontendRule#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.11.3/docs/resources/loadbalancer_frontend_rule#value LoadbalancerFrontendRule#value}
   */
   readonly value?: string;
 }
@@ -1729,7 +1756,7 @@ export class LoadbalancerFrontendRuleMatchersHeaderOutputReference extends cdktf
     }
   }
 
-  // ignore_case - computed: false, optional: true, required: false
+  // ignore_case - computed: true, optional: true, required: false
   private _ignoreCase?: boolean | cdktf.IResolvable; 
   public get ignoreCase() {
     return this.getBooleanAttribute('ignore_case');
@@ -1745,7 +1772,7 @@ export class LoadbalancerFrontendRuleMatchersHeaderOutputReference extends cdktf
     return this._ignoreCase;
   }
 
-  // inverse - computed: false, optional: true, required: false
+  // inverse - computed: true, optional: true, required: false
   private _inverse?: boolean | cdktf.IResolvable; 
   public get inverse() {
     return this.getBooleanAttribute('inverse');
@@ -1825,15 +1852,15 @@ export class LoadbalancerFrontendRuleMatchersHeaderList extends cdktf.ComplexLis
 }
 export interface LoadbalancerFrontendRuleMatchersHost {
   /**
-  * Sets if the condition should be inverted. Works similar to logical NOT operator.
+  * Defines if the condition should be inverted. Works similarly to logical NOT operator.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.11.2/docs/resources/loadbalancer_frontend_rule#inverse LoadbalancerFrontendRule#inverse}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.11.3/docs/resources/loadbalancer_frontend_rule#inverse LoadbalancerFrontendRule#inverse}
   */
   readonly inverse?: boolean | cdktf.IResolvable;
   /**
   * String value.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.11.2/docs/resources/loadbalancer_frontend_rule#value LoadbalancerFrontendRule#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.11.3/docs/resources/loadbalancer_frontend_rule#value LoadbalancerFrontendRule#value}
   */
   readonly value: string;
 }
@@ -1924,7 +1951,7 @@ export class LoadbalancerFrontendRuleMatchersHostOutputReference extends cdktf.C
     }
   }
 
-  // inverse - computed: false, optional: true, required: false
+  // inverse - computed: true, optional: true, required: false
   private _inverse?: boolean | cdktf.IResolvable; 
   public get inverse() {
     return this.getBooleanAttribute('inverse');
@@ -1975,15 +2002,15 @@ export class LoadbalancerFrontendRuleMatchersHostList extends cdktf.ComplexList 
 }
 export interface LoadbalancerFrontendRuleMatchersHttpMethod {
   /**
-  * Sets if the condition should be inverted. Works similar to logical NOT operator.
+  * Defines if the condition should be inverted. Works similarly to logical NOT operator.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.11.2/docs/resources/loadbalancer_frontend_rule#inverse LoadbalancerFrontendRule#inverse}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.11.3/docs/resources/loadbalancer_frontend_rule#inverse LoadbalancerFrontendRule#inverse}
   */
   readonly inverse?: boolean | cdktf.IResolvable;
   /**
   * String value (`GET`, `HEAD`, `POST`, `PUT`, `PATCH`, `DELETE`, `CONNECT`, `OPTIONS`, `TRACE`).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.11.2/docs/resources/loadbalancer_frontend_rule#value LoadbalancerFrontendRule#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.11.3/docs/resources/loadbalancer_frontend_rule#value LoadbalancerFrontendRule#value}
   */
   readonly value: string;
 }
@@ -2074,7 +2101,7 @@ export class LoadbalancerFrontendRuleMatchersHttpMethodOutputReference extends c
     }
   }
 
-  // inverse - computed: false, optional: true, required: false
+  // inverse - computed: true, optional: true, required: false
   private _inverse?: boolean | cdktf.IResolvable; 
   public get inverse() {
     return this.getBooleanAttribute('inverse');
@@ -2125,27 +2152,27 @@ export class LoadbalancerFrontendRuleMatchersHttpMethodList extends cdktf.Comple
 }
 export interface LoadbalancerFrontendRuleMatchersNumMembersUp {
   /**
-  * The name of the `backend` which members will be monitored.
+  * The name of the `backend`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.11.2/docs/resources/loadbalancer_frontend_rule#backend_name LoadbalancerFrontendRule#backend_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.11.3/docs/resources/loadbalancer_frontend_rule#backend_name LoadbalancerFrontendRule#backend_name}
   */
   readonly backendName: string;
   /**
-  * Sets if the condition should be inverted. Works similar to logical NOT operator.
+  * Defines if the condition should be inverted. Works similarly to logical NOT operator.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.11.2/docs/resources/loadbalancer_frontend_rule#inverse LoadbalancerFrontendRule#inverse}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.11.3/docs/resources/loadbalancer_frontend_rule#inverse LoadbalancerFrontendRule#inverse}
   */
   readonly inverse?: boolean | cdktf.IResolvable;
   /**
   * Match method (`equal`, `greater`, `greater_or_equal`, `less`, `less_or_equal`).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.11.2/docs/resources/loadbalancer_frontend_rule#method LoadbalancerFrontendRule#method}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.11.3/docs/resources/loadbalancer_frontend_rule#method LoadbalancerFrontendRule#method}
   */
   readonly method: string;
   /**
   * Integer value.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.11.2/docs/resources/loadbalancer_frontend_rule#value LoadbalancerFrontendRule#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.11.3/docs/resources/loadbalancer_frontend_rule#value LoadbalancerFrontendRule#value}
   */
   readonly value: number;
 }
@@ -2275,7 +2302,7 @@ export class LoadbalancerFrontendRuleMatchersNumMembersUpOutputReference extends
     return this._backendName;
   }
 
-  // inverse - computed: false, optional: true, required: false
+  // inverse - computed: true, optional: true, required: false
   private _inverse?: boolean | cdktf.IResolvable; 
   public get inverse() {
     return this.getBooleanAttribute('inverse');
@@ -2339,27 +2366,27 @@ export class LoadbalancerFrontendRuleMatchersNumMembersUpList extends cdktf.Comp
 }
 export interface LoadbalancerFrontendRuleMatchersPath {
   /**
-  * Ignore case, default `false`.
+  * Defines if case should be ignored. Defaults to `false`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.11.2/docs/resources/loadbalancer_frontend_rule#ignore_case LoadbalancerFrontendRule#ignore_case}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.11.3/docs/resources/loadbalancer_frontend_rule#ignore_case LoadbalancerFrontendRule#ignore_case}
   */
   readonly ignoreCase?: boolean | cdktf.IResolvable;
   /**
-  * Sets if the condition should be inverted. Works similar to logical NOT operator.
+  * Defines if the condition should be inverted. Works similarly to logical NOT operator.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.11.2/docs/resources/loadbalancer_frontend_rule#inverse LoadbalancerFrontendRule#inverse}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.11.3/docs/resources/loadbalancer_frontend_rule#inverse LoadbalancerFrontendRule#inverse}
   */
   readonly inverse?: boolean | cdktf.IResolvable;
   /**
   * Match method (`exact`, `substring`, `regexp`, `starts`, `ends`, `domain`, `ip`, `exists`). Matcher with `exists` and `ip` methods must be used without `value` and `ignore_case` fields.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.11.2/docs/resources/loadbalancer_frontend_rule#method LoadbalancerFrontendRule#method}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.11.3/docs/resources/loadbalancer_frontend_rule#method LoadbalancerFrontendRule#method}
   */
   readonly method: string;
   /**
   * String value.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.11.2/docs/resources/loadbalancer_frontend_rule#value LoadbalancerFrontendRule#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.11.3/docs/resources/loadbalancer_frontend_rule#value LoadbalancerFrontendRule#value}
   */
   readonly value?: string;
 }
@@ -2476,7 +2503,7 @@ export class LoadbalancerFrontendRuleMatchersPathOutputReference extends cdktf.C
     }
   }
 
-  // ignore_case - computed: false, optional: true, required: false
+  // ignore_case - computed: true, optional: true, required: false
   private _ignoreCase?: boolean | cdktf.IResolvable; 
   public get ignoreCase() {
     return this.getBooleanAttribute('ignore_case');
@@ -2492,7 +2519,7 @@ export class LoadbalancerFrontendRuleMatchersPathOutputReference extends cdktf.C
     return this._ignoreCase;
   }
 
-  // inverse - computed: false, optional: true, required: false
+  // inverse - computed: true, optional: true, required: false
   private _inverse?: boolean | cdktf.IResolvable; 
   public get inverse() {
     return this.getBooleanAttribute('inverse');
@@ -2559,15 +2586,15 @@ export class LoadbalancerFrontendRuleMatchersPathList extends cdktf.ComplexList 
 }
 export interface LoadbalancerFrontendRuleMatchersSrcIp {
   /**
-  * Sets if the condition should be inverted. Works similar to logical NOT operator.
+  * Defines if the condition should be inverted. Works similarly to logical NOT operator.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.11.2/docs/resources/loadbalancer_frontend_rule#inverse LoadbalancerFrontendRule#inverse}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.11.3/docs/resources/loadbalancer_frontend_rule#inverse LoadbalancerFrontendRule#inverse}
   */
   readonly inverse?: boolean | cdktf.IResolvable;
   /**
   * IP address. CIDR masks are supported, e.g. `192.168.0.0/24`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.11.2/docs/resources/loadbalancer_frontend_rule#value LoadbalancerFrontendRule#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.11.3/docs/resources/loadbalancer_frontend_rule#value LoadbalancerFrontendRule#value}
   */
   readonly value: string;
 }
@@ -2658,7 +2685,7 @@ export class LoadbalancerFrontendRuleMatchersSrcIpOutputReference extends cdktf.
     }
   }
 
-  // inverse - computed: false, optional: true, required: false
+  // inverse - computed: true, optional: true, required: false
   private _inverse?: boolean | cdktf.IResolvable; 
   public get inverse() {
     return this.getBooleanAttribute('inverse');
@@ -2709,21 +2736,21 @@ export class LoadbalancerFrontendRuleMatchersSrcIpList extends cdktf.ComplexList
 }
 export interface LoadbalancerFrontendRuleMatchersSrcPort {
   /**
-  * Sets if the condition should be inverted. Works similar to logical NOT operator.
+  * Defines if the condition should be inverted. Works similarly to logical NOT operator.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.11.2/docs/resources/loadbalancer_frontend_rule#inverse LoadbalancerFrontendRule#inverse}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.11.3/docs/resources/loadbalancer_frontend_rule#inverse LoadbalancerFrontendRule#inverse}
   */
   readonly inverse?: boolean | cdktf.IResolvable;
   /**
   * Match method (`equal`, `greater`, `greater_or_equal`, `less`, `less_or_equal`).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.11.2/docs/resources/loadbalancer_frontend_rule#method LoadbalancerFrontendRule#method}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.11.3/docs/resources/loadbalancer_frontend_rule#method LoadbalancerFrontendRule#method}
   */
   readonly method: string;
   /**
   * Integer value.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.11.2/docs/resources/loadbalancer_frontend_rule#value LoadbalancerFrontendRule#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.11.3/docs/resources/loadbalancer_frontend_rule#value LoadbalancerFrontendRule#value}
   */
   readonly value: number;
 }
@@ -2827,7 +2854,7 @@ export class LoadbalancerFrontendRuleMatchersSrcPortOutputReference extends cdkt
     }
   }
 
-  // inverse - computed: false, optional: true, required: false
+  // inverse - computed: true, optional: true, required: false
   private _inverse?: boolean | cdktf.IResolvable; 
   public get inverse() {
     return this.getBooleanAttribute('inverse');
@@ -2891,21 +2918,21 @@ export class LoadbalancerFrontendRuleMatchersSrcPortList extends cdktf.ComplexLi
 }
 export interface LoadbalancerFrontendRuleMatchersSrcPortRange {
   /**
-  * Sets if the condition should be inverted. Works similar to logical NOT operator.
+  * Defines if the condition should be inverted. Works similarly to logical NOT operator.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.11.2/docs/resources/loadbalancer_frontend_rule#inverse LoadbalancerFrontendRule#inverse}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.11.3/docs/resources/loadbalancer_frontend_rule#inverse LoadbalancerFrontendRule#inverse}
   */
   readonly inverse?: boolean | cdktf.IResolvable;
   /**
   * Integer value.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.11.2/docs/resources/loadbalancer_frontend_rule#range_end LoadbalancerFrontendRule#range_end}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.11.3/docs/resources/loadbalancer_frontend_rule#range_end LoadbalancerFrontendRule#range_end}
   */
   readonly rangeEnd: number;
   /**
   * Integer value.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.11.2/docs/resources/loadbalancer_frontend_rule#range_start LoadbalancerFrontendRule#range_start}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.11.3/docs/resources/loadbalancer_frontend_rule#range_start LoadbalancerFrontendRule#range_start}
   */
   readonly rangeStart: number;
 }
@@ -3009,7 +3036,7 @@ export class LoadbalancerFrontendRuleMatchersSrcPortRangeOutputReference extends
     }
   }
 
-  // inverse - computed: false, optional: true, required: false
+  // inverse - computed: true, optional: true, required: false
   private _inverse?: boolean | cdktf.IResolvable; 
   public get inverse() {
     return this.getBooleanAttribute('inverse');
@@ -3073,27 +3100,27 @@ export class LoadbalancerFrontendRuleMatchersSrcPortRangeList extends cdktf.Comp
 }
 export interface LoadbalancerFrontendRuleMatchersUrl {
   /**
-  * Ignore case, default `false`.
+  * Defines if case should be ignored. Defaults to `false`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.11.2/docs/resources/loadbalancer_frontend_rule#ignore_case LoadbalancerFrontendRule#ignore_case}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.11.3/docs/resources/loadbalancer_frontend_rule#ignore_case LoadbalancerFrontendRule#ignore_case}
   */
   readonly ignoreCase?: boolean | cdktf.IResolvable;
   /**
-  * Sets if the condition should be inverted. Works similar to logical NOT operator.
+  * Defines if the condition should be inverted. Works similarly to logical NOT operator.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.11.2/docs/resources/loadbalancer_frontend_rule#inverse LoadbalancerFrontendRule#inverse}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.11.3/docs/resources/loadbalancer_frontend_rule#inverse LoadbalancerFrontendRule#inverse}
   */
   readonly inverse?: boolean | cdktf.IResolvable;
   /**
   * Match method (`exact`, `substring`, `regexp`, `starts`, `ends`, `domain`, `ip`, `exists`). Matcher with `exists` and `ip` methods must be used without `value` and `ignore_case` fields.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.11.2/docs/resources/loadbalancer_frontend_rule#method LoadbalancerFrontendRule#method}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.11.3/docs/resources/loadbalancer_frontend_rule#method LoadbalancerFrontendRule#method}
   */
   readonly method: string;
   /**
   * String value.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.11.2/docs/resources/loadbalancer_frontend_rule#value LoadbalancerFrontendRule#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.11.3/docs/resources/loadbalancer_frontend_rule#value LoadbalancerFrontendRule#value}
   */
   readonly value?: string;
 }
@@ -3210,7 +3237,7 @@ export class LoadbalancerFrontendRuleMatchersUrlOutputReference extends cdktf.Co
     }
   }
 
-  // ignore_case - computed: false, optional: true, required: false
+  // ignore_case - computed: true, optional: true, required: false
   private _ignoreCase?: boolean | cdktf.IResolvable; 
   public get ignoreCase() {
     return this.getBooleanAttribute('ignore_case');
@@ -3226,7 +3253,7 @@ export class LoadbalancerFrontendRuleMatchersUrlOutputReference extends cdktf.Co
     return this._ignoreCase;
   }
 
-  // inverse - computed: false, optional: true, required: false
+  // inverse - computed: true, optional: true, required: false
   private _inverse?: boolean | cdktf.IResolvable; 
   public get inverse() {
     return this.getBooleanAttribute('inverse');
@@ -3293,33 +3320,33 @@ export class LoadbalancerFrontendRuleMatchersUrlList extends cdktf.ComplexList {
 }
 export interface LoadbalancerFrontendRuleMatchersUrlParam {
   /**
-  * Ignore case, default `false`.
+  * Defines if case should be ignored. Defaults to `false`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.11.2/docs/resources/loadbalancer_frontend_rule#ignore_case LoadbalancerFrontendRule#ignore_case}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.11.3/docs/resources/loadbalancer_frontend_rule#ignore_case LoadbalancerFrontendRule#ignore_case}
   */
   readonly ignoreCase?: boolean | cdktf.IResolvable;
   /**
-  * Sets if the condition should be inverted. Works similar to logical NOT operator.
+  * Defines if the condition should be inverted. Works similarly to logical NOT operator.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.11.2/docs/resources/loadbalancer_frontend_rule#inverse LoadbalancerFrontendRule#inverse}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.11.3/docs/resources/loadbalancer_frontend_rule#inverse LoadbalancerFrontendRule#inverse}
   */
   readonly inverse?: boolean | cdktf.IResolvable;
   /**
   * Match method (`exact`, `substring`, `regexp`, `starts`, `ends`, `domain`, `ip`, `exists`). Matcher with `exists` and `ip` methods must be used without `value` and `ignore_case` fields.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.11.2/docs/resources/loadbalancer_frontend_rule#method LoadbalancerFrontendRule#method}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.11.3/docs/resources/loadbalancer_frontend_rule#method LoadbalancerFrontendRule#method}
   */
   readonly method: string;
   /**
   * Name of the argument.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.11.2/docs/resources/loadbalancer_frontend_rule#name LoadbalancerFrontendRule#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.11.3/docs/resources/loadbalancer_frontend_rule#name LoadbalancerFrontendRule#name}
   */
   readonly name: string;
   /**
   * String value.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.11.2/docs/resources/loadbalancer_frontend_rule#value LoadbalancerFrontendRule#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.11.3/docs/resources/loadbalancer_frontend_rule#value LoadbalancerFrontendRule#value}
   */
   readonly value?: string;
 }
@@ -3449,7 +3476,7 @@ export class LoadbalancerFrontendRuleMatchersUrlParamOutputReference extends cdk
     }
   }
 
-  // ignore_case - computed: false, optional: true, required: false
+  // ignore_case - computed: true, optional: true, required: false
   private _ignoreCase?: boolean | cdktf.IResolvable; 
   public get ignoreCase() {
     return this.getBooleanAttribute('ignore_case');
@@ -3465,7 +3492,7 @@ export class LoadbalancerFrontendRuleMatchersUrlParamOutputReference extends cdk
     return this._ignoreCase;
   }
 
-  // inverse - computed: false, optional: true, required: false
+  // inverse - computed: true, optional: true, required: false
   private _inverse?: boolean | cdktf.IResolvable; 
   public get inverse() {
     return this.getBooleanAttribute('inverse');
@@ -3545,27 +3572,27 @@ export class LoadbalancerFrontendRuleMatchersUrlParamList extends cdktf.ComplexL
 }
 export interface LoadbalancerFrontendRuleMatchersUrlQuery {
   /**
-  * Ignore case, default `false`.
+  * Defines if case should be ignored. Defaults to `false`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.11.2/docs/resources/loadbalancer_frontend_rule#ignore_case LoadbalancerFrontendRule#ignore_case}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.11.3/docs/resources/loadbalancer_frontend_rule#ignore_case LoadbalancerFrontendRule#ignore_case}
   */
   readonly ignoreCase?: boolean | cdktf.IResolvable;
   /**
-  * Sets if the condition should be inverted. Works similar to logical NOT operator.
+  * Defines if the condition should be inverted. Works similarly to logical NOT operator.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.11.2/docs/resources/loadbalancer_frontend_rule#inverse LoadbalancerFrontendRule#inverse}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.11.3/docs/resources/loadbalancer_frontend_rule#inverse LoadbalancerFrontendRule#inverse}
   */
   readonly inverse?: boolean | cdktf.IResolvable;
   /**
   * Match method (`exact`, `substring`, `regexp`, `starts`, `ends`, `domain`, `ip`, `exists`). Matcher with `exists` and `ip` methods must be used without `value` and `ignore_case` fields.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.11.2/docs/resources/loadbalancer_frontend_rule#method LoadbalancerFrontendRule#method}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.11.3/docs/resources/loadbalancer_frontend_rule#method LoadbalancerFrontendRule#method}
   */
   readonly method: string;
   /**
   * String value.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.11.2/docs/resources/loadbalancer_frontend_rule#value LoadbalancerFrontendRule#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.11.3/docs/resources/loadbalancer_frontend_rule#value LoadbalancerFrontendRule#value}
   */
   readonly value?: string;
 }
@@ -3682,7 +3709,7 @@ export class LoadbalancerFrontendRuleMatchersUrlQueryOutputReference extends cdk
     }
   }
 
-  // ignore_case - computed: false, optional: true, required: false
+  // ignore_case - computed: true, optional: true, required: false
   private _ignoreCase?: boolean | cdktf.IResolvable; 
   public get ignoreCase() {
     return this.getBooleanAttribute('ignore_case');
@@ -3698,7 +3725,7 @@ export class LoadbalancerFrontendRuleMatchersUrlQueryOutputReference extends cdk
     return this._ignoreCase;
   }
 
-  // inverse - computed: false, optional: true, required: false
+  // inverse - computed: true, optional: true, required: false
   private _inverse?: boolean | cdktf.IResolvable; 
   public get inverse() {
     return this.getBooleanAttribute('inverse');
@@ -3767,90 +3794,90 @@ export interface LoadbalancerFrontendRuleMatchers {
   /**
   * body_size block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.11.2/docs/resources/loadbalancer_frontend_rule#body_size LoadbalancerFrontendRule#body_size}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.11.3/docs/resources/loadbalancer_frontend_rule#body_size LoadbalancerFrontendRule#body_size}
   */
   readonly bodySize?: LoadbalancerFrontendRuleMatchersBodySize[] | cdktf.IResolvable;
   /**
   * body_size_range block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.11.2/docs/resources/loadbalancer_frontend_rule#body_size_range LoadbalancerFrontendRule#body_size_range}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.11.3/docs/resources/loadbalancer_frontend_rule#body_size_range LoadbalancerFrontendRule#body_size_range}
   */
   readonly bodySizeRange?: LoadbalancerFrontendRuleMatchersBodySizeRange[] | cdktf.IResolvable;
   /**
   * cookie block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.11.2/docs/resources/loadbalancer_frontend_rule#cookie LoadbalancerFrontendRule#cookie}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.11.3/docs/resources/loadbalancer_frontend_rule#cookie LoadbalancerFrontendRule#cookie}
   */
   readonly cookie?: LoadbalancerFrontendRuleMatchersCookie[] | cdktf.IResolvable;
   /**
   * header block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.11.2/docs/resources/loadbalancer_frontend_rule#header LoadbalancerFrontendRule#header}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.11.3/docs/resources/loadbalancer_frontend_rule#header LoadbalancerFrontendRule#header}
   */
   readonly header?: LoadbalancerFrontendRuleMatchersHeader[] | cdktf.IResolvable;
   /**
   * host block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.11.2/docs/resources/loadbalancer_frontend_rule#host LoadbalancerFrontendRule#host}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.11.3/docs/resources/loadbalancer_frontend_rule#host LoadbalancerFrontendRule#host}
   */
   readonly host?: LoadbalancerFrontendRuleMatchersHost[] | cdktf.IResolvable;
   /**
   * http_method block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.11.2/docs/resources/loadbalancer_frontend_rule#http_method LoadbalancerFrontendRule#http_method}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.11.3/docs/resources/loadbalancer_frontend_rule#http_method LoadbalancerFrontendRule#http_method}
   */
   readonly httpMethod?: LoadbalancerFrontendRuleMatchersHttpMethod[] | cdktf.IResolvable;
   /**
   * num_members_up block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.11.2/docs/resources/loadbalancer_frontend_rule#num_members_up LoadbalancerFrontendRule#num_members_up}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.11.3/docs/resources/loadbalancer_frontend_rule#num_members_up LoadbalancerFrontendRule#num_members_up}
   */
   readonly numMembersUp?: LoadbalancerFrontendRuleMatchersNumMembersUp[] | cdktf.IResolvable;
   /**
   * path block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.11.2/docs/resources/loadbalancer_frontend_rule#path LoadbalancerFrontendRule#path}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.11.3/docs/resources/loadbalancer_frontend_rule#path LoadbalancerFrontendRule#path}
   */
   readonly path?: LoadbalancerFrontendRuleMatchersPath[] | cdktf.IResolvable;
   /**
   * src_ip block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.11.2/docs/resources/loadbalancer_frontend_rule#src_ip LoadbalancerFrontendRule#src_ip}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.11.3/docs/resources/loadbalancer_frontend_rule#src_ip LoadbalancerFrontendRule#src_ip}
   */
   readonly srcIp?: LoadbalancerFrontendRuleMatchersSrcIp[] | cdktf.IResolvable;
   /**
   * src_port block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.11.2/docs/resources/loadbalancer_frontend_rule#src_port LoadbalancerFrontendRule#src_port}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.11.3/docs/resources/loadbalancer_frontend_rule#src_port LoadbalancerFrontendRule#src_port}
   */
   readonly srcPort?: LoadbalancerFrontendRuleMatchersSrcPort[] | cdktf.IResolvable;
   /**
   * src_port_range block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.11.2/docs/resources/loadbalancer_frontend_rule#src_port_range LoadbalancerFrontendRule#src_port_range}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.11.3/docs/resources/loadbalancer_frontend_rule#src_port_range LoadbalancerFrontendRule#src_port_range}
   */
   readonly srcPortRange?: LoadbalancerFrontendRuleMatchersSrcPortRange[] | cdktf.IResolvable;
   /**
   * url block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.11.2/docs/resources/loadbalancer_frontend_rule#url LoadbalancerFrontendRule#url}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.11.3/docs/resources/loadbalancer_frontend_rule#url LoadbalancerFrontendRule#url}
   */
   readonly url?: LoadbalancerFrontendRuleMatchersUrl[] | cdktf.IResolvable;
   /**
   * url_param block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.11.2/docs/resources/loadbalancer_frontend_rule#url_param LoadbalancerFrontendRule#url_param}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.11.3/docs/resources/loadbalancer_frontend_rule#url_param LoadbalancerFrontendRule#url_param}
   */
   readonly urlParam?: LoadbalancerFrontendRuleMatchersUrlParam[] | cdktf.IResolvable;
   /**
   * url_query block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.11.2/docs/resources/loadbalancer_frontend_rule#url_query LoadbalancerFrontendRule#url_query}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.11.3/docs/resources/loadbalancer_frontend_rule#url_query LoadbalancerFrontendRule#url_query}
   */
   readonly urlQuery?: LoadbalancerFrontendRuleMatchersUrlQuery[] | cdktf.IResolvable;
 }
 
-export function loadbalancerFrontendRuleMatchersToTerraform(struct?: LoadbalancerFrontendRuleMatchersOutputReference | LoadbalancerFrontendRuleMatchers): any {
+export function loadbalancerFrontendRuleMatchersToTerraform(struct?: LoadbalancerFrontendRuleMatchers | cdktf.IResolvable): any {
   if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
@@ -3874,7 +3901,7 @@ export function loadbalancerFrontendRuleMatchersToTerraform(struct?: Loadbalance
 }
 
 
-export function loadbalancerFrontendRuleMatchersToHclTerraform(struct?: LoadbalancerFrontendRuleMatchersOutputReference | LoadbalancerFrontendRuleMatchers): any {
+export function loadbalancerFrontendRuleMatchersToHclTerraform(struct?: LoadbalancerFrontendRuleMatchers | cdktf.IResolvable): any {
   if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
@@ -3972,16 +3999,22 @@ export function loadbalancerFrontendRuleMatchersToHclTerraform(struct?: Loadbala
 
 export class LoadbalancerFrontendRuleMatchersOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
-    super(terraformResource, terraformAttribute, false, 0);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): LoadbalancerFrontendRuleMatchers | undefined {
+  public get internalValue(): LoadbalancerFrontendRuleMatchers | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._bodySize?.internalValue !== undefined) {
@@ -4043,9 +4076,10 @@ export class LoadbalancerFrontendRuleMatchersOutputReference extends cdktf.Compl
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: LoadbalancerFrontendRuleMatchers | undefined) {
+  public set internalValue(value: LoadbalancerFrontendRuleMatchers | cdktf.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
+      this.resolvableValue = undefined;
       this._bodySize.internalValue = undefined;
       this._bodySizeRange.internalValue = undefined;
       this._cookie.internalValue = undefined;
@@ -4061,8 +4095,13 @@ export class LoadbalancerFrontendRuleMatchersOutputReference extends cdktf.Compl
       this._urlParam.internalValue = undefined;
       this._urlQuery.internalValue = undefined;
     }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
     else {
       this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
       this._bodySize.internalValue = value.bodySize;
       this._bodySizeRange.internalValue = value.bodySizeRange;
       this._cookie.internalValue = value.cookie;
@@ -4305,8 +4344,28 @@ export class LoadbalancerFrontendRuleMatchersOutputReference extends cdktf.Compl
   }
 }
 
+export class LoadbalancerFrontendRuleMatchersList extends cdktf.ComplexList {
+  public internalValue? : LoadbalancerFrontendRuleMatchers[] | cdktf.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): LoadbalancerFrontendRuleMatchersOutputReference {
+    return new LoadbalancerFrontendRuleMatchersOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
+
 /**
-* Represents a {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.11.2/docs/resources/loadbalancer_frontend_rule upcloud_loadbalancer_frontend_rule}
+* Represents a {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.11.3/docs/resources/loadbalancer_frontend_rule upcloud_loadbalancer_frontend_rule}
 */
 export class LoadbalancerFrontendRule extends cdktf.TerraformResource {
 
@@ -4322,7 +4381,7 @@ export class LoadbalancerFrontendRule extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a LoadbalancerFrontendRule resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the LoadbalancerFrontendRule to import
-  * @param importFromId The id of the existing LoadbalancerFrontendRule that should be imported. Refer to the {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.11.2/docs/resources/loadbalancer_frontend_rule#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing LoadbalancerFrontendRule that should be imported. Refer to the {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.11.3/docs/resources/loadbalancer_frontend_rule#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the LoadbalancerFrontendRule to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -4334,7 +4393,7 @@ export class LoadbalancerFrontendRule extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.11.2/docs/resources/loadbalancer_frontend_rule upcloud_loadbalancer_frontend_rule} Resource
+  * Create a new {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.11.3/docs/resources/loadbalancer_frontend_rule upcloud_loadbalancer_frontend_rule} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -4345,7 +4404,7 @@ export class LoadbalancerFrontendRule extends cdktf.TerraformResource {
       terraformResourceType: 'upcloud_loadbalancer_frontend_rule',
       terraformGeneratorMetadata: {
         providerName: 'upcloud',
-        providerVersion: '5.11.2',
+        providerVersion: '5.11.3',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,
@@ -4357,7 +4416,6 @@ export class LoadbalancerFrontendRule extends cdktf.TerraformResource {
       forEach: config.forEach
     });
     this._frontend = config.frontend;
-    this._id = config.id;
     this._name = config.name;
     this._priority = config.priority;
     this._actions.internalValue = config.actions;
@@ -4381,20 +4439,9 @@ export class LoadbalancerFrontendRule extends cdktf.TerraformResource {
     return this._frontend;
   }
 
-  // id - computed: true, optional: true, required: false
-  private _id?: string; 
+  // id - computed: true, optional: false, required: false
   public get id() {
     return this.getStringAttribute('id');
-  }
-  public set id(value: string) {
-    this._id = value;
-  }
-  public resetId() {
-    this._id = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get idInput() {
-    return this._id;
   }
 
   // name - computed: false, optional: false, required: true
@@ -4424,11 +4471,11 @@ export class LoadbalancerFrontendRule extends cdktf.TerraformResource {
   }
 
   // actions - computed: false, optional: true, required: false
-  private _actions = new LoadbalancerFrontendRuleActionsOutputReference(this, "actions");
+  private _actions = new LoadbalancerFrontendRuleActionsList(this, "actions", false);
   public get actions() {
     return this._actions;
   }
-  public putActions(value: LoadbalancerFrontendRuleActions) {
+  public putActions(value: LoadbalancerFrontendRuleActions[] | cdktf.IResolvable) {
     this._actions.internalValue = value;
   }
   public resetActions() {
@@ -4440,11 +4487,11 @@ export class LoadbalancerFrontendRule extends cdktf.TerraformResource {
   }
 
   // matchers - computed: false, optional: true, required: false
-  private _matchers = new LoadbalancerFrontendRuleMatchersOutputReference(this, "matchers");
+  private _matchers = new LoadbalancerFrontendRuleMatchersList(this, "matchers", false);
   public get matchers() {
     return this._matchers;
   }
-  public putMatchers(value: LoadbalancerFrontendRuleMatchers) {
+  public putMatchers(value: LoadbalancerFrontendRuleMatchers[] | cdktf.IResolvable) {
     this._matchers.internalValue = value;
   }
   public resetMatchers() {
@@ -4462,11 +4509,10 @@ export class LoadbalancerFrontendRule extends cdktf.TerraformResource {
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
       frontend: cdktf.stringToTerraform(this._frontend),
-      id: cdktf.stringToTerraform(this._id),
       name: cdktf.stringToTerraform(this._name),
       priority: cdktf.numberToTerraform(this._priority),
-      actions: loadbalancerFrontendRuleActionsToTerraform(this._actions.internalValue),
-      matchers: loadbalancerFrontendRuleMatchersToTerraform(this._matchers.internalValue),
+      actions: cdktf.listMapper(loadbalancerFrontendRuleActionsToTerraform, true)(this._actions.internalValue),
+      matchers: cdktf.listMapper(loadbalancerFrontendRuleMatchersToTerraform, true)(this._matchers.internalValue),
     };
   }
 
@@ -4474,12 +4520,6 @@ export class LoadbalancerFrontendRule extends cdktf.TerraformResource {
     const attrs = {
       frontend: {
         value: cdktf.stringToHclTerraform(this._frontend),
-        isBlock: false,
-        type: "simple",
-        storageClassType: "string",
-      },
-      id: {
-        value: cdktf.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
@@ -4497,13 +4537,13 @@ export class LoadbalancerFrontendRule extends cdktf.TerraformResource {
         storageClassType: "number",
       },
       actions: {
-        value: loadbalancerFrontendRuleActionsToHclTerraform(this._actions.internalValue),
+        value: cdktf.listMapperHcl(loadbalancerFrontendRuleActionsToHclTerraform, true)(this._actions.internalValue),
         isBlock: true,
         type: "list",
         storageClassType: "LoadbalancerFrontendRuleActionsList",
       },
       matchers: {
-        value: loadbalancerFrontendRuleMatchersToHclTerraform(this._matchers.internalValue),
+        value: cdktf.listMapperHcl(loadbalancerFrontendRuleMatchersToHclTerraform, true)(this._matchers.internalValue),
         isBlock: true,
         type: "list",
         storageClassType: "LoadbalancerFrontendRuleMatchersList",

@@ -4,7 +4,7 @@
 
 ### LoadbalancerResolver <a name="LoadbalancerResolver" id="@cdktf/provider-upcloud.loadbalancerResolver.LoadbalancerResolver"></a>
 
-Represents a {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.11.2/docs/resources/loadbalancer_resolver upcloud_loadbalancer_resolver}.
+Represents a {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.11.3/docs/resources/loadbalancer_resolver upcloud_loadbalancer_resolver}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-upcloud.loadbalancerResolver.LoadbalancerResolver.Initializer"></a>
 
@@ -73,7 +73,6 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-upcloud.loadbalancerResolver.LoadbalancerResolver.moveFromId">MoveFromId</a></code> | Move the resource corresponding to "id" to this resource. |
 | <code><a href="#@cdktf/provider-upcloud.loadbalancerResolver.LoadbalancerResolver.moveTo">MoveTo</a></code> | Moves this resource to the target resource given by moveTarget. |
 | <code><a href="#@cdktf/provider-upcloud.loadbalancerResolver.LoadbalancerResolver.moveToId">MoveToId</a></code> | Moves this resource to the resource corresponding to "id". |
-| <code><a href="#@cdktf/provider-upcloud.loadbalancerResolver.LoadbalancerResolver.resetId">ResetId</a></code> | *No description.* |
 
 ---
 
@@ -365,12 +364,6 @@ Full id of resource to move to, e.g. "aws_s3_bucket.example".
 
 ---
 
-##### `ResetId` <a name="ResetId" id="@cdktf/provider-upcloud.loadbalancerResolver.LoadbalancerResolver.resetId"></a>
-
-```csharp
-private void ResetId()
-```
-
 #### Static Functions <a name="Static Functions" id="Static Functions"></a>
 
 | **Name** | **Description** |
@@ -474,7 +467,7 @@ The construct id used in the generated config for the LoadbalancerResolver to im
 
 The id of the existing LoadbalancerResolver that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.11.2/docs/resources/loadbalancer_resolver#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.11.3/docs/resources/loadbalancer_resolver#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -504,9 +497,9 @@ Refer to the {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5
 | <code><a href="#@cdktf/provider-upcloud.loadbalancerResolver.LoadbalancerResolver.property.lifecycle">Lifecycle</a></code> | <code>HashiCorp.Cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.loadbalancerResolver.LoadbalancerResolver.property.provider">Provider</a></code> | <code>HashiCorp.Cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.loadbalancerResolver.LoadbalancerResolver.property.provisioners">Provisioners</a></code> | <code>object[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-upcloud.loadbalancerResolver.LoadbalancerResolver.property.id">Id</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.loadbalancerResolver.LoadbalancerResolver.property.cacheInvalidInput">CacheInvalidInput</a></code> | <code>double</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.loadbalancerResolver.LoadbalancerResolver.property.cacheValidInput">CacheValidInput</a></code> | <code>double</code> | *No description.* |
-| <code><a href="#@cdktf/provider-upcloud.loadbalancerResolver.LoadbalancerResolver.property.idInput">IdInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.loadbalancerResolver.LoadbalancerResolver.property.loadbalancerInput">LoadbalancerInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.loadbalancerResolver.LoadbalancerResolver.property.nameInput">NameInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.loadbalancerResolver.LoadbalancerResolver.property.nameserversInput">NameserversInput</a></code> | <code>string[]</code> | *No description.* |
@@ -515,7 +508,6 @@ Refer to the {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5
 | <code><a href="#@cdktf/provider-upcloud.loadbalancerResolver.LoadbalancerResolver.property.timeoutRetryInput">TimeoutRetryInput</a></code> | <code>double</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.loadbalancerResolver.LoadbalancerResolver.property.cacheInvalid">CacheInvalid</a></code> | <code>double</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.loadbalancerResolver.LoadbalancerResolver.property.cacheValid">CacheValid</a></code> | <code>double</code> | *No description.* |
-| <code><a href="#@cdktf/provider-upcloud.loadbalancerResolver.LoadbalancerResolver.property.id">Id</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.loadbalancerResolver.LoadbalancerResolver.property.loadbalancer">Loadbalancer</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.loadbalancerResolver.LoadbalancerResolver.property.name">Name</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.loadbalancerResolver.LoadbalancerResolver.property.nameservers">Nameservers</a></code> | <code>string[]</code> | *No description.* |
@@ -667,6 +659,16 @@ public object[] Provisioners { get; }
 
 ---
 
+##### `Id`<sup>Required</sup> <a name="Id" id="@cdktf/provider-upcloud.loadbalancerResolver.LoadbalancerResolver.property.id"></a>
+
+```csharp
+public string Id { get; }
+```
+
+- *Type:* string
+
+---
+
 ##### `CacheInvalidInput`<sup>Optional</sup> <a name="CacheInvalidInput" id="@cdktf/provider-upcloud.loadbalancerResolver.LoadbalancerResolver.property.cacheInvalidInput"></a>
 
 ```csharp
@@ -684,16 +686,6 @@ public double CacheValidInput { get; }
 ```
 
 - *Type:* double
-
----
-
-##### `IdInput`<sup>Optional</sup> <a name="IdInput" id="@cdktf/provider-upcloud.loadbalancerResolver.LoadbalancerResolver.property.idInput"></a>
-
-```csharp
-public string IdInput { get; }
-```
-
-- *Type:* string
 
 ---
 
@@ -774,16 +766,6 @@ public double CacheValid { get; }
 ```
 
 - *Type:* double
-
----
-
-##### `Id`<sup>Required</sup> <a name="Id" id="@cdktf/provider-upcloud.loadbalancerResolver.LoadbalancerResolver.property.id"></a>
-
-```csharp
-public string Id { get; }
-```
-
-- *Type:* string
 
 ---
 
@@ -889,8 +871,7 @@ new LoadbalancerResolverConfig {
     string[] Nameservers,
     double Retries,
     double Timeout,
-    double TimeoutRetry,
-    string Id = null
+    double TimeoutRetry
 };
 ```
 
@@ -908,12 +889,11 @@ new LoadbalancerResolverConfig {
 | <code><a href="#@cdktf/provider-upcloud.loadbalancerResolver.LoadbalancerResolverConfig.property.cacheInvalid">CacheInvalid</a></code> | <code>double</code> | Time in seconds to cache invalid results. |
 | <code><a href="#@cdktf/provider-upcloud.loadbalancerResolver.LoadbalancerResolverConfig.property.cacheValid">CacheValid</a></code> | <code>double</code> | Time in seconds to cache valid results. |
 | <code><a href="#@cdktf/provider-upcloud.loadbalancerResolver.LoadbalancerResolverConfig.property.loadbalancer">Loadbalancer</a></code> | <code>string</code> | ID of the load balancer to which the resolver is connected. |
-| <code><a href="#@cdktf/provider-upcloud.loadbalancerResolver.LoadbalancerResolverConfig.property.name">Name</a></code> | <code>string</code> | The name of the resolver must be unique within the service. |
+| <code><a href="#@cdktf/provider-upcloud.loadbalancerResolver.LoadbalancerResolverConfig.property.name">Name</a></code> | <code>string</code> | The name of the resolver. Must be unique within the service. |
 | <code><a href="#@cdktf/provider-upcloud.loadbalancerResolver.LoadbalancerResolverConfig.property.nameservers">Nameservers</a></code> | <code>string[]</code> | List of nameserver IP addresses. |
 | <code><a href="#@cdktf/provider-upcloud.loadbalancerResolver.LoadbalancerResolverConfig.property.retries">Retries</a></code> | <code>double</code> | Number of retries on failure. |
 | <code><a href="#@cdktf/provider-upcloud.loadbalancerResolver.LoadbalancerResolverConfig.property.timeout">Timeout</a></code> | <code>double</code> | Timeout for the query in seconds. |
 | <code><a href="#@cdktf/provider-upcloud.loadbalancerResolver.LoadbalancerResolverConfig.property.timeoutRetry">TimeoutRetry</a></code> | <code>double</code> | Timeout for the query retries in seconds. |
-| <code><a href="#@cdktf/provider-upcloud.loadbalancerResolver.LoadbalancerResolverConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.11.2/docs/resources/loadbalancer_resolver#id LoadbalancerResolver#id}. |
 
 ---
 
@@ -997,7 +977,7 @@ public double CacheInvalid { get; set; }
 
 Time in seconds to cache invalid results.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.11.2/docs/resources/loadbalancer_resolver#cache_invalid LoadbalancerResolver#cache_invalid}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.11.3/docs/resources/loadbalancer_resolver#cache_invalid LoadbalancerResolver#cache_invalid}
 
 ---
 
@@ -1011,7 +991,7 @@ public double CacheValid { get; set; }
 
 Time in seconds to cache valid results.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.11.2/docs/resources/loadbalancer_resolver#cache_valid LoadbalancerResolver#cache_valid}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.11.3/docs/resources/loadbalancer_resolver#cache_valid LoadbalancerResolver#cache_valid}
 
 ---
 
@@ -1025,7 +1005,7 @@ public string Loadbalancer { get; set; }
 
 ID of the load balancer to which the resolver is connected.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.11.2/docs/resources/loadbalancer_resolver#loadbalancer LoadbalancerResolver#loadbalancer}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.11.3/docs/resources/loadbalancer_resolver#loadbalancer LoadbalancerResolver#loadbalancer}
 
 ---
 
@@ -1037,9 +1017,9 @@ public string Name { get; set; }
 
 - *Type:* string
 
-The name of the resolver must be unique within the service.
+The name of the resolver. Must be unique within the service.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.11.2/docs/resources/loadbalancer_resolver#name LoadbalancerResolver#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.11.3/docs/resources/loadbalancer_resolver#name LoadbalancerResolver#name}
 
 ---
 
@@ -1053,10 +1033,9 @@ public string[] Nameservers { get; set; }
 
 List of nameserver IP addresses.
 
-Nameserver can reside in public internet or in customer private network.
-Port is optional, if missing then default 53 will be used.
+Nameserver can reside in public internet or in customer private network. Port is optional, if missing then default 53 will be used.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.11.2/docs/resources/loadbalancer_resolver#nameservers LoadbalancerResolver#nameservers}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.11.3/docs/resources/loadbalancer_resolver#nameservers LoadbalancerResolver#nameservers}
 
 ---
 
@@ -1070,7 +1049,7 @@ public double Retries { get; set; }
 
 Number of retries on failure.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.11.2/docs/resources/loadbalancer_resolver#retries LoadbalancerResolver#retries}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.11.3/docs/resources/loadbalancer_resolver#retries LoadbalancerResolver#retries}
 
 ---
 
@@ -1084,7 +1063,7 @@ public double Timeout { get; set; }
 
 Timeout for the query in seconds.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.11.2/docs/resources/loadbalancer_resolver#timeout LoadbalancerResolver#timeout}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.11.3/docs/resources/loadbalancer_resolver#timeout LoadbalancerResolver#timeout}
 
 ---
 
@@ -1098,22 +1077,7 @@ public double TimeoutRetry { get; set; }
 
 Timeout for the query retries in seconds.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.11.2/docs/resources/loadbalancer_resolver#timeout_retry LoadbalancerResolver#timeout_retry}
-
----
-
-##### `Id`<sup>Optional</sup> <a name="Id" id="@cdktf/provider-upcloud.loadbalancerResolver.LoadbalancerResolverConfig.property.id"></a>
-
-```csharp
-public string Id { get; set; }
-```
-
-- *Type:* string
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.11.2/docs/resources/loadbalancer_resolver#id LoadbalancerResolver#id}.
-
-Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
-If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.11.3/docs/resources/loadbalancer_resolver#timeout_retry LoadbalancerResolver#timeout_retry}
 
 ---
 
