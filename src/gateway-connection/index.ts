@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/upcloudltd/upcloud/5.11.3/docs/resources/gateway_connection
+// https://registry.terraform.io/providers/upcloudltd/upcloud/5.12.0/docs/resources/gateway_connection
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,11 +15,11 @@ export interface GatewayConnectionConfig extends cdktf.TerraformMetaArguments {
   /**
   * The ID of the upcloud_gateway resource to which the connection belongs.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.11.3/docs/resources/gateway_connection#gateway GatewayConnection#gateway}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.12.0/docs/resources/gateway_connection#gateway GatewayConnection#gateway}
   */
   readonly gateway: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.11.3/docs/resources/gateway_connection#id GatewayConnection#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.12.0/docs/resources/gateway_connection#id GatewayConnection#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -28,25 +28,25 @@ export interface GatewayConnectionConfig extends cdktf.TerraformMetaArguments {
   /**
   * The name of the connection, should be unique within the gateway.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.11.3/docs/resources/gateway_connection#name GatewayConnection#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.12.0/docs/resources/gateway_connection#name GatewayConnection#name}
   */
   readonly name: string;
   /**
   * The type of the connection; currently the only supported type is 'ipsec'.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.11.3/docs/resources/gateway_connection#type GatewayConnection#type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.12.0/docs/resources/gateway_connection#type GatewayConnection#type}
   */
   readonly type?: string;
   /**
   * local_route block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.11.3/docs/resources/gateway_connection#local_route GatewayConnection#local_route}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.12.0/docs/resources/gateway_connection#local_route GatewayConnection#local_route}
   */
   readonly localRoute?: GatewayConnectionLocalRoute[] | cdktf.IResolvable;
   /**
   * remote_route block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.11.3/docs/resources/gateway_connection#remote_route GatewayConnection#remote_route}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.12.0/docs/resources/gateway_connection#remote_route GatewayConnection#remote_route}
   */
   readonly remoteRoute?: GatewayConnectionRemoteRoute[] | cdktf.IResolvable;
 }
@@ -54,19 +54,19 @@ export interface GatewayConnectionLocalRoute {
   /**
   * Name of the route
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.11.3/docs/resources/gateway_connection#name GatewayConnection#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.12.0/docs/resources/gateway_connection#name GatewayConnection#name}
   */
   readonly name: string;
   /**
   * Destination prefix of the route; needs to be a valid IPv4 prefix
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.11.3/docs/resources/gateway_connection#static_network GatewayConnection#static_network}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.12.0/docs/resources/gateway_connection#static_network GatewayConnection#static_network}
   */
   readonly staticNetwork: string;
   /**
   * Type of route; currently the only supported type is 'static'
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.11.3/docs/resources/gateway_connection#type GatewayConnection#type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.12.0/docs/resources/gateway_connection#type GatewayConnection#type}
   */
   readonly type?: string;
 }
@@ -236,19 +236,19 @@ export interface GatewayConnectionRemoteRoute {
   /**
   * Name of the route
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.11.3/docs/resources/gateway_connection#name GatewayConnection#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.12.0/docs/resources/gateway_connection#name GatewayConnection#name}
   */
   readonly name: string;
   /**
   * Destination prefix of the route; needs to be a valid IPv4 prefix
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.11.3/docs/resources/gateway_connection#static_network GatewayConnection#static_network}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.12.0/docs/resources/gateway_connection#static_network GatewayConnection#static_network}
   */
   readonly staticNetwork: string;
   /**
   * Type of route; currently the only supported type is 'static'
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.11.3/docs/resources/gateway_connection#type GatewayConnection#type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.12.0/docs/resources/gateway_connection#type GatewayConnection#type}
   */
   readonly type?: string;
 }
@@ -416,7 +416,7 @@ export class GatewayConnectionRemoteRouteList extends cdktf.ComplexList {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.11.3/docs/resources/gateway_connection upcloud_gateway_connection}
+* Represents a {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.12.0/docs/resources/gateway_connection upcloud_gateway_connection}
 */
 export class GatewayConnection extends cdktf.TerraformResource {
 
@@ -432,7 +432,7 @@ export class GatewayConnection extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a GatewayConnection resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the GatewayConnection to import
-  * @param importFromId The id of the existing GatewayConnection that should be imported. Refer to the {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.11.3/docs/resources/gateway_connection#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing GatewayConnection that should be imported. Refer to the {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.12.0/docs/resources/gateway_connection#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the GatewayConnection to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -444,7 +444,7 @@ export class GatewayConnection extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.11.3/docs/resources/gateway_connection upcloud_gateway_connection} Resource
+  * Create a new {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.12.0/docs/resources/gateway_connection upcloud_gateway_connection} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -455,7 +455,7 @@ export class GatewayConnection extends cdktf.TerraformResource {
       terraformResourceType: 'upcloud_gateway_connection',
       terraformGeneratorMetadata: {
         providerName: 'upcloud',
-        providerVersion: '5.11.3',
+        providerVersion: '5.12.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,
