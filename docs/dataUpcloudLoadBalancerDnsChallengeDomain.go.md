@@ -4,12 +4,12 @@
 
 ### DataUpcloudLoadBalancerDnsChallengeDomain <a name="DataUpcloudLoadBalancerDnsChallengeDomain" id="@cdktf/provider-upcloud.dataUpcloudLoadBalancerDnsChallengeDomain.DataUpcloudLoadBalancerDnsChallengeDomain"></a>
 
-Represents a {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.11.3/docs/data-sources/load_balancer_dns_challenge_domain upcloud_load_balancer_dns_challenge_domain}.
+Represents a {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.12.0/docs/data-sources/load_balancer_dns_challenge_domain upcloud_load_balancer_dns_challenge_domain}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-upcloud.dataUpcloudLoadBalancerDnsChallengeDomain.DataUpcloudLoadBalancerDnsChallengeDomain.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v14/dataupcloudloadbalancerdnschallengedomain"
+import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/dataupcloudloadbalancerdnschallengedomain"
 
 dataupcloudloadbalancerdnschallengedomain.NewDataUpcloudLoadBalancerDnsChallengeDomain(scope Construct, id *string, config DataUpcloudLoadBalancerDnsChallengeDomainConfig) DataUpcloudLoadBalancerDnsChallengeDomain
 ```
@@ -276,7 +276,7 @@ func InterpolationForAttribute(terraformAttribute *string) IResolvable
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-upcloud.dataUpcloudLoadBalancerDnsChallengeDomain.DataUpcloudLoadBalancerDnsChallengeDomain.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v14/dataupcloudloadbalancerdnschallengedomain"
+import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/dataupcloudloadbalancerdnschallengedomain"
 
 dataupcloudloadbalancerdnschallengedomain.DataUpcloudLoadBalancerDnsChallengeDomain_IsConstruct(x interface{}) *bool
 ```
@@ -308,7 +308,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-upcloud.dataUpcloudLoadBalancerDnsChallengeDomain.DataUpcloudLoadBalancerDnsChallengeDomain.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v14/dataupcloudloadbalancerdnschallengedomain"
+import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/dataupcloudloadbalancerdnschallengedomain"
 
 dataupcloudloadbalancerdnschallengedomain.DataUpcloudLoadBalancerDnsChallengeDomain_IsTerraformElement(x interface{}) *bool
 ```
@@ -322,7 +322,7 @@ dataupcloudloadbalancerdnschallengedomain.DataUpcloudLoadBalancerDnsChallengeDom
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-upcloud.dataUpcloudLoadBalancerDnsChallengeDomain.DataUpcloudLoadBalancerDnsChallengeDomain.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v14/dataupcloudloadbalancerdnschallengedomain"
+import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/dataupcloudloadbalancerdnschallengedomain"
 
 dataupcloudloadbalancerdnschallengedomain.DataUpcloudLoadBalancerDnsChallengeDomain_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -336,7 +336,7 @@ dataupcloudloadbalancerdnschallengedomain.DataUpcloudLoadBalancerDnsChallengeDom
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-upcloud.dataUpcloudLoadBalancerDnsChallengeDomain.DataUpcloudLoadBalancerDnsChallengeDomain.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v14/dataupcloudloadbalancerdnschallengedomain"
+import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/dataupcloudloadbalancerdnschallengedomain"
 
 dataupcloudloadbalancerdnschallengedomain.DataUpcloudLoadBalancerDnsChallengeDomain_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -365,7 +365,7 @@ The construct id used in the generated config for the DataUpcloudLoadBalancerDns
 
 The id of the existing DataUpcloudLoadBalancerDnsChallengeDomain that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.11.3/docs/data-sources/load_balancer_dns_challenge_domain#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.12.0/docs/data-sources/load_balancer_dns_challenge_domain#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -565,7 +565,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-upcloud.dataUpcloudLoadBalancerDnsChallengeDomain.DataUpcloudLoadBalancerDnsChallengeDomainConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v14/dataupcloudloadbalancerdnschallengedomain"
+import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/dataupcloudloadbalancerdnschallengedomain"
 
 &dataupcloudloadbalancerdnschallengedomain.DataUpcloudLoadBalancerDnsChallengeDomainConfig {
 	Connection: interface{},
