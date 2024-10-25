@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/upcloudltd/upcloud/5.13.0/docs/resources/storage_template
+// https://registry.terraform.io/providers/upcloudltd/upcloud/5.13.1/docs/resources/storage_template
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,25 +10,25 @@ export interface StorageTemplateConfig extends cdktf.TerraformMetaArguments {
   /**
   * User defined key-value pairs to classify the storage.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.13.0/docs/resources/storage_template#labels StorageTemplate#labels}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.13.1/docs/resources/storage_template#labels StorageTemplate#labels}
   */
   readonly labels?: { [key: string]: string };
   /**
   * The source storage that is used as a base for this storage template.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.13.0/docs/resources/storage_template#source_storage StorageTemplate#source_storage}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.13.1/docs/resources/storage_template#source_storage StorageTemplate#source_storage}
   */
   readonly sourceStorage: string;
   /**
   * The title of the storage.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.13.0/docs/resources/storage_template#title StorageTemplate#title}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.13.1/docs/resources/storage_template#title StorageTemplate#title}
   */
   readonly title: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.13.0/docs/resources/storage_template upcloud_storage_template}
+* Represents a {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.13.1/docs/resources/storage_template upcloud_storage_template}
 */
 export class StorageTemplate extends cdktf.TerraformResource {
 
@@ -49,7 +44,7 @@ export class StorageTemplate extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a StorageTemplate resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the StorageTemplate to import
-  * @param importFromId The id of the existing StorageTemplate that should be imported. Refer to the {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.13.0/docs/resources/storage_template#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing StorageTemplate that should be imported. Refer to the {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.13.1/docs/resources/storage_template#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the StorageTemplate to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -61,7 +56,7 @@ export class StorageTemplate extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.13.0/docs/resources/storage_template upcloud_storage_template} Resource
+  * Create a new {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.13.1/docs/resources/storage_template upcloud_storage_template} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -72,7 +67,7 @@ export class StorageTemplate extends cdktf.TerraformResource {
       terraformResourceType: 'upcloud_storage_template',
       terraformGeneratorMetadata: {
         providerName: 'upcloud',
-        providerVersion: '5.13.0',
+        providerVersion: '5.13.1',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,
