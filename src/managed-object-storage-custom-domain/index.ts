@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/upcloudltd/upcloud/5.13.1/docs/resources/managed_object_storage_custom_domain
+// https://registry.terraform.io/providers/upcloudltd/upcloud/5.13.2/docs/resources/managed_object_storage_custom_domain
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,25 +10,25 @@ export interface ManagedObjectStorageCustomDomainConfig extends cdktf.TerraformM
   /**
   * Must be a subdomain and consist of 3 to 5 parts such as objects.example.com. Cannot be root-level domain e.g. example.com.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.13.1/docs/resources/managed_object_storage_custom_domain#domain_name ManagedObjectStorageCustomDomain#domain_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.13.2/docs/resources/managed_object_storage_custom_domain#domain_name ManagedObjectStorageCustomDomain#domain_name}
   */
   readonly domainName: string;
   /**
   * Managed Object Storage service UUID.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.13.1/docs/resources/managed_object_storage_custom_domain#service_uuid ManagedObjectStorageCustomDomain#service_uuid}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.13.2/docs/resources/managed_object_storage_custom_domain#service_uuid ManagedObjectStorageCustomDomain#service_uuid}
   */
   readonly serviceUuid: string;
   /**
   * At the moment only `public` is accepted.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.13.1/docs/resources/managed_object_storage_custom_domain#type ManagedObjectStorageCustomDomain#type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.13.2/docs/resources/managed_object_storage_custom_domain#type ManagedObjectStorageCustomDomain#type}
   */
   readonly type?: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.13.1/docs/resources/managed_object_storage_custom_domain upcloud_managed_object_storage_custom_domain}
+* Represents a {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.13.2/docs/resources/managed_object_storage_custom_domain upcloud_managed_object_storage_custom_domain}
 */
 export class ManagedObjectStorageCustomDomain extends cdktf.TerraformResource {
 
@@ -49,7 +44,7 @@ export class ManagedObjectStorageCustomDomain extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a ManagedObjectStorageCustomDomain resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the ManagedObjectStorageCustomDomain to import
-  * @param importFromId The id of the existing ManagedObjectStorageCustomDomain that should be imported. Refer to the {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.13.1/docs/resources/managed_object_storage_custom_domain#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing ManagedObjectStorageCustomDomain that should be imported. Refer to the {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.13.2/docs/resources/managed_object_storage_custom_domain#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the ManagedObjectStorageCustomDomain to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -61,7 +56,7 @@ export class ManagedObjectStorageCustomDomain extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.13.1/docs/resources/managed_object_storage_custom_domain upcloud_managed_object_storage_custom_domain} Resource
+  * Create a new {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.13.2/docs/resources/managed_object_storage_custom_domain upcloud_managed_object_storage_custom_domain} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -72,7 +67,7 @@ export class ManagedObjectStorageCustomDomain extends cdktf.TerraformResource {
       terraformResourceType: 'upcloud_managed_object_storage_custom_domain',
       terraformGeneratorMetadata: {
         providerName: 'upcloud',
-        providerVersion: '5.13.1',
+        providerVersion: '5.13.2',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,

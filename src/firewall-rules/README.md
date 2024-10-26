@@ -1,3 +1,3 @@
 # `upcloud_firewall_rules`
 
-Refer to the Terraform Registry for docs: [`upcloud_firewall_rules`](https://registry.terraform.io/providers/upcloudltd/upcloud/5.13.1/docs/resources/firewall_rules).
+Refer to the Terraform Registry for docs: [`upcloud_firewall_rules`](https://registry.terraform.io/providers/upcloudltd/upcloud/5.13.2/docs/resources/firewall_rules).
