@@ -4,7 +4,7 @@
 
 ### LoadbalancerStaticBackendMember <a name="LoadbalancerStaticBackendMember" id="@cdktf/provider-upcloud.loadbalancerStaticBackendMember.LoadbalancerStaticBackendMember"></a>
 
-Represents a {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.13.1/docs/resources/loadbalancer_static_backend_member upcloud_loadbalancer_static_backend_member}.
+Represents a {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.13.2/docs/resources/loadbalancer_static_backend_member upcloud_loadbalancer_static_backend_member}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-upcloud.loadbalancerStaticBackendMember.LoadbalancerStaticBackendMember.Initializer"></a>
 
@@ -488,7 +488,7 @@ The construct id used in the generated config for the LoadbalancerStaticBackendM
 
 The id of the existing LoadbalancerStaticBackendMember that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.13.1/docs/resources/loadbalancer_static_backend_member#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.13.2/docs/resources/loadbalancer_static_backend_member#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -974,7 +974,7 @@ public string Backend { get; set; }
 
 ID of the load balancer backend to which the member is connected.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.13.1/docs/resources/loadbalancer_static_backend_member#backend LoadbalancerStaticBackendMember#backend}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.13.2/docs/resources/loadbalancer_static_backend_member#backend LoadbalancerStaticBackendMember#backend}
 
 ---
 
@@ -988,7 +988,7 @@ public double MaxSessions { get; set; }
 
 Maximum number of sessions before queueing.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.13.1/docs/resources/loadbalancer_static_backend_member#max_sessions LoadbalancerStaticBackendMember#max_sessions}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.13.2/docs/resources/loadbalancer_static_backend_member#max_sessions LoadbalancerStaticBackendMember#max_sessions}
 
 ---
 
@@ -1002,7 +1002,7 @@ public string Name { get; set; }
 
 The name of the member. Must be unique within within the load balancer backend.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.13.1/docs/resources/loadbalancer_static_backend_member#name LoadbalancerStaticBackendMember#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.13.2/docs/resources/loadbalancer_static_backend_member#name LoadbalancerStaticBackendMember#name}
 
 ---
 
@@ -1016,7 +1016,7 @@ public double Weight { get; set; }
 
 Weight of the member. The higher the weight, the more traffic the member receives.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.13.1/docs/resources/loadbalancer_static_backend_member#weight LoadbalancerStaticBackendMember#weight}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.13.2/docs/resources/loadbalancer_static_backend_member#weight LoadbalancerStaticBackendMember#weight}
 
 ---
 
@@ -1030,7 +1030,7 @@ public object Enabled { get; set; }
 
 Indicates if the member is enabled. Disabled members are excluded from load balancing.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.13.1/docs/resources/loadbalancer_static_backend_member#enabled LoadbalancerStaticBackendMember#enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.13.2/docs/resources/loadbalancer_static_backend_member#enabled LoadbalancerStaticBackendMember#enabled}
 
 ---
 
@@ -1044,7 +1044,7 @@ public string Ip { get; set; }
 
 Optional fallback IP address in case of failure on DNS resolving.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.13.1/docs/resources/loadbalancer_static_backend_member#ip LoadbalancerStaticBackendMember#ip}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.13.2/docs/resources/loadbalancer_static_backend_member#ip LoadbalancerStaticBackendMember#ip}
 
 ---
 
@@ -1058,7 +1058,7 @@ public double Port { get; set; }
 
 Server port. Port is optional and can be specified in DNS SRV record.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.13.1/docs/resources/loadbalancer_static_backend_member#port LoadbalancerStaticBackendMember#port}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.13.2/docs/resources/loadbalancer_static_backend_member#port LoadbalancerStaticBackendMember#port}
 
 ---
 
