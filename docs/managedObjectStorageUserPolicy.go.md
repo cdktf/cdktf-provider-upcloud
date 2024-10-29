@@ -4,12 +4,12 @@
 
 ### ManagedObjectStorageUserPolicy <a name="ManagedObjectStorageUserPolicy" id="@cdktf/provider-upcloud.managedObjectStorageUserPolicy.ManagedObjectStorageUserPolicy"></a>
 
-Represents a {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.13.2/docs/resources/managed_object_storage_user_policy upcloud_managed_object_storage_user_policy}.
+Represents a {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.14.0/docs/resources/managed_object_storage_user_policy upcloud_managed_object_storage_user_policy}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-upcloud.managedObjectStorageUserPolicy.ManagedObjectStorageUserPolicy.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v14/managedobjectstorageuserpolicy"
+import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/managedobjectstorageuserpolicy"
 
 managedobjectstorageuserpolicy.NewManagedObjectStorageUserPolicy(scope Construct, id *string, config ManagedObjectStorageUserPolicyConfig) ManagedObjectStorageUserPolicy
 ```
@@ -385,7 +385,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-upcloud.managedObjectStorageUserPolicy.ManagedObjectStorageUserPolicy.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v14/managedobjectstorageuserpolicy"
+import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/managedobjectstorageuserpolicy"
 
 managedobjectstorageuserpolicy.ManagedObjectStorageUserPolicy_IsConstruct(x interface{}) *bool
 ```
@@ -417,7 +417,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-upcloud.managedObjectStorageUserPolicy.ManagedObjectStorageUserPolicy.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v14/managedobjectstorageuserpolicy"
+import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/managedobjectstorageuserpolicy"
 
 managedobjectstorageuserpolicy.ManagedObjectStorageUserPolicy_IsTerraformElement(x interface{}) *bool
 ```
@@ -431,7 +431,7 @@ managedobjectstorageuserpolicy.ManagedObjectStorageUserPolicy_IsTerraformElement
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-upcloud.managedObjectStorageUserPolicy.ManagedObjectStorageUserPolicy.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v14/managedobjectstorageuserpolicy"
+import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/managedobjectstorageuserpolicy"
 
 managedobjectstorageuserpolicy.ManagedObjectStorageUserPolicy_IsTerraformResource(x interface{}) *bool
 ```
@@ -445,7 +445,7 @@ managedobjectstorageuserpolicy.ManagedObjectStorageUserPolicy_IsTerraformResourc
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-upcloud.managedObjectStorageUserPolicy.ManagedObjectStorageUserPolicy.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v14/managedobjectstorageuserpolicy"
+import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/managedobjectstorageuserpolicy"
 
 managedobjectstorageuserpolicy.ManagedObjectStorageUserPolicy_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -474,7 +474,7 @@ The construct id used in the generated config for the ManagedObjectStorageUserPo
 
 The id of the existing ManagedObjectStorageUserPolicy that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.13.2/docs/resources/managed_object_storage_user_policy#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.14.0/docs/resources/managed_object_storage_user_policy#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -762,7 +762,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-upcloud.managedObjectStorageUserPolicy.ManagedObjectStorageUserPolicyConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v14/managedobjectstorageuserpolicy"
+import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/managedobjectstorageuserpolicy"
 
 &managedobjectstorageuserpolicy.ManagedObjectStorageUserPolicyConfig {
 	Connection: interface{},
@@ -793,7 +793,7 @@ import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v14/managedobjectstor
 | <code><a href="#@cdktf/provider-upcloud.managedObjectStorageUserPolicy.ManagedObjectStorageUserPolicyConfig.property.name">Name</a></code> | <code>*string</code> | Policy name. |
 | <code><a href="#@cdktf/provider-upcloud.managedObjectStorageUserPolicy.ManagedObjectStorageUserPolicyConfig.property.serviceUuid">ServiceUuid</a></code> | <code>*string</code> | Managed Object Storage service UUID. |
 | <code><a href="#@cdktf/provider-upcloud.managedObjectStorageUserPolicy.ManagedObjectStorageUserPolicyConfig.property.username">Username</a></code> | <code>*string</code> | Username. |
-| <code><a href="#@cdktf/provider-upcloud.managedObjectStorageUserPolicy.ManagedObjectStorageUserPolicyConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.13.2/docs/resources/managed_object_storage_user_policy#id ManagedObjectStorageUserPolicy#id}. |
+| <code><a href="#@cdktf/provider-upcloud.managedObjectStorageUserPolicy.ManagedObjectStorageUserPolicyConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.14.0/docs/resources/managed_object_storage_user_policy#id ManagedObjectStorageUserPolicy#id}. |
 
 ---
 
@@ -877,7 +877,7 @@ Name *string
 
 Policy name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.13.2/docs/resources/managed_object_storage_user_policy#name ManagedObjectStorageUserPolicy#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.14.0/docs/resources/managed_object_storage_user_policy#name ManagedObjectStorageUserPolicy#name}
 
 ---
 
@@ -891,7 +891,7 @@ ServiceUuid *string
 
 Managed Object Storage service UUID.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.13.2/docs/resources/managed_object_storage_user_policy#service_uuid ManagedObjectStorageUserPolicy#service_uuid}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.14.0/docs/resources/managed_object_storage_user_policy#service_uuid ManagedObjectStorageUserPolicy#service_uuid}
 
 ---
 
@@ -905,7 +905,7 @@ Username *string
 
 Username.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.13.2/docs/resources/managed_object_storage_user_policy#username ManagedObjectStorageUserPolicy#username}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.14.0/docs/resources/managed_object_storage_user_policy#username ManagedObjectStorageUserPolicy#username}
 
 ---
 
@@ -917,7 +917,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.13.2/docs/resources/managed_object_storage_user_policy#id ManagedObjectStorageUserPolicy#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.14.0/docs/resources/managed_object_storage_user_policy#id ManagedObjectStorageUserPolicy#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
