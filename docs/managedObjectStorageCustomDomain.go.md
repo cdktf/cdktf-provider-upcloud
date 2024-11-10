@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5
 #### Initializers <a name="Initializers" id="@cdktf/provider-upcloud.managedObjectStorageCustomDomain.ManagedObjectStorageCustomDomain.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v14/managedobjectstoragecustomdomain"
+import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/managedobjectstoragecustomdomain"
 
 managedobjectstoragecustomdomain.NewManagedObjectStorageCustomDomain(scope Construct, id *string, config ManagedObjectStorageCustomDomainConfig) ManagedObjectStorageCustomDomain
 ```
@@ -385,7 +385,7 @@ func ResetType()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-upcloud.managedObjectStorageCustomDomain.ManagedObjectStorageCustomDomain.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v14/managedobjectstoragecustomdomain"
+import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/managedobjectstoragecustomdomain"
 
 managedobjectstoragecustomdomain.ManagedObjectStorageCustomDomain_IsConstruct(x interface{}) *bool
 ```
@@ -417,7 +417,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-upcloud.managedObjectStorageCustomDomain.ManagedObjectStorageCustomDomain.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v14/managedobjectstoragecustomdomain"
+import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/managedobjectstoragecustomdomain"
 
 managedobjectstoragecustomdomain.ManagedObjectStorageCustomDomain_IsTerraformElement(x interface{}) *bool
 ```
@@ -431,7 +431,7 @@ managedobjectstoragecustomdomain.ManagedObjectStorageCustomDomain_IsTerraformEle
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-upcloud.managedObjectStorageCustomDomain.ManagedObjectStorageCustomDomain.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v14/managedobjectstoragecustomdomain"
+import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/managedobjectstoragecustomdomain"
 
 managedobjectstoragecustomdomain.ManagedObjectStorageCustomDomain_IsTerraformResource(x interface{}) *bool
 ```
@@ -445,7 +445,7 @@ managedobjectstoragecustomdomain.ManagedObjectStorageCustomDomain_IsTerraformRes
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-upcloud.managedObjectStorageCustomDomain.ManagedObjectStorageCustomDomain.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v14/managedobjectstoragecustomdomain"
+import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/managedobjectstoragecustomdomain"
 
 managedobjectstoragecustomdomain.ManagedObjectStorageCustomDomain_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -751,7 +751,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-upcloud.managedObjectStorageCustomDomain.ManagedObjectStorageCustomDomainConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v14/managedobjectstoragecustomdomain"
+import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/managedobjectstoragecustomdomain"
 
 &managedobjectstoragecustomdomain.ManagedObjectStorageCustomDomainConfig {
 	Connection: interface{},
