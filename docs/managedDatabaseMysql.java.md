@@ -4,7 +4,7 @@
 
 ### ManagedDatabaseMysql <a name="ManagedDatabaseMysql" id="@cdktf/provider-upcloud.managedDatabaseMysql.ManagedDatabaseMysql"></a>
 
-Represents a {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.14.0/docs/resources/managed_database_mysql upcloud_managed_database_mysql}.
+Represents a {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.15.0/docs/resources/managed_database_mysql upcloud_managed_database_mysql}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-upcloud.managedDatabaseMysql.ManagedDatabaseMysql.Initializer"></a>
 
@@ -54,7 +54,7 @@ ManagedDatabaseMysql.Builder.create(Construct scope, java.lang.String id)
 | <code><a href="#@cdktf/provider-upcloud.managedDatabaseMysql.ManagedDatabaseMysql.Initializer.parameter.plan">plan</a></code> | <code>java.lang.String</code> | Service plan to use. |
 | <code><a href="#@cdktf/provider-upcloud.managedDatabaseMysql.ManagedDatabaseMysql.Initializer.parameter.title">title</a></code> | <code>java.lang.String</code> | Title of a managed database instance. |
 | <code><a href="#@cdktf/provider-upcloud.managedDatabaseMysql.ManagedDatabaseMysql.Initializer.parameter.zone">zone</a></code> | <code>java.lang.String</code> | Zone where the instance resides, e.g. `de-fra1`. You can list available zones with `upctl zone list`. |
-| <code><a href="#@cdktf/provider-upcloud.managedDatabaseMysql.ManagedDatabaseMysql.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.14.0/docs/resources/managed_database_mysql#id ManagedDatabaseMysql#id}. |
+| <code><a href="#@cdktf/provider-upcloud.managedDatabaseMysql.ManagedDatabaseMysql.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.15.0/docs/resources/managed_database_mysql#id ManagedDatabaseMysql#id}. |
 | <code><a href="#@cdktf/provider-upcloud.managedDatabaseMysql.ManagedDatabaseMysql.Initializer.parameter.labels">labels</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | User defined key-value pairs to classify the managed database. |
 | <code><a href="#@cdktf/provider-upcloud.managedDatabaseMysql.ManagedDatabaseMysql.Initializer.parameter.maintenanceWindowDow">maintenanceWindowDow</a></code> | <code>java.lang.String</code> | Maintenance window day of week. Lower case weekday name (monday, tuesday, ...). |
 | <code><a href="#@cdktf/provider-upcloud.managedDatabaseMysql.ManagedDatabaseMysql.Initializer.parameter.maintenanceWindowTime">maintenanceWindowTime</a></code> | <code>java.lang.String</code> | Maintenance window UTC time in hh:mm:ss format. |
@@ -132,7 +132,7 @@ Name of the service.
 
 The name is used as a prefix for the logical hostname. Must be unique within an account
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.14.0/docs/resources/managed_database_mysql#name ManagedDatabaseMysql#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.15.0/docs/resources/managed_database_mysql#name ManagedDatabaseMysql#name}
 
 ---
 
@@ -144,7 +144,7 @@ Service plan to use.
 
 This determines how much resources the instance will have. You can list available plans with `upctl database plans <type>`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.14.0/docs/resources/managed_database_mysql#plan ManagedDatabaseMysql#plan}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.15.0/docs/resources/managed_database_mysql#plan ManagedDatabaseMysql#plan}
 
 ---
 
@@ -154,7 +154,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upclo
 
 Title of a managed database instance.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.14.0/docs/resources/managed_database_mysql#title ManagedDatabaseMysql#title}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.15.0/docs/resources/managed_database_mysql#title ManagedDatabaseMysql#title}
 
 ---
 
@@ -164,7 +164,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upclo
 
 Zone where the instance resides, e.g. `de-fra1`. You can list available zones with `upctl zone list`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.14.0/docs/resources/managed_database_mysql#zone ManagedDatabaseMysql#zone}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.15.0/docs/resources/managed_database_mysql#zone ManagedDatabaseMysql#zone}
 
 ---
 
@@ -172,7 +172,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upclo
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.14.0/docs/resources/managed_database_mysql#id ManagedDatabaseMysql#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.15.0/docs/resources/managed_database_mysql#id ManagedDatabaseMysql#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -185,7 +185,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 User defined key-value pairs to classify the managed database.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.14.0/docs/resources/managed_database_mysql#labels ManagedDatabaseMysql#labels}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.15.0/docs/resources/managed_database_mysql#labels ManagedDatabaseMysql#labels}
 
 ---
 
@@ -195,7 +195,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upclo
 
 Maintenance window day of week. Lower case weekday name (monday, tuesday, ...).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.14.0/docs/resources/managed_database_mysql#maintenance_window_dow ManagedDatabaseMysql#maintenance_window_dow}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.15.0/docs/resources/managed_database_mysql#maintenance_window_dow ManagedDatabaseMysql#maintenance_window_dow}
 
 ---
 
@@ -205,7 +205,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upclo
 
 Maintenance window UTC time in hh:mm:ss format.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.14.0/docs/resources/managed_database_mysql#maintenance_window_time ManagedDatabaseMysql#maintenance_window_time}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.15.0/docs/resources/managed_database_mysql#maintenance_window_time ManagedDatabaseMysql#maintenance_window_time}
 
 ---
 
@@ -215,7 +215,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upclo
 
 network block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.14.0/docs/resources/managed_database_mysql#network ManagedDatabaseMysql#network}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.15.0/docs/resources/managed_database_mysql#network ManagedDatabaseMysql#network}
 
 ---
 
@@ -225,7 +225,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upclo
 
 The administrative power state of the service.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.14.0/docs/resources/managed_database_mysql#powered ManagedDatabaseMysql#powered}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.15.0/docs/resources/managed_database_mysql#powered ManagedDatabaseMysql#powered}
 
 ---
 
@@ -235,7 +235,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upclo
 
 properties block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.14.0/docs/resources/managed_database_mysql#properties ManagedDatabaseMysql#properties}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.15.0/docs/resources/managed_database_mysql#properties ManagedDatabaseMysql#properties}
 
 ---
 
@@ -737,7 +737,7 @@ The construct id used in the generated config for the ManagedDatabaseMysql to im
 
 The id of the existing ManagedDatabaseMysql that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.14.0/docs/resources/managed_database_mysql#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.15.0/docs/resources/managed_database_mysql#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1346,7 +1346,7 @@ ManagedDatabaseMysqlConfig.builder()
 | <code><a href="#@cdktf/provider-upcloud.managedDatabaseMysql.ManagedDatabaseMysqlConfig.property.plan">plan</a></code> | <code>java.lang.String</code> | Service plan to use. |
 | <code><a href="#@cdktf/provider-upcloud.managedDatabaseMysql.ManagedDatabaseMysqlConfig.property.title">title</a></code> | <code>java.lang.String</code> | Title of a managed database instance. |
 | <code><a href="#@cdktf/provider-upcloud.managedDatabaseMysql.ManagedDatabaseMysqlConfig.property.zone">zone</a></code> | <code>java.lang.String</code> | Zone where the instance resides, e.g. `de-fra1`. You can list available zones with `upctl zone list`. |
-| <code><a href="#@cdktf/provider-upcloud.managedDatabaseMysql.ManagedDatabaseMysqlConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.14.0/docs/resources/managed_database_mysql#id ManagedDatabaseMysql#id}. |
+| <code><a href="#@cdktf/provider-upcloud.managedDatabaseMysql.ManagedDatabaseMysqlConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.15.0/docs/resources/managed_database_mysql#id ManagedDatabaseMysql#id}. |
 | <code><a href="#@cdktf/provider-upcloud.managedDatabaseMysql.ManagedDatabaseMysqlConfig.property.labels">labels</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | User defined key-value pairs to classify the managed database. |
 | <code><a href="#@cdktf/provider-upcloud.managedDatabaseMysql.ManagedDatabaseMysqlConfig.property.maintenanceWindowDow">maintenanceWindowDow</a></code> | <code>java.lang.String</code> | Maintenance window day of week. Lower case weekday name (monday, tuesday, ...). |
 | <code><a href="#@cdktf/provider-upcloud.managedDatabaseMysql.ManagedDatabaseMysqlConfig.property.maintenanceWindowTime">maintenanceWindowTime</a></code> | <code>java.lang.String</code> | Maintenance window UTC time in hh:mm:ss format. |
@@ -1438,7 +1438,7 @@ Name of the service.
 
 The name is used as a prefix for the logical hostname. Must be unique within an account
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.14.0/docs/resources/managed_database_mysql#name ManagedDatabaseMysql#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.15.0/docs/resources/managed_database_mysql#name ManagedDatabaseMysql#name}
 
 ---
 
@@ -1454,7 +1454,7 @@ Service plan to use.
 
 This determines how much resources the instance will have. You can list available plans with `upctl database plans <type>`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.14.0/docs/resources/managed_database_mysql#plan ManagedDatabaseMysql#plan}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.15.0/docs/resources/managed_database_mysql#plan ManagedDatabaseMysql#plan}
 
 ---
 
@@ -1468,7 +1468,7 @@ public java.lang.String getTitle();
 
 Title of a managed database instance.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.14.0/docs/resources/managed_database_mysql#title ManagedDatabaseMysql#title}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.15.0/docs/resources/managed_database_mysql#title ManagedDatabaseMysql#title}
 
 ---
 
@@ -1482,7 +1482,7 @@ public java.lang.String getZone();
 
 Zone where the instance resides, e.g. `de-fra1`. You can list available zones with `upctl zone list`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.14.0/docs/resources/managed_database_mysql#zone ManagedDatabaseMysql#zone}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.15.0/docs/resources/managed_database_mysql#zone ManagedDatabaseMysql#zone}
 
 ---
 
@@ -1494,7 +1494,7 @@ public java.lang.String getId();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.14.0/docs/resources/managed_database_mysql#id ManagedDatabaseMysql#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.15.0/docs/resources/managed_database_mysql#id ManagedDatabaseMysql#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1511,7 +1511,7 @@ public java.util.Map<java.lang.String, java.lang.String> getLabels();
 
 User defined key-value pairs to classify the managed database.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.14.0/docs/resources/managed_database_mysql#labels ManagedDatabaseMysql#labels}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.15.0/docs/resources/managed_database_mysql#labels ManagedDatabaseMysql#labels}
 
 ---
 
@@ -1525,7 +1525,7 @@ public java.lang.String getMaintenanceWindowDow();
 
 Maintenance window day of week. Lower case weekday name (monday, tuesday, ...).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.14.0/docs/resources/managed_database_mysql#maintenance_window_dow ManagedDatabaseMysql#maintenance_window_dow}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.15.0/docs/resources/managed_database_mysql#maintenance_window_dow ManagedDatabaseMysql#maintenance_window_dow}
 
 ---
 
@@ -1539,7 +1539,7 @@ public java.lang.String getMaintenanceWindowTime();
 
 Maintenance window UTC time in hh:mm:ss format.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.14.0/docs/resources/managed_database_mysql#maintenance_window_time ManagedDatabaseMysql#maintenance_window_time}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.15.0/docs/resources/managed_database_mysql#maintenance_window_time ManagedDatabaseMysql#maintenance_window_time}
 
 ---
 
@@ -1553,7 +1553,7 @@ public java.lang.Object getNetwork();
 
 network block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.14.0/docs/resources/managed_database_mysql#network ManagedDatabaseMysql#network}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.15.0/docs/resources/managed_database_mysql#network ManagedDatabaseMysql#network}
 
 ---
 
@@ -1567,7 +1567,7 @@ public java.lang.Object getPowered();
 
 The administrative power state of the service.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.14.0/docs/resources/managed_database_mysql#powered ManagedDatabaseMysql#powered}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.15.0/docs/resources/managed_database_mysql#powered ManagedDatabaseMysql#powered}
 
 ---
 
@@ -1581,7 +1581,7 @@ public ManagedDatabaseMysqlProperties getProperties();
 
 properties block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.14.0/docs/resources/managed_database_mysql#properties ManagedDatabaseMysql#properties}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.15.0/docs/resources/managed_database_mysql#properties ManagedDatabaseMysql#properties}
 
 ---
 
@@ -1621,7 +1621,7 @@ public java.lang.String getFamily();
 
 Network family. Currently only `IPv4` is supported.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.14.0/docs/resources/managed_database_mysql#family ManagedDatabaseMysql#family}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.15.0/docs/resources/managed_database_mysql#family ManagedDatabaseMysql#family}
 
 ---
 
@@ -1635,7 +1635,7 @@ public java.lang.String getName();
 
 The name of the network. Must be unique within the service.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.14.0/docs/resources/managed_database_mysql#name ManagedDatabaseMysql#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.15.0/docs/resources/managed_database_mysql#name ManagedDatabaseMysql#name}
 
 ---
 
@@ -1649,7 +1649,7 @@ public java.lang.String getType();
 
 The type of the network. Must be private.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.14.0/docs/resources/managed_database_mysql#type ManagedDatabaseMysql#type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.15.0/docs/resources/managed_database_mysql#type ManagedDatabaseMysql#type}
 
 ---
 
@@ -1663,7 +1663,7 @@ public java.lang.String getUuid();
 
 Private network UUID. Must reside in the same zone as the database.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.14.0/docs/resources/managed_database_mysql#uuid ManagedDatabaseMysql#uuid}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.15.0/docs/resources/managed_database_mysql#uuid ManagedDatabaseMysql#uuid}
 
 ---
 
@@ -1715,6 +1715,7 @@ ManagedDatabaseMysqlProperties.builder()
 //  .interactiveTimeout(java.lang.Number)
 //  .internalTmpMemStorageEngine(java.lang.String)
 //  .ipFilter(java.util.List<java.lang.String>)
+//  .logOutput(java.lang.String)
 //  .longQueryTime(java.lang.Number)
 //  .maxAllowedPacket(java.lang.Number)
 //  .maxHeapTableSize(java.lang.Number)
@@ -1767,7 +1768,8 @@ ManagedDatabaseMysqlProperties.builder()
 | <code><a href="#@cdktf/provider-upcloud.managedDatabaseMysql.ManagedDatabaseMysqlProperties.property.interactiveTimeout">interactiveTimeout</a></code> | <code>java.lang.Number</code> | The number of seconds the server waits for activity on an interactive connection before closing it. |
 | <code><a href="#@cdktf/provider-upcloud.managedDatabaseMysql.ManagedDatabaseMysqlProperties.property.internalTmpMemStorageEngine">internalTmpMemStorageEngine</a></code> | <code>java.lang.String</code> | The storage engine for in-memory internal temporary tables. |
 | <code><a href="#@cdktf/provider-upcloud.managedDatabaseMysql.ManagedDatabaseMysqlProperties.property.ipFilter">ipFilter</a></code> | <code>java.util.List<java.lang.String></code> | IP filter. Allow incoming connections from CIDR address block, e.g. '10.20.0.0/16'. |
-| <code><a href="#@cdktf/provider-upcloud.managedDatabaseMysql.ManagedDatabaseMysqlProperties.property.longQueryTime">longQueryTime</a></code> | <code>java.lang.Number</code> | The slow_query_logs work as SQL statements that take more than long_query_time seconds to execute. Default is 10s. |
+| <code><a href="#@cdktf/provider-upcloud.managedDatabaseMysql.ManagedDatabaseMysqlProperties.property.logOutput">logOutput</a></code> | <code>java.lang.String</code> | The slow log output destination when slow_query_log is ON. |
+| <code><a href="#@cdktf/provider-upcloud.managedDatabaseMysql.ManagedDatabaseMysqlProperties.property.longQueryTime">longQueryTime</a></code> | <code>java.lang.Number</code> | The slow_query_logs work as SQL statements that take more than long_query_time seconds to execute. |
 | <code><a href="#@cdktf/provider-upcloud.managedDatabaseMysql.ManagedDatabaseMysqlProperties.property.maxAllowedPacket">maxAllowedPacket</a></code> | <code>java.lang.Number</code> | Size of the largest message in bytes that can be received by the server. Default is 67108864 (64M). |
 | <code><a href="#@cdktf/provider-upcloud.managedDatabaseMysql.ManagedDatabaseMysqlProperties.property.maxHeapTableSize">maxHeapTableSize</a></code> | <code>java.lang.Number</code> | Limits the size of internal in-memory tables. Also set tmp_table_size. Default is 16777216 (16M). |
 | <code><a href="#@cdktf/provider-upcloud.managedDatabaseMysql.ManagedDatabaseMysqlProperties.property.migration">migration</a></code> | <code><a href="#@cdktf/provider-upcloud.managedDatabaseMysql.ManagedDatabaseMysqlPropertiesMigration">ManagedDatabaseMysqlPropertiesMigration</a></code> | migration block. |
@@ -1776,7 +1778,7 @@ ManagedDatabaseMysqlProperties.builder()
 | <code><a href="#@cdktf/provider-upcloud.managedDatabaseMysql.ManagedDatabaseMysqlProperties.property.netWriteTimeout">netWriteTimeout</a></code> | <code>java.lang.Number</code> | The number of seconds to wait for a block to be written to a connection before aborting the write. |
 | <code><a href="#@cdktf/provider-upcloud.managedDatabaseMysql.ManagedDatabaseMysqlProperties.property.publicAccess">publicAccess</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Public Access. Allow access to the service from the public Internet. |
 | <code><a href="#@cdktf/provider-upcloud.managedDatabaseMysql.ManagedDatabaseMysqlProperties.property.serviceLog">serviceLog</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Service logging. Store logs for the service so that they are available in the HTTP API and console. |
-| <code><a href="#@cdktf/provider-upcloud.managedDatabaseMysql.ManagedDatabaseMysqlProperties.property.slowQueryLog">slowQueryLog</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Slow query log enables capturing of slow queries. |
+| <code><a href="#@cdktf/provider-upcloud.managedDatabaseMysql.ManagedDatabaseMysqlProperties.property.slowQueryLog">slowQueryLog</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Slow query log enables capturing of slow queries. Setting slow_query_log to false also truncates the mysql.slow_log table. |
 | <code><a href="#@cdktf/provider-upcloud.managedDatabaseMysql.ManagedDatabaseMysqlProperties.property.sortBufferSize">sortBufferSize</a></code> | <code>java.lang.Number</code> | Sort buffer size in bytes for ORDER BY optimization. Default is 262144 (256K). |
 | <code><a href="#@cdktf/provider-upcloud.managedDatabaseMysql.ManagedDatabaseMysqlProperties.property.sqlMode">sqlMode</a></code> | <code>java.lang.String</code> | Global SQL mode. |
 | <code><a href="#@cdktf/provider-upcloud.managedDatabaseMysql.ManagedDatabaseMysqlProperties.property.sqlRequirePrimaryKey">sqlRequirePrimaryKey</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Require primary key to be defined for new tables or old tables modified with ALTER TABLE and fail if missing. |
@@ -1798,7 +1800,7 @@ Custom password for admin user.
 
 Defaults to random string. This must be set only when a new service is being created.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.14.0/docs/resources/managed_database_mysql#admin_password ManagedDatabaseMysql#admin_password}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.15.0/docs/resources/managed_database_mysql#admin_password ManagedDatabaseMysql#admin_password}
 
 ---
 
@@ -1812,7 +1814,7 @@ public java.lang.String getAdminUsername();
 
 Custom username for admin user. This must be set only when a new service is being created.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.14.0/docs/resources/managed_database_mysql#admin_username ManagedDatabaseMysql#admin_username}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.15.0/docs/resources/managed_database_mysql#admin_username ManagedDatabaseMysql#admin_username}
 
 ---
 
@@ -1826,7 +1828,7 @@ public java.lang.Object getAutomaticUtilityNetworkIpFilter();
 
 Automatic utility network IP Filter. Automatically allow connections from servers in the utility network within the same zone.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.14.0/docs/resources/managed_database_mysql#automatic_utility_network_ip_filter ManagedDatabaseMysql#automatic_utility_network_ip_filter}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.15.0/docs/resources/managed_database_mysql#automatic_utility_network_ip_filter ManagedDatabaseMysql#automatic_utility_network_ip_filter}
 
 ---
 
@@ -1842,7 +1844,7 @@ The hour of day (in UTC) when backup for the service is started.
 
 New backup is only started if previous backup has already completed.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.14.0/docs/resources/managed_database_mysql#backup_hour ManagedDatabaseMysql#backup_hour}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.15.0/docs/resources/managed_database_mysql#backup_hour ManagedDatabaseMysql#backup_hour}
 
 ---
 
@@ -1858,7 +1860,7 @@ The minute of an hour when backup for the service is started.
 
 New backup is only started if previous backup has already completed.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.14.0/docs/resources/managed_database_mysql#backup_minute ManagedDatabaseMysql#backup_minute}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.15.0/docs/resources/managed_database_mysql#backup_minute ManagedDatabaseMysql#backup_minute}
 
 ---
 
@@ -1874,7 +1876,7 @@ The minimum amount of time in seconds to keep binlog entries before deletion.
 
 This may be extended for services that require binlog entries for longer than the default for example if using the MySQL Debezium Kafka connector.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.14.0/docs/resources/managed_database_mysql#binlog_retention_period ManagedDatabaseMysql#binlog_retention_period}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.15.0/docs/resources/managed_database_mysql#binlog_retention_period ManagedDatabaseMysql#binlog_retention_period}
 
 ---
 
@@ -1888,7 +1890,7 @@ public java.lang.Number getConnectTimeout();
 
 The number of seconds that the mysqld server waits for a connect packet before responding with Bad handshake.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.14.0/docs/resources/managed_database_mysql#connect_timeout ManagedDatabaseMysql#connect_timeout}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.15.0/docs/resources/managed_database_mysql#connect_timeout ManagedDatabaseMysql#connect_timeout}
 
 ---
 
@@ -1902,7 +1904,7 @@ public java.lang.String getDefaultTimeZone();
 
 Default server time zone as an offset from UTC (from -12:00 to +12:00), a time zone name, or 'SYSTEM' to use the MySQL server default.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.14.0/docs/resources/managed_database_mysql#default_time_zone ManagedDatabaseMysql#default_time_zone}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.15.0/docs/resources/managed_database_mysql#default_time_zone ManagedDatabaseMysql#default_time_zone}
 
 ---
 
@@ -1916,7 +1918,7 @@ public java.lang.Number getGroupConcatMaxLen();
 
 The maximum permitted result length in bytes for the GROUP_CONCAT() function.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.14.0/docs/resources/managed_database_mysql#group_concat_max_len ManagedDatabaseMysql#group_concat_max_len}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.15.0/docs/resources/managed_database_mysql#group_concat_max_len ManagedDatabaseMysql#group_concat_max_len}
 
 ---
 
@@ -1930,7 +1932,7 @@ public java.lang.Number getInformationSchemaStatsExpiry();
 
 The time, in seconds, before cached statistics expire.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.14.0/docs/resources/managed_database_mysql#information_schema_stats_expiry ManagedDatabaseMysql#information_schema_stats_expiry}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.15.0/docs/resources/managed_database_mysql#information_schema_stats_expiry ManagedDatabaseMysql#information_schema_stats_expiry}
 
 ---
 
@@ -1946,7 +1948,7 @@ Maximum size for the InnoDB change buffer, as a percentage of the total size of 
 
 Default is 25.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.14.0/docs/resources/managed_database_mysql#innodb_change_buffer_max_size ManagedDatabaseMysql#innodb_change_buffer_max_size}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.15.0/docs/resources/managed_database_mysql#innodb_change_buffer_max_size ManagedDatabaseMysql#innodb_change_buffer_max_size}
 
 ---
 
@@ -1960,7 +1962,7 @@ public java.lang.Number getInnodbFlushNeighbors();
 
 Specifies whether flushing a page from the InnoDB buffer pool also flushes other dirty pages in the same extent (default is 1): 0 - dirty pages in the same extent are not flushed, 1 - flush contiguous dirty pages in the same extent, 2 - flush dirty pages in the same extent.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.14.0/docs/resources/managed_database_mysql#innodb_flush_neighbors ManagedDatabaseMysql#innodb_flush_neighbors}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.15.0/docs/resources/managed_database_mysql#innodb_flush_neighbors ManagedDatabaseMysql#innodb_flush_neighbors}
 
 ---
 
@@ -1976,7 +1978,7 @@ Minimum length of words that are stored in an InnoDB FULLTEXT index.
 
 Changing this parameter will lead to a restart of the MySQL service.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.14.0/docs/resources/managed_database_mysql#innodb_ft_min_token_size ManagedDatabaseMysql#innodb_ft_min_token_size}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.15.0/docs/resources/managed_database_mysql#innodb_ft_min_token_size ManagedDatabaseMysql#innodb_ft_min_token_size}
 
 ---
 
@@ -1990,7 +1992,7 @@ public java.lang.String getInnodbFtServerStopwordTable();
 
 This option is used to specify your own InnoDB FULLTEXT index stopword list for all InnoDB tables.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.14.0/docs/resources/managed_database_mysql#innodb_ft_server_stopword_table ManagedDatabaseMysql#innodb_ft_server_stopword_table}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.15.0/docs/resources/managed_database_mysql#innodb_ft_server_stopword_table ManagedDatabaseMysql#innodb_ft_server_stopword_table}
 
 ---
 
@@ -2006,7 +2008,7 @@ The length of time in seconds an InnoDB transaction waits for a row lock before 
 
 Default is 120.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.14.0/docs/resources/managed_database_mysql#innodb_lock_wait_timeout ManagedDatabaseMysql#innodb_lock_wait_timeout}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.15.0/docs/resources/managed_database_mysql#innodb_lock_wait_timeout ManagedDatabaseMysql#innodb_lock_wait_timeout}
 
 ---
 
@@ -2020,7 +2022,7 @@ public java.lang.Number getInnodbLogBufferSize();
 
 The size in bytes of the buffer that InnoDB uses to write to the log files on disk.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.14.0/docs/resources/managed_database_mysql#innodb_log_buffer_size ManagedDatabaseMysql#innodb_log_buffer_size}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.15.0/docs/resources/managed_database_mysql#innodb_log_buffer_size ManagedDatabaseMysql#innodb_log_buffer_size}
 
 ---
 
@@ -2034,7 +2036,7 @@ public java.lang.Number getInnodbOnlineAlterLogMaxSize();
 
 The upper limit in bytes on the size of the temporary log files used during online DDL operations for InnoDB tables.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.14.0/docs/resources/managed_database_mysql#innodb_online_alter_log_max_size ManagedDatabaseMysql#innodb_online_alter_log_max_size}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.15.0/docs/resources/managed_database_mysql#innodb_online_alter_log_max_size ManagedDatabaseMysql#innodb_online_alter_log_max_size}
 
 ---
 
@@ -2048,7 +2050,7 @@ public java.lang.Object getInnodbPrintAllDeadlocks();
 
 When enabled, information about all deadlocks in InnoDB user transactions is recorded in the error log. Disabled by default.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.14.0/docs/resources/managed_database_mysql#innodb_print_all_deadlocks ManagedDatabaseMysql#innodb_print_all_deadlocks}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.15.0/docs/resources/managed_database_mysql#innodb_print_all_deadlocks ManagedDatabaseMysql#innodb_print_all_deadlocks}
 
 ---
 
@@ -2064,7 +2066,7 @@ The number of I/O threads for read operations in InnoDB.
 
 Default is 4. Changing this parameter will lead to a restart of the MySQL service.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.14.0/docs/resources/managed_database_mysql#innodb_read_io_threads ManagedDatabaseMysql#innodb_read_io_threads}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.15.0/docs/resources/managed_database_mysql#innodb_read_io_threads ManagedDatabaseMysql#innodb_read_io_threads}
 
 ---
 
@@ -2080,7 +2082,7 @@ When enabled a transaction timeout causes InnoDB to abort and roll back the enti
 
 Changing this parameter will lead to a restart of the MySQL service.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.14.0/docs/resources/managed_database_mysql#innodb_rollback_on_timeout ManagedDatabaseMysql#innodb_rollback_on_timeout}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.15.0/docs/resources/managed_database_mysql#innodb_rollback_on_timeout ManagedDatabaseMysql#innodb_rollback_on_timeout}
 
 ---
 
@@ -2094,7 +2096,7 @@ public java.lang.Number getInnodbThreadConcurrency();
 
 Defines the maximum number of threads permitted inside of InnoDB. Default is 0 (infinite concurrency - no limit).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.14.0/docs/resources/managed_database_mysql#innodb_thread_concurrency ManagedDatabaseMysql#innodb_thread_concurrency}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.15.0/docs/resources/managed_database_mysql#innodb_thread_concurrency ManagedDatabaseMysql#innodb_thread_concurrency}
 
 ---
 
@@ -2110,7 +2112,7 @@ The number of I/O threads for write operations in InnoDB.
 
 Default is 4. Changing this parameter will lead to a restart of the MySQL service.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.14.0/docs/resources/managed_database_mysql#innodb_write_io_threads ManagedDatabaseMysql#innodb_write_io_threads}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.15.0/docs/resources/managed_database_mysql#innodb_write_io_threads ManagedDatabaseMysql#innodb_write_io_threads}
 
 ---
 
@@ -2124,7 +2126,7 @@ public java.lang.Number getInteractiveTimeout();
 
 The number of seconds the server waits for activity on an interactive connection before closing it.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.14.0/docs/resources/managed_database_mysql#interactive_timeout ManagedDatabaseMysql#interactive_timeout}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.15.0/docs/resources/managed_database_mysql#interactive_timeout ManagedDatabaseMysql#interactive_timeout}
 
 ---
 
@@ -2138,7 +2140,7 @@ public java.lang.String getInternalTmpMemStorageEngine();
 
 The storage engine for in-memory internal temporary tables.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.14.0/docs/resources/managed_database_mysql#internal_tmp_mem_storage_engine ManagedDatabaseMysql#internal_tmp_mem_storage_engine}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.15.0/docs/resources/managed_database_mysql#internal_tmp_mem_storage_engine ManagedDatabaseMysql#internal_tmp_mem_storage_engine}
 
 ---
 
@@ -2152,7 +2154,23 @@ public java.util.List<java.lang.String> getIpFilter();
 
 IP filter. Allow incoming connections from CIDR address block, e.g. '10.20.0.0/16'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.14.0/docs/resources/managed_database_mysql#ip_filter ManagedDatabaseMysql#ip_filter}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.15.0/docs/resources/managed_database_mysql#ip_filter ManagedDatabaseMysql#ip_filter}
+
+---
+
+##### `logOutput`<sup>Optional</sup> <a name="logOutput" id="@cdktf/provider-upcloud.managedDatabaseMysql.ManagedDatabaseMysqlProperties.property.logOutput"></a>
+
+```java
+public java.lang.String getLogOutput();
+```
+
+- *Type:* java.lang.String
+
+The slow log output destination when slow_query_log is ON.
+
+To enable MySQL AI Insights, choose INSIGHTS. To use MySQL AI Insights and the mysql.slow_log table at the same time, choose INSIGHTS,TABLE. To only use the mysql.slow_log table, choose TABLE. To silence slow logs, choose NONE.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.15.0/docs/resources/managed_database_mysql#log_output ManagedDatabaseMysql#log_output}
 
 ---
 
@@ -2164,9 +2182,9 @@ public java.lang.Number getLongQueryTime();
 
 - *Type:* java.lang.Number
 
-The slow_query_logs work as SQL statements that take more than long_query_time seconds to execute. Default is 10s.
+The slow_query_logs work as SQL statements that take more than long_query_time seconds to execute.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.14.0/docs/resources/managed_database_mysql#long_query_time ManagedDatabaseMysql#long_query_time}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.15.0/docs/resources/managed_database_mysql#long_query_time ManagedDatabaseMysql#long_query_time}
 
 ---
 
@@ -2180,7 +2198,7 @@ public java.lang.Number getMaxAllowedPacket();
 
 Size of the largest message in bytes that can be received by the server. Default is 67108864 (64M).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.14.0/docs/resources/managed_database_mysql#max_allowed_packet ManagedDatabaseMysql#max_allowed_packet}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.15.0/docs/resources/managed_database_mysql#max_allowed_packet ManagedDatabaseMysql#max_allowed_packet}
 
 ---
 
@@ -2194,7 +2212,7 @@ public java.lang.Number getMaxHeapTableSize();
 
 Limits the size of internal in-memory tables. Also set tmp_table_size. Default is 16777216 (16M).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.14.0/docs/resources/managed_database_mysql#max_heap_table_size ManagedDatabaseMysql#max_heap_table_size}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.15.0/docs/resources/managed_database_mysql#max_heap_table_size ManagedDatabaseMysql#max_heap_table_size}
 
 ---
 
@@ -2208,7 +2226,7 @@ public ManagedDatabaseMysqlPropertiesMigration getMigration();
 
 migration block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.14.0/docs/resources/managed_database_mysql#migration ManagedDatabaseMysql#migration}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.15.0/docs/resources/managed_database_mysql#migration ManagedDatabaseMysql#migration}
 
 ---
 
@@ -2224,7 +2242,7 @@ Start sizes of connection buffer and result buffer.
 
 Default is 16384 (16K). Changing this parameter will lead to a restart of the MySQL service.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.14.0/docs/resources/managed_database_mysql#net_buffer_length ManagedDatabaseMysql#net_buffer_length}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.15.0/docs/resources/managed_database_mysql#net_buffer_length ManagedDatabaseMysql#net_buffer_length}
 
 ---
 
@@ -2238,7 +2256,7 @@ public java.lang.Number getNetReadTimeout();
 
 The number of seconds to wait for more data from a connection before aborting the read.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.14.0/docs/resources/managed_database_mysql#net_read_timeout ManagedDatabaseMysql#net_read_timeout}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.15.0/docs/resources/managed_database_mysql#net_read_timeout ManagedDatabaseMysql#net_read_timeout}
 
 ---
 
@@ -2252,7 +2270,7 @@ public java.lang.Number getNetWriteTimeout();
 
 The number of seconds to wait for a block to be written to a connection before aborting the write.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.14.0/docs/resources/managed_database_mysql#net_write_timeout ManagedDatabaseMysql#net_write_timeout}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.15.0/docs/resources/managed_database_mysql#net_write_timeout ManagedDatabaseMysql#net_write_timeout}
 
 ---
 
@@ -2266,7 +2284,7 @@ public java.lang.Object getPublicAccess();
 
 Public Access. Allow access to the service from the public Internet.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.14.0/docs/resources/managed_database_mysql#public_access ManagedDatabaseMysql#public_access}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.15.0/docs/resources/managed_database_mysql#public_access ManagedDatabaseMysql#public_access}
 
 ---
 
@@ -2280,7 +2298,7 @@ public java.lang.Object getServiceLog();
 
 Service logging. Store logs for the service so that they are available in the HTTP API and console.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.14.0/docs/resources/managed_database_mysql#service_log ManagedDatabaseMysql#service_log}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.15.0/docs/resources/managed_database_mysql#service_log ManagedDatabaseMysql#service_log}
 
 ---
 
@@ -2292,11 +2310,9 @@ public java.lang.Object getSlowQueryLog();
 
 - *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
 
-Slow query log enables capturing of slow queries.
+Slow query log enables capturing of slow queries. Setting slow_query_log to false also truncates the mysql.slow_log table.
 
-Setting slow_query_log to false also truncates the mysql.slow_log table. Default is off.
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.14.0/docs/resources/managed_database_mysql#slow_query_log ManagedDatabaseMysql#slow_query_log}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.15.0/docs/resources/managed_database_mysql#slow_query_log ManagedDatabaseMysql#slow_query_log}
 
 ---
 
@@ -2310,7 +2326,7 @@ public java.lang.Number getSortBufferSize();
 
 Sort buffer size in bytes for ORDER BY optimization. Default is 262144 (256K).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.14.0/docs/resources/managed_database_mysql#sort_buffer_size ManagedDatabaseMysql#sort_buffer_size}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.15.0/docs/resources/managed_database_mysql#sort_buffer_size ManagedDatabaseMysql#sort_buffer_size}
 
 ---
 
@@ -2326,7 +2342,7 @@ Global SQL mode.
 
 Set to empty to use MySQL server defaults. When creating a new service and not setting this field Aiven default SQL mode (strict, SQL standard compliant) will be assigned.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.14.0/docs/resources/managed_database_mysql#sql_mode ManagedDatabaseMysql#sql_mode}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.15.0/docs/resources/managed_database_mysql#sql_mode ManagedDatabaseMysql#sql_mode}
 
 ---
 
@@ -2342,7 +2358,7 @@ Require primary key to be defined for new tables or old tables modified with ALT
 
 It is recommended to always have primary keys because various functionality may break if any large table is missing them.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.14.0/docs/resources/managed_database_mysql#sql_require_primary_key ManagedDatabaseMysql#sql_require_primary_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.15.0/docs/resources/managed_database_mysql#sql_require_primary_key ManagedDatabaseMysql#sql_require_primary_key}
 
 ---
 
@@ -2356,7 +2372,7 @@ public java.lang.Number getTmpTableSize();
 
 Limits the size of internal in-memory tables. Also set max_heap_table_size. Default is 16777216 (16M).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.14.0/docs/resources/managed_database_mysql#tmp_table_size ManagedDatabaseMysql#tmp_table_size}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.15.0/docs/resources/managed_database_mysql#tmp_table_size ManagedDatabaseMysql#tmp_table_size}
 
 ---
 
@@ -2370,7 +2386,7 @@ public java.lang.String getVersion();
 
 MySQL major version.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.14.0/docs/resources/managed_database_mysql#version ManagedDatabaseMysql#version}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.15.0/docs/resources/managed_database_mysql#version ManagedDatabaseMysql#version}
 
 ---
 
@@ -2384,7 +2400,7 @@ public java.lang.Number getWaitTimeout();
 
 The number of seconds the server waits for activity on a noninteractive connection before closing it.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.14.0/docs/resources/managed_database_mysql#wait_timeout ManagedDatabaseMysql#wait_timeout}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.15.0/docs/resources/managed_database_mysql#wait_timeout ManagedDatabaseMysql#wait_timeout}
 
 ---
 
@@ -2435,7 +2451,7 @@ public java.lang.String getDbname();
 
 Database name for bootstrapping the initial connection.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.14.0/docs/resources/managed_database_mysql#dbname ManagedDatabaseMysql#dbname}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.15.0/docs/resources/managed_database_mysql#dbname ManagedDatabaseMysql#dbname}
 
 ---
 
@@ -2449,7 +2465,7 @@ public java.lang.String getHost();
 
 Hostname or IP address of the server where to migrate data from.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.14.0/docs/resources/managed_database_mysql#host ManagedDatabaseMysql#host}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.15.0/docs/resources/managed_database_mysql#host ManagedDatabaseMysql#host}
 
 ---
 
@@ -2463,7 +2479,7 @@ public java.lang.String getIgnoreDbs();
 
 Comma-separated list of databases, which should be ignored during migration (supported by MySQL and PostgreSQL only at the moment).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.14.0/docs/resources/managed_database_mysql#ignore_dbs ManagedDatabaseMysql#ignore_dbs}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.15.0/docs/resources/managed_database_mysql#ignore_dbs ManagedDatabaseMysql#ignore_dbs}
 
 ---
 
@@ -2477,7 +2493,7 @@ public java.lang.String getIgnoreRoles();
 
 Comma-separated list of database roles, which should be ignored during migration (supported by PostgreSQL only at the moment).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.14.0/docs/resources/managed_database_mysql#ignore_roles ManagedDatabaseMysql#ignore_roles}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.15.0/docs/resources/managed_database_mysql#ignore_roles ManagedDatabaseMysql#ignore_roles}
 
 ---
 
@@ -2491,7 +2507,7 @@ public java.lang.String getMethod();
 
 The migration method to be used (currently supported only by Redis, Dragonfly, MySQL and PostgreSQL service types).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.14.0/docs/resources/managed_database_mysql#method ManagedDatabaseMysql#method}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.15.0/docs/resources/managed_database_mysql#method ManagedDatabaseMysql#method}
 
 ---
 
@@ -2505,7 +2521,7 @@ public java.lang.String getPassword();
 
 Password for authentication with the server where to migrate data from.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.14.0/docs/resources/managed_database_mysql#password ManagedDatabaseMysql#password}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.15.0/docs/resources/managed_database_mysql#password ManagedDatabaseMysql#password}
 
 ---
 
@@ -2519,7 +2535,7 @@ public java.lang.Number getPort();
 
 Port number of the server where to migrate data from.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.14.0/docs/resources/managed_database_mysql#port ManagedDatabaseMysql#port}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.15.0/docs/resources/managed_database_mysql#port ManagedDatabaseMysql#port}
 
 ---
 
@@ -2533,7 +2549,7 @@ public java.lang.Object getSsl();
 
 The server where to migrate data from is secured with SSL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.14.0/docs/resources/managed_database_mysql#ssl ManagedDatabaseMysql#ssl}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.15.0/docs/resources/managed_database_mysql#ssl ManagedDatabaseMysql#ssl}
 
 ---
 
@@ -2547,7 +2563,7 @@ public java.lang.String getUsername();
 
 User name for authentication with the server where to migrate data from.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.14.0/docs/resources/managed_database_mysql#username ManagedDatabaseMysql#username}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.15.0/docs/resources/managed_database_mysql#username ManagedDatabaseMysql#username}
 
 ---
 
@@ -4574,6 +4590,7 @@ The attribute on the parent resource this class is referencing.
 | <code><a href="#@cdktf/provider-upcloud.managedDatabaseMysql.ManagedDatabaseMysqlPropertiesOutputReference.resetInteractiveTimeout">resetInteractiveTimeout</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.managedDatabaseMysql.ManagedDatabaseMysqlPropertiesOutputReference.resetInternalTmpMemStorageEngine">resetInternalTmpMemStorageEngine</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.managedDatabaseMysql.ManagedDatabaseMysqlPropertiesOutputReference.resetIpFilter">resetIpFilter</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-upcloud.managedDatabaseMysql.ManagedDatabaseMysqlPropertiesOutputReference.resetLogOutput">resetLogOutput</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.managedDatabaseMysql.ManagedDatabaseMysqlPropertiesOutputReference.resetLongQueryTime">resetLongQueryTime</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.managedDatabaseMysql.ManagedDatabaseMysqlPropertiesOutputReference.resetMaxAllowedPacket">resetMaxAllowedPacket</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.managedDatabaseMysql.ManagedDatabaseMysqlPropertiesOutputReference.resetMaxHeapTableSize">resetMaxHeapTableSize</a></code> | *No description.* |
@@ -4905,6 +4922,12 @@ public void resetInternalTmpMemStorageEngine()
 public void resetIpFilter()
 ```
 
+##### `resetLogOutput` <a name="resetLogOutput" id="@cdktf/provider-upcloud.managedDatabaseMysql.ManagedDatabaseMysqlPropertiesOutputReference.resetLogOutput"></a>
+
+```java
+public void resetLogOutput()
+```
+
 ##### `resetLongQueryTime` <a name="resetLongQueryTime" id="@cdktf/provider-upcloud.managedDatabaseMysql.ManagedDatabaseMysqlPropertiesOutputReference.resetLongQueryTime"></a>
 
 ```java
@@ -5034,6 +5057,7 @@ public void resetWaitTimeout()
 | <code><a href="#@cdktf/provider-upcloud.managedDatabaseMysql.ManagedDatabaseMysqlPropertiesOutputReference.property.interactiveTimeoutInput">interactiveTimeoutInput</a></code> | <code>java.lang.Number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.managedDatabaseMysql.ManagedDatabaseMysqlPropertiesOutputReference.property.internalTmpMemStorageEngineInput">internalTmpMemStorageEngineInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.managedDatabaseMysql.ManagedDatabaseMysqlPropertiesOutputReference.property.ipFilterInput">ipFilterInput</a></code> | <code>java.util.List<java.lang.String></code> | *No description.* |
+| <code><a href="#@cdktf/provider-upcloud.managedDatabaseMysql.ManagedDatabaseMysqlPropertiesOutputReference.property.logOutputInput">logOutputInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.managedDatabaseMysql.ManagedDatabaseMysqlPropertiesOutputReference.property.longQueryTimeInput">longQueryTimeInput</a></code> | <code>java.lang.Number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.managedDatabaseMysql.ManagedDatabaseMysqlPropertiesOutputReference.property.maxAllowedPacketInput">maxAllowedPacketInput</a></code> | <code>java.lang.Number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.managedDatabaseMysql.ManagedDatabaseMysqlPropertiesOutputReference.property.maxHeapTableSizeInput">maxHeapTableSizeInput</a></code> | <code>java.lang.Number</code> | *No description.* |
@@ -5075,6 +5099,7 @@ public void resetWaitTimeout()
 | <code><a href="#@cdktf/provider-upcloud.managedDatabaseMysql.ManagedDatabaseMysqlPropertiesOutputReference.property.interactiveTimeout">interactiveTimeout</a></code> | <code>java.lang.Number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.managedDatabaseMysql.ManagedDatabaseMysqlPropertiesOutputReference.property.internalTmpMemStorageEngine">internalTmpMemStorageEngine</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.managedDatabaseMysql.ManagedDatabaseMysqlPropertiesOutputReference.property.ipFilter">ipFilter</a></code> | <code>java.util.List<java.lang.String></code> | *No description.* |
+| <code><a href="#@cdktf/provider-upcloud.managedDatabaseMysql.ManagedDatabaseMysqlPropertiesOutputReference.property.logOutput">logOutput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.managedDatabaseMysql.ManagedDatabaseMysqlPropertiesOutputReference.property.longQueryTime">longQueryTime</a></code> | <code>java.lang.Number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.managedDatabaseMysql.ManagedDatabaseMysqlPropertiesOutputReference.property.maxAllowedPacket">maxAllowedPacket</a></code> | <code>java.lang.Number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.managedDatabaseMysql.ManagedDatabaseMysqlPropertiesOutputReference.property.maxHeapTableSize">maxHeapTableSize</a></code> | <code>java.lang.Number</code> | *No description.* |
@@ -5375,6 +5400,16 @@ public java.util.List<java.lang.String> getIpFilterInput();
 ```
 
 - *Type:* java.util.List<java.lang.String>
+
+---
+
+##### `logOutputInput`<sup>Optional</sup> <a name="logOutputInput" id="@cdktf/provider-upcloud.managedDatabaseMysql.ManagedDatabaseMysqlPropertiesOutputReference.property.logOutputInput"></a>
+
+```java
+public java.lang.String getLogOutputInput();
+```
+
+- *Type:* java.lang.String
 
 ---
 
@@ -5785,6 +5820,16 @@ public java.util.List<java.lang.String> getIpFilter();
 ```
 
 - *Type:* java.util.List<java.lang.String>
+
+---
+
+##### `logOutput`<sup>Required</sup> <a name="logOutput" id="@cdktf/provider-upcloud.managedDatabaseMysql.ManagedDatabaseMysqlPropertiesOutputReference.property.logOutput"></a>
+
+```java
+public java.lang.String getLogOutput();
+```
+
+- *Type:* java.lang.String
 
 ---
 

@@ -28,7 +28,9 @@ export * as managedDatabaseOpensearch from './managed-database-opensearch';
 export * as managedDatabasePostgresql from './managed-database-postgresql';
 export * as managedDatabaseRedis from './managed-database-redis';
 export * as managedDatabaseUser from './managed-database-user';
+export * as managedDatabaseValkey from './managed-database-valkey';
 export * as managedObjectStorage from './managed-object-storage';
+export * as managedObjectStorageBucket from './managed-object-storage-bucket';
 export * as managedObjectStorageCustomDomain from './managed-object-storage-custom-domain';
 export * as managedObjectStoragePolicy from './managed-object-storage-policy';
 export * as managedObjectStorageUser from './managed-object-storage-user';
@@ -51,6 +53,7 @@ export * as dataUpcloudManagedDatabaseMysqlSessions from './data-upcloud-managed
 export * as dataUpcloudManagedDatabaseOpensearchIndices from './data-upcloud-managed-database-opensearch-indices';
 export * as dataUpcloudManagedDatabasePostgresqlSessions from './data-upcloud-managed-database-postgresql-sessions';
 export * as dataUpcloudManagedDatabaseRedisSessions from './data-upcloud-managed-database-redis-sessions';
+export * as dataUpcloudManagedDatabaseValkeySessions from './data-upcloud-managed-database-valkey-sessions';
 export * as dataUpcloudManagedObjectStoragePolicies from './data-upcloud-managed-object-storage-policies';
 export * as dataUpcloudManagedObjectStorageRegions from './data-upcloud-managed-object-storage-regions';
 export * as dataUpcloudNetworks from './data-upcloud-networks';

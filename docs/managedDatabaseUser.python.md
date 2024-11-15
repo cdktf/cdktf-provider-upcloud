@@ -4,7 +4,7 @@
 
 ### ManagedDatabaseUser <a name="ManagedDatabaseUser" id="@cdktf/provider-upcloud.managedDatabaseUser.ManagedDatabaseUser"></a>
 
-Represents a {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.14.0/docs/resources/managed_database_user upcloud_managed_database_user}.
+Represents a {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.15.0/docs/resources/managed_database_user upcloud_managed_database_user}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-upcloud.managedDatabaseUser.ManagedDatabaseUser.Initializer"></a>
 
@@ -28,7 +28,8 @@ managedDatabaseUser.ManagedDatabaseUser(
   opensearch_access_control: ManagedDatabaseUserOpensearchAccessControl = None,
   password: str = None,
   pg_access_control: ManagedDatabaseUserPgAccessControl = None,
-  redis_access_control: ManagedDatabaseUserRedisAccessControl = None
+  redis_access_control: ManagedDatabaseUserRedisAccessControl = None,
+  valkey_access_control: ManagedDatabaseUserValkeyAccessControl = None
 )
 ```
 
@@ -46,11 +47,12 @@ managedDatabaseUser.ManagedDatabaseUser(
 | <code><a href="#@cdktf/provider-upcloud.managedDatabaseUser.ManagedDatabaseUser.Initializer.parameter.service">service</a></code> | <code>str</code> | Service's UUID for which this user belongs to. |
 | <code><a href="#@cdktf/provider-upcloud.managedDatabaseUser.ManagedDatabaseUser.Initializer.parameter.username">username</a></code> | <code>str</code> | Name of the database user. |
 | <code><a href="#@cdktf/provider-upcloud.managedDatabaseUser.ManagedDatabaseUser.Initializer.parameter.authentication">authentication</a></code> | <code>str</code> | MySQL only, authentication type. |
-| <code><a href="#@cdktf/provider-upcloud.managedDatabaseUser.ManagedDatabaseUser.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.14.0/docs/resources/managed_database_user#id ManagedDatabaseUser#id}. |
+| <code><a href="#@cdktf/provider-upcloud.managedDatabaseUser.ManagedDatabaseUser.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.15.0/docs/resources/managed_database_user#id ManagedDatabaseUser#id}. |
 | <code><a href="#@cdktf/provider-upcloud.managedDatabaseUser.ManagedDatabaseUser.Initializer.parameter.opensearchAccessControl">opensearch_access_control</a></code> | <code><a href="#@cdktf/provider-upcloud.managedDatabaseUser.ManagedDatabaseUserOpensearchAccessControl">ManagedDatabaseUserOpensearchAccessControl</a></code> | opensearch_access_control block. |
 | <code><a href="#@cdktf/provider-upcloud.managedDatabaseUser.ManagedDatabaseUser.Initializer.parameter.password">password</a></code> | <code>str</code> | Password for the database user. Defaults to a random value. |
 | <code><a href="#@cdktf/provider-upcloud.managedDatabaseUser.ManagedDatabaseUser.Initializer.parameter.pgAccessControl">pg_access_control</a></code> | <code><a href="#@cdktf/provider-upcloud.managedDatabaseUser.ManagedDatabaseUserPgAccessControl">ManagedDatabaseUserPgAccessControl</a></code> | pg_access_control block. |
 | <code><a href="#@cdktf/provider-upcloud.managedDatabaseUser.ManagedDatabaseUser.Initializer.parameter.redisAccessControl">redis_access_control</a></code> | <code><a href="#@cdktf/provider-upcloud.managedDatabaseUser.ManagedDatabaseUserRedisAccessControl">ManagedDatabaseUserRedisAccessControl</a></code> | redis_access_control block. |
+| <code><a href="#@cdktf/provider-upcloud.managedDatabaseUser.ManagedDatabaseUser.Initializer.parameter.valkeyAccessControl">valkey_access_control</a></code> | <code><a href="#@cdktf/provider-upcloud.managedDatabaseUser.ManagedDatabaseUserValkeyAccessControl">ManagedDatabaseUserValkeyAccessControl</a></code> | valkey_access_control block. |
 
 ---
 
@@ -120,7 +122,7 @@ Must be unique amongst siblings in the same scope
 
 Service's UUID for which this user belongs to.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.14.0/docs/resources/managed_database_user#service ManagedDatabaseUser#service}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.15.0/docs/resources/managed_database_user#service ManagedDatabaseUser#service}
 
 ---
 
@@ -130,7 +132,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upclo
 
 Name of the database user.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.14.0/docs/resources/managed_database_user#username ManagedDatabaseUser#username}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.15.0/docs/resources/managed_database_user#username ManagedDatabaseUser#username}
 
 ---
 
@@ -140,7 +142,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upclo
 
 MySQL only, authentication type.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.14.0/docs/resources/managed_database_user#authentication ManagedDatabaseUser#authentication}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.15.0/docs/resources/managed_database_user#authentication ManagedDatabaseUser#authentication}
 
 ---
 
@@ -148,7 +150,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upclo
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.14.0/docs/resources/managed_database_user#id ManagedDatabaseUser#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.15.0/docs/resources/managed_database_user#id ManagedDatabaseUser#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -161,7 +163,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 opensearch_access_control block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.14.0/docs/resources/managed_database_user#opensearch_access_control ManagedDatabaseUser#opensearch_access_control}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.15.0/docs/resources/managed_database_user#opensearch_access_control ManagedDatabaseUser#opensearch_access_control}
 
 ---
 
@@ -171,7 +173,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upclo
 
 Password for the database user. Defaults to a random value.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.14.0/docs/resources/managed_database_user#password ManagedDatabaseUser#password}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.15.0/docs/resources/managed_database_user#password ManagedDatabaseUser#password}
 
 ---
 
@@ -181,7 +183,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upclo
 
 pg_access_control block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.14.0/docs/resources/managed_database_user#pg_access_control ManagedDatabaseUser#pg_access_control}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.15.0/docs/resources/managed_database_user#pg_access_control ManagedDatabaseUser#pg_access_control}
 
 ---
 
@@ -191,7 +193,17 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upclo
 
 redis_access_control block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.14.0/docs/resources/managed_database_user#redis_access_control ManagedDatabaseUser#redis_access_control}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.15.0/docs/resources/managed_database_user#redis_access_control ManagedDatabaseUser#redis_access_control}
+
+---
+
+##### `valkey_access_control`<sup>Optional</sup> <a name="valkey_access_control" id="@cdktf/provider-upcloud.managedDatabaseUser.ManagedDatabaseUser.Initializer.parameter.valkeyAccessControl"></a>
+
+- *Type:* <a href="#@cdktf/provider-upcloud.managedDatabaseUser.ManagedDatabaseUserValkeyAccessControl">ManagedDatabaseUserValkeyAccessControl</a>
+
+valkey_access_control block.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.15.0/docs/resources/managed_database_user#valkey_access_control ManagedDatabaseUser#valkey_access_control}
 
 ---
 
@@ -225,12 +237,14 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upclo
 | <code><a href="#@cdktf/provider-upcloud.managedDatabaseUser.ManagedDatabaseUser.putOpensearchAccessControl">put_opensearch_access_control</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.managedDatabaseUser.ManagedDatabaseUser.putPgAccessControl">put_pg_access_control</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.managedDatabaseUser.ManagedDatabaseUser.putRedisAccessControl">put_redis_access_control</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-upcloud.managedDatabaseUser.ManagedDatabaseUser.putValkeyAccessControl">put_valkey_access_control</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.managedDatabaseUser.ManagedDatabaseUser.resetAuthentication">reset_authentication</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.managedDatabaseUser.ManagedDatabaseUser.resetId">reset_id</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.managedDatabaseUser.ManagedDatabaseUser.resetOpensearchAccessControl">reset_opensearch_access_control</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.managedDatabaseUser.ManagedDatabaseUser.resetPassword">reset_password</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.managedDatabaseUser.ManagedDatabaseUser.resetPgAccessControl">reset_pg_access_control</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.managedDatabaseUser.ManagedDatabaseUser.resetRedisAccessControl">reset_redis_access_control</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-upcloud.managedDatabaseUser.ManagedDatabaseUser.resetValkeyAccessControl">reset_valkey_access_control</a></code> | *No description.* |
 
 ---
 
@@ -573,7 +587,7 @@ def put_opensearch_access_control(
 
 rules block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.14.0/docs/resources/managed_database_user#rules ManagedDatabaseUser#rules}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.15.0/docs/resources/managed_database_user#rules ManagedDatabaseUser#rules}
 
 ---
 
@@ -591,7 +605,7 @@ def put_pg_access_control(
 
 Grant replication privilege.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.14.0/docs/resources/managed_database_user#allow_replication ManagedDatabaseUser#allow_replication}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.15.0/docs/resources/managed_database_user#allow_replication ManagedDatabaseUser#allow_replication}
 
 ---
 
@@ -612,7 +626,7 @@ def put_redis_access_control(
 
 Set access control to all commands in specified categories.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.14.0/docs/resources/managed_database_user#categories ManagedDatabaseUser#categories}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.15.0/docs/resources/managed_database_user#categories ManagedDatabaseUser#categories}
 
 ---
 
@@ -622,7 +636,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upclo
 
 Set access control to Pub/Sub channels.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.14.0/docs/resources/managed_database_user#channels ManagedDatabaseUser#channels}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.15.0/docs/resources/managed_database_user#channels ManagedDatabaseUser#channels}
 
 ---
 
@@ -632,7 +646,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upclo
 
 Set access control to commands.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.14.0/docs/resources/managed_database_user#commands ManagedDatabaseUser#commands}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.15.0/docs/resources/managed_database_user#commands ManagedDatabaseUser#commands}
 
 ---
 
@@ -642,7 +656,58 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upclo
 
 Set access control to keys.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.14.0/docs/resources/managed_database_user#keys ManagedDatabaseUser#keys}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.15.0/docs/resources/managed_database_user#keys ManagedDatabaseUser#keys}
+
+---
+
+##### `put_valkey_access_control` <a name="put_valkey_access_control" id="@cdktf/provider-upcloud.managedDatabaseUser.ManagedDatabaseUser.putValkeyAccessControl"></a>
+
+```python
+def put_valkey_access_control(
+  categories: typing.List[str] = None,
+  channels: typing.List[str] = None,
+  commands: typing.List[str] = None,
+  keys: typing.List[str] = None
+) -> None
+```
+
+###### `categories`<sup>Optional</sup> <a name="categories" id="@cdktf/provider-upcloud.managedDatabaseUser.ManagedDatabaseUser.putValkeyAccessControl.parameter.categories"></a>
+
+- *Type:* typing.List[str]
+
+Set access control to all commands in specified categories.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.15.0/docs/resources/managed_database_user#categories ManagedDatabaseUser#categories}
+
+---
+
+###### `channels`<sup>Optional</sup> <a name="channels" id="@cdktf/provider-upcloud.managedDatabaseUser.ManagedDatabaseUser.putValkeyAccessControl.parameter.channels"></a>
+
+- *Type:* typing.List[str]
+
+Set access control to Pub/Sub channels.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.15.0/docs/resources/managed_database_user#channels ManagedDatabaseUser#channels}
+
+---
+
+###### `commands`<sup>Optional</sup> <a name="commands" id="@cdktf/provider-upcloud.managedDatabaseUser.ManagedDatabaseUser.putValkeyAccessControl.parameter.commands"></a>
+
+- *Type:* typing.List[str]
+
+Set access control to commands.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.15.0/docs/resources/managed_database_user#commands ManagedDatabaseUser#commands}
+
+---
+
+###### `keys`<sup>Optional</sup> <a name="keys" id="@cdktf/provider-upcloud.managedDatabaseUser.ManagedDatabaseUser.putValkeyAccessControl.parameter.keys"></a>
+
+- *Type:* typing.List[str]
+
+Set access control to keys.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.15.0/docs/resources/managed_database_user#keys ManagedDatabaseUser#keys}
 
 ---
 
@@ -680,6 +745,12 @@ def reset_pg_access_control() -> None
 
 ```python
 def reset_redis_access_control() -> None
+```
+
+##### `reset_valkey_access_control` <a name="reset_valkey_access_control" id="@cdktf/provider-upcloud.managedDatabaseUser.ManagedDatabaseUser.resetValkeyAccessControl"></a>
+
+```python
+def reset_valkey_access_control() -> None
 ```
 
 #### Static Functions <a name="Static Functions" id="Static Functions"></a>
@@ -796,7 +867,7 @@ The construct id used in the generated config for the ManagedDatabaseUser to imp
 
 The id of the existing ManagedDatabaseUser that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.14.0/docs/resources/managed_database_user#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.15.0/docs/resources/managed_database_user#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -830,6 +901,7 @@ Refer to the {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5
 | <code><a href="#@cdktf/provider-upcloud.managedDatabaseUser.ManagedDatabaseUser.property.pgAccessControl">pg_access_control</a></code> | <code><a href="#@cdktf/provider-upcloud.managedDatabaseUser.ManagedDatabaseUserPgAccessControlOutputReference">ManagedDatabaseUserPgAccessControlOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.managedDatabaseUser.ManagedDatabaseUser.property.redisAccessControl">redis_access_control</a></code> | <code><a href="#@cdktf/provider-upcloud.managedDatabaseUser.ManagedDatabaseUserRedisAccessControlOutputReference">ManagedDatabaseUserRedisAccessControlOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.managedDatabaseUser.ManagedDatabaseUser.property.type">type</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-upcloud.managedDatabaseUser.ManagedDatabaseUser.property.valkeyAccessControl">valkey_access_control</a></code> | <code><a href="#@cdktf/provider-upcloud.managedDatabaseUser.ManagedDatabaseUserValkeyAccessControlOutputReference">ManagedDatabaseUserValkeyAccessControlOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.managedDatabaseUser.ManagedDatabaseUser.property.authenticationInput">authentication_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.managedDatabaseUser.ManagedDatabaseUser.property.idInput">id_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.managedDatabaseUser.ManagedDatabaseUser.property.opensearchAccessControlInput">opensearch_access_control_input</a></code> | <code><a href="#@cdktf/provider-upcloud.managedDatabaseUser.ManagedDatabaseUserOpensearchAccessControl">ManagedDatabaseUserOpensearchAccessControl</a></code> | *No description.* |
@@ -838,6 +910,7 @@ Refer to the {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5
 | <code><a href="#@cdktf/provider-upcloud.managedDatabaseUser.ManagedDatabaseUser.property.redisAccessControlInput">redis_access_control_input</a></code> | <code><a href="#@cdktf/provider-upcloud.managedDatabaseUser.ManagedDatabaseUserRedisAccessControl">ManagedDatabaseUserRedisAccessControl</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.managedDatabaseUser.ManagedDatabaseUser.property.serviceInput">service_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.managedDatabaseUser.ManagedDatabaseUser.property.usernameInput">username_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-upcloud.managedDatabaseUser.ManagedDatabaseUser.property.valkeyAccessControlInput">valkey_access_control_input</a></code> | <code><a href="#@cdktf/provider-upcloud.managedDatabaseUser.ManagedDatabaseUserValkeyAccessControl">ManagedDatabaseUserValkeyAccessControl</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.managedDatabaseUser.ManagedDatabaseUser.property.authentication">authentication</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.managedDatabaseUser.ManagedDatabaseUser.property.id">id</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.managedDatabaseUser.ManagedDatabaseUser.property.password">password</a></code> | <code>str</code> | *No description.* |
@@ -1028,6 +1101,16 @@ type: str
 
 ---
 
+##### `valkey_access_control`<sup>Required</sup> <a name="valkey_access_control" id="@cdktf/provider-upcloud.managedDatabaseUser.ManagedDatabaseUser.property.valkeyAccessControl"></a>
+
+```python
+valkey_access_control: ManagedDatabaseUserValkeyAccessControlOutputReference
+```
+
+- *Type:* <a href="#@cdktf/provider-upcloud.managedDatabaseUser.ManagedDatabaseUserValkeyAccessControlOutputReference">ManagedDatabaseUserValkeyAccessControlOutputReference</a>
+
+---
+
 ##### `authentication_input`<sup>Optional</sup> <a name="authentication_input" id="@cdktf/provider-upcloud.managedDatabaseUser.ManagedDatabaseUser.property.authenticationInput"></a>
 
 ```python
@@ -1105,6 +1188,16 @@ username_input: str
 ```
 
 - *Type:* str
+
+---
+
+##### `valkey_access_control_input`<sup>Optional</sup> <a name="valkey_access_control_input" id="@cdktf/provider-upcloud.managedDatabaseUser.ManagedDatabaseUser.property.valkeyAccessControlInput"></a>
+
+```python
+valkey_access_control_input: ManagedDatabaseUserValkeyAccessControl
+```
+
+- *Type:* <a href="#@cdktf/provider-upcloud.managedDatabaseUser.ManagedDatabaseUserValkeyAccessControl">ManagedDatabaseUserValkeyAccessControl</a>
 
 ---
 
@@ -1200,7 +1293,8 @@ managedDatabaseUser.ManagedDatabaseUserConfig(
   opensearch_access_control: ManagedDatabaseUserOpensearchAccessControl = None,
   password: str = None,
   pg_access_control: ManagedDatabaseUserPgAccessControl = None,
-  redis_access_control: ManagedDatabaseUserRedisAccessControl = None
+  redis_access_control: ManagedDatabaseUserRedisAccessControl = None,
+  valkey_access_control: ManagedDatabaseUserValkeyAccessControl = None
 )
 ```
 
@@ -1218,11 +1312,12 @@ managedDatabaseUser.ManagedDatabaseUserConfig(
 | <code><a href="#@cdktf/provider-upcloud.managedDatabaseUser.ManagedDatabaseUserConfig.property.service">service</a></code> | <code>str</code> | Service's UUID for which this user belongs to. |
 | <code><a href="#@cdktf/provider-upcloud.managedDatabaseUser.ManagedDatabaseUserConfig.property.username">username</a></code> | <code>str</code> | Name of the database user. |
 | <code><a href="#@cdktf/provider-upcloud.managedDatabaseUser.ManagedDatabaseUserConfig.property.authentication">authentication</a></code> | <code>str</code> | MySQL only, authentication type. |
-| <code><a href="#@cdktf/provider-upcloud.managedDatabaseUser.ManagedDatabaseUserConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.14.0/docs/resources/managed_database_user#id ManagedDatabaseUser#id}. |
+| <code><a href="#@cdktf/provider-upcloud.managedDatabaseUser.ManagedDatabaseUserConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.15.0/docs/resources/managed_database_user#id ManagedDatabaseUser#id}. |
 | <code><a href="#@cdktf/provider-upcloud.managedDatabaseUser.ManagedDatabaseUserConfig.property.opensearchAccessControl">opensearch_access_control</a></code> | <code><a href="#@cdktf/provider-upcloud.managedDatabaseUser.ManagedDatabaseUserOpensearchAccessControl">ManagedDatabaseUserOpensearchAccessControl</a></code> | opensearch_access_control block. |
 | <code><a href="#@cdktf/provider-upcloud.managedDatabaseUser.ManagedDatabaseUserConfig.property.password">password</a></code> | <code>str</code> | Password for the database user. Defaults to a random value. |
 | <code><a href="#@cdktf/provider-upcloud.managedDatabaseUser.ManagedDatabaseUserConfig.property.pgAccessControl">pg_access_control</a></code> | <code><a href="#@cdktf/provider-upcloud.managedDatabaseUser.ManagedDatabaseUserPgAccessControl">ManagedDatabaseUserPgAccessControl</a></code> | pg_access_control block. |
 | <code><a href="#@cdktf/provider-upcloud.managedDatabaseUser.ManagedDatabaseUserConfig.property.redisAccessControl">redis_access_control</a></code> | <code><a href="#@cdktf/provider-upcloud.managedDatabaseUser.ManagedDatabaseUserRedisAccessControl">ManagedDatabaseUserRedisAccessControl</a></code> | redis_access_control block. |
+| <code><a href="#@cdktf/provider-upcloud.managedDatabaseUser.ManagedDatabaseUserConfig.property.valkeyAccessControl">valkey_access_control</a></code> | <code><a href="#@cdktf/provider-upcloud.managedDatabaseUser.ManagedDatabaseUserValkeyAccessControl">ManagedDatabaseUserValkeyAccessControl</a></code> | valkey_access_control block. |
 
 ---
 
@@ -1306,7 +1401,7 @@ service: str
 
 Service's UUID for which this user belongs to.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.14.0/docs/resources/managed_database_user#service ManagedDatabaseUser#service}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.15.0/docs/resources/managed_database_user#service ManagedDatabaseUser#service}
 
 ---
 
@@ -1320,7 +1415,7 @@ username: str
 
 Name of the database user.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.14.0/docs/resources/managed_database_user#username ManagedDatabaseUser#username}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.15.0/docs/resources/managed_database_user#username ManagedDatabaseUser#username}
 
 ---
 
@@ -1334,7 +1429,7 @@ authentication: str
 
 MySQL only, authentication type.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.14.0/docs/resources/managed_database_user#authentication ManagedDatabaseUser#authentication}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.15.0/docs/resources/managed_database_user#authentication ManagedDatabaseUser#authentication}
 
 ---
 
@@ -1346,7 +1441,7 @@ id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.14.0/docs/resources/managed_database_user#id ManagedDatabaseUser#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.15.0/docs/resources/managed_database_user#id ManagedDatabaseUser#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1363,7 +1458,7 @@ opensearch_access_control: ManagedDatabaseUserOpensearchAccessControl
 
 opensearch_access_control block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.14.0/docs/resources/managed_database_user#opensearch_access_control ManagedDatabaseUser#opensearch_access_control}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.15.0/docs/resources/managed_database_user#opensearch_access_control ManagedDatabaseUser#opensearch_access_control}
 
 ---
 
@@ -1377,7 +1472,7 @@ password: str
 
 Password for the database user. Defaults to a random value.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.14.0/docs/resources/managed_database_user#password ManagedDatabaseUser#password}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.15.0/docs/resources/managed_database_user#password ManagedDatabaseUser#password}
 
 ---
 
@@ -1391,7 +1486,7 @@ pg_access_control: ManagedDatabaseUserPgAccessControl
 
 pg_access_control block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.14.0/docs/resources/managed_database_user#pg_access_control ManagedDatabaseUser#pg_access_control}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.15.0/docs/resources/managed_database_user#pg_access_control ManagedDatabaseUser#pg_access_control}
 
 ---
 
@@ -1405,7 +1500,21 @@ redis_access_control: ManagedDatabaseUserRedisAccessControl
 
 redis_access_control block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.14.0/docs/resources/managed_database_user#redis_access_control ManagedDatabaseUser#redis_access_control}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.15.0/docs/resources/managed_database_user#redis_access_control ManagedDatabaseUser#redis_access_control}
+
+---
+
+##### `valkey_access_control`<sup>Optional</sup> <a name="valkey_access_control" id="@cdktf/provider-upcloud.managedDatabaseUser.ManagedDatabaseUserConfig.property.valkeyAccessControl"></a>
+
+```python
+valkey_access_control: ManagedDatabaseUserValkeyAccessControl
+```
+
+- *Type:* <a href="#@cdktf/provider-upcloud.managedDatabaseUser.ManagedDatabaseUserValkeyAccessControl">ManagedDatabaseUserValkeyAccessControl</a>
+
+valkey_access_control block.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.15.0/docs/resources/managed_database_user#valkey_access_control ManagedDatabaseUser#valkey_access_control}
 
 ---
 
@@ -1439,7 +1548,7 @@ rules: typing.Union[IResolvable, typing.List[ManagedDatabaseUserOpensearchAccess
 
 rules block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.14.0/docs/resources/managed_database_user#rules ManagedDatabaseUser#rules}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.15.0/docs/resources/managed_database_user#rules ManagedDatabaseUser#rules}
 
 ---
 
@@ -1475,7 +1584,7 @@ index: str
 
 Set index name, pattern or top level API.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.14.0/docs/resources/managed_database_user#index ManagedDatabaseUser#index}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.15.0/docs/resources/managed_database_user#index ManagedDatabaseUser#index}
 
 ---
 
@@ -1489,7 +1598,7 @@ permission: str
 
 Set permission access.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.14.0/docs/resources/managed_database_user#permission ManagedDatabaseUser#permission}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.15.0/docs/resources/managed_database_user#permission ManagedDatabaseUser#permission}
 
 ---
 
@@ -1523,7 +1632,7 @@ allow_replication: typing.Union[bool, IResolvable]
 
 Grant replication privilege.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.14.0/docs/resources/managed_database_user#allow_replication ManagedDatabaseUser#allow_replication}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.15.0/docs/resources/managed_database_user#allow_replication ManagedDatabaseUser#allow_replication}
 
 ---
 
@@ -1563,7 +1672,7 @@ categories: typing.List[str]
 
 Set access control to all commands in specified categories.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.14.0/docs/resources/managed_database_user#categories ManagedDatabaseUser#categories}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.15.0/docs/resources/managed_database_user#categories ManagedDatabaseUser#categories}
 
 ---
 
@@ -1577,7 +1686,7 @@ channels: typing.List[str]
 
 Set access control to Pub/Sub channels.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.14.0/docs/resources/managed_database_user#channels ManagedDatabaseUser#channels}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.15.0/docs/resources/managed_database_user#channels ManagedDatabaseUser#channels}
 
 ---
 
@@ -1591,7 +1700,7 @@ commands: typing.List[str]
 
 Set access control to commands.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.14.0/docs/resources/managed_database_user#commands ManagedDatabaseUser#commands}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.15.0/docs/resources/managed_database_user#commands ManagedDatabaseUser#commands}
 
 ---
 
@@ -1605,7 +1714,89 @@ keys: typing.List[str]
 
 Set access control to keys.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.14.0/docs/resources/managed_database_user#keys ManagedDatabaseUser#keys}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.15.0/docs/resources/managed_database_user#keys ManagedDatabaseUser#keys}
+
+---
+
+### ManagedDatabaseUserValkeyAccessControl <a name="ManagedDatabaseUserValkeyAccessControl" id="@cdktf/provider-upcloud.managedDatabaseUser.ManagedDatabaseUserValkeyAccessControl"></a>
+
+#### Initializer <a name="Initializer" id="@cdktf/provider-upcloud.managedDatabaseUser.ManagedDatabaseUserValkeyAccessControl.Initializer"></a>
+
+```python
+from cdktf_cdktf_provider_upcloud import managed_database_user
+
+managedDatabaseUser.ManagedDatabaseUserValkeyAccessControl(
+  categories: typing.List[str] = None,
+  channels: typing.List[str] = None,
+  commands: typing.List[str] = None,
+  keys: typing.List[str] = None
+)
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-upcloud.managedDatabaseUser.ManagedDatabaseUserValkeyAccessControl.property.categories">categories</a></code> | <code>typing.List[str]</code> | Set access control to all commands in specified categories. |
+| <code><a href="#@cdktf/provider-upcloud.managedDatabaseUser.ManagedDatabaseUserValkeyAccessControl.property.channels">channels</a></code> | <code>typing.List[str]</code> | Set access control to Pub/Sub channels. |
+| <code><a href="#@cdktf/provider-upcloud.managedDatabaseUser.ManagedDatabaseUserValkeyAccessControl.property.commands">commands</a></code> | <code>typing.List[str]</code> | Set access control to commands. |
+| <code><a href="#@cdktf/provider-upcloud.managedDatabaseUser.ManagedDatabaseUserValkeyAccessControl.property.keys">keys</a></code> | <code>typing.List[str]</code> | Set access control to keys. |
+
+---
+
+##### `categories`<sup>Optional</sup> <a name="categories" id="@cdktf/provider-upcloud.managedDatabaseUser.ManagedDatabaseUserValkeyAccessControl.property.categories"></a>
+
+```python
+categories: typing.List[str]
+```
+
+- *Type:* typing.List[str]
+
+Set access control to all commands in specified categories.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.15.0/docs/resources/managed_database_user#categories ManagedDatabaseUser#categories}
+
+---
+
+##### `channels`<sup>Optional</sup> <a name="channels" id="@cdktf/provider-upcloud.managedDatabaseUser.ManagedDatabaseUserValkeyAccessControl.property.channels"></a>
+
+```python
+channels: typing.List[str]
+```
+
+- *Type:* typing.List[str]
+
+Set access control to Pub/Sub channels.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.15.0/docs/resources/managed_database_user#channels ManagedDatabaseUser#channels}
+
+---
+
+##### `commands`<sup>Optional</sup> <a name="commands" id="@cdktf/provider-upcloud.managedDatabaseUser.ManagedDatabaseUserValkeyAccessControl.property.commands"></a>
+
+```python
+commands: typing.List[str]
+```
+
+- *Type:* typing.List[str]
+
+Set access control to commands.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.15.0/docs/resources/managed_database_user#commands ManagedDatabaseUser#commands}
+
+---
+
+##### `keys`<sup>Optional</sup> <a name="keys" id="@cdktf/provider-upcloud.managedDatabaseUser.ManagedDatabaseUserValkeyAccessControl.property.keys"></a>
+
+```python
+keys: typing.List[str]
+```
+
+- *Type:* typing.List[str]
+
+Set access control to keys.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.15.0/docs/resources/managed_database_user#keys ManagedDatabaseUser#keys}
 
 ---
 
@@ -3119,6 +3310,396 @@ internal_value: ManagedDatabaseUserRedisAccessControl
 ```
 
 - *Type:* <a href="#@cdktf/provider-upcloud.managedDatabaseUser.ManagedDatabaseUserRedisAccessControl">ManagedDatabaseUserRedisAccessControl</a>
+
+---
+
+
+### ManagedDatabaseUserValkeyAccessControlOutputReference <a name="ManagedDatabaseUserValkeyAccessControlOutputReference" id="@cdktf/provider-upcloud.managedDatabaseUser.ManagedDatabaseUserValkeyAccessControlOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktf/provider-upcloud.managedDatabaseUser.ManagedDatabaseUserValkeyAccessControlOutputReference.Initializer"></a>
+
+```python
+from cdktf_cdktf_provider_upcloud import managed_database_user
+
+managedDatabaseUser.ManagedDatabaseUserValkeyAccessControlOutputReference(
+  terraform_resource: IInterpolatingParent,
+  terraform_attribute: str
+)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-upcloud.managedDatabaseUser.ManagedDatabaseUserValkeyAccessControlOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktf/provider-upcloud.managedDatabaseUser.ManagedDatabaseUserValkeyAccessControlOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
+
+---
+
+##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktf/provider-upcloud.managedDatabaseUser.ManagedDatabaseUserValkeyAccessControlOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* cdktf.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-upcloud.managedDatabaseUser.ManagedDatabaseUserValkeyAccessControlOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktf/provider-upcloud.managedDatabaseUser.ManagedDatabaseUserValkeyAccessControlOutputReference.computeFqn">compute_fqn</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-upcloud.managedDatabaseUser.ManagedDatabaseUserValkeyAccessControlOutputReference.getAnyMapAttribute">get_any_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-upcloud.managedDatabaseUser.ManagedDatabaseUserValkeyAccessControlOutputReference.getBooleanAttribute">get_boolean_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-upcloud.managedDatabaseUser.ManagedDatabaseUserValkeyAccessControlOutputReference.getBooleanMapAttribute">get_boolean_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-upcloud.managedDatabaseUser.ManagedDatabaseUserValkeyAccessControlOutputReference.getListAttribute">get_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-upcloud.managedDatabaseUser.ManagedDatabaseUserValkeyAccessControlOutputReference.getNumberAttribute">get_number_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-upcloud.managedDatabaseUser.ManagedDatabaseUserValkeyAccessControlOutputReference.getNumberListAttribute">get_number_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-upcloud.managedDatabaseUser.ManagedDatabaseUserValkeyAccessControlOutputReference.getNumberMapAttribute">get_number_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-upcloud.managedDatabaseUser.ManagedDatabaseUserValkeyAccessControlOutputReference.getStringAttribute">get_string_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-upcloud.managedDatabaseUser.ManagedDatabaseUserValkeyAccessControlOutputReference.getStringMapAttribute">get_string_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-upcloud.managedDatabaseUser.ManagedDatabaseUserValkeyAccessControlOutputReference.interpolationForAttribute">interpolation_for_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-upcloud.managedDatabaseUser.ManagedDatabaseUserValkeyAccessControlOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktf/provider-upcloud.managedDatabaseUser.ManagedDatabaseUserValkeyAccessControlOutputReference.toString">to_string</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktf/provider-upcloud.managedDatabaseUser.ManagedDatabaseUserValkeyAccessControlOutputReference.resetCategories">reset_categories</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-upcloud.managedDatabaseUser.ManagedDatabaseUserValkeyAccessControlOutputReference.resetChannels">reset_channels</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-upcloud.managedDatabaseUser.ManagedDatabaseUserValkeyAccessControlOutputReference.resetCommands">reset_commands</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-upcloud.managedDatabaseUser.ManagedDatabaseUserValkeyAccessControlOutputReference.resetKeys">reset_keys</a></code> | *No description.* |
+
+---
+
+##### `compute_fqn` <a name="compute_fqn" id="@cdktf/provider-upcloud.managedDatabaseUser.ManagedDatabaseUserValkeyAccessControlOutputReference.computeFqn"></a>
+
+```python
+def compute_fqn() -> str
+```
+
+##### `get_any_map_attribute` <a name="get_any_map_attribute" id="@cdktf/provider-upcloud.managedDatabaseUser.ManagedDatabaseUserValkeyAccessControlOutputReference.getAnyMapAttribute"></a>
+
+```python
+def get_any_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[typing.Any]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-upcloud.managedDatabaseUser.ManagedDatabaseUserValkeyAccessControlOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_boolean_attribute` <a name="get_boolean_attribute" id="@cdktf/provider-upcloud.managedDatabaseUser.ManagedDatabaseUserValkeyAccessControlOutputReference.getBooleanAttribute"></a>
+
+```python
+def get_boolean_attribute(
+  terraform_attribute: str
+) -> IResolvable
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-upcloud.managedDatabaseUser.ManagedDatabaseUserValkeyAccessControlOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_boolean_map_attribute` <a name="get_boolean_map_attribute" id="@cdktf/provider-upcloud.managedDatabaseUser.ManagedDatabaseUserValkeyAccessControlOutputReference.getBooleanMapAttribute"></a>
+
+```python
+def get_boolean_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[bool]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-upcloud.managedDatabaseUser.ManagedDatabaseUserValkeyAccessControlOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_list_attribute` <a name="get_list_attribute" id="@cdktf/provider-upcloud.managedDatabaseUser.ManagedDatabaseUserValkeyAccessControlOutputReference.getListAttribute"></a>
+
+```python
+def get_list_attribute(
+  terraform_attribute: str
+) -> typing.List[str]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-upcloud.managedDatabaseUser.ManagedDatabaseUserValkeyAccessControlOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_number_attribute` <a name="get_number_attribute" id="@cdktf/provider-upcloud.managedDatabaseUser.ManagedDatabaseUserValkeyAccessControlOutputReference.getNumberAttribute"></a>
+
+```python
+def get_number_attribute(
+  terraform_attribute: str
+) -> typing.Union[int, float]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-upcloud.managedDatabaseUser.ManagedDatabaseUserValkeyAccessControlOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_number_list_attribute` <a name="get_number_list_attribute" id="@cdktf/provider-upcloud.managedDatabaseUser.ManagedDatabaseUserValkeyAccessControlOutputReference.getNumberListAttribute"></a>
+
+```python
+def get_number_list_attribute(
+  terraform_attribute: str
+) -> typing.List[typing.Union[int, float]]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-upcloud.managedDatabaseUser.ManagedDatabaseUserValkeyAccessControlOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_number_map_attribute` <a name="get_number_map_attribute" id="@cdktf/provider-upcloud.managedDatabaseUser.ManagedDatabaseUserValkeyAccessControlOutputReference.getNumberMapAttribute"></a>
+
+```python
+def get_number_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[typing.Union[int, float]]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-upcloud.managedDatabaseUser.ManagedDatabaseUserValkeyAccessControlOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_string_attribute` <a name="get_string_attribute" id="@cdktf/provider-upcloud.managedDatabaseUser.ManagedDatabaseUserValkeyAccessControlOutputReference.getStringAttribute"></a>
+
+```python
+def get_string_attribute(
+  terraform_attribute: str
+) -> str
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-upcloud.managedDatabaseUser.ManagedDatabaseUserValkeyAccessControlOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_string_map_attribute` <a name="get_string_map_attribute" id="@cdktf/provider-upcloud.managedDatabaseUser.ManagedDatabaseUserValkeyAccessControlOutputReference.getStringMapAttribute"></a>
+
+```python
+def get_string_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[str]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-upcloud.managedDatabaseUser.ManagedDatabaseUserValkeyAccessControlOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `interpolation_for_attribute` <a name="interpolation_for_attribute" id="@cdktf/provider-upcloud.managedDatabaseUser.ManagedDatabaseUserValkeyAccessControlOutputReference.interpolationForAttribute"></a>
+
+```python
+def interpolation_for_attribute(
+  property: str
+) -> IResolvable
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktf/provider-upcloud.managedDatabaseUser.ManagedDatabaseUserValkeyAccessControlOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* str
+
+---
+
+##### `resolve` <a name="resolve" id="@cdktf/provider-upcloud.managedDatabaseUser.ManagedDatabaseUserValkeyAccessControlOutputReference.resolve"></a>
+
+```python
+def resolve(
+  _context: IResolveContext
+) -> typing.Any
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktf/provider-upcloud.managedDatabaseUser.ManagedDatabaseUserValkeyAccessControlOutputReference.resolve.parameter._context"></a>
+
+- *Type:* cdktf.IResolveContext
+
+---
+
+##### `to_string` <a name="to_string" id="@cdktf/provider-upcloud.managedDatabaseUser.ManagedDatabaseUserValkeyAccessControlOutputReference.toString"></a>
+
+```python
+def to_string() -> str
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `reset_categories` <a name="reset_categories" id="@cdktf/provider-upcloud.managedDatabaseUser.ManagedDatabaseUserValkeyAccessControlOutputReference.resetCategories"></a>
+
+```python
+def reset_categories() -> None
+```
+
+##### `reset_channels` <a name="reset_channels" id="@cdktf/provider-upcloud.managedDatabaseUser.ManagedDatabaseUserValkeyAccessControlOutputReference.resetChannels"></a>
+
+```python
+def reset_channels() -> None
+```
+
+##### `reset_commands` <a name="reset_commands" id="@cdktf/provider-upcloud.managedDatabaseUser.ManagedDatabaseUserValkeyAccessControlOutputReference.resetCommands"></a>
+
+```python
+def reset_commands() -> None
+```
+
+##### `reset_keys` <a name="reset_keys" id="@cdktf/provider-upcloud.managedDatabaseUser.ManagedDatabaseUserValkeyAccessControlOutputReference.resetKeys"></a>
+
+```python
+def reset_keys() -> None
+```
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-upcloud.managedDatabaseUser.ManagedDatabaseUserValkeyAccessControlOutputReference.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktf/provider-upcloud.managedDatabaseUser.ManagedDatabaseUserValkeyAccessControlOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-upcloud.managedDatabaseUser.ManagedDatabaseUserValkeyAccessControlOutputReference.property.categoriesInput">categories_input</a></code> | <code>typing.List[str]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-upcloud.managedDatabaseUser.ManagedDatabaseUserValkeyAccessControlOutputReference.property.channelsInput">channels_input</a></code> | <code>typing.List[str]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-upcloud.managedDatabaseUser.ManagedDatabaseUserValkeyAccessControlOutputReference.property.commandsInput">commands_input</a></code> | <code>typing.List[str]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-upcloud.managedDatabaseUser.ManagedDatabaseUserValkeyAccessControlOutputReference.property.keysInput">keys_input</a></code> | <code>typing.List[str]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-upcloud.managedDatabaseUser.ManagedDatabaseUserValkeyAccessControlOutputReference.property.categories">categories</a></code> | <code>typing.List[str]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-upcloud.managedDatabaseUser.ManagedDatabaseUserValkeyAccessControlOutputReference.property.channels">channels</a></code> | <code>typing.List[str]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-upcloud.managedDatabaseUser.ManagedDatabaseUserValkeyAccessControlOutputReference.property.commands">commands</a></code> | <code>typing.List[str]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-upcloud.managedDatabaseUser.ManagedDatabaseUserValkeyAccessControlOutputReference.property.keys">keys</a></code> | <code>typing.List[str]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-upcloud.managedDatabaseUser.ManagedDatabaseUserValkeyAccessControlOutputReference.property.internalValue">internal_value</a></code> | <code><a href="#@cdktf/provider-upcloud.managedDatabaseUser.ManagedDatabaseUserValkeyAccessControl">ManagedDatabaseUserValkeyAccessControl</a></code> | *No description.* |
+
+---
+
+##### `creation_stack`<sup>Required</sup> <a name="creation_stack" id="@cdktf/provider-upcloud.managedDatabaseUser.ManagedDatabaseUserValkeyAccessControlOutputReference.property.creationStack"></a>
+
+```python
+creation_stack: typing.List[str]
+```
+
+- *Type:* typing.List[str]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktf/provider-upcloud.managedDatabaseUser.ManagedDatabaseUserValkeyAccessControlOutputReference.property.fqn"></a>
+
+```python
+fqn: str
+```
+
+- *Type:* str
+
+---
+
+##### `categories_input`<sup>Optional</sup> <a name="categories_input" id="@cdktf/provider-upcloud.managedDatabaseUser.ManagedDatabaseUserValkeyAccessControlOutputReference.property.categoriesInput"></a>
+
+```python
+categories_input: typing.List[str]
+```
+
+- *Type:* typing.List[str]
+
+---
+
+##### `channels_input`<sup>Optional</sup> <a name="channels_input" id="@cdktf/provider-upcloud.managedDatabaseUser.ManagedDatabaseUserValkeyAccessControlOutputReference.property.channelsInput"></a>
+
+```python
+channels_input: typing.List[str]
+```
+
+- *Type:* typing.List[str]
+
+---
+
+##### `commands_input`<sup>Optional</sup> <a name="commands_input" id="@cdktf/provider-upcloud.managedDatabaseUser.ManagedDatabaseUserValkeyAccessControlOutputReference.property.commandsInput"></a>
+
+```python
+commands_input: typing.List[str]
+```
+
+- *Type:* typing.List[str]
+
+---
+
+##### `keys_input`<sup>Optional</sup> <a name="keys_input" id="@cdktf/provider-upcloud.managedDatabaseUser.ManagedDatabaseUserValkeyAccessControlOutputReference.property.keysInput"></a>
+
+```python
+keys_input: typing.List[str]
+```
+
+- *Type:* typing.List[str]
+
+---
+
+##### `categories`<sup>Required</sup> <a name="categories" id="@cdktf/provider-upcloud.managedDatabaseUser.ManagedDatabaseUserValkeyAccessControlOutputReference.property.categories"></a>
+
+```python
+categories: typing.List[str]
+```
+
+- *Type:* typing.List[str]
+
+---
+
+##### `channels`<sup>Required</sup> <a name="channels" id="@cdktf/provider-upcloud.managedDatabaseUser.ManagedDatabaseUserValkeyAccessControlOutputReference.property.channels"></a>
+
+```python
+channels: typing.List[str]
+```
+
+- *Type:* typing.List[str]
+
+---
+
+##### `commands`<sup>Required</sup> <a name="commands" id="@cdktf/provider-upcloud.managedDatabaseUser.ManagedDatabaseUserValkeyAccessControlOutputReference.property.commands"></a>
+
+```python
+commands: typing.List[str]
+```
+
+- *Type:* typing.List[str]
+
+---
+
+##### `keys`<sup>Required</sup> <a name="keys" id="@cdktf/provider-upcloud.managedDatabaseUser.ManagedDatabaseUserValkeyAccessControlOutputReference.property.keys"></a>
+
+```python
+keys: typing.List[str]
+```
+
+- *Type:* typing.List[str]
+
+---
+
+##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-upcloud.managedDatabaseUser.ManagedDatabaseUserValkeyAccessControlOutputReference.property.internalValue"></a>
+
+```python
+internal_value: ManagedDatabaseUserValkeyAccessControl
+```
+
+- *Type:* <a href="#@cdktf/provider-upcloud.managedDatabaseUser.ManagedDatabaseUserValkeyAccessControl">ManagedDatabaseUserValkeyAccessControl</a>
 
 ---
 

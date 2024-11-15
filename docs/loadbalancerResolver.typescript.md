@@ -4,7 +4,7 @@
 
 ### LoadbalancerResolver <a name="LoadbalancerResolver" id="@cdktf/provider-upcloud.loadbalancerResolver.LoadbalancerResolver"></a>
 
-Represents a {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.14.0/docs/resources/loadbalancer_resolver upcloud_loadbalancer_resolver}.
+Represents a {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.15.0/docs/resources/loadbalancer_resolver upcloud_loadbalancer_resolver}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-upcloud.loadbalancerResolver.LoadbalancerResolver.Initializer"></a>
 
@@ -467,7 +467,7 @@ The construct id used in the generated config for the LoadbalancerResolver to im
 
 The id of the existing LoadbalancerResolver that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.14.0/docs/resources/loadbalancer_resolver#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.15.0/docs/resources/loadbalancer_resolver#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -961,7 +961,7 @@ public readonly cacheInvalid: number;
 
 Time in seconds to cache invalid results.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.14.0/docs/resources/loadbalancer_resolver#cache_invalid LoadbalancerResolver#cache_invalid}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.15.0/docs/resources/loadbalancer_resolver#cache_invalid LoadbalancerResolver#cache_invalid}
 
 ---
 
@@ -975,7 +975,7 @@ public readonly cacheValid: number;
 
 Time in seconds to cache valid results.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.14.0/docs/resources/loadbalancer_resolver#cache_valid LoadbalancerResolver#cache_valid}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.15.0/docs/resources/loadbalancer_resolver#cache_valid LoadbalancerResolver#cache_valid}
 
 ---
 
@@ -989,7 +989,7 @@ public readonly loadbalancer: string;
 
 ID of the load balancer to which the resolver is connected.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.14.0/docs/resources/loadbalancer_resolver#loadbalancer LoadbalancerResolver#loadbalancer}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.15.0/docs/resources/loadbalancer_resolver#loadbalancer LoadbalancerResolver#loadbalancer}
 
 ---
 
@@ -1003,7 +1003,7 @@ public readonly name: string;
 
 The name of the resolver. Must be unique within the service.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.14.0/docs/resources/loadbalancer_resolver#name LoadbalancerResolver#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.15.0/docs/resources/loadbalancer_resolver#name LoadbalancerResolver#name}
 
 ---
 
@@ -1019,7 +1019,7 @@ List of nameserver IP addresses.
 
 Nameserver can reside in public internet or in customer private network. Port is optional, if missing then default 53 will be used.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.14.0/docs/resources/loadbalancer_resolver#nameservers LoadbalancerResolver#nameservers}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.15.0/docs/resources/loadbalancer_resolver#nameservers LoadbalancerResolver#nameservers}
 
 ---
 
@@ -1033,7 +1033,7 @@ public readonly retries: number;
 
 Number of retries on failure.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.14.0/docs/resources/loadbalancer_resolver#retries LoadbalancerResolver#retries}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.15.0/docs/resources/loadbalancer_resolver#retries LoadbalancerResolver#retries}
 
 ---
 
@@ -1047,7 +1047,7 @@ public readonly timeout: number;
 
 Timeout for the query in seconds.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.14.0/docs/resources/loadbalancer_resolver#timeout LoadbalancerResolver#timeout}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.15.0/docs/resources/loadbalancer_resolver#timeout LoadbalancerResolver#timeout}
 
 ---
 
@@ -1061,7 +1061,7 @@ public readonly timeoutRetry: number;
 
 Timeout for the query retries in seconds.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.14.0/docs/resources/loadbalancer_resolver#timeout_retry LoadbalancerResolver#timeout_retry}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.15.0/docs/resources/loadbalancer_resolver#timeout_retry LoadbalancerResolver#timeout_retry}
 
 ---
 
