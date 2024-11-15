@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/upcloudltd/upcloud/5.14.0/docs/resources/managed_database_opensearch
+// https://registry.terraform.io/providers/upcloudltd/upcloud/5.15.0/docs/resources/managed_database_opensearch
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,17 +10,17 @@ export interface ManagedDatabaseOpensearchConfig extends cdktf.TerraformMetaArgu
   /**
   * Enables users access control for OpenSearch service. User access control rules will only be enforced if this attribute is enabled.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.14.0/docs/resources/managed_database_opensearch#access_control ManagedDatabaseOpensearch#access_control}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.15.0/docs/resources/managed_database_opensearch#access_control ManagedDatabaseOpensearch#access_control}
   */
   readonly accessControl?: boolean | cdktf.IResolvable;
   /**
   * Grant access to top-level `_mget`, `_msearch` and `_bulk` APIs. Users are limited to perform operations on indices based on the user-specific access control rules.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.14.0/docs/resources/managed_database_opensearch#extended_access_control ManagedDatabaseOpensearch#extended_access_control}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.15.0/docs/resources/managed_database_opensearch#extended_access_control ManagedDatabaseOpensearch#extended_access_control}
   */
   readonly extendedAccessControl?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.14.0/docs/resources/managed_database_opensearch#id ManagedDatabaseOpensearch#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.15.0/docs/resources/managed_database_opensearch#id ManagedDatabaseOpensearch#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -34,61 +29,61 @@ export interface ManagedDatabaseOpensearchConfig extends cdktf.TerraformMetaArgu
   /**
   * User defined key-value pairs to classify the managed database.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.14.0/docs/resources/managed_database_opensearch#labels ManagedDatabaseOpensearch#labels}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.15.0/docs/resources/managed_database_opensearch#labels ManagedDatabaseOpensearch#labels}
   */
   readonly labels?: { [key: string]: string };
   /**
   * Maintenance window day of week. Lower case weekday name (monday, tuesday, ...)
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.14.0/docs/resources/managed_database_opensearch#maintenance_window_dow ManagedDatabaseOpensearch#maintenance_window_dow}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.15.0/docs/resources/managed_database_opensearch#maintenance_window_dow ManagedDatabaseOpensearch#maintenance_window_dow}
   */
   readonly maintenanceWindowDow?: string;
   /**
   * Maintenance window UTC time in hh:mm:ss format
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.14.0/docs/resources/managed_database_opensearch#maintenance_window_time ManagedDatabaseOpensearch#maintenance_window_time}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.15.0/docs/resources/managed_database_opensearch#maintenance_window_time ManagedDatabaseOpensearch#maintenance_window_time}
   */
   readonly maintenanceWindowTime?: string;
   /**
   * Name of the service. The name is used as a prefix for the logical hostname. Must be unique within an account
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.14.0/docs/resources/managed_database_opensearch#name ManagedDatabaseOpensearch#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.15.0/docs/resources/managed_database_opensearch#name ManagedDatabaseOpensearch#name}
   */
   readonly name: string;
   /**
   * Service plan to use. This determines how much resources the instance will have. You can list available plans with `upctl database plans <type>`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.14.0/docs/resources/managed_database_opensearch#plan ManagedDatabaseOpensearch#plan}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.15.0/docs/resources/managed_database_opensearch#plan ManagedDatabaseOpensearch#plan}
   */
   readonly plan: string;
   /**
   * The administrative power state of the service
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.14.0/docs/resources/managed_database_opensearch#powered ManagedDatabaseOpensearch#powered}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.15.0/docs/resources/managed_database_opensearch#powered ManagedDatabaseOpensearch#powered}
   */
   readonly powered?: boolean | cdktf.IResolvable;
   /**
   * Title of a managed database instance
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.14.0/docs/resources/managed_database_opensearch#title ManagedDatabaseOpensearch#title}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.15.0/docs/resources/managed_database_opensearch#title ManagedDatabaseOpensearch#title}
   */
   readonly title: string;
   /**
   * Zone where the instance resides, e.g. `de-fra1`. You can list available zones with `upctl zone list`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.14.0/docs/resources/managed_database_opensearch#zone ManagedDatabaseOpensearch#zone}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.15.0/docs/resources/managed_database_opensearch#zone ManagedDatabaseOpensearch#zone}
   */
   readonly zone: string;
   /**
   * network block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.14.0/docs/resources/managed_database_opensearch#network ManagedDatabaseOpensearch#network}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.15.0/docs/resources/managed_database_opensearch#network ManagedDatabaseOpensearch#network}
   */
   readonly network?: ManagedDatabaseOpensearchNetwork[] | cdktf.IResolvable;
   /**
   * properties block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.14.0/docs/resources/managed_database_opensearch#properties ManagedDatabaseOpensearch#properties}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.15.0/docs/resources/managed_database_opensearch#properties ManagedDatabaseOpensearch#properties}
   */
   readonly properties?: ManagedDatabaseOpensearchProperties;
 }
@@ -276,25 +271,25 @@ export interface ManagedDatabaseOpensearchNetwork {
   /**
   * Network family. Currently only `IPv4` is supported.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.14.0/docs/resources/managed_database_opensearch#family ManagedDatabaseOpensearch#family}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.15.0/docs/resources/managed_database_opensearch#family ManagedDatabaseOpensearch#family}
   */
   readonly family: string;
   /**
   * The name of the network. Must be unique within the service.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.14.0/docs/resources/managed_database_opensearch#name ManagedDatabaseOpensearch#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.15.0/docs/resources/managed_database_opensearch#name ManagedDatabaseOpensearch#name}
   */
   readonly name: string;
   /**
   * The type of the network. Must be private.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.14.0/docs/resources/managed_database_opensearch#type ManagedDatabaseOpensearch#type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.15.0/docs/resources/managed_database_opensearch#type ManagedDatabaseOpensearch#type}
   */
   readonly type: string;
   /**
   * Private network UUID. Must reside in the same zone as the database.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.14.0/docs/resources/managed_database_opensearch#uuid ManagedDatabaseOpensearch#uuid}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.15.0/docs/resources/managed_database_opensearch#uuid ManagedDatabaseOpensearch#uuid}
   */
   readonly uuid: string;
 }
@@ -487,43 +482,43 @@ export interface ManagedDatabaseOpensearchPropertiesAuthFailureListenersInternal
   /**
   * The number of login attempts allowed before login is blocked.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.14.0/docs/resources/managed_database_opensearch#allowed_tries ManagedDatabaseOpensearch#allowed_tries}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.15.0/docs/resources/managed_database_opensearch#allowed_tries ManagedDatabaseOpensearch#allowed_tries}
   */
   readonly allowedTries?: number;
   /**
   * The internal backend. Enter `internal`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.14.0/docs/resources/managed_database_opensearch#authentication_backend ManagedDatabaseOpensearch#authentication_backend}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.15.0/docs/resources/managed_database_opensearch#authentication_backend ManagedDatabaseOpensearch#authentication_backend}
   */
   readonly authenticationBackend?: string;
   /**
   * The duration of time that login remains blocked after a failed login.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.14.0/docs/resources/managed_database_opensearch#block_expiry_seconds ManagedDatabaseOpensearch#block_expiry_seconds}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.15.0/docs/resources/managed_database_opensearch#block_expiry_seconds ManagedDatabaseOpensearch#block_expiry_seconds}
   */
   readonly blockExpirySeconds?: number;
   /**
   * The maximum number of blocked IP addresses.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.14.0/docs/resources/managed_database_opensearch#max_blocked_clients ManagedDatabaseOpensearch#max_blocked_clients}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.15.0/docs/resources/managed_database_opensearch#max_blocked_clients ManagedDatabaseOpensearch#max_blocked_clients}
   */
   readonly maxBlockedClients?: number;
   /**
   * The maximum number of tracked IP addresses that have failed login.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.14.0/docs/resources/managed_database_opensearch#max_tracked_clients ManagedDatabaseOpensearch#max_tracked_clients}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.15.0/docs/resources/managed_database_opensearch#max_tracked_clients ManagedDatabaseOpensearch#max_tracked_clients}
   */
   readonly maxTrackedClients?: number;
   /**
   * The window of time in which the value for `allowed_tries` is enforced.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.14.0/docs/resources/managed_database_opensearch#time_window_seconds ManagedDatabaseOpensearch#time_window_seconds}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.15.0/docs/resources/managed_database_opensearch#time_window_seconds ManagedDatabaseOpensearch#time_window_seconds}
   */
   readonly timeWindowSeconds?: number;
   /**
   * The type of rate limiting.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.14.0/docs/resources/managed_database_opensearch#type ManagedDatabaseOpensearch#type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.15.0/docs/resources/managed_database_opensearch#type ManagedDatabaseOpensearch#type}
   */
   readonly type?: string;
 }
@@ -783,37 +778,37 @@ export interface ManagedDatabaseOpensearchPropertiesAuthFailureListenersIpRateLi
   /**
   * The number of login attempts allowed before login is blocked.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.14.0/docs/resources/managed_database_opensearch#allowed_tries ManagedDatabaseOpensearch#allowed_tries}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.15.0/docs/resources/managed_database_opensearch#allowed_tries ManagedDatabaseOpensearch#allowed_tries}
   */
   readonly allowedTries?: number;
   /**
   * The duration of time that login remains blocked after a failed login.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.14.0/docs/resources/managed_database_opensearch#block_expiry_seconds ManagedDatabaseOpensearch#block_expiry_seconds}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.15.0/docs/resources/managed_database_opensearch#block_expiry_seconds ManagedDatabaseOpensearch#block_expiry_seconds}
   */
   readonly blockExpirySeconds?: number;
   /**
   * The maximum number of blocked IP addresses.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.14.0/docs/resources/managed_database_opensearch#max_blocked_clients ManagedDatabaseOpensearch#max_blocked_clients}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.15.0/docs/resources/managed_database_opensearch#max_blocked_clients ManagedDatabaseOpensearch#max_blocked_clients}
   */
   readonly maxBlockedClients?: number;
   /**
   * The maximum number of tracked IP addresses that have failed login.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.14.0/docs/resources/managed_database_opensearch#max_tracked_clients ManagedDatabaseOpensearch#max_tracked_clients}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.15.0/docs/resources/managed_database_opensearch#max_tracked_clients ManagedDatabaseOpensearch#max_tracked_clients}
   */
   readonly maxTrackedClients?: number;
   /**
   * The window of time in which the value for `allowed_tries` is enforced.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.14.0/docs/resources/managed_database_opensearch#time_window_seconds ManagedDatabaseOpensearch#time_window_seconds}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.15.0/docs/resources/managed_database_opensearch#time_window_seconds ManagedDatabaseOpensearch#time_window_seconds}
   */
   readonly timeWindowSeconds?: number;
   /**
   * The type of rate limiting.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.14.0/docs/resources/managed_database_opensearch#type ManagedDatabaseOpensearch#type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.15.0/docs/resources/managed_database_opensearch#type ManagedDatabaseOpensearch#type}
   */
   readonly type?: string;
 }
@@ -1044,13 +1039,13 @@ export interface ManagedDatabaseOpensearchPropertiesAuthFailureListeners {
   /**
   * internal_authentication_backend_limiting block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.14.0/docs/resources/managed_database_opensearch#internal_authentication_backend_limiting ManagedDatabaseOpensearch#internal_authentication_backend_limiting}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.15.0/docs/resources/managed_database_opensearch#internal_authentication_backend_limiting ManagedDatabaseOpensearch#internal_authentication_backend_limiting}
   */
   readonly internalAuthenticationBackendLimiting?: ManagedDatabaseOpensearchPropertiesAuthFailureListenersInternalAuthenticationBackendLimiting;
   /**
   * ip_rate_limiting block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.14.0/docs/resources/managed_database_opensearch#ip_rate_limiting ManagedDatabaseOpensearch#ip_rate_limiting}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.15.0/docs/resources/managed_database_opensearch#ip_rate_limiting ManagedDatabaseOpensearch#ip_rate_limiting}
   */
   readonly ipRateLimiting?: ManagedDatabaseOpensearchPropertiesAuthFailureListenersIpRateLimiting;
 }
@@ -1165,55 +1160,73 @@ export interface ManagedDatabaseOpensearchPropertiesAzureMigration {
   /**
   * Account name. Azure account name.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.14.0/docs/resources/managed_database_opensearch#account ManagedDatabaseOpensearch#account}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.15.0/docs/resources/managed_database_opensearch#account ManagedDatabaseOpensearch#account}
   */
   readonly account?: string;
   /**
   * The path to the repository data within its container. The path to the repository data within its container. The value of this setting should not start or end with a /.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.14.0/docs/resources/managed_database_opensearch#base_path ManagedDatabaseOpensearch#base_path}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.15.0/docs/resources/managed_database_opensearch#base_path ManagedDatabaseOpensearch#base_path}
   */
   readonly basePath?: string;
   /**
   * Chunk size. Big files can be broken down into chunks during snapshotting if needed. Should be the same as for the 3rd party repository.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.14.0/docs/resources/managed_database_opensearch#chunk_size ManagedDatabaseOpensearch#chunk_size}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.15.0/docs/resources/managed_database_opensearch#chunk_size ManagedDatabaseOpensearch#chunk_size}
   */
   readonly chunkSize?: string;
   /**
   * Metadata files are stored in compressed format. when set to true metadata files are stored in compressed format.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.14.0/docs/resources/managed_database_opensearch#compress ManagedDatabaseOpensearch#compress}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.15.0/docs/resources/managed_database_opensearch#compress ManagedDatabaseOpensearch#compress}
   */
   readonly compress?: boolean | cdktf.IResolvable;
   /**
   * Azure container name. Azure container name.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.14.0/docs/resources/managed_database_opensearch#container ManagedDatabaseOpensearch#container}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.15.0/docs/resources/managed_database_opensearch#container ManagedDatabaseOpensearch#container}
   */
   readonly container?: string;
   /**
   * Endpoint suffix. Defines the DNS suffix for Azure Storage endpoints.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.14.0/docs/resources/managed_database_opensearch#endpoint_suffix ManagedDatabaseOpensearch#endpoint_suffix}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.15.0/docs/resources/managed_database_opensearch#endpoint_suffix ManagedDatabaseOpensearch#endpoint_suffix}
   */
   readonly endpointSuffix?: string;
   /**
+  * Include aliases. Whether to restore aliases alongside their associated indexes. Default is true.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.15.0/docs/resources/managed_database_opensearch#include_aliases ManagedDatabaseOpensearch#include_aliases}
+  */
+  readonly includeAliases?: boolean | cdktf.IResolvable;
+  /**
+  * Indices to restore. A comma-delimited list of indices to restore from the snapshot. Multi-index syntax is supported.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.15.0/docs/resources/managed_database_opensearch#indices ManagedDatabaseOpensearch#indices}
+  */
+  readonly indices?: string;
+  /**
   * Account secret key. Azure account secret key. One of key or sas_token should be specified.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.14.0/docs/resources/managed_database_opensearch#key ManagedDatabaseOpensearch#key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.15.0/docs/resources/managed_database_opensearch#key ManagedDatabaseOpensearch#key}
   */
   readonly key?: string;
   /**
+  * Restore the cluster state or not. If true, restore the cluster state. Defaults to false.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.15.0/docs/resources/managed_database_opensearch#restore_global_state ManagedDatabaseOpensearch#restore_global_state}
+  */
+  readonly restoreGlobalState?: boolean | cdktf.IResolvable;
+  /**
   * SAS token. A shared access signatures (SAS) token. One of key or sas_token should be specified.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.14.0/docs/resources/managed_database_opensearch#sas_token ManagedDatabaseOpensearch#sas_token}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.15.0/docs/resources/managed_database_opensearch#sas_token ManagedDatabaseOpensearch#sas_token}
   */
   readonly sasToken?: string;
   /**
   * The snapshot name to restore from. The snapshot name to restore from.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.14.0/docs/resources/managed_database_opensearch#snapshot_name ManagedDatabaseOpensearch#snapshot_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.15.0/docs/resources/managed_database_opensearch#snapshot_name ManagedDatabaseOpensearch#snapshot_name}
   */
   readonly snapshotName?: string;
 }
@@ -1230,7 +1243,10 @@ export function managedDatabaseOpensearchPropertiesAzureMigrationToTerraform(str
     compress: cdktf.booleanToTerraform(struct!.compress),
     container: cdktf.stringToTerraform(struct!.container),
     endpoint_suffix: cdktf.stringToTerraform(struct!.endpointSuffix),
+    include_aliases: cdktf.booleanToTerraform(struct!.includeAliases),
+    indices: cdktf.stringToTerraform(struct!.indices),
     key: cdktf.stringToTerraform(struct!.key),
+    restore_global_state: cdktf.booleanToTerraform(struct!.restoreGlobalState),
     sas_token: cdktf.stringToTerraform(struct!.sasToken),
     snapshot_name: cdktf.stringToTerraform(struct!.snapshotName),
   }
@@ -1279,11 +1295,29 @@ export function managedDatabaseOpensearchPropertiesAzureMigrationToHclTerraform(
       type: "simple",
       storageClassType: "string",
     },
+    include_aliases: {
+      value: cdktf.booleanToHclTerraform(struct!.includeAliases),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+    indices: {
+      value: cdktf.stringToHclTerraform(struct!.indices),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
     key: {
       value: cdktf.stringToHclTerraform(struct!.key),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
+    },
+    restore_global_state: {
+      value: cdktf.booleanToHclTerraform(struct!.restoreGlobalState),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
     },
     sas_token: {
       value: cdktf.stringToHclTerraform(struct!.sasToken),
@@ -1341,9 +1375,21 @@ export class ManagedDatabaseOpensearchPropertiesAzureMigrationOutputReference ex
       hasAnyValues = true;
       internalValueResult.endpointSuffix = this._endpointSuffix;
     }
+    if (this._includeAliases !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.includeAliases = this._includeAliases;
+    }
+    if (this._indices !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.indices = this._indices;
+    }
     if (this._key !== undefined) {
       hasAnyValues = true;
       internalValueResult.key = this._key;
+    }
+    if (this._restoreGlobalState !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.restoreGlobalState = this._restoreGlobalState;
     }
     if (this._sasToken !== undefined) {
       hasAnyValues = true;
@@ -1365,7 +1411,10 @@ export class ManagedDatabaseOpensearchPropertiesAzureMigrationOutputReference ex
       this._compress = undefined;
       this._container = undefined;
       this._endpointSuffix = undefined;
+      this._includeAliases = undefined;
+      this._indices = undefined;
       this._key = undefined;
+      this._restoreGlobalState = undefined;
       this._sasToken = undefined;
       this._snapshotName = undefined;
     }
@@ -1377,7 +1426,10 @@ export class ManagedDatabaseOpensearchPropertiesAzureMigrationOutputReference ex
       this._compress = value.compress;
       this._container = value.container;
       this._endpointSuffix = value.endpointSuffix;
+      this._includeAliases = value.includeAliases;
+      this._indices = value.indices;
       this._key = value.key;
+      this._restoreGlobalState = value.restoreGlobalState;
       this._sasToken = value.sasToken;
       this._snapshotName = value.snapshotName;
     }
@@ -1479,6 +1531,38 @@ export class ManagedDatabaseOpensearchPropertiesAzureMigrationOutputReference ex
     return this._endpointSuffix;
   }
 
+  // include_aliases - computed: true, optional: true, required: false
+  private _includeAliases?: boolean | cdktf.IResolvable; 
+  public get includeAliases() {
+    return this.getBooleanAttribute('include_aliases');
+  }
+  public set includeAliases(value: boolean | cdktf.IResolvable) {
+    this._includeAliases = value;
+  }
+  public resetIncludeAliases() {
+    this._includeAliases = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get includeAliasesInput() {
+    return this._includeAliases;
+  }
+
+  // indices - computed: false, optional: true, required: false
+  private _indices?: string; 
+  public get indices() {
+    return this.getStringAttribute('indices');
+  }
+  public set indices(value: string) {
+    this._indices = value;
+  }
+  public resetIndices() {
+    this._indices = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get indicesInput() {
+    return this._indices;
+  }
+
   // key - computed: false, optional: true, required: false
   private _key?: string; 
   public get key() {
@@ -1493,6 +1577,22 @@ export class ManagedDatabaseOpensearchPropertiesAzureMigrationOutputReference ex
   // Temporarily expose input value. Use with caution.
   public get keyInput() {
     return this._key;
+  }
+
+  // restore_global_state - computed: true, optional: true, required: false
+  private _restoreGlobalState?: boolean | cdktf.IResolvable; 
+  public get restoreGlobalState() {
+    return this.getBooleanAttribute('restore_global_state');
+  }
+  public set restoreGlobalState(value: boolean | cdktf.IResolvable) {
+    this._restoreGlobalState = value;
+  }
+  public resetRestoreGlobalState() {
+    this._restoreGlobalState = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get restoreGlobalStateInput() {
+    return this._restoreGlobalState;
   }
 
   // sas_token - computed: false, optional: true, required: false
@@ -1531,37 +1631,55 @@ export interface ManagedDatabaseOpensearchPropertiesGcsMigration {
   /**
   * The path to the repository data within its container. The path to the repository data within its container. The value of this setting should not start or end with a /.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.14.0/docs/resources/managed_database_opensearch#base_path ManagedDatabaseOpensearch#base_path}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.15.0/docs/resources/managed_database_opensearch#base_path ManagedDatabaseOpensearch#base_path}
   */
   readonly basePath?: string;
   /**
   * The path to the repository data within its container. Google Cloud Storage bucket name.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.14.0/docs/resources/managed_database_opensearch#bucket ManagedDatabaseOpensearch#bucket}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.15.0/docs/resources/managed_database_opensearch#bucket ManagedDatabaseOpensearch#bucket}
   */
   readonly bucket?: string;
   /**
   * Chunk size. Big files can be broken down into chunks during snapshotting if needed. Should be the same as for the 3rd party repository.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.14.0/docs/resources/managed_database_opensearch#chunk_size ManagedDatabaseOpensearch#chunk_size}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.15.0/docs/resources/managed_database_opensearch#chunk_size ManagedDatabaseOpensearch#chunk_size}
   */
   readonly chunkSize?: string;
   /**
   * Metadata files are stored in compressed format. when set to true metadata files are stored in compressed format.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.14.0/docs/resources/managed_database_opensearch#compress ManagedDatabaseOpensearch#compress}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.15.0/docs/resources/managed_database_opensearch#compress ManagedDatabaseOpensearch#compress}
   */
   readonly compress?: boolean | cdktf.IResolvable;
   /**
   * Credentials. Google Cloud Storage credentials file content.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.14.0/docs/resources/managed_database_opensearch#credentials ManagedDatabaseOpensearch#credentials}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.15.0/docs/resources/managed_database_opensearch#credentials ManagedDatabaseOpensearch#credentials}
   */
   readonly credentials?: string;
   /**
+  * Include aliases. Whether to restore aliases alongside their associated indexes. Default is true.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.15.0/docs/resources/managed_database_opensearch#include_aliases ManagedDatabaseOpensearch#include_aliases}
+  */
+  readonly includeAliases?: boolean | cdktf.IResolvable;
+  /**
+  * Indices to restore. A comma-delimited list of indices to restore from the snapshot. Multi-index syntax is supported.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.15.0/docs/resources/managed_database_opensearch#indices ManagedDatabaseOpensearch#indices}
+  */
+  readonly indices?: string;
+  /**
+  * Restore the cluster state or not. If true, restore the cluster state. Defaults to false.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.15.0/docs/resources/managed_database_opensearch#restore_global_state ManagedDatabaseOpensearch#restore_global_state}
+  */
+  readonly restoreGlobalState?: boolean | cdktf.IResolvable;
+  /**
   * The snapshot name to restore from. The snapshot name to restore from.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.14.0/docs/resources/managed_database_opensearch#snapshot_name ManagedDatabaseOpensearch#snapshot_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.15.0/docs/resources/managed_database_opensearch#snapshot_name ManagedDatabaseOpensearch#snapshot_name}
   */
   readonly snapshotName?: string;
 }
@@ -1577,6 +1695,9 @@ export function managedDatabaseOpensearchPropertiesGcsMigrationToTerraform(struc
     chunk_size: cdktf.stringToTerraform(struct!.chunkSize),
     compress: cdktf.booleanToTerraform(struct!.compress),
     credentials: cdktf.stringToTerraform(struct!.credentials),
+    include_aliases: cdktf.booleanToTerraform(struct!.includeAliases),
+    indices: cdktf.stringToTerraform(struct!.indices),
+    restore_global_state: cdktf.booleanToTerraform(struct!.restoreGlobalState),
     snapshot_name: cdktf.stringToTerraform(struct!.snapshotName),
   }
 }
@@ -1617,6 +1738,24 @@ export function managedDatabaseOpensearchPropertiesGcsMigrationToHclTerraform(st
       isBlock: false,
       type: "simple",
       storageClassType: "string",
+    },
+    include_aliases: {
+      value: cdktf.booleanToHclTerraform(struct!.includeAliases),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+    indices: {
+      value: cdktf.stringToHclTerraform(struct!.indices),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    restore_global_state: {
+      value: cdktf.booleanToHclTerraform(struct!.restoreGlobalState),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
     },
     snapshot_name: {
       value: cdktf.stringToHclTerraform(struct!.snapshotName),
@@ -1664,6 +1803,18 @@ export class ManagedDatabaseOpensearchPropertiesGcsMigrationOutputReference exte
       hasAnyValues = true;
       internalValueResult.credentials = this._credentials;
     }
+    if (this._includeAliases !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.includeAliases = this._includeAliases;
+    }
+    if (this._indices !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.indices = this._indices;
+    }
+    if (this._restoreGlobalState !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.restoreGlobalState = this._restoreGlobalState;
+    }
     if (this._snapshotName !== undefined) {
       hasAnyValues = true;
       internalValueResult.snapshotName = this._snapshotName;
@@ -1679,6 +1830,9 @@ export class ManagedDatabaseOpensearchPropertiesGcsMigrationOutputReference exte
       this._chunkSize = undefined;
       this._compress = undefined;
       this._credentials = undefined;
+      this._includeAliases = undefined;
+      this._indices = undefined;
+      this._restoreGlobalState = undefined;
       this._snapshotName = undefined;
     }
     else {
@@ -1688,6 +1842,9 @@ export class ManagedDatabaseOpensearchPropertiesGcsMigrationOutputReference exte
       this._chunkSize = value.chunkSize;
       this._compress = value.compress;
       this._credentials = value.credentials;
+      this._includeAliases = value.includeAliases;
+      this._indices = value.indices;
+      this._restoreGlobalState = value.restoreGlobalState;
       this._snapshotName = value.snapshotName;
     }
   }
@@ -1772,6 +1929,54 @@ export class ManagedDatabaseOpensearchPropertiesGcsMigrationOutputReference exte
     return this._credentials;
   }
 
+  // include_aliases - computed: true, optional: true, required: false
+  private _includeAliases?: boolean | cdktf.IResolvable; 
+  public get includeAliases() {
+    return this.getBooleanAttribute('include_aliases');
+  }
+  public set includeAliases(value: boolean | cdktf.IResolvable) {
+    this._includeAliases = value;
+  }
+  public resetIncludeAliases() {
+    this._includeAliases = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get includeAliasesInput() {
+    return this._includeAliases;
+  }
+
+  // indices - computed: false, optional: true, required: false
+  private _indices?: string; 
+  public get indices() {
+    return this.getStringAttribute('indices');
+  }
+  public set indices(value: string) {
+    this._indices = value;
+  }
+  public resetIndices() {
+    this._indices = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get indicesInput() {
+    return this._indices;
+  }
+
+  // restore_global_state - computed: true, optional: true, required: false
+  private _restoreGlobalState?: boolean | cdktf.IResolvable; 
+  public get restoreGlobalState() {
+    return this.getBooleanAttribute('restore_global_state');
+  }
+  public set restoreGlobalState(value: boolean | cdktf.IResolvable) {
+    this._restoreGlobalState = value;
+  }
+  public resetRestoreGlobalState() {
+    this._restoreGlobalState = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get restoreGlobalStateInput() {
+    return this._restoreGlobalState;
+  }
+
   // snapshot_name - computed: false, optional: true, required: false
   private _snapshotName?: string; 
   public get snapshotName() {
@@ -1792,31 +1997,31 @@ export interface ManagedDatabaseOpensearchPropertiesIndexRollup {
   /**
   * plugins.rollup.dashboards.enabled. Whether rollups are enabled in OpenSearch Dashboards. Defaults to true.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.14.0/docs/resources/managed_database_opensearch#rollup_dashboards_enabled ManagedDatabaseOpensearch#rollup_dashboards_enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.15.0/docs/resources/managed_database_opensearch#rollup_dashboards_enabled ManagedDatabaseOpensearch#rollup_dashboards_enabled}
   */
   readonly rollupDashboardsEnabled?: boolean | cdktf.IResolvable;
   /**
   * plugins.rollup.enabled. Whether the rollup plugin is enabled. Defaults to true.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.14.0/docs/resources/managed_database_opensearch#rollup_enabled ManagedDatabaseOpensearch#rollup_enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.15.0/docs/resources/managed_database_opensearch#rollup_enabled ManagedDatabaseOpensearch#rollup_enabled}
   */
   readonly rollupEnabled?: boolean | cdktf.IResolvable;
   /**
   * plugins.rollup.search.backoff_count. How many retries the plugin should attempt for failed rollup jobs. Defaults to 5.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.14.0/docs/resources/managed_database_opensearch#rollup_search_backoff_count ManagedDatabaseOpensearch#rollup_search_backoff_count}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.15.0/docs/resources/managed_database_opensearch#rollup_search_backoff_count ManagedDatabaseOpensearch#rollup_search_backoff_count}
   */
   readonly rollupSearchBackoffCount?: number;
   /**
   * plugins.rollup.search.backoff_millis. The backoff time between retries for failed rollup jobs. Defaults to 1000ms.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.14.0/docs/resources/managed_database_opensearch#rollup_search_backoff_millis ManagedDatabaseOpensearch#rollup_search_backoff_millis}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.15.0/docs/resources/managed_database_opensearch#rollup_search_backoff_millis ManagedDatabaseOpensearch#rollup_search_backoff_millis}
   */
   readonly rollupSearchBackoffMillis?: number;
   /**
   * plugins.rollup.search.all_jobs. Whether OpenSearch should return all jobs that match all specified search terms. If disabled, OpenSearch returns just one, as opposed to all, of the jobs that matches the search terms. Defaults to false.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.14.0/docs/resources/managed_database_opensearch#rollup_search_search_all_jobs ManagedDatabaseOpensearch#rollup_search_search_all_jobs}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.15.0/docs/resources/managed_database_opensearch#rollup_search_search_all_jobs ManagedDatabaseOpensearch#rollup_search_search_all_jobs}
   */
   readonly rollupSearchSearchAllJobs?: boolean | cdktf.IResolvable;
 }
@@ -2018,19 +2223,19 @@ export interface ManagedDatabaseOpensearchPropertiesIndexTemplate {
   /**
   * index.mapping.nested_objects.limit. The maximum number of nested JSON objects that a single document can contain across all nested types. This limit helps to prevent out of memory errors when a document contains too many nested objects. Default is 10000.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.14.0/docs/resources/managed_database_opensearch#mapping_nested_objects_limit ManagedDatabaseOpensearch#mapping_nested_objects_limit}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.15.0/docs/resources/managed_database_opensearch#mapping_nested_objects_limit ManagedDatabaseOpensearch#mapping_nested_objects_limit}
   */
   readonly mappingNestedObjectsLimit?: number;
   /**
   * The number of replicas each primary shard has.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.14.0/docs/resources/managed_database_opensearch#number_of_replicas ManagedDatabaseOpensearch#number_of_replicas}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.15.0/docs/resources/managed_database_opensearch#number_of_replicas ManagedDatabaseOpensearch#number_of_replicas}
   */
   readonly numberOfReplicas?: number;
   /**
   * The number of primary shards that an index should have.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.14.0/docs/resources/managed_database_opensearch#number_of_shards ManagedDatabaseOpensearch#number_of_shards}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.15.0/docs/resources/managed_database_opensearch#number_of_shards ManagedDatabaseOpensearch#number_of_shards}
   */
   readonly numberOfShards?: number;
 }
@@ -2174,73 +2379,73 @@ export interface ManagedDatabaseOpensearchPropertiesOpenid {
   /**
   * The ID of the OpenID Connect client. The ID of the OpenID Connect client configured in your IdP. Required.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.14.0/docs/resources/managed_database_opensearch#client_id ManagedDatabaseOpensearch#client_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.15.0/docs/resources/managed_database_opensearch#client_id ManagedDatabaseOpensearch#client_id}
   */
   readonly clientId?: string;
   /**
   * The client secret of the OpenID Connect. The client secret of the OpenID Connect client configured in your IdP. Required.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.14.0/docs/resources/managed_database_opensearch#client_secret ManagedDatabaseOpensearch#client_secret}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.15.0/docs/resources/managed_database_opensearch#client_secret ManagedDatabaseOpensearch#client_secret}
   */
   readonly clientSecret?: string;
   /**
   * OpenID Connect metadata/configuration URL. The URL of your IdP where the Security plugin can find the OpenID Connect metadata/configuration settings.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.14.0/docs/resources/managed_database_opensearch#connect_url ManagedDatabaseOpensearch#connect_url}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.15.0/docs/resources/managed_database_opensearch#connect_url ManagedDatabaseOpensearch#connect_url}
   */
   readonly connectUrl?: string;
   /**
   * Enable or disable OpenSearch OpenID Connect authentication. Enables or disables OpenID Connect authentication for OpenSearch. When enabled, users can authenticate using OpenID Connect with an Identity Provider.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.14.0/docs/resources/managed_database_opensearch#enabled ManagedDatabaseOpensearch#enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.15.0/docs/resources/managed_database_opensearch#enabled ManagedDatabaseOpensearch#enabled}
   */
   readonly enabled?: boolean | cdktf.IResolvable;
   /**
   * HTTP header name of the JWT token. HTTP header name of the JWT token. Optional. Default is Authorization.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.14.0/docs/resources/managed_database_opensearch#header ManagedDatabaseOpensearch#header}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.15.0/docs/resources/managed_database_opensearch#header ManagedDatabaseOpensearch#header}
   */
   readonly header?: string;
   /**
   * The HTTP header that stores the token. The HTTP header that stores the token. Typically the Authorization header with the Bearer schema: Authorization: Bearer <token>. Optional. Default is Authorization.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.14.0/docs/resources/managed_database_opensearch#jwt_header ManagedDatabaseOpensearch#jwt_header}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.15.0/docs/resources/managed_database_opensearch#jwt_header ManagedDatabaseOpensearch#jwt_header}
   */
   readonly jwtHeader?: string;
   /**
   * URL JWT token. If the token is not transmitted in the HTTP header, but as an URL parameter, define the name of the parameter here. Optional.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.14.0/docs/resources/managed_database_opensearch#jwt_url_parameter ManagedDatabaseOpensearch#jwt_url_parameter}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.15.0/docs/resources/managed_database_opensearch#jwt_url_parameter ManagedDatabaseOpensearch#jwt_url_parameter}
   */
   readonly jwtUrlParameter?: string;
   /**
   * The maximum number of unknown key IDs in the time frame. The maximum number of unknown key IDs in the time frame. Default is 10. Optional.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.14.0/docs/resources/managed_database_opensearch#refresh_rate_limit_count ManagedDatabaseOpensearch#refresh_rate_limit_count}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.15.0/docs/resources/managed_database_opensearch#refresh_rate_limit_count ManagedDatabaseOpensearch#refresh_rate_limit_count}
   */
   readonly refreshRateLimitCount?: number;
   /**
   * The time frame to use when checking the maximum number of unknown key IDs, in milliseconds. The time frame to use when checking the maximum number of unknown key IDs, in milliseconds. Optional.Default is 10000 (10 seconds).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.14.0/docs/resources/managed_database_opensearch#refresh_rate_limit_time_window_ms ManagedDatabaseOpensearch#refresh_rate_limit_time_window_ms}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.15.0/docs/resources/managed_database_opensearch#refresh_rate_limit_time_window_ms ManagedDatabaseOpensearch#refresh_rate_limit_time_window_ms}
   */
   readonly refreshRateLimitTimeWindowMs?: number;
   /**
   * The key in the JSON payload that stores the user’s roles. The key in the JSON payload that stores the user’s roles. The value of this key must be a comma-separated list of roles. Required only if you want to use roles in the JWT.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.14.0/docs/resources/managed_database_opensearch#roles_key ManagedDatabaseOpensearch#roles_key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.15.0/docs/resources/managed_database_opensearch#roles_key ManagedDatabaseOpensearch#roles_key}
   */
   readonly rolesKey?: string;
   /**
   * The scope of the identity token issued by the IdP. The scope of the identity token issued by the IdP. Optional. Default is openid profile email address phone.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.14.0/docs/resources/managed_database_opensearch#scope ManagedDatabaseOpensearch#scope}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.15.0/docs/resources/managed_database_opensearch#scope ManagedDatabaseOpensearch#scope}
   */
   readonly scope?: string;
   /**
   * The key in the JSON payload that stores the user’s name. The key in the JSON payload that stores the user’s name. If not defined, the subject registered claim is used. Most IdP providers use the preferred_username claim. Optional.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.14.0/docs/resources/managed_database_opensearch#subject_key ManagedDatabaseOpensearch#subject_key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.15.0/docs/resources/managed_database_opensearch#subject_key ManagedDatabaseOpensearch#subject_key}
   */
   readonly subjectKey?: string;
 }
@@ -2645,19 +2850,19 @@ export interface ManagedDatabaseOpensearchPropertiesOpensearchDashboards {
   /**
   * Enable or disable OpenSearch Dashboards.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.14.0/docs/resources/managed_database_opensearch#enabled ManagedDatabaseOpensearch#enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.15.0/docs/resources/managed_database_opensearch#enabled ManagedDatabaseOpensearch#enabled}
   */
   readonly enabled?: boolean | cdktf.IResolvable;
   /**
   * Limits the maximum amount of memory (in MiB) the OpenSearch Dashboards process can use. This sets the max_old_space_size option of the nodejs running the OpenSearch Dashboards. Note: the memory reserved by OpenSearch Dashboards is not available for OpenSearch.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.14.0/docs/resources/managed_database_opensearch#max_old_space_size ManagedDatabaseOpensearch#max_old_space_size}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.15.0/docs/resources/managed_database_opensearch#max_old_space_size ManagedDatabaseOpensearch#max_old_space_size}
   */
   readonly maxOldSpaceSize?: number;
   /**
   * Timeout in milliseconds for requests made by OpenSearch Dashboards towards OpenSearch.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.14.0/docs/resources/managed_database_opensearch#opensearch_request_timeout ManagedDatabaseOpensearch#opensearch_request_timeout}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.15.0/docs/resources/managed_database_opensearch#opensearch_request_timeout ManagedDatabaseOpensearch#opensearch_request_timeout}
   */
   readonly opensearchRequestTimeout?: number;
 }
@@ -2801,61 +3006,79 @@ export interface ManagedDatabaseOpensearchPropertiesS3Migration {
   /**
   * AWS Access key. AWS Access key.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.14.0/docs/resources/managed_database_opensearch#access_key ManagedDatabaseOpensearch#access_key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.15.0/docs/resources/managed_database_opensearch#access_key ManagedDatabaseOpensearch#access_key}
   */
   readonly accessKey?: string;
   /**
   * The path to the repository data within its container. The path to the repository data within its container. The value of this setting should not start or end with a /.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.14.0/docs/resources/managed_database_opensearch#base_path ManagedDatabaseOpensearch#base_path}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.15.0/docs/resources/managed_database_opensearch#base_path ManagedDatabaseOpensearch#base_path}
   */
   readonly basePath?: string;
   /**
   * S3 bucket name. S3 bucket name.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.14.0/docs/resources/managed_database_opensearch#bucket ManagedDatabaseOpensearch#bucket}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.15.0/docs/resources/managed_database_opensearch#bucket ManagedDatabaseOpensearch#bucket}
   */
   readonly bucket?: string;
   /**
   * Chunk size. Big files can be broken down into chunks during snapshotting if needed. Should be the same as for the 3rd party repository.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.14.0/docs/resources/managed_database_opensearch#chunk_size ManagedDatabaseOpensearch#chunk_size}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.15.0/docs/resources/managed_database_opensearch#chunk_size ManagedDatabaseOpensearch#chunk_size}
   */
   readonly chunkSize?: string;
   /**
   * Metadata files are stored in compressed format. when set to true metadata files are stored in compressed format.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.14.0/docs/resources/managed_database_opensearch#compress ManagedDatabaseOpensearch#compress}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.15.0/docs/resources/managed_database_opensearch#compress ManagedDatabaseOpensearch#compress}
   */
   readonly compress?: boolean | cdktf.IResolvable;
   /**
   * The S3 service endpoint to connect. The S3 service endpoint to connect to. If you are using an S3-compatible service then you should set this to the service’s endpoint.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.14.0/docs/resources/managed_database_opensearch#endpoint ManagedDatabaseOpensearch#endpoint}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.15.0/docs/resources/managed_database_opensearch#endpoint ManagedDatabaseOpensearch#endpoint}
   */
   readonly endpoint?: string;
   /**
+  * Include aliases. Whether to restore aliases alongside their associated indexes. Default is true.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.15.0/docs/resources/managed_database_opensearch#include_aliases ManagedDatabaseOpensearch#include_aliases}
+  */
+  readonly includeAliases?: boolean | cdktf.IResolvable;
+  /**
+  * Indices to restore. A comma-delimited list of indices to restore from the snapshot. Multi-index syntax is supported.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.15.0/docs/resources/managed_database_opensearch#indices ManagedDatabaseOpensearch#indices}
+  */
+  readonly indices?: string;
+  /**
   * S3 region. S3 region.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.14.0/docs/resources/managed_database_opensearch#region ManagedDatabaseOpensearch#region}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.15.0/docs/resources/managed_database_opensearch#region ManagedDatabaseOpensearch#region}
   */
   readonly region?: string;
   /**
+  * Restore the cluster state or not. If true, restore the cluster state. Defaults to false.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.15.0/docs/resources/managed_database_opensearch#restore_global_state ManagedDatabaseOpensearch#restore_global_state}
+  */
+  readonly restoreGlobalState?: boolean | cdktf.IResolvable;
+  /**
   * AWS secret key. AWS secret key.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.14.0/docs/resources/managed_database_opensearch#secret_key ManagedDatabaseOpensearch#secret_key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.15.0/docs/resources/managed_database_opensearch#secret_key ManagedDatabaseOpensearch#secret_key}
   */
   readonly secretKey?: string;
   /**
   * Server side encryption. When set to true files are encrypted on server side.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.14.0/docs/resources/managed_database_opensearch#server_side_encryption ManagedDatabaseOpensearch#server_side_encryption}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.15.0/docs/resources/managed_database_opensearch#server_side_encryption ManagedDatabaseOpensearch#server_side_encryption}
   */
   readonly serverSideEncryption?: boolean | cdktf.IResolvable;
   /**
   * The snapshot name to restore from. The snapshot name to restore from.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.14.0/docs/resources/managed_database_opensearch#snapshot_name ManagedDatabaseOpensearch#snapshot_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.15.0/docs/resources/managed_database_opensearch#snapshot_name ManagedDatabaseOpensearch#snapshot_name}
   */
   readonly snapshotName?: string;
 }
@@ -2872,7 +3095,10 @@ export function managedDatabaseOpensearchPropertiesS3MigrationToTerraform(struct
     chunk_size: cdktf.stringToTerraform(struct!.chunkSize),
     compress: cdktf.booleanToTerraform(struct!.compress),
     endpoint: cdktf.stringToTerraform(struct!.endpoint),
+    include_aliases: cdktf.booleanToTerraform(struct!.includeAliases),
+    indices: cdktf.stringToTerraform(struct!.indices),
     region: cdktf.stringToTerraform(struct!.region),
+    restore_global_state: cdktf.booleanToTerraform(struct!.restoreGlobalState),
     secret_key: cdktf.stringToTerraform(struct!.secretKey),
     server_side_encryption: cdktf.booleanToTerraform(struct!.serverSideEncryption),
     snapshot_name: cdktf.stringToTerraform(struct!.snapshotName),
@@ -2922,11 +3148,29 @@ export function managedDatabaseOpensearchPropertiesS3MigrationToHclTerraform(str
       type: "simple",
       storageClassType: "string",
     },
+    include_aliases: {
+      value: cdktf.booleanToHclTerraform(struct!.includeAliases),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+    indices: {
+      value: cdktf.stringToHclTerraform(struct!.indices),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
     region: {
       value: cdktf.stringToHclTerraform(struct!.region),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
+    },
+    restore_global_state: {
+      value: cdktf.booleanToHclTerraform(struct!.restoreGlobalState),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
     },
     secret_key: {
       value: cdktf.stringToHclTerraform(struct!.secretKey),
@@ -2990,9 +3234,21 @@ export class ManagedDatabaseOpensearchPropertiesS3MigrationOutputReference exten
       hasAnyValues = true;
       internalValueResult.endpoint = this._endpoint;
     }
+    if (this._includeAliases !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.includeAliases = this._includeAliases;
+    }
+    if (this._indices !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.indices = this._indices;
+    }
     if (this._region !== undefined) {
       hasAnyValues = true;
       internalValueResult.region = this._region;
+    }
+    if (this._restoreGlobalState !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.restoreGlobalState = this._restoreGlobalState;
     }
     if (this._secretKey !== undefined) {
       hasAnyValues = true;
@@ -3018,7 +3274,10 @@ export class ManagedDatabaseOpensearchPropertiesS3MigrationOutputReference exten
       this._chunkSize = undefined;
       this._compress = undefined;
       this._endpoint = undefined;
+      this._includeAliases = undefined;
+      this._indices = undefined;
       this._region = undefined;
+      this._restoreGlobalState = undefined;
       this._secretKey = undefined;
       this._serverSideEncryption = undefined;
       this._snapshotName = undefined;
@@ -3031,7 +3290,10 @@ export class ManagedDatabaseOpensearchPropertiesS3MigrationOutputReference exten
       this._chunkSize = value.chunkSize;
       this._compress = value.compress;
       this._endpoint = value.endpoint;
+      this._includeAliases = value.includeAliases;
+      this._indices = value.indices;
       this._region = value.region;
+      this._restoreGlobalState = value.restoreGlobalState;
       this._secretKey = value.secretKey;
       this._serverSideEncryption = value.serverSideEncryption;
       this._snapshotName = value.snapshotName;
@@ -3134,6 +3396,38 @@ export class ManagedDatabaseOpensearchPropertiesS3MigrationOutputReference exten
     return this._endpoint;
   }
 
+  // include_aliases - computed: true, optional: true, required: false
+  private _includeAliases?: boolean | cdktf.IResolvable; 
+  public get includeAliases() {
+    return this.getBooleanAttribute('include_aliases');
+  }
+  public set includeAliases(value: boolean | cdktf.IResolvable) {
+    this._includeAliases = value;
+  }
+  public resetIncludeAliases() {
+    this._includeAliases = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get includeAliasesInput() {
+    return this._includeAliases;
+  }
+
+  // indices - computed: false, optional: true, required: false
+  private _indices?: string; 
+  public get indices() {
+    return this.getStringAttribute('indices');
+  }
+  public set indices(value: string) {
+    this._indices = value;
+  }
+  public resetIndices() {
+    this._indices = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get indicesInput() {
+    return this._indices;
+  }
+
   // region - computed: false, optional: true, required: false
   private _region?: string; 
   public get region() {
@@ -3148,6 +3442,22 @@ export class ManagedDatabaseOpensearchPropertiesS3MigrationOutputReference exten
   // Temporarily expose input value. Use with caution.
   public get regionInput() {
     return this._region;
+  }
+
+  // restore_global_state - computed: true, optional: true, required: false
+  private _restoreGlobalState?: boolean | cdktf.IResolvable; 
+  public get restoreGlobalState() {
+    return this.getBooleanAttribute('restore_global_state');
+  }
+  public set restoreGlobalState(value: boolean | cdktf.IResolvable) {
+    this._restoreGlobalState = value;
+  }
+  public resetRestoreGlobalState() {
+    this._restoreGlobalState = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get restoreGlobalStateInput() {
+    return this._restoreGlobalState;
   }
 
   // secret_key - computed: false, optional: true, required: false
@@ -3202,43 +3512,43 @@ export interface ManagedDatabaseOpensearchPropertiesSaml {
   /**
   * Enable or disable OpenSearch SAML authentication. Enables or disables SAML-based authentication for OpenSearch. When enabled, users can authenticate using SAML with an Identity Provider.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.14.0/docs/resources/managed_database_opensearch#enabled ManagedDatabaseOpensearch#enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.15.0/docs/resources/managed_database_opensearch#enabled ManagedDatabaseOpensearch#enabled}
   */
   readonly enabled?: boolean | cdktf.IResolvable;
   /**
   * Identity Provider Entity ID. The unique identifier for the Identity Provider (IdP) entity that is used for SAML authentication. This value is typically provided by the IdP.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.14.0/docs/resources/managed_database_opensearch#idp_entity_id ManagedDatabaseOpensearch#idp_entity_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.15.0/docs/resources/managed_database_opensearch#idp_entity_id ManagedDatabaseOpensearch#idp_entity_id}
   */
   readonly idpEntityId?: string;
   /**
   * Identity Provider (IdP) SAML metadata URL. The URL of the SAML metadata for the Identity Provider (IdP). This is used to configure SAML-based authentication with the IdP.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.14.0/docs/resources/managed_database_opensearch#idp_metadata_url ManagedDatabaseOpensearch#idp_metadata_url}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.15.0/docs/resources/managed_database_opensearch#idp_metadata_url ManagedDatabaseOpensearch#idp_metadata_url}
   */
   readonly idpMetadataUrl?: string;
   /**
   * PEM-encoded root CA Content for SAML IdP server verification. This parameter specifies the PEM-encoded root certificate authority (CA) content for the SAML identity provider (IdP) server verification. The root CA content is used to verify the SSL/TLS certificate presented by the server.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.14.0/docs/resources/managed_database_opensearch#idp_pemtrustedcas_content ManagedDatabaseOpensearch#idp_pemtrustedcas_content}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.15.0/docs/resources/managed_database_opensearch#idp_pemtrustedcas_content ManagedDatabaseOpensearch#idp_pemtrustedcas_content}
   */
   readonly idpPemtrustedcasContent?: string;
   /**
   * SAML response role attribute. Optional. Specifies the attribute in the SAML response where role information is stored, if available. Role attributes are not required for SAML authentication, but can be included in SAML assertions by most Identity Providers (IdPs) to determine user access levels or permissions.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.14.0/docs/resources/managed_database_opensearch#roles_key ManagedDatabaseOpensearch#roles_key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.15.0/docs/resources/managed_database_opensearch#roles_key ManagedDatabaseOpensearch#roles_key}
   */
   readonly rolesKey?: string;
   /**
   * Service Provider Entity ID. The unique identifier for the Service Provider (SP) entity that is used for SAML authentication. This value is typically provided by the SP.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.14.0/docs/resources/managed_database_opensearch#sp_entity_id ManagedDatabaseOpensearch#sp_entity_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.15.0/docs/resources/managed_database_opensearch#sp_entity_id ManagedDatabaseOpensearch#sp_entity_id}
   */
   readonly spEntityId?: string;
   /**
   * SAML response subject attribute. Optional. Specifies the attribute in the SAML response where the subject identifier is stored. If not configured, the NameID attribute is used by default.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.14.0/docs/resources/managed_database_opensearch#subject_key ManagedDatabaseOpensearch#subject_key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.15.0/docs/resources/managed_database_opensearch#subject_key ManagedDatabaseOpensearch#subject_key}
   */
   readonly subjectKey?: string;
 }
@@ -3494,367 +3804,2116 @@ export class ManagedDatabaseOpensearchPropertiesSamlOutputReference extends cdkt
     return this._subjectKey;
   }
 }
+export interface ManagedDatabaseOpensearchPropertiesSearchBackpressureNodeDuress {
+  /**
+  * The CPU usage threshold (as a percentage) required for a node to be considered to be under duress. The CPU usage threshold (as a percentage) required for a node to be considered to be under duress. Default is 0.9.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.15.0/docs/resources/managed_database_opensearch#cpu_threshold ManagedDatabaseOpensearch#cpu_threshold}
+  */
+  readonly cpuThreshold?: number;
+  /**
+  * The heap usage threshold (as a percentage) required for a node to be considered to be under duress. The heap usage threshold (as a percentage) required for a node to be considered to be under duress. Default is 0.7.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.15.0/docs/resources/managed_database_opensearch#heap_threshold ManagedDatabaseOpensearch#heap_threshold}
+  */
+  readonly heapThreshold?: number;
+  /**
+  * The number of successive limit breaches after which the node is considered to be under duress. The number of successive limit breaches after which the node is considered to be under duress. Default is 3.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.15.0/docs/resources/managed_database_opensearch#num_successive_breaches ManagedDatabaseOpensearch#num_successive_breaches}
+  */
+  readonly numSuccessiveBreaches?: number;
+}
+
+export function managedDatabaseOpensearchPropertiesSearchBackpressureNodeDuressToTerraform(struct?: ManagedDatabaseOpensearchPropertiesSearchBackpressureNodeDuressOutputReference | ManagedDatabaseOpensearchPropertiesSearchBackpressureNodeDuress): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    cpu_threshold: cdktf.numberToTerraform(struct!.cpuThreshold),
+    heap_threshold: cdktf.numberToTerraform(struct!.heapThreshold),
+    num_successive_breaches: cdktf.numberToTerraform(struct!.numSuccessiveBreaches),
+  }
+}
+
+
+export function managedDatabaseOpensearchPropertiesSearchBackpressureNodeDuressToHclTerraform(struct?: ManagedDatabaseOpensearchPropertiesSearchBackpressureNodeDuressOutputReference | ManagedDatabaseOpensearchPropertiesSearchBackpressureNodeDuress): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    cpu_threshold: {
+      value: cdktf.numberToHclTerraform(struct!.cpuThreshold),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    heap_threshold: {
+      value: cdktf.numberToHclTerraform(struct!.heapThreshold),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    num_successive_breaches: {
+      value: cdktf.numberToHclTerraform(struct!.numSuccessiveBreaches),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class ManagedDatabaseOpensearchPropertiesSearchBackpressureNodeDuressOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): ManagedDatabaseOpensearchPropertiesSearchBackpressureNodeDuress | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._cpuThreshold !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.cpuThreshold = this._cpuThreshold;
+    }
+    if (this._heapThreshold !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.heapThreshold = this._heapThreshold;
+    }
+    if (this._numSuccessiveBreaches !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.numSuccessiveBreaches = this._numSuccessiveBreaches;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: ManagedDatabaseOpensearchPropertiesSearchBackpressureNodeDuress | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._cpuThreshold = undefined;
+      this._heapThreshold = undefined;
+      this._numSuccessiveBreaches = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._cpuThreshold = value.cpuThreshold;
+      this._heapThreshold = value.heapThreshold;
+      this._numSuccessiveBreaches = value.numSuccessiveBreaches;
+    }
+  }
+
+  // cpu_threshold - computed: true, optional: true, required: false
+  private _cpuThreshold?: number; 
+  public get cpuThreshold() {
+    return this.getNumberAttribute('cpu_threshold');
+  }
+  public set cpuThreshold(value: number) {
+    this._cpuThreshold = value;
+  }
+  public resetCpuThreshold() {
+    this._cpuThreshold = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get cpuThresholdInput() {
+    return this._cpuThreshold;
+  }
+
+  // heap_threshold - computed: true, optional: true, required: false
+  private _heapThreshold?: number; 
+  public get heapThreshold() {
+    return this.getNumberAttribute('heap_threshold');
+  }
+  public set heapThreshold(value: number) {
+    this._heapThreshold = value;
+  }
+  public resetHeapThreshold() {
+    this._heapThreshold = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get heapThresholdInput() {
+    return this._heapThreshold;
+  }
+
+  // num_successive_breaches - computed: true, optional: true, required: false
+  private _numSuccessiveBreaches?: number; 
+  public get numSuccessiveBreaches() {
+    return this.getNumberAttribute('num_successive_breaches');
+  }
+  public set numSuccessiveBreaches(value: number) {
+    this._numSuccessiveBreaches = value;
+  }
+  public resetNumSuccessiveBreaches() {
+    this._numSuccessiveBreaches = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get numSuccessiveBreachesInput() {
+    return this._numSuccessiveBreaches;
+  }
+}
+export interface ManagedDatabaseOpensearchPropertiesSearchBackpressureSearchShardTask {
+  /**
+  * The maximum number of search tasks to cancel in a single iteration of the observer thread. The maximum number of search tasks to cancel in a single iteration of the observer thread. Default is 10.0.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.15.0/docs/resources/managed_database_opensearch#cancellation_burst ManagedDatabaseOpensearch#cancellation_burst}
+  */
+  readonly cancellationBurst?: number;
+  /**
+  * The maximum number of tasks to cancel per millisecond of elapsed time. The maximum number of tasks to cancel per millisecond of elapsed time. Default is 0.003.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.15.0/docs/resources/managed_database_opensearch#cancellation_rate ManagedDatabaseOpensearch#cancellation_rate}
+  */
+  readonly cancellationRate?: number;
+  /**
+  * The maximum number of tasks to cancel. The maximum number of tasks to cancel, as a percentage of successful task completions. Default is 0.1.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.15.0/docs/resources/managed_database_opensearch#cancellation_ratio ManagedDatabaseOpensearch#cancellation_ratio}
+  */
+  readonly cancellationRatio?: number;
+  /**
+  * The CPU usage threshold (in milliseconds) required for a single search shard task before it is considered for cancellation. The CPU usage threshold (in milliseconds) required for a single search shard task before it is considered for cancellation. Default is 15000.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.15.0/docs/resources/managed_database_opensearch#cpu_time_millis_threshold ManagedDatabaseOpensearch#cpu_time_millis_threshold}
+  */
+  readonly cpuTimeMillisThreshold?: number;
+  /**
+  * The elapsed time threshold (in milliseconds) required for a single search shard task before it is considered for cancellation. The elapsed time threshold (in milliseconds) required for a single search shard task before it is considered for cancellation. Default is 30000.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.15.0/docs/resources/managed_database_opensearch#elapsed_time_millis_threshold ManagedDatabaseOpensearch#elapsed_time_millis_threshold}
+  */
+  readonly elapsedTimeMillisThreshold?: number;
+  /**
+  * The number of previously completed search shard tasks to consider when calculating the rolling average of heap usage. The number of previously completed search shard tasks to consider when calculating the rolling average of heap usage. Default is 100.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.15.0/docs/resources/managed_database_opensearch#heap_moving_average_window_size ManagedDatabaseOpensearch#heap_moving_average_window_size}
+  */
+  readonly heapMovingAverageWindowSize?: number;
+  /**
+  * The heap usage threshold (as a percentage) required for a single search shard task before it is considered for cancellation. The heap usage threshold (as a percentage) required for a single search shard task before it is considered for cancellation. Default is 0.5.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.15.0/docs/resources/managed_database_opensearch#heap_percent_threshold ManagedDatabaseOpensearch#heap_percent_threshold}
+  */
+  readonly heapPercentThreshold?: number;
+  /**
+  * The minimum variance required for a single search shard task’s heap usage compared to the rolling average of previously completed tasks before it is considered for cancellation. The minimum variance required for a single search shard task’s heap usage compared to the rolling average of previously completed tasks before it is considered for cancellation. Default is 2.0.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.15.0/docs/resources/managed_database_opensearch#heap_variance ManagedDatabaseOpensearch#heap_variance}
+  */
+  readonly heapVariance?: number;
+  /**
+  * The heap usage threshold (as a percentage) required for the sum of heap usages of all search shard tasks before cancellation is applied. The heap usage threshold (as a percentage) required for the sum of heap usages of all search shard tasks before cancellation is applied. Default is 0.5.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.15.0/docs/resources/managed_database_opensearch#total_heap_percent_threshold ManagedDatabaseOpensearch#total_heap_percent_threshold}
+  */
+  readonly totalHeapPercentThreshold?: number;
+}
+
+export function managedDatabaseOpensearchPropertiesSearchBackpressureSearchShardTaskToTerraform(struct?: ManagedDatabaseOpensearchPropertiesSearchBackpressureSearchShardTaskOutputReference | ManagedDatabaseOpensearchPropertiesSearchBackpressureSearchShardTask): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    cancellation_burst: cdktf.numberToTerraform(struct!.cancellationBurst),
+    cancellation_rate: cdktf.numberToTerraform(struct!.cancellationRate),
+    cancellation_ratio: cdktf.numberToTerraform(struct!.cancellationRatio),
+    cpu_time_millis_threshold: cdktf.numberToTerraform(struct!.cpuTimeMillisThreshold),
+    elapsed_time_millis_threshold: cdktf.numberToTerraform(struct!.elapsedTimeMillisThreshold),
+    heap_moving_average_window_size: cdktf.numberToTerraform(struct!.heapMovingAverageWindowSize),
+    heap_percent_threshold: cdktf.numberToTerraform(struct!.heapPercentThreshold),
+    heap_variance: cdktf.numberToTerraform(struct!.heapVariance),
+    total_heap_percent_threshold: cdktf.numberToTerraform(struct!.totalHeapPercentThreshold),
+  }
+}
+
+
+export function managedDatabaseOpensearchPropertiesSearchBackpressureSearchShardTaskToHclTerraform(struct?: ManagedDatabaseOpensearchPropertiesSearchBackpressureSearchShardTaskOutputReference | ManagedDatabaseOpensearchPropertiesSearchBackpressureSearchShardTask): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    cancellation_burst: {
+      value: cdktf.numberToHclTerraform(struct!.cancellationBurst),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    cancellation_rate: {
+      value: cdktf.numberToHclTerraform(struct!.cancellationRate),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    cancellation_ratio: {
+      value: cdktf.numberToHclTerraform(struct!.cancellationRatio),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    cpu_time_millis_threshold: {
+      value: cdktf.numberToHclTerraform(struct!.cpuTimeMillisThreshold),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    elapsed_time_millis_threshold: {
+      value: cdktf.numberToHclTerraform(struct!.elapsedTimeMillisThreshold),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    heap_moving_average_window_size: {
+      value: cdktf.numberToHclTerraform(struct!.heapMovingAverageWindowSize),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    heap_percent_threshold: {
+      value: cdktf.numberToHclTerraform(struct!.heapPercentThreshold),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    heap_variance: {
+      value: cdktf.numberToHclTerraform(struct!.heapVariance),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    total_heap_percent_threshold: {
+      value: cdktf.numberToHclTerraform(struct!.totalHeapPercentThreshold),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class ManagedDatabaseOpensearchPropertiesSearchBackpressureSearchShardTaskOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): ManagedDatabaseOpensearchPropertiesSearchBackpressureSearchShardTask | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._cancellationBurst !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.cancellationBurst = this._cancellationBurst;
+    }
+    if (this._cancellationRate !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.cancellationRate = this._cancellationRate;
+    }
+    if (this._cancellationRatio !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.cancellationRatio = this._cancellationRatio;
+    }
+    if (this._cpuTimeMillisThreshold !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.cpuTimeMillisThreshold = this._cpuTimeMillisThreshold;
+    }
+    if (this._elapsedTimeMillisThreshold !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.elapsedTimeMillisThreshold = this._elapsedTimeMillisThreshold;
+    }
+    if (this._heapMovingAverageWindowSize !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.heapMovingAverageWindowSize = this._heapMovingAverageWindowSize;
+    }
+    if (this._heapPercentThreshold !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.heapPercentThreshold = this._heapPercentThreshold;
+    }
+    if (this._heapVariance !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.heapVariance = this._heapVariance;
+    }
+    if (this._totalHeapPercentThreshold !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.totalHeapPercentThreshold = this._totalHeapPercentThreshold;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: ManagedDatabaseOpensearchPropertiesSearchBackpressureSearchShardTask | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._cancellationBurst = undefined;
+      this._cancellationRate = undefined;
+      this._cancellationRatio = undefined;
+      this._cpuTimeMillisThreshold = undefined;
+      this._elapsedTimeMillisThreshold = undefined;
+      this._heapMovingAverageWindowSize = undefined;
+      this._heapPercentThreshold = undefined;
+      this._heapVariance = undefined;
+      this._totalHeapPercentThreshold = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._cancellationBurst = value.cancellationBurst;
+      this._cancellationRate = value.cancellationRate;
+      this._cancellationRatio = value.cancellationRatio;
+      this._cpuTimeMillisThreshold = value.cpuTimeMillisThreshold;
+      this._elapsedTimeMillisThreshold = value.elapsedTimeMillisThreshold;
+      this._heapMovingAverageWindowSize = value.heapMovingAverageWindowSize;
+      this._heapPercentThreshold = value.heapPercentThreshold;
+      this._heapVariance = value.heapVariance;
+      this._totalHeapPercentThreshold = value.totalHeapPercentThreshold;
+    }
+  }
+
+  // cancellation_burst - computed: true, optional: true, required: false
+  private _cancellationBurst?: number; 
+  public get cancellationBurst() {
+    return this.getNumberAttribute('cancellation_burst');
+  }
+  public set cancellationBurst(value: number) {
+    this._cancellationBurst = value;
+  }
+  public resetCancellationBurst() {
+    this._cancellationBurst = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get cancellationBurstInput() {
+    return this._cancellationBurst;
+  }
+
+  // cancellation_rate - computed: true, optional: true, required: false
+  private _cancellationRate?: number; 
+  public get cancellationRate() {
+    return this.getNumberAttribute('cancellation_rate');
+  }
+  public set cancellationRate(value: number) {
+    this._cancellationRate = value;
+  }
+  public resetCancellationRate() {
+    this._cancellationRate = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get cancellationRateInput() {
+    return this._cancellationRate;
+  }
+
+  // cancellation_ratio - computed: true, optional: true, required: false
+  private _cancellationRatio?: number; 
+  public get cancellationRatio() {
+    return this.getNumberAttribute('cancellation_ratio');
+  }
+  public set cancellationRatio(value: number) {
+    this._cancellationRatio = value;
+  }
+  public resetCancellationRatio() {
+    this._cancellationRatio = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get cancellationRatioInput() {
+    return this._cancellationRatio;
+  }
+
+  // cpu_time_millis_threshold - computed: true, optional: true, required: false
+  private _cpuTimeMillisThreshold?: number; 
+  public get cpuTimeMillisThreshold() {
+    return this.getNumberAttribute('cpu_time_millis_threshold');
+  }
+  public set cpuTimeMillisThreshold(value: number) {
+    this._cpuTimeMillisThreshold = value;
+  }
+  public resetCpuTimeMillisThreshold() {
+    this._cpuTimeMillisThreshold = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get cpuTimeMillisThresholdInput() {
+    return this._cpuTimeMillisThreshold;
+  }
+
+  // elapsed_time_millis_threshold - computed: true, optional: true, required: false
+  private _elapsedTimeMillisThreshold?: number; 
+  public get elapsedTimeMillisThreshold() {
+    return this.getNumberAttribute('elapsed_time_millis_threshold');
+  }
+  public set elapsedTimeMillisThreshold(value: number) {
+    this._elapsedTimeMillisThreshold = value;
+  }
+  public resetElapsedTimeMillisThreshold() {
+    this._elapsedTimeMillisThreshold = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get elapsedTimeMillisThresholdInput() {
+    return this._elapsedTimeMillisThreshold;
+  }
+
+  // heap_moving_average_window_size - computed: true, optional: true, required: false
+  private _heapMovingAverageWindowSize?: number; 
+  public get heapMovingAverageWindowSize() {
+    return this.getNumberAttribute('heap_moving_average_window_size');
+  }
+  public set heapMovingAverageWindowSize(value: number) {
+    this._heapMovingAverageWindowSize = value;
+  }
+  public resetHeapMovingAverageWindowSize() {
+    this._heapMovingAverageWindowSize = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get heapMovingAverageWindowSizeInput() {
+    return this._heapMovingAverageWindowSize;
+  }
+
+  // heap_percent_threshold - computed: true, optional: true, required: false
+  private _heapPercentThreshold?: number; 
+  public get heapPercentThreshold() {
+    return this.getNumberAttribute('heap_percent_threshold');
+  }
+  public set heapPercentThreshold(value: number) {
+    this._heapPercentThreshold = value;
+  }
+  public resetHeapPercentThreshold() {
+    this._heapPercentThreshold = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get heapPercentThresholdInput() {
+    return this._heapPercentThreshold;
+  }
+
+  // heap_variance - computed: true, optional: true, required: false
+  private _heapVariance?: number; 
+  public get heapVariance() {
+    return this.getNumberAttribute('heap_variance');
+  }
+  public set heapVariance(value: number) {
+    this._heapVariance = value;
+  }
+  public resetHeapVariance() {
+    this._heapVariance = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get heapVarianceInput() {
+    return this._heapVariance;
+  }
+
+  // total_heap_percent_threshold - computed: true, optional: true, required: false
+  private _totalHeapPercentThreshold?: number; 
+  public get totalHeapPercentThreshold() {
+    return this.getNumberAttribute('total_heap_percent_threshold');
+  }
+  public set totalHeapPercentThreshold(value: number) {
+    this._totalHeapPercentThreshold = value;
+  }
+  public resetTotalHeapPercentThreshold() {
+    this._totalHeapPercentThreshold = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get totalHeapPercentThresholdInput() {
+    return this._totalHeapPercentThreshold;
+  }
+}
+export interface ManagedDatabaseOpensearchPropertiesSearchBackpressureSearchTask {
+  /**
+  * The maximum number of search tasks to cancel in a single iteration of the observer thread. The maximum number of search tasks to cancel in a single iteration of the observer thread. Default is 5.0.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.15.0/docs/resources/managed_database_opensearch#cancellation_burst ManagedDatabaseOpensearch#cancellation_burst}
+  */
+  readonly cancellationBurst?: number;
+  /**
+  * The maximum number of search tasks to cancel per millisecond of elapsed time. The maximum number of search tasks to cancel per millisecond of elapsed time. Default is 0.003.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.15.0/docs/resources/managed_database_opensearch#cancellation_rate ManagedDatabaseOpensearch#cancellation_rate}
+  */
+  readonly cancellationRate?: number;
+  /**
+  * The maximum number of search tasks to cancel, as a percentage of successful search task completions. The maximum number of search tasks to cancel, as a percentage of successful search task completions. Default is 0.1.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.15.0/docs/resources/managed_database_opensearch#cancellation_ratio ManagedDatabaseOpensearch#cancellation_ratio}
+  */
+  readonly cancellationRatio?: number;
+  /**
+  * The CPU usage threshold (in milliseconds) required for an individual parent task before it is considered for cancellation. The CPU usage threshold (in milliseconds) required for an individual parent task before it is considered for cancellation. Default is 30000.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.15.0/docs/resources/managed_database_opensearch#cpu_time_millis_threshold ManagedDatabaseOpensearch#cpu_time_millis_threshold}
+  */
+  readonly cpuTimeMillisThreshold?: number;
+  /**
+  * The elapsed time threshold (in milliseconds) required for an individual parent task before it is considered for cancellation. The elapsed time threshold (in milliseconds) required for an individual parent task before it is considered for cancellation. Default is 45000.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.15.0/docs/resources/managed_database_opensearch#elapsed_time_millis_threshold ManagedDatabaseOpensearch#elapsed_time_millis_threshold}
+  */
+  readonly elapsedTimeMillisThreshold?: number;
+  /**
+  * The window size used to calculate the rolling average of the heap usage for the completed parent tasks. The window size used to calculate the rolling average of the heap usage for the completed parent tasks. Default is 10.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.15.0/docs/resources/managed_database_opensearch#heap_moving_average_window_size ManagedDatabaseOpensearch#heap_moving_average_window_size}
+  */
+  readonly heapMovingAverageWindowSize?: number;
+  /**
+  * The heap usage threshold (as a percentage) required for an individual parent task before it is considered for cancellation. The heap usage threshold (as a percentage) required for an individual parent task before it is considered for cancellation. Default is 0.2.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.15.0/docs/resources/managed_database_opensearch#heap_percent_threshold ManagedDatabaseOpensearch#heap_percent_threshold}
+  */
+  readonly heapPercentThreshold?: number;
+  /**
+  * The heap usage variance required for an individual parent task before it is considered for cancellation. The heap usage variance required for an individual parent task before it is considered for cancellation. A task is considered for cancellation when taskHeapUsage is greater than or equal to heapUsageMovingAverage * variance. Default is 2.0.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.15.0/docs/resources/managed_database_opensearch#heap_variance ManagedDatabaseOpensearch#heap_variance}
+  */
+  readonly heapVariance?: number;
+  /**
+  * The heap usage threshold (as a percentage) required for the sum of heap usages of all search tasks before cancellation is applied. The heap usage threshold (as a percentage) required for the sum of heap usages of all search tasks before cancellation is applied. Default is 0.5.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.15.0/docs/resources/managed_database_opensearch#total_heap_percent_threshold ManagedDatabaseOpensearch#total_heap_percent_threshold}
+  */
+  readonly totalHeapPercentThreshold?: number;
+}
+
+export function managedDatabaseOpensearchPropertiesSearchBackpressureSearchTaskToTerraform(struct?: ManagedDatabaseOpensearchPropertiesSearchBackpressureSearchTaskOutputReference | ManagedDatabaseOpensearchPropertiesSearchBackpressureSearchTask): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    cancellation_burst: cdktf.numberToTerraform(struct!.cancellationBurst),
+    cancellation_rate: cdktf.numberToTerraform(struct!.cancellationRate),
+    cancellation_ratio: cdktf.numberToTerraform(struct!.cancellationRatio),
+    cpu_time_millis_threshold: cdktf.numberToTerraform(struct!.cpuTimeMillisThreshold),
+    elapsed_time_millis_threshold: cdktf.numberToTerraform(struct!.elapsedTimeMillisThreshold),
+    heap_moving_average_window_size: cdktf.numberToTerraform(struct!.heapMovingAverageWindowSize),
+    heap_percent_threshold: cdktf.numberToTerraform(struct!.heapPercentThreshold),
+    heap_variance: cdktf.numberToTerraform(struct!.heapVariance),
+    total_heap_percent_threshold: cdktf.numberToTerraform(struct!.totalHeapPercentThreshold),
+  }
+}
+
+
+export function managedDatabaseOpensearchPropertiesSearchBackpressureSearchTaskToHclTerraform(struct?: ManagedDatabaseOpensearchPropertiesSearchBackpressureSearchTaskOutputReference | ManagedDatabaseOpensearchPropertiesSearchBackpressureSearchTask): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    cancellation_burst: {
+      value: cdktf.numberToHclTerraform(struct!.cancellationBurst),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    cancellation_rate: {
+      value: cdktf.numberToHclTerraform(struct!.cancellationRate),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    cancellation_ratio: {
+      value: cdktf.numberToHclTerraform(struct!.cancellationRatio),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    cpu_time_millis_threshold: {
+      value: cdktf.numberToHclTerraform(struct!.cpuTimeMillisThreshold),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    elapsed_time_millis_threshold: {
+      value: cdktf.numberToHclTerraform(struct!.elapsedTimeMillisThreshold),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    heap_moving_average_window_size: {
+      value: cdktf.numberToHclTerraform(struct!.heapMovingAverageWindowSize),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    heap_percent_threshold: {
+      value: cdktf.numberToHclTerraform(struct!.heapPercentThreshold),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    heap_variance: {
+      value: cdktf.numberToHclTerraform(struct!.heapVariance),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    total_heap_percent_threshold: {
+      value: cdktf.numberToHclTerraform(struct!.totalHeapPercentThreshold),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class ManagedDatabaseOpensearchPropertiesSearchBackpressureSearchTaskOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): ManagedDatabaseOpensearchPropertiesSearchBackpressureSearchTask | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._cancellationBurst !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.cancellationBurst = this._cancellationBurst;
+    }
+    if (this._cancellationRate !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.cancellationRate = this._cancellationRate;
+    }
+    if (this._cancellationRatio !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.cancellationRatio = this._cancellationRatio;
+    }
+    if (this._cpuTimeMillisThreshold !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.cpuTimeMillisThreshold = this._cpuTimeMillisThreshold;
+    }
+    if (this._elapsedTimeMillisThreshold !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.elapsedTimeMillisThreshold = this._elapsedTimeMillisThreshold;
+    }
+    if (this._heapMovingAverageWindowSize !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.heapMovingAverageWindowSize = this._heapMovingAverageWindowSize;
+    }
+    if (this._heapPercentThreshold !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.heapPercentThreshold = this._heapPercentThreshold;
+    }
+    if (this._heapVariance !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.heapVariance = this._heapVariance;
+    }
+    if (this._totalHeapPercentThreshold !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.totalHeapPercentThreshold = this._totalHeapPercentThreshold;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: ManagedDatabaseOpensearchPropertiesSearchBackpressureSearchTask | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._cancellationBurst = undefined;
+      this._cancellationRate = undefined;
+      this._cancellationRatio = undefined;
+      this._cpuTimeMillisThreshold = undefined;
+      this._elapsedTimeMillisThreshold = undefined;
+      this._heapMovingAverageWindowSize = undefined;
+      this._heapPercentThreshold = undefined;
+      this._heapVariance = undefined;
+      this._totalHeapPercentThreshold = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._cancellationBurst = value.cancellationBurst;
+      this._cancellationRate = value.cancellationRate;
+      this._cancellationRatio = value.cancellationRatio;
+      this._cpuTimeMillisThreshold = value.cpuTimeMillisThreshold;
+      this._elapsedTimeMillisThreshold = value.elapsedTimeMillisThreshold;
+      this._heapMovingAverageWindowSize = value.heapMovingAverageWindowSize;
+      this._heapPercentThreshold = value.heapPercentThreshold;
+      this._heapVariance = value.heapVariance;
+      this._totalHeapPercentThreshold = value.totalHeapPercentThreshold;
+    }
+  }
+
+  // cancellation_burst - computed: true, optional: true, required: false
+  private _cancellationBurst?: number; 
+  public get cancellationBurst() {
+    return this.getNumberAttribute('cancellation_burst');
+  }
+  public set cancellationBurst(value: number) {
+    this._cancellationBurst = value;
+  }
+  public resetCancellationBurst() {
+    this._cancellationBurst = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get cancellationBurstInput() {
+    return this._cancellationBurst;
+  }
+
+  // cancellation_rate - computed: true, optional: true, required: false
+  private _cancellationRate?: number; 
+  public get cancellationRate() {
+    return this.getNumberAttribute('cancellation_rate');
+  }
+  public set cancellationRate(value: number) {
+    this._cancellationRate = value;
+  }
+  public resetCancellationRate() {
+    this._cancellationRate = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get cancellationRateInput() {
+    return this._cancellationRate;
+  }
+
+  // cancellation_ratio - computed: true, optional: true, required: false
+  private _cancellationRatio?: number; 
+  public get cancellationRatio() {
+    return this.getNumberAttribute('cancellation_ratio');
+  }
+  public set cancellationRatio(value: number) {
+    this._cancellationRatio = value;
+  }
+  public resetCancellationRatio() {
+    this._cancellationRatio = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get cancellationRatioInput() {
+    return this._cancellationRatio;
+  }
+
+  // cpu_time_millis_threshold - computed: true, optional: true, required: false
+  private _cpuTimeMillisThreshold?: number; 
+  public get cpuTimeMillisThreshold() {
+    return this.getNumberAttribute('cpu_time_millis_threshold');
+  }
+  public set cpuTimeMillisThreshold(value: number) {
+    this._cpuTimeMillisThreshold = value;
+  }
+  public resetCpuTimeMillisThreshold() {
+    this._cpuTimeMillisThreshold = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get cpuTimeMillisThresholdInput() {
+    return this._cpuTimeMillisThreshold;
+  }
+
+  // elapsed_time_millis_threshold - computed: true, optional: true, required: false
+  private _elapsedTimeMillisThreshold?: number; 
+  public get elapsedTimeMillisThreshold() {
+    return this.getNumberAttribute('elapsed_time_millis_threshold');
+  }
+  public set elapsedTimeMillisThreshold(value: number) {
+    this._elapsedTimeMillisThreshold = value;
+  }
+  public resetElapsedTimeMillisThreshold() {
+    this._elapsedTimeMillisThreshold = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get elapsedTimeMillisThresholdInput() {
+    return this._elapsedTimeMillisThreshold;
+  }
+
+  // heap_moving_average_window_size - computed: true, optional: true, required: false
+  private _heapMovingAverageWindowSize?: number; 
+  public get heapMovingAverageWindowSize() {
+    return this.getNumberAttribute('heap_moving_average_window_size');
+  }
+  public set heapMovingAverageWindowSize(value: number) {
+    this._heapMovingAverageWindowSize = value;
+  }
+  public resetHeapMovingAverageWindowSize() {
+    this._heapMovingAverageWindowSize = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get heapMovingAverageWindowSizeInput() {
+    return this._heapMovingAverageWindowSize;
+  }
+
+  // heap_percent_threshold - computed: true, optional: true, required: false
+  private _heapPercentThreshold?: number; 
+  public get heapPercentThreshold() {
+    return this.getNumberAttribute('heap_percent_threshold');
+  }
+  public set heapPercentThreshold(value: number) {
+    this._heapPercentThreshold = value;
+  }
+  public resetHeapPercentThreshold() {
+    this._heapPercentThreshold = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get heapPercentThresholdInput() {
+    return this._heapPercentThreshold;
+  }
+
+  // heap_variance - computed: true, optional: true, required: false
+  private _heapVariance?: number; 
+  public get heapVariance() {
+    return this.getNumberAttribute('heap_variance');
+  }
+  public set heapVariance(value: number) {
+    this._heapVariance = value;
+  }
+  public resetHeapVariance() {
+    this._heapVariance = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get heapVarianceInput() {
+    return this._heapVariance;
+  }
+
+  // total_heap_percent_threshold - computed: true, optional: true, required: false
+  private _totalHeapPercentThreshold?: number; 
+  public get totalHeapPercentThreshold() {
+    return this.getNumberAttribute('total_heap_percent_threshold');
+  }
+  public set totalHeapPercentThreshold(value: number) {
+    this._totalHeapPercentThreshold = value;
+  }
+  public resetTotalHeapPercentThreshold() {
+    this._totalHeapPercentThreshold = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get totalHeapPercentThresholdInput() {
+    return this._totalHeapPercentThreshold;
+  }
+}
+export interface ManagedDatabaseOpensearchPropertiesSearchBackpressure {
+  /**
+  * The search backpressure mode. The search backpressure mode. Valid values are monitor_only, enforced, or disabled. Default is monitor_only.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.15.0/docs/resources/managed_database_opensearch#mode ManagedDatabaseOpensearch#mode}
+  */
+  readonly mode?: string;
+  /**
+  * node_duress block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.15.0/docs/resources/managed_database_opensearch#node_duress ManagedDatabaseOpensearch#node_duress}
+  */
+  readonly nodeDuress?: ManagedDatabaseOpensearchPropertiesSearchBackpressureNodeDuress;
+  /**
+  * search_shard_task block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.15.0/docs/resources/managed_database_opensearch#search_shard_task ManagedDatabaseOpensearch#search_shard_task}
+  */
+  readonly searchShardTask?: ManagedDatabaseOpensearchPropertiesSearchBackpressureSearchShardTask;
+  /**
+  * search_task block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.15.0/docs/resources/managed_database_opensearch#search_task ManagedDatabaseOpensearch#search_task}
+  */
+  readonly searchTask?: ManagedDatabaseOpensearchPropertiesSearchBackpressureSearchTask;
+}
+
+export function managedDatabaseOpensearchPropertiesSearchBackpressureToTerraform(struct?: ManagedDatabaseOpensearchPropertiesSearchBackpressureOutputReference | ManagedDatabaseOpensearchPropertiesSearchBackpressure): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    mode: cdktf.stringToTerraform(struct!.mode),
+    node_duress: managedDatabaseOpensearchPropertiesSearchBackpressureNodeDuressToTerraform(struct!.nodeDuress),
+    search_shard_task: managedDatabaseOpensearchPropertiesSearchBackpressureSearchShardTaskToTerraform(struct!.searchShardTask),
+    search_task: managedDatabaseOpensearchPropertiesSearchBackpressureSearchTaskToTerraform(struct!.searchTask),
+  }
+}
+
+
+export function managedDatabaseOpensearchPropertiesSearchBackpressureToHclTerraform(struct?: ManagedDatabaseOpensearchPropertiesSearchBackpressureOutputReference | ManagedDatabaseOpensearchPropertiesSearchBackpressure): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    mode: {
+      value: cdktf.stringToHclTerraform(struct!.mode),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    node_duress: {
+      value: managedDatabaseOpensearchPropertiesSearchBackpressureNodeDuressToHclTerraform(struct!.nodeDuress),
+      isBlock: true,
+      type: "list",
+      storageClassType: "ManagedDatabaseOpensearchPropertiesSearchBackpressureNodeDuressList",
+    },
+    search_shard_task: {
+      value: managedDatabaseOpensearchPropertiesSearchBackpressureSearchShardTaskToHclTerraform(struct!.searchShardTask),
+      isBlock: true,
+      type: "list",
+      storageClassType: "ManagedDatabaseOpensearchPropertiesSearchBackpressureSearchShardTaskList",
+    },
+    search_task: {
+      value: managedDatabaseOpensearchPropertiesSearchBackpressureSearchTaskToHclTerraform(struct!.searchTask),
+      isBlock: true,
+      type: "list",
+      storageClassType: "ManagedDatabaseOpensearchPropertiesSearchBackpressureSearchTaskList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class ManagedDatabaseOpensearchPropertiesSearchBackpressureOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): ManagedDatabaseOpensearchPropertiesSearchBackpressure | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._mode !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.mode = this._mode;
+    }
+    if (this._nodeDuress?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.nodeDuress = this._nodeDuress?.internalValue;
+    }
+    if (this._searchShardTask?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.searchShardTask = this._searchShardTask?.internalValue;
+    }
+    if (this._searchTask?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.searchTask = this._searchTask?.internalValue;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: ManagedDatabaseOpensearchPropertiesSearchBackpressure | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._mode = undefined;
+      this._nodeDuress.internalValue = undefined;
+      this._searchShardTask.internalValue = undefined;
+      this._searchTask.internalValue = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._mode = value.mode;
+      this._nodeDuress.internalValue = value.nodeDuress;
+      this._searchShardTask.internalValue = value.searchShardTask;
+      this._searchTask.internalValue = value.searchTask;
+    }
+  }
+
+  // mode - computed: true, optional: true, required: false
+  private _mode?: string; 
+  public get mode() {
+    return this.getStringAttribute('mode');
+  }
+  public set mode(value: string) {
+    this._mode = value;
+  }
+  public resetMode() {
+    this._mode = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get modeInput() {
+    return this._mode;
+  }
+
+  // node_duress - computed: false, optional: true, required: false
+  private _nodeDuress = new ManagedDatabaseOpensearchPropertiesSearchBackpressureNodeDuressOutputReference(this, "node_duress");
+  public get nodeDuress() {
+    return this._nodeDuress;
+  }
+  public putNodeDuress(value: ManagedDatabaseOpensearchPropertiesSearchBackpressureNodeDuress) {
+    this._nodeDuress.internalValue = value;
+  }
+  public resetNodeDuress() {
+    this._nodeDuress.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get nodeDuressInput() {
+    return this._nodeDuress.internalValue;
+  }
+
+  // search_shard_task - computed: false, optional: true, required: false
+  private _searchShardTask = new ManagedDatabaseOpensearchPropertiesSearchBackpressureSearchShardTaskOutputReference(this, "search_shard_task");
+  public get searchShardTask() {
+    return this._searchShardTask;
+  }
+  public putSearchShardTask(value: ManagedDatabaseOpensearchPropertiesSearchBackpressureSearchShardTask) {
+    this._searchShardTask.internalValue = value;
+  }
+  public resetSearchShardTask() {
+    this._searchShardTask.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get searchShardTaskInput() {
+    return this._searchShardTask.internalValue;
+  }
+
+  // search_task - computed: false, optional: true, required: false
+  private _searchTask = new ManagedDatabaseOpensearchPropertiesSearchBackpressureSearchTaskOutputReference(this, "search_task");
+  public get searchTask() {
+    return this._searchTask;
+  }
+  public putSearchTask(value: ManagedDatabaseOpensearchPropertiesSearchBackpressureSearchTask) {
+    this._searchTask.internalValue = value;
+  }
+  public resetSearchTask() {
+    this._searchTask.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get searchTaskInput() {
+    return this._searchTask.internalValue;
+  }
+}
+export interface ManagedDatabaseOpensearchPropertiesShardIndexingPressureOperatingFactor {
+  /**
+  * Lower occupancy limit of the allocated quota of memory for the shard. Specify the lower occupancy limit of the allocated quota of memory for the shard.
+  *                     If the total memory usage of a shard is below this limit,
+  *                     shard indexing backpressure decreases the current allocated memory for that shard.
+  *                     Default is 0.75.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.15.0/docs/resources/managed_database_opensearch#lower ManagedDatabaseOpensearch#lower}
+  */
+  readonly lower?: number;
+  /**
+  * Optimal occupancy of the allocated quota of memory for the shard. Specify the optimal occupancy of the allocated quota of memory for the shard.
+  *                     If the total memory usage of a shard is at this level,
+  *                     shard indexing backpressure doesn’t change the current allocated memory for that shard.
+  *                     Default is 0.85.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.15.0/docs/resources/managed_database_opensearch#optimal ManagedDatabaseOpensearch#optimal}
+  */
+  readonly optimal?: number;
+  /**
+  * Upper occupancy limit of the allocated quota of memory for the shard. Specify the upper occupancy limit of the allocated quota of memory for the shard.
+  *                     If the total memory usage of a shard is above this limit,
+  *                     shard indexing backpressure increases the current allocated memory for that shard.
+  *                     Default is 0.95.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.15.0/docs/resources/managed_database_opensearch#upper ManagedDatabaseOpensearch#upper}
+  */
+  readonly upper?: number;
+}
+
+export function managedDatabaseOpensearchPropertiesShardIndexingPressureOperatingFactorToTerraform(struct?: ManagedDatabaseOpensearchPropertiesShardIndexingPressureOperatingFactorOutputReference | ManagedDatabaseOpensearchPropertiesShardIndexingPressureOperatingFactor): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    lower: cdktf.numberToTerraform(struct!.lower),
+    optimal: cdktf.numberToTerraform(struct!.optimal),
+    upper: cdktf.numberToTerraform(struct!.upper),
+  }
+}
+
+
+export function managedDatabaseOpensearchPropertiesShardIndexingPressureOperatingFactorToHclTerraform(struct?: ManagedDatabaseOpensearchPropertiesShardIndexingPressureOperatingFactorOutputReference | ManagedDatabaseOpensearchPropertiesShardIndexingPressureOperatingFactor): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    lower: {
+      value: cdktf.numberToHclTerraform(struct!.lower),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    optimal: {
+      value: cdktf.numberToHclTerraform(struct!.optimal),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    upper: {
+      value: cdktf.numberToHclTerraform(struct!.upper),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class ManagedDatabaseOpensearchPropertiesShardIndexingPressureOperatingFactorOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): ManagedDatabaseOpensearchPropertiesShardIndexingPressureOperatingFactor | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._lower !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.lower = this._lower;
+    }
+    if (this._optimal !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.optimal = this._optimal;
+    }
+    if (this._upper !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.upper = this._upper;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: ManagedDatabaseOpensearchPropertiesShardIndexingPressureOperatingFactor | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._lower = undefined;
+      this._optimal = undefined;
+      this._upper = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._lower = value.lower;
+      this._optimal = value.optimal;
+      this._upper = value.upper;
+    }
+  }
+
+  // lower - computed: true, optional: true, required: false
+  private _lower?: number; 
+  public get lower() {
+    return this.getNumberAttribute('lower');
+  }
+  public set lower(value: number) {
+    this._lower = value;
+  }
+  public resetLower() {
+    this._lower = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get lowerInput() {
+    return this._lower;
+  }
+
+  // optimal - computed: true, optional: true, required: false
+  private _optimal?: number; 
+  public get optimal() {
+    return this.getNumberAttribute('optimal');
+  }
+  public set optimal(value: number) {
+    this._optimal = value;
+  }
+  public resetOptimal() {
+    this._optimal = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get optimalInput() {
+    return this._optimal;
+  }
+
+  // upper - computed: true, optional: true, required: false
+  private _upper?: number; 
+  public get upper() {
+    return this.getNumberAttribute('upper');
+  }
+  public set upper(value: number) {
+    this._upper = value;
+  }
+  public resetUpper() {
+    this._upper = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get upperInput() {
+    return this._upper;
+  }
+}
+export interface ManagedDatabaseOpensearchPropertiesShardIndexingPressurePrimaryParameterNode {
+  /**
+  * Node soft limit. Define the percentage of the node-level memory
+  *                             threshold that acts as a soft indicator for strain on a node.
+  *                             Default is 0.7.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.15.0/docs/resources/managed_database_opensearch#soft_limit ManagedDatabaseOpensearch#soft_limit}
+  */
+  readonly softLimit?: number;
+}
+
+export function managedDatabaseOpensearchPropertiesShardIndexingPressurePrimaryParameterNodeToTerraform(struct?: ManagedDatabaseOpensearchPropertiesShardIndexingPressurePrimaryParameterNodeOutputReference | ManagedDatabaseOpensearchPropertiesShardIndexingPressurePrimaryParameterNode): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    soft_limit: cdktf.numberToTerraform(struct!.softLimit),
+  }
+}
+
+
+export function managedDatabaseOpensearchPropertiesShardIndexingPressurePrimaryParameterNodeToHclTerraform(struct?: ManagedDatabaseOpensearchPropertiesShardIndexingPressurePrimaryParameterNodeOutputReference | ManagedDatabaseOpensearchPropertiesShardIndexingPressurePrimaryParameterNode): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    soft_limit: {
+      value: cdktf.numberToHclTerraform(struct!.softLimit),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class ManagedDatabaseOpensearchPropertiesShardIndexingPressurePrimaryParameterNodeOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): ManagedDatabaseOpensearchPropertiesShardIndexingPressurePrimaryParameterNode | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._softLimit !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.softLimit = this._softLimit;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: ManagedDatabaseOpensearchPropertiesShardIndexingPressurePrimaryParameterNode | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._softLimit = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._softLimit = value.softLimit;
+    }
+  }
+
+  // soft_limit - computed: true, optional: true, required: false
+  private _softLimit?: number; 
+  public get softLimit() {
+    return this.getNumberAttribute('soft_limit');
+  }
+  public set softLimit(value: number) {
+    this._softLimit = value;
+  }
+  public resetSoftLimit() {
+    this._softLimit = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get softLimitInput() {
+    return this._softLimit;
+  }
+}
+export interface ManagedDatabaseOpensearchPropertiesShardIndexingPressurePrimaryParameterShard {
+  /**
+  * Shard min limit. Specify the minimum assigned quota for a new shard in any role (coordinator, primary, or replica).
+  *                             Shard indexing backpressure increases or decreases this allocated quota based on the inflow of traffic for the shard.
+  *                             Default is 0.001.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.15.0/docs/resources/managed_database_opensearch#min_limit ManagedDatabaseOpensearch#min_limit}
+  */
+  readonly minLimit?: number;
+}
+
+export function managedDatabaseOpensearchPropertiesShardIndexingPressurePrimaryParameterShardToTerraform(struct?: ManagedDatabaseOpensearchPropertiesShardIndexingPressurePrimaryParameterShardOutputReference | ManagedDatabaseOpensearchPropertiesShardIndexingPressurePrimaryParameterShard): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    min_limit: cdktf.numberToTerraform(struct!.minLimit),
+  }
+}
+
+
+export function managedDatabaseOpensearchPropertiesShardIndexingPressurePrimaryParameterShardToHclTerraform(struct?: ManagedDatabaseOpensearchPropertiesShardIndexingPressurePrimaryParameterShardOutputReference | ManagedDatabaseOpensearchPropertiesShardIndexingPressurePrimaryParameterShard): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    min_limit: {
+      value: cdktf.numberToHclTerraform(struct!.minLimit),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class ManagedDatabaseOpensearchPropertiesShardIndexingPressurePrimaryParameterShardOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): ManagedDatabaseOpensearchPropertiesShardIndexingPressurePrimaryParameterShard | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._minLimit !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.minLimit = this._minLimit;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: ManagedDatabaseOpensearchPropertiesShardIndexingPressurePrimaryParameterShard | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._minLimit = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._minLimit = value.minLimit;
+    }
+  }
+
+  // min_limit - computed: true, optional: true, required: false
+  private _minLimit?: number; 
+  public get minLimit() {
+    return this.getNumberAttribute('min_limit');
+  }
+  public set minLimit(value: number) {
+    this._minLimit = value;
+  }
+  public resetMinLimit() {
+    this._minLimit = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get minLimitInput() {
+    return this._minLimit;
+  }
+}
+export interface ManagedDatabaseOpensearchPropertiesShardIndexingPressurePrimaryParameter {
+  /**
+  * node block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.15.0/docs/resources/managed_database_opensearch#node ManagedDatabaseOpensearch#node}
+  */
+  readonly nodeAttribute?: ManagedDatabaseOpensearchPropertiesShardIndexingPressurePrimaryParameterNode;
+  /**
+  * shard block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.15.0/docs/resources/managed_database_opensearch#shard ManagedDatabaseOpensearch#shard}
+  */
+  readonly shard?: ManagedDatabaseOpensearchPropertiesShardIndexingPressurePrimaryParameterShard;
+}
+
+export function managedDatabaseOpensearchPropertiesShardIndexingPressurePrimaryParameterToTerraform(struct?: ManagedDatabaseOpensearchPropertiesShardIndexingPressurePrimaryParameterOutputReference | ManagedDatabaseOpensearchPropertiesShardIndexingPressurePrimaryParameter): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    node: managedDatabaseOpensearchPropertiesShardIndexingPressurePrimaryParameterNodeToTerraform(struct!.nodeAttribute),
+    shard: managedDatabaseOpensearchPropertiesShardIndexingPressurePrimaryParameterShardToTerraform(struct!.shard),
+  }
+}
+
+
+export function managedDatabaseOpensearchPropertiesShardIndexingPressurePrimaryParameterToHclTerraform(struct?: ManagedDatabaseOpensearchPropertiesShardIndexingPressurePrimaryParameterOutputReference | ManagedDatabaseOpensearchPropertiesShardIndexingPressurePrimaryParameter): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    node: {
+      value: managedDatabaseOpensearchPropertiesShardIndexingPressurePrimaryParameterNodeToHclTerraform(struct!.nodeAttribute),
+      isBlock: true,
+      type: "list",
+      storageClassType: "ManagedDatabaseOpensearchPropertiesShardIndexingPressurePrimaryParameterNodeList",
+    },
+    shard: {
+      value: managedDatabaseOpensearchPropertiesShardIndexingPressurePrimaryParameterShardToHclTerraform(struct!.shard),
+      isBlock: true,
+      type: "list",
+      storageClassType: "ManagedDatabaseOpensearchPropertiesShardIndexingPressurePrimaryParameterShardList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class ManagedDatabaseOpensearchPropertiesShardIndexingPressurePrimaryParameterOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): ManagedDatabaseOpensearchPropertiesShardIndexingPressurePrimaryParameter | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._node?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.nodeAttribute = this._node?.internalValue;
+    }
+    if (this._shard?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.shard = this._shard?.internalValue;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: ManagedDatabaseOpensearchPropertiesShardIndexingPressurePrimaryParameter | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._node.internalValue = undefined;
+      this._shard.internalValue = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._node.internalValue = value.nodeAttribute;
+      this._shard.internalValue = value.shard;
+    }
+  }
+
+  // node - computed: false, optional: true, required: false
+  private _node = new ManagedDatabaseOpensearchPropertiesShardIndexingPressurePrimaryParameterNodeOutputReference(this, "node");
+  public get nodeAttribute() {
+    return this._node;
+  }
+  public putNodeAttribute(value: ManagedDatabaseOpensearchPropertiesShardIndexingPressurePrimaryParameterNode) {
+    this._node.internalValue = value;
+  }
+  public resetNodeAttribute() {
+    this._node.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get nodeAttributeInput() {
+    return this._node.internalValue;
+  }
+
+  // shard - computed: false, optional: true, required: false
+  private _shard = new ManagedDatabaseOpensearchPropertiesShardIndexingPressurePrimaryParameterShardOutputReference(this, "shard");
+  public get shard() {
+    return this._shard;
+  }
+  public putShard(value: ManagedDatabaseOpensearchPropertiesShardIndexingPressurePrimaryParameterShard) {
+    this._shard.internalValue = value;
+  }
+  public resetShard() {
+    this._shard.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get shardInput() {
+    return this._shard.internalValue;
+  }
+}
+export interface ManagedDatabaseOpensearchPropertiesShardIndexingPressure {
+  /**
+  * Enable or disable shard indexing backpressure. Enable or disable shard indexing backpressure. Default is false.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.15.0/docs/resources/managed_database_opensearch#enabled ManagedDatabaseOpensearch#enabled}
+  */
+  readonly enabled?: boolean | cdktf.IResolvable;
+  /**
+  * Run shard indexing backpressure in shadow mode or enforced mode. Run shard indexing backpressure in shadow mode or enforced mode.
+  *             In shadow mode (value set as false), shard indexing backpressure tracks all granular-level metrics,
+  *             but it doesn’t actually reject any indexing requests.
+  *             In enforced mode (value set as true),
+  *             shard indexing backpressure rejects any requests to the cluster that might cause a dip in its performance.
+  *             Default is false.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.15.0/docs/resources/managed_database_opensearch#enforced ManagedDatabaseOpensearch#enforced}
+  */
+  readonly enforced?: boolean | cdktf.IResolvable;
+  /**
+  * operating_factor block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.15.0/docs/resources/managed_database_opensearch#operating_factor ManagedDatabaseOpensearch#operating_factor}
+  */
+  readonly operatingFactor?: ManagedDatabaseOpensearchPropertiesShardIndexingPressureOperatingFactor;
+  /**
+  * primary_parameter block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.15.0/docs/resources/managed_database_opensearch#primary_parameter ManagedDatabaseOpensearch#primary_parameter}
+  */
+  readonly primaryParameter?: ManagedDatabaseOpensearchPropertiesShardIndexingPressurePrimaryParameter;
+}
+
+export function managedDatabaseOpensearchPropertiesShardIndexingPressureToTerraform(struct?: ManagedDatabaseOpensearchPropertiesShardIndexingPressureOutputReference | ManagedDatabaseOpensearchPropertiesShardIndexingPressure): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    enabled: cdktf.booleanToTerraform(struct!.enabled),
+    enforced: cdktf.booleanToTerraform(struct!.enforced),
+    operating_factor: managedDatabaseOpensearchPropertiesShardIndexingPressureOperatingFactorToTerraform(struct!.operatingFactor),
+    primary_parameter: managedDatabaseOpensearchPropertiesShardIndexingPressurePrimaryParameterToTerraform(struct!.primaryParameter),
+  }
+}
+
+
+export function managedDatabaseOpensearchPropertiesShardIndexingPressureToHclTerraform(struct?: ManagedDatabaseOpensearchPropertiesShardIndexingPressureOutputReference | ManagedDatabaseOpensearchPropertiesShardIndexingPressure): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    enabled: {
+      value: cdktf.booleanToHclTerraform(struct!.enabled),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+    enforced: {
+      value: cdktf.booleanToHclTerraform(struct!.enforced),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+    operating_factor: {
+      value: managedDatabaseOpensearchPropertiesShardIndexingPressureOperatingFactorToHclTerraform(struct!.operatingFactor),
+      isBlock: true,
+      type: "list",
+      storageClassType: "ManagedDatabaseOpensearchPropertiesShardIndexingPressureOperatingFactorList",
+    },
+    primary_parameter: {
+      value: managedDatabaseOpensearchPropertiesShardIndexingPressurePrimaryParameterToHclTerraform(struct!.primaryParameter),
+      isBlock: true,
+      type: "list",
+      storageClassType: "ManagedDatabaseOpensearchPropertiesShardIndexingPressurePrimaryParameterList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class ManagedDatabaseOpensearchPropertiesShardIndexingPressureOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): ManagedDatabaseOpensearchPropertiesShardIndexingPressure | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._enabled !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.enabled = this._enabled;
+    }
+    if (this._enforced !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.enforced = this._enforced;
+    }
+    if (this._operatingFactor?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.operatingFactor = this._operatingFactor?.internalValue;
+    }
+    if (this._primaryParameter?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.primaryParameter = this._primaryParameter?.internalValue;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: ManagedDatabaseOpensearchPropertiesShardIndexingPressure | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._enabled = undefined;
+      this._enforced = undefined;
+      this._operatingFactor.internalValue = undefined;
+      this._primaryParameter.internalValue = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._enabled = value.enabled;
+      this._enforced = value.enforced;
+      this._operatingFactor.internalValue = value.operatingFactor;
+      this._primaryParameter.internalValue = value.primaryParameter;
+    }
+  }
+
+  // enabled - computed: true, optional: true, required: false
+  private _enabled?: boolean | cdktf.IResolvable; 
+  public get enabled() {
+    return this.getBooleanAttribute('enabled');
+  }
+  public set enabled(value: boolean | cdktf.IResolvable) {
+    this._enabled = value;
+  }
+  public resetEnabled() {
+    this._enabled = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get enabledInput() {
+    return this._enabled;
+  }
+
+  // enforced - computed: true, optional: true, required: false
+  private _enforced?: boolean | cdktf.IResolvable; 
+  public get enforced() {
+    return this.getBooleanAttribute('enforced');
+  }
+  public set enforced(value: boolean | cdktf.IResolvable) {
+    this._enforced = value;
+  }
+  public resetEnforced() {
+    this._enforced = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get enforcedInput() {
+    return this._enforced;
+  }
+
+  // operating_factor - computed: false, optional: true, required: false
+  private _operatingFactor = new ManagedDatabaseOpensearchPropertiesShardIndexingPressureOperatingFactorOutputReference(this, "operating_factor");
+  public get operatingFactor() {
+    return this._operatingFactor;
+  }
+  public putOperatingFactor(value: ManagedDatabaseOpensearchPropertiesShardIndexingPressureOperatingFactor) {
+    this._operatingFactor.internalValue = value;
+  }
+  public resetOperatingFactor() {
+    this._operatingFactor.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get operatingFactorInput() {
+    return this._operatingFactor.internalValue;
+  }
+
+  // primary_parameter - computed: false, optional: true, required: false
+  private _primaryParameter = new ManagedDatabaseOpensearchPropertiesShardIndexingPressurePrimaryParameterOutputReference(this, "primary_parameter");
+  public get primaryParameter() {
+    return this._primaryParameter;
+  }
+  public putPrimaryParameter(value: ManagedDatabaseOpensearchPropertiesShardIndexingPressurePrimaryParameter) {
+    this._primaryParameter.internalValue = value;
+  }
+  public resetPrimaryParameter() {
+    this._primaryParameter.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get primaryParameterInput() {
+    return this._primaryParameter.internalValue;
+  }
+}
 export interface ManagedDatabaseOpensearchProperties {
   /**
   * action.auto_create_index. Explicitly allow or block automatic creation of indices. Defaults to true.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.14.0/docs/resources/managed_database_opensearch#action_auto_create_index_enabled ManagedDatabaseOpensearch#action_auto_create_index_enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.15.0/docs/resources/managed_database_opensearch#action_auto_create_index_enabled ManagedDatabaseOpensearch#action_auto_create_index_enabled}
   */
   readonly actionAutoCreateIndexEnabled?: boolean | cdktf.IResolvable;
   /**
   * Require explicit index names when deleting.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.14.0/docs/resources/managed_database_opensearch#action_destructive_requires_name ManagedDatabaseOpensearch#action_destructive_requires_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.15.0/docs/resources/managed_database_opensearch#action_destructive_requires_name ManagedDatabaseOpensearch#action_destructive_requires_name}
   */
   readonly actionDestructiveRequiresName?: boolean | cdktf.IResolvable;
   /**
   * Automatic utility network IP Filter. Automatically allow connections from servers in the utility network within the same zone.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.14.0/docs/resources/managed_database_opensearch#automatic_utility_network_ip_filter ManagedDatabaseOpensearch#automatic_utility_network_ip_filter}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.15.0/docs/resources/managed_database_opensearch#automatic_utility_network_ip_filter ManagedDatabaseOpensearch#automatic_utility_network_ip_filter}
   */
   readonly automaticUtilityNetworkIpFilter?: boolean | cdktf.IResolvable;
   /**
   * Controls the number of shards allowed in the cluster per data node.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.14.0/docs/resources/managed_database_opensearch#cluster_max_shards_per_node ManagedDatabaseOpensearch#cluster_max_shards_per_node}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.15.0/docs/resources/managed_database_opensearch#cluster_max_shards_per_node ManagedDatabaseOpensearch#cluster_max_shards_per_node}
   */
   readonly clusterMaxShardsPerNode?: number;
   /**
-  * Concurrent incoming/outgoing shard recoveries per node. How many concurrent incoming/outgoing shard recoveries (normally replicas) are allowed to happen on a node. Defaults to 2.
+  * Concurrent incoming/outgoing shard recoveries per node. How many concurrent incoming/outgoing shard recoveries (normally replicas) are allowed to happen on a node. Defaults to node cpu count * 2.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.14.0/docs/resources/managed_database_opensearch#cluster_routing_allocation_node_concurrent_recoveries ManagedDatabaseOpensearch#cluster_routing_allocation_node_concurrent_recoveries}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.15.0/docs/resources/managed_database_opensearch#cluster_routing_allocation_node_concurrent_recoveries ManagedDatabaseOpensearch#cluster_routing_allocation_node_concurrent_recoveries}
   */
   readonly clusterRoutingAllocationNodeConcurrentRecoveries?: number;
   /**
   * Custom domain. Serve the web frontend using a custom CNAME pointing to the Aiven DNS name.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.14.0/docs/resources/managed_database_opensearch#custom_domain ManagedDatabaseOpensearch#custom_domain}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.15.0/docs/resources/managed_database_opensearch#custom_domain ManagedDatabaseOpensearch#custom_domain}
   */
   readonly customDomain?: string;
   /**
   * Sender name placeholder to be used in Opensearch Dashboards and Opensearch keystore. This should be identical to the Sender name defined in Opensearch dashboards.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.14.0/docs/resources/managed_database_opensearch#email_sender_name ManagedDatabaseOpensearch#email_sender_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.15.0/docs/resources/managed_database_opensearch#email_sender_name ManagedDatabaseOpensearch#email_sender_name}
   */
   readonly emailSenderName?: string;
   /**
   * Sender password for Opensearch alerts to authenticate with SMTP server. Sender password for Opensearch alerts to authenticate with SMTP server.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.14.0/docs/resources/managed_database_opensearch#email_sender_password ManagedDatabaseOpensearch#email_sender_password}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.15.0/docs/resources/managed_database_opensearch#email_sender_password ManagedDatabaseOpensearch#email_sender_password}
   */
   readonly emailSenderPassword?: string;
   /**
   * Sender username for Opensearch alerts.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.14.0/docs/resources/managed_database_opensearch#email_sender_username ManagedDatabaseOpensearch#email_sender_username}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.15.0/docs/resources/managed_database_opensearch#email_sender_username ManagedDatabaseOpensearch#email_sender_username}
   */
   readonly emailSenderUsername?: string;
   /**
   * Enable/Disable security audit.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.14.0/docs/resources/managed_database_opensearch#enable_security_audit ManagedDatabaseOpensearch#enable_security_audit}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.15.0/docs/resources/managed_database_opensearch#enable_security_audit ManagedDatabaseOpensearch#enable_security_audit}
   */
   readonly enableSecurityAudit?: boolean | cdktf.IResolvable;
   /**
   * Maximum content length for HTTP requests to the OpenSearch HTTP API, in bytes.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.14.0/docs/resources/managed_database_opensearch#http_max_content_length ManagedDatabaseOpensearch#http_max_content_length}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.15.0/docs/resources/managed_database_opensearch#http_max_content_length ManagedDatabaseOpensearch#http_max_content_length}
   */
   readonly httpMaxContentLength?: number;
   /**
   * The max size of allowed headers, in bytes.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.14.0/docs/resources/managed_database_opensearch#http_max_header_size ManagedDatabaseOpensearch#http_max_header_size}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.15.0/docs/resources/managed_database_opensearch#http_max_header_size ManagedDatabaseOpensearch#http_max_header_size}
   */
   readonly httpMaxHeaderSize?: number;
   /**
   * The max length of an HTTP URL, in bytes.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.14.0/docs/resources/managed_database_opensearch#http_max_initial_line_length ManagedDatabaseOpensearch#http_max_initial_line_length}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.15.0/docs/resources/managed_database_opensearch#http_max_initial_line_length ManagedDatabaseOpensearch#http_max_initial_line_length}
   */
   readonly httpMaxInitialLineLength?: number;
   /**
   * Index patterns.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.14.0/docs/resources/managed_database_opensearch#index_patterns ManagedDatabaseOpensearch#index_patterns}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.15.0/docs/resources/managed_database_opensearch#index_patterns ManagedDatabaseOpensearch#index_patterns}
   */
   readonly indexPatterns?: string[];
   /**
   * Relative amount. Maximum amount of heap memory used for field data cache. This is an expert setting; decreasing the value too much will increase overhead of loading field data; too much memory used for field data cache will decrease amount of heap available for other operations.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.14.0/docs/resources/managed_database_opensearch#indices_fielddata_cache_size ManagedDatabaseOpensearch#indices_fielddata_cache_size}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.15.0/docs/resources/managed_database_opensearch#indices_fielddata_cache_size ManagedDatabaseOpensearch#indices_fielddata_cache_size}
   */
   readonly indicesFielddataCacheSize?: number;
   /**
   * Percentage value. Default is 10%. Total amount of heap used for indexing buffer, before writing segments to disk. This is an expert setting. Too low value will slow down indexing; too high value will increase indexing performance but causes performance issues for query performance.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.14.0/docs/resources/managed_database_opensearch#indices_memory_index_buffer_size ManagedDatabaseOpensearch#indices_memory_index_buffer_size}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.15.0/docs/resources/managed_database_opensearch#indices_memory_index_buffer_size ManagedDatabaseOpensearch#indices_memory_index_buffer_size}
   */
   readonly indicesMemoryIndexBufferSize?: number;
   /**
   * Absolute value. Default is unbound. Doesn't work without indices.memory.index_buffer_size. Maximum amount of heap used for query cache, an absolute indices.memory.index_buffer_size maximum hard limit.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.14.0/docs/resources/managed_database_opensearch#indices_memory_max_index_buffer_size ManagedDatabaseOpensearch#indices_memory_max_index_buffer_size}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.15.0/docs/resources/managed_database_opensearch#indices_memory_max_index_buffer_size ManagedDatabaseOpensearch#indices_memory_max_index_buffer_size}
   */
   readonly indicesMemoryMaxIndexBufferSize?: number;
   /**
   * Absolute value. Default is 48mb. Doesn't work without indices.memory.index_buffer_size. Minimum amount of heap used for query cache, an absolute indices.memory.index_buffer_size minimal hard limit.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.14.0/docs/resources/managed_database_opensearch#indices_memory_min_index_buffer_size ManagedDatabaseOpensearch#indices_memory_min_index_buffer_size}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.15.0/docs/resources/managed_database_opensearch#indices_memory_min_index_buffer_size ManagedDatabaseOpensearch#indices_memory_min_index_buffer_size}
   */
   readonly indicesMemoryMinIndexBufferSize?: number;
   /**
   * Percentage value. Default is 10%. Maximum amount of heap used for query cache. This is an expert setting. Too low value will decrease query performance and increase performance for other operations; too high value will cause issues with other OpenSearch functionality.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.14.0/docs/resources/managed_database_opensearch#indices_queries_cache_size ManagedDatabaseOpensearch#indices_queries_cache_size}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.15.0/docs/resources/managed_database_opensearch#indices_queries_cache_size ManagedDatabaseOpensearch#indices_queries_cache_size}
   */
   readonly indicesQueriesCacheSize?: number;
   /**
   * Maximum number of clauses Lucene BooleanQuery can have. The default value (1024) is relatively high, and increasing it may cause performance issues. Investigate other approaches first before increasing this value.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.14.0/docs/resources/managed_database_opensearch#indices_query_bool_max_clause_count ManagedDatabaseOpensearch#indices_query_bool_max_clause_count}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.15.0/docs/resources/managed_database_opensearch#indices_query_bool_max_clause_count ManagedDatabaseOpensearch#indices_query_bool_max_clause_count}
   */
   readonly indicesQueryBoolMaxClauseCount?: number;
   /**
   * Limits total inbound and outbound recovery traffic for each node. Applies to both peer recoveries as well as snapshot recoveries (i.e., restores from a snapshot). Defaults to 40mb.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.14.0/docs/resources/managed_database_opensearch#indices_recovery_max_bytes_per_sec ManagedDatabaseOpensearch#indices_recovery_max_bytes_per_sec}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.15.0/docs/resources/managed_database_opensearch#indices_recovery_max_bytes_per_sec ManagedDatabaseOpensearch#indices_recovery_max_bytes_per_sec}
   */
   readonly indicesRecoveryMaxBytesPerSec?: number;
   /**
   * Number of file chunks sent in parallel for each recovery. Defaults to 2.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.14.0/docs/resources/managed_database_opensearch#indices_recovery_max_concurrent_file_chunks ManagedDatabaseOpensearch#indices_recovery_max_concurrent_file_chunks}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.15.0/docs/resources/managed_database_opensearch#indices_recovery_max_concurrent_file_chunks ManagedDatabaseOpensearch#indices_recovery_max_concurrent_file_chunks}
   */
   readonly indicesRecoveryMaxConcurrentFileChunks?: number;
   /**
   * IP filter. Allow incoming connections from CIDR address block, e.g. '10.20.0.0/16'.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.14.0/docs/resources/managed_database_opensearch#ip_filter ManagedDatabaseOpensearch#ip_filter}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.15.0/docs/resources/managed_database_opensearch#ip_filter ManagedDatabaseOpensearch#ip_filter}
   */
   readonly ipFilter?: string[];
   /**
   * Specifies whether ISM is enabled or not.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.14.0/docs/resources/managed_database_opensearch#ism_enabled ManagedDatabaseOpensearch#ism_enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.15.0/docs/resources/managed_database_opensearch#ism_enabled ManagedDatabaseOpensearch#ism_enabled}
   */
   readonly ismEnabled?: boolean | cdktf.IResolvable;
   /**
   * Specifies whether audit history is enabled or not. The logs from ISM are automatically indexed to a logs document.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.14.0/docs/resources/managed_database_opensearch#ism_history_enabled ManagedDatabaseOpensearch#ism_history_enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.15.0/docs/resources/managed_database_opensearch#ism_history_enabled ManagedDatabaseOpensearch#ism_history_enabled}
   */
   readonly ismHistoryEnabled?: boolean | cdktf.IResolvable;
   /**
   * The maximum age before rolling over the audit history index in hours.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.14.0/docs/resources/managed_database_opensearch#ism_history_max_age ManagedDatabaseOpensearch#ism_history_max_age}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.15.0/docs/resources/managed_database_opensearch#ism_history_max_age ManagedDatabaseOpensearch#ism_history_max_age}
   */
   readonly ismHistoryMaxAge?: number;
   /**
   * The maximum number of documents before rolling over the audit history index.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.14.0/docs/resources/managed_database_opensearch#ism_history_max_docs ManagedDatabaseOpensearch#ism_history_max_docs}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.15.0/docs/resources/managed_database_opensearch#ism_history_max_docs ManagedDatabaseOpensearch#ism_history_max_docs}
   */
   readonly ismHistoryMaxDocs?: number;
   /**
   * The time between rollover checks for the audit history index in hours.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.14.0/docs/resources/managed_database_opensearch#ism_history_rollover_check_period ManagedDatabaseOpensearch#ism_history_rollover_check_period}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.15.0/docs/resources/managed_database_opensearch#ism_history_rollover_check_period ManagedDatabaseOpensearch#ism_history_rollover_check_period}
   */
   readonly ismHistoryRolloverCheckPeriod?: number;
   /**
   * How long audit history indices are kept in days.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.14.0/docs/resources/managed_database_opensearch#ism_history_rollover_retention_period ManagedDatabaseOpensearch#ism_history_rollover_retention_period}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.15.0/docs/resources/managed_database_opensearch#ism_history_rollover_retention_period ManagedDatabaseOpensearch#ism_history_rollover_retention_period}
   */
   readonly ismHistoryRolloverRetentionPeriod?: number;
   /**
   * Don't reset index.refresh_interval to the default value. Aiven automation resets index.refresh_interval to default value for every index to be sure that indices are always visible to search. If it doesn't fit your case, you can disable this by setting up this flag to true.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.14.0/docs/resources/managed_database_opensearch#keep_index_refresh_interval ManagedDatabaseOpensearch#keep_index_refresh_interval}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.15.0/docs/resources/managed_database_opensearch#keep_index_refresh_interval ManagedDatabaseOpensearch#keep_index_refresh_interval}
   */
   readonly keepIndexRefreshInterval?: boolean | cdktf.IResolvable;
   /**
   * Enable or disable KNN memory circuit breaker. Defaults to true.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.14.0/docs/resources/managed_database_opensearch#knn_memory_circuit_breaker_enabled ManagedDatabaseOpensearch#knn_memory_circuit_breaker_enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.15.0/docs/resources/managed_database_opensearch#knn_memory_circuit_breaker_enabled ManagedDatabaseOpensearch#knn_memory_circuit_breaker_enabled}
   */
   readonly knnMemoryCircuitBreakerEnabled?: boolean | cdktf.IResolvable;
   /**
   * Maximum amount of memory that can be used for KNN index. Defaults to 50% of the JVM heap size.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.14.0/docs/resources/managed_database_opensearch#knn_memory_circuit_breaker_limit ManagedDatabaseOpensearch#knn_memory_circuit_breaker_limit}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.15.0/docs/resources/managed_database_opensearch#knn_memory_circuit_breaker_limit ManagedDatabaseOpensearch#knn_memory_circuit_breaker_limit}
   */
   readonly knnMemoryCircuitBreakerLimit?: number;
   /**
   * Compatibility mode sets OpenSearch to report its version as 7.10 so clients continue to work. Default is false.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.14.0/docs/resources/managed_database_opensearch#override_main_response_version ManagedDatabaseOpensearch#override_main_response_version}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.15.0/docs/resources/managed_database_opensearch#override_main_response_version ManagedDatabaseOpensearch#override_main_response_version}
   */
   readonly overrideMainResponseVersion?: boolean | cdktf.IResolvable;
   /**
   * Enable or disable filtering of alerting by backend roles. Requires Security plugin. Defaults to false.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.14.0/docs/resources/managed_database_opensearch#plugins_alerting_filter_by_backend_roles ManagedDatabaseOpensearch#plugins_alerting_filter_by_backend_roles}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.15.0/docs/resources/managed_database_opensearch#plugins_alerting_filter_by_backend_roles ManagedDatabaseOpensearch#plugins_alerting_filter_by_backend_roles}
   */
   readonly pluginsAlertingFilterByBackendRoles?: boolean | cdktf.IResolvable;
   /**
   * Public Access. Allow access to the service from the public Internet.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.14.0/docs/resources/managed_database_opensearch#public_access ManagedDatabaseOpensearch#public_access}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.15.0/docs/resources/managed_database_opensearch#public_access ManagedDatabaseOpensearch#public_access}
   */
   readonly publicAccess?: boolean | cdktf.IResolvable;
   /**
   * Whitelisted addresses for reindexing. Changing this value will cause all OpenSearch instances to restart.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.14.0/docs/resources/managed_database_opensearch#reindex_remote_whitelist ManagedDatabaseOpensearch#reindex_remote_whitelist}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.15.0/docs/resources/managed_database_opensearch#reindex_remote_whitelist ManagedDatabaseOpensearch#reindex_remote_whitelist}
   */
   readonly reindexRemoteWhitelist?: string[];
   /**
   * Script max compilation rate - circuit breaker to prevent/minimize OOMs. Script compilation circuit breaker limits the number of inline script compilations within a period of time. Default is use-context.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.14.0/docs/resources/managed_database_opensearch#script_max_compilations_rate ManagedDatabaseOpensearch#script_max_compilations_rate}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.15.0/docs/resources/managed_database_opensearch#script_max_compilations_rate ManagedDatabaseOpensearch#script_max_compilations_rate}
   */
   readonly scriptMaxCompilationsRate?: string;
   /**
   * Maximum number of aggregation buckets allowed in a single response. OpenSearch default value is used when this is not defined.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.14.0/docs/resources/managed_database_opensearch#search_max_buckets ManagedDatabaseOpensearch#search_max_buckets}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.15.0/docs/resources/managed_database_opensearch#search_max_buckets ManagedDatabaseOpensearch#search_max_buckets}
   */
   readonly searchMaxBuckets?: number;
   /**
   * Service logging. Store logs for the service so that they are available in the HTTP API and console.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.14.0/docs/resources/managed_database_opensearch#service_log ManagedDatabaseOpensearch#service_log}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.15.0/docs/resources/managed_database_opensearch#service_log ManagedDatabaseOpensearch#service_log}
   */
   readonly serviceLog?: boolean | cdktf.IResolvable;
   /**
   * analyze thread pool queue size. Size for the thread pool queue. See documentation for exact details.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.14.0/docs/resources/managed_database_opensearch#thread_pool_analyze_queue_size ManagedDatabaseOpensearch#thread_pool_analyze_queue_size}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.15.0/docs/resources/managed_database_opensearch#thread_pool_analyze_queue_size ManagedDatabaseOpensearch#thread_pool_analyze_queue_size}
   */
   readonly threadPoolAnalyzeQueueSize?: number;
   /**
   * analyze thread pool size. Size for the thread pool. See documentation for exact details. Do note this may have maximum value depending on CPU count - value is automatically lowered if set to higher than maximum value.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.14.0/docs/resources/managed_database_opensearch#thread_pool_analyze_size ManagedDatabaseOpensearch#thread_pool_analyze_size}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.15.0/docs/resources/managed_database_opensearch#thread_pool_analyze_size ManagedDatabaseOpensearch#thread_pool_analyze_size}
   */
   readonly threadPoolAnalyzeSize?: number;
   /**
   * force_merge thread pool size. Size for the thread pool. See documentation for exact details. Do note this may have maximum value depending on CPU count - value is automatically lowered if set to higher than maximum value.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.14.0/docs/resources/managed_database_opensearch#thread_pool_force_merge_size ManagedDatabaseOpensearch#thread_pool_force_merge_size}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.15.0/docs/resources/managed_database_opensearch#thread_pool_force_merge_size ManagedDatabaseOpensearch#thread_pool_force_merge_size}
   */
   readonly threadPoolForceMergeSize?: number;
   /**
   * get thread pool queue size. Size for the thread pool queue. See documentation for exact details.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.14.0/docs/resources/managed_database_opensearch#thread_pool_get_queue_size ManagedDatabaseOpensearch#thread_pool_get_queue_size}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.15.0/docs/resources/managed_database_opensearch#thread_pool_get_queue_size ManagedDatabaseOpensearch#thread_pool_get_queue_size}
   */
   readonly threadPoolGetQueueSize?: number;
   /**
   * get thread pool size. Size for the thread pool. See documentation for exact details. Do note this may have maximum value depending on CPU count - value is automatically lowered if set to higher than maximum value.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.14.0/docs/resources/managed_database_opensearch#thread_pool_get_size ManagedDatabaseOpensearch#thread_pool_get_size}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.15.0/docs/resources/managed_database_opensearch#thread_pool_get_size ManagedDatabaseOpensearch#thread_pool_get_size}
   */
   readonly threadPoolGetSize?: number;
   /**
   * search thread pool queue size. Size for the thread pool queue. See documentation for exact details.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.14.0/docs/resources/managed_database_opensearch#thread_pool_search_queue_size ManagedDatabaseOpensearch#thread_pool_search_queue_size}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.15.0/docs/resources/managed_database_opensearch#thread_pool_search_queue_size ManagedDatabaseOpensearch#thread_pool_search_queue_size}
   */
   readonly threadPoolSearchQueueSize?: number;
   /**
   * search thread pool size. Size for the thread pool. See documentation for exact details. Do note this may have maximum value depending on CPU count - value is automatically lowered if set to higher than maximum value.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.14.0/docs/resources/managed_database_opensearch#thread_pool_search_size ManagedDatabaseOpensearch#thread_pool_search_size}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.15.0/docs/resources/managed_database_opensearch#thread_pool_search_size ManagedDatabaseOpensearch#thread_pool_search_size}
   */
   readonly threadPoolSearchSize?: number;
   /**
   * search_throttled thread pool queue size. Size for the thread pool queue. See documentation for exact details.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.14.0/docs/resources/managed_database_opensearch#thread_pool_search_throttled_queue_size ManagedDatabaseOpensearch#thread_pool_search_throttled_queue_size}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.15.0/docs/resources/managed_database_opensearch#thread_pool_search_throttled_queue_size ManagedDatabaseOpensearch#thread_pool_search_throttled_queue_size}
   */
   readonly threadPoolSearchThrottledQueueSize?: number;
   /**
   * search_throttled thread pool size. Size for the thread pool. See documentation for exact details. Do note this may have maximum value depending on CPU count - value is automatically lowered if set to higher than maximum value.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.14.0/docs/resources/managed_database_opensearch#thread_pool_search_throttled_size ManagedDatabaseOpensearch#thread_pool_search_throttled_size}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.15.0/docs/resources/managed_database_opensearch#thread_pool_search_throttled_size ManagedDatabaseOpensearch#thread_pool_search_throttled_size}
   */
   readonly threadPoolSearchThrottledSize?: number;
   /**
   * write thread pool queue size. Size for the thread pool queue. See documentation for exact details.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.14.0/docs/resources/managed_database_opensearch#thread_pool_write_queue_size ManagedDatabaseOpensearch#thread_pool_write_queue_size}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.15.0/docs/resources/managed_database_opensearch#thread_pool_write_queue_size ManagedDatabaseOpensearch#thread_pool_write_queue_size}
   */
   readonly threadPoolWriteQueueSize?: number;
   /**
   * write thread pool size. Size for the thread pool. See documentation for exact details. Do note this may have maximum value depending on CPU count - value is automatically lowered if set to higher than maximum value.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.14.0/docs/resources/managed_database_opensearch#thread_pool_write_size ManagedDatabaseOpensearch#thread_pool_write_size}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.15.0/docs/resources/managed_database_opensearch#thread_pool_write_size ManagedDatabaseOpensearch#thread_pool_write_size}
   */
   readonly threadPoolWriteSize?: number;
   /**
   * OpenSearch major version.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.14.0/docs/resources/managed_database_opensearch#version ManagedDatabaseOpensearch#version}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.15.0/docs/resources/managed_database_opensearch#version ManagedDatabaseOpensearch#version}
   */
   readonly version?: string;
   /**
   * auth_failure_listeners block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.14.0/docs/resources/managed_database_opensearch#auth_failure_listeners ManagedDatabaseOpensearch#auth_failure_listeners}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.15.0/docs/resources/managed_database_opensearch#auth_failure_listeners ManagedDatabaseOpensearch#auth_failure_listeners}
   */
   readonly authFailureListeners?: ManagedDatabaseOpensearchPropertiesAuthFailureListeners;
   /**
   * azure_migration block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.14.0/docs/resources/managed_database_opensearch#azure_migration ManagedDatabaseOpensearch#azure_migration}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.15.0/docs/resources/managed_database_opensearch#azure_migration ManagedDatabaseOpensearch#azure_migration}
   */
   readonly azureMigration?: ManagedDatabaseOpensearchPropertiesAzureMigration;
   /**
   * gcs_migration block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.14.0/docs/resources/managed_database_opensearch#gcs_migration ManagedDatabaseOpensearch#gcs_migration}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.15.0/docs/resources/managed_database_opensearch#gcs_migration ManagedDatabaseOpensearch#gcs_migration}
   */
   readonly gcsMigration?: ManagedDatabaseOpensearchPropertiesGcsMigration;
   /**
   * index_rollup block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.14.0/docs/resources/managed_database_opensearch#index_rollup ManagedDatabaseOpensearch#index_rollup}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.15.0/docs/resources/managed_database_opensearch#index_rollup ManagedDatabaseOpensearch#index_rollup}
   */
   readonly indexRollup?: ManagedDatabaseOpensearchPropertiesIndexRollup;
   /**
   * index_template block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.14.0/docs/resources/managed_database_opensearch#index_template ManagedDatabaseOpensearch#index_template}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.15.0/docs/resources/managed_database_opensearch#index_template ManagedDatabaseOpensearch#index_template}
   */
   readonly indexTemplate?: ManagedDatabaseOpensearchPropertiesIndexTemplate;
   /**
   * openid block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.14.0/docs/resources/managed_database_opensearch#openid ManagedDatabaseOpensearch#openid}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.15.0/docs/resources/managed_database_opensearch#openid ManagedDatabaseOpensearch#openid}
   */
   readonly openid?: ManagedDatabaseOpensearchPropertiesOpenid;
   /**
   * opensearch_dashboards block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.14.0/docs/resources/managed_database_opensearch#opensearch_dashboards ManagedDatabaseOpensearch#opensearch_dashboards}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.15.0/docs/resources/managed_database_opensearch#opensearch_dashboards ManagedDatabaseOpensearch#opensearch_dashboards}
   */
   readonly opensearchDashboards?: ManagedDatabaseOpensearchPropertiesOpensearchDashboards;
   /**
   * s3_migration block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.14.0/docs/resources/managed_database_opensearch#s3_migration ManagedDatabaseOpensearch#s3_migration}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.15.0/docs/resources/managed_database_opensearch#s3_migration ManagedDatabaseOpensearch#s3_migration}
   */
   readonly s3Migration?: ManagedDatabaseOpensearchPropertiesS3Migration;
   /**
   * saml block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.14.0/docs/resources/managed_database_opensearch#saml ManagedDatabaseOpensearch#saml}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.15.0/docs/resources/managed_database_opensearch#saml ManagedDatabaseOpensearch#saml}
   */
   readonly saml?: ManagedDatabaseOpensearchPropertiesSaml;
+  /**
+  * search_backpressure block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.15.0/docs/resources/managed_database_opensearch#search_backpressure ManagedDatabaseOpensearch#search_backpressure}
+  */
+  readonly searchBackpressure?: ManagedDatabaseOpensearchPropertiesSearchBackpressure;
+  /**
+  * shard_indexing_pressure block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.15.0/docs/resources/managed_database_opensearch#shard_indexing_pressure ManagedDatabaseOpensearch#shard_indexing_pressure}
+  */
+  readonly shardIndexingPressure?: ManagedDatabaseOpensearchPropertiesShardIndexingPressure;
 }
 
 export function managedDatabaseOpensearchPropertiesToTerraform(struct?: ManagedDatabaseOpensearchPropertiesOutputReference | ManagedDatabaseOpensearchProperties): any {
@@ -3923,6 +5982,8 @@ export function managedDatabaseOpensearchPropertiesToTerraform(struct?: ManagedD
     opensearch_dashboards: managedDatabaseOpensearchPropertiesOpensearchDashboardsToTerraform(struct!.opensearchDashboards),
     s3_migration: managedDatabaseOpensearchPropertiesS3MigrationToTerraform(struct!.s3Migration),
     saml: managedDatabaseOpensearchPropertiesSamlToTerraform(struct!.saml),
+    search_backpressure: managedDatabaseOpensearchPropertiesSearchBackpressureToTerraform(struct!.searchBackpressure),
+    shard_indexing_pressure: managedDatabaseOpensearchPropertiesShardIndexingPressureToTerraform(struct!.shardIndexingPressure),
   }
 }
 
@@ -4293,6 +6354,18 @@ export function managedDatabaseOpensearchPropertiesToHclTerraform(struct?: Manag
       type: "list",
       storageClassType: "ManagedDatabaseOpensearchPropertiesSamlList",
     },
+    search_backpressure: {
+      value: managedDatabaseOpensearchPropertiesSearchBackpressureToHclTerraform(struct!.searchBackpressure),
+      isBlock: true,
+      type: "list",
+      storageClassType: "ManagedDatabaseOpensearchPropertiesSearchBackpressureList",
+    },
+    shard_indexing_pressure: {
+      value: managedDatabaseOpensearchPropertiesShardIndexingPressureToHclTerraform(struct!.shardIndexingPressure),
+      isBlock: true,
+      type: "list",
+      storageClassType: "ManagedDatabaseOpensearchPropertiesShardIndexingPressureList",
+    },
   };
 
   // remove undefined attributes
@@ -4553,6 +6626,14 @@ export class ManagedDatabaseOpensearchPropertiesOutputReference extends cdktf.Co
       hasAnyValues = true;
       internalValueResult.saml = this._saml?.internalValue;
     }
+    if (this._searchBackpressure?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.searchBackpressure = this._searchBackpressure?.internalValue;
+    }
+    if (this._shardIndexingPressure?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.shardIndexingPressure = this._shardIndexingPressure?.internalValue;
+    }
     return hasAnyValues ? internalValueResult : undefined;
   }
 
@@ -4619,6 +6700,8 @@ export class ManagedDatabaseOpensearchPropertiesOutputReference extends cdktf.Co
       this._opensearchDashboards.internalValue = undefined;
       this._s3Migration.internalValue = undefined;
       this._saml.internalValue = undefined;
+      this._searchBackpressure.internalValue = undefined;
+      this._shardIndexingPressure.internalValue = undefined;
     }
     else {
       this.isEmptyObject = Object.keys(value).length === 0;
@@ -4682,6 +6765,8 @@ export class ManagedDatabaseOpensearchPropertiesOutputReference extends cdktf.Co
       this._opensearchDashboards.internalValue = value.opensearchDashboards;
       this._s3Migration.internalValue = value.s3Migration;
       this._saml.internalValue = value.saml;
+      this._searchBackpressure.internalValue = value.searchBackpressure;
+      this._shardIndexingPressure.internalValue = value.shardIndexingPressure;
     }
   }
 
@@ -5644,10 +7729,42 @@ export class ManagedDatabaseOpensearchPropertiesOutputReference extends cdktf.Co
   public get samlInput() {
     return this._saml.internalValue;
   }
+
+  // search_backpressure - computed: false, optional: true, required: false
+  private _searchBackpressure = new ManagedDatabaseOpensearchPropertiesSearchBackpressureOutputReference(this, "search_backpressure");
+  public get searchBackpressure() {
+    return this._searchBackpressure;
+  }
+  public putSearchBackpressure(value: ManagedDatabaseOpensearchPropertiesSearchBackpressure) {
+    this._searchBackpressure.internalValue = value;
+  }
+  public resetSearchBackpressure() {
+    this._searchBackpressure.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get searchBackpressureInput() {
+    return this._searchBackpressure.internalValue;
+  }
+
+  // shard_indexing_pressure - computed: false, optional: true, required: false
+  private _shardIndexingPressure = new ManagedDatabaseOpensearchPropertiesShardIndexingPressureOutputReference(this, "shard_indexing_pressure");
+  public get shardIndexingPressure() {
+    return this._shardIndexingPressure;
+  }
+  public putShardIndexingPressure(value: ManagedDatabaseOpensearchPropertiesShardIndexingPressure) {
+    this._shardIndexingPressure.internalValue = value;
+  }
+  public resetShardIndexingPressure() {
+    this._shardIndexingPressure.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get shardIndexingPressureInput() {
+    return this._shardIndexingPressure.internalValue;
+  }
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.14.0/docs/resources/managed_database_opensearch upcloud_managed_database_opensearch}
+* Represents a {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.15.0/docs/resources/managed_database_opensearch upcloud_managed_database_opensearch}
 */
 export class ManagedDatabaseOpensearch extends cdktf.TerraformResource {
 
@@ -5663,7 +7780,7 @@ export class ManagedDatabaseOpensearch extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a ManagedDatabaseOpensearch resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the ManagedDatabaseOpensearch to import
-  * @param importFromId The id of the existing ManagedDatabaseOpensearch that should be imported. Refer to the {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.14.0/docs/resources/managed_database_opensearch#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing ManagedDatabaseOpensearch that should be imported. Refer to the {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.15.0/docs/resources/managed_database_opensearch#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the ManagedDatabaseOpensearch to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -5675,7 +7792,7 @@ export class ManagedDatabaseOpensearch extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.14.0/docs/resources/managed_database_opensearch upcloud_managed_database_opensearch} Resource
+  * Create a new {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.15.0/docs/resources/managed_database_opensearch upcloud_managed_database_opensearch} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -5686,7 +7803,7 @@ export class ManagedDatabaseOpensearch extends cdktf.TerraformResource {
       terraformResourceType: 'upcloud_managed_database_opensearch',
       terraformGeneratorMetadata: {
         providerName: 'upcloud',
-        providerVersion: '5.14.0',
+        providerVersion: '5.15.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,
