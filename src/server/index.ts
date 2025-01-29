@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/upcloudltd/upcloud/5.16.0/docs/resources/server
+// https://registry.terraform.io/providers/upcloudltd/upcloud/5.17.0/docs/resources/server
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,171 +15,164 @@ export interface ServerConfig extends cdktf.TerraformMetaArguments {
   /**
   * The boot device order, `cdrom`|`disk`|`network` or comma separated combination of those values. Defaults to `disk`
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.16.0/docs/resources/server#boot_order Server#boot_order}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.17.0/docs/resources/server#boot_order Server#boot_order}
   */
   readonly bootOrder?: string;
   /**
-  * The number of CPU for the server
+  * The number of CPU cores for the server
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.16.0/docs/resources/server#cpu Server#cpu}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.17.0/docs/resources/server#cpu Server#cpu}
   */
   readonly cpu?: number;
   /**
   * Are firewall rules active for the server
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.16.0/docs/resources/server#firewall Server#firewall}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.17.0/docs/resources/server#firewall Server#firewall}
   */
   readonly firewall?: boolean | cdktf.IResolvable;
   /**
   * Use this to start the VM on a specific host. Refers to value from host -attribute. Only available for private cloud hosts
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.16.0/docs/resources/server#host Server#host}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.17.0/docs/resources/server#host Server#host}
   */
   readonly host?: number;
   /**
-  * A valid domain name
+  * The hostname of the server.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.16.0/docs/resources/server#hostname Server#hostname}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.17.0/docs/resources/server#hostname Server#hostname}
   */
   readonly hostname: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.16.0/docs/resources/server#id Server#id}
-  *
-  * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
-  * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
-  */
-  readonly id?: string;
-  /**
   * User defined key-value pairs to classify the server.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.16.0/docs/resources/server#labels Server#labels}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.17.0/docs/resources/server#labels Server#labels}
   */
   readonly labels?: { [key: string]: string };
   /**
-  * The size of memory for the server (in megabytes)
+  * The amount of memory for the server (in megabytes)
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.16.0/docs/resources/server#mem Server#mem}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.17.0/docs/resources/server#mem Server#mem}
   */
   readonly mem?: number;
   /**
-  * Is the metadata service active for the server
+  * Is metadata service active for the server
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.16.0/docs/resources/server#metadata Server#metadata}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.17.0/docs/resources/server#metadata Server#metadata}
   */
   readonly metadata?: boolean | cdktf.IResolvable;
   /**
   * The model of the server's network interfaces
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.16.0/docs/resources/server#nic_model Server#nic_model}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.17.0/docs/resources/server#nic_model Server#nic_model}
   */
   readonly nicModel?: string;
   /**
   * The pricing plan used for the server. You can list available server plans with `upctl server plans`
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.16.0/docs/resources/server#plan Server#plan}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.17.0/docs/resources/server#plan Server#plan}
   */
   readonly plan?: string;
   /**
   * The UUID of a server group to attach this server to. Note that the server can also be attached to a server group via the `members` property of `upcloud_server_group`. Only one of the these should be defined at a time. This value is only updated if it has been set to non-zero value.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.16.0/docs/resources/server#server_group Server#server_group}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.17.0/docs/resources/server#server_group Server#server_group}
   */
   readonly serverGroup?: string;
   /**
   * The server related tags
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.16.0/docs/resources/server#tags Server#tags}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.17.0/docs/resources/server#tags Server#tags}
   */
   readonly tags?: string[];
   /**
-  * A timezone identifier, e.g. `Europe/Helsinki`
+  * The timezone of the server. The timezone must be a valid timezone string, e.g. `Europe/Helsinki`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.16.0/docs/resources/server#timezone Server#timezone}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.17.0/docs/resources/server#timezone Server#timezone}
   */
   readonly timezone?: string;
   /**
-  * A short, informational description
+  * A short, informational description of the server.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.16.0/docs/resources/server#title Server#title}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.17.0/docs/resources/server#title Server#title}
   */
   readonly title?: string;
   /**
   * Defines URL for a server setup script, or the script body itself
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.16.0/docs/resources/server#user_data Server#user_data}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.17.0/docs/resources/server#user_data Server#user_data}
   */
   readonly userData?: string;
   /**
   * The model of the server's video interface
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.16.0/docs/resources/server#video_model Server#video_model}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.17.0/docs/resources/server#video_model Server#video_model}
   */
   readonly videoModel?: string;
   /**
   * The zone in which the server will be hosted, e.g. `de-fra1`. You can list available zones with `upctl zone list`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.16.0/docs/resources/server#zone Server#zone}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.17.0/docs/resources/server#zone Server#zone}
   */
   readonly zone: string;
   /**
   * login block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.16.0/docs/resources/server#login Server#login}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.17.0/docs/resources/server#login Server#login}
   */
-  readonly login?: ServerLogin;
+  readonly login?: ServerLogin[] | cdktf.IResolvable;
   /**
   * network_interface block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.16.0/docs/resources/server#network_interface Server#network_interface}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.17.0/docs/resources/server#network_interface Server#network_interface}
   */
-  readonly networkInterface: ServerNetworkInterface[] | cdktf.IResolvable;
+  readonly networkInterface?: ServerNetworkInterface[] | cdktf.IResolvable;
   /**
   * simple_backup block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.16.0/docs/resources/server#simple_backup Server#simple_backup}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.17.0/docs/resources/server#simple_backup Server#simple_backup}
   */
-  readonly simpleBackup?: ServerSimpleBackup;
+  readonly simpleBackup?: ServerSimpleBackup[] | cdktf.IResolvable;
   /**
   * storage_devices block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.16.0/docs/resources/server#storage_devices Server#storage_devices}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.17.0/docs/resources/server#storage_devices Server#storage_devices}
   */
   readonly storageDevices?: ServerStorageDevices[] | cdktf.IResolvable;
   /**
   * template block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.16.0/docs/resources/server#template Server#template}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.17.0/docs/resources/server#template Server#template}
   */
-  readonly template?: ServerTemplate;
+  readonly template?: ServerTemplate[] | cdktf.IResolvable;
 }
 export interface ServerLogin {
   /**
   * Indicates a password should be create to allow access
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.16.0/docs/resources/server#create_password Server#create_password}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.17.0/docs/resources/server#create_password Server#create_password}
   */
   readonly createPassword?: boolean | cdktf.IResolvable;
   /**
   * A list of ssh keys to access the server
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.16.0/docs/resources/server#keys Server#keys}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.17.0/docs/resources/server#keys Server#keys}
   */
   readonly keys?: string[];
   /**
   * The delivery method for the server's root password (one of `none`, `email` or `sms`)
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.16.0/docs/resources/server#password_delivery Server#password_delivery}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.17.0/docs/resources/server#password_delivery Server#password_delivery}
   */
   readonly passwordDelivery?: string;
   /**
   * Username to be create to access the server
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.16.0/docs/resources/server#user Server#user}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.17.0/docs/resources/server#user Server#user}
   */
   readonly user?: string;
 }
 
-export function serverLoginToTerraform(struct?: ServerLoginOutputReference | ServerLogin): any {
+export function serverLoginToTerraform(struct?: ServerLogin | cdktf.IResolvable): any {
   if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
@@ -193,7 +186,7 @@ export function serverLoginToTerraform(struct?: ServerLoginOutputReference | Ser
 }
 
 
-export function serverLoginToHclTerraform(struct?: ServerLoginOutputReference | ServerLogin): any {
+export function serverLoginToHclTerraform(struct?: ServerLogin | cdktf.IResolvable): any {
   if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
@@ -231,16 +224,22 @@ export function serverLoginToHclTerraform(struct?: ServerLoginOutputReference | 
 
 export class ServerLoginOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
-    super(terraformResource, terraformAttribute, false, 0);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): ServerLogin | undefined {
+  public get internalValue(): ServerLogin | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._createPassword !== undefined) {
@@ -262,16 +261,22 @@ export class ServerLoginOutputReference extends cdktf.ComplexObject {
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: ServerLogin | undefined) {
+  public set internalValue(value: ServerLogin | cdktf.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
+      this.resolvableValue = undefined;
       this._createPassword = undefined;
       this._keys = undefined;
       this._passwordDelivery = undefined;
       this._user = undefined;
     }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
     else {
       this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
       this._createPassword = value.createPassword;
       this._keys = value.keys;
       this._passwordDelivery = value.passwordDelivery;
@@ -279,7 +284,7 @@ export class ServerLoginOutputReference extends cdktf.ComplexObject {
     }
   }
 
-  // create_password - computed: false, optional: true, required: false
+  // create_password - computed: true, optional: true, required: false
   private _createPassword?: boolean | cdktf.IResolvable; 
   public get createPassword() {
     return this.getBooleanAttribute('create_password');
@@ -311,7 +316,7 @@ export class ServerLoginOutputReference extends cdktf.ComplexObject {
     return this._keys;
   }
 
-  // password_delivery - computed: false, optional: true, required: false
+  // password_delivery - computed: true, optional: true, required: false
   private _passwordDelivery?: string; 
   public get passwordDelivery() {
     return this.getStringAttribute('password_delivery');
@@ -343,17 +348,37 @@ export class ServerLoginOutputReference extends cdktf.ComplexObject {
     return this._user;
   }
 }
+
+export class ServerLoginList extends cdktf.ComplexList {
+  public internalValue? : ServerLogin[] | cdktf.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): ServerLoginOutputReference {
+    return new ServerLoginOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
 export interface ServerNetworkInterfaceAdditionalIpAddress {
   /**
-  * The assigned additional IP address.
+  * An additional IP address for this interface.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.16.0/docs/resources/server#ip_address Server#ip_address}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.17.0/docs/resources/server#ip_address Server#ip_address}
   */
   readonly ipAddress?: string;
   /**
-  * The type of this additional IP address of this interface (one of `IPv4` or `IPv6`).
+  * The type of the additional IP address of this interface (one of `IPv4` or `IPv6`).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.16.0/docs/resources/server#ip_address_family Server#ip_address_family}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.17.0/docs/resources/server#ip_address_family Server#ip_address_family}
   */
   readonly ipAddressFamily?: string;
 }
@@ -460,7 +485,7 @@ export class ServerNetworkInterfaceAdditionalIpAddressOutputReference extends cd
     return this._ipAddress;
   }
 
-  // ip_address_family - computed: false, optional: true, required: false
+  // ip_address_family - computed: true, optional: true, required: false
   private _ipAddressFamily?: string; 
   public get ipAddressFamily() {
     return this.getStringAttribute('ip_address_family');
@@ -505,49 +530,49 @@ export interface ServerNetworkInterface {
   /**
   * `true` if this interface should be used for network booting.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.16.0/docs/resources/server#bootable Server#bootable}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.17.0/docs/resources/server#bootable Server#bootable}
   */
   readonly bootable?: boolean | cdktf.IResolvable;
   /**
   * The interface index.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.16.0/docs/resources/server#index Server#index}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.17.0/docs/resources/server#index Server#index}
   */
   readonly index?: number;
   /**
-  * The assigned primary IP address.
+  * The primary IP address of this interface.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.16.0/docs/resources/server#ip_address Server#ip_address}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.17.0/docs/resources/server#ip_address Server#ip_address}
   */
   readonly ipAddress?: string;
   /**
   * The type of the primary IP address of this interface (one of `IPv4` or `IPv6`).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.16.0/docs/resources/server#ip_address_family Server#ip_address_family}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.17.0/docs/resources/server#ip_address_family Server#ip_address_family}
   */
   readonly ipAddressFamily?: string;
   /**
-  * The unique ID of a network to attach this network to.
+  * The UUID of the network to attach this interface to. Required for private network interfaces.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.16.0/docs/resources/server#network Server#network}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.17.0/docs/resources/server#network Server#network}
   */
   readonly network?: string;
   /**
   * `true` if source IP should be filtered.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.16.0/docs/resources/server#source_ip_filtering Server#source_ip_filtering}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.17.0/docs/resources/server#source_ip_filtering Server#source_ip_filtering}
   */
   readonly sourceIpFiltering?: boolean | cdktf.IResolvable;
   /**
   * Network interface type. For private network interfaces, a network must be specified with an existing network id.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.16.0/docs/resources/server#type Server#type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.17.0/docs/resources/server#type Server#type}
   */
   readonly type: string;
   /**
   * additional_ip_address block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.16.0/docs/resources/server#additional_ip_address Server#additional_ip_address}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.17.0/docs/resources/server#additional_ip_address Server#additional_ip_address}
   */
   readonly additionalIpAddress?: ServerNetworkInterfaceAdditionalIpAddress[] | cdktf.IResolvable;
 }
@@ -716,7 +741,7 @@ export class ServerNetworkInterfaceOutputReference extends cdktf.ComplexObject {
     }
   }
 
-  // bootable - computed: false, optional: true, required: false
+  // bootable - computed: true, optional: true, required: false
   private _bootable?: boolean | cdktf.IResolvable; 
   public get bootable() {
     return this.getBooleanAttribute('bootable');
@@ -764,7 +789,7 @@ export class ServerNetworkInterfaceOutputReference extends cdktf.ComplexObject {
     return this._ipAddress;
   }
 
-  // ip_address_family - computed: false, optional: true, required: false
+  // ip_address_family - computed: true, optional: true, required: false
   private _ipAddressFamily?: string; 
   public get ipAddressFamily() {
     return this.getStringAttribute('ip_address_family');
@@ -806,7 +831,7 @@ export class ServerNetworkInterfaceOutputReference extends cdktf.ComplexObject {
     return this._network;
   }
 
-  // source_ip_filtering - computed: false, optional: true, required: false
+  // source_ip_filtering - computed: true, optional: true, required: false
   private _sourceIpFiltering?: boolean | cdktf.IResolvable; 
   public get sourceIpFiltering() {
     return this.getBooleanAttribute('source_ip_filtering');
@@ -875,18 +900,18 @@ export interface ServerSimpleBackup {
   /**
   * Simple backup plan. Accepted values: daily, dailies, weeklies, monthlies.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.16.0/docs/resources/server#plan Server#plan}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.17.0/docs/resources/server#plan Server#plan}
   */
-  readonly plan: string;
+  readonly plan?: string;
   /**
   * Time of the day at which backup will be taken. Should be provided in a hhmm format (e.g. 2230).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.16.0/docs/resources/server#time Server#time}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.17.0/docs/resources/server#time Server#time}
   */
-  readonly time: string;
+  readonly time?: string;
 }
 
-export function serverSimpleBackupToTerraform(struct?: ServerSimpleBackupOutputReference | ServerSimpleBackup): any {
+export function serverSimpleBackupToTerraform(struct?: ServerSimpleBackup | cdktf.IResolvable): any {
   if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
@@ -898,7 +923,7 @@ export function serverSimpleBackupToTerraform(struct?: ServerSimpleBackupOutputR
 }
 
 
-export function serverSimpleBackupToHclTerraform(struct?: ServerSimpleBackupOutputReference | ServerSimpleBackup): any {
+export function serverSimpleBackupToHclTerraform(struct?: ServerSimpleBackup | cdktf.IResolvable): any {
   if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
@@ -924,16 +949,22 @@ export function serverSimpleBackupToHclTerraform(struct?: ServerSimpleBackupOutp
 
 export class ServerSimpleBackupOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
-    super(terraformResource, terraformAttribute, false, 0);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): ServerSimpleBackup | undefined {
+  public get internalValue(): ServerSimpleBackup | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._plan !== undefined) {
@@ -947,20 +978,26 @@ export class ServerSimpleBackupOutputReference extends cdktf.ComplexObject {
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: ServerSimpleBackup | undefined) {
+  public set internalValue(value: ServerSimpleBackup | cdktf.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
+      this.resolvableValue = undefined;
       this._plan = undefined;
       this._time = undefined;
     }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
     else {
       this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
       this._plan = value.plan;
       this._time = value.time;
     }
   }
 
-  // plan - computed: false, optional: false, required: true
+  // plan - computed: false, optional: true, required: false
   private _plan?: string; 
   public get plan() {
     return this.getStringAttribute('plan');
@@ -968,12 +1005,15 @@ export class ServerSimpleBackupOutputReference extends cdktf.ComplexObject {
   public set plan(value: string) {
     this._plan = value;
   }
+  public resetPlan() {
+    this._plan = undefined;
+  }
   // Temporarily expose input value. Use with caution.
   public get planInput() {
     return this._plan;
   }
 
-  // time - computed: false, optional: false, required: true
+  // time - computed: false, optional: true, required: false
   private _time?: string; 
   public get time() {
     return this.getStringAttribute('time');
@@ -981,34 +1021,57 @@ export class ServerSimpleBackupOutputReference extends cdktf.ComplexObject {
   public set time(value: string) {
     this._time = value;
   }
+  public resetTime() {
+    this._time = undefined;
+  }
   // Temporarily expose input value. Use with caution.
   public get timeInput() {
     return this._time;
+  }
+}
+
+export class ServerSimpleBackupList extends cdktf.ComplexList {
+  public internalValue? : ServerSimpleBackup[] | cdktf.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): ServerSimpleBackupOutputReference {
+    return new ServerSimpleBackupOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
   }
 }
 export interface ServerStorageDevices {
   /**
   * The device address the storage will be attached to (`scsi`|`virtio`|`ide`). Leave `address_position` field empty to auto-select next available address from that bus.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.16.0/docs/resources/server#address Server#address}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.17.0/docs/resources/server#address Server#address}
   */
   readonly address?: string;
   /**
   * The device position in the given bus (defined via field `address`). Valid values for address `virtio` are `0-15` (`0`, for example). Valid values for `scsi` or `ide` are `0-1:0-1` (`0:0`, for example). Leave empty to auto-select next available address in the given bus.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.16.0/docs/resources/server#address_position Server#address_position}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.17.0/docs/resources/server#address_position Server#address_position}
   */
   readonly addressPosition?: string;
   /**
-  * A valid storage UUID
+  * The UUID of the storage to attach to the server.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.16.0/docs/resources/server#storage Server#storage}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.17.0/docs/resources/server#storage Server#storage}
   */
-  readonly storage: string;
+  readonly storage?: string;
   /**
   * The device type the storage will be attached as
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.16.0/docs/resources/server#type Server#type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.17.0/docs/resources/server#type Server#type}
   */
   readonly type?: string;
 }
@@ -1157,13 +1220,16 @@ export class ServerStorageDevicesOutputReference extends cdktf.ComplexObject {
     return this._addressPosition;
   }
 
-  // storage - computed: false, optional: false, required: true
+  // storage - computed: false, optional: true, required: false
   private _storage?: string; 
   public get storage() {
     return this.getStringAttribute('storage');
   }
   public set storage(value: string) {
     this._storage = value;
+  }
+  public resetStorage() {
+    this._storage = undefined;
   }
   // Temporarily expose input value. Use with caution.
   public get storageInput() {
@@ -1210,24 +1276,24 @@ export interface ServerTemplateBackupRule {
   /**
   * The weekday when the backup is created
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.16.0/docs/resources/server#interval Server#interval}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.17.0/docs/resources/server#interval Server#interval}
   */
   readonly interval: string;
   /**
   * The number of days before a backup is automatically deleted
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.16.0/docs/resources/server#retention Server#retention}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.17.0/docs/resources/server#retention Server#retention}
   */
   readonly retention: number;
   /**
   * The time of day when the backup is created
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.16.0/docs/resources/server#time Server#time}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.17.0/docs/resources/server#time Server#time}
   */
   readonly time: string;
 }
 
-export function serverTemplateBackupRuleToTerraform(struct?: ServerTemplateBackupRuleOutputReference | ServerTemplateBackupRule): any {
+export function serverTemplateBackupRuleToTerraform(struct?: ServerTemplateBackupRule | cdktf.IResolvable): any {
   if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
@@ -1240,7 +1306,7 @@ export function serverTemplateBackupRuleToTerraform(struct?: ServerTemplateBacku
 }
 
 
-export function serverTemplateBackupRuleToHclTerraform(struct?: ServerTemplateBackupRuleOutputReference | ServerTemplateBackupRule): any {
+export function serverTemplateBackupRuleToHclTerraform(struct?: ServerTemplateBackupRule | cdktf.IResolvable): any {
   if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
@@ -1272,16 +1338,22 @@ export function serverTemplateBackupRuleToHclTerraform(struct?: ServerTemplateBa
 
 export class ServerTemplateBackupRuleOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
-    super(terraformResource, terraformAttribute, false, 0);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): ServerTemplateBackupRule | undefined {
+  public get internalValue(): ServerTemplateBackupRule | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._interval !== undefined) {
@@ -1299,15 +1371,21 @@ export class ServerTemplateBackupRuleOutputReference extends cdktf.ComplexObject
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: ServerTemplateBackupRule | undefined) {
+  public set internalValue(value: ServerTemplateBackupRule | cdktf.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
+      this.resolvableValue = undefined;
       this._interval = undefined;
       this._retention = undefined;
       this._time = undefined;
     }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
     else {
       this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
       this._interval = value.interval;
       this._retention = value.retention;
       this._time = value.time;
@@ -1353,29 +1431,49 @@ export class ServerTemplateBackupRuleOutputReference extends cdktf.ComplexObject
     return this._time;
   }
 }
+
+export class ServerTemplateBackupRuleList extends cdktf.ComplexList {
+  public internalValue? : ServerTemplateBackupRule[] | cdktf.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): ServerTemplateBackupRuleOutputReference {
+    return new ServerTemplateBackupRuleOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
 export interface ServerTemplate {
   /**
   * The device address the storage will be attached to (`scsi`|`virtio`|`ide`). Leave `address_position` field empty to auto-select next available address from that bus.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.16.0/docs/resources/server#address Server#address}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.17.0/docs/resources/server#address Server#address}
   */
   readonly address?: string;
   /**
   * The device position in the given bus (defined via field `address`). For example `0:0`, or `0`. Leave empty to auto-select next available address in the given bus.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.16.0/docs/resources/server#address_position Server#address_position}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.17.0/docs/resources/server#address_position Server#address_position}
   */
   readonly addressPosition?: string;
   /**
   * If set to true, the backup taken before the partition and filesystem resize attempt will be deleted immediately after success.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.16.0/docs/resources/server#delete_autoresize_backup Server#delete_autoresize_backup}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.17.0/docs/resources/server#delete_autoresize_backup Server#delete_autoresize_backup}
   */
   readonly deleteAutoresizeBackup?: boolean | cdktf.IResolvable;
   /**
   * Sets if the storage is encrypted at rest
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.16.0/docs/resources/server#encrypt Server#encrypt}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.17.0/docs/resources/server#encrypt Server#encrypt}
   */
   readonly encrypt?: boolean | cdktf.IResolvable;
   /**
@@ -1384,36 +1482,42 @@ export interface ServerTemplate {
   * 							to restore the storage and then deleted. If the resize attempt succeeds, backup will be kept (unless delete_autoresize_backup option is set to true).
   * 							Taking and keeping backups incure costs.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.16.0/docs/resources/server#filesystem_autoresize Server#filesystem_autoresize}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.17.0/docs/resources/server#filesystem_autoresize Server#filesystem_autoresize}
   */
   readonly filesystemAutoresize?: boolean | cdktf.IResolvable;
   /**
   * The size of the storage in gigabytes
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.16.0/docs/resources/server#size Server#size}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.17.0/docs/resources/server#size Server#size}
   */
   readonly size?: number;
   /**
   * A valid storage UUID or template name. You can list available public templates with `upctl storage list --public --template` and available private templates with `upctl storage list --template`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.16.0/docs/resources/server#storage Server#storage}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.17.0/docs/resources/server#storage Server#storage}
   */
-  readonly storage: string;
+  readonly storage?: string;
+  /**
+  * The storage tier to use.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.17.0/docs/resources/server#tier Server#tier}
+  */
+  readonly tier?: string;
   /**
   * A short, informative description
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.16.0/docs/resources/server#title Server#title}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.17.0/docs/resources/server#title Server#title}
   */
   readonly title?: string;
   /**
   * backup_rule block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.16.0/docs/resources/server#backup_rule Server#backup_rule}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.17.0/docs/resources/server#backup_rule Server#backup_rule}
   */
-  readonly backupRule?: ServerTemplateBackupRule;
+  readonly backupRule?: ServerTemplateBackupRule[] | cdktf.IResolvable;
 }
 
-export function serverTemplateToTerraform(struct?: ServerTemplateOutputReference | ServerTemplate): any {
+export function serverTemplateToTerraform(struct?: ServerTemplate | cdktf.IResolvable): any {
   if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
@@ -1426,13 +1530,14 @@ export function serverTemplateToTerraform(struct?: ServerTemplateOutputReference
     filesystem_autoresize: cdktf.booleanToTerraform(struct!.filesystemAutoresize),
     size: cdktf.numberToTerraform(struct!.size),
     storage: cdktf.stringToTerraform(struct!.storage),
+    tier: cdktf.stringToTerraform(struct!.tier),
     title: cdktf.stringToTerraform(struct!.title),
-    backup_rule: serverTemplateBackupRuleToTerraform(struct!.backupRule),
+    backup_rule: cdktf.listMapper(serverTemplateBackupRuleToTerraform, true)(struct!.backupRule),
   }
 }
 
 
-export function serverTemplateToHclTerraform(struct?: ServerTemplateOutputReference | ServerTemplate): any {
+export function serverTemplateToHclTerraform(struct?: ServerTemplate | cdktf.IResolvable): any {
   if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
@@ -1480,6 +1585,12 @@ export function serverTemplateToHclTerraform(struct?: ServerTemplateOutputRefere
       type: "simple",
       storageClassType: "string",
     },
+    tier: {
+      value: cdktf.stringToHclTerraform(struct!.tier),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
     title: {
       value: cdktf.stringToHclTerraform(struct!.title),
       isBlock: false,
@@ -1487,7 +1598,7 @@ export function serverTemplateToHclTerraform(struct?: ServerTemplateOutputRefere
       storageClassType: "string",
     },
     backup_rule: {
-      value: serverTemplateBackupRuleToHclTerraform(struct!.backupRule),
+      value: cdktf.listMapperHcl(serverTemplateBackupRuleToHclTerraform, true)(struct!.backupRule),
       isBlock: true,
       type: "list",
       storageClassType: "ServerTemplateBackupRuleList",
@@ -1500,16 +1611,22 @@ export function serverTemplateToHclTerraform(struct?: ServerTemplateOutputRefere
 
 export class ServerTemplateOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
-    super(terraformResource, terraformAttribute, false, 0);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): ServerTemplate | undefined {
+  public get internalValue(): ServerTemplate | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._address !== undefined) {
@@ -1540,6 +1657,10 @@ export class ServerTemplateOutputReference extends cdktf.ComplexObject {
       hasAnyValues = true;
       internalValueResult.storage = this._storage;
     }
+    if (this._tier !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.tier = this._tier;
+    }
     if (this._title !== undefined) {
       hasAnyValues = true;
       internalValueResult.title = this._title;
@@ -1551,9 +1672,10 @@ export class ServerTemplateOutputReference extends cdktf.ComplexObject {
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: ServerTemplate | undefined) {
+  public set internalValue(value: ServerTemplate | cdktf.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
+      this.resolvableValue = undefined;
       this._address = undefined;
       this._addressPosition = undefined;
       this._deleteAutoresizeBackup = undefined;
@@ -1561,11 +1683,17 @@ export class ServerTemplateOutputReference extends cdktf.ComplexObject {
       this._filesystemAutoresize = undefined;
       this._size = undefined;
       this._storage = undefined;
+      this._tier = undefined;
       this._title = undefined;
       this._backupRule.internalValue = undefined;
     }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
     else {
       this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
       this._address = value.address;
       this._addressPosition = value.addressPosition;
       this._deleteAutoresizeBackup = value.deleteAutoresizeBackup;
@@ -1573,6 +1701,7 @@ export class ServerTemplateOutputReference extends cdktf.ComplexObject {
       this._filesystemAutoresize = value.filesystemAutoresize;
       this._size = value.size;
       this._storage = value.storage;
+      this._tier = value.tier;
       this._title = value.title;
       this._backupRule.internalValue = value.backupRule;
     }
@@ -1610,7 +1739,7 @@ export class ServerTemplateOutputReference extends cdktf.ComplexObject {
     return this._addressPosition;
   }
 
-  // delete_autoresize_backup - computed: false, optional: true, required: false
+  // delete_autoresize_backup - computed: true, optional: true, required: false
   private _deleteAutoresizeBackup?: boolean | cdktf.IResolvable; 
   public get deleteAutoresizeBackup() {
     return this.getBooleanAttribute('delete_autoresize_backup');
@@ -1626,7 +1755,7 @@ export class ServerTemplateOutputReference extends cdktf.ComplexObject {
     return this._deleteAutoresizeBackup;
   }
 
-  // encrypt - computed: false, optional: true, required: false
+  // encrypt - computed: true, optional: true, required: false
   private _encrypt?: boolean | cdktf.IResolvable; 
   public get encrypt() {
     return this.getBooleanAttribute('encrypt');
@@ -1642,7 +1771,7 @@ export class ServerTemplateOutputReference extends cdktf.ComplexObject {
     return this._encrypt;
   }
 
-  // filesystem_autoresize - computed: false, optional: true, required: false
+  // filesystem_autoresize - computed: true, optional: true, required: false
   private _filesystemAutoresize?: boolean | cdktf.IResolvable; 
   public get filesystemAutoresize() {
     return this.getBooleanAttribute('filesystem_autoresize');
@@ -1679,7 +1808,7 @@ export class ServerTemplateOutputReference extends cdktf.ComplexObject {
     return this._size;
   }
 
-  // storage - computed: false, optional: false, required: true
+  // storage - computed: false, optional: true, required: false
   private _storage?: string; 
   public get storage() {
     return this.getStringAttribute('storage');
@@ -1687,14 +1816,28 @@ export class ServerTemplateOutputReference extends cdktf.ComplexObject {
   public set storage(value: string) {
     this._storage = value;
   }
+  public resetStorage() {
+    this._storage = undefined;
+  }
   // Temporarily expose input value. Use with caution.
   public get storageInput() {
     return this._storage;
   }
 
-  // tier - computed: true, optional: false, required: false
+  // tier - computed: true, optional: true, required: false
+  private _tier?: string; 
   public get tier() {
     return this.getStringAttribute('tier');
+  }
+  public set tier(value: string) {
+    this._tier = value;
+  }
+  public resetTier() {
+    this._tier = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get tierInput() {
+    return this._tier;
   }
 
   // title - computed: true, optional: true, required: false
@@ -1714,11 +1857,11 @@ export class ServerTemplateOutputReference extends cdktf.ComplexObject {
   }
 
   // backup_rule - computed: false, optional: true, required: false
-  private _backupRule = new ServerTemplateBackupRuleOutputReference(this, "backup_rule");
+  private _backupRule = new ServerTemplateBackupRuleList(this, "backup_rule", false);
   public get backupRule() {
     return this._backupRule;
   }
-  public putBackupRule(value: ServerTemplateBackupRule) {
+  public putBackupRule(value: ServerTemplateBackupRule[] | cdktf.IResolvable) {
     this._backupRule.internalValue = value;
   }
   public resetBackupRule() {
@@ -1730,8 +1873,28 @@ export class ServerTemplateOutputReference extends cdktf.ComplexObject {
   }
 }
 
+export class ServerTemplateList extends cdktf.ComplexList {
+  public internalValue? : ServerTemplate[] | cdktf.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): ServerTemplateOutputReference {
+    return new ServerTemplateOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
+
 /**
-* Represents a {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.16.0/docs/resources/server upcloud_server}
+* Represents a {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.17.0/docs/resources/server upcloud_server}
 */
 export class Server extends cdktf.TerraformResource {
 
@@ -1747,7 +1910,7 @@ export class Server extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a Server resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the Server to import
-  * @param importFromId The id of the existing Server that should be imported. Refer to the {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.16.0/docs/resources/server#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing Server that should be imported. Refer to the {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.17.0/docs/resources/server#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the Server to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -1759,7 +1922,7 @@ export class Server extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.16.0/docs/resources/server upcloud_server} Resource
+  * Create a new {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.17.0/docs/resources/server upcloud_server} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -1770,7 +1933,7 @@ export class Server extends cdktf.TerraformResource {
       terraformResourceType: 'upcloud_server',
       terraformGeneratorMetadata: {
         providerName: 'upcloud',
-        providerVersion: '5.16.0',
+        providerVersion: '5.17.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,
@@ -1786,7 +1949,6 @@ export class Server extends cdktf.TerraformResource {
     this._firewall = config.firewall;
     this._host = config.host;
     this._hostname = config.hostname;
-    this._id = config.id;
     this._labels = config.labels;
     this._mem = config.mem;
     this._metadata = config.metadata;
@@ -1842,7 +2004,7 @@ export class Server extends cdktf.TerraformResource {
     return this._cpu;
   }
 
-  // firewall - computed: false, optional: true, required: false
+  // firewall - computed: true, optional: true, required: false
   private _firewall?: boolean | cdktf.IResolvable; 
   public get firewall() {
     return this.getBooleanAttribute('firewall');
@@ -1887,23 +2049,12 @@ export class Server extends cdktf.TerraformResource {
     return this._hostname;
   }
 
-  // id - computed: true, optional: true, required: false
-  private _id?: string; 
+  // id - computed: true, optional: false, required: false
   public get id() {
     return this.getStringAttribute('id');
   }
-  public set id(value: string) {
-    this._id = value;
-  }
-  public resetId() {
-    this._id = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get idInput() {
-    return this._id;
-  }
 
-  // labels - computed: false, optional: true, required: false
+  // labels - computed: true, optional: true, required: false
   private _labels?: { [key: string]: string }; 
   public get labels() {
     return this.getStringMapAttribute('labels');
@@ -1999,7 +2150,7 @@ export class Server extends cdktf.TerraformResource {
     return this._serverGroup;
   }
 
-  // tags - computed: false, optional: true, required: false
+  // tags - computed: true, optional: true, required: false
   private _tags?: string[]; 
   public get tags() {
     return cdktf.Fn.tolist(this.getListAttribute('tags'));
@@ -2031,7 +2182,7 @@ export class Server extends cdktf.TerraformResource {
     return this._timezone;
   }
 
-  // title - computed: false, optional: true, required: false
+  // title - computed: true, optional: true, required: false
   private _title?: string; 
   public get title() {
     return this.getStringAttribute('title');
@@ -2093,11 +2244,11 @@ export class Server extends cdktf.TerraformResource {
   }
 
   // login - computed: false, optional: true, required: false
-  private _login = new ServerLoginOutputReference(this, "login");
+  private _login = new ServerLoginList(this, "login", true);
   public get login() {
     return this._login;
   }
-  public putLogin(value: ServerLogin) {
+  public putLogin(value: ServerLogin[] | cdktf.IResolvable) {
     this._login.internalValue = value;
   }
   public resetLogin() {
@@ -2108,7 +2259,7 @@ export class Server extends cdktf.TerraformResource {
     return this._login.internalValue;
   }
 
-  // network_interface - computed: false, optional: false, required: true
+  // network_interface - computed: false, optional: true, required: false
   private _networkInterface = new ServerNetworkInterfaceList(this, "network_interface", false);
   public get networkInterface() {
     return this._networkInterface;
@@ -2116,17 +2267,20 @@ export class Server extends cdktf.TerraformResource {
   public putNetworkInterface(value: ServerNetworkInterface[] | cdktf.IResolvable) {
     this._networkInterface.internalValue = value;
   }
+  public resetNetworkInterface() {
+    this._networkInterface.internalValue = undefined;
+  }
   // Temporarily expose input value. Use with caution.
   public get networkInterfaceInput() {
     return this._networkInterface.internalValue;
   }
 
   // simple_backup - computed: false, optional: true, required: false
-  private _simpleBackup = new ServerSimpleBackupOutputReference(this, "simple_backup");
+  private _simpleBackup = new ServerSimpleBackupList(this, "simple_backup", true);
   public get simpleBackup() {
     return this._simpleBackup;
   }
-  public putSimpleBackup(value: ServerSimpleBackup) {
+  public putSimpleBackup(value: ServerSimpleBackup[] | cdktf.IResolvable) {
     this._simpleBackup.internalValue = value;
   }
   public resetSimpleBackup() {
@@ -2154,11 +2308,11 @@ export class Server extends cdktf.TerraformResource {
   }
 
   // template - computed: false, optional: true, required: false
-  private _template = new ServerTemplateOutputReference(this, "template");
+  private _template = new ServerTemplateList(this, "template", false);
   public get template() {
     return this._template;
   }
-  public putTemplate(value: ServerTemplate) {
+  public putTemplate(value: ServerTemplate[] | cdktf.IResolvable) {
     this._template.internalValue = value;
   }
   public resetTemplate() {
@@ -2180,7 +2334,6 @@ export class Server extends cdktf.TerraformResource {
       firewall: cdktf.booleanToTerraform(this._firewall),
       host: cdktf.numberToTerraform(this._host),
       hostname: cdktf.stringToTerraform(this._hostname),
-      id: cdktf.stringToTerraform(this._id),
       labels: cdktf.hashMapper(cdktf.stringToTerraform)(this._labels),
       mem: cdktf.numberToTerraform(this._mem),
       metadata: cdktf.booleanToTerraform(this._metadata),
@@ -2193,11 +2346,11 @@ export class Server extends cdktf.TerraformResource {
       user_data: cdktf.stringToTerraform(this._userData),
       video_model: cdktf.stringToTerraform(this._videoModel),
       zone: cdktf.stringToTerraform(this._zone),
-      login: serverLoginToTerraform(this._login.internalValue),
+      login: cdktf.listMapper(serverLoginToTerraform, true)(this._login.internalValue),
       network_interface: cdktf.listMapper(serverNetworkInterfaceToTerraform, true)(this._networkInterface.internalValue),
-      simple_backup: serverSimpleBackupToTerraform(this._simpleBackup.internalValue),
+      simple_backup: cdktf.listMapper(serverSimpleBackupToTerraform, true)(this._simpleBackup.internalValue),
       storage_devices: cdktf.listMapper(serverStorageDevicesToTerraform, true)(this._storageDevices.internalValue),
-      template: serverTemplateToTerraform(this._template.internalValue),
+      template: cdktf.listMapper(serverTemplateToTerraform, true)(this._template.internalValue),
     };
   }
 
@@ -2229,12 +2382,6 @@ export class Server extends cdktf.TerraformResource {
       },
       hostname: {
         value: cdktf.stringToHclTerraform(this._hostname),
-        isBlock: false,
-        type: "simple",
-        storageClassType: "string",
-      },
-      id: {
-        value: cdktf.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
@@ -2312,7 +2459,7 @@ export class Server extends cdktf.TerraformResource {
         storageClassType: "string",
       },
       login: {
-        value: serverLoginToHclTerraform(this._login.internalValue),
+        value: cdktf.listMapperHcl(serverLoginToHclTerraform, true)(this._login.internalValue),
         isBlock: true,
         type: "set",
         storageClassType: "ServerLoginList",
@@ -2324,7 +2471,7 @@ export class Server extends cdktf.TerraformResource {
         storageClassType: "ServerNetworkInterfaceList",
       },
       simple_backup: {
-        value: serverSimpleBackupToHclTerraform(this._simpleBackup.internalValue),
+        value: cdktf.listMapperHcl(serverSimpleBackupToHclTerraform, true)(this._simpleBackup.internalValue),
         isBlock: true,
         type: "set",
         storageClassType: "ServerSimpleBackupList",
@@ -2336,7 +2483,7 @@ export class Server extends cdktf.TerraformResource {
         storageClassType: "ServerStorageDevicesList",
       },
       template: {
-        value: serverTemplateToHclTerraform(this._template.internalValue),
+        value: cdktf.listMapperHcl(serverTemplateToHclTerraform, true)(this._template.internalValue),
         isBlock: true,
         type: "list",
         storageClassType: "ServerTemplateList",
