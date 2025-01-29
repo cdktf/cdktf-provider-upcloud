@@ -4,7 +4,7 @@
 
 ### Server <a name="Server" id="@cdktf/provider-upcloud.server.Server"></a>
 
-Represents a {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.16.0/docs/resources/server upcloud_server}.
+Represents a {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.17.0/docs/resources/server upcloud_server}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-upcloud.server.Server.Initializer"></a>
 
@@ -82,11 +82,11 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-upcloud.server.Server.resetCpu">resetCpu</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.server.Server.resetFirewall">resetFirewall</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.server.Server.resetHost">resetHost</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-upcloud.server.Server.resetId">resetId</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.server.Server.resetLabels">resetLabels</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.server.Server.resetLogin">resetLogin</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.server.Server.resetMem">resetMem</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.server.Server.resetMetadata">resetMetadata</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-upcloud.server.Server.resetNetworkInterface">resetNetworkInterface</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.server.Server.resetNicModel">resetNicModel</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.server.Server.resetPlan">resetPlan</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.server.Server.resetServerGroup">resetServerGroup</a></code> | *No description.* |
@@ -392,12 +392,12 @@ Full id of resource to move to, e.g. "aws_s3_bucket.example".
 ##### `putLogin` <a name="putLogin" id="@cdktf/provider-upcloud.server.Server.putLogin"></a>
 
 ```typescript
-public putLogin(value: ServerLogin): void
+public putLogin(value: IResolvable | ServerLogin[]): void
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-upcloud.server.Server.putLogin.parameter.value"></a>
 
-- *Type:* <a href="#@cdktf/provider-upcloud.server.ServerLogin">ServerLogin</a>
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-upcloud.server.ServerLogin">ServerLogin</a>[]
 
 ---
 
@@ -416,12 +416,12 @@ public putNetworkInterface(value: IResolvable | ServerNetworkInterface[]): void
 ##### `putSimpleBackup` <a name="putSimpleBackup" id="@cdktf/provider-upcloud.server.Server.putSimpleBackup"></a>
 
 ```typescript
-public putSimpleBackup(value: ServerSimpleBackup): void
+public putSimpleBackup(value: IResolvable | ServerSimpleBackup[]): void
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-upcloud.server.Server.putSimpleBackup.parameter.value"></a>
 
-- *Type:* <a href="#@cdktf/provider-upcloud.server.ServerSimpleBackup">ServerSimpleBackup</a>
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-upcloud.server.ServerSimpleBackup">ServerSimpleBackup</a>[]
 
 ---
 
@@ -440,12 +440,12 @@ public putStorageDevices(value: IResolvable | ServerStorageDevices[]): void
 ##### `putTemplate` <a name="putTemplate" id="@cdktf/provider-upcloud.server.Server.putTemplate"></a>
 
 ```typescript
-public putTemplate(value: ServerTemplate): void
+public putTemplate(value: IResolvable | ServerTemplate[]): void
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-upcloud.server.Server.putTemplate.parameter.value"></a>
 
-- *Type:* <a href="#@cdktf/provider-upcloud.server.ServerTemplate">ServerTemplate</a>
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-upcloud.server.ServerTemplate">ServerTemplate</a>[]
 
 ---
 
@@ -473,12 +473,6 @@ public resetFirewall(): void
 public resetHost(): void
 ```
 
-##### `resetId` <a name="resetId" id="@cdktf/provider-upcloud.server.Server.resetId"></a>
-
-```typescript
-public resetId(): void
-```
-
 ##### `resetLabels` <a name="resetLabels" id="@cdktf/provider-upcloud.server.Server.resetLabels"></a>
 
 ```typescript
@@ -501,6 +495,12 @@ public resetMem(): void
 
 ```typescript
 public resetMetadata(): void
+```
+
+##### `resetNetworkInterface` <a name="resetNetworkInterface" id="@cdktf/provider-upcloud.server.Server.resetNetworkInterface"></a>
+
+```typescript
+public resetNetworkInterface(): void
 ```
 
 ##### `resetNicModel` <a name="resetNicModel" id="@cdktf/provider-upcloud.server.Server.resetNicModel"></a>
@@ -672,7 +672,7 @@ The construct id used in the generated config for the Server to import.
 
 The id of the existing Server that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.16.0/docs/resources/server#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.17.0/docs/resources/server#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -702,29 +702,29 @@ Refer to the {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5
 | <code><a href="#@cdktf/provider-upcloud.server.Server.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.server.Server.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.server.Server.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-upcloud.server.Server.property.login">login</a></code> | <code><a href="#@cdktf/provider-upcloud.server.ServerLoginOutputReference">ServerLoginOutputReference</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-upcloud.server.Server.property.id">id</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-upcloud.server.Server.property.login">login</a></code> | <code><a href="#@cdktf/provider-upcloud.server.ServerLoginList">ServerLoginList</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.server.Server.property.networkInterface">networkInterface</a></code> | <code><a href="#@cdktf/provider-upcloud.server.ServerNetworkInterfaceList">ServerNetworkInterfaceList</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-upcloud.server.Server.property.simpleBackup">simpleBackup</a></code> | <code><a href="#@cdktf/provider-upcloud.server.ServerSimpleBackupOutputReference">ServerSimpleBackupOutputReference</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-upcloud.server.Server.property.simpleBackup">simpleBackup</a></code> | <code><a href="#@cdktf/provider-upcloud.server.ServerSimpleBackupList">ServerSimpleBackupList</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.server.Server.property.storageDevices">storageDevices</a></code> | <code><a href="#@cdktf/provider-upcloud.server.ServerStorageDevicesList">ServerStorageDevicesList</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-upcloud.server.Server.property.template">template</a></code> | <code><a href="#@cdktf/provider-upcloud.server.ServerTemplateOutputReference">ServerTemplateOutputReference</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-upcloud.server.Server.property.template">template</a></code> | <code><a href="#@cdktf/provider-upcloud.server.ServerTemplateList">ServerTemplateList</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.server.Server.property.bootOrderInput">bootOrderInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.server.Server.property.cpuInput">cpuInput</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.server.Server.property.firewallInput">firewallInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.server.Server.property.hostInput">hostInput</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.server.Server.property.hostnameInput">hostnameInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-upcloud.server.Server.property.idInput">idInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.server.Server.property.labelsInput">labelsInput</a></code> | <code>{[ key: string ]: string}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-upcloud.server.Server.property.loginInput">loginInput</a></code> | <code><a href="#@cdktf/provider-upcloud.server.ServerLogin">ServerLogin</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-upcloud.server.Server.property.loginInput">loginInput</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-upcloud.server.ServerLogin">ServerLogin</a>[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.server.Server.property.memInput">memInput</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.server.Server.property.metadataInput">metadataInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.server.Server.property.networkInterfaceInput">networkInterfaceInput</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-upcloud.server.ServerNetworkInterface">ServerNetworkInterface</a>[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.server.Server.property.nicModelInput">nicModelInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.server.Server.property.planInput">planInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.server.Server.property.serverGroupInput">serverGroupInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-upcloud.server.Server.property.simpleBackupInput">simpleBackupInput</a></code> | <code><a href="#@cdktf/provider-upcloud.server.ServerSimpleBackup">ServerSimpleBackup</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-upcloud.server.Server.property.simpleBackupInput">simpleBackupInput</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-upcloud.server.ServerSimpleBackup">ServerSimpleBackup</a>[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.server.Server.property.storageDevicesInput">storageDevicesInput</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-upcloud.server.ServerStorageDevices">ServerStorageDevices</a>[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.server.Server.property.tagsInput">tagsInput</a></code> | <code>string[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-upcloud.server.Server.property.templateInput">templateInput</a></code> | <code><a href="#@cdktf/provider-upcloud.server.ServerTemplate">ServerTemplate</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-upcloud.server.Server.property.templateInput">templateInput</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-upcloud.server.ServerTemplate">ServerTemplate</a>[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.server.Server.property.timezoneInput">timezoneInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.server.Server.property.titleInput">titleInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.server.Server.property.userDataInput">userDataInput</a></code> | <code>string</code> | *No description.* |
@@ -735,7 +735,6 @@ Refer to the {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5
 | <code><a href="#@cdktf/provider-upcloud.server.Server.property.firewall">firewall</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.server.Server.property.host">host</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.server.Server.property.hostname">hostname</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-upcloud.server.Server.property.id">id</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.server.Server.property.labels">labels</a></code> | <code>{[ key: string ]: string}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.server.Server.property.mem">mem</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.server.Server.property.metadata">metadata</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
@@ -893,13 +892,23 @@ public readonly provisioners: FileProvisioner | LocalExecProvisioner | RemoteExe
 
 ---
 
+##### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-upcloud.server.Server.property.id"></a>
+
+```typescript
+public readonly id: string;
+```
+
+- *Type:* string
+
+---
+
 ##### `login`<sup>Required</sup> <a name="login" id="@cdktf/provider-upcloud.server.Server.property.login"></a>
 
 ```typescript
-public readonly login: ServerLoginOutputReference;
+public readonly login: ServerLoginList;
 ```
 
-- *Type:* <a href="#@cdktf/provider-upcloud.server.ServerLoginOutputReference">ServerLoginOutputReference</a>
+- *Type:* <a href="#@cdktf/provider-upcloud.server.ServerLoginList">ServerLoginList</a>
 
 ---
 
@@ -916,10 +925,10 @@ public readonly networkInterface: ServerNetworkInterfaceList;
 ##### `simpleBackup`<sup>Required</sup> <a name="simpleBackup" id="@cdktf/provider-upcloud.server.Server.property.simpleBackup"></a>
 
 ```typescript
-public readonly simpleBackup: ServerSimpleBackupOutputReference;
+public readonly simpleBackup: ServerSimpleBackupList;
 ```
 
-- *Type:* <a href="#@cdktf/provider-upcloud.server.ServerSimpleBackupOutputReference">ServerSimpleBackupOutputReference</a>
+- *Type:* <a href="#@cdktf/provider-upcloud.server.ServerSimpleBackupList">ServerSimpleBackupList</a>
 
 ---
 
@@ -936,10 +945,10 @@ public readonly storageDevices: ServerStorageDevicesList;
 ##### `template`<sup>Required</sup> <a name="template" id="@cdktf/provider-upcloud.server.Server.property.template"></a>
 
 ```typescript
-public readonly template: ServerTemplateOutputReference;
+public readonly template: ServerTemplateList;
 ```
 
-- *Type:* <a href="#@cdktf/provider-upcloud.server.ServerTemplateOutputReference">ServerTemplateOutputReference</a>
+- *Type:* <a href="#@cdktf/provider-upcloud.server.ServerTemplateList">ServerTemplateList</a>
 
 ---
 
@@ -993,16 +1002,6 @@ public readonly hostnameInput: string;
 
 ---
 
-##### `idInput`<sup>Optional</sup> <a name="idInput" id="@cdktf/provider-upcloud.server.Server.property.idInput"></a>
-
-```typescript
-public readonly idInput: string;
-```
-
-- *Type:* string
-
----
-
 ##### `labelsInput`<sup>Optional</sup> <a name="labelsInput" id="@cdktf/provider-upcloud.server.Server.property.labelsInput"></a>
 
 ```typescript
@@ -1016,10 +1015,10 @@ public readonly labelsInput: {[ key: string ]: string};
 ##### `loginInput`<sup>Optional</sup> <a name="loginInput" id="@cdktf/provider-upcloud.server.Server.property.loginInput"></a>
 
 ```typescript
-public readonly loginInput: ServerLogin;
+public readonly loginInput: IResolvable | ServerLogin[];
 ```
 
-- *Type:* <a href="#@cdktf/provider-upcloud.server.ServerLogin">ServerLogin</a>
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-upcloud.server.ServerLogin">ServerLogin</a>[]
 
 ---
 
@@ -1086,10 +1085,10 @@ public readonly serverGroupInput: string;
 ##### `simpleBackupInput`<sup>Optional</sup> <a name="simpleBackupInput" id="@cdktf/provider-upcloud.server.Server.property.simpleBackupInput"></a>
 
 ```typescript
-public readonly simpleBackupInput: ServerSimpleBackup;
+public readonly simpleBackupInput: IResolvable | ServerSimpleBackup[];
 ```
 
-- *Type:* <a href="#@cdktf/provider-upcloud.server.ServerSimpleBackup">ServerSimpleBackup</a>
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-upcloud.server.ServerSimpleBackup">ServerSimpleBackup</a>[]
 
 ---
 
@@ -1116,10 +1115,10 @@ public readonly tagsInput: string[];
 ##### `templateInput`<sup>Optional</sup> <a name="templateInput" id="@cdktf/provider-upcloud.server.Server.property.templateInput"></a>
 
 ```typescript
-public readonly templateInput: ServerTemplate;
+public readonly templateInput: IResolvable | ServerTemplate[];
 ```
 
-- *Type:* <a href="#@cdktf/provider-upcloud.server.ServerTemplate">ServerTemplate</a>
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-upcloud.server.ServerTemplate">ServerTemplate</a>[]
 
 ---
 
@@ -1217,16 +1216,6 @@ public readonly host: number;
 
 ```typescript
 public readonly hostname: string;
-```
-
-- *Type:* string
-
----
-
-##### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-upcloud.server.Server.property.id"></a>
-
-```typescript
-public readonly id: string;
 ```
 
 - *Type:* string
@@ -1394,27 +1383,26 @@ const serverConfig: server.ServerConfig = { ... }
 | <code><a href="#@cdktf/provider-upcloud.server.ServerConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.server.ServerConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.server.ServerConfig.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-upcloud.server.ServerConfig.property.hostname">hostname</a></code> | <code>string</code> | A valid domain name. |
-| <code><a href="#@cdktf/provider-upcloud.server.ServerConfig.property.networkInterface">networkInterface</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-upcloud.server.ServerNetworkInterface">ServerNetworkInterface</a>[]</code> | network_interface block. |
+| <code><a href="#@cdktf/provider-upcloud.server.ServerConfig.property.hostname">hostname</a></code> | <code>string</code> | The hostname of the server. |
 | <code><a href="#@cdktf/provider-upcloud.server.ServerConfig.property.zone">zone</a></code> | <code>string</code> | The zone in which the server will be hosted, e.g. `de-fra1`. You can list available zones with `upctl zone list`. |
 | <code><a href="#@cdktf/provider-upcloud.server.ServerConfig.property.bootOrder">bootOrder</a></code> | <code>string</code> | The boot device order, `cdrom`\|`disk`\|`network` or comma separated combination of those values. Defaults to `disk`. |
-| <code><a href="#@cdktf/provider-upcloud.server.ServerConfig.property.cpu">cpu</a></code> | <code>number</code> | The number of CPU for the server. |
+| <code><a href="#@cdktf/provider-upcloud.server.ServerConfig.property.cpu">cpu</a></code> | <code>number</code> | The number of CPU cores for the server. |
 | <code><a href="#@cdktf/provider-upcloud.server.ServerConfig.property.firewall">firewall</a></code> | <code>boolean \| cdktf.IResolvable</code> | Are firewall rules active for the server. |
 | <code><a href="#@cdktf/provider-upcloud.server.ServerConfig.property.host">host</a></code> | <code>number</code> | Use this to start the VM on a specific host. |
-| <code><a href="#@cdktf/provider-upcloud.server.ServerConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.16.0/docs/resources/server#id Server#id}. |
 | <code><a href="#@cdktf/provider-upcloud.server.ServerConfig.property.labels">labels</a></code> | <code>{[ key: string ]: string}</code> | User defined key-value pairs to classify the server. |
-| <code><a href="#@cdktf/provider-upcloud.server.ServerConfig.property.login">login</a></code> | <code><a href="#@cdktf/provider-upcloud.server.ServerLogin">ServerLogin</a></code> | login block. |
-| <code><a href="#@cdktf/provider-upcloud.server.ServerConfig.property.mem">mem</a></code> | <code>number</code> | The size of memory for the server (in megabytes). |
-| <code><a href="#@cdktf/provider-upcloud.server.ServerConfig.property.metadata">metadata</a></code> | <code>boolean \| cdktf.IResolvable</code> | Is the metadata service active for the server. |
+| <code><a href="#@cdktf/provider-upcloud.server.ServerConfig.property.login">login</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-upcloud.server.ServerLogin">ServerLogin</a>[]</code> | login block. |
+| <code><a href="#@cdktf/provider-upcloud.server.ServerConfig.property.mem">mem</a></code> | <code>number</code> | The amount of memory for the server (in megabytes). |
+| <code><a href="#@cdktf/provider-upcloud.server.ServerConfig.property.metadata">metadata</a></code> | <code>boolean \| cdktf.IResolvable</code> | Is metadata service active for the server. |
+| <code><a href="#@cdktf/provider-upcloud.server.ServerConfig.property.networkInterface">networkInterface</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-upcloud.server.ServerNetworkInterface">ServerNetworkInterface</a>[]</code> | network_interface block. |
 | <code><a href="#@cdktf/provider-upcloud.server.ServerConfig.property.nicModel">nicModel</a></code> | <code>string</code> | The model of the server's network interfaces. |
 | <code><a href="#@cdktf/provider-upcloud.server.ServerConfig.property.plan">plan</a></code> | <code>string</code> | The pricing plan used for the server. You can list available server plans with `upctl server plans`. |
 | <code><a href="#@cdktf/provider-upcloud.server.ServerConfig.property.serverGroup">serverGroup</a></code> | <code>string</code> | The UUID of a server group to attach this server to. |
-| <code><a href="#@cdktf/provider-upcloud.server.ServerConfig.property.simpleBackup">simpleBackup</a></code> | <code><a href="#@cdktf/provider-upcloud.server.ServerSimpleBackup">ServerSimpleBackup</a></code> | simple_backup block. |
+| <code><a href="#@cdktf/provider-upcloud.server.ServerConfig.property.simpleBackup">simpleBackup</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-upcloud.server.ServerSimpleBackup">ServerSimpleBackup</a>[]</code> | simple_backup block. |
 | <code><a href="#@cdktf/provider-upcloud.server.ServerConfig.property.storageDevices">storageDevices</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-upcloud.server.ServerStorageDevices">ServerStorageDevices</a>[]</code> | storage_devices block. |
 | <code><a href="#@cdktf/provider-upcloud.server.ServerConfig.property.tags">tags</a></code> | <code>string[]</code> | The server related tags. |
-| <code><a href="#@cdktf/provider-upcloud.server.ServerConfig.property.template">template</a></code> | <code><a href="#@cdktf/provider-upcloud.server.ServerTemplate">ServerTemplate</a></code> | template block. |
-| <code><a href="#@cdktf/provider-upcloud.server.ServerConfig.property.timezone">timezone</a></code> | <code>string</code> | A timezone identifier, e.g. `Europe/Helsinki`. |
-| <code><a href="#@cdktf/provider-upcloud.server.ServerConfig.property.title">title</a></code> | <code>string</code> | A short, informational description. |
+| <code><a href="#@cdktf/provider-upcloud.server.ServerConfig.property.template">template</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-upcloud.server.ServerTemplate">ServerTemplate</a>[]</code> | template block. |
+| <code><a href="#@cdktf/provider-upcloud.server.ServerConfig.property.timezone">timezone</a></code> | <code>string</code> | The timezone of the server. The timezone must be a valid timezone string, e.g. `Europe/Helsinki`. |
+| <code><a href="#@cdktf/provider-upcloud.server.ServerConfig.property.title">title</a></code> | <code>string</code> | A short, informational description of the server. |
 | <code><a href="#@cdktf/provider-upcloud.server.ServerConfig.property.userData">userData</a></code> | <code>string</code> | Defines URL for a server setup script, or the script body itself. |
 | <code><a href="#@cdktf/provider-upcloud.server.ServerConfig.property.videoModel">videoModel</a></code> | <code>string</code> | The model of the server's video interface. |
 
@@ -1498,23 +1486,9 @@ public readonly hostname: string;
 
 - *Type:* string
 
-A valid domain name.
+The hostname of the server.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.16.0/docs/resources/server#hostname Server#hostname}
-
----
-
-##### `networkInterface`<sup>Required</sup> <a name="networkInterface" id="@cdktf/provider-upcloud.server.ServerConfig.property.networkInterface"></a>
-
-```typescript
-public readonly networkInterface: IResolvable | ServerNetworkInterface[];
-```
-
-- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-upcloud.server.ServerNetworkInterface">ServerNetworkInterface</a>[]
-
-network_interface block.
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.16.0/docs/resources/server#network_interface Server#network_interface}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.17.0/docs/resources/server#hostname Server#hostname}
 
 ---
 
@@ -1528,7 +1502,7 @@ public readonly zone: string;
 
 The zone in which the server will be hosted, e.g. `de-fra1`. You can list available zones with `upctl zone list`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.16.0/docs/resources/server#zone Server#zone}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.17.0/docs/resources/server#zone Server#zone}
 
 ---
 
@@ -1542,7 +1516,7 @@ public readonly bootOrder: string;
 
 The boot device order, `cdrom`|`disk`|`network` or comma separated combination of those values. Defaults to `disk`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.16.0/docs/resources/server#boot_order Server#boot_order}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.17.0/docs/resources/server#boot_order Server#boot_order}
 
 ---
 
@@ -1554,9 +1528,9 @@ public readonly cpu: number;
 
 - *Type:* number
 
-The number of CPU for the server.
+The number of CPU cores for the server.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.16.0/docs/resources/server#cpu Server#cpu}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.17.0/docs/resources/server#cpu Server#cpu}
 
 ---
 
@@ -1570,7 +1544,7 @@ public readonly firewall: boolean | IResolvable;
 
 Are firewall rules active for the server.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.16.0/docs/resources/server#firewall Server#firewall}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.17.0/docs/resources/server#firewall Server#firewall}
 
 ---
 
@@ -1586,22 +1560,7 @@ Use this to start the VM on a specific host.
 
 Refers to value from host -attribute. Only available for private cloud hosts
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.16.0/docs/resources/server#host Server#host}
-
----
-
-##### `id`<sup>Optional</sup> <a name="id" id="@cdktf/provider-upcloud.server.ServerConfig.property.id"></a>
-
-```typescript
-public readonly id: string;
-```
-
-- *Type:* string
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.16.0/docs/resources/server#id Server#id}.
-
-Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
-If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.17.0/docs/resources/server#host Server#host}
 
 ---
 
@@ -1615,21 +1574,21 @@ public readonly labels: {[ key: string ]: string};
 
 User defined key-value pairs to classify the server.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.16.0/docs/resources/server#labels Server#labels}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.17.0/docs/resources/server#labels Server#labels}
 
 ---
 
 ##### `login`<sup>Optional</sup> <a name="login" id="@cdktf/provider-upcloud.server.ServerConfig.property.login"></a>
 
 ```typescript
-public readonly login: ServerLogin;
+public readonly login: IResolvable | ServerLogin[];
 ```
 
-- *Type:* <a href="#@cdktf/provider-upcloud.server.ServerLogin">ServerLogin</a>
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-upcloud.server.ServerLogin">ServerLogin</a>[]
 
 login block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.16.0/docs/resources/server#login Server#login}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.17.0/docs/resources/server#login Server#login}
 
 ---
 
@@ -1641,9 +1600,9 @@ public readonly mem: number;
 
 - *Type:* number
 
-The size of memory for the server (in megabytes).
+The amount of memory for the server (in megabytes).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.16.0/docs/resources/server#mem Server#mem}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.17.0/docs/resources/server#mem Server#mem}
 
 ---
 
@@ -1655,9 +1614,23 @@ public readonly metadata: boolean | IResolvable;
 
 - *Type:* boolean | cdktf.IResolvable
 
-Is the metadata service active for the server.
+Is metadata service active for the server.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.16.0/docs/resources/server#metadata Server#metadata}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.17.0/docs/resources/server#metadata Server#metadata}
+
+---
+
+##### `networkInterface`<sup>Optional</sup> <a name="networkInterface" id="@cdktf/provider-upcloud.server.ServerConfig.property.networkInterface"></a>
+
+```typescript
+public readonly networkInterface: IResolvable | ServerNetworkInterface[];
+```
+
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-upcloud.server.ServerNetworkInterface">ServerNetworkInterface</a>[]
+
+network_interface block.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.17.0/docs/resources/server#network_interface Server#network_interface}
 
 ---
 
@@ -1671,7 +1644,7 @@ public readonly nicModel: string;
 
 The model of the server's network interfaces.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.16.0/docs/resources/server#nic_model Server#nic_model}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.17.0/docs/resources/server#nic_model Server#nic_model}
 
 ---
 
@@ -1685,7 +1658,7 @@ public readonly plan: string;
 
 The pricing plan used for the server. You can list available server plans with `upctl server plans`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.16.0/docs/resources/server#plan Server#plan}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.17.0/docs/resources/server#plan Server#plan}
 
 ---
 
@@ -1701,21 +1674,21 @@ The UUID of a server group to attach this server to.
 
 Note that the server can also be attached to a server group via the `members` property of `upcloud_server_group`. Only one of the these should be defined at a time. This value is only updated if it has been set to non-zero value.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.16.0/docs/resources/server#server_group Server#server_group}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.17.0/docs/resources/server#server_group Server#server_group}
 
 ---
 
 ##### `simpleBackup`<sup>Optional</sup> <a name="simpleBackup" id="@cdktf/provider-upcloud.server.ServerConfig.property.simpleBackup"></a>
 
 ```typescript
-public readonly simpleBackup: ServerSimpleBackup;
+public readonly simpleBackup: IResolvable | ServerSimpleBackup[];
 ```
 
-- *Type:* <a href="#@cdktf/provider-upcloud.server.ServerSimpleBackup">ServerSimpleBackup</a>
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-upcloud.server.ServerSimpleBackup">ServerSimpleBackup</a>[]
 
 simple_backup block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.16.0/docs/resources/server#simple_backup Server#simple_backup}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.17.0/docs/resources/server#simple_backup Server#simple_backup}
 
 ---
 
@@ -1729,7 +1702,7 @@ public readonly storageDevices: IResolvable | ServerStorageDevices[];
 
 storage_devices block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.16.0/docs/resources/server#storage_devices Server#storage_devices}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.17.0/docs/resources/server#storage_devices Server#storage_devices}
 
 ---
 
@@ -1743,21 +1716,21 @@ public readonly tags: string[];
 
 The server related tags.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.16.0/docs/resources/server#tags Server#tags}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.17.0/docs/resources/server#tags Server#tags}
 
 ---
 
 ##### `template`<sup>Optional</sup> <a name="template" id="@cdktf/provider-upcloud.server.ServerConfig.property.template"></a>
 
 ```typescript
-public readonly template: ServerTemplate;
+public readonly template: IResolvable | ServerTemplate[];
 ```
 
-- *Type:* <a href="#@cdktf/provider-upcloud.server.ServerTemplate">ServerTemplate</a>
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-upcloud.server.ServerTemplate">ServerTemplate</a>[]
 
 template block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.16.0/docs/resources/server#template Server#template}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.17.0/docs/resources/server#template Server#template}
 
 ---
 
@@ -1769,9 +1742,9 @@ public readonly timezone: string;
 
 - *Type:* string
 
-A timezone identifier, e.g. `Europe/Helsinki`.
+The timezone of the server. The timezone must be a valid timezone string, e.g. `Europe/Helsinki`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.16.0/docs/resources/server#timezone Server#timezone}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.17.0/docs/resources/server#timezone Server#timezone}
 
 ---
 
@@ -1783,9 +1756,9 @@ public readonly title: string;
 
 - *Type:* string
 
-A short, informational description.
+A short, informational description of the server.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.16.0/docs/resources/server#title Server#title}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.17.0/docs/resources/server#title Server#title}
 
 ---
 
@@ -1799,7 +1772,7 @@ public readonly userData: string;
 
 Defines URL for a server setup script, or the script body itself.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.16.0/docs/resources/server#user_data Server#user_data}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.17.0/docs/resources/server#user_data Server#user_data}
 
 ---
 
@@ -1813,7 +1786,7 @@ public readonly videoModel: string;
 
 The model of the server's video interface.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.16.0/docs/resources/server#video_model Server#video_model}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.17.0/docs/resources/server#video_model Server#video_model}
 
 ---
 
@@ -1848,7 +1821,7 @@ public readonly createPassword: boolean | IResolvable;
 
 Indicates a password should be create to allow access.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.16.0/docs/resources/server#create_password Server#create_password}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.17.0/docs/resources/server#create_password Server#create_password}
 
 ---
 
@@ -1862,7 +1835,7 @@ public readonly keys: string[];
 
 A list of ssh keys to access the server.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.16.0/docs/resources/server#keys Server#keys}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.17.0/docs/resources/server#keys Server#keys}
 
 ---
 
@@ -1876,7 +1849,7 @@ public readonly passwordDelivery: string;
 
 The delivery method for the server's root password (one of `none`, `email` or `sms`).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.16.0/docs/resources/server#password_delivery Server#password_delivery}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.17.0/docs/resources/server#password_delivery Server#password_delivery}
 
 ---
 
@@ -1890,7 +1863,7 @@ public readonly user: string;
 
 Username to be create to access the server.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.16.0/docs/resources/server#user Server#user}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.17.0/docs/resources/server#user Server#user}
 
 ---
 
@@ -1912,9 +1885,9 @@ const serverNetworkInterface: server.ServerNetworkInterface = { ... }
 | <code><a href="#@cdktf/provider-upcloud.server.ServerNetworkInterface.property.additionalIpAddress">additionalIpAddress</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-upcloud.server.ServerNetworkInterfaceAdditionalIpAddress">ServerNetworkInterfaceAdditionalIpAddress</a>[]</code> | additional_ip_address block. |
 | <code><a href="#@cdktf/provider-upcloud.server.ServerNetworkInterface.property.bootable">bootable</a></code> | <code>boolean \| cdktf.IResolvable</code> | `true` if this interface should be used for network booting. |
 | <code><a href="#@cdktf/provider-upcloud.server.ServerNetworkInterface.property.index">index</a></code> | <code>number</code> | The interface index. |
-| <code><a href="#@cdktf/provider-upcloud.server.ServerNetworkInterface.property.ipAddress">ipAddress</a></code> | <code>string</code> | The assigned primary IP address. |
+| <code><a href="#@cdktf/provider-upcloud.server.ServerNetworkInterface.property.ipAddress">ipAddress</a></code> | <code>string</code> | The primary IP address of this interface. |
 | <code><a href="#@cdktf/provider-upcloud.server.ServerNetworkInterface.property.ipAddressFamily">ipAddressFamily</a></code> | <code>string</code> | The type of the primary IP address of this interface (one of `IPv4` or `IPv6`). |
-| <code><a href="#@cdktf/provider-upcloud.server.ServerNetworkInterface.property.network">network</a></code> | <code>string</code> | The unique ID of a network to attach this network to. |
+| <code><a href="#@cdktf/provider-upcloud.server.ServerNetworkInterface.property.network">network</a></code> | <code>string</code> | The UUID of the network to attach this interface to. Required for private network interfaces. |
 | <code><a href="#@cdktf/provider-upcloud.server.ServerNetworkInterface.property.sourceIpFiltering">sourceIpFiltering</a></code> | <code>boolean \| cdktf.IResolvable</code> | `true` if source IP should be filtered. |
 
 ---
@@ -1929,7 +1902,7 @@ public readonly type: string;
 
 Network interface type. For private network interfaces, a network must be specified with an existing network id.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.16.0/docs/resources/server#type Server#type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.17.0/docs/resources/server#type Server#type}
 
 ---
 
@@ -1943,7 +1916,7 @@ public readonly additionalIpAddress: IResolvable | ServerNetworkInterfaceAdditio
 
 additional_ip_address block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.16.0/docs/resources/server#additional_ip_address Server#additional_ip_address}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.17.0/docs/resources/server#additional_ip_address Server#additional_ip_address}
 
 ---
 
@@ -1957,7 +1930,7 @@ public readonly bootable: boolean | IResolvable;
 
 `true` if this interface should be used for network booting.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.16.0/docs/resources/server#bootable Server#bootable}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.17.0/docs/resources/server#bootable Server#bootable}
 
 ---
 
@@ -1971,7 +1944,7 @@ public readonly index: number;
 
 The interface index.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.16.0/docs/resources/server#index Server#index}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.17.0/docs/resources/server#index Server#index}
 
 ---
 
@@ -1983,9 +1956,9 @@ public readonly ipAddress: string;
 
 - *Type:* string
 
-The assigned primary IP address.
+The primary IP address of this interface.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.16.0/docs/resources/server#ip_address Server#ip_address}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.17.0/docs/resources/server#ip_address Server#ip_address}
 
 ---
 
@@ -1999,7 +1972,7 @@ public readonly ipAddressFamily: string;
 
 The type of the primary IP address of this interface (one of `IPv4` or `IPv6`).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.16.0/docs/resources/server#ip_address_family Server#ip_address_family}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.17.0/docs/resources/server#ip_address_family Server#ip_address_family}
 
 ---
 
@@ -2011,9 +1984,9 @@ public readonly network: string;
 
 - *Type:* string
 
-The unique ID of a network to attach this network to.
+The UUID of the network to attach this interface to. Required for private network interfaces.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.16.0/docs/resources/server#network Server#network}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.17.0/docs/resources/server#network Server#network}
 
 ---
 
@@ -2027,7 +2000,7 @@ public readonly sourceIpFiltering: boolean | IResolvable;
 
 `true` if source IP should be filtered.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.16.0/docs/resources/server#source_ip_filtering Server#source_ip_filtering}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.17.0/docs/resources/server#source_ip_filtering Server#source_ip_filtering}
 
 ---
 
@@ -2045,8 +2018,8 @@ const serverNetworkInterfaceAdditionalIpAddress: server.ServerNetworkInterfaceAd
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-upcloud.server.ServerNetworkInterfaceAdditionalIpAddress.property.ipAddress">ipAddress</a></code> | <code>string</code> | The assigned additional IP address. |
-| <code><a href="#@cdktf/provider-upcloud.server.ServerNetworkInterfaceAdditionalIpAddress.property.ipAddressFamily">ipAddressFamily</a></code> | <code>string</code> | The type of this additional IP address of this interface (one of `IPv4` or `IPv6`). |
+| <code><a href="#@cdktf/provider-upcloud.server.ServerNetworkInterfaceAdditionalIpAddress.property.ipAddress">ipAddress</a></code> | <code>string</code> | An additional IP address for this interface. |
+| <code><a href="#@cdktf/provider-upcloud.server.ServerNetworkInterfaceAdditionalIpAddress.property.ipAddressFamily">ipAddressFamily</a></code> | <code>string</code> | The type of the additional IP address of this interface (one of `IPv4` or `IPv6`). |
 
 ---
 
@@ -2058,9 +2031,9 @@ public readonly ipAddress: string;
 
 - *Type:* string
 
-The assigned additional IP address.
+An additional IP address for this interface.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.16.0/docs/resources/server#ip_address Server#ip_address}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.17.0/docs/resources/server#ip_address Server#ip_address}
 
 ---
 
@@ -2072,9 +2045,9 @@ public readonly ipAddressFamily: string;
 
 - *Type:* string
 
-The type of this additional IP address of this interface (one of `IPv4` or `IPv6`).
+The type of the additional IP address of this interface (one of `IPv4` or `IPv6`).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.16.0/docs/resources/server#ip_address_family Server#ip_address_family}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.17.0/docs/resources/server#ip_address_family Server#ip_address_family}
 
 ---
 
@@ -2097,7 +2070,7 @@ const serverSimpleBackup: server.ServerSimpleBackup = { ... }
 
 ---
 
-##### `plan`<sup>Required</sup> <a name="plan" id="@cdktf/provider-upcloud.server.ServerSimpleBackup.property.plan"></a>
+##### `plan`<sup>Optional</sup> <a name="plan" id="@cdktf/provider-upcloud.server.ServerSimpleBackup.property.plan"></a>
 
 ```typescript
 public readonly plan: string;
@@ -2107,11 +2080,11 @@ public readonly plan: string;
 
 Simple backup plan. Accepted values: daily, dailies, weeklies, monthlies.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.16.0/docs/resources/server#plan Server#plan}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.17.0/docs/resources/server#plan Server#plan}
 
 ---
 
-##### `time`<sup>Required</sup> <a name="time" id="@cdktf/provider-upcloud.server.ServerSimpleBackup.property.time"></a>
+##### `time`<sup>Optional</sup> <a name="time" id="@cdktf/provider-upcloud.server.ServerSimpleBackup.property.time"></a>
 
 ```typescript
 public readonly time: string;
@@ -2121,7 +2094,7 @@ public readonly time: string;
 
 Time of the day at which backup will be taken. Should be provided in a hhmm format (e.g. 2230).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.16.0/docs/resources/server#time Server#time}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.17.0/docs/resources/server#time Server#time}
 
 ---
 
@@ -2139,24 +2112,10 @@ const serverStorageDevices: server.ServerStorageDevices = { ... }
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-upcloud.server.ServerStorageDevices.property.storage">storage</a></code> | <code>string</code> | A valid storage UUID. |
 | <code><a href="#@cdktf/provider-upcloud.server.ServerStorageDevices.property.address">address</a></code> | <code>string</code> | The device address the storage will be attached to (`scsi`\|`virtio`\|`ide`). |
 | <code><a href="#@cdktf/provider-upcloud.server.ServerStorageDevices.property.addressPosition">addressPosition</a></code> | <code>string</code> | The device position in the given bus (defined via field `address`). |
+| <code><a href="#@cdktf/provider-upcloud.server.ServerStorageDevices.property.storage">storage</a></code> | <code>string</code> | The UUID of the storage to attach to the server. |
 | <code><a href="#@cdktf/provider-upcloud.server.ServerStorageDevices.property.type">type</a></code> | <code>string</code> | The device type the storage will be attached as. |
-
----
-
-##### `storage`<sup>Required</sup> <a name="storage" id="@cdktf/provider-upcloud.server.ServerStorageDevices.property.storage"></a>
-
-```typescript
-public readonly storage: string;
-```
-
-- *Type:* string
-
-A valid storage UUID.
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.16.0/docs/resources/server#storage Server#storage}
 
 ---
 
@@ -2172,7 +2131,7 @@ The device address the storage will be attached to (`scsi`|`virtio`|`ide`).
 
 Leave `address_position` field empty to auto-select next available address from that bus.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.16.0/docs/resources/server#address Server#address}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.17.0/docs/resources/server#address Server#address}
 
 ---
 
@@ -2188,7 +2147,21 @@ The device position in the given bus (defined via field `address`).
 
 Valid values for address `virtio` are `0-15` (`0`, for example). Valid values for `scsi` or `ide` are `0-1:0-1` (`0:0`, for example). Leave empty to auto-select next available address in the given bus.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.16.0/docs/resources/server#address_position Server#address_position}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.17.0/docs/resources/server#address_position Server#address_position}
+
+---
+
+##### `storage`<sup>Optional</sup> <a name="storage" id="@cdktf/provider-upcloud.server.ServerStorageDevices.property.storage"></a>
+
+```typescript
+public readonly storage: string;
+```
+
+- *Type:* string
+
+The UUID of the storage to attach to the server.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.17.0/docs/resources/server#storage Server#storage}
 
 ---
 
@@ -2202,7 +2175,7 @@ public readonly type: string;
 
 The device type the storage will be attached as.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.16.0/docs/resources/server#type Server#type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.17.0/docs/resources/server#type Server#type}
 
 ---
 
@@ -2220,31 +2193,16 @@ const serverTemplate: server.ServerTemplate = { ... }
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-upcloud.server.ServerTemplate.property.storage">storage</a></code> | <code>string</code> | A valid storage UUID or template name. |
 | <code><a href="#@cdktf/provider-upcloud.server.ServerTemplate.property.address">address</a></code> | <code>string</code> | The device address the storage will be attached to (`scsi`\|`virtio`\|`ide`). |
 | <code><a href="#@cdktf/provider-upcloud.server.ServerTemplate.property.addressPosition">addressPosition</a></code> | <code>string</code> | The device position in the given bus (defined via field `address`). |
-| <code><a href="#@cdktf/provider-upcloud.server.ServerTemplate.property.backupRule">backupRule</a></code> | <code><a href="#@cdktf/provider-upcloud.server.ServerTemplateBackupRule">ServerTemplateBackupRule</a></code> | backup_rule block. |
+| <code><a href="#@cdktf/provider-upcloud.server.ServerTemplate.property.backupRule">backupRule</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-upcloud.server.ServerTemplateBackupRule">ServerTemplateBackupRule</a>[]</code> | backup_rule block. |
 | <code><a href="#@cdktf/provider-upcloud.server.ServerTemplate.property.deleteAutoresizeBackup">deleteAutoresizeBackup</a></code> | <code>boolean \| cdktf.IResolvable</code> | If set to true, the backup taken before the partition and filesystem resize attempt will be deleted immediately after success. |
 | <code><a href="#@cdktf/provider-upcloud.server.ServerTemplate.property.encrypt">encrypt</a></code> | <code>boolean \| cdktf.IResolvable</code> | Sets if the storage is encrypted at rest. |
 | <code><a href="#@cdktf/provider-upcloud.server.ServerTemplate.property.filesystemAutoresize">filesystemAutoresize</a></code> | <code>boolean \| cdktf.IResolvable</code> | If set to true, provider will attempt to resize partition and filesystem when the size of template storage changes. |
 | <code><a href="#@cdktf/provider-upcloud.server.ServerTemplate.property.size">size</a></code> | <code>number</code> | The size of the storage in gigabytes. |
+| <code><a href="#@cdktf/provider-upcloud.server.ServerTemplate.property.storage">storage</a></code> | <code>string</code> | A valid storage UUID or template name. |
+| <code><a href="#@cdktf/provider-upcloud.server.ServerTemplate.property.tier">tier</a></code> | <code>string</code> | The storage tier to use. |
 | <code><a href="#@cdktf/provider-upcloud.server.ServerTemplate.property.title">title</a></code> | <code>string</code> | A short, informative description. |
-
----
-
-##### `storage`<sup>Required</sup> <a name="storage" id="@cdktf/provider-upcloud.server.ServerTemplate.property.storage"></a>
-
-```typescript
-public readonly storage: string;
-```
-
-- *Type:* string
-
-A valid storage UUID or template name.
-
-You can list available public templates with `upctl storage list --public --template` and available private templates with `upctl storage list --template`.
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.16.0/docs/resources/server#storage Server#storage}
 
 ---
 
@@ -2260,7 +2218,7 @@ The device address the storage will be attached to (`scsi`|`virtio`|`ide`).
 
 Leave `address_position` field empty to auto-select next available address from that bus.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.16.0/docs/resources/server#address Server#address}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.17.0/docs/resources/server#address Server#address}
 
 ---
 
@@ -2276,21 +2234,21 @@ The device position in the given bus (defined via field `address`).
 
 For example `0:0`, or `0`. Leave empty to auto-select next available address in the given bus.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.16.0/docs/resources/server#address_position Server#address_position}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.17.0/docs/resources/server#address_position Server#address_position}
 
 ---
 
 ##### `backupRule`<sup>Optional</sup> <a name="backupRule" id="@cdktf/provider-upcloud.server.ServerTemplate.property.backupRule"></a>
 
 ```typescript
-public readonly backupRule: ServerTemplateBackupRule;
+public readonly backupRule: IResolvable | ServerTemplateBackupRule[];
 ```
 
-- *Type:* <a href="#@cdktf/provider-upcloud.server.ServerTemplateBackupRule">ServerTemplateBackupRule</a>
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-upcloud.server.ServerTemplateBackupRule">ServerTemplateBackupRule</a>[]
 
 backup_rule block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.16.0/docs/resources/server#backup_rule Server#backup_rule}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.17.0/docs/resources/server#backup_rule Server#backup_rule}
 
 ---
 
@@ -2304,7 +2262,7 @@ public readonly deleteAutoresizeBackup: boolean | IResolvable;
 
 If set to true, the backup taken before the partition and filesystem resize attempt will be deleted immediately after success.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.16.0/docs/resources/server#delete_autoresize_backup Server#delete_autoresize_backup}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.17.0/docs/resources/server#delete_autoresize_backup Server#delete_autoresize_backup}
 
 ---
 
@@ -2318,7 +2276,7 @@ public readonly encrypt: boolean | IResolvable;
 
 Sets if the storage is encrypted at rest.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.16.0/docs/resources/server#encrypt Server#encrypt}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.17.0/docs/resources/server#encrypt Server#encrypt}
 
 ---
 
@@ -2336,7 +2294,7 @@ Please note that before the resize attempt is made, backup of the storage will b
 							to restore the storage and then deleted. If the resize attempt succeeds, backup will be kept (unless delete_autoresize_backup option is set to true).
 							Taking and keeping backups incure costs.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.16.0/docs/resources/server#filesystem_autoresize Server#filesystem_autoresize}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.17.0/docs/resources/server#filesystem_autoresize Server#filesystem_autoresize}
 
 ---
 
@@ -2350,7 +2308,37 @@ public readonly size: number;
 
 The size of the storage in gigabytes.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.16.0/docs/resources/server#size Server#size}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.17.0/docs/resources/server#size Server#size}
+
+---
+
+##### `storage`<sup>Optional</sup> <a name="storage" id="@cdktf/provider-upcloud.server.ServerTemplate.property.storage"></a>
+
+```typescript
+public readonly storage: string;
+```
+
+- *Type:* string
+
+A valid storage UUID or template name.
+
+You can list available public templates with `upctl storage list --public --template` and available private templates with `upctl storage list --template`.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.17.0/docs/resources/server#storage Server#storage}
+
+---
+
+##### `tier`<sup>Optional</sup> <a name="tier" id="@cdktf/provider-upcloud.server.ServerTemplate.property.tier"></a>
+
+```typescript
+public readonly tier: string;
+```
+
+- *Type:* string
+
+The storage tier to use.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.17.0/docs/resources/server#tier Server#tier}
 
 ---
 
@@ -2364,7 +2352,7 @@ public readonly title: string;
 
 A short, informative description.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.16.0/docs/resources/server#title Server#title}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.17.0/docs/resources/server#title Server#title}
 
 ---
 
@@ -2398,7 +2386,7 @@ public readonly interval: string;
 
 The weekday when the backup is created.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.16.0/docs/resources/server#interval Server#interval}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.17.0/docs/resources/server#interval Server#interval}
 
 ---
 
@@ -2412,7 +2400,7 @@ public readonly retention: number;
 
 The number of days before a backup is automatically deleted.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.16.0/docs/resources/server#retention Server#retention}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.17.0/docs/resources/server#retention Server#retention}
 
 ---
 
@@ -2426,11 +2414,171 @@ public readonly time: string;
 
 The time of day when the backup is created.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.16.0/docs/resources/server#time Server#time}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.17.0/docs/resources/server#time Server#time}
 
 ---
 
 ## Classes <a name="Classes" id="Classes"></a>
+
+### ServerLoginList <a name="ServerLoginList" id="@cdktf/provider-upcloud.server.ServerLoginList"></a>
+
+#### Initializers <a name="Initializers" id="@cdktf/provider-upcloud.server.ServerLoginList.Initializer"></a>
+
+```typescript
+import { server } from '@cdktf/provider-upcloud'
+
+new server.ServerLoginList(terraformResource: IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-upcloud.server.ServerLoginList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktf/provider-upcloud.server.ServerLoginList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktf/provider-upcloud.server.ServerLoginList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktf/provider-upcloud.server.ServerLoginList.Initializer.parameter.terraformResource"></a>
+
+- *Type:* cdktf.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-upcloud.server.ServerLoginList.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `wrapsSet`<sup>Required</sup> <a name="wrapsSet" id="@cdktf/provider-upcloud.server.ServerLoginList.Initializer.parameter.wrapsSet"></a>
+
+- *Type:* boolean
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktf/provider-upcloud.server.ServerLoginList.allWithMapKey">allWithMapKey</a></code> | Creating an iterator for this complex list. |
+| <code><a href="#@cdktf/provider-upcloud.server.ServerLoginList.computeFqn">computeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-upcloud.server.ServerLoginList.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktf/provider-upcloud.server.ServerLoginList.toString">toString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktf/provider-upcloud.server.ServerLoginList.get">get</a></code> | *No description.* |
+
+---
+
+##### `allWithMapKey` <a name="allWithMapKey" id="@cdktf/provider-upcloud.server.ServerLoginList.allWithMapKey"></a>
+
+```typescript
+public allWithMapKey(mapKeyAttributeName: string): DynamicListTerraformIterator
+```
+
+Creating an iterator for this complex list.
+
+The list will be converted into a map with the mapKeyAttributeName as the key.
+
+###### `mapKeyAttributeName`<sup>Required</sup> <a name="mapKeyAttributeName" id="@cdktf/provider-upcloud.server.ServerLoginList.allWithMapKey.parameter.mapKeyAttributeName"></a>
+
+- *Type:* string
+
+---
+
+##### `computeFqn` <a name="computeFqn" id="@cdktf/provider-upcloud.server.ServerLoginList.computeFqn"></a>
+
+```typescript
+public computeFqn(): string
+```
+
+##### `resolve` <a name="resolve" id="@cdktf/provider-upcloud.server.ServerLoginList.resolve"></a>
+
+```typescript
+public resolve(_context: IResolveContext): any
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktf/provider-upcloud.server.ServerLoginList.resolve.parameter._context"></a>
+
+- *Type:* cdktf.IResolveContext
+
+---
+
+##### `toString` <a name="toString" id="@cdktf/provider-upcloud.server.ServerLoginList.toString"></a>
+
+```typescript
+public toString(): string
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `get` <a name="get" id="@cdktf/provider-upcloud.server.ServerLoginList.get"></a>
+
+```typescript
+public get(index: number): ServerLoginOutputReference
+```
+
+###### `index`<sup>Required</sup> <a name="index" id="@cdktf/provider-upcloud.server.ServerLoginList.get.parameter.index"></a>
+
+- *Type:* number
+
+the index of the item to return.
+
+---
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-upcloud.server.ServerLoginList.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktf/provider-upcloud.server.ServerLoginList.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-upcloud.server.ServerLoginList.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-upcloud.server.ServerLogin">ServerLogin</a>[]</code> | *No description.* |
+
+---
+
+##### `creationStack`<sup>Required</sup> <a name="creationStack" id="@cdktf/provider-upcloud.server.ServerLoginList.property.creationStack"></a>
+
+```typescript
+public readonly creationStack: string[];
+```
+
+- *Type:* string[]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktf/provider-upcloud.server.ServerLoginList.property.fqn"></a>
+
+```typescript
+public readonly fqn: string;
+```
+
+- *Type:* string
+
+---
+
+##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-upcloud.server.ServerLoginList.property.internalValue"></a>
+
+```typescript
+public readonly internalValue: IResolvable | ServerLogin[];
+```
+
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-upcloud.server.ServerLogin">ServerLogin</a>[]
+
+---
+
 
 ### ServerLoginOutputReference <a name="ServerLoginOutputReference" id="@cdktf/provider-upcloud.server.ServerLoginOutputReference"></a>
 
@@ -2439,13 +2587,15 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upclo
 ```typescript
 import { server } from '@cdktf/provider-upcloud'
 
-new server.ServerLoginOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
+new server.ServerLoginOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean)
 ```
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-upcloud.server.ServerLoginOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktf/provider-upcloud.server.ServerLoginOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktf/provider-upcloud.server.ServerLoginOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>number</code> | the index of this item in the list. |
+| <code><a href="#@cdktf/provider-upcloud.server.ServerLoginOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
 ---
 
@@ -2462,6 +2612,22 @@ The parent resource.
 - *Type:* string
 
 The attribute on the parent resource this class is referencing.
+
+---
+
+##### `complexObjectIndex`<sup>Required</sup> <a name="complexObjectIndex" id="@cdktf/provider-upcloud.server.ServerLoginOutputReference.Initializer.parameter.complexObjectIndex"></a>
+
+- *Type:* number
+
+the index of this item in the list.
+
+---
+
+##### `complexObjectIsFromSet`<sup>Required</sup> <a name="complexObjectIsFromSet" id="@cdktf/provider-upcloud.server.ServerLoginOutputReference.Initializer.parameter.complexObjectIsFromSet"></a>
+
+- *Type:* boolean
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
 
 ---
 
@@ -2678,7 +2844,7 @@ public resetUser(): void
 | <code><a href="#@cdktf/provider-upcloud.server.ServerLoginOutputReference.property.keys">keys</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.server.ServerLoginOutputReference.property.passwordDelivery">passwordDelivery</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.server.ServerLoginOutputReference.property.user">user</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-upcloud.server.ServerLoginOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktf/provider-upcloud.server.ServerLogin">ServerLogin</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-upcloud.server.ServerLoginOutputReference.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-upcloud.server.ServerLogin">ServerLogin</a></code> | *No description.* |
 
 ---
 
@@ -2789,10 +2955,10 @@ public readonly user: string;
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-upcloud.server.ServerLoginOutputReference.property.internalValue"></a>
 
 ```typescript
-public readonly internalValue: ServerLogin;
+public readonly internalValue: IResolvable | ServerLogin;
 ```
 
-- *Type:* <a href="#@cdktf/provider-upcloud.server.ServerLogin">ServerLogin</a>
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-upcloud.server.ServerLogin">ServerLogin</a>
 
 ---
 
@@ -3980,6 +4146,166 @@ public readonly internalValue: IResolvable | ServerNetworkInterface;
 ---
 
 
+### ServerSimpleBackupList <a name="ServerSimpleBackupList" id="@cdktf/provider-upcloud.server.ServerSimpleBackupList"></a>
+
+#### Initializers <a name="Initializers" id="@cdktf/provider-upcloud.server.ServerSimpleBackupList.Initializer"></a>
+
+```typescript
+import { server } from '@cdktf/provider-upcloud'
+
+new server.ServerSimpleBackupList(terraformResource: IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-upcloud.server.ServerSimpleBackupList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktf/provider-upcloud.server.ServerSimpleBackupList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktf/provider-upcloud.server.ServerSimpleBackupList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktf/provider-upcloud.server.ServerSimpleBackupList.Initializer.parameter.terraformResource"></a>
+
+- *Type:* cdktf.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-upcloud.server.ServerSimpleBackupList.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `wrapsSet`<sup>Required</sup> <a name="wrapsSet" id="@cdktf/provider-upcloud.server.ServerSimpleBackupList.Initializer.parameter.wrapsSet"></a>
+
+- *Type:* boolean
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktf/provider-upcloud.server.ServerSimpleBackupList.allWithMapKey">allWithMapKey</a></code> | Creating an iterator for this complex list. |
+| <code><a href="#@cdktf/provider-upcloud.server.ServerSimpleBackupList.computeFqn">computeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-upcloud.server.ServerSimpleBackupList.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktf/provider-upcloud.server.ServerSimpleBackupList.toString">toString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktf/provider-upcloud.server.ServerSimpleBackupList.get">get</a></code> | *No description.* |
+
+---
+
+##### `allWithMapKey` <a name="allWithMapKey" id="@cdktf/provider-upcloud.server.ServerSimpleBackupList.allWithMapKey"></a>
+
+```typescript
+public allWithMapKey(mapKeyAttributeName: string): DynamicListTerraformIterator
+```
+
+Creating an iterator for this complex list.
+
+The list will be converted into a map with the mapKeyAttributeName as the key.
+
+###### `mapKeyAttributeName`<sup>Required</sup> <a name="mapKeyAttributeName" id="@cdktf/provider-upcloud.server.ServerSimpleBackupList.allWithMapKey.parameter.mapKeyAttributeName"></a>
+
+- *Type:* string
+
+---
+
+##### `computeFqn` <a name="computeFqn" id="@cdktf/provider-upcloud.server.ServerSimpleBackupList.computeFqn"></a>
+
+```typescript
+public computeFqn(): string
+```
+
+##### `resolve` <a name="resolve" id="@cdktf/provider-upcloud.server.ServerSimpleBackupList.resolve"></a>
+
+```typescript
+public resolve(_context: IResolveContext): any
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktf/provider-upcloud.server.ServerSimpleBackupList.resolve.parameter._context"></a>
+
+- *Type:* cdktf.IResolveContext
+
+---
+
+##### `toString` <a name="toString" id="@cdktf/provider-upcloud.server.ServerSimpleBackupList.toString"></a>
+
+```typescript
+public toString(): string
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `get` <a name="get" id="@cdktf/provider-upcloud.server.ServerSimpleBackupList.get"></a>
+
+```typescript
+public get(index: number): ServerSimpleBackupOutputReference
+```
+
+###### `index`<sup>Required</sup> <a name="index" id="@cdktf/provider-upcloud.server.ServerSimpleBackupList.get.parameter.index"></a>
+
+- *Type:* number
+
+the index of the item to return.
+
+---
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-upcloud.server.ServerSimpleBackupList.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktf/provider-upcloud.server.ServerSimpleBackupList.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-upcloud.server.ServerSimpleBackupList.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-upcloud.server.ServerSimpleBackup">ServerSimpleBackup</a>[]</code> | *No description.* |
+
+---
+
+##### `creationStack`<sup>Required</sup> <a name="creationStack" id="@cdktf/provider-upcloud.server.ServerSimpleBackupList.property.creationStack"></a>
+
+```typescript
+public readonly creationStack: string[];
+```
+
+- *Type:* string[]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktf/provider-upcloud.server.ServerSimpleBackupList.property.fqn"></a>
+
+```typescript
+public readonly fqn: string;
+```
+
+- *Type:* string
+
+---
+
+##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-upcloud.server.ServerSimpleBackupList.property.internalValue"></a>
+
+```typescript
+public readonly internalValue: IResolvable | ServerSimpleBackup[];
+```
+
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-upcloud.server.ServerSimpleBackup">ServerSimpleBackup</a>[]
+
+---
+
+
 ### ServerSimpleBackupOutputReference <a name="ServerSimpleBackupOutputReference" id="@cdktf/provider-upcloud.server.ServerSimpleBackupOutputReference"></a>
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-upcloud.server.ServerSimpleBackupOutputReference.Initializer"></a>
@@ -3987,13 +4313,15 @@ public readonly internalValue: IResolvable | ServerNetworkInterface;
 ```typescript
 import { server } from '@cdktf/provider-upcloud'
 
-new server.ServerSimpleBackupOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
+new server.ServerSimpleBackupOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean)
 ```
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-upcloud.server.ServerSimpleBackupOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktf/provider-upcloud.server.ServerSimpleBackupOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktf/provider-upcloud.server.ServerSimpleBackupOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>number</code> | the index of this item in the list. |
+| <code><a href="#@cdktf/provider-upcloud.server.ServerSimpleBackupOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
 ---
 
@@ -4010,6 +4338,22 @@ The parent resource.
 - *Type:* string
 
 The attribute on the parent resource this class is referencing.
+
+---
+
+##### `complexObjectIndex`<sup>Required</sup> <a name="complexObjectIndex" id="@cdktf/provider-upcloud.server.ServerSimpleBackupOutputReference.Initializer.parameter.complexObjectIndex"></a>
+
+- *Type:* number
+
+the index of this item in the list.
+
+---
+
+##### `complexObjectIsFromSet`<sup>Required</sup> <a name="complexObjectIsFromSet" id="@cdktf/provider-upcloud.server.ServerSimpleBackupOutputReference.Initializer.parameter.complexObjectIsFromSet"></a>
+
+- *Type:* boolean
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
 
 ---
 
@@ -4030,6 +4374,8 @@ The attribute on the parent resource this class is referencing.
 | <code><a href="#@cdktf/provider-upcloud.server.ServerSimpleBackupOutputReference.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.server.ServerSimpleBackupOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
 | <code><a href="#@cdktf/provider-upcloud.server.ServerSimpleBackupOutputReference.toString">toString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktf/provider-upcloud.server.ServerSimpleBackupOutputReference.resetPlan">resetPlan</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-upcloud.server.ServerSimpleBackupOutputReference.resetTime">resetTime</a></code> | *No description.* |
 
 ---
 
@@ -4183,6 +4529,18 @@ Return a string representation of this resolvable object.
 
 Returns a reversible string representation.
 
+##### `resetPlan` <a name="resetPlan" id="@cdktf/provider-upcloud.server.ServerSimpleBackupOutputReference.resetPlan"></a>
+
+```typescript
+public resetPlan(): void
+```
+
+##### `resetTime` <a name="resetTime" id="@cdktf/provider-upcloud.server.ServerSimpleBackupOutputReference.resetTime"></a>
+
+```typescript
+public resetTime(): void
+```
+
 
 #### Properties <a name="Properties" id="Properties"></a>
 
@@ -4194,7 +4552,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-upcloud.server.ServerSimpleBackupOutputReference.property.timeInput">timeInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.server.ServerSimpleBackupOutputReference.property.plan">plan</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.server.ServerSimpleBackupOutputReference.property.time">time</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-upcloud.server.ServerSimpleBackupOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktf/provider-upcloud.server.ServerSimpleBackup">ServerSimpleBackup</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-upcloud.server.ServerSimpleBackupOutputReference.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-upcloud.server.ServerSimpleBackup">ServerSimpleBackup</a></code> | *No description.* |
 
 ---
 
@@ -4265,10 +4623,10 @@ public readonly time: string;
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-upcloud.server.ServerSimpleBackupOutputReference.property.internalValue"></a>
 
 ```typescript
-public readonly internalValue: ServerSimpleBackup;
+public readonly internalValue: IResolvable | ServerSimpleBackup;
 ```
 
-- *Type:* <a href="#@cdktf/provider-upcloud.server.ServerSimpleBackup">ServerSimpleBackup</a>
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-upcloud.server.ServerSimpleBackup">ServerSimpleBackup</a>
 
 ---
 
@@ -4503,6 +4861,7 @@ whether the list is wrapping a set (will add tolist() to be able to access an it
 | <code><a href="#@cdktf/provider-upcloud.server.ServerStorageDevicesOutputReference.toString">toString</a></code> | Return a string representation of this resolvable object. |
 | <code><a href="#@cdktf/provider-upcloud.server.ServerStorageDevicesOutputReference.resetAddress">resetAddress</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.server.ServerStorageDevicesOutputReference.resetAddressPosition">resetAddressPosition</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-upcloud.server.ServerStorageDevicesOutputReference.resetStorage">resetStorage</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.server.ServerStorageDevicesOutputReference.resetType">resetType</a></code> | *No description.* |
 
 ---
@@ -4669,6 +5028,12 @@ public resetAddress(): void
 public resetAddressPosition(): void
 ```
 
+##### `resetStorage` <a name="resetStorage" id="@cdktf/provider-upcloud.server.ServerStorageDevicesOutputReference.resetStorage"></a>
+
+```typescript
+public resetStorage(): void
+```
+
 ##### `resetType` <a name="resetType" id="@cdktf/provider-upcloud.server.ServerStorageDevicesOutputReference.resetType"></a>
 
 ```typescript
@@ -4809,6 +5174,166 @@ public readonly internalValue: IResolvable | ServerStorageDevices;
 ---
 
 
+### ServerTemplateBackupRuleList <a name="ServerTemplateBackupRuleList" id="@cdktf/provider-upcloud.server.ServerTemplateBackupRuleList"></a>
+
+#### Initializers <a name="Initializers" id="@cdktf/provider-upcloud.server.ServerTemplateBackupRuleList.Initializer"></a>
+
+```typescript
+import { server } from '@cdktf/provider-upcloud'
+
+new server.ServerTemplateBackupRuleList(terraformResource: IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-upcloud.server.ServerTemplateBackupRuleList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktf/provider-upcloud.server.ServerTemplateBackupRuleList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktf/provider-upcloud.server.ServerTemplateBackupRuleList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktf/provider-upcloud.server.ServerTemplateBackupRuleList.Initializer.parameter.terraformResource"></a>
+
+- *Type:* cdktf.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-upcloud.server.ServerTemplateBackupRuleList.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `wrapsSet`<sup>Required</sup> <a name="wrapsSet" id="@cdktf/provider-upcloud.server.ServerTemplateBackupRuleList.Initializer.parameter.wrapsSet"></a>
+
+- *Type:* boolean
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktf/provider-upcloud.server.ServerTemplateBackupRuleList.allWithMapKey">allWithMapKey</a></code> | Creating an iterator for this complex list. |
+| <code><a href="#@cdktf/provider-upcloud.server.ServerTemplateBackupRuleList.computeFqn">computeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-upcloud.server.ServerTemplateBackupRuleList.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktf/provider-upcloud.server.ServerTemplateBackupRuleList.toString">toString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktf/provider-upcloud.server.ServerTemplateBackupRuleList.get">get</a></code> | *No description.* |
+
+---
+
+##### `allWithMapKey` <a name="allWithMapKey" id="@cdktf/provider-upcloud.server.ServerTemplateBackupRuleList.allWithMapKey"></a>
+
+```typescript
+public allWithMapKey(mapKeyAttributeName: string): DynamicListTerraformIterator
+```
+
+Creating an iterator for this complex list.
+
+The list will be converted into a map with the mapKeyAttributeName as the key.
+
+###### `mapKeyAttributeName`<sup>Required</sup> <a name="mapKeyAttributeName" id="@cdktf/provider-upcloud.server.ServerTemplateBackupRuleList.allWithMapKey.parameter.mapKeyAttributeName"></a>
+
+- *Type:* string
+
+---
+
+##### `computeFqn` <a name="computeFqn" id="@cdktf/provider-upcloud.server.ServerTemplateBackupRuleList.computeFqn"></a>
+
+```typescript
+public computeFqn(): string
+```
+
+##### `resolve` <a name="resolve" id="@cdktf/provider-upcloud.server.ServerTemplateBackupRuleList.resolve"></a>
+
+```typescript
+public resolve(_context: IResolveContext): any
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktf/provider-upcloud.server.ServerTemplateBackupRuleList.resolve.parameter._context"></a>
+
+- *Type:* cdktf.IResolveContext
+
+---
+
+##### `toString` <a name="toString" id="@cdktf/provider-upcloud.server.ServerTemplateBackupRuleList.toString"></a>
+
+```typescript
+public toString(): string
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `get` <a name="get" id="@cdktf/provider-upcloud.server.ServerTemplateBackupRuleList.get"></a>
+
+```typescript
+public get(index: number): ServerTemplateBackupRuleOutputReference
+```
+
+###### `index`<sup>Required</sup> <a name="index" id="@cdktf/provider-upcloud.server.ServerTemplateBackupRuleList.get.parameter.index"></a>
+
+- *Type:* number
+
+the index of the item to return.
+
+---
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-upcloud.server.ServerTemplateBackupRuleList.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktf/provider-upcloud.server.ServerTemplateBackupRuleList.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-upcloud.server.ServerTemplateBackupRuleList.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-upcloud.server.ServerTemplateBackupRule">ServerTemplateBackupRule</a>[]</code> | *No description.* |
+
+---
+
+##### `creationStack`<sup>Required</sup> <a name="creationStack" id="@cdktf/provider-upcloud.server.ServerTemplateBackupRuleList.property.creationStack"></a>
+
+```typescript
+public readonly creationStack: string[];
+```
+
+- *Type:* string[]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktf/provider-upcloud.server.ServerTemplateBackupRuleList.property.fqn"></a>
+
+```typescript
+public readonly fqn: string;
+```
+
+- *Type:* string
+
+---
+
+##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-upcloud.server.ServerTemplateBackupRuleList.property.internalValue"></a>
+
+```typescript
+public readonly internalValue: IResolvable | ServerTemplateBackupRule[];
+```
+
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-upcloud.server.ServerTemplateBackupRule">ServerTemplateBackupRule</a>[]
+
+---
+
+
 ### ServerTemplateBackupRuleOutputReference <a name="ServerTemplateBackupRuleOutputReference" id="@cdktf/provider-upcloud.server.ServerTemplateBackupRuleOutputReference"></a>
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-upcloud.server.ServerTemplateBackupRuleOutputReference.Initializer"></a>
@@ -4816,13 +5341,15 @@ public readonly internalValue: IResolvable | ServerStorageDevices;
 ```typescript
 import { server } from '@cdktf/provider-upcloud'
 
-new server.ServerTemplateBackupRuleOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
+new server.ServerTemplateBackupRuleOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean)
 ```
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-upcloud.server.ServerTemplateBackupRuleOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktf/provider-upcloud.server.ServerTemplateBackupRuleOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktf/provider-upcloud.server.ServerTemplateBackupRuleOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>number</code> | the index of this item in the list. |
+| <code><a href="#@cdktf/provider-upcloud.server.ServerTemplateBackupRuleOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
 ---
 
@@ -4839,6 +5366,22 @@ The parent resource.
 - *Type:* string
 
 The attribute on the parent resource this class is referencing.
+
+---
+
+##### `complexObjectIndex`<sup>Required</sup> <a name="complexObjectIndex" id="@cdktf/provider-upcloud.server.ServerTemplateBackupRuleOutputReference.Initializer.parameter.complexObjectIndex"></a>
+
+- *Type:* number
+
+the index of this item in the list.
+
+---
+
+##### `complexObjectIsFromSet`<sup>Required</sup> <a name="complexObjectIsFromSet" id="@cdktf/provider-upcloud.server.ServerTemplateBackupRuleOutputReference.Initializer.parameter.complexObjectIsFromSet"></a>
+
+- *Type:* boolean
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
 
 ---
 
@@ -5025,7 +5568,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-upcloud.server.ServerTemplateBackupRuleOutputReference.property.interval">interval</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.server.ServerTemplateBackupRuleOutputReference.property.retention">retention</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.server.ServerTemplateBackupRuleOutputReference.property.time">time</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-upcloud.server.ServerTemplateBackupRuleOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktf/provider-upcloud.server.ServerTemplateBackupRule">ServerTemplateBackupRule</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-upcloud.server.ServerTemplateBackupRuleOutputReference.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-upcloud.server.ServerTemplateBackupRule">ServerTemplateBackupRule</a></code> | *No description.* |
 
 ---
 
@@ -5116,10 +5659,170 @@ public readonly time: string;
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-upcloud.server.ServerTemplateBackupRuleOutputReference.property.internalValue"></a>
 
 ```typescript
-public readonly internalValue: ServerTemplateBackupRule;
+public readonly internalValue: IResolvable | ServerTemplateBackupRule;
 ```
 
-- *Type:* <a href="#@cdktf/provider-upcloud.server.ServerTemplateBackupRule">ServerTemplateBackupRule</a>
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-upcloud.server.ServerTemplateBackupRule">ServerTemplateBackupRule</a>
+
+---
+
+
+### ServerTemplateList <a name="ServerTemplateList" id="@cdktf/provider-upcloud.server.ServerTemplateList"></a>
+
+#### Initializers <a name="Initializers" id="@cdktf/provider-upcloud.server.ServerTemplateList.Initializer"></a>
+
+```typescript
+import { server } from '@cdktf/provider-upcloud'
+
+new server.ServerTemplateList(terraformResource: IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-upcloud.server.ServerTemplateList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktf/provider-upcloud.server.ServerTemplateList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktf/provider-upcloud.server.ServerTemplateList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktf/provider-upcloud.server.ServerTemplateList.Initializer.parameter.terraformResource"></a>
+
+- *Type:* cdktf.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-upcloud.server.ServerTemplateList.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `wrapsSet`<sup>Required</sup> <a name="wrapsSet" id="@cdktf/provider-upcloud.server.ServerTemplateList.Initializer.parameter.wrapsSet"></a>
+
+- *Type:* boolean
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktf/provider-upcloud.server.ServerTemplateList.allWithMapKey">allWithMapKey</a></code> | Creating an iterator for this complex list. |
+| <code><a href="#@cdktf/provider-upcloud.server.ServerTemplateList.computeFqn">computeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-upcloud.server.ServerTemplateList.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktf/provider-upcloud.server.ServerTemplateList.toString">toString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktf/provider-upcloud.server.ServerTemplateList.get">get</a></code> | *No description.* |
+
+---
+
+##### `allWithMapKey` <a name="allWithMapKey" id="@cdktf/provider-upcloud.server.ServerTemplateList.allWithMapKey"></a>
+
+```typescript
+public allWithMapKey(mapKeyAttributeName: string): DynamicListTerraformIterator
+```
+
+Creating an iterator for this complex list.
+
+The list will be converted into a map with the mapKeyAttributeName as the key.
+
+###### `mapKeyAttributeName`<sup>Required</sup> <a name="mapKeyAttributeName" id="@cdktf/provider-upcloud.server.ServerTemplateList.allWithMapKey.parameter.mapKeyAttributeName"></a>
+
+- *Type:* string
+
+---
+
+##### `computeFqn` <a name="computeFqn" id="@cdktf/provider-upcloud.server.ServerTemplateList.computeFqn"></a>
+
+```typescript
+public computeFqn(): string
+```
+
+##### `resolve` <a name="resolve" id="@cdktf/provider-upcloud.server.ServerTemplateList.resolve"></a>
+
+```typescript
+public resolve(_context: IResolveContext): any
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktf/provider-upcloud.server.ServerTemplateList.resolve.parameter._context"></a>
+
+- *Type:* cdktf.IResolveContext
+
+---
+
+##### `toString` <a name="toString" id="@cdktf/provider-upcloud.server.ServerTemplateList.toString"></a>
+
+```typescript
+public toString(): string
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `get` <a name="get" id="@cdktf/provider-upcloud.server.ServerTemplateList.get"></a>
+
+```typescript
+public get(index: number): ServerTemplateOutputReference
+```
+
+###### `index`<sup>Required</sup> <a name="index" id="@cdktf/provider-upcloud.server.ServerTemplateList.get.parameter.index"></a>
+
+- *Type:* number
+
+the index of the item to return.
+
+---
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-upcloud.server.ServerTemplateList.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktf/provider-upcloud.server.ServerTemplateList.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-upcloud.server.ServerTemplateList.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-upcloud.server.ServerTemplate">ServerTemplate</a>[]</code> | *No description.* |
+
+---
+
+##### `creationStack`<sup>Required</sup> <a name="creationStack" id="@cdktf/provider-upcloud.server.ServerTemplateList.property.creationStack"></a>
+
+```typescript
+public readonly creationStack: string[];
+```
+
+- *Type:* string[]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktf/provider-upcloud.server.ServerTemplateList.property.fqn"></a>
+
+```typescript
+public readonly fqn: string;
+```
+
+- *Type:* string
+
+---
+
+##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-upcloud.server.ServerTemplateList.property.internalValue"></a>
+
+```typescript
+public readonly internalValue: IResolvable | ServerTemplate[];
+```
+
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-upcloud.server.ServerTemplate">ServerTemplate</a>[]
 
 ---
 
@@ -5131,13 +5834,15 @@ public readonly internalValue: ServerTemplateBackupRule;
 ```typescript
 import { server } from '@cdktf/provider-upcloud'
 
-new server.ServerTemplateOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
+new server.ServerTemplateOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean)
 ```
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-upcloud.server.ServerTemplateOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktf/provider-upcloud.server.ServerTemplateOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktf/provider-upcloud.server.ServerTemplateOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>number</code> | the index of this item in the list. |
+| <code><a href="#@cdktf/provider-upcloud.server.ServerTemplateOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
 ---
 
@@ -5154,6 +5859,22 @@ The parent resource.
 - *Type:* string
 
 The attribute on the parent resource this class is referencing.
+
+---
+
+##### `complexObjectIndex`<sup>Required</sup> <a name="complexObjectIndex" id="@cdktf/provider-upcloud.server.ServerTemplateOutputReference.Initializer.parameter.complexObjectIndex"></a>
+
+- *Type:* number
+
+the index of this item in the list.
+
+---
+
+##### `complexObjectIsFromSet`<sup>Required</sup> <a name="complexObjectIsFromSet" id="@cdktf/provider-upcloud.server.ServerTemplateOutputReference.Initializer.parameter.complexObjectIsFromSet"></a>
+
+- *Type:* boolean
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
 
 ---
 
@@ -5182,6 +5903,8 @@ The attribute on the parent resource this class is referencing.
 | <code><a href="#@cdktf/provider-upcloud.server.ServerTemplateOutputReference.resetEncrypt">resetEncrypt</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.server.ServerTemplateOutputReference.resetFilesystemAutoresize">resetFilesystemAutoresize</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.server.ServerTemplateOutputReference.resetSize">resetSize</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-upcloud.server.ServerTemplateOutputReference.resetStorage">resetStorage</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-upcloud.server.ServerTemplateOutputReference.resetTier">resetTier</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.server.ServerTemplateOutputReference.resetTitle">resetTitle</a></code> | *No description.* |
 
 ---
@@ -5339,12 +6062,12 @@ Returns a reversible string representation.
 ##### `putBackupRule` <a name="putBackupRule" id="@cdktf/provider-upcloud.server.ServerTemplateOutputReference.putBackupRule"></a>
 
 ```typescript
-public putBackupRule(value: ServerTemplateBackupRule): void
+public putBackupRule(value: IResolvable | ServerTemplateBackupRule[]): void
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-upcloud.server.ServerTemplateOutputReference.putBackupRule.parameter.value"></a>
 
-- *Type:* <a href="#@cdktf/provider-upcloud.server.ServerTemplateBackupRule">ServerTemplateBackupRule</a>
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-upcloud.server.ServerTemplateBackupRule">ServerTemplateBackupRule</a>[]
 
 ---
 
@@ -5390,6 +6113,18 @@ public resetFilesystemAutoresize(): void
 public resetSize(): void
 ```
 
+##### `resetStorage` <a name="resetStorage" id="@cdktf/provider-upcloud.server.ServerTemplateOutputReference.resetStorage"></a>
+
+```typescript
+public resetStorage(): void
+```
+
+##### `resetTier` <a name="resetTier" id="@cdktf/provider-upcloud.server.ServerTemplateOutputReference.resetTier"></a>
+
+```typescript
+public resetTier(): void
+```
+
 ##### `resetTitle` <a name="resetTitle" id="@cdktf/provider-upcloud.server.ServerTemplateOutputReference.resetTitle"></a>
 
 ```typescript
@@ -5403,17 +6138,17 @@ public resetTitle(): void
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-upcloud.server.ServerTemplateOutputReference.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-upcloud.server.ServerTemplateOutputReference.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-upcloud.server.ServerTemplateOutputReference.property.backupRule">backupRule</a></code> | <code><a href="#@cdktf/provider-upcloud.server.ServerTemplateBackupRuleOutputReference">ServerTemplateBackupRuleOutputReference</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-upcloud.server.ServerTemplateOutputReference.property.backupRule">backupRule</a></code> | <code><a href="#@cdktf/provider-upcloud.server.ServerTemplateBackupRuleList">ServerTemplateBackupRuleList</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.server.ServerTemplateOutputReference.property.id">id</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-upcloud.server.ServerTemplateOutputReference.property.tier">tier</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.server.ServerTemplateOutputReference.property.addressInput">addressInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.server.ServerTemplateOutputReference.property.addressPositionInput">addressPositionInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-upcloud.server.ServerTemplateOutputReference.property.backupRuleInput">backupRuleInput</a></code> | <code><a href="#@cdktf/provider-upcloud.server.ServerTemplateBackupRule">ServerTemplateBackupRule</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-upcloud.server.ServerTemplateOutputReference.property.backupRuleInput">backupRuleInput</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-upcloud.server.ServerTemplateBackupRule">ServerTemplateBackupRule</a>[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.server.ServerTemplateOutputReference.property.deleteAutoresizeBackupInput">deleteAutoresizeBackupInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.server.ServerTemplateOutputReference.property.encryptInput">encryptInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.server.ServerTemplateOutputReference.property.filesystemAutoresizeInput">filesystemAutoresizeInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.server.ServerTemplateOutputReference.property.sizeInput">sizeInput</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.server.ServerTemplateOutputReference.property.storageInput">storageInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-upcloud.server.ServerTemplateOutputReference.property.tierInput">tierInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.server.ServerTemplateOutputReference.property.titleInput">titleInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.server.ServerTemplateOutputReference.property.address">address</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.server.ServerTemplateOutputReference.property.addressPosition">addressPosition</a></code> | <code>string</code> | *No description.* |
@@ -5422,8 +6157,9 @@ public resetTitle(): void
 | <code><a href="#@cdktf/provider-upcloud.server.ServerTemplateOutputReference.property.filesystemAutoresize">filesystemAutoresize</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.server.ServerTemplateOutputReference.property.size">size</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.server.ServerTemplateOutputReference.property.storage">storage</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-upcloud.server.ServerTemplateOutputReference.property.tier">tier</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.server.ServerTemplateOutputReference.property.title">title</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-upcloud.server.ServerTemplateOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktf/provider-upcloud.server.ServerTemplate">ServerTemplate</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-upcloud.server.ServerTemplateOutputReference.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-upcloud.server.ServerTemplate">ServerTemplate</a></code> | *No description.* |
 
 ---
 
@@ -5454,10 +6190,10 @@ public readonly fqn: string;
 ##### `backupRule`<sup>Required</sup> <a name="backupRule" id="@cdktf/provider-upcloud.server.ServerTemplateOutputReference.property.backupRule"></a>
 
 ```typescript
-public readonly backupRule: ServerTemplateBackupRuleOutputReference;
+public readonly backupRule: ServerTemplateBackupRuleList;
 ```
 
-- *Type:* <a href="#@cdktf/provider-upcloud.server.ServerTemplateBackupRuleOutputReference">ServerTemplateBackupRuleOutputReference</a>
+- *Type:* <a href="#@cdktf/provider-upcloud.server.ServerTemplateBackupRuleList">ServerTemplateBackupRuleList</a>
 
 ---
 
@@ -5465,16 +6201,6 @@ public readonly backupRule: ServerTemplateBackupRuleOutputReference;
 
 ```typescript
 public readonly id: string;
-```
-
-- *Type:* string
-
----
-
-##### `tier`<sup>Required</sup> <a name="tier" id="@cdktf/provider-upcloud.server.ServerTemplateOutputReference.property.tier"></a>
-
-```typescript
-public readonly tier: string;
 ```
 
 - *Type:* string
@@ -5504,10 +6230,10 @@ public readonly addressPositionInput: string;
 ##### `backupRuleInput`<sup>Optional</sup> <a name="backupRuleInput" id="@cdktf/provider-upcloud.server.ServerTemplateOutputReference.property.backupRuleInput"></a>
 
 ```typescript
-public readonly backupRuleInput: ServerTemplateBackupRule;
+public readonly backupRuleInput: IResolvable | ServerTemplateBackupRule[];
 ```
 
-- *Type:* <a href="#@cdktf/provider-upcloud.server.ServerTemplateBackupRule">ServerTemplateBackupRule</a>
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-upcloud.server.ServerTemplateBackupRule">ServerTemplateBackupRule</a>[]
 
 ---
 
@@ -5555,6 +6281,16 @@ public readonly sizeInput: number;
 
 ```typescript
 public readonly storageInput: string;
+```
+
+- *Type:* string
+
+---
+
+##### `tierInput`<sup>Optional</sup> <a name="tierInput" id="@cdktf/provider-upcloud.server.ServerTemplateOutputReference.property.tierInput"></a>
+
+```typescript
+public readonly tierInput: string;
 ```
 
 - *Type:* string
@@ -5641,6 +6377,16 @@ public readonly storage: string;
 
 ---
 
+##### `tier`<sup>Required</sup> <a name="tier" id="@cdktf/provider-upcloud.server.ServerTemplateOutputReference.property.tier"></a>
+
+```typescript
+public readonly tier: string;
+```
+
+- *Type:* string
+
+---
+
 ##### `title`<sup>Required</sup> <a name="title" id="@cdktf/provider-upcloud.server.ServerTemplateOutputReference.property.title"></a>
 
 ```typescript
@@ -5654,10 +6400,10 @@ public readonly title: string;
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-upcloud.server.ServerTemplateOutputReference.property.internalValue"></a>
 
 ```typescript
-public readonly internalValue: ServerTemplate;
+public readonly internalValue: IResolvable | ServerTemplate;
 ```
 
-- *Type:* <a href="#@cdktf/provider-upcloud.server.ServerTemplate">ServerTemplate</a>
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-upcloud.server.ServerTemplate">ServerTemplate</a>
 
 ---
 
