@@ -4,12 +4,12 @@
 
 ### LoadbalancerResolver <a name="LoadbalancerResolver" id="@cdktf/provider-upcloud.loadbalancerResolver.LoadbalancerResolver"></a>
 
-Represents a {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.17.0/docs/resources/loadbalancer_resolver upcloud_loadbalancer_resolver}.
+Represents a {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.18.0/docs/resources/loadbalancer_resolver upcloud_loadbalancer_resolver}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-upcloud.loadbalancerResolver.LoadbalancerResolver.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v14/loadbalancerresolver"
+import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/loadbalancerresolver"
 
 loadbalancerresolver.NewLoadbalancerResolver(scope Construct, id *string, config LoadbalancerResolverConfig) LoadbalancerResolver
 ```
@@ -378,7 +378,7 @@ Full id of resource to move to, e.g. "aws_s3_bucket.example".
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-upcloud.loadbalancerResolver.LoadbalancerResolver.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v14/loadbalancerresolver"
+import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/loadbalancerresolver"
 
 loadbalancerresolver.LoadbalancerResolver_IsConstruct(x interface{}) *bool
 ```
@@ -410,7 +410,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-upcloud.loadbalancerResolver.LoadbalancerResolver.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v14/loadbalancerresolver"
+import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/loadbalancerresolver"
 
 loadbalancerresolver.LoadbalancerResolver_IsTerraformElement(x interface{}) *bool
 ```
@@ -424,7 +424,7 @@ loadbalancerresolver.LoadbalancerResolver_IsTerraformElement(x interface{}) *boo
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-upcloud.loadbalancerResolver.LoadbalancerResolver.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v14/loadbalancerresolver"
+import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/loadbalancerresolver"
 
 loadbalancerresolver.LoadbalancerResolver_IsTerraformResource(x interface{}) *bool
 ```
@@ -438,7 +438,7 @@ loadbalancerresolver.LoadbalancerResolver_IsTerraformResource(x interface{}) *bo
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-upcloud.loadbalancerResolver.LoadbalancerResolver.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v14/loadbalancerresolver"
+import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/loadbalancerresolver"
 
 loadbalancerresolver.LoadbalancerResolver_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -467,7 +467,7 @@ The construct id used in the generated config for the LoadbalancerResolver to im
 
 The id of the existing LoadbalancerResolver that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.17.0/docs/resources/loadbalancer_resolver#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.18.0/docs/resources/loadbalancer_resolver#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -854,7 +854,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-upcloud.loadbalancerResolver.LoadbalancerResolverConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v14/loadbalancerresolver"
+import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/loadbalancerresolver"
 
 &loadbalancerresolver.LoadbalancerResolverConfig {
 	Connection: interface{},
@@ -977,7 +977,7 @@ CacheInvalid *f64
 
 Time in seconds to cache invalid results.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.17.0/docs/resources/loadbalancer_resolver#cache_invalid LoadbalancerResolver#cache_invalid}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.18.0/docs/resources/loadbalancer_resolver#cache_invalid LoadbalancerResolver#cache_invalid}
 
 ---
 
@@ -991,7 +991,7 @@ CacheValid *f64
 
 Time in seconds to cache valid results.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.17.0/docs/resources/loadbalancer_resolver#cache_valid LoadbalancerResolver#cache_valid}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.18.0/docs/resources/loadbalancer_resolver#cache_valid LoadbalancerResolver#cache_valid}
 
 ---
 
@@ -1005,7 +1005,7 @@ Loadbalancer *string
 
 ID of the load balancer to which the resolver is connected.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.17.0/docs/resources/loadbalancer_resolver#loadbalancer LoadbalancerResolver#loadbalancer}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.18.0/docs/resources/loadbalancer_resolver#loadbalancer LoadbalancerResolver#loadbalancer}
 
 ---
 
@@ -1019,7 +1019,7 @@ Name *string
 
 The name of the resolver. Must be unique within the service.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.17.0/docs/resources/loadbalancer_resolver#name LoadbalancerResolver#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.18.0/docs/resources/loadbalancer_resolver#name LoadbalancerResolver#name}
 
 ---
 
@@ -1035,7 +1035,7 @@ List of nameserver IP addresses.
 
 Nameserver can reside in public internet or in customer private network. Port is optional, if missing then default 53 will be used.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.17.0/docs/resources/loadbalancer_resolver#nameservers LoadbalancerResolver#nameservers}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.18.0/docs/resources/loadbalancer_resolver#nameservers LoadbalancerResolver#nameservers}
 
 ---
 
@@ -1049,7 +1049,7 @@ Retries *f64
 
 Number of retries on failure.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.17.0/docs/resources/loadbalancer_resolver#retries LoadbalancerResolver#retries}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.18.0/docs/resources/loadbalancer_resolver#retries LoadbalancerResolver#retries}
 
 ---
 
@@ -1063,7 +1063,7 @@ Timeout *f64
 
 Timeout for the query in seconds.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.17.0/docs/resources/loadbalancer_resolver#timeout LoadbalancerResolver#timeout}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.18.0/docs/resources/loadbalancer_resolver#timeout LoadbalancerResolver#timeout}
 
 ---
 
@@ -1077,7 +1077,7 @@ TimeoutRetry *f64
 
 Timeout for the query retries in seconds.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.17.0/docs/resources/loadbalancer_resolver#timeout_retry LoadbalancerResolver#timeout_retry}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.18.0/docs/resources/loadbalancer_resolver#timeout_retry LoadbalancerResolver#timeout_retry}
 
 ---
 
