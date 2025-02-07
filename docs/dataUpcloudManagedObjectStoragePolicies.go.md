@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5
 #### Initializers <a name="Initializers" id="@cdktf/provider-upcloud.dataUpcloudManagedObjectStoragePolicies.DataUpcloudManagedObjectStoragePolicies.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v14/dataupcloudmanagedobjectstoragepolicies"
+import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/dataupcloudmanagedobjectstoragepolicies"
 
 dataupcloudmanagedobjectstoragepolicies.NewDataUpcloudManagedObjectStoragePolicies(scope Construct, id *string, config DataUpcloudManagedObjectStoragePoliciesConfig) DataUpcloudManagedObjectStoragePolicies
 ```
@@ -283,7 +283,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-upcloud.dataUpcloudManagedObjectStoragePolicies.DataUpcloudManagedObjectStoragePolicies.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v14/dataupcloudmanagedobjectstoragepolicies"
+import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/dataupcloudmanagedobjectstoragepolicies"
 
 dataupcloudmanagedobjectstoragepolicies.DataUpcloudManagedObjectStoragePolicies_IsConstruct(x interface{}) *bool
 ```
@@ -315,7 +315,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-upcloud.dataUpcloudManagedObjectStoragePolicies.DataUpcloudManagedObjectStoragePolicies.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v14/dataupcloudmanagedobjectstoragepolicies"
+import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/dataupcloudmanagedobjectstoragepolicies"
 
 dataupcloudmanagedobjectstoragepolicies.DataUpcloudManagedObjectStoragePolicies_IsTerraformElement(x interface{}) *bool
 ```
@@ -329,7 +329,7 @@ dataupcloudmanagedobjectstoragepolicies.DataUpcloudManagedObjectStoragePolicies_
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-upcloud.dataUpcloudManagedObjectStoragePolicies.DataUpcloudManagedObjectStoragePolicies.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v14/dataupcloudmanagedobjectstoragepolicies"
+import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/dataupcloudmanagedobjectstoragepolicies"
 
 dataupcloudmanagedobjectstoragepolicies.DataUpcloudManagedObjectStoragePolicies_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -343,7 +343,7 @@ dataupcloudmanagedobjectstoragepolicies.DataUpcloudManagedObjectStoragePolicies_
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-upcloud.dataUpcloudManagedObjectStoragePolicies.DataUpcloudManagedObjectStoragePolicies.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v14/dataupcloudmanagedobjectstoragepolicies"
+import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/dataupcloudmanagedobjectstoragepolicies"
 
 dataupcloudmanagedobjectstoragepolicies.DataUpcloudManagedObjectStoragePolicies_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -605,7 +605,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-upcloud.dataUpcloudManagedObjectStoragePolicies.DataUpcloudManagedObjectStoragePoliciesConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v14/dataupcloudmanagedobjectstoragepolicies"
+import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/dataupcloudmanagedobjectstoragepolicies"
 
 &dataupcloudmanagedobjectstoragepolicies.DataUpcloudManagedObjectStoragePoliciesConfig {
 	Connection: interface{},
@@ -740,7 +740,7 @@ If you experience problems setting this value it might not be settable. Please t
 #### Initializer <a name="Initializer" id="@cdktf/provider-upcloud.dataUpcloudManagedObjectStoragePolicies.DataUpcloudManagedObjectStoragePoliciesPolicies.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v14/dataupcloudmanagedobjectstoragepolicies"
+import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/dataupcloudmanagedobjectstoragepolicies"
 
 &dataupcloudmanagedobjectstoragepolicies.DataUpcloudManagedObjectStoragePoliciesPolicies {
 
@@ -755,7 +755,7 @@ import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v14/dataupcloudmanage
 #### Initializers <a name="Initializers" id="@cdktf/provider-upcloud.dataUpcloudManagedObjectStoragePolicies.DataUpcloudManagedObjectStoragePoliciesPoliciesList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v14/dataupcloudmanagedobjectstoragepolicies"
+import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/dataupcloudmanagedobjectstoragepolicies"
 
 dataupcloudmanagedobjectstoragepolicies.NewDataUpcloudManagedObjectStoragePoliciesPoliciesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataUpcloudManagedObjectStoragePoliciesPoliciesList
 ```
@@ -904,7 +904,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-upcloud.dataUpcloudManagedObjectStoragePolicies.DataUpcloudManagedObjectStoragePoliciesPoliciesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v14/dataupcloudmanagedobjectstoragepolicies"
+import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/dataupcloudmanagedobjectstoragepolicies"
 
 dataupcloudmanagedobjectstoragepolicies.NewDataUpcloudManagedObjectStoragePoliciesPoliciesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataUpcloudManagedObjectStoragePoliciesPoliciesOutputReference
 ```
