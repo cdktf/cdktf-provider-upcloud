@@ -4,7 +4,7 @@
 
 ### LoadbalancerFrontendRule <a name="LoadbalancerFrontendRule" id="@cdktf/provider-upcloud.loadbalancerFrontendRule.LoadbalancerFrontendRule"></a>
 
-Represents a {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.18.0/docs/resources/loadbalancer_frontend_rule upcloud_loadbalancer_frontend_rule}.
+Represents a {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.19.0/docs/resources/loadbalancer_frontend_rule upcloud_loadbalancer_frontend_rule}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-upcloud.loadbalancerFrontendRule.LoadbalancerFrontendRule.Initializer"></a>
 
@@ -514,7 +514,7 @@ The construct id used in the generated config for the LoadbalancerFrontendRule t
 
 The id of the existing LoadbalancerFrontendRule that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.18.0/docs/resources/loadbalancer_frontend_rule#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.19.0/docs/resources/loadbalancer_frontend_rule#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -886,7 +886,7 @@ public readonly httpRedirect: IResolvable | LoadbalancerFrontendRuleActionsHttpR
 
 http_redirect block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.18.0/docs/resources/loadbalancer_frontend_rule#http_redirect LoadbalancerFrontendRule#http_redirect}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.19.0/docs/resources/loadbalancer_frontend_rule#http_redirect LoadbalancerFrontendRule#http_redirect}
 
 ---
 
@@ -900,7 +900,7 @@ public readonly httpReturn: IResolvable | LoadbalancerFrontendRuleActionsHttpRet
 
 http_return block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.18.0/docs/resources/loadbalancer_frontend_rule#http_return LoadbalancerFrontendRule#http_return}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.19.0/docs/resources/loadbalancer_frontend_rule#http_return LoadbalancerFrontendRule#http_return}
 
 ---
 
@@ -914,7 +914,7 @@ public readonly setForwardedHeaders: IResolvable | LoadbalancerFrontendRuleActio
 
 set_forwarded_headers block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.18.0/docs/resources/loadbalancer_frontend_rule#set_forwarded_headers LoadbalancerFrontendRule#set_forwarded_headers}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.19.0/docs/resources/loadbalancer_frontend_rule#set_forwarded_headers LoadbalancerFrontendRule#set_forwarded_headers}
 
 ---
 
@@ -928,7 +928,7 @@ public readonly setRequestHeader: IResolvable | LoadbalancerFrontendRuleActionsS
 
 set_request_header block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.18.0/docs/resources/loadbalancer_frontend_rule#set_request_header LoadbalancerFrontendRule#set_request_header}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.19.0/docs/resources/loadbalancer_frontend_rule#set_request_header LoadbalancerFrontendRule#set_request_header}
 
 ---
 
@@ -942,7 +942,7 @@ public readonly setResponseHeader: IResolvable | LoadbalancerFrontendRuleActions
 
 set_response_header block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.18.0/docs/resources/loadbalancer_frontend_rule#set_response_header LoadbalancerFrontendRule#set_response_header}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.19.0/docs/resources/loadbalancer_frontend_rule#set_response_header LoadbalancerFrontendRule#set_response_header}
 
 ---
 
@@ -956,7 +956,7 @@ public readonly tcpReject: IResolvable | LoadbalancerFrontendRuleActionsTcpRejec
 
 tcp_reject block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.18.0/docs/resources/loadbalancer_frontend_rule#tcp_reject LoadbalancerFrontendRule#tcp_reject}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.19.0/docs/resources/loadbalancer_frontend_rule#tcp_reject LoadbalancerFrontendRule#tcp_reject}
 
 ---
 
@@ -970,7 +970,7 @@ public readonly useBackend: IResolvable | LoadbalancerFrontendRuleActionsUseBack
 
 use_backend block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.18.0/docs/resources/loadbalancer_frontend_rule#use_backend LoadbalancerFrontendRule#use_backend}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.19.0/docs/resources/loadbalancer_frontend_rule#use_backend LoadbalancerFrontendRule#use_backend}
 
 ---
 
@@ -990,6 +990,7 @@ const loadbalancerFrontendRuleActionsHttpRedirect: loadbalancerFrontendRule.Load
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-upcloud.loadbalancerFrontendRule.LoadbalancerFrontendRuleActionsHttpRedirect.property.location">location</a></code> | <code>string</code> | Target location. |
 | <code><a href="#@cdktf/provider-upcloud.loadbalancerFrontendRule.LoadbalancerFrontendRuleActionsHttpRedirect.property.scheme">scheme</a></code> | <code>string</code> | Target scheme. |
+| <code><a href="#@cdktf/provider-upcloud.loadbalancerFrontendRule.LoadbalancerFrontendRuleActionsHttpRedirect.property.status">status</a></code> | <code>number</code> | HTTP status code. |
 
 ---
 
@@ -1003,7 +1004,7 @@ public readonly location: string;
 
 Target location.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.18.0/docs/resources/loadbalancer_frontend_rule#location LoadbalancerFrontendRule#location}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.19.0/docs/resources/loadbalancer_frontend_rule#location LoadbalancerFrontendRule#location}
 
 ---
 
@@ -1017,7 +1018,21 @@ public readonly scheme: string;
 
 Target scheme.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.18.0/docs/resources/loadbalancer_frontend_rule#scheme LoadbalancerFrontendRule#scheme}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.19.0/docs/resources/loadbalancer_frontend_rule#scheme LoadbalancerFrontendRule#scheme}
+
+---
+
+##### `status`<sup>Optional</sup> <a name="status" id="@cdktf/provider-upcloud.loadbalancerFrontendRule.LoadbalancerFrontendRuleActionsHttpRedirect.property.status"></a>
+
+```typescript
+public readonly status: number;
+```
+
+- *Type:* number
+
+HTTP status code.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.19.0/docs/resources/loadbalancer_frontend_rule#status LoadbalancerFrontendRule#status}
 
 ---
 
@@ -1051,7 +1066,7 @@ public readonly contentType: string;
 
 Content type.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.18.0/docs/resources/loadbalancer_frontend_rule#content_type LoadbalancerFrontendRule#content_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.19.0/docs/resources/loadbalancer_frontend_rule#content_type LoadbalancerFrontendRule#content_type}
 
 ---
 
@@ -1065,7 +1080,7 @@ public readonly payload: string;
 
 The payload.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.18.0/docs/resources/loadbalancer_frontend_rule#payload LoadbalancerFrontendRule#payload}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.19.0/docs/resources/loadbalancer_frontend_rule#payload LoadbalancerFrontendRule#payload}
 
 ---
 
@@ -1079,7 +1094,7 @@ public readonly status: number;
 
 HTTP status code.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.18.0/docs/resources/loadbalancer_frontend_rule#status LoadbalancerFrontendRule#status}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.19.0/docs/resources/loadbalancer_frontend_rule#status LoadbalancerFrontendRule#status}
 
 ---
 
@@ -1097,7 +1112,7 @@ const loadbalancerFrontendRuleActionsSetForwardedHeaders: loadbalancerFrontendRu
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-upcloud.loadbalancerFrontendRule.LoadbalancerFrontendRuleActionsSetForwardedHeaders.property.active">active</a></code> | <code>boolean \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.18.0/docs/resources/loadbalancer_frontend_rule#active LoadbalancerFrontendRule#active}. |
+| <code><a href="#@cdktf/provider-upcloud.loadbalancerFrontendRule.LoadbalancerFrontendRuleActionsSetForwardedHeaders.property.active">active</a></code> | <code>boolean \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.19.0/docs/resources/loadbalancer_frontend_rule#active LoadbalancerFrontendRule#active}. |
 
 ---
 
@@ -1109,7 +1124,7 @@ public readonly active: boolean | IResolvable;
 
 - *Type:* boolean | cdktf.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.18.0/docs/resources/loadbalancer_frontend_rule#active LoadbalancerFrontendRule#active}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.19.0/docs/resources/loadbalancer_frontend_rule#active LoadbalancerFrontendRule#active}.
 
 ---
 
@@ -1142,7 +1157,7 @@ public readonly header: string;
 
 Header name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.18.0/docs/resources/loadbalancer_frontend_rule#header LoadbalancerFrontendRule#header}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.19.0/docs/resources/loadbalancer_frontend_rule#header LoadbalancerFrontendRule#header}
 
 ---
 
@@ -1156,7 +1171,7 @@ public readonly value: string;
 
 Header value.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.18.0/docs/resources/loadbalancer_frontend_rule#value LoadbalancerFrontendRule#value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.19.0/docs/resources/loadbalancer_frontend_rule#value LoadbalancerFrontendRule#value}
 
 ---
 
@@ -1189,7 +1204,7 @@ public readonly header: string;
 
 Header name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.18.0/docs/resources/loadbalancer_frontend_rule#header LoadbalancerFrontendRule#header}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.19.0/docs/resources/loadbalancer_frontend_rule#header LoadbalancerFrontendRule#header}
 
 ---
 
@@ -1203,7 +1218,7 @@ public readonly value: string;
 
 Header value.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.18.0/docs/resources/loadbalancer_frontend_rule#value LoadbalancerFrontendRule#value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.19.0/docs/resources/loadbalancer_frontend_rule#value LoadbalancerFrontendRule#value}
 
 ---
 
@@ -1235,7 +1250,7 @@ public readonly active: boolean | IResolvable;
 
 Indicates if the rule is active.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.18.0/docs/resources/loadbalancer_frontend_rule#active LoadbalancerFrontendRule#active}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.19.0/docs/resources/loadbalancer_frontend_rule#active LoadbalancerFrontendRule#active}
 
 ---
 
@@ -1267,7 +1282,7 @@ public readonly backendName: string;
 
 The name of the backend where traffic will be routed.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.18.0/docs/resources/loadbalancer_frontend_rule#backend_name LoadbalancerFrontendRule#backend_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.19.0/docs/resources/loadbalancer_frontend_rule#backend_name LoadbalancerFrontendRule#backend_name}
 
 ---
 
@@ -1381,7 +1396,7 @@ public readonly frontend: string;
 
 ID of the load balancer frontend to which the frontend rule is connected.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.18.0/docs/resources/loadbalancer_frontend_rule#frontend LoadbalancerFrontendRule#frontend}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.19.0/docs/resources/loadbalancer_frontend_rule#frontend LoadbalancerFrontendRule#frontend}
 
 ---
 
@@ -1395,7 +1410,7 @@ public readonly name: string;
 
 The name of the frontend rule. Must be unique within the frontend.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.18.0/docs/resources/loadbalancer_frontend_rule#name LoadbalancerFrontendRule#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.19.0/docs/resources/loadbalancer_frontend_rule#name LoadbalancerFrontendRule#name}
 
 ---
 
@@ -1409,7 +1424,7 @@ public readonly priority: number;
 
 Rule with the higher priority goes first. Rules with the same priority processed in alphabetical order.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.18.0/docs/resources/loadbalancer_frontend_rule#priority LoadbalancerFrontendRule#priority}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.19.0/docs/resources/loadbalancer_frontend_rule#priority LoadbalancerFrontendRule#priority}
 
 ---
 
@@ -1423,7 +1438,7 @@ public readonly actions: IResolvable | LoadbalancerFrontendRuleActions[];
 
 actions block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.18.0/docs/resources/loadbalancer_frontend_rule#actions LoadbalancerFrontendRule#actions}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.19.0/docs/resources/loadbalancer_frontend_rule#actions LoadbalancerFrontendRule#actions}
 
 ---
 
@@ -1437,7 +1452,7 @@ public readonly matchers: IResolvable | LoadbalancerFrontendRuleMatchers[];
 
 matchers block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.18.0/docs/resources/loadbalancer_frontend_rule#matchers LoadbalancerFrontendRule#matchers}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.19.0/docs/resources/loadbalancer_frontend_rule#matchers LoadbalancerFrontendRule#matchers}
 
 ---
 
@@ -1451,7 +1466,7 @@ public readonly matchingCondition: string;
 
 Defines boolean operator used to combine multiple matchers. Defaults to `and`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.18.0/docs/resources/loadbalancer_frontend_rule#matching_condition LoadbalancerFrontendRule#matching_condition}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.19.0/docs/resources/loadbalancer_frontend_rule#matching_condition LoadbalancerFrontendRule#matching_condition}
 
 ---
 
@@ -1500,7 +1515,7 @@ public readonly bodySize: IResolvable | LoadbalancerFrontendRuleMatchersBodySize
 
 body_size block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.18.0/docs/resources/loadbalancer_frontend_rule#body_size LoadbalancerFrontendRule#body_size}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.19.0/docs/resources/loadbalancer_frontend_rule#body_size LoadbalancerFrontendRule#body_size}
 
 ---
 
@@ -1514,7 +1529,7 @@ public readonly bodySizeRange: IResolvable | LoadbalancerFrontendRuleMatchersBod
 
 body_size_range block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.18.0/docs/resources/loadbalancer_frontend_rule#body_size_range LoadbalancerFrontendRule#body_size_range}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.19.0/docs/resources/loadbalancer_frontend_rule#body_size_range LoadbalancerFrontendRule#body_size_range}
 
 ---
 
@@ -1528,7 +1543,7 @@ public readonly cookie: IResolvable | LoadbalancerFrontendRuleMatchersCookie[];
 
 cookie block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.18.0/docs/resources/loadbalancer_frontend_rule#cookie LoadbalancerFrontendRule#cookie}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.19.0/docs/resources/loadbalancer_frontend_rule#cookie LoadbalancerFrontendRule#cookie}
 
 ---
 
@@ -1542,7 +1557,7 @@ public readonly header: IResolvable | LoadbalancerFrontendRuleMatchersHeader[];
 
 header block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.18.0/docs/resources/loadbalancer_frontend_rule#header LoadbalancerFrontendRule#header}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.19.0/docs/resources/loadbalancer_frontend_rule#header LoadbalancerFrontendRule#header}
 
 ---
 
@@ -1556,7 +1571,7 @@ public readonly host: IResolvable | LoadbalancerFrontendRuleMatchersHost[];
 
 host block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.18.0/docs/resources/loadbalancer_frontend_rule#host LoadbalancerFrontendRule#host}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.19.0/docs/resources/loadbalancer_frontend_rule#host LoadbalancerFrontendRule#host}
 
 ---
 
@@ -1570,7 +1585,7 @@ public readonly httpMethod: IResolvable | LoadbalancerFrontendRuleMatchersHttpMe
 
 http_method block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.18.0/docs/resources/loadbalancer_frontend_rule#http_method LoadbalancerFrontendRule#http_method}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.19.0/docs/resources/loadbalancer_frontend_rule#http_method LoadbalancerFrontendRule#http_method}
 
 ---
 
@@ -1584,7 +1599,7 @@ public readonly httpStatus: IResolvable | LoadbalancerFrontendRuleMatchersHttpSt
 
 http_status block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.18.0/docs/resources/loadbalancer_frontend_rule#http_status LoadbalancerFrontendRule#http_status}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.19.0/docs/resources/loadbalancer_frontend_rule#http_status LoadbalancerFrontendRule#http_status}
 
 ---
 
@@ -1598,7 +1613,7 @@ public readonly httpStatusRange: IResolvable | LoadbalancerFrontendRuleMatchersH
 
 http_status_range block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.18.0/docs/resources/loadbalancer_frontend_rule#http_status_range LoadbalancerFrontendRule#http_status_range}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.19.0/docs/resources/loadbalancer_frontend_rule#http_status_range LoadbalancerFrontendRule#http_status_range}
 
 ---
 
@@ -1612,7 +1627,7 @@ public readonly numMembersUp: IResolvable | LoadbalancerFrontendRuleMatchersNumM
 
 num_members_up block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.18.0/docs/resources/loadbalancer_frontend_rule#num_members_up LoadbalancerFrontendRule#num_members_up}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.19.0/docs/resources/loadbalancer_frontend_rule#num_members_up LoadbalancerFrontendRule#num_members_up}
 
 ---
 
@@ -1626,7 +1641,7 @@ public readonly path: IResolvable | LoadbalancerFrontendRuleMatchersPath[];
 
 path block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.18.0/docs/resources/loadbalancer_frontend_rule#path LoadbalancerFrontendRule#path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.19.0/docs/resources/loadbalancer_frontend_rule#path LoadbalancerFrontendRule#path}
 
 ---
 
@@ -1640,7 +1655,7 @@ public readonly requestHeader: IResolvable | LoadbalancerFrontendRuleMatchersReq
 
 request_header block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.18.0/docs/resources/loadbalancer_frontend_rule#request_header LoadbalancerFrontendRule#request_header}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.19.0/docs/resources/loadbalancer_frontend_rule#request_header LoadbalancerFrontendRule#request_header}
 
 ---
 
@@ -1654,7 +1669,7 @@ public readonly responseHeader: IResolvable | LoadbalancerFrontendRuleMatchersRe
 
 response_header block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.18.0/docs/resources/loadbalancer_frontend_rule#response_header LoadbalancerFrontendRule#response_header}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.19.0/docs/resources/loadbalancer_frontend_rule#response_header LoadbalancerFrontendRule#response_header}
 
 ---
 
@@ -1668,7 +1683,7 @@ public readonly srcIp: IResolvable | LoadbalancerFrontendRuleMatchersSrcIp[];
 
 src_ip block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.18.0/docs/resources/loadbalancer_frontend_rule#src_ip LoadbalancerFrontendRule#src_ip}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.19.0/docs/resources/loadbalancer_frontend_rule#src_ip LoadbalancerFrontendRule#src_ip}
 
 ---
 
@@ -1682,7 +1697,7 @@ public readonly srcPort: IResolvable | LoadbalancerFrontendRuleMatchersSrcPort[]
 
 src_port block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.18.0/docs/resources/loadbalancer_frontend_rule#src_port LoadbalancerFrontendRule#src_port}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.19.0/docs/resources/loadbalancer_frontend_rule#src_port LoadbalancerFrontendRule#src_port}
 
 ---
 
@@ -1696,7 +1711,7 @@ public readonly srcPortRange: IResolvable | LoadbalancerFrontendRuleMatchersSrcP
 
 src_port_range block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.18.0/docs/resources/loadbalancer_frontend_rule#src_port_range LoadbalancerFrontendRule#src_port_range}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.19.0/docs/resources/loadbalancer_frontend_rule#src_port_range LoadbalancerFrontendRule#src_port_range}
 
 ---
 
@@ -1710,7 +1725,7 @@ public readonly url: IResolvable | LoadbalancerFrontendRuleMatchersUrl[];
 
 url block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.18.0/docs/resources/loadbalancer_frontend_rule#url LoadbalancerFrontendRule#url}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.19.0/docs/resources/loadbalancer_frontend_rule#url LoadbalancerFrontendRule#url}
 
 ---
 
@@ -1724,7 +1739,7 @@ public readonly urlParam: IResolvable | LoadbalancerFrontendRuleMatchersUrlParam
 
 url_param block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.18.0/docs/resources/loadbalancer_frontend_rule#url_param LoadbalancerFrontendRule#url_param}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.19.0/docs/resources/loadbalancer_frontend_rule#url_param LoadbalancerFrontendRule#url_param}
 
 ---
 
@@ -1738,7 +1753,7 @@ public readonly urlQuery: IResolvable | LoadbalancerFrontendRuleMatchersUrlQuery
 
 url_query block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.18.0/docs/resources/loadbalancer_frontend_rule#url_query LoadbalancerFrontendRule#url_query}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.19.0/docs/resources/loadbalancer_frontend_rule#url_query LoadbalancerFrontendRule#url_query}
 
 ---
 
@@ -1772,7 +1787,7 @@ public readonly method: string;
 
 Match method (`equal`, `greater`, `greater_or_equal`, `less`, `less_or_equal`).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.18.0/docs/resources/loadbalancer_frontend_rule#method LoadbalancerFrontendRule#method}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.19.0/docs/resources/loadbalancer_frontend_rule#method LoadbalancerFrontendRule#method}
 
 ---
 
@@ -1786,7 +1801,7 @@ public readonly value: number;
 
 Integer value.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.18.0/docs/resources/loadbalancer_frontend_rule#value LoadbalancerFrontendRule#value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.19.0/docs/resources/loadbalancer_frontend_rule#value LoadbalancerFrontendRule#value}
 
 ---
 
@@ -1800,7 +1815,7 @@ public readonly inverse: boolean | IResolvable;
 
 Defines if the condition should be inverted. Works similarly to logical NOT operator.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.18.0/docs/resources/loadbalancer_frontend_rule#inverse LoadbalancerFrontendRule#inverse}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.19.0/docs/resources/loadbalancer_frontend_rule#inverse LoadbalancerFrontendRule#inverse}
 
 ---
 
@@ -1834,7 +1849,7 @@ public readonly rangeEnd: number;
 
 Integer value.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.18.0/docs/resources/loadbalancer_frontend_rule#range_end LoadbalancerFrontendRule#range_end}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.19.0/docs/resources/loadbalancer_frontend_rule#range_end LoadbalancerFrontendRule#range_end}
 
 ---
 
@@ -1848,7 +1863,7 @@ public readonly rangeStart: number;
 
 Integer value.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.18.0/docs/resources/loadbalancer_frontend_rule#range_start LoadbalancerFrontendRule#range_start}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.19.0/docs/resources/loadbalancer_frontend_rule#range_start LoadbalancerFrontendRule#range_start}
 
 ---
 
@@ -1862,7 +1877,7 @@ public readonly inverse: boolean | IResolvable;
 
 Defines if the condition should be inverted. Works similarly to logical NOT operator.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.18.0/docs/resources/loadbalancer_frontend_rule#inverse LoadbalancerFrontendRule#inverse}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.19.0/docs/resources/loadbalancer_frontend_rule#inverse LoadbalancerFrontendRule#inverse}
 
 ---
 
@@ -1900,7 +1915,7 @@ Match method (`exact`, `substring`, `regexp`, `starts`, `ends`, `domain`, `ip`, 
 
 Matcher with `exists` and `ip` methods must be used without `value` and `ignore_case` fields.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.18.0/docs/resources/loadbalancer_frontend_rule#method LoadbalancerFrontendRule#method}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.19.0/docs/resources/loadbalancer_frontend_rule#method LoadbalancerFrontendRule#method}
 
 ---
 
@@ -1914,7 +1929,7 @@ public readonly name: string;
 
 Name of the argument.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.18.0/docs/resources/loadbalancer_frontend_rule#name LoadbalancerFrontendRule#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.19.0/docs/resources/loadbalancer_frontend_rule#name LoadbalancerFrontendRule#name}
 
 ---
 
@@ -1928,7 +1943,7 @@ public readonly ignoreCase: boolean | IResolvable;
 
 Defines if case should be ignored. Defaults to `false`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.18.0/docs/resources/loadbalancer_frontend_rule#ignore_case LoadbalancerFrontendRule#ignore_case}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.19.0/docs/resources/loadbalancer_frontend_rule#ignore_case LoadbalancerFrontendRule#ignore_case}
 
 ---
 
@@ -1942,7 +1957,7 @@ public readonly inverse: boolean | IResolvable;
 
 Defines if the condition should be inverted. Works similarly to logical NOT operator.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.18.0/docs/resources/loadbalancer_frontend_rule#inverse LoadbalancerFrontendRule#inverse}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.19.0/docs/resources/loadbalancer_frontend_rule#inverse LoadbalancerFrontendRule#inverse}
 
 ---
 
@@ -1956,7 +1971,7 @@ public readonly value: string;
 
 String value.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.18.0/docs/resources/loadbalancer_frontend_rule#value LoadbalancerFrontendRule#value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.19.0/docs/resources/loadbalancer_frontend_rule#value LoadbalancerFrontendRule#value}
 
 ---
 
@@ -1994,7 +2009,7 @@ Match method (`exact`, `substring`, `regexp`, `starts`, `ends`, `domain`, `ip`, 
 
 Matcher with `exists` and `ip` methods must be used without `value` and `ignore_case` fields.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.18.0/docs/resources/loadbalancer_frontend_rule#method LoadbalancerFrontendRule#method}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.19.0/docs/resources/loadbalancer_frontend_rule#method LoadbalancerFrontendRule#method}
 
 ---
 
@@ -2008,7 +2023,7 @@ public readonly name: string;
 
 Name of the argument.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.18.0/docs/resources/loadbalancer_frontend_rule#name LoadbalancerFrontendRule#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.19.0/docs/resources/loadbalancer_frontend_rule#name LoadbalancerFrontendRule#name}
 
 ---
 
@@ -2022,7 +2037,7 @@ public readonly ignoreCase: boolean | IResolvable;
 
 Defines if case should be ignored. Defaults to `false`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.18.0/docs/resources/loadbalancer_frontend_rule#ignore_case LoadbalancerFrontendRule#ignore_case}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.19.0/docs/resources/loadbalancer_frontend_rule#ignore_case LoadbalancerFrontendRule#ignore_case}
 
 ---
 
@@ -2036,7 +2051,7 @@ public readonly inverse: boolean | IResolvable;
 
 Defines if the condition should be inverted. Works similarly to logical NOT operator.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.18.0/docs/resources/loadbalancer_frontend_rule#inverse LoadbalancerFrontendRule#inverse}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.19.0/docs/resources/loadbalancer_frontend_rule#inverse LoadbalancerFrontendRule#inverse}
 
 ---
 
@@ -2050,7 +2065,7 @@ public readonly value: string;
 
 String value.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.18.0/docs/resources/loadbalancer_frontend_rule#value LoadbalancerFrontendRule#value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.19.0/docs/resources/loadbalancer_frontend_rule#value LoadbalancerFrontendRule#value}
 
 ---
 
@@ -2083,7 +2098,7 @@ public readonly value: string;
 
 String value.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.18.0/docs/resources/loadbalancer_frontend_rule#value LoadbalancerFrontendRule#value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.19.0/docs/resources/loadbalancer_frontend_rule#value LoadbalancerFrontendRule#value}
 
 ---
 
@@ -2097,7 +2112,7 @@ public readonly inverse: boolean | IResolvable;
 
 Defines if the condition should be inverted. Works similarly to logical NOT operator.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.18.0/docs/resources/loadbalancer_frontend_rule#inverse LoadbalancerFrontendRule#inverse}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.19.0/docs/resources/loadbalancer_frontend_rule#inverse LoadbalancerFrontendRule#inverse}
 
 ---
 
@@ -2130,7 +2145,7 @@ public readonly value: string;
 
 String value (`GET`, `HEAD`, `POST`, `PUT`, `PATCH`, `DELETE`, `CONNECT`, `OPTIONS`, `TRACE`).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.18.0/docs/resources/loadbalancer_frontend_rule#value LoadbalancerFrontendRule#value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.19.0/docs/resources/loadbalancer_frontend_rule#value LoadbalancerFrontendRule#value}
 
 ---
 
@@ -2144,7 +2159,7 @@ public readonly inverse: boolean | IResolvable;
 
 Defines if the condition should be inverted. Works similarly to logical NOT operator.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.18.0/docs/resources/loadbalancer_frontend_rule#inverse LoadbalancerFrontendRule#inverse}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.19.0/docs/resources/loadbalancer_frontend_rule#inverse LoadbalancerFrontendRule#inverse}
 
 ---
 
@@ -2178,7 +2193,7 @@ public readonly method: string;
 
 Match method (`equal`, `greater`, `greater_or_equal`, `less`, `less_or_equal`).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.18.0/docs/resources/loadbalancer_frontend_rule#method LoadbalancerFrontendRule#method}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.19.0/docs/resources/loadbalancer_frontend_rule#method LoadbalancerFrontendRule#method}
 
 ---
 
@@ -2192,7 +2207,7 @@ public readonly value: number;
 
 Integer value.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.18.0/docs/resources/loadbalancer_frontend_rule#value LoadbalancerFrontendRule#value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.19.0/docs/resources/loadbalancer_frontend_rule#value LoadbalancerFrontendRule#value}
 
 ---
 
@@ -2206,7 +2221,7 @@ public readonly inverse: boolean | IResolvable;
 
 Defines if the condition should be inverted. Works similarly to logical NOT operator.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.18.0/docs/resources/loadbalancer_frontend_rule#inverse LoadbalancerFrontendRule#inverse}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.19.0/docs/resources/loadbalancer_frontend_rule#inverse LoadbalancerFrontendRule#inverse}
 
 ---
 
@@ -2240,7 +2255,7 @@ public readonly rangeEnd: number;
 
 Integer value.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.18.0/docs/resources/loadbalancer_frontend_rule#range_end LoadbalancerFrontendRule#range_end}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.19.0/docs/resources/loadbalancer_frontend_rule#range_end LoadbalancerFrontendRule#range_end}
 
 ---
 
@@ -2254,7 +2269,7 @@ public readonly rangeStart: number;
 
 Integer value.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.18.0/docs/resources/loadbalancer_frontend_rule#range_start LoadbalancerFrontendRule#range_start}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.19.0/docs/resources/loadbalancer_frontend_rule#range_start LoadbalancerFrontendRule#range_start}
 
 ---
 
@@ -2268,7 +2283,7 @@ public readonly inverse: boolean | IResolvable;
 
 Defines if the condition should be inverted. Works similarly to logical NOT operator.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.18.0/docs/resources/loadbalancer_frontend_rule#inverse LoadbalancerFrontendRule#inverse}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.19.0/docs/resources/loadbalancer_frontend_rule#inverse LoadbalancerFrontendRule#inverse}
 
 ---
 
@@ -2303,7 +2318,7 @@ public readonly backendName: string;
 
 The name of the `backend`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.18.0/docs/resources/loadbalancer_frontend_rule#backend_name LoadbalancerFrontendRule#backend_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.19.0/docs/resources/loadbalancer_frontend_rule#backend_name LoadbalancerFrontendRule#backend_name}
 
 ---
 
@@ -2317,7 +2332,7 @@ public readonly method: string;
 
 Match method (`equal`, `greater`, `greater_or_equal`, `less`, `less_or_equal`).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.18.0/docs/resources/loadbalancer_frontend_rule#method LoadbalancerFrontendRule#method}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.19.0/docs/resources/loadbalancer_frontend_rule#method LoadbalancerFrontendRule#method}
 
 ---
 
@@ -2331,7 +2346,7 @@ public readonly value: number;
 
 Integer value.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.18.0/docs/resources/loadbalancer_frontend_rule#value LoadbalancerFrontendRule#value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.19.0/docs/resources/loadbalancer_frontend_rule#value LoadbalancerFrontendRule#value}
 
 ---
 
@@ -2345,7 +2360,7 @@ public readonly inverse: boolean | IResolvable;
 
 Defines if the condition should be inverted. Works similarly to logical NOT operator.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.18.0/docs/resources/loadbalancer_frontend_rule#inverse LoadbalancerFrontendRule#inverse}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.19.0/docs/resources/loadbalancer_frontend_rule#inverse LoadbalancerFrontendRule#inverse}
 
 ---
 
@@ -2382,7 +2397,7 @@ Match method (`exact`, `substring`, `regexp`, `starts`, `ends`, `domain`, `ip`, 
 
 Matcher with `exists` and `ip` methods must be used without `value` and `ignore_case` fields.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.18.0/docs/resources/loadbalancer_frontend_rule#method LoadbalancerFrontendRule#method}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.19.0/docs/resources/loadbalancer_frontend_rule#method LoadbalancerFrontendRule#method}
 
 ---
 
@@ -2396,7 +2411,7 @@ public readonly ignoreCase: boolean | IResolvable;
 
 Defines if case should be ignored. Defaults to `false`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.18.0/docs/resources/loadbalancer_frontend_rule#ignore_case LoadbalancerFrontendRule#ignore_case}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.19.0/docs/resources/loadbalancer_frontend_rule#ignore_case LoadbalancerFrontendRule#ignore_case}
 
 ---
 
@@ -2410,7 +2425,7 @@ public readonly inverse: boolean | IResolvable;
 
 Defines if the condition should be inverted. Works similarly to logical NOT operator.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.18.0/docs/resources/loadbalancer_frontend_rule#inverse LoadbalancerFrontendRule#inverse}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.19.0/docs/resources/loadbalancer_frontend_rule#inverse LoadbalancerFrontendRule#inverse}
 
 ---
 
@@ -2424,7 +2439,7 @@ public readonly value: string;
 
 String value.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.18.0/docs/resources/loadbalancer_frontend_rule#value LoadbalancerFrontendRule#value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.19.0/docs/resources/loadbalancer_frontend_rule#value LoadbalancerFrontendRule#value}
 
 ---
 
@@ -2462,7 +2477,7 @@ Match method (`exact`, `substring`, `regexp`, `starts`, `ends`, `domain`, `ip`, 
 
 Matcher with `exists` and `ip` methods must be used without `value` and `ignore_case` fields.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.18.0/docs/resources/loadbalancer_frontend_rule#method LoadbalancerFrontendRule#method}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.19.0/docs/resources/loadbalancer_frontend_rule#method LoadbalancerFrontendRule#method}
 
 ---
 
@@ -2476,7 +2491,7 @@ public readonly name: string;
 
 Name of the argument.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.18.0/docs/resources/loadbalancer_frontend_rule#name LoadbalancerFrontendRule#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.19.0/docs/resources/loadbalancer_frontend_rule#name LoadbalancerFrontendRule#name}
 
 ---
 
@@ -2490,7 +2505,7 @@ public readonly ignoreCase: boolean | IResolvable;
 
 Defines if case should be ignored. Defaults to `false`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.18.0/docs/resources/loadbalancer_frontend_rule#ignore_case LoadbalancerFrontendRule#ignore_case}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.19.0/docs/resources/loadbalancer_frontend_rule#ignore_case LoadbalancerFrontendRule#ignore_case}
 
 ---
 
@@ -2504,7 +2519,7 @@ public readonly inverse: boolean | IResolvable;
 
 Defines if the condition should be inverted. Works similarly to logical NOT operator.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.18.0/docs/resources/loadbalancer_frontend_rule#inverse LoadbalancerFrontendRule#inverse}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.19.0/docs/resources/loadbalancer_frontend_rule#inverse LoadbalancerFrontendRule#inverse}
 
 ---
 
@@ -2518,7 +2533,7 @@ public readonly value: string;
 
 String value.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.18.0/docs/resources/loadbalancer_frontend_rule#value LoadbalancerFrontendRule#value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.19.0/docs/resources/loadbalancer_frontend_rule#value LoadbalancerFrontendRule#value}
 
 ---
 
@@ -2556,7 +2571,7 @@ Match method (`exact`, `substring`, `regexp`, `starts`, `ends`, `domain`, `ip`, 
 
 Matcher with `exists` and `ip` methods must be used without `value` and `ignore_case` fields.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.18.0/docs/resources/loadbalancer_frontend_rule#method LoadbalancerFrontendRule#method}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.19.0/docs/resources/loadbalancer_frontend_rule#method LoadbalancerFrontendRule#method}
 
 ---
 
@@ -2570,7 +2585,7 @@ public readonly name: string;
 
 Name of the argument.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.18.0/docs/resources/loadbalancer_frontend_rule#name LoadbalancerFrontendRule#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.19.0/docs/resources/loadbalancer_frontend_rule#name LoadbalancerFrontendRule#name}
 
 ---
 
@@ -2584,7 +2599,7 @@ public readonly ignoreCase: boolean | IResolvable;
 
 Defines if case should be ignored. Defaults to `false`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.18.0/docs/resources/loadbalancer_frontend_rule#ignore_case LoadbalancerFrontendRule#ignore_case}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.19.0/docs/resources/loadbalancer_frontend_rule#ignore_case LoadbalancerFrontendRule#ignore_case}
 
 ---
 
@@ -2598,7 +2613,7 @@ public readonly inverse: boolean | IResolvable;
 
 Defines if the condition should be inverted. Works similarly to logical NOT operator.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.18.0/docs/resources/loadbalancer_frontend_rule#inverse LoadbalancerFrontendRule#inverse}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.19.0/docs/resources/loadbalancer_frontend_rule#inverse LoadbalancerFrontendRule#inverse}
 
 ---
 
@@ -2612,7 +2627,7 @@ public readonly value: string;
 
 String value.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.18.0/docs/resources/loadbalancer_frontend_rule#value LoadbalancerFrontendRule#value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.19.0/docs/resources/loadbalancer_frontend_rule#value LoadbalancerFrontendRule#value}
 
 ---
 
@@ -2645,7 +2660,7 @@ public readonly value: string;
 
 IP address. CIDR masks are supported, e.g. `192.168.0.0/24`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.18.0/docs/resources/loadbalancer_frontend_rule#value LoadbalancerFrontendRule#value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.19.0/docs/resources/loadbalancer_frontend_rule#value LoadbalancerFrontendRule#value}
 
 ---
 
@@ -2659,7 +2674,7 @@ public readonly inverse: boolean | IResolvable;
 
 Defines if the condition should be inverted. Works similarly to logical NOT operator.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.18.0/docs/resources/loadbalancer_frontend_rule#inverse LoadbalancerFrontendRule#inverse}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.19.0/docs/resources/loadbalancer_frontend_rule#inverse LoadbalancerFrontendRule#inverse}
 
 ---
 
@@ -2693,7 +2708,7 @@ public readonly method: string;
 
 Match method (`equal`, `greater`, `greater_or_equal`, `less`, `less_or_equal`).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.18.0/docs/resources/loadbalancer_frontend_rule#method LoadbalancerFrontendRule#method}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.19.0/docs/resources/loadbalancer_frontend_rule#method LoadbalancerFrontendRule#method}
 
 ---
 
@@ -2707,7 +2722,7 @@ public readonly value: number;
 
 Integer value.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.18.0/docs/resources/loadbalancer_frontend_rule#value LoadbalancerFrontendRule#value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.19.0/docs/resources/loadbalancer_frontend_rule#value LoadbalancerFrontendRule#value}
 
 ---
 
@@ -2721,7 +2736,7 @@ public readonly inverse: boolean | IResolvable;
 
 Defines if the condition should be inverted. Works similarly to logical NOT operator.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.18.0/docs/resources/loadbalancer_frontend_rule#inverse LoadbalancerFrontendRule#inverse}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.19.0/docs/resources/loadbalancer_frontend_rule#inverse LoadbalancerFrontendRule#inverse}
 
 ---
 
@@ -2755,7 +2770,7 @@ public readonly rangeEnd: number;
 
 Integer value.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.18.0/docs/resources/loadbalancer_frontend_rule#range_end LoadbalancerFrontendRule#range_end}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.19.0/docs/resources/loadbalancer_frontend_rule#range_end LoadbalancerFrontendRule#range_end}
 
 ---
 
@@ -2769,7 +2784,7 @@ public readonly rangeStart: number;
 
 Integer value.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.18.0/docs/resources/loadbalancer_frontend_rule#range_start LoadbalancerFrontendRule#range_start}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.19.0/docs/resources/loadbalancer_frontend_rule#range_start LoadbalancerFrontendRule#range_start}
 
 ---
 
@@ -2783,7 +2798,7 @@ public readonly inverse: boolean | IResolvable;
 
 Defines if the condition should be inverted. Works similarly to logical NOT operator.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.18.0/docs/resources/loadbalancer_frontend_rule#inverse LoadbalancerFrontendRule#inverse}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.19.0/docs/resources/loadbalancer_frontend_rule#inverse LoadbalancerFrontendRule#inverse}
 
 ---
 
@@ -2820,7 +2835,7 @@ Match method (`exact`, `substring`, `regexp`, `starts`, `ends`, `domain`, `ip`, 
 
 Matcher with `exists` and `ip` methods must be used without `value` and `ignore_case` fields.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.18.0/docs/resources/loadbalancer_frontend_rule#method LoadbalancerFrontendRule#method}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.19.0/docs/resources/loadbalancer_frontend_rule#method LoadbalancerFrontendRule#method}
 
 ---
 
@@ -2834,7 +2849,7 @@ public readonly ignoreCase: boolean | IResolvable;
 
 Defines if case should be ignored. Defaults to `false`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.18.0/docs/resources/loadbalancer_frontend_rule#ignore_case LoadbalancerFrontendRule#ignore_case}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.19.0/docs/resources/loadbalancer_frontend_rule#ignore_case LoadbalancerFrontendRule#ignore_case}
 
 ---
 
@@ -2848,7 +2863,7 @@ public readonly inverse: boolean | IResolvable;
 
 Defines if the condition should be inverted. Works similarly to logical NOT operator.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.18.0/docs/resources/loadbalancer_frontend_rule#inverse LoadbalancerFrontendRule#inverse}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.19.0/docs/resources/loadbalancer_frontend_rule#inverse LoadbalancerFrontendRule#inverse}
 
 ---
 
@@ -2862,7 +2877,7 @@ public readonly value: string;
 
 String value.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.18.0/docs/resources/loadbalancer_frontend_rule#value LoadbalancerFrontendRule#value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.19.0/docs/resources/loadbalancer_frontend_rule#value LoadbalancerFrontendRule#value}
 
 ---
 
@@ -2900,7 +2915,7 @@ Match method (`exact`, `substring`, `regexp`, `starts`, `ends`, `domain`, `ip`, 
 
 Matcher with `exists` and `ip` methods must be used without `value` and `ignore_case` fields.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.18.0/docs/resources/loadbalancer_frontend_rule#method LoadbalancerFrontendRule#method}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.19.0/docs/resources/loadbalancer_frontend_rule#method LoadbalancerFrontendRule#method}
 
 ---
 
@@ -2914,7 +2929,7 @@ public readonly name: string;
 
 Name of the argument.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.18.0/docs/resources/loadbalancer_frontend_rule#name LoadbalancerFrontendRule#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.19.0/docs/resources/loadbalancer_frontend_rule#name LoadbalancerFrontendRule#name}
 
 ---
 
@@ -2928,7 +2943,7 @@ public readonly ignoreCase: boolean | IResolvable;
 
 Defines if case should be ignored. Defaults to `false`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.18.0/docs/resources/loadbalancer_frontend_rule#ignore_case LoadbalancerFrontendRule#ignore_case}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.19.0/docs/resources/loadbalancer_frontend_rule#ignore_case LoadbalancerFrontendRule#ignore_case}
 
 ---
 
@@ -2942,7 +2957,7 @@ public readonly inverse: boolean | IResolvable;
 
 Defines if the condition should be inverted. Works similarly to logical NOT operator.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.18.0/docs/resources/loadbalancer_frontend_rule#inverse LoadbalancerFrontendRule#inverse}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.19.0/docs/resources/loadbalancer_frontend_rule#inverse LoadbalancerFrontendRule#inverse}
 
 ---
 
@@ -2956,7 +2971,7 @@ public readonly value: string;
 
 String value.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.18.0/docs/resources/loadbalancer_frontend_rule#value LoadbalancerFrontendRule#value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.19.0/docs/resources/loadbalancer_frontend_rule#value LoadbalancerFrontendRule#value}
 
 ---
 
@@ -2993,7 +3008,7 @@ Match method (`exact`, `substring`, `regexp`, `starts`, `ends`, `domain`, `ip`, 
 
 Matcher with `exists` and `ip` methods must be used without `value` and `ignore_case` fields.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.18.0/docs/resources/loadbalancer_frontend_rule#method LoadbalancerFrontendRule#method}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.19.0/docs/resources/loadbalancer_frontend_rule#method LoadbalancerFrontendRule#method}
 
 ---
 
@@ -3007,7 +3022,7 @@ public readonly ignoreCase: boolean | IResolvable;
 
 Defines if case should be ignored. Defaults to `false`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.18.0/docs/resources/loadbalancer_frontend_rule#ignore_case LoadbalancerFrontendRule#ignore_case}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.19.0/docs/resources/loadbalancer_frontend_rule#ignore_case LoadbalancerFrontendRule#ignore_case}
 
 ---
 
@@ -3021,7 +3036,7 @@ public readonly inverse: boolean | IResolvable;
 
 Defines if the condition should be inverted. Works similarly to logical NOT operator.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.18.0/docs/resources/loadbalancer_frontend_rule#inverse LoadbalancerFrontendRule#inverse}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.19.0/docs/resources/loadbalancer_frontend_rule#inverse LoadbalancerFrontendRule#inverse}
 
 ---
 
@@ -3035,7 +3050,7 @@ public readonly value: string;
 
 String value.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.18.0/docs/resources/loadbalancer_frontend_rule#value LoadbalancerFrontendRule#value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.19.0/docs/resources/loadbalancer_frontend_rule#value LoadbalancerFrontendRule#value}
 
 ---
 
@@ -3271,6 +3286,7 @@ whether the list is wrapping a set (will add tolist() to be able to access an it
 | <code><a href="#@cdktf/provider-upcloud.loadbalancerFrontendRule.LoadbalancerFrontendRuleActionsHttpRedirectOutputReference.toString">toString</a></code> | Return a string representation of this resolvable object. |
 | <code><a href="#@cdktf/provider-upcloud.loadbalancerFrontendRule.LoadbalancerFrontendRuleActionsHttpRedirectOutputReference.resetLocation">resetLocation</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.loadbalancerFrontendRule.LoadbalancerFrontendRuleActionsHttpRedirectOutputReference.resetScheme">resetScheme</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-upcloud.loadbalancerFrontendRule.LoadbalancerFrontendRuleActionsHttpRedirectOutputReference.resetStatus">resetStatus</a></code> | *No description.* |
 
 ---
 
@@ -3436,6 +3452,12 @@ public resetLocation(): void
 public resetScheme(): void
 ```
 
+##### `resetStatus` <a name="resetStatus" id="@cdktf/provider-upcloud.loadbalancerFrontendRule.LoadbalancerFrontendRuleActionsHttpRedirectOutputReference.resetStatus"></a>
+
+```typescript
+public resetStatus(): void
+```
+
 
 #### Properties <a name="Properties" id="Properties"></a>
 
@@ -3445,8 +3467,10 @@ public resetScheme(): void
 | <code><a href="#@cdktf/provider-upcloud.loadbalancerFrontendRule.LoadbalancerFrontendRuleActionsHttpRedirectOutputReference.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.loadbalancerFrontendRule.LoadbalancerFrontendRuleActionsHttpRedirectOutputReference.property.locationInput">locationInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.loadbalancerFrontendRule.LoadbalancerFrontendRuleActionsHttpRedirectOutputReference.property.schemeInput">schemeInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-upcloud.loadbalancerFrontendRule.LoadbalancerFrontendRuleActionsHttpRedirectOutputReference.property.statusInput">statusInput</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.loadbalancerFrontendRule.LoadbalancerFrontendRuleActionsHttpRedirectOutputReference.property.location">location</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.loadbalancerFrontendRule.LoadbalancerFrontendRuleActionsHttpRedirectOutputReference.property.scheme">scheme</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-upcloud.loadbalancerFrontendRule.LoadbalancerFrontendRuleActionsHttpRedirectOutputReference.property.status">status</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.loadbalancerFrontendRule.LoadbalancerFrontendRuleActionsHttpRedirectOutputReference.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-upcloud.loadbalancerFrontendRule.LoadbalancerFrontendRuleActionsHttpRedirect">LoadbalancerFrontendRuleActionsHttpRedirect</a></code> | *No description.* |
 
 ---
@@ -3495,6 +3519,16 @@ public readonly schemeInput: string;
 
 ---
 
+##### `statusInput`<sup>Optional</sup> <a name="statusInput" id="@cdktf/provider-upcloud.loadbalancerFrontendRule.LoadbalancerFrontendRuleActionsHttpRedirectOutputReference.property.statusInput"></a>
+
+```typescript
+public readonly statusInput: number;
+```
+
+- *Type:* number
+
+---
+
 ##### `location`<sup>Required</sup> <a name="location" id="@cdktf/provider-upcloud.loadbalancerFrontendRule.LoadbalancerFrontendRuleActionsHttpRedirectOutputReference.property.location"></a>
 
 ```typescript
@@ -3512,6 +3546,16 @@ public readonly scheme: string;
 ```
 
 - *Type:* string
+
+---
+
+##### `status`<sup>Required</sup> <a name="status" id="@cdktf/provider-upcloud.loadbalancerFrontendRule.LoadbalancerFrontendRuleActionsHttpRedirectOutputReference.property.status"></a>
+
+```typescript
+public readonly status: number;
+```
+
+- *Type:* number
 
 ---
 
