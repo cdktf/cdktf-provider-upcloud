@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/upcloudltd/upcloud/5.18.0/docs/data-sources/storage
+// https://registry.terraform.io/providers/upcloudltd/upcloud/5.19.0/docs/data-sources/storage
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,13 +15,13 @@ export interface DataUpcloudStorageConfig extends cdktf.TerraformMetaArguments {
   /**
   * The access type of the storage, `public` or `private`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.18.0/docs/data-sources/storage#access_type DataUpcloudStorage#access_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.19.0/docs/data-sources/storage#access_type DataUpcloudStorage#access_type}
   */
   readonly accessType?: string;
   /**
   * UUID of the storage.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.18.0/docs/data-sources/storage#id DataUpcloudStorage#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.19.0/docs/data-sources/storage#id DataUpcloudStorage#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -30,43 +30,43 @@ export interface DataUpcloudStorageConfig extends cdktf.TerraformMetaArguments {
   /**
   * If more than one result is returned, use the most recent storage. This is only useful with private storages. Public storages might give unpredictable results.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.18.0/docs/data-sources/storage#most_recent DataUpcloudStorage#most_recent}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.19.0/docs/data-sources/storage#most_recent DataUpcloudStorage#most_recent}
   */
   readonly mostRecent?: boolean | cdktf.IResolvable;
   /**
   * Exact name of the storage (same as title). Deprecated, use `title` instead.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.18.0/docs/data-sources/storage#name DataUpcloudStorage#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.19.0/docs/data-sources/storage#name DataUpcloudStorage#name}
   */
   readonly name?: string;
   /**
   * Use regular expression to match storage name. Deprecated, use exact title or UUID instead.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.18.0/docs/data-sources/storage#name_regex DataUpcloudStorage#name_regex}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.19.0/docs/data-sources/storage#name_regex DataUpcloudStorage#name_regex}
   */
   readonly nameRegex?: string;
   /**
   * The title of the storage.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.18.0/docs/data-sources/storage#title DataUpcloudStorage#title}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.19.0/docs/data-sources/storage#title DataUpcloudStorage#title}
   */
   readonly title?: string;
   /**
   * The type of the storage.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.18.0/docs/data-sources/storage#type DataUpcloudStorage#type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.19.0/docs/data-sources/storage#type DataUpcloudStorage#type}
   */
   readonly type?: string;
   /**
   * The zone the storage is in, e.g. `de-fra1`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.18.0/docs/data-sources/storage#zone DataUpcloudStorage#zone}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.19.0/docs/data-sources/storage#zone DataUpcloudStorage#zone}
   */
   readonly zone?: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.18.0/docs/data-sources/storage upcloud_storage}
+* Represents a {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.19.0/docs/data-sources/storage upcloud_storage}
 */
 export class DataUpcloudStorage extends cdktf.TerraformDataSource {
 
@@ -82,7 +82,7 @@ export class DataUpcloudStorage extends cdktf.TerraformDataSource {
   * Generates CDKTF code for importing a DataUpcloudStorage resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataUpcloudStorage to import
-  * @param importFromId The id of the existing DataUpcloudStorage that should be imported. Refer to the {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.18.0/docs/data-sources/storage#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataUpcloudStorage that should be imported. Refer to the {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.19.0/docs/data-sources/storage#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataUpcloudStorage to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -94,7 +94,7 @@ export class DataUpcloudStorage extends cdktf.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.18.0/docs/data-sources/storage upcloud_storage} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.19.0/docs/data-sources/storage upcloud_storage} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -105,7 +105,7 @@ export class DataUpcloudStorage extends cdktf.TerraformDataSource {
       terraformResourceType: 'upcloud_storage',
       terraformGeneratorMetadata: {
         providerName: 'upcloud',
-        providerVersion: '5.18.0',
+        providerVersion: '5.19.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,
