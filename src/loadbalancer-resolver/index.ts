@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/upcloudltd/upcloud/5.19.0/docs/resources/loadbalancer_resolver
+// https://registry.terraform.io/providers/upcloudltd/upcloud/5.20.0/docs/resources/loadbalancer_resolver
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,55 +10,55 @@ export interface LoadbalancerResolverConfig extends cdktf.TerraformMetaArguments
   /**
   * Time in seconds to cache invalid results.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.19.0/docs/resources/loadbalancer_resolver#cache_invalid LoadbalancerResolver#cache_invalid}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.20.0/docs/resources/loadbalancer_resolver#cache_invalid LoadbalancerResolver#cache_invalid}
   */
   readonly cacheInvalid: number;
   /**
   * Time in seconds to cache valid results.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.19.0/docs/resources/loadbalancer_resolver#cache_valid LoadbalancerResolver#cache_valid}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.20.0/docs/resources/loadbalancer_resolver#cache_valid LoadbalancerResolver#cache_valid}
   */
   readonly cacheValid: number;
   /**
   * ID of the load balancer to which the resolver is connected.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.19.0/docs/resources/loadbalancer_resolver#loadbalancer LoadbalancerResolver#loadbalancer}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.20.0/docs/resources/loadbalancer_resolver#loadbalancer LoadbalancerResolver#loadbalancer}
   */
   readonly loadbalancer: string;
   /**
   * The name of the resolver. Must be unique within the service.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.19.0/docs/resources/loadbalancer_resolver#name LoadbalancerResolver#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.20.0/docs/resources/loadbalancer_resolver#name LoadbalancerResolver#name}
   */
   readonly name: string;
   /**
   * List of nameserver IP addresses. Nameserver can reside in public internet or in customer private network. Port is optional, if missing then default 53 will be used.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.19.0/docs/resources/loadbalancer_resolver#nameservers LoadbalancerResolver#nameservers}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.20.0/docs/resources/loadbalancer_resolver#nameservers LoadbalancerResolver#nameservers}
   */
   readonly nameservers: string[];
   /**
   * Number of retries on failure.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.19.0/docs/resources/loadbalancer_resolver#retries LoadbalancerResolver#retries}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.20.0/docs/resources/loadbalancer_resolver#retries LoadbalancerResolver#retries}
   */
   readonly retries: number;
   /**
   * Timeout for the query in seconds.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.19.0/docs/resources/loadbalancer_resolver#timeout LoadbalancerResolver#timeout}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.20.0/docs/resources/loadbalancer_resolver#timeout LoadbalancerResolver#timeout}
   */
   readonly timeout: number;
   /**
   * Timeout for the query retries in seconds.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.19.0/docs/resources/loadbalancer_resolver#timeout_retry LoadbalancerResolver#timeout_retry}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.20.0/docs/resources/loadbalancer_resolver#timeout_retry LoadbalancerResolver#timeout_retry}
   */
   readonly timeoutRetry: number;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.19.0/docs/resources/loadbalancer_resolver upcloud_loadbalancer_resolver}
+* Represents a {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.20.0/docs/resources/loadbalancer_resolver upcloud_loadbalancer_resolver}
 */
 export class LoadbalancerResolver extends cdktf.TerraformResource {
 
@@ -79,7 +74,7 @@ export class LoadbalancerResolver extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a LoadbalancerResolver resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the LoadbalancerResolver to import
-  * @param importFromId The id of the existing LoadbalancerResolver that should be imported. Refer to the {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.19.0/docs/resources/loadbalancer_resolver#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing LoadbalancerResolver that should be imported. Refer to the {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.20.0/docs/resources/loadbalancer_resolver#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the LoadbalancerResolver to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -91,7 +86,7 @@ export class LoadbalancerResolver extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.19.0/docs/resources/loadbalancer_resolver upcloud_loadbalancer_resolver} Resource
+  * Create a new {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.20.0/docs/resources/loadbalancer_resolver upcloud_loadbalancer_resolver} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -102,7 +97,7 @@ export class LoadbalancerResolver extends cdktf.TerraformResource {
       terraformResourceType: 'upcloud_loadbalancer_resolver',
       terraformGeneratorMetadata: {
         providerName: 'upcloud',
-        providerVersion: '5.19.0',
+        providerVersion: '5.20.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,

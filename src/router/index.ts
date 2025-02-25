@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/upcloudltd/upcloud/5.19.0/docs/resources/router
+// https://registry.terraform.io/providers/upcloudltd/upcloud/5.20.0/docs/resources/router
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,19 +10,19 @@ export interface RouterConfig extends cdktf.TerraformMetaArguments {
   /**
   * User defined key-value pairs to classify the router.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.19.0/docs/resources/router#labels Router#labels}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.20.0/docs/resources/router#labels Router#labels}
   */
   readonly labels?: { [key: string]: string };
   /**
   * Name of the router.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.19.0/docs/resources/router#name Router#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.20.0/docs/resources/router#name Router#name}
   */
   readonly name: string;
   /**
   * static_route block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.19.0/docs/resources/router#static_route Router#static_route}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.20.0/docs/resources/router#static_route Router#static_route}
   */
   readonly staticRoute?: RouterStaticRoute[] | cdktf.IResolvable;
 }
@@ -125,19 +120,19 @@ export interface RouterStaticRoute {
   /**
   * Name or description of the route.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.19.0/docs/resources/router#name Router#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.20.0/docs/resources/router#name Router#name}
   */
   readonly name?: string;
   /**
   * Next hop address. NOTE: For static route to be active the next hop has to be an address of a reachable running Cloud Server in one of the Private Networks attached to the router.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.19.0/docs/resources/router#nexthop Router#nexthop}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.20.0/docs/resources/router#nexthop Router#nexthop}
   */
   readonly nexthop: string;
   /**
   * Destination prefix of the route.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.19.0/docs/resources/router#route Router#route}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.20.0/docs/resources/router#route Router#route}
   */
   readonly route: string;
 }
@@ -310,7 +305,7 @@ export class RouterStaticRouteList extends cdktf.ComplexList {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.19.0/docs/resources/router upcloud_router}
+* Represents a {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.20.0/docs/resources/router upcloud_router}
 */
 export class Router extends cdktf.TerraformResource {
 
@@ -326,7 +321,7 @@ export class Router extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a Router resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the Router to import
-  * @param importFromId The id of the existing Router that should be imported. Refer to the {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.19.0/docs/resources/router#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing Router that should be imported. Refer to the {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.20.0/docs/resources/router#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the Router to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -338,7 +333,7 @@ export class Router extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.19.0/docs/resources/router upcloud_router} Resource
+  * Create a new {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.20.0/docs/resources/router upcloud_router} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -349,7 +344,7 @@ export class Router extends cdktf.TerraformResource {
       terraformResourceType: 'upcloud_router',
       terraformGeneratorMetadata: {
         providerName: 'upcloud',
-        providerVersion: '5.19.0',
+        providerVersion: '5.20.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,

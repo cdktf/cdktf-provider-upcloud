@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/upcloudltd/upcloud/5.19.0/docs
+// https://registry.terraform.io/providers/upcloudltd/upcloud/5.20.0/docs
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,49 +10,55 @@ export interface UpcloudProviderConfig {
   /**
   * Password for UpCloud API user. Can also be configured using the `UPCLOUD_PASSWORD` environment variable.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.19.0/docs#password UpcloudProvider#password}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.20.0/docs#password UpcloudProvider#password}
   */
   readonly password?: string;
   /**
   * The duration (in seconds) that the provider waits for an HTTP request towards UpCloud API to complete. Defaults to 120 seconds
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.19.0/docs#request_timeout_sec UpcloudProvider#request_timeout_sec}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.20.0/docs#request_timeout_sec UpcloudProvider#request_timeout_sec}
   */
   readonly requestTimeoutSec?: number;
   /**
   * Maximum number of retries
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.19.0/docs#retry_max UpcloudProvider#retry_max}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.20.0/docs#retry_max UpcloudProvider#retry_max}
   */
   readonly retryMax?: number;
   /**
   * Maximum time to wait between retries
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.19.0/docs#retry_wait_max_sec UpcloudProvider#retry_wait_max_sec}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.20.0/docs#retry_wait_max_sec UpcloudProvider#retry_wait_max_sec}
   */
   readonly retryWaitMaxSec?: number;
   /**
   * Minimum time to wait between retries
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.19.0/docs#retry_wait_min_sec UpcloudProvider#retry_wait_min_sec}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.20.0/docs#retry_wait_min_sec UpcloudProvider#retry_wait_min_sec}
   */
   readonly retryWaitMinSec?: number;
   /**
+  * Token for authenticating to UpCloud API. Can also be configured using the `UPCLOUD_TOKEN` environment variable. (EXPERIMENTAL)
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.20.0/docs#token UpcloudProvider#token}
+  */
+  readonly token?: string;
+  /**
   * UpCloud username with API access. Can also be configured using the `UPCLOUD_USERNAME` environment variable.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.19.0/docs#username UpcloudProvider#username}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.20.0/docs#username UpcloudProvider#username}
   */
   readonly username?: string;
   /**
   * Alias name
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.19.0/docs#alias UpcloudProvider#alias}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.20.0/docs#alias UpcloudProvider#alias}
   */
   readonly alias?: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.19.0/docs upcloud}
+* Represents a {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.20.0/docs upcloud}
 */
 export class UpcloudProvider extends cdktf.TerraformProvider {
 
@@ -73,7 +74,7 @@ export class UpcloudProvider extends cdktf.TerraformProvider {
   * Generates CDKTF code for importing a UpcloudProvider resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the UpcloudProvider to import
-  * @param importFromId The id of the existing UpcloudProvider that should be imported. Refer to the {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.19.0/docs#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing UpcloudProvider that should be imported. Refer to the {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.20.0/docs#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the UpcloudProvider to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -85,7 +86,7 @@ export class UpcloudProvider extends cdktf.TerraformProvider {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.19.0/docs upcloud} Resource
+  * Create a new {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.20.0/docs upcloud} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -96,7 +97,7 @@ export class UpcloudProvider extends cdktf.TerraformProvider {
       terraformResourceType: 'upcloud',
       terraformGeneratorMetadata: {
         providerName: 'upcloud',
-        providerVersion: '5.19.0',
+        providerVersion: '5.20.0',
         providerVersionConstraint: '~> 5.0'
       },
       terraformProviderSource: 'UpCloudLtd/upcloud'
@@ -106,6 +107,7 @@ export class UpcloudProvider extends cdktf.TerraformProvider {
     this._retryMax = config.retryMax;
     this._retryWaitMaxSec = config.retryWaitMaxSec;
     this._retryWaitMinSec = config.retryWaitMinSec;
+    this._token = config.token;
     this._username = config.username;
     this._alias = config.alias;
   }
@@ -194,6 +196,22 @@ export class UpcloudProvider extends cdktf.TerraformProvider {
     return this._retryWaitMinSec;
   }
 
+  // token - computed: false, optional: true, required: false
+  private _token?: string; 
+  public get token() {
+    return this._token;
+  }
+  public set token(value: string | undefined) {
+    this._token = value;
+  }
+  public resetToken() {
+    this._token = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get tokenInput() {
+    return this._token;
+  }
+
   // username - computed: false, optional: true, required: false
   private _username?: string; 
   public get username() {
@@ -237,6 +255,7 @@ export class UpcloudProvider extends cdktf.TerraformProvider {
       retry_max: cdktf.numberToTerraform(this._retryMax),
       retry_wait_max_sec: cdktf.numberToTerraform(this._retryWaitMaxSec),
       retry_wait_min_sec: cdktf.numberToTerraform(this._retryWaitMinSec),
+      token: cdktf.stringToTerraform(this._token),
       username: cdktf.stringToTerraform(this._username),
       alias: cdktf.stringToTerraform(this._alias),
     };
@@ -273,6 +292,12 @@ export class UpcloudProvider extends cdktf.TerraformProvider {
         isBlock: false,
         type: "simple",
         storageClassType: "number",
+      },
+      token: {
+        value: cdktf.stringToHclTerraform(this._token),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
       },
       username: {
         value: cdktf.stringToHclTerraform(this._username),

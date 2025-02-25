@@ -4,7 +4,7 @@
 
 ### UpcloudProvider <a name="UpcloudProvider" id="@cdktf/provider-upcloud.provider.UpcloudProvider"></a>
 
-Represents a {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.19.0/docs upcloud}.
+Represents a {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.20.0/docs upcloud}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-upcloud.provider.UpcloudProvider.Initializer"></a>
 
@@ -20,6 +20,7 @@ provider.UpcloudProvider(
   retry_max: typing.Union[int, float] = None,
   retry_wait_max_sec: typing.Union[int, float] = None,
   retry_wait_min_sec: typing.Union[int, float] = None,
+  token: str = None,
   username: str = None
 )
 ```
@@ -34,6 +35,7 @@ provider.UpcloudProvider(
 | <code><a href="#@cdktf/provider-upcloud.provider.UpcloudProvider.Initializer.parameter.retryMax">retry_max</a></code> | <code>typing.Union[int, float]</code> | Maximum number of retries. |
 | <code><a href="#@cdktf/provider-upcloud.provider.UpcloudProvider.Initializer.parameter.retryWaitMaxSec">retry_wait_max_sec</a></code> | <code>typing.Union[int, float]</code> | Maximum time to wait between retries. |
 | <code><a href="#@cdktf/provider-upcloud.provider.UpcloudProvider.Initializer.parameter.retryWaitMinSec">retry_wait_min_sec</a></code> | <code>typing.Union[int, float]</code> | Minimum time to wait between retries. |
+| <code><a href="#@cdktf/provider-upcloud.provider.UpcloudProvider.Initializer.parameter.token">token</a></code> | <code>str</code> | Token for authenticating to UpCloud API. Can also be configured using the `UPCLOUD_TOKEN` environment variable. (EXPERIMENTAL). |
 | <code><a href="#@cdktf/provider-upcloud.provider.UpcloudProvider.Initializer.parameter.username">username</a></code> | <code>str</code> | UpCloud username with API access. Can also be configured using the `UPCLOUD_USERNAME` environment variable. |
 
 ---
@@ -62,7 +64,7 @@ Must be unique amongst siblings in the same scope
 
 Alias name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.19.0/docs#alias UpcloudProvider#alias}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.20.0/docs#alias UpcloudProvider#alias}
 
 ---
 
@@ -72,7 +74,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upclo
 
 Password for UpCloud API user. Can also be configured using the `UPCLOUD_PASSWORD` environment variable.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.19.0/docs#password UpcloudProvider#password}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.20.0/docs#password UpcloudProvider#password}
 
 ---
 
@@ -84,7 +86,7 @@ The duration (in seconds) that the provider waits for an HTTP request towards Up
 
 Defaults to 120 seconds
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.19.0/docs#request_timeout_sec UpcloudProvider#request_timeout_sec}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.20.0/docs#request_timeout_sec UpcloudProvider#request_timeout_sec}
 
 ---
 
@@ -94,7 +96,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upclo
 
 Maximum number of retries.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.19.0/docs#retry_max UpcloudProvider#retry_max}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.20.0/docs#retry_max UpcloudProvider#retry_max}
 
 ---
 
@@ -104,7 +106,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upclo
 
 Maximum time to wait between retries.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.19.0/docs#retry_wait_max_sec UpcloudProvider#retry_wait_max_sec}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.20.0/docs#retry_wait_max_sec UpcloudProvider#retry_wait_max_sec}
 
 ---
 
@@ -114,7 +116,17 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upclo
 
 Minimum time to wait between retries.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.19.0/docs#retry_wait_min_sec UpcloudProvider#retry_wait_min_sec}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.20.0/docs#retry_wait_min_sec UpcloudProvider#retry_wait_min_sec}
+
+---
+
+##### `token`<sup>Optional</sup> <a name="token" id="@cdktf/provider-upcloud.provider.UpcloudProvider.Initializer.parameter.token"></a>
+
+- *Type:* str
+
+Token for authenticating to UpCloud API. Can also be configured using the `UPCLOUD_TOKEN` environment variable. (EXPERIMENTAL).
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.20.0/docs#token UpcloudProvider#token}
 
 ---
 
@@ -124,7 +136,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upclo
 
 UpCloud username with API access. Can also be configured using the `UPCLOUD_USERNAME` environment variable.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.19.0/docs#username UpcloudProvider#username}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.20.0/docs#username UpcloudProvider#username}
 
 ---
 
@@ -145,6 +157,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upclo
 | <code><a href="#@cdktf/provider-upcloud.provider.UpcloudProvider.resetRetryMax">reset_retry_max</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.provider.UpcloudProvider.resetRetryWaitMaxSec">reset_retry_wait_max_sec</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.provider.UpcloudProvider.resetRetryWaitMinSec">reset_retry_wait_min_sec</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-upcloud.provider.UpcloudProvider.resetToken">reset_token</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.provider.UpcloudProvider.resetUsername">reset_username</a></code> | *No description.* |
 
 ---
@@ -258,6 +271,12 @@ def reset_retry_wait_max_sec() -> None
 
 ```python
 def reset_retry_wait_min_sec() -> None
+```
+
+##### `reset_token` <a name="reset_token" id="@cdktf/provider-upcloud.provider.UpcloudProvider.resetToken"></a>
+
+```python
+def reset_token() -> None
 ```
 
 ##### `reset_username` <a name="reset_username" id="@cdktf/provider-upcloud.provider.UpcloudProvider.resetUsername"></a>
@@ -380,7 +399,7 @@ The construct id used in the generated config for the UpcloudProvider to import.
 
 The id of the existing UpcloudProvider that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.19.0/docs#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.20.0/docs#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -411,12 +430,14 @@ Refer to the {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5
 | <code><a href="#@cdktf/provider-upcloud.provider.UpcloudProvider.property.retryMaxInput">retry_max_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.provider.UpcloudProvider.property.retryWaitMaxSecInput">retry_wait_max_sec_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.provider.UpcloudProvider.property.retryWaitMinSecInput">retry_wait_min_sec_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-upcloud.provider.UpcloudProvider.property.tokenInput">token_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.provider.UpcloudProvider.property.usernameInput">username_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.provider.UpcloudProvider.property.password">password</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.provider.UpcloudProvider.property.requestTimeoutSec">request_timeout_sec</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.provider.UpcloudProvider.property.retryMax">retry_max</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.provider.UpcloudProvider.property.retryWaitMaxSec">retry_wait_max_sec</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.provider.UpcloudProvider.property.retryWaitMinSec">retry_wait_min_sec</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-upcloud.provider.UpcloudProvider.property.token">token</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.provider.UpcloudProvider.property.username">username</a></code> | <code>str</code> | *No description.* |
 
 ---
@@ -573,6 +594,16 @@ retry_wait_min_sec_input: typing.Union[int, float]
 
 ---
 
+##### `token_input`<sup>Optional</sup> <a name="token_input" id="@cdktf/provider-upcloud.provider.UpcloudProvider.property.tokenInput"></a>
+
+```python
+token_input: str
+```
+
+- *Type:* str
+
+---
+
 ##### `username_input`<sup>Optional</sup> <a name="username_input" id="@cdktf/provider-upcloud.provider.UpcloudProvider.property.usernameInput"></a>
 
 ```python
@@ -633,6 +664,16 @@ retry_wait_min_sec: typing.Union[int, float]
 
 ---
 
+##### `token`<sup>Optional</sup> <a name="token" id="@cdktf/provider-upcloud.provider.UpcloudProvider.property.token"></a>
+
+```python
+token: str
+```
+
+- *Type:* str
+
+---
+
 ##### `username`<sup>Optional</sup> <a name="username" id="@cdktf/provider-upcloud.provider.UpcloudProvider.property.username"></a>
 
 ```python
@@ -677,6 +718,7 @@ provider.UpcloudProviderConfig(
   retry_max: typing.Union[int, float] = None,
   retry_wait_max_sec: typing.Union[int, float] = None,
   retry_wait_min_sec: typing.Union[int, float] = None,
+  token: str = None,
   username: str = None
 )
 ```
@@ -691,6 +733,7 @@ provider.UpcloudProviderConfig(
 | <code><a href="#@cdktf/provider-upcloud.provider.UpcloudProviderConfig.property.retryMax">retry_max</a></code> | <code>typing.Union[int, float]</code> | Maximum number of retries. |
 | <code><a href="#@cdktf/provider-upcloud.provider.UpcloudProviderConfig.property.retryWaitMaxSec">retry_wait_max_sec</a></code> | <code>typing.Union[int, float]</code> | Maximum time to wait between retries. |
 | <code><a href="#@cdktf/provider-upcloud.provider.UpcloudProviderConfig.property.retryWaitMinSec">retry_wait_min_sec</a></code> | <code>typing.Union[int, float]</code> | Minimum time to wait between retries. |
+| <code><a href="#@cdktf/provider-upcloud.provider.UpcloudProviderConfig.property.token">token</a></code> | <code>str</code> | Token for authenticating to UpCloud API. Can also be configured using the `UPCLOUD_TOKEN` environment variable. (EXPERIMENTAL). |
 | <code><a href="#@cdktf/provider-upcloud.provider.UpcloudProviderConfig.property.username">username</a></code> | <code>str</code> | UpCloud username with API access. Can also be configured using the `UPCLOUD_USERNAME` environment variable. |
 
 ---
@@ -705,7 +748,7 @@ alias: str
 
 Alias name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.19.0/docs#alias UpcloudProvider#alias}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.20.0/docs#alias UpcloudProvider#alias}
 
 ---
 
@@ -719,7 +762,7 @@ password: str
 
 Password for UpCloud API user. Can also be configured using the `UPCLOUD_PASSWORD` environment variable.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.19.0/docs#password UpcloudProvider#password}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.20.0/docs#password UpcloudProvider#password}
 
 ---
 
@@ -735,7 +778,7 @@ The duration (in seconds) that the provider waits for an HTTP request towards Up
 
 Defaults to 120 seconds
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.19.0/docs#request_timeout_sec UpcloudProvider#request_timeout_sec}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.20.0/docs#request_timeout_sec UpcloudProvider#request_timeout_sec}
 
 ---
 
@@ -749,7 +792,7 @@ retry_max: typing.Union[int, float]
 
 Maximum number of retries.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.19.0/docs#retry_max UpcloudProvider#retry_max}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.20.0/docs#retry_max UpcloudProvider#retry_max}
 
 ---
 
@@ -763,7 +806,7 @@ retry_wait_max_sec: typing.Union[int, float]
 
 Maximum time to wait between retries.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.19.0/docs#retry_wait_max_sec UpcloudProvider#retry_wait_max_sec}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.20.0/docs#retry_wait_max_sec UpcloudProvider#retry_wait_max_sec}
 
 ---
 
@@ -777,7 +820,21 @@ retry_wait_min_sec: typing.Union[int, float]
 
 Minimum time to wait between retries.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.19.0/docs#retry_wait_min_sec UpcloudProvider#retry_wait_min_sec}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.20.0/docs#retry_wait_min_sec UpcloudProvider#retry_wait_min_sec}
+
+---
+
+##### `token`<sup>Optional</sup> <a name="token" id="@cdktf/provider-upcloud.provider.UpcloudProviderConfig.property.token"></a>
+
+```python
+token: str
+```
+
+- *Type:* str
+
+Token for authenticating to UpCloud API. Can also be configured using the `UPCLOUD_TOKEN` environment variable. (EXPERIMENTAL).
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.20.0/docs#token UpcloudProvider#token}
 
 ---
 
@@ -791,7 +848,7 @@ username: str
 
 UpCloud username with API access. Can also be configured using the `UPCLOUD_USERNAME` environment variable.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.19.0/docs#username UpcloudProvider#username}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.20.0/docs#username UpcloudProvider#username}
 
 ---
 
