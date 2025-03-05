@@ -4,12 +4,12 @@
 
 ### LoadbalancerFrontend <a name="LoadbalancerFrontend" id="@cdktf/provider-upcloud.loadbalancerFrontend.LoadbalancerFrontend"></a>
 
-Represents a {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.20.1/docs/resources/loadbalancer_frontend upcloud_loadbalancer_frontend}.
+Represents a {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.20.2/docs/resources/loadbalancer_frontend upcloud_loadbalancer_frontend}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-upcloud.loadbalancerFrontend.LoadbalancerFrontend.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v14/loadbalancerfrontend"
+import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/loadbalancerfrontend"
 
 loadbalancerfrontend.NewLoadbalancerFrontend(scope Construct, id *string, config LoadbalancerFrontendConfig) LoadbalancerFrontend
 ```
@@ -418,7 +418,7 @@ func ResetProperties()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-upcloud.loadbalancerFrontend.LoadbalancerFrontend.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v14/loadbalancerfrontend"
+import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/loadbalancerfrontend"
 
 loadbalancerfrontend.LoadbalancerFrontend_IsConstruct(x interface{}) *bool
 ```
@@ -450,7 +450,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-upcloud.loadbalancerFrontend.LoadbalancerFrontend.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v14/loadbalancerfrontend"
+import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/loadbalancerfrontend"
 
 loadbalancerfrontend.LoadbalancerFrontend_IsTerraformElement(x interface{}) *bool
 ```
@@ -464,7 +464,7 @@ loadbalancerfrontend.LoadbalancerFrontend_IsTerraformElement(x interface{}) *boo
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-upcloud.loadbalancerFrontend.LoadbalancerFrontend.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v14/loadbalancerfrontend"
+import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/loadbalancerfrontend"
 
 loadbalancerfrontend.LoadbalancerFrontend_IsTerraformResource(x interface{}) *bool
 ```
@@ -478,7 +478,7 @@ loadbalancerfrontend.LoadbalancerFrontend_IsTerraformResource(x interface{}) *bo
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-upcloud.loadbalancerFrontend.LoadbalancerFrontend.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v14/loadbalancerfrontend"
+import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/loadbalancerfrontend"
 
 loadbalancerfrontend.LoadbalancerFrontend_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -507,7 +507,7 @@ The construct id used in the generated config for the LoadbalancerFrontend to im
 
 The id of the existing LoadbalancerFrontend that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.20.1/docs/resources/loadbalancer_frontend#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.20.2/docs/resources/loadbalancer_frontend#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -894,7 +894,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-upcloud.loadbalancerFrontend.LoadbalancerFrontendConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v14/loadbalancerfrontend"
+import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/loadbalancerfrontend"
 
 &loadbalancerfrontend.LoadbalancerFrontendConfig {
 	Connection: interface{},
@@ -925,7 +925,7 @@ import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v14/loadbalancerfront
 | <code><a href="#@cdktf/provider-upcloud.loadbalancerFrontend.LoadbalancerFrontendConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.loadbalancerFrontend.LoadbalancerFrontendConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.loadbalancerFrontend.LoadbalancerFrontendConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-upcloud.loadbalancerFrontend.LoadbalancerFrontendConfig.property.defaultBackendName">DefaultBackendName</a></code> | <code>*string</code> | The name of the default backend where traffic will be routed. |
+| <code><a href="#@cdktf/provider-upcloud.loadbalancerFrontend.LoadbalancerFrontendConfig.property.defaultBackendName">DefaultBackendName</a></code> | <code>*string</code> | The name of the backend where traffic will be routed by default. |
 | <code><a href="#@cdktf/provider-upcloud.loadbalancerFrontend.LoadbalancerFrontendConfig.property.loadbalancer">Loadbalancer</a></code> | <code>*string</code> | UUID of the load balancer to which the frontend is connected. |
 | <code><a href="#@cdktf/provider-upcloud.loadbalancerFrontend.LoadbalancerFrontendConfig.property.mode">Mode</a></code> | <code>*string</code> | When load balancer operating in `tcp` mode it acts as a layer 4 proxy. |
 | <code><a href="#@cdktf/provider-upcloud.loadbalancerFrontend.LoadbalancerFrontendConfig.property.name">Name</a></code> | <code>*string</code> | The name of the frontend. Must be unique within the load balancer service. |
@@ -1013,11 +1013,15 @@ DefaultBackendName *string
 
 - *Type:* *string
 
-The name of the default backend where traffic will be routed.
+The name of the backend where traffic will be routed by default.
 
-Note, default backend can be overwritten in frontend rules.
+The default backend can be overridden in frontend rules.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.20.1/docs/resources/loadbalancer_frontend#default_backend_name LoadbalancerFrontend#default_backend_name}
+```
+Note that the frontend resource depends on the default backend resource. Use the `name` field of a backend resource as the value for this field (like in the example above) or the `depends_on` meta argument to ensure the resources are created and destroyed in the correct order.
+```
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.20.2/docs/resources/loadbalancer_frontend#default_backend_name LoadbalancerFrontend#default_backend_name}
 
 ---
 
@@ -1031,7 +1035,7 @@ Loadbalancer *string
 
 UUID of the load balancer to which the frontend is connected.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.20.1/docs/resources/loadbalancer_frontend#loadbalancer LoadbalancerFrontend#loadbalancer}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.20.2/docs/resources/loadbalancer_frontend#loadbalancer LoadbalancerFrontend#loadbalancer}
 
 ---
 
@@ -1047,7 +1051,7 @@ When load balancer operating in `tcp` mode it acts as a layer 4 proxy.
 
 In `http` mode it acts as a layer 7 proxy.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.20.1/docs/resources/loadbalancer_frontend#mode LoadbalancerFrontend#mode}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.20.2/docs/resources/loadbalancer_frontend#mode LoadbalancerFrontend#mode}
 
 ---
 
@@ -1061,7 +1065,7 @@ Name *string
 
 The name of the frontend. Must be unique within the load balancer service.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.20.1/docs/resources/loadbalancer_frontend#name LoadbalancerFrontend#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.20.2/docs/resources/loadbalancer_frontend#name LoadbalancerFrontend#name}
 
 ---
 
@@ -1075,7 +1079,7 @@ Port *f64
 
 Port to listen for incoming requests.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.20.1/docs/resources/loadbalancer_frontend#port LoadbalancerFrontend#port}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.20.2/docs/resources/loadbalancer_frontend#port LoadbalancerFrontend#port}
 
 ---
 
@@ -1089,7 +1093,7 @@ Networks interface{}
 
 networks block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.20.1/docs/resources/loadbalancer_frontend#networks LoadbalancerFrontend#networks}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.20.2/docs/resources/loadbalancer_frontend#networks LoadbalancerFrontend#networks}
 
 ---
 
@@ -1103,7 +1107,7 @@ Properties interface{}
 
 properties block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.20.1/docs/resources/loadbalancer_frontend#properties LoadbalancerFrontend#properties}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.20.2/docs/resources/loadbalancer_frontend#properties LoadbalancerFrontend#properties}
 
 ---
 
@@ -1112,7 +1116,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upclo
 #### Initializer <a name="Initializer" id="@cdktf/provider-upcloud.loadbalancerFrontend.LoadbalancerFrontendNetworks.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v14/loadbalancerfrontend"
+import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/loadbalancerfrontend"
 
 &loadbalancerfrontend.LoadbalancerFrontendNetworks {
 	Name: *string,
@@ -1137,7 +1141,7 @@ Name *string
 
 Name of the load balancer network.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.20.1/docs/resources/loadbalancer_frontend#name LoadbalancerFrontend#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.20.2/docs/resources/loadbalancer_frontend#name LoadbalancerFrontend#name}
 
 ---
 
@@ -1146,7 +1150,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upclo
 #### Initializer <a name="Initializer" id="@cdktf/provider-upcloud.loadbalancerFrontend.LoadbalancerFrontendProperties.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v14/loadbalancerfrontend"
+import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/loadbalancerfrontend"
 
 &loadbalancerfrontend.LoadbalancerFrontendProperties {
 	Http2Enabled: interface{},
@@ -1175,7 +1179,7 @@ Http2Enabled interface{}
 
 Enable or disable HTTP/2 support.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.20.1/docs/resources/loadbalancer_frontend#http2_enabled LoadbalancerFrontend#http2_enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.20.2/docs/resources/loadbalancer_frontend#http2_enabled LoadbalancerFrontend#http2_enabled}
 
 ---
 
@@ -1189,7 +1193,7 @@ InboundProxyProtocol interface{}
 
 Enable or disable inbound proxy protocol support.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.20.1/docs/resources/loadbalancer_frontend#inbound_proxy_protocol LoadbalancerFrontend#inbound_proxy_protocol}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.20.2/docs/resources/loadbalancer_frontend#inbound_proxy_protocol LoadbalancerFrontend#inbound_proxy_protocol}
 
 ---
 
@@ -1203,7 +1207,7 @@ TimeoutClient *f64
 
 Client request timeout in seconds.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.20.1/docs/resources/loadbalancer_frontend#timeout_client LoadbalancerFrontend#timeout_client}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.20.2/docs/resources/loadbalancer_frontend#timeout_client LoadbalancerFrontend#timeout_client}
 
 ---
 
@@ -1214,7 +1218,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upclo
 #### Initializers <a name="Initializers" id="@cdktf/provider-upcloud.loadbalancerFrontend.LoadbalancerFrontendNetworksList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v14/loadbalancerfrontend"
+import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/loadbalancerfrontend"
 
 loadbalancerfrontend.NewLoadbalancerFrontendNetworksList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) LoadbalancerFrontendNetworksList
 ```
@@ -1374,7 +1378,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-upcloud.loadbalancerFrontend.LoadbalancerFrontendNetworksOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v14/loadbalancerfrontend"
+import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/loadbalancerfrontend"
 
 loadbalancerfrontend.NewLoadbalancerFrontendNetworksOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) LoadbalancerFrontendNetworksOutputReference
 ```
@@ -1663,7 +1667,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-upcloud.loadbalancerFrontend.LoadbalancerFrontendPropertiesList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v14/loadbalancerfrontend"
+import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/loadbalancerfrontend"
 
 loadbalancerfrontend.NewLoadbalancerFrontendPropertiesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) LoadbalancerFrontendPropertiesList
 ```
@@ -1823,7 +1827,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-upcloud.loadbalancerFrontend.LoadbalancerFrontendPropertiesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v14/loadbalancerfrontend"
+import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/loadbalancerfrontend"
 
 loadbalancerfrontend.NewLoadbalancerFrontendPropertiesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) LoadbalancerFrontendPropertiesOutputReference
 ```

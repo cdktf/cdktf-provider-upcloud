@@ -4,12 +4,12 @@
 
 ### ManagedObjectStorageCustomDomain <a name="ManagedObjectStorageCustomDomain" id="@cdktf/provider-upcloud.managedObjectStorageCustomDomain.ManagedObjectStorageCustomDomain"></a>
 
-Represents a {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.20.1/docs/resources/managed_object_storage_custom_domain upcloud_managed_object_storage_custom_domain}.
+Represents a {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.20.2/docs/resources/managed_object_storage_custom_domain upcloud_managed_object_storage_custom_domain}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-upcloud.managedObjectStorageCustomDomain.ManagedObjectStorageCustomDomain.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v14/managedobjectstoragecustomdomain"
+import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/managedobjectstoragecustomdomain"
 
 managedobjectstoragecustomdomain.NewManagedObjectStorageCustomDomain(scope Construct, id *string, config ManagedObjectStorageCustomDomainConfig) ManagedObjectStorageCustomDomain
 ```
@@ -385,7 +385,7 @@ func ResetType()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-upcloud.managedObjectStorageCustomDomain.ManagedObjectStorageCustomDomain.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v14/managedobjectstoragecustomdomain"
+import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/managedobjectstoragecustomdomain"
 
 managedobjectstoragecustomdomain.ManagedObjectStorageCustomDomain_IsConstruct(x interface{}) *bool
 ```
@@ -417,7 +417,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-upcloud.managedObjectStorageCustomDomain.ManagedObjectStorageCustomDomain.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v14/managedobjectstoragecustomdomain"
+import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/managedobjectstoragecustomdomain"
 
 managedobjectstoragecustomdomain.ManagedObjectStorageCustomDomain_IsTerraformElement(x interface{}) *bool
 ```
@@ -431,7 +431,7 @@ managedobjectstoragecustomdomain.ManagedObjectStorageCustomDomain_IsTerraformEle
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-upcloud.managedObjectStorageCustomDomain.ManagedObjectStorageCustomDomain.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v14/managedobjectstoragecustomdomain"
+import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/managedobjectstoragecustomdomain"
 
 managedobjectstoragecustomdomain.ManagedObjectStorageCustomDomain_IsTerraformResource(x interface{}) *bool
 ```
@@ -445,7 +445,7 @@ managedobjectstoragecustomdomain.ManagedObjectStorageCustomDomain_IsTerraformRes
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-upcloud.managedObjectStorageCustomDomain.ManagedObjectStorageCustomDomain.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v14/managedobjectstoragecustomdomain"
+import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/managedobjectstoragecustomdomain"
 
 managedobjectstoragecustomdomain.ManagedObjectStorageCustomDomain_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -474,7 +474,7 @@ The construct id used in the generated config for the ManagedObjectStorageCustom
 
 The id of the existing ManagedObjectStorageCustomDomain that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.20.1/docs/resources/managed_object_storage_custom_domain#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.20.2/docs/resources/managed_object_storage_custom_domain#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -751,7 +751,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-upcloud.managedObjectStorageCustomDomain.ManagedObjectStorageCustomDomainConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v14/managedobjectstoragecustomdomain"
+import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/managedobjectstoragecustomdomain"
 
 &managedobjectstoragecustomdomain.ManagedObjectStorageCustomDomainConfig {
 	Connection: interface{},
@@ -864,7 +864,7 @@ DomainName *string
 
 Must be a subdomain and consist of 3 to 5 parts such as objects.example.com. Cannot be root-level domain e.g. example.com.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.20.1/docs/resources/managed_object_storage_custom_domain#domain_name ManagedObjectStorageCustomDomain#domain_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.20.2/docs/resources/managed_object_storage_custom_domain#domain_name ManagedObjectStorageCustomDomain#domain_name}
 
 ---
 
@@ -878,7 +878,7 @@ ServiceUuid *string
 
 Managed Object Storage service UUID.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.20.1/docs/resources/managed_object_storage_custom_domain#service_uuid ManagedObjectStorageCustomDomain#service_uuid}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.20.2/docs/resources/managed_object_storage_custom_domain#service_uuid ManagedObjectStorageCustomDomain#service_uuid}
 
 ---
 
@@ -892,7 +892,7 @@ Type *string
 
 At the moment only `public` is accepted.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.20.1/docs/resources/managed_object_storage_custom_domain#type ManagedObjectStorageCustomDomain#type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.20.2/docs/resources/managed_object_storage_custom_domain#type ManagedObjectStorageCustomDomain#type}
 
 ---
 

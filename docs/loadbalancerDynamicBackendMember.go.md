@@ -4,12 +4,12 @@
 
 ### LoadbalancerDynamicBackendMember <a name="LoadbalancerDynamicBackendMember" id="@cdktf/provider-upcloud.loadbalancerDynamicBackendMember.LoadbalancerDynamicBackendMember"></a>
 
-Represents a {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.20.1/docs/resources/loadbalancer_dynamic_backend_member upcloud_loadbalancer_dynamic_backend_member}.
+Represents a {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.20.2/docs/resources/loadbalancer_dynamic_backend_member upcloud_loadbalancer_dynamic_backend_member}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-upcloud.loadbalancerDynamicBackendMember.LoadbalancerDynamicBackendMember.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v14/loadbalancerdynamicbackendmember"
+import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/loadbalancerdynamicbackendmember"
 
 loadbalancerdynamicbackendmember.NewLoadbalancerDynamicBackendMember(scope Construct, id *string, config LoadbalancerDynamicBackendMemberConfig) LoadbalancerDynamicBackendMember
 ```
@@ -399,7 +399,7 @@ func ResetPort()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-upcloud.loadbalancerDynamicBackendMember.LoadbalancerDynamicBackendMember.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v14/loadbalancerdynamicbackendmember"
+import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/loadbalancerdynamicbackendmember"
 
 loadbalancerdynamicbackendmember.LoadbalancerDynamicBackendMember_IsConstruct(x interface{}) *bool
 ```
@@ -431,7 +431,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-upcloud.loadbalancerDynamicBackendMember.LoadbalancerDynamicBackendMember.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v14/loadbalancerdynamicbackendmember"
+import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/loadbalancerdynamicbackendmember"
 
 loadbalancerdynamicbackendmember.LoadbalancerDynamicBackendMember_IsTerraformElement(x interface{}) *bool
 ```
@@ -445,7 +445,7 @@ loadbalancerdynamicbackendmember.LoadbalancerDynamicBackendMember_IsTerraformEle
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-upcloud.loadbalancerDynamicBackendMember.LoadbalancerDynamicBackendMember.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v14/loadbalancerdynamicbackendmember"
+import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/loadbalancerdynamicbackendmember"
 
 loadbalancerdynamicbackendmember.LoadbalancerDynamicBackendMember_IsTerraformResource(x interface{}) *bool
 ```
@@ -459,7 +459,7 @@ loadbalancerdynamicbackendmember.LoadbalancerDynamicBackendMember_IsTerraformRes
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-upcloud.loadbalancerDynamicBackendMember.LoadbalancerDynamicBackendMember.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v14/loadbalancerdynamicbackendmember"
+import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/loadbalancerdynamicbackendmember"
 
 loadbalancerdynamicbackendmember.LoadbalancerDynamicBackendMember_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -488,7 +488,7 @@ The construct id used in the generated config for the LoadbalancerDynamicBackend
 
 The id of the existing LoadbalancerDynamicBackendMember that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.20.1/docs/resources/loadbalancer_dynamic_backend_member#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.20.2/docs/resources/loadbalancer_dynamic_backend_member#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -853,7 +853,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-upcloud.loadbalancerDynamicBackendMember.LoadbalancerDynamicBackendMemberConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v14/loadbalancerdynamicbackendmember"
+import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/loadbalancerdynamicbackendmember"
 
 &loadbalancerdynamicbackendmember.LoadbalancerDynamicBackendMemberConfig {
 	Connection: interface{},
@@ -974,7 +974,7 @@ Backend *string
 
 ID of the load balancer backend to which the member is connected.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.20.1/docs/resources/loadbalancer_dynamic_backend_member#backend LoadbalancerDynamicBackendMember#backend}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.20.2/docs/resources/loadbalancer_dynamic_backend_member#backend LoadbalancerDynamicBackendMember#backend}
 
 ---
 
@@ -988,7 +988,7 @@ MaxSessions *f64
 
 Maximum number of sessions before queueing.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.20.1/docs/resources/loadbalancer_dynamic_backend_member#max_sessions LoadbalancerDynamicBackendMember#max_sessions}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.20.2/docs/resources/loadbalancer_dynamic_backend_member#max_sessions LoadbalancerDynamicBackendMember#max_sessions}
 
 ---
 
@@ -1002,7 +1002,7 @@ Name *string
 
 The name of the member. Must be unique within within the load balancer backend.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.20.1/docs/resources/loadbalancer_dynamic_backend_member#name LoadbalancerDynamicBackendMember#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.20.2/docs/resources/loadbalancer_dynamic_backend_member#name LoadbalancerDynamicBackendMember#name}
 
 ---
 
@@ -1016,7 +1016,7 @@ Weight *f64
 
 Weight of the member. The higher the weight, the more traffic the member receives.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.20.1/docs/resources/loadbalancer_dynamic_backend_member#weight LoadbalancerDynamicBackendMember#weight}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.20.2/docs/resources/loadbalancer_dynamic_backend_member#weight LoadbalancerDynamicBackendMember#weight}
 
 ---
 
@@ -1030,7 +1030,7 @@ Enabled interface{}
 
 Indicates if the member is enabled. Disabled members are excluded from load balancing.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.20.1/docs/resources/loadbalancer_dynamic_backend_member#enabled LoadbalancerDynamicBackendMember#enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.20.2/docs/resources/loadbalancer_dynamic_backend_member#enabled LoadbalancerDynamicBackendMember#enabled}
 
 ---
 
@@ -1044,7 +1044,7 @@ Ip *string
 
 Optional fallback IP address in case of failure on DNS resolving.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.20.1/docs/resources/loadbalancer_dynamic_backend_member#ip LoadbalancerDynamicBackendMember#ip}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.20.2/docs/resources/loadbalancer_dynamic_backend_member#ip LoadbalancerDynamicBackendMember#ip}
 
 ---
 
@@ -1058,7 +1058,7 @@ Port *f64
 
 Server port. Port is optional and can be specified in DNS SRV record.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.20.1/docs/resources/loadbalancer_dynamic_backend_member#port LoadbalancerDynamicBackendMember#port}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.20.2/docs/resources/loadbalancer_dynamic_backend_member#port LoadbalancerDynamicBackendMember#port}
 
 ---
 

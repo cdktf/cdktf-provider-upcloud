@@ -4,7 +4,7 @@
 
 ### ServerGroup <a name="ServerGroup" id="@cdktf/provider-upcloud.serverGroup.ServerGroup"></a>
 
-Represents a {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.20.1/docs/resources/server_group upcloud_server_group}.
+Represents a {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.20.2/docs/resources/server_group upcloud_server_group}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-upcloud.serverGroup.ServerGroup.Initializer"></a>
 
@@ -114,7 +114,7 @@ Must be unique amongst siblings in the same scope
 
 Title of your server group.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.20.1/docs/resources/server_group#title ServerGroup#title}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.20.2/docs/resources/server_group#title ServerGroup#title}
 
 ---
 
@@ -140,7 +140,7 @@ policies in server group are not met, you need to manually restart the servers i
 for example via API, UpCloud Control Panel or upctl (UpCloud CLI)
 ```
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.20.1/docs/resources/server_group#anti_affinity_policy ServerGroup#anti_affinity_policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.20.2/docs/resources/server_group#anti_affinity_policy ServerGroup#anti_affinity_policy}
 
 ---
 
@@ -150,7 +150,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upclo
 
 User defined key-value pairs to classify the server group.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.20.1/docs/resources/server_group#labels ServerGroup#labels}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.20.2/docs/resources/server_group#labels ServerGroup#labels}
 
 ---
 
@@ -162,7 +162,7 @@ UUIDs of the servers that are members of this group.
 
 Servers can also be attached to the server group via `server_group` property of `upcloud_server`. See also `track_members` property.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.20.1/docs/resources/server_group#members ServerGroup#members}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.20.2/docs/resources/server_group#members ServerGroup#members}
 
 ---
 
@@ -174,7 +174,7 @@ Controls if members of the server group are being tracked in this resource.
 
 Set to `false` when using `server_group` property of `upcloud_server` to attach servers to the server group to avoid delayed state updates.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.20.1/docs/resources/server_group#track_members ServerGroup#track_members}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.20.2/docs/resources/server_group#track_members ServerGroup#track_members}
 
 ---
 
@@ -675,7 +675,7 @@ The construct id used in the generated config for the ServerGroup to import.
 
 The id of the existing ServerGroup that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.20.1/docs/resources/server_group#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.20.2/docs/resources/server_group#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1113,7 +1113,7 @@ title: str
 
 Title of your server group.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.20.1/docs/resources/server_group#title ServerGroup#title}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.20.2/docs/resources/server_group#title ServerGroup#title}
 
 ---
 
@@ -1143,7 +1143,7 @@ policies in server group are not met, you need to manually restart the servers i
 for example via API, UpCloud Control Panel or upctl (UpCloud CLI)
 ```
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.20.1/docs/resources/server_group#anti_affinity_policy ServerGroup#anti_affinity_policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.20.2/docs/resources/server_group#anti_affinity_policy ServerGroup#anti_affinity_policy}
 
 ---
 
@@ -1157,7 +1157,7 @@ labels: typing.Mapping[str]
 
 User defined key-value pairs to classify the server group.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.20.1/docs/resources/server_group#labels ServerGroup#labels}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.20.2/docs/resources/server_group#labels ServerGroup#labels}
 
 ---
 
@@ -1173,7 +1173,7 @@ UUIDs of the servers that are members of this group.
 
 Servers can also be attached to the server group via `server_group` property of `upcloud_server`. See also `track_members` property.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.20.1/docs/resources/server_group#members ServerGroup#members}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.20.2/docs/resources/server_group#members ServerGroup#members}
 
 ---
 
@@ -1189,7 +1189,7 @@ Controls if members of the server group are being tracked in this resource.
 
 Set to `false` when using `server_group` property of `upcloud_server` to attach servers to the server group to avoid delayed state updates.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.20.1/docs/resources/server_group#track_members ServerGroup#track_members}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.20.2/docs/resources/server_group#track_members ServerGroup#track_members}
 
 ---
 
