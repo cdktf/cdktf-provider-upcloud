@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/upcloudltd/upcloud/5.20.1/docs/resources/loadbalancer_static_backend_member
+// https://registry.terraform.io/providers/upcloudltd/upcloud/5.20.2/docs/resources/loadbalancer_static_backend_member
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,49 +15,49 @@ export interface LoadbalancerStaticBackendMemberConfig extends cdktf.TerraformMe
   /**
   * ID of the load balancer backend to which the member is connected.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.20.1/docs/resources/loadbalancer_static_backend_member#backend LoadbalancerStaticBackendMember#backend}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.20.2/docs/resources/loadbalancer_static_backend_member#backend LoadbalancerStaticBackendMember#backend}
   */
   readonly backend: string;
   /**
   * Indicates if the member is enabled. Disabled members are excluded from load balancing.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.20.1/docs/resources/loadbalancer_static_backend_member#enabled LoadbalancerStaticBackendMember#enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.20.2/docs/resources/loadbalancer_static_backend_member#enabled LoadbalancerStaticBackendMember#enabled}
   */
   readonly enabled?: boolean | cdktf.IResolvable;
   /**
   * Optional fallback IP address in case of failure on DNS resolving.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.20.1/docs/resources/loadbalancer_static_backend_member#ip LoadbalancerStaticBackendMember#ip}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.20.2/docs/resources/loadbalancer_static_backend_member#ip LoadbalancerStaticBackendMember#ip}
   */
   readonly ip?: string;
   /**
   * Maximum number of sessions before queueing.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.20.1/docs/resources/loadbalancer_static_backend_member#max_sessions LoadbalancerStaticBackendMember#max_sessions}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.20.2/docs/resources/loadbalancer_static_backend_member#max_sessions LoadbalancerStaticBackendMember#max_sessions}
   */
   readonly maxSessions: number;
   /**
   * The name of the member. Must be unique within within the load balancer backend.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.20.1/docs/resources/loadbalancer_static_backend_member#name LoadbalancerStaticBackendMember#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.20.2/docs/resources/loadbalancer_static_backend_member#name LoadbalancerStaticBackendMember#name}
   */
   readonly name: string;
   /**
   * Server port. Port is optional and can be specified in DNS SRV record.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.20.1/docs/resources/loadbalancer_static_backend_member#port LoadbalancerStaticBackendMember#port}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.20.2/docs/resources/loadbalancer_static_backend_member#port LoadbalancerStaticBackendMember#port}
   */
   readonly port?: number;
   /**
   * Weight of the member. The higher the weight, the more traffic the member receives.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.20.1/docs/resources/loadbalancer_static_backend_member#weight LoadbalancerStaticBackendMember#weight}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.20.2/docs/resources/loadbalancer_static_backend_member#weight LoadbalancerStaticBackendMember#weight}
   */
   readonly weight: number;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.20.1/docs/resources/loadbalancer_static_backend_member upcloud_loadbalancer_static_backend_member}
+* Represents a {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.20.2/docs/resources/loadbalancer_static_backend_member upcloud_loadbalancer_static_backend_member}
 */
 export class LoadbalancerStaticBackendMember extends cdktf.TerraformResource {
 
@@ -73,7 +73,7 @@ export class LoadbalancerStaticBackendMember extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a LoadbalancerStaticBackendMember resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the LoadbalancerStaticBackendMember to import
-  * @param importFromId The id of the existing LoadbalancerStaticBackendMember that should be imported. Refer to the {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.20.1/docs/resources/loadbalancer_static_backend_member#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing LoadbalancerStaticBackendMember that should be imported. Refer to the {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.20.2/docs/resources/loadbalancer_static_backend_member#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the LoadbalancerStaticBackendMember to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -85,7 +85,7 @@ export class LoadbalancerStaticBackendMember extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.20.1/docs/resources/loadbalancer_static_backend_member upcloud_loadbalancer_static_backend_member} Resource
+  * Create a new {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.20.2/docs/resources/loadbalancer_static_backend_member upcloud_loadbalancer_static_backend_member} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -96,7 +96,7 @@ export class LoadbalancerStaticBackendMember extends cdktf.TerraformResource {
       terraformResourceType: 'upcloud_loadbalancer_static_backend_member',
       terraformGeneratorMetadata: {
         providerName: 'upcloud',
-        providerVersion: '5.20.1',
+        providerVersion: '5.20.2',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,

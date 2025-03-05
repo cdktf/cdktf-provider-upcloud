@@ -4,7 +4,7 @@
 
 ### DataUpcloudZones <a name="DataUpcloudZones" id="@cdktf/provider-upcloud.dataUpcloudZones.DataUpcloudZones"></a>
 
-Represents a {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.20.1/docs/data-sources/zones upcloud_zones}.
+Represents a {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.20.2/docs/data-sources/zones upcloud_zones}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-upcloud.dataUpcloudZones.DataUpcloudZones.Initializer"></a>
 
@@ -106,7 +106,7 @@ Must be unique amongst siblings in the same scope
 
 Filter zones by type. Possible values are "all", "public" and "private". Default is "public".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.20.1/docs/data-sources/zones#filter_type DataUpcloudZones#filter_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.20.2/docs/data-sources/zones#filter_type DataUpcloudZones#filter_type}
 
 ---
 
@@ -472,7 +472,7 @@ The construct id used in the generated config for the DataUpcloudZones to import
 
 The id of the existing DataUpcloudZones that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.20.1/docs/data-sources/zones#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.20.2/docs/data-sources/zones#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -803,7 +803,7 @@ filter_type: str
 
 Filter zones by type. Possible values are "all", "public" and "private". Default is "public".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.20.1/docs/data-sources/zones#filter_type DataUpcloudZones#filter_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.20.2/docs/data-sources/zones#filter_type DataUpcloudZones#filter_type}
 
 ---
 
