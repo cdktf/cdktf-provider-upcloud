@@ -1,3 +1,8 @@
+/**
+ * Copyright (c) HashiCorp, Inc.
+ * SPDX-License-Identifier: MPL-2.0
+ */
+
 // https://registry.terraform.io/providers/upcloudltd/upcloud/5.20.3/docs/resources/loadbalancer_resolver
 // generated from terraform resource schema
 
