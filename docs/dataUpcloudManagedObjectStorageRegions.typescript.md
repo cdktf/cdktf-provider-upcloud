@@ -4,7 +4,7 @@
 
 ### DataUpcloudManagedObjectStorageRegions <a name="DataUpcloudManagedObjectStorageRegions" id="@cdktf/provider-upcloud.dataUpcloudManagedObjectStorageRegions.DataUpcloudManagedObjectStorageRegions"></a>
 
-Represents a {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.20.2/docs/data-sources/managed_object_storage_regions upcloud_managed_object_storage_regions}.
+Represents a {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.20.3/docs/data-sources/managed_object_storage_regions upcloud_managed_object_storage_regions}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-upcloud.dataUpcloudManagedObjectStorageRegions.DataUpcloudManagedObjectStorageRegions.Initializer"></a>
 
@@ -385,7 +385,7 @@ The construct id used in the generated config for the DataUpcloudManagedObjectSt
 
 The id of the existing DataUpcloudManagedObjectStorageRegions that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.20.2/docs/data-sources/managed_object_storage_regions#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.20.3/docs/data-sources/managed_object_storage_regions#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -696,7 +696,7 @@ public readonly regions: IResolvable | DataUpcloudManagedObjectStorageRegionsReg
 
 regions block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.20.2/docs/data-sources/managed_object_storage_regions#regions DataUpcloudManagedObjectStorageRegions#regions}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.20.3/docs/data-sources/managed_object_storage_regions#regions DataUpcloudManagedObjectStorageRegions#regions}
 
 ---
 
