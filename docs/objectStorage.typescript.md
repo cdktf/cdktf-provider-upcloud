@@ -4,7 +4,7 @@
 
 ### ObjectStorage <a name="ObjectStorage" id="@cdktf/provider-upcloud.objectStorage.ObjectStorage"></a>
 
-Represents a {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.20.3/docs/resources/object_storage upcloud_object_storage}.
+Represents a {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.20.4/docs/resources/object_storage upcloud_object_storage}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-upcloud.objectStorage.ObjectStorage.Initializer"></a>
 
@@ -501,7 +501,7 @@ The construct id used in the generated config for the ObjectStorage to import.
 
 The id of the existing ObjectStorage that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.20.3/docs/resources/object_storage#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.20.4/docs/resources/object_storage#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -944,7 +944,7 @@ public readonly name: string;
 
 The name of the bucket.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.20.3/docs/resources/object_storage#name ObjectStorage#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.20.4/docs/resources/object_storage#name ObjectStorage#name}
 
 ---
 
@@ -976,7 +976,7 @@ const objectStorageConfig: objectStorage.ObjectStorageConfig = { ... }
 | <code><a href="#@cdktf/provider-upcloud.objectStorage.ObjectStorageConfig.property.zone">zone</a></code> | <code>string</code> | The zone in which the object storage instance will be created, e.g. `de-fra1`. You can list available zones with `upctl zone list`. |
 | <code><a href="#@cdktf/provider-upcloud.objectStorage.ObjectStorageConfig.property.bucket">bucket</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-upcloud.objectStorage.ObjectStorageBucket">ObjectStorageBucket</a>[]</code> | bucket block. |
 | <code><a href="#@cdktf/provider-upcloud.objectStorage.ObjectStorageConfig.property.description">description</a></code> | <code>string</code> | The description of the object storage instance to be created. |
-| <code><a href="#@cdktf/provider-upcloud.objectStorage.ObjectStorageConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.20.3/docs/resources/object_storage#id ObjectStorage#id}. |
+| <code><a href="#@cdktf/provider-upcloud.objectStorage.ObjectStorageConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.20.4/docs/resources/object_storage#id ObjectStorage#id}. |
 
 ---
 
@@ -1066,7 +1066,7 @@ Can be set to an empty string, which will tell the provider to get the access ke
 				and all dashes (-) should be replaced with underscores (_). For example, object storage named "my-files" would
 				use environment variable named "UPCLOUD_OBJECT_STORAGE_ACCESS_KEY_MY_FILES".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.20.3/docs/resources/object_storage#access_key ObjectStorage#access_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.20.4/docs/resources/object_storage#access_key ObjectStorage#access_key}
 
 ---
 
@@ -1080,7 +1080,7 @@ public readonly name: string;
 
 The name of the object storage instance to be created.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.20.3/docs/resources/object_storage#name ObjectStorage#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.20.4/docs/resources/object_storage#name ObjectStorage#name}
 
 ---
 
@@ -1100,7 +1100,7 @@ Can be set to an empty string, which will tell the provider to get the secret ke
 				and all dashes (-) should be replaced with underscores (_). For example, object storage named "my-files" would
 				use environment variable named "UPCLOUD_OBJECT_STORAGE_SECRET_KEY_MY_FILES".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.20.3/docs/resources/object_storage#secret_key ObjectStorage#secret_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.20.4/docs/resources/object_storage#secret_key ObjectStorage#secret_key}
 
 ---
 
@@ -1114,7 +1114,7 @@ public readonly size: number;
 
 The size of the object storage instance in gigabytes.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.20.3/docs/resources/object_storage#size ObjectStorage#size}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.20.4/docs/resources/object_storage#size ObjectStorage#size}
 
 ---
 
@@ -1128,7 +1128,7 @@ public readonly zone: string;
 
 The zone in which the object storage instance will be created, e.g. `de-fra1`. You can list available zones with `upctl zone list`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.20.3/docs/resources/object_storage#zone ObjectStorage#zone}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.20.4/docs/resources/object_storage#zone ObjectStorage#zone}
 
 ---
 
@@ -1142,7 +1142,7 @@ public readonly bucket: IResolvable | ObjectStorageBucket[];
 
 bucket block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.20.3/docs/resources/object_storage#bucket ObjectStorage#bucket}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.20.4/docs/resources/object_storage#bucket ObjectStorage#bucket}
 
 ---
 
@@ -1156,7 +1156,7 @@ public readonly description: string;
 
 The description of the object storage instance to be created.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.20.3/docs/resources/object_storage#description ObjectStorage#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.20.4/docs/resources/object_storage#description ObjectStorage#description}
 
 ---
 
@@ -1168,7 +1168,7 @@ public readonly id: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.20.3/docs/resources/object_storage#id ObjectStorage#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.20.4/docs/resources/object_storage#id ObjectStorage#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.

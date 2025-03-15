@@ -4,12 +4,12 @@
 
 ### DataUpcloudZones <a name="DataUpcloudZones" id="@cdktf/provider-upcloud.dataUpcloudZones.DataUpcloudZones"></a>
 
-Represents a {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.20.3/docs/data-sources/zones upcloud_zones}.
+Represents a {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.20.4/docs/data-sources/zones upcloud_zones}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-upcloud.dataUpcloudZones.DataUpcloudZones.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v14/dataupcloudzones"
+import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/dataupcloudzones"
 
 dataupcloudzones.NewDataUpcloudZones(scope Construct, id *string, config DataUpcloudZonesConfig) DataUpcloudZones
 ```
@@ -283,7 +283,7 @@ func ResetFilterType()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-upcloud.dataUpcloudZones.DataUpcloudZones.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v14/dataupcloudzones"
+import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/dataupcloudzones"
 
 dataupcloudzones.DataUpcloudZones_IsConstruct(x interface{}) *bool
 ```
@@ -315,7 +315,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-upcloud.dataUpcloudZones.DataUpcloudZones.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v14/dataupcloudzones"
+import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/dataupcloudzones"
 
 dataupcloudzones.DataUpcloudZones_IsTerraformElement(x interface{}) *bool
 ```
@@ -329,7 +329,7 @@ dataupcloudzones.DataUpcloudZones_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-upcloud.dataUpcloudZones.DataUpcloudZones.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v14/dataupcloudzones"
+import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/dataupcloudzones"
 
 dataupcloudzones.DataUpcloudZones_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -343,7 +343,7 @@ dataupcloudzones.DataUpcloudZones_IsTerraformDataSource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-upcloud.dataUpcloudZones.DataUpcloudZones.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v14/dataupcloudzones"
+import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/dataupcloudzones"
 
 dataupcloudzones.DataUpcloudZones_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -372,7 +372,7 @@ The construct id used in the generated config for the DataUpcloudZones to import
 
 The id of the existing DataUpcloudZones that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.20.3/docs/data-sources/zones#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.20.4/docs/data-sources/zones#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -594,7 +594,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-upcloud.dataUpcloudZones.DataUpcloudZonesConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v14/dataupcloudzones"
+import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/dataupcloudzones"
 
 &dataupcloudzones.DataUpcloudZonesConfig {
 	Connection: interface{},
@@ -703,7 +703,7 @@ FilterType *string
 
 Filter zones by type. Possible values are "all", "public" and "private". Default is "public".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.20.3/docs/data-sources/zones#filter_type DataUpcloudZones#filter_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.20.4/docs/data-sources/zones#filter_type DataUpcloudZones#filter_type}
 
 ---
 
