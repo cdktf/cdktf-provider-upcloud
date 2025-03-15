@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/upcloudltd/upcloud/5.20.3/docs/resources/managed_object_storage
+// https://registry.terraform.io/providers/upcloudltd/upcloud/5.20.4/docs/resources/managed_object_storage
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,11 +15,11 @@ export interface ManagedObjectStorageConfig extends cdktf.TerraformMetaArguments
   /**
   * Service status managed by the end user.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.20.3/docs/resources/managed_object_storage#configured_status ManagedObjectStorage#configured_status}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.20.4/docs/resources/managed_object_storage#configured_status ManagedObjectStorage#configured_status}
   */
   readonly configuredStatus: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.20.3/docs/resources/managed_object_storage#id ManagedObjectStorage#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.20.4/docs/resources/managed_object_storage#id ManagedObjectStorage#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -28,25 +28,25 @@ export interface ManagedObjectStorageConfig extends cdktf.TerraformMetaArguments
   /**
   * User defined key-value pairs to classify the managed object storage.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.20.3/docs/resources/managed_object_storage#labels ManagedObjectStorage#labels}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.20.4/docs/resources/managed_object_storage#labels ManagedObjectStorage#labels}
   */
   readonly labels?: { [key: string]: string };
   /**
   * Name of the Managed Object Storage service. Must be unique within account.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.20.3/docs/resources/managed_object_storage#name ManagedObjectStorage#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.20.4/docs/resources/managed_object_storage#name ManagedObjectStorage#name}
   */
   readonly name: string;
   /**
   * Region in which the service will be hosted, see `upcloud_managed_object_storage_regions` data source.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.20.3/docs/resources/managed_object_storage#region ManagedObjectStorage#region}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.20.4/docs/resources/managed_object_storage#region ManagedObjectStorage#region}
   */
   readonly region: string;
   /**
   * network block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.20.3/docs/resources/managed_object_storage#network ManagedObjectStorage#network}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.20.4/docs/resources/managed_object_storage#network ManagedObjectStorage#network}
   */
   readonly network?: ManagedObjectStorageNetwork[] | cdktf.IResolvable;
 }
@@ -144,25 +144,25 @@ export interface ManagedObjectStorageNetwork {
   /**
   * Network family. IPv6 currently not supported.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.20.3/docs/resources/managed_object_storage#family ManagedObjectStorage#family}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.20.4/docs/resources/managed_object_storage#family ManagedObjectStorage#family}
   */
   readonly family: string;
   /**
   * Network name. Must be unique within the service.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.20.3/docs/resources/managed_object_storage#name ManagedObjectStorage#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.20.4/docs/resources/managed_object_storage#name ManagedObjectStorage#name}
   */
   readonly name: string;
   /**
   * Network type.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.20.3/docs/resources/managed_object_storage#type ManagedObjectStorage#type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.20.4/docs/resources/managed_object_storage#type ManagedObjectStorage#type}
   */
   readonly type: string;
   /**
   * Private network uuid. For public networks the field should be omitted.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.20.3/docs/resources/managed_object_storage#uuid ManagedObjectStorage#uuid}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.20.4/docs/resources/managed_object_storage#uuid ManagedObjectStorage#uuid}
   */
   readonly uuid?: string;
 }
@@ -356,7 +356,7 @@ export class ManagedObjectStorageNetworkList extends cdktf.ComplexList {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.20.3/docs/resources/managed_object_storage upcloud_managed_object_storage}
+* Represents a {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.20.4/docs/resources/managed_object_storage upcloud_managed_object_storage}
 */
 export class ManagedObjectStorage extends cdktf.TerraformResource {
 
@@ -372,7 +372,7 @@ export class ManagedObjectStorage extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a ManagedObjectStorage resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the ManagedObjectStorage to import
-  * @param importFromId The id of the existing ManagedObjectStorage that should be imported. Refer to the {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.20.3/docs/resources/managed_object_storage#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing ManagedObjectStorage that should be imported. Refer to the {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.20.4/docs/resources/managed_object_storage#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the ManagedObjectStorage to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -384,7 +384,7 @@ export class ManagedObjectStorage extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.20.3/docs/resources/managed_object_storage upcloud_managed_object_storage} Resource
+  * Create a new {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.20.4/docs/resources/managed_object_storage upcloud_managed_object_storage} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -395,7 +395,7 @@ export class ManagedObjectStorage extends cdktf.TerraformResource {
       terraformResourceType: 'upcloud_managed_object_storage',
       terraformGeneratorMetadata: {
         providerName: 'upcloud',
-        providerVersion: '5.20.3',
+        providerVersion: '5.20.4',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,

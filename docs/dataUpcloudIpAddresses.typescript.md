@@ -4,7 +4,7 @@
 
 ### DataUpcloudIpAddresses <a name="DataUpcloudIpAddresses" id="@cdktf/provider-upcloud.dataUpcloudIpAddresses.DataUpcloudIpAddresses"></a>
 
-Represents a {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.20.3/docs/data-sources/ip_addresses upcloud_ip_addresses}.
+Represents a {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.20.4/docs/data-sources/ip_addresses upcloud_ip_addresses}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-upcloud.dataUpcloudIpAddresses.DataUpcloudIpAddresses.Initializer"></a>
 
@@ -385,7 +385,7 @@ The construct id used in the generated config for the DataUpcloudIpAddresses to 
 
 The id of the existing DataUpcloudIpAddresses that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.20.3/docs/data-sources/ip_addresses#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.20.4/docs/data-sources/ip_addresses#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -707,7 +707,7 @@ public readonly addresses: IResolvable | DataUpcloudIpAddressesAddresses[];
 
 addresses block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.20.3/docs/data-sources/ip_addresses#addresses DataUpcloudIpAddresses#addresses}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.20.4/docs/data-sources/ip_addresses#addresses DataUpcloudIpAddresses#addresses}
 
 ---
 
