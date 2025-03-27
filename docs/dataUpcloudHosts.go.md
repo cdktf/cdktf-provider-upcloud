@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5
 #### Initializers <a name="Initializers" id="@cdktf/provider-upcloud.dataUpcloudHosts.DataUpcloudHosts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v14/dataupcloudhosts"
+import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/dataupcloudhosts"
 
 dataupcloudhosts.NewDataUpcloudHosts(scope Construct, id *string, config DataUpcloudHostsConfig) DataUpcloudHosts
 ```
@@ -296,7 +296,7 @@ func ResetHosts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-upcloud.dataUpcloudHosts.DataUpcloudHosts.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v14/dataupcloudhosts"
+import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/dataupcloudhosts"
 
 dataupcloudhosts.DataUpcloudHosts_IsConstruct(x interface{}) *bool
 ```
@@ -328,7 +328,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-upcloud.dataUpcloudHosts.DataUpcloudHosts.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v14/dataupcloudhosts"
+import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/dataupcloudhosts"
 
 dataupcloudhosts.DataUpcloudHosts_IsTerraformElement(x interface{}) *bool
 ```
@@ -342,7 +342,7 @@ dataupcloudhosts.DataUpcloudHosts_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-upcloud.dataUpcloudHosts.DataUpcloudHosts.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v14/dataupcloudhosts"
+import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/dataupcloudhosts"
 
 dataupcloudhosts.DataUpcloudHosts_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -356,7 +356,7 @@ dataupcloudhosts.DataUpcloudHosts_IsTerraformDataSource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-upcloud.dataUpcloudHosts.DataUpcloudHosts.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v14/dataupcloudhosts"
+import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/dataupcloudhosts"
 
 dataupcloudhosts.DataUpcloudHosts_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -596,7 +596,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-upcloud.dataUpcloudHosts.DataUpcloudHostsConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v14/dataupcloudhosts"
+import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/dataupcloudhosts"
 
 &dataupcloudhosts.DataUpcloudHostsConfig {
 	Connection: interface{},
@@ -714,7 +714,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upclo
 #### Initializer <a name="Initializer" id="@cdktf/provider-upcloud.dataUpcloudHosts.DataUpcloudHostsHosts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v14/dataupcloudhosts"
+import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/dataupcloudhosts"
 
 &dataupcloudhosts.DataUpcloudHostsHosts {
 	Statistics: interface{},
@@ -748,7 +748,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upclo
 #### Initializer <a name="Initializer" id="@cdktf/provider-upcloud.dataUpcloudHosts.DataUpcloudHostsHostsStatistics.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v14/dataupcloudhosts"
+import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/dataupcloudhosts"
 
 &dataupcloudhosts.DataUpcloudHostsHostsStatistics {
 
@@ -763,7 +763,7 @@ import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v14/dataupcloudhosts"
 #### Initializers <a name="Initializers" id="@cdktf/provider-upcloud.dataUpcloudHosts.DataUpcloudHostsHostsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v14/dataupcloudhosts"
+import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/dataupcloudhosts"
 
 dataupcloudhosts.NewDataUpcloudHostsHostsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataUpcloudHostsHostsList
 ```
@@ -923,7 +923,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-upcloud.dataUpcloudHosts.DataUpcloudHostsHostsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v14/dataupcloudhosts"
+import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/dataupcloudhosts"
 
 dataupcloudhosts.NewDataUpcloudHostsHostsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataUpcloudHostsHostsOutputReference
 ```
@@ -1276,7 +1276,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-upcloud.dataUpcloudHosts.DataUpcloudHostsHostsStatisticsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v14/dataupcloudhosts"
+import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/dataupcloudhosts"
 
 dataupcloudhosts.NewDataUpcloudHostsHostsStatisticsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataUpcloudHostsHostsStatisticsList
 ```
@@ -1436,7 +1436,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-upcloud.dataUpcloudHosts.DataUpcloudHostsHostsStatisticsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v14/dataupcloudhosts"
+import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/dataupcloudhosts"
 
 dataupcloudhosts.NewDataUpcloudHostsHostsStatisticsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataUpcloudHostsHostsStatisticsOutputReference
 ```
