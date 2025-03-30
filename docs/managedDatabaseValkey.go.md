@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5
 #### Initializers <a name="Initializers" id="@cdktf/provider-upcloud.managedDatabaseValkey.ManagedDatabaseValkey.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/manageddatabasevalkey"
+import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v14/manageddatabasevalkey"
 
 manageddatabasevalkey.NewManagedDatabaseValkey(scope Construct, id *string, config ManagedDatabaseValkeyConfig) ManagedDatabaseValkey
 ```
@@ -460,7 +460,7 @@ func ResetTerminationProtection()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-upcloud.managedDatabaseValkey.ManagedDatabaseValkey.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/manageddatabasevalkey"
+import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v14/manageddatabasevalkey"
 
 manageddatabasevalkey.ManagedDatabaseValkey_IsConstruct(x interface{}) *bool
 ```
@@ -492,7 +492,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-upcloud.managedDatabaseValkey.ManagedDatabaseValkey.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/manageddatabasevalkey"
+import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v14/manageddatabasevalkey"
 
 manageddatabasevalkey.ManagedDatabaseValkey_IsTerraformElement(x interface{}) *bool
 ```
@@ -506,7 +506,7 @@ manageddatabasevalkey.ManagedDatabaseValkey_IsTerraformElement(x interface{}) *b
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-upcloud.managedDatabaseValkey.ManagedDatabaseValkey.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/manageddatabasevalkey"
+import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v14/manageddatabasevalkey"
 
 manageddatabasevalkey.ManagedDatabaseValkey_IsTerraformResource(x interface{}) *bool
 ```
@@ -520,7 +520,7 @@ manageddatabasevalkey.ManagedDatabaseValkey_IsTerraformResource(x interface{}) *
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-upcloud.managedDatabaseValkey.ManagedDatabaseValkey.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/manageddatabasevalkey"
+import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v14/manageddatabasevalkey"
 
 manageddatabasevalkey.ManagedDatabaseValkey_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -1123,7 +1123,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-upcloud.managedDatabaseValkey.ManagedDatabaseValkeyComponents.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/manageddatabasevalkey"
+import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v14/manageddatabasevalkey"
 
 &manageddatabasevalkey.ManagedDatabaseValkeyComponents {
 
@@ -1136,7 +1136,7 @@ import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/manageddatabasevalkey
 #### Initializer <a name="Initializer" id="@cdktf/provider-upcloud.managedDatabaseValkey.ManagedDatabaseValkeyConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/manageddatabasevalkey"
+import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v14/manageddatabasevalkey"
 
 &manageddatabasevalkey.ManagedDatabaseValkeyConfig {
 	Connection: interface{},
@@ -1156,7 +1156,7 @@ import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/manageddatabasevalkey
 	MaintenanceWindowTime: *string,
 	Network: interface{},
 	Powered: interface{},
-	Properties: github.com/cdktf/cdktf-provider-upcloud-go/upcloud.managedDatabaseValkey.ManagedDatabaseValkeyProperties,
+	Properties: github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v14.managedDatabaseValkey.ManagedDatabaseValkeyProperties,
 	TerminationProtection: interface{},
 }
 ```
@@ -1435,7 +1435,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upclo
 #### Initializer <a name="Initializer" id="@cdktf/provider-upcloud.managedDatabaseValkey.ManagedDatabaseValkeyNetwork.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/manageddatabasevalkey"
+import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v14/manageddatabasevalkey"
 
 &manageddatabasevalkey.ManagedDatabaseValkeyNetwork {
 	Family: *string,
@@ -1517,7 +1517,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upclo
 #### Initializer <a name="Initializer" id="@cdktf/provider-upcloud.managedDatabaseValkey.ManagedDatabaseValkeyNodeStates.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/manageddatabasevalkey"
+import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v14/manageddatabasevalkey"
 
 &manageddatabasevalkey.ManagedDatabaseValkeyNodeStates {
 
@@ -1530,7 +1530,7 @@ import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/manageddatabasevalkey
 #### Initializer <a name="Initializer" id="@cdktf/provider-upcloud.managedDatabaseValkey.ManagedDatabaseValkeyProperties.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/manageddatabasevalkey"
+import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v14/manageddatabasevalkey"
 
 &manageddatabasevalkey.ManagedDatabaseValkeyProperties {
 	AutomaticUtilityNetworkIpFilter: interface{},
@@ -1538,7 +1538,7 @@ import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/manageddatabasevalkey
 	BackupMinute: *f64,
 	FrequentSnapshots: interface{},
 	IpFilter: *[]*string,
-	Migration: github.com/cdktf/cdktf-provider-upcloud-go/upcloud.managedDatabaseValkey.ManagedDatabaseValkeyPropertiesMigration,
+	Migration: github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v14.managedDatabaseValkey.ManagedDatabaseValkeyPropertiesMigration,
 	PublicAccess: interface{},
 	ServiceLog: interface{},
 	ValkeyAclChannelsDefault: *string,
@@ -1882,7 +1882,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upclo
 #### Initializer <a name="Initializer" id="@cdktf/provider-upcloud.managedDatabaseValkey.ManagedDatabaseValkeyPropertiesMigration.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/manageddatabasevalkey"
+import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v14/manageddatabasevalkey"
 
 &manageddatabasevalkey.ManagedDatabaseValkeyPropertiesMigration {
 	Dbname: *string,
@@ -2046,7 +2046,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upclo
 #### Initializers <a name="Initializers" id="@cdktf/provider-upcloud.managedDatabaseValkey.ManagedDatabaseValkeyComponentsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/manageddatabasevalkey"
+import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v14/manageddatabasevalkey"
 
 manageddatabasevalkey.NewManagedDatabaseValkeyComponentsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ManagedDatabaseValkeyComponentsList
 ```
@@ -2195,7 +2195,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-upcloud.managedDatabaseValkey.ManagedDatabaseValkeyComponentsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/manageddatabasevalkey"
+import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v14/manageddatabasevalkey"
 
 manageddatabasevalkey.NewManagedDatabaseValkeyComponentsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ManagedDatabaseValkeyComponentsOutputReference
 ```
@@ -2517,7 +2517,7 @@ func InternalValue() ManagedDatabaseValkeyComponents
 #### Initializers <a name="Initializers" id="@cdktf/provider-upcloud.managedDatabaseValkey.ManagedDatabaseValkeyNetworkList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/manageddatabasevalkey"
+import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v14/manageddatabasevalkey"
 
 manageddatabasevalkey.NewManagedDatabaseValkeyNetworkList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ManagedDatabaseValkeyNetworkList
 ```
@@ -2677,7 +2677,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-upcloud.managedDatabaseValkey.ManagedDatabaseValkeyNetworkOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/manageddatabasevalkey"
+import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v14/manageddatabasevalkey"
 
 manageddatabasevalkey.NewManagedDatabaseValkeyNetworkOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ManagedDatabaseValkeyNetworkOutputReference
 ```
@@ -3032,7 +3032,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-upcloud.managedDatabaseValkey.ManagedDatabaseValkeyNodeStatesList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/manageddatabasevalkey"
+import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v14/manageddatabasevalkey"
 
 manageddatabasevalkey.NewManagedDatabaseValkeyNodeStatesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ManagedDatabaseValkeyNodeStatesList
 ```
@@ -3181,7 +3181,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-upcloud.managedDatabaseValkey.ManagedDatabaseValkeyNodeStatesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/manageddatabasevalkey"
+import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v14/manageddatabasevalkey"
 
 manageddatabasevalkey.NewManagedDatabaseValkeyNodeStatesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ManagedDatabaseValkeyNodeStatesOutputReference
 ```
@@ -3481,7 +3481,7 @@ func InternalValue() ManagedDatabaseValkeyNodeStates
 #### Initializers <a name="Initializers" id="@cdktf/provider-upcloud.managedDatabaseValkey.ManagedDatabaseValkeyPropertiesMigrationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/manageddatabasevalkey"
+import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v14/manageddatabasevalkey"
 
 manageddatabasevalkey.NewManagedDatabaseValkeyPropertiesMigrationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ManagedDatabaseValkeyPropertiesMigrationOutputReference
 ```
@@ -3991,7 +3991,7 @@ func InternalValue() ManagedDatabaseValkeyPropertiesMigration
 #### Initializers <a name="Initializers" id="@cdktf/provider-upcloud.managedDatabaseValkey.ManagedDatabaseValkeyPropertiesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/manageddatabasevalkey"
+import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v14/manageddatabasevalkey"
 
 manageddatabasevalkey.NewManagedDatabaseValkeyPropertiesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ManagedDatabaseValkeyPropertiesOutputReference
 ```
