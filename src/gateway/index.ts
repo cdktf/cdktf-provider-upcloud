@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/upcloudltd/upcloud/5.20.4/docs/resources/gateway
+// https://registry.terraform.io/providers/upcloudltd/upcloud/5.20.5/docs/resources/gateway
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,17 +15,17 @@ export interface GatewayConfig extends cdktf.TerraformMetaArguments {
   /**
   * The service configured status indicates the service's current intended status. Managed by the customer.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.20.4/docs/resources/gateway#configured_status Gateway#configured_status}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.20.5/docs/resources/gateway#configured_status Gateway#configured_status}
   */
   readonly configuredStatus?: string;
   /**
   * Features enabled for the gateway. Note that VPN feature is currently in beta, for more details see https://upcloud.com/resources/docs/networking#nat-and-vpn-gateways.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.20.4/docs/resources/gateway#features Gateway#features}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.20.5/docs/resources/gateway#features Gateway#features}
   */
   readonly features: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.20.4/docs/resources/gateway#id Gateway#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.20.5/docs/resources/gateway#id Gateway#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -34,37 +34,37 @@ export interface GatewayConfig extends cdktf.TerraformMetaArguments {
   /**
   * User defined key-value pairs to classify the network gateway.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.20.4/docs/resources/gateway#labels Gateway#labels}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.20.5/docs/resources/gateway#labels Gateway#labels}
   */
   readonly labels?: { [key: string]: string };
   /**
   * Gateway name. Needs to be unique within the account.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.20.4/docs/resources/gateway#name Gateway#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.20.5/docs/resources/gateway#name Gateway#name}
   */
   readonly name: string;
   /**
   * Gateway pricing plan.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.20.4/docs/resources/gateway#plan Gateway#plan}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.20.5/docs/resources/gateway#plan Gateway#plan}
   */
   readonly plan?: string;
   /**
   * Zone in which the gateway will be hosted, e.g. `de-fra1`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.20.4/docs/resources/gateway#zone Gateway#zone}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.20.5/docs/resources/gateway#zone Gateway#zone}
   */
   readonly zone: string;
   /**
   * address block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.20.4/docs/resources/gateway#address Gateway#address}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.20.5/docs/resources/gateway#address Gateway#address}
   */
   readonly address?: GatewayAddress;
   /**
   * router block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.20.4/docs/resources/gateway#router Gateway#router}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.20.5/docs/resources/gateway#router Gateway#router}
   */
   readonly router: GatewayRouter;
 }
@@ -152,7 +152,7 @@ export interface GatewayAddress {
   /**
   * Name of the IP address
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.20.4/docs/resources/gateway#name Gateway#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.20.5/docs/resources/gateway#name Gateway#name}
   */
   readonly name?: string;
 }
@@ -243,7 +243,7 @@ export interface GatewayRouter {
   /**
   * ID of the router attached to the gateway.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.20.4/docs/resources/gateway#id Gateway#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.20.5/docs/resources/gateway#id Gateway#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -327,7 +327,7 @@ export class GatewayRouterOutputReference extends cdktf.ComplexObject {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.20.4/docs/resources/gateway upcloud_gateway}
+* Represents a {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.20.5/docs/resources/gateway upcloud_gateway}
 */
 export class Gateway extends cdktf.TerraformResource {
 
@@ -343,7 +343,7 @@ export class Gateway extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a Gateway resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the Gateway to import
-  * @param importFromId The id of the existing Gateway that should be imported. Refer to the {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.20.4/docs/resources/gateway#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing Gateway that should be imported. Refer to the {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.20.5/docs/resources/gateway#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the Gateway to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -355,7 +355,7 @@ export class Gateway extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.20.4/docs/resources/gateway upcloud_gateway} Resource
+  * Create a new {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.20.5/docs/resources/gateway upcloud_gateway} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -366,7 +366,7 @@ export class Gateway extends cdktf.TerraformResource {
       terraformResourceType: 'upcloud_gateway',
       terraformGeneratorMetadata: {
         providerName: 'upcloud',
-        providerVersion: '5.20.4',
+        providerVersion: '5.20.5',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,
