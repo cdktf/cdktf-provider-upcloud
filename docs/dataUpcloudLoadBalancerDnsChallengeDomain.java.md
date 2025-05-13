@@ -4,7 +4,7 @@
 
 ### DataUpcloudLoadBalancerDnsChallengeDomain <a name="DataUpcloudLoadBalancerDnsChallengeDomain" id="@cdktf/provider-upcloud.dataUpcloudLoadBalancerDnsChallengeDomain.DataUpcloudLoadBalancerDnsChallengeDomain"></a>
 
-Represents a {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.21.0/docs/data-sources/load_balancer_dns_challenge_domain upcloud_load_balancer_dns_challenge_domain}.
+Represents a {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.22.0/docs/data-sources/load_balancer_dns_challenge_domain upcloud_load_balancer_dns_challenge_domain}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-upcloud.dataUpcloudLoadBalancerDnsChallengeDomain.DataUpcloudLoadBalancerDnsChallengeDomain.Initializer"></a>
 
@@ -419,7 +419,7 @@ The construct id used in the generated config for the DataUpcloudLoadBalancerDns
 
 The id of the existing DataUpcloudLoadBalancerDnsChallengeDomain that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.21.0/docs/data-sources/load_balancer_dns_challenge_domain#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.22.0/docs/data-sources/load_balancer_dns_challenge_domain#import import section} in the documentation of this resource for the id to use
 
 ---
 

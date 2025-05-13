@@ -60,6 +60,7 @@ The following submodules are available:
 - [server](./server.csharp.md)
 - [serverGroup](./serverGroup.csharp.md)
 - [storage](./storage.csharp.md)
+- [storageBackup](./storageBackup.csharp.md)
 - [storageTemplate](./storageTemplate.csharp.md)
 - [tag](./tag.csharp.md)
 

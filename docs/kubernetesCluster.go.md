@@ -4,7 +4,7 @@
 
 ### KubernetesCluster <a name="KubernetesCluster" id="@cdktf/provider-upcloud.kubernetesCluster.KubernetesCluster"></a>
 
-Represents a {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.21.0/docs/resources/kubernetes_cluster upcloud_kubernetes_cluster}.
+Represents a {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.22.0/docs/resources/kubernetes_cluster upcloud_kubernetes_cluster}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-upcloud.kubernetesCluster.KubernetesCluster.Initializer"></a>
 
@@ -77,6 +77,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-upcloud.kubernetesCluster.KubernetesCluster.resetPlan">ResetPlan</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.kubernetesCluster.KubernetesCluster.resetPrivateNodeGroups">ResetPrivateNodeGroups</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.kubernetesCluster.KubernetesCluster.resetStorageEncryption">ResetStorageEncryption</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-upcloud.kubernetesCluster.KubernetesCluster.resetUpgradeStrategyType">ResetUpgradeStrategyType</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.kubernetesCluster.KubernetesCluster.resetVersion">ResetVersion</a></code> | *No description.* |
 
 ---
@@ -393,6 +394,12 @@ func ResetPrivateNodeGroups()
 func ResetStorageEncryption()
 ```
 
+##### `ResetUpgradeStrategyType` <a name="ResetUpgradeStrategyType" id="@cdktf/provider-upcloud.kubernetesCluster.KubernetesCluster.resetUpgradeStrategyType"></a>
+
+```go
+func ResetUpgradeStrategyType()
+```
+
 ##### `ResetVersion` <a name="ResetVersion" id="@cdktf/provider-upcloud.kubernetesCluster.KubernetesCluster.resetVersion"></a>
 
 ```go
@@ -502,7 +509,7 @@ The construct id used in the generated config for the KubernetesCluster to impor
 
 The id of the existing KubernetesCluster that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.21.0/docs/resources/kubernetes_cluster#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.22.0/docs/resources/kubernetes_cluster#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -543,6 +550,7 @@ Refer to the {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5
 | <code><a href="#@cdktf/provider-upcloud.kubernetesCluster.KubernetesCluster.property.planInput">PlanInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.kubernetesCluster.KubernetesCluster.property.privateNodeGroupsInput">PrivateNodeGroupsInput</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.kubernetesCluster.KubernetesCluster.property.storageEncryptionInput">StorageEncryptionInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-upcloud.kubernetesCluster.KubernetesCluster.property.upgradeStrategyTypeInput">UpgradeStrategyTypeInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.kubernetesCluster.KubernetesCluster.property.versionInput">VersionInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.kubernetesCluster.KubernetesCluster.property.zoneInput">ZoneInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.kubernetesCluster.KubernetesCluster.property.controlPlaneIpFilter">ControlPlaneIpFilter</a></code> | <code>*[]*string</code> | *No description.* |
@@ -552,6 +560,7 @@ Refer to the {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5
 | <code><a href="#@cdktf/provider-upcloud.kubernetesCluster.KubernetesCluster.property.plan">Plan</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.kubernetesCluster.KubernetesCluster.property.privateNodeGroups">PrivateNodeGroups</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.kubernetesCluster.KubernetesCluster.property.storageEncryption">StorageEncryption</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-upcloud.kubernetesCluster.KubernetesCluster.property.upgradeStrategyType">UpgradeStrategyType</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.kubernetesCluster.KubernetesCluster.property.version">Version</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.kubernetesCluster.KubernetesCluster.property.zone">Zone</a></code> | <code>*string</code> | *No description.* |
 
@@ -809,6 +818,16 @@ func StorageEncryptionInput() *string
 
 ---
 
+##### `UpgradeStrategyTypeInput`<sup>Optional</sup> <a name="UpgradeStrategyTypeInput" id="@cdktf/provider-upcloud.kubernetesCluster.KubernetesCluster.property.upgradeStrategyTypeInput"></a>
+
+```go
+func UpgradeStrategyTypeInput() *string
+```
+
+- *Type:* *string
+
+---
+
 ##### `VersionInput`<sup>Optional</sup> <a name="VersionInput" id="@cdktf/provider-upcloud.kubernetesCluster.KubernetesCluster.property.versionInput"></a>
 
 ```go
@@ -899,6 +918,16 @@ func StorageEncryption() *string
 
 ---
 
+##### `UpgradeStrategyType`<sup>Required</sup> <a name="UpgradeStrategyType" id="@cdktf/provider-upcloud.kubernetesCluster.KubernetesCluster.property.upgradeStrategyType"></a>
+
+```go
+func UpgradeStrategyType() *string
+```
+
+- *Type:* *string
+
+---
+
 ##### `Version`<sup>Required</sup> <a name="Version" id="@cdktf/provider-upcloud.kubernetesCluster.KubernetesCluster.property.version"></a>
 
 ```go
@@ -962,6 +991,7 @@ import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v14/kubernetescluster
 	Plan: *string,
 	PrivateNodeGroups: interface{},
 	StorageEncryption: *string,
+	UpgradeStrategyType: *string,
 	Version: *string,
 }
 ```
@@ -985,6 +1015,7 @@ import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v14/kubernetescluster
 | <code><a href="#@cdktf/provider-upcloud.kubernetesCluster.KubernetesClusterConfig.property.plan">Plan</a></code> | <code>*string</code> | The pricing plan used for the cluster. You can list available plans with `upctl kubernetes plans`. |
 | <code><a href="#@cdktf/provider-upcloud.kubernetesCluster.KubernetesClusterConfig.property.privateNodeGroups">PrivateNodeGroups</a></code> | <code>interface{}</code> | Enable private node groups. Private node groups requires a network that is routed through NAT gateway. |
 | <code><a href="#@cdktf/provider-upcloud.kubernetesCluster.KubernetesClusterConfig.property.storageEncryption">StorageEncryption</a></code> | <code>*string</code> | Set default storage encryption strategy for all nodes in the cluster. |
+| <code><a href="#@cdktf/provider-upcloud.kubernetesCluster.KubernetesClusterConfig.property.upgradeStrategyType">UpgradeStrategyType</a></code> | <code>*string</code> | The upgrade strategy to use when changing the cluster `version`. |
 | <code><a href="#@cdktf/provider-upcloud.kubernetesCluster.KubernetesClusterConfig.property.version">Version</a></code> | <code>*string</code> | Kubernetes version ID, e.g. `1.31`. You can list available version IDs with `upctl kubernetes versions`. |
 
 ---
@@ -1071,7 +1102,7 @@ IP addresses or IP ranges in CIDR format which are allowed to access the cluster
 
 To allow access from any source, use `["0.0.0.0/0"]`. To deny access from all sources, use `[]`. Values set here do not restrict access to node groups or exposed Kubernetes services.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.21.0/docs/resources/kubernetes_cluster#control_plane_ip_filter KubernetesCluster#control_plane_ip_filter}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.22.0/docs/resources/kubernetes_cluster#control_plane_ip_filter KubernetesCluster#control_plane_ip_filter}
 
 ---
 
@@ -1085,7 +1116,7 @@ Name *string
 
 Cluster name. Needs to be unique within the account.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.21.0/docs/resources/kubernetes_cluster#name KubernetesCluster#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.22.0/docs/resources/kubernetes_cluster#name KubernetesCluster#name}
 
 ---
 
@@ -1099,7 +1130,7 @@ Network *string
 
 Network ID for the cluster to run in.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.21.0/docs/resources/kubernetes_cluster#network KubernetesCluster#network}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.22.0/docs/resources/kubernetes_cluster#network KubernetesCluster#network}
 
 ---
 
@@ -1113,7 +1144,7 @@ Zone *string
 
 Zone in which the Kubernetes cluster will be hosted, e.g. `de-fra1`. You can list available zones with `upctl zone list`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.21.0/docs/resources/kubernetes_cluster#zone KubernetesCluster#zone}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.22.0/docs/resources/kubernetes_cluster#zone KubernetesCluster#zone}
 
 ---
 
@@ -1127,7 +1158,7 @@ Labels *map[string]*string
 
 User defined key-value pairs to classify the cluster.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.21.0/docs/resources/kubernetes_cluster#labels KubernetesCluster#labels}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.22.0/docs/resources/kubernetes_cluster#labels KubernetesCluster#labels}
 
 ---
 
@@ -1141,7 +1172,7 @@ Plan *string
 
 The pricing plan used for the cluster. You can list available plans with `upctl kubernetes plans`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.21.0/docs/resources/kubernetes_cluster#plan KubernetesCluster#plan}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.22.0/docs/resources/kubernetes_cluster#plan KubernetesCluster#plan}
 
 ---
 
@@ -1155,7 +1186,7 @@ PrivateNodeGroups interface{}
 
 Enable private node groups. Private node groups requires a network that is routed through NAT gateway.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.21.0/docs/resources/kubernetes_cluster#private_node_groups KubernetesCluster#private_node_groups}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.22.0/docs/resources/kubernetes_cluster#private_node_groups KubernetesCluster#private_node_groups}
 
 ---
 
@@ -1169,7 +1200,23 @@ StorageEncryption *string
 
 Set default storage encryption strategy for all nodes in the cluster.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.21.0/docs/resources/kubernetes_cluster#storage_encryption KubernetesCluster#storage_encryption}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.22.0/docs/resources/kubernetes_cluster#storage_encryption KubernetesCluster#storage_encryption}
+
+---
+
+##### `UpgradeStrategyType`<sup>Optional</sup> <a name="UpgradeStrategyType" id="@cdktf/provider-upcloud.kubernetesCluster.KubernetesClusterConfig.property.upgradeStrategyType"></a>
+
+```go
+UpgradeStrategyType *string
+```
+
+- *Type:* *string
+
+The upgrade strategy to use when changing the cluster `version`.
+
+If not set, `manual` strategy will be used by default. When using `manual` strategy, you must replace the existing node-groups to update them.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.22.0/docs/resources/kubernetes_cluster#upgrade_strategy_type KubernetesCluster#upgrade_strategy_type}
 
 ---
 
@@ -1183,7 +1230,9 @@ Version *string
 
 Kubernetes version ID, e.g. `1.31`. You can list available version IDs with `upctl kubernetes versions`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.21.0/docs/resources/kubernetes_cluster#version KubernetesCluster#version}
+Note that when changing the cluster version, `upgrade_strategy` will be taken into account.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.22.0/docs/resources/kubernetes_cluster#version KubernetesCluster#version}
 
 ---
 
