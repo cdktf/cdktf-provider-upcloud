@@ -1,4 +1,4 @@
-// https://registry.terraform.io/providers/upcloudltd/upcloud/5.22.0/docs/resources/storage_template
+// https://registry.terraform.io/providers/upcloudltd/upcloud/5.22.0/docs/resources/storage_backup
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -6,49 +6,49 @@ import * as cdktf from 'cdktf';
 
 // Configuration
 
-export interface StorageTemplateConfig extends cdktf.TerraformMetaArguments {
+export interface StorageBackupConfig extends cdktf.TerraformMetaArguments {
   /**
   * User defined key-value pairs to classify the storage.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.22.0/docs/resources/storage_template#labels StorageTemplate#labels}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.22.0/docs/resources/storage_backup#labels StorageBackup#labels}
   */
   readonly labels?: { [key: string]: string };
   /**
-  * The source storage that is used as a base for this storage template.
+  * The UUID of the storage to back up.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.22.0/docs/resources/storage_template#source_storage StorageTemplate#source_storage}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.22.0/docs/resources/storage_backup#source_storage StorageBackup#source_storage}
   */
   readonly sourceStorage: string;
   /**
-  * The title of the storage.
+  * Title of the backup.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.22.0/docs/resources/storage_template#title StorageTemplate#title}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.22.0/docs/resources/storage_backup#title StorageBackup#title}
   */
   readonly title: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.22.0/docs/resources/storage_template upcloud_storage_template}
+* Represents a {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.22.0/docs/resources/storage_backup upcloud_storage_backup}
 */
-export class StorageTemplate extends cdktf.TerraformResource {
+export class StorageBackup extends cdktf.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
   // =================
-  public static readonly tfResourceType = "upcloud_storage_template";
+  public static readonly tfResourceType = "upcloud_storage_backup";
 
   // ==============
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a StorageTemplate resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTF code for importing a StorageBackup resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
-  * @param importToId The construct id used in the generated config for the StorageTemplate to import
-  * @param importFromId The id of the existing StorageTemplate that should be imported. Refer to the {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.22.0/docs/resources/storage_template#import import section} in the documentation of this resource for the id to use
-  * @param provider? Optional instance of the provider where the StorageTemplate to import is found
+  * @param importToId The construct id used in the generated config for the StorageBackup to import
+  * @param importFromId The id of the existing StorageBackup that should be imported. Refer to the {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.22.0/docs/resources/storage_backup#import import section} in the documentation of this resource for the id to use
+  * @param provider? Optional instance of the provider where the StorageBackup to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "upcloud_storage_template", importId: importFromId, provider });
+        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "upcloud_storage_backup", importId: importFromId, provider });
       }
 
   // ===========
@@ -56,15 +56,15 @@ export class StorageTemplate extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.22.0/docs/resources/storage_template upcloud_storage_template} Resource
+  * Create a new {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.22.0/docs/resources/storage_backup upcloud_storage_backup} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
-  * @param options StorageTemplateConfig
+  * @param options StorageBackupConfig
   */
-  public constructor(scope: Construct, id: string, config: StorageTemplateConfig) {
+  public constructor(scope: Construct, id: string, config: StorageBackupConfig) {
     super(scope, id, {
-      terraformResourceType: 'upcloud_storage_template',
+      terraformResourceType: 'upcloud_storage_backup',
       terraformGeneratorMetadata: {
         providerName: 'upcloud',
         providerVersion: '5.22.0',
@@ -86,6 +86,11 @@ export class StorageTemplate extends cdktf.TerraformResource {
   // ==========
   // ATTRIBUTES
   // ==========
+
+  // created_at - computed: true, optional: false, required: false
+  public get createdAt() {
+    return this.getStringAttribute('created_at');
+  }
 
   // encrypt - computed: true, optional: false, required: false
   public get encrypt() {
