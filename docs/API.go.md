@@ -60,6 +60,7 @@ The following submodules are available:
 - [server](./server.go.md)
 - [serverGroup](./serverGroup.go.md)
 - [storage](./storage.go.md)
+- [storageBackup](./storageBackup.go.md)
 - [storageTemplate](./storageTemplate.go.md)
 - [tag](./tag.go.md)
 

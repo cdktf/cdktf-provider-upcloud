@@ -43,6 +43,7 @@ export * as router from './router';
 export * as server from './server';
 export * as serverGroup from './server-group';
 export * as storage from './storage';
+export * as storageBackup from './storage-backup';
 export * as storageTemplate from './storage-template';
 export * as tag from './tag';
 export * as dataUpcloudHosts from './data-upcloud-hosts';

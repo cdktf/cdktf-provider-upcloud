@@ -60,6 +60,7 @@ The following submodules are available:
 - [server](./server.python.md)
 - [serverGroup](./serverGroup.python.md)
 - [storage](./storage.python.md)
+- [storageBackup](./storageBackup.python.md)
 - [storageTemplate](./storageTemplate.python.md)
 - [tag](./tag.python.md)
 
