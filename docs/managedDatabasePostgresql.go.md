@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5
 #### Initializers <a name="Initializers" id="@cdktf/provider-upcloud.managedDatabasePostgresql.ManagedDatabasePostgresql.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v14/manageddatabasepostgresql"
+import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v15/manageddatabasepostgresql"
 
 manageddatabasepostgresql.NewManagedDatabasePostgresql(scope Construct, id *string, config ManagedDatabasePostgresqlConfig) ManagedDatabasePostgresql
 ```
@@ -460,7 +460,7 @@ func ResetTerminationProtection()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-upcloud.managedDatabasePostgresql.ManagedDatabasePostgresql.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v14/manageddatabasepostgresql"
+import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v15/manageddatabasepostgresql"
 
 manageddatabasepostgresql.ManagedDatabasePostgresql_IsConstruct(x interface{}) *bool
 ```
@@ -492,7 +492,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-upcloud.managedDatabasePostgresql.ManagedDatabasePostgresql.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v14/manageddatabasepostgresql"
+import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v15/manageddatabasepostgresql"
 
 manageddatabasepostgresql.ManagedDatabasePostgresql_IsTerraformElement(x interface{}) *bool
 ```
@@ -506,7 +506,7 @@ manageddatabasepostgresql.ManagedDatabasePostgresql_IsTerraformElement(x interfa
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-upcloud.managedDatabasePostgresql.ManagedDatabasePostgresql.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v14/manageddatabasepostgresql"
+import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v15/manageddatabasepostgresql"
 
 manageddatabasepostgresql.ManagedDatabasePostgresql_IsTerraformResource(x interface{}) *bool
 ```
@@ -520,7 +520,7 @@ manageddatabasepostgresql.ManagedDatabasePostgresql_IsTerraformResource(x interf
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-upcloud.managedDatabasePostgresql.ManagedDatabasePostgresql.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v14/manageddatabasepostgresql"
+import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v15/manageddatabasepostgresql"
 
 manageddatabasepostgresql.ManagedDatabasePostgresql_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -1134,7 +1134,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-upcloud.managedDatabasePostgresql.ManagedDatabasePostgresqlComponents.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v14/manageddatabasepostgresql"
+import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v15/manageddatabasepostgresql"
 
 &manageddatabasepostgresql.ManagedDatabasePostgresqlComponents {
 
@@ -1147,7 +1147,7 @@ import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v14/manageddatabasepo
 #### Initializer <a name="Initializer" id="@cdktf/provider-upcloud.managedDatabasePostgresql.ManagedDatabasePostgresqlConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v14/manageddatabasepostgresql"
+import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v15/manageddatabasepostgresql"
 
 &manageddatabasepostgresql.ManagedDatabasePostgresqlConfig {
 	Connection: interface{},
@@ -1167,7 +1167,7 @@ import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v14/manageddatabasepo
 	MaintenanceWindowTime: *string,
 	Network: interface{},
 	Powered: interface{},
-	Properties: github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v14.managedDatabasePostgresql.ManagedDatabasePostgresqlProperties,
+	Properties: github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v15.managedDatabasePostgresql.ManagedDatabasePostgresqlProperties,
 	TerminationProtection: interface{},
 }
 ```
@@ -1446,7 +1446,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upclo
 #### Initializer <a name="Initializer" id="@cdktf/provider-upcloud.managedDatabasePostgresql.ManagedDatabasePostgresqlNetwork.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v14/manageddatabasepostgresql"
+import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v15/manageddatabasepostgresql"
 
 &manageddatabasepostgresql.ManagedDatabasePostgresqlNetwork {
 	Family: *string,
@@ -1528,7 +1528,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upclo
 #### Initializer <a name="Initializer" id="@cdktf/provider-upcloud.managedDatabasePostgresql.ManagedDatabasePostgresqlNodeStates.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v14/manageddatabasepostgresql"
+import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v15/manageddatabasepostgresql"
 
 &manageddatabasepostgresql.ManagedDatabasePostgresqlNodeStates {
 
@@ -1541,7 +1541,7 @@ import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v14/manageddatabasepo
 #### Initializer <a name="Initializer" id="@cdktf/provider-upcloud.managedDatabasePostgresql.ManagedDatabasePostgresqlProperties.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v14/manageddatabasepostgresql"
+import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v15/manageddatabasepostgresql"
 
 &manageddatabasepostgresql.ManagedDatabasePostgresqlProperties {
 	AdminPassword: *string,
@@ -1586,11 +1586,11 @@ import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v14/manageddatabasepo
 	MaxStandbyStreamingDelay: *f64,
 	MaxWalSenders: *f64,
 	MaxWorkerProcesses: *f64,
-	Migration: github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v14.managedDatabasePostgresql.ManagedDatabasePostgresqlPropertiesMigration,
+	Migration: github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v15.managedDatabasePostgresql.ManagedDatabasePostgresqlPropertiesMigration,
 	PasswordEncryption: *string,
-	Pgaudit: github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v14.managedDatabasePostgresql.ManagedDatabasePostgresqlPropertiesPgaudit,
-	Pgbouncer: github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v14.managedDatabasePostgresql.ManagedDatabasePostgresqlPropertiesPgbouncer,
-	Pglookout: github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v14.managedDatabasePostgresql.ManagedDatabasePostgresqlPropertiesPglookout,
+	Pgaudit: github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v15.managedDatabasePostgresql.ManagedDatabasePostgresqlPropertiesPgaudit,
+	Pgbouncer: github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v15.managedDatabasePostgresql.ManagedDatabasePostgresqlPropertiesPgbouncer,
+	Pglookout: github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v15.managedDatabasePostgresql.ManagedDatabasePostgresqlPropertiesPglookout,
 	PgPartmanBgwInterval: *f64,
 	PgPartmanBgwRole: *string,
 	PgStatMonitorEnable: interface{},
@@ -1602,7 +1602,7 @@ import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v14/manageddatabasepo
 	SharedBuffersPercentage: *f64,
 	SynchronousReplication: *string,
 	TempFileLimit: *f64,
-	Timescaledb: github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v14.managedDatabasePostgresql.ManagedDatabasePostgresqlPropertiesTimescaledb,
+	Timescaledb: github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v15.managedDatabasePostgresql.ManagedDatabasePostgresqlPropertiesTimescaledb,
 	Timezone: *string,
 	TrackActivityQuerySize: *f64,
 	TrackCommitTimestamp: *string,
@@ -2709,7 +2709,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upclo
 #### Initializer <a name="Initializer" id="@cdktf/provider-upcloud.managedDatabasePostgresql.ManagedDatabasePostgresqlPropertiesMigration.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v14/manageddatabasepostgresql"
+import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v15/manageddatabasepostgresql"
 
 &manageddatabasepostgresql.ManagedDatabasePostgresqlPropertiesMigration {
 	Dbname: *string,
@@ -2871,7 +2871,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upclo
 #### Initializer <a name="Initializer" id="@cdktf/provider-upcloud.managedDatabasePostgresql.ManagedDatabasePostgresqlPropertiesPgaudit.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v14/manageddatabasepostgresql"
+import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v15/manageddatabasepostgresql"
 
 &manageddatabasepostgresql.ManagedDatabasePostgresqlPropertiesPgaudit {
 	FeatureEnabled: interface{},
@@ -3117,7 +3117,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upclo
 #### Initializer <a name="Initializer" id="@cdktf/provider-upcloud.managedDatabasePostgresql.ManagedDatabasePostgresqlPropertiesPgbouncer.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v14/manageddatabasepostgresql"
+import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v15/manageddatabasepostgresql"
 
 &manageddatabasepostgresql.ManagedDatabasePostgresqlPropertiesPgbouncer {
 	AutodbIdleTimeout: *f64,
@@ -3305,7 +3305,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upclo
 #### Initializer <a name="Initializer" id="@cdktf/provider-upcloud.managedDatabasePostgresql.ManagedDatabasePostgresqlPropertiesPglookout.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v14/manageddatabasepostgresql"
+import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v15/manageddatabasepostgresql"
 
 &manageddatabasepostgresql.ManagedDatabasePostgresqlPropertiesPglookout {
 	MaxFailoverReplicationTimeLag: *f64,
@@ -3339,7 +3339,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upclo
 #### Initializer <a name="Initializer" id="@cdktf/provider-upcloud.managedDatabasePostgresql.ManagedDatabasePostgresqlPropertiesTimescaledb.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v14/manageddatabasepostgresql"
+import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v15/manageddatabasepostgresql"
 
 &manageddatabasepostgresql.ManagedDatabasePostgresqlPropertiesTimescaledb {
 	MaxBackgroundWorkers: *f64,
@@ -3377,7 +3377,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upclo
 #### Initializers <a name="Initializers" id="@cdktf/provider-upcloud.managedDatabasePostgresql.ManagedDatabasePostgresqlComponentsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v14/manageddatabasepostgresql"
+import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v15/manageddatabasepostgresql"
 
 manageddatabasepostgresql.NewManagedDatabasePostgresqlComponentsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ManagedDatabasePostgresqlComponentsList
 ```
@@ -3526,7 +3526,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-upcloud.managedDatabasePostgresql.ManagedDatabasePostgresqlComponentsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v14/manageddatabasepostgresql"
+import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v15/manageddatabasepostgresql"
 
 manageddatabasepostgresql.NewManagedDatabasePostgresqlComponentsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ManagedDatabasePostgresqlComponentsOutputReference
 ```
@@ -3848,7 +3848,7 @@ func InternalValue() ManagedDatabasePostgresqlComponents
 #### Initializers <a name="Initializers" id="@cdktf/provider-upcloud.managedDatabasePostgresql.ManagedDatabasePostgresqlNetworkList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v14/manageddatabasepostgresql"
+import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v15/manageddatabasepostgresql"
 
 manageddatabasepostgresql.NewManagedDatabasePostgresqlNetworkList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ManagedDatabasePostgresqlNetworkList
 ```
@@ -4008,7 +4008,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-upcloud.managedDatabasePostgresql.ManagedDatabasePostgresqlNetworkOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v14/manageddatabasepostgresql"
+import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v15/manageddatabasepostgresql"
 
 manageddatabasepostgresql.NewManagedDatabasePostgresqlNetworkOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ManagedDatabasePostgresqlNetworkOutputReference
 ```
@@ -4363,7 +4363,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-upcloud.managedDatabasePostgresql.ManagedDatabasePostgresqlNodeStatesList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v14/manageddatabasepostgresql"
+import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v15/manageddatabasepostgresql"
 
 manageddatabasepostgresql.NewManagedDatabasePostgresqlNodeStatesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ManagedDatabasePostgresqlNodeStatesList
 ```
@@ -4512,7 +4512,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-upcloud.managedDatabasePostgresql.ManagedDatabasePostgresqlNodeStatesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v14/manageddatabasepostgresql"
+import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v15/manageddatabasepostgresql"
 
 manageddatabasepostgresql.NewManagedDatabasePostgresqlNodeStatesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ManagedDatabasePostgresqlNodeStatesOutputReference
 ```
@@ -4812,7 +4812,7 @@ func InternalValue() ManagedDatabasePostgresqlNodeStates
 #### Initializers <a name="Initializers" id="@cdktf/provider-upcloud.managedDatabasePostgresql.ManagedDatabasePostgresqlPropertiesMigrationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v14/manageddatabasepostgresql"
+import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v15/manageddatabasepostgresql"
 
 manageddatabasepostgresql.NewManagedDatabasePostgresqlPropertiesMigrationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ManagedDatabasePostgresqlPropertiesMigrationOutputReference
 ```
@@ -5322,7 +5322,7 @@ func InternalValue() ManagedDatabasePostgresqlPropertiesMigration
 #### Initializers <a name="Initializers" id="@cdktf/provider-upcloud.managedDatabasePostgresql.ManagedDatabasePostgresqlPropertiesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v14/manageddatabasepostgresql"
+import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v15/manageddatabasepostgresql"
 
 manageddatabasepostgresql.NewManagedDatabasePostgresqlPropertiesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ManagedDatabasePostgresqlPropertiesOutputReference
 ```
@@ -7637,7 +7637,7 @@ func InternalValue() ManagedDatabasePostgresqlProperties
 #### Initializers <a name="Initializers" id="@cdktf/provider-upcloud.managedDatabasePostgresql.ManagedDatabasePostgresqlPropertiesPgauditOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v14/manageddatabasepostgresql"
+import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v15/manageddatabasepostgresql"
 
 manageddatabasepostgresql.NewManagedDatabasePostgresqlPropertiesPgauditOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ManagedDatabasePostgresqlPropertiesPgauditOutputReference
 ```
@@ -8292,7 +8292,7 @@ func InternalValue() ManagedDatabasePostgresqlPropertiesPgaudit
 #### Initializers <a name="Initializers" id="@cdktf/provider-upcloud.managedDatabasePostgresql.ManagedDatabasePostgresqlPropertiesPgbouncerOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v14/manageddatabasepostgresql"
+import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v15/manageddatabasepostgresql"
 
 manageddatabasepostgresql.NewManagedDatabasePostgresqlPropertiesPgbouncerOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ManagedDatabasePostgresqlPropertiesPgbouncerOutputReference
 ```
@@ -8831,7 +8831,7 @@ func InternalValue() ManagedDatabasePostgresqlPropertiesPgbouncer
 #### Initializers <a name="Initializers" id="@cdktf/provider-upcloud.managedDatabasePostgresql.ManagedDatabasePostgresqlPropertiesPglookoutOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v14/manageddatabasepostgresql"
+import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v15/manageddatabasepostgresql"
 
 manageddatabasepostgresql.NewManagedDatabasePostgresqlPropertiesPglookoutOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ManagedDatabasePostgresqlPropertiesPglookoutOutputReference
 ```
@@ -9109,7 +9109,7 @@ func InternalValue() ManagedDatabasePostgresqlPropertiesPglookout
 #### Initializers <a name="Initializers" id="@cdktf/provider-upcloud.managedDatabasePostgresql.ManagedDatabasePostgresqlPropertiesTimescaledbOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v14/manageddatabasepostgresql"
+import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v15/manageddatabasepostgresql"
 
 manageddatabasepostgresql.NewManagedDatabasePostgresqlPropertiesTimescaledbOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ManagedDatabasePostgresqlPropertiesTimescaledbOutputReference
 ```

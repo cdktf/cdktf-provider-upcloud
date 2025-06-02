@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5
 #### Initializers <a name="Initializers" id="@cdktf/provider-upcloud.gatewayConnectionTunnel.GatewayConnectionTunnel.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v14/gatewayconnectiontunnel"
+import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v15/gatewayconnectiontunnel"
 
 gatewayconnectiontunnel.NewGatewayConnectionTunnel(scope Construct, id *string, config GatewayConnectionTunnelConfig) GatewayConnectionTunnel
 ```
@@ -418,7 +418,7 @@ func ResetIpsecProperties()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-upcloud.gatewayConnectionTunnel.GatewayConnectionTunnel.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v14/gatewayconnectiontunnel"
+import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v15/gatewayconnectiontunnel"
 
 gatewayconnectiontunnel.GatewayConnectionTunnel_IsConstruct(x interface{}) *bool
 ```
@@ -450,7 +450,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-upcloud.gatewayConnectionTunnel.GatewayConnectionTunnel.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v14/gatewayconnectiontunnel"
+import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v15/gatewayconnectiontunnel"
 
 gatewayconnectiontunnel.GatewayConnectionTunnel_IsTerraformElement(x interface{}) *bool
 ```
@@ -464,7 +464,7 @@ gatewayconnectiontunnel.GatewayConnectionTunnel_IsTerraformElement(x interface{}
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-upcloud.gatewayConnectionTunnel.GatewayConnectionTunnel.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v14/gatewayconnectiontunnel"
+import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v15/gatewayconnectiontunnel"
 
 gatewayconnectiontunnel.GatewayConnectionTunnel_IsTerraformResource(x interface{}) *bool
 ```
@@ -478,7 +478,7 @@ gatewayconnectiontunnel.GatewayConnectionTunnel_IsTerraformResource(x interface{
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-upcloud.gatewayConnectionTunnel.GatewayConnectionTunnel.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v14/gatewayconnectiontunnel"
+import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v15/gatewayconnectiontunnel"
 
 gatewayconnectiontunnel.GatewayConnectionTunnel_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -883,7 +883,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-upcloud.gatewayConnectionTunnel.GatewayConnectionTunnelConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v14/gatewayconnectiontunnel"
+import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v15/gatewayconnectiontunnel"
 
 &gatewayconnectiontunnel.GatewayConnectionTunnelConfig {
 	Connection: interface{},
@@ -894,12 +894,12 @@ import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v14/gatewayconnection
 	Provider: github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider,
 	Provisioners: *[]interface{},
 	ConnectionId: *string,
-	IpsecAuthPsk: github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v14.gatewayConnectionTunnel.GatewayConnectionTunnelIpsecAuthPsk,
+	IpsecAuthPsk: github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v15.gatewayConnectionTunnel.GatewayConnectionTunnelIpsecAuthPsk,
 	LocalAddressName: *string,
 	Name: *string,
 	RemoteAddress: *string,
 	Id: *string,
-	IpsecProperties: github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v14.gatewayConnectionTunnel.GatewayConnectionTunnelIpsecProperties,
+	IpsecProperties: github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v15.gatewayConnectionTunnel.GatewayConnectionTunnelIpsecProperties,
 }
 ```
 
@@ -1098,7 +1098,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upclo
 #### Initializer <a name="Initializer" id="@cdktf/provider-upcloud.gatewayConnectionTunnel.GatewayConnectionTunnelIpsecAuthPsk.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v14/gatewayconnectiontunnel"
+import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v15/gatewayconnectiontunnel"
 
 &gatewayconnectiontunnel.GatewayConnectionTunnelIpsecAuthPsk {
 	Psk: *string,
@@ -1134,7 +1134,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upclo
 #### Initializer <a name="Initializer" id="@cdktf/provider-upcloud.gatewayConnectionTunnel.GatewayConnectionTunnelIpsecProperties.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v14/gatewayconnectiontunnel"
+import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v15/gatewayconnectiontunnel"
 
 &gatewayconnectiontunnel.GatewayConnectionTunnelIpsecProperties {
 	ChildRekeyTime: *f64,
@@ -1330,7 +1330,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upclo
 #### Initializers <a name="Initializers" id="@cdktf/provider-upcloud.gatewayConnectionTunnel.GatewayConnectionTunnelIpsecAuthPskOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v14/gatewayconnectiontunnel"
+import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v15/gatewayconnectiontunnel"
 
 gatewayconnectiontunnel.NewGatewayConnectionTunnelIpsecAuthPskOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GatewayConnectionTunnelIpsecAuthPskOutputReference
 ```
@@ -1601,7 +1601,7 @@ func InternalValue() GatewayConnectionTunnelIpsecAuthPsk
 #### Initializers <a name="Initializers" id="@cdktf/provider-upcloud.gatewayConnectionTunnel.GatewayConnectionTunnelIpsecPropertiesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v14/gatewayconnectiontunnel"
+import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v15/gatewayconnectiontunnel"
 
 gatewayconnectiontunnel.NewGatewayConnectionTunnelIpsecPropertiesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GatewayConnectionTunnelIpsecPropertiesOutputReference
 ```
