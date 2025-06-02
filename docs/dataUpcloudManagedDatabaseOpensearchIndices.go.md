@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5
 #### Initializers <a name="Initializers" id="@cdktf/provider-upcloud.dataUpcloudManagedDatabaseOpensearchIndices.DataUpcloudManagedDatabaseOpensearchIndices.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v14/dataupcloudmanageddatabaseopensearchindices"
+import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v15/dataupcloudmanageddatabaseopensearchindices"
 
 dataupcloudmanageddatabaseopensearchindices.NewDataUpcloudManagedDatabaseOpensearchIndices(scope Construct, id *string, config DataUpcloudManagedDatabaseOpensearchIndicesConfig) DataUpcloudManagedDatabaseOpensearchIndices
 ```
@@ -303,7 +303,7 @@ func ResetIndices()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-upcloud.dataUpcloudManagedDatabaseOpensearchIndices.DataUpcloudManagedDatabaseOpensearchIndices.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v14/dataupcloudmanageddatabaseopensearchindices"
+import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v15/dataupcloudmanageddatabaseopensearchindices"
 
 dataupcloudmanageddatabaseopensearchindices.DataUpcloudManagedDatabaseOpensearchIndices_IsConstruct(x interface{}) *bool
 ```
@@ -335,7 +335,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-upcloud.dataUpcloudManagedDatabaseOpensearchIndices.DataUpcloudManagedDatabaseOpensearchIndices.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v14/dataupcloudmanageddatabaseopensearchindices"
+import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v15/dataupcloudmanageddatabaseopensearchindices"
 
 dataupcloudmanageddatabaseopensearchindices.DataUpcloudManagedDatabaseOpensearchIndices_IsTerraformElement(x interface{}) *bool
 ```
@@ -349,7 +349,7 @@ dataupcloudmanageddatabaseopensearchindices.DataUpcloudManagedDatabaseOpensearch
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-upcloud.dataUpcloudManagedDatabaseOpensearchIndices.DataUpcloudManagedDatabaseOpensearchIndices.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v14/dataupcloudmanageddatabaseopensearchindices"
+import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v15/dataupcloudmanageddatabaseopensearchindices"
 
 dataupcloudmanageddatabaseopensearchindices.DataUpcloudManagedDatabaseOpensearchIndices_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -363,7 +363,7 @@ dataupcloudmanageddatabaseopensearchindices.DataUpcloudManagedDatabaseOpensearch
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-upcloud.dataUpcloudManagedDatabaseOpensearchIndices.DataUpcloudManagedDatabaseOpensearchIndices.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v14/dataupcloudmanageddatabaseopensearchindices"
+import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v15/dataupcloudmanageddatabaseopensearchindices"
 
 dataupcloudmanageddatabaseopensearchindices.DataUpcloudManagedDatabaseOpensearchIndices_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -636,7 +636,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-upcloud.dataUpcloudManagedDatabaseOpensearchIndices.DataUpcloudManagedDatabaseOpensearchIndicesConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v14/dataupcloudmanageddatabaseopensearchindices"
+import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v15/dataupcloudmanageddatabaseopensearchindices"
 
 &dataupcloudmanageddatabaseopensearchindices.DataUpcloudManagedDatabaseOpensearchIndicesConfig {
 	Connection: interface{},
@@ -787,7 +787,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upclo
 #### Initializer <a name="Initializer" id="@cdktf/provider-upcloud.dataUpcloudManagedDatabaseOpensearchIndices.DataUpcloudManagedDatabaseOpensearchIndicesIndices.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v14/dataupcloudmanageddatabaseopensearchindices"
+import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v15/dataupcloudmanageddatabaseopensearchindices"
 
 &dataupcloudmanageddatabaseopensearchindices.DataUpcloudManagedDatabaseOpensearchIndicesIndices {
 
@@ -802,7 +802,7 @@ import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v14/dataupcloudmanage
 #### Initializers <a name="Initializers" id="@cdktf/provider-upcloud.dataUpcloudManagedDatabaseOpensearchIndices.DataUpcloudManagedDatabaseOpensearchIndicesIndicesList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v14/dataupcloudmanageddatabaseopensearchindices"
+import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v15/dataupcloudmanageddatabaseopensearchindices"
 
 dataupcloudmanageddatabaseopensearchindices.NewDataUpcloudManagedDatabaseOpensearchIndicesIndicesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataUpcloudManagedDatabaseOpensearchIndicesIndicesList
 ```
@@ -962,7 +962,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-upcloud.dataUpcloudManagedDatabaseOpensearchIndices.DataUpcloudManagedDatabaseOpensearchIndicesIndicesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v14/dataupcloudmanageddatabaseopensearchindices"
+import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v15/dataupcloudmanageddatabaseopensearchindices"
 
 dataupcloudmanageddatabaseopensearchindices.NewDataUpcloudManagedDatabaseOpensearchIndicesIndicesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataUpcloudManagedDatabaseOpensearchIndicesIndicesOutputReference
 ```
