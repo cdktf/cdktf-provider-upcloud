@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/upcloudltd/upcloud/5.22.0/docs/resources/object_storage
+// https://registry.terraform.io/providers/upcloudltd/upcloud/5.22.1/docs/resources/object_storage
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -20,17 +20,17 @@ export interface ObjectStorageConfig extends cdktf.TerraformMetaArguments {
   * 				and all dashes (-) should be replaced with underscores (_). For example, object storage named "my-files" would
   * 				use environment variable named "UPCLOUD_OBJECT_STORAGE_ACCESS_KEY_MY_FILES".
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.22.0/docs/resources/object_storage#access_key ObjectStorage#access_key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.22.1/docs/resources/object_storage#access_key ObjectStorage#access_key}
   */
   readonly accessKey: string;
   /**
   * The description of the object storage instance to be created
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.22.0/docs/resources/object_storage#description ObjectStorage#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.22.1/docs/resources/object_storage#description ObjectStorage#description}
   */
   readonly description?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.22.0/docs/resources/object_storage#id ObjectStorage#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.22.1/docs/resources/object_storage#id ObjectStorage#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -39,7 +39,7 @@ export interface ObjectStorageConfig extends cdktf.TerraformMetaArguments {
   /**
   * The name of the object storage instance to be created
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.22.0/docs/resources/object_storage#name ObjectStorage#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.22.1/docs/resources/object_storage#name ObjectStorage#name}
   */
   readonly name: string;
   /**
@@ -50,25 +50,25 @@ export interface ObjectStorageConfig extends cdktf.TerraformMetaArguments {
   * 				and all dashes (-) should be replaced with underscores (_). For example, object storage named "my-files" would
   * 				use environment variable named "UPCLOUD_OBJECT_STORAGE_SECRET_KEY_MY_FILES".
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.22.0/docs/resources/object_storage#secret_key ObjectStorage#secret_key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.22.1/docs/resources/object_storage#secret_key ObjectStorage#secret_key}
   */
   readonly secretKey: string;
   /**
   * The size of the object storage instance in gigabytes
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.22.0/docs/resources/object_storage#size ObjectStorage#size}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.22.1/docs/resources/object_storage#size ObjectStorage#size}
   */
   readonly size: number;
   /**
   * The zone in which the object storage instance will be created, e.g. `de-fra1`. You can list available zones with `upctl zone list`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.22.0/docs/resources/object_storage#zone ObjectStorage#zone}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.22.1/docs/resources/object_storage#zone ObjectStorage#zone}
   */
   readonly zone: string;
   /**
   * bucket block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.22.0/docs/resources/object_storage#bucket ObjectStorage#bucket}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.22.1/docs/resources/object_storage#bucket ObjectStorage#bucket}
   */
   readonly bucket?: ObjectStorageBucket[] | cdktf.IResolvable;
 }
@@ -76,7 +76,7 @@ export interface ObjectStorageBucket {
   /**
   * The name of the bucket
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.22.0/docs/resources/object_storage#name ObjectStorage#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.22.1/docs/resources/object_storage#name ObjectStorage#name}
   */
   readonly name: string;
 }
@@ -189,7 +189,7 @@ export class ObjectStorageBucketList extends cdktf.ComplexList {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.22.0/docs/resources/object_storage upcloud_object_storage}
+* Represents a {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.22.1/docs/resources/object_storage upcloud_object_storage}
 */
 export class ObjectStorage extends cdktf.TerraformResource {
 
@@ -205,7 +205,7 @@ export class ObjectStorage extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a ObjectStorage resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the ObjectStorage to import
-  * @param importFromId The id of the existing ObjectStorage that should be imported. Refer to the {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.22.0/docs/resources/object_storage#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing ObjectStorage that should be imported. Refer to the {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.22.1/docs/resources/object_storage#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the ObjectStorage to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -217,7 +217,7 @@ export class ObjectStorage extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.22.0/docs/resources/object_storage upcloud_object_storage} Resource
+  * Create a new {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.22.1/docs/resources/object_storage upcloud_object_storage} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -228,7 +228,7 @@ export class ObjectStorage extends cdktf.TerraformResource {
       terraformResourceType: 'upcloud_object_storage',
       terraformGeneratorMetadata: {
         providerName: 'upcloud',
-        providerVersion: '5.22.0',
+        providerVersion: '5.22.1',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,
