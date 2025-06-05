@@ -4,7 +4,7 @@
 
 ### FirewallRules <a name="FirewallRules" id="@cdktf/provider-upcloud.firewallRules.FirewallRules"></a>
 
-Represents a {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.22.0/docs/resources/firewall_rules upcloud_firewall_rules}.
+Represents a {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.22.1/docs/resources/firewall_rules upcloud_firewall_rules}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-upcloud.firewallRules.FirewallRules.Initializer"></a>
 
@@ -23,10 +23,9 @@ FirewallRules.Builder.create(Construct scope, java.lang.String id)
 //  .provisioners(java.util.List<FileProvisioner)
 //  .provisioners(LocalExecProvisioner)
 //  .provisioners(RemoteExecProvisioner>)
-    .firewallRule(IResolvable)
-    .firewallRule(java.util.List<FirewallRulesFirewallRule>)
     .serverId(java.lang.String)
-//  .id(java.lang.String)
+//  .firewallRule(IResolvable)
+//  .firewallRule(java.util.List<FirewallRulesFirewallRule>)
     .build();
 ```
 
@@ -41,9 +40,8 @@ FirewallRules.Builder.create(Construct scope, java.lang.String id)
 | <code><a href="#@cdktf/provider-upcloud.firewallRules.FirewallRules.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>com.hashicorp.cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.firewallRules.FirewallRules.Initializer.parameter.provider">provider</a></code> | <code>com.hashicorp.cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.firewallRules.FirewallRules.Initializer.parameter.provisioners">provisioners</a></code> | <code>java.util.List<com.hashicorp.cdktf.FileProvisioner OR com.hashicorp.cdktf.LocalExecProvisioner OR com.hashicorp.cdktf.RemoteExecProvisioner></code> | *No description.* |
+| <code><a href="#@cdktf/provider-upcloud.firewallRules.FirewallRules.Initializer.parameter.serverId">serverId</a></code> | <code>java.lang.String</code> | The UUID of the server to be protected with the firewall rules. |
 | <code><a href="#@cdktf/provider-upcloud.firewallRules.FirewallRules.Initializer.parameter.firewallRule">firewallRule</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-upcloud.firewallRules.FirewallRulesFirewallRule">FirewallRulesFirewallRule</a>></code> | firewall_rule block. |
-| <code><a href="#@cdktf/provider-upcloud.firewallRules.FirewallRules.Initializer.parameter.serverId">serverId</a></code> | <code>java.lang.String</code> | The unique id of the server to be protected the firewall rules. |
-| <code><a href="#@cdktf/provider-upcloud.firewallRules.FirewallRules.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.22.0/docs/resources/firewall_rules#id FirewallRules#id}. |
 
 ---
 
@@ -107,34 +105,23 @@ Must be unique amongst siblings in the same scope
 
 ---
 
-##### `firewallRule`<sup>Required</sup> <a name="firewallRule" id="@cdktf/provider-upcloud.firewallRules.FirewallRules.Initializer.parameter.firewallRule"></a>
+##### `serverId`<sup>Required</sup> <a name="serverId" id="@cdktf/provider-upcloud.firewallRules.FirewallRules.Initializer.parameter.serverId"></a>
+
+- *Type:* java.lang.String
+
+The UUID of the server to be protected with the firewall rules.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.22.1/docs/resources/firewall_rules#server_id FirewallRules#server_id}
+
+---
+
+##### `firewallRule`<sup>Optional</sup> <a name="firewallRule" id="@cdktf/provider-upcloud.firewallRules.FirewallRules.Initializer.parameter.firewallRule"></a>
 
 - *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-upcloud.firewallRules.FirewallRulesFirewallRule">FirewallRulesFirewallRule</a>>
 
 firewall_rule block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.22.0/docs/resources/firewall_rules#firewall_rule FirewallRules#firewall_rule}
-
----
-
-##### `serverId`<sup>Required</sup> <a name="serverId" id="@cdktf/provider-upcloud.firewallRules.FirewallRules.Initializer.parameter.serverId"></a>
-
-- *Type:* java.lang.String
-
-The unique id of the server to be protected the firewall rules.
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.22.0/docs/resources/firewall_rules#server_id FirewallRules#server_id}
-
----
-
-##### `id`<sup>Optional</sup> <a name="id" id="@cdktf/provider-upcloud.firewallRules.FirewallRules.Initializer.parameter.id"></a>
-
-- *Type:* java.lang.String
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.22.0/docs/resources/firewall_rules#id FirewallRules#id}.
-
-Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
-If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.22.1/docs/resources/firewall_rules#firewall_rule FirewallRules#firewall_rule}
 
 ---
 
@@ -166,7 +153,7 @@ If you experience problems setting this value it might not be settable. Please t
 | <code><a href="#@cdktf/provider-upcloud.firewallRules.FirewallRules.moveTo">moveTo</a></code> | Moves this resource to the target resource given by moveTarget. |
 | <code><a href="#@cdktf/provider-upcloud.firewallRules.FirewallRules.moveToId">moveToId</a></code> | Moves this resource to the resource corresponding to "id". |
 | <code><a href="#@cdktf/provider-upcloud.firewallRules.FirewallRules.putFirewallRule">putFirewallRule</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-upcloud.firewallRules.FirewallRules.resetId">resetId</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-upcloud.firewallRules.FirewallRules.resetFirewallRule">resetFirewallRule</a></code> | *No description.* |
 
 ---
 
@@ -472,10 +459,10 @@ public void putFirewallRule(IResolvable OR java.util.List<FirewallRulesFirewallR
 
 ---
 
-##### `resetId` <a name="resetId" id="@cdktf/provider-upcloud.firewallRules.FirewallRules.resetId"></a>
+##### `resetFirewallRule` <a name="resetFirewallRule" id="@cdktf/provider-upcloud.firewallRules.FirewallRules.resetFirewallRule"></a>
 
 ```java
-public void resetId()
+public void resetFirewallRule()
 ```
 
 #### Static Functions <a name="Static Functions" id="Static Functions"></a>
@@ -581,7 +568,7 @@ The construct id used in the generated config for the FirewallRules to import.
 
 The id of the existing FirewallRules that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.22.0/docs/resources/firewall_rules#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.22.1/docs/resources/firewall_rules#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -612,10 +599,9 @@ Refer to the {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5
 | <code><a href="#@cdktf/provider-upcloud.firewallRules.FirewallRules.property.provider">provider</a></code> | <code>com.hashicorp.cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.firewallRules.FirewallRules.property.provisioners">provisioners</a></code> | <code>java.util.List<com.hashicorp.cdktf.FileProvisioner OR com.hashicorp.cdktf.LocalExecProvisioner OR com.hashicorp.cdktf.RemoteExecProvisioner></code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.firewallRules.FirewallRules.property.firewallRule">firewallRule</a></code> | <code><a href="#@cdktf/provider-upcloud.firewallRules.FirewallRulesFirewallRuleList">FirewallRulesFirewallRuleList</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-upcloud.firewallRules.FirewallRules.property.firewallRuleInput">firewallRuleInput</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-upcloud.firewallRules.FirewallRulesFirewallRule">FirewallRulesFirewallRule</a>></code> | *No description.* |
-| <code><a href="#@cdktf/provider-upcloud.firewallRules.FirewallRules.property.idInput">idInput</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-upcloud.firewallRules.FirewallRules.property.serverIdInput">serverIdInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.firewallRules.FirewallRules.property.id">id</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktf/provider-upcloud.firewallRules.FirewallRules.property.firewallRuleInput">firewallRuleInput</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-upcloud.firewallRules.FirewallRulesFirewallRule">FirewallRulesFirewallRule</a>></code> | *No description.* |
+| <code><a href="#@cdktf/provider-upcloud.firewallRules.FirewallRules.property.serverIdInput">serverIdInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.firewallRules.FirewallRules.property.serverId">serverId</a></code> | <code>java.lang.String</code> | *No description.* |
 
 ---
@@ -772,6 +758,16 @@ public FirewallRulesFirewallRuleList getFirewallRule();
 
 ---
 
+##### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-upcloud.firewallRules.FirewallRules.property.id"></a>
+
+```java
+public java.lang.String getId();
+```
+
+- *Type:* java.lang.String
+
+---
+
 ##### `firewallRuleInput`<sup>Optional</sup> <a name="firewallRuleInput" id="@cdktf/provider-upcloud.firewallRules.FirewallRules.property.firewallRuleInput"></a>
 
 ```java
@@ -782,30 +778,10 @@ public java.lang.Object getFirewallRuleInput();
 
 ---
 
-##### `idInput`<sup>Optional</sup> <a name="idInput" id="@cdktf/provider-upcloud.firewallRules.FirewallRules.property.idInput"></a>
-
-```java
-public java.lang.String getIdInput();
-```
-
-- *Type:* java.lang.String
-
----
-
 ##### `serverIdInput`<sup>Optional</sup> <a name="serverIdInput" id="@cdktf/provider-upcloud.firewallRules.FirewallRules.property.serverIdInput"></a>
 
 ```java
 public java.lang.String getServerIdInput();
-```
-
-- *Type:* java.lang.String
-
----
-
-##### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-upcloud.firewallRules.FirewallRules.property.id"></a>
-
-```java
-public java.lang.String getId();
 ```
 
 - *Type:* java.lang.String
@@ -861,10 +837,9 @@ FirewallRulesConfig.builder()
 //  .provisioners(java.util.List<FileProvisioner)
 //  .provisioners(LocalExecProvisioner)
 //  .provisioners(RemoteExecProvisioner>)
-    .firewallRule(IResolvable)
-    .firewallRule(java.util.List<FirewallRulesFirewallRule>)
     .serverId(java.lang.String)
-//  .id(java.lang.String)
+//  .firewallRule(IResolvable)
+//  .firewallRule(java.util.List<FirewallRulesFirewallRule>)
     .build();
 ```
 
@@ -879,9 +854,8 @@ FirewallRulesConfig.builder()
 | <code><a href="#@cdktf/provider-upcloud.firewallRules.FirewallRulesConfig.property.lifecycle">lifecycle</a></code> | <code>com.hashicorp.cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.firewallRules.FirewallRulesConfig.property.provider">provider</a></code> | <code>com.hashicorp.cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.firewallRules.FirewallRulesConfig.property.provisioners">provisioners</a></code> | <code>java.util.List<com.hashicorp.cdktf.FileProvisioner OR com.hashicorp.cdktf.LocalExecProvisioner OR com.hashicorp.cdktf.RemoteExecProvisioner></code> | *No description.* |
+| <code><a href="#@cdktf/provider-upcloud.firewallRules.FirewallRulesConfig.property.serverId">serverId</a></code> | <code>java.lang.String</code> | The UUID of the server to be protected with the firewall rules. |
 | <code><a href="#@cdktf/provider-upcloud.firewallRules.FirewallRulesConfig.property.firewallRule">firewallRule</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-upcloud.firewallRules.FirewallRulesFirewallRule">FirewallRulesFirewallRule</a>></code> | firewall_rule block. |
-| <code><a href="#@cdktf/provider-upcloud.firewallRules.FirewallRulesConfig.property.serverId">serverId</a></code> | <code>java.lang.String</code> | The unique id of the server to be protected the firewall rules. |
-| <code><a href="#@cdktf/provider-upcloud.firewallRules.FirewallRulesConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.22.0/docs/resources/firewall_rules#id FirewallRules#id}. |
 
 ---
 
@@ -955,7 +929,21 @@ public java.lang.Object getProvisioners();
 
 ---
 
-##### `firewallRule`<sup>Required</sup> <a name="firewallRule" id="@cdktf/provider-upcloud.firewallRules.FirewallRulesConfig.property.firewallRule"></a>
+##### `serverId`<sup>Required</sup> <a name="serverId" id="@cdktf/provider-upcloud.firewallRules.FirewallRulesConfig.property.serverId"></a>
+
+```java
+public java.lang.String getServerId();
+```
+
+- *Type:* java.lang.String
+
+The UUID of the server to be protected with the firewall rules.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.22.1/docs/resources/firewall_rules#server_id FirewallRules#server_id}
+
+---
+
+##### `firewallRule`<sup>Optional</sup> <a name="firewallRule" id="@cdktf/provider-upcloud.firewallRules.FirewallRulesConfig.property.firewallRule"></a>
 
 ```java
 public java.lang.Object getFirewallRule();
@@ -965,36 +953,7 @@ public java.lang.Object getFirewallRule();
 
 firewall_rule block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.22.0/docs/resources/firewall_rules#firewall_rule FirewallRules#firewall_rule}
-
----
-
-##### `serverId`<sup>Required</sup> <a name="serverId" id="@cdktf/provider-upcloud.firewallRules.FirewallRulesConfig.property.serverId"></a>
-
-```java
-public java.lang.String getServerId();
-```
-
-- *Type:* java.lang.String
-
-The unique id of the server to be protected the firewall rules.
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.22.0/docs/resources/firewall_rules#server_id FirewallRules#server_id}
-
----
-
-##### `id`<sup>Optional</sup> <a name="id" id="@cdktf/provider-upcloud.firewallRules.FirewallRulesConfig.property.id"></a>
-
-```java
-public java.lang.String getId();
-```
-
-- *Type:* java.lang.String
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.22.0/docs/resources/firewall_rules#id FirewallRules#id}.
-
-Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
-If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.22.1/docs/resources/firewall_rules#firewall_rule FirewallRules#firewall_rule}
 
 ---
 
@@ -1028,15 +987,15 @@ FirewallRulesFirewallRule.builder()
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-upcloud.firewallRules.FirewallRulesFirewallRule.property.action">action</a></code> | <code>java.lang.String</code> | Action to take if the rule conditions are met. Valid values `accept \| drop`. |
-| <code><a href="#@cdktf/provider-upcloud.firewallRules.FirewallRulesFirewallRule.property.direction">direction</a></code> | <code>java.lang.String</code> | The direction of network traffic this rule will be applied to. |
-| <code><a href="#@cdktf/provider-upcloud.firewallRules.FirewallRulesFirewallRule.property.comment">comment</a></code> | <code>java.lang.String</code> | Freeform comment string for the rule. |
+| <code><a href="#@cdktf/provider-upcloud.firewallRules.FirewallRulesFirewallRule.property.direction">direction</a></code> | <code>java.lang.String</code> | The direction of network traffic this rule will be applied to. Valid values are `in` and `out`. |
+| <code><a href="#@cdktf/provider-upcloud.firewallRules.FirewallRulesFirewallRule.property.comment">comment</a></code> | <code>java.lang.String</code> | A comment for the rule. |
 | <code><a href="#@cdktf/provider-upcloud.firewallRules.FirewallRulesFirewallRule.property.destinationAddressEnd">destinationAddressEnd</a></code> | <code>java.lang.String</code> | The destination address range ends from this address. |
 | <code><a href="#@cdktf/provider-upcloud.firewallRules.FirewallRulesFirewallRule.property.destinationAddressStart">destinationAddressStart</a></code> | <code>java.lang.String</code> | The destination address range starts from this address. |
 | <code><a href="#@cdktf/provider-upcloud.firewallRules.FirewallRulesFirewallRule.property.destinationPortEnd">destinationPortEnd</a></code> | <code>java.lang.String</code> | The destination port range ends from this port number. |
 | <code><a href="#@cdktf/provider-upcloud.firewallRules.FirewallRulesFirewallRule.property.destinationPortStart">destinationPortStart</a></code> | <code>java.lang.String</code> | The destination port range starts from this port number. |
 | <code><a href="#@cdktf/provider-upcloud.firewallRules.FirewallRulesFirewallRule.property.family">family</a></code> | <code>java.lang.String</code> | The address family of new firewall rule. |
-| <code><a href="#@cdktf/provider-upcloud.firewallRules.FirewallRulesFirewallRule.property.icmpType">icmpType</a></code> | <code>java.lang.String</code> | The ICMP type. |
-| <code><a href="#@cdktf/provider-upcloud.firewallRules.FirewallRulesFirewallRule.property.protocol">protocol</a></code> | <code>java.lang.String</code> | The protocol this rule will be applied to. |
+| <code><a href="#@cdktf/provider-upcloud.firewallRules.FirewallRulesFirewallRule.property.icmpType">icmpType</a></code> | <code>java.lang.String</code> | The ICMP type of the rule. Only valid if protocol is ICMP. |
+| <code><a href="#@cdktf/provider-upcloud.firewallRules.FirewallRulesFirewallRule.property.protocol">protocol</a></code> | <code>java.lang.String</code> | The protocol of the rule. Possible values are `` (empty), `tcp`, `udp`, `icmp`. |
 | <code><a href="#@cdktf/provider-upcloud.firewallRules.FirewallRulesFirewallRule.property.sourceAddressEnd">sourceAddressEnd</a></code> | <code>java.lang.String</code> | The source address range ends from this address. |
 | <code><a href="#@cdktf/provider-upcloud.firewallRules.FirewallRulesFirewallRule.property.sourceAddressStart">sourceAddressStart</a></code> | <code>java.lang.String</code> | The source address range starts from this address. |
 | <code><a href="#@cdktf/provider-upcloud.firewallRules.FirewallRulesFirewallRule.property.sourcePortEnd">sourcePortEnd</a></code> | <code>java.lang.String</code> | The source port range ends from this port number. |
@@ -1054,7 +1013,7 @@ public java.lang.String getAction();
 
 Action to take if the rule conditions are met. Valid values `accept | drop`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.22.0/docs/resources/firewall_rules#action FirewallRules#action}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.22.1/docs/resources/firewall_rules#action FirewallRules#action}
 
 ---
 
@@ -1066,9 +1025,9 @@ public java.lang.String getDirection();
 
 - *Type:* java.lang.String
 
-The direction of network traffic this rule will be applied to.
+The direction of network traffic this rule will be applied to. Valid values are `in` and `out`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.22.0/docs/resources/firewall_rules#direction FirewallRules#direction}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.22.1/docs/resources/firewall_rules#direction FirewallRules#direction}
 
 ---
 
@@ -1080,9 +1039,9 @@ public java.lang.String getComment();
 
 - *Type:* java.lang.String
 
-Freeform comment string for the rule.
+A comment for the rule.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.22.0/docs/resources/firewall_rules#comment FirewallRules#comment}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.22.1/docs/resources/firewall_rules#comment FirewallRules#comment}
 
 ---
 
@@ -1096,7 +1055,7 @@ public java.lang.String getDestinationAddressEnd();
 
 The destination address range ends from this address.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.22.0/docs/resources/firewall_rules#destination_address_end FirewallRules#destination_address_end}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.22.1/docs/resources/firewall_rules#destination_address_end FirewallRules#destination_address_end}
 
 ---
 
@@ -1110,7 +1069,7 @@ public java.lang.String getDestinationAddressStart();
 
 The destination address range starts from this address.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.22.0/docs/resources/firewall_rules#destination_address_start FirewallRules#destination_address_start}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.22.1/docs/resources/firewall_rules#destination_address_start FirewallRules#destination_address_start}
 
 ---
 
@@ -1124,7 +1083,7 @@ public java.lang.String getDestinationPortEnd();
 
 The destination port range ends from this port number.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.22.0/docs/resources/firewall_rules#destination_port_end FirewallRules#destination_port_end}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.22.1/docs/resources/firewall_rules#destination_port_end FirewallRules#destination_port_end}
 
 ---
 
@@ -1138,7 +1097,7 @@ public java.lang.String getDestinationPortStart();
 
 The destination port range starts from this port number.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.22.0/docs/resources/firewall_rules#destination_port_start FirewallRules#destination_port_start}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.22.1/docs/resources/firewall_rules#destination_port_start FirewallRules#destination_port_start}
 
 ---
 
@@ -1152,7 +1111,7 @@ public java.lang.String getFamily();
 
 The address family of new firewall rule.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.22.0/docs/resources/firewall_rules#family FirewallRules#family}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.22.1/docs/resources/firewall_rules#family FirewallRules#family}
 
 ---
 
@@ -1164,9 +1123,9 @@ public java.lang.String getIcmpType();
 
 - *Type:* java.lang.String
 
-The ICMP type.
+The ICMP type of the rule. Only valid if protocol is ICMP.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.22.0/docs/resources/firewall_rules#icmp_type FirewallRules#icmp_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.22.1/docs/resources/firewall_rules#icmp_type FirewallRules#icmp_type}
 
 ---
 
@@ -1178,9 +1137,9 @@ public java.lang.String getProtocol();
 
 - *Type:* java.lang.String
 
-The protocol this rule will be applied to.
+The protocol of the rule. Possible values are `` (empty), `tcp`, `udp`, `icmp`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.22.0/docs/resources/firewall_rules#protocol FirewallRules#protocol}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.22.1/docs/resources/firewall_rules#protocol FirewallRules#protocol}
 
 ---
 
@@ -1194,7 +1153,7 @@ public java.lang.String getSourceAddressEnd();
 
 The source address range ends from this address.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.22.0/docs/resources/firewall_rules#source_address_end FirewallRules#source_address_end}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.22.1/docs/resources/firewall_rules#source_address_end FirewallRules#source_address_end}
 
 ---
 
@@ -1208,7 +1167,7 @@ public java.lang.String getSourceAddressStart();
 
 The source address range starts from this address.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.22.0/docs/resources/firewall_rules#source_address_start FirewallRules#source_address_start}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.22.1/docs/resources/firewall_rules#source_address_start FirewallRules#source_address_start}
 
 ---
 
@@ -1222,7 +1181,7 @@ public java.lang.String getSourcePortEnd();
 
 The source port range ends from this port number.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.22.0/docs/resources/firewall_rules#source_port_end FirewallRules#source_port_end}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.22.1/docs/resources/firewall_rules#source_port_end FirewallRules#source_port_end}
 
 ---
 
@@ -1236,7 +1195,7 @@ public java.lang.String getSourcePortStart();
 
 The source port range starts from this port number.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.22.0/docs/resources/firewall_rules#source_port_start FirewallRules#source_port_start}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.22.1/docs/resources/firewall_rules#source_port_start FirewallRules#source_port_start}
 
 ---
 

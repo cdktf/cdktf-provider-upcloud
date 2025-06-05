@@ -4,7 +4,7 @@
 
 ### FirewallRules <a name="FirewallRules" id="@cdktf/provider-upcloud.firewallRules.FirewallRules"></a>
 
-Represents a {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.22.0/docs/resources/firewall_rules upcloud_firewall_rules}.
+Represents a {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.22.1/docs/resources/firewall_rules upcloud_firewall_rules}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-upcloud.firewallRules.FirewallRules.Initializer"></a>
 
@@ -21,9 +21,8 @@ firewallRules.FirewallRules(
   lifecycle: TerraformResourceLifecycle = None,
   provider: TerraformProvider = None,
   provisioners: typing.List[typing.Union[FileProvisioner, LocalExecProvisioner, RemoteExecProvisioner]] = None,
-  firewall_rule: typing.Union[IResolvable, typing.List[FirewallRulesFirewallRule]],
   server_id: str,
-  id: str = None
+  firewall_rule: typing.Union[IResolvable, typing.List[FirewallRulesFirewallRule]] = None
 )
 ```
 
@@ -38,9 +37,8 @@ firewallRules.FirewallRules(
 | <code><a href="#@cdktf/provider-upcloud.firewallRules.FirewallRules.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.firewallRules.FirewallRules.Initializer.parameter.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.firewallRules.FirewallRules.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-upcloud.firewallRules.FirewallRules.Initializer.parameter.serverId">server_id</a></code> | <code>str</code> | The UUID of the server to be protected with the firewall rules. |
 | <code><a href="#@cdktf/provider-upcloud.firewallRules.FirewallRules.Initializer.parameter.firewallRule">firewall_rule</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-upcloud.firewallRules.FirewallRulesFirewallRule">FirewallRulesFirewallRule</a>]]</code> | firewall_rule block. |
-| <code><a href="#@cdktf/provider-upcloud.firewallRules.FirewallRules.Initializer.parameter.serverId">server_id</a></code> | <code>str</code> | The unique id of the server to be protected the firewall rules. |
-| <code><a href="#@cdktf/provider-upcloud.firewallRules.FirewallRules.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.22.0/docs/resources/firewall_rules#id FirewallRules#id}. |
 
 ---
 
@@ -104,34 +102,23 @@ Must be unique amongst siblings in the same scope
 
 ---
 
-##### `firewall_rule`<sup>Required</sup> <a name="firewall_rule" id="@cdktf/provider-upcloud.firewallRules.FirewallRules.Initializer.parameter.firewallRule"></a>
+##### `server_id`<sup>Required</sup> <a name="server_id" id="@cdktf/provider-upcloud.firewallRules.FirewallRules.Initializer.parameter.serverId"></a>
+
+- *Type:* str
+
+The UUID of the server to be protected with the firewall rules.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.22.1/docs/resources/firewall_rules#server_id FirewallRules#server_id}
+
+---
+
+##### `firewall_rule`<sup>Optional</sup> <a name="firewall_rule" id="@cdktf/provider-upcloud.firewallRules.FirewallRules.Initializer.parameter.firewallRule"></a>
 
 - *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-upcloud.firewallRules.FirewallRulesFirewallRule">FirewallRulesFirewallRule</a>]]
 
 firewall_rule block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.22.0/docs/resources/firewall_rules#firewall_rule FirewallRules#firewall_rule}
-
----
-
-##### `server_id`<sup>Required</sup> <a name="server_id" id="@cdktf/provider-upcloud.firewallRules.FirewallRules.Initializer.parameter.serverId"></a>
-
-- *Type:* str
-
-The unique id of the server to be protected the firewall rules.
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.22.0/docs/resources/firewall_rules#server_id FirewallRules#server_id}
-
----
-
-##### `id`<sup>Optional</sup> <a name="id" id="@cdktf/provider-upcloud.firewallRules.FirewallRules.Initializer.parameter.id"></a>
-
-- *Type:* str
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.22.0/docs/resources/firewall_rules#id FirewallRules#id}.
-
-Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
-If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.22.1/docs/resources/firewall_rules#firewall_rule FirewallRules#firewall_rule}
 
 ---
 
@@ -163,7 +150,7 @@ If you experience problems setting this value it might not be settable. Please t
 | <code><a href="#@cdktf/provider-upcloud.firewallRules.FirewallRules.moveTo">move_to</a></code> | Moves this resource to the target resource given by moveTarget. |
 | <code><a href="#@cdktf/provider-upcloud.firewallRules.FirewallRules.moveToId">move_to_id</a></code> | Moves this resource to the resource corresponding to "id". |
 | <code><a href="#@cdktf/provider-upcloud.firewallRules.FirewallRules.putFirewallRule">put_firewall_rule</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-upcloud.firewallRules.FirewallRules.resetId">reset_id</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-upcloud.firewallRules.FirewallRules.resetFirewallRule">reset_firewall_rule</a></code> | *No description.* |
 
 ---
 
@@ -506,10 +493,10 @@ def put_firewall_rule(
 
 ---
 
-##### `reset_id` <a name="reset_id" id="@cdktf/provider-upcloud.firewallRules.FirewallRules.resetId"></a>
+##### `reset_firewall_rule` <a name="reset_firewall_rule" id="@cdktf/provider-upcloud.firewallRules.FirewallRules.resetFirewallRule"></a>
 
 ```python
-def reset_id() -> None
+def reset_firewall_rule() -> None
 ```
 
 #### Static Functions <a name="Static Functions" id="Static Functions"></a>
@@ -626,7 +613,7 @@ The construct id used in the generated config for the FirewallRules to import.
 
 The id of the existing FirewallRules that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.22.0/docs/resources/firewall_rules#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.22.1/docs/resources/firewall_rules#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -657,10 +644,9 @@ Refer to the {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5
 | <code><a href="#@cdktf/provider-upcloud.firewallRules.FirewallRules.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.firewallRules.FirewallRules.property.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.firewallRules.FirewallRules.property.firewallRule">firewall_rule</a></code> | <code><a href="#@cdktf/provider-upcloud.firewallRules.FirewallRulesFirewallRuleList">FirewallRulesFirewallRuleList</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-upcloud.firewallRules.FirewallRules.property.firewallRuleInput">firewall_rule_input</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-upcloud.firewallRules.FirewallRulesFirewallRule">FirewallRulesFirewallRule</a>]]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-upcloud.firewallRules.FirewallRules.property.idInput">id_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-upcloud.firewallRules.FirewallRules.property.serverIdInput">server_id_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.firewallRules.FirewallRules.property.id">id</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-upcloud.firewallRules.FirewallRules.property.firewallRuleInput">firewall_rule_input</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-upcloud.firewallRules.FirewallRulesFirewallRule">FirewallRulesFirewallRule</a>]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-upcloud.firewallRules.FirewallRules.property.serverIdInput">server_id_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.firewallRules.FirewallRules.property.serverId">server_id</a></code> | <code>str</code> | *No description.* |
 
 ---
@@ -817,6 +803,16 @@ firewall_rule: FirewallRulesFirewallRuleList
 
 ---
 
+##### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-upcloud.firewallRules.FirewallRules.property.id"></a>
+
+```python
+id: str
+```
+
+- *Type:* str
+
+---
+
 ##### `firewall_rule_input`<sup>Optional</sup> <a name="firewall_rule_input" id="@cdktf/provider-upcloud.firewallRules.FirewallRules.property.firewallRuleInput"></a>
 
 ```python
@@ -827,30 +823,10 @@ firewall_rule_input: typing.Union[IResolvable, typing.List[FirewallRulesFirewall
 
 ---
 
-##### `id_input`<sup>Optional</sup> <a name="id_input" id="@cdktf/provider-upcloud.firewallRules.FirewallRules.property.idInput"></a>
-
-```python
-id_input: str
-```
-
-- *Type:* str
-
----
-
 ##### `server_id_input`<sup>Optional</sup> <a name="server_id_input" id="@cdktf/provider-upcloud.firewallRules.FirewallRules.property.serverIdInput"></a>
 
 ```python
 server_id_input: str
-```
-
-- *Type:* str
-
----
-
-##### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-upcloud.firewallRules.FirewallRules.property.id"></a>
-
-```python
-id: str
 ```
 
 - *Type:* str
@@ -902,9 +878,8 @@ firewallRules.FirewallRulesConfig(
   lifecycle: TerraformResourceLifecycle = None,
   provider: TerraformProvider = None,
   provisioners: typing.List[typing.Union[FileProvisioner, LocalExecProvisioner, RemoteExecProvisioner]] = None,
-  firewall_rule: typing.Union[IResolvable, typing.List[FirewallRulesFirewallRule]],
   server_id: str,
-  id: str = None
+  firewall_rule: typing.Union[IResolvable, typing.List[FirewallRulesFirewallRule]] = None
 )
 ```
 
@@ -919,9 +894,8 @@ firewallRules.FirewallRulesConfig(
 | <code><a href="#@cdktf/provider-upcloud.firewallRules.FirewallRulesConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.firewallRules.FirewallRulesConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.firewallRules.FirewallRulesConfig.property.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-upcloud.firewallRules.FirewallRulesConfig.property.serverId">server_id</a></code> | <code>str</code> | The UUID of the server to be protected with the firewall rules. |
 | <code><a href="#@cdktf/provider-upcloud.firewallRules.FirewallRulesConfig.property.firewallRule">firewall_rule</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-upcloud.firewallRules.FirewallRulesFirewallRule">FirewallRulesFirewallRule</a>]]</code> | firewall_rule block. |
-| <code><a href="#@cdktf/provider-upcloud.firewallRules.FirewallRulesConfig.property.serverId">server_id</a></code> | <code>str</code> | The unique id of the server to be protected the firewall rules. |
-| <code><a href="#@cdktf/provider-upcloud.firewallRules.FirewallRulesConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.22.0/docs/resources/firewall_rules#id FirewallRules#id}. |
 
 ---
 
@@ -995,7 +969,21 @@ provisioners: typing.List[typing.Union[FileProvisioner, LocalExecProvisioner, Re
 
 ---
 
-##### `firewall_rule`<sup>Required</sup> <a name="firewall_rule" id="@cdktf/provider-upcloud.firewallRules.FirewallRulesConfig.property.firewallRule"></a>
+##### `server_id`<sup>Required</sup> <a name="server_id" id="@cdktf/provider-upcloud.firewallRules.FirewallRulesConfig.property.serverId"></a>
+
+```python
+server_id: str
+```
+
+- *Type:* str
+
+The UUID of the server to be protected with the firewall rules.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.22.1/docs/resources/firewall_rules#server_id FirewallRules#server_id}
+
+---
+
+##### `firewall_rule`<sup>Optional</sup> <a name="firewall_rule" id="@cdktf/provider-upcloud.firewallRules.FirewallRulesConfig.property.firewallRule"></a>
 
 ```python
 firewall_rule: typing.Union[IResolvable, typing.List[FirewallRulesFirewallRule]]
@@ -1005,36 +993,7 @@ firewall_rule: typing.Union[IResolvable, typing.List[FirewallRulesFirewallRule]]
 
 firewall_rule block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.22.0/docs/resources/firewall_rules#firewall_rule FirewallRules#firewall_rule}
-
----
-
-##### `server_id`<sup>Required</sup> <a name="server_id" id="@cdktf/provider-upcloud.firewallRules.FirewallRulesConfig.property.serverId"></a>
-
-```python
-server_id: str
-```
-
-- *Type:* str
-
-The unique id of the server to be protected the firewall rules.
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.22.0/docs/resources/firewall_rules#server_id FirewallRules#server_id}
-
----
-
-##### `id`<sup>Optional</sup> <a name="id" id="@cdktf/provider-upcloud.firewallRules.FirewallRulesConfig.property.id"></a>
-
-```python
-id: str
-```
-
-- *Type:* str
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.22.0/docs/resources/firewall_rules#id FirewallRules#id}.
-
-Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
-If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.22.1/docs/resources/firewall_rules#firewall_rule FirewallRules#firewall_rule}
 
 ---
 
@@ -1068,15 +1027,15 @@ firewallRules.FirewallRulesFirewallRule(
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-upcloud.firewallRules.FirewallRulesFirewallRule.property.action">action</a></code> | <code>str</code> | Action to take if the rule conditions are met. Valid values `accept \| drop`. |
-| <code><a href="#@cdktf/provider-upcloud.firewallRules.FirewallRulesFirewallRule.property.direction">direction</a></code> | <code>str</code> | The direction of network traffic this rule will be applied to. |
-| <code><a href="#@cdktf/provider-upcloud.firewallRules.FirewallRulesFirewallRule.property.comment">comment</a></code> | <code>str</code> | Freeform comment string for the rule. |
+| <code><a href="#@cdktf/provider-upcloud.firewallRules.FirewallRulesFirewallRule.property.direction">direction</a></code> | <code>str</code> | The direction of network traffic this rule will be applied to. Valid values are `in` and `out`. |
+| <code><a href="#@cdktf/provider-upcloud.firewallRules.FirewallRulesFirewallRule.property.comment">comment</a></code> | <code>str</code> | A comment for the rule. |
 | <code><a href="#@cdktf/provider-upcloud.firewallRules.FirewallRulesFirewallRule.property.destinationAddressEnd">destination_address_end</a></code> | <code>str</code> | The destination address range ends from this address. |
 | <code><a href="#@cdktf/provider-upcloud.firewallRules.FirewallRulesFirewallRule.property.destinationAddressStart">destination_address_start</a></code> | <code>str</code> | The destination address range starts from this address. |
 | <code><a href="#@cdktf/provider-upcloud.firewallRules.FirewallRulesFirewallRule.property.destinationPortEnd">destination_port_end</a></code> | <code>str</code> | The destination port range ends from this port number. |
 | <code><a href="#@cdktf/provider-upcloud.firewallRules.FirewallRulesFirewallRule.property.destinationPortStart">destination_port_start</a></code> | <code>str</code> | The destination port range starts from this port number. |
 | <code><a href="#@cdktf/provider-upcloud.firewallRules.FirewallRulesFirewallRule.property.family">family</a></code> | <code>str</code> | The address family of new firewall rule. |
-| <code><a href="#@cdktf/provider-upcloud.firewallRules.FirewallRulesFirewallRule.property.icmpType">icmp_type</a></code> | <code>str</code> | The ICMP type. |
-| <code><a href="#@cdktf/provider-upcloud.firewallRules.FirewallRulesFirewallRule.property.protocol">protocol</a></code> | <code>str</code> | The protocol this rule will be applied to. |
+| <code><a href="#@cdktf/provider-upcloud.firewallRules.FirewallRulesFirewallRule.property.icmpType">icmp_type</a></code> | <code>str</code> | The ICMP type of the rule. Only valid if protocol is ICMP. |
+| <code><a href="#@cdktf/provider-upcloud.firewallRules.FirewallRulesFirewallRule.property.protocol">protocol</a></code> | <code>str</code> | The protocol of the rule. Possible values are `` (empty), `tcp`, `udp`, `icmp`. |
 | <code><a href="#@cdktf/provider-upcloud.firewallRules.FirewallRulesFirewallRule.property.sourceAddressEnd">source_address_end</a></code> | <code>str</code> | The source address range ends from this address. |
 | <code><a href="#@cdktf/provider-upcloud.firewallRules.FirewallRulesFirewallRule.property.sourceAddressStart">source_address_start</a></code> | <code>str</code> | The source address range starts from this address. |
 | <code><a href="#@cdktf/provider-upcloud.firewallRules.FirewallRulesFirewallRule.property.sourcePortEnd">source_port_end</a></code> | <code>str</code> | The source port range ends from this port number. |
@@ -1094,7 +1053,7 @@ action: str
 
 Action to take if the rule conditions are met. Valid values `accept | drop`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.22.0/docs/resources/firewall_rules#action FirewallRules#action}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.22.1/docs/resources/firewall_rules#action FirewallRules#action}
 
 ---
 
@@ -1106,9 +1065,9 @@ direction: str
 
 - *Type:* str
 
-The direction of network traffic this rule will be applied to.
+The direction of network traffic this rule will be applied to. Valid values are `in` and `out`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.22.0/docs/resources/firewall_rules#direction FirewallRules#direction}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.22.1/docs/resources/firewall_rules#direction FirewallRules#direction}
 
 ---
 
@@ -1120,9 +1079,9 @@ comment: str
 
 - *Type:* str
 
-Freeform comment string for the rule.
+A comment for the rule.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.22.0/docs/resources/firewall_rules#comment FirewallRules#comment}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.22.1/docs/resources/firewall_rules#comment FirewallRules#comment}
 
 ---
 
@@ -1136,7 +1095,7 @@ destination_address_end: str
 
 The destination address range ends from this address.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.22.0/docs/resources/firewall_rules#destination_address_end FirewallRules#destination_address_end}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.22.1/docs/resources/firewall_rules#destination_address_end FirewallRules#destination_address_end}
 
 ---
 
@@ -1150,7 +1109,7 @@ destination_address_start: str
 
 The destination address range starts from this address.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.22.0/docs/resources/firewall_rules#destination_address_start FirewallRules#destination_address_start}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.22.1/docs/resources/firewall_rules#destination_address_start FirewallRules#destination_address_start}
 
 ---
 
@@ -1164,7 +1123,7 @@ destination_port_end: str
 
 The destination port range ends from this port number.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.22.0/docs/resources/firewall_rules#destination_port_end FirewallRules#destination_port_end}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.22.1/docs/resources/firewall_rules#destination_port_end FirewallRules#destination_port_end}
 
 ---
 
@@ -1178,7 +1137,7 @@ destination_port_start: str
 
 The destination port range starts from this port number.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.22.0/docs/resources/firewall_rules#destination_port_start FirewallRules#destination_port_start}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.22.1/docs/resources/firewall_rules#destination_port_start FirewallRules#destination_port_start}
 
 ---
 
@@ -1192,7 +1151,7 @@ family: str
 
 The address family of new firewall rule.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.22.0/docs/resources/firewall_rules#family FirewallRules#family}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.22.1/docs/resources/firewall_rules#family FirewallRules#family}
 
 ---
 
@@ -1204,9 +1163,9 @@ icmp_type: str
 
 - *Type:* str
 
-The ICMP type.
+The ICMP type of the rule. Only valid if protocol is ICMP.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.22.0/docs/resources/firewall_rules#icmp_type FirewallRules#icmp_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.22.1/docs/resources/firewall_rules#icmp_type FirewallRules#icmp_type}
 
 ---
 
@@ -1218,9 +1177,9 @@ protocol: str
 
 - *Type:* str
 
-The protocol this rule will be applied to.
+The protocol of the rule. Possible values are `` (empty), `tcp`, `udp`, `icmp`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.22.0/docs/resources/firewall_rules#protocol FirewallRules#protocol}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.22.1/docs/resources/firewall_rules#protocol FirewallRules#protocol}
 
 ---
 
@@ -1234,7 +1193,7 @@ source_address_end: str
 
 The source address range ends from this address.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.22.0/docs/resources/firewall_rules#source_address_end FirewallRules#source_address_end}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.22.1/docs/resources/firewall_rules#source_address_end FirewallRules#source_address_end}
 
 ---
 
@@ -1248,7 +1207,7 @@ source_address_start: str
 
 The source address range starts from this address.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.22.0/docs/resources/firewall_rules#source_address_start FirewallRules#source_address_start}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.22.1/docs/resources/firewall_rules#source_address_start FirewallRules#source_address_start}
 
 ---
 
@@ -1262,7 +1221,7 @@ source_port_end: str
 
 The source port range ends from this port number.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.22.0/docs/resources/firewall_rules#source_port_end FirewallRules#source_port_end}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.22.1/docs/resources/firewall_rules#source_port_end FirewallRules#source_port_end}
 
 ---
 
@@ -1276,7 +1235,7 @@ source_port_start: str
 
 The source port range starts from this port number.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.22.0/docs/resources/firewall_rules#source_port_start FirewallRules#source_port_start}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.22.1/docs/resources/firewall_rules#source_port_start FirewallRules#source_port_start}
 
 ---
 

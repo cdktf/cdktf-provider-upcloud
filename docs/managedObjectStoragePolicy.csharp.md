@@ -4,7 +4,7 @@
 
 ### ManagedObjectStoragePolicy <a name="ManagedObjectStoragePolicy" id="@cdktf/provider-upcloud.managedObjectStoragePolicy.ManagedObjectStoragePolicy"></a>
 
-Represents a {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.22.0/docs/resources/managed_object_storage_policy upcloud_managed_object_storage_policy}.
+Represents a {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.22.1/docs/resources/managed_object_storage_policy upcloud_managed_object_storage_policy}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-upcloud.managedObjectStoragePolicy.ManagedObjectStoragePolicy.Initializer"></a>
 
@@ -474,7 +474,7 @@ The construct id used in the generated config for the ManagedObjectStoragePolicy
 
 The id of the existing ManagedObjectStoragePolicy that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.22.0/docs/resources/managed_object_storage_policy#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.22.1/docs/resources/managed_object_storage_policy#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -956,7 +956,7 @@ Policy document, URL-encoded compliant with RFC 3986.
 
 Extra whitespace and escapes are ignored when determining if the document has changed.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.22.0/docs/resources/managed_object_storage_policy#document ManagedObjectStoragePolicy#document}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.22.1/docs/resources/managed_object_storage_policy#document ManagedObjectStoragePolicy#document}
 
 ---
 
@@ -970,7 +970,7 @@ public string Name { get; set; }
 
 Policy name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.22.0/docs/resources/managed_object_storage_policy#name ManagedObjectStoragePolicy#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.22.1/docs/resources/managed_object_storage_policy#name ManagedObjectStoragePolicy#name}
 
 ---
 
@@ -984,7 +984,7 @@ public string ServiceUuid { get; set; }
 
 Managed Object Storage service UUID.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.22.0/docs/resources/managed_object_storage_policy#service_uuid ManagedObjectStoragePolicy#service_uuid}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.22.1/docs/resources/managed_object_storage_policy#service_uuid ManagedObjectStoragePolicy#service_uuid}
 
 ---
 
@@ -998,7 +998,7 @@ public string Description { get; set; }
 
 Description of the policy.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.22.0/docs/resources/managed_object_storage_policy#description ManagedObjectStoragePolicy#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.22.1/docs/resources/managed_object_storage_policy#description ManagedObjectStoragePolicy#description}
 
 ---
 

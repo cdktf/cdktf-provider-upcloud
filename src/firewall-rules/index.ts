@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/upcloudltd/upcloud/5.22.0/docs/resources/firewall_rules
+// https://registry.terraform.io/providers/upcloudltd/upcloud/5.22.1/docs/resources/firewall_rules
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,108 +13,101 @@ import * as cdktf from 'cdktf';
 
 export interface FirewallRulesConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.22.0/docs/resources/firewall_rules#id FirewallRules#id}
+  * The UUID of the server to be protected with the firewall rules.
   *
-  * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
-  * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
-  */
-  readonly id?: string;
-  /**
-  * The unique id of the server to be protected the firewall rules
-  *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.22.0/docs/resources/firewall_rules#server_id FirewallRules#server_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.22.1/docs/resources/firewall_rules#server_id FirewallRules#server_id}
   */
   readonly serverId: string;
   /**
   * firewall_rule block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.22.0/docs/resources/firewall_rules#firewall_rule FirewallRules#firewall_rule}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.22.1/docs/resources/firewall_rules#firewall_rule FirewallRules#firewall_rule}
   */
-  readonly firewallRule: FirewallRulesFirewallRule[] | cdktf.IResolvable;
+  readonly firewallRule?: FirewallRulesFirewallRule[] | cdktf.IResolvable;
 }
 export interface FirewallRulesFirewallRule {
   /**
-  * Action to take if the rule conditions are met. Valid values `accept | drop`
+  * Action to take if the rule conditions are met. Valid values `accept | drop`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.22.0/docs/resources/firewall_rules#action FirewallRules#action}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.22.1/docs/resources/firewall_rules#action FirewallRules#action}
   */
   readonly action: string;
   /**
-  * Freeform comment string for the rule
+  * A comment for the rule.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.22.0/docs/resources/firewall_rules#comment FirewallRules#comment}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.22.1/docs/resources/firewall_rules#comment FirewallRules#comment}
   */
   readonly comment?: string;
   /**
   * The destination address range ends from this address
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.22.0/docs/resources/firewall_rules#destination_address_end FirewallRules#destination_address_end}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.22.1/docs/resources/firewall_rules#destination_address_end FirewallRules#destination_address_end}
   */
   readonly destinationAddressEnd?: string;
   /**
   * The destination address range starts from this address
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.22.0/docs/resources/firewall_rules#destination_address_start FirewallRules#destination_address_start}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.22.1/docs/resources/firewall_rules#destination_address_start FirewallRules#destination_address_start}
   */
   readonly destinationAddressStart?: string;
   /**
   * The destination port range ends from this port number
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.22.0/docs/resources/firewall_rules#destination_port_end FirewallRules#destination_port_end}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.22.1/docs/resources/firewall_rules#destination_port_end FirewallRules#destination_port_end}
   */
   readonly destinationPortEnd?: string;
   /**
   * The destination port range starts from this port number
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.22.0/docs/resources/firewall_rules#destination_port_start FirewallRules#destination_port_start}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.22.1/docs/resources/firewall_rules#destination_port_start FirewallRules#destination_port_start}
   */
   readonly destinationPortStart?: string;
   /**
-  * The direction of network traffic this rule will be applied to
+  * The direction of network traffic this rule will be applied to. Valid values are `in` and `out`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.22.0/docs/resources/firewall_rules#direction FirewallRules#direction}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.22.1/docs/resources/firewall_rules#direction FirewallRules#direction}
   */
   readonly direction: string;
   /**
   * The address family of new firewall rule
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.22.0/docs/resources/firewall_rules#family FirewallRules#family}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.22.1/docs/resources/firewall_rules#family FirewallRules#family}
   */
   readonly family?: string;
   /**
-  * The ICMP type
+  * The ICMP type of the rule. Only valid if protocol is ICMP.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.22.0/docs/resources/firewall_rules#icmp_type FirewallRules#icmp_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.22.1/docs/resources/firewall_rules#icmp_type FirewallRules#icmp_type}
   */
   readonly icmpType?: string;
   /**
-  * The protocol this rule will be applied to
+  * The protocol of the rule. Possible values are `` (empty), `tcp`, `udp`, `icmp`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.22.0/docs/resources/firewall_rules#protocol FirewallRules#protocol}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.22.1/docs/resources/firewall_rules#protocol FirewallRules#protocol}
   */
   readonly protocol?: string;
   /**
   * The source address range ends from this address
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.22.0/docs/resources/firewall_rules#source_address_end FirewallRules#source_address_end}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.22.1/docs/resources/firewall_rules#source_address_end FirewallRules#source_address_end}
   */
   readonly sourceAddressEnd?: string;
   /**
   * The source address range starts from this address
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.22.0/docs/resources/firewall_rules#source_address_start FirewallRules#source_address_start}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.22.1/docs/resources/firewall_rules#source_address_start FirewallRules#source_address_start}
   */
   readonly sourceAddressStart?: string;
   /**
   * The source port range ends from this port number
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.22.0/docs/resources/firewall_rules#source_port_end FirewallRules#source_port_end}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.22.1/docs/resources/firewall_rules#source_port_end FirewallRules#source_port_end}
   */
   readonly sourcePortEnd?: string;
   /**
   * The source port range starts from this port number
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.22.0/docs/resources/firewall_rules#source_port_start FirewallRules#source_port_start}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.22.1/docs/resources/firewall_rules#source_port_start FirewallRules#source_port_start}
   */
   readonly sourcePortStart?: string;
 }
@@ -374,7 +367,7 @@ export class FirewallRulesFirewallRuleOutputReference extends cdktf.ComplexObjec
     return this._action;
   }
 
-  // comment - computed: false, optional: true, required: false
+  // comment - computed: true, optional: true, required: false
   private _comment?: string; 
   public get comment() {
     return this.getStringAttribute('comment');
@@ -390,7 +383,7 @@ export class FirewallRulesFirewallRuleOutputReference extends cdktf.ComplexObjec
     return this._comment;
   }
 
-  // destination_address_end - computed: false, optional: true, required: false
+  // destination_address_end - computed: true, optional: true, required: false
   private _destinationAddressEnd?: string; 
   public get destinationAddressEnd() {
     return this.getStringAttribute('destination_address_end');
@@ -406,7 +399,7 @@ export class FirewallRulesFirewallRuleOutputReference extends cdktf.ComplexObjec
     return this._destinationAddressEnd;
   }
 
-  // destination_address_start - computed: false, optional: true, required: false
+  // destination_address_start - computed: true, optional: true, required: false
   private _destinationAddressStart?: string; 
   public get destinationAddressStart() {
     return this.getStringAttribute('destination_address_start');
@@ -422,7 +415,7 @@ export class FirewallRulesFirewallRuleOutputReference extends cdktf.ComplexObjec
     return this._destinationAddressStart;
   }
 
-  // destination_port_end - computed: false, optional: true, required: false
+  // destination_port_end - computed: true, optional: true, required: false
   private _destinationPortEnd?: string; 
   public get destinationPortEnd() {
     return this.getStringAttribute('destination_port_end');
@@ -438,7 +431,7 @@ export class FirewallRulesFirewallRuleOutputReference extends cdktf.ComplexObjec
     return this._destinationPortEnd;
   }
 
-  // destination_port_start - computed: false, optional: true, required: false
+  // destination_port_start - computed: true, optional: true, required: false
   private _destinationPortStart?: string; 
   public get destinationPortStart() {
     return this.getStringAttribute('destination_port_start');
@@ -467,7 +460,7 @@ export class FirewallRulesFirewallRuleOutputReference extends cdktf.ComplexObjec
     return this._direction;
   }
 
-  // family - computed: false, optional: true, required: false
+  // family - computed: true, optional: true, required: false
   private _family?: string; 
   public get family() {
     return this.getStringAttribute('family');
@@ -483,7 +476,7 @@ export class FirewallRulesFirewallRuleOutputReference extends cdktf.ComplexObjec
     return this._family;
   }
 
-  // icmp_type - computed: false, optional: true, required: false
+  // icmp_type - computed: true, optional: true, required: false
   private _icmpType?: string; 
   public get icmpType() {
     return this.getStringAttribute('icmp_type');
@@ -499,7 +492,7 @@ export class FirewallRulesFirewallRuleOutputReference extends cdktf.ComplexObjec
     return this._icmpType;
   }
 
-  // protocol - computed: false, optional: true, required: false
+  // protocol - computed: true, optional: true, required: false
   private _protocol?: string; 
   public get protocol() {
     return this.getStringAttribute('protocol');
@@ -515,7 +508,7 @@ export class FirewallRulesFirewallRuleOutputReference extends cdktf.ComplexObjec
     return this._protocol;
   }
 
-  // source_address_end - computed: false, optional: true, required: false
+  // source_address_end - computed: true, optional: true, required: false
   private _sourceAddressEnd?: string; 
   public get sourceAddressEnd() {
     return this.getStringAttribute('source_address_end');
@@ -531,7 +524,7 @@ export class FirewallRulesFirewallRuleOutputReference extends cdktf.ComplexObjec
     return this._sourceAddressEnd;
   }
 
-  // source_address_start - computed: false, optional: true, required: false
+  // source_address_start - computed: true, optional: true, required: false
   private _sourceAddressStart?: string; 
   public get sourceAddressStart() {
     return this.getStringAttribute('source_address_start');
@@ -547,7 +540,7 @@ export class FirewallRulesFirewallRuleOutputReference extends cdktf.ComplexObjec
     return this._sourceAddressStart;
   }
 
-  // source_port_end - computed: false, optional: true, required: false
+  // source_port_end - computed: true, optional: true, required: false
   private _sourcePortEnd?: string; 
   public get sourcePortEnd() {
     return this.getStringAttribute('source_port_end');
@@ -563,7 +556,7 @@ export class FirewallRulesFirewallRuleOutputReference extends cdktf.ComplexObjec
     return this._sourcePortEnd;
   }
 
-  // source_port_start - computed: false, optional: true, required: false
+  // source_port_start - computed: true, optional: true, required: false
   private _sourcePortStart?: string; 
   public get sourcePortStart() {
     return this.getStringAttribute('source_port_start');
@@ -601,7 +594,7 @@ export class FirewallRulesFirewallRuleList extends cdktf.ComplexList {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.22.0/docs/resources/firewall_rules upcloud_firewall_rules}
+* Represents a {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.22.1/docs/resources/firewall_rules upcloud_firewall_rules}
 */
 export class FirewallRules extends cdktf.TerraformResource {
 
@@ -617,7 +610,7 @@ export class FirewallRules extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a FirewallRules resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the FirewallRules to import
-  * @param importFromId The id of the existing FirewallRules that should be imported. Refer to the {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.22.0/docs/resources/firewall_rules#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing FirewallRules that should be imported. Refer to the {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.22.1/docs/resources/firewall_rules#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the FirewallRules to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -629,7 +622,7 @@ export class FirewallRules extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.22.0/docs/resources/firewall_rules upcloud_firewall_rules} Resource
+  * Create a new {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.22.1/docs/resources/firewall_rules upcloud_firewall_rules} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -640,7 +633,7 @@ export class FirewallRules extends cdktf.TerraformResource {
       terraformResourceType: 'upcloud_firewall_rules',
       terraformGeneratorMetadata: {
         providerName: 'upcloud',
-        providerVersion: '5.22.0',
+        providerVersion: '5.22.1',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,
@@ -651,7 +644,6 @@ export class FirewallRules extends cdktf.TerraformResource {
       connection: config.connection,
       forEach: config.forEach
     });
-    this._id = config.id;
     this._serverId = config.serverId;
     this._firewallRule.internalValue = config.firewallRule;
   }
@@ -660,20 +652,9 @@ export class FirewallRules extends cdktf.TerraformResource {
   // ATTRIBUTES
   // ==========
 
-  // id - computed: true, optional: true, required: false
-  private _id?: string; 
+  // id - computed: true, optional: false, required: false
   public get id() {
     return this.getStringAttribute('id');
-  }
-  public set id(value: string) {
-    this._id = value;
-  }
-  public resetId() {
-    this._id = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get idInput() {
-    return this._id;
   }
 
   // server_id - computed: false, optional: false, required: true
@@ -689,13 +670,16 @@ export class FirewallRules extends cdktf.TerraformResource {
     return this._serverId;
   }
 
-  // firewall_rule - computed: false, optional: false, required: true
+  // firewall_rule - computed: false, optional: true, required: false
   private _firewallRule = new FirewallRulesFirewallRuleList(this, "firewall_rule", false);
   public get firewallRule() {
     return this._firewallRule;
   }
   public putFirewallRule(value: FirewallRulesFirewallRule[] | cdktf.IResolvable) {
     this._firewallRule.internalValue = value;
+  }
+  public resetFirewallRule() {
+    this._firewallRule.internalValue = undefined;
   }
   // Temporarily expose input value. Use with caution.
   public get firewallRuleInput() {
@@ -708,7 +692,6 @@ export class FirewallRules extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      id: cdktf.stringToTerraform(this._id),
       server_id: cdktf.stringToTerraform(this._serverId),
       firewall_rule: cdktf.listMapper(firewallRulesFirewallRuleToTerraform, true)(this._firewallRule.internalValue),
     };
@@ -716,12 +699,6 @@ export class FirewallRules extends cdktf.TerraformResource {
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
-      id: {
-        value: cdktf.stringToHclTerraform(this._id),
-        isBlock: false,
-        type: "simple",
-        storageClassType: "string",
-      },
       server_id: {
         value: cdktf.stringToHclTerraform(this._serverId),
         isBlock: false,
