@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/upcloudltd/upcloud/5.23.0/docs/resources/loadbalancer_backend
+// https://registry.terraform.io/providers/upcloudltd/upcloud/5.23.1/docs/resources/loadbalancer_backend
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,25 +15,25 @@ export interface LoadbalancerBackendConfig extends cdktf.TerraformMetaArguments 
   /**
   * UUID of the load balancer to which the backend is connected.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.23.0/docs/resources/loadbalancer_backend#loadbalancer LoadbalancerBackend#loadbalancer}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.23.1/docs/resources/loadbalancer_backend#loadbalancer LoadbalancerBackend#loadbalancer}
   */
   readonly loadbalancer: string;
   /**
   * The name of the backend. Must be unique within the load balancer service.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.23.0/docs/resources/loadbalancer_backend#name LoadbalancerBackend#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.23.1/docs/resources/loadbalancer_backend#name LoadbalancerBackend#name}
   */
   readonly name: string;
   /**
   * Domain name resolver used with dynamic type members.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.23.0/docs/resources/loadbalancer_backend#resolver_name LoadbalancerBackend#resolver_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.23.1/docs/resources/loadbalancer_backend#resolver_name LoadbalancerBackend#resolver_name}
   */
   readonly resolverName?: string;
   /**
   * properties block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.23.0/docs/resources/loadbalancer_backend#properties LoadbalancerBackend#properties}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.23.1/docs/resources/loadbalancer_backend#properties LoadbalancerBackend#properties}
   */
   readonly properties?: LoadbalancerBackendProperties[] | cdktf.IResolvable;
 }
@@ -41,91 +41,91 @@ export interface LoadbalancerBackendProperties {
   /**
   * Expected HTTP status code returned by the customer application to mark server as healthy. Ignored for `tcp` `health_check_type`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.23.0/docs/resources/loadbalancer_backend#health_check_expected_status LoadbalancerBackend#health_check_expected_status}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.23.1/docs/resources/loadbalancer_backend#health_check_expected_status LoadbalancerBackend#health_check_expected_status}
   */
   readonly healthCheckExpectedStatus?: number;
   /**
   * Sets how many failed health checks are allowed until the backend member is taken off from the rotation.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.23.0/docs/resources/loadbalancer_backend#health_check_fall LoadbalancerBackend#health_check_fall}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.23.1/docs/resources/loadbalancer_backend#health_check_fall LoadbalancerBackend#health_check_fall}
   */
   readonly healthCheckFall?: number;
   /**
   * Interval between health checks in seconds.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.23.0/docs/resources/loadbalancer_backend#health_check_interval LoadbalancerBackend#health_check_interval}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.23.1/docs/resources/loadbalancer_backend#health_check_interval LoadbalancerBackend#health_check_interval}
   */
   readonly healthCheckInterval?: number;
   /**
   * Sets how many successful health checks are required to put the backend member back into rotation.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.23.0/docs/resources/loadbalancer_backend#health_check_rise LoadbalancerBackend#health_check_rise}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.23.1/docs/resources/loadbalancer_backend#health_check_rise LoadbalancerBackend#health_check_rise}
   */
   readonly healthCheckRise?: number;
   /**
   * Enables certificate verification with the system CA certificate bundle. Works with https scheme in health_check_url, otherwise ignored.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.23.0/docs/resources/loadbalancer_backend#health_check_tls_verify LoadbalancerBackend#health_check_tls_verify}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.23.1/docs/resources/loadbalancer_backend#health_check_tls_verify LoadbalancerBackend#health_check_tls_verify}
   */
   readonly healthCheckTlsVerify?: boolean | cdktf.IResolvable;
   /**
   * Health check type.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.23.0/docs/resources/loadbalancer_backend#health_check_type LoadbalancerBackend#health_check_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.23.1/docs/resources/loadbalancer_backend#health_check_type LoadbalancerBackend#health_check_type}
   */
   readonly healthCheckType?: string;
   /**
   * Target path for health check HTTP GET requests. Ignored for `tcp` `health_check_type`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.23.0/docs/resources/loadbalancer_backend#health_check_url LoadbalancerBackend#health_check_url}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.23.1/docs/resources/loadbalancer_backend#health_check_url LoadbalancerBackend#health_check_url}
   */
   readonly healthCheckUrl?: string;
   /**
   * Allow HTTP/2 connections to backend members by utilizing ALPN extension of TLS protocol, therefore it can only be enabled when tls_enabled is set to true. Note: members should support HTTP/2 for this setting to work.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.23.0/docs/resources/loadbalancer_backend#http2_enabled LoadbalancerBackend#http2_enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.23.1/docs/resources/loadbalancer_backend#http2_enabled LoadbalancerBackend#http2_enabled}
   */
   readonly http2Enabled?: boolean | cdktf.IResolvable;
   /**
   * Enable outbound proxy protocol by setting the desired version. Defaults to empty string. Empty string disables proxy protocol.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.23.0/docs/resources/loadbalancer_backend#outbound_proxy_protocol LoadbalancerBackend#outbound_proxy_protocol}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.23.1/docs/resources/loadbalancer_backend#outbound_proxy_protocol LoadbalancerBackend#outbound_proxy_protocol}
   */
   readonly outboundProxyProtocol?: string;
   /**
   * Sets sticky session cookie name. Empty string disables sticky session.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.23.0/docs/resources/loadbalancer_backend#sticky_session_cookie_name LoadbalancerBackend#sticky_session_cookie_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.23.1/docs/resources/loadbalancer_backend#sticky_session_cookie_name LoadbalancerBackend#sticky_session_cookie_name}
   */
   readonly stickySessionCookieName?: string;
   /**
   * Backend server timeout in seconds.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.23.0/docs/resources/loadbalancer_backend#timeout_server LoadbalancerBackend#timeout_server}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.23.1/docs/resources/loadbalancer_backend#timeout_server LoadbalancerBackend#timeout_server}
   */
   readonly timeoutServer?: number;
   /**
   * Maximum inactivity time on the client and server side for tunnels in seconds.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.23.0/docs/resources/loadbalancer_backend#timeout_tunnel LoadbalancerBackend#timeout_tunnel}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.23.1/docs/resources/loadbalancer_backend#timeout_tunnel LoadbalancerBackend#timeout_tunnel}
   */
   readonly timeoutTunnel?: number;
   /**
   * Enables TLS connection from the load balancer to backend servers.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.23.0/docs/resources/loadbalancer_backend#tls_enabled LoadbalancerBackend#tls_enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.23.1/docs/resources/loadbalancer_backend#tls_enabled LoadbalancerBackend#tls_enabled}
   */
   readonly tlsEnabled?: boolean | cdktf.IResolvable;
   /**
   * If enabled, then the system CA certificate bundle will be used for the certificate verification.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.23.0/docs/resources/loadbalancer_backend#tls_use_system_ca LoadbalancerBackend#tls_use_system_ca}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.23.1/docs/resources/loadbalancer_backend#tls_use_system_ca LoadbalancerBackend#tls_use_system_ca}
   */
   readonly tlsUseSystemCa?: boolean | cdktf.IResolvable;
   /**
   * Enables backend servers certificate verification. Please make sure that TLS config with the certificate bundle of type authority attached to the backend or `tls_use_system_ca` enabled. Note: `tls_verify` has preference over `health_check_tls_verify` when `tls_enabled` in true.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.23.0/docs/resources/loadbalancer_backend#tls_verify LoadbalancerBackend#tls_verify}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.23.1/docs/resources/loadbalancer_backend#tls_verify LoadbalancerBackend#tls_verify}
   */
   readonly tlsVerify?: boolean | cdktf.IResolvable;
 }
@@ -647,7 +647,7 @@ export class LoadbalancerBackendPropertiesList extends cdktf.ComplexList {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.23.0/docs/resources/loadbalancer_backend upcloud_loadbalancer_backend}
+* Represents a {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.23.1/docs/resources/loadbalancer_backend upcloud_loadbalancer_backend}
 */
 export class LoadbalancerBackend extends cdktf.TerraformResource {
 
@@ -663,7 +663,7 @@ export class LoadbalancerBackend extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a LoadbalancerBackend resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the LoadbalancerBackend to import
-  * @param importFromId The id of the existing LoadbalancerBackend that should be imported. Refer to the {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.23.0/docs/resources/loadbalancer_backend#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing LoadbalancerBackend that should be imported. Refer to the {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.23.1/docs/resources/loadbalancer_backend#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the LoadbalancerBackend to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -675,7 +675,7 @@ export class LoadbalancerBackend extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.23.0/docs/resources/loadbalancer_backend upcloud_loadbalancer_backend} Resource
+  * Create a new {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.23.1/docs/resources/loadbalancer_backend upcloud_loadbalancer_backend} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -686,7 +686,7 @@ export class LoadbalancerBackend extends cdktf.TerraformResource {
       terraformResourceType: 'upcloud_loadbalancer_backend',
       terraformGeneratorMetadata: {
         providerName: 'upcloud',
-        providerVersion: '5.23.0',
+        providerVersion: '5.23.1',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,
