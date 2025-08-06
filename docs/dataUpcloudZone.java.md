@@ -4,7 +4,7 @@
 
 ### DataUpcloudZone <a name="DataUpcloudZone" id="@cdktf/provider-upcloud.dataUpcloudZone.DataUpcloudZone"></a>
 
-Represents a {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.23.2/docs/data-sources/zone upcloud_zone}.
+Represents a {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.23.3/docs/data-sources/zone upcloud_zone}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-upcloud.dataUpcloudZone.DataUpcloudZone.Initializer"></a>
 
@@ -110,7 +110,7 @@ Must be unique amongst siblings in the same scope
 
 Identifier of the zone.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.23.2/docs/data-sources/zone#id DataUpcloudZone#id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.23.3/docs/data-sources/zone#id DataUpcloudZone#id}
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -125,7 +125,7 @@ Identifier of the zone.
 
 Contains the same value as `id`. If both `id` and `name` are set, `id` takes precedence.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.23.2/docs/data-sources/zone#name DataUpcloudZone#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.23.3/docs/data-sources/zone#name DataUpcloudZone#name}
 
 ---
 
@@ -462,7 +462,7 @@ The construct id used in the generated config for the DataUpcloudZone to import.
 
 The id of the existing DataUpcloudZone that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.23.2/docs/data-sources/zone#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.23.3/docs/data-sources/zone#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -832,7 +832,7 @@ public java.lang.String getId();
 
 Identifier of the zone.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.23.2/docs/data-sources/zone#id DataUpcloudZone#id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.23.3/docs/data-sources/zone#id DataUpcloudZone#id}
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -851,7 +851,7 @@ Identifier of the zone.
 
 Contains the same value as `id`. If both `id` and `name` are set, `id` takes precedence.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.23.2/docs/data-sources/zone#name DataUpcloudZone#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.23.3/docs/data-sources/zone#name DataUpcloudZone#name}
 
 ---
 
