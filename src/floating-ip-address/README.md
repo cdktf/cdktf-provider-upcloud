@@ -1,3 +1,3 @@
 # `upcloud_floating_ip_address`
 
-Refer to the Terraform Registry for docs: [`upcloud_floating_ip_address`](https://registry.terraform.io/providers/upcloudltd/upcloud/5.23.2/docs/resources/floating_ip_address).
+Refer to the Terraform Registry for docs: [`upcloud_floating_ip_address`](https://registry.terraform.io/providers/upcloudltd/upcloud/5.23.3/docs/resources/floating_ip_address).
