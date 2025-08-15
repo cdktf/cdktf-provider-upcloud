@@ -1,3 +1,3 @@
 # `provider`
 
-Refer to the Terraform Registry for docs: [`upcloud`](https://registry.terraform.io/providers/upcloudltd/upcloud/5.23.4/docs).
+Refer to the Terraform Registry for docs: [`upcloud`](https://registry.terraform.io/providers/upcloudltd/upcloud/5.24.0/docs).
