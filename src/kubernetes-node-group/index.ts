@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/upcloudltd/upcloud/5.23.4/docs/resources/kubernetes_node_group
+// https://registry.terraform.io/providers/upcloudltd/upcloud/5.24.0/docs/resources/kubernetes_node_group
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,99 +15,264 @@ export interface KubernetesNodeGroupConfig extends cdktf.TerraformMetaArguments 
   /**
   * If set to true, nodes in this group will be placed on separate compute hosts. Please note that anti-affinity policy is considered 'best effort' and enabling it does not fully guarantee that the nodes will end up on different hardware.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.23.4/docs/resources/kubernetes_node_group#anti_affinity KubernetesNodeGroup#anti_affinity}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.24.0/docs/resources/kubernetes_node_group#anti_affinity KubernetesNodeGroup#anti_affinity}
   */
   readonly antiAffinity?: boolean | cdktf.IResolvable;
   /**
   * UUID of the cluster.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.23.4/docs/resources/kubernetes_node_group#cluster KubernetesNodeGroup#cluster}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.24.0/docs/resources/kubernetes_node_group#cluster KubernetesNodeGroup#cluster}
   */
   readonly cluster: string;
   /**
   * User defined key-value pairs to classify the node_group.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.23.4/docs/resources/kubernetes_node_group#labels KubernetesNodeGroup#labels}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.24.0/docs/resources/kubernetes_node_group#labels KubernetesNodeGroup#labels}
   */
   readonly labels?: { [key: string]: string };
   /**
   * The name of the node group. Needs to be unique within a cluster.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.23.4/docs/resources/kubernetes_node_group#name KubernetesNodeGroup#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.24.0/docs/resources/kubernetes_node_group#name KubernetesNodeGroup#name}
   */
   readonly name: string;
   /**
   * Amount of nodes to provision in the node group.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.23.4/docs/resources/kubernetes_node_group#node_count KubernetesNodeGroup#node_count}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.24.0/docs/resources/kubernetes_node_group#node_count KubernetesNodeGroup#node_count}
   */
   readonly nodeCount: number;
   /**
   * The server plan used for the node group. You can list available plans with `upctl server plans`
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.23.4/docs/resources/kubernetes_node_group#plan KubernetesNodeGroup#plan}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.24.0/docs/resources/kubernetes_node_group#plan KubernetesNodeGroup#plan}
   */
   readonly plan: string;
   /**
   * You can optionally select SSH keys to be added as authorized keys to the nodes in this node group. This allows you to connect to the nodes via SSH once they are running.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.23.4/docs/resources/kubernetes_node_group#ssh_keys KubernetesNodeGroup#ssh_keys}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.24.0/docs/resources/kubernetes_node_group#ssh_keys KubernetesNodeGroup#ssh_keys}
   */
   readonly sshKeys?: string[];
   /**
   * The storage encryption strategy to use for the nodes in this group. If not set, the cluster's storage encryption strategy will be used, if applicable.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.23.4/docs/resources/kubernetes_node_group#storage_encryption KubernetesNodeGroup#storage_encryption}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.24.0/docs/resources/kubernetes_node_group#storage_encryption KubernetesNodeGroup#storage_encryption}
   */
   readonly storageEncryption?: string;
   /**
   * If set to false, nodes in this group will not have access to utility network.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.23.4/docs/resources/kubernetes_node_group#utility_network_access KubernetesNodeGroup#utility_network_access}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.24.0/docs/resources/kubernetes_node_group#utility_network_access KubernetesNodeGroup#utility_network_access}
   */
   readonly utilityNetworkAccess?: boolean | cdktf.IResolvable;
   /**
+  * cloud_native_plan block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.24.0/docs/resources/kubernetes_node_group#cloud_native_plan KubernetesNodeGroup#cloud_native_plan}
+  */
+  readonly cloudNativePlan?: KubernetesNodeGroupCloudNativePlan[] | cdktf.IResolvable;
+  /**
   * custom_plan block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.23.4/docs/resources/kubernetes_node_group#custom_plan KubernetesNodeGroup#custom_plan}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.24.0/docs/resources/kubernetes_node_group#custom_plan KubernetesNodeGroup#custom_plan}
   */
   readonly customPlan?: KubernetesNodeGroupCustomPlan[] | cdktf.IResolvable;
   /**
+  * gpu_plan block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.24.0/docs/resources/kubernetes_node_group#gpu_plan KubernetesNodeGroup#gpu_plan}
+  */
+  readonly gpuPlan?: KubernetesNodeGroupGpuPlan[] | cdktf.IResolvable;
+  /**
   * kubelet_args block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.23.4/docs/resources/kubernetes_node_group#kubelet_args KubernetesNodeGroup#kubelet_args}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.24.0/docs/resources/kubernetes_node_group#kubelet_args KubernetesNodeGroup#kubelet_args}
   */
   readonly kubeletArgs?: KubernetesNodeGroupKubeletArgs[] | cdktf.IResolvable;
   /**
   * taint block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.23.4/docs/resources/kubernetes_node_group#taint KubernetesNodeGroup#taint}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.24.0/docs/resources/kubernetes_node_group#taint KubernetesNodeGroup#taint}
   */
   readonly taint?: KubernetesNodeGroupTaint[] | cdktf.IResolvable;
 }
+export interface KubernetesNodeGroupCloudNativePlan {
+  /**
+  * The size of the storage device in gigabytes.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.24.0/docs/resources/kubernetes_node_group#storage_size KubernetesNodeGroup#storage_size}
+  */
+  readonly storageSize?: number;
+  /**
+  * The storage tier to use.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.24.0/docs/resources/kubernetes_node_group#storage_tier KubernetesNodeGroup#storage_tier}
+  */
+  readonly storageTier?: string;
+}
+
+export function kubernetesNodeGroupCloudNativePlanToTerraform(struct?: KubernetesNodeGroupCloudNativePlan | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    storage_size: cdktf.numberToTerraform(struct!.storageSize),
+    storage_tier: cdktf.stringToTerraform(struct!.storageTier),
+  }
+}
+
+
+export function kubernetesNodeGroupCloudNativePlanToHclTerraform(struct?: KubernetesNodeGroupCloudNativePlan | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    storage_size: {
+      value: cdktf.numberToHclTerraform(struct!.storageSize),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    storage_tier: {
+      value: cdktf.stringToHclTerraform(struct!.storageTier),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class KubernetesNodeGroupCloudNativePlanOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): KubernetesNodeGroupCloudNativePlan | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._storageSize !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.storageSize = this._storageSize;
+    }
+    if (this._storageTier !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.storageTier = this._storageTier;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: KubernetesNodeGroupCloudNativePlan | cdktf.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._storageSize = undefined;
+      this._storageTier = undefined;
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._storageSize = value.storageSize;
+      this._storageTier = value.storageTier;
+    }
+  }
+
+  // storage_size - computed: false, optional: true, required: false
+  private _storageSize?: number; 
+  public get storageSize() {
+    return this.getNumberAttribute('storage_size');
+  }
+  public set storageSize(value: number) {
+    this._storageSize = value;
+  }
+  public resetStorageSize() {
+    this._storageSize = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get storageSizeInput() {
+    return this._storageSize;
+  }
+
+  // storage_tier - computed: true, optional: true, required: false
+  private _storageTier?: string; 
+  public get storageTier() {
+    return this.getStringAttribute('storage_tier');
+  }
+  public set storageTier(value: string) {
+    this._storageTier = value;
+  }
+  public resetStorageTier() {
+    this._storageTier = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get storageTierInput() {
+    return this._storageTier;
+  }
+}
+
+export class KubernetesNodeGroupCloudNativePlanList extends cdktf.ComplexList {
+  public internalValue? : KubernetesNodeGroupCloudNativePlan[] | cdktf.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): KubernetesNodeGroupCloudNativePlanOutputReference {
+    return new KubernetesNodeGroupCloudNativePlanOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
 export interface KubernetesNodeGroupCustomPlan {
   /**
-  * The number of CPU cores dedicated to individual node group nodes when using custom plan
+  * The number of CPU cores dedicated to individual node group nodes.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.23.4/docs/resources/kubernetes_node_group#cores KubernetesNodeGroup#cores}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.24.0/docs/resources/kubernetes_node_group#cores KubernetesNodeGroup#cores}
   */
   readonly cores: number;
   /**
-  * The amount of memory in megabytes to assign to individual node group node when using custom plan. Value needs to be divisible by 1024.
+  * The amount of memory in megabytes to assign to individual node group node. Value needs to be divisible by 1024.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.23.4/docs/resources/kubernetes_node_group#memory KubernetesNodeGroup#memory}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.24.0/docs/resources/kubernetes_node_group#memory KubernetesNodeGroup#memory}
   */
   readonly memory: number;
   /**
   * The size of the storage device in gigabytes.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.23.4/docs/resources/kubernetes_node_group#storage_size KubernetesNodeGroup#storage_size}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.24.0/docs/resources/kubernetes_node_group#storage_size KubernetesNodeGroup#storage_size}
   */
   readonly storageSize: number;
   /**
-  * The storage tier to use. Defaults to maxiops
+  * The storage tier to use.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.23.4/docs/resources/kubernetes_node_group#storage_tier KubernetesNodeGroup#storage_tier}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.24.0/docs/resources/kubernetes_node_group#storage_tier KubernetesNodeGroup#storage_tier}
   */
   readonly storageTier?: string;
 }
@@ -299,17 +464,170 @@ export class KubernetesNodeGroupCustomPlanList extends cdktf.ComplexList {
     return new KubernetesNodeGroupCustomPlanOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
   }
 }
+export interface KubernetesNodeGroupGpuPlan {
+  /**
+  * The size of the storage device in gigabytes.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.24.0/docs/resources/kubernetes_node_group#storage_size KubernetesNodeGroup#storage_size}
+  */
+  readonly storageSize?: number;
+  /**
+  * The storage tier to use.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.24.0/docs/resources/kubernetes_node_group#storage_tier KubernetesNodeGroup#storage_tier}
+  */
+  readonly storageTier?: string;
+}
+
+export function kubernetesNodeGroupGpuPlanToTerraform(struct?: KubernetesNodeGroupGpuPlan | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    storage_size: cdktf.numberToTerraform(struct!.storageSize),
+    storage_tier: cdktf.stringToTerraform(struct!.storageTier),
+  }
+}
+
+
+export function kubernetesNodeGroupGpuPlanToHclTerraform(struct?: KubernetesNodeGroupGpuPlan | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    storage_size: {
+      value: cdktf.numberToHclTerraform(struct!.storageSize),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    storage_tier: {
+      value: cdktf.stringToHclTerraform(struct!.storageTier),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class KubernetesNodeGroupGpuPlanOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): KubernetesNodeGroupGpuPlan | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._storageSize !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.storageSize = this._storageSize;
+    }
+    if (this._storageTier !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.storageTier = this._storageTier;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: KubernetesNodeGroupGpuPlan | cdktf.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._storageSize = undefined;
+      this._storageTier = undefined;
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._storageSize = value.storageSize;
+      this._storageTier = value.storageTier;
+    }
+  }
+
+  // storage_size - computed: false, optional: true, required: false
+  private _storageSize?: number; 
+  public get storageSize() {
+    return this.getNumberAttribute('storage_size');
+  }
+  public set storageSize(value: number) {
+    this._storageSize = value;
+  }
+  public resetStorageSize() {
+    this._storageSize = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get storageSizeInput() {
+    return this._storageSize;
+  }
+
+  // storage_tier - computed: true, optional: true, required: false
+  private _storageTier?: string; 
+  public get storageTier() {
+    return this.getStringAttribute('storage_tier');
+  }
+  public set storageTier(value: string) {
+    this._storageTier = value;
+  }
+  public resetStorageTier() {
+    this._storageTier = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get storageTierInput() {
+    return this._storageTier;
+  }
+}
+
+export class KubernetesNodeGroupGpuPlanList extends cdktf.ComplexList {
+  public internalValue? : KubernetesNodeGroupGpuPlan[] | cdktf.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): KubernetesNodeGroupGpuPlanOutputReference {
+    return new KubernetesNodeGroupGpuPlanOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
 export interface KubernetesNodeGroupKubeletArgs {
   /**
   * Kubelet argument key.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.23.4/docs/resources/kubernetes_node_group#key KubernetesNodeGroup#key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.24.0/docs/resources/kubernetes_node_group#key KubernetesNodeGroup#key}
   */
   readonly key: string;
   /**
   * Kubelet argument value.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.23.4/docs/resources/kubernetes_node_group#value KubernetesNodeGroup#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.24.0/docs/resources/kubernetes_node_group#value KubernetesNodeGroup#value}
   */
   readonly value: string;
 }
@@ -450,19 +768,19 @@ export interface KubernetesNodeGroupTaint {
   /**
   * Taint effect.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.23.4/docs/resources/kubernetes_node_group#effect KubernetesNodeGroup#effect}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.24.0/docs/resources/kubernetes_node_group#effect KubernetesNodeGroup#effect}
   */
   readonly effect: string;
   /**
   * Taint key.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.23.4/docs/resources/kubernetes_node_group#key KubernetesNodeGroup#key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.24.0/docs/resources/kubernetes_node_group#key KubernetesNodeGroup#key}
   */
   readonly key: string;
   /**
   * Taint value.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.23.4/docs/resources/kubernetes_node_group#value KubernetesNodeGroup#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.24.0/docs/resources/kubernetes_node_group#value KubernetesNodeGroup#value}
   */
   readonly value: string;
 }
@@ -627,7 +945,7 @@ export class KubernetesNodeGroupTaintList extends cdktf.ComplexList {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.23.4/docs/resources/kubernetes_node_group upcloud_kubernetes_node_group}
+* Represents a {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.24.0/docs/resources/kubernetes_node_group upcloud_kubernetes_node_group}
 */
 export class KubernetesNodeGroup extends cdktf.TerraformResource {
 
@@ -643,7 +961,7 @@ export class KubernetesNodeGroup extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a KubernetesNodeGroup resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the KubernetesNodeGroup to import
-  * @param importFromId The id of the existing KubernetesNodeGroup that should be imported. Refer to the {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.23.4/docs/resources/kubernetes_node_group#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing KubernetesNodeGroup that should be imported. Refer to the {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.24.0/docs/resources/kubernetes_node_group#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the KubernetesNodeGroup to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -655,7 +973,7 @@ export class KubernetesNodeGroup extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.23.4/docs/resources/kubernetes_node_group upcloud_kubernetes_node_group} Resource
+  * Create a new {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.24.0/docs/resources/kubernetes_node_group upcloud_kubernetes_node_group} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -666,7 +984,7 @@ export class KubernetesNodeGroup extends cdktf.TerraformResource {
       terraformResourceType: 'upcloud_kubernetes_node_group',
       terraformGeneratorMetadata: {
         providerName: 'upcloud',
-        providerVersion: '5.23.4',
+        providerVersion: '5.24.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,
@@ -686,7 +1004,9 @@ export class KubernetesNodeGroup extends cdktf.TerraformResource {
     this._sshKeys = config.sshKeys;
     this._storageEncryption = config.storageEncryption;
     this._utilityNetworkAccess = config.utilityNetworkAccess;
+    this._cloudNativePlan.internalValue = config.cloudNativePlan;
     this._customPlan.internalValue = config.customPlan;
+    this._gpuPlan.internalValue = config.gpuPlan;
     this._kubeletArgs.internalValue = config.kubeletArgs;
     this._taint.internalValue = config.taint;
   }
@@ -832,6 +1152,22 @@ export class KubernetesNodeGroup extends cdktf.TerraformResource {
     return this._utilityNetworkAccess;
   }
 
+  // cloud_native_plan - computed: false, optional: true, required: false
+  private _cloudNativePlan = new KubernetesNodeGroupCloudNativePlanList(this, "cloud_native_plan", false);
+  public get cloudNativePlan() {
+    return this._cloudNativePlan;
+  }
+  public putCloudNativePlan(value: KubernetesNodeGroupCloudNativePlan[] | cdktf.IResolvable) {
+    this._cloudNativePlan.internalValue = value;
+  }
+  public resetCloudNativePlan() {
+    this._cloudNativePlan.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get cloudNativePlanInput() {
+    return this._cloudNativePlan.internalValue;
+  }
+
   // custom_plan - computed: false, optional: true, required: false
   private _customPlan = new KubernetesNodeGroupCustomPlanList(this, "custom_plan", false);
   public get customPlan() {
@@ -846,6 +1182,22 @@ export class KubernetesNodeGroup extends cdktf.TerraformResource {
   // Temporarily expose input value. Use with caution.
   public get customPlanInput() {
     return this._customPlan.internalValue;
+  }
+
+  // gpu_plan - computed: false, optional: true, required: false
+  private _gpuPlan = new KubernetesNodeGroupGpuPlanList(this, "gpu_plan", false);
+  public get gpuPlan() {
+    return this._gpuPlan;
+  }
+  public putGpuPlan(value: KubernetesNodeGroupGpuPlan[] | cdktf.IResolvable) {
+    this._gpuPlan.internalValue = value;
+  }
+  public resetGpuPlan() {
+    this._gpuPlan.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get gpuPlanInput() {
+    return this._gpuPlan.internalValue;
   }
 
   // kubelet_args - computed: false, optional: true, required: false
@@ -895,7 +1247,9 @@ export class KubernetesNodeGroup extends cdktf.TerraformResource {
       ssh_keys: cdktf.listMapper(cdktf.stringToTerraform, false)(this._sshKeys),
       storage_encryption: cdktf.stringToTerraform(this._storageEncryption),
       utility_network_access: cdktf.booleanToTerraform(this._utilityNetworkAccess),
+      cloud_native_plan: cdktf.listMapper(kubernetesNodeGroupCloudNativePlanToTerraform, true)(this._cloudNativePlan.internalValue),
       custom_plan: cdktf.listMapper(kubernetesNodeGroupCustomPlanToTerraform, true)(this._customPlan.internalValue),
+      gpu_plan: cdktf.listMapper(kubernetesNodeGroupGpuPlanToTerraform, true)(this._gpuPlan.internalValue),
       kubelet_args: cdktf.listMapper(kubernetesNodeGroupKubeletArgsToTerraform, true)(this._kubeletArgs.internalValue),
       taint: cdktf.listMapper(kubernetesNodeGroupTaintToTerraform, true)(this._taint.internalValue),
     };
@@ -957,11 +1311,23 @@ export class KubernetesNodeGroup extends cdktf.TerraformResource {
         type: "simple",
         storageClassType: "boolean",
       },
+      cloud_native_plan: {
+        value: cdktf.listMapperHcl(kubernetesNodeGroupCloudNativePlanToHclTerraform, true)(this._cloudNativePlan.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "KubernetesNodeGroupCloudNativePlanList",
+      },
       custom_plan: {
         value: cdktf.listMapperHcl(kubernetesNodeGroupCustomPlanToHclTerraform, true)(this._customPlan.internalValue),
         isBlock: true,
         type: "list",
         storageClassType: "KubernetesNodeGroupCustomPlanList",
+      },
+      gpu_plan: {
+        value: cdktf.listMapperHcl(kubernetesNodeGroupGpuPlanToHclTerraform, true)(this._gpuPlan.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "KubernetesNodeGroupGpuPlanList",
       },
       kubelet_args: {
         value: cdktf.listMapperHcl(kubernetesNodeGroupKubeletArgsToHclTerraform, true)(this._kubeletArgs.internalValue),
