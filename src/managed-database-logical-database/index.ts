@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/upcloudltd/upcloud/5.24.0/docs/resources/managed_database_logical_database
+// https://registry.terraform.io/providers/upcloudltd/upcloud/5.24.1/docs/resources/managed_database_logical_database
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,17 +15,17 @@ export interface ManagedDatabaseLogicalDatabaseConfig extends cdktf.TerraformMet
   /**
   * Default character set for the database (LC_CTYPE)
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.24.0/docs/resources/managed_database_logical_database#character_set ManagedDatabaseLogicalDatabase#character_set}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.24.1/docs/resources/managed_database_logical_database#character_set ManagedDatabaseLogicalDatabase#character_set}
   */
   readonly characterSet?: string;
   /**
   * Default collation for the database (LC_COLLATE)
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.24.0/docs/resources/managed_database_logical_database#collation ManagedDatabaseLogicalDatabase#collation}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.24.1/docs/resources/managed_database_logical_database#collation ManagedDatabaseLogicalDatabase#collation}
   */
   readonly collation?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.24.0/docs/resources/managed_database_logical_database#id ManagedDatabaseLogicalDatabase#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.24.1/docs/resources/managed_database_logical_database#id ManagedDatabaseLogicalDatabase#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -34,19 +34,19 @@ export interface ManagedDatabaseLogicalDatabaseConfig extends cdktf.TerraformMet
   /**
   * Name of the logical database
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.24.0/docs/resources/managed_database_logical_database#name ManagedDatabaseLogicalDatabase#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.24.1/docs/resources/managed_database_logical_database#name ManagedDatabaseLogicalDatabase#name}
   */
   readonly name: string;
   /**
   * Service's UUID for which this user belongs to
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.24.0/docs/resources/managed_database_logical_database#service ManagedDatabaseLogicalDatabase#service}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.24.1/docs/resources/managed_database_logical_database#service ManagedDatabaseLogicalDatabase#service}
   */
   readonly service: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.24.0/docs/resources/managed_database_logical_database upcloud_managed_database_logical_database}
+* Represents a {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.24.1/docs/resources/managed_database_logical_database upcloud_managed_database_logical_database}
 */
 export class ManagedDatabaseLogicalDatabase extends cdktf.TerraformResource {
 
@@ -62,7 +62,7 @@ export class ManagedDatabaseLogicalDatabase extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a ManagedDatabaseLogicalDatabase resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the ManagedDatabaseLogicalDatabase to import
-  * @param importFromId The id of the existing ManagedDatabaseLogicalDatabase that should be imported. Refer to the {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.24.0/docs/resources/managed_database_logical_database#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing ManagedDatabaseLogicalDatabase that should be imported. Refer to the {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.24.1/docs/resources/managed_database_logical_database#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the ManagedDatabaseLogicalDatabase to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -74,7 +74,7 @@ export class ManagedDatabaseLogicalDatabase extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.24.0/docs/resources/managed_database_logical_database upcloud_managed_database_logical_database} Resource
+  * Create a new {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.24.1/docs/resources/managed_database_logical_database upcloud_managed_database_logical_database} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -85,7 +85,7 @@ export class ManagedDatabaseLogicalDatabase extends cdktf.TerraformResource {
       terraformResourceType: 'upcloud_managed_database_logical_database',
       terraformGeneratorMetadata: {
         providerName: 'upcloud',
-        providerVersion: '5.24.0',
+        providerVersion: '5.24.1',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,
