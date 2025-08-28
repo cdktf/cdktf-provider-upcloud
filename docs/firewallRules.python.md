@@ -4,7 +4,7 @@
 
 ### FirewallRules <a name="FirewallRules" id="@cdktf/provider-upcloud.firewallRules.FirewallRules"></a>
 
-Represents a {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.24.0/docs/resources/firewall_rules upcloud_firewall_rules}.
+Represents a {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.24.1/docs/resources/firewall_rules upcloud_firewall_rules}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-upcloud.firewallRules.FirewallRules.Initializer"></a>
 
@@ -108,7 +108,7 @@ Must be unique amongst siblings in the same scope
 
 The UUID of the server to be protected with the firewall rules.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.24.0/docs/resources/firewall_rules#server_id FirewallRules#server_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.24.1/docs/resources/firewall_rules#server_id FirewallRules#server_id}
 
 ---
 
@@ -118,7 +118,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upclo
 
 firewall_rule block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.24.0/docs/resources/firewall_rules#firewall_rule FirewallRules#firewall_rule}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.24.1/docs/resources/firewall_rules#firewall_rule FirewallRules#firewall_rule}
 
 ---
 
@@ -613,7 +613,7 @@ The construct id used in the generated config for the FirewallRules to import.
 
 The id of the existing FirewallRules that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.24.0/docs/resources/firewall_rules#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.24.1/docs/resources/firewall_rules#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -979,7 +979,7 @@ server_id: str
 
 The UUID of the server to be protected with the firewall rules.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.24.0/docs/resources/firewall_rules#server_id FirewallRules#server_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.24.1/docs/resources/firewall_rules#server_id FirewallRules#server_id}
 
 ---
 
@@ -993,7 +993,7 @@ firewall_rule: typing.Union[IResolvable, typing.List[FirewallRulesFirewallRule]]
 
 firewall_rule block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.24.0/docs/resources/firewall_rules#firewall_rule FirewallRules#firewall_rule}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.24.1/docs/resources/firewall_rules#firewall_rule FirewallRules#firewall_rule}
 
 ---
 
@@ -1053,7 +1053,7 @@ action: str
 
 Action to take if the rule conditions are met. Valid values `accept | drop`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.24.0/docs/resources/firewall_rules#action FirewallRules#action}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.24.1/docs/resources/firewall_rules#action FirewallRules#action}
 
 ---
 
@@ -1067,7 +1067,7 @@ direction: str
 
 The direction of network traffic this rule will be applied to. Valid values are `in` and `out`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.24.0/docs/resources/firewall_rules#direction FirewallRules#direction}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.24.1/docs/resources/firewall_rules#direction FirewallRules#direction}
 
 ---
 
@@ -1081,7 +1081,7 @@ comment: str
 
 A comment for the rule.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.24.0/docs/resources/firewall_rules#comment FirewallRules#comment}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.24.1/docs/resources/firewall_rules#comment FirewallRules#comment}
 
 ---
 
@@ -1095,7 +1095,7 @@ destination_address_end: str
 
 The destination address range ends from this address.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.24.0/docs/resources/firewall_rules#destination_address_end FirewallRules#destination_address_end}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.24.1/docs/resources/firewall_rules#destination_address_end FirewallRules#destination_address_end}
 
 ---
 
@@ -1109,7 +1109,7 @@ destination_address_start: str
 
 The destination address range starts from this address.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.24.0/docs/resources/firewall_rules#destination_address_start FirewallRules#destination_address_start}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.24.1/docs/resources/firewall_rules#destination_address_start FirewallRules#destination_address_start}
 
 ---
 
@@ -1123,7 +1123,7 @@ destination_port_end: str
 
 The destination port range ends from this port number.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.24.0/docs/resources/firewall_rules#destination_port_end FirewallRules#destination_port_end}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.24.1/docs/resources/firewall_rules#destination_port_end FirewallRules#destination_port_end}
 
 ---
 
@@ -1137,7 +1137,7 @@ destination_port_start: str
 
 The destination port range starts from this port number.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.24.0/docs/resources/firewall_rules#destination_port_start FirewallRules#destination_port_start}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.24.1/docs/resources/firewall_rules#destination_port_start FirewallRules#destination_port_start}
 
 ---
 
@@ -1151,7 +1151,7 @@ family: str
 
 The address family of new firewall rule.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.24.0/docs/resources/firewall_rules#family FirewallRules#family}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.24.1/docs/resources/firewall_rules#family FirewallRules#family}
 
 ---
 
@@ -1165,7 +1165,7 @@ icmp_type: str
 
 The ICMP type of the rule. Only valid if protocol is ICMP.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.24.0/docs/resources/firewall_rules#icmp_type FirewallRules#icmp_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.24.1/docs/resources/firewall_rules#icmp_type FirewallRules#icmp_type}
 
 ---
 
@@ -1179,7 +1179,7 @@ protocol: str
 
 The protocol of the rule. Possible values are `` (empty), `tcp`, `udp`, `icmp`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.24.0/docs/resources/firewall_rules#protocol FirewallRules#protocol}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.24.1/docs/resources/firewall_rules#protocol FirewallRules#protocol}
 
 ---
 
@@ -1193,7 +1193,7 @@ source_address_end: str
 
 The source address range ends from this address.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.24.0/docs/resources/firewall_rules#source_address_end FirewallRules#source_address_end}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.24.1/docs/resources/firewall_rules#source_address_end FirewallRules#source_address_end}
 
 ---
 
@@ -1207,7 +1207,7 @@ source_address_start: str
 
 The source address range starts from this address.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.24.0/docs/resources/firewall_rules#source_address_start FirewallRules#source_address_start}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.24.1/docs/resources/firewall_rules#source_address_start FirewallRules#source_address_start}
 
 ---
 
@@ -1221,7 +1221,7 @@ source_port_end: str
 
 The source port range ends from this port number.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.24.0/docs/resources/firewall_rules#source_port_end FirewallRules#source_port_end}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.24.1/docs/resources/firewall_rules#source_port_end FirewallRules#source_port_end}
 
 ---
 
@@ -1235,7 +1235,7 @@ source_port_start: str
 
 The source port range starts from this port number.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.24.0/docs/resources/firewall_rules#source_port_start FirewallRules#source_port_start}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.24.1/docs/resources/firewall_rules#source_port_start FirewallRules#source_port_start}
 
 ---
 
