@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/upcloudltd/upcloud/5.24.1/docs/resources/loadbalancer_manual_certificate_bundle
+// https://registry.terraform.io/providers/upcloudltd/upcloud/5.24.2/docs/resources/loadbalancer_manual_certificate_bundle
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,31 +15,31 @@ export interface LoadbalancerManualCertificateBundleConfig extends cdktf.Terrafo
   /**
   * Certificate as base64 encoded string. Must be in PEM format.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.24.1/docs/resources/loadbalancer_manual_certificate_bundle#certificate LoadbalancerManualCertificateBundle#certificate}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.24.2/docs/resources/loadbalancer_manual_certificate_bundle#certificate LoadbalancerManualCertificateBundle#certificate}
   */
   readonly certificate: string;
   /**
   * Intermediate certificates as base64 encoded string. Must be in PEM format.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.24.1/docs/resources/loadbalancer_manual_certificate_bundle#intermediates LoadbalancerManualCertificateBundle#intermediates}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.24.2/docs/resources/loadbalancer_manual_certificate_bundle#intermediates LoadbalancerManualCertificateBundle#intermediates}
   */
   readonly intermediates?: string;
   /**
   * The name of the certificate bundle. Must be unique within customer account.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.24.1/docs/resources/loadbalancer_manual_certificate_bundle#name LoadbalancerManualCertificateBundle#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.24.2/docs/resources/loadbalancer_manual_certificate_bundle#name LoadbalancerManualCertificateBundle#name}
   */
   readonly name: string;
   /**
   * Private key as base64 encoded string. Must be in PEM format.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.24.1/docs/resources/loadbalancer_manual_certificate_bundle#private_key LoadbalancerManualCertificateBundle#private_key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.24.2/docs/resources/loadbalancer_manual_certificate_bundle#private_key LoadbalancerManualCertificateBundle#private_key}
   */
   readonly privateKey: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.24.1/docs/resources/loadbalancer_manual_certificate_bundle upcloud_loadbalancer_manual_certificate_bundle}
+* Represents a {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.24.2/docs/resources/loadbalancer_manual_certificate_bundle upcloud_loadbalancer_manual_certificate_bundle}
 */
 export class LoadbalancerManualCertificateBundle extends cdktf.TerraformResource {
 
@@ -55,7 +55,7 @@ export class LoadbalancerManualCertificateBundle extends cdktf.TerraformResource
   * Generates CDKTF code for importing a LoadbalancerManualCertificateBundle resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the LoadbalancerManualCertificateBundle to import
-  * @param importFromId The id of the existing LoadbalancerManualCertificateBundle that should be imported. Refer to the {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.24.1/docs/resources/loadbalancer_manual_certificate_bundle#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing LoadbalancerManualCertificateBundle that should be imported. Refer to the {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.24.2/docs/resources/loadbalancer_manual_certificate_bundle#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the LoadbalancerManualCertificateBundle to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -67,7 +67,7 @@ export class LoadbalancerManualCertificateBundle extends cdktf.TerraformResource
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.24.1/docs/resources/loadbalancer_manual_certificate_bundle upcloud_loadbalancer_manual_certificate_bundle} Resource
+  * Create a new {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.24.2/docs/resources/loadbalancer_manual_certificate_bundle upcloud_loadbalancer_manual_certificate_bundle} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -78,7 +78,7 @@ export class LoadbalancerManualCertificateBundle extends cdktf.TerraformResource
       terraformResourceType: 'upcloud_loadbalancer_manual_certificate_bundle',
       terraformGeneratorMetadata: {
         providerName: 'upcloud',
-        providerVersion: '5.24.1',
+        providerVersion: '5.24.2',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,

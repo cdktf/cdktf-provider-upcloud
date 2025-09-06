@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/upcloudltd/upcloud/5.24.1/docs/resources/managed_object_storage_bucket
+// https://registry.terraform.io/providers/upcloudltd/upcloud/5.24.2/docs/resources/managed_object_storage_bucket
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,19 +15,19 @@ export interface ManagedObjectStorageBucketConfig extends cdktf.TerraformMetaArg
   /**
   * Name of the bucket.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.24.1/docs/resources/managed_object_storage_bucket#name ManagedObjectStorageBucket#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.24.2/docs/resources/managed_object_storage_bucket#name ManagedObjectStorageBucket#name}
   */
   readonly name: string;
   /**
   * Managed Object Storage service UUID.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.24.1/docs/resources/managed_object_storage_bucket#service_uuid ManagedObjectStorageBucket#service_uuid}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.24.2/docs/resources/managed_object_storage_bucket#service_uuid ManagedObjectStorageBucket#service_uuid}
   */
   readonly serviceUuid: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.24.1/docs/resources/managed_object_storage_bucket upcloud_managed_object_storage_bucket}
+* Represents a {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.24.2/docs/resources/managed_object_storage_bucket upcloud_managed_object_storage_bucket}
 */
 export class ManagedObjectStorageBucket extends cdktf.TerraformResource {
 
@@ -43,7 +43,7 @@ export class ManagedObjectStorageBucket extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a ManagedObjectStorageBucket resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the ManagedObjectStorageBucket to import
-  * @param importFromId The id of the existing ManagedObjectStorageBucket that should be imported. Refer to the {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.24.1/docs/resources/managed_object_storage_bucket#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing ManagedObjectStorageBucket that should be imported. Refer to the {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.24.2/docs/resources/managed_object_storage_bucket#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the ManagedObjectStorageBucket to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -55,7 +55,7 @@ export class ManagedObjectStorageBucket extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.24.1/docs/resources/managed_object_storage_bucket upcloud_managed_object_storage_bucket} Resource
+  * Create a new {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.24.2/docs/resources/managed_object_storage_bucket upcloud_managed_object_storage_bucket} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -66,7 +66,7 @@ export class ManagedObjectStorageBucket extends cdktf.TerraformResource {
       terraformResourceType: 'upcloud_managed_object_storage_bucket',
       terraformGeneratorMetadata: {
         providerName: 'upcloud',
-        providerVersion: '5.24.1',
+        providerVersion: '5.24.2',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,

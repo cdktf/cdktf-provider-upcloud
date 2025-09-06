@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/upcloudltd/upcloud/5.24.1/docs/resources/managed_object_storage_user_policy
+// https://registry.terraform.io/providers/upcloudltd/upcloud/5.24.2/docs/resources/managed_object_storage_user_policy
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,7 +13,7 @@ import * as cdktf from 'cdktf';
 
 export interface ManagedObjectStorageUserPolicyConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.24.1/docs/resources/managed_object_storage_user_policy#id ManagedObjectStorageUserPolicy#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.24.2/docs/resources/managed_object_storage_user_policy#id ManagedObjectStorageUserPolicy#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -22,25 +22,25 @@ export interface ManagedObjectStorageUserPolicyConfig extends cdktf.TerraformMet
   /**
   * Policy name.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.24.1/docs/resources/managed_object_storage_user_policy#name ManagedObjectStorageUserPolicy#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.24.2/docs/resources/managed_object_storage_user_policy#name ManagedObjectStorageUserPolicy#name}
   */
   readonly name: string;
   /**
   * Managed Object Storage service UUID.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.24.1/docs/resources/managed_object_storage_user_policy#service_uuid ManagedObjectStorageUserPolicy#service_uuid}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.24.2/docs/resources/managed_object_storage_user_policy#service_uuid ManagedObjectStorageUserPolicy#service_uuid}
   */
   readonly serviceUuid: string;
   /**
   * Username.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.24.1/docs/resources/managed_object_storage_user_policy#username ManagedObjectStorageUserPolicy#username}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.24.2/docs/resources/managed_object_storage_user_policy#username ManagedObjectStorageUserPolicy#username}
   */
   readonly username: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.24.1/docs/resources/managed_object_storage_user_policy upcloud_managed_object_storage_user_policy}
+* Represents a {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.24.2/docs/resources/managed_object_storage_user_policy upcloud_managed_object_storage_user_policy}
 */
 export class ManagedObjectStorageUserPolicy extends cdktf.TerraformResource {
 
@@ -56,7 +56,7 @@ export class ManagedObjectStorageUserPolicy extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a ManagedObjectStorageUserPolicy resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the ManagedObjectStorageUserPolicy to import
-  * @param importFromId The id of the existing ManagedObjectStorageUserPolicy that should be imported. Refer to the {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.24.1/docs/resources/managed_object_storage_user_policy#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing ManagedObjectStorageUserPolicy that should be imported. Refer to the {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.24.2/docs/resources/managed_object_storage_user_policy#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the ManagedObjectStorageUserPolicy to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -68,7 +68,7 @@ export class ManagedObjectStorageUserPolicy extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.24.1/docs/resources/managed_object_storage_user_policy upcloud_managed_object_storage_user_policy} Resource
+  * Create a new {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.24.2/docs/resources/managed_object_storage_user_policy upcloud_managed_object_storage_user_policy} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -79,7 +79,7 @@ export class ManagedObjectStorageUserPolicy extends cdktf.TerraformResource {
       terraformResourceType: 'upcloud_managed_object_storage_user_policy',
       terraformGeneratorMetadata: {
         providerName: 'upcloud',
-        providerVersion: '5.24.1',
+        providerVersion: '5.24.2',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,
