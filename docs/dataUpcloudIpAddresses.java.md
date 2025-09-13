@@ -4,7 +4,7 @@
 
 ### DataUpcloudIpAddresses <a name="DataUpcloudIpAddresses" id="@cdktf/provider-upcloud.dataUpcloudIpAddresses.DataUpcloudIpAddresses"></a>
 
-Represents a {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.24.2/docs/data-sources/ip_addresses upcloud_ip_addresses}.
+Represents a {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.25.0/docs/data-sources/ip_addresses upcloud_ip_addresses}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-upcloud.dataUpcloudIpAddresses.DataUpcloudIpAddresses.Initializer"></a>
 
@@ -109,7 +109,7 @@ Must be unique amongst siblings in the same scope
 
 addresses block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.24.2/docs/data-sources/ip_addresses#addresses DataUpcloudIpAddresses#addresses}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.25.0/docs/data-sources/ip_addresses#addresses DataUpcloudIpAddresses#addresses}
 
 ---
 
@@ -452,7 +452,7 @@ The construct id used in the generated config for the DataUpcloudIpAddresses to 
 
 The id of the existing DataUpcloudIpAddresses that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.24.2/docs/data-sources/ip_addresses#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.25.0/docs/data-sources/ip_addresses#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -789,7 +789,7 @@ public java.lang.Object getAddresses();
 
 addresses block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.24.2/docs/data-sources/ip_addresses#addresses DataUpcloudIpAddresses#addresses}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.25.0/docs/data-sources/ip_addresses#addresses DataUpcloudIpAddresses#addresses}
 
 ---
 
@@ -1190,6 +1190,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-upcloud.dataUpcloudIpAddresses.DataUpcloudIpAddressesAddressesOutputReference.property.mac">mac</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.dataUpcloudIpAddresses.DataUpcloudIpAddressesAddressesOutputReference.property.partOfPlan">partOfPlan</a></code> | <code>com.hashicorp.cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.dataUpcloudIpAddresses.DataUpcloudIpAddressesAddressesOutputReference.property.ptrRecord">ptrRecord</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktf/provider-upcloud.dataUpcloudIpAddresses.DataUpcloudIpAddressesAddressesOutputReference.property.releasePolicy">releasePolicy</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.dataUpcloudIpAddresses.DataUpcloudIpAddressesAddressesOutputReference.property.server">server</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.dataUpcloudIpAddresses.DataUpcloudIpAddressesAddressesOutputReference.property.zone">zone</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.dataUpcloudIpAddresses.DataUpcloudIpAddressesAddressesOutputReference.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-upcloud.dataUpcloudIpAddresses.DataUpcloudIpAddressesAddresses">DataUpcloudIpAddressesAddresses</a></code> | *No description.* |
@@ -1284,6 +1285,16 @@ public IResolvable getPartOfPlan();
 
 ```java
 public java.lang.String getPtrRecord();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `releasePolicy`<sup>Required</sup> <a name="releasePolicy" id="@cdktf/provider-upcloud.dataUpcloudIpAddresses.DataUpcloudIpAddressesAddressesOutputReference.property.releasePolicy"></a>
+
+```java
+public java.lang.String getReleasePolicy();
 ```
 
 - *Type:* java.lang.String

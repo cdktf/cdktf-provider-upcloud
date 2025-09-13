@@ -4,7 +4,7 @@
 
 ### FloatingIpAddress <a name="FloatingIpAddress" id="@cdktf/provider-upcloud.floatingIpAddress.FloatingIpAddress"></a>
 
-Represents a {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.24.2/docs/resources/floating_ip_address upcloud_floating_ip_address}.
+Represents a {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.25.0/docs/resources/floating_ip_address upcloud_floating_ip_address}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-upcloud.floatingIpAddress.FloatingIpAddress.Initializer"></a>
 
@@ -26,6 +26,7 @@ FloatingIpAddress.Builder.create(Construct scope, java.lang.String id)
 //  .access(java.lang.String)
 //  .family(java.lang.String)
 //  .macAddress(java.lang.String)
+//  .releasePolicy(java.lang.String)
 //  .zone(java.lang.String)
     .build();
 ```
@@ -44,6 +45,7 @@ FloatingIpAddress.Builder.create(Construct scope, java.lang.String id)
 | <code><a href="#@cdktf/provider-upcloud.floatingIpAddress.FloatingIpAddress.Initializer.parameter.access">access</a></code> | <code>java.lang.String</code> | Network access for the floating IP address. Supported value: `public`. |
 | <code><a href="#@cdktf/provider-upcloud.floatingIpAddress.FloatingIpAddress.Initializer.parameter.family">family</a></code> | <code>java.lang.String</code> | The address family of the floating IP address. |
 | <code><a href="#@cdktf/provider-upcloud.floatingIpAddress.FloatingIpAddress.Initializer.parameter.macAddress">macAddress</a></code> | <code>java.lang.String</code> | MAC address of a server interface to assign address to. |
+| <code><a href="#@cdktf/provider-upcloud.floatingIpAddress.FloatingIpAddress.Initializer.parameter.releasePolicy">releasePolicy</a></code> | <code>java.lang.String</code> | The release policy of the floating IP address. |
 | <code><a href="#@cdktf/provider-upcloud.floatingIpAddress.FloatingIpAddress.Initializer.parameter.zone">zone</a></code> | <code>java.lang.String</code> | Zone of the address, e.g. `de-fra1`. Required when assigning a detached floating IP address. You can list available zones with `upctl zone list`. |
 
 ---
@@ -114,7 +116,7 @@ Must be unique amongst siblings in the same scope
 
 Network access for the floating IP address. Supported value: `public`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.24.2/docs/resources/floating_ip_address#access FloatingIpAddress#access}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.25.0/docs/resources/floating_ip_address#access FloatingIpAddress#access}
 
 ---
 
@@ -124,7 +126,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upclo
 
 The address family of the floating IP address.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.24.2/docs/resources/floating_ip_address#family FloatingIpAddress#family}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.25.0/docs/resources/floating_ip_address#family FloatingIpAddress#family}
 
 ---
 
@@ -134,7 +136,17 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upclo
 
 MAC address of a server interface to assign address to.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.24.2/docs/resources/floating_ip_address#mac_address FloatingIpAddress#mac_address}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.25.0/docs/resources/floating_ip_address#mac_address FloatingIpAddress#mac_address}
+
+---
+
+##### `releasePolicy`<sup>Optional</sup> <a name="releasePolicy" id="@cdktf/provider-upcloud.floatingIpAddress.FloatingIpAddress.Initializer.parameter.releasePolicy"></a>
+
+- *Type:* java.lang.String
+
+The release policy of the floating IP address.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.25.0/docs/resources/floating_ip_address#release_policy FloatingIpAddress#release_policy}
 
 ---
 
@@ -144,7 +156,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upclo
 
 Zone of the address, e.g. `de-fra1`. Required when assigning a detached floating IP address. You can list available zones with `upctl zone list`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.24.2/docs/resources/floating_ip_address#zone FloatingIpAddress#zone}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.25.0/docs/resources/floating_ip_address#zone FloatingIpAddress#zone}
 
 ---
 
@@ -178,6 +190,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upclo
 | <code><a href="#@cdktf/provider-upcloud.floatingIpAddress.FloatingIpAddress.resetAccess">resetAccess</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.floatingIpAddress.FloatingIpAddress.resetFamily">resetFamily</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.floatingIpAddress.FloatingIpAddress.resetMacAddress">resetMacAddress</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-upcloud.floatingIpAddress.FloatingIpAddress.resetReleasePolicy">resetReleasePolicy</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.floatingIpAddress.FloatingIpAddress.resetZone">resetZone</a></code> | *No description.* |
 
 ---
@@ -490,6 +503,12 @@ public void resetFamily()
 public void resetMacAddress()
 ```
 
+##### `resetReleasePolicy` <a name="resetReleasePolicy" id="@cdktf/provider-upcloud.floatingIpAddress.FloatingIpAddress.resetReleasePolicy"></a>
+
+```java
+public void resetReleasePolicy()
+```
+
 ##### `resetZone` <a name="resetZone" id="@cdktf/provider-upcloud.floatingIpAddress.FloatingIpAddress.resetZone"></a>
 
 ```java
@@ -599,7 +618,7 @@ The construct id used in the generated config for the FloatingIpAddress to impor
 
 The id of the existing FloatingIpAddress that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.24.2/docs/resources/floating_ip_address#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.25.0/docs/resources/floating_ip_address#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -634,10 +653,12 @@ Refer to the {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5
 | <code><a href="#@cdktf/provider-upcloud.floatingIpAddress.FloatingIpAddress.property.accessInput">accessInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.floatingIpAddress.FloatingIpAddress.property.familyInput">familyInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.floatingIpAddress.FloatingIpAddress.property.macAddressInput">macAddressInput</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktf/provider-upcloud.floatingIpAddress.FloatingIpAddress.property.releasePolicyInput">releasePolicyInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.floatingIpAddress.FloatingIpAddress.property.zoneInput">zoneInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.floatingIpAddress.FloatingIpAddress.property.access">access</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.floatingIpAddress.FloatingIpAddress.property.family">family</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.floatingIpAddress.FloatingIpAddress.property.macAddress">macAddress</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktf/provider-upcloud.floatingIpAddress.FloatingIpAddress.property.releasePolicy">releasePolicy</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.floatingIpAddress.FloatingIpAddress.property.zone">zone</a></code> | <code>java.lang.String</code> | *No description.* |
 
 ---
@@ -834,6 +855,16 @@ public java.lang.String getMacAddressInput();
 
 ---
 
+##### `releasePolicyInput`<sup>Optional</sup> <a name="releasePolicyInput" id="@cdktf/provider-upcloud.floatingIpAddress.FloatingIpAddress.property.releasePolicyInput"></a>
+
+```java
+public java.lang.String getReleasePolicyInput();
+```
+
+- *Type:* java.lang.String
+
+---
+
 ##### `zoneInput`<sup>Optional</sup> <a name="zoneInput" id="@cdktf/provider-upcloud.floatingIpAddress.FloatingIpAddress.property.zoneInput"></a>
 
 ```java
@@ -868,6 +899,16 @@ public java.lang.String getFamily();
 
 ```java
 public java.lang.String getMacAddress();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `releasePolicy`<sup>Required</sup> <a name="releasePolicy" id="@cdktf/provider-upcloud.floatingIpAddress.FloatingIpAddress.property.releasePolicy"></a>
+
+```java
+public java.lang.String getReleasePolicy();
 ```
 
 - *Type:* java.lang.String
@@ -926,6 +967,7 @@ FloatingIpAddressConfig.builder()
 //  .access(java.lang.String)
 //  .family(java.lang.String)
 //  .macAddress(java.lang.String)
+//  .releasePolicy(java.lang.String)
 //  .zone(java.lang.String)
     .build();
 ```
@@ -944,6 +986,7 @@ FloatingIpAddressConfig.builder()
 | <code><a href="#@cdktf/provider-upcloud.floatingIpAddress.FloatingIpAddressConfig.property.access">access</a></code> | <code>java.lang.String</code> | Network access for the floating IP address. Supported value: `public`. |
 | <code><a href="#@cdktf/provider-upcloud.floatingIpAddress.FloatingIpAddressConfig.property.family">family</a></code> | <code>java.lang.String</code> | The address family of the floating IP address. |
 | <code><a href="#@cdktf/provider-upcloud.floatingIpAddress.FloatingIpAddressConfig.property.macAddress">macAddress</a></code> | <code>java.lang.String</code> | MAC address of a server interface to assign address to. |
+| <code><a href="#@cdktf/provider-upcloud.floatingIpAddress.FloatingIpAddressConfig.property.releasePolicy">releasePolicy</a></code> | <code>java.lang.String</code> | The release policy of the floating IP address. |
 | <code><a href="#@cdktf/provider-upcloud.floatingIpAddress.FloatingIpAddressConfig.property.zone">zone</a></code> | <code>java.lang.String</code> | Zone of the address, e.g. `de-fra1`. Required when assigning a detached floating IP address. You can list available zones with `upctl zone list`. |
 
 ---
@@ -1028,7 +1071,7 @@ public java.lang.String getAccess();
 
 Network access for the floating IP address. Supported value: `public`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.24.2/docs/resources/floating_ip_address#access FloatingIpAddress#access}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.25.0/docs/resources/floating_ip_address#access FloatingIpAddress#access}
 
 ---
 
@@ -1042,7 +1085,7 @@ public java.lang.String getFamily();
 
 The address family of the floating IP address.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.24.2/docs/resources/floating_ip_address#family FloatingIpAddress#family}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.25.0/docs/resources/floating_ip_address#family FloatingIpAddress#family}
 
 ---
 
@@ -1056,7 +1099,21 @@ public java.lang.String getMacAddress();
 
 MAC address of a server interface to assign address to.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.24.2/docs/resources/floating_ip_address#mac_address FloatingIpAddress#mac_address}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.25.0/docs/resources/floating_ip_address#mac_address FloatingIpAddress#mac_address}
+
+---
+
+##### `releasePolicy`<sup>Optional</sup> <a name="releasePolicy" id="@cdktf/provider-upcloud.floatingIpAddress.FloatingIpAddressConfig.property.releasePolicy"></a>
+
+```java
+public java.lang.String getReleasePolicy();
+```
+
+- *Type:* java.lang.String
+
+The release policy of the floating IP address.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.25.0/docs/resources/floating_ip_address#release_policy FloatingIpAddress#release_policy}
 
 ---
 
@@ -1070,7 +1127,7 @@ public java.lang.String getZone();
 
 Zone of the address, e.g. `de-fra1`. Required when assigning a detached floating IP address. You can list available zones with `upctl zone list`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.24.2/docs/resources/floating_ip_address#zone FloatingIpAddress#zone}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.25.0/docs/resources/floating_ip_address#zone FloatingIpAddress#zone}
 
 ---
 
