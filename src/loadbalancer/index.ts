@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/upcloudltd/upcloud/5.24.2/docs/resources/loadbalancer
+// https://registry.terraform.io/providers/upcloudltd/upcloud/5.25.0/docs/resources/loadbalancer
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,57 +15,210 @@ export interface LoadbalancerConfig extends cdktf.TerraformMetaArguments {
   /**
   * The service configured status indicates the service's current intended status. Managed by the customer.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.24.2/docs/resources/loadbalancer#configured_status Loadbalancer#configured_status}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.25.0/docs/resources/loadbalancer#configured_status Loadbalancer#configured_status}
   */
   readonly configuredStatus?: string;
   /**
+  * Floating IP addresses connected to the load balancer.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.25.0/docs/resources/loadbalancer#ip_addresses Loadbalancer#ip_addresses}
+  */
+  readonly ipAddresses?: LoadbalancerIpAddresses[] | cdktf.IResolvable;
+  /**
   * User defined key-value pairs to classify the load balancer.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.24.2/docs/resources/loadbalancer#labels Loadbalancer#labels}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.25.0/docs/resources/loadbalancer#labels Loadbalancer#labels}
   */
   readonly labels?: { [key: string]: string };
   /**
   * The day of the week on which maintenance will be performed. If not provided, we will randomly select a weekend day. Valid values `monday|tuesday|wednesday|thursday|friday|saturday|sunday`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.24.2/docs/resources/loadbalancer#maintenance_dow Loadbalancer#maintenance_dow}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.25.0/docs/resources/loadbalancer#maintenance_dow Loadbalancer#maintenance_dow}
   */
   readonly maintenanceDow?: string;
   /**
   * The time at which the maintenance will begin in UTC. A 2-hour timeframe has been allocated for maintenance. During this period, the multi-node production plans will not experience any downtime, while the one-node plans will have a downtime of 1-2 minutes. If not provided, we will randomly select an off-peak time. Needs to be a valid time format in UTC HH:MM:SSZ, for example `20:01:01Z`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.24.2/docs/resources/loadbalancer#maintenance_time Loadbalancer#maintenance_time}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.25.0/docs/resources/loadbalancer#maintenance_time Loadbalancer#maintenance_time}
   */
   readonly maintenanceTime?: string;
   /**
   * The name of the service. Must be unique within customer account.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.24.2/docs/resources/loadbalancer#name Loadbalancer#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.25.0/docs/resources/loadbalancer#name Loadbalancer#name}
   */
   readonly name: string;
   /**
   * Private network UUID where traffic will be routed. Must reside in load balancer zone.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.24.2/docs/resources/loadbalancer#network Loadbalancer#network}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.25.0/docs/resources/loadbalancer#network Loadbalancer#network}
   */
   readonly network?: string;
   /**
   * Plan which the service will have. You can list available load balancer plans with `upctl loadbalancer plans`
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.24.2/docs/resources/loadbalancer#plan Loadbalancer#plan}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.25.0/docs/resources/loadbalancer#plan Loadbalancer#plan}
   */
   readonly plan: string;
   /**
   * Zone in which the service will be hosted, e.g. `fi-hel1`. You can list available zones with `upctl zone list`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.24.2/docs/resources/loadbalancer#zone Loadbalancer#zone}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.25.0/docs/resources/loadbalancer#zone Loadbalancer#zone}
   */
   readonly zone: string;
   /**
   * networks block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.24.2/docs/resources/loadbalancer#networks Loadbalancer#networks}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.25.0/docs/resources/loadbalancer#networks Loadbalancer#networks}
   */
   readonly networks?: LoadbalancerNetworks[] | cdktf.IResolvable;
+}
+export interface LoadbalancerIpAddresses {
+  /**
+  * Floating IP address to attach to the load balancer.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.25.0/docs/resources/loadbalancer#address Loadbalancer#address}
+  */
+  readonly address: string;
+  /**
+  * Name of the network where to attach the IP address.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.25.0/docs/resources/loadbalancer#network_name Loadbalancer#network_name}
+  */
+  readonly networkName: string;
+}
+
+export function loadbalancerIpAddressesToTerraform(struct?: LoadbalancerIpAddresses | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    address: cdktf.stringToTerraform(struct!.address),
+    network_name: cdktf.stringToTerraform(struct!.networkName),
+  }
+}
+
+
+export function loadbalancerIpAddressesToHclTerraform(struct?: LoadbalancerIpAddresses | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    address: {
+      value: cdktf.stringToHclTerraform(struct!.address),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    network_name: {
+      value: cdktf.stringToHclTerraform(struct!.networkName),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class LoadbalancerIpAddressesOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): LoadbalancerIpAddresses | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._address !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.address = this._address;
+    }
+    if (this._networkName !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.networkName = this._networkName;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: LoadbalancerIpAddresses | cdktf.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._address = undefined;
+      this._networkName = undefined;
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._address = value.address;
+      this._networkName = value.networkName;
+    }
+  }
+
+  // address - computed: false, optional: false, required: true
+  private _address?: string; 
+  public get address() {
+    return this.getStringAttribute('address');
+  }
+  public set address(value: string) {
+    this._address = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get addressInput() {
+    return this._address;
+  }
+
+  // network_name - computed: false, optional: false, required: true
+  private _networkName?: string; 
+  public get networkName() {
+    return this.getStringAttribute('network_name');
+  }
+  public set networkName(value: string) {
+    this._networkName = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get networkNameInput() {
+    return this._networkName;
+  }
+}
+
+export class LoadbalancerIpAddressesList extends cdktf.ComplexList {
+  public internalValue? : LoadbalancerIpAddresses[] | cdktf.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): LoadbalancerIpAddressesOutputReference {
+    return new LoadbalancerIpAddressesOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
 }
 export interface LoadbalancerNodesNetworksIpAddresses {
 }
@@ -318,25 +471,25 @@ export interface LoadbalancerNetworks {
   /**
   * Network family. Currently only `IPv4` is supported.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.24.2/docs/resources/loadbalancer#family Loadbalancer#family}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.25.0/docs/resources/loadbalancer#family Loadbalancer#family}
   */
   readonly family: string;
   /**
   * The name of the network. Must be unique within the service.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.24.2/docs/resources/loadbalancer#name Loadbalancer#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.25.0/docs/resources/loadbalancer#name Loadbalancer#name}
   */
   readonly name: string;
   /**
   * Private network UUID. Required for private networks and must reside in loadbalancer zone. For public network the field should be omitted.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.24.2/docs/resources/loadbalancer#network Loadbalancer#network}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.25.0/docs/resources/loadbalancer#network Loadbalancer#network}
   */
   readonly network?: string;
   /**
   * The type of the network. Only one public network can be attached and at least one private network must be attached.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.24.2/docs/resources/loadbalancer#type Loadbalancer#type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.25.0/docs/resources/loadbalancer#type Loadbalancer#type}
   */
   readonly type: string;
 }
@@ -540,7 +693,7 @@ export class LoadbalancerNetworksList extends cdktf.ComplexList {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.24.2/docs/resources/loadbalancer upcloud_loadbalancer}
+* Represents a {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.25.0/docs/resources/loadbalancer upcloud_loadbalancer}
 */
 export class Loadbalancer extends cdktf.TerraformResource {
 
@@ -556,7 +709,7 @@ export class Loadbalancer extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a Loadbalancer resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the Loadbalancer to import
-  * @param importFromId The id of the existing Loadbalancer that should be imported. Refer to the {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.24.2/docs/resources/loadbalancer#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing Loadbalancer that should be imported. Refer to the {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.25.0/docs/resources/loadbalancer#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the Loadbalancer to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -568,7 +721,7 @@ export class Loadbalancer extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.24.2/docs/resources/loadbalancer upcloud_loadbalancer} Resource
+  * Create a new {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.25.0/docs/resources/loadbalancer upcloud_loadbalancer} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -579,7 +732,7 @@ export class Loadbalancer extends cdktf.TerraformResource {
       terraformResourceType: 'upcloud_loadbalancer',
       terraformGeneratorMetadata: {
         providerName: 'upcloud',
-        providerVersion: '5.24.2',
+        providerVersion: '5.25.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,
@@ -591,6 +744,7 @@ export class Loadbalancer extends cdktf.TerraformResource {
       forEach: config.forEach
     });
     this._configuredStatus = config.configuredStatus;
+    this._ipAddresses.internalValue = config.ipAddresses;
     this._labels = config.labels;
     this._maintenanceDow = config.maintenanceDow;
     this._maintenanceTime = config.maintenanceTime;
@@ -639,6 +793,22 @@ export class Loadbalancer extends cdktf.TerraformResource {
   // id - computed: true, optional: false, required: false
   public get id() {
     return this.getStringAttribute('id');
+  }
+
+  // ip_addresses - computed: false, optional: true, required: false
+  private _ipAddresses = new LoadbalancerIpAddressesList(this, "ip_addresses", true);
+  public get ipAddresses() {
+    return this._ipAddresses;
+  }
+  public putIpAddresses(value: LoadbalancerIpAddresses[] | cdktf.IResolvable) {
+    this._ipAddresses.internalValue = value;
+  }
+  public resetIpAddresses() {
+    this._ipAddresses.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get ipAddressesInput() {
+    return this._ipAddresses.internalValue;
   }
 
   // labels - computed: true, optional: true, required: false
@@ -783,6 +953,7 @@ export class Loadbalancer extends cdktf.TerraformResource {
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
       configured_status: cdktf.stringToTerraform(this._configuredStatus),
+      ip_addresses: cdktf.listMapper(loadbalancerIpAddressesToTerraform, false)(this._ipAddresses.internalValue),
       labels: cdktf.hashMapper(cdktf.stringToTerraform)(this._labels),
       maintenance_dow: cdktf.stringToTerraform(this._maintenanceDow),
       maintenance_time: cdktf.stringToTerraform(this._maintenanceTime),
@@ -801,6 +972,12 @@ export class Loadbalancer extends cdktf.TerraformResource {
         isBlock: false,
         type: "simple",
         storageClassType: "string",
+      },
+      ip_addresses: {
+        value: cdktf.listMapperHcl(loadbalancerIpAddressesToHclTerraform, false)(this._ipAddresses.internalValue),
+        isBlock: true,
+        type: "set",
+        storageClassType: "LoadbalancerIpAddressesList",
       },
       labels: {
         value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._labels),
