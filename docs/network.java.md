@@ -4,7 +4,7 @@
 
 ### Network <a name="Network" id="@cdktf/provider-upcloud.network.Network"></a>
 
-Represents a {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.25.0/docs/resources/network upcloud_network}.
+Represents a {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.26.0/docs/resources/network upcloud_network}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-upcloud.network.Network.Initializer"></a>
 
@@ -117,7 +117,7 @@ Must be unique amongst siblings in the same scope
 
 Name of the network.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.25.0/docs/resources/network#name Network#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.26.0/docs/resources/network#name Network#name}
 
 ---
 
@@ -127,7 +127,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upclo
 
 The zone the network is in, e.g. `de-fra1`. You can list available zones with `upctl zone list`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.25.0/docs/resources/network#zone Network#zone}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.26.0/docs/resources/network#zone Network#zone}
 
 ---
 
@@ -137,7 +137,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upclo
 
 ip_network block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.25.0/docs/resources/network#ip_network Network#ip_network}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.26.0/docs/resources/network#ip_network Network#ip_network}
 
 ---
 
@@ -147,7 +147,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upclo
 
 User defined key-value pairs to classify the network.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.25.0/docs/resources/network#labels Network#labels}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.26.0/docs/resources/network#labels Network#labels}
 
 ---
 
@@ -157,7 +157,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upclo
 
 UUID of a router to attach to this network.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.25.0/docs/resources/network#router Network#router}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.26.0/docs/resources/network#router Network#router}
 
 ---
 
@@ -618,7 +618,7 @@ The construct id used in the generated config for the Network to import.
 
 The id of the existing Network that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.25.0/docs/resources/network#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.26.0/docs/resources/network#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1072,7 +1072,7 @@ public java.lang.String getName();
 
 Name of the network.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.25.0/docs/resources/network#name Network#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.26.0/docs/resources/network#name Network#name}
 
 ---
 
@@ -1086,7 +1086,7 @@ public java.lang.String getZone();
 
 The zone the network is in, e.g. `de-fra1`. You can list available zones with `upctl zone list`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.25.0/docs/resources/network#zone Network#zone}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.26.0/docs/resources/network#zone Network#zone}
 
 ---
 
@@ -1100,7 +1100,7 @@ public java.lang.Object getIpNetwork();
 
 ip_network block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.25.0/docs/resources/network#ip_network Network#ip_network}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.26.0/docs/resources/network#ip_network Network#ip_network}
 
 ---
 
@@ -1114,7 +1114,7 @@ public java.util.Map<java.lang.String, java.lang.String> getLabels();
 
 User defined key-value pairs to classify the network.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.25.0/docs/resources/network#labels Network#labels}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.26.0/docs/resources/network#labels Network#labels}
 
 ---
 
@@ -1128,7 +1128,7 @@ public java.lang.String getRouter();
 
 UUID of a router to attach to this network.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.25.0/docs/resources/network#router Network#router}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.26.0/docs/resources/network#router Network#router}
 
 ---
 
@@ -1148,6 +1148,7 @@ NetworkIpNetwork.builder()
 //  .dhcpDefaultRoute(IResolvable)
 //  .dhcpDns(java.util.List<java.lang.String>)
 //  .dhcpRoutes(java.util.List<java.lang.String>)
+//  .dhcpRoutesConfiguration(NetworkIpNetworkDhcpRoutesConfiguration)
 //  .gateway(java.lang.String)
     .build();
 ```
@@ -1162,6 +1163,7 @@ NetworkIpNetwork.builder()
 | <code><a href="#@cdktf/provider-upcloud.network.NetworkIpNetwork.property.dhcpDefaultRoute">dhcpDefaultRoute</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Is the gateway the DHCP default route? |
 | <code><a href="#@cdktf/provider-upcloud.network.NetworkIpNetwork.property.dhcpDns">dhcpDns</a></code> | <code>java.util.List<java.lang.String></code> | The DNS servers given by DHCP. |
 | <code><a href="#@cdktf/provider-upcloud.network.NetworkIpNetwork.property.dhcpRoutes">dhcpRoutes</a></code> | <code>java.util.List<java.lang.String></code> | The additional DHCP classless static routes given by DHCP. |
+| <code><a href="#@cdktf/provider-upcloud.network.NetworkIpNetwork.property.dhcpRoutesConfiguration">dhcpRoutesConfiguration</a></code> | <code><a href="#@cdktf/provider-upcloud.network.NetworkIpNetworkDhcpRoutesConfiguration">NetworkIpNetworkDhcpRoutesConfiguration</a></code> | DHCP routes auto-population configuration. |
 | <code><a href="#@cdktf/provider-upcloud.network.NetworkIpNetwork.property.gateway">gateway</a></code> | <code>java.lang.String</code> | Gateway address given by DHCP. |
 
 ---
@@ -1176,7 +1178,7 @@ public java.lang.String getAddress();
 
 The CIDR range of the subnet.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.25.0/docs/resources/network#address Network#address}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.26.0/docs/resources/network#address Network#address}
 
 ---
 
@@ -1190,7 +1192,7 @@ public java.lang.Object getDhcp();
 
 Is DHCP enabled?
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.25.0/docs/resources/network#dhcp Network#dhcp}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.26.0/docs/resources/network#dhcp Network#dhcp}
 
 ---
 
@@ -1204,7 +1206,7 @@ public java.lang.String getFamily();
 
 IP address family.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.25.0/docs/resources/network#family Network#family}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.26.0/docs/resources/network#family Network#family}
 
 ---
 
@@ -1218,7 +1220,7 @@ public java.lang.Object getDhcpDefaultRoute();
 
 Is the gateway the DHCP default route?
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.25.0/docs/resources/network#dhcp_default_route Network#dhcp_default_route}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.26.0/docs/resources/network#dhcp_default_route Network#dhcp_default_route}
 
 ---
 
@@ -1232,7 +1234,7 @@ public java.util.List<java.lang.String> getDhcpDns();
 
 The DNS servers given by DHCP.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.25.0/docs/resources/network#dhcp_dns Network#dhcp_dns}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.26.0/docs/resources/network#dhcp_dns Network#dhcp_dns}
 
 ---
 
@@ -1246,7 +1248,21 @@ public java.util.List<java.lang.String> getDhcpRoutes();
 
 The additional DHCP classless static routes given by DHCP.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.25.0/docs/resources/network#dhcp_routes Network#dhcp_routes}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.26.0/docs/resources/network#dhcp_routes Network#dhcp_routes}
+
+---
+
+##### `dhcpRoutesConfiguration`<sup>Optional</sup> <a name="dhcpRoutesConfiguration" id="@cdktf/provider-upcloud.network.NetworkIpNetwork.property.dhcpRoutesConfiguration"></a>
+
+```java
+public NetworkIpNetworkDhcpRoutesConfiguration getDhcpRoutesConfiguration();
+```
+
+- *Type:* <a href="#@cdktf/provider-upcloud.network.NetworkIpNetworkDhcpRoutesConfiguration">NetworkIpNetworkDhcpRoutesConfiguration</a>
+
+DHCP routes auto-population configuration.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.26.0/docs/resources/network#dhcp_routes_configuration Network#dhcp_routes_configuration}
 
 ---
 
@@ -1260,11 +1276,784 @@ public java.lang.String getGateway();
 
 Gateway address given by DHCP.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.25.0/docs/resources/network#gateway Network#gateway}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.26.0/docs/resources/network#gateway Network#gateway}
+
+---
+
+### NetworkIpNetworkDhcpRoutesConfiguration <a name="NetworkIpNetworkDhcpRoutesConfiguration" id="@cdktf/provider-upcloud.network.NetworkIpNetworkDhcpRoutesConfiguration"></a>
+
+#### Initializer <a name="Initializer" id="@cdktf/provider-upcloud.network.NetworkIpNetworkDhcpRoutesConfiguration.Initializer"></a>
+
+```java
+import com.hashicorp.cdktf.providers.upcloud.network.NetworkIpNetworkDhcpRoutesConfiguration;
+
+NetworkIpNetworkDhcpRoutesConfiguration.builder()
+//  .effectiveRoutesAutoPopulation(NetworkIpNetworkDhcpRoutesConfigurationEffectiveRoutesAutoPopulation)
+    .build();
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-upcloud.network.NetworkIpNetworkDhcpRoutesConfiguration.property.effectiveRoutesAutoPopulation">effectiveRoutesAutoPopulation</a></code> | <code><a href="#@cdktf/provider-upcloud.network.NetworkIpNetworkDhcpRoutesConfigurationEffectiveRoutesAutoPopulation">NetworkIpNetworkDhcpRoutesConfigurationEffectiveRoutesAutoPopulation</a></code> | Automatically populate effective routes. |
+
+---
+
+##### `effectiveRoutesAutoPopulation`<sup>Optional</sup> <a name="effectiveRoutesAutoPopulation" id="@cdktf/provider-upcloud.network.NetworkIpNetworkDhcpRoutesConfiguration.property.effectiveRoutesAutoPopulation"></a>
+
+```java
+public NetworkIpNetworkDhcpRoutesConfigurationEffectiveRoutesAutoPopulation getEffectiveRoutesAutoPopulation();
+```
+
+- *Type:* <a href="#@cdktf/provider-upcloud.network.NetworkIpNetworkDhcpRoutesConfigurationEffectiveRoutesAutoPopulation">NetworkIpNetworkDhcpRoutesConfigurationEffectiveRoutesAutoPopulation</a>
+
+Automatically populate effective routes.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.26.0/docs/resources/network#effective_routes_auto_population Network#effective_routes_auto_population}
+
+---
+
+### NetworkIpNetworkDhcpRoutesConfigurationEffectiveRoutesAutoPopulation <a name="NetworkIpNetworkDhcpRoutesConfigurationEffectiveRoutesAutoPopulation" id="@cdktf/provider-upcloud.network.NetworkIpNetworkDhcpRoutesConfigurationEffectiveRoutesAutoPopulation"></a>
+
+#### Initializer <a name="Initializer" id="@cdktf/provider-upcloud.network.NetworkIpNetworkDhcpRoutesConfigurationEffectiveRoutesAutoPopulation.Initializer"></a>
+
+```java
+import com.hashicorp.cdktf.providers.upcloud.network.NetworkIpNetworkDhcpRoutesConfigurationEffectiveRoutesAutoPopulation;
+
+NetworkIpNetworkDhcpRoutesConfigurationEffectiveRoutesAutoPopulation.builder()
+//  .enabled(java.lang.Boolean)
+//  .enabled(IResolvable)
+//  .excludeBySource(java.util.List<java.lang.String>)
+//  .filterByDestination(java.util.List<java.lang.String>)
+//  .filterByRouteType(java.util.List<java.lang.String>)
+    .build();
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-upcloud.network.NetworkIpNetworkDhcpRoutesConfigurationEffectiveRoutesAutoPopulation.property.enabled">enabled</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Enable or disable route auto-population. |
+| <code><a href="#@cdktf/provider-upcloud.network.NetworkIpNetworkDhcpRoutesConfigurationEffectiveRoutesAutoPopulation.property.excludeBySource">excludeBySource</a></code> | <code>java.util.List<java.lang.String></code> | Exclude routes coming from specific sources (router-connected-networks, static-route). |
+| <code><a href="#@cdktf/provider-upcloud.network.NetworkIpNetworkDhcpRoutesConfigurationEffectiveRoutesAutoPopulation.property.filterByDestination">filterByDestination</a></code> | <code>java.util.List<java.lang.String></code> | CIDR destinations to include when auto-populating routes. |
+| <code><a href="#@cdktf/provider-upcloud.network.NetworkIpNetworkDhcpRoutesConfigurationEffectiveRoutesAutoPopulation.property.filterByRouteType">filterByRouteType</a></code> | <code>java.util.List<java.lang.String></code> | Include only routes of given types (service, user). |
+
+---
+
+##### `enabled`<sup>Optional</sup> <a name="enabled" id="@cdktf/provider-upcloud.network.NetworkIpNetworkDhcpRoutesConfigurationEffectiveRoutesAutoPopulation.property.enabled"></a>
+
+```java
+public java.lang.Object getEnabled();
+```
+
+- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+
+Enable or disable route auto-population.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.26.0/docs/resources/network#enabled Network#enabled}
+
+---
+
+##### `excludeBySource`<sup>Optional</sup> <a name="excludeBySource" id="@cdktf/provider-upcloud.network.NetworkIpNetworkDhcpRoutesConfigurationEffectiveRoutesAutoPopulation.property.excludeBySource"></a>
+
+```java
+public java.util.List<java.lang.String> getExcludeBySource();
+```
+
+- *Type:* java.util.List<java.lang.String>
+
+Exclude routes coming from specific sources (router-connected-networks, static-route).
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.26.0/docs/resources/network#exclude_by_source Network#exclude_by_source}
+
+---
+
+##### `filterByDestination`<sup>Optional</sup> <a name="filterByDestination" id="@cdktf/provider-upcloud.network.NetworkIpNetworkDhcpRoutesConfigurationEffectiveRoutesAutoPopulation.property.filterByDestination"></a>
+
+```java
+public java.util.List<java.lang.String> getFilterByDestination();
+```
+
+- *Type:* java.util.List<java.lang.String>
+
+CIDR destinations to include when auto-populating routes.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.26.0/docs/resources/network#filter_by_destination Network#filter_by_destination}
+
+---
+
+##### `filterByRouteType`<sup>Optional</sup> <a name="filterByRouteType" id="@cdktf/provider-upcloud.network.NetworkIpNetworkDhcpRoutesConfigurationEffectiveRoutesAutoPopulation.property.filterByRouteType"></a>
+
+```java
+public java.util.List<java.lang.String> getFilterByRouteType();
+```
+
+- *Type:* java.util.List<java.lang.String>
+
+Include only routes of given types (service, user).
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.26.0/docs/resources/network#filter_by_route_type Network#filter_by_route_type}
 
 ---
 
 ## Classes <a name="Classes" id="Classes"></a>
+
+### NetworkIpNetworkDhcpRoutesConfigurationEffectiveRoutesAutoPopulationOutputReference <a name="NetworkIpNetworkDhcpRoutesConfigurationEffectiveRoutesAutoPopulationOutputReference" id="@cdktf/provider-upcloud.network.NetworkIpNetworkDhcpRoutesConfigurationEffectiveRoutesAutoPopulationOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktf/provider-upcloud.network.NetworkIpNetworkDhcpRoutesConfigurationEffectiveRoutesAutoPopulationOutputReference.Initializer"></a>
+
+```java
+import com.hashicorp.cdktf.providers.upcloud.network.NetworkIpNetworkDhcpRoutesConfigurationEffectiveRoutesAutoPopulationOutputReference;
+
+new NetworkIpNetworkDhcpRoutesConfigurationEffectiveRoutesAutoPopulationOutputReference(IInterpolatingParent terraformResource, java.lang.String terraformAttribute);
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-upcloud.network.NetworkIpNetworkDhcpRoutesConfigurationEffectiveRoutesAutoPopulationOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>com.hashicorp.cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktf/provider-upcloud.network.NetworkIpNetworkDhcpRoutesConfigurationEffectiveRoutesAutoPopulationOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>java.lang.String</code> | The attribute on the parent resource this class is referencing. |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktf/provider-upcloud.network.NetworkIpNetworkDhcpRoutesConfigurationEffectiveRoutesAutoPopulationOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* com.hashicorp.cdktf.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-upcloud.network.NetworkIpNetworkDhcpRoutesConfigurationEffectiveRoutesAutoPopulationOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktf/provider-upcloud.network.NetworkIpNetworkDhcpRoutesConfigurationEffectiveRoutesAutoPopulationOutputReference.computeFqn">computeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-upcloud.network.NetworkIpNetworkDhcpRoutesConfigurationEffectiveRoutesAutoPopulationOutputReference.getAnyMapAttribute">getAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-upcloud.network.NetworkIpNetworkDhcpRoutesConfigurationEffectiveRoutesAutoPopulationOutputReference.getBooleanAttribute">getBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-upcloud.network.NetworkIpNetworkDhcpRoutesConfigurationEffectiveRoutesAutoPopulationOutputReference.getBooleanMapAttribute">getBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-upcloud.network.NetworkIpNetworkDhcpRoutesConfigurationEffectiveRoutesAutoPopulationOutputReference.getListAttribute">getListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-upcloud.network.NetworkIpNetworkDhcpRoutesConfigurationEffectiveRoutesAutoPopulationOutputReference.getNumberAttribute">getNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-upcloud.network.NetworkIpNetworkDhcpRoutesConfigurationEffectiveRoutesAutoPopulationOutputReference.getNumberListAttribute">getNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-upcloud.network.NetworkIpNetworkDhcpRoutesConfigurationEffectiveRoutesAutoPopulationOutputReference.getNumberMapAttribute">getNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-upcloud.network.NetworkIpNetworkDhcpRoutesConfigurationEffectiveRoutesAutoPopulationOutputReference.getStringAttribute">getStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-upcloud.network.NetworkIpNetworkDhcpRoutesConfigurationEffectiveRoutesAutoPopulationOutputReference.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-upcloud.network.NetworkIpNetworkDhcpRoutesConfigurationEffectiveRoutesAutoPopulationOutputReference.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-upcloud.network.NetworkIpNetworkDhcpRoutesConfigurationEffectiveRoutesAutoPopulationOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktf/provider-upcloud.network.NetworkIpNetworkDhcpRoutesConfigurationEffectiveRoutesAutoPopulationOutputReference.toString">toString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktf/provider-upcloud.network.NetworkIpNetworkDhcpRoutesConfigurationEffectiveRoutesAutoPopulationOutputReference.resetEnabled">resetEnabled</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-upcloud.network.NetworkIpNetworkDhcpRoutesConfigurationEffectiveRoutesAutoPopulationOutputReference.resetExcludeBySource">resetExcludeBySource</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-upcloud.network.NetworkIpNetworkDhcpRoutesConfigurationEffectiveRoutesAutoPopulationOutputReference.resetFilterByDestination">resetFilterByDestination</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-upcloud.network.NetworkIpNetworkDhcpRoutesConfigurationEffectiveRoutesAutoPopulationOutputReference.resetFilterByRouteType">resetFilterByRouteType</a></code> | *No description.* |
+
+---
+
+##### `computeFqn` <a name="computeFqn" id="@cdktf/provider-upcloud.network.NetworkIpNetworkDhcpRoutesConfigurationEffectiveRoutesAutoPopulationOutputReference.computeFqn"></a>
+
+```java
+public java.lang.String computeFqn()
+```
+
+##### `getAnyMapAttribute` <a name="getAnyMapAttribute" id="@cdktf/provider-upcloud.network.NetworkIpNetworkDhcpRoutesConfigurationEffectiveRoutesAutoPopulationOutputReference.getAnyMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.Object> getAnyMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-upcloud.network.NetworkIpNetworkDhcpRoutesConfigurationEffectiveRoutesAutoPopulationOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getBooleanAttribute` <a name="getBooleanAttribute" id="@cdktf/provider-upcloud.network.NetworkIpNetworkDhcpRoutesConfigurationEffectiveRoutesAutoPopulationOutputReference.getBooleanAttribute"></a>
+
+```java
+public IResolvable getBooleanAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-upcloud.network.NetworkIpNetworkDhcpRoutesConfigurationEffectiveRoutesAutoPopulationOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getBooleanMapAttribute` <a name="getBooleanMapAttribute" id="@cdktf/provider-upcloud.network.NetworkIpNetworkDhcpRoutesConfigurationEffectiveRoutesAutoPopulationOutputReference.getBooleanMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.Boolean> getBooleanMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-upcloud.network.NetworkIpNetworkDhcpRoutesConfigurationEffectiveRoutesAutoPopulationOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getListAttribute` <a name="getListAttribute" id="@cdktf/provider-upcloud.network.NetworkIpNetworkDhcpRoutesConfigurationEffectiveRoutesAutoPopulationOutputReference.getListAttribute"></a>
+
+```java
+public java.util.List<java.lang.String> getListAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-upcloud.network.NetworkIpNetworkDhcpRoutesConfigurationEffectiveRoutesAutoPopulationOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getNumberAttribute` <a name="getNumberAttribute" id="@cdktf/provider-upcloud.network.NetworkIpNetworkDhcpRoutesConfigurationEffectiveRoutesAutoPopulationOutputReference.getNumberAttribute"></a>
+
+```java
+public java.lang.Number getNumberAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-upcloud.network.NetworkIpNetworkDhcpRoutesConfigurationEffectiveRoutesAutoPopulationOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getNumberListAttribute` <a name="getNumberListAttribute" id="@cdktf/provider-upcloud.network.NetworkIpNetworkDhcpRoutesConfigurationEffectiveRoutesAutoPopulationOutputReference.getNumberListAttribute"></a>
+
+```java
+public java.util.List<java.lang.Number> getNumberListAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-upcloud.network.NetworkIpNetworkDhcpRoutesConfigurationEffectiveRoutesAutoPopulationOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getNumberMapAttribute` <a name="getNumberMapAttribute" id="@cdktf/provider-upcloud.network.NetworkIpNetworkDhcpRoutesConfigurationEffectiveRoutesAutoPopulationOutputReference.getNumberMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.Number> getNumberMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-upcloud.network.NetworkIpNetworkDhcpRoutesConfigurationEffectiveRoutesAutoPopulationOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getStringAttribute` <a name="getStringAttribute" id="@cdktf/provider-upcloud.network.NetworkIpNetworkDhcpRoutesConfigurationEffectiveRoutesAutoPopulationOutputReference.getStringAttribute"></a>
+
+```java
+public java.lang.String getStringAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-upcloud.network.NetworkIpNetworkDhcpRoutesConfigurationEffectiveRoutesAutoPopulationOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getStringMapAttribute` <a name="getStringMapAttribute" id="@cdktf/provider-upcloud.network.NetworkIpNetworkDhcpRoutesConfigurationEffectiveRoutesAutoPopulationOutputReference.getStringMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.String> getStringMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-upcloud.network.NetworkIpNetworkDhcpRoutesConfigurationEffectiveRoutesAutoPopulationOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `interpolationForAttribute` <a name="interpolationForAttribute" id="@cdktf/provider-upcloud.network.NetworkIpNetworkDhcpRoutesConfigurationEffectiveRoutesAutoPopulationOutputReference.interpolationForAttribute"></a>
+
+```java
+public IResolvable interpolationForAttribute(java.lang.String property)
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktf/provider-upcloud.network.NetworkIpNetworkDhcpRoutesConfigurationEffectiveRoutesAutoPopulationOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `resolve` <a name="resolve" id="@cdktf/provider-upcloud.network.NetworkIpNetworkDhcpRoutesConfigurationEffectiveRoutesAutoPopulationOutputReference.resolve"></a>
+
+```java
+public java.lang.Object resolve(IResolveContext _context)
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktf/provider-upcloud.network.NetworkIpNetworkDhcpRoutesConfigurationEffectiveRoutesAutoPopulationOutputReference.resolve.parameter._context"></a>
+
+- *Type:* com.hashicorp.cdktf.IResolveContext
+
+---
+
+##### `toString` <a name="toString" id="@cdktf/provider-upcloud.network.NetworkIpNetworkDhcpRoutesConfigurationEffectiveRoutesAutoPopulationOutputReference.toString"></a>
+
+```java
+public java.lang.String toString()
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `resetEnabled` <a name="resetEnabled" id="@cdktf/provider-upcloud.network.NetworkIpNetworkDhcpRoutesConfigurationEffectiveRoutesAutoPopulationOutputReference.resetEnabled"></a>
+
+```java
+public void resetEnabled()
+```
+
+##### `resetExcludeBySource` <a name="resetExcludeBySource" id="@cdktf/provider-upcloud.network.NetworkIpNetworkDhcpRoutesConfigurationEffectiveRoutesAutoPopulationOutputReference.resetExcludeBySource"></a>
+
+```java
+public void resetExcludeBySource()
+```
+
+##### `resetFilterByDestination` <a name="resetFilterByDestination" id="@cdktf/provider-upcloud.network.NetworkIpNetworkDhcpRoutesConfigurationEffectiveRoutesAutoPopulationOutputReference.resetFilterByDestination"></a>
+
+```java
+public void resetFilterByDestination()
+```
+
+##### `resetFilterByRouteType` <a name="resetFilterByRouteType" id="@cdktf/provider-upcloud.network.NetworkIpNetworkDhcpRoutesConfigurationEffectiveRoutesAutoPopulationOutputReference.resetFilterByRouteType"></a>
+
+```java
+public void resetFilterByRouteType()
+```
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-upcloud.network.NetworkIpNetworkDhcpRoutesConfigurationEffectiveRoutesAutoPopulationOutputReference.property.creationStack">creationStack</a></code> | <code>java.util.List<java.lang.String></code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktf/provider-upcloud.network.NetworkIpNetworkDhcpRoutesConfigurationEffectiveRoutesAutoPopulationOutputReference.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktf/provider-upcloud.network.NetworkIpNetworkDhcpRoutesConfigurationEffectiveRoutesAutoPopulationOutputReference.property.enabledInput">enabledInput</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-upcloud.network.NetworkIpNetworkDhcpRoutesConfigurationEffectiveRoutesAutoPopulationOutputReference.property.excludeBySourceInput">excludeBySourceInput</a></code> | <code>java.util.List<java.lang.String></code> | *No description.* |
+| <code><a href="#@cdktf/provider-upcloud.network.NetworkIpNetworkDhcpRoutesConfigurationEffectiveRoutesAutoPopulationOutputReference.property.filterByDestinationInput">filterByDestinationInput</a></code> | <code>java.util.List<java.lang.String></code> | *No description.* |
+| <code><a href="#@cdktf/provider-upcloud.network.NetworkIpNetworkDhcpRoutesConfigurationEffectiveRoutesAutoPopulationOutputReference.property.filterByRouteTypeInput">filterByRouteTypeInput</a></code> | <code>java.util.List<java.lang.String></code> | *No description.* |
+| <code><a href="#@cdktf/provider-upcloud.network.NetworkIpNetworkDhcpRoutesConfigurationEffectiveRoutesAutoPopulationOutputReference.property.enabled">enabled</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-upcloud.network.NetworkIpNetworkDhcpRoutesConfigurationEffectiveRoutesAutoPopulationOutputReference.property.excludeBySource">excludeBySource</a></code> | <code>java.util.List<java.lang.String></code> | *No description.* |
+| <code><a href="#@cdktf/provider-upcloud.network.NetworkIpNetworkDhcpRoutesConfigurationEffectiveRoutesAutoPopulationOutputReference.property.filterByDestination">filterByDestination</a></code> | <code>java.util.List<java.lang.String></code> | *No description.* |
+| <code><a href="#@cdktf/provider-upcloud.network.NetworkIpNetworkDhcpRoutesConfigurationEffectiveRoutesAutoPopulationOutputReference.property.filterByRouteType">filterByRouteType</a></code> | <code>java.util.List<java.lang.String></code> | *No description.* |
+| <code><a href="#@cdktf/provider-upcloud.network.NetworkIpNetworkDhcpRoutesConfigurationEffectiveRoutesAutoPopulationOutputReference.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-upcloud.network.NetworkIpNetworkDhcpRoutesConfigurationEffectiveRoutesAutoPopulation">NetworkIpNetworkDhcpRoutesConfigurationEffectiveRoutesAutoPopulation</a></code> | *No description.* |
+
+---
+
+##### `creationStack`<sup>Required</sup> <a name="creationStack" id="@cdktf/provider-upcloud.network.NetworkIpNetworkDhcpRoutesConfigurationEffectiveRoutesAutoPopulationOutputReference.property.creationStack"></a>
+
+```java
+public java.util.List<java.lang.String> getCreationStack();
+```
+
+- *Type:* java.util.List<java.lang.String>
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktf/provider-upcloud.network.NetworkIpNetworkDhcpRoutesConfigurationEffectiveRoutesAutoPopulationOutputReference.property.fqn"></a>
+
+```java
+public java.lang.String getFqn();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `enabledInput`<sup>Optional</sup> <a name="enabledInput" id="@cdktf/provider-upcloud.network.NetworkIpNetworkDhcpRoutesConfigurationEffectiveRoutesAutoPopulationOutputReference.property.enabledInput"></a>
+
+```java
+public java.lang.Object getEnabledInput();
+```
+
+- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+
+---
+
+##### `excludeBySourceInput`<sup>Optional</sup> <a name="excludeBySourceInput" id="@cdktf/provider-upcloud.network.NetworkIpNetworkDhcpRoutesConfigurationEffectiveRoutesAutoPopulationOutputReference.property.excludeBySourceInput"></a>
+
+```java
+public java.util.List<java.lang.String> getExcludeBySourceInput();
+```
+
+- *Type:* java.util.List<java.lang.String>
+
+---
+
+##### `filterByDestinationInput`<sup>Optional</sup> <a name="filterByDestinationInput" id="@cdktf/provider-upcloud.network.NetworkIpNetworkDhcpRoutesConfigurationEffectiveRoutesAutoPopulationOutputReference.property.filterByDestinationInput"></a>
+
+```java
+public java.util.List<java.lang.String> getFilterByDestinationInput();
+```
+
+- *Type:* java.util.List<java.lang.String>
+
+---
+
+##### `filterByRouteTypeInput`<sup>Optional</sup> <a name="filterByRouteTypeInput" id="@cdktf/provider-upcloud.network.NetworkIpNetworkDhcpRoutesConfigurationEffectiveRoutesAutoPopulationOutputReference.property.filterByRouteTypeInput"></a>
+
+```java
+public java.util.List<java.lang.String> getFilterByRouteTypeInput();
+```
+
+- *Type:* java.util.List<java.lang.String>
+
+---
+
+##### `enabled`<sup>Required</sup> <a name="enabled" id="@cdktf/provider-upcloud.network.NetworkIpNetworkDhcpRoutesConfigurationEffectiveRoutesAutoPopulationOutputReference.property.enabled"></a>
+
+```java
+public java.lang.Object getEnabled();
+```
+
+- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+
+---
+
+##### `excludeBySource`<sup>Required</sup> <a name="excludeBySource" id="@cdktf/provider-upcloud.network.NetworkIpNetworkDhcpRoutesConfigurationEffectiveRoutesAutoPopulationOutputReference.property.excludeBySource"></a>
+
+```java
+public java.util.List<java.lang.String> getExcludeBySource();
+```
+
+- *Type:* java.util.List<java.lang.String>
+
+---
+
+##### `filterByDestination`<sup>Required</sup> <a name="filterByDestination" id="@cdktf/provider-upcloud.network.NetworkIpNetworkDhcpRoutesConfigurationEffectiveRoutesAutoPopulationOutputReference.property.filterByDestination"></a>
+
+```java
+public java.util.List<java.lang.String> getFilterByDestination();
+```
+
+- *Type:* java.util.List<java.lang.String>
+
+---
+
+##### `filterByRouteType`<sup>Required</sup> <a name="filterByRouteType" id="@cdktf/provider-upcloud.network.NetworkIpNetworkDhcpRoutesConfigurationEffectiveRoutesAutoPopulationOutputReference.property.filterByRouteType"></a>
+
+```java
+public java.util.List<java.lang.String> getFilterByRouteType();
+```
+
+- *Type:* java.util.List<java.lang.String>
+
+---
+
+##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-upcloud.network.NetworkIpNetworkDhcpRoutesConfigurationEffectiveRoutesAutoPopulationOutputReference.property.internalValue"></a>
+
+```java
+public java.lang.Object getInternalValue();
+```
+
+- *Type:* com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-upcloud.network.NetworkIpNetworkDhcpRoutesConfigurationEffectiveRoutesAutoPopulation">NetworkIpNetworkDhcpRoutesConfigurationEffectiveRoutesAutoPopulation</a>
+
+---
+
+
+### NetworkIpNetworkDhcpRoutesConfigurationOutputReference <a name="NetworkIpNetworkDhcpRoutesConfigurationOutputReference" id="@cdktf/provider-upcloud.network.NetworkIpNetworkDhcpRoutesConfigurationOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktf/provider-upcloud.network.NetworkIpNetworkDhcpRoutesConfigurationOutputReference.Initializer"></a>
+
+```java
+import com.hashicorp.cdktf.providers.upcloud.network.NetworkIpNetworkDhcpRoutesConfigurationOutputReference;
+
+new NetworkIpNetworkDhcpRoutesConfigurationOutputReference(IInterpolatingParent terraformResource, java.lang.String terraformAttribute);
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-upcloud.network.NetworkIpNetworkDhcpRoutesConfigurationOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>com.hashicorp.cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktf/provider-upcloud.network.NetworkIpNetworkDhcpRoutesConfigurationOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>java.lang.String</code> | The attribute on the parent resource this class is referencing. |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktf/provider-upcloud.network.NetworkIpNetworkDhcpRoutesConfigurationOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* com.hashicorp.cdktf.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-upcloud.network.NetworkIpNetworkDhcpRoutesConfigurationOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktf/provider-upcloud.network.NetworkIpNetworkDhcpRoutesConfigurationOutputReference.computeFqn">computeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-upcloud.network.NetworkIpNetworkDhcpRoutesConfigurationOutputReference.getAnyMapAttribute">getAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-upcloud.network.NetworkIpNetworkDhcpRoutesConfigurationOutputReference.getBooleanAttribute">getBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-upcloud.network.NetworkIpNetworkDhcpRoutesConfigurationOutputReference.getBooleanMapAttribute">getBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-upcloud.network.NetworkIpNetworkDhcpRoutesConfigurationOutputReference.getListAttribute">getListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-upcloud.network.NetworkIpNetworkDhcpRoutesConfigurationOutputReference.getNumberAttribute">getNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-upcloud.network.NetworkIpNetworkDhcpRoutesConfigurationOutputReference.getNumberListAttribute">getNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-upcloud.network.NetworkIpNetworkDhcpRoutesConfigurationOutputReference.getNumberMapAttribute">getNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-upcloud.network.NetworkIpNetworkDhcpRoutesConfigurationOutputReference.getStringAttribute">getStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-upcloud.network.NetworkIpNetworkDhcpRoutesConfigurationOutputReference.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-upcloud.network.NetworkIpNetworkDhcpRoutesConfigurationOutputReference.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-upcloud.network.NetworkIpNetworkDhcpRoutesConfigurationOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktf/provider-upcloud.network.NetworkIpNetworkDhcpRoutesConfigurationOutputReference.toString">toString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktf/provider-upcloud.network.NetworkIpNetworkDhcpRoutesConfigurationOutputReference.putEffectiveRoutesAutoPopulation">putEffectiveRoutesAutoPopulation</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-upcloud.network.NetworkIpNetworkDhcpRoutesConfigurationOutputReference.resetEffectiveRoutesAutoPopulation">resetEffectiveRoutesAutoPopulation</a></code> | *No description.* |
+
+---
+
+##### `computeFqn` <a name="computeFqn" id="@cdktf/provider-upcloud.network.NetworkIpNetworkDhcpRoutesConfigurationOutputReference.computeFqn"></a>
+
+```java
+public java.lang.String computeFqn()
+```
+
+##### `getAnyMapAttribute` <a name="getAnyMapAttribute" id="@cdktf/provider-upcloud.network.NetworkIpNetworkDhcpRoutesConfigurationOutputReference.getAnyMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.Object> getAnyMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-upcloud.network.NetworkIpNetworkDhcpRoutesConfigurationOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getBooleanAttribute` <a name="getBooleanAttribute" id="@cdktf/provider-upcloud.network.NetworkIpNetworkDhcpRoutesConfigurationOutputReference.getBooleanAttribute"></a>
+
+```java
+public IResolvable getBooleanAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-upcloud.network.NetworkIpNetworkDhcpRoutesConfigurationOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getBooleanMapAttribute` <a name="getBooleanMapAttribute" id="@cdktf/provider-upcloud.network.NetworkIpNetworkDhcpRoutesConfigurationOutputReference.getBooleanMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.Boolean> getBooleanMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-upcloud.network.NetworkIpNetworkDhcpRoutesConfigurationOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getListAttribute` <a name="getListAttribute" id="@cdktf/provider-upcloud.network.NetworkIpNetworkDhcpRoutesConfigurationOutputReference.getListAttribute"></a>
+
+```java
+public java.util.List<java.lang.String> getListAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-upcloud.network.NetworkIpNetworkDhcpRoutesConfigurationOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getNumberAttribute` <a name="getNumberAttribute" id="@cdktf/provider-upcloud.network.NetworkIpNetworkDhcpRoutesConfigurationOutputReference.getNumberAttribute"></a>
+
+```java
+public java.lang.Number getNumberAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-upcloud.network.NetworkIpNetworkDhcpRoutesConfigurationOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getNumberListAttribute` <a name="getNumberListAttribute" id="@cdktf/provider-upcloud.network.NetworkIpNetworkDhcpRoutesConfigurationOutputReference.getNumberListAttribute"></a>
+
+```java
+public java.util.List<java.lang.Number> getNumberListAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-upcloud.network.NetworkIpNetworkDhcpRoutesConfigurationOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getNumberMapAttribute` <a name="getNumberMapAttribute" id="@cdktf/provider-upcloud.network.NetworkIpNetworkDhcpRoutesConfigurationOutputReference.getNumberMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.Number> getNumberMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-upcloud.network.NetworkIpNetworkDhcpRoutesConfigurationOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getStringAttribute` <a name="getStringAttribute" id="@cdktf/provider-upcloud.network.NetworkIpNetworkDhcpRoutesConfigurationOutputReference.getStringAttribute"></a>
+
+```java
+public java.lang.String getStringAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-upcloud.network.NetworkIpNetworkDhcpRoutesConfigurationOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getStringMapAttribute` <a name="getStringMapAttribute" id="@cdktf/provider-upcloud.network.NetworkIpNetworkDhcpRoutesConfigurationOutputReference.getStringMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.String> getStringMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-upcloud.network.NetworkIpNetworkDhcpRoutesConfigurationOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `interpolationForAttribute` <a name="interpolationForAttribute" id="@cdktf/provider-upcloud.network.NetworkIpNetworkDhcpRoutesConfigurationOutputReference.interpolationForAttribute"></a>
+
+```java
+public IResolvable interpolationForAttribute(java.lang.String property)
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktf/provider-upcloud.network.NetworkIpNetworkDhcpRoutesConfigurationOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `resolve` <a name="resolve" id="@cdktf/provider-upcloud.network.NetworkIpNetworkDhcpRoutesConfigurationOutputReference.resolve"></a>
+
+```java
+public java.lang.Object resolve(IResolveContext _context)
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktf/provider-upcloud.network.NetworkIpNetworkDhcpRoutesConfigurationOutputReference.resolve.parameter._context"></a>
+
+- *Type:* com.hashicorp.cdktf.IResolveContext
+
+---
+
+##### `toString` <a name="toString" id="@cdktf/provider-upcloud.network.NetworkIpNetworkDhcpRoutesConfigurationOutputReference.toString"></a>
+
+```java
+public java.lang.String toString()
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `putEffectiveRoutesAutoPopulation` <a name="putEffectiveRoutesAutoPopulation" id="@cdktf/provider-upcloud.network.NetworkIpNetworkDhcpRoutesConfigurationOutputReference.putEffectiveRoutesAutoPopulation"></a>
+
+```java
+public void putEffectiveRoutesAutoPopulation(NetworkIpNetworkDhcpRoutesConfigurationEffectiveRoutesAutoPopulation value)
+```
+
+###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-upcloud.network.NetworkIpNetworkDhcpRoutesConfigurationOutputReference.putEffectiveRoutesAutoPopulation.parameter.value"></a>
+
+- *Type:* <a href="#@cdktf/provider-upcloud.network.NetworkIpNetworkDhcpRoutesConfigurationEffectiveRoutesAutoPopulation">NetworkIpNetworkDhcpRoutesConfigurationEffectiveRoutesAutoPopulation</a>
+
+---
+
+##### `resetEffectiveRoutesAutoPopulation` <a name="resetEffectiveRoutesAutoPopulation" id="@cdktf/provider-upcloud.network.NetworkIpNetworkDhcpRoutesConfigurationOutputReference.resetEffectiveRoutesAutoPopulation"></a>
+
+```java
+public void resetEffectiveRoutesAutoPopulation()
+```
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-upcloud.network.NetworkIpNetworkDhcpRoutesConfigurationOutputReference.property.creationStack">creationStack</a></code> | <code>java.util.List<java.lang.String></code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktf/provider-upcloud.network.NetworkIpNetworkDhcpRoutesConfigurationOutputReference.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktf/provider-upcloud.network.NetworkIpNetworkDhcpRoutesConfigurationOutputReference.property.effectiveRoutesAutoPopulation">effectiveRoutesAutoPopulation</a></code> | <code><a href="#@cdktf/provider-upcloud.network.NetworkIpNetworkDhcpRoutesConfigurationEffectiveRoutesAutoPopulationOutputReference">NetworkIpNetworkDhcpRoutesConfigurationEffectiveRoutesAutoPopulationOutputReference</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-upcloud.network.NetworkIpNetworkDhcpRoutesConfigurationOutputReference.property.effectiveRoutesAutoPopulationInput">effectiveRoutesAutoPopulationInput</a></code> | <code>com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-upcloud.network.NetworkIpNetworkDhcpRoutesConfigurationEffectiveRoutesAutoPopulation">NetworkIpNetworkDhcpRoutesConfigurationEffectiveRoutesAutoPopulation</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-upcloud.network.NetworkIpNetworkDhcpRoutesConfigurationOutputReference.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-upcloud.network.NetworkIpNetworkDhcpRoutesConfiguration">NetworkIpNetworkDhcpRoutesConfiguration</a></code> | *No description.* |
+
+---
+
+##### `creationStack`<sup>Required</sup> <a name="creationStack" id="@cdktf/provider-upcloud.network.NetworkIpNetworkDhcpRoutesConfigurationOutputReference.property.creationStack"></a>
+
+```java
+public java.util.List<java.lang.String> getCreationStack();
+```
+
+- *Type:* java.util.List<java.lang.String>
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktf/provider-upcloud.network.NetworkIpNetworkDhcpRoutesConfigurationOutputReference.property.fqn"></a>
+
+```java
+public java.lang.String getFqn();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `effectiveRoutesAutoPopulation`<sup>Required</sup> <a name="effectiveRoutesAutoPopulation" id="@cdktf/provider-upcloud.network.NetworkIpNetworkDhcpRoutesConfigurationOutputReference.property.effectiveRoutesAutoPopulation"></a>
+
+```java
+public NetworkIpNetworkDhcpRoutesConfigurationEffectiveRoutesAutoPopulationOutputReference getEffectiveRoutesAutoPopulation();
+```
+
+- *Type:* <a href="#@cdktf/provider-upcloud.network.NetworkIpNetworkDhcpRoutesConfigurationEffectiveRoutesAutoPopulationOutputReference">NetworkIpNetworkDhcpRoutesConfigurationEffectiveRoutesAutoPopulationOutputReference</a>
+
+---
+
+##### `effectiveRoutesAutoPopulationInput`<sup>Optional</sup> <a name="effectiveRoutesAutoPopulationInput" id="@cdktf/provider-upcloud.network.NetworkIpNetworkDhcpRoutesConfigurationOutputReference.property.effectiveRoutesAutoPopulationInput"></a>
+
+```java
+public java.lang.Object getEffectiveRoutesAutoPopulationInput();
+```
+
+- *Type:* com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-upcloud.network.NetworkIpNetworkDhcpRoutesConfigurationEffectiveRoutesAutoPopulation">NetworkIpNetworkDhcpRoutesConfigurationEffectiveRoutesAutoPopulation</a>
+
+---
+
+##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-upcloud.network.NetworkIpNetworkDhcpRoutesConfigurationOutputReference.property.internalValue"></a>
+
+```java
+public java.lang.Object getInternalValue();
+```
+
+- *Type:* com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-upcloud.network.NetworkIpNetworkDhcpRoutesConfiguration">NetworkIpNetworkDhcpRoutesConfiguration</a>
+
+---
+
 
 ### NetworkIpNetworkList <a name="NetworkIpNetworkList" id="@cdktf/provider-upcloud.network.NetworkIpNetworkList"></a>
 
@@ -1494,9 +2283,11 @@ whether the list is wrapping a set (will add tolist() to be able to access an it
 | <code><a href="#@cdktf/provider-upcloud.network.NetworkIpNetworkOutputReference.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.network.NetworkIpNetworkOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
 | <code><a href="#@cdktf/provider-upcloud.network.NetworkIpNetworkOutputReference.toString">toString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktf/provider-upcloud.network.NetworkIpNetworkOutputReference.putDhcpRoutesConfiguration">putDhcpRoutesConfiguration</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.network.NetworkIpNetworkOutputReference.resetDhcpDefaultRoute">resetDhcpDefaultRoute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.network.NetworkIpNetworkOutputReference.resetDhcpDns">resetDhcpDns</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.network.NetworkIpNetworkOutputReference.resetDhcpRoutes">resetDhcpRoutes</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-upcloud.network.NetworkIpNetworkOutputReference.resetDhcpRoutesConfiguration">resetDhcpRoutesConfiguration</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.network.NetworkIpNetworkOutputReference.resetGateway">resetGateway</a></code> | *No description.* |
 
 ---
@@ -1651,6 +2442,18 @@ Return a string representation of this resolvable object.
 
 Returns a reversible string representation.
 
+##### `putDhcpRoutesConfiguration` <a name="putDhcpRoutesConfiguration" id="@cdktf/provider-upcloud.network.NetworkIpNetworkOutputReference.putDhcpRoutesConfiguration"></a>
+
+```java
+public void putDhcpRoutesConfiguration(NetworkIpNetworkDhcpRoutesConfiguration value)
+```
+
+###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-upcloud.network.NetworkIpNetworkOutputReference.putDhcpRoutesConfiguration.parameter.value"></a>
+
+- *Type:* <a href="#@cdktf/provider-upcloud.network.NetworkIpNetworkDhcpRoutesConfiguration">NetworkIpNetworkDhcpRoutesConfiguration</a>
+
+---
+
 ##### `resetDhcpDefaultRoute` <a name="resetDhcpDefaultRoute" id="@cdktf/provider-upcloud.network.NetworkIpNetworkOutputReference.resetDhcpDefaultRoute"></a>
 
 ```java
@@ -1669,6 +2472,12 @@ public void resetDhcpDns()
 public void resetDhcpRoutes()
 ```
 
+##### `resetDhcpRoutesConfiguration` <a name="resetDhcpRoutesConfiguration" id="@cdktf/provider-upcloud.network.NetworkIpNetworkOutputReference.resetDhcpRoutesConfiguration"></a>
+
+```java
+public void resetDhcpRoutesConfiguration()
+```
+
 ##### `resetGateway` <a name="resetGateway" id="@cdktf/provider-upcloud.network.NetworkIpNetworkOutputReference.resetGateway"></a>
 
 ```java
@@ -1682,10 +2491,12 @@ public void resetGateway()
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-upcloud.network.NetworkIpNetworkOutputReference.property.creationStack">creationStack</a></code> | <code>java.util.List<java.lang.String></code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-upcloud.network.NetworkIpNetworkOutputReference.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktf/provider-upcloud.network.NetworkIpNetworkOutputReference.property.dhcpRoutesConfiguration">dhcpRoutesConfiguration</a></code> | <code><a href="#@cdktf/provider-upcloud.network.NetworkIpNetworkDhcpRoutesConfigurationOutputReference">NetworkIpNetworkDhcpRoutesConfigurationOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.network.NetworkIpNetworkOutputReference.property.addressInput">addressInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.network.NetworkIpNetworkOutputReference.property.dhcpDefaultRouteInput">dhcpDefaultRouteInput</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.network.NetworkIpNetworkOutputReference.property.dhcpDnsInput">dhcpDnsInput</a></code> | <code>java.util.List<java.lang.String></code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.network.NetworkIpNetworkOutputReference.property.dhcpInput">dhcpInput</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-upcloud.network.NetworkIpNetworkOutputReference.property.dhcpRoutesConfigurationInput">dhcpRoutesConfigurationInput</a></code> | <code>com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-upcloud.network.NetworkIpNetworkDhcpRoutesConfiguration">NetworkIpNetworkDhcpRoutesConfiguration</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.network.NetworkIpNetworkOutputReference.property.dhcpRoutesInput">dhcpRoutesInput</a></code> | <code>java.util.List<java.lang.String></code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.network.NetworkIpNetworkOutputReference.property.familyInput">familyInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.network.NetworkIpNetworkOutputReference.property.gatewayInput">gatewayInput</a></code> | <code>java.lang.String</code> | *No description.* |
@@ -1721,6 +2532,16 @@ public java.lang.String getFqn();
 ```
 
 - *Type:* java.lang.String
+
+---
+
+##### `dhcpRoutesConfiguration`<sup>Required</sup> <a name="dhcpRoutesConfiguration" id="@cdktf/provider-upcloud.network.NetworkIpNetworkOutputReference.property.dhcpRoutesConfiguration"></a>
+
+```java
+public NetworkIpNetworkDhcpRoutesConfigurationOutputReference getDhcpRoutesConfiguration();
+```
+
+- *Type:* <a href="#@cdktf/provider-upcloud.network.NetworkIpNetworkDhcpRoutesConfigurationOutputReference">NetworkIpNetworkDhcpRoutesConfigurationOutputReference</a>
 
 ---
 
@@ -1761,6 +2582,16 @@ public java.lang.Object getDhcpInput();
 ```
 
 - *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+
+---
+
+##### `dhcpRoutesConfigurationInput`<sup>Optional</sup> <a name="dhcpRoutesConfigurationInput" id="@cdktf/provider-upcloud.network.NetworkIpNetworkOutputReference.property.dhcpRoutesConfigurationInput"></a>
+
+```java
+public java.lang.Object getDhcpRoutesConfigurationInput();
+```
+
+- *Type:* com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-upcloud.network.NetworkIpNetworkDhcpRoutesConfiguration">NetworkIpNetworkDhcpRoutesConfiguration</a>
 
 ---
 
