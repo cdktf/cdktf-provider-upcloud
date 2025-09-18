@@ -4,7 +4,7 @@
 
 ### StorageTemplate <a name="StorageTemplate" id="@cdktf/provider-upcloud.storageTemplate.StorageTemplate"></a>
 
-Represents a {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.25.0/docs/resources/storage_template upcloud_storage_template}.
+Represents a {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.26.0/docs/resources/storage_template upcloud_storage_template}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-upcloud.storageTemplate.StorageTemplate.Initializer"></a>
 
@@ -110,7 +110,7 @@ Must be unique amongst siblings in the same scope
 
 The source storage that is used as a base for this storage template.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.25.0/docs/resources/storage_template#source_storage StorageTemplate#source_storage}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.26.0/docs/resources/storage_template#source_storage StorageTemplate#source_storage}
 
 ---
 
@@ -120,7 +120,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upclo
 
 The title of the storage.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.25.0/docs/resources/storage_template#title StorageTemplate#title}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.26.0/docs/resources/storage_template#title StorageTemplate#title}
 
 ---
 
@@ -130,7 +130,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upclo
 
 User defined key-value pairs to classify the storage.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.25.0/docs/resources/storage_template#labels StorageTemplate#labels}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.26.0/docs/resources/storage_template#labels StorageTemplate#labels}
 
 ---
 
@@ -610,7 +610,7 @@ The construct id used in the generated config for the StorageTemplate to import.
 
 The id of the existing StorageTemplate that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.25.0/docs/resources/storage_template#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.26.0/docs/resources/storage_template#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1066,7 +1066,7 @@ source_storage: str
 
 The source storage that is used as a base for this storage template.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.25.0/docs/resources/storage_template#source_storage StorageTemplate#source_storage}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.26.0/docs/resources/storage_template#source_storage StorageTemplate#source_storage}
 
 ---
 
@@ -1080,7 +1080,7 @@ title: str
 
 The title of the storage.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.25.0/docs/resources/storage_template#title StorageTemplate#title}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.26.0/docs/resources/storage_template#title StorageTemplate#title}
 
 ---
 
@@ -1094,7 +1094,7 @@ labels: typing.Mapping[str]
 
 User defined key-value pairs to classify the storage.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.25.0/docs/resources/storage_template#labels StorageTemplate#labels}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.26.0/docs/resources/storage_template#labels StorageTemplate#labels}
 
 ---
 
