@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/upcloudltd/upcloud/5.25.0/docs/resources/network
+// https://registry.terraform.io/providers/upcloudltd/upcloud/5.26.0/docs/resources/network
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,75 +15,378 @@ export interface NetworkConfig extends cdktf.TerraformMetaArguments {
   /**
   * User defined key-value pairs to classify the network.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.25.0/docs/resources/network#labels Network#labels}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.26.0/docs/resources/network#labels Network#labels}
   */
   readonly labels?: { [key: string]: string };
   /**
   * Name of the network.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.25.0/docs/resources/network#name Network#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.26.0/docs/resources/network#name Network#name}
   */
   readonly name: string;
   /**
   * UUID of a router to attach to this network.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.25.0/docs/resources/network#router Network#router}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.26.0/docs/resources/network#router Network#router}
   */
   readonly router?: string;
   /**
   * The zone the network is in, e.g. `de-fra1`. You can list available zones with `upctl zone list`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.25.0/docs/resources/network#zone Network#zone}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.26.0/docs/resources/network#zone Network#zone}
   */
   readonly zone: string;
   /**
   * ip_network block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.25.0/docs/resources/network#ip_network Network#ip_network}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.26.0/docs/resources/network#ip_network Network#ip_network}
   */
   readonly ipNetwork?: NetworkIpNetwork[] | cdktf.IResolvable;
+}
+export interface NetworkIpNetworkDhcpRoutesConfigurationEffectiveRoutesAutoPopulation {
+  /**
+  * Enable or disable route auto-population.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.26.0/docs/resources/network#enabled Network#enabled}
+  */
+  readonly enabled?: boolean | cdktf.IResolvable;
+  /**
+  * Exclude routes coming from specific sources (router-connected-networks, static-route).
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.26.0/docs/resources/network#exclude_by_source Network#exclude_by_source}
+  */
+  readonly excludeBySource?: string[];
+  /**
+  * CIDR destinations to include when auto-populating routes.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.26.0/docs/resources/network#filter_by_destination Network#filter_by_destination}
+  */
+  readonly filterByDestination?: string[];
+  /**
+  * Include only routes of given types (service, user).
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.26.0/docs/resources/network#filter_by_route_type Network#filter_by_route_type}
+  */
+  readonly filterByRouteType?: string[];
+}
+
+export function networkIpNetworkDhcpRoutesConfigurationEffectiveRoutesAutoPopulationToTerraform(struct?: NetworkIpNetworkDhcpRoutesConfigurationEffectiveRoutesAutoPopulation | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    enabled: cdktf.booleanToTerraform(struct!.enabled),
+    exclude_by_source: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.excludeBySource),
+    filter_by_destination: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.filterByDestination),
+    filter_by_route_type: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.filterByRouteType),
+  }
+}
+
+
+export function networkIpNetworkDhcpRoutesConfigurationEffectiveRoutesAutoPopulationToHclTerraform(struct?: NetworkIpNetworkDhcpRoutesConfigurationEffectiveRoutesAutoPopulation | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    enabled: {
+      value: cdktf.booleanToHclTerraform(struct!.enabled),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+    exclude_by_source: {
+      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.excludeBySource),
+      isBlock: false,
+      type: "set",
+      storageClassType: "stringList",
+    },
+    filter_by_destination: {
+      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.filterByDestination),
+      isBlock: false,
+      type: "set",
+      storageClassType: "stringList",
+    },
+    filter_by_route_type: {
+      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.filterByRouteType),
+      isBlock: false,
+      type: "set",
+      storageClassType: "stringList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class NetworkIpNetworkDhcpRoutesConfigurationEffectiveRoutesAutoPopulationOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false);
+  }
+
+  public get internalValue(): NetworkIpNetworkDhcpRoutesConfigurationEffectiveRoutesAutoPopulation | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._enabled !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.enabled = this._enabled;
+    }
+    if (this._excludeBySource !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.excludeBySource = this._excludeBySource;
+    }
+    if (this._filterByDestination !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.filterByDestination = this._filterByDestination;
+    }
+    if (this._filterByRouteType !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.filterByRouteType = this._filterByRouteType;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: NetworkIpNetworkDhcpRoutesConfigurationEffectiveRoutesAutoPopulation | cdktf.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._enabled = undefined;
+      this._excludeBySource = undefined;
+      this._filterByDestination = undefined;
+      this._filterByRouteType = undefined;
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._enabled = value.enabled;
+      this._excludeBySource = value.excludeBySource;
+      this._filterByDestination = value.filterByDestination;
+      this._filterByRouteType = value.filterByRouteType;
+    }
+  }
+
+  // enabled - computed: false, optional: true, required: false
+  private _enabled?: boolean | cdktf.IResolvable; 
+  public get enabled() {
+    return this.getBooleanAttribute('enabled');
+  }
+  public set enabled(value: boolean | cdktf.IResolvable) {
+    this._enabled = value;
+  }
+  public resetEnabled() {
+    this._enabled = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get enabledInput() {
+    return this._enabled;
+  }
+
+  // exclude_by_source - computed: false, optional: true, required: false
+  private _excludeBySource?: string[]; 
+  public get excludeBySource() {
+    return cdktf.Fn.tolist(this.getListAttribute('exclude_by_source'));
+  }
+  public set excludeBySource(value: string[]) {
+    this._excludeBySource = value;
+  }
+  public resetExcludeBySource() {
+    this._excludeBySource = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get excludeBySourceInput() {
+    return this._excludeBySource;
+  }
+
+  // filter_by_destination - computed: false, optional: true, required: false
+  private _filterByDestination?: string[]; 
+  public get filterByDestination() {
+    return cdktf.Fn.tolist(this.getListAttribute('filter_by_destination'));
+  }
+  public set filterByDestination(value: string[]) {
+    this._filterByDestination = value;
+  }
+  public resetFilterByDestination() {
+    this._filterByDestination = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get filterByDestinationInput() {
+    return this._filterByDestination;
+  }
+
+  // filter_by_route_type - computed: false, optional: true, required: false
+  private _filterByRouteType?: string[]; 
+  public get filterByRouteType() {
+    return cdktf.Fn.tolist(this.getListAttribute('filter_by_route_type'));
+  }
+  public set filterByRouteType(value: string[]) {
+    this._filterByRouteType = value;
+  }
+  public resetFilterByRouteType() {
+    this._filterByRouteType = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get filterByRouteTypeInput() {
+    return this._filterByRouteType;
+  }
+}
+export interface NetworkIpNetworkDhcpRoutesConfiguration {
+  /**
+  * Automatically populate effective routes.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.26.0/docs/resources/network#effective_routes_auto_population Network#effective_routes_auto_population}
+  */
+  readonly effectiveRoutesAutoPopulation?: NetworkIpNetworkDhcpRoutesConfigurationEffectiveRoutesAutoPopulation;
+}
+
+export function networkIpNetworkDhcpRoutesConfigurationToTerraform(struct?: NetworkIpNetworkDhcpRoutesConfiguration | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    effective_routes_auto_population: networkIpNetworkDhcpRoutesConfigurationEffectiveRoutesAutoPopulationToTerraform(struct!.effectiveRoutesAutoPopulation),
+  }
+}
+
+
+export function networkIpNetworkDhcpRoutesConfigurationToHclTerraform(struct?: NetworkIpNetworkDhcpRoutesConfiguration | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    effective_routes_auto_population: {
+      value: networkIpNetworkDhcpRoutesConfigurationEffectiveRoutesAutoPopulationToHclTerraform(struct!.effectiveRoutesAutoPopulation),
+      isBlock: true,
+      type: "struct",
+      storageClassType: "NetworkIpNetworkDhcpRoutesConfigurationEffectiveRoutesAutoPopulation",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class NetworkIpNetworkDhcpRoutesConfigurationOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false);
+  }
+
+  public get internalValue(): NetworkIpNetworkDhcpRoutesConfiguration | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._effectiveRoutesAutoPopulation?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.effectiveRoutesAutoPopulation = this._effectiveRoutesAutoPopulation?.internalValue;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: NetworkIpNetworkDhcpRoutesConfiguration | cdktf.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._effectiveRoutesAutoPopulation.internalValue = undefined;
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._effectiveRoutesAutoPopulation.internalValue = value.effectiveRoutesAutoPopulation;
+    }
+  }
+
+  // effective_routes_auto_population - computed: false, optional: true, required: false
+  private _effectiveRoutesAutoPopulation = new NetworkIpNetworkDhcpRoutesConfigurationEffectiveRoutesAutoPopulationOutputReference(this, "effective_routes_auto_population");
+  public get effectiveRoutesAutoPopulation() {
+    return this._effectiveRoutesAutoPopulation;
+  }
+  public putEffectiveRoutesAutoPopulation(value: NetworkIpNetworkDhcpRoutesConfigurationEffectiveRoutesAutoPopulation) {
+    this._effectiveRoutesAutoPopulation.internalValue = value;
+  }
+  public resetEffectiveRoutesAutoPopulation() {
+    this._effectiveRoutesAutoPopulation.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get effectiveRoutesAutoPopulationInput() {
+    return this._effectiveRoutesAutoPopulation.internalValue;
+  }
 }
 export interface NetworkIpNetwork {
   /**
   * The CIDR range of the subnet
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.25.0/docs/resources/network#address Network#address}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.26.0/docs/resources/network#address Network#address}
   */
   readonly address: string;
   /**
   * Is DHCP enabled?
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.25.0/docs/resources/network#dhcp Network#dhcp}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.26.0/docs/resources/network#dhcp Network#dhcp}
   */
   readonly dhcp: boolean | cdktf.IResolvable;
   /**
   * Is the gateway the DHCP default route?
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.25.0/docs/resources/network#dhcp_default_route Network#dhcp_default_route}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.26.0/docs/resources/network#dhcp_default_route Network#dhcp_default_route}
   */
   readonly dhcpDefaultRoute?: boolean | cdktf.IResolvable;
   /**
   * The DNS servers given by DHCP
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.25.0/docs/resources/network#dhcp_dns Network#dhcp_dns}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.26.0/docs/resources/network#dhcp_dns Network#dhcp_dns}
   */
   readonly dhcpDns?: string[];
   /**
   * The additional DHCP classless static routes given by DHCP
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.25.0/docs/resources/network#dhcp_routes Network#dhcp_routes}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.26.0/docs/resources/network#dhcp_routes Network#dhcp_routes}
   */
   readonly dhcpRoutes?: string[];
   /**
+  * DHCP routes auto-population configuration.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.26.0/docs/resources/network#dhcp_routes_configuration Network#dhcp_routes_configuration}
+  */
+  readonly dhcpRoutesConfiguration?: NetworkIpNetworkDhcpRoutesConfiguration;
+  /**
   * IP address family
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.25.0/docs/resources/network#family Network#family}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.26.0/docs/resources/network#family Network#family}
   */
   readonly family: string;
   /**
   * Gateway address given by DHCP
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.25.0/docs/resources/network#gateway Network#gateway}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.26.0/docs/resources/network#gateway Network#gateway}
   */
   readonly gateway?: string;
 }
@@ -99,6 +402,7 @@ export function networkIpNetworkToTerraform(struct?: NetworkIpNetwork | cdktf.IR
     dhcp_default_route: cdktf.booleanToTerraform(struct!.dhcpDefaultRoute),
     dhcp_dns: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.dhcpDns),
     dhcp_routes: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.dhcpRoutes),
+    dhcp_routes_configuration: networkIpNetworkDhcpRoutesConfigurationToTerraform(struct!.dhcpRoutesConfiguration),
     family: cdktf.stringToTerraform(struct!.family),
     gateway: cdktf.stringToTerraform(struct!.gateway),
   }
@@ -140,6 +444,12 @@ export function networkIpNetworkToHclTerraform(struct?: NetworkIpNetwork | cdktf
       isBlock: false,
       type: "set",
       storageClassType: "stringList",
+    },
+    dhcp_routes_configuration: {
+      value: networkIpNetworkDhcpRoutesConfigurationToHclTerraform(struct!.dhcpRoutesConfiguration),
+      isBlock: true,
+      type: "struct",
+      storageClassType: "NetworkIpNetworkDhcpRoutesConfiguration",
     },
     family: {
       value: cdktf.stringToHclTerraform(struct!.family),
@@ -199,6 +509,10 @@ export class NetworkIpNetworkOutputReference extends cdktf.ComplexObject {
       hasAnyValues = true;
       internalValueResult.dhcpRoutes = this._dhcpRoutes;
     }
+    if (this._dhcpRoutesConfiguration?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.dhcpRoutesConfiguration = this._dhcpRoutesConfiguration?.internalValue;
+    }
     if (this._family !== undefined) {
       hasAnyValues = true;
       internalValueResult.family = this._family;
@@ -219,6 +533,7 @@ export class NetworkIpNetworkOutputReference extends cdktf.ComplexObject {
       this._dhcpDefaultRoute = undefined;
       this._dhcpDns = undefined;
       this._dhcpRoutes = undefined;
+      this._dhcpRoutesConfiguration.internalValue = undefined;
       this._family = undefined;
       this._gateway = undefined;
     }
@@ -234,6 +549,7 @@ export class NetworkIpNetworkOutputReference extends cdktf.ComplexObject {
       this._dhcpDefaultRoute = value.dhcpDefaultRoute;
       this._dhcpDns = value.dhcpDns;
       this._dhcpRoutes = value.dhcpRoutes;
+      this._dhcpRoutesConfiguration.internalValue = value.dhcpRoutesConfiguration;
       this._family = value.family;
       this._gateway = value.gateway;
     }
@@ -313,6 +629,22 @@ export class NetworkIpNetworkOutputReference extends cdktf.ComplexObject {
     return this._dhcpRoutes;
   }
 
+  // dhcp_routes_configuration - computed: false, optional: true, required: false
+  private _dhcpRoutesConfiguration = new NetworkIpNetworkDhcpRoutesConfigurationOutputReference(this, "dhcp_routes_configuration");
+  public get dhcpRoutesConfiguration() {
+    return this._dhcpRoutesConfiguration;
+  }
+  public putDhcpRoutesConfiguration(value: NetworkIpNetworkDhcpRoutesConfiguration) {
+    this._dhcpRoutesConfiguration.internalValue = value;
+  }
+  public resetDhcpRoutesConfiguration() {
+    this._dhcpRoutesConfiguration.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get dhcpRoutesConfigurationInput() {
+    return this._dhcpRoutesConfiguration.internalValue;
+  }
+
   // family - computed: false, optional: false, required: true
   private _family?: string; 
   public get family() {
@@ -364,7 +696,7 @@ export class NetworkIpNetworkList extends cdktf.ComplexList {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.25.0/docs/resources/network upcloud_network}
+* Represents a {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.26.0/docs/resources/network upcloud_network}
 */
 export class Network extends cdktf.TerraformResource {
 
@@ -380,7 +712,7 @@ export class Network extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a Network resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the Network to import
-  * @param importFromId The id of the existing Network that should be imported. Refer to the {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.25.0/docs/resources/network#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing Network that should be imported. Refer to the {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.26.0/docs/resources/network#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the Network to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -392,7 +724,7 @@ export class Network extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.25.0/docs/resources/network upcloud_network} Resource
+  * Create a new {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.26.0/docs/resources/network upcloud_network} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -403,7 +735,7 @@ export class Network extends cdktf.TerraformResource {
       terraformResourceType: 'upcloud_network',
       terraformGeneratorMetadata: {
         providerName: 'upcloud',
-        providerVersion: '5.25.0',
+        providerVersion: '5.26.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,
