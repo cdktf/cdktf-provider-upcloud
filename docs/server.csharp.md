@@ -299,7 +299,7 @@ private System.Collections.Generic.IDictionary<string, string> GetStringMapAttri
 ##### `HasResourceMove` <a name="HasResourceMove" id="@cdktf/provider-upcloud.server.Server.hasResourceMove"></a>
 
 ```csharp
-private object HasResourceMove()
+private TerraformResourceMoveByTarget|TerraformResourceMoveById HasResourceMove()
 ```
 
 ##### `ImportFrom` <a name="ImportFrom" id="@cdktf/provider-upcloud.server.Server.importFrom"></a>
@@ -353,7 +353,7 @@ Full id of resource being moved from, e.g. "aws_s3_bucket.example".
 ##### `MoveTo` <a name="MoveTo" id="@cdktf/provider-upcloud.server.Server.moveTo"></a>
 
 ```csharp
-private void MoveTo(string MoveTarget, object Index = null)
+private void MoveTo(string MoveTarget, string|double Index = null)
 ```
 
 Moves this resource to the target resource given by moveTarget.
@@ -368,7 +368,7 @@ The previously set user defined string set by .addMoveTarget() corresponding to 
 
 ###### `Index`<sup>Optional</sup> <a name="Index" id="@cdktf/provider-upcloud.server.Server.moveTo.parameter.index"></a>
 
-- *Type:* object
+- *Type:* string|double
 
 Optional The index corresponding to the key the resource is to appear in the foreach of a resource to move to.
 
@@ -393,60 +393,60 @@ Full id of resource to move to, e.g. "aws_s3_bucket.example".
 ##### `PutLogin` <a name="PutLogin" id="@cdktf/provider-upcloud.server.Server.putLogin"></a>
 
 ```csharp
-private void PutLogin(object Value)
+private void PutLogin(IResolvable|ServerLogin[] Value)
 ```
 
 ###### `Value`<sup>Required</sup> <a name="Value" id="@cdktf/provider-upcloud.server.Server.putLogin.parameter.value"></a>
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-upcloud.server.ServerLogin">ServerLogin</a>[]
 
 ---
 
 ##### `PutNetworkInterface` <a name="PutNetworkInterface" id="@cdktf/provider-upcloud.server.Server.putNetworkInterface"></a>
 
 ```csharp
-private void PutNetworkInterface(object Value)
+private void PutNetworkInterface(IResolvable|ServerNetworkInterface[] Value)
 ```
 
 ###### `Value`<sup>Required</sup> <a name="Value" id="@cdktf/provider-upcloud.server.Server.putNetworkInterface.parameter.value"></a>
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-upcloud.server.ServerNetworkInterface">ServerNetworkInterface</a>[]
 
 ---
 
 ##### `PutSimpleBackup` <a name="PutSimpleBackup" id="@cdktf/provider-upcloud.server.Server.putSimpleBackup"></a>
 
 ```csharp
-private void PutSimpleBackup(object Value)
+private void PutSimpleBackup(IResolvable|ServerSimpleBackup[] Value)
 ```
 
 ###### `Value`<sup>Required</sup> <a name="Value" id="@cdktf/provider-upcloud.server.Server.putSimpleBackup.parameter.value"></a>
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-upcloud.server.ServerSimpleBackup">ServerSimpleBackup</a>[]
 
 ---
 
 ##### `PutStorageDevices` <a name="PutStorageDevices" id="@cdktf/provider-upcloud.server.Server.putStorageDevices"></a>
 
 ```csharp
-private void PutStorageDevices(object Value)
+private void PutStorageDevices(IResolvable|ServerStorageDevices[] Value)
 ```
 
 ###### `Value`<sup>Required</sup> <a name="Value" id="@cdktf/provider-upcloud.server.Server.putStorageDevices.parameter.value"></a>
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-upcloud.server.ServerStorageDevices">ServerStorageDevices</a>[]
 
 ---
 
 ##### `PutTemplate` <a name="PutTemplate" id="@cdktf/provider-upcloud.server.Server.putTemplate"></a>
 
 ```csharp
-private void PutTemplate(object Value)
+private void PutTemplate(IResolvable|ServerTemplate[] Value)
 ```
 
 ###### `Value`<sup>Required</sup> <a name="Value" id="@cdktf/provider-upcloud.server.Server.putTemplate.parameter.value"></a>
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-upcloud.server.ServerTemplate">ServerTemplate</a>[]
 
 ---
 
@@ -702,13 +702,13 @@ Refer to the {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5
 | <code><a href="#@cdktf/provider-upcloud.server.Server.property.terraformMetaArguments">TerraformMetaArguments</a></code> | <code>System.Collections.Generic.IDictionary<string, object></code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.server.Server.property.terraformResourceType">TerraformResourceType</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.server.Server.property.terraformGeneratorMetadata">TerraformGeneratorMetadata</a></code> | <code>HashiCorp.Cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
-| <code><a href="#@cdktf/provider-upcloud.server.Server.property.connection">Connection</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-upcloud.server.Server.property.count">Count</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-upcloud.server.Server.property.connection">Connection</a></code> | <code>HashiCorp.Cdktf.SSHProvisionerConnection\|HashiCorp.Cdktf.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktf/provider-upcloud.server.Server.property.count">Count</a></code> | <code>double\|HashiCorp.Cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.server.Server.property.dependsOn">DependsOn</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.server.Server.property.forEach">ForEach</a></code> | <code>HashiCorp.Cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.server.Server.property.lifecycle">Lifecycle</a></code> | <code>HashiCorp.Cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.server.Server.property.provider">Provider</a></code> | <code>HashiCorp.Cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-upcloud.server.Server.property.provisioners">Provisioners</a></code> | <code>object[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-upcloud.server.Server.property.provisioners">Provisioners</a></code> | <code>HashiCorp.Cdktf.FileProvisioner\|HashiCorp.Cdktf.LocalExecProvisioner\|HashiCorp.Cdktf.RemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.server.Server.property.id">Id</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.server.Server.property.login">Login</a></code> | <code><a href="#@cdktf/provider-upcloud.server.ServerLoginList">ServerLoginList</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.server.Server.property.networkInterface">NetworkInterface</a></code> | <code><a href="#@cdktf/provider-upcloud.server.ServerNetworkInterfaceList">ServerNetworkInterfaceList</a></code> | *No description.* |
@@ -717,22 +717,22 @@ Refer to the {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5
 | <code><a href="#@cdktf/provider-upcloud.server.Server.property.template">Template</a></code> | <code><a href="#@cdktf/provider-upcloud.server.ServerTemplateList">ServerTemplateList</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.server.Server.property.bootOrderInput">BootOrderInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.server.Server.property.cpuInput">CpuInput</a></code> | <code>double</code> | *No description.* |
-| <code><a href="#@cdktf/provider-upcloud.server.Server.property.firewallInput">FirewallInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-upcloud.server.Server.property.firewallInput">FirewallInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.server.Server.property.hostInput">HostInput</a></code> | <code>double</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.server.Server.property.hostnameInput">HostnameInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-upcloud.server.Server.property.hotResizeInput">HotResizeInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-upcloud.server.Server.property.hotResizeInput">HotResizeInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.server.Server.property.labelsInput">LabelsInput</a></code> | <code>System.Collections.Generic.IDictionary<string, string></code> | *No description.* |
-| <code><a href="#@cdktf/provider-upcloud.server.Server.property.loginInput">LoginInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-upcloud.server.Server.property.loginInput">LoginInput</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-upcloud.server.ServerLogin">ServerLogin</a>[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.server.Server.property.memInput">MemInput</a></code> | <code>double</code> | *No description.* |
-| <code><a href="#@cdktf/provider-upcloud.server.Server.property.metadataInput">MetadataInput</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-upcloud.server.Server.property.networkInterfaceInput">NetworkInterfaceInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-upcloud.server.Server.property.metadataInput">MetadataInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-upcloud.server.Server.property.networkInterfaceInput">NetworkInterfaceInput</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-upcloud.server.ServerNetworkInterface">ServerNetworkInterface</a>[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.server.Server.property.nicModelInput">NicModelInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.server.Server.property.planInput">PlanInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.server.Server.property.serverGroupInput">ServerGroupInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-upcloud.server.Server.property.simpleBackupInput">SimpleBackupInput</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-upcloud.server.Server.property.storageDevicesInput">StorageDevicesInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-upcloud.server.Server.property.simpleBackupInput">SimpleBackupInput</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-upcloud.server.ServerSimpleBackup">ServerSimpleBackup</a>[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-upcloud.server.Server.property.storageDevicesInput">StorageDevicesInput</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-upcloud.server.ServerStorageDevices">ServerStorageDevices</a>[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.server.Server.property.tagsInput">TagsInput</a></code> | <code>string[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-upcloud.server.Server.property.templateInput">TemplateInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-upcloud.server.Server.property.templateInput">TemplateInput</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-upcloud.server.ServerTemplate">ServerTemplate</a>[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.server.Server.property.timezoneInput">TimezoneInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.server.Server.property.titleInput">TitleInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.server.Server.property.userDataInput">UserDataInput</a></code> | <code>string</code> | *No description.* |
@@ -740,13 +740,13 @@ Refer to the {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5
 | <code><a href="#@cdktf/provider-upcloud.server.Server.property.zoneInput">ZoneInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.server.Server.property.bootOrder">BootOrder</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.server.Server.property.cpu">Cpu</a></code> | <code>double</code> | *No description.* |
-| <code><a href="#@cdktf/provider-upcloud.server.Server.property.firewall">Firewall</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-upcloud.server.Server.property.firewall">Firewall</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.server.Server.property.host">Host</a></code> | <code>double</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.server.Server.property.hostname">Hostname</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-upcloud.server.Server.property.hotResize">HotResize</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-upcloud.server.Server.property.hotResize">HotResize</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.server.Server.property.labels">Labels</a></code> | <code>System.Collections.Generic.IDictionary<string, string></code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.server.Server.property.mem">Mem</a></code> | <code>double</code> | *No description.* |
-| <code><a href="#@cdktf/provider-upcloud.server.Server.property.metadata">Metadata</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-upcloud.server.Server.property.metadata">Metadata</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.server.Server.property.nicModel">NicModel</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.server.Server.property.plan">Plan</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.server.Server.property.serverGroup">ServerGroup</a></code> | <code>string</code> | *No description.* |
@@ -834,20 +834,20 @@ public TerraformProviderGeneratorMetadata TerraformGeneratorMetadata { get; }
 ##### `Connection`<sup>Optional</sup> <a name="Connection" id="@cdktf/provider-upcloud.server.Server.property.connection"></a>
 
 ```csharp
-public object Connection { get; }
+public SSHProvisionerConnection|WinrmProvisionerConnection Connection { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.SSHProvisionerConnection|HashiCorp.Cdktf.WinrmProvisionerConnection
 
 ---
 
 ##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktf/provider-upcloud.server.Server.property.count"></a>
 
 ```csharp
-public object Count { get; }
+public double|TerraformCount Count { get; }
 ```
 
-- *Type:* object
+- *Type:* double|HashiCorp.Cdktf.TerraformCount
 
 ---
 
@@ -894,10 +894,10 @@ public TerraformProvider Provider { get; }
 ##### `Provisioners`<sup>Optional</sup> <a name="Provisioners" id="@cdktf/provider-upcloud.server.Server.property.provisioners"></a>
 
 ```csharp
-public object[] Provisioners { get; }
+public (FileProvisioner|LocalExecProvisioner|RemoteExecProvisioner)[] Provisioners { get; }
 ```
 
-- *Type:* object[]
+- *Type:* HashiCorp.Cdktf.FileProvisioner|HashiCorp.Cdktf.LocalExecProvisioner|HashiCorp.Cdktf.RemoteExecProvisioner[]
 
 ---
 
@@ -984,10 +984,10 @@ public double CpuInput { get; }
 ##### `FirewallInput`<sup>Optional</sup> <a name="FirewallInput" id="@cdktf/provider-upcloud.server.Server.property.firewallInput"></a>
 
 ```csharp
-public object FirewallInput { get; }
+public bool|IResolvable FirewallInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -1014,10 +1014,10 @@ public string HostnameInput { get; }
 ##### `HotResizeInput`<sup>Optional</sup> <a name="HotResizeInput" id="@cdktf/provider-upcloud.server.Server.property.hotResizeInput"></a>
 
 ```csharp
-public object HotResizeInput { get; }
+public bool|IResolvable HotResizeInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -1034,10 +1034,10 @@ public System.Collections.Generic.IDictionary<string, string> LabelsInput { get;
 ##### `LoginInput`<sup>Optional</sup> <a name="LoginInput" id="@cdktf/provider-upcloud.server.Server.property.loginInput"></a>
 
 ```csharp
-public object LoginInput { get; }
+public IResolvable|ServerLogin[] LoginInput { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-upcloud.server.ServerLogin">ServerLogin</a>[]
 
 ---
 
@@ -1054,20 +1054,20 @@ public double MemInput { get; }
 ##### `MetadataInput`<sup>Optional</sup> <a name="MetadataInput" id="@cdktf/provider-upcloud.server.Server.property.metadataInput"></a>
 
 ```csharp
-public object MetadataInput { get; }
+public bool|IResolvable MetadataInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
 ##### `NetworkInterfaceInput`<sup>Optional</sup> <a name="NetworkInterfaceInput" id="@cdktf/provider-upcloud.server.Server.property.networkInterfaceInput"></a>
 
 ```csharp
-public object NetworkInterfaceInput { get; }
+public IResolvable|ServerNetworkInterface[] NetworkInterfaceInput { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-upcloud.server.ServerNetworkInterface">ServerNetworkInterface</a>[]
 
 ---
 
@@ -1104,20 +1104,20 @@ public string ServerGroupInput { get; }
 ##### `SimpleBackupInput`<sup>Optional</sup> <a name="SimpleBackupInput" id="@cdktf/provider-upcloud.server.Server.property.simpleBackupInput"></a>
 
 ```csharp
-public object SimpleBackupInput { get; }
+public IResolvable|ServerSimpleBackup[] SimpleBackupInput { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-upcloud.server.ServerSimpleBackup">ServerSimpleBackup</a>[]
 
 ---
 
 ##### `StorageDevicesInput`<sup>Optional</sup> <a name="StorageDevicesInput" id="@cdktf/provider-upcloud.server.Server.property.storageDevicesInput"></a>
 
 ```csharp
-public object StorageDevicesInput { get; }
+public IResolvable|ServerStorageDevices[] StorageDevicesInput { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-upcloud.server.ServerStorageDevices">ServerStorageDevices</a>[]
 
 ---
 
@@ -1134,10 +1134,10 @@ public string[] TagsInput { get; }
 ##### `TemplateInput`<sup>Optional</sup> <a name="TemplateInput" id="@cdktf/provider-upcloud.server.Server.property.templateInput"></a>
 
 ```csharp
-public object TemplateInput { get; }
+public IResolvable|ServerTemplate[] TemplateInput { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-upcloud.server.ServerTemplate">ServerTemplate</a>[]
 
 ---
 
@@ -1214,10 +1214,10 @@ public double Cpu { get; }
 ##### `Firewall`<sup>Required</sup> <a name="Firewall" id="@cdktf/provider-upcloud.server.Server.property.firewall"></a>
 
 ```csharp
-public object Firewall { get; }
+public bool|IResolvable Firewall { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -1244,10 +1244,10 @@ public string Hostname { get; }
 ##### `HotResize`<sup>Required</sup> <a name="HotResize" id="@cdktf/provider-upcloud.server.Server.property.hotResize"></a>
 
 ```csharp
-public object HotResize { get; }
+public bool|IResolvable HotResize { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -1274,10 +1274,10 @@ public double Mem { get; }
 ##### `Metadata`<sup>Required</sup> <a name="Metadata" id="@cdktf/provider-upcloud.server.Server.property.metadata"></a>
 
 ```csharp
-public object Metadata { get; }
+public bool|IResolvable Metadata { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -1399,32 +1399,32 @@ public string TfResourceType { get; }
 using HashiCorp.Cdktf.Providers.Upcloud;
 
 new ServerConfig {
-    object Connection = null,
-    object Count = null,
+    SSHProvisionerConnection|WinrmProvisionerConnection Connection = null,
+    double|TerraformCount Count = null,
     ITerraformDependable[] DependsOn = null,
     ITerraformIterator ForEach = null,
     TerraformResourceLifecycle Lifecycle = null,
     TerraformProvider Provider = null,
-    object[] Provisioners = null,
+    (FileProvisioner|LocalExecProvisioner|RemoteExecProvisioner)[] Provisioners = null,
     string Hostname,
     string Zone,
     string BootOrder = null,
     double Cpu = null,
-    object Firewall = null,
+    bool|IResolvable Firewall = null,
     double Host = null,
-    object HotResize = null,
+    bool|IResolvable HotResize = null,
     System.Collections.Generic.IDictionary<string, string> Labels = null,
-    object Login = null,
+    IResolvable|ServerLogin[] Login = null,
     double Mem = null,
-    object Metadata = null,
-    object NetworkInterface = null,
+    bool|IResolvable Metadata = null,
+    IResolvable|ServerNetworkInterface[] NetworkInterface = null,
     string NicModel = null,
     string Plan = null,
     string ServerGroup = null,
-    object SimpleBackup = null,
-    object StorageDevices = null,
+    IResolvable|ServerSimpleBackup[] SimpleBackup = null,
+    IResolvable|ServerStorageDevices[] StorageDevices = null,
     string[] Tags = null,
-    object Template = null,
+    IResolvable|ServerTemplate[] Template = null,
     string Timezone = null,
     string Title = null,
     string UserData = null,
@@ -1436,32 +1436,32 @@ new ServerConfig {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-upcloud.server.ServerConfig.property.connection">Connection</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-upcloud.server.ServerConfig.property.count">Count</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-upcloud.server.ServerConfig.property.connection">Connection</a></code> | <code>HashiCorp.Cdktf.SSHProvisionerConnection\|HashiCorp.Cdktf.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktf/provider-upcloud.server.ServerConfig.property.count">Count</a></code> | <code>double\|HashiCorp.Cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.server.ServerConfig.property.dependsOn">DependsOn</a></code> | <code>HashiCorp.Cdktf.ITerraformDependable[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.server.ServerConfig.property.forEach">ForEach</a></code> | <code>HashiCorp.Cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.server.ServerConfig.property.lifecycle">Lifecycle</a></code> | <code>HashiCorp.Cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.server.ServerConfig.property.provider">Provider</a></code> | <code>HashiCorp.Cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-upcloud.server.ServerConfig.property.provisioners">Provisioners</a></code> | <code>object[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-upcloud.server.ServerConfig.property.provisioners">Provisioners</a></code> | <code>HashiCorp.Cdktf.FileProvisioner\|HashiCorp.Cdktf.LocalExecProvisioner\|HashiCorp.Cdktf.RemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.server.ServerConfig.property.hostname">Hostname</a></code> | <code>string</code> | The hostname of the server. |
 | <code><a href="#@cdktf/provider-upcloud.server.ServerConfig.property.zone">Zone</a></code> | <code>string</code> | The zone in which the server will be hosted, e.g. `de-fra1`. You can list available zones with `upctl zone list`. |
 | <code><a href="#@cdktf/provider-upcloud.server.ServerConfig.property.bootOrder">BootOrder</a></code> | <code>string</code> | The boot device order, `cdrom`\|`disk`\|`network` or comma separated combination of those values. Defaults to `disk`. |
 | <code><a href="#@cdktf/provider-upcloud.server.ServerConfig.property.cpu">Cpu</a></code> | <code>double</code> | The number of CPU cores for the server. |
-| <code><a href="#@cdktf/provider-upcloud.server.ServerConfig.property.firewall">Firewall</a></code> | <code>object</code> | Are firewall rules active for the server. |
+| <code><a href="#@cdktf/provider-upcloud.server.ServerConfig.property.firewall">Firewall</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | Are firewall rules active for the server. |
 | <code><a href="#@cdktf/provider-upcloud.server.ServerConfig.property.host">Host</a></code> | <code>double</code> | Use this to start the VM on a specific host. |
-| <code><a href="#@cdktf/provider-upcloud.server.ServerConfig.property.hotResize">HotResize</a></code> | <code>object</code> | If set to true, allows changing the server plan without requiring a reboot. |
+| <code><a href="#@cdktf/provider-upcloud.server.ServerConfig.property.hotResize">HotResize</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | If set to true, allows changing the server plan without requiring a reboot. |
 | <code><a href="#@cdktf/provider-upcloud.server.ServerConfig.property.labels">Labels</a></code> | <code>System.Collections.Generic.IDictionary<string, string></code> | User defined key-value pairs to classify the server. |
-| <code><a href="#@cdktf/provider-upcloud.server.ServerConfig.property.login">Login</a></code> | <code>object</code> | login block. |
+| <code><a href="#@cdktf/provider-upcloud.server.ServerConfig.property.login">Login</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-upcloud.server.ServerLogin">ServerLogin</a>[]</code> | login block. |
 | <code><a href="#@cdktf/provider-upcloud.server.ServerConfig.property.mem">Mem</a></code> | <code>double</code> | The amount of memory for the server (in megabytes). |
-| <code><a href="#@cdktf/provider-upcloud.server.ServerConfig.property.metadata">Metadata</a></code> | <code>object</code> | Is metadata service active for the server. The metadata service must be enabled when using recent cloud-init based templates. |
-| <code><a href="#@cdktf/provider-upcloud.server.ServerConfig.property.networkInterface">NetworkInterface</a></code> | <code>object</code> | network_interface block. |
+| <code><a href="#@cdktf/provider-upcloud.server.ServerConfig.property.metadata">Metadata</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | Is metadata service active for the server. The metadata service must be enabled when using recent cloud-init based templates. |
+| <code><a href="#@cdktf/provider-upcloud.server.ServerConfig.property.networkInterface">NetworkInterface</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-upcloud.server.ServerNetworkInterface">ServerNetworkInterface</a>[]</code> | network_interface block. |
 | <code><a href="#@cdktf/provider-upcloud.server.ServerConfig.property.nicModel">NicModel</a></code> | <code>string</code> | The model of the server's network interfaces. |
 | <code><a href="#@cdktf/provider-upcloud.server.ServerConfig.property.plan">Plan</a></code> | <code>string</code> | The pricing plan used for the server. You can list available server plans with `upctl server plans`. |
 | <code><a href="#@cdktf/provider-upcloud.server.ServerConfig.property.serverGroup">ServerGroup</a></code> | <code>string</code> | The UUID of a server group to attach this server to. |
-| <code><a href="#@cdktf/provider-upcloud.server.ServerConfig.property.simpleBackup">SimpleBackup</a></code> | <code>object</code> | simple_backup block. |
-| <code><a href="#@cdktf/provider-upcloud.server.ServerConfig.property.storageDevices">StorageDevices</a></code> | <code>object</code> | storage_devices block. |
+| <code><a href="#@cdktf/provider-upcloud.server.ServerConfig.property.simpleBackup">SimpleBackup</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-upcloud.server.ServerSimpleBackup">ServerSimpleBackup</a>[]</code> | simple_backup block. |
+| <code><a href="#@cdktf/provider-upcloud.server.ServerConfig.property.storageDevices">StorageDevices</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-upcloud.server.ServerStorageDevices">ServerStorageDevices</a>[]</code> | storage_devices block. |
 | <code><a href="#@cdktf/provider-upcloud.server.ServerConfig.property.tags">Tags</a></code> | <code>string[]</code> | The server related tags. |
-| <code><a href="#@cdktf/provider-upcloud.server.ServerConfig.property.template">Template</a></code> | <code>object</code> | template block. |
+| <code><a href="#@cdktf/provider-upcloud.server.ServerConfig.property.template">Template</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-upcloud.server.ServerTemplate">ServerTemplate</a>[]</code> | template block. |
 | <code><a href="#@cdktf/provider-upcloud.server.ServerConfig.property.timezone">Timezone</a></code> | <code>string</code> | The timezone of the server. The timezone must be a valid timezone string, e.g. `Europe/Helsinki`. |
 | <code><a href="#@cdktf/provider-upcloud.server.ServerConfig.property.title">Title</a></code> | <code>string</code> | A short, informational description of the server. |
 | <code><a href="#@cdktf/provider-upcloud.server.ServerConfig.property.userData">UserData</a></code> | <code>string</code> | Defines URL for a server setup script, or the script body itself. |
@@ -1472,20 +1472,20 @@ new ServerConfig {
 ##### `Connection`<sup>Optional</sup> <a name="Connection" id="@cdktf/provider-upcloud.server.ServerConfig.property.connection"></a>
 
 ```csharp
-public object Connection { get; set; }
+public SSHProvisionerConnection|WinrmProvisionerConnection Connection { get; set; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.SSHProvisionerConnection|HashiCorp.Cdktf.WinrmProvisionerConnection
 
 ---
 
 ##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktf/provider-upcloud.server.ServerConfig.property.count"></a>
 
 ```csharp
-public object Count { get; set; }
+public double|TerraformCount Count { get; set; }
 ```
 
-- *Type:* object
+- *Type:* double|HashiCorp.Cdktf.TerraformCount
 
 ---
 
@@ -1532,10 +1532,10 @@ public TerraformProvider Provider { get; set; }
 ##### `Provisioners`<sup>Optional</sup> <a name="Provisioners" id="@cdktf/provider-upcloud.server.ServerConfig.property.provisioners"></a>
 
 ```csharp
-public object[] Provisioners { get; set; }
+public (FileProvisioner|LocalExecProvisioner|RemoteExecProvisioner)[] Provisioners { get; set; }
 ```
 
-- *Type:* object[]
+- *Type:* HashiCorp.Cdktf.FileProvisioner|HashiCorp.Cdktf.LocalExecProvisioner|HashiCorp.Cdktf.RemoteExecProvisioner[]
 
 ---
 
@@ -1598,10 +1598,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upclo
 ##### `Firewall`<sup>Optional</sup> <a name="Firewall" id="@cdktf/provider-upcloud.server.ServerConfig.property.firewall"></a>
 
 ```csharp
-public object Firewall { get; set; }
+public bool|IResolvable Firewall { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 Are firewall rules active for the server.
 
@@ -1628,10 +1628,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upclo
 ##### `HotResize`<sup>Optional</sup> <a name="HotResize" id="@cdktf/provider-upcloud.server.ServerConfig.property.hotResize"></a>
 
 ```csharp
-public object HotResize { get; set; }
+public bool|IResolvable HotResize { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 If set to true, allows changing the server plan without requiring a reboot.
 
@@ -1658,10 +1658,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upclo
 ##### `Login`<sup>Optional</sup> <a name="Login" id="@cdktf/provider-upcloud.server.ServerConfig.property.login"></a>
 
 ```csharp
-public object Login { get; set; }
+public IResolvable|ServerLogin[] Login { get; set; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-upcloud.server.ServerLogin">ServerLogin</a>[]
 
 login block.
 
@@ -1686,10 +1686,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upclo
 ##### `Metadata`<sup>Optional</sup> <a name="Metadata" id="@cdktf/provider-upcloud.server.ServerConfig.property.metadata"></a>
 
 ```csharp
-public object Metadata { get; set; }
+public bool|IResolvable Metadata { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 Is metadata service active for the server. The metadata service must be enabled when using recent cloud-init based templates.
 
@@ -1700,10 +1700,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upclo
 ##### `NetworkInterface`<sup>Optional</sup> <a name="NetworkInterface" id="@cdktf/provider-upcloud.server.ServerConfig.property.networkInterface"></a>
 
 ```csharp
-public object NetworkInterface { get; set; }
+public IResolvable|ServerNetworkInterface[] NetworkInterface { get; set; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-upcloud.server.ServerNetworkInterface">ServerNetworkInterface</a>[]
 
 network_interface block.
 
@@ -1758,10 +1758,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upclo
 ##### `SimpleBackup`<sup>Optional</sup> <a name="SimpleBackup" id="@cdktf/provider-upcloud.server.ServerConfig.property.simpleBackup"></a>
 
 ```csharp
-public object SimpleBackup { get; set; }
+public IResolvable|ServerSimpleBackup[] SimpleBackup { get; set; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-upcloud.server.ServerSimpleBackup">ServerSimpleBackup</a>[]
 
 simple_backup block.
 
@@ -1772,10 +1772,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upclo
 ##### `StorageDevices`<sup>Optional</sup> <a name="StorageDevices" id="@cdktf/provider-upcloud.server.ServerConfig.property.storageDevices"></a>
 
 ```csharp
-public object StorageDevices { get; set; }
+public IResolvable|ServerStorageDevices[] StorageDevices { get; set; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-upcloud.server.ServerStorageDevices">ServerStorageDevices</a>[]
 
 storage_devices block.
 
@@ -1800,10 +1800,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upclo
 ##### `Template`<sup>Optional</sup> <a name="Template" id="@cdktf/provider-upcloud.server.ServerConfig.property.template"></a>
 
 ```csharp
-public object Template { get; set; }
+public IResolvable|ServerTemplate[] Template { get; set; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-upcloud.server.ServerTemplate">ServerTemplate</a>[]
 
 template block.
 
@@ -1875,7 +1875,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upclo
 using HashiCorp.Cdktf.Providers.Upcloud;
 
 new ServerLogin {
-    object CreatePassword = null,
+    bool|IResolvable CreatePassword = null,
     string[] Keys = null,
     string PasswordDelivery = null,
     string User = null
@@ -1886,7 +1886,7 @@ new ServerLogin {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-upcloud.server.ServerLogin.property.createPassword">CreatePassword</a></code> | <code>object</code> | Indicates a password should be create to allow access. |
+| <code><a href="#@cdktf/provider-upcloud.server.ServerLogin.property.createPassword">CreatePassword</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | Indicates a password should be create to allow access. |
 | <code><a href="#@cdktf/provider-upcloud.server.ServerLogin.property.keys">Keys</a></code> | <code>string[]</code> | A list of ssh keys to access the server. |
 | <code><a href="#@cdktf/provider-upcloud.server.ServerLogin.property.passwordDelivery">PasswordDelivery</a></code> | <code>string</code> | The delivery method for the server's root password (one of `none`, `email` or `sms`). |
 | <code><a href="#@cdktf/provider-upcloud.server.ServerLogin.property.user">User</a></code> | <code>string</code> | Username to be create to access the server. |
@@ -1896,10 +1896,10 @@ new ServerLogin {
 ##### `CreatePassword`<sup>Optional</sup> <a name="CreatePassword" id="@cdktf/provider-upcloud.server.ServerLogin.property.createPassword"></a>
 
 ```csharp
-public object CreatePassword { get; set; }
+public bool|IResolvable CreatePassword { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 Indicates a password should be create to allow access.
 
@@ -1958,13 +1958,13 @@ using HashiCorp.Cdktf.Providers.Upcloud;
 
 new ServerNetworkInterface {
     string Type,
-    object AdditionalIpAddress = null,
-    object Bootable = null,
+    IResolvable|ServerNetworkInterfaceAdditionalIpAddress[] AdditionalIpAddress = null,
+    bool|IResolvable Bootable = null,
     double Index = null,
     string IpAddress = null,
     string IpAddressFamily = null,
     string Network = null,
-    object SourceIpFiltering = null
+    bool|IResolvable SourceIpFiltering = null
 };
 ```
 
@@ -1973,13 +1973,13 @@ new ServerNetworkInterface {
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-upcloud.server.ServerNetworkInterface.property.type">Type</a></code> | <code>string</code> | Network interface type. For private network interfaces, a network must be specified with an existing network id. |
-| <code><a href="#@cdktf/provider-upcloud.server.ServerNetworkInterface.property.additionalIpAddress">AdditionalIpAddress</a></code> | <code>object</code> | additional_ip_address block. |
-| <code><a href="#@cdktf/provider-upcloud.server.ServerNetworkInterface.property.bootable">Bootable</a></code> | <code>object</code> | `true` if this interface should be used for network booting. |
+| <code><a href="#@cdktf/provider-upcloud.server.ServerNetworkInterface.property.additionalIpAddress">AdditionalIpAddress</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-upcloud.server.ServerNetworkInterfaceAdditionalIpAddress">ServerNetworkInterfaceAdditionalIpAddress</a>[]</code> | additional_ip_address block. |
+| <code><a href="#@cdktf/provider-upcloud.server.ServerNetworkInterface.property.bootable">Bootable</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | `true` if this interface should be used for network booting. |
 | <code><a href="#@cdktf/provider-upcloud.server.ServerNetworkInterface.property.index">Index</a></code> | <code>double</code> | The interface index. |
 | <code><a href="#@cdktf/provider-upcloud.server.ServerNetworkInterface.property.ipAddress">IpAddress</a></code> | <code>string</code> | The primary IP address of this interface. |
 | <code><a href="#@cdktf/provider-upcloud.server.ServerNetworkInterface.property.ipAddressFamily">IpAddressFamily</a></code> | <code>string</code> | The type of the primary IP address of this interface (one of `IPv4` or `IPv6`). |
 | <code><a href="#@cdktf/provider-upcloud.server.ServerNetworkInterface.property.network">Network</a></code> | <code>string</code> | The UUID of the network to attach this interface to. Required for private network interfaces. |
-| <code><a href="#@cdktf/provider-upcloud.server.ServerNetworkInterface.property.sourceIpFiltering">SourceIpFiltering</a></code> | <code>object</code> | `true` if source IP should be filtered. |
+| <code><a href="#@cdktf/provider-upcloud.server.ServerNetworkInterface.property.sourceIpFiltering">SourceIpFiltering</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | `true` if source IP should be filtered. |
 
 ---
 
@@ -2000,10 +2000,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upclo
 ##### `AdditionalIpAddress`<sup>Optional</sup> <a name="AdditionalIpAddress" id="@cdktf/provider-upcloud.server.ServerNetworkInterface.property.additionalIpAddress"></a>
 
 ```csharp
-public object AdditionalIpAddress { get; set; }
+public IResolvable|ServerNetworkInterfaceAdditionalIpAddress[] AdditionalIpAddress { get; set; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-upcloud.server.ServerNetworkInterfaceAdditionalIpAddress">ServerNetworkInterfaceAdditionalIpAddress</a>[]
 
 additional_ip_address block.
 
@@ -2014,10 +2014,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upclo
 ##### `Bootable`<sup>Optional</sup> <a name="Bootable" id="@cdktf/provider-upcloud.server.ServerNetworkInterface.property.bootable"></a>
 
 ```csharp
-public object Bootable { get; set; }
+public bool|IResolvable Bootable { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 `true` if this interface should be used for network booting.
 
@@ -2084,10 +2084,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upclo
 ##### `SourceIpFiltering`<sup>Optional</sup> <a name="SourceIpFiltering" id="@cdktf/provider-upcloud.server.ServerNetworkInterface.property.sourceIpFiltering"></a>
 
 ```csharp
-public object SourceIpFiltering { get; set; }
+public bool|IResolvable SourceIpFiltering { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 `true` if source IP should be filtered.
 
@@ -2291,10 +2291,10 @@ using HashiCorp.Cdktf.Providers.Upcloud;
 new ServerTemplate {
     string Address = null,
     string AddressPosition = null,
-    object BackupRule = null,
-    object DeleteAutoresizeBackup = null,
-    object Encrypt = null,
-    object FilesystemAutoresize = null,
+    IResolvable|ServerTemplateBackupRule[] BackupRule = null,
+    bool|IResolvable DeleteAutoresizeBackup = null,
+    bool|IResolvable Encrypt = null,
+    bool|IResolvable FilesystemAutoresize = null,
     double Size = null,
     string Storage = null,
     string Tier = null,
@@ -2308,10 +2308,10 @@ new ServerTemplate {
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-upcloud.server.ServerTemplate.property.address">Address</a></code> | <code>string</code> | The device address the storage will be attached to (`scsi`\|`virtio`\|`ide`). |
 | <code><a href="#@cdktf/provider-upcloud.server.ServerTemplate.property.addressPosition">AddressPosition</a></code> | <code>string</code> | The device position in the given bus (defined via field `address`). |
-| <code><a href="#@cdktf/provider-upcloud.server.ServerTemplate.property.backupRule">BackupRule</a></code> | <code>object</code> | backup_rule block. |
-| <code><a href="#@cdktf/provider-upcloud.server.ServerTemplate.property.deleteAutoresizeBackup">DeleteAutoresizeBackup</a></code> | <code>object</code> | If set to true, the backup taken before the partition and filesystem resize attempt will be deleted immediately after success. |
-| <code><a href="#@cdktf/provider-upcloud.server.ServerTemplate.property.encrypt">Encrypt</a></code> | <code>object</code> | Sets if the storage is encrypted at rest. |
-| <code><a href="#@cdktf/provider-upcloud.server.ServerTemplate.property.filesystemAutoresize">FilesystemAutoresize</a></code> | <code>object</code> | If set to true, provider will attempt to resize partition and filesystem when the size of template storage changes. |
+| <code><a href="#@cdktf/provider-upcloud.server.ServerTemplate.property.backupRule">BackupRule</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-upcloud.server.ServerTemplateBackupRule">ServerTemplateBackupRule</a>[]</code> | backup_rule block. |
+| <code><a href="#@cdktf/provider-upcloud.server.ServerTemplate.property.deleteAutoresizeBackup">DeleteAutoresizeBackup</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | If set to true, the backup taken before the partition and filesystem resize attempt will be deleted immediately after success. |
+| <code><a href="#@cdktf/provider-upcloud.server.ServerTemplate.property.encrypt">Encrypt</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | Sets if the storage is encrypted at rest. |
+| <code><a href="#@cdktf/provider-upcloud.server.ServerTemplate.property.filesystemAutoresize">FilesystemAutoresize</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | If set to true, provider will attempt to resize partition and filesystem when the size of template storage changes. |
 | <code><a href="#@cdktf/provider-upcloud.server.ServerTemplate.property.size">Size</a></code> | <code>double</code> | The size of the storage in gigabytes. |
 | <code><a href="#@cdktf/provider-upcloud.server.ServerTemplate.property.storage">Storage</a></code> | <code>string</code> | A valid storage UUID or template name. |
 | <code><a href="#@cdktf/provider-upcloud.server.ServerTemplate.property.tier">Tier</a></code> | <code>string</code> | The storage tier to use. |
@@ -2354,10 +2354,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upclo
 ##### `BackupRule`<sup>Optional</sup> <a name="BackupRule" id="@cdktf/provider-upcloud.server.ServerTemplate.property.backupRule"></a>
 
 ```csharp
-public object BackupRule { get; set; }
+public IResolvable|ServerTemplateBackupRule[] BackupRule { get; set; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-upcloud.server.ServerTemplateBackupRule">ServerTemplateBackupRule</a>[]
 
 backup_rule block.
 
@@ -2368,10 +2368,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upclo
 ##### `DeleteAutoresizeBackup`<sup>Optional</sup> <a name="DeleteAutoresizeBackup" id="@cdktf/provider-upcloud.server.ServerTemplate.property.deleteAutoresizeBackup"></a>
 
 ```csharp
-public object DeleteAutoresizeBackup { get; set; }
+public bool|IResolvable DeleteAutoresizeBackup { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 If set to true, the backup taken before the partition and filesystem resize attempt will be deleted immediately after success.
 
@@ -2382,10 +2382,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upclo
 ##### `Encrypt`<sup>Optional</sup> <a name="Encrypt" id="@cdktf/provider-upcloud.server.ServerTemplate.property.encrypt"></a>
 
 ```csharp
-public object Encrypt { get; set; }
+public bool|IResolvable Encrypt { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 Sets if the storage is encrypted at rest.
 
@@ -2396,10 +2396,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upclo
 ##### `FilesystemAutoresize`<sup>Optional</sup> <a name="FilesystemAutoresize" id="@cdktf/provider-upcloud.server.ServerTemplate.property.filesystemAutoresize"></a>
 
 ```csharp
-public object FilesystemAutoresize { get; set; }
+public bool|IResolvable FilesystemAutoresize { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 If set to true, provider will attempt to resize partition and filesystem when the size of template storage changes.
 
@@ -2658,7 +2658,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-upcloud.server.ServerLoginList.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-upcloud.server.ServerLoginList.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-upcloud.server.ServerLoginList.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-upcloud.server.ServerLoginList.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-upcloud.server.ServerLogin">ServerLogin</a>[]</code> | *No description.* |
 
 ---
 
@@ -2689,10 +2689,10 @@ public string Fqn { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-upcloud.server.ServerLoginList.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|ServerLogin[] InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-upcloud.server.ServerLogin">ServerLogin</a>[]
 
 ---
 
@@ -2953,15 +2953,15 @@ private void ResetUser()
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-upcloud.server.ServerLoginOutputReference.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-upcloud.server.ServerLoginOutputReference.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-upcloud.server.ServerLoginOutputReference.property.createPasswordInput">CreatePasswordInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-upcloud.server.ServerLoginOutputReference.property.createPasswordInput">CreatePasswordInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.server.ServerLoginOutputReference.property.keysInput">KeysInput</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.server.ServerLoginOutputReference.property.passwordDeliveryInput">PasswordDeliveryInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.server.ServerLoginOutputReference.property.userInput">UserInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-upcloud.server.ServerLoginOutputReference.property.createPassword">CreatePassword</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-upcloud.server.ServerLoginOutputReference.property.createPassword">CreatePassword</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.server.ServerLoginOutputReference.property.keys">Keys</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.server.ServerLoginOutputReference.property.passwordDelivery">PasswordDelivery</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.server.ServerLoginOutputReference.property.user">User</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-upcloud.server.ServerLoginOutputReference.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-upcloud.server.ServerLoginOutputReference.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-upcloud.server.ServerLogin">ServerLogin</a></code> | *No description.* |
 
 ---
 
@@ -2992,10 +2992,10 @@ public string Fqn { get; }
 ##### `CreatePasswordInput`<sup>Optional</sup> <a name="CreatePasswordInput" id="@cdktf/provider-upcloud.server.ServerLoginOutputReference.property.createPasswordInput"></a>
 
 ```csharp
-public object CreatePasswordInput { get; }
+public bool|IResolvable CreatePasswordInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -3032,10 +3032,10 @@ public string UserInput { get; }
 ##### `CreatePassword`<sup>Required</sup> <a name="CreatePassword" id="@cdktf/provider-upcloud.server.ServerLoginOutputReference.property.createPassword"></a>
 
 ```csharp
-public object CreatePassword { get; }
+public bool|IResolvable CreatePassword { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -3072,10 +3072,10 @@ public string User { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-upcloud.server.ServerLoginOutputReference.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|ServerLogin InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-upcloud.server.ServerLogin">ServerLogin</a>
 
 ---
 
@@ -3201,7 +3201,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-upcloud.server.ServerNetworkInterfaceAdditionalIpAddressList.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-upcloud.server.ServerNetworkInterfaceAdditionalIpAddressList.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-upcloud.server.ServerNetworkInterfaceAdditionalIpAddressList.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-upcloud.server.ServerNetworkInterfaceAdditionalIpAddressList.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-upcloud.server.ServerNetworkInterfaceAdditionalIpAddress">ServerNetworkInterfaceAdditionalIpAddress</a>[]</code> | *No description.* |
 
 ---
 
@@ -3232,10 +3232,10 @@ public string Fqn { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-upcloud.server.ServerNetworkInterfaceAdditionalIpAddressList.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|ServerNetworkInterfaceAdditionalIpAddress[] InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-upcloud.server.ServerNetworkInterfaceAdditionalIpAddress">ServerNetworkInterfaceAdditionalIpAddress</a>[]
 
 ---
 
@@ -3487,7 +3487,7 @@ private void ResetIpAddressFamily()
 | <code><a href="#@cdktf/provider-upcloud.server.ServerNetworkInterfaceAdditionalIpAddressOutputReference.property.ipAddressInput">IpAddressInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.server.ServerNetworkInterfaceAdditionalIpAddressOutputReference.property.ipAddress">IpAddress</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.server.ServerNetworkInterfaceAdditionalIpAddressOutputReference.property.ipAddressFamily">IpAddressFamily</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-upcloud.server.ServerNetworkInterfaceAdditionalIpAddressOutputReference.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-upcloud.server.ServerNetworkInterfaceAdditionalIpAddressOutputReference.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-upcloud.server.ServerNetworkInterfaceAdditionalIpAddress">ServerNetworkInterfaceAdditionalIpAddress</a></code> | *No description.* |
 
 ---
 
@@ -3568,10 +3568,10 @@ public string IpAddressFamily { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-upcloud.server.ServerNetworkInterfaceAdditionalIpAddressOutputReference.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|ServerNetworkInterfaceAdditionalIpAddress InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-upcloud.server.ServerNetworkInterfaceAdditionalIpAddress">ServerNetworkInterfaceAdditionalIpAddress</a>
 
 ---
 
@@ -3697,7 +3697,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-upcloud.server.ServerNetworkInterfaceList.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-upcloud.server.ServerNetworkInterfaceList.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-upcloud.server.ServerNetworkInterfaceList.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-upcloud.server.ServerNetworkInterfaceList.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-upcloud.server.ServerNetworkInterface">ServerNetworkInterface</a>[]</code> | *No description.* |
 
 ---
 
@@ -3728,10 +3728,10 @@ public string Fqn { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-upcloud.server.ServerNetworkInterfaceList.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|ServerNetworkInterface[] InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-upcloud.server.ServerNetworkInterface">ServerNetworkInterface</a>[]
 
 ---
 
@@ -3968,12 +3968,12 @@ Returns a reversible string representation.
 ##### `PutAdditionalIpAddress` <a name="PutAdditionalIpAddress" id="@cdktf/provider-upcloud.server.ServerNetworkInterfaceOutputReference.putAdditionalIpAddress"></a>
 
 ```csharp
-private void PutAdditionalIpAddress(object Value)
+private void PutAdditionalIpAddress(IResolvable|ServerNetworkInterfaceAdditionalIpAddress[] Value)
 ```
 
 ###### `Value`<sup>Required</sup> <a name="Value" id="@cdktf/provider-upcloud.server.ServerNetworkInterfaceOutputReference.putAdditionalIpAddress.parameter.value"></a>
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-upcloud.server.ServerNetworkInterfaceAdditionalIpAddress">ServerNetworkInterfaceAdditionalIpAddress</a>[]
 
 ---
 
@@ -4029,22 +4029,22 @@ private void ResetSourceIpFiltering()
 | <code><a href="#@cdktf/provider-upcloud.server.ServerNetworkInterfaceOutputReference.property.additionalIpAddress">AdditionalIpAddress</a></code> | <code><a href="#@cdktf/provider-upcloud.server.ServerNetworkInterfaceAdditionalIpAddressList">ServerNetworkInterfaceAdditionalIpAddressList</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.server.ServerNetworkInterfaceOutputReference.property.ipAddressFloating">IpAddressFloating</a></code> | <code>HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.server.ServerNetworkInterfaceOutputReference.property.macAddress">MacAddress</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-upcloud.server.ServerNetworkInterfaceOutputReference.property.additionalIpAddressInput">AdditionalIpAddressInput</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-upcloud.server.ServerNetworkInterfaceOutputReference.property.bootableInput">BootableInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-upcloud.server.ServerNetworkInterfaceOutputReference.property.additionalIpAddressInput">AdditionalIpAddressInput</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-upcloud.server.ServerNetworkInterfaceAdditionalIpAddress">ServerNetworkInterfaceAdditionalIpAddress</a>[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-upcloud.server.ServerNetworkInterfaceOutputReference.property.bootableInput">BootableInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.server.ServerNetworkInterfaceOutputReference.property.indexInput">IndexInput</a></code> | <code>double</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.server.ServerNetworkInterfaceOutputReference.property.ipAddressFamilyInput">IpAddressFamilyInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.server.ServerNetworkInterfaceOutputReference.property.ipAddressInput">IpAddressInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.server.ServerNetworkInterfaceOutputReference.property.networkInput">NetworkInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-upcloud.server.ServerNetworkInterfaceOutputReference.property.sourceIpFilteringInput">SourceIpFilteringInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-upcloud.server.ServerNetworkInterfaceOutputReference.property.sourceIpFilteringInput">SourceIpFilteringInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.server.ServerNetworkInterfaceOutputReference.property.typeInput">TypeInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-upcloud.server.ServerNetworkInterfaceOutputReference.property.bootable">Bootable</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-upcloud.server.ServerNetworkInterfaceOutputReference.property.bootable">Bootable</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.server.ServerNetworkInterfaceOutputReference.property.index">Index</a></code> | <code>double</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.server.ServerNetworkInterfaceOutputReference.property.ipAddress">IpAddress</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.server.ServerNetworkInterfaceOutputReference.property.ipAddressFamily">IpAddressFamily</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.server.ServerNetworkInterfaceOutputReference.property.network">Network</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-upcloud.server.ServerNetworkInterfaceOutputReference.property.sourceIpFiltering">SourceIpFiltering</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-upcloud.server.ServerNetworkInterfaceOutputReference.property.sourceIpFiltering">SourceIpFiltering</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.server.ServerNetworkInterfaceOutputReference.property.type">Type</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-upcloud.server.ServerNetworkInterfaceOutputReference.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-upcloud.server.ServerNetworkInterfaceOutputReference.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-upcloud.server.ServerNetworkInterface">ServerNetworkInterface</a></code> | *No description.* |
 
 ---
 
@@ -4105,20 +4105,20 @@ public string MacAddress { get; }
 ##### `AdditionalIpAddressInput`<sup>Optional</sup> <a name="AdditionalIpAddressInput" id="@cdktf/provider-upcloud.server.ServerNetworkInterfaceOutputReference.property.additionalIpAddressInput"></a>
 
 ```csharp
-public object AdditionalIpAddressInput { get; }
+public IResolvable|ServerNetworkInterfaceAdditionalIpAddress[] AdditionalIpAddressInput { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-upcloud.server.ServerNetworkInterfaceAdditionalIpAddress">ServerNetworkInterfaceAdditionalIpAddress</a>[]
 
 ---
 
 ##### `BootableInput`<sup>Optional</sup> <a name="BootableInput" id="@cdktf/provider-upcloud.server.ServerNetworkInterfaceOutputReference.property.bootableInput"></a>
 
 ```csharp
-public object BootableInput { get; }
+public bool|IResolvable BootableInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -4165,10 +4165,10 @@ public string NetworkInput { get; }
 ##### `SourceIpFilteringInput`<sup>Optional</sup> <a name="SourceIpFilteringInput" id="@cdktf/provider-upcloud.server.ServerNetworkInterfaceOutputReference.property.sourceIpFilteringInput"></a>
 
 ```csharp
-public object SourceIpFilteringInput { get; }
+public bool|IResolvable SourceIpFilteringInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -4185,10 +4185,10 @@ public string TypeInput { get; }
 ##### `Bootable`<sup>Required</sup> <a name="Bootable" id="@cdktf/provider-upcloud.server.ServerNetworkInterfaceOutputReference.property.bootable"></a>
 
 ```csharp
-public object Bootable { get; }
+public bool|IResolvable Bootable { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -4235,10 +4235,10 @@ public string Network { get; }
 ##### `SourceIpFiltering`<sup>Required</sup> <a name="SourceIpFiltering" id="@cdktf/provider-upcloud.server.ServerNetworkInterfaceOutputReference.property.sourceIpFiltering"></a>
 
 ```csharp
-public object SourceIpFiltering { get; }
+public bool|IResolvable SourceIpFiltering { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -4255,10 +4255,10 @@ public string Type { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-upcloud.server.ServerNetworkInterfaceOutputReference.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|ServerNetworkInterface InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-upcloud.server.ServerNetworkInterface">ServerNetworkInterface</a>
 
 ---
 
@@ -4384,7 +4384,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-upcloud.server.ServerSimpleBackupList.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-upcloud.server.ServerSimpleBackupList.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-upcloud.server.ServerSimpleBackupList.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-upcloud.server.ServerSimpleBackupList.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-upcloud.server.ServerSimpleBackup">ServerSimpleBackup</a>[]</code> | *No description.* |
 
 ---
 
@@ -4415,10 +4415,10 @@ public string Fqn { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-upcloud.server.ServerSimpleBackupList.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|ServerSimpleBackup[] InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-upcloud.server.ServerSimpleBackup">ServerSimpleBackup</a>[]
 
 ---
 
@@ -4669,7 +4669,7 @@ private void ResetTime()
 | <code><a href="#@cdktf/provider-upcloud.server.ServerSimpleBackupOutputReference.property.timeInput">TimeInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.server.ServerSimpleBackupOutputReference.property.plan">Plan</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.server.ServerSimpleBackupOutputReference.property.time">Time</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-upcloud.server.ServerSimpleBackupOutputReference.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-upcloud.server.ServerSimpleBackupOutputReference.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-upcloud.server.ServerSimpleBackup">ServerSimpleBackup</a></code> | *No description.* |
 
 ---
 
@@ -4740,10 +4740,10 @@ public string Time { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-upcloud.server.ServerSimpleBackupOutputReference.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|ServerSimpleBackup InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-upcloud.server.ServerSimpleBackup">ServerSimpleBackup</a>
 
 ---
 
@@ -4869,7 +4869,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-upcloud.server.ServerStorageDevicesList.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-upcloud.server.ServerStorageDevicesList.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-upcloud.server.ServerStorageDevicesList.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-upcloud.server.ServerStorageDevicesList.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-upcloud.server.ServerStorageDevices">ServerStorageDevices</a>[]</code> | *No description.* |
 
 ---
 
@@ -4900,10 +4900,10 @@ public string Fqn { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-upcloud.server.ServerStorageDevicesList.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|ServerStorageDevices[] InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-upcloud.server.ServerStorageDevices">ServerStorageDevices</a>[]
 
 ---
 
@@ -5172,7 +5172,7 @@ private void ResetType()
 | <code><a href="#@cdktf/provider-upcloud.server.ServerStorageDevicesOutputReference.property.addressPosition">AddressPosition</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.server.ServerStorageDevicesOutputReference.property.storage">Storage</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.server.ServerStorageDevicesOutputReference.property.type">Type</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-upcloud.server.ServerStorageDevicesOutputReference.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-upcloud.server.ServerStorageDevicesOutputReference.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-upcloud.server.ServerStorageDevices">ServerStorageDevices</a></code> | *No description.* |
 
 ---
 
@@ -5283,10 +5283,10 @@ public string Type { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-upcloud.server.ServerStorageDevicesOutputReference.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|ServerStorageDevices InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-upcloud.server.ServerStorageDevices">ServerStorageDevices</a>
 
 ---
 
@@ -5412,7 +5412,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-upcloud.server.ServerTemplateBackupRuleList.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-upcloud.server.ServerTemplateBackupRuleList.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-upcloud.server.ServerTemplateBackupRuleList.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-upcloud.server.ServerTemplateBackupRuleList.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-upcloud.server.ServerTemplateBackupRule">ServerTemplateBackupRule</a>[]</code> | *No description.* |
 
 ---
 
@@ -5443,10 +5443,10 @@ public string Fqn { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-upcloud.server.ServerTemplateBackupRuleList.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|ServerTemplateBackupRule[] InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-upcloud.server.ServerTemplateBackupRule">ServerTemplateBackupRule</a>[]
 
 ---
 
@@ -5685,7 +5685,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-upcloud.server.ServerTemplateBackupRuleOutputReference.property.interval">Interval</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.server.ServerTemplateBackupRuleOutputReference.property.retention">Retention</a></code> | <code>double</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.server.ServerTemplateBackupRuleOutputReference.property.time">Time</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-upcloud.server.ServerTemplateBackupRuleOutputReference.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-upcloud.server.ServerTemplateBackupRuleOutputReference.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-upcloud.server.ServerTemplateBackupRule">ServerTemplateBackupRule</a></code> | *No description.* |
 
 ---
 
@@ -5776,10 +5776,10 @@ public string Time { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-upcloud.server.ServerTemplateBackupRuleOutputReference.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|ServerTemplateBackupRule InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-upcloud.server.ServerTemplateBackupRule">ServerTemplateBackupRule</a>
 
 ---
 
@@ -5905,7 +5905,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-upcloud.server.ServerTemplateList.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-upcloud.server.ServerTemplateList.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-upcloud.server.ServerTemplateList.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-upcloud.server.ServerTemplateList.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-upcloud.server.ServerTemplate">ServerTemplate</a>[]</code> | *No description.* |
 
 ---
 
@@ -5936,10 +5936,10 @@ public string Fqn { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-upcloud.server.ServerTemplateList.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|ServerTemplate[] InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-upcloud.server.ServerTemplate">ServerTemplate</a>[]
 
 ---
 
@@ -6179,12 +6179,12 @@ Returns a reversible string representation.
 ##### `PutBackupRule` <a name="PutBackupRule" id="@cdktf/provider-upcloud.server.ServerTemplateOutputReference.putBackupRule"></a>
 
 ```csharp
-private void PutBackupRule(object Value)
+private void PutBackupRule(IResolvable|ServerTemplateBackupRule[] Value)
 ```
 
 ###### `Value`<sup>Required</sup> <a name="Value" id="@cdktf/provider-upcloud.server.ServerTemplateOutputReference.putBackupRule.parameter.value"></a>
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-upcloud.server.ServerTemplateBackupRule">ServerTemplateBackupRule</a>[]
 
 ---
 
@@ -6259,24 +6259,24 @@ private void ResetTitle()
 | <code><a href="#@cdktf/provider-upcloud.server.ServerTemplateOutputReference.property.id">Id</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.server.ServerTemplateOutputReference.property.addressInput">AddressInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.server.ServerTemplateOutputReference.property.addressPositionInput">AddressPositionInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-upcloud.server.ServerTemplateOutputReference.property.backupRuleInput">BackupRuleInput</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-upcloud.server.ServerTemplateOutputReference.property.deleteAutoresizeBackupInput">DeleteAutoresizeBackupInput</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-upcloud.server.ServerTemplateOutputReference.property.encryptInput">EncryptInput</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-upcloud.server.ServerTemplateOutputReference.property.filesystemAutoresizeInput">FilesystemAutoresizeInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-upcloud.server.ServerTemplateOutputReference.property.backupRuleInput">BackupRuleInput</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-upcloud.server.ServerTemplateBackupRule">ServerTemplateBackupRule</a>[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-upcloud.server.ServerTemplateOutputReference.property.deleteAutoresizeBackupInput">DeleteAutoresizeBackupInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-upcloud.server.ServerTemplateOutputReference.property.encryptInput">EncryptInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-upcloud.server.ServerTemplateOutputReference.property.filesystemAutoresizeInput">FilesystemAutoresizeInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.server.ServerTemplateOutputReference.property.sizeInput">SizeInput</a></code> | <code>double</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.server.ServerTemplateOutputReference.property.storageInput">StorageInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.server.ServerTemplateOutputReference.property.tierInput">TierInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.server.ServerTemplateOutputReference.property.titleInput">TitleInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.server.ServerTemplateOutputReference.property.address">Address</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.server.ServerTemplateOutputReference.property.addressPosition">AddressPosition</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-upcloud.server.ServerTemplateOutputReference.property.deleteAutoresizeBackup">DeleteAutoresizeBackup</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-upcloud.server.ServerTemplateOutputReference.property.encrypt">Encrypt</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-upcloud.server.ServerTemplateOutputReference.property.filesystemAutoresize">FilesystemAutoresize</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-upcloud.server.ServerTemplateOutputReference.property.deleteAutoresizeBackup">DeleteAutoresizeBackup</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-upcloud.server.ServerTemplateOutputReference.property.encrypt">Encrypt</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-upcloud.server.ServerTemplateOutputReference.property.filesystemAutoresize">FilesystemAutoresize</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.server.ServerTemplateOutputReference.property.size">Size</a></code> | <code>double</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.server.ServerTemplateOutputReference.property.storage">Storage</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.server.ServerTemplateOutputReference.property.tier">Tier</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.server.ServerTemplateOutputReference.property.title">Title</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-upcloud.server.ServerTemplateOutputReference.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-upcloud.server.ServerTemplateOutputReference.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-upcloud.server.ServerTemplate">ServerTemplate</a></code> | *No description.* |
 
 ---
 
@@ -6347,40 +6347,40 @@ public string AddressPositionInput { get; }
 ##### `BackupRuleInput`<sup>Optional</sup> <a name="BackupRuleInput" id="@cdktf/provider-upcloud.server.ServerTemplateOutputReference.property.backupRuleInput"></a>
 
 ```csharp
-public object BackupRuleInput { get; }
+public IResolvable|ServerTemplateBackupRule[] BackupRuleInput { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-upcloud.server.ServerTemplateBackupRule">ServerTemplateBackupRule</a>[]
 
 ---
 
 ##### `DeleteAutoresizeBackupInput`<sup>Optional</sup> <a name="DeleteAutoresizeBackupInput" id="@cdktf/provider-upcloud.server.ServerTemplateOutputReference.property.deleteAutoresizeBackupInput"></a>
 
 ```csharp
-public object DeleteAutoresizeBackupInput { get; }
+public bool|IResolvable DeleteAutoresizeBackupInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
 ##### `EncryptInput`<sup>Optional</sup> <a name="EncryptInput" id="@cdktf/provider-upcloud.server.ServerTemplateOutputReference.property.encryptInput"></a>
 
 ```csharp
-public object EncryptInput { get; }
+public bool|IResolvable EncryptInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
 ##### `FilesystemAutoresizeInput`<sup>Optional</sup> <a name="FilesystemAutoresizeInput" id="@cdktf/provider-upcloud.server.ServerTemplateOutputReference.property.filesystemAutoresizeInput"></a>
 
 ```csharp
-public object FilesystemAutoresizeInput { get; }
+public bool|IResolvable FilesystemAutoresizeInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -6447,30 +6447,30 @@ public string AddressPosition { get; }
 ##### `DeleteAutoresizeBackup`<sup>Required</sup> <a name="DeleteAutoresizeBackup" id="@cdktf/provider-upcloud.server.ServerTemplateOutputReference.property.deleteAutoresizeBackup"></a>
 
 ```csharp
-public object DeleteAutoresizeBackup { get; }
+public bool|IResolvable DeleteAutoresizeBackup { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
 ##### `Encrypt`<sup>Required</sup> <a name="Encrypt" id="@cdktf/provider-upcloud.server.ServerTemplateOutputReference.property.encrypt"></a>
 
 ```csharp
-public object Encrypt { get; }
+public bool|IResolvable Encrypt { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
 ##### `FilesystemAutoresize`<sup>Required</sup> <a name="FilesystemAutoresize" id="@cdktf/provider-upcloud.server.ServerTemplateOutputReference.property.filesystemAutoresize"></a>
 
 ```csharp
-public object FilesystemAutoresize { get; }
+public bool|IResolvable FilesystemAutoresize { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -6517,10 +6517,10 @@ public string Title { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-upcloud.server.ServerTemplateOutputReference.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|ServerTemplate InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-upcloud.server.ServerTemplate">ServerTemplate</a>
 
 ---
 

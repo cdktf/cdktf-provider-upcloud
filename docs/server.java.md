@@ -12,44 +12,32 @@ Represents a {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5
 import com.hashicorp.cdktf.providers.upcloud.server.Server;
 
 Server.Builder.create(Construct scope, java.lang.String id)
-//  .connection(SSHProvisionerConnection)
-//  .connection(WinrmProvisionerConnection)
-//  .count(java.lang.Number)
-//  .count(TerraformCount)
+//  .connection(SSHProvisionerConnection|WinrmProvisionerConnection)
+//  .count(java.lang.Number|TerraformCount)
 //  .dependsOn(java.util.List<ITerraformDependable>)
 //  .forEach(ITerraformIterator)
 //  .lifecycle(TerraformResourceLifecycle)
 //  .provider(TerraformProvider)
-//  .provisioners(java.util.List<FileProvisioner)
-//  .provisioners(LocalExecProvisioner)
-//  .provisioners(RemoteExecProvisioner>)
+//  .provisioners(java.util.List<FileProvisioner|LocalExecProvisioner|RemoteExecProvisioner>)
     .hostname(java.lang.String)
     .zone(java.lang.String)
 //  .bootOrder(java.lang.String)
 //  .cpu(java.lang.Number)
-//  .firewall(java.lang.Boolean)
-//  .firewall(IResolvable)
+//  .firewall(java.lang.Boolean|IResolvable)
 //  .host(java.lang.Number)
-//  .hotResize(java.lang.Boolean)
-//  .hotResize(IResolvable)
+//  .hotResize(java.lang.Boolean|IResolvable)
 //  .labels(java.util.Map<java.lang.String, java.lang.String>)
-//  .login(IResolvable)
-//  .login(java.util.List<ServerLogin>)
+//  .login(IResolvable|java.util.List<ServerLogin>)
 //  .mem(java.lang.Number)
-//  .metadata(java.lang.Boolean)
-//  .metadata(IResolvable)
-//  .networkInterface(IResolvable)
-//  .networkInterface(java.util.List<ServerNetworkInterface>)
+//  .metadata(java.lang.Boolean|IResolvable)
+//  .networkInterface(IResolvable|java.util.List<ServerNetworkInterface>)
 //  .nicModel(java.lang.String)
 //  .plan(java.lang.String)
 //  .serverGroup(java.lang.String)
-//  .simpleBackup(IResolvable)
-//  .simpleBackup(java.util.List<ServerSimpleBackup>)
-//  .storageDevices(IResolvable)
-//  .storageDevices(java.util.List<ServerStorageDevices>)
+//  .simpleBackup(IResolvable|java.util.List<ServerSimpleBackup>)
+//  .storageDevices(IResolvable|java.util.List<ServerStorageDevices>)
 //  .tags(java.util.List<java.lang.String>)
-//  .template(IResolvable)
-//  .template(java.util.List<ServerTemplate>)
+//  .template(IResolvable|java.util.List<ServerTemplate>)
 //  .timezone(java.lang.String)
 //  .title(java.lang.String)
 //  .userData(java.lang.String)
@@ -61,32 +49,32 @@ Server.Builder.create(Construct scope, java.lang.String id)
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-upcloud.server.Server.Initializer.parameter.scope">scope</a></code> | <code>software.constructs.Construct</code> | The scope in which to define this construct. |
 | <code><a href="#@cdktf/provider-upcloud.server.Server.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | The scoped construct ID. |
-| <code><a href="#@cdktf/provider-upcloud.server.Server.Initializer.parameter.connection">connection</a></code> | <code>com.hashicorp.cdktf.SSHProvisionerConnection OR com.hashicorp.cdktf.WinrmProvisionerConnection</code> | *No description.* |
-| <code><a href="#@cdktf/provider-upcloud.server.Server.Initializer.parameter.count">count</a></code> | <code>java.lang.Number OR com.hashicorp.cdktf.TerraformCount</code> | *No description.* |
+| <code><a href="#@cdktf/provider-upcloud.server.Server.Initializer.parameter.connection">connection</a></code> | <code>com.hashicorp.cdktf.SSHProvisionerConnection\|com.hashicorp.cdktf.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktf/provider-upcloud.server.Server.Initializer.parameter.count">count</a></code> | <code>java.lang.Number\|com.hashicorp.cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.server.Server.Initializer.parameter.dependsOn">dependsOn</a></code> | <code>java.util.List<com.hashicorp.cdktf.ITerraformDependable></code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.server.Server.Initializer.parameter.forEach">forEach</a></code> | <code>com.hashicorp.cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.server.Server.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>com.hashicorp.cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.server.Server.Initializer.parameter.provider">provider</a></code> | <code>com.hashicorp.cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-upcloud.server.Server.Initializer.parameter.provisioners">provisioners</a></code> | <code>java.util.List<com.hashicorp.cdktf.FileProvisioner OR com.hashicorp.cdktf.LocalExecProvisioner OR com.hashicorp.cdktf.RemoteExecProvisioner></code> | *No description.* |
+| <code><a href="#@cdktf/provider-upcloud.server.Server.Initializer.parameter.provisioners">provisioners</a></code> | <code>java.util.List<com.hashicorp.cdktf.FileProvisioner\|com.hashicorp.cdktf.LocalExecProvisioner\|com.hashicorp.cdktf.RemoteExecProvisioner></code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.server.Server.Initializer.parameter.hostname">hostname</a></code> | <code>java.lang.String</code> | The hostname of the server. |
 | <code><a href="#@cdktf/provider-upcloud.server.Server.Initializer.parameter.zone">zone</a></code> | <code>java.lang.String</code> | The zone in which the server will be hosted, e.g. `de-fra1`. You can list available zones with `upctl zone list`. |
 | <code><a href="#@cdktf/provider-upcloud.server.Server.Initializer.parameter.bootOrder">bootOrder</a></code> | <code>java.lang.String</code> | The boot device order, `cdrom`\|`disk`\|`network` or comma separated combination of those values. Defaults to `disk`. |
 | <code><a href="#@cdktf/provider-upcloud.server.Server.Initializer.parameter.cpu">cpu</a></code> | <code>java.lang.Number</code> | The number of CPU cores for the server. |
-| <code><a href="#@cdktf/provider-upcloud.server.Server.Initializer.parameter.firewall">firewall</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Are firewall rules active for the server. |
+| <code><a href="#@cdktf/provider-upcloud.server.Server.Initializer.parameter.firewall">firewall</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | Are firewall rules active for the server. |
 | <code><a href="#@cdktf/provider-upcloud.server.Server.Initializer.parameter.host">host</a></code> | <code>java.lang.Number</code> | Use this to start the VM on a specific host. |
-| <code><a href="#@cdktf/provider-upcloud.server.Server.Initializer.parameter.hotResize">hotResize</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | If set to true, allows changing the server plan without requiring a reboot. |
+| <code><a href="#@cdktf/provider-upcloud.server.Server.Initializer.parameter.hotResize">hotResize</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | If set to true, allows changing the server plan without requiring a reboot. |
 | <code><a href="#@cdktf/provider-upcloud.server.Server.Initializer.parameter.labels">labels</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | User defined key-value pairs to classify the server. |
-| <code><a href="#@cdktf/provider-upcloud.server.Server.Initializer.parameter.login">login</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-upcloud.server.ServerLogin">ServerLogin</a>></code> | login block. |
+| <code><a href="#@cdktf/provider-upcloud.server.Server.Initializer.parameter.login">login</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-upcloud.server.ServerLogin">ServerLogin</a>></code> | login block. |
 | <code><a href="#@cdktf/provider-upcloud.server.Server.Initializer.parameter.mem">mem</a></code> | <code>java.lang.Number</code> | The amount of memory for the server (in megabytes). |
-| <code><a href="#@cdktf/provider-upcloud.server.Server.Initializer.parameter.metadata">metadata</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Is metadata service active for the server. The metadata service must be enabled when using recent cloud-init based templates. |
-| <code><a href="#@cdktf/provider-upcloud.server.Server.Initializer.parameter.networkInterface">networkInterface</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-upcloud.server.ServerNetworkInterface">ServerNetworkInterface</a>></code> | network_interface block. |
+| <code><a href="#@cdktf/provider-upcloud.server.Server.Initializer.parameter.metadata">metadata</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | Is metadata service active for the server. The metadata service must be enabled when using recent cloud-init based templates. |
+| <code><a href="#@cdktf/provider-upcloud.server.Server.Initializer.parameter.networkInterface">networkInterface</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-upcloud.server.ServerNetworkInterface">ServerNetworkInterface</a>></code> | network_interface block. |
 | <code><a href="#@cdktf/provider-upcloud.server.Server.Initializer.parameter.nicModel">nicModel</a></code> | <code>java.lang.String</code> | The model of the server's network interfaces. |
 | <code><a href="#@cdktf/provider-upcloud.server.Server.Initializer.parameter.plan">plan</a></code> | <code>java.lang.String</code> | The pricing plan used for the server. You can list available server plans with `upctl server plans`. |
 | <code><a href="#@cdktf/provider-upcloud.server.Server.Initializer.parameter.serverGroup">serverGroup</a></code> | <code>java.lang.String</code> | The UUID of a server group to attach this server to. |
-| <code><a href="#@cdktf/provider-upcloud.server.Server.Initializer.parameter.simpleBackup">simpleBackup</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-upcloud.server.ServerSimpleBackup">ServerSimpleBackup</a>></code> | simple_backup block. |
-| <code><a href="#@cdktf/provider-upcloud.server.Server.Initializer.parameter.storageDevices">storageDevices</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-upcloud.server.ServerStorageDevices">ServerStorageDevices</a>></code> | storage_devices block. |
+| <code><a href="#@cdktf/provider-upcloud.server.Server.Initializer.parameter.simpleBackup">simpleBackup</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-upcloud.server.ServerSimpleBackup">ServerSimpleBackup</a>></code> | simple_backup block. |
+| <code><a href="#@cdktf/provider-upcloud.server.Server.Initializer.parameter.storageDevices">storageDevices</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-upcloud.server.ServerStorageDevices">ServerStorageDevices</a>></code> | storage_devices block. |
 | <code><a href="#@cdktf/provider-upcloud.server.Server.Initializer.parameter.tags">tags</a></code> | <code>java.util.List<java.lang.String></code> | The server related tags. |
-| <code><a href="#@cdktf/provider-upcloud.server.Server.Initializer.parameter.template">template</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-upcloud.server.ServerTemplate">ServerTemplate</a>></code> | template block. |
+| <code><a href="#@cdktf/provider-upcloud.server.Server.Initializer.parameter.template">template</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-upcloud.server.ServerTemplate">ServerTemplate</a>></code> | template block. |
 | <code><a href="#@cdktf/provider-upcloud.server.Server.Initializer.parameter.timezone">timezone</a></code> | <code>java.lang.String</code> | The timezone of the server. The timezone must be a valid timezone string, e.g. `Europe/Helsinki`. |
 | <code><a href="#@cdktf/provider-upcloud.server.Server.Initializer.parameter.title">title</a></code> | <code>java.lang.String</code> | A short, informational description of the server. |
 | <code><a href="#@cdktf/provider-upcloud.server.Server.Initializer.parameter.userData">userData</a></code> | <code>java.lang.String</code> | Defines URL for a server setup script, or the script body itself. |
@@ -114,13 +102,13 @@ Must be unique amongst siblings in the same scope
 
 ##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-upcloud.server.Server.Initializer.parameter.connection"></a>
 
-- *Type:* com.hashicorp.cdktf.SSHProvisionerConnection OR com.hashicorp.cdktf.WinrmProvisionerConnection
+- *Type:* com.hashicorp.cdktf.SSHProvisionerConnection|com.hashicorp.cdktf.WinrmProvisionerConnection
 
 ---
 
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-upcloud.server.Server.Initializer.parameter.count"></a>
 
-- *Type:* java.lang.Number OR com.hashicorp.cdktf.TerraformCount
+- *Type:* java.lang.Number|com.hashicorp.cdktf.TerraformCount
 
 ---
 
@@ -150,7 +138,7 @@ Must be unique amongst siblings in the same scope
 
 ##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-upcloud.server.Server.Initializer.parameter.provisioners"></a>
 
-- *Type:* java.util.List<com.hashicorp.cdktf.FileProvisioner OR com.hashicorp.cdktf.LocalExecProvisioner OR com.hashicorp.cdktf.RemoteExecProvisioner>
+- *Type:* java.util.List<com.hashicorp.cdktf.FileProvisioner|com.hashicorp.cdktf.LocalExecProvisioner|com.hashicorp.cdktf.RemoteExecProvisioner>
 
 ---
 
@@ -196,7 +184,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upclo
 
 ##### `firewall`<sup>Optional</sup> <a name="firewall" id="@cdktf/provider-upcloud.server.Server.Initializer.parameter.firewall"></a>
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 Are firewall rules active for the server.
 
@@ -218,7 +206,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upclo
 
 ##### `hotResize`<sup>Optional</sup> <a name="hotResize" id="@cdktf/provider-upcloud.server.Server.Initializer.parameter.hotResize"></a>
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 If set to true, allows changing the server plan without requiring a reboot.
 
@@ -240,7 +228,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upclo
 
 ##### `login`<sup>Optional</sup> <a name="login" id="@cdktf/provider-upcloud.server.Server.Initializer.parameter.login"></a>
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-upcloud.server.ServerLogin">ServerLogin</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-upcloud.server.ServerLogin">ServerLogin</a>>
 
 login block.
 
@@ -260,7 +248,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upclo
 
 ##### `metadata`<sup>Optional</sup> <a name="metadata" id="@cdktf/provider-upcloud.server.Server.Initializer.parameter.metadata"></a>
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 Is metadata service active for the server. The metadata service must be enabled when using recent cloud-init based templates.
 
@@ -270,7 +258,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upclo
 
 ##### `networkInterface`<sup>Optional</sup> <a name="networkInterface" id="@cdktf/provider-upcloud.server.Server.Initializer.parameter.networkInterface"></a>
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-upcloud.server.ServerNetworkInterface">ServerNetworkInterface</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-upcloud.server.ServerNetworkInterface">ServerNetworkInterface</a>>
 
 network_interface block.
 
@@ -312,7 +300,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upclo
 
 ##### `simpleBackup`<sup>Optional</sup> <a name="simpleBackup" id="@cdktf/provider-upcloud.server.Server.Initializer.parameter.simpleBackup"></a>
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-upcloud.server.ServerSimpleBackup">ServerSimpleBackup</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-upcloud.server.ServerSimpleBackup">ServerSimpleBackup</a>>
 
 simple_backup block.
 
@@ -322,7 +310,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upclo
 
 ##### `storageDevices`<sup>Optional</sup> <a name="storageDevices" id="@cdktf/provider-upcloud.server.Server.Initializer.parameter.storageDevices"></a>
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-upcloud.server.ServerStorageDevices">ServerStorageDevices</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-upcloud.server.ServerStorageDevices">ServerStorageDevices</a>>
 
 storage_devices block.
 
@@ -342,7 +330,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upclo
 
 ##### `template`<sup>Optional</sup> <a name="template" id="@cdktf/provider-upcloud.server.Server.Initializer.parameter.template"></a>
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-upcloud.server.ServerTemplate">ServerTemplate</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-upcloud.server.ServerTemplate">ServerTemplate</a>>
 
 template block.
 
@@ -643,7 +631,7 @@ public java.util.Map<java.lang.String, java.lang.String> getStringMapAttribute(j
 ##### `hasResourceMove` <a name="hasResourceMove" id="@cdktf/provider-upcloud.server.Server.hasResourceMove"></a>
 
 ```java
-public TerraformResourceMoveByTarget OR TerraformResourceMoveById hasResourceMove()
+public TerraformResourceMoveByTarget|TerraformResourceMoveById hasResourceMove()
 ```
 
 ##### `importFrom` <a name="importFrom" id="@cdktf/provider-upcloud.server.Server.importFrom"></a>
@@ -699,7 +687,7 @@ Full id of resource being moved from, e.g. "aws_s3_bucket.example".
 
 ```java
 public void moveTo(java.lang.String moveTarget)
-public void moveTo(java.lang.String moveTarget, java.lang.String OR java.lang.Number index)
+public void moveTo(java.lang.String moveTarget, java.lang.String|java.lang.Number index)
 ```
 
 Moves this resource to the target resource given by moveTarget.
@@ -714,7 +702,7 @@ The previously set user defined string set by .addMoveTarget() corresponding to 
 
 ###### `index`<sup>Optional</sup> <a name="index" id="@cdktf/provider-upcloud.server.Server.moveTo.parameter.index"></a>
 
-- *Type:* java.lang.String OR java.lang.Number
+- *Type:* java.lang.String|java.lang.Number
 
 Optional The index corresponding to the key the resource is to appear in the foreach of a resource to move to.
 
@@ -739,60 +727,60 @@ Full id of resource to move to, e.g. "aws_s3_bucket.example".
 ##### `putLogin` <a name="putLogin" id="@cdktf/provider-upcloud.server.Server.putLogin"></a>
 
 ```java
-public void putLogin(IResolvable OR java.util.List<ServerLogin> value)
+public void putLogin(IResolvable|java.util.List<ServerLogin> value)
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-upcloud.server.Server.putLogin.parameter.value"></a>
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-upcloud.server.ServerLogin">ServerLogin</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-upcloud.server.ServerLogin">ServerLogin</a>>
 
 ---
 
 ##### `putNetworkInterface` <a name="putNetworkInterface" id="@cdktf/provider-upcloud.server.Server.putNetworkInterface"></a>
 
 ```java
-public void putNetworkInterface(IResolvable OR java.util.List<ServerNetworkInterface> value)
+public void putNetworkInterface(IResolvable|java.util.List<ServerNetworkInterface> value)
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-upcloud.server.Server.putNetworkInterface.parameter.value"></a>
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-upcloud.server.ServerNetworkInterface">ServerNetworkInterface</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-upcloud.server.ServerNetworkInterface">ServerNetworkInterface</a>>
 
 ---
 
 ##### `putSimpleBackup` <a name="putSimpleBackup" id="@cdktf/provider-upcloud.server.Server.putSimpleBackup"></a>
 
 ```java
-public void putSimpleBackup(IResolvable OR java.util.List<ServerSimpleBackup> value)
+public void putSimpleBackup(IResolvable|java.util.List<ServerSimpleBackup> value)
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-upcloud.server.Server.putSimpleBackup.parameter.value"></a>
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-upcloud.server.ServerSimpleBackup">ServerSimpleBackup</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-upcloud.server.ServerSimpleBackup">ServerSimpleBackup</a>>
 
 ---
 
 ##### `putStorageDevices` <a name="putStorageDevices" id="@cdktf/provider-upcloud.server.Server.putStorageDevices"></a>
 
 ```java
-public void putStorageDevices(IResolvable OR java.util.List<ServerStorageDevices> value)
+public void putStorageDevices(IResolvable|java.util.List<ServerStorageDevices> value)
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-upcloud.server.Server.putStorageDevices.parameter.value"></a>
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-upcloud.server.ServerStorageDevices">ServerStorageDevices</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-upcloud.server.ServerStorageDevices">ServerStorageDevices</a>>
 
 ---
 
 ##### `putTemplate` <a name="putTemplate" id="@cdktf/provider-upcloud.server.Server.putTemplate"></a>
 
 ```java
-public void putTemplate(IResolvable OR java.util.List<ServerTemplate> value)
+public void putTemplate(IResolvable|java.util.List<ServerTemplate> value)
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-upcloud.server.Server.putTemplate.parameter.value"></a>
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-upcloud.server.ServerTemplate">ServerTemplate</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-upcloud.server.ServerTemplate">ServerTemplate</a>>
 
 ---
 
@@ -1048,13 +1036,13 @@ Refer to the {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5
 | <code><a href="#@cdktf/provider-upcloud.server.Server.property.terraformMetaArguments">terraformMetaArguments</a></code> | <code>java.util.Map<java.lang.String, java.lang.Object></code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.server.Server.property.terraformResourceType">terraformResourceType</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.server.Server.property.terraformGeneratorMetadata">terraformGeneratorMetadata</a></code> | <code>com.hashicorp.cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
-| <code><a href="#@cdktf/provider-upcloud.server.Server.property.connection">connection</a></code> | <code>com.hashicorp.cdktf.SSHProvisionerConnection OR com.hashicorp.cdktf.WinrmProvisionerConnection</code> | *No description.* |
-| <code><a href="#@cdktf/provider-upcloud.server.Server.property.count">count</a></code> | <code>java.lang.Number OR com.hashicorp.cdktf.TerraformCount</code> | *No description.* |
+| <code><a href="#@cdktf/provider-upcloud.server.Server.property.connection">connection</a></code> | <code>com.hashicorp.cdktf.SSHProvisionerConnection\|com.hashicorp.cdktf.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktf/provider-upcloud.server.Server.property.count">count</a></code> | <code>java.lang.Number\|com.hashicorp.cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.server.Server.property.dependsOn">dependsOn</a></code> | <code>java.util.List<java.lang.String></code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.server.Server.property.forEach">forEach</a></code> | <code>com.hashicorp.cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.server.Server.property.lifecycle">lifecycle</a></code> | <code>com.hashicorp.cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.server.Server.property.provider">provider</a></code> | <code>com.hashicorp.cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-upcloud.server.Server.property.provisioners">provisioners</a></code> | <code>java.util.List<com.hashicorp.cdktf.FileProvisioner OR com.hashicorp.cdktf.LocalExecProvisioner OR com.hashicorp.cdktf.RemoteExecProvisioner></code> | *No description.* |
+| <code><a href="#@cdktf/provider-upcloud.server.Server.property.provisioners">provisioners</a></code> | <code>java.util.List<com.hashicorp.cdktf.FileProvisioner\|com.hashicorp.cdktf.LocalExecProvisioner\|com.hashicorp.cdktf.RemoteExecProvisioner></code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.server.Server.property.id">id</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.server.Server.property.login">login</a></code> | <code><a href="#@cdktf/provider-upcloud.server.ServerLoginList">ServerLoginList</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.server.Server.property.networkInterface">networkInterface</a></code> | <code><a href="#@cdktf/provider-upcloud.server.ServerNetworkInterfaceList">ServerNetworkInterfaceList</a></code> | *No description.* |
@@ -1063,22 +1051,22 @@ Refer to the {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5
 | <code><a href="#@cdktf/provider-upcloud.server.Server.property.template">template</a></code> | <code><a href="#@cdktf/provider-upcloud.server.ServerTemplateList">ServerTemplateList</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.server.Server.property.bootOrderInput">bootOrderInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.server.Server.property.cpuInput">cpuInput</a></code> | <code>java.lang.Number</code> | *No description.* |
-| <code><a href="#@cdktf/provider-upcloud.server.Server.property.firewallInput">firewallInput</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-upcloud.server.Server.property.firewallInput">firewallInput</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.server.Server.property.hostInput">hostInput</a></code> | <code>java.lang.Number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.server.Server.property.hostnameInput">hostnameInput</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-upcloud.server.Server.property.hotResizeInput">hotResizeInput</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-upcloud.server.Server.property.hotResizeInput">hotResizeInput</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.server.Server.property.labelsInput">labelsInput</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | *No description.* |
-| <code><a href="#@cdktf/provider-upcloud.server.Server.property.loginInput">loginInput</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-upcloud.server.ServerLogin">ServerLogin</a>></code> | *No description.* |
+| <code><a href="#@cdktf/provider-upcloud.server.Server.property.loginInput">loginInput</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-upcloud.server.ServerLogin">ServerLogin</a>></code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.server.Server.property.memInput">memInput</a></code> | <code>java.lang.Number</code> | *No description.* |
-| <code><a href="#@cdktf/provider-upcloud.server.Server.property.metadataInput">metadataInput</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-upcloud.server.Server.property.networkInterfaceInput">networkInterfaceInput</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-upcloud.server.ServerNetworkInterface">ServerNetworkInterface</a>></code> | *No description.* |
+| <code><a href="#@cdktf/provider-upcloud.server.Server.property.metadataInput">metadataInput</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-upcloud.server.Server.property.networkInterfaceInput">networkInterfaceInput</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-upcloud.server.ServerNetworkInterface">ServerNetworkInterface</a>></code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.server.Server.property.nicModelInput">nicModelInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.server.Server.property.planInput">planInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.server.Server.property.serverGroupInput">serverGroupInput</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-upcloud.server.Server.property.simpleBackupInput">simpleBackupInput</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-upcloud.server.ServerSimpleBackup">ServerSimpleBackup</a>></code> | *No description.* |
-| <code><a href="#@cdktf/provider-upcloud.server.Server.property.storageDevicesInput">storageDevicesInput</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-upcloud.server.ServerStorageDevices">ServerStorageDevices</a>></code> | *No description.* |
+| <code><a href="#@cdktf/provider-upcloud.server.Server.property.simpleBackupInput">simpleBackupInput</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-upcloud.server.ServerSimpleBackup">ServerSimpleBackup</a>></code> | *No description.* |
+| <code><a href="#@cdktf/provider-upcloud.server.Server.property.storageDevicesInput">storageDevicesInput</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-upcloud.server.ServerStorageDevices">ServerStorageDevices</a>></code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.server.Server.property.tagsInput">tagsInput</a></code> | <code>java.util.List<java.lang.String></code> | *No description.* |
-| <code><a href="#@cdktf/provider-upcloud.server.Server.property.templateInput">templateInput</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-upcloud.server.ServerTemplate">ServerTemplate</a>></code> | *No description.* |
+| <code><a href="#@cdktf/provider-upcloud.server.Server.property.templateInput">templateInput</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-upcloud.server.ServerTemplate">ServerTemplate</a>></code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.server.Server.property.timezoneInput">timezoneInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.server.Server.property.titleInput">titleInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.server.Server.property.userDataInput">userDataInput</a></code> | <code>java.lang.String</code> | *No description.* |
@@ -1086,13 +1074,13 @@ Refer to the {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5
 | <code><a href="#@cdktf/provider-upcloud.server.Server.property.zoneInput">zoneInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.server.Server.property.bootOrder">bootOrder</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.server.Server.property.cpu">cpu</a></code> | <code>java.lang.Number</code> | *No description.* |
-| <code><a href="#@cdktf/provider-upcloud.server.Server.property.firewall">firewall</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-upcloud.server.Server.property.firewall">firewall</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.server.Server.property.host">host</a></code> | <code>java.lang.Number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.server.Server.property.hostname">hostname</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-upcloud.server.Server.property.hotResize">hotResize</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-upcloud.server.Server.property.hotResize">hotResize</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.server.Server.property.labels">labels</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.server.Server.property.mem">mem</a></code> | <code>java.lang.Number</code> | *No description.* |
-| <code><a href="#@cdktf/provider-upcloud.server.Server.property.metadata">metadata</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-upcloud.server.Server.property.metadata">metadata</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.server.Server.property.nicModel">nicModel</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.server.Server.property.plan">plan</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.server.Server.property.serverGroup">serverGroup</a></code> | <code>java.lang.String</code> | *No description.* |
@@ -1180,20 +1168,20 @@ public TerraformProviderGeneratorMetadata getTerraformGeneratorMetadata();
 ##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-upcloud.server.Server.property.connection"></a>
 
 ```java
-public java.lang.Object getConnection();
+public SSHProvisionerConnection|WinrmProvisionerConnection getConnection();
 ```
 
-- *Type:* com.hashicorp.cdktf.SSHProvisionerConnection OR com.hashicorp.cdktf.WinrmProvisionerConnection
+- *Type:* com.hashicorp.cdktf.SSHProvisionerConnection|com.hashicorp.cdktf.WinrmProvisionerConnection
 
 ---
 
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-upcloud.server.Server.property.count"></a>
 
 ```java
-public java.lang.Object getCount();
+public java.lang.Number|TerraformCount getCount();
 ```
 
-- *Type:* java.lang.Number OR com.hashicorp.cdktf.TerraformCount
+- *Type:* java.lang.Number|com.hashicorp.cdktf.TerraformCount
 
 ---
 
@@ -1240,10 +1228,10 @@ public TerraformProvider getProvider();
 ##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-upcloud.server.Server.property.provisioners"></a>
 
 ```java
-public java.lang.Object getProvisioners();
+public java.util.List<FileProvisioner|LocalExecProvisioner|RemoteExecProvisioner> getProvisioners();
 ```
 
-- *Type:* java.util.List<com.hashicorp.cdktf.FileProvisioner OR com.hashicorp.cdktf.LocalExecProvisioner OR com.hashicorp.cdktf.RemoteExecProvisioner>
+- *Type:* java.util.List<com.hashicorp.cdktf.FileProvisioner|com.hashicorp.cdktf.LocalExecProvisioner|com.hashicorp.cdktf.RemoteExecProvisioner>
 
 ---
 
@@ -1330,10 +1318,10 @@ public java.lang.Number getCpuInput();
 ##### `firewallInput`<sup>Optional</sup> <a name="firewallInput" id="@cdktf/provider-upcloud.server.Server.property.firewallInput"></a>
 
 ```java
-public java.lang.Object getFirewallInput();
+public java.lang.Boolean|IResolvable getFirewallInput();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 ---
 
@@ -1360,10 +1348,10 @@ public java.lang.String getHostnameInput();
 ##### `hotResizeInput`<sup>Optional</sup> <a name="hotResizeInput" id="@cdktf/provider-upcloud.server.Server.property.hotResizeInput"></a>
 
 ```java
-public java.lang.Object getHotResizeInput();
+public java.lang.Boolean|IResolvable getHotResizeInput();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 ---
 
@@ -1380,10 +1368,10 @@ public java.util.Map<java.lang.String, java.lang.String> getLabelsInput();
 ##### `loginInput`<sup>Optional</sup> <a name="loginInput" id="@cdktf/provider-upcloud.server.Server.property.loginInput"></a>
 
 ```java
-public java.lang.Object getLoginInput();
+public IResolvable|java.util.List<ServerLogin> getLoginInput();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-upcloud.server.ServerLogin">ServerLogin</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-upcloud.server.ServerLogin">ServerLogin</a>>
 
 ---
 
@@ -1400,20 +1388,20 @@ public java.lang.Number getMemInput();
 ##### `metadataInput`<sup>Optional</sup> <a name="metadataInput" id="@cdktf/provider-upcloud.server.Server.property.metadataInput"></a>
 
 ```java
-public java.lang.Object getMetadataInput();
+public java.lang.Boolean|IResolvable getMetadataInput();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 ---
 
 ##### `networkInterfaceInput`<sup>Optional</sup> <a name="networkInterfaceInput" id="@cdktf/provider-upcloud.server.Server.property.networkInterfaceInput"></a>
 
 ```java
-public java.lang.Object getNetworkInterfaceInput();
+public IResolvable|java.util.List<ServerNetworkInterface> getNetworkInterfaceInput();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-upcloud.server.ServerNetworkInterface">ServerNetworkInterface</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-upcloud.server.ServerNetworkInterface">ServerNetworkInterface</a>>
 
 ---
 
@@ -1450,20 +1438,20 @@ public java.lang.String getServerGroupInput();
 ##### `simpleBackupInput`<sup>Optional</sup> <a name="simpleBackupInput" id="@cdktf/provider-upcloud.server.Server.property.simpleBackupInput"></a>
 
 ```java
-public java.lang.Object getSimpleBackupInput();
+public IResolvable|java.util.List<ServerSimpleBackup> getSimpleBackupInput();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-upcloud.server.ServerSimpleBackup">ServerSimpleBackup</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-upcloud.server.ServerSimpleBackup">ServerSimpleBackup</a>>
 
 ---
 
 ##### `storageDevicesInput`<sup>Optional</sup> <a name="storageDevicesInput" id="@cdktf/provider-upcloud.server.Server.property.storageDevicesInput"></a>
 
 ```java
-public java.lang.Object getStorageDevicesInput();
+public IResolvable|java.util.List<ServerStorageDevices> getStorageDevicesInput();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-upcloud.server.ServerStorageDevices">ServerStorageDevices</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-upcloud.server.ServerStorageDevices">ServerStorageDevices</a>>
 
 ---
 
@@ -1480,10 +1468,10 @@ public java.util.List<java.lang.String> getTagsInput();
 ##### `templateInput`<sup>Optional</sup> <a name="templateInput" id="@cdktf/provider-upcloud.server.Server.property.templateInput"></a>
 
 ```java
-public java.lang.Object getTemplateInput();
+public IResolvable|java.util.List<ServerTemplate> getTemplateInput();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-upcloud.server.ServerTemplate">ServerTemplate</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-upcloud.server.ServerTemplate">ServerTemplate</a>>
 
 ---
 
@@ -1560,10 +1548,10 @@ public java.lang.Number getCpu();
 ##### `firewall`<sup>Required</sup> <a name="firewall" id="@cdktf/provider-upcloud.server.Server.property.firewall"></a>
 
 ```java
-public java.lang.Object getFirewall();
+public java.lang.Boolean|IResolvable getFirewall();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 ---
 
@@ -1590,10 +1578,10 @@ public java.lang.String getHostname();
 ##### `hotResize`<sup>Required</sup> <a name="hotResize" id="@cdktf/provider-upcloud.server.Server.property.hotResize"></a>
 
 ```java
-public java.lang.Object getHotResize();
+public java.lang.Boolean|IResolvable getHotResize();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 ---
 
@@ -1620,10 +1608,10 @@ public java.lang.Number getMem();
 ##### `metadata`<sup>Required</sup> <a name="metadata" id="@cdktf/provider-upcloud.server.Server.property.metadata"></a>
 
 ```java
-public java.lang.Object getMetadata();
+public java.lang.Boolean|IResolvable getMetadata();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 ---
 
@@ -1745,44 +1733,32 @@ public java.lang.String getTfResourceType();
 import com.hashicorp.cdktf.providers.upcloud.server.ServerConfig;
 
 ServerConfig.builder()
-//  .connection(SSHProvisionerConnection)
-//  .connection(WinrmProvisionerConnection)
-//  .count(java.lang.Number)
-//  .count(TerraformCount)
+//  .connection(SSHProvisionerConnection|WinrmProvisionerConnection)
+//  .count(java.lang.Number|TerraformCount)
 //  .dependsOn(java.util.List<ITerraformDependable>)
 //  .forEach(ITerraformIterator)
 //  .lifecycle(TerraformResourceLifecycle)
 //  .provider(TerraformProvider)
-//  .provisioners(java.util.List<FileProvisioner)
-//  .provisioners(LocalExecProvisioner)
-//  .provisioners(RemoteExecProvisioner>)
+//  .provisioners(java.util.List<FileProvisioner|LocalExecProvisioner|RemoteExecProvisioner>)
     .hostname(java.lang.String)
     .zone(java.lang.String)
 //  .bootOrder(java.lang.String)
 //  .cpu(java.lang.Number)
-//  .firewall(java.lang.Boolean)
-//  .firewall(IResolvable)
+//  .firewall(java.lang.Boolean|IResolvable)
 //  .host(java.lang.Number)
-//  .hotResize(java.lang.Boolean)
-//  .hotResize(IResolvable)
+//  .hotResize(java.lang.Boolean|IResolvable)
 //  .labels(java.util.Map<java.lang.String, java.lang.String>)
-//  .login(IResolvable)
-//  .login(java.util.List<ServerLogin>)
+//  .login(IResolvable|java.util.List<ServerLogin>)
 //  .mem(java.lang.Number)
-//  .metadata(java.lang.Boolean)
-//  .metadata(IResolvable)
-//  .networkInterface(IResolvable)
-//  .networkInterface(java.util.List<ServerNetworkInterface>)
+//  .metadata(java.lang.Boolean|IResolvable)
+//  .networkInterface(IResolvable|java.util.List<ServerNetworkInterface>)
 //  .nicModel(java.lang.String)
 //  .plan(java.lang.String)
 //  .serverGroup(java.lang.String)
-//  .simpleBackup(IResolvable)
-//  .simpleBackup(java.util.List<ServerSimpleBackup>)
-//  .storageDevices(IResolvable)
-//  .storageDevices(java.util.List<ServerStorageDevices>)
+//  .simpleBackup(IResolvable|java.util.List<ServerSimpleBackup>)
+//  .storageDevices(IResolvable|java.util.List<ServerStorageDevices>)
 //  .tags(java.util.List<java.lang.String>)
-//  .template(IResolvable)
-//  .template(java.util.List<ServerTemplate>)
+//  .template(IResolvable|java.util.List<ServerTemplate>)
 //  .timezone(java.lang.String)
 //  .title(java.lang.String)
 //  .userData(java.lang.String)
@@ -1794,32 +1770,32 @@ ServerConfig.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-upcloud.server.ServerConfig.property.connection">connection</a></code> | <code>com.hashicorp.cdktf.SSHProvisionerConnection OR com.hashicorp.cdktf.WinrmProvisionerConnection</code> | *No description.* |
-| <code><a href="#@cdktf/provider-upcloud.server.ServerConfig.property.count">count</a></code> | <code>java.lang.Number OR com.hashicorp.cdktf.TerraformCount</code> | *No description.* |
+| <code><a href="#@cdktf/provider-upcloud.server.ServerConfig.property.connection">connection</a></code> | <code>com.hashicorp.cdktf.SSHProvisionerConnection\|com.hashicorp.cdktf.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktf/provider-upcloud.server.ServerConfig.property.count">count</a></code> | <code>java.lang.Number\|com.hashicorp.cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.server.ServerConfig.property.dependsOn">dependsOn</a></code> | <code>java.util.List<com.hashicorp.cdktf.ITerraformDependable></code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.server.ServerConfig.property.forEach">forEach</a></code> | <code>com.hashicorp.cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.server.ServerConfig.property.lifecycle">lifecycle</a></code> | <code>com.hashicorp.cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.server.ServerConfig.property.provider">provider</a></code> | <code>com.hashicorp.cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-upcloud.server.ServerConfig.property.provisioners">provisioners</a></code> | <code>java.util.List<com.hashicorp.cdktf.FileProvisioner OR com.hashicorp.cdktf.LocalExecProvisioner OR com.hashicorp.cdktf.RemoteExecProvisioner></code> | *No description.* |
+| <code><a href="#@cdktf/provider-upcloud.server.ServerConfig.property.provisioners">provisioners</a></code> | <code>java.util.List<com.hashicorp.cdktf.FileProvisioner\|com.hashicorp.cdktf.LocalExecProvisioner\|com.hashicorp.cdktf.RemoteExecProvisioner></code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.server.ServerConfig.property.hostname">hostname</a></code> | <code>java.lang.String</code> | The hostname of the server. |
 | <code><a href="#@cdktf/provider-upcloud.server.ServerConfig.property.zone">zone</a></code> | <code>java.lang.String</code> | The zone in which the server will be hosted, e.g. `de-fra1`. You can list available zones with `upctl zone list`. |
 | <code><a href="#@cdktf/provider-upcloud.server.ServerConfig.property.bootOrder">bootOrder</a></code> | <code>java.lang.String</code> | The boot device order, `cdrom`\|`disk`\|`network` or comma separated combination of those values. Defaults to `disk`. |
 | <code><a href="#@cdktf/provider-upcloud.server.ServerConfig.property.cpu">cpu</a></code> | <code>java.lang.Number</code> | The number of CPU cores for the server. |
-| <code><a href="#@cdktf/provider-upcloud.server.ServerConfig.property.firewall">firewall</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Are firewall rules active for the server. |
+| <code><a href="#@cdktf/provider-upcloud.server.ServerConfig.property.firewall">firewall</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | Are firewall rules active for the server. |
 | <code><a href="#@cdktf/provider-upcloud.server.ServerConfig.property.host">host</a></code> | <code>java.lang.Number</code> | Use this to start the VM on a specific host. |
-| <code><a href="#@cdktf/provider-upcloud.server.ServerConfig.property.hotResize">hotResize</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | If set to true, allows changing the server plan without requiring a reboot. |
+| <code><a href="#@cdktf/provider-upcloud.server.ServerConfig.property.hotResize">hotResize</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | If set to true, allows changing the server plan without requiring a reboot. |
 | <code><a href="#@cdktf/provider-upcloud.server.ServerConfig.property.labels">labels</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | User defined key-value pairs to classify the server. |
-| <code><a href="#@cdktf/provider-upcloud.server.ServerConfig.property.login">login</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-upcloud.server.ServerLogin">ServerLogin</a>></code> | login block. |
+| <code><a href="#@cdktf/provider-upcloud.server.ServerConfig.property.login">login</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-upcloud.server.ServerLogin">ServerLogin</a>></code> | login block. |
 | <code><a href="#@cdktf/provider-upcloud.server.ServerConfig.property.mem">mem</a></code> | <code>java.lang.Number</code> | The amount of memory for the server (in megabytes). |
-| <code><a href="#@cdktf/provider-upcloud.server.ServerConfig.property.metadata">metadata</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Is metadata service active for the server. The metadata service must be enabled when using recent cloud-init based templates. |
-| <code><a href="#@cdktf/provider-upcloud.server.ServerConfig.property.networkInterface">networkInterface</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-upcloud.server.ServerNetworkInterface">ServerNetworkInterface</a>></code> | network_interface block. |
+| <code><a href="#@cdktf/provider-upcloud.server.ServerConfig.property.metadata">metadata</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | Is metadata service active for the server. The metadata service must be enabled when using recent cloud-init based templates. |
+| <code><a href="#@cdktf/provider-upcloud.server.ServerConfig.property.networkInterface">networkInterface</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-upcloud.server.ServerNetworkInterface">ServerNetworkInterface</a>></code> | network_interface block. |
 | <code><a href="#@cdktf/provider-upcloud.server.ServerConfig.property.nicModel">nicModel</a></code> | <code>java.lang.String</code> | The model of the server's network interfaces. |
 | <code><a href="#@cdktf/provider-upcloud.server.ServerConfig.property.plan">plan</a></code> | <code>java.lang.String</code> | The pricing plan used for the server. You can list available server plans with `upctl server plans`. |
 | <code><a href="#@cdktf/provider-upcloud.server.ServerConfig.property.serverGroup">serverGroup</a></code> | <code>java.lang.String</code> | The UUID of a server group to attach this server to. |
-| <code><a href="#@cdktf/provider-upcloud.server.ServerConfig.property.simpleBackup">simpleBackup</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-upcloud.server.ServerSimpleBackup">ServerSimpleBackup</a>></code> | simple_backup block. |
-| <code><a href="#@cdktf/provider-upcloud.server.ServerConfig.property.storageDevices">storageDevices</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-upcloud.server.ServerStorageDevices">ServerStorageDevices</a>></code> | storage_devices block. |
+| <code><a href="#@cdktf/provider-upcloud.server.ServerConfig.property.simpleBackup">simpleBackup</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-upcloud.server.ServerSimpleBackup">ServerSimpleBackup</a>></code> | simple_backup block. |
+| <code><a href="#@cdktf/provider-upcloud.server.ServerConfig.property.storageDevices">storageDevices</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-upcloud.server.ServerStorageDevices">ServerStorageDevices</a>></code> | storage_devices block. |
 | <code><a href="#@cdktf/provider-upcloud.server.ServerConfig.property.tags">tags</a></code> | <code>java.util.List<java.lang.String></code> | The server related tags. |
-| <code><a href="#@cdktf/provider-upcloud.server.ServerConfig.property.template">template</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-upcloud.server.ServerTemplate">ServerTemplate</a>></code> | template block. |
+| <code><a href="#@cdktf/provider-upcloud.server.ServerConfig.property.template">template</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-upcloud.server.ServerTemplate">ServerTemplate</a>></code> | template block. |
 | <code><a href="#@cdktf/provider-upcloud.server.ServerConfig.property.timezone">timezone</a></code> | <code>java.lang.String</code> | The timezone of the server. The timezone must be a valid timezone string, e.g. `Europe/Helsinki`. |
 | <code><a href="#@cdktf/provider-upcloud.server.ServerConfig.property.title">title</a></code> | <code>java.lang.String</code> | A short, informational description of the server. |
 | <code><a href="#@cdktf/provider-upcloud.server.ServerConfig.property.userData">userData</a></code> | <code>java.lang.String</code> | Defines URL for a server setup script, or the script body itself. |
@@ -1830,20 +1806,20 @@ ServerConfig.builder()
 ##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-upcloud.server.ServerConfig.property.connection"></a>
 
 ```java
-public java.lang.Object getConnection();
+public SSHProvisionerConnection|WinrmProvisionerConnection getConnection();
 ```
 
-- *Type:* com.hashicorp.cdktf.SSHProvisionerConnection OR com.hashicorp.cdktf.WinrmProvisionerConnection
+- *Type:* com.hashicorp.cdktf.SSHProvisionerConnection|com.hashicorp.cdktf.WinrmProvisionerConnection
 
 ---
 
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-upcloud.server.ServerConfig.property.count"></a>
 
 ```java
-public java.lang.Object getCount();
+public java.lang.Number|TerraformCount getCount();
 ```
 
-- *Type:* java.lang.Number OR com.hashicorp.cdktf.TerraformCount
+- *Type:* java.lang.Number|com.hashicorp.cdktf.TerraformCount
 
 ---
 
@@ -1890,10 +1866,10 @@ public TerraformProvider getProvider();
 ##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-upcloud.server.ServerConfig.property.provisioners"></a>
 
 ```java
-public java.lang.Object getProvisioners();
+public java.util.List<FileProvisioner|LocalExecProvisioner|RemoteExecProvisioner> getProvisioners();
 ```
 
-- *Type:* java.util.List<com.hashicorp.cdktf.FileProvisioner OR com.hashicorp.cdktf.LocalExecProvisioner OR com.hashicorp.cdktf.RemoteExecProvisioner>
+- *Type:* java.util.List<com.hashicorp.cdktf.FileProvisioner|com.hashicorp.cdktf.LocalExecProvisioner|com.hashicorp.cdktf.RemoteExecProvisioner>
 
 ---
 
@@ -1956,10 +1932,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upclo
 ##### `firewall`<sup>Optional</sup> <a name="firewall" id="@cdktf/provider-upcloud.server.ServerConfig.property.firewall"></a>
 
 ```java
-public java.lang.Object getFirewall();
+public java.lang.Boolean|IResolvable getFirewall();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 Are firewall rules active for the server.
 
@@ -1986,10 +1962,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upclo
 ##### `hotResize`<sup>Optional</sup> <a name="hotResize" id="@cdktf/provider-upcloud.server.ServerConfig.property.hotResize"></a>
 
 ```java
-public java.lang.Object getHotResize();
+public java.lang.Boolean|IResolvable getHotResize();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 If set to true, allows changing the server plan without requiring a reboot.
 
@@ -2016,10 +1992,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upclo
 ##### `login`<sup>Optional</sup> <a name="login" id="@cdktf/provider-upcloud.server.ServerConfig.property.login"></a>
 
 ```java
-public java.lang.Object getLogin();
+public IResolvable|java.util.List<ServerLogin> getLogin();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-upcloud.server.ServerLogin">ServerLogin</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-upcloud.server.ServerLogin">ServerLogin</a>>
 
 login block.
 
@@ -2044,10 +2020,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upclo
 ##### `metadata`<sup>Optional</sup> <a name="metadata" id="@cdktf/provider-upcloud.server.ServerConfig.property.metadata"></a>
 
 ```java
-public java.lang.Object getMetadata();
+public java.lang.Boolean|IResolvable getMetadata();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 Is metadata service active for the server. The metadata service must be enabled when using recent cloud-init based templates.
 
@@ -2058,10 +2034,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upclo
 ##### `networkInterface`<sup>Optional</sup> <a name="networkInterface" id="@cdktf/provider-upcloud.server.ServerConfig.property.networkInterface"></a>
 
 ```java
-public java.lang.Object getNetworkInterface();
+public IResolvable|java.util.List<ServerNetworkInterface> getNetworkInterface();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-upcloud.server.ServerNetworkInterface">ServerNetworkInterface</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-upcloud.server.ServerNetworkInterface">ServerNetworkInterface</a>>
 
 network_interface block.
 
@@ -2116,10 +2092,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upclo
 ##### `simpleBackup`<sup>Optional</sup> <a name="simpleBackup" id="@cdktf/provider-upcloud.server.ServerConfig.property.simpleBackup"></a>
 
 ```java
-public java.lang.Object getSimpleBackup();
+public IResolvable|java.util.List<ServerSimpleBackup> getSimpleBackup();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-upcloud.server.ServerSimpleBackup">ServerSimpleBackup</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-upcloud.server.ServerSimpleBackup">ServerSimpleBackup</a>>
 
 simple_backup block.
 
@@ -2130,10 +2106,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upclo
 ##### `storageDevices`<sup>Optional</sup> <a name="storageDevices" id="@cdktf/provider-upcloud.server.ServerConfig.property.storageDevices"></a>
 
 ```java
-public java.lang.Object getStorageDevices();
+public IResolvable|java.util.List<ServerStorageDevices> getStorageDevices();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-upcloud.server.ServerStorageDevices">ServerStorageDevices</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-upcloud.server.ServerStorageDevices">ServerStorageDevices</a>>
 
 storage_devices block.
 
@@ -2158,10 +2134,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upclo
 ##### `template`<sup>Optional</sup> <a name="template" id="@cdktf/provider-upcloud.server.ServerConfig.property.template"></a>
 
 ```java
-public java.lang.Object getTemplate();
+public IResolvable|java.util.List<ServerTemplate> getTemplate();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-upcloud.server.ServerTemplate">ServerTemplate</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-upcloud.server.ServerTemplate">ServerTemplate</a>>
 
 template block.
 
@@ -2233,8 +2209,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upclo
 import com.hashicorp.cdktf.providers.upcloud.server.ServerLogin;
 
 ServerLogin.builder()
-//  .createPassword(java.lang.Boolean)
-//  .createPassword(IResolvable)
+//  .createPassword(java.lang.Boolean|IResolvable)
 //  .keys(java.util.List<java.lang.String>)
 //  .passwordDelivery(java.lang.String)
 //  .user(java.lang.String)
@@ -2245,7 +2220,7 @@ ServerLogin.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-upcloud.server.ServerLogin.property.createPassword">createPassword</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Indicates a password should be create to allow access. |
+| <code><a href="#@cdktf/provider-upcloud.server.ServerLogin.property.createPassword">createPassword</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | Indicates a password should be create to allow access. |
 | <code><a href="#@cdktf/provider-upcloud.server.ServerLogin.property.keys">keys</a></code> | <code>java.util.List<java.lang.String></code> | A list of ssh keys to access the server. |
 | <code><a href="#@cdktf/provider-upcloud.server.ServerLogin.property.passwordDelivery">passwordDelivery</a></code> | <code>java.lang.String</code> | The delivery method for the server's root password (one of `none`, `email` or `sms`). |
 | <code><a href="#@cdktf/provider-upcloud.server.ServerLogin.property.user">user</a></code> | <code>java.lang.String</code> | Username to be create to access the server. |
@@ -2255,10 +2230,10 @@ ServerLogin.builder()
 ##### `createPassword`<sup>Optional</sup> <a name="createPassword" id="@cdktf/provider-upcloud.server.ServerLogin.property.createPassword"></a>
 
 ```java
-public java.lang.Object getCreatePassword();
+public java.lang.Boolean|IResolvable getCreatePassword();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 Indicates a password should be create to allow access.
 
@@ -2317,16 +2292,13 @@ import com.hashicorp.cdktf.providers.upcloud.server.ServerNetworkInterface;
 
 ServerNetworkInterface.builder()
     .type(java.lang.String)
-//  .additionalIpAddress(IResolvable)
-//  .additionalIpAddress(java.util.List<ServerNetworkInterfaceAdditionalIpAddress>)
-//  .bootable(java.lang.Boolean)
-//  .bootable(IResolvable)
+//  .additionalIpAddress(IResolvable|java.util.List<ServerNetworkInterfaceAdditionalIpAddress>)
+//  .bootable(java.lang.Boolean|IResolvable)
 //  .index(java.lang.Number)
 //  .ipAddress(java.lang.String)
 //  .ipAddressFamily(java.lang.String)
 //  .network(java.lang.String)
-//  .sourceIpFiltering(java.lang.Boolean)
-//  .sourceIpFiltering(IResolvable)
+//  .sourceIpFiltering(java.lang.Boolean|IResolvable)
     .build();
 ```
 
@@ -2335,13 +2307,13 @@ ServerNetworkInterface.builder()
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-upcloud.server.ServerNetworkInterface.property.type">type</a></code> | <code>java.lang.String</code> | Network interface type. For private network interfaces, a network must be specified with an existing network id. |
-| <code><a href="#@cdktf/provider-upcloud.server.ServerNetworkInterface.property.additionalIpAddress">additionalIpAddress</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-upcloud.server.ServerNetworkInterfaceAdditionalIpAddress">ServerNetworkInterfaceAdditionalIpAddress</a>></code> | additional_ip_address block. |
-| <code><a href="#@cdktf/provider-upcloud.server.ServerNetworkInterface.property.bootable">bootable</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | `true` if this interface should be used for network booting. |
+| <code><a href="#@cdktf/provider-upcloud.server.ServerNetworkInterface.property.additionalIpAddress">additionalIpAddress</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-upcloud.server.ServerNetworkInterfaceAdditionalIpAddress">ServerNetworkInterfaceAdditionalIpAddress</a>></code> | additional_ip_address block. |
+| <code><a href="#@cdktf/provider-upcloud.server.ServerNetworkInterface.property.bootable">bootable</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | `true` if this interface should be used for network booting. |
 | <code><a href="#@cdktf/provider-upcloud.server.ServerNetworkInterface.property.index">index</a></code> | <code>java.lang.Number</code> | The interface index. |
 | <code><a href="#@cdktf/provider-upcloud.server.ServerNetworkInterface.property.ipAddress">ipAddress</a></code> | <code>java.lang.String</code> | The primary IP address of this interface. |
 | <code><a href="#@cdktf/provider-upcloud.server.ServerNetworkInterface.property.ipAddressFamily">ipAddressFamily</a></code> | <code>java.lang.String</code> | The type of the primary IP address of this interface (one of `IPv4` or `IPv6`). |
 | <code><a href="#@cdktf/provider-upcloud.server.ServerNetworkInterface.property.network">network</a></code> | <code>java.lang.String</code> | The UUID of the network to attach this interface to. Required for private network interfaces. |
-| <code><a href="#@cdktf/provider-upcloud.server.ServerNetworkInterface.property.sourceIpFiltering">sourceIpFiltering</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | `true` if source IP should be filtered. |
+| <code><a href="#@cdktf/provider-upcloud.server.ServerNetworkInterface.property.sourceIpFiltering">sourceIpFiltering</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | `true` if source IP should be filtered. |
 
 ---
 
@@ -2362,10 +2334,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upclo
 ##### `additionalIpAddress`<sup>Optional</sup> <a name="additionalIpAddress" id="@cdktf/provider-upcloud.server.ServerNetworkInterface.property.additionalIpAddress"></a>
 
 ```java
-public java.lang.Object getAdditionalIpAddress();
+public IResolvable|java.util.List<ServerNetworkInterfaceAdditionalIpAddress> getAdditionalIpAddress();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-upcloud.server.ServerNetworkInterfaceAdditionalIpAddress">ServerNetworkInterfaceAdditionalIpAddress</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-upcloud.server.ServerNetworkInterfaceAdditionalIpAddress">ServerNetworkInterfaceAdditionalIpAddress</a>>
 
 additional_ip_address block.
 
@@ -2376,10 +2348,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upclo
 ##### `bootable`<sup>Optional</sup> <a name="bootable" id="@cdktf/provider-upcloud.server.ServerNetworkInterface.property.bootable"></a>
 
 ```java
-public java.lang.Object getBootable();
+public java.lang.Boolean|IResolvable getBootable();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 `true` if this interface should be used for network booting.
 
@@ -2446,10 +2418,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upclo
 ##### `sourceIpFiltering`<sup>Optional</sup> <a name="sourceIpFiltering" id="@cdktf/provider-upcloud.server.ServerNetworkInterface.property.sourceIpFiltering"></a>
 
 ```java
-public java.lang.Object getSourceIpFiltering();
+public java.lang.Boolean|IResolvable getSourceIpFiltering();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 `true` if source IP should be filtered.
 
@@ -2653,14 +2625,10 @@ import com.hashicorp.cdktf.providers.upcloud.server.ServerTemplate;
 ServerTemplate.builder()
 //  .address(java.lang.String)
 //  .addressPosition(java.lang.String)
-//  .backupRule(IResolvable)
-//  .backupRule(java.util.List<ServerTemplateBackupRule>)
-//  .deleteAutoresizeBackup(java.lang.Boolean)
-//  .deleteAutoresizeBackup(IResolvable)
-//  .encrypt(java.lang.Boolean)
-//  .encrypt(IResolvable)
-//  .filesystemAutoresize(java.lang.Boolean)
-//  .filesystemAutoresize(IResolvable)
+//  .backupRule(IResolvable|java.util.List<ServerTemplateBackupRule>)
+//  .deleteAutoresizeBackup(java.lang.Boolean|IResolvable)
+//  .encrypt(java.lang.Boolean|IResolvable)
+//  .filesystemAutoresize(java.lang.Boolean|IResolvable)
 //  .size(java.lang.Number)
 //  .storage(java.lang.String)
 //  .tier(java.lang.String)
@@ -2674,10 +2642,10 @@ ServerTemplate.builder()
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-upcloud.server.ServerTemplate.property.address">address</a></code> | <code>java.lang.String</code> | The device address the storage will be attached to (`scsi`\|`virtio`\|`ide`). |
 | <code><a href="#@cdktf/provider-upcloud.server.ServerTemplate.property.addressPosition">addressPosition</a></code> | <code>java.lang.String</code> | The device position in the given bus (defined via field `address`). |
-| <code><a href="#@cdktf/provider-upcloud.server.ServerTemplate.property.backupRule">backupRule</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-upcloud.server.ServerTemplateBackupRule">ServerTemplateBackupRule</a>></code> | backup_rule block. |
-| <code><a href="#@cdktf/provider-upcloud.server.ServerTemplate.property.deleteAutoresizeBackup">deleteAutoresizeBackup</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | If set to true, the backup taken before the partition and filesystem resize attempt will be deleted immediately after success. |
-| <code><a href="#@cdktf/provider-upcloud.server.ServerTemplate.property.encrypt">encrypt</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Sets if the storage is encrypted at rest. |
-| <code><a href="#@cdktf/provider-upcloud.server.ServerTemplate.property.filesystemAutoresize">filesystemAutoresize</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | If set to true, provider will attempt to resize partition and filesystem when the size of template storage changes. |
+| <code><a href="#@cdktf/provider-upcloud.server.ServerTemplate.property.backupRule">backupRule</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-upcloud.server.ServerTemplateBackupRule">ServerTemplateBackupRule</a>></code> | backup_rule block. |
+| <code><a href="#@cdktf/provider-upcloud.server.ServerTemplate.property.deleteAutoresizeBackup">deleteAutoresizeBackup</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | If set to true, the backup taken before the partition and filesystem resize attempt will be deleted immediately after success. |
+| <code><a href="#@cdktf/provider-upcloud.server.ServerTemplate.property.encrypt">encrypt</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | Sets if the storage is encrypted at rest. |
+| <code><a href="#@cdktf/provider-upcloud.server.ServerTemplate.property.filesystemAutoresize">filesystemAutoresize</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | If set to true, provider will attempt to resize partition and filesystem when the size of template storage changes. |
 | <code><a href="#@cdktf/provider-upcloud.server.ServerTemplate.property.size">size</a></code> | <code>java.lang.Number</code> | The size of the storage in gigabytes. |
 | <code><a href="#@cdktf/provider-upcloud.server.ServerTemplate.property.storage">storage</a></code> | <code>java.lang.String</code> | A valid storage UUID or template name. |
 | <code><a href="#@cdktf/provider-upcloud.server.ServerTemplate.property.tier">tier</a></code> | <code>java.lang.String</code> | The storage tier to use. |
@@ -2720,10 +2688,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upclo
 ##### `backupRule`<sup>Optional</sup> <a name="backupRule" id="@cdktf/provider-upcloud.server.ServerTemplate.property.backupRule"></a>
 
 ```java
-public java.lang.Object getBackupRule();
+public IResolvable|java.util.List<ServerTemplateBackupRule> getBackupRule();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-upcloud.server.ServerTemplateBackupRule">ServerTemplateBackupRule</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-upcloud.server.ServerTemplateBackupRule">ServerTemplateBackupRule</a>>
 
 backup_rule block.
 
@@ -2734,10 +2702,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upclo
 ##### `deleteAutoresizeBackup`<sup>Optional</sup> <a name="deleteAutoresizeBackup" id="@cdktf/provider-upcloud.server.ServerTemplate.property.deleteAutoresizeBackup"></a>
 
 ```java
-public java.lang.Object getDeleteAutoresizeBackup();
+public java.lang.Boolean|IResolvable getDeleteAutoresizeBackup();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 If set to true, the backup taken before the partition and filesystem resize attempt will be deleted immediately after success.
 
@@ -2748,10 +2716,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upclo
 ##### `encrypt`<sup>Optional</sup> <a name="encrypt" id="@cdktf/provider-upcloud.server.ServerTemplate.property.encrypt"></a>
 
 ```java
-public java.lang.Object getEncrypt();
+public java.lang.Boolean|IResolvable getEncrypt();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 Sets if the storage is encrypted at rest.
 
@@ -2762,10 +2730,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upclo
 ##### `filesystemAutoresize`<sup>Optional</sup> <a name="filesystemAutoresize" id="@cdktf/provider-upcloud.server.ServerTemplate.property.filesystemAutoresize"></a>
 
 ```java
-public java.lang.Object getFilesystemAutoresize();
+public java.lang.Boolean|IResolvable getFilesystemAutoresize();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 If set to true, provider will attempt to resize partition and filesystem when the size of template storage changes.
 
@@ -3024,7 +2992,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-upcloud.server.ServerLoginList.property.creationStack">creationStack</a></code> | <code>java.util.List<java.lang.String></code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-upcloud.server.ServerLoginList.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-upcloud.server.ServerLoginList.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-upcloud.server.ServerLogin">ServerLogin</a>></code> | *No description.* |
+| <code><a href="#@cdktf/provider-upcloud.server.ServerLoginList.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-upcloud.server.ServerLogin">ServerLogin</a>></code> | *No description.* |
 
 ---
 
@@ -3055,10 +3023,10 @@ public java.lang.String getFqn();
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-upcloud.server.ServerLoginList.property.internalValue"></a>
 
 ```java
-public java.lang.Object getInternalValue();
+public IResolvable|java.util.List<ServerLogin> getInternalValue();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-upcloud.server.ServerLogin">ServerLogin</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-upcloud.server.ServerLogin">ServerLogin</a>>
 
 ---
 
@@ -3319,15 +3287,15 @@ public void resetUser()
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-upcloud.server.ServerLoginOutputReference.property.creationStack">creationStack</a></code> | <code>java.util.List<java.lang.String></code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-upcloud.server.ServerLoginOutputReference.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-upcloud.server.ServerLoginOutputReference.property.createPasswordInput">createPasswordInput</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-upcloud.server.ServerLoginOutputReference.property.createPasswordInput">createPasswordInput</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.server.ServerLoginOutputReference.property.keysInput">keysInput</a></code> | <code>java.util.List<java.lang.String></code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.server.ServerLoginOutputReference.property.passwordDeliveryInput">passwordDeliveryInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.server.ServerLoginOutputReference.property.userInput">userInput</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-upcloud.server.ServerLoginOutputReference.property.createPassword">createPassword</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-upcloud.server.ServerLoginOutputReference.property.createPassword">createPassword</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.server.ServerLoginOutputReference.property.keys">keys</a></code> | <code>java.util.List<java.lang.String></code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.server.ServerLoginOutputReference.property.passwordDelivery">passwordDelivery</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.server.ServerLoginOutputReference.property.user">user</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-upcloud.server.ServerLoginOutputReference.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-upcloud.server.ServerLogin">ServerLogin</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-upcloud.server.ServerLoginOutputReference.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable\|<a href="#@cdktf/provider-upcloud.server.ServerLogin">ServerLogin</a></code> | *No description.* |
 
 ---
 
@@ -3358,10 +3326,10 @@ public java.lang.String getFqn();
 ##### `createPasswordInput`<sup>Optional</sup> <a name="createPasswordInput" id="@cdktf/provider-upcloud.server.ServerLoginOutputReference.property.createPasswordInput"></a>
 
 ```java
-public java.lang.Object getCreatePasswordInput();
+public java.lang.Boolean|IResolvable getCreatePasswordInput();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 ---
 
@@ -3398,10 +3366,10 @@ public java.lang.String getUserInput();
 ##### `createPassword`<sup>Required</sup> <a name="createPassword" id="@cdktf/provider-upcloud.server.ServerLoginOutputReference.property.createPassword"></a>
 
 ```java
-public java.lang.Object getCreatePassword();
+public java.lang.Boolean|IResolvable getCreatePassword();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 ---
 
@@ -3438,10 +3406,10 @@ public java.lang.String getUser();
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-upcloud.server.ServerLoginOutputReference.property.internalValue"></a>
 
 ```java
-public java.lang.Object getInternalValue();
+public IResolvable|ServerLogin getInternalValue();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-upcloud.server.ServerLogin">ServerLogin</a>
+- *Type:* com.hashicorp.cdktf.IResolvable|<a href="#@cdktf/provider-upcloud.server.ServerLogin">ServerLogin</a>
 
 ---
 
@@ -3567,7 +3535,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-upcloud.server.ServerNetworkInterfaceAdditionalIpAddressList.property.creationStack">creationStack</a></code> | <code>java.util.List<java.lang.String></code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-upcloud.server.ServerNetworkInterfaceAdditionalIpAddressList.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-upcloud.server.ServerNetworkInterfaceAdditionalIpAddressList.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-upcloud.server.ServerNetworkInterfaceAdditionalIpAddress">ServerNetworkInterfaceAdditionalIpAddress</a>></code> | *No description.* |
+| <code><a href="#@cdktf/provider-upcloud.server.ServerNetworkInterfaceAdditionalIpAddressList.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-upcloud.server.ServerNetworkInterfaceAdditionalIpAddress">ServerNetworkInterfaceAdditionalIpAddress</a>></code> | *No description.* |
 
 ---
 
@@ -3598,10 +3566,10 @@ public java.lang.String getFqn();
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-upcloud.server.ServerNetworkInterfaceAdditionalIpAddressList.property.internalValue"></a>
 
 ```java
-public java.lang.Object getInternalValue();
+public IResolvable|java.util.List<ServerNetworkInterfaceAdditionalIpAddress> getInternalValue();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-upcloud.server.ServerNetworkInterfaceAdditionalIpAddress">ServerNetworkInterfaceAdditionalIpAddress</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-upcloud.server.ServerNetworkInterfaceAdditionalIpAddress">ServerNetworkInterfaceAdditionalIpAddress</a>>
 
 ---
 
@@ -3853,7 +3821,7 @@ public void resetIpAddressFamily()
 | <code><a href="#@cdktf/provider-upcloud.server.ServerNetworkInterfaceAdditionalIpAddressOutputReference.property.ipAddressInput">ipAddressInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.server.ServerNetworkInterfaceAdditionalIpAddressOutputReference.property.ipAddress">ipAddress</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.server.ServerNetworkInterfaceAdditionalIpAddressOutputReference.property.ipAddressFamily">ipAddressFamily</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-upcloud.server.ServerNetworkInterfaceAdditionalIpAddressOutputReference.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-upcloud.server.ServerNetworkInterfaceAdditionalIpAddress">ServerNetworkInterfaceAdditionalIpAddress</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-upcloud.server.ServerNetworkInterfaceAdditionalIpAddressOutputReference.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable\|<a href="#@cdktf/provider-upcloud.server.ServerNetworkInterfaceAdditionalIpAddress">ServerNetworkInterfaceAdditionalIpAddress</a></code> | *No description.* |
 
 ---
 
@@ -3934,10 +3902,10 @@ public java.lang.String getIpAddressFamily();
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-upcloud.server.ServerNetworkInterfaceAdditionalIpAddressOutputReference.property.internalValue"></a>
 
 ```java
-public java.lang.Object getInternalValue();
+public IResolvable|ServerNetworkInterfaceAdditionalIpAddress getInternalValue();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-upcloud.server.ServerNetworkInterfaceAdditionalIpAddress">ServerNetworkInterfaceAdditionalIpAddress</a>
+- *Type:* com.hashicorp.cdktf.IResolvable|<a href="#@cdktf/provider-upcloud.server.ServerNetworkInterfaceAdditionalIpAddress">ServerNetworkInterfaceAdditionalIpAddress</a>
 
 ---
 
@@ -4063,7 +4031,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-upcloud.server.ServerNetworkInterfaceList.property.creationStack">creationStack</a></code> | <code>java.util.List<java.lang.String></code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-upcloud.server.ServerNetworkInterfaceList.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-upcloud.server.ServerNetworkInterfaceList.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-upcloud.server.ServerNetworkInterface">ServerNetworkInterface</a>></code> | *No description.* |
+| <code><a href="#@cdktf/provider-upcloud.server.ServerNetworkInterfaceList.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-upcloud.server.ServerNetworkInterface">ServerNetworkInterface</a>></code> | *No description.* |
 
 ---
 
@@ -4094,10 +4062,10 @@ public java.lang.String getFqn();
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-upcloud.server.ServerNetworkInterfaceList.property.internalValue"></a>
 
 ```java
-public java.lang.Object getInternalValue();
+public IResolvable|java.util.List<ServerNetworkInterface> getInternalValue();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-upcloud.server.ServerNetworkInterface">ServerNetworkInterface</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-upcloud.server.ServerNetworkInterface">ServerNetworkInterface</a>>
 
 ---
 
@@ -4334,12 +4302,12 @@ Returns a reversible string representation.
 ##### `putAdditionalIpAddress` <a name="putAdditionalIpAddress" id="@cdktf/provider-upcloud.server.ServerNetworkInterfaceOutputReference.putAdditionalIpAddress"></a>
 
 ```java
-public void putAdditionalIpAddress(IResolvable OR java.util.List<ServerNetworkInterfaceAdditionalIpAddress> value)
+public void putAdditionalIpAddress(IResolvable|java.util.List<ServerNetworkInterfaceAdditionalIpAddress> value)
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-upcloud.server.ServerNetworkInterfaceOutputReference.putAdditionalIpAddress.parameter.value"></a>
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-upcloud.server.ServerNetworkInterfaceAdditionalIpAddress">ServerNetworkInterfaceAdditionalIpAddress</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-upcloud.server.ServerNetworkInterfaceAdditionalIpAddress">ServerNetworkInterfaceAdditionalIpAddress</a>>
 
 ---
 
@@ -4395,22 +4363,22 @@ public void resetSourceIpFiltering()
 | <code><a href="#@cdktf/provider-upcloud.server.ServerNetworkInterfaceOutputReference.property.additionalIpAddress">additionalIpAddress</a></code> | <code><a href="#@cdktf/provider-upcloud.server.ServerNetworkInterfaceAdditionalIpAddressList">ServerNetworkInterfaceAdditionalIpAddressList</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.server.ServerNetworkInterfaceOutputReference.property.ipAddressFloating">ipAddressFloating</a></code> | <code>com.hashicorp.cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.server.ServerNetworkInterfaceOutputReference.property.macAddress">macAddress</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-upcloud.server.ServerNetworkInterfaceOutputReference.property.additionalIpAddressInput">additionalIpAddressInput</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-upcloud.server.ServerNetworkInterfaceAdditionalIpAddress">ServerNetworkInterfaceAdditionalIpAddress</a>></code> | *No description.* |
-| <code><a href="#@cdktf/provider-upcloud.server.ServerNetworkInterfaceOutputReference.property.bootableInput">bootableInput</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-upcloud.server.ServerNetworkInterfaceOutputReference.property.additionalIpAddressInput">additionalIpAddressInput</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-upcloud.server.ServerNetworkInterfaceAdditionalIpAddress">ServerNetworkInterfaceAdditionalIpAddress</a>></code> | *No description.* |
+| <code><a href="#@cdktf/provider-upcloud.server.ServerNetworkInterfaceOutputReference.property.bootableInput">bootableInput</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.server.ServerNetworkInterfaceOutputReference.property.indexInput">indexInput</a></code> | <code>java.lang.Number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.server.ServerNetworkInterfaceOutputReference.property.ipAddressFamilyInput">ipAddressFamilyInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.server.ServerNetworkInterfaceOutputReference.property.ipAddressInput">ipAddressInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.server.ServerNetworkInterfaceOutputReference.property.networkInput">networkInput</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-upcloud.server.ServerNetworkInterfaceOutputReference.property.sourceIpFilteringInput">sourceIpFilteringInput</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-upcloud.server.ServerNetworkInterfaceOutputReference.property.sourceIpFilteringInput">sourceIpFilteringInput</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.server.ServerNetworkInterfaceOutputReference.property.typeInput">typeInput</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-upcloud.server.ServerNetworkInterfaceOutputReference.property.bootable">bootable</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-upcloud.server.ServerNetworkInterfaceOutputReference.property.bootable">bootable</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.server.ServerNetworkInterfaceOutputReference.property.index">index</a></code> | <code>java.lang.Number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.server.ServerNetworkInterfaceOutputReference.property.ipAddress">ipAddress</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.server.ServerNetworkInterfaceOutputReference.property.ipAddressFamily">ipAddressFamily</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.server.ServerNetworkInterfaceOutputReference.property.network">network</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-upcloud.server.ServerNetworkInterfaceOutputReference.property.sourceIpFiltering">sourceIpFiltering</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-upcloud.server.ServerNetworkInterfaceOutputReference.property.sourceIpFiltering">sourceIpFiltering</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.server.ServerNetworkInterfaceOutputReference.property.type">type</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-upcloud.server.ServerNetworkInterfaceOutputReference.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-upcloud.server.ServerNetworkInterface">ServerNetworkInterface</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-upcloud.server.ServerNetworkInterfaceOutputReference.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable\|<a href="#@cdktf/provider-upcloud.server.ServerNetworkInterface">ServerNetworkInterface</a></code> | *No description.* |
 
 ---
 
@@ -4471,20 +4439,20 @@ public java.lang.String getMacAddress();
 ##### `additionalIpAddressInput`<sup>Optional</sup> <a name="additionalIpAddressInput" id="@cdktf/provider-upcloud.server.ServerNetworkInterfaceOutputReference.property.additionalIpAddressInput"></a>
 
 ```java
-public java.lang.Object getAdditionalIpAddressInput();
+public IResolvable|java.util.List<ServerNetworkInterfaceAdditionalIpAddress> getAdditionalIpAddressInput();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-upcloud.server.ServerNetworkInterfaceAdditionalIpAddress">ServerNetworkInterfaceAdditionalIpAddress</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-upcloud.server.ServerNetworkInterfaceAdditionalIpAddress">ServerNetworkInterfaceAdditionalIpAddress</a>>
 
 ---
 
 ##### `bootableInput`<sup>Optional</sup> <a name="bootableInput" id="@cdktf/provider-upcloud.server.ServerNetworkInterfaceOutputReference.property.bootableInput"></a>
 
 ```java
-public java.lang.Object getBootableInput();
+public java.lang.Boolean|IResolvable getBootableInput();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 ---
 
@@ -4531,10 +4499,10 @@ public java.lang.String getNetworkInput();
 ##### `sourceIpFilteringInput`<sup>Optional</sup> <a name="sourceIpFilteringInput" id="@cdktf/provider-upcloud.server.ServerNetworkInterfaceOutputReference.property.sourceIpFilteringInput"></a>
 
 ```java
-public java.lang.Object getSourceIpFilteringInput();
+public java.lang.Boolean|IResolvable getSourceIpFilteringInput();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 ---
 
@@ -4551,10 +4519,10 @@ public java.lang.String getTypeInput();
 ##### `bootable`<sup>Required</sup> <a name="bootable" id="@cdktf/provider-upcloud.server.ServerNetworkInterfaceOutputReference.property.bootable"></a>
 
 ```java
-public java.lang.Object getBootable();
+public java.lang.Boolean|IResolvable getBootable();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 ---
 
@@ -4601,10 +4569,10 @@ public java.lang.String getNetwork();
 ##### `sourceIpFiltering`<sup>Required</sup> <a name="sourceIpFiltering" id="@cdktf/provider-upcloud.server.ServerNetworkInterfaceOutputReference.property.sourceIpFiltering"></a>
 
 ```java
-public java.lang.Object getSourceIpFiltering();
+public java.lang.Boolean|IResolvable getSourceIpFiltering();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 ---
 
@@ -4621,10 +4589,10 @@ public java.lang.String getType();
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-upcloud.server.ServerNetworkInterfaceOutputReference.property.internalValue"></a>
 
 ```java
-public java.lang.Object getInternalValue();
+public IResolvable|ServerNetworkInterface getInternalValue();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-upcloud.server.ServerNetworkInterface">ServerNetworkInterface</a>
+- *Type:* com.hashicorp.cdktf.IResolvable|<a href="#@cdktf/provider-upcloud.server.ServerNetworkInterface">ServerNetworkInterface</a>
 
 ---
 
@@ -4750,7 +4718,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-upcloud.server.ServerSimpleBackupList.property.creationStack">creationStack</a></code> | <code>java.util.List<java.lang.String></code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-upcloud.server.ServerSimpleBackupList.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-upcloud.server.ServerSimpleBackupList.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-upcloud.server.ServerSimpleBackup">ServerSimpleBackup</a>></code> | *No description.* |
+| <code><a href="#@cdktf/provider-upcloud.server.ServerSimpleBackupList.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-upcloud.server.ServerSimpleBackup">ServerSimpleBackup</a>></code> | *No description.* |
 
 ---
 
@@ -4781,10 +4749,10 @@ public java.lang.String getFqn();
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-upcloud.server.ServerSimpleBackupList.property.internalValue"></a>
 
 ```java
-public java.lang.Object getInternalValue();
+public IResolvable|java.util.List<ServerSimpleBackup> getInternalValue();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-upcloud.server.ServerSimpleBackup">ServerSimpleBackup</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-upcloud.server.ServerSimpleBackup">ServerSimpleBackup</a>>
 
 ---
 
@@ -5035,7 +5003,7 @@ public void resetTime()
 | <code><a href="#@cdktf/provider-upcloud.server.ServerSimpleBackupOutputReference.property.timeInput">timeInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.server.ServerSimpleBackupOutputReference.property.plan">plan</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.server.ServerSimpleBackupOutputReference.property.time">time</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-upcloud.server.ServerSimpleBackupOutputReference.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-upcloud.server.ServerSimpleBackup">ServerSimpleBackup</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-upcloud.server.ServerSimpleBackupOutputReference.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable\|<a href="#@cdktf/provider-upcloud.server.ServerSimpleBackup">ServerSimpleBackup</a></code> | *No description.* |
 
 ---
 
@@ -5106,10 +5074,10 @@ public java.lang.String getTime();
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-upcloud.server.ServerSimpleBackupOutputReference.property.internalValue"></a>
 
 ```java
-public java.lang.Object getInternalValue();
+public IResolvable|ServerSimpleBackup getInternalValue();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-upcloud.server.ServerSimpleBackup">ServerSimpleBackup</a>
+- *Type:* com.hashicorp.cdktf.IResolvable|<a href="#@cdktf/provider-upcloud.server.ServerSimpleBackup">ServerSimpleBackup</a>
 
 ---
 
@@ -5235,7 +5203,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-upcloud.server.ServerStorageDevicesList.property.creationStack">creationStack</a></code> | <code>java.util.List<java.lang.String></code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-upcloud.server.ServerStorageDevicesList.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-upcloud.server.ServerStorageDevicesList.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-upcloud.server.ServerStorageDevices">ServerStorageDevices</a>></code> | *No description.* |
+| <code><a href="#@cdktf/provider-upcloud.server.ServerStorageDevicesList.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-upcloud.server.ServerStorageDevices">ServerStorageDevices</a>></code> | *No description.* |
 
 ---
 
@@ -5266,10 +5234,10 @@ public java.lang.String getFqn();
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-upcloud.server.ServerStorageDevicesList.property.internalValue"></a>
 
 ```java
-public java.lang.Object getInternalValue();
+public IResolvable|java.util.List<ServerStorageDevices> getInternalValue();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-upcloud.server.ServerStorageDevices">ServerStorageDevices</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-upcloud.server.ServerStorageDevices">ServerStorageDevices</a>>
 
 ---
 
@@ -5538,7 +5506,7 @@ public void resetType()
 | <code><a href="#@cdktf/provider-upcloud.server.ServerStorageDevicesOutputReference.property.addressPosition">addressPosition</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.server.ServerStorageDevicesOutputReference.property.storage">storage</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.server.ServerStorageDevicesOutputReference.property.type">type</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-upcloud.server.ServerStorageDevicesOutputReference.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-upcloud.server.ServerStorageDevices">ServerStorageDevices</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-upcloud.server.ServerStorageDevicesOutputReference.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable\|<a href="#@cdktf/provider-upcloud.server.ServerStorageDevices">ServerStorageDevices</a></code> | *No description.* |
 
 ---
 
@@ -5649,10 +5617,10 @@ public java.lang.String getType();
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-upcloud.server.ServerStorageDevicesOutputReference.property.internalValue"></a>
 
 ```java
-public java.lang.Object getInternalValue();
+public IResolvable|ServerStorageDevices getInternalValue();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-upcloud.server.ServerStorageDevices">ServerStorageDevices</a>
+- *Type:* com.hashicorp.cdktf.IResolvable|<a href="#@cdktf/provider-upcloud.server.ServerStorageDevices">ServerStorageDevices</a>
 
 ---
 
@@ -5778,7 +5746,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-upcloud.server.ServerTemplateBackupRuleList.property.creationStack">creationStack</a></code> | <code>java.util.List<java.lang.String></code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-upcloud.server.ServerTemplateBackupRuleList.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-upcloud.server.ServerTemplateBackupRuleList.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-upcloud.server.ServerTemplateBackupRule">ServerTemplateBackupRule</a>></code> | *No description.* |
+| <code><a href="#@cdktf/provider-upcloud.server.ServerTemplateBackupRuleList.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-upcloud.server.ServerTemplateBackupRule">ServerTemplateBackupRule</a>></code> | *No description.* |
 
 ---
 
@@ -5809,10 +5777,10 @@ public java.lang.String getFqn();
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-upcloud.server.ServerTemplateBackupRuleList.property.internalValue"></a>
 
 ```java
-public java.lang.Object getInternalValue();
+public IResolvable|java.util.List<ServerTemplateBackupRule> getInternalValue();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-upcloud.server.ServerTemplateBackupRule">ServerTemplateBackupRule</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-upcloud.server.ServerTemplateBackupRule">ServerTemplateBackupRule</a>>
 
 ---
 
@@ -6051,7 +6019,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-upcloud.server.ServerTemplateBackupRuleOutputReference.property.interval">interval</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.server.ServerTemplateBackupRuleOutputReference.property.retention">retention</a></code> | <code>java.lang.Number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.server.ServerTemplateBackupRuleOutputReference.property.time">time</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-upcloud.server.ServerTemplateBackupRuleOutputReference.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-upcloud.server.ServerTemplateBackupRule">ServerTemplateBackupRule</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-upcloud.server.ServerTemplateBackupRuleOutputReference.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable\|<a href="#@cdktf/provider-upcloud.server.ServerTemplateBackupRule">ServerTemplateBackupRule</a></code> | *No description.* |
 
 ---
 
@@ -6142,10 +6110,10 @@ public java.lang.String getTime();
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-upcloud.server.ServerTemplateBackupRuleOutputReference.property.internalValue"></a>
 
 ```java
-public java.lang.Object getInternalValue();
+public IResolvable|ServerTemplateBackupRule getInternalValue();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-upcloud.server.ServerTemplateBackupRule">ServerTemplateBackupRule</a>
+- *Type:* com.hashicorp.cdktf.IResolvable|<a href="#@cdktf/provider-upcloud.server.ServerTemplateBackupRule">ServerTemplateBackupRule</a>
 
 ---
 
@@ -6271,7 +6239,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-upcloud.server.ServerTemplateList.property.creationStack">creationStack</a></code> | <code>java.util.List<java.lang.String></code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-upcloud.server.ServerTemplateList.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-upcloud.server.ServerTemplateList.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-upcloud.server.ServerTemplate">ServerTemplate</a>></code> | *No description.* |
+| <code><a href="#@cdktf/provider-upcloud.server.ServerTemplateList.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-upcloud.server.ServerTemplate">ServerTemplate</a>></code> | *No description.* |
 
 ---
 
@@ -6302,10 +6270,10 @@ public java.lang.String getFqn();
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-upcloud.server.ServerTemplateList.property.internalValue"></a>
 
 ```java
-public java.lang.Object getInternalValue();
+public IResolvable|java.util.List<ServerTemplate> getInternalValue();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-upcloud.server.ServerTemplate">ServerTemplate</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-upcloud.server.ServerTemplate">ServerTemplate</a>>
 
 ---
 
@@ -6545,12 +6513,12 @@ Returns a reversible string representation.
 ##### `putBackupRule` <a name="putBackupRule" id="@cdktf/provider-upcloud.server.ServerTemplateOutputReference.putBackupRule"></a>
 
 ```java
-public void putBackupRule(IResolvable OR java.util.List<ServerTemplateBackupRule> value)
+public void putBackupRule(IResolvable|java.util.List<ServerTemplateBackupRule> value)
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-upcloud.server.ServerTemplateOutputReference.putBackupRule.parameter.value"></a>
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-upcloud.server.ServerTemplateBackupRule">ServerTemplateBackupRule</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-upcloud.server.ServerTemplateBackupRule">ServerTemplateBackupRule</a>>
 
 ---
 
@@ -6625,24 +6593,24 @@ public void resetTitle()
 | <code><a href="#@cdktf/provider-upcloud.server.ServerTemplateOutputReference.property.id">id</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.server.ServerTemplateOutputReference.property.addressInput">addressInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.server.ServerTemplateOutputReference.property.addressPositionInput">addressPositionInput</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-upcloud.server.ServerTemplateOutputReference.property.backupRuleInput">backupRuleInput</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-upcloud.server.ServerTemplateBackupRule">ServerTemplateBackupRule</a>></code> | *No description.* |
-| <code><a href="#@cdktf/provider-upcloud.server.ServerTemplateOutputReference.property.deleteAutoresizeBackupInput">deleteAutoresizeBackupInput</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-upcloud.server.ServerTemplateOutputReference.property.encryptInput">encryptInput</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-upcloud.server.ServerTemplateOutputReference.property.filesystemAutoresizeInput">filesystemAutoresizeInput</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-upcloud.server.ServerTemplateOutputReference.property.backupRuleInput">backupRuleInput</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-upcloud.server.ServerTemplateBackupRule">ServerTemplateBackupRule</a>></code> | *No description.* |
+| <code><a href="#@cdktf/provider-upcloud.server.ServerTemplateOutputReference.property.deleteAutoresizeBackupInput">deleteAutoresizeBackupInput</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-upcloud.server.ServerTemplateOutputReference.property.encryptInput">encryptInput</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-upcloud.server.ServerTemplateOutputReference.property.filesystemAutoresizeInput">filesystemAutoresizeInput</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.server.ServerTemplateOutputReference.property.sizeInput">sizeInput</a></code> | <code>java.lang.Number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.server.ServerTemplateOutputReference.property.storageInput">storageInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.server.ServerTemplateOutputReference.property.tierInput">tierInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.server.ServerTemplateOutputReference.property.titleInput">titleInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.server.ServerTemplateOutputReference.property.address">address</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.server.ServerTemplateOutputReference.property.addressPosition">addressPosition</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-upcloud.server.ServerTemplateOutputReference.property.deleteAutoresizeBackup">deleteAutoresizeBackup</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-upcloud.server.ServerTemplateOutputReference.property.encrypt">encrypt</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-upcloud.server.ServerTemplateOutputReference.property.filesystemAutoresize">filesystemAutoresize</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-upcloud.server.ServerTemplateOutputReference.property.deleteAutoresizeBackup">deleteAutoresizeBackup</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-upcloud.server.ServerTemplateOutputReference.property.encrypt">encrypt</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-upcloud.server.ServerTemplateOutputReference.property.filesystemAutoresize">filesystemAutoresize</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.server.ServerTemplateOutputReference.property.size">size</a></code> | <code>java.lang.Number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.server.ServerTemplateOutputReference.property.storage">storage</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.server.ServerTemplateOutputReference.property.tier">tier</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.server.ServerTemplateOutputReference.property.title">title</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-upcloud.server.ServerTemplateOutputReference.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-upcloud.server.ServerTemplate">ServerTemplate</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-upcloud.server.ServerTemplateOutputReference.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable\|<a href="#@cdktf/provider-upcloud.server.ServerTemplate">ServerTemplate</a></code> | *No description.* |
 
 ---
 
@@ -6713,40 +6681,40 @@ public java.lang.String getAddressPositionInput();
 ##### `backupRuleInput`<sup>Optional</sup> <a name="backupRuleInput" id="@cdktf/provider-upcloud.server.ServerTemplateOutputReference.property.backupRuleInput"></a>
 
 ```java
-public java.lang.Object getBackupRuleInput();
+public IResolvable|java.util.List<ServerTemplateBackupRule> getBackupRuleInput();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-upcloud.server.ServerTemplateBackupRule">ServerTemplateBackupRule</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-upcloud.server.ServerTemplateBackupRule">ServerTemplateBackupRule</a>>
 
 ---
 
 ##### `deleteAutoresizeBackupInput`<sup>Optional</sup> <a name="deleteAutoresizeBackupInput" id="@cdktf/provider-upcloud.server.ServerTemplateOutputReference.property.deleteAutoresizeBackupInput"></a>
 
 ```java
-public java.lang.Object getDeleteAutoresizeBackupInput();
+public java.lang.Boolean|IResolvable getDeleteAutoresizeBackupInput();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 ---
 
 ##### `encryptInput`<sup>Optional</sup> <a name="encryptInput" id="@cdktf/provider-upcloud.server.ServerTemplateOutputReference.property.encryptInput"></a>
 
 ```java
-public java.lang.Object getEncryptInput();
+public java.lang.Boolean|IResolvable getEncryptInput();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 ---
 
 ##### `filesystemAutoresizeInput`<sup>Optional</sup> <a name="filesystemAutoresizeInput" id="@cdktf/provider-upcloud.server.ServerTemplateOutputReference.property.filesystemAutoresizeInput"></a>
 
 ```java
-public java.lang.Object getFilesystemAutoresizeInput();
+public java.lang.Boolean|IResolvable getFilesystemAutoresizeInput();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 ---
 
@@ -6813,30 +6781,30 @@ public java.lang.String getAddressPosition();
 ##### `deleteAutoresizeBackup`<sup>Required</sup> <a name="deleteAutoresizeBackup" id="@cdktf/provider-upcloud.server.ServerTemplateOutputReference.property.deleteAutoresizeBackup"></a>
 
 ```java
-public java.lang.Object getDeleteAutoresizeBackup();
+public java.lang.Boolean|IResolvable getDeleteAutoresizeBackup();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 ---
 
 ##### `encrypt`<sup>Required</sup> <a name="encrypt" id="@cdktf/provider-upcloud.server.ServerTemplateOutputReference.property.encrypt"></a>
 
 ```java
-public java.lang.Object getEncrypt();
+public java.lang.Boolean|IResolvable getEncrypt();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 ---
 
 ##### `filesystemAutoresize`<sup>Required</sup> <a name="filesystemAutoresize" id="@cdktf/provider-upcloud.server.ServerTemplateOutputReference.property.filesystemAutoresize"></a>
 
 ```java
-public java.lang.Object getFilesystemAutoresize();
+public java.lang.Boolean|IResolvable getFilesystemAutoresize();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 ---
 
@@ -6883,10 +6851,10 @@ public java.lang.String getTitle();
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-upcloud.server.ServerTemplateOutputReference.property.internalValue"></a>
 
 ```java
-public java.lang.Object getInternalValue();
+public IResolvable|ServerTemplate getInternalValue();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-upcloud.server.ServerTemplate">ServerTemplate</a>
+- *Type:* com.hashicorp.cdktf.IResolvable|<a href="#@cdktf/provider-upcloud.server.ServerTemplate">ServerTemplate</a>
 
 ---
 
