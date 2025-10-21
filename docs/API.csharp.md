@@ -54,7 +54,6 @@ The following submodules are available:
 - [managedObjectStorageUserPolicy](./managedObjectStorageUserPolicy.csharp.md)
 - [network](./network.csharp.md)
 - [networkPeering](./networkPeering.csharp.md)
-- [objectStorage](./objectStorage.csharp.md)
 - [provider](./provider.csharp.md)
 - [router](./router.csharp.md)
 - [server](./server.csharp.md)
