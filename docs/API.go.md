@@ -54,7 +54,6 @@ The following submodules are available:
 - [managedObjectStorageUserPolicy](./managedObjectStorageUserPolicy.go.md)
 - [network](./network.go.md)
 - [networkPeering](./networkPeering.go.md)
-- [objectStorage](./objectStorage.go.md)
 - [provider](./provider.go.md)
 - [router](./router.go.md)
 - [server](./server.go.md)

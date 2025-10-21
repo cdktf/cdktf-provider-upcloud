@@ -54,7 +54,6 @@ The following submodules are available:
 - [managedObjectStorageUserPolicy](./managedObjectStorageUserPolicy.typescript.md)
 - [network](./network.typescript.md)
 - [networkPeering](./networkPeering.typescript.md)
-- [objectStorage](./objectStorage.typescript.md)
 - [provider](./provider.typescript.md)
 - [router](./router.typescript.md)
 - [server](./server.typescript.md)
