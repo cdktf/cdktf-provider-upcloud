@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/upcloudltd/upcloud/5.28.0/docs/data-sources/managed_database_valkey_sessions
+// https://registry.terraform.io/providers/upcloudltd/upcloud/5.29.0/docs/data-sources/managed_database_valkey_sessions
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,7 +13,7 @@ import * as cdktf from 'cdktf';
 
 export interface DataUpcloudManagedDatabaseValkeySessionsConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.28.0/docs/data-sources/managed_database_valkey_sessions#id DataUpcloudManagedDatabaseValkeySessions#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.29.0/docs/data-sources/managed_database_valkey_sessions#id DataUpcloudManagedDatabaseValkeySessions#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -22,31 +22,31 @@ export interface DataUpcloudManagedDatabaseValkeySessionsConfig extends cdktf.Te
   /**
   * Number of entries to receive at most.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.28.0/docs/data-sources/managed_database_valkey_sessions#limit DataUpcloudManagedDatabaseValkeySessions#limit}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.29.0/docs/data-sources/managed_database_valkey_sessions#limit DataUpcloudManagedDatabaseValkeySessions#limit}
   */
   readonly limit?: number;
   /**
   * Offset for retrieved results based on sort order.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.28.0/docs/data-sources/managed_database_valkey_sessions#offset DataUpcloudManagedDatabaseValkeySessions#offset}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.29.0/docs/data-sources/managed_database_valkey_sessions#offset DataUpcloudManagedDatabaseValkeySessions#offset}
   */
   readonly offset?: number;
   /**
   * Order by session field and sort retrieved results. Limited variables can be used for ordering.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.28.0/docs/data-sources/managed_database_valkey_sessions#order DataUpcloudManagedDatabaseValkeySessions#order}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.29.0/docs/data-sources/managed_database_valkey_sessions#order DataUpcloudManagedDatabaseValkeySessions#order}
   */
   readonly order?: string;
   /**
   * Service's UUID for which these sessions belongs to
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.28.0/docs/data-sources/managed_database_valkey_sessions#service DataUpcloudManagedDatabaseValkeySessions#service}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.29.0/docs/data-sources/managed_database_valkey_sessions#service DataUpcloudManagedDatabaseValkeySessions#service}
   */
   readonly service: string;
   /**
   * sessions block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.28.0/docs/data-sources/managed_database_valkey_sessions#sessions DataUpcloudManagedDatabaseValkeySessions#sessions}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.29.0/docs/data-sources/managed_database_valkey_sessions#sessions DataUpcloudManagedDatabaseValkeySessions#sessions}
   */
   readonly sessions?: DataUpcloudManagedDatabaseValkeySessionsSessions[] | cdktf.IResolvable;
 }
@@ -218,7 +218,7 @@ export class DataUpcloudManagedDatabaseValkeySessionsSessionsList extends cdktf.
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.28.0/docs/data-sources/managed_database_valkey_sessions upcloud_managed_database_valkey_sessions}
+* Represents a {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.29.0/docs/data-sources/managed_database_valkey_sessions upcloud_managed_database_valkey_sessions}
 */
 export class DataUpcloudManagedDatabaseValkeySessions extends cdktf.TerraformDataSource {
 
@@ -234,7 +234,7 @@ export class DataUpcloudManagedDatabaseValkeySessions extends cdktf.TerraformDat
   * Generates CDKTF code for importing a DataUpcloudManagedDatabaseValkeySessions resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataUpcloudManagedDatabaseValkeySessions to import
-  * @param importFromId The id of the existing DataUpcloudManagedDatabaseValkeySessions that should be imported. Refer to the {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.28.0/docs/data-sources/managed_database_valkey_sessions#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataUpcloudManagedDatabaseValkeySessions that should be imported. Refer to the {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.29.0/docs/data-sources/managed_database_valkey_sessions#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataUpcloudManagedDatabaseValkeySessions to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -246,7 +246,7 @@ export class DataUpcloudManagedDatabaseValkeySessions extends cdktf.TerraformDat
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.28.0/docs/data-sources/managed_database_valkey_sessions upcloud_managed_database_valkey_sessions} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.29.0/docs/data-sources/managed_database_valkey_sessions upcloud_managed_database_valkey_sessions} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -257,7 +257,7 @@ export class DataUpcloudManagedDatabaseValkeySessions extends cdktf.TerraformDat
       terraformResourceType: 'upcloud_managed_database_valkey_sessions',
       terraformGeneratorMetadata: {
         providerName: 'upcloud',
-        providerVersion: '5.28.0',
+        providerVersion: '5.29.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,
