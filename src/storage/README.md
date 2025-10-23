@@ -1,3 +1,3 @@
 # `upcloud_storage`
 
-Refer to the Terraform Registry for docs: [`upcloud_storage`](https://registry.terraform.io/providers/upcloudltd/upcloud/5.29.0/docs/resources/storage).
+Refer to the Terraform Registry for docs: [`upcloud_storage`](https://registry.terraform.io/providers/upcloudltd/upcloud/5.29.1/docs/resources/storage).
