@@ -20,6 +20,7 @@ The following submodules are available:
 - [dataUpcloudTags](./dataUpcloudTags.python.md)
 - [dataUpcloudZone](./dataUpcloudZone.python.md)
 - [dataUpcloudZones](./dataUpcloudZones.python.md)
+- [fileStorage](./fileStorage.python.md)
 - [firewallRules](./firewallRules.python.md)
 - [floatingIpAddress](./floatingIpAddress.python.md)
 - [gateway](./gateway.python.md)

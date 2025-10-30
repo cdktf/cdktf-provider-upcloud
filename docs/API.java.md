@@ -20,6 +20,7 @@ The following submodules are available:
 - [dataUpcloudTags](./dataUpcloudTags.java.md)
 - [dataUpcloudZone](./dataUpcloudZone.java.md)
 - [dataUpcloudZones](./dataUpcloudZones.java.md)
+- [fileStorage](./fileStorage.java.md)
 - [firewallRules](./firewallRules.java.md)
 - [floatingIpAddress](./floatingIpAddress.java.md)
 - [gateway](./gateway.java.md)
