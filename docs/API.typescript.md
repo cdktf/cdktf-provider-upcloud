@@ -20,6 +20,7 @@ The following submodules are available:
 - [dataUpcloudTags](./dataUpcloudTags.typescript.md)
 - [dataUpcloudZone](./dataUpcloudZone.typescript.md)
 - [dataUpcloudZones](./dataUpcloudZones.typescript.md)
+- [fileStorage](./fileStorage.typescript.md)
 - [firewallRules](./firewallRules.typescript.md)
 - [floatingIpAddress](./floatingIpAddress.typescript.md)
 - [gateway](./gateway.typescript.md)

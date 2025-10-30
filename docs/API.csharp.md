@@ -20,6 +20,7 @@ The following submodules are available:
 - [dataUpcloudTags](./dataUpcloudTags.csharp.md)
 - [dataUpcloudZone](./dataUpcloudZone.csharp.md)
 - [dataUpcloudZones](./dataUpcloudZones.csharp.md)
+- [fileStorage](./fileStorage.csharp.md)
 - [firewallRules](./firewallRules.csharp.md)
 - [floatingIpAddress](./floatingIpAddress.csharp.md)
 - [gateway](./gateway.csharp.md)

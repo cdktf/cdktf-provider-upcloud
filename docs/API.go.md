@@ -20,6 +20,7 @@ The following submodules are available:
 - [dataUpcloudTags](./dataUpcloudTags.go.md)
 - [dataUpcloudZone](./dataUpcloudZone.go.md)
 - [dataUpcloudZones](./dataUpcloudZones.go.md)
+- [fileStorage](./fileStorage.go.md)
 - [firewallRules](./firewallRules.go.md)
 - [floatingIpAddress](./floatingIpAddress.go.md)
 - [gateway](./gateway.go.md)
