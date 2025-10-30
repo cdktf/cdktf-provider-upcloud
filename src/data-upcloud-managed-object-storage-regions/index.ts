@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/upcloudltd/upcloud/5.29.1/docs/data-sources/managed_object_storage_regions
+// https://registry.terraform.io/providers/upcloudltd/upcloud/5.30.0/docs/data-sources/managed_object_storage_regions
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,7 +15,7 @@ export interface DataUpcloudManagedObjectStorageRegionsConfig extends cdktf.Terr
   /**
   * regions block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.29.1/docs/data-sources/managed_object_storage_regions#regions DataUpcloudManagedObjectStorageRegions#regions}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.30.0/docs/data-sources/managed_object_storage_regions#regions DataUpcloudManagedObjectStorageRegions#regions}
   */
   readonly regions?: DataUpcloudManagedObjectStorageRegionsRegions[] | cdktf.IResolvable;
 }
@@ -117,7 +117,7 @@ export class DataUpcloudManagedObjectStorageRegionsRegionsList extends cdktf.Com
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.29.1/docs/data-sources/managed_object_storage_regions upcloud_managed_object_storage_regions}
+* Represents a {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.30.0/docs/data-sources/managed_object_storage_regions upcloud_managed_object_storage_regions}
 */
 export class DataUpcloudManagedObjectStorageRegions extends cdktf.TerraformDataSource {
 
@@ -133,7 +133,7 @@ export class DataUpcloudManagedObjectStorageRegions extends cdktf.TerraformDataS
   * Generates CDKTF code for importing a DataUpcloudManagedObjectStorageRegions resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataUpcloudManagedObjectStorageRegions to import
-  * @param importFromId The id of the existing DataUpcloudManagedObjectStorageRegions that should be imported. Refer to the {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.29.1/docs/data-sources/managed_object_storage_regions#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataUpcloudManagedObjectStorageRegions that should be imported. Refer to the {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.30.0/docs/data-sources/managed_object_storage_regions#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataUpcloudManagedObjectStorageRegions to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -145,7 +145,7 @@ export class DataUpcloudManagedObjectStorageRegions extends cdktf.TerraformDataS
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.29.1/docs/data-sources/managed_object_storage_regions upcloud_managed_object_storage_regions} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.30.0/docs/data-sources/managed_object_storage_regions upcloud_managed_object_storage_regions} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -156,7 +156,7 @@ export class DataUpcloudManagedObjectStorageRegions extends cdktf.TerraformDataS
       terraformResourceType: 'upcloud_managed_object_storage_regions',
       terraformGeneratorMetadata: {
         providerName: 'upcloud',
-        providerVersion: '5.29.1',
+        providerVersion: '5.30.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,
