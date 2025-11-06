@@ -4,7 +4,7 @@
 
 ### StorageBackup <a name="StorageBackup" id="@cdktf/provider-upcloud.storageBackup.StorageBackup"></a>
 
-Represents a {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.30.0/docs/resources/storage_backup upcloud_storage_backup}.
+Represents a {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.31.0/docs/resources/storage_backup upcloud_storage_backup}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-upcloud.storageBackup.StorageBackup.Initializer"></a>
 
@@ -108,7 +108,7 @@ Must be unique amongst siblings in the same scope
 
 The UUID of the storage to back up.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.30.0/docs/resources/storage_backup#source_storage StorageBackup#source_storage}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.31.0/docs/resources/storage_backup#source_storage StorageBackup#source_storage}
 
 ---
 
@@ -118,7 +118,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upclo
 
 Title of the backup.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.30.0/docs/resources/storage_backup#title StorageBackup#title}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.31.0/docs/resources/storage_backup#title StorageBackup#title}
 
 ---
 
@@ -128,7 +128,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upclo
 
 User defined key-value pairs to classify the storage.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.30.0/docs/resources/storage_backup#labels StorageBackup#labels}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.31.0/docs/resources/storage_backup#labels StorageBackup#labels}
 
 ---
 
@@ -562,7 +562,7 @@ The construct id used in the generated config for the StorageBackup to import.
 
 The id of the existing StorageBackup that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.30.0/docs/resources/storage_backup#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.31.0/docs/resources/storage_backup#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1029,7 +1029,7 @@ public java.lang.String getSourceStorage();
 
 The UUID of the storage to back up.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.30.0/docs/resources/storage_backup#source_storage StorageBackup#source_storage}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.31.0/docs/resources/storage_backup#source_storage StorageBackup#source_storage}
 
 ---
 
@@ -1043,7 +1043,7 @@ public java.lang.String getTitle();
 
 Title of the backup.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.30.0/docs/resources/storage_backup#title StorageBackup#title}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.31.0/docs/resources/storage_backup#title StorageBackup#title}
 
 ---
 
@@ -1057,7 +1057,7 @@ public java.util.Map<java.lang.String, java.lang.String> getLabels();
 
 User defined key-value pairs to classify the storage.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.30.0/docs/resources/storage_backup#labels StorageBackup#labels}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.31.0/docs/resources/storage_backup#labels StorageBackup#labels}
 
 ---
 
