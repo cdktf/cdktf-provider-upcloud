@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/upcloudltd/upcloud/5.30.0/docs/resources/managed_database_postgresql
+// https://registry.terraform.io/providers/upcloudltd/upcloud/5.31.0/docs/resources/managed_database_postgresql
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,11 +15,11 @@ export interface ManagedDatabasePostgresqlConfig extends cdktf.TerraformMetaArgu
   /**
   * Additional disk space in GiB. Note that changes in additional disk space might require disk maintenance. This pending maintenance blocks some operations, such as version upgrades, until the maintenance is completed.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.30.0/docs/resources/managed_database_postgresql#additional_disk_space_gib ManagedDatabasePostgresql#additional_disk_space_gib}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.31.0/docs/resources/managed_database_postgresql#additional_disk_space_gib ManagedDatabasePostgresql#additional_disk_space_gib}
   */
   readonly additionalDiskSpaceGib?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.30.0/docs/resources/managed_database_postgresql#id ManagedDatabasePostgresql#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.31.0/docs/resources/managed_database_postgresql#id ManagedDatabasePostgresql#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -28,67 +28,67 @@ export interface ManagedDatabasePostgresqlConfig extends cdktf.TerraformMetaArgu
   /**
   * User defined key-value pairs to classify the managed database.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.30.0/docs/resources/managed_database_postgresql#labels ManagedDatabasePostgresql#labels}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.31.0/docs/resources/managed_database_postgresql#labels ManagedDatabasePostgresql#labels}
   */
   readonly labels?: { [key: string]: string };
   /**
   * Maintenance window day of week. Lower case weekday name (monday, tuesday, ...)
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.30.0/docs/resources/managed_database_postgresql#maintenance_window_dow ManagedDatabasePostgresql#maintenance_window_dow}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.31.0/docs/resources/managed_database_postgresql#maintenance_window_dow ManagedDatabasePostgresql#maintenance_window_dow}
   */
   readonly maintenanceWindowDow?: string;
   /**
   * Maintenance window UTC time in hh:mm:ss format
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.30.0/docs/resources/managed_database_postgresql#maintenance_window_time ManagedDatabasePostgresql#maintenance_window_time}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.31.0/docs/resources/managed_database_postgresql#maintenance_window_time ManagedDatabasePostgresql#maintenance_window_time}
   */
   readonly maintenanceWindowTime?: string;
   /**
   * Name of the service. The name is used as a prefix for the logical hostname. Must be unique within an account
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.30.0/docs/resources/managed_database_postgresql#name ManagedDatabasePostgresql#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.31.0/docs/resources/managed_database_postgresql#name ManagedDatabasePostgresql#name}
   */
   readonly name: string;
   /**
   * Service plan to use. This determines how much resources the instance will have. You can list available plans with `upctl database plans pg`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.30.0/docs/resources/managed_database_postgresql#plan ManagedDatabasePostgresql#plan}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.31.0/docs/resources/managed_database_postgresql#plan ManagedDatabasePostgresql#plan}
   */
   readonly plan: string;
   /**
   * The administrative power state of the service
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.30.0/docs/resources/managed_database_postgresql#powered ManagedDatabasePostgresql#powered}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.31.0/docs/resources/managed_database_postgresql#powered ManagedDatabasePostgresql#powered}
   */
   readonly powered?: boolean | cdktf.IResolvable;
   /**
   * If set to true, prevents the managed service from being powered off, or deleted.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.30.0/docs/resources/managed_database_postgresql#termination_protection ManagedDatabasePostgresql#termination_protection}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.31.0/docs/resources/managed_database_postgresql#termination_protection ManagedDatabasePostgresql#termination_protection}
   */
   readonly terminationProtection?: boolean | cdktf.IResolvable;
   /**
   * Title of a managed database instance
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.30.0/docs/resources/managed_database_postgresql#title ManagedDatabasePostgresql#title}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.31.0/docs/resources/managed_database_postgresql#title ManagedDatabasePostgresql#title}
   */
   readonly title: string;
   /**
   * Zone where the instance resides, e.g. `de-fra1`. You can list available zones with `upctl zone list`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.30.0/docs/resources/managed_database_postgresql#zone ManagedDatabasePostgresql#zone}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.31.0/docs/resources/managed_database_postgresql#zone ManagedDatabasePostgresql#zone}
   */
   readonly zone: string;
   /**
   * network block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.30.0/docs/resources/managed_database_postgresql#network ManagedDatabasePostgresql#network}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.31.0/docs/resources/managed_database_postgresql#network ManagedDatabasePostgresql#network}
   */
   readonly network?: ManagedDatabasePostgresqlNetwork[] | cdktf.IResolvable;
   /**
   * properties block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.30.0/docs/resources/managed_database_postgresql#properties ManagedDatabasePostgresql#properties}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.31.0/docs/resources/managed_database_postgresql#properties ManagedDatabasePostgresql#properties}
   */
   readonly properties?: ManagedDatabasePostgresqlProperties;
 }
@@ -276,25 +276,25 @@ export interface ManagedDatabasePostgresqlNetwork {
   /**
   * Network family. Currently only `IPv4` is supported.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.30.0/docs/resources/managed_database_postgresql#family ManagedDatabasePostgresql#family}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.31.0/docs/resources/managed_database_postgresql#family ManagedDatabasePostgresql#family}
   */
   readonly family: string;
   /**
   * The name of the network. Must be unique within the service.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.30.0/docs/resources/managed_database_postgresql#name ManagedDatabasePostgresql#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.31.0/docs/resources/managed_database_postgresql#name ManagedDatabasePostgresql#name}
   */
   readonly name: string;
   /**
   * The type of the network. Must be private.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.30.0/docs/resources/managed_database_postgresql#type ManagedDatabasePostgresql#type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.31.0/docs/resources/managed_database_postgresql#type ManagedDatabasePostgresql#type}
   */
   readonly type: string;
   /**
   * Private network UUID. Must reside in the same zone as the database.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.30.0/docs/resources/managed_database_postgresql#uuid ManagedDatabasePostgresql#uuid}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.31.0/docs/resources/managed_database_postgresql#uuid ManagedDatabasePostgresql#uuid}
   */
   readonly uuid: string;
 }
@@ -487,55 +487,55 @@ export interface ManagedDatabasePostgresqlPropertiesMigration {
   /**
   * Database name for bootstrapping the initial connection.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.30.0/docs/resources/managed_database_postgresql#dbname ManagedDatabasePostgresql#dbname}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.31.0/docs/resources/managed_database_postgresql#dbname ManagedDatabasePostgresql#dbname}
   */
   readonly dbname?: string;
   /**
   * Hostname or IP address of the server where to migrate data from.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.30.0/docs/resources/managed_database_postgresql#host ManagedDatabasePostgresql#host}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.31.0/docs/resources/managed_database_postgresql#host ManagedDatabasePostgresql#host}
   */
   readonly host?: string;
   /**
   * Comma-separated list of databases, which should be ignored during migration (supported by MySQL and PostgreSQL only at the moment).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.30.0/docs/resources/managed_database_postgresql#ignore_dbs ManagedDatabasePostgresql#ignore_dbs}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.31.0/docs/resources/managed_database_postgresql#ignore_dbs ManagedDatabasePostgresql#ignore_dbs}
   */
   readonly ignoreDbs?: string;
   /**
   * Comma-separated list of database roles, which should be ignored during migration (supported by PostgreSQL only at the moment).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.30.0/docs/resources/managed_database_postgresql#ignore_roles ManagedDatabasePostgresql#ignore_roles}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.31.0/docs/resources/managed_database_postgresql#ignore_roles ManagedDatabasePostgresql#ignore_roles}
   */
   readonly ignoreRoles?: string;
   /**
   * The migration method to be used (currently supported only by Redis, Dragonfly, MySQL and PostgreSQL service types).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.30.0/docs/resources/managed_database_postgresql#method ManagedDatabasePostgresql#method}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.31.0/docs/resources/managed_database_postgresql#method ManagedDatabasePostgresql#method}
   */
   readonly method?: string;
   /**
   * Password for authentication with the server where to migrate data from.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.30.0/docs/resources/managed_database_postgresql#password ManagedDatabasePostgresql#password}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.31.0/docs/resources/managed_database_postgresql#password ManagedDatabasePostgresql#password}
   */
   readonly password?: string;
   /**
   * Port number of the server where to migrate data from.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.30.0/docs/resources/managed_database_postgresql#port ManagedDatabasePostgresql#port}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.31.0/docs/resources/managed_database_postgresql#port ManagedDatabasePostgresql#port}
   */
   readonly port?: number;
   /**
   * The server where to migrate data from is secured with SSL.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.30.0/docs/resources/managed_database_postgresql#ssl ManagedDatabasePostgresql#ssl}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.31.0/docs/resources/managed_database_postgresql#ssl ManagedDatabasePostgresql#ssl}
   */
   readonly ssl?: boolean | cdktf.IResolvable;
   /**
   * User name for authentication with the server where to migrate data from.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.30.0/docs/resources/managed_database_postgresql#username ManagedDatabasePostgresql#username}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.31.0/docs/resources/managed_database_postgresql#username ManagedDatabasePostgresql#username}
   */
   readonly username?: string;
 }
@@ -817,7 +817,7 @@ export class ManagedDatabasePostgresqlPropertiesMigrationOutputReference extends
     return this._port;
   }
 
-  // ssl - computed: false, optional: true, required: false
+  // ssl - computed: true, optional: true, required: false
   private _ssl?: boolean | cdktf.IResolvable; 
   public get ssl() {
     return this.getBooleanAttribute('ssl');
@@ -853,91 +853,91 @@ export interface ManagedDatabasePostgresqlPropertiesPgaudit {
   /**
   * Enable pgaudit extension. Enable pgaudit extension. When enabled, pgaudit extension will be automatically installed.Otherwise, extension will be uninstalled but auditing configurations will be preserved.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.30.0/docs/resources/managed_database_postgresql#feature_enabled ManagedDatabasePostgresql#feature_enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.31.0/docs/resources/managed_database_postgresql#feature_enabled ManagedDatabasePostgresql#feature_enabled}
   */
   readonly featureEnabled?: boolean | cdktf.IResolvable;
   /**
   * Log. Specifies which classes of statements will be logged by session audit logging.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.30.0/docs/resources/managed_database_postgresql#log ManagedDatabasePostgresql#log}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.31.0/docs/resources/managed_database_postgresql#log ManagedDatabasePostgresql#log}
   */
   readonly log?: string[];
   /**
   * Log Catalog. Specifies that session logging should be enabled in the case where all relations
   * in a statement are in pg_catalog.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.30.0/docs/resources/managed_database_postgresql#log_catalog ManagedDatabasePostgresql#log_catalog}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.31.0/docs/resources/managed_database_postgresql#log_catalog ManagedDatabasePostgresql#log_catalog}
   */
   readonly logCatalog?: boolean | cdktf.IResolvable;
   /**
   * Log Client. Specifies whether log messages will be visible to a client process such as psql.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.30.0/docs/resources/managed_database_postgresql#log_client ManagedDatabasePostgresql#log_client}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.31.0/docs/resources/managed_database_postgresql#log_client ManagedDatabasePostgresql#log_client}
   */
   readonly logClient?: boolean | cdktf.IResolvable;
   /**
   * Log level. Specifies the log level that will be used for log entries.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.30.0/docs/resources/managed_database_postgresql#log_level ManagedDatabasePostgresql#log_level}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.31.0/docs/resources/managed_database_postgresql#log_level ManagedDatabasePostgresql#log_level}
   */
   readonly logLevel?: string;
   /**
   * Log Max String Length. Crop parameters representation and whole statements if they exceed this threshold.
   * A (default) value of -1 disable the truncation.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.30.0/docs/resources/managed_database_postgresql#log_max_string_length ManagedDatabasePostgresql#log_max_string_length}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.31.0/docs/resources/managed_database_postgresql#log_max_string_length ManagedDatabasePostgresql#log_max_string_length}
   */
   readonly logMaxStringLength?: number;
   /**
   * Log Nested Statements. This GUC allows to turn off logging nested statements, that is, statements that are
   * executed as part of another ExecutorRun.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.30.0/docs/resources/managed_database_postgresql#log_nested_statements ManagedDatabasePostgresql#log_nested_statements}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.31.0/docs/resources/managed_database_postgresql#log_nested_statements ManagedDatabasePostgresql#log_nested_statements}
   */
   readonly logNestedStatements?: boolean | cdktf.IResolvable;
   /**
   * Log Parameter. Specifies that audit logging should include the parameters that were passed with the statement.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.30.0/docs/resources/managed_database_postgresql#log_parameter ManagedDatabasePostgresql#log_parameter}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.31.0/docs/resources/managed_database_postgresql#log_parameter ManagedDatabasePostgresql#log_parameter}
   */
   readonly logParameter?: boolean | cdktf.IResolvable;
   /**
   * Log Parameter Max Size. Specifies that parameter values longer than this setting (in bytes) should not be logged,
   * but replaced with <long param suppressed>.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.30.0/docs/resources/managed_database_postgresql#log_parameter_max_size ManagedDatabasePostgresql#log_parameter_max_size}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.31.0/docs/resources/managed_database_postgresql#log_parameter_max_size ManagedDatabasePostgresql#log_parameter_max_size}
   */
   readonly logParameterMaxSize?: number;
   /**
   * Log Relation. Specifies whether session audit logging should create a separate log entry
   * for each relation (TABLE, VIEW, etc.) referenced in a SELECT or DML statement.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.30.0/docs/resources/managed_database_postgresql#log_relation ManagedDatabasePostgresql#log_relation}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.31.0/docs/resources/managed_database_postgresql#log_relation ManagedDatabasePostgresql#log_relation}
   */
   readonly logRelation?: boolean | cdktf.IResolvable;
   /**
   * Log Rows.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.30.0/docs/resources/managed_database_postgresql#log_rows ManagedDatabasePostgresql#log_rows}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.31.0/docs/resources/managed_database_postgresql#log_rows ManagedDatabasePostgresql#log_rows}
   */
   readonly logRows?: boolean | cdktf.IResolvable;
   /**
   * Log Statement. Specifies whether logging will include the statement text and parameters (if enabled).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.30.0/docs/resources/managed_database_postgresql#log_statement ManagedDatabasePostgresql#log_statement}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.31.0/docs/resources/managed_database_postgresql#log_statement ManagedDatabasePostgresql#log_statement}
   */
   readonly logStatement?: boolean | cdktf.IResolvable;
   /**
   * Log Statement Once. Specifies whether logging will include the statement text and parameters with
   * the first log entry for a statement/substatement combination or with every entry.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.30.0/docs/resources/managed_database_postgresql#log_statement_once ManagedDatabasePostgresql#log_statement_once}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.31.0/docs/resources/managed_database_postgresql#log_statement_once ManagedDatabasePostgresql#log_statement_once}
   */
   readonly logStatementOnce?: boolean | cdktf.IResolvable;
   /**
   * Role. Specifies the master role to use for object audit logging.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.30.0/docs/resources/managed_database_postgresql#role ManagedDatabasePostgresql#role}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.31.0/docs/resources/managed_database_postgresql#role ManagedDatabasePostgresql#role}
   */
   readonly role?: string;
 }
@@ -1172,7 +1172,7 @@ export class ManagedDatabasePostgresqlPropertiesPgauditOutputReference extends c
     }
   }
 
-  // feature_enabled - computed: false, optional: true, required: false
+  // feature_enabled - computed: true, optional: true, required: false
   private _featureEnabled?: boolean | cdktf.IResolvable; 
   public get featureEnabled() {
     return this.getBooleanAttribute('feature_enabled');
@@ -1204,7 +1204,7 @@ export class ManagedDatabasePostgresqlPropertiesPgauditOutputReference extends c
     return this._log;
   }
 
-  // log_catalog - computed: false, optional: true, required: false
+  // log_catalog - computed: true, optional: true, required: false
   private _logCatalog?: boolean | cdktf.IResolvable; 
   public get logCatalog() {
     return this.getBooleanAttribute('log_catalog');
@@ -1220,7 +1220,7 @@ export class ManagedDatabasePostgresqlPropertiesPgauditOutputReference extends c
     return this._logCatalog;
   }
 
-  // log_client - computed: false, optional: true, required: false
+  // log_client - computed: true, optional: true, required: false
   private _logClient?: boolean | cdktf.IResolvable; 
   public get logClient() {
     return this.getBooleanAttribute('log_client');
@@ -1268,7 +1268,7 @@ export class ManagedDatabasePostgresqlPropertiesPgauditOutputReference extends c
     return this._logMaxStringLength;
   }
 
-  // log_nested_statements - computed: false, optional: true, required: false
+  // log_nested_statements - computed: true, optional: true, required: false
   private _logNestedStatements?: boolean | cdktf.IResolvable; 
   public get logNestedStatements() {
     return this.getBooleanAttribute('log_nested_statements');
@@ -1284,7 +1284,7 @@ export class ManagedDatabasePostgresqlPropertiesPgauditOutputReference extends c
     return this._logNestedStatements;
   }
 
-  // log_parameter - computed: false, optional: true, required: false
+  // log_parameter - computed: true, optional: true, required: false
   private _logParameter?: boolean | cdktf.IResolvable; 
   public get logParameter() {
     return this.getBooleanAttribute('log_parameter');
@@ -1316,7 +1316,7 @@ export class ManagedDatabasePostgresqlPropertiesPgauditOutputReference extends c
     return this._logParameterMaxSize;
   }
 
-  // log_relation - computed: false, optional: true, required: false
+  // log_relation - computed: true, optional: true, required: false
   private _logRelation?: boolean | cdktf.IResolvable; 
   public get logRelation() {
     return this.getBooleanAttribute('log_relation');
@@ -1332,7 +1332,7 @@ export class ManagedDatabasePostgresqlPropertiesPgauditOutputReference extends c
     return this._logRelation;
   }
 
-  // log_rows - computed: false, optional: true, required: false
+  // log_rows - computed: true, optional: true, required: false
   private _logRows?: boolean | cdktf.IResolvable; 
   public get logRows() {
     return this.getBooleanAttribute('log_rows');
@@ -1348,7 +1348,7 @@ export class ManagedDatabasePostgresqlPropertiesPgauditOutputReference extends c
     return this._logRows;
   }
 
-  // log_statement - computed: false, optional: true, required: false
+  // log_statement - computed: true, optional: true, required: false
   private _logStatement?: boolean | cdktf.IResolvable; 
   public get logStatement() {
     return this.getBooleanAttribute('log_statement');
@@ -1364,7 +1364,7 @@ export class ManagedDatabasePostgresqlPropertiesPgauditOutputReference extends c
     return this._logStatement;
   }
 
-  // log_statement_once - computed: false, optional: true, required: false
+  // log_statement_once - computed: true, optional: true, required: false
   private _logStatementOnce?: boolean | cdktf.IResolvable; 
   public get logStatementOnce() {
     return this.getBooleanAttribute('log_statement_once');
@@ -1400,61 +1400,61 @@ export interface ManagedDatabasePostgresqlPropertiesPgbouncer {
   /**
   * If the automatically created database pools have been unused this many seconds, they are freed. If 0 then timeout is disabled. [seconds].
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.30.0/docs/resources/managed_database_postgresql#autodb_idle_timeout ManagedDatabasePostgresql#autodb_idle_timeout}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.31.0/docs/resources/managed_database_postgresql#autodb_idle_timeout ManagedDatabasePostgresql#autodb_idle_timeout}
   */
   readonly autodbIdleTimeout?: number;
   /**
   * Do not allow more than this many server connections per database (regardless of user). Setting it to 0 means unlimited.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.30.0/docs/resources/managed_database_postgresql#autodb_max_db_connections ManagedDatabasePostgresql#autodb_max_db_connections}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.31.0/docs/resources/managed_database_postgresql#autodb_max_db_connections ManagedDatabasePostgresql#autodb_max_db_connections}
   */
   readonly autodbMaxDbConnections?: number;
   /**
   * PGBouncer pool mode.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.30.0/docs/resources/managed_database_postgresql#autodb_pool_mode ManagedDatabasePostgresql#autodb_pool_mode}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.31.0/docs/resources/managed_database_postgresql#autodb_pool_mode ManagedDatabasePostgresql#autodb_pool_mode}
   */
   readonly autodbPoolMode?: string;
   /**
   * If non-zero then create automatically a pool of that size per user when a pool doesn't exist.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.30.0/docs/resources/managed_database_postgresql#autodb_pool_size ManagedDatabasePostgresql#autodb_pool_size}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.31.0/docs/resources/managed_database_postgresql#autodb_pool_size ManagedDatabasePostgresql#autodb_pool_size}
   */
   readonly autodbPoolSize?: number;
   /**
   * List of parameters to ignore when given in startup packet.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.30.0/docs/resources/managed_database_postgresql#ignore_startup_parameters ManagedDatabasePostgresql#ignore_startup_parameters}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.31.0/docs/resources/managed_database_postgresql#ignore_startup_parameters ManagedDatabasePostgresql#ignore_startup_parameters}
   */
   readonly ignoreStartupParameters?: string[];
   /**
   * PgBouncer tracks protocol-level named prepared statements related commands sent by the client in transaction and statement pooling modes when max_prepared_statements is set to a non-zero value. Setting it to 0 disables prepared statements. max_prepared_statements defaults to 100, and its maximum is 3000.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.30.0/docs/resources/managed_database_postgresql#max_prepared_statements ManagedDatabasePostgresql#max_prepared_statements}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.31.0/docs/resources/managed_database_postgresql#max_prepared_statements ManagedDatabasePostgresql#max_prepared_statements}
   */
   readonly maxPreparedStatements?: number;
   /**
   * Add more server connections to pool if below this number. Improves behavior when usual load comes suddenly back after period of total inactivity. The value is effectively capped at the pool size.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.30.0/docs/resources/managed_database_postgresql#min_pool_size ManagedDatabasePostgresql#min_pool_size}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.31.0/docs/resources/managed_database_postgresql#min_pool_size ManagedDatabasePostgresql#min_pool_size}
   */
   readonly minPoolSize?: number;
   /**
   * If a server connection has been idle more than this many seconds it will be dropped. If 0 then timeout is disabled. [seconds].
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.30.0/docs/resources/managed_database_postgresql#server_idle_timeout ManagedDatabasePostgresql#server_idle_timeout}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.31.0/docs/resources/managed_database_postgresql#server_idle_timeout ManagedDatabasePostgresql#server_idle_timeout}
   */
   readonly serverIdleTimeout?: number;
   /**
   * The pooler will close an unused server connection that has been connected longer than this. [seconds].
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.30.0/docs/resources/managed_database_postgresql#server_lifetime ManagedDatabasePostgresql#server_lifetime}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.31.0/docs/resources/managed_database_postgresql#server_lifetime ManagedDatabasePostgresql#server_lifetime}
   */
   readonly serverLifetime?: number;
   /**
   * Run server_reset_query (DISCARD ALL) in all pooling modes.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.30.0/docs/resources/managed_database_postgresql#server_reset_query_always ManagedDatabasePostgresql#server_reset_query_always}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.31.0/docs/resources/managed_database_postgresql#server_reset_query_always ManagedDatabasePostgresql#server_reset_query_always}
   */
   readonly serverResetQueryAlways?: boolean | cdktf.IResolvable;
 }
@@ -1781,7 +1781,7 @@ export class ManagedDatabasePostgresqlPropertiesPgbouncerOutputReference extends
     return this._serverLifetime;
   }
 
-  // server_reset_query_always - computed: false, optional: true, required: false
+  // server_reset_query_always - computed: true, optional: true, required: false
   private _serverResetQueryAlways?: boolean | cdktf.IResolvable; 
   public get serverResetQueryAlways() {
     return this.getBooleanAttribute('server_reset_query_always');
@@ -1801,7 +1801,7 @@ export interface ManagedDatabasePostgresqlPropertiesPglookout {
   /**
   * Max Failover Replication Time Lag. Number of seconds of master unavailability before triggering database failover to standby.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.30.0/docs/resources/managed_database_postgresql#max_failover_replication_time_lag ManagedDatabasePostgresql#max_failover_replication_time_lag}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.31.0/docs/resources/managed_database_postgresql#max_failover_replication_time_lag ManagedDatabasePostgresql#max_failover_replication_time_lag}
   */
   readonly maxFailoverReplicationTimeLag?: number;
 }
@@ -1887,7 +1887,7 @@ export interface ManagedDatabasePostgresqlPropertiesTimescaledb {
   /**
   * The number of background workers for timescaledb operations. You should configure this setting to the sum of your number of databases and the total number of concurrent background workers you want running at any given point in time. Changing this parameter causes a service restart.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.30.0/docs/resources/managed_database_postgresql#max_background_workers ManagedDatabasePostgresql#max_background_workers}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.31.0/docs/resources/managed_database_postgresql#max_background_workers ManagedDatabasePostgresql#max_background_workers}
   */
   readonly maxBackgroundWorkers?: number;
 }
@@ -1973,427 +1973,463 @@ export interface ManagedDatabasePostgresqlProperties {
   /**
   * Custom password for admin user. Defaults to random string. This must be set only when a new service is being created.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.30.0/docs/resources/managed_database_postgresql#admin_password ManagedDatabasePostgresql#admin_password}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.31.0/docs/resources/managed_database_postgresql#admin_password ManagedDatabasePostgresql#admin_password}
   */
   readonly adminPassword?: string;
   /**
   * Custom username for admin user. This must be set only when a new service is being created.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.30.0/docs/resources/managed_database_postgresql#admin_username ManagedDatabasePostgresql#admin_username}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.31.0/docs/resources/managed_database_postgresql#admin_username ManagedDatabasePostgresql#admin_username}
   */
   readonly adminUsername?: string;
   /**
   * Automatic utility network IP Filter. Automatically allow connections from servers in the utility network within the same zone.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.30.0/docs/resources/managed_database_postgresql#automatic_utility_network_ip_filter ManagedDatabasePostgresql#automatic_utility_network_ip_filter}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.31.0/docs/resources/managed_database_postgresql#automatic_utility_network_ip_filter ManagedDatabasePostgresql#automatic_utility_network_ip_filter}
   */
   readonly automaticUtilityNetworkIpFilter?: boolean | cdktf.IResolvable;
   /**
   * Specifies a fraction of the table size to add to autovacuum_analyze_threshold when deciding whether to trigger an ANALYZE (e.g. `0.2` for 20% of the table size). The default is `0.2`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.30.0/docs/resources/managed_database_postgresql#autovacuum_analyze_scale_factor ManagedDatabasePostgresql#autovacuum_analyze_scale_factor}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.31.0/docs/resources/managed_database_postgresql#autovacuum_analyze_scale_factor ManagedDatabasePostgresql#autovacuum_analyze_scale_factor}
   */
   readonly autovacuumAnalyzeScaleFactor?: number;
   /**
   * Specifies the minimum number of inserted, updated or deleted tuples needed to trigger an ANALYZE in any one table. The default is `50`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.30.0/docs/resources/managed_database_postgresql#autovacuum_analyze_threshold ManagedDatabasePostgresql#autovacuum_analyze_threshold}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.31.0/docs/resources/managed_database_postgresql#autovacuum_analyze_threshold ManagedDatabasePostgresql#autovacuum_analyze_threshold}
   */
   readonly autovacuumAnalyzeThreshold?: number;
   /**
   * Specifies the maximum age (in transactions) that a table's pg_class.relfrozenxid field can attain before a VACUUM operation is forced to prevent transaction ID wraparound within the table. The system launches autovacuum processes to prevent wraparound even when autovacuum is otherwise disabled. Changing this parameter causes a service restart.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.30.0/docs/resources/managed_database_postgresql#autovacuum_freeze_max_age ManagedDatabasePostgresql#autovacuum_freeze_max_age}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.31.0/docs/resources/managed_database_postgresql#autovacuum_freeze_max_age ManagedDatabasePostgresql#autovacuum_freeze_max_age}
   */
   readonly autovacuumFreezeMaxAge?: number;
   /**
   * Specifies the maximum number of autovacuum processes (other than the autovacuum launcher) that may be running at any one time. The default is `3`. Changing this parameter causes a service restart.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.30.0/docs/resources/managed_database_postgresql#autovacuum_max_workers ManagedDatabasePostgresql#autovacuum_max_workers}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.31.0/docs/resources/managed_database_postgresql#autovacuum_max_workers ManagedDatabasePostgresql#autovacuum_max_workers}
   */
   readonly autovacuumMaxWorkers?: number;
   /**
   * Specifies the minimum delay between autovacuum runs on any given database. The delay is measured in seconds. The default is `60`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.30.0/docs/resources/managed_database_postgresql#autovacuum_naptime ManagedDatabasePostgresql#autovacuum_naptime}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.31.0/docs/resources/managed_database_postgresql#autovacuum_naptime ManagedDatabasePostgresql#autovacuum_naptime}
   */
   readonly autovacuumNaptime?: number;
   /**
   * Specifies the cost delay value that will be used in automatic VACUUM operations. If `-1` is specified, the regular vacuum_cost_delay value will be used. The default is `2` (upstream default).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.30.0/docs/resources/managed_database_postgresql#autovacuum_vacuum_cost_delay ManagedDatabasePostgresql#autovacuum_vacuum_cost_delay}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.31.0/docs/resources/managed_database_postgresql#autovacuum_vacuum_cost_delay ManagedDatabasePostgresql#autovacuum_vacuum_cost_delay}
   */
   readonly autovacuumVacuumCostDelay?: number;
   /**
   * Specifies the cost limit value that will be used in automatic VACUUM operations. If `-1` is specified, the regular vacuum_cost_limit value will be used. The default is `-1` (upstream default).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.30.0/docs/resources/managed_database_postgresql#autovacuum_vacuum_cost_limit ManagedDatabasePostgresql#autovacuum_vacuum_cost_limit}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.31.0/docs/resources/managed_database_postgresql#autovacuum_vacuum_cost_limit ManagedDatabasePostgresql#autovacuum_vacuum_cost_limit}
   */
   readonly autovacuumVacuumCostLimit?: number;
   /**
   * Specifies a fraction of the table size to add to autovacuum_vacuum_threshold when deciding whether to trigger a VACUUM (e.g. `0.2` for 20% of the table size). The default is `0.2`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.30.0/docs/resources/managed_database_postgresql#autovacuum_vacuum_scale_factor ManagedDatabasePostgresql#autovacuum_vacuum_scale_factor}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.31.0/docs/resources/managed_database_postgresql#autovacuum_vacuum_scale_factor ManagedDatabasePostgresql#autovacuum_vacuum_scale_factor}
   */
   readonly autovacuumVacuumScaleFactor?: number;
   /**
   * Specifies the minimum number of updated or deleted tuples needed to trigger a VACUUM in any one table. The default is `50`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.30.0/docs/resources/managed_database_postgresql#autovacuum_vacuum_threshold ManagedDatabasePostgresql#autovacuum_vacuum_threshold}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.31.0/docs/resources/managed_database_postgresql#autovacuum_vacuum_threshold ManagedDatabasePostgresql#autovacuum_vacuum_threshold}
   */
   readonly autovacuumVacuumThreshold?: number;
   /**
   * The hour of day (in UTC) when backup for the service is started. New backup is only started if previous backup has already completed.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.30.0/docs/resources/managed_database_postgresql#backup_hour ManagedDatabasePostgresql#backup_hour}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.31.0/docs/resources/managed_database_postgresql#backup_hour ManagedDatabasePostgresql#backup_hour}
   */
   readonly backupHour?: number;
   /**
   * The minute of an hour when backup for the service is started. New backup is only started if previous backup has already completed.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.30.0/docs/resources/managed_database_postgresql#backup_minute ManagedDatabasePostgresql#backup_minute}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.31.0/docs/resources/managed_database_postgresql#backup_minute ManagedDatabasePostgresql#backup_minute}
   */
   readonly backupMinute?: number;
   /**
   * Specifies the delay between activity rounds for the background writer in milliseconds. The default is `200`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.30.0/docs/resources/managed_database_postgresql#bgwriter_delay ManagedDatabasePostgresql#bgwriter_delay}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.31.0/docs/resources/managed_database_postgresql#bgwriter_delay ManagedDatabasePostgresql#bgwriter_delay}
   */
   readonly bgwriterDelay?: number;
   /**
   * Whenever more than bgwriter_flush_after bytes have been written by the background writer, attempt to force the OS to issue these writes to the underlying storage. Specified in kilobytes. Setting of 0 disables forced writeback. The default is `512`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.30.0/docs/resources/managed_database_postgresql#bgwriter_flush_after ManagedDatabasePostgresql#bgwriter_flush_after}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.31.0/docs/resources/managed_database_postgresql#bgwriter_flush_after ManagedDatabasePostgresql#bgwriter_flush_after}
   */
   readonly bgwriterFlushAfter?: number;
   /**
   * In each round, no more than this many buffers will be written by the background writer. Setting this to zero disables background writing. The default is `100`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.30.0/docs/resources/managed_database_postgresql#bgwriter_lru_maxpages ManagedDatabasePostgresql#bgwriter_lru_maxpages}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.31.0/docs/resources/managed_database_postgresql#bgwriter_lru_maxpages ManagedDatabasePostgresql#bgwriter_lru_maxpages}
   */
   readonly bgwriterLruMaxpages?: number;
   /**
   * The average recent need for new buffers is multiplied by bgwriter_lru_multiplier to arrive at an estimate of the number that will be needed during the next round, (up to bgwriter_lru_maxpages). 1.0 represents a “just in time” policy of writing exactly the number of buffers predicted to be needed. Larger values provide some cushion against spikes in demand, while smaller values intentionally leave writes to be done by server processes. The default is `2.0`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.30.0/docs/resources/managed_database_postgresql#bgwriter_lru_multiplier ManagedDatabasePostgresql#bgwriter_lru_multiplier}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.31.0/docs/resources/managed_database_postgresql#bgwriter_lru_multiplier ManagedDatabasePostgresql#bgwriter_lru_multiplier}
   */
   readonly bgwriterLruMultiplier?: number;
   /**
   * This is the amount of time, in milliseconds, to wait on a lock before checking to see if there is a deadlock condition. The default is `1000` (upstream default).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.30.0/docs/resources/managed_database_postgresql#deadlock_timeout ManagedDatabasePostgresql#deadlock_timeout}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.31.0/docs/resources/managed_database_postgresql#deadlock_timeout ManagedDatabasePostgresql#deadlock_timeout}
   */
   readonly deadlockTimeout?: number;
   /**
   * Specifies the default TOAST compression method for values of compressible columns. The default is `lz4`. Only available for PostgreSQL 14+.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.30.0/docs/resources/managed_database_postgresql#default_toast_compression ManagedDatabasePostgresql#default_toast_compression}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.31.0/docs/resources/managed_database_postgresql#default_toast_compression ManagedDatabasePostgresql#default_toast_compression}
   */
   readonly defaultToastCompression?: string;
   /**
   * Time out sessions with open transactions after this number of milliseconds.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.30.0/docs/resources/managed_database_postgresql#idle_in_transaction_session_timeout ManagedDatabasePostgresql#idle_in_transaction_session_timeout}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.31.0/docs/resources/managed_database_postgresql#idle_in_transaction_session_timeout ManagedDatabasePostgresql#idle_in_transaction_session_timeout}
   */
   readonly idleInTransactionSessionTimeout?: number;
   /**
+  * EXPERIMENTAL: Controls the largest I/O size in operations that combine I/O in 8kB units. Version 17 and up only.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.31.0/docs/resources/managed_database_postgresql#io_combine_limit ManagedDatabasePostgresql#io_combine_limit}
+  */
+  readonly ioCombineLimit?: number;
+  /**
+  * EXPERIMENTAL: Controls the largest I/O size in operations that combine I/O in 8kB units, and silently limits the user-settable parameter io_combine_limit. Version 18 and up only. Changing this parameter causes a service restart.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.31.0/docs/resources/managed_database_postgresql#io_max_combine_limit ManagedDatabasePostgresql#io_max_combine_limit}
+  */
+  readonly ioMaxCombineLimit?: number;
+  /**
+  * EXPERIMENTAL: Controls the maximum number of I/O operations that one process can execute simultaneously. Version 18 and up only. Changing this parameter causes a service restart.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.31.0/docs/resources/managed_database_postgresql#io_max_concurrency ManagedDatabasePostgresql#io_max_concurrency}
+  */
+  readonly ioMaxConcurrency?: number;
+  /**
+  * EXPERIMENTAL: Controls the maximum number of I/O operations that one process can execute simultaneously. Version 18 and up only. Changing this parameter causes a service restart.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.31.0/docs/resources/managed_database_postgresql#io_method ManagedDatabasePostgresql#io_method}
+  */
+  readonly ioMethod?: string;
+  /**
+  * io_max_concurrency. EXPERIMENTAL: Number of IO worker processes, for io_method=worker. Version 18 and up only. Changing this parameter causes a service restart.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.31.0/docs/resources/managed_database_postgresql#io_workers ManagedDatabasePostgresql#io_workers}
+  */
+  readonly ioWorkers?: number;
+  /**
   * IP filter. Allow incoming connections from CIDR address block, e.g. '10.20.0.0/16'.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.30.0/docs/resources/managed_database_postgresql#ip_filter ManagedDatabasePostgresql#ip_filter}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.31.0/docs/resources/managed_database_postgresql#ip_filter ManagedDatabasePostgresql#ip_filter}
   */
   readonly ipFilter?: string[];
   /**
   * Controls system-wide use of Just-in-Time Compilation (JIT).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.30.0/docs/resources/managed_database_postgresql#jit ManagedDatabasePostgresql#jit}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.31.0/docs/resources/managed_database_postgresql#jit ManagedDatabasePostgresql#jit}
   */
   readonly jit?: boolean | cdktf.IResolvable;
   /**
   * Causes each action executed by autovacuum to be logged if it ran for at least the specified number of milliseconds. Setting this to zero logs all autovacuum actions. Minus-one disables logging autovacuum actions. The default is `1000`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.30.0/docs/resources/managed_database_postgresql#log_autovacuum_min_duration ManagedDatabasePostgresql#log_autovacuum_min_duration}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.31.0/docs/resources/managed_database_postgresql#log_autovacuum_min_duration ManagedDatabasePostgresql#log_autovacuum_min_duration}
   */
   readonly logAutovacuumMinDuration?: number;
   /**
   * Controls the amount of detail written in the server log for each message that is logged.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.30.0/docs/resources/managed_database_postgresql#log_error_verbosity ManagedDatabasePostgresql#log_error_verbosity}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.31.0/docs/resources/managed_database_postgresql#log_error_verbosity ManagedDatabasePostgresql#log_error_verbosity}
   */
   readonly logErrorVerbosity?: string;
   /**
   * Choose from one of the available log formats.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.30.0/docs/resources/managed_database_postgresql#log_line_prefix ManagedDatabasePostgresql#log_line_prefix}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.31.0/docs/resources/managed_database_postgresql#log_line_prefix ManagedDatabasePostgresql#log_line_prefix}
   */
   readonly logLinePrefix?: string;
   /**
   * Log statements that take more than this number of milliseconds to run, -1 disables.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.30.0/docs/resources/managed_database_postgresql#log_min_duration_statement ManagedDatabasePostgresql#log_min_duration_statement}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.31.0/docs/resources/managed_database_postgresql#log_min_duration_statement ManagedDatabasePostgresql#log_min_duration_statement}
   */
   readonly logMinDurationStatement?: number;
   /**
   * Log statements for each temporary file created larger than this number of kilobytes, -1 disables.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.30.0/docs/resources/managed_database_postgresql#log_temp_files ManagedDatabasePostgresql#log_temp_files}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.31.0/docs/resources/managed_database_postgresql#log_temp_files ManagedDatabasePostgresql#log_temp_files}
   */
   readonly logTempFiles?: number;
   /**
   * Sets the PostgreSQL maximum number of concurrent connections to the database server. This is a limited-release parameter. Contact your account team to confirm your eligibility. You cannot decrease this parameter value when set. For services with a read replica, first increase the read replica's value. After the change is applied to the replica, you can increase the primary service's value. Changing this parameter causes a service restart.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.30.0/docs/resources/managed_database_postgresql#max_connections ManagedDatabasePostgresql#max_connections}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.31.0/docs/resources/managed_database_postgresql#max_connections ManagedDatabasePostgresql#max_connections}
   */
   readonly maxConnections?: number;
   /**
   * PostgreSQL maximum number of files that can be open per process. The default is `1000` (upstream default). Changing this parameter causes a service restart.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.30.0/docs/resources/managed_database_postgresql#max_files_per_process ManagedDatabasePostgresql#max_files_per_process}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.31.0/docs/resources/managed_database_postgresql#max_files_per_process ManagedDatabasePostgresql#max_files_per_process}
   */
   readonly maxFilesPerProcess?: number;
   /**
   * PostgreSQL maximum locks per transaction. Changing this parameter causes a service restart.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.30.0/docs/resources/managed_database_postgresql#max_locks_per_transaction ManagedDatabasePostgresql#max_locks_per_transaction}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.31.0/docs/resources/managed_database_postgresql#max_locks_per_transaction ManagedDatabasePostgresql#max_locks_per_transaction}
   */
   readonly maxLocksPerTransaction?: number;
   /**
   * PostgreSQL maximum logical replication workers (taken from the pool of max_parallel_workers). The default is `4` (upstream default). Changing this parameter causes a service restart.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.30.0/docs/resources/managed_database_postgresql#max_logical_replication_workers ManagedDatabasePostgresql#max_logical_replication_workers}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.31.0/docs/resources/managed_database_postgresql#max_logical_replication_workers ManagedDatabasePostgresql#max_logical_replication_workers}
   */
   readonly maxLogicalReplicationWorkers?: number;
   /**
   * Sets the maximum number of workers that the system can support for parallel queries. The default is `8` (upstream default).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.30.0/docs/resources/managed_database_postgresql#max_parallel_workers ManagedDatabasePostgresql#max_parallel_workers}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.31.0/docs/resources/managed_database_postgresql#max_parallel_workers ManagedDatabasePostgresql#max_parallel_workers}
   */
   readonly maxParallelWorkers?: number;
   /**
   * Sets the maximum number of workers that can be started by a single Gather or Gather Merge node. The default is `2` (upstream default).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.30.0/docs/resources/managed_database_postgresql#max_parallel_workers_per_gather ManagedDatabasePostgresql#max_parallel_workers_per_gather}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.31.0/docs/resources/managed_database_postgresql#max_parallel_workers_per_gather ManagedDatabasePostgresql#max_parallel_workers_per_gather}
   */
   readonly maxParallelWorkersPerGather?: number;
   /**
   * PostgreSQL maximum predicate locks per transaction. The default is `64` (upstream default). Changing this parameter causes a service restart.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.30.0/docs/resources/managed_database_postgresql#max_pred_locks_per_transaction ManagedDatabasePostgresql#max_pred_locks_per_transaction}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.31.0/docs/resources/managed_database_postgresql#max_pred_locks_per_transaction ManagedDatabasePostgresql#max_pred_locks_per_transaction}
   */
   readonly maxPredLocksPerTransaction?: number;
   /**
   * PostgreSQL maximum prepared transactions. The default is `0`. Changing this parameter causes a service restart.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.30.0/docs/resources/managed_database_postgresql#max_prepared_transactions ManagedDatabasePostgresql#max_prepared_transactions}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.31.0/docs/resources/managed_database_postgresql#max_prepared_transactions ManagedDatabasePostgresql#max_prepared_transactions}
   */
   readonly maxPreparedTransactions?: number;
   /**
   * PostgreSQL maximum replication slots. The default is `20`. Changing this parameter causes a service restart.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.30.0/docs/resources/managed_database_postgresql#max_replication_slots ManagedDatabasePostgresql#max_replication_slots}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.31.0/docs/resources/managed_database_postgresql#max_replication_slots ManagedDatabasePostgresql#max_replication_slots}
   */
   readonly maxReplicationSlots?: number;
   /**
   * PostgreSQL maximum WAL size (MB) reserved for replication slots. If `-1` is specified, replication slots may retain an unlimited amount of WAL files. The default is `-1` (upstream default). wal_keep_size minimum WAL size setting takes precedence over this.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.30.0/docs/resources/managed_database_postgresql#max_slot_wal_keep_size ManagedDatabasePostgresql#max_slot_wal_keep_size}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.31.0/docs/resources/managed_database_postgresql#max_slot_wal_keep_size ManagedDatabasePostgresql#max_slot_wal_keep_size}
   */
   readonly maxSlotWalKeepSize?: number;
   /**
   * Maximum depth of the stack in bytes. The default is `2097152` (upstream default).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.30.0/docs/resources/managed_database_postgresql#max_stack_depth ManagedDatabasePostgresql#max_stack_depth}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.31.0/docs/resources/managed_database_postgresql#max_stack_depth ManagedDatabasePostgresql#max_stack_depth}
   */
   readonly maxStackDepth?: number;
   /**
   * Max standby archive delay in milliseconds. The default is `30000` (upstream default).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.30.0/docs/resources/managed_database_postgresql#max_standby_archive_delay ManagedDatabasePostgresql#max_standby_archive_delay}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.31.0/docs/resources/managed_database_postgresql#max_standby_archive_delay ManagedDatabasePostgresql#max_standby_archive_delay}
   */
   readonly maxStandbyArchiveDelay?: number;
   /**
   * Max standby streaming delay in milliseconds. The default is `30000` (upstream default).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.30.0/docs/resources/managed_database_postgresql#max_standby_streaming_delay ManagedDatabasePostgresql#max_standby_streaming_delay}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.31.0/docs/resources/managed_database_postgresql#max_standby_streaming_delay ManagedDatabasePostgresql#max_standby_streaming_delay}
   */
   readonly maxStandbyStreamingDelay?: number;
   /**
   * Maximum number of synchronization workers per subscription. The default is `2`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.30.0/docs/resources/managed_database_postgresql#max_sync_workers_per_subscription ManagedDatabasePostgresql#max_sync_workers_per_subscription}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.31.0/docs/resources/managed_database_postgresql#max_sync_workers_per_subscription ManagedDatabasePostgresql#max_sync_workers_per_subscription}
   */
   readonly maxSyncWorkersPerSubscription?: number;
   /**
   * PostgreSQL maximum WAL senders. The default is `20`. Changing this parameter causes a service restart.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.30.0/docs/resources/managed_database_postgresql#max_wal_senders ManagedDatabasePostgresql#max_wal_senders}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.31.0/docs/resources/managed_database_postgresql#max_wal_senders ManagedDatabasePostgresql#max_wal_senders}
   */
   readonly maxWalSenders?: number;
   /**
   * Sets the maximum number of background processes that the system can support. The default is `8`. Changing this parameter causes a service restart.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.30.0/docs/resources/managed_database_postgresql#max_worker_processes ManagedDatabasePostgresql#max_worker_processes}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.31.0/docs/resources/managed_database_postgresql#max_worker_processes ManagedDatabasePostgresql#max_worker_processes}
   */
   readonly maxWorkerProcesses?: number;
   /**
+  * Number of nodes for the service.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.31.0/docs/resources/managed_database_postgresql#node_count ManagedDatabasePostgresql#node_count}
+  */
+  readonly nodeCount?: number;
+  /**
   * Chooses the algorithm for encrypting passwords.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.30.0/docs/resources/managed_database_postgresql#password_encryption ManagedDatabasePostgresql#password_encryption}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.31.0/docs/resources/managed_database_postgresql#password_encryption ManagedDatabasePostgresql#password_encryption}
   */
   readonly passwordEncryption?: string;
   /**
   * Sets the time interval in seconds to run pg_partman's scheduled tasks. The default is `3600`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.30.0/docs/resources/managed_database_postgresql#pg_partman_bgw_interval ManagedDatabasePostgresql#pg_partman_bgw_interval}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.31.0/docs/resources/managed_database_postgresql#pg_partman_bgw_interval ManagedDatabasePostgresql#pg_partman_bgw_interval}
   */
   readonly pgPartmanBgwInterval?: number;
   /**
   * Controls which role to use for pg_partman's scheduled background tasks.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.30.0/docs/resources/managed_database_postgresql#pg_partman_bgw_role ManagedDatabasePostgresql#pg_partman_bgw_role}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.31.0/docs/resources/managed_database_postgresql#pg_partman_bgw_role ManagedDatabasePostgresql#pg_partman_bgw_role}
   */
   readonly pgPartmanBgwRole?: string;
   /**
   * Enable pg_stat_monitor extension if available for the current cluster. Enable the pg_stat_monitor extension. Changing this parameter causes a service restart. When this extension is enabled, pg_stat_statements results for utility commands are unreliable.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.30.0/docs/resources/managed_database_postgresql#pg_stat_monitor_enable ManagedDatabasePostgresql#pg_stat_monitor_enable}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.31.0/docs/resources/managed_database_postgresql#pg_stat_monitor_enable ManagedDatabasePostgresql#pg_stat_monitor_enable}
   */
   readonly pgStatMonitorEnable?: boolean | cdktf.IResolvable;
   /**
   * Enables or disables query plan monitoring. Changing this parameter causes a service restart. Only available for PostgreSQL 13+.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.30.0/docs/resources/managed_database_postgresql#pg_stat_monitor_pgsm_enable_query_plan ManagedDatabasePostgresql#pg_stat_monitor_pgsm_enable_query_plan}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.31.0/docs/resources/managed_database_postgresql#pg_stat_monitor_pgsm_enable_query_plan ManagedDatabasePostgresql#pg_stat_monitor_pgsm_enable_query_plan}
   */
   readonly pgStatMonitorPgsmEnableQueryPlan?: boolean | cdktf.IResolvable;
   /**
   * Sets the maximum number of buckets. Changing this parameter causes a service restart. Only available for PostgreSQL 13+.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.30.0/docs/resources/managed_database_postgresql#pg_stat_monitor_pgsm_max_buckets ManagedDatabasePostgresql#pg_stat_monitor_pgsm_max_buckets}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.31.0/docs/resources/managed_database_postgresql#pg_stat_monitor_pgsm_max_buckets ManagedDatabasePostgresql#pg_stat_monitor_pgsm_max_buckets}
   */
   readonly pgStatMonitorPgsmMaxBuckets?: number;
   /**
   * Controls which statements are counted. Specify top to track top-level statements (those issued directly by clients), all to also track nested statements (such as statements invoked within functions), or none to disable statement statistics collection. The default is `top`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.30.0/docs/resources/managed_database_postgresql#pg_stat_statements_track ManagedDatabasePostgresql#pg_stat_statements_track}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.31.0/docs/resources/managed_database_postgresql#pg_stat_statements_track ManagedDatabasePostgresql#pg_stat_statements_track}
   */
   readonly pgStatStatementsTrack?: string;
   /**
   * Public Access. Allow access to the service from the public Internet.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.30.0/docs/resources/managed_database_postgresql#public_access ManagedDatabasePostgresql#public_access}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.31.0/docs/resources/managed_database_postgresql#public_access ManagedDatabasePostgresql#public_access}
   */
   readonly publicAccess?: boolean | cdktf.IResolvable;
   /**
   * Service logging. Store logs for the service so that they are available in the HTTP API and console.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.30.0/docs/resources/managed_database_postgresql#service_log ManagedDatabasePostgresql#service_log}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.31.0/docs/resources/managed_database_postgresql#service_log ManagedDatabasePostgresql#service_log}
   */
   readonly serviceLog?: boolean | cdktf.IResolvable;
   /**
   * Percentage of total RAM that the database server uses for shared memory buffers. Valid range is 20-60 (float), which corresponds to 20% - 60%. This setting adjusts the shared_buffers configuration value. Changing this parameter causes a service restart.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.30.0/docs/resources/managed_database_postgresql#shared_buffers_percentage ManagedDatabasePostgresql#shared_buffers_percentage}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.31.0/docs/resources/managed_database_postgresql#shared_buffers_percentage ManagedDatabasePostgresql#shared_buffers_percentage}
   */
   readonly sharedBuffersPercentage?: number;
   /**
   * Synchronous replication type. Note that the service plan also needs to support synchronous replication.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.30.0/docs/resources/managed_database_postgresql#synchronous_replication ManagedDatabasePostgresql#synchronous_replication}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.31.0/docs/resources/managed_database_postgresql#synchronous_replication ManagedDatabasePostgresql#synchronous_replication}
   */
   readonly synchronousReplication?: string;
   /**
   * PostgreSQL temporary file limit in KiB, -1 for unlimited.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.30.0/docs/resources/managed_database_postgresql#temp_file_limit ManagedDatabasePostgresql#temp_file_limit}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.31.0/docs/resources/managed_database_postgresql#temp_file_limit ManagedDatabasePostgresql#temp_file_limit}
   */
   readonly tempFileLimit?: number;
   /**
   * PostgreSQL service timezone.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.30.0/docs/resources/managed_database_postgresql#timezone ManagedDatabasePostgresql#timezone}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.31.0/docs/resources/managed_database_postgresql#timezone ManagedDatabasePostgresql#timezone}
   */
   readonly timezone?: string;
   /**
   * Specifies the number of bytes reserved to track the currently executing command for each active session. Changing this parameter causes a service restart.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.30.0/docs/resources/managed_database_postgresql#track_activity_query_size ManagedDatabasePostgresql#track_activity_query_size}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.31.0/docs/resources/managed_database_postgresql#track_activity_query_size ManagedDatabasePostgresql#track_activity_query_size}
   */
   readonly trackActivityQuerySize?: number;
   /**
   * Record commit time of transactions. Changing this parameter causes a service restart.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.30.0/docs/resources/managed_database_postgresql#track_commit_timestamp ManagedDatabasePostgresql#track_commit_timestamp}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.31.0/docs/resources/managed_database_postgresql#track_commit_timestamp ManagedDatabasePostgresql#track_commit_timestamp}
   */
   readonly trackCommitTimestamp?: string;
   /**
   * Enables tracking of function call counts and time used.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.30.0/docs/resources/managed_database_postgresql#track_functions ManagedDatabasePostgresql#track_functions}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.31.0/docs/resources/managed_database_postgresql#track_functions ManagedDatabasePostgresql#track_functions}
   */
   readonly trackFunctions?: string;
   /**
   * Enables timing of database I/O calls. The default is `off`. When on, it will repeatedly query the operating system for the current time, which may cause significant overhead on some platforms.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.30.0/docs/resources/managed_database_postgresql#track_io_timing ManagedDatabasePostgresql#track_io_timing}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.31.0/docs/resources/managed_database_postgresql#track_io_timing ManagedDatabasePostgresql#track_io_timing}
   */
   readonly trackIoTiming?: string;
   /**
   * Variant of the PostgreSQL service, may affect the features that are exposed by default.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.30.0/docs/resources/managed_database_postgresql#variant ManagedDatabasePostgresql#variant}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.31.0/docs/resources/managed_database_postgresql#variant ManagedDatabasePostgresql#variant}
   */
   readonly variant?: string;
   /**
   * PostgreSQL major version.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.30.0/docs/resources/managed_database_postgresql#version ManagedDatabasePostgresql#version}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.31.0/docs/resources/managed_database_postgresql#version ManagedDatabasePostgresql#version}
   */
   readonly version?: string;
   /**
   * Terminate replication connections that are inactive for longer than this amount of time, in milliseconds. Setting this value to zero disables the timeout.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.30.0/docs/resources/managed_database_postgresql#wal_sender_timeout ManagedDatabasePostgresql#wal_sender_timeout}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.31.0/docs/resources/managed_database_postgresql#wal_sender_timeout ManagedDatabasePostgresql#wal_sender_timeout}
   */
   readonly walSenderTimeout?: number;
   /**
   * WAL flush interval in milliseconds. The default is `200`. Setting this parameter to a lower value may negatively impact performance.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.30.0/docs/resources/managed_database_postgresql#wal_writer_delay ManagedDatabasePostgresql#wal_writer_delay}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.31.0/docs/resources/managed_database_postgresql#wal_writer_delay ManagedDatabasePostgresql#wal_writer_delay}
   */
   readonly walWriterDelay?: number;
   /**
   * Sets the maximum amount of memory to be used by a query operation (such as a sort or hash table) before writing to temporary disk files, in MB. The default is 1MB + 0.075% of total RAM (up to 32MB).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.30.0/docs/resources/managed_database_postgresql#work_mem ManagedDatabasePostgresql#work_mem}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.31.0/docs/resources/managed_database_postgresql#work_mem ManagedDatabasePostgresql#work_mem}
   */
   readonly workMem?: number;
   /**
   * migration block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.30.0/docs/resources/managed_database_postgresql#migration ManagedDatabasePostgresql#migration}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.31.0/docs/resources/managed_database_postgresql#migration ManagedDatabasePostgresql#migration}
   */
   readonly migration?: ManagedDatabasePostgresqlPropertiesMigration;
   /**
   * pgaudit block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.30.0/docs/resources/managed_database_postgresql#pgaudit ManagedDatabasePostgresql#pgaudit}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.31.0/docs/resources/managed_database_postgresql#pgaudit ManagedDatabasePostgresql#pgaudit}
   */
   readonly pgaudit?: ManagedDatabasePostgresqlPropertiesPgaudit;
   /**
   * pgbouncer block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.30.0/docs/resources/managed_database_postgresql#pgbouncer ManagedDatabasePostgresql#pgbouncer}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.31.0/docs/resources/managed_database_postgresql#pgbouncer ManagedDatabasePostgresql#pgbouncer}
   */
   readonly pgbouncer?: ManagedDatabasePostgresqlPropertiesPgbouncer;
   /**
   * pglookout block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.30.0/docs/resources/managed_database_postgresql#pglookout ManagedDatabasePostgresql#pglookout}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.31.0/docs/resources/managed_database_postgresql#pglookout ManagedDatabasePostgresql#pglookout}
   */
   readonly pglookout?: ManagedDatabasePostgresqlPropertiesPglookout;
   /**
   * timescaledb block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.30.0/docs/resources/managed_database_postgresql#timescaledb ManagedDatabasePostgresql#timescaledb}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.31.0/docs/resources/managed_database_postgresql#timescaledb ManagedDatabasePostgresql#timescaledb}
   */
   readonly timescaledb?: ManagedDatabasePostgresqlPropertiesTimescaledb;
 }
@@ -2425,6 +2461,11 @@ export function managedDatabasePostgresqlPropertiesToTerraform(struct?: ManagedD
     deadlock_timeout: cdktf.numberToTerraform(struct!.deadlockTimeout),
     default_toast_compression: cdktf.stringToTerraform(struct!.defaultToastCompression),
     idle_in_transaction_session_timeout: cdktf.numberToTerraform(struct!.idleInTransactionSessionTimeout),
+    io_combine_limit: cdktf.numberToTerraform(struct!.ioCombineLimit),
+    io_max_combine_limit: cdktf.numberToTerraform(struct!.ioMaxCombineLimit),
+    io_max_concurrency: cdktf.numberToTerraform(struct!.ioMaxConcurrency),
+    io_method: cdktf.stringToTerraform(struct!.ioMethod),
+    io_workers: cdktf.numberToTerraform(struct!.ioWorkers),
     ip_filter: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.ipFilter),
     jit: cdktf.booleanToTerraform(struct!.jit),
     log_autovacuum_min_duration: cdktf.numberToTerraform(struct!.logAutovacuumMinDuration),
@@ -2448,6 +2489,7 @@ export function managedDatabasePostgresqlPropertiesToTerraform(struct?: ManagedD
     max_sync_workers_per_subscription: cdktf.numberToTerraform(struct!.maxSyncWorkersPerSubscription),
     max_wal_senders: cdktf.numberToTerraform(struct!.maxWalSenders),
     max_worker_processes: cdktf.numberToTerraform(struct!.maxWorkerProcesses),
+    node_count: cdktf.numberToTerraform(struct!.nodeCount),
     password_encryption: cdktf.stringToTerraform(struct!.passwordEncryption),
     pg_partman_bgw_interval: cdktf.numberToTerraform(struct!.pgPartmanBgwInterval),
     pg_partman_bgw_role: cdktf.stringToTerraform(struct!.pgPartmanBgwRole),
@@ -2611,6 +2653,36 @@ export function managedDatabasePostgresqlPropertiesToHclTerraform(struct?: Manag
       type: "simple",
       storageClassType: "number",
     },
+    io_combine_limit: {
+      value: cdktf.numberToHclTerraform(struct!.ioCombineLimit),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    io_max_combine_limit: {
+      value: cdktf.numberToHclTerraform(struct!.ioMaxCombineLimit),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    io_max_concurrency: {
+      value: cdktf.numberToHclTerraform(struct!.ioMaxConcurrency),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    io_method: {
+      value: cdktf.stringToHclTerraform(struct!.ioMethod),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    io_workers: {
+      value: cdktf.numberToHclTerraform(struct!.ioWorkers),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
     ip_filter: {
       value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.ipFilter),
       isBlock: false,
@@ -2745,6 +2817,12 @@ export function managedDatabasePostgresqlPropertiesToHclTerraform(struct?: Manag
     },
     max_worker_processes: {
       value: cdktf.numberToHclTerraform(struct!.maxWorkerProcesses),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    node_count: {
+      value: cdktf.numberToHclTerraform(struct!.nodeCount),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
@@ -3015,6 +3093,26 @@ export class ManagedDatabasePostgresqlPropertiesOutputReference extends cdktf.Co
       hasAnyValues = true;
       internalValueResult.idleInTransactionSessionTimeout = this._idleInTransactionSessionTimeout;
     }
+    if (this._ioCombineLimit !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.ioCombineLimit = this._ioCombineLimit;
+    }
+    if (this._ioMaxCombineLimit !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.ioMaxCombineLimit = this._ioMaxCombineLimit;
+    }
+    if (this._ioMaxConcurrency !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.ioMaxConcurrency = this._ioMaxConcurrency;
+    }
+    if (this._ioMethod !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.ioMethod = this._ioMethod;
+    }
+    if (this._ioWorkers !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.ioWorkers = this._ioWorkers;
+    }
     if (this._ipFilter !== undefined) {
       hasAnyValues = true;
       internalValueResult.ipFilter = this._ipFilter;
@@ -3106,6 +3204,10 @@ export class ManagedDatabasePostgresqlPropertiesOutputReference extends cdktf.Co
     if (this._maxWorkerProcesses !== undefined) {
       hasAnyValues = true;
       internalValueResult.maxWorkerProcesses = this._maxWorkerProcesses;
+    }
+    if (this._nodeCount !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.nodeCount = this._nodeCount;
     }
     if (this._passwordEncryption !== undefined) {
       hasAnyValues = true;
@@ -3242,6 +3344,11 @@ export class ManagedDatabasePostgresqlPropertiesOutputReference extends cdktf.Co
       this._deadlockTimeout = undefined;
       this._defaultToastCompression = undefined;
       this._idleInTransactionSessionTimeout = undefined;
+      this._ioCombineLimit = undefined;
+      this._ioMaxCombineLimit = undefined;
+      this._ioMaxConcurrency = undefined;
+      this._ioMethod = undefined;
+      this._ioWorkers = undefined;
       this._ipFilter = undefined;
       this._jit = undefined;
       this._logAutovacuumMinDuration = undefined;
@@ -3265,6 +3372,7 @@ export class ManagedDatabasePostgresqlPropertiesOutputReference extends cdktf.Co
       this._maxSyncWorkersPerSubscription = undefined;
       this._maxWalSenders = undefined;
       this._maxWorkerProcesses = undefined;
+      this._nodeCount = undefined;
       this._passwordEncryption = undefined;
       this._pgPartmanBgwInterval = undefined;
       this._pgPartmanBgwRole = undefined;
@@ -3316,6 +3424,11 @@ export class ManagedDatabasePostgresqlPropertiesOutputReference extends cdktf.Co
       this._deadlockTimeout = value.deadlockTimeout;
       this._defaultToastCompression = value.defaultToastCompression;
       this._idleInTransactionSessionTimeout = value.idleInTransactionSessionTimeout;
+      this._ioCombineLimit = value.ioCombineLimit;
+      this._ioMaxCombineLimit = value.ioMaxCombineLimit;
+      this._ioMaxConcurrency = value.ioMaxConcurrency;
+      this._ioMethod = value.ioMethod;
+      this._ioWorkers = value.ioWorkers;
       this._ipFilter = value.ipFilter;
       this._jit = value.jit;
       this._logAutovacuumMinDuration = value.logAutovacuumMinDuration;
@@ -3339,6 +3452,7 @@ export class ManagedDatabasePostgresqlPropertiesOutputReference extends cdktf.Co
       this._maxSyncWorkersPerSubscription = value.maxSyncWorkersPerSubscription;
       this._maxWalSenders = value.maxWalSenders;
       this._maxWorkerProcesses = value.maxWorkerProcesses;
+      this._nodeCount = value.nodeCount;
       this._passwordEncryption = value.passwordEncryption;
       this._pgPartmanBgwInterval = value.pgPartmanBgwInterval;
       this._pgPartmanBgwRole = value.pgPartmanBgwRole;
@@ -3703,6 +3817,86 @@ export class ManagedDatabasePostgresqlPropertiesOutputReference extends cdktf.Co
   // Temporarily expose input value. Use with caution.
   public get idleInTransactionSessionTimeoutInput() {
     return this._idleInTransactionSessionTimeout;
+  }
+
+  // io_combine_limit - computed: true, optional: true, required: false
+  private _ioCombineLimit?: number; 
+  public get ioCombineLimit() {
+    return this.getNumberAttribute('io_combine_limit');
+  }
+  public set ioCombineLimit(value: number) {
+    this._ioCombineLimit = value;
+  }
+  public resetIoCombineLimit() {
+    this._ioCombineLimit = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get ioCombineLimitInput() {
+    return this._ioCombineLimit;
+  }
+
+  // io_max_combine_limit - computed: true, optional: true, required: false
+  private _ioMaxCombineLimit?: number; 
+  public get ioMaxCombineLimit() {
+    return this.getNumberAttribute('io_max_combine_limit');
+  }
+  public set ioMaxCombineLimit(value: number) {
+    this._ioMaxCombineLimit = value;
+  }
+  public resetIoMaxCombineLimit() {
+    this._ioMaxCombineLimit = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get ioMaxCombineLimitInput() {
+    return this._ioMaxCombineLimit;
+  }
+
+  // io_max_concurrency - computed: true, optional: true, required: false
+  private _ioMaxConcurrency?: number; 
+  public get ioMaxConcurrency() {
+    return this.getNumberAttribute('io_max_concurrency');
+  }
+  public set ioMaxConcurrency(value: number) {
+    this._ioMaxConcurrency = value;
+  }
+  public resetIoMaxConcurrency() {
+    this._ioMaxConcurrency = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get ioMaxConcurrencyInput() {
+    return this._ioMaxConcurrency;
+  }
+
+  // io_method - computed: true, optional: true, required: false
+  private _ioMethod?: string; 
+  public get ioMethod() {
+    return this.getStringAttribute('io_method');
+  }
+  public set ioMethod(value: string) {
+    this._ioMethod = value;
+  }
+  public resetIoMethod() {
+    this._ioMethod = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get ioMethodInput() {
+    return this._ioMethod;
+  }
+
+  // io_workers - computed: true, optional: true, required: false
+  private _ioWorkers?: number; 
+  public get ioWorkers() {
+    return this.getNumberAttribute('io_workers');
+  }
+  public set ioWorkers(value: number) {
+    this._ioWorkers = value;
+  }
+  public resetIoWorkers() {
+    this._ioWorkers = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get ioWorkersInput() {
+    return this._ioWorkers;
   }
 
   // ip_filter - computed: true, optional: true, required: false
@@ -4071,6 +4265,22 @@ export class ManagedDatabasePostgresqlPropertiesOutputReference extends cdktf.Co
   // Temporarily expose input value. Use with caution.
   public get maxWorkerProcessesInput() {
     return this._maxWorkerProcesses;
+  }
+
+  // node_count - computed: true, optional: true, required: false
+  private _nodeCount?: number; 
+  public get nodeCount() {
+    return this.getNumberAttribute('node_count');
+  }
+  public set nodeCount(value: number) {
+    this._nodeCount = value;
+  }
+  public resetNodeCount() {
+    this._nodeCount = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get nodeCountInput() {
+    return this._nodeCount;
   }
 
   // password_encryption - computed: true, optional: true, required: false
@@ -4507,7 +4717,7 @@ export class ManagedDatabasePostgresqlPropertiesOutputReference extends cdktf.Co
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.30.0/docs/resources/managed_database_postgresql upcloud_managed_database_postgresql}
+* Represents a {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.31.0/docs/resources/managed_database_postgresql upcloud_managed_database_postgresql}
 */
 export class ManagedDatabasePostgresql extends cdktf.TerraformResource {
 
@@ -4523,7 +4733,7 @@ export class ManagedDatabasePostgresql extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a ManagedDatabasePostgresql resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the ManagedDatabasePostgresql to import
-  * @param importFromId The id of the existing ManagedDatabasePostgresql that should be imported. Refer to the {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.30.0/docs/resources/managed_database_postgresql#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing ManagedDatabasePostgresql that should be imported. Refer to the {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.31.0/docs/resources/managed_database_postgresql#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the ManagedDatabasePostgresql to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -4535,7 +4745,7 @@ export class ManagedDatabasePostgresql extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.30.0/docs/resources/managed_database_postgresql upcloud_managed_database_postgresql} Resource
+  * Create a new {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.31.0/docs/resources/managed_database_postgresql upcloud_managed_database_postgresql} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -4546,7 +4756,7 @@ export class ManagedDatabasePostgresql extends cdktf.TerraformResource {
       terraformResourceType: 'upcloud_managed_database_postgresql',
       terraformGeneratorMetadata: {
         providerName: 'upcloud',
-        providerVersion: '5.30.0',
+        providerVersion: '5.31.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,

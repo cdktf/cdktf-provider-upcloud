@@ -27,7 +27,6 @@ Object.defineProperty(exports, 'managedDatabaseLogicalDatabase', { get: function
 Object.defineProperty(exports, 'managedDatabaseMysql', { get: function () { return require('./managed-database-mysql'); } });
 Object.defineProperty(exports, 'managedDatabaseOpensearch', { get: function () { return require('./managed-database-opensearch'); } });
 Object.defineProperty(exports, 'managedDatabasePostgresql', { get: function () { return require('./managed-database-postgresql'); } });
-Object.defineProperty(exports, 'managedDatabaseRedis', { get: function () { return require('./managed-database-redis'); } });
 Object.defineProperty(exports, 'managedDatabaseUser', { get: function () { return require('./managed-database-user'); } });
 Object.defineProperty(exports, 'managedDatabaseValkey', { get: function () { return require('./managed-database-valkey'); } });
 Object.defineProperty(exports, 'managedObjectStorage', { get: function () { return require('./managed-object-storage'); } });
@@ -53,7 +52,6 @@ Object.defineProperty(exports, 'dataUpcloudLoadBalancerDnsChallengeDomain', { ge
 Object.defineProperty(exports, 'dataUpcloudManagedDatabaseMysqlSessions', { get: function () { return require('./data-upcloud-managed-database-mysql-sessions'); } });
 Object.defineProperty(exports, 'dataUpcloudManagedDatabaseOpensearchIndices', { get: function () { return require('./data-upcloud-managed-database-opensearch-indices'); } });
 Object.defineProperty(exports, 'dataUpcloudManagedDatabasePostgresqlSessions', { get: function () { return require('./data-upcloud-managed-database-postgresql-sessions'); } });
-Object.defineProperty(exports, 'dataUpcloudManagedDatabaseRedisSessions', { get: function () { return require('./data-upcloud-managed-database-redis-sessions'); } });
 Object.defineProperty(exports, 'dataUpcloudManagedDatabaseValkeySessions', { get: function () { return require('./data-upcloud-managed-database-valkey-sessions'); } });
 Object.defineProperty(exports, 'dataUpcloudManagedObjectStoragePolicies', { get: function () { return require('./data-upcloud-managed-object-storage-policies'); } });
 Object.defineProperty(exports, 'dataUpcloudManagedObjectStorageRegions', { get: function () { return require('./data-upcloud-managed-object-storage-regions'); } });
