@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/upcloudltd/upcloud/5.30.0/docs/resources/managed_database_user
+// https://registry.terraform.io/providers/upcloudltd/upcloud/5.31.0/docs/resources/managed_database_user
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,11 +15,11 @@ export interface ManagedDatabaseUserConfig extends cdktf.TerraformMetaArguments 
   /**
   * MySQL only, authentication type.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.30.0/docs/resources/managed_database_user#authentication ManagedDatabaseUser#authentication}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.31.0/docs/resources/managed_database_user#authentication ManagedDatabaseUser#authentication}
   */
   readonly authentication?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.30.0/docs/resources/managed_database_user#id ManagedDatabaseUser#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.31.0/docs/resources/managed_database_user#id ManagedDatabaseUser#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -28,43 +28,37 @@ export interface ManagedDatabaseUserConfig extends cdktf.TerraformMetaArguments 
   /**
   * Password for the database user. Defaults to a random value
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.30.0/docs/resources/managed_database_user#password ManagedDatabaseUser#password}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.31.0/docs/resources/managed_database_user#password ManagedDatabaseUser#password}
   */
   readonly password?: string;
   /**
   * Service's UUID for which this user belongs to
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.30.0/docs/resources/managed_database_user#service ManagedDatabaseUser#service}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.31.0/docs/resources/managed_database_user#service ManagedDatabaseUser#service}
   */
   readonly service: string;
   /**
   * Name of the database user
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.30.0/docs/resources/managed_database_user#username ManagedDatabaseUser#username}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.31.0/docs/resources/managed_database_user#username ManagedDatabaseUser#username}
   */
   readonly username: string;
   /**
   * opensearch_access_control block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.30.0/docs/resources/managed_database_user#opensearch_access_control ManagedDatabaseUser#opensearch_access_control}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.31.0/docs/resources/managed_database_user#opensearch_access_control ManagedDatabaseUser#opensearch_access_control}
   */
   readonly opensearchAccessControl?: ManagedDatabaseUserOpensearchAccessControl;
   /**
   * pg_access_control block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.30.0/docs/resources/managed_database_user#pg_access_control ManagedDatabaseUser#pg_access_control}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.31.0/docs/resources/managed_database_user#pg_access_control ManagedDatabaseUser#pg_access_control}
   */
   readonly pgAccessControl?: ManagedDatabaseUserPgAccessControl;
   /**
-  * redis_access_control block
-  *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.30.0/docs/resources/managed_database_user#redis_access_control ManagedDatabaseUser#redis_access_control}
-  */
-  readonly redisAccessControl?: ManagedDatabaseUserRedisAccessControl;
-  /**
   * valkey_access_control block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.30.0/docs/resources/managed_database_user#valkey_access_control ManagedDatabaseUser#valkey_access_control}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.31.0/docs/resources/managed_database_user#valkey_access_control ManagedDatabaseUser#valkey_access_control}
   */
   readonly valkeyAccessControl?: ManagedDatabaseUserValkeyAccessControl;
 }
@@ -72,13 +66,13 @@ export interface ManagedDatabaseUserOpensearchAccessControlRules {
   /**
   * Set index name, pattern or top level API.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.30.0/docs/resources/managed_database_user#index ManagedDatabaseUser#index}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.31.0/docs/resources/managed_database_user#index ManagedDatabaseUser#index}
   */
   readonly index: string;
   /**
   * Set permission access.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.30.0/docs/resources/managed_database_user#permission ManagedDatabaseUser#permission}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.31.0/docs/resources/managed_database_user#permission ManagedDatabaseUser#permission}
   */
   readonly permission: string;
 }
@@ -219,7 +213,7 @@ export interface ManagedDatabaseUserOpensearchAccessControl {
   /**
   * rules block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.30.0/docs/resources/managed_database_user#rules ManagedDatabaseUser#rules}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.31.0/docs/resources/managed_database_user#rules ManagedDatabaseUser#rules}
   */
   readonly rules: ManagedDatabaseUserOpensearchAccessControlRules[] | cdktf.IResolvable;
 }
@@ -302,7 +296,7 @@ export interface ManagedDatabaseUserPgAccessControl {
   /**
   * Grant replication privilege
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.30.0/docs/resources/managed_database_user#allow_replication ManagedDatabaseUser#allow_replication}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.31.0/docs/resources/managed_database_user#allow_replication ManagedDatabaseUser#allow_replication}
   */
   readonly allowReplication?: boolean | cdktf.IResolvable;
 }
@@ -384,220 +378,29 @@ export class ManagedDatabaseUserPgAccessControlOutputReference extends cdktf.Com
     return this._allowReplication;
   }
 }
-export interface ManagedDatabaseUserRedisAccessControl {
-  /**
-  * Set access control to all commands in specified categories.
-  *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.30.0/docs/resources/managed_database_user#categories ManagedDatabaseUser#categories}
-  */
-  readonly categories?: string[];
-  /**
-  * Set access control to Pub/Sub channels.
-  *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.30.0/docs/resources/managed_database_user#channels ManagedDatabaseUser#channels}
-  */
-  readonly channels?: string[];
-  /**
-  * Set access control to commands.
-  *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.30.0/docs/resources/managed_database_user#commands ManagedDatabaseUser#commands}
-  */
-  readonly commands?: string[];
-  /**
-  * Set access control to keys.
-  *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.30.0/docs/resources/managed_database_user#keys ManagedDatabaseUser#keys}
-  */
-  readonly keys?: string[];
-}
-
-export function managedDatabaseUserRedisAccessControlToTerraform(struct?: ManagedDatabaseUserRedisAccessControlOutputReference | ManagedDatabaseUserRedisAccessControl): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
-  }
-  return {
-    categories: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.categories),
-    channels: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.channels),
-    commands: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.commands),
-    keys: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.keys),
-  }
-}
-
-
-export function managedDatabaseUserRedisAccessControlToHclTerraform(struct?: ManagedDatabaseUserRedisAccessControlOutputReference | ManagedDatabaseUserRedisAccessControl): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
-  }
-  const attrs = {
-    categories: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.categories),
-      isBlock: false,
-      type: "list",
-      storageClassType: "stringList",
-    },
-    channels: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.channels),
-      isBlock: false,
-      type: "list",
-      storageClassType: "stringList",
-    },
-    commands: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.commands),
-      isBlock: false,
-      type: "list",
-      storageClassType: "stringList",
-    },
-    keys: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.keys),
-      isBlock: false,
-      type: "list",
-      storageClassType: "stringList",
-    },
-  };
-
-  // remove undefined attributes
-  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
-}
-
-export class ManagedDatabaseUserRedisAccessControlOutputReference extends cdktf.ComplexObject {
-  private isEmptyObject = false;
-
-  /**
-  * @param terraformResource The parent resource
-  * @param terraformAttribute The attribute on the parent resource this class is referencing
-  */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
-    super(terraformResource, terraformAttribute, false, 0);
-  }
-
-  public get internalValue(): ManagedDatabaseUserRedisAccessControl | undefined {
-    let hasAnyValues = this.isEmptyObject;
-    const internalValueResult: any = {};
-    if (this._categories !== undefined) {
-      hasAnyValues = true;
-      internalValueResult.categories = this._categories;
-    }
-    if (this._channels !== undefined) {
-      hasAnyValues = true;
-      internalValueResult.channels = this._channels;
-    }
-    if (this._commands !== undefined) {
-      hasAnyValues = true;
-      internalValueResult.commands = this._commands;
-    }
-    if (this._keys !== undefined) {
-      hasAnyValues = true;
-      internalValueResult.keys = this._keys;
-    }
-    return hasAnyValues ? internalValueResult : undefined;
-  }
-
-  public set internalValue(value: ManagedDatabaseUserRedisAccessControl | undefined) {
-    if (value === undefined) {
-      this.isEmptyObject = false;
-      this._categories = undefined;
-      this._channels = undefined;
-      this._commands = undefined;
-      this._keys = undefined;
-    }
-    else {
-      this.isEmptyObject = Object.keys(value).length === 0;
-      this._categories = value.categories;
-      this._channels = value.channels;
-      this._commands = value.commands;
-      this._keys = value.keys;
-    }
-  }
-
-  // categories - computed: false, optional: true, required: false
-  private _categories?: string[]; 
-  public get categories() {
-    return this.getListAttribute('categories');
-  }
-  public set categories(value: string[]) {
-    this._categories = value;
-  }
-  public resetCategories() {
-    this._categories = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get categoriesInput() {
-    return this._categories;
-  }
-
-  // channels - computed: false, optional: true, required: false
-  private _channels?: string[]; 
-  public get channels() {
-    return this.getListAttribute('channels');
-  }
-  public set channels(value: string[]) {
-    this._channels = value;
-  }
-  public resetChannels() {
-    this._channels = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get channelsInput() {
-    return this._channels;
-  }
-
-  // commands - computed: false, optional: true, required: false
-  private _commands?: string[]; 
-  public get commands() {
-    return this.getListAttribute('commands');
-  }
-  public set commands(value: string[]) {
-    this._commands = value;
-  }
-  public resetCommands() {
-    this._commands = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get commandsInput() {
-    return this._commands;
-  }
-
-  // keys - computed: false, optional: true, required: false
-  private _keys?: string[]; 
-  public get keys() {
-    return this.getListAttribute('keys');
-  }
-  public set keys(value: string[]) {
-    this._keys = value;
-  }
-  public resetKeys() {
-    this._keys = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get keysInput() {
-    return this._keys;
-  }
-}
 export interface ManagedDatabaseUserValkeyAccessControl {
   /**
   * Set access control to all commands in specified categories.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.30.0/docs/resources/managed_database_user#categories ManagedDatabaseUser#categories}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.31.0/docs/resources/managed_database_user#categories ManagedDatabaseUser#categories}
   */
   readonly categories?: string[];
   /**
   * Set access control to Pub/Sub channels.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.30.0/docs/resources/managed_database_user#channels ManagedDatabaseUser#channels}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.31.0/docs/resources/managed_database_user#channels ManagedDatabaseUser#channels}
   */
   readonly channels?: string[];
   /**
   * Set access control to commands.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.30.0/docs/resources/managed_database_user#commands ManagedDatabaseUser#commands}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.31.0/docs/resources/managed_database_user#commands ManagedDatabaseUser#commands}
   */
   readonly commands?: string[];
   /**
   * Set access control to keys.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.30.0/docs/resources/managed_database_user#keys ManagedDatabaseUser#keys}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.31.0/docs/resources/managed_database_user#keys ManagedDatabaseUser#keys}
   */
   readonly keys?: string[];
 }
@@ -768,7 +571,7 @@ export class ManagedDatabaseUserValkeyAccessControlOutputReference extends cdktf
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.30.0/docs/resources/managed_database_user upcloud_managed_database_user}
+* Represents a {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.31.0/docs/resources/managed_database_user upcloud_managed_database_user}
 */
 export class ManagedDatabaseUser extends cdktf.TerraformResource {
 
@@ -784,7 +587,7 @@ export class ManagedDatabaseUser extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a ManagedDatabaseUser resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the ManagedDatabaseUser to import
-  * @param importFromId The id of the existing ManagedDatabaseUser that should be imported. Refer to the {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.30.0/docs/resources/managed_database_user#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing ManagedDatabaseUser that should be imported. Refer to the {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.31.0/docs/resources/managed_database_user#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the ManagedDatabaseUser to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -796,7 +599,7 @@ export class ManagedDatabaseUser extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.30.0/docs/resources/managed_database_user upcloud_managed_database_user} Resource
+  * Create a new {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.31.0/docs/resources/managed_database_user upcloud_managed_database_user} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -807,7 +610,7 @@ export class ManagedDatabaseUser extends cdktf.TerraformResource {
       terraformResourceType: 'upcloud_managed_database_user',
       terraformGeneratorMetadata: {
         providerName: 'upcloud',
-        providerVersion: '5.30.0',
+        providerVersion: '5.31.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,
@@ -825,7 +628,6 @@ export class ManagedDatabaseUser extends cdktf.TerraformResource {
     this._username = config.username;
     this._opensearchAccessControl.internalValue = config.opensearchAccessControl;
     this._pgAccessControl.internalValue = config.pgAccessControl;
-    this._redisAccessControl.internalValue = config.redisAccessControl;
     this._valkeyAccessControl.internalValue = config.valkeyAccessControl;
   }
 
@@ -944,22 +746,6 @@ export class ManagedDatabaseUser extends cdktf.TerraformResource {
     return this._pgAccessControl.internalValue;
   }
 
-  // redis_access_control - computed: false, optional: true, required: false
-  private _redisAccessControl = new ManagedDatabaseUserRedisAccessControlOutputReference(this, "redis_access_control");
-  public get redisAccessControl() {
-    return this._redisAccessControl;
-  }
-  public putRedisAccessControl(value: ManagedDatabaseUserRedisAccessControl) {
-    this._redisAccessControl.internalValue = value;
-  }
-  public resetRedisAccessControl() {
-    this._redisAccessControl.internalValue = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get redisAccessControlInput() {
-    return this._redisAccessControl.internalValue;
-  }
-
   // valkey_access_control - computed: false, optional: true, required: false
   private _valkeyAccessControl = new ManagedDatabaseUserValkeyAccessControlOutputReference(this, "valkey_access_control");
   public get valkeyAccessControl() {
@@ -989,7 +775,6 @@ export class ManagedDatabaseUser extends cdktf.TerraformResource {
       username: cdktf.stringToTerraform(this._username),
       opensearch_access_control: managedDatabaseUserOpensearchAccessControlToTerraform(this._opensearchAccessControl.internalValue),
       pg_access_control: managedDatabaseUserPgAccessControlToTerraform(this._pgAccessControl.internalValue),
-      redis_access_control: managedDatabaseUserRedisAccessControlToTerraform(this._redisAccessControl.internalValue),
       valkey_access_control: managedDatabaseUserValkeyAccessControlToTerraform(this._valkeyAccessControl.internalValue),
     };
   }
@@ -1037,12 +822,6 @@ export class ManagedDatabaseUser extends cdktf.TerraformResource {
         isBlock: true,
         type: "list",
         storageClassType: "ManagedDatabaseUserPgAccessControlList",
-      },
-      redis_access_control: {
-        value: managedDatabaseUserRedisAccessControlToHclTerraform(this._redisAccessControl.internalValue),
-        isBlock: true,
-        type: "list",
-        storageClassType: "ManagedDatabaseUserRedisAccessControlList",
       },
       valkey_access_control: {
         value: managedDatabaseUserValkeyAccessControlToHclTerraform(this._valkeyAccessControl.internalValue),
