@@ -4,7 +4,7 @@
 
 ### GatewayConnection <a name="GatewayConnection" id="@cdktf/provider-upcloud.gatewayConnection.GatewayConnection"></a>
 
-Represents a {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.31.0/docs/resources/gateway_connection upcloud_gateway_connection}.
+Represents a {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.31.1/docs/resources/gateway_connection upcloud_gateway_connection}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-upcloud.gatewayConnection.GatewayConnection.Initializer"></a>
 
@@ -41,7 +41,7 @@ GatewayConnection.Builder.create(Construct scope, java.lang.String id)
 | <code><a href="#@cdktf/provider-upcloud.gatewayConnection.GatewayConnection.Initializer.parameter.provisioners">provisioners</a></code> | <code>java.util.List<com.hashicorp.cdktf.FileProvisioner\|com.hashicorp.cdktf.LocalExecProvisioner\|com.hashicorp.cdktf.RemoteExecProvisioner></code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.gatewayConnection.GatewayConnection.Initializer.parameter.gateway">gateway</a></code> | <code>java.lang.String</code> | The ID of the upcloud_gateway resource to which the connection belongs. |
 | <code><a href="#@cdktf/provider-upcloud.gatewayConnection.GatewayConnection.Initializer.parameter.name">name</a></code> | <code>java.lang.String</code> | The name of the connection, should be unique within the gateway. |
-| <code><a href="#@cdktf/provider-upcloud.gatewayConnection.GatewayConnection.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.31.0/docs/resources/gateway_connection#id GatewayConnection#id}. |
+| <code><a href="#@cdktf/provider-upcloud.gatewayConnection.GatewayConnection.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.31.1/docs/resources/gateway_connection#id GatewayConnection#id}. |
 | <code><a href="#@cdktf/provider-upcloud.gatewayConnection.GatewayConnection.Initializer.parameter.localRoute">localRoute</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-upcloud.gatewayConnection.GatewayConnectionLocalRoute">GatewayConnectionLocalRoute</a>></code> | local_route block. |
 | <code><a href="#@cdktf/provider-upcloud.gatewayConnection.GatewayConnection.Initializer.parameter.remoteRoute">remoteRoute</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-upcloud.gatewayConnection.GatewayConnectionRemoteRoute">GatewayConnectionRemoteRoute</a>></code> | remote_route block. |
 | <code><a href="#@cdktf/provider-upcloud.gatewayConnection.GatewayConnection.Initializer.parameter.type">type</a></code> | <code>java.lang.String</code> | The type of the connection; currently the only supported type is 'ipsec'. |
@@ -114,7 +114,7 @@ Must be unique amongst siblings in the same scope
 
 The ID of the upcloud_gateway resource to which the connection belongs.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.31.0/docs/resources/gateway_connection#gateway GatewayConnection#gateway}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.31.1/docs/resources/gateway_connection#gateway GatewayConnection#gateway}
 
 ---
 
@@ -124,7 +124,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upclo
 
 The name of the connection, should be unique within the gateway.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.31.0/docs/resources/gateway_connection#name GatewayConnection#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.31.1/docs/resources/gateway_connection#name GatewayConnection#name}
 
 ---
 
@@ -132,7 +132,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upclo
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.31.0/docs/resources/gateway_connection#id GatewayConnection#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.31.1/docs/resources/gateway_connection#id GatewayConnection#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -145,7 +145,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 local_route block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.31.0/docs/resources/gateway_connection#local_route GatewayConnection#local_route}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.31.1/docs/resources/gateway_connection#local_route GatewayConnection#local_route}
 
 ---
 
@@ -155,7 +155,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upclo
 
 remote_route block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.31.0/docs/resources/gateway_connection#remote_route GatewayConnection#remote_route}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.31.1/docs/resources/gateway_connection#remote_route GatewayConnection#remote_route}
 
 ---
 
@@ -165,7 +165,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upclo
 
 The type of the connection; currently the only supported type is 'ipsec'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.31.0/docs/resources/gateway_connection#type GatewayConnection#type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.31.1/docs/resources/gateway_connection#type GatewayConnection#type}
 
 ---
 
@@ -646,7 +646,7 @@ The construct id used in the generated config for the GatewayConnection to impor
 
 The id of the existing GatewayConnection that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.31.0/docs/resources/gateway_connection#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.31.1/docs/resources/gateway_connection#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1032,7 +1032,7 @@ GatewayConnectionConfig.builder()
 | <code><a href="#@cdktf/provider-upcloud.gatewayConnection.GatewayConnectionConfig.property.provisioners">provisioners</a></code> | <code>java.util.List<com.hashicorp.cdktf.FileProvisioner\|com.hashicorp.cdktf.LocalExecProvisioner\|com.hashicorp.cdktf.RemoteExecProvisioner></code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.gatewayConnection.GatewayConnectionConfig.property.gateway">gateway</a></code> | <code>java.lang.String</code> | The ID of the upcloud_gateway resource to which the connection belongs. |
 | <code><a href="#@cdktf/provider-upcloud.gatewayConnection.GatewayConnectionConfig.property.name">name</a></code> | <code>java.lang.String</code> | The name of the connection, should be unique within the gateway. |
-| <code><a href="#@cdktf/provider-upcloud.gatewayConnection.GatewayConnectionConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.31.0/docs/resources/gateway_connection#id GatewayConnection#id}. |
+| <code><a href="#@cdktf/provider-upcloud.gatewayConnection.GatewayConnectionConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.31.1/docs/resources/gateway_connection#id GatewayConnection#id}. |
 | <code><a href="#@cdktf/provider-upcloud.gatewayConnection.GatewayConnectionConfig.property.localRoute">localRoute</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-upcloud.gatewayConnection.GatewayConnectionLocalRoute">GatewayConnectionLocalRoute</a>></code> | local_route block. |
 | <code><a href="#@cdktf/provider-upcloud.gatewayConnection.GatewayConnectionConfig.property.remoteRoute">remoteRoute</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-upcloud.gatewayConnection.GatewayConnectionRemoteRoute">GatewayConnectionRemoteRoute</a>></code> | remote_route block. |
 | <code><a href="#@cdktf/provider-upcloud.gatewayConnection.GatewayConnectionConfig.property.type">type</a></code> | <code>java.lang.String</code> | The type of the connection; currently the only supported type is 'ipsec'. |
@@ -1119,7 +1119,7 @@ public java.lang.String getGateway();
 
 The ID of the upcloud_gateway resource to which the connection belongs.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.31.0/docs/resources/gateway_connection#gateway GatewayConnection#gateway}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.31.1/docs/resources/gateway_connection#gateway GatewayConnection#gateway}
 
 ---
 
@@ -1133,7 +1133,7 @@ public java.lang.String getName();
 
 The name of the connection, should be unique within the gateway.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.31.0/docs/resources/gateway_connection#name GatewayConnection#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.31.1/docs/resources/gateway_connection#name GatewayConnection#name}
 
 ---
 
@@ -1145,7 +1145,7 @@ public java.lang.String getId();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.31.0/docs/resources/gateway_connection#id GatewayConnection#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.31.1/docs/resources/gateway_connection#id GatewayConnection#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1162,7 +1162,7 @@ public IResolvable|java.util.List<GatewayConnectionLocalRoute> getLocalRoute();
 
 local_route block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.31.0/docs/resources/gateway_connection#local_route GatewayConnection#local_route}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.31.1/docs/resources/gateway_connection#local_route GatewayConnection#local_route}
 
 ---
 
@@ -1176,7 +1176,7 @@ public IResolvable|java.util.List<GatewayConnectionRemoteRoute> getRemoteRoute()
 
 remote_route block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.31.0/docs/resources/gateway_connection#remote_route GatewayConnection#remote_route}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.31.1/docs/resources/gateway_connection#remote_route GatewayConnection#remote_route}
 
 ---
 
@@ -1190,7 +1190,7 @@ public java.lang.String getType();
 
 The type of the connection; currently the only supported type is 'ipsec'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.31.0/docs/resources/gateway_connection#type GatewayConnection#type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.31.1/docs/resources/gateway_connection#type GatewayConnection#type}
 
 ---
 
@@ -1228,7 +1228,7 @@ public java.lang.String getName();
 
 Name of the route.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.31.0/docs/resources/gateway_connection#name GatewayConnection#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.31.1/docs/resources/gateway_connection#name GatewayConnection#name}
 
 ---
 
@@ -1242,7 +1242,7 @@ public java.lang.String getStaticNetwork();
 
 Destination prefix of the route; needs to be a valid IPv4 prefix.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.31.0/docs/resources/gateway_connection#static_network GatewayConnection#static_network}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.31.1/docs/resources/gateway_connection#static_network GatewayConnection#static_network}
 
 ---
 
@@ -1256,7 +1256,7 @@ public java.lang.String getType();
 
 Type of route; currently the only supported type is 'static'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.31.0/docs/resources/gateway_connection#type GatewayConnection#type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.31.1/docs/resources/gateway_connection#type GatewayConnection#type}
 
 ---
 
@@ -1294,7 +1294,7 @@ public java.lang.String getName();
 
 Name of the route.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.31.0/docs/resources/gateway_connection#name GatewayConnection#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.31.1/docs/resources/gateway_connection#name GatewayConnection#name}
 
 ---
 
@@ -1308,7 +1308,7 @@ public java.lang.String getStaticNetwork();
 
 Destination prefix of the route; needs to be a valid IPv4 prefix.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.31.0/docs/resources/gateway_connection#static_network GatewayConnection#static_network}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.31.1/docs/resources/gateway_connection#static_network GatewayConnection#static_network}
 
 ---
 
@@ -1322,7 +1322,7 @@ public java.lang.String getType();
 
 Type of route; currently the only supported type is 'static'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.31.0/docs/resources/gateway_connection#type GatewayConnection#type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.31.1/docs/resources/gateway_connection#type GatewayConnection#type}
 
 ---
 

@@ -4,7 +4,7 @@
 
 ### ManagedObjectStorageUser <a name="ManagedObjectStorageUser" id="@cdktf/provider-upcloud.managedObjectStorageUser.ManagedObjectStorageUser"></a>
 
-Represents a {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.31.0/docs/resources/managed_object_storage_user upcloud_managed_object_storage_user}.
+Represents a {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.31.1/docs/resources/managed_object_storage_user upcloud_managed_object_storage_user}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-upcloud.managedObjectStorageUser.ManagedObjectStorageUser.Initializer"></a>
 
@@ -22,8 +22,7 @@ managedObjectStorageUser.ManagedObjectStorageUser(
   provider: TerraformProvider = None,
   provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner] = None,
   service_uuid: str,
-  username: str,
-  id: str = None
+  username: str
 )
 ```
 
@@ -40,7 +39,6 @@ managedObjectStorageUser.ManagedObjectStorageUser(
 | <code><a href="#@cdktf/provider-upcloud.managedObjectStorageUser.ManagedObjectStorageUser.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.managedObjectStorageUser.ManagedObjectStorageUser.Initializer.parameter.serviceUuid">service_uuid</a></code> | <code>str</code> | Managed Object Storage service UUID. |
 | <code><a href="#@cdktf/provider-upcloud.managedObjectStorageUser.ManagedObjectStorageUser.Initializer.parameter.username">username</a></code> | <code>str</code> | Custom usernames for accessing the object storage. |
-| <code><a href="#@cdktf/provider-upcloud.managedObjectStorageUser.ManagedObjectStorageUser.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.31.0/docs/resources/managed_object_storage_user#id ManagedObjectStorageUser#id}. |
 
 ---
 
@@ -110,7 +108,7 @@ Must be unique amongst siblings in the same scope
 
 Managed Object Storage service UUID.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.31.0/docs/resources/managed_object_storage_user#service_uuid ManagedObjectStorageUser#service_uuid}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.31.1/docs/resources/managed_object_storage_user#service_uuid ManagedObjectStorageUser#service_uuid}
 
 ---
 
@@ -122,18 +120,7 @@ Custom usernames for accessing the object storage.
 
 No relation to UpCloud API accounts. See `upcloud_managed_object_storage_user_access_key` for managing access keys and `upcloud_managed_object_storage_user_policy` for managing policies.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.31.0/docs/resources/managed_object_storage_user#username ManagedObjectStorageUser#username}
-
----
-
-##### `id`<sup>Optional</sup> <a name="id" id="@cdktf/provider-upcloud.managedObjectStorageUser.ManagedObjectStorageUser.Initializer.parameter.id"></a>
-
-- *Type:* str
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.31.0/docs/resources/managed_object_storage_user#id ManagedObjectStorageUser#id}.
-
-Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
-If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.31.1/docs/resources/managed_object_storage_user#username ManagedObjectStorageUser#username}
 
 ---
 
@@ -164,7 +151,6 @@ If you experience problems setting this value it might not be settable. Please t
 | <code><a href="#@cdktf/provider-upcloud.managedObjectStorageUser.ManagedObjectStorageUser.moveFromId">move_from_id</a></code> | Move the resource corresponding to "id" to this resource. |
 | <code><a href="#@cdktf/provider-upcloud.managedObjectStorageUser.ManagedObjectStorageUser.moveTo">move_to</a></code> | Moves this resource to the target resource given by moveTarget. |
 | <code><a href="#@cdktf/provider-upcloud.managedObjectStorageUser.ManagedObjectStorageUser.moveToId">move_to_id</a></code> | Moves this resource to the resource corresponding to "id". |
-| <code><a href="#@cdktf/provider-upcloud.managedObjectStorageUser.ManagedObjectStorageUser.resetId">reset_id</a></code> | *No description.* |
 
 ---
 
@@ -493,12 +479,6 @@ Full id of resource to move to, e.g. "aws_s3_bucket.example".
 
 ---
 
-##### `reset_id` <a name="reset_id" id="@cdktf/provider-upcloud.managedObjectStorageUser.ManagedObjectStorageUser.resetId"></a>
-
-```python
-def reset_id() -> None
-```
-
 #### Static Functions <a name="Static Functions" id="Static Functions"></a>
 
 | **Name** | **Description** |
@@ -613,7 +593,7 @@ The construct id used in the generated config for the ManagedObjectStorageUser t
 
 The id of the existing ManagedObjectStorageUser that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.31.0/docs/resources/managed_object_storage_user#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.31.1/docs/resources/managed_object_storage_user#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -645,10 +625,9 @@ Refer to the {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5
 | <code><a href="#@cdktf/provider-upcloud.managedObjectStorageUser.ManagedObjectStorageUser.property.provisioners">provisioners</a></code> | <code>typing.List[cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.managedObjectStorageUser.ManagedObjectStorageUser.property.arn">arn</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.managedObjectStorageUser.ManagedObjectStorageUser.property.createdAt">created_at</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-upcloud.managedObjectStorageUser.ManagedObjectStorageUser.property.idInput">id_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-upcloud.managedObjectStorageUser.ManagedObjectStorageUser.property.id">id</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.managedObjectStorageUser.ManagedObjectStorageUser.property.serviceUuidInput">service_uuid_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.managedObjectStorageUser.ManagedObjectStorageUser.property.usernameInput">username_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-upcloud.managedObjectStorageUser.ManagedObjectStorageUser.property.id">id</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.managedObjectStorageUser.ManagedObjectStorageUser.property.serviceUuid">service_uuid</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.managedObjectStorageUser.ManagedObjectStorageUser.property.username">username</a></code> | <code>str</code> | *No description.* |
 
@@ -816,10 +795,10 @@ created_at: str
 
 ---
 
-##### `id_input`<sup>Optional</sup> <a name="id_input" id="@cdktf/provider-upcloud.managedObjectStorageUser.ManagedObjectStorageUser.property.idInput"></a>
+##### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-upcloud.managedObjectStorageUser.ManagedObjectStorageUser.property.id"></a>
 
 ```python
-id_input: str
+id: str
 ```
 
 - *Type:* str
@@ -840,16 +819,6 @@ service_uuid_input: str
 
 ```python
 username_input: str
-```
-
-- *Type:* str
-
----
-
-##### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-upcloud.managedObjectStorageUser.ManagedObjectStorageUser.property.id"></a>
-
-```python
-id: str
 ```
 
 - *Type:* str
@@ -912,8 +881,7 @@ managedObjectStorageUser.ManagedObjectStorageUserConfig(
   provider: TerraformProvider = None,
   provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner] = None,
   service_uuid: str,
-  username: str,
-  id: str = None
+  username: str
 )
 ```
 
@@ -930,7 +898,6 @@ managedObjectStorageUser.ManagedObjectStorageUserConfig(
 | <code><a href="#@cdktf/provider-upcloud.managedObjectStorageUser.ManagedObjectStorageUserConfig.property.provisioners">provisioners</a></code> | <code>typing.List[cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-upcloud.managedObjectStorageUser.ManagedObjectStorageUserConfig.property.serviceUuid">service_uuid</a></code> | <code>str</code> | Managed Object Storage service UUID. |
 | <code><a href="#@cdktf/provider-upcloud.managedObjectStorageUser.ManagedObjectStorageUserConfig.property.username">username</a></code> | <code>str</code> | Custom usernames for accessing the object storage. |
-| <code><a href="#@cdktf/provider-upcloud.managedObjectStorageUser.ManagedObjectStorageUserConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.31.0/docs/resources/managed_object_storage_user#id ManagedObjectStorageUser#id}. |
 
 ---
 
@@ -1014,7 +981,7 @@ service_uuid: str
 
 Managed Object Storage service UUID.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.31.0/docs/resources/managed_object_storage_user#service_uuid ManagedObjectStorageUser#service_uuid}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.31.1/docs/resources/managed_object_storage_user#service_uuid ManagedObjectStorageUser#service_uuid}
 
 ---
 
@@ -1030,22 +997,7 @@ Custom usernames for accessing the object storage.
 
 No relation to UpCloud API accounts. See `upcloud_managed_object_storage_user_access_key` for managing access keys and `upcloud_managed_object_storage_user_policy` for managing policies.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.31.0/docs/resources/managed_object_storage_user#username ManagedObjectStorageUser#username}
-
----
-
-##### `id`<sup>Optional</sup> <a name="id" id="@cdktf/provider-upcloud.managedObjectStorageUser.ManagedObjectStorageUserConfig.property.id"></a>
-
-```python
-id: str
-```
-
-- *Type:* str
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.31.0/docs/resources/managed_object_storage_user#id ManagedObjectStorageUser#id}.
-
-Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
-If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.31.1/docs/resources/managed_object_storage_user#username ManagedObjectStorageUser#username}
 
 ---
 
