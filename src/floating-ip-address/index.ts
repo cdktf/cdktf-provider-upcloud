@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/upcloudltd/upcloud/5.31.0/docs/resources/floating_ip_address
+// https://registry.terraform.io/providers/upcloudltd/upcloud/5.31.1/docs/resources/floating_ip_address
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,37 +15,37 @@ export interface FloatingIpAddressConfig extends cdktf.TerraformMetaArguments {
   /**
   * Network access for the floating IP address. Supported value: `public`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.31.0/docs/resources/floating_ip_address#access FloatingIpAddress#access}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.31.1/docs/resources/floating_ip_address#access FloatingIpAddress#access}
   */
   readonly access?: string;
   /**
   * The address family of the floating IP address.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.31.0/docs/resources/floating_ip_address#family FloatingIpAddress#family}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.31.1/docs/resources/floating_ip_address#family FloatingIpAddress#family}
   */
   readonly family?: string;
   /**
   * MAC address of a server interface to assign address to.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.31.0/docs/resources/floating_ip_address#mac_address FloatingIpAddress#mac_address}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.31.1/docs/resources/floating_ip_address#mac_address FloatingIpAddress#mac_address}
   */
   readonly macAddress?: string;
   /**
   * The release policy of the floating IP address.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.31.0/docs/resources/floating_ip_address#release_policy FloatingIpAddress#release_policy}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.31.1/docs/resources/floating_ip_address#release_policy FloatingIpAddress#release_policy}
   */
   readonly releasePolicy?: string;
   /**
   * Zone of the address, e.g. `de-fra1`. Required when assigning a detached floating IP address. You can list available zones with `upctl zone list`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.31.0/docs/resources/floating_ip_address#zone FloatingIpAddress#zone}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.31.1/docs/resources/floating_ip_address#zone FloatingIpAddress#zone}
   */
   readonly zone?: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.31.0/docs/resources/floating_ip_address upcloud_floating_ip_address}
+* Represents a {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.31.1/docs/resources/floating_ip_address upcloud_floating_ip_address}
 */
 export class FloatingIpAddress extends cdktf.TerraformResource {
 
@@ -61,7 +61,7 @@ export class FloatingIpAddress extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a FloatingIpAddress resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the FloatingIpAddress to import
-  * @param importFromId The id of the existing FloatingIpAddress that should be imported. Refer to the {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.31.0/docs/resources/floating_ip_address#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing FloatingIpAddress that should be imported. Refer to the {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.31.1/docs/resources/floating_ip_address#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the FloatingIpAddress to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -73,7 +73,7 @@ export class FloatingIpAddress extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.31.0/docs/resources/floating_ip_address upcloud_floating_ip_address} Resource
+  * Create a new {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.31.1/docs/resources/floating_ip_address upcloud_floating_ip_address} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -84,7 +84,7 @@ export class FloatingIpAddress extends cdktf.TerraformResource {
       terraformResourceType: 'upcloud_floating_ip_address',
       terraformGeneratorMetadata: {
         providerName: 'upcloud',
-        providerVersion: '5.31.0',
+        providerVersion: '5.31.1',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,
