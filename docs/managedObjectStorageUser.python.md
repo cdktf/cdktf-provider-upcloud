@@ -4,7 +4,7 @@
 
 ### ManagedObjectStorageUser <a name="ManagedObjectStorageUser" id="@cdktf/provider-upcloud.managedObjectStorageUser.ManagedObjectStorageUser"></a>
 
-Represents a {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.31.1/docs/resources/managed_object_storage_user upcloud_managed_object_storage_user}.
+Represents a {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.32.0/docs/resources/managed_object_storage_user upcloud_managed_object_storage_user}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-upcloud.managedObjectStorageUser.ManagedObjectStorageUser.Initializer"></a>
 
@@ -108,7 +108,7 @@ Must be unique amongst siblings in the same scope
 
 Managed Object Storage service UUID.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.31.1/docs/resources/managed_object_storage_user#service_uuid ManagedObjectStorageUser#service_uuid}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.32.0/docs/resources/managed_object_storage_user#service_uuid ManagedObjectStorageUser#service_uuid}
 
 ---
 
@@ -120,7 +120,7 @@ Custom usernames for accessing the object storage.
 
 No relation to UpCloud API accounts. See `upcloud_managed_object_storage_user_access_key` for managing access keys and `upcloud_managed_object_storage_user_policy` for managing policies.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.31.1/docs/resources/managed_object_storage_user#username ManagedObjectStorageUser#username}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.32.0/docs/resources/managed_object_storage_user#username ManagedObjectStorageUser#username}
 
 ---
 
@@ -593,7 +593,7 @@ The construct id used in the generated config for the ManagedObjectStorageUser t
 
 The id of the existing ManagedObjectStorageUser that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.31.1/docs/resources/managed_object_storage_user#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.32.0/docs/resources/managed_object_storage_user#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -981,7 +981,7 @@ service_uuid: str
 
 Managed Object Storage service UUID.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.31.1/docs/resources/managed_object_storage_user#service_uuid ManagedObjectStorageUser#service_uuid}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.32.0/docs/resources/managed_object_storage_user#service_uuid ManagedObjectStorageUser#service_uuid}
 
 ---
 
@@ -997,7 +997,7 @@ Custom usernames for accessing the object storage.
 
 No relation to UpCloud API accounts. See `upcloud_managed_object_storage_user_access_key` for managing access keys and `upcloud_managed_object_storage_user_policy` for managing policies.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.31.1/docs/resources/managed_object_storage_user#username ManagedObjectStorageUser#username}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.32.0/docs/resources/managed_object_storage_user#username ManagedObjectStorageUser#username}
 
 ---
 

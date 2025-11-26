@@ -4,7 +4,7 @@
 
 ### ManagedObjectStorageBucket <a name="ManagedObjectStorageBucket" id="@cdktf/provider-upcloud.managedObjectStorageBucket.ManagedObjectStorageBucket"></a>
 
-Represents a {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.31.1/docs/resources/managed_object_storage_bucket upcloud_managed_object_storage_bucket}.
+Represents a {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.32.0/docs/resources/managed_object_storage_bucket upcloud_managed_object_storage_bucket}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-upcloud.managedObjectStorageBucket.ManagedObjectStorageBucket.Initializer"></a>
 
@@ -106,7 +106,7 @@ Must be unique amongst siblings in the same scope
 
 Name of the bucket.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.31.1/docs/resources/managed_object_storage_bucket#name ManagedObjectStorageBucket#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.32.0/docs/resources/managed_object_storage_bucket#name ManagedObjectStorageBucket#name}
 
 ---
 
@@ -116,7 +116,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upclo
 
 Managed Object Storage service UUID.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.31.1/docs/resources/managed_object_storage_bucket#service_uuid ManagedObjectStorageBucket#service_uuid}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.32.0/docs/resources/managed_object_storage_bucket#service_uuid ManagedObjectStorageBucket#service_uuid}
 
 ---
 
@@ -543,7 +543,7 @@ The construct id used in the generated config for the ManagedObjectStorageBucket
 
 The id of the existing ManagedObjectStorageBucket that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.31.1/docs/resources/managed_object_storage_bucket#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.32.0/docs/resources/managed_object_storage_bucket#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -931,7 +931,7 @@ public java.lang.String getName();
 
 Name of the bucket.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.31.1/docs/resources/managed_object_storage_bucket#name ManagedObjectStorageBucket#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.32.0/docs/resources/managed_object_storage_bucket#name ManagedObjectStorageBucket#name}
 
 ---
 
@@ -945,7 +945,7 @@ public java.lang.String getServiceUuid();
 
 Managed Object Storage service UUID.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.31.1/docs/resources/managed_object_storage_bucket#service_uuid ManagedObjectStorageBucket#service_uuid}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.32.0/docs/resources/managed_object_storage_bucket#service_uuid ManagedObjectStorageBucket#service_uuid}
 
 ---
 

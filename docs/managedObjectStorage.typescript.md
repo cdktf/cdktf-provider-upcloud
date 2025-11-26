@@ -4,7 +4,7 @@
 
 ### ManagedObjectStorage <a name="ManagedObjectStorage" id="@cdktf/provider-upcloud.managedObjectStorage.ManagedObjectStorage"></a>
 
-Represents a {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.31.1/docs/resources/managed_object_storage upcloud_managed_object_storage}.
+Represents a {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.32.0/docs/resources/managed_object_storage upcloud_managed_object_storage}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-upcloud.managedObjectStorage.ManagedObjectStorage.Initializer"></a>
 
@@ -494,7 +494,7 @@ The construct id used in the generated config for the ManagedObjectStorage to im
 
 The id of the existing ManagedObjectStorage that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.31.1/docs/resources/managed_object_storage#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.32.0/docs/resources/managed_object_storage#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -963,7 +963,7 @@ public readonly configuredStatus: string;
 
 Service status managed by the end user.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.31.1/docs/resources/managed_object_storage#configured_status ManagedObjectStorage#configured_status}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.32.0/docs/resources/managed_object_storage#configured_status ManagedObjectStorage#configured_status}
 
 ---
 
@@ -977,7 +977,7 @@ public readonly name: string;
 
 Name of the Managed Object Storage service. Must be unique within account.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.31.1/docs/resources/managed_object_storage#name ManagedObjectStorage#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.32.0/docs/resources/managed_object_storage#name ManagedObjectStorage#name}
 
 ---
 
@@ -991,7 +991,7 @@ public readonly region: string;
 
 Region in which the service will be hosted, see `upcloud_managed_object_storage_regions` data source or use `upctl object-storage regions` to list available regions.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.31.1/docs/resources/managed_object_storage#region ManagedObjectStorage#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.32.0/docs/resources/managed_object_storage#region ManagedObjectStorage#region}
 
 ---
 
@@ -1005,7 +1005,7 @@ public readonly labels: {[ key: string ]: string};
 
 User defined key-value pairs to classify the managed object storage.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.31.1/docs/resources/managed_object_storage#labels ManagedObjectStorage#labels}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.32.0/docs/resources/managed_object_storage#labels ManagedObjectStorage#labels}
 
 ---
 
@@ -1019,7 +1019,7 @@ public readonly network: IResolvable | ManagedObjectStorageNetwork[];
 
 network block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.31.1/docs/resources/managed_object_storage#network ManagedObjectStorage#network}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.32.0/docs/resources/managed_object_storage#network ManagedObjectStorage#network}
 
 ---
 
@@ -1065,7 +1065,7 @@ public readonly family: string;
 
 Network family. Currently only `IPv4` is supported.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.31.1/docs/resources/managed_object_storage#family ManagedObjectStorage#family}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.32.0/docs/resources/managed_object_storage#family ManagedObjectStorage#family}
 
 ---
 
@@ -1079,7 +1079,7 @@ public readonly name: string;
 
 Network name. Must be unique within the service.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.31.1/docs/resources/managed_object_storage#name ManagedObjectStorage#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.32.0/docs/resources/managed_object_storage#name ManagedObjectStorage#name}
 
 ---
 
@@ -1093,7 +1093,7 @@ public readonly type: string;
 
 Network type.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.31.1/docs/resources/managed_object_storage#type ManagedObjectStorage#type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.32.0/docs/resources/managed_object_storage#type ManagedObjectStorage#type}
 
 ---
 
@@ -1107,7 +1107,7 @@ public readonly uuid: string;
 
 Private network uuid. For public networks the field should be omitted.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.31.1/docs/resources/managed_object_storage#uuid ManagedObjectStorage#uuid}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5.32.0/docs/resources/managed_object_storage#uuid ManagedObjectStorage#uuid}
 
 ---
 
