@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5
 #### Initializers <a name="Initializers" id="@cdktf/provider-upcloud.loadbalancerDynamicCertificateBundle.LoadbalancerDynamicCertificateBundle.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/loadbalancerdynamiccertificatebundle"
+import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v15/loadbalancerdynamiccertificatebundle"
 
 loadbalancerdynamiccertificatebundle.NewLoadbalancerDynamicCertificateBundle(scope Construct, id *string, config LoadbalancerDynamicCertificateBundleConfig) LoadbalancerDynamicCertificateBundle
 ```
@@ -378,7 +378,7 @@ Full id of resource to move to, e.g. "aws_s3_bucket.example".
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-upcloud.loadbalancerDynamicCertificateBundle.LoadbalancerDynamicCertificateBundle.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/loadbalancerdynamiccertificatebundle"
+import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v15/loadbalancerdynamiccertificatebundle"
 
 loadbalancerdynamiccertificatebundle.LoadbalancerDynamicCertificateBundle_IsConstruct(x interface{}) *bool
 ```
@@ -410,7 +410,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-upcloud.loadbalancerDynamicCertificateBundle.LoadbalancerDynamicCertificateBundle.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/loadbalancerdynamiccertificatebundle"
+import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v15/loadbalancerdynamiccertificatebundle"
 
 loadbalancerdynamiccertificatebundle.LoadbalancerDynamicCertificateBundle_IsTerraformElement(x interface{}) *bool
 ```
@@ -424,7 +424,7 @@ loadbalancerdynamiccertificatebundle.LoadbalancerDynamicCertificateBundle_IsTerr
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-upcloud.loadbalancerDynamicCertificateBundle.LoadbalancerDynamicCertificateBundle.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/loadbalancerdynamiccertificatebundle"
+import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v15/loadbalancerdynamiccertificatebundle"
 
 loadbalancerdynamiccertificatebundle.LoadbalancerDynamicCertificateBundle_IsTerraformResource(x interface{}) *bool
 ```
@@ -438,7 +438,7 @@ loadbalancerdynamiccertificatebundle.LoadbalancerDynamicCertificateBundle_IsTerr
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-upcloud.loadbalancerDynamicCertificateBundle.LoadbalancerDynamicCertificateBundle.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/loadbalancerdynamiccertificatebundle"
+import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v15/loadbalancerdynamiccertificatebundle"
 
 loadbalancerdynamiccertificatebundle.LoadbalancerDynamicCertificateBundle_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -777,7 +777,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-upcloud.loadbalancerDynamicCertificateBundle.LoadbalancerDynamicCertificateBundleConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/loadbalancerdynamiccertificatebundle"
+import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v15/loadbalancerdynamiccertificatebundle"
 
 &loadbalancerdynamiccertificatebundle.LoadbalancerDynamicCertificateBundleConfig {
 	Connection: interface{},

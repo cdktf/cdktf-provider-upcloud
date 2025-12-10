@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5
 #### Initializers <a name="Initializers" id="@cdktf/provider-upcloud.gateway.Gateway.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/gateway"
+import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v15/gateway"
 
 gateway.NewGateway(scope Construct, id *string, config GatewayConfig) Gateway
 ```
@@ -439,7 +439,7 @@ func ResetPlan()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-upcloud.gateway.Gateway.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/gateway"
+import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v15/gateway"
 
 gateway.Gateway_IsConstruct(x interface{}) *bool
 ```
@@ -471,7 +471,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-upcloud.gateway.Gateway.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/gateway"
+import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v15/gateway"
 
 gateway.Gateway_IsTerraformElement(x interface{}) *bool
 ```
@@ -485,7 +485,7 @@ gateway.Gateway_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-upcloud.gateway.Gateway.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/gateway"
+import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v15/gateway"
 
 gateway.Gateway_IsTerraformResource(x interface{}) *bool
 ```
@@ -499,7 +499,7 @@ gateway.Gateway_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-upcloud.gateway.Gateway.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/gateway"
+import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v15/gateway"
 
 gateway.Gateway_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -959,7 +959,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-upcloud.gateway.GatewayAddress.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/gateway"
+import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v15/gateway"
 
 &gateway.GatewayAddress {
 	Name: *string,
@@ -993,7 +993,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upclo
 #### Initializer <a name="Initializer" id="@cdktf/provider-upcloud.gateway.GatewayAddresses.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/gateway"
+import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v15/gateway"
 
 &gateway.GatewayAddresses {
 
@@ -1006,7 +1006,7 @@ import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/gateway"
 #### Initializer <a name="Initializer" id="@cdktf/provider-upcloud.gateway.GatewayConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/gateway"
+import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v15/gateway"
 
 &gateway.GatewayConfig {
 	Connection: interface{},
@@ -1018,9 +1018,9 @@ import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/gateway"
 	Provisioners: *[]interface{},
 	Features: *[]*string,
 	Name: *string,
-	Router: github.com/cdktf/cdktf-provider-upcloud-go/upcloud.gateway.GatewayRouter,
+	Router: github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v15.gateway.GatewayRouter,
 	Zone: *string,
-	Address: github.com/cdktf/cdktf-provider-upcloud-go/upcloud.gateway.GatewayAddress,
+	Address: github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v15.gateway.GatewayAddress,
 	ConfiguredStatus: *string,
 	Id: *string,
 	Labels: *map[string]*string,
@@ -1253,7 +1253,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upclo
 #### Initializer <a name="Initializer" id="@cdktf/provider-upcloud.gateway.GatewayRouter.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/gateway"
+import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v15/gateway"
 
 &gateway.GatewayRouter {
 	Id: *string,
@@ -1292,7 +1292,7 @@ If you experience problems setting this value it might not be settable. Please t
 #### Initializers <a name="Initializers" id="@cdktf/provider-upcloud.gateway.GatewayAddressesList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/gateway"
+import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v15/gateway"
 
 gateway.NewGatewayAddressesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) GatewayAddressesList
 ```
@@ -1441,7 +1441,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-upcloud.gateway.GatewayAddressesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/gateway"
+import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v15/gateway"
 
 gateway.NewGatewayAddressesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) GatewayAddressesOutputReference
 ```
@@ -1730,7 +1730,7 @@ func InternalValue() GatewayAddresses
 #### Initializers <a name="Initializers" id="@cdktf/provider-upcloud.gateway.GatewayAddressOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/gateway"
+import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v15/gateway"
 
 gateway.NewGatewayAddressOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GatewayAddressOutputReference
 ```
@@ -2019,7 +2019,7 @@ func InternalValue() GatewayAddress
 #### Initializers <a name="Initializers" id="@cdktf/provider-upcloud.gateway.GatewayRouterOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/gateway"
+import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v15/gateway"
 
 gateway.NewGatewayRouterOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GatewayRouterOutputReference
 ```

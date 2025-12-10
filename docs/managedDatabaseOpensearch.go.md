@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5
 #### Initializers <a name="Initializers" id="@cdktf/provider-upcloud.managedDatabaseOpensearch.ManagedDatabaseOpensearch.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/manageddatabaseopensearch"
+import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v15/manageddatabaseopensearch"
 
 manageddatabaseopensearch.NewManagedDatabaseOpensearch(scope Construct, id *string, config ManagedDatabaseOpensearchConfig) ManagedDatabaseOpensearch
 ```
@@ -481,7 +481,7 @@ func ResetTerminationProtection()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-upcloud.managedDatabaseOpensearch.ManagedDatabaseOpensearch.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/manageddatabaseopensearch"
+import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v15/manageddatabaseopensearch"
 
 manageddatabaseopensearch.ManagedDatabaseOpensearch_IsConstruct(x interface{}) *bool
 ```
@@ -513,7 +513,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-upcloud.managedDatabaseOpensearch.ManagedDatabaseOpensearch.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/manageddatabaseopensearch"
+import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v15/manageddatabaseopensearch"
 
 manageddatabaseopensearch.ManagedDatabaseOpensearch_IsTerraformElement(x interface{}) *bool
 ```
@@ -527,7 +527,7 @@ manageddatabaseopensearch.ManagedDatabaseOpensearch_IsTerraformElement(x interfa
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-upcloud.managedDatabaseOpensearch.ManagedDatabaseOpensearch.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/manageddatabaseopensearch"
+import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v15/manageddatabaseopensearch"
 
 manageddatabaseopensearch.ManagedDatabaseOpensearch_IsTerraformResource(x interface{}) *bool
 ```
@@ -541,7 +541,7 @@ manageddatabaseopensearch.ManagedDatabaseOpensearch_IsTerraformResource(x interf
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-upcloud.managedDatabaseOpensearch.ManagedDatabaseOpensearch.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/manageddatabaseopensearch"
+import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v15/manageddatabaseopensearch"
 
 manageddatabaseopensearch.ManagedDatabaseOpensearch_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -1210,7 +1210,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-upcloud.managedDatabaseOpensearch.ManagedDatabaseOpensearchComponents.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/manageddatabaseopensearch"
+import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v15/manageddatabaseopensearch"
 
 &manageddatabaseopensearch.ManagedDatabaseOpensearchComponents {
 
@@ -1223,7 +1223,7 @@ import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/manageddatabaseopense
 #### Initializer <a name="Initializer" id="@cdktf/provider-upcloud.managedDatabaseOpensearch.ManagedDatabaseOpensearchConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/manageddatabaseopensearch"
+import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v15/manageddatabaseopensearch"
 
 &manageddatabaseopensearch.ManagedDatabaseOpensearchConfig {
 	Connection: interface{},
@@ -1246,7 +1246,7 @@ import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/manageddatabaseopense
 	MaintenanceWindowTime: *string,
 	Network: interface{},
 	Powered: interface{},
-	Properties: github.com/cdktf/cdktf-provider-upcloud-go/upcloud.managedDatabaseOpensearch.ManagedDatabaseOpensearchProperties,
+	Properties: github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v15.managedDatabaseOpensearch.ManagedDatabaseOpensearchProperties,
 	TerminationProtection: interface{},
 }
 ```
@@ -1576,7 +1576,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upclo
 #### Initializer <a name="Initializer" id="@cdktf/provider-upcloud.managedDatabaseOpensearch.ManagedDatabaseOpensearchNetwork.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/manageddatabaseopensearch"
+import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v15/manageddatabaseopensearch"
 
 &manageddatabaseopensearch.ManagedDatabaseOpensearchNetwork {
 	Family: *string,
@@ -1658,7 +1658,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upclo
 #### Initializer <a name="Initializer" id="@cdktf/provider-upcloud.managedDatabaseOpensearch.ManagedDatabaseOpensearchNodeStates.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/manageddatabaseopensearch"
+import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v15/manageddatabaseopensearch"
 
 &manageddatabaseopensearch.ManagedDatabaseOpensearchNodeStates {
 
@@ -1671,23 +1671,23 @@ import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/manageddatabaseopense
 #### Initializer <a name="Initializer" id="@cdktf/provider-upcloud.managedDatabaseOpensearch.ManagedDatabaseOpensearchProperties.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/manageddatabaseopensearch"
+import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v15/manageddatabaseopensearch"
 
 &manageddatabaseopensearch.ManagedDatabaseOpensearchProperties {
 	ActionAutoCreateIndexEnabled: interface{},
 	ActionDestructiveRequiresName: interface{},
-	AuthFailureListeners: github.com/cdktf/cdktf-provider-upcloud-go/upcloud.managedDatabaseOpensearch.ManagedDatabaseOpensearchPropertiesAuthFailureListeners,
+	AuthFailureListeners: github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v15.managedDatabaseOpensearch.ManagedDatabaseOpensearchPropertiesAuthFailureListeners,
 	AutomaticUtilityNetworkIpFilter: interface{},
 	ClusterFilecacheRemoteDataRatio: *f64,
 	ClusterMaxShardsPerNode: *f64,
-	ClusterRemoteStore: github.com/cdktf/cdktf-provider-upcloud-go/upcloud.managedDatabaseOpensearch.ManagedDatabaseOpensearchPropertiesClusterRemoteStore,
+	ClusterRemoteStore: github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v15.managedDatabaseOpensearch.ManagedDatabaseOpensearchPropertiesClusterRemoteStore,
 	ClusterRoutingAllocationBalancePreferPrimary: interface{},
 	ClusterRoutingAllocationNodeConcurrentRecoveries: *f64,
-	ClusterSearchRequestSlowlog: github.com/cdktf/cdktf-provider-upcloud-go/upcloud.managedDatabaseOpensearch.ManagedDatabaseOpensearchPropertiesClusterSearchRequestSlowlog,
+	ClusterSearchRequestSlowlog: github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v15.managedDatabaseOpensearch.ManagedDatabaseOpensearchPropertiesClusterSearchRequestSlowlog,
 	CustomDomain: *string,
 	CustomKeystores: *[]*string,
 	CustomRepos: *[]*string,
-	DiskWatermarks: github.com/cdktf/cdktf-provider-upcloud-go/upcloud.managedDatabaseOpensearch.ManagedDatabaseOpensearchPropertiesDiskWatermarks,
+	DiskWatermarks: github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v15.managedDatabaseOpensearch.ManagedDatabaseOpensearchPropertiesDiskWatermarks,
 	ElasticsearchVersion: *string,
 	EmailSenderName: *string,
 	EmailSenderPassword: *string,
@@ -1700,8 +1700,8 @@ import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/manageddatabaseopense
 	HttpMaxHeaderSize: *f64,
 	HttpMaxInitialLineLength: *f64,
 	IndexPatterns: *[]*string,
-	IndexRollup: github.com/cdktf/cdktf-provider-upcloud-go/upcloud.managedDatabaseOpensearch.ManagedDatabaseOpensearchPropertiesIndexRollup,
-	IndexTemplate: github.com/cdktf/cdktf-provider-upcloud-go/upcloud.managedDatabaseOpensearch.ManagedDatabaseOpensearchPropertiesIndexTemplate,
+	IndexRollup: github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v15.managedDatabaseOpensearch.ManagedDatabaseOpensearchPropertiesIndexRollup,
+	IndexTemplate: github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v15.managedDatabaseOpensearch.ManagedDatabaseOpensearchPropertiesIndexTemplate,
 	IndicesFielddataCacheSize: *f64,
 	IndicesMemoryIndexBufferSize: *f64,
 	IndicesMemoryMaxIndexBufferSize: *f64,
@@ -1717,26 +1717,26 @@ import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/manageddatabaseopense
 	IsmHistoryMaxDocs: *f64,
 	IsmHistoryRolloverCheckPeriod: *f64,
 	IsmHistoryRolloverRetentionPeriod: *f64,
-	Jwt: github.com/cdktf/cdktf-provider-upcloud-go/upcloud.managedDatabaseOpensearch.ManagedDatabaseOpensearchPropertiesJwt,
+	Jwt: github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v15.managedDatabaseOpensearch.ManagedDatabaseOpensearchPropertiesJwt,
 	KeepIndexRefreshInterval: interface{},
 	KnnMemoryCircuitBreakerEnabled: interface{},
 	KnnMemoryCircuitBreakerLimit: *f64,
 	NodeSearchCacheSize: *string,
-	Openid: github.com/cdktf/cdktf-provider-upcloud-go/upcloud.managedDatabaseOpensearch.ManagedDatabaseOpensearchPropertiesOpenid,
-	OpensearchDashboards: github.com/cdktf/cdktf-provider-upcloud-go/upcloud.managedDatabaseOpensearch.ManagedDatabaseOpensearchPropertiesOpensearchDashboards,
+	Openid: github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v15.managedDatabaseOpensearch.ManagedDatabaseOpensearchPropertiesOpenid,
+	OpensearchDashboards: github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v15.managedDatabaseOpensearch.ManagedDatabaseOpensearchPropertiesOpensearchDashboards,
 	OverrideMainResponseVersion: interface{},
 	PluginsAlertingFilterByBackendRoles: interface{},
 	PublicAccess: interface{},
 	ReindexRemoteWhitelist: *[]*string,
-	RemoteStore: github.com/cdktf/cdktf-provider-upcloud-go/upcloud.managedDatabaseOpensearch.ManagedDatabaseOpensearchPropertiesRemoteStore,
-	Saml: github.com/cdktf/cdktf-provider-upcloud-go/upcloud.managedDatabaseOpensearch.ManagedDatabaseOpensearchPropertiesSaml,
+	RemoteStore: github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v15.managedDatabaseOpensearch.ManagedDatabaseOpensearchPropertiesRemoteStore,
+	Saml: github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v15.managedDatabaseOpensearch.ManagedDatabaseOpensearchPropertiesSaml,
 	ScriptMaxCompilationsRate: *string,
-	SearchBackpressure: github.com/cdktf/cdktf-provider-upcloud-go/upcloud.managedDatabaseOpensearch.ManagedDatabaseOpensearchPropertiesSearchBackpressure,
-	SearchInsightsTopQueries: github.com/cdktf/cdktf-provider-upcloud-go/upcloud.managedDatabaseOpensearch.ManagedDatabaseOpensearchPropertiesSearchInsightsTopQueries,
+	SearchBackpressure: github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v15.managedDatabaseOpensearch.ManagedDatabaseOpensearchPropertiesSearchBackpressure,
+	SearchInsightsTopQueries: github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v15.managedDatabaseOpensearch.ManagedDatabaseOpensearchPropertiesSearchInsightsTopQueries,
 	SearchMaxBuckets: *f64,
-	Segrep: github.com/cdktf/cdktf-provider-upcloud-go/upcloud.managedDatabaseOpensearch.ManagedDatabaseOpensearchPropertiesSegrep,
+	Segrep: github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v15.managedDatabaseOpensearch.ManagedDatabaseOpensearchPropertiesSegrep,
 	ServiceLog: interface{},
-	ShardIndexingPressure: github.com/cdktf/cdktf-provider-upcloud-go/upcloud.managedDatabaseOpensearch.ManagedDatabaseOpensearchPropertiesShardIndexingPressure,
+	ShardIndexingPressure: github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v15.managedDatabaseOpensearch.ManagedDatabaseOpensearchPropertiesShardIndexingPressure,
 	ThreadPoolAnalyzeQueueSize: *f64,
 	ThreadPoolAnalyzeSize: *f64,
 	ThreadPoolForceMergeSize: *f64,
@@ -2935,10 +2935,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upclo
 #### Initializer <a name="Initializer" id="@cdktf/provider-upcloud.managedDatabaseOpensearch.ManagedDatabaseOpensearchPropertiesAuthFailureListeners.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/manageddatabaseopensearch"
+import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v15/manageddatabaseopensearch"
 
 &manageddatabaseopensearch.ManagedDatabaseOpensearchPropertiesAuthFailureListeners {
-	InternalAuthenticationBackendLimiting: github.com/cdktf/cdktf-provider-upcloud-go/upcloud.managedDatabaseOpensearch.ManagedDatabaseOpensearchPropertiesAuthFailureListenersInternalAuthenticationBackendLimiting,
+	InternalAuthenticationBackendLimiting: github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v15.managedDatabaseOpensearch.ManagedDatabaseOpensearchPropertiesAuthFailureListenersInternalAuthenticationBackendLimiting,
 }
 ```
 
@@ -2969,7 +2969,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upclo
 #### Initializer <a name="Initializer" id="@cdktf/provider-upcloud.managedDatabaseOpensearch.ManagedDatabaseOpensearchPropertiesAuthFailureListenersInternalAuthenticationBackendLimiting.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/manageddatabaseopensearch"
+import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v15/manageddatabaseopensearch"
 
 &manageddatabaseopensearch.ManagedDatabaseOpensearchPropertiesAuthFailureListenersInternalAuthenticationBackendLimiting {
 	AllowedTries: *f64,
@@ -3099,7 +3099,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upclo
 #### Initializer <a name="Initializer" id="@cdktf/provider-upcloud.managedDatabaseOpensearch.ManagedDatabaseOpensearchPropertiesClusterRemoteStore.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/manageddatabaseopensearch"
+import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v15/manageddatabaseopensearch"
 
 &manageddatabaseopensearch.ManagedDatabaseOpensearchPropertiesClusterRemoteStore {
 	StateGlobalMetadataUploadTimeout: *string,
@@ -3189,11 +3189,11 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upclo
 #### Initializer <a name="Initializer" id="@cdktf/provider-upcloud.managedDatabaseOpensearch.ManagedDatabaseOpensearchPropertiesClusterSearchRequestSlowlog.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/manageddatabaseopensearch"
+import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v15/manageddatabaseopensearch"
 
 &manageddatabaseopensearch.ManagedDatabaseOpensearchPropertiesClusterSearchRequestSlowlog {
 	Level: *string,
-	Threshold: github.com/cdktf/cdktf-provider-upcloud-go/upcloud.managedDatabaseOpensearch.ManagedDatabaseOpensearchPropertiesClusterSearchRequestSlowlogThreshold,
+	Threshold: github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v15.managedDatabaseOpensearch.ManagedDatabaseOpensearchPropertiesClusterSearchRequestSlowlogThreshold,
 }
 ```
 
@@ -3239,7 +3239,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upclo
 #### Initializer <a name="Initializer" id="@cdktf/provider-upcloud.managedDatabaseOpensearch.ManagedDatabaseOpensearchPropertiesClusterSearchRequestSlowlogThreshold.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/manageddatabaseopensearch"
+import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v15/manageddatabaseopensearch"
 
 &manageddatabaseopensearch.ManagedDatabaseOpensearchPropertiesClusterSearchRequestSlowlogThreshold {
 	Debug: *string,
@@ -3329,7 +3329,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upclo
 #### Initializer <a name="Initializer" id="@cdktf/provider-upcloud.managedDatabaseOpensearch.ManagedDatabaseOpensearchPropertiesDiskWatermarks.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/manageddatabaseopensearch"
+import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v15/manageddatabaseopensearch"
 
 &manageddatabaseopensearch.ManagedDatabaseOpensearchPropertiesDiskWatermarks {
 	FloodStage: *f64,
@@ -3395,7 +3395,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upclo
 #### Initializer <a name="Initializer" id="@cdktf/provider-upcloud.managedDatabaseOpensearch.ManagedDatabaseOpensearchPropertiesIndexRollup.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/manageddatabaseopensearch"
+import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v15/manageddatabaseopensearch"
 
 &manageddatabaseopensearch.ManagedDatabaseOpensearchPropertiesIndexRollup {
 	RollupDashboardsEnabled: interface{},
@@ -3493,7 +3493,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upclo
 #### Initializer <a name="Initializer" id="@cdktf/provider-upcloud.managedDatabaseOpensearch.ManagedDatabaseOpensearchPropertiesIndexTemplate.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/manageddatabaseopensearch"
+import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v15/manageddatabaseopensearch"
 
 &manageddatabaseopensearch.ManagedDatabaseOpensearchPropertiesIndexTemplate {
 	MappingNestedObjectsLimit: *f64,
@@ -3559,7 +3559,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upclo
 #### Initializer <a name="Initializer" id="@cdktf/provider-upcloud.managedDatabaseOpensearch.ManagedDatabaseOpensearchPropertiesJwt.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/manageddatabaseopensearch"
+import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v15/manageddatabaseopensearch"
 
 &manageddatabaseopensearch.ManagedDatabaseOpensearchPropertiesJwt {
 	Enabled: interface{},
@@ -3739,7 +3739,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upclo
 #### Initializer <a name="Initializer" id="@cdktf/provider-upcloud.managedDatabaseOpensearch.ManagedDatabaseOpensearchPropertiesOpenid.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/manageddatabaseopensearch"
+import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v15/manageddatabaseopensearch"
 
 &manageddatabaseopensearch.ManagedDatabaseOpensearchPropertiesOpenid {
 	ClientId: *string,
@@ -3969,7 +3969,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upclo
 #### Initializer <a name="Initializer" id="@cdktf/provider-upcloud.managedDatabaseOpensearch.ManagedDatabaseOpensearchPropertiesOpensearchDashboards.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/manageddatabaseopensearch"
+import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v15/manageddatabaseopensearch"
 
 &manageddatabaseopensearch.ManagedDatabaseOpensearchPropertiesOpensearchDashboards {
 	Enabled: interface{},
@@ -4053,7 +4053,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upclo
 #### Initializer <a name="Initializer" id="@cdktf/provider-upcloud.managedDatabaseOpensearch.ManagedDatabaseOpensearchPropertiesRemoteStore.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/manageddatabaseopensearch"
+import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v15/manageddatabaseopensearch"
 
 &manageddatabaseopensearch.ManagedDatabaseOpensearchPropertiesRemoteStore {
 	SegmentPressureBytesLagVarianceFactor: *f64,
@@ -4141,7 +4141,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upclo
 #### Initializer <a name="Initializer" id="@cdktf/provider-upcloud.managedDatabaseOpensearch.ManagedDatabaseOpensearchPropertiesSaml.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/manageddatabaseopensearch"
+import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v15/manageddatabaseopensearch"
 
 &manageddatabaseopensearch.ManagedDatabaseOpensearchPropertiesSaml {
 	Enabled: interface{},
@@ -4285,13 +4285,13 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upclo
 #### Initializer <a name="Initializer" id="@cdktf/provider-upcloud.managedDatabaseOpensearch.ManagedDatabaseOpensearchPropertiesSearchBackpressure.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/manageddatabaseopensearch"
+import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v15/manageddatabaseopensearch"
 
 &manageddatabaseopensearch.ManagedDatabaseOpensearchPropertiesSearchBackpressure {
 	Mode: *string,
-	NodeDuress: github.com/cdktf/cdktf-provider-upcloud-go/upcloud.managedDatabaseOpensearch.ManagedDatabaseOpensearchPropertiesSearchBackpressureNodeDuress,
-	SearchShardTask: github.com/cdktf/cdktf-provider-upcloud-go/upcloud.managedDatabaseOpensearch.ManagedDatabaseOpensearchPropertiesSearchBackpressureSearchShardTask,
-	SearchTask: github.com/cdktf/cdktf-provider-upcloud-go/upcloud.managedDatabaseOpensearch.ManagedDatabaseOpensearchPropertiesSearchBackpressureSearchTask,
+	NodeDuress: github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v15.managedDatabaseOpensearch.ManagedDatabaseOpensearchPropertiesSearchBackpressureNodeDuress,
+	SearchShardTask: github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v15.managedDatabaseOpensearch.ManagedDatabaseOpensearchPropertiesSearchBackpressureSearchShardTask,
+	SearchTask: github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v15.managedDatabaseOpensearch.ManagedDatabaseOpensearchPropertiesSearchBackpressureSearchTask,
 }
 ```
 
@@ -4367,7 +4367,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upclo
 #### Initializer <a name="Initializer" id="@cdktf/provider-upcloud.managedDatabaseOpensearch.ManagedDatabaseOpensearchPropertiesSearchBackpressureNodeDuress.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/manageddatabaseopensearch"
+import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v15/manageddatabaseopensearch"
 
 &manageddatabaseopensearch.ManagedDatabaseOpensearchPropertiesSearchBackpressureNodeDuress {
 	CpuThreshold: *f64,
@@ -4439,7 +4439,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upclo
 #### Initializer <a name="Initializer" id="@cdktf/provider-upcloud.managedDatabaseOpensearch.ManagedDatabaseOpensearchPropertiesSearchBackpressureSearchShardTask.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/manageddatabaseopensearch"
+import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v15/manageddatabaseopensearch"
 
 &manageddatabaseopensearch.ManagedDatabaseOpensearchPropertiesSearchBackpressureSearchShardTask {
 	CancellationBurst: *f64,
@@ -4619,7 +4619,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upclo
 #### Initializer <a name="Initializer" id="@cdktf/provider-upcloud.managedDatabaseOpensearch.ManagedDatabaseOpensearchPropertiesSearchBackpressureSearchTask.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/manageddatabaseopensearch"
+import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v15/manageddatabaseopensearch"
 
 &manageddatabaseopensearch.ManagedDatabaseOpensearchPropertiesSearchBackpressureSearchTask {
 	CancellationBurst: *f64,
@@ -4799,12 +4799,12 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upclo
 #### Initializer <a name="Initializer" id="@cdktf/provider-upcloud.managedDatabaseOpensearch.ManagedDatabaseOpensearchPropertiesSearchInsightsTopQueries.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/manageddatabaseopensearch"
+import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v15/manageddatabaseopensearch"
 
 &manageddatabaseopensearch.ManagedDatabaseOpensearchPropertiesSearchInsightsTopQueries {
-	Cpu: github.com/cdktf/cdktf-provider-upcloud-go/upcloud.managedDatabaseOpensearch.ManagedDatabaseOpensearchPropertiesSearchInsightsTopQueriesCpu,
-	Latency: github.com/cdktf/cdktf-provider-upcloud-go/upcloud.managedDatabaseOpensearch.ManagedDatabaseOpensearchPropertiesSearchInsightsTopQueriesLatency,
-	Memory: github.com/cdktf/cdktf-provider-upcloud-go/upcloud.managedDatabaseOpensearch.ManagedDatabaseOpensearchPropertiesSearchInsightsTopQueriesMemory,
+	Cpu: github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v15.managedDatabaseOpensearch.ManagedDatabaseOpensearchPropertiesSearchInsightsTopQueriesCpu,
+	Latency: github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v15.managedDatabaseOpensearch.ManagedDatabaseOpensearchPropertiesSearchInsightsTopQueriesLatency,
+	Memory: github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v15.managedDatabaseOpensearch.ManagedDatabaseOpensearchPropertiesSearchInsightsTopQueriesMemory,
 }
 ```
 
@@ -4865,7 +4865,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upclo
 #### Initializer <a name="Initializer" id="@cdktf/provider-upcloud.managedDatabaseOpensearch.ManagedDatabaseOpensearchPropertiesSearchInsightsTopQueriesCpu.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/manageddatabaseopensearch"
+import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v15/manageddatabaseopensearch"
 
 &manageddatabaseopensearch.ManagedDatabaseOpensearchPropertiesSearchInsightsTopQueriesCpu {
 	Enabled: interface{},
@@ -4935,7 +4935,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upclo
 #### Initializer <a name="Initializer" id="@cdktf/provider-upcloud.managedDatabaseOpensearch.ManagedDatabaseOpensearchPropertiesSearchInsightsTopQueriesLatency.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/manageddatabaseopensearch"
+import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v15/manageddatabaseopensearch"
 
 &manageddatabaseopensearch.ManagedDatabaseOpensearchPropertiesSearchInsightsTopQueriesLatency {
 	Enabled: interface{},
@@ -5005,7 +5005,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upclo
 #### Initializer <a name="Initializer" id="@cdktf/provider-upcloud.managedDatabaseOpensearch.ManagedDatabaseOpensearchPropertiesSearchInsightsTopQueriesMemory.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/manageddatabaseopensearch"
+import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v15/manageddatabaseopensearch"
 
 &manageddatabaseopensearch.ManagedDatabaseOpensearchPropertiesSearchInsightsTopQueriesMemory {
 	Enabled: interface{},
@@ -5075,7 +5075,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upclo
 #### Initializer <a name="Initializer" id="@cdktf/provider-upcloud.managedDatabaseOpensearch.ManagedDatabaseOpensearchPropertiesSegrep.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/manageddatabaseopensearch"
+import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v15/manageddatabaseopensearch"
 
 &manageddatabaseopensearch.ManagedDatabaseOpensearchPropertiesSegrep {
 	PressureCheckpointLimit: *f64,
@@ -5163,13 +5163,13 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upclo
 #### Initializer <a name="Initializer" id="@cdktf/provider-upcloud.managedDatabaseOpensearch.ManagedDatabaseOpensearchPropertiesShardIndexingPressure.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/manageddatabaseopensearch"
+import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v15/manageddatabaseopensearch"
 
 &manageddatabaseopensearch.ManagedDatabaseOpensearchPropertiesShardIndexingPressure {
 	Enabled: interface{},
 	Enforced: interface{},
-	OperatingFactor: github.com/cdktf/cdktf-provider-upcloud-go/upcloud.managedDatabaseOpensearch.ManagedDatabaseOpensearchPropertiesShardIndexingPressureOperatingFactor,
-	PrimaryParameter: github.com/cdktf/cdktf-provider-upcloud-go/upcloud.managedDatabaseOpensearch.ManagedDatabaseOpensearchPropertiesShardIndexingPressurePrimaryParameter,
+	OperatingFactor: github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v15.managedDatabaseOpensearch.ManagedDatabaseOpensearchPropertiesShardIndexingPressureOperatingFactor,
+	PrimaryParameter: github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v15.managedDatabaseOpensearch.ManagedDatabaseOpensearchPropertiesShardIndexingPressurePrimaryParameter,
 }
 ```
 
@@ -5252,7 +5252,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upclo
 #### Initializer <a name="Initializer" id="@cdktf/provider-upcloud.managedDatabaseOpensearch.ManagedDatabaseOpensearchPropertiesShardIndexingPressureOperatingFactor.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/manageddatabaseopensearch"
+import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v15/manageddatabaseopensearch"
 
 &manageddatabaseopensearch.ManagedDatabaseOpensearchPropertiesShardIndexingPressureOperatingFactor {
 	Lower: *f64,
@@ -5333,11 +5333,11 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upclo
 #### Initializer <a name="Initializer" id="@cdktf/provider-upcloud.managedDatabaseOpensearch.ManagedDatabaseOpensearchPropertiesShardIndexingPressurePrimaryParameter.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/manageddatabaseopensearch"
+import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v15/manageddatabaseopensearch"
 
 &manageddatabaseopensearch.ManagedDatabaseOpensearchPropertiesShardIndexingPressurePrimaryParameter {
-	NodeAttribute: github.com/cdktf/cdktf-provider-upcloud-go/upcloud.managedDatabaseOpensearch.ManagedDatabaseOpensearchPropertiesShardIndexingPressurePrimaryParameterNode,
-	Shard: github.com/cdktf/cdktf-provider-upcloud-go/upcloud.managedDatabaseOpensearch.ManagedDatabaseOpensearchPropertiesShardIndexingPressurePrimaryParameterShard,
+	NodeAttribute: github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v15.managedDatabaseOpensearch.ManagedDatabaseOpensearchPropertiesShardIndexingPressurePrimaryParameterNode,
+	Shard: github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v15.managedDatabaseOpensearch.ManagedDatabaseOpensearchPropertiesShardIndexingPressurePrimaryParameterShard,
 }
 ```
 
@@ -5383,7 +5383,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upclo
 #### Initializer <a name="Initializer" id="@cdktf/provider-upcloud.managedDatabaseOpensearch.ManagedDatabaseOpensearchPropertiesShardIndexingPressurePrimaryParameterNode.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/manageddatabaseopensearch"
+import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v15/manageddatabaseopensearch"
 
 &manageddatabaseopensearch.ManagedDatabaseOpensearchPropertiesShardIndexingPressurePrimaryParameterNode {
 	SoftLimit: *f64,
@@ -5421,7 +5421,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upclo
 #### Initializer <a name="Initializer" id="@cdktf/provider-upcloud.managedDatabaseOpensearch.ManagedDatabaseOpensearchPropertiesShardIndexingPressurePrimaryParameterShard.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/manageddatabaseopensearch"
+import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v15/manageddatabaseopensearch"
 
 &manageddatabaseopensearch.ManagedDatabaseOpensearchPropertiesShardIndexingPressurePrimaryParameterShard {
 	MinLimit: *f64,
@@ -5461,7 +5461,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upclo
 #### Initializers <a name="Initializers" id="@cdktf/provider-upcloud.managedDatabaseOpensearch.ManagedDatabaseOpensearchComponentsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/manageddatabaseopensearch"
+import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v15/manageddatabaseopensearch"
 
 manageddatabaseopensearch.NewManagedDatabaseOpensearchComponentsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ManagedDatabaseOpensearchComponentsList
 ```
@@ -5610,7 +5610,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-upcloud.managedDatabaseOpensearch.ManagedDatabaseOpensearchComponentsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/manageddatabaseopensearch"
+import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v15/manageddatabaseopensearch"
 
 manageddatabaseopensearch.NewManagedDatabaseOpensearchComponentsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ManagedDatabaseOpensearchComponentsOutputReference
 ```
@@ -5932,7 +5932,7 @@ func InternalValue() ManagedDatabaseOpensearchComponents
 #### Initializers <a name="Initializers" id="@cdktf/provider-upcloud.managedDatabaseOpensearch.ManagedDatabaseOpensearchNetworkList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/manageddatabaseopensearch"
+import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v15/manageddatabaseopensearch"
 
 manageddatabaseopensearch.NewManagedDatabaseOpensearchNetworkList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ManagedDatabaseOpensearchNetworkList
 ```
@@ -6092,7 +6092,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-upcloud.managedDatabaseOpensearch.ManagedDatabaseOpensearchNetworkOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/manageddatabaseopensearch"
+import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v15/manageddatabaseopensearch"
 
 manageddatabaseopensearch.NewManagedDatabaseOpensearchNetworkOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ManagedDatabaseOpensearchNetworkOutputReference
 ```
@@ -6447,7 +6447,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-upcloud.managedDatabaseOpensearch.ManagedDatabaseOpensearchNodeStatesList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/manageddatabaseopensearch"
+import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v15/manageddatabaseopensearch"
 
 manageddatabaseopensearch.NewManagedDatabaseOpensearchNodeStatesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ManagedDatabaseOpensearchNodeStatesList
 ```
@@ -6596,7 +6596,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-upcloud.managedDatabaseOpensearch.ManagedDatabaseOpensearchNodeStatesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/manageddatabaseopensearch"
+import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v15/manageddatabaseopensearch"
 
 manageddatabaseopensearch.NewManagedDatabaseOpensearchNodeStatesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ManagedDatabaseOpensearchNodeStatesOutputReference
 ```
@@ -6896,7 +6896,7 @@ func InternalValue() ManagedDatabaseOpensearchNodeStates
 #### Initializers <a name="Initializers" id="@cdktf/provider-upcloud.managedDatabaseOpensearch.ManagedDatabaseOpensearchPropertiesAuthFailureListenersInternalAuthenticationBackendLimitingOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/manageddatabaseopensearch"
+import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v15/manageddatabaseopensearch"
 
 manageddatabaseopensearch.NewManagedDatabaseOpensearchPropertiesAuthFailureListenersInternalAuthenticationBackendLimitingOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ManagedDatabaseOpensearchPropertiesAuthFailureListenersInternalAuthenticationBackendLimitingOutputReference
 ```
@@ -7348,7 +7348,7 @@ func InternalValue() ManagedDatabaseOpensearchPropertiesAuthFailureListenersInte
 #### Initializers <a name="Initializers" id="@cdktf/provider-upcloud.managedDatabaseOpensearch.ManagedDatabaseOpensearchPropertiesAuthFailureListenersOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/manageddatabaseopensearch"
+import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v15/manageddatabaseopensearch"
 
 manageddatabaseopensearch.NewManagedDatabaseOpensearchPropertiesAuthFailureListenersOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ManagedDatabaseOpensearchPropertiesAuthFailureListenersOutputReference
 ```
@@ -7639,7 +7639,7 @@ func InternalValue() ManagedDatabaseOpensearchPropertiesAuthFailureListeners
 #### Initializers <a name="Initializers" id="@cdktf/provider-upcloud.managedDatabaseOpensearch.ManagedDatabaseOpensearchPropertiesClusterRemoteStoreOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/manageddatabaseopensearch"
+import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v15/manageddatabaseopensearch"
 
 manageddatabaseopensearch.NewManagedDatabaseOpensearchPropertiesClusterRemoteStoreOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ManagedDatabaseOpensearchPropertiesClusterRemoteStoreOutputReference
 ```
@@ -8004,7 +8004,7 @@ func InternalValue() ManagedDatabaseOpensearchPropertiesClusterRemoteStore
 #### Initializers <a name="Initializers" id="@cdktf/provider-upcloud.managedDatabaseOpensearch.ManagedDatabaseOpensearchPropertiesClusterSearchRequestSlowlogOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/manageddatabaseopensearch"
+import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v15/manageddatabaseopensearch"
 
 manageddatabaseopensearch.NewManagedDatabaseOpensearchPropertiesClusterSearchRequestSlowlogOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ManagedDatabaseOpensearchPropertiesClusterSearchRequestSlowlogOutputReference
 ```
@@ -8324,7 +8324,7 @@ func InternalValue() ManagedDatabaseOpensearchPropertiesClusterSearchRequestSlow
 #### Initializers <a name="Initializers" id="@cdktf/provider-upcloud.managedDatabaseOpensearch.ManagedDatabaseOpensearchPropertiesClusterSearchRequestSlowlogThresholdOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/manageddatabaseopensearch"
+import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v15/manageddatabaseopensearch"
 
 manageddatabaseopensearch.NewManagedDatabaseOpensearchPropertiesClusterSearchRequestSlowlogThresholdOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ManagedDatabaseOpensearchPropertiesClusterSearchRequestSlowlogThresholdOutputReference
 ```
@@ -8689,7 +8689,7 @@ func InternalValue() ManagedDatabaseOpensearchPropertiesClusterSearchRequestSlow
 #### Initializers <a name="Initializers" id="@cdktf/provider-upcloud.managedDatabaseOpensearch.ManagedDatabaseOpensearchPropertiesDiskWatermarksOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/manageddatabaseopensearch"
+import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v15/manageddatabaseopensearch"
 
 manageddatabaseopensearch.NewManagedDatabaseOpensearchPropertiesDiskWatermarksOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ManagedDatabaseOpensearchPropertiesDiskWatermarksOutputReference
 ```
@@ -9025,7 +9025,7 @@ func InternalValue() ManagedDatabaseOpensearchPropertiesDiskWatermarks
 #### Initializers <a name="Initializers" id="@cdktf/provider-upcloud.managedDatabaseOpensearch.ManagedDatabaseOpensearchPropertiesIndexRollupOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/manageddatabaseopensearch"
+import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v15/manageddatabaseopensearch"
 
 manageddatabaseopensearch.NewManagedDatabaseOpensearchPropertiesIndexRollupOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ManagedDatabaseOpensearchPropertiesIndexRollupOutputReference
 ```
@@ -9419,7 +9419,7 @@ func InternalValue() ManagedDatabaseOpensearchPropertiesIndexRollup
 #### Initializers <a name="Initializers" id="@cdktf/provider-upcloud.managedDatabaseOpensearch.ManagedDatabaseOpensearchPropertiesIndexTemplateOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/manageddatabaseopensearch"
+import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v15/manageddatabaseopensearch"
 
 manageddatabaseopensearch.NewManagedDatabaseOpensearchPropertiesIndexTemplateOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ManagedDatabaseOpensearchPropertiesIndexTemplateOutputReference
 ```
@@ -9755,7 +9755,7 @@ func InternalValue() ManagedDatabaseOpensearchPropertiesIndexTemplate
 #### Initializers <a name="Initializers" id="@cdktf/provider-upcloud.managedDatabaseOpensearch.ManagedDatabaseOpensearchPropertiesJwtOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/manageddatabaseopensearch"
+import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v15/manageddatabaseopensearch"
 
 manageddatabaseopensearch.NewManagedDatabaseOpensearchPropertiesJwtOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ManagedDatabaseOpensearchPropertiesJwtOutputReference
 ```
@@ -10265,7 +10265,7 @@ func InternalValue() ManagedDatabaseOpensearchPropertiesJwt
 #### Initializers <a name="Initializers" id="@cdktf/provider-upcloud.managedDatabaseOpensearch.ManagedDatabaseOpensearchPropertiesOpenidOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/manageddatabaseopensearch"
+import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v15/manageddatabaseopensearch"
 
 manageddatabaseopensearch.NewManagedDatabaseOpensearchPropertiesOpenidOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ManagedDatabaseOpensearchPropertiesOpenidOutputReference
 ```
@@ -10862,7 +10862,7 @@ func InternalValue() ManagedDatabaseOpensearchPropertiesOpenid
 #### Initializers <a name="Initializers" id="@cdktf/provider-upcloud.managedDatabaseOpensearch.ManagedDatabaseOpensearchPropertiesOpensearchDashboardsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/manageddatabaseopensearch"
+import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v15/manageddatabaseopensearch"
 
 manageddatabaseopensearch.NewManagedDatabaseOpensearchPropertiesOpensearchDashboardsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ManagedDatabaseOpensearchPropertiesOpensearchDashboardsOutputReference
 ```
@@ -11227,7 +11227,7 @@ func InternalValue() ManagedDatabaseOpensearchPropertiesOpensearchDashboards
 #### Initializers <a name="Initializers" id="@cdktf/provider-upcloud.managedDatabaseOpensearch.ManagedDatabaseOpensearchPropertiesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/manageddatabaseopensearch"
+import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v15/manageddatabaseopensearch"
 
 manageddatabaseopensearch.NewManagedDatabaseOpensearchPropertiesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ManagedDatabaseOpensearchPropertiesOutputReference
 ```
@@ -13846,7 +13846,7 @@ func InternalValue() ManagedDatabaseOpensearchProperties
 #### Initializers <a name="Initializers" id="@cdktf/provider-upcloud.managedDatabaseOpensearch.ManagedDatabaseOpensearchPropertiesRemoteStoreOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/manageddatabaseopensearch"
+import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v15/manageddatabaseopensearch"
 
 manageddatabaseopensearch.NewManagedDatabaseOpensearchPropertiesRemoteStoreOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ManagedDatabaseOpensearchPropertiesRemoteStoreOutputReference
 ```
@@ -14211,7 +14211,7 @@ func InternalValue() ManagedDatabaseOpensearchPropertiesRemoteStore
 #### Initializers <a name="Initializers" id="@cdktf/provider-upcloud.managedDatabaseOpensearch.ManagedDatabaseOpensearchPropertiesSamlOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/manageddatabaseopensearch"
+import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v15/manageddatabaseopensearch"
 
 manageddatabaseopensearch.NewManagedDatabaseOpensearchPropertiesSamlOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ManagedDatabaseOpensearchPropertiesSamlOutputReference
 ```
@@ -14663,7 +14663,7 @@ func InternalValue() ManagedDatabaseOpensearchPropertiesSaml
 #### Initializers <a name="Initializers" id="@cdktf/provider-upcloud.managedDatabaseOpensearch.ManagedDatabaseOpensearchPropertiesSearchBackpressureNodeDuressOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/manageddatabaseopensearch"
+import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v15/manageddatabaseopensearch"
 
 manageddatabaseopensearch.NewManagedDatabaseOpensearchPropertiesSearchBackpressureNodeDuressOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ManagedDatabaseOpensearchPropertiesSearchBackpressureNodeDuressOutputReference
 ```
@@ -14999,7 +14999,7 @@ func InternalValue() ManagedDatabaseOpensearchPropertiesSearchBackpressureNodeDu
 #### Initializers <a name="Initializers" id="@cdktf/provider-upcloud.managedDatabaseOpensearch.ManagedDatabaseOpensearchPropertiesSearchBackpressureOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/manageddatabaseopensearch"
+import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v15/manageddatabaseopensearch"
 
 manageddatabaseopensearch.NewManagedDatabaseOpensearchPropertiesSearchBackpressureOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ManagedDatabaseOpensearchPropertiesSearchBackpressureOutputReference
 ```
@@ -15403,7 +15403,7 @@ func InternalValue() ManagedDatabaseOpensearchPropertiesSearchBackpressure
 #### Initializers <a name="Initializers" id="@cdktf/provider-upcloud.managedDatabaseOpensearch.ManagedDatabaseOpensearchPropertiesSearchBackpressureSearchShardTaskOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/manageddatabaseopensearch"
+import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v15/manageddatabaseopensearch"
 
 manageddatabaseopensearch.NewManagedDatabaseOpensearchPropertiesSearchBackpressureSearchShardTaskOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ManagedDatabaseOpensearchPropertiesSearchBackpressureSearchShardTaskOutputReference
 ```
@@ -15913,7 +15913,7 @@ func InternalValue() ManagedDatabaseOpensearchPropertiesSearchBackpressureSearch
 #### Initializers <a name="Initializers" id="@cdktf/provider-upcloud.managedDatabaseOpensearch.ManagedDatabaseOpensearchPropertiesSearchBackpressureSearchTaskOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/manageddatabaseopensearch"
+import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v15/manageddatabaseopensearch"
 
 manageddatabaseopensearch.NewManagedDatabaseOpensearchPropertiesSearchBackpressureSearchTaskOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ManagedDatabaseOpensearchPropertiesSearchBackpressureSearchTaskOutputReference
 ```
@@ -16423,7 +16423,7 @@ func InternalValue() ManagedDatabaseOpensearchPropertiesSearchBackpressureSearch
 #### Initializers <a name="Initializers" id="@cdktf/provider-upcloud.managedDatabaseOpensearch.ManagedDatabaseOpensearchPropertiesSearchInsightsTopQueriesCpuOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/manageddatabaseopensearch"
+import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v15/manageddatabaseopensearch"
 
 manageddatabaseopensearch.NewManagedDatabaseOpensearchPropertiesSearchInsightsTopQueriesCpuOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ManagedDatabaseOpensearchPropertiesSearchInsightsTopQueriesCpuOutputReference
 ```
@@ -16759,7 +16759,7 @@ func InternalValue() ManagedDatabaseOpensearchPropertiesSearchInsightsTopQueries
 #### Initializers <a name="Initializers" id="@cdktf/provider-upcloud.managedDatabaseOpensearch.ManagedDatabaseOpensearchPropertiesSearchInsightsTopQueriesLatencyOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/manageddatabaseopensearch"
+import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v15/manageddatabaseopensearch"
 
 manageddatabaseopensearch.NewManagedDatabaseOpensearchPropertiesSearchInsightsTopQueriesLatencyOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ManagedDatabaseOpensearchPropertiesSearchInsightsTopQueriesLatencyOutputReference
 ```
@@ -17095,7 +17095,7 @@ func InternalValue() ManagedDatabaseOpensearchPropertiesSearchInsightsTopQueries
 #### Initializers <a name="Initializers" id="@cdktf/provider-upcloud.managedDatabaseOpensearch.ManagedDatabaseOpensearchPropertiesSearchInsightsTopQueriesMemoryOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/manageddatabaseopensearch"
+import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v15/manageddatabaseopensearch"
 
 manageddatabaseopensearch.NewManagedDatabaseOpensearchPropertiesSearchInsightsTopQueriesMemoryOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ManagedDatabaseOpensearchPropertiesSearchInsightsTopQueriesMemoryOutputReference
 ```
@@ -17431,7 +17431,7 @@ func InternalValue() ManagedDatabaseOpensearchPropertiesSearchInsightsTopQueries
 #### Initializers <a name="Initializers" id="@cdktf/provider-upcloud.managedDatabaseOpensearch.ManagedDatabaseOpensearchPropertiesSearchInsightsTopQueriesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/manageddatabaseopensearch"
+import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v15/manageddatabaseopensearch"
 
 manageddatabaseopensearch.NewManagedDatabaseOpensearchPropertiesSearchInsightsTopQueriesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ManagedDatabaseOpensearchPropertiesSearchInsightsTopQueriesOutputReference
 ```
@@ -17806,7 +17806,7 @@ func InternalValue() ManagedDatabaseOpensearchPropertiesSearchInsightsTopQueries
 #### Initializers <a name="Initializers" id="@cdktf/provider-upcloud.managedDatabaseOpensearch.ManagedDatabaseOpensearchPropertiesSegrepOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/manageddatabaseopensearch"
+import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v15/manageddatabaseopensearch"
 
 manageddatabaseopensearch.NewManagedDatabaseOpensearchPropertiesSegrepOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ManagedDatabaseOpensearchPropertiesSegrepOutputReference
 ```
@@ -18171,7 +18171,7 @@ func InternalValue() ManagedDatabaseOpensearchPropertiesSegrep
 #### Initializers <a name="Initializers" id="@cdktf/provider-upcloud.managedDatabaseOpensearch.ManagedDatabaseOpensearchPropertiesShardIndexingPressureOperatingFactorOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/manageddatabaseopensearch"
+import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v15/manageddatabaseopensearch"
 
 manageddatabaseopensearch.NewManagedDatabaseOpensearchPropertiesShardIndexingPressureOperatingFactorOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ManagedDatabaseOpensearchPropertiesShardIndexingPressureOperatingFactorOutputReference
 ```
@@ -18507,7 +18507,7 @@ func InternalValue() ManagedDatabaseOpensearchPropertiesShardIndexingPressureOpe
 #### Initializers <a name="Initializers" id="@cdktf/provider-upcloud.managedDatabaseOpensearch.ManagedDatabaseOpensearchPropertiesShardIndexingPressureOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/manageddatabaseopensearch"
+import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v15/manageddatabaseopensearch"
 
 manageddatabaseopensearch.NewManagedDatabaseOpensearchPropertiesShardIndexingPressureOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ManagedDatabaseOpensearchPropertiesShardIndexingPressureOutputReference
 ```
@@ -18898,7 +18898,7 @@ func InternalValue() ManagedDatabaseOpensearchPropertiesShardIndexingPressure
 #### Initializers <a name="Initializers" id="@cdktf/provider-upcloud.managedDatabaseOpensearch.ManagedDatabaseOpensearchPropertiesShardIndexingPressurePrimaryParameterNodeOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/manageddatabaseopensearch"
+import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v15/manageddatabaseopensearch"
 
 manageddatabaseopensearch.NewManagedDatabaseOpensearchPropertiesShardIndexingPressurePrimaryParameterNodeOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ManagedDatabaseOpensearchPropertiesShardIndexingPressurePrimaryParameterNodeOutputReference
 ```
@@ -19176,7 +19176,7 @@ func InternalValue() ManagedDatabaseOpensearchPropertiesShardIndexingPressurePri
 #### Initializers <a name="Initializers" id="@cdktf/provider-upcloud.managedDatabaseOpensearch.ManagedDatabaseOpensearchPropertiesShardIndexingPressurePrimaryParameterOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/manageddatabaseopensearch"
+import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v15/manageddatabaseopensearch"
 
 manageddatabaseopensearch.NewManagedDatabaseOpensearchPropertiesShardIndexingPressurePrimaryParameterOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ManagedDatabaseOpensearchPropertiesShardIndexingPressurePrimaryParameterOutputReference
 ```
@@ -19509,7 +19509,7 @@ func InternalValue() ManagedDatabaseOpensearchPropertiesShardIndexingPressurePri
 #### Initializers <a name="Initializers" id="@cdktf/provider-upcloud.managedDatabaseOpensearch.ManagedDatabaseOpensearchPropertiesShardIndexingPressurePrimaryParameterShardOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/manageddatabaseopensearch"
+import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v15/manageddatabaseopensearch"
 
 manageddatabaseopensearch.NewManagedDatabaseOpensearchPropertiesShardIndexingPressurePrimaryParameterShardOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ManagedDatabaseOpensearchPropertiesShardIndexingPressurePrimaryParameterShardOutputReference
 ```

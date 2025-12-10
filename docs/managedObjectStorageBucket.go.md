@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5
 #### Initializers <a name="Initializers" id="@cdktf/provider-upcloud.managedObjectStorageBucket.ManagedObjectStorageBucket.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/managedobjectstoragebucket"
+import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v15/managedobjectstoragebucket"
 
 managedobjectstoragebucket.NewManagedObjectStorageBucket(scope Construct, id *string, config ManagedObjectStorageBucketConfig) ManagedObjectStorageBucket
 ```
@@ -378,7 +378,7 @@ Full id of resource to move to, e.g. "aws_s3_bucket.example".
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-upcloud.managedObjectStorageBucket.ManagedObjectStorageBucket.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/managedobjectstoragebucket"
+import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v15/managedobjectstoragebucket"
 
 managedobjectstoragebucket.ManagedObjectStorageBucket_IsConstruct(x interface{}) *bool
 ```
@@ -410,7 +410,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-upcloud.managedObjectStorageBucket.ManagedObjectStorageBucket.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/managedobjectstoragebucket"
+import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v15/managedobjectstoragebucket"
 
 managedobjectstoragebucket.ManagedObjectStorageBucket_IsTerraformElement(x interface{}) *bool
 ```
@@ -424,7 +424,7 @@ managedobjectstoragebucket.ManagedObjectStorageBucket_IsTerraformElement(x inter
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-upcloud.managedObjectStorageBucket.ManagedObjectStorageBucket.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/managedobjectstoragebucket"
+import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v15/managedobjectstoragebucket"
 
 managedobjectstoragebucket.ManagedObjectStorageBucket_IsTerraformResource(x interface{}) *bool
 ```
@@ -438,7 +438,7 @@ managedobjectstoragebucket.ManagedObjectStorageBucket_IsTerraformResource(x inte
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-upcloud.managedObjectStorageBucket.ManagedObjectStorageBucket.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/managedobjectstoragebucket"
+import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v15/managedobjectstoragebucket"
 
 managedobjectstoragebucket.ManagedObjectStorageBucket_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -744,7 +744,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-upcloud.managedObjectStorageBucket.ManagedObjectStorageBucketConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/managedobjectstoragebucket"
+import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v15/managedobjectstoragebucket"
 
 &managedobjectstoragebucket.ManagedObjectStorageBucketConfig {
 	Connection: interface{},

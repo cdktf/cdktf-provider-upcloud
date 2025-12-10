@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5
 #### Initializers <a name="Initializers" id="@cdktf/provider-upcloud.loadbalancer.Loadbalancer.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/loadbalancer"
+import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v15/loadbalancer"
 
 loadbalancer.NewLoadbalancer(scope Construct, id *string, config LoadbalancerConfig) Loadbalancer
 ```
@@ -453,7 +453,7 @@ func ResetNetworks()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-upcloud.loadbalancer.Loadbalancer.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/loadbalancer"
+import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v15/loadbalancer"
 
 loadbalancer.Loadbalancer_IsConstruct(x interface{}) *bool
 ```
@@ -485,7 +485,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-upcloud.loadbalancer.Loadbalancer.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/loadbalancer"
+import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v15/loadbalancer"
 
 loadbalancer.Loadbalancer_IsTerraformElement(x interface{}) *bool
 ```
@@ -499,7 +499,7 @@ loadbalancer.Loadbalancer_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-upcloud.loadbalancer.Loadbalancer.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/loadbalancer"
+import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v15/loadbalancer"
 
 loadbalancer.Loadbalancer_IsTerraformResource(x interface{}) *bool
 ```
@@ -513,7 +513,7 @@ loadbalancer.Loadbalancer_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-upcloud.loadbalancer.Loadbalancer.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/loadbalancer"
+import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v15/loadbalancer"
 
 loadbalancer.Loadbalancer_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -1039,7 +1039,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-upcloud.loadbalancer.LoadbalancerConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/loadbalancer"
+import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v15/loadbalancer"
 
 &loadbalancer.LoadbalancerConfig {
 	Connection: interface{},
@@ -1305,7 +1305,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upclo
 #### Initializer <a name="Initializer" id="@cdktf/provider-upcloud.loadbalancer.LoadbalancerIpAddresses.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/loadbalancer"
+import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v15/loadbalancer"
 
 &loadbalancer.LoadbalancerIpAddresses {
 	Address: *string,
@@ -1355,7 +1355,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upclo
 #### Initializer <a name="Initializer" id="@cdktf/provider-upcloud.loadbalancer.LoadbalancerNetworks.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/loadbalancer"
+import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v15/loadbalancer"
 
 &loadbalancer.LoadbalancerNetworks {
 	Family: *string,
@@ -1441,7 +1441,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upclo
 #### Initializer <a name="Initializer" id="@cdktf/provider-upcloud.loadbalancer.LoadbalancerNodes.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/loadbalancer"
+import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v15/loadbalancer"
 
 &loadbalancer.LoadbalancerNodes {
 
@@ -1454,7 +1454,7 @@ import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/loadbalancer"
 #### Initializer <a name="Initializer" id="@cdktf/provider-upcloud.loadbalancer.LoadbalancerNodesNetworks.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/loadbalancer"
+import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v15/loadbalancer"
 
 &loadbalancer.LoadbalancerNodesNetworks {
 
@@ -1467,7 +1467,7 @@ import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/loadbalancer"
 #### Initializer <a name="Initializer" id="@cdktf/provider-upcloud.loadbalancer.LoadbalancerNodesNetworksIpAddresses.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/loadbalancer"
+import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v15/loadbalancer"
 
 &loadbalancer.LoadbalancerNodesNetworksIpAddresses {
 
@@ -1482,7 +1482,7 @@ import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/loadbalancer"
 #### Initializers <a name="Initializers" id="@cdktf/provider-upcloud.loadbalancer.LoadbalancerIpAddressesList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/loadbalancer"
+import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v15/loadbalancer"
 
 loadbalancer.NewLoadbalancerIpAddressesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) LoadbalancerIpAddressesList
 ```
@@ -1642,7 +1642,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-upcloud.loadbalancer.LoadbalancerIpAddressesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/loadbalancer"
+import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v15/loadbalancer"
 
 loadbalancer.NewLoadbalancerIpAddressesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) LoadbalancerIpAddressesOutputReference
 ```
@@ -1953,7 +1953,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-upcloud.loadbalancer.LoadbalancerNetworksList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/loadbalancer"
+import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v15/loadbalancer"
 
 loadbalancer.NewLoadbalancerNetworksList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) LoadbalancerNetworksList
 ```
@@ -2113,7 +2113,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-upcloud.loadbalancer.LoadbalancerNetworksOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/loadbalancer"
+import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v15/loadbalancer"
 
 loadbalancer.NewLoadbalancerNetworksOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) LoadbalancerNetworksOutputReference
 ```
@@ -2497,7 +2497,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-upcloud.loadbalancer.LoadbalancerNodesList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/loadbalancer"
+import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v15/loadbalancer"
 
 loadbalancer.NewLoadbalancerNodesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) LoadbalancerNodesList
 ```
@@ -2646,7 +2646,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-upcloud.loadbalancer.LoadbalancerNodesNetworksIpAddressesList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/loadbalancer"
+import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v15/loadbalancer"
 
 loadbalancer.NewLoadbalancerNodesNetworksIpAddressesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) LoadbalancerNodesNetworksIpAddressesList
 ```
@@ -2795,7 +2795,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-upcloud.loadbalancer.LoadbalancerNodesNetworksIpAddressesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/loadbalancer"
+import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v15/loadbalancer"
 
 loadbalancer.NewLoadbalancerNodesNetworksIpAddressesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) LoadbalancerNodesNetworksIpAddressesOutputReference
 ```
@@ -3084,7 +3084,7 @@ func InternalValue() LoadbalancerNodesNetworksIpAddresses
 #### Initializers <a name="Initializers" id="@cdktf/provider-upcloud.loadbalancer.LoadbalancerNodesNetworksList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/loadbalancer"
+import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v15/loadbalancer"
 
 loadbalancer.NewLoadbalancerNodesNetworksList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) LoadbalancerNodesNetworksList
 ```
@@ -3233,7 +3233,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-upcloud.loadbalancer.LoadbalancerNodesNetworksOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/loadbalancer"
+import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v15/loadbalancer"
 
 loadbalancer.NewLoadbalancerNodesNetworksOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) LoadbalancerNodesNetworksOutputReference
 ```
@@ -3533,7 +3533,7 @@ func InternalValue() LoadbalancerNodesNetworks
 #### Initializers <a name="Initializers" id="@cdktf/provider-upcloud.loadbalancer.LoadbalancerNodesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/loadbalancer"
+import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v15/loadbalancer"
 
 loadbalancer.NewLoadbalancerNodesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) LoadbalancerNodesOutputReference
 ```

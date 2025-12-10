@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5
 #### Initializers <a name="Initializers" id="@cdktf/provider-upcloud.dataUpcloudManagedDatabaseValkeySessions.DataUpcloudManagedDatabaseValkeySessions.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/dataupcloudmanageddatabasevalkeysessions"
+import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v15/dataupcloudmanageddatabasevalkeysessions"
 
 dataupcloudmanageddatabasevalkeysessions.NewDataUpcloudManagedDatabaseValkeySessions(scope Construct, id *string, config DataUpcloudManagedDatabaseValkeySessionsConfig) DataUpcloudManagedDatabaseValkeySessions
 ```
@@ -324,7 +324,7 @@ func ResetSessions()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-upcloud.dataUpcloudManagedDatabaseValkeySessions.DataUpcloudManagedDatabaseValkeySessions.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/dataupcloudmanageddatabasevalkeysessions"
+import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v15/dataupcloudmanageddatabasevalkeysessions"
 
 dataupcloudmanageddatabasevalkeysessions.DataUpcloudManagedDatabaseValkeySessions_IsConstruct(x interface{}) *bool
 ```
@@ -356,7 +356,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-upcloud.dataUpcloudManagedDatabaseValkeySessions.DataUpcloudManagedDatabaseValkeySessions.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/dataupcloudmanageddatabasevalkeysessions"
+import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v15/dataupcloudmanageddatabasevalkeysessions"
 
 dataupcloudmanageddatabasevalkeysessions.DataUpcloudManagedDatabaseValkeySessions_IsTerraformElement(x interface{}) *bool
 ```
@@ -370,7 +370,7 @@ dataupcloudmanageddatabasevalkeysessions.DataUpcloudManagedDatabaseValkeySession
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-upcloud.dataUpcloudManagedDatabaseValkeySessions.DataUpcloudManagedDatabaseValkeySessions.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/dataupcloudmanageddatabasevalkeysessions"
+import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v15/dataupcloudmanageddatabasevalkeysessions"
 
 dataupcloudmanageddatabasevalkeysessions.DataUpcloudManagedDatabaseValkeySessions_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -384,7 +384,7 @@ dataupcloudmanageddatabasevalkeysessions.DataUpcloudManagedDatabaseValkeySession
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-upcloud.dataUpcloudManagedDatabaseValkeySessions.DataUpcloudManagedDatabaseValkeySessions.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/dataupcloudmanageddatabasevalkeysessions"
+import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v15/dataupcloudmanageddatabasevalkeysessions"
 
 dataupcloudmanageddatabasevalkeysessions.DataUpcloudManagedDatabaseValkeySessions_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -723,7 +723,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-upcloud.dataUpcloudManagedDatabaseValkeySessions.DataUpcloudManagedDatabaseValkeySessionsConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/dataupcloudmanageddatabasevalkeysessions"
+import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v15/dataupcloudmanageddatabasevalkeysessions"
 
 &dataupcloudmanageddatabasevalkeysessions.DataUpcloudManagedDatabaseValkeySessionsConfig {
 	Connection: interface{},
@@ -922,7 +922,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upclo
 #### Initializer <a name="Initializer" id="@cdktf/provider-upcloud.dataUpcloudManagedDatabaseValkeySessions.DataUpcloudManagedDatabaseValkeySessionsSessions.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/dataupcloudmanageddatabasevalkeysessions"
+import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v15/dataupcloudmanageddatabasevalkeysessions"
 
 &dataupcloudmanageddatabasevalkeysessions.DataUpcloudManagedDatabaseValkeySessionsSessions {
 
@@ -937,7 +937,7 @@ import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/dataupcloudmanageddat
 #### Initializers <a name="Initializers" id="@cdktf/provider-upcloud.dataUpcloudManagedDatabaseValkeySessions.DataUpcloudManagedDatabaseValkeySessionsSessionsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/dataupcloudmanageddatabasevalkeysessions"
+import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v15/dataupcloudmanageddatabasevalkeysessions"
 
 dataupcloudmanageddatabasevalkeysessions.NewDataUpcloudManagedDatabaseValkeySessionsSessionsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataUpcloudManagedDatabaseValkeySessionsSessionsList
 ```
@@ -1097,7 +1097,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-upcloud.dataUpcloudManagedDatabaseValkeySessions.DataUpcloudManagedDatabaseValkeySessionsSessionsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/dataupcloudmanageddatabasevalkeysessions"
+import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v15/dataupcloudmanageddatabasevalkeysessions"
 
 dataupcloudmanageddatabasevalkeysessions.NewDataUpcloudManagedDatabaseValkeySessionsSessionsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataUpcloudManagedDatabaseValkeySessionsSessionsOutputReference
 ```
