@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/upcloudltd/upcloud/5
 #### Initializers <a name="Initializers" id="@cdktf/provider-upcloud.networkPeering.NetworkPeering.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v15/networkpeering"
+import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/networkpeering"
 
 networkpeering.NewNetworkPeering(scope Construct, id *string, config NetworkPeeringConfig) NetworkPeering
 ```
@@ -432,7 +432,7 @@ func ResetPeerNetwork()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-upcloud.networkPeering.NetworkPeering.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v15/networkpeering"
+import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/networkpeering"
 
 networkpeering.NetworkPeering_IsConstruct(x interface{}) *bool
 ```
@@ -464,7 +464,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-upcloud.networkPeering.NetworkPeering.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v15/networkpeering"
+import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/networkpeering"
 
 networkpeering.NetworkPeering_IsTerraformElement(x interface{}) *bool
 ```
@@ -478,7 +478,7 @@ networkpeering.NetworkPeering_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-upcloud.networkPeering.NetworkPeering.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v15/networkpeering"
+import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/networkpeering"
 
 networkpeering.NetworkPeering_IsTerraformResource(x interface{}) *bool
 ```
@@ -492,7 +492,7 @@ networkpeering.NetworkPeering_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-upcloud.networkPeering.NetworkPeering.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v15/networkpeering"
+import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/networkpeering"
 
 networkpeering.NetworkPeering_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -842,7 +842,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-upcloud.networkPeering.NetworkPeeringConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v15/networkpeering"
+import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/networkpeering"
 
 &networkpeering.NetworkPeeringConfig {
 	Connection: interface{},
@@ -1024,7 +1024,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upclo
 #### Initializer <a name="Initializer" id="@cdktf/provider-upcloud.networkPeering.NetworkPeeringNetwork.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v15/networkpeering"
+import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/networkpeering"
 
 &networkpeering.NetworkPeeringNetwork {
 	Uuid: *string,
@@ -1058,7 +1058,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upclo
 #### Initializer <a name="Initializer" id="@cdktf/provider-upcloud.networkPeering.NetworkPeeringPeerNetwork.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v15/networkpeering"
+import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/networkpeering"
 
 &networkpeering.NetworkPeeringPeerNetwork {
 	Uuid: *string,
@@ -1094,7 +1094,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/upclo
 #### Initializers <a name="Initializers" id="@cdktf/provider-upcloud.networkPeering.NetworkPeeringNetworkList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v15/networkpeering"
+import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/networkpeering"
 
 networkpeering.NewNetworkPeeringNetworkList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) NetworkPeeringNetworkList
 ```
@@ -1254,7 +1254,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-upcloud.networkPeering.NetworkPeeringNetworkOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v15/networkpeering"
+import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/networkpeering"
 
 networkpeering.NewNetworkPeeringNetworkOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) NetworkPeeringNetworkOutputReference
 ```
@@ -1543,7 +1543,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-upcloud.networkPeering.NetworkPeeringPeerNetworkList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v15/networkpeering"
+import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/networkpeering"
 
 networkpeering.NewNetworkPeeringPeerNetworkList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) NetworkPeeringPeerNetworkList
 ```
@@ -1703,7 +1703,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-upcloud.networkPeering.NetworkPeeringPeerNetworkOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/v15/networkpeering"
+import "github.com/cdktf/cdktf-provider-upcloud-go/upcloud/networkpeering"
 
 networkpeering.NewNetworkPeeringPeerNetworkOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) NetworkPeeringPeerNetworkOutputReference
 ```
